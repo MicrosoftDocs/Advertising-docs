@@ -1,6 +1,6 @@
 ---
-title: "Sending Bing Transaction Messages"
-description: Provides the details for sending transaction messages to Bing Ads.
+title: "Sending Microsoft Transaction Messages"
+description: Provides the details for sending transaction messages to Microsoft Advertising.
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
@@ -8,7 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 ---
 
-# Pushing Transaction Messages to Bing Ads
+# Pushing Transaction Messages to Microsoft Advertising
 
 Before sending a transaction message:
 
@@ -19,7 +19,7 @@ Before sending a transaction message:
 - Ensure that you have less than five requests queued or being processed. Your application should include the logic necessary to stay within the limit. If you exceed the limit, the request fails with HTTP status code 429. 
 
 
-After validating the message, send it to Bing in the body of an HTTPS POST request. The URL that you send the request to is:
+After validating the message, send it to Microsoft in the body of an HTTPS POST request. The URL that you send the request to is:
 
 `https://hotels.api.bingads.microsoft.com/api/customers/<customerId>/transactions`
 
@@ -68,7 +68,7 @@ Host: hotels.api.bingads.microsoft.com
 
 The POST request places the message in a queue to be processed and then returns. You may have a maximum of five requests queued or being processed at the same time. If you exceed the limit, the request fails with 429. 
 
-To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
+To determine whether Microsoft successfully processed the message, see Hotel Ads Feed Status in the Microsoft Hotel Center of Microsoft Advertising web application.
 
 
 If the request succeeds (the message is successfully placed in the queue), the response's body includes an XML document that specifies the number of bytes read (`BytesReceived`) from the request's body (the transaction message). 
@@ -80,7 +80,7 @@ If the request succeeds (the message is successfully placed in the queue), the r
 </TxnResponse>
 ```
 
-The `FeedId` element contains a Bing-generated ID that uniquely identifies the feed. The transaction status report includes this ID.
+The `FeedId` element contains a Microsoft-generated ID that uniquely identifies the feed. The transaction status report includes this ID.
 
 
 If the request fails, the response body will include an XML document that contains a list of error codes and messages that identify why the request failed. For a list of error codes and messages, see [Error Codes and Messages](../transaction-message/error-codes-messages.md).

@@ -11,12 +11,12 @@ ms.author: "scottwhi"
 
 # Managing your Products
 
-Content API is a RESTful API that uses the [Products](../shopping-content/products-resource.md) resource to manage product offerings in your Bing Merchant Center (BMC) store. 
+Content API is a RESTful API that uses the [Products](../shopping-content/products-resource.md) resource to manage product offerings in your Microsoft Merchant Center (MMC) store. 
 
 The following are the base URIs that you may use to call the Content API. You may use either URI.
 
 * `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
-* The tenant URL shown under **Store Settings** in the BMC web application
+* The tenant URL shown under **Store Settings** in the MMC web application
 
 Each HTTP request must include the user's OAuth access token and your developer token. To specify the user's access token, set the [AuthenticationToken](../shopping-content/products-resource.md#authtoken) header. To specify your developer token, set the [DeveloperToken](../shopping-content/products-resource.md#devtoken) header.
 
@@ -39,9 +39,9 @@ For details about using the Products resource, see the following sections.
 
 To get a specific product offer from the store, append the following template to the base URI.
 
-`{bmcMerchantId}/products/{productUniqueId}`
+`{mmcMerchantId}/products/{productUniqueId}`
 
-Set `{bmcMerchantId}` to your BMC store ID and set `{productUniqueId}` to the fully qualified product [ID](../shopping-content/products-resource.md#productid) (for example, Online:en:US:Sku123), not the product's [offerId](../shopping-content/products-resource.md#offerid). Because the product ID is case sensitive, use the ID that the API returned to you when you added the product. 
+Set `{mmcMerchantId}` to your MMC store ID and set `{productUniqueId}` to the fully qualified product [ID](../shopping-content/products-resource.md#productid) (for example, Online:en:US:Sku123), not the product's [offerId](../shopping-content/products-resource.md#offerid). Because the product ID is case sensitive, use the ID that the API returned to you when you added the product. 
 
 Send an HTTP GET request to the resulting URL. If the product was found, the response contains a [Product](../shopping-content/products-resource.md#product) object that contains the offer.
 
@@ -54,19 +54,19 @@ For a code example that shows how to get a product offer, see [Managing Products
 
 To get a list of the product offers that are in the store, append the following template to the base URI.
 
-`{bmcMerchantId}/products`
+`{mmcMerchantId}/products`
 
-Set `{bmcMerchantId}` to your BMC store ID. 
+Set `{mmcMerchantId}` to your MMC store ID. 
 
 To page through the list of offers, use the [max-results](../shopping-content/products-resource.md#maxresults) and [start-token](../shopping-content/products-resource.md#starttoken) query parameters. In your first call, set `max-results` to the maximum number of offers that you want the service to return. The maximum number of offers that the service can return is 250. The default is 25. Send an HTTP GET request to the resulting URL. The following shows an example of the request.
 
-`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products?max-results=250` 
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{mmcMerchantId}/products?max-results=250` 
 
 If the store contains offers, the response contains a [Product](../shopping-content/products-resource.md#product) object that contains up to the requested number of offers.
 
 If there are more offers available, the response includes the `nextPageToken` field (see [Products](../shopping-content/products-resource.md#products)). The `nextPageToken` field contains the token value that you use to set the `start-token` parameter to in your next List request. The following shows an example that uses the token.
 
-`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products?max-results=250&start-token=DFSos893j...`
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{mmcMerchantId}/products?max-results=250&start-token=DFSos893j...`
 
 For a code example that shows how to get a list of product offers, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
@@ -75,9 +75,9 @@ For a code example that shows how to get a list of product offers, see [Managing
 
 To delete a specific product offer from the store, append the following template to the base URI.
 
-`{bmcMerchantId}/products/{productUniqueId}`
+`{mmcMerchantId}/products/{productUniqueId}`
 
-Set `{bmcMerchantId}` to your BMC store ID and set `{productUniqueId}` to the fully qualified product [ID](../shopping-content/products-resource.md#productid) (for example, Online:en:US:Sku123), not the product's [offerId](../shopping-content/products-resource.md#offerid). Because the product ID is case sensitive, use the ID that the API returned to you when you added the product. 
+Set `{mmcMerchantId}` to your MMC store ID and set `{productUniqueId}` to the fully qualified product [ID](../shopping-content/products-resource.md#productid) (for example, Online:en:US:Sku123), not the product's [offerId](../shopping-content/products-resource.md#offerid). Because the product ID is case sensitive, use the ID that the API returned to you when you added the product. 
 
 Send an HTTP DELETE request to the resulting URL. If the product was found, it is deleted. 
 
@@ -91,13 +91,13 @@ Adding or updating an offer is an insert operation. Because an update is an inse
 
 To insert a product offer, append the following template to the base URI.
 
-`{bmcMerchantId}/products`
+`{mmcMerchantId}/products`
 
-Set `{bmcMerchantId}` to your BMC store ID. 
+Set `{mmcMerchantId}` to your MMC store ID. 
 
 Sending an HTTP POST request to the resulting URL writes the offer to the default store catalog. To write the offer to a specific catalog, include the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter.
 
-`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products?bmc-catalog-id=123456` 
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{mmcMerchantId}/products?bmc-catalog-id=123456` 
 
 If the product was inserted, the response contains a [Product](../shopping-content/products-resource.md#product) object. The `Product` object includes the product [ID](../shopping-content/products-resource.md#productid), which you use to get and delete the offer.
 
@@ -127,7 +127,7 @@ The following fields are also required if the manufacturer assigned values.
 
 You must specify the values if known. If you do not specify any of them, you must set the [identifierExists](~/shopping-content/products-resource.md) field to **false**. The default is **true**.
 
-If the product is known to have these identifiers and you do not specify them, BMC accepts the product for now but the `Product` object in the response includes the `warnings` field. You should always check if the `warnings` field exists and fix all identified issues.
+If the product is known to have these identifiers and you do not specify them, MMC accepts the product for now but the `Product` object in the response includes the `warnings` field. You should always check if the `warnings` field exists and fix all identified issues.
 
 In addition to the required fields, you should also specify the date and time that you want the offer to expire (see [expirationDate](../shopping-content/products-resource.md#expirationdate)). By default, the offer expires 30 days from the date and time it is written to the store or catalog. You should track products that are nearing expiration and before they expire either update their expiration date or simply update the product (you do not have to update any of the product's fields), which automatically extends the expiration date another 30 days. If you explicitly set the expiration date, you must set a new expiration date yourself; updating the product won't automatically extend the expiration date another 30 days in this case. 
 
@@ -136,7 +136,7 @@ All other fields are considered optional; however, you should specify as many as
 > [!NOTE]
 > The `Product` object must include only fields that are set to values. Do not include null fields in the `Product` object. For example, do not include `"adult":null`.
 
-Bing Ads does not use all the `Product` fields. For a list of fields that the API accepts but does not use, see [What Google attributes can I use?](http://help.bingads.microsoft.com/#apex/3/en/51111/1-500) All the other fields used by Bing Ads are used to filter the products when serving product ads. 
+Microsoft Advertising does not use all the `Product` fields. For a list of fields that the API accepts but does not use, see [What Google attributes can I use?](http://help.ads.microsoft.com/#apex/3/en/51111/1-500) All the other fields used by Microsoft Advertising are used to filter the products when serving product ads. 
 
 If you specify a field that is unknown to the Content API, the service ignores the field.  
 
@@ -161,13 +161,13 @@ Do not insert, get, or delete the same product in the same request.
 
 To send a batch request, append the following template to the base URI.
 
-`{bmcMerchantId}/products/batch`
+`{mmcMerchantId}/products/batch`
 
-Set `{bmcMerchantId}` to your BMC store ID. 
+Set `{mmcMerchantId}` to your MMC store ID. 
 
 Sending an HTTP POST request to the resulting URL applies the insert operations to the default store catalog. To apply the offers to a specific catalog, include the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter.
 
-`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products/batch?bmc-catalog-id=123456`
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{mmcMerchantId}/products/batch?bmc-catalog-id=123456`
 
 The body of the POST is a [Batch](../shopping-content/products-resource.md#batch) object that contains an array of [Item](../shopping-content/products-resource.md#item) objects. For all operations, set the `batchId`, `merchantId` and `method` fields. The `batchId` is a user-defined ID that you use to identify the batch item in the response; the `merchantId` is your store ID; and the `method` is the operation to be performed (for example, insert, delete or get).
 

@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Errors and Warnings"
-description: "Describes how errors and warnings are handled in Bing Ads Scripts."
+title: "Bing Advertising Scripts Errors and Warnings"
+description: "Describes how errors and warnings are handled in Bing Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The only time Bing Ads returns errors is when you add an entity with invalid values. For example, if you try to add a keyword entity with a bid amount that's not valid, the build operation fails and returns one or more errors.
+The only time Scripts returns errors is when you add an entity with invalid values. For example, if you try to add a keyword entity with a bid amount that's not valid, the build operation fails and returns one or more errors.
 
 ```javascript
         var operation = adGroup.newKeywordBuilder()

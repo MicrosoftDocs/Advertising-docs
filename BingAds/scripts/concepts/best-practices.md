@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts best practices"
+title: "Bing Advertising Scripts best practices"
 description: "Identifies the best practices you should follow to improve script performance."
 author: "swhite-msft"
 manager: ehansen

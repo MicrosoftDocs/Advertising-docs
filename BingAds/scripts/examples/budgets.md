@@ -18,12 +18,12 @@ The following sections show examples of scripts that perform various actions aga
 
 ## Add shared budgets
 
-To add a shared budget, you must use the Bing Ads web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
+To add a shared budget, you must use the Bing Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
 
 
 ## Associate a campaign with a shared budget
 
-To associate a campaign with a shared budget, you must use the Bing Ads web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
+To associate a campaign with a shared budget, you must use the Bing Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
 
 
 ## Get all shared budgets

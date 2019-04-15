@@ -335,9 +335,9 @@ namespace Products
                 // You must request user consent at least once through a web browser control. 
                 // Call the GetAuthorizationEndpoint method of the OAuthDesktopMobileAuthCodeGrant instance that you created above.
                 Console.WriteLine(string.Format(
-                    "The Bing Ads user must provide consent for your application to access their Bing Ads accounts.\n" +
+                    "The Microsoft Advertising user must provide consent for your application to access their accounts.\n" +
                     "Open a new web browser and navigate to {0}.\n\n" +
-                    "After the user has granted consent in the web browser for the application to access their Bing Ads accounts, " +
+                    "After the user has granted consent in the web browser for the application to access their accounts, " +
                     "please enter the response URI that includes the authorization 'code' parameter: \n", oAuthDesktopMobileAuthCodeGrant.GetAuthorizationEndpoint()));
 
                 // Request access and refresh tokens using the URI that you provided manually during program execution.
@@ -351,7 +351,7 @@ namespace Products
 
             // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
             // You will want to subscribe to the NewOAuthTokensReceived event handler. 
-            // When calling Bing Ads services with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
+            // When calling Microsoft Advertising services with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
             // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
             oAuthDesktopMobileAuthCodeGrant.NewOAuthTokensReceived +=
                     (sender, tokens) => SaveRefreshToken(tokens.NewRefreshToken);

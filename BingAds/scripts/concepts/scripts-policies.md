@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts policies"
+title: "Bing Advertising Scripts policies"
 description: "Describes the list of things you can’t do with Scripts."
 author: "swhite-msft"
 manager: ehansen
@@ -13,15 +13,15 @@ ms.topic: "article"
 
 Here’s the list of things you can’t do (subject to change without notice):
 
-- Don’t use Scripts to get around usage limits and restrictions. For example, if you use up your Bing Ads API usage limits, don’t switch to using Scripts to get around your limits.  
+- Don’t use Scripts to get around usage limits and restrictions. For example, if you use up your Bing Advertising API usage limits, don’t switch to using Scripts to get around your limits.  
   
-- Don’t use Scripts for any purpose that's not related to Bing Ads.  
+- Don’t use Scripts for any purpose that's not related to Bing Advertising.  
   
 - Don’t use unsupported Scripts methods. For a list of supported objects and methods you may call, see [Scripts reference](../reference-overview.md).  
   
 - Don’t abuse Scripts by sending a high volume of requests.  
   
-- Don’t adversely impact the performance, functionality, or features of Bing Ads platform.
+- Don’t adversely impact the performance, functionality, or features of Bing Advertising platform.
 
 Additionally, you must follow the [best practices](best-practices.md). This is especially important for performance reasons when getting large numbers of entities such as more than one million entities or editing more than 100,000 entities daily.
 
@@ -37,11 +37,11 @@ Additionally, you must follow the [best practices](best-practices.md). This is e
 
 ## Bing’s rights to monitor, audit, and review your scripts
 
-Bing may review any Scripts activity. This could entail accessing your scripts to, among other things, check for security issues or vulnerabilities that could affect the Bing Ads platform or other users. If requested, you must provide full access to all your scripts within two business days (this includes scripts not stored in Bing Ads Scripts).  
+Bing may review any Scripts activity. This could entail accessing your scripts to, among other things, check for security issues or vulnerabilities that could affect the Bing Advertising platform or other users. If requested, you must provide full access to all your scripts within two business days (this includes scripts not stored in Bing Advertising Scripts).  
 
 Any interference or obfuscation of Bing’s monitoring and auditing of your Scripts activity is not allowed.
 
 
 ## Need help?
 
-If you have questions about these policies, please reach out to [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+If you have questions about these policies, please reach out to [Bing Advertising Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).

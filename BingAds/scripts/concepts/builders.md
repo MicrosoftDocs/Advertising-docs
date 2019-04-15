@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Builders"
-description: "Describes how builders work in Bing Ads Scripts."
+title: "Bing Advertising Scripts Builders"
+description: "Describes how builders work in Bing Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 

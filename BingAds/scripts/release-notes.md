@@ -55,7 +55,7 @@ The following is a documentation only change.
 
 The following is a documentation only change.
 
-- Changed the preview note to indicate that Scripts is now in open beta and available to all Bing Ads users.
+- Changed the preview note to indicate that Scripts is now in open beta and available to all Bing Advertising users.
 
 
 ## October 4, 2018

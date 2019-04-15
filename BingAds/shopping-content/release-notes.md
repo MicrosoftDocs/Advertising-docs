@@ -19,7 +19,7 @@ Added the [Inventory](inventory-resource.md) resource that you use to update a p
 
 This release includes the following changes:
 
-- Removed support for legacy credentials; you can no longer use username and password to access Content API. You must now use OAuth to access Content API. If you have not already done so, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). For details about using OAuth, see [Get Started with the Content API](get-started.md).
+- Removed support for legacy credentials; you can no longer use username and password to access Content API. You must now use OAuth to access Content API. If you have not already done so, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.ads.microsoft.com/#apex/3/en/ext50875/-1/en-us). For details about using OAuth, see [Get Started with the Content API](get-started.md).
 
 
 ## July 2017
@@ -37,7 +37,7 @@ This release includes the following changes:
   - [gtin](~/shopping-content/products-resource.md#gtin) 
   - [mpn](~/shopping-content/products-resource.md#mpn)  
   
-  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](~/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
+  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, MMC will accept the offer for now but will return a warning message in the response (see [warnings](~/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
   
 - If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](~/shopping-content/products-resource.md#identifierexists) field to **false**. Its default is **true**.  
   
@@ -47,7 +47,7 @@ This release includes the following changes:
 ## <a name="march2017"></a>March 2017
 This release includes the following changes:
 
-- Updated the documentation to reflect that your BMC store and catalogs are automatically enabled to use the Content API. You no longer have to use the Bing Ads web application to enable your store and catalogs to use the API.  
+- Updated the documentation to reflect that your MMC store and catalogs are automatically enabled to use the Content API. You no longer have to use the Microsoft Advertising web application to enable your store and catalogs to use the API.  
 
 ## <a name="february2017"></a>February 2017
 This release includes the following changes:
@@ -86,7 +86,7 @@ For an overview and reference information about the `status` resource, see the t
 For an example of using the `status` resource in code, see the topic [Catalog Status Resource Code Examples](../shopping-content/code-examples.md#catalog).
 
 ### <a name="docreorg-october2015"></a>Documentation Reorganization
-The Content API was previously documented as "Version 1" and "Version 2". To make the Bing Ads API documentation consistent, the version number used in documentation has been changed to use the version in the URI.
+The Content API was previously documented as "Version 1" and "Version 2". To make the Microsoft Advertising API documentation consistent, the version number used in documentation has been changed to use the version in the URI.
 
 ## <a name="april2015"></a>April 2015
 For information about the changes to the Content API  services included in this release, see the following sections.

@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Iterators"
-description: "Describes how iterators work in Bing Ads Scripts."
+title: "Bing Advertising Scripts Iterators"
+description: "Describes how iterators work in Bing Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
