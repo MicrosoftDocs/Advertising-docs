@@ -24,7 +24,9 @@ Before using this example, see [Authenticating with Google services](../examples
 
 ```javascript
 // Update the list with email addresses of the recipients that
-// you want notifications sent to.
+// you want notifications sent to. The addresses may use any email
+// provider (not limited to gmail.com). The list of addresses is comma delimited.
+// For example, ['someone1@example.com','someone2@example.com'].
 const NOTIFY = ['someone@example.com'];
 
 // If you chose option 1 in Getting an access token, set accessToken to 
