@@ -1,6 +1,6 @@
 ---
-title: "Bing Advertising Scripts Builders"
-description: "Describes how builders work in Bing Advertising Scripts."
+title: "Microsoft Advertising Scripts Builders"
+description: "Describes how builders work in Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -17,7 +17,7 @@ You use builders to add an entity. Each parent object, such as [Campaign](../ref
 
 The builder object includes methods that you use to set the entity's property values. For example, to specify a keyword's CPC, you'd use the `withCpc` method. After setting all the entity's property values, you'd call the `build` method to create the entity. The build process is an asynchronous process where the request is queued with other build requests and processed in a batch. The batched requests will complete before the script terminates.
 
-To determine whether the build requests succeeded, you can look at the logs or you can use the operation object that the `build` method returns. For example, [AdGroupBuilder](../reference/AdGroupBuilder.md) returns [AdGroupOperation](../reference/AdGroupOperation.md). You can call any of the operation object's methods (`isSuccessful`, `getResult`, or `getErrors`) to determine whether Bing successfully created the entity. But there are performance considerations when calling these methods (see [Performance considerations](#performance-considerations)).
+To determine whether the build requests succeeded, you can look at the logs or you can use the operation object that the `build` method returns. For example, [AdGroupBuilder](../reference/AdGroupBuilder.md) returns [AdGroupOperation](../reference/AdGroupOperation.md). You can call any of the operation object's methods (`isSuccessful`, `getResult`, or `getErrors`) to determine whether Scripts successfully created the entity. But there are performance considerations when calling these methods (see [Performance considerations](#performance-considerations)).
 
 The following example conceptually shows how to create a keyword using the builder and operation objects. You should probably use this flow only if you're creating a single entity (or maybe a few).
 
@@ -51,7 +51,7 @@ The following example conceptually shows how to create a keyword using the build
 
 ## Performance considerations
 
-In order to improve performance, Bing processes build requests in batches. If you call a build request's operation method, it forces Bing to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
+In order to improve performance, Scripts processes build requests in batches. If you call a build request's operation method, it forces Scripts to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
 
 
 ### Do this
@@ -87,7 +87,7 @@ In order to improve performance, Bing processes build requests in batches. If yo
           .build();
 
         // Don't get results in the same loop that creates
-        // the entity because Bing then only processes one
+        // the entity because Scripts then only processes one
         // entity at a time.
         var newKeyword = keywordOperation.getResult();
     }

@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts single account access"
+title: "Microsoft Ads Scripts single account access"
 description: "Provides an overview of how you use BingAdsApp to access a single account's entities."
 author: "swhite-msft"
 manager: ehansen
@@ -89,7 +89,7 @@ For more information about iterators, see [What are iterators?](../concepts/iter
 
 ### How do I get performance data for an entity?
 
-Most entities let you request performance data, if available. But first you need to tell Bing the date range for the performance data when you specify the selector. To specify a date range, use a predefined literal, such as YESTERDAY or LAST_MONTH, or use a start and end date. For more information, see [forDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
+Most entities let you request performance data, if available. But first you need to tell Scripts the date range for the performance data when you specify the selector. To specify a date range, use a predefined literal, such as YESTERDAY or LAST_MONTH, or use a start and end date. For more information, see [forDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
 
 ```javascript
     var campaignName = 'My Campaign';
@@ -145,7 +145,7 @@ The builder object contains methods for setting all the object's properties that
             .build();
 ```
 
-The `build` method returns an operation object, which you can use to check whether Bing successfully created the entity. The following shows the typical calling pattern. You need to call the `getResult` method only if you want to access the new entity's properties.
+The `build` method returns an operation object, which you can use to check whether Scripts successfully created the entity. The following shows the typical calling pattern. You need to call the `getResult` method only if you want to access the new entity's properties.
 
 ```javascript
     if (adGroupOperation.isSuccessful()) {

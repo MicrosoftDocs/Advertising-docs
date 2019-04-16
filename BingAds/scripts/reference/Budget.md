@@ -56,7 +56,7 @@ Gets the budget's delivery method (budget type).
 ### Returns
 |Type|Description|
 |-|-
-string|The budget's delivery method. Possible values are:<br /><ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
+string|The budget's delivery method. Possible values are:<br /><ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.ads.microsoft.com/#apex/3/en/51006/1)
 
 
 ## <a name="getentitytype"></a>getEntityType
@@ -139,7 +139,7 @@ Sets the budget's delivery method.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-method|string|The budget's delivery method. Possible case-sensitive values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
+method|string|The budget's delivery method. Possible case-sensitive values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.ads.microsoft.com/#apex/3/en/51006/1)
 
 ### Returns
 |Type|Description|

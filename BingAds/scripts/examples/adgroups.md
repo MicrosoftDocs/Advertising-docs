@@ -22,13 +22,13 @@ To add an ad group, first get the campaign to add the ad group to. Use the [Camp
 
 Next, call the campaign's [newAdGroupBuilder](../reference/Campaign.md#newadgroupbuilder) method to get a builder that you use to specify the ad group's properties. The only required property is the ad group's name (see the `withName` method), which must be unique within the campaign. If you don't specify a CPC value, it defaults to the minimum bid amount for your account's currency. You only need to specify language if the campaign doesn't specify it; otherwise, it inherits the campaign's language value. By default, the ad group's status is paused.
 
-Calling the builder's `build` method creates the ad group asynchronously; Bing adds the ad group at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
+Calling the builder's `build` method creates the ad group asynchronously; Scripts adds the ad group at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
 
 
 ```javascript
 function main() {
     // The ID of the campaign to add the ad groups to.
-    // IDs in Bing Scripts are string integers.
+    // IDs in Scripts are string integers.
     var campaignId = 'CAMPAIGN ID GOES HERE';  
     var campaign = getCampaign(campaignId);
 

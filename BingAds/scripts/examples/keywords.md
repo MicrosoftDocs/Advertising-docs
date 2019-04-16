@@ -24,14 +24,14 @@ Next, call the ad group's [newKeywordBuilder](../reference/AdGroup.md#newkeyword
 
 If you don't specify a CPC value, it defaults to the ad group's CPC value. By default, the keyword's status is enabled.
 
-Calling the builder's `build` method creates the keyword asynchronously; Bing adds the keyword at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
+Calling the builder's `build` method creates the keyword asynchronously; Scripts adds the keyword at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
 
 
 
 ```javascript
 function main() {
     // The ID of the ad group to add the keywords to.
-    // IDs in Bing Scripts are string integers.
+    // IDs in Scripts are string integers.
     var adGroupId = 'AD GROUP ID GOES HERE';  
     var adGroup = getAdGroup(adGroupId);
 

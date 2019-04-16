@@ -1,6 +1,6 @@
 ---
-title: "Bing Advertising Scripts Bid Strategies"
-description: "Describes how Bing Advertising Scripts maps bid strategy types to Bing Advertising API bid strategy names."
+title: "Microsoft Advertising Scripts Bid Strategies"
+description: "Describes how Microsoft Advertising Scripts maps bid strategy types to Microsoft Advertising API bid strategy names."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,9 +13,9 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following table maps the bid strategy names in Scripts to their corresponding strategy name in Bing Advertising API.
+The following table maps the bid strategy names in Scripts to their corresponding strategy name in Microsoft Advertising API.
 
-Bing Advertising Scripts|Bing Advertising
+Microsoft Advertising Scripts|Microsoft Advertising API
 |-|-
 MANUAL_CPC|ManualCpc
 TARGET_SPEND|MaxClicks

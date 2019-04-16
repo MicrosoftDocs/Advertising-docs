@@ -1,6 +1,6 @@
 ---
-title: "Bing Advertising Scripts Preview Mode"
-description: "Describes how preview mode works in Bing Advertising Scripts."
+title: "Microsoft Advertising Scripts Preview Mode"
+description: "Describes how preview mode works in Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -16,7 +16,7 @@ ms.topic: "article"
 Preview mode lets you test your script without actually making changes to the data. Instead, you’re shown the results as if the script were executed. This can reduce the amount of time spent setting up test cases. When you're satisfied with the script's output, you can run the script or schedule it to run later.
 
 <!--
-Preview mode is specific to Bing Advertising components only. Calls to other services execute as normal. For example, if the script sends an email, the email is sent. The same is true for spreadsheet updates. 
+Preview mode is specific to Microsoft Advertising components only. Calls to other services execute as normal. For example, if the script sends an email, the email is sent. The same is true for spreadsheet updates. 
 -->
 
 <!--

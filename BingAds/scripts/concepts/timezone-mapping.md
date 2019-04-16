@@ -1,6 +1,6 @@
 ---
 title: "Mapping account time zone values"
-description: "Describes how Bing Advertising Scripts maps time zones to Bing Advertising API time zone values."
+description: "Describes how Microsoft Advertising Scripts maps time zones to Microsoft Advertising API time zone values."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,9 +13,9 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following table maps the time zone values used in Bing Advertising Scripts to their corresponding time zone values in Bing Advertising API.
+The following table maps the time zone values used in Scripts to their corresponding time zone values in Microsoft Advertising API.
 
-|Bing Advertising API|Bing Advertising Scripts
+|Microsoft Advertising API|Microsoft Advertising Scripts
 |-|-
 |TimeZone.AbuDhabiMuscat|Asia/Dubai
 |TimeZone.Adelaide|Australia/Adelaide

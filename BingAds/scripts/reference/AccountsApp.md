@@ -13,7 +13,7 @@ ms.topic: "article"
 
 This is the top-level object used in multi-account scripts to get the list of accounts the user has access to and to select the account to manage. After getting the account, use the [BingAdsApp](BingAdsApp.md) object to access its entities.
 
-This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application.
+This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Microsoft Advertising web application.
 
 
 ## Methods

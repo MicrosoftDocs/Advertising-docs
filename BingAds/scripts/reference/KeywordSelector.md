@@ -117,7 +117,7 @@ Supported columns for keyword filtering. The column names are case sensitive.
 
 The following are the performance metrics columns you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 AverageCpc|double|`withCondition("AverageCpc < 2.75")`|Avg. CPC
 AverageCpm|double|`withCondition("AverageCpm > 0.65")`|Avg. CPM
@@ -131,7 +131,7 @@ Impressions|long|`withCondition("Impressions > 10")`|Impr.
 
 The following are the entity properties you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 Status|enumeration|The keyword's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>`withCondition("Status = ENABLED")`|Status
 Text|string|The keyword's text. Include only the keyword's text. Don't include the keyword's match type in the text. For example, if the keyword is an exact match keyword such as [books], use *books* not *[books]*.<br /><br />`withCondition("Text STARTS_WITH 'flowers'")`|Keyword Text

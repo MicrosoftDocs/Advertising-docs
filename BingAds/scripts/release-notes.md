@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts release notes"
+title: "Microsoft Advertising Scripts release notes"
 description: "Describes the changes that were included with each release."
 author: "swhite-msft"
 manager: ehansen
@@ -55,7 +55,7 @@ The following is a documentation only change.
 
 The following is a documentation only change.
 
-- Changed the preview note to indicate that Scripts is now in open beta and available to all Bing Advertising users.
+- Changed the preview note to indicate that Scripts is now in open beta and available to all Microsoft Advertising users.
 
 
 ## October 4, 2018
@@ -153,7 +153,7 @@ Added support for ads.
   
 - Added the [ExpandedTextAdBuilder](reference/ExpandedTextAdBuilder.md) object, which you use to add an expanded text ad to the ad group.
   
-- Added the [AdOperation](reference/AdOperation.md) object, which you use to determine whether Bing successfully added the ad.
+- Added the [AdOperation](reference/AdOperation.md) object, which you use to determine whether Scripts successfully added the ad.
   
 - Added the [AdViewSpace](reference/AdViewSpace.md) object, which contains the methods used to cast an ad to a specific type. For example, cast the base ad object to an expanded text ad.
   
@@ -178,7 +178,7 @@ Added support for ads.
 
 ## June 15, 2018
 
-Closed beta release. This release of Bing Ads Scripts is available to select participants only. For information about participating in the preview release program, please contact your account manager. The Scripts classes and documentation are subject to change.
+Closed beta release. This release of Microsoft Advertising Scripts is available to select participants only. For information about participating in the preview release program, please contact your account manager. The Scripts classes and documentation are subject to change.
 
 This initial release includes the following capabilities:
 

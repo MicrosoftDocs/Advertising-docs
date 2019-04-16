@@ -1,6 +1,6 @@
 ---
-title: "Bing Advertising Scripts Editorial Approval"
-description: "Describes how Bing Advertising Scripts maps editorial approval statuses to Bing Advertising API editorial approval statuses."
+title: "Microsoft Advertising Scripts Editorial Approval"
+description: "Describes how Microsoft Advertising Scripts maps editorial approval statuses to Microsoft Advertising API editorial approval statuses."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,9 +13,9 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following table maps the editorial approval status values in Scripts to their corresponding status values in Bing Advertising API.
+The following table maps the editorial approval status values in Scripts to their corresponding status values in Microsoft Advertising API.
 
-|Bing Advertising Scripts|Bing Advertising
+|Microsoft Advertising Scripts|Microsoft Advertising
 |-|-
 APPROVED|Active
 APPROVED_LIMITED|ActiveLimited
@@ -24,6 +24,6 @@ UNDER_REVIEW|Inactive
 
 For information about these status values, see [KeywordEditorialStatus](/bingads/campaign-management-service/keywordeditorialstatus).
 
-For information about fixing keyword issues, see [How do I fix a Disapproved or Approved Limited status?](https://help.bingads.microsoft.com/apex/index/3/en-us/52022#!)
+For information about fixing keyword issues, see [How do I fix a Disapproved or Approved Limited status?](https://help.ads.microsoft.com/apex/index/3/en-us/52022#!)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Bing Advertising Scripts best practices"
+title: "Microsoft Advertising Scripts best practices"
 description: "Identifies the best practices you should follow to improve script performance."
 author: "swhite-msft"
 manager: ehansen
@@ -306,7 +306,7 @@ Iterators reduce memory pressure by loading only a single item at a time rather 
 
 ## Batching updates
 
-In order to improve performance, Bing processes build requests in batches. If you call a build request's operation method, it forces Bing to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
+In order to improve performance, Scripts processes build requests in batches. If you call a build request's operation method, it forces Scripts to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
 
 
 **Right way**
@@ -342,7 +342,7 @@ In order to improve performance, Bing processes build requests in batches. If yo
           .build();
 
         // Don't get results in the same loop that creates
-        // the entity because Bing then only processes one
+        // the entity because Scripts then only processes one
         // entity at a time.
         var newKeyword = keywordOperation.getResult();
     }

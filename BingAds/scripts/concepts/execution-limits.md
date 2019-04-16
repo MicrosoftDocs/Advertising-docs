@@ -1,5 +1,5 @@
 ---
-title: "Bing Advertising Scripts entity and execution limits"
+title: "Microsoft Advertising Scripts entity and execution limits"
 description: "Identifies the entity and execution limits for scripts."
 author: "swhite-msft"
 manager: ehansen
@@ -49,7 +49,7 @@ These single account limits are the per script (they are not the aggregation of 
 See [UrlFetch limits](urlfetch-limits.md).
 
 
-## Bing Advertising entity limits
+## Microsoft Advertising entity limits
 
-For Bing Advertising entity limits, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
+For Microsoft Advertising entity limits, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
 

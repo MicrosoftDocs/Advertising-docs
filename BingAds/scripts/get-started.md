@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Quickstart"
-description: "Shows you how to get started quickly using Bing Ads Scripts."
+title: "Microsoft Advertising Scripts Quickstart"
+description: "Shows you how to get started quickly using Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -9,13 +9,13 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Get Started With Bing Ads Scripts
+# Get Started With Microsoft Advertising Scripts
 
 [!INCLUDE[preview-note](./includes/preview-note.md)]
 
-Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these instructions and you'll be accessing your data in no time.
+Accessing your Microsoft Advertising data with Scripts is easy. Just follow these instructions and you'll be accessing your data in no time.
 
-1. Sign in to [Bing Ads](https://secure.bingads.microsoft.com/) or [Bing Ads Sandbox](https://sandbox.bingads.microsoft.com/).
+1. Sign in to [Microsoft Advertising](https://secure.ads.microsoft.com/) or [Microsoft Advertising Sandbox](https://sandbox.ads.microsoft.com/).
 2. From the **Campaigns** tab click **Bulk Operations** (in the left navigation panel).
 3. Click **Create and manage scripts**.
 4. Click **Create script**.

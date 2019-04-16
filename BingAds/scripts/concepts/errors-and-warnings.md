@@ -1,6 +1,6 @@
 ---
-title: "Bing Advertising Scripts Errors and Warnings"
-description: "Describes how errors and warnings are handled in Bing Advertising Scripts."
+title: "Microsoft Advertising Scripts Errors and Warnings"
+description: "Describes how errors and warnings are handled in Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -33,7 +33,7 @@ The only time Scripts returns errors is when you add an entity with invalid valu
         }
 ``` 
 
-However, if you try to update an entity’s properties with an invalid value, Bing does not return an error. Instead, Bing writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code continues executing. Because Bing does not return errors in this case, you should test each set operation to ensure the update succeeded. For example, the following code attempts to set the ad group's CPC bid. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
+However, if you try to update an entity’s properties with an invalid value, Scripts does not return an error. Instead, Scripts writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code continues executing. Because Scripts does not return errors in this case, you should test each set operation to ensure the update succeeded. For example, the following code attempts to set the ad group's CPC bid. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
 
 ```javascript
 function main() {

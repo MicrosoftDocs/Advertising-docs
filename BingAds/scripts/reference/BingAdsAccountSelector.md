@@ -42,7 +42,7 @@ Example usage:
 
 ## <a name="executeinparallel-string-functionname-string-optionalcallbackfunctionname-"></a>executeInParallel(string functionName, string optionalCallbackFunctionName)
 
-Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Bing calls the optional callback function.
+Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Scripts calls the optional callback function.
 
 > [!NOTE]
 > The script may execute a maximum of 50 accounts in parallel each time the script runs. You may call this method once or multiple times but the total number of accounts all calls process must not exceed 50. If a call exceeds the 50 account maximum for the script, none of the accounts in the call are executed. To limit the number of accounts the selector returns, consider using the `withLimit` or `withIds` method.  
@@ -80,7 +80,7 @@ void|Returns nothing.
 
 
 ## <a name="executeinparallel-string-functionname-string-optionalcallbackfunctionname-string-optionalinput-"></a>executeInParallel(string functionName, string optionalCallbackFunctionName, string optionalInput)
-Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
+Executes the function for each account that the selector returns. After the function executes for all selected accounts, Scripts calls the optional callback function.
 
 > [!NOTE]
 > The script may execute a maximum of 50 accounts in parallel each time the script runs. You may call this method once or multiple times but the total number of accounts all calls process must not exceed 50. If a call exceeds the 50 account maximum for the script, none of the accounts in the call are executed. To limit the number of accounts the selector returns, consider using the `withLimit` or `withIds` method.  
@@ -222,7 +222,7 @@ Supported columns for account filtering. The column names are case sensitive.
 
 The following are the performance metrics columns you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.25")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 33")`|Clicks
@@ -233,7 +233,7 @@ Impressions|long|`withCondition("Impressions > 10")`|Impr.
 
 The following are the account properties you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 CurrencyCode|string|The currency code of the currency used by the account. For example, USD for United States dollar.<br /><br />`withCondition("CurrencyCode = USD")`
 ManagerCustomerId|string|The customer ID of the user managing the accounts.<br /><br />`withCondition("ManagerCustomerId = '123456789'")`

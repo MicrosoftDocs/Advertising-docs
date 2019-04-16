@@ -31,7 +31,7 @@ For expanded text ads, you must specify the following properties:
 
 The combination of these properties uniquely defines an expanded text ad. The other properties are optional.
 
-Calling the builder's `build` method creates the ad asynchronously; Bing adds the ad at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
+Calling the builder's `build` method creates the ad asynchronously; Scripts adds the ad at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
 
 
 

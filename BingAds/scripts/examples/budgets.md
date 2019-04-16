@@ -18,12 +18,12 @@ The following sections show examples of scripts that perform various actions aga
 
 ## Add shared budgets
 
-To add a shared budget, you must use the Bing Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
+To add a shared budget, you must use the Microsoft Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.ads.microsoft.com/#apex/3/en/56814/1)
 
 
 ## Associate a campaign with a shared budget
 
-To associate a campaign with a shared budget, you must use the Bing Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.bingads.microsoft.com/#apex/3/en/56814/1)
+To associate a campaign with a shared budget, you must use the Microsoft Advertising web application. For details, see [How do I share a budget across multiple campaigns?](https://help.ads.microsoft.com/#apex/3/en/56814/1)
 
 
 ## Get all shared budgets
@@ -66,7 +66,7 @@ function main() {
           .get();
 
     // Iterates through the list of shared budgets and logs 
-    // each budgets's name and amount.
+    // each budget's name and amount.
     while (iterator.hasNext()) {
         var budget = iterator.next();
         Logger.log(`Name:  ${budget.getName()}

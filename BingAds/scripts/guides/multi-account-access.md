@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts multi-account access"
+title: "Microsoft Ads Scripts multi-account access"
 description: "Provides an overview of how to use AccountsApp to access the accounts you can manage on behalf of others."
 author: "swhite-msft"
 manager: ehansen
@@ -16,7 +16,7 @@ ms.topic: "article"
 If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting and selecting the account, you switch to using the [BingAdsApp](../reference/BingAdsApp.md) object to access the account's entities.
 
 > [!NOTE]
-> For multi-account scripts, use the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application. If you don't see **Accounts Summary** in the UI, you won't use the multi-accounts Scripts editor.
+> For multi-account scripts, use the Scripts editor accessed from **Accounts Summary** in the Microsoft Advertising web application. If you don't see **Accounts Summary** in the UI, you won't use the multi-accounts Scripts editor.
 >
 > To access the Scripts editor from **Accounts Summary**, click **Bulk Operations** in the left pane. Then, under **Scripts** click **Create and manage scripts**.
 
@@ -51,17 +51,17 @@ To perform work on multiple accounts in parallel, you call the [selector's](../r
 
 - [executeInParallel(string functionName, string optionalCallbackFunctionName)](../reference/BingAdsAccountSelector.md#executeinparallel-string-functionname-string-optionalcallbackfunctionname-)  
   
-  Specify the name of the function that Bing calls for each account that the selector returns. The function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. 
+  Specify the name of the function that Scripts calls for each account that the selector returns. The function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. 
   
-  If your function returns a value, you must specify a callback function to capture the return values. After the function is executed for all selected accounts, Bing calls the optional callback function. The return values are passed as an array of [ExecutionResult](../reference/ExecutionResult.md) objects.   
+  If your function returns a value, you must specify a callback function to capture the return values. After the function is executed for all selected accounts, Scripts calls the optional callback function. The return values are passed as an array of [ExecutionResult](../reference/ExecutionResult.md) objects.   
   
 - [executeInParallel(string functionName, string optionalCallbackFunctionName, string optionalInput)](../reference/BingAdsAccountSelector.md#executeinparallel-string-functionname-string-optionalcallbackfunctionname-string-optionalinput-)
   
-  Specify the name of the function that Bing calls for each account that the selector returns. You may specify an optional input string that Bing passes to the function. To pass a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method inside the function to convert the string back into an object.
+  Specify the name of the function that Scripts calls for each account that the selector returns. You may specify an optional input string that Scripts passes to the function. To pass a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method inside the function to convert the string back into an object.
   
   The function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. 
   
-  If your function returns a value, you must specify a callback function to capture the return values. After the function is executed for all selected accounts, Bing calls the optional callback function. The return values are passed as an array of [ExecutionResult](../reference/ExecutionResult.md) objects.   
+  If your function returns a value, you must specify a callback function to capture the return values. After the function is executed for all selected accounts, Scripts calls the optional callback function. The return values are passed as an array of [ExecutionResult](../reference/ExecutionResult.md) objects.   
   
 
 You must limit the number of accounts to 50, otherwise, the call fails if the selector returns more than 50. To limit the number of accounts, you can use the `withLimit()`, `withIds()`, and `withAccountNumbers()` methods.
