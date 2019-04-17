@@ -44,4 +44,4 @@ Any interference or obfuscation of Microsoft’s monitoring and auditing of your
 
 ## Need help?
 
-If you have questions about these policies, please reach out to [Microsoft Advertising Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+If you have questions about these policies, please reach out to [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support).
