@@ -21,9 +21,6 @@ You'll also need your production [developer token](get-started.md#get-developer-
 > [!TIP]
 > This example references steps from [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet-framework). For more details about deploying web apps to Azure, you can refer to the Azure documentation. 
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="code"></a>Code Walkthrough
 1. Open the [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/) development environment. If you've installed Visual Studio already, add the **ASP.NET and web development** and **Azure development** workloads in Visual Studio by clicking **Tools** > **Get Tools and Features**.
 

@@ -18,9 +18,6 @@ You must first register an application and take note of the client ID (registere
 
 You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
 1. Create a new file named *Index.php*, and add the code as shown in the following example.
