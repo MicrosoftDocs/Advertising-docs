@@ -16,9 +16,6 @@ This tutorial explores how to get started running a Bing Ads web application usi
 
 This tutorial does not explore various details about Django itself, such as working with data models and creating an administrative interface. For guidance on those aspects, refer to the [Django documentation](https://docs.djangoproject.com/en/2.1/intro/tutorial01/). For more details about how to work with Django in the VS Code terminal, editor, and debugger see [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). This tutorial borrows heavily from the setup instructions in [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). 
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="webapp"></a>Example Web Application Overview
 By the end of this tutorial you will have a web application running on http://localhost that will authenticate your Bing Ads user credentials and display your user and accounts info. You can then add multiple web application users, who can enable access for your application to use their Bing Ads credentials. This web application provides a one to one mapping of a web application user e.g. ContosoUser to a Bing Ads user. For information about how to modify the data model, please see [Django documentation](https://docs.djangoproject.com/) for more information. If your web application user enables access to their Bing Ads accounts with a Microsoft account, a refresh token is stored in the SQL Lite database on your web server.
 

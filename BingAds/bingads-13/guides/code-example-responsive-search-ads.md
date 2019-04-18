@@ -17,18 +17,15 @@ dev_langs:
 # Responsive Search Ads Code Example
 This example demonstrates how to setup Responsive Search Ads for a search advertising campaign.
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/ResponsiveSearchAds.cs)]
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/ResponsiveSearchAds.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v12/ResponsiveSearchAds.java)]
+[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/ResponsiveSearchAds.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ResponsiveSearchAds.php)]
+[!code-php[Main](../../../BingAds-PHP-SDK/samples/V13/ResponsiveSearchAds.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/responsive_search_ads.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v13/responsive_search_ads.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

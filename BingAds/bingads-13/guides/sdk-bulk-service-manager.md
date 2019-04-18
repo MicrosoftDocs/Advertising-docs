@@ -17,9 +17,6 @@ dev_langs:
 Take advantage of the [Bulk service](../bulk-service/bulk-service-reference.md) to efficiently manage ad groups and ads for all campaigns in an account. The Bing Ads .NET, Java, and Python SDKs provide classes to accelerate productivity for downloading and uploading bulk records. For example the *BulkServiceManager* will submit your download request to the [Bulk service](../bulk-service/bulk-service-reference.md), poll the service until completed, and download the file to your local directory. The *BulkServiceManager* also handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using AuthorizationData](sdk-authentication.md#authorization-data) and the [Bulk Requests](code-example-bulk-requests.md) code example.
 
 > [!NOTE]
-> Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
-> [!NOTE]
 > The *BulkServiceManager* is only available with the Bing Ads .NET, Java, and Python SDKs. Whether or not you use an SDK, you can use the [Bulk service](../bulk-service/bulk-service-reference.md) directly. For more information, see [Bulk Download and Upload](bulk-download-upload.md). 
 
 ## <a name="bulk-reader-writer"></a>Bulk File Reader and Writer

@@ -18,9 +18,6 @@ You must first register an application and take note of the client ID (registere
 
 You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples).
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="code"></a>Code Walkthrough
 
 1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](get-started.md#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
