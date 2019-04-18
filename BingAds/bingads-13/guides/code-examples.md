@@ -12,9 +12,6 @@ description: Discover code examples in C#, Java, PHP, and Python.
 # Bing Ads Code Examples
 Get started developing Bing Ads applications in any programming language which supports web services. Samples are provided for C#, Java, Php, and Python. 
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
 |Title|Description|
