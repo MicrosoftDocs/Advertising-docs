@@ -33,7 +33,7 @@ Defines the criteria to use to filter the campaign performance report data.
 |<a name="addistribution"></a>AdDistribution|The report will include data for only the specified distribution medium. For example, you can use the filter to include data for only search ads.<br/><br/>You can specify one or more distribution mediums.|[AdDistributionReportFilter](addistributionreportfilter.md)|
 |<a name="deviceos"></a>DeviceOS|The report will include data where the ad is displayed on the specified device operating systems. For example, you may use the filter to include data for only ads displayed on Windows devices.|[DeviceOSReportFilter](deviceosreportfilter.md)|
 |<a name="devicetype"></a>DeviceType|The report will include data where the ad is displayed on the specified device types. For example, you may use the filter to include data for only ads displayed on smartphones.<br/><br/>You may specify one or more device types.|[DeviceTypeReportFilter](devicetypereportfilter.md)|
-|<a name="status"></a>Status|The report will include data for only the specified ad group status values. For example, you can use the filter to include data for only active ad groups.<br/><br/>You can specify one or more status values.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
+|<a name="status"></a>Status|The report will include data for only the specified campaign status values. For example, you can use the filter to include data for only active campaigns.<br/><br/>You can specify one or more status values.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 
 ## Requirements
 Service: [ReportingService.svc v13](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v13/ReportingService.svc)  

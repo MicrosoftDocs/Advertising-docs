@@ -21,9 +21,6 @@ You'll also need your production [developer token](get-started.md#get-developer-
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
 1. Open the Eclipse development environment.

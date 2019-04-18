@@ -18,9 +18,6 @@ You must first register an application and take note of the Application Id that 
 
 If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 ## <a name="code"></a>Code Walkthrough
 
 1. Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](get-started-php.md#installation) the Bing Ads PHP SDK e.g., type `composer require microsoft/bingads`. You should now see the vendor directory which contains both the SDK source and samples. 

@@ -199,7 +199,7 @@ When the [ItemChanged](#itemchanged) field's value is Campaign, change history f
 |Monthly budget|Refers to the campaign monthly budget amount.|
 |Name|Refers to the name of the campaign that was changed.|
 |Negative keyword|Refers to a negative keyword associated with the campaign.<br/><br/>Updates to negative keywords are reported as a Removed and Added change in two rows. The Removed record corresponds to the old value, and the Added record reflects the new value.|
-|Pause status|Refers to the any of the paused states of the campaign.<br/><br/>Possible values in the [OldValue](#oldvalue)[NewValue](#newvalue) columns are Budget Paused and Not paused.|
+|Pause status|Refers to the any of the paused states of the campaign.<br/><br/>Possible values in the [OldValue](#oldvalue) and [NewValue](#newvalue) columns are "Budget Paused", "Budget and user Paused", "Not paused", and "Paused".|
 |Product flter|Refers to the product scope or condition of a Bing Shopping campaign. A Bing Shopping campaign can have multiple product conditions, and each condition is represented separately in its own report row.|
 |Site Exclusion|Refers to the campaign's negative site URLs. A campaign can have multiple site exclusions, and each site exclusion is represented separately in its own report row.|
 |Start date|For internal use.|

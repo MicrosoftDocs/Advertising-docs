@@ -17,18 +17,15 @@ dev_langs:
 # Ad Extensions Code Example
 This example demonstrates how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews. 
 
-> [!NOTE]
-> The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
-
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/AdExtensions.cs)]
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/AdExtensions.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v12/AdExtensions.java)]
+[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/AdExtensions.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/AdExtensions.php)]
+[!code-php[Main](../../../BingAds-PHP-SDK/samples/V13/AdExtensions.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/ad_extensions.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v13/ad_extensions.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  
