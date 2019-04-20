@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ProductMatchCountReportRequest.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ProductMatchCountReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [ProductMatchCountReportRequest](productmatchcountreportrequest.md).
 

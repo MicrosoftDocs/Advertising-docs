@@ -8,9 +8,6 @@ description: Describes the Campaign Action Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Campaign Action Ad Extension Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and an [Action Ad Extension](action-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or action ad extension, use the [Campaign](campaign.md) or [Action Ad Extension](action-ad-extension.md) record.
 

@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for the Bing Ads Customer Billing API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Customer Billing Service Reference
 The Customer Billing [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to get billing documents, insertion orders, and monthly spend for an account.
 

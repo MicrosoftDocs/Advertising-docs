@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Contains campaign filter criteria and a nested list of ad group and keyword level filter criteria for traffic estimates.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # CampaignEstimator Data Object - Ad Insight
 Contains campaign filter criteria and a nested list of ad group and keyword level filter criteria for traffic estimates.
 

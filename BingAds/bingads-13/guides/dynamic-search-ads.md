@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup Dynamic Search ads with the Bing Ads API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Dynamic Search Ads
 Dynamic search ads provide a streamlined, low-touch way to make sure customers searching on the Bing Network find your products or services.
 

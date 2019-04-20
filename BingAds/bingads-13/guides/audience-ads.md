@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup Audience ads with the Bing Ads API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Audience Ads
 Microsoft Audience Ads appear on the [Microsoft Audience Network](https://advertise.bingads.microsoft.com/en-us/solutions/microsoft-audience-network). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
 

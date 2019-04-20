@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the bid match type values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # BidMatchTypeReportFilter Value Set - Reporting
 Defines the bid match type values that you can use to filter the report data. These values are also used as column values in reports that include bid match type, such as the keyword performance report.
 

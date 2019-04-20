@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ImageAdExtension Data Object - Campaign Management
 Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.
 

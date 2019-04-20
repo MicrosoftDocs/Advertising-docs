@@ -8,9 +8,6 @@ description: Describes the Campaign DayTime Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Campaign DayTime Criterion Record - Bulk
 Defines a campaign day and time criterion that can be uploaded and downloaded in a bulk file.
 

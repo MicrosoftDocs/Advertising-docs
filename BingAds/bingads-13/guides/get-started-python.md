@@ -8,9 +8,6 @@ description: Install the Bing Ads Python SDK and discover code examples.
 dev_langs:
   - python
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Get Started Using Python with Bing Ads Services
 To get started developing Bing Ads applications with Python, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-python.md) or [Desktop](walkthrough-desktop-application-python.md) application. 
 
