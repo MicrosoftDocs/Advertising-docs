@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for the Bing Ads Bulk API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Bulk Service Reference
 The Bulk [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to download and upload campaign entity data in the background.
 

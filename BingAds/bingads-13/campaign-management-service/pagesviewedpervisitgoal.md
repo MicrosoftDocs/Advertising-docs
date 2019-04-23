@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a pages viewed per visit conversion goal.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # PagesViewedPerVisitGoal Data Object - Campaign Management
 Defines a pages viewed per visit conversion goal. Use this type of goal to count every time someone visits more than a specified number of pages on your website as a conversion. For example you can count a conversion if someone viewed more than 5 pages on a support site or product catalog.
 

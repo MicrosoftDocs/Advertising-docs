@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Discover code examples in C#, Java, PHP, and Python.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Bing Ads Code Examples
 Get started developing Bing Ads applications in any programming language which supports web services. Samples are provided for C#, Java, Php, and Python. 
 

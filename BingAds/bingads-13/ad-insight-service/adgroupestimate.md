@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Contains a list of suggested keywords for the ad group with minimum and maximum traffic estimates.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AdGroupEstimate Data Object - Ad Insight
 Contains a list of suggested keywords for the ad group with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 

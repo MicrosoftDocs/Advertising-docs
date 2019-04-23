@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Service operations reference for the CampaignManagement service.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Campaign Management Service Operations
 The Campaign Management service defines the following service operations.
 

@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Install the Bing Ads PHP SDK and discover code examples.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Get Started Using PHP with Bing Ads Services
 To get started developing Bing Ads applications with PHP, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-php.md) or [Desktop](walkthrough-desktop-application-php.md) application. The examples have been developed with the Bing Ads PHP [SDK](client-libraries.md) and run with [PHP](http://php.net/) 7.0.6. You should be able to use other versions of PHP (greater than 5.6), packages, and operating systems. However, certain parts of the code and configuration might have to be changed. For information about how to set up a PHP development environment to use web services, see the documentation for your tools. The SOAP and OpenSSL extensions should also be enabled in the PHP.ini file. Enable the curl extension to run the bulk upload samples.
 

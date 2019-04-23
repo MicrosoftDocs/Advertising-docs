@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Keyword Best Position Bid fields in a Bulk file.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Keyword Best Position Bid Record - Bulk
 Defines a keyword's estimated best position bid that can be downloaded in a bulk file.
 

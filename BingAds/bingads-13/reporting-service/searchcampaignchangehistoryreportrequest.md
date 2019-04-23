@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a change history report request.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # SearchCampaignChangeHistoryReportRequest Data Object - Reporting
 Defines a change history report request. Use this report to discover when changes to an account were made, as well as which user made the changes.
 

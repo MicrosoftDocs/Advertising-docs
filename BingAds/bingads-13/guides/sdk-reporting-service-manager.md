@@ -10,9 +10,6 @@ dev_langs:
   - java
   - python
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Reporting Service Manager
 The Bing Ads .NET, Java, and Python SDKs provide classes to accelerate productivity for downloading performance report records. For example the *ReportingServiceManager* will submit your download request to the [Reporting service](../reporting-service/reporting-service-reference.md), poll the service until completed, and download the file to your local directory. The *ReportingServiceManager* also handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using AuthorizationData](sdk-authentication.md#authorization-data) and the [Report Requests](code-example-report-requests.md) code example.
 

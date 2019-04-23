@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # BatchErrorCollection Data Object - Campaign Management
 Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.
 

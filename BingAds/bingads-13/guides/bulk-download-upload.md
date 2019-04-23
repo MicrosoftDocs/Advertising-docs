@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Download and upload high volume campaign settings asynchronously in the background.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Bulk Download and Upload
 With the [bulk service](../bulk-service/bulk-service-reference.md) you can download and upload campaign settings asynchronously in the background. The Bulk service is recommended for managing large scale data, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. For some entities you may also download bid suggestions and quality score data. Each record can be uploaded successfully whether or not other records in the same file contain errors. For information about the schema used for the download and upload file, including details about which entities, bid suggestions, and quality score data are available, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
 

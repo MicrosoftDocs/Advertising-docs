@@ -8,9 +8,6 @@ description: Create a desktop application using the Bing Ads .NET SDK.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Walkthrough: Bing Ads Desktop Application in C# #
 This example C# console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 

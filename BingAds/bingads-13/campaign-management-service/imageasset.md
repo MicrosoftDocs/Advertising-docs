@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Applies crop settings to stored image media for a specific aspect ratio.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ImageAsset Data Object - Campaign Management
 Applies crop settings to stored image media for a specific aspect ratio. 
 

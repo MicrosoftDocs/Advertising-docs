@@ -8,9 +8,6 @@ description: Describes the Ad Group Negative Remarketing List Association fields
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Ad Group Negative Remarketing List Association Record - Bulk
 Defines an Ad Group Negative Remarketing List Association that can be uploaded and downloaded in a bulk file. 
 

@@ -12,7 +12,14 @@ See below for information about changes to Bing Ads API Version 12 by month.
 ## <a name="april2019"></a>April 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [New Production OAuth Endpoint](#oauth-april2019)  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-april2019)  
+
+## <a name="oauth-april2019"></a>New Production OAuth Endpoint
+The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
+
+> [!IMPORTANT]
+> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Bing Ads users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
 
 ### <a name="sdk-april2019"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated with support for version 13. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.1) SDK version 12.13.1. 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users of a specific gender.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # GenderCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users of a specific gender.
 

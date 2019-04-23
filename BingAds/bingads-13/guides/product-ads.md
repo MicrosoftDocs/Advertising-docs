@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup Product ads with the Bing Ads API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Product Ads
 A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text.
 

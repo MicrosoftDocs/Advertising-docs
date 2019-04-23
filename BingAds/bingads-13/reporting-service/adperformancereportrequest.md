@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad performance report request.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AdPerformanceReportRequest Data Object - Reporting
 Defines an ad performance report request. Use this report to help you determine which ads lead to clicks and conversions, and which are not performing. Having underperforming ads in your account can pull down the quality of your campaigns.
 

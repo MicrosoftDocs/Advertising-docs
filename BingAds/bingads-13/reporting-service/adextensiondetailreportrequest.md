@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension detail report request.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AdExtensionDetailReportRequest Data Object - Reporting
 Defines an ad extension detail report request. Use this report to discover the effectiveness of individual ad extension items, for example, each link of a sitelink extension.
 
