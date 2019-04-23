@@ -8,9 +8,6 @@ description: Describes the Campaign Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Campaign Label Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or label, use the [Campaign](campaign.md) or [Label](label.md) record.
 

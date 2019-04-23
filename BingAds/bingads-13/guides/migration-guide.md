@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Get details about migrating to Bing Ads API version 13.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Migrate to Version 13
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 13, version 12 is deprecated and will sunset by October 31, 2019. 
@@ -20,8 +17,8 @@ The [Microsoft identity platform endpoint](authentication-oauth-identity-platfor
 
 Although migrating from the [Live Connect](authentication-oauth-live-connect.md) endpoint to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) is independent of migration from version 12 to 13, we understand that many developers would like to upgrade during the same sprint.  
 
-> [!WARNING]
-> The Microsoft identity platform endpoint implementation for Bing Ads users is still in beta. If you get stuck on any of the steps below, please reach out via the [developer forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=BingAds) or contact [support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support) for help. In the meantime you can use the [Live Connect](authentication-oauth-live-connect.md) endpoint. Long term though, the Live Connect implementation is not the recommended approach. 
+> [!IMPORTANT]
+> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Bing Ads users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
 
 ## <a name="adinsight"></a>Ad Insight
 For comprehensive version 13 service reference documentation see [Ad Insight](../ad-insight-service/ad-insight-service-reference.md).  

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # GetAuctionInsightData Service Operation - Ad Insight
 Gets auction insight data for an account, campaigns, ad groups, or keywords.
 

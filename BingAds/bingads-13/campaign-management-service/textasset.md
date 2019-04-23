@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: A text asset with a unique Bing Ads identifier that can be reused across multiple ads.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # TextAsset Data Object - Campaign Management
 A text asset with a unique Bing Ads identifier that can be reused across multiple ads. For example, see responsive search ad [Descriptions](responsivesearchad.md#descriptions) and [Headlines](responsivesearchad.md#headlines).
 

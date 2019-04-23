@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the account status values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AccountStatusReportFilter Value Set - Reporting
 Defines the account status values that you can use to filter the report data. These values are also used as column values in reports that include account status, such as the account performance report.
 

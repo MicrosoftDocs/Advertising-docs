@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a custom event conversion goal.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # EventGoal Data Object - Campaign Management
 Defines a custom event conversion goal. Use this type of goal to count every time someone completes a specific action such as, subscribing to newsletter or downloading white paper, as a conversion. 
 

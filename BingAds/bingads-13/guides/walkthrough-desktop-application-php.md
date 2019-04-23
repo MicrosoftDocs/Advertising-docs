@@ -8,9 +8,6 @@ description: Create a desktop application using the Bing Ads PHP SDK.
 dev_langs:
   - php
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Walkthrough: Bing Ads Desktop Application in PHP
 This guide describes how you can download PHP samples for Bing Ads API from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. 
 

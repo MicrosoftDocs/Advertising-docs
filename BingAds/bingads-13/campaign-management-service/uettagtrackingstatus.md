@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible system-determined status values of a UET tag.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # UetTagTrackingStatus Value Set - Campaign Management
 Defines the possible system-determined status values of a UET tag. These are the status values that can be set by the system, for example the system sets the status to *Unverified* if the UET tag has not yet been verified. 
 

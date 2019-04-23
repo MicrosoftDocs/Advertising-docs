@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that can be used to manage changes for an approved insertion order.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # InsertionOrderPendingChanges Data Object - Customer Billing
 Defines an object that can be used to manage changes for an approved insertion order.
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a DSA category performance report request.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # DSACategoryPerformanceReportRequest Data Object - Reporting
 Defines a DSA category performance report request. Use this report to check the performance of your existing category targets or to find new categories worth targeting.
 

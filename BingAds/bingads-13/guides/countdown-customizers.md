@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Add a countdown to an event by day, hour, and minute. 
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Countdown Customizers
 Countdown customizers let you easily add a countdown -- by day, hour, and then minute -- to an event in expanded text ads and responsive search ads. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
 

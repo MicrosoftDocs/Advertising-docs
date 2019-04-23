@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # GetHistoricalSearchCount Service Operation - Ad Insight
 Gets the number of times the normalized term was used in a search during the specified time period. The results are aggregated by device type.
 

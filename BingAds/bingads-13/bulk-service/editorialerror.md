@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an error object that identifies the entity with the batch of entities that failed editorial review.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # EditorialError Data Object - Bulk
 Defines an error object that identifies the entity with the batch of entities that failed editorial review.
 

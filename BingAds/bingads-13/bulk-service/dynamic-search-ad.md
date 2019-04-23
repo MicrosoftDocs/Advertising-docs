@@ -8,9 +8,6 @@ description: Describes the Dynamic Search Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Dynamic Search Ad Record - Bulk
 Defines a dynamic search ad that can be downloaded and uploaded in a bulk file.
 

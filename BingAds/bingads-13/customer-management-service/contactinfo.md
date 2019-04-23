@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the contact information for a user.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ContactInfo Data Object - Customer Management
 Defines the contact information for a user.
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the ascending or descending sort order of values within the specified report column.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # SortOrder Value Set - Reporting
 Defines the ascending or descending sort order of values within the specified report column.
 

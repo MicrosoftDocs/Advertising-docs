@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines possible values for an account level setting that determines whether to append or replace the supported UTM tracking codes.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AutoTagType Value Set - Customer Management
 Defines possible values for an account level setting that determines whether to append or replace the supported UTM tracking codes.
 

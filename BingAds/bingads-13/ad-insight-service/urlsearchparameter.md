@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The URL search parameter that you can use as a seed for new keyword ideas.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # UrlSearchParameter Data Object - Ad Insight
 The URL search parameter that you can use as a seed for new keyword ideas.
 

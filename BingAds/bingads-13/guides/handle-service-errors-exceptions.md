@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Learn about error handling and troubleshooting your application.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Handling Service Errors and Exceptions
 This article describes details on error handling and troubleshooting your application. 
 

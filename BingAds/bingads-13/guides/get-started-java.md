@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Install the Bing Ads Java SDK and discover code examples.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Get Started Using Java with Bing Ads Services
 To get started developing Bing Ads applications with Java, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application. 
 

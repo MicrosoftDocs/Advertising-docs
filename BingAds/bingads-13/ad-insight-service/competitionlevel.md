@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # CompetitionLevel Value Set - Ad Insight
 Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads. 
 

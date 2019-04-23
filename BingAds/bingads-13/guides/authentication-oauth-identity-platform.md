@@ -6,19 +6,13 @@ author: "eric-urban"
 ms.author: "eur"
 description: Authenticate for Bing Ads API using the Microsoft identity platform endpoint for developers.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Authentication with the Microsoft identity platform endpoint for developers
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. How can you get an access token? Bing Ads leverages the Microsoft identity platform for developers and the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Bing Ads user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. 
 
 The [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) allows work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com.  
 
 > [!IMPORTANT]
-> You can use the Microsoft identity platform endpoint for personal MSA accounts now, but Azure AD work or school accounts are not yet available for all customers. To join the work or school account pilot, please contact your account manager.
-
-> [!WARNING]
-> The Microsoft identity platform endpoint implementation for Bing Ads users is available in beta. If you get stuck on any of the steps below, please reach out via the [developer forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=BingAds) or contact [support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support) for help. In the meantime you can use the [Live Connect](authentication-oauth-live-connect.md) endpoint. Long term though, the Live Connect implementation is not the recommended approach.  
+> You can use the Microsoft identity platform endpoint for personal MSA accounts now, but Azure AD work or school accounts are not yet available for all customers. To join the work or school account pilot, please contact your account manager.  
 
 > [!NOTE]
 > A developer token is also required for authentication. Customer and account identifiers are also required for most service operations. For more information, see [Get Started With the Bing Ads API](get-started.md). To authenticate a Bing Ads user in sandbox, see [Get Sandbox Access](sandbox.md#access).  

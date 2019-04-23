@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: An insertion order is a contract that establishes the maximum amount you will spend on your account over a specified period of time.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # InsertionOrder Data Object - Customer Billing
 An insertion order is a contract that establishes the maximum amount you will spend on your account over a specified period of time. If you have monthly invoice billing set up for your account, you need to have an active insertion order for your ads to be eligible for delivery. You still control your spend using your campaign budget, and you will only be charged for what you accrue. For example, if you had a month-long insertion order for $5,000 and accrued only $4,500 in charges over the billing period, then we will only deduct $4,500 from your insertion order budget.
 

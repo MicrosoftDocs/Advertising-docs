@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The highest price that you want to pay each time someone clicks your ad.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Bid Data Object - Campaign Management
 The highest price that you want to pay each time someone clicks your ad.
 

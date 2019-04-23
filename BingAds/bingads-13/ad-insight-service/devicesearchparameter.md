@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The device search parameter filter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # DeviceSearchParameter Data Object - Ad Insight
 The device search parameter filter that you can include when requesting keyword ideas.
 

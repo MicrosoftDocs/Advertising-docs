@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Find answers to some frequently asked questions about the Bing Ads API.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bing Ads API.
 

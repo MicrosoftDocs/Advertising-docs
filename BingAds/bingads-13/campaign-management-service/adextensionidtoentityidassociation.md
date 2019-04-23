@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that associates an ad extension to a supported entity, for example ad group or campaign.
 ---
-> [!IMPORTANT]
-> The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AdExtensionIdToEntityIdAssociation Data Object - Campaign Management
 Defines an object that associates an ad extension to a supported entity, for example ad group or campaign.
 
