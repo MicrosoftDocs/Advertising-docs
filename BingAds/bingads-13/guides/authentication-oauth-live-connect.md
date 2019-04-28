@@ -7,22 +7,22 @@ ms.author: "eur"
 description: Authenticate for Bing Ads API using OAuth.
 ---
 # Authentication with the Live Connect endpoint
-Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. How can you get an access token? Bing Ads leverages the Microsoft identity platform for developers and the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Bing Ads user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. 
+Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. 
 
 > [!NOTE]
-> A developer token is also required for authentication. Customer and account identifiers are also required for most service operations. For more information, see [Get Started With the Bing Ads API](get-started.md). To authenticate a Bing Ads user in sandbox, see [Get Sandbox Access](sandbox.md#access). 
+> A developer token is also required for authentication. Customer and account identifiers are also required for most service operations. For more information, see [Get Started With the Bing Ads API](get-started.md). To authenticate a Microsoft Advertising user in sandbox, see [Get Sandbox Access](sandbox.md#access). 
 
 > [!IMPORTANT]
-> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Bing Ads users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).   
+> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).   
 
 > [!TIP]
-> To get access and refresh tokens for your Bing Ads user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
+> To get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
 > 
 > If you are using one of the Bing Ads SDKs the tokens will be refreshed automatically. For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).  
 
 1. [Register](#registerapplication) your application.
 
-1. [Request user consent](#request-userconsent) for your application to manage their Bing Ads accounts.  
+1. [Request user consent](#request-userconsent) for your application to manage their Microsoft Advertising accounts.  
 
 1. [Request an access token](#request-accesstoken)  
 
@@ -33,7 +33,7 @@ Consider the user that you want to sign in e.g., example@contoso.com. The Bing A
 1. [Register](#registerapplication) your application.
 
 ## <a name="registerapplication"></a>Register Your Application
-Before you can manage authentication for users of your Bing Ads application, you must register your application and get the corresponding client ID and client secret.  
+Before you can manage authentication for users of your Bing Ads API application, you must register your application and get the corresponding client ID and client secret.  
 
 1. Navigate to the Microsoft identity platform for developers in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page. You can login using either a personal Microsoft Account or a Work or School Account.
 
@@ -56,7 +56,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 1. For web applications, select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description**, select any option for **Expires** and choose **Add**. Copy the client secret value before leaving the page. You will use it as the `client_secret` when [requesting access tokens](#request-accesstoken). 
 
 ## <a name="request-userconsent"></a>Request User Consent
-Each user must be prompted and provide consent through a web browser control at least once for your application to manage their Bing Ads accounts. 
+Each user must be prompted and provide consent through a web browser control at least once for your application to manage their Microsoft Advertising accounts. 
 
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.1). The authorization code flow begins with the client directing the user to the `/authorize` endpoint. In this request, the client indicates the permissions it needs to acquire from the user:
 
@@ -75,14 +75,14 @@ The following table describes parameters that you should include in the request.
 |`display`|optional|The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".|  
 |`response_type`|required|Must include `code` for the authorization code flow.|
 |`redirect_uri`|required|The redirect_uri of your app, where authentication responses can be sent and received by your app. It must exactly match one of the redirect_uris you [registered](#registerapplication) in the portal, except it must be url encoded. For native & mobile apps, you should use the default value of `https://login.live.com/oauth20_desktop.srf`.|
-|`scope`|required|A space-separated list of scopes that you want the user to consent to. Be sure to include `bingads.manage` to prompt the user for Bing Ads access.|
+|`scope`|required|A space-separated list of scopes that you want the user to consent to. Be sure to include `bingads.manage` to prompt the user for Microsoft Advertising access.|
 |`state`|recommended|A value included in the request that will also be returned in the token response. It can be a string of any content that you wish. A randomly generated unique value is typically used for [preventing cross-site request forgery attacks](https://tools.ietf.org/html/rfc6749#section-10.12). The value can also encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.|
 
 At this point, the user will be asked to enter their credentials and complete the authentication. The authorization endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user has not consented to any of those permissions, it will ask the user to consent to the required permissions. 
 
-Once the user authenticates and grants consent, the authorization endpoint will return a response to your app at the indicated `redirect_uri`, using the method specified in the `response_mode` parameter. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://login.live.com/oauth20_desktop.srf?code=CodeGoesHere&state=ClientStateGoesHere*. Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
+Once the user authenticates and grants consent, the authorization endpoint will return a response to your app at the indicated `redirect_uri`, using the method specified in the `response_mode` parameter. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their Microsoft Advertising accounts: *https://login.live.com/oauth20_desktop.srf?code=CodeGoesHere&state=ClientStateGoesHere*. Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
 
-If the user granted your application permissions to manage their Bing Ads accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 ## <a name="request-accesstoken"></a>Request an access token
 
@@ -167,7 +167,7 @@ The following table describes parameters that you should include in the request.
 
 Although refresh tokens are not revoked when used to acquire new access tokens, you are expected to discard the old refresh token. The [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#section-6) says: "The authorization server MAY issue a new refresh token, in which case the client MUST discard the old refresh token and replace it with the new refresh token. The authorization server MAY revoke the old refresh token after issuing a new refresh token to the client."  
 
-Refresh tokens are, and always will be, completely opaque to your application. They are long-lived e.g., 90 days for public clients, but the app should not be written to expect that a refresh token will last for any period of time. Refresh tokens can be invalidated at any moment, and the only way for an app to know if a refresh token is valid is to attempt to redeem it by making a token request. Even if you continuously refresh the token on the same device with the most recent refresh token, you should expect to start again and [request user consent](#request-userconsent) if for example, the Bing Ads user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. At any time without prior warning Microsoft may determine that user consent should again be granted. In that case, the authorization service would return an invalid grant error as shown in the following example.
+Refresh tokens are, and always will be, completely opaque to your application. They are long-lived e.g., 90 days for public clients, but the app should not be written to expect that a refresh token will last for any period of time. Refresh tokens can be invalidated at any moment, and the only way for an app to know if a refresh token is valid is to attempt to redeem it by making a token request. Even if you continuously refresh the token on the same device with the most recent refresh token, you should expect to start again and [request user consent](#request-userconsent) if for example, the Microsoft Advertising user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. At any time without prior warning Microsoft may determine that user consent should again be granted. In that case, the authorization service would return an invalid grant error as shown in the following example.
 
 ```json
 {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}
@@ -182,5 +182,5 @@ Please keep in mind that public refresh tokens are only bound to the granted dev
 You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. 
 
 ## See Also
-[Bing Ads Web Service Addresses](web-service-addresses.md)
+[Bing Ads API Web Service Addresses](web-service-addresses.md)
 

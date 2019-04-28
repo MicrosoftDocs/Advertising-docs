@@ -4,12 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a Bing Merchant Center store.
+description: Defines a Microsoft Merchant Center store.
 ---
 # BMCStore Data Object - Campaign Management
-Defines a Bing Merchant Center store.
+Defines a Microsoft Merchant Center store.
 
-Elements of this object are defined in the Bing Merchant Center store, and read-only in Bing Ads.  Values of elements do not restrict Bing Ads features. For example, a Bing Shopping campaign and product ad may be added whether the *IsActive* element is set to true or false.
+Elements of this object are defined in the Microsoft Merchant Center store, and read-only in Microsoft Advertising.  Values of elements do not restrict Microsoft Advertising features. For example, a Microsoft Shopping campaign and product ad may be added whether the *IsActive* element is set to true or false.
 
 ## Syntax
 ```xml
@@ -30,11 +30,11 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="hascatalog"></a>HasCatalog|Value will be true if the store has a catalog of items, and otherwise the value is false.|**boolean**|
-|<a name="id"></a>Id|The unique identifier for the  Bing Merchant Center store.|**long**|
+|<a name="id"></a>Id|The unique identifier for the  Microsoft Merchant Center store.|**long**|
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
-|<a name="name"></a>Name|Defines the name of the store as defined in the Bing Merchant Center.|**string**|
-|<a name="subtype"></a>SubType|The Bing Merchant Center store sub type.<br/><br/>This element is only applicable for Bing Merchant Center stores of subtype *CoOp*, and will be nil for all other stores. If the subtype is set to *CoOp* then you have linked from a partner's store. When your partner retrieves the same store via [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) the subtype would be nil, since from their perspective the store is not restricted to cooperative bidding.|[BMCStoreSubType](bmcstoresubtype.md)|
+|<a name="name"></a>Name|Defines the name of the store as defined in the Microsoft Merchant Center.|**string**|
+|<a name="subtype"></a>SubType|The Microsoft Merchant Center store sub type.<br/><br/>This element is only applicable for Microsoft Merchant Center stores of subtype *CoOp*, and will be nil for all other stores. If the subtype is set to *CoOp* then you have linked from a partner's store. When your partner retrieves the same store via [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) the subtype would be nil, since from their perspective the store is not restricted to cooperative bidding.|[BMCStoreSubType](bmcstoresubtype.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

@@ -205,7 +205,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
@@ -331,7 +331,7 @@ The system generated identifier of the ad.
 ## <a name="images"></a>Images
 Because audience ads are responsive, you can create multiple image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.
 
-You are only required to provide a landscape image asset i.e., this field must contain one image asset with [subType](#images-subtype) set to LandscapeImageMedia. The recommended dimensions for the LandscapeImageMedia are 1200 width x 628 height. Optionally you can include additional asset links, i.e., one image asset for each supported sub type. For any image asset sub types that you do not explicitly set, Bing Ads will automatically create image asset links by cropping the LandscapeImageMedia. 
+You are only required to provide a landscape image asset i.e., this field must contain one image asset with [subType](#images-subtype) set to LandscapeImageMedia. The recommended dimensions for the LandscapeImageMedia are 1200 width x 628 height. Optionally you can include additional asset links, i.e., one image asset for each supported sub type. For any image asset sub types that you do not explicitly set, Microsoft Advertising will automatically create image asset links by cropping the LandscapeImageMedia. 
 
 > [!NOTE]
 > If this field is set (not empty), then [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid) are both ignored. 
@@ -414,9 +414,9 @@ The image assets are represented in the bulk file as a JSON string. Seven images
 > In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""},{""id"":1234567890000,""subType"":""SquareImageMedia"",""cropX"":286,""cropY"":0,""cropWidth"":628,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia169X100"",""cropX"":70,""cropY"":0,""cropWidth"":1061,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia93X100"",""cropX"":308,""cropY"":0,""cropWidth"":584,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia15X10"",""cropX"":129,""cropY"":0,""cropWidth"":942,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia155X100"",""cropX"":114,""cropY"":0,""cropWidth"":973,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia133X100"",""cropX"":183,""cropY"":0,""cropWidth"":835,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia178X100"",""cropX"":41,""cropY"":0,""cropWidth"":1118,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia172X100"",""cropX"":60,""cropY"":0,""cropWidth"":1080,""cropHeight"":628}]"*.  
 
 Given the upload response JSON example above, please take note of the following:
-- The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad. 
+- The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Microsoft Advertising automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad. 
 - Because the ad in this example was created without crop settings for the LandscapeImageMedia image asset sub type, all image assets are cropped except for the original landscape image. 
-- Whether or not the landscape image has its own crop settings, Bing Ads uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
+- Whether or not the landscape image has its own crop settings, Microsoft Advertising uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
 - Although in Bing Ads API version 12 you could use the [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field. 
 
 ### <a name="images-cropheight"></a>cropHeight
@@ -432,9 +432,9 @@ Starting from the lower left corner of image asset source, this is the number of
 Starting from the lower left corner of image asset source, this is the number of pixels to skip upwards on the y-axis before applying the cropHeight.
 
 ### <a name="images-id"></a>id
-The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads account. 
+The `id` attribute is a unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account. 
 
-The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Bing Ads account. The identifier of image asset with [SubType](#images-subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
+The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Microsoft Advertising account. The identifier of image asset with [SubType](#images-subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Microsoft Advertising automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
 
 You can create media for responsive ads via the [AddMedia](../campaign-management-service/addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#images-subtype).
 
@@ -568,8 +568,8 @@ The aspect ratio of the stored image media can vary, so long as the image asset 
 > [!NOTE]
 > Although in Bing Ads API version 12 you can use the [Landscape Image Media Id](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field.
 
-**Add:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid).  
-**Update:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid). If no value is set for the update, this setting is not changed.     
+**Add:** Optional. If [Images](#images) is set, this field is ignored and Microsoft Advertising will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Microsoft Advertising will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid).  
+**Update:** Optional. If [Images](#images) is set, this field is ignored and Microsoft Advertising will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Microsoft Advertising will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid). If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="squarelogomediaid"></a>Square Logo Media Id
@@ -597,7 +597,7 @@ The text cannot contain the newline (\n) character.
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for the URL specified with FinalUrls.
 
-The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
 - Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
@@ -605,7 +605,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    

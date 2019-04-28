@@ -12,12 +12,12 @@ Labels let you organize campaigns, ad groups, ads, and keywords into groups base
 With labels, you could:
 * Run a report to compare "Holiday 2016" and "Holiday 2017" performance, across campaigns, ad groups, ads, and keywords.
 * Run a report to compare ads and keywords that include brand names against ads and keywords that use generic terms.
-* Quickly filter and view performance for keywords labeled "Suggested by Bing Ads."
+* Quickly filter and view performance for keywords labeled "Suggested by Microsoft Advertising."
 * Create an automated rule to change bids on keywords labeled "CPA bidding."
 
 The important thing is that it's all up to you. You decide what your labels mean and how to apply them to your campaigns, ad groups, ads, and keywords.
 
-![Labels in the Bing Ads Web Application](media/labels-bing-ads-web-application.png "Labels in the Bing Ads Web Application")
+![Labels in the Microsoft Advertising Web Application](media/labels-bing-ads-web-application.png "Labels in the Microsoft Advertising Web Application")
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
 You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](bulk-download-upload.md) to create, get, update, and delete both labels and label associations. 

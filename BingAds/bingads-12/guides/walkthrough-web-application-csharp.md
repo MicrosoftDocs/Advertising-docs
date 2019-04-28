@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Web Application in C#"
+title: "Walkthrough: Bing Ads API Web Application in C#"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a web application using the Bing Ads .NET SDK.
 dev_langs:
   - csharp
 ---
-# Walkthrough: Bing Ads Web Application in C# #
+# Walkthrough: Bing Ads API Web Application in C#
 This example C# web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -171,7 +171,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
                 try
                 {
                     // If there is already an authenticated Microsoft account during this HTTP session, 
-                    // go ahead and call Bing Ads service operations.
+                    // go ahead and call Bing Ads API service operations.
     
                     if (Session["auth"] != null)
                     {
@@ -193,7 +193,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
                     // cross site request forgery (CSRF). 
                     oAuthWebAuthCodeGrant.State = ClientState;
     
-                    // When calling Bing Ads services with ServiceClient or BulkServiceManager, each will refresh your access token 
+                    // When calling Bing Ads API service operations with ServiceClient or BulkServiceManager, each will refresh your access token 
                     // automatically if they detect the AuthenticationTokenExpired (109) error code. 
                     // As a best practice you should always use the most recent provided refresh token.
                     // Save the refresh token whenever new OAuth tokens are received by subscribing to the NewOAuthTokensReceived event handler. 
@@ -511,6 +511,6 @@ var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, ne
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

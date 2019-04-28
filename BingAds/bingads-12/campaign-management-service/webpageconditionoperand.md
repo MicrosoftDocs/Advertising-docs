@@ -28,7 +28,7 @@ Defines the possible operand values that can be applied to the argument of a web
 |Value|Description|
 |-----------|---------------|
 |<a name="category"></a>Category|Set a condition that the [argument](webpagecondition.md#argument) must match one of the categories that Bing thinks is applicable for your site.|
-|<a name="customlabel"></a>CustomLabel|Set a condition that the [argument](webpagecondition.md#argument) must match any of your page feed custom labels.<br/><br/>Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Bing Ads web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.bingads.microsoft.com/#apex/3/en/60010/0) help article.|
+|<a name="customlabel"></a>CustomLabel|Set a condition that the [argument](webpagecondition.md#argument) must match any of your page feed custom labels.<br/><br/>Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Microsoft Advertising web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.ads.microsoft.com/#apex/3/en/60010/0) help article.|
 |<a name="pagecontent"></a>PageContent|Set a condition that the [argument](webpagecondition.md#argument) must match any of your site's content that is indexed by Bing.|
 |<a name="pagetitle"></a>PageTitle|Set a condition that the [argument](webpagecondition.md#argument) must match any of your site's page titles that are indexed by Bing.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|

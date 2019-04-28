@@ -12,7 +12,7 @@ dev_langs:
 Defines an audience that is similar to one of your remarketing lists.
 
 > [!NOTE]
-> Bulk upload is not supported. Bing Ads will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
+> Bulk upload is not supported. Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
@@ -74,7 +74,7 @@ For a *Similar Remarketing List* record, the following attribute fields are avai
 - [Supported Campaign Types](#supportedcampaigntypes)
 
 ## <a name="audience"></a>Audience
-The name of the similar remarketing list is set by Bing Ads. The name can contain a maximum of 128 characters.
+The name of the similar remarketing list is set by Microsoft Advertising. The name can contain a maximum of 128 characters.
 
 The name can contain a maximum of 128 characters
 
@@ -85,7 +85,7 @@ The name can contain a maximum of 128 characters
 ## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
-The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 300 people before Microsoft Advertising will use it for optimizations.
 
 The audience network size of a similar audience can differ from the audience network size of the [source](#sourceid) remarketing list.
 
@@ -96,7 +96,7 @@ The audience network size of a similar audience can differ from the audience net
 ## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
-The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 1,000 people before Microsoft Advertising will use it for optimizations.
 
 The audience search size of a similar audience can differ from the audience search size of the [source](#sourceid) remarketing list.
 
@@ -109,7 +109,7 @@ This property will be nil or empty if the UET tag associated with the [source](#
 **Delete:** Not supported  
 
 ## <a name="id"></a>Id
-The Bing Ads identifier of the similar audience.
+The Microsoft Advertising identifier of the similar audience.
 
 **Add:** Not supported  
 **Update:** Not supported    
@@ -126,7 +126,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Not supported  
 
 ## <a name="parentid"></a>Parent Id
-The Bing Ads identifier of the account or customer. 
+The Microsoft Advertising identifier of the account or customer. 
 
 If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
 
@@ -146,7 +146,7 @@ If scope is set to *Account*, the audience can only be associated with ad groups
 **Delete:** Not supported  
 
 ## <a name="sourceid"></a>Source Id
-The Bing Ads identifier of the remarketing list that Bing Ads used to generate this similar remarketing list.
+The Microsoft Advertising identifier of the remarketing list that Microsoft Advertising used to generate this similar remarketing list.
 
 **Add:** Not supported  
 **Update:** Not supported    

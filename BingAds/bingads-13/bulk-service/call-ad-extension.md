@@ -291,12 +291,12 @@ Possible values are *Active* or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="tollfree"></a>Toll Free
-You can either use your own phone number or use a Bing Ads forwarding phone number. A Bing Ads forwarding phone number is a unique phone number that is routed to your business phone number. With a Bing Ads forwarding number, you can track all calls from your ad so that you can analyze the ad’s performance. This field determines whether a toll-free Bing Ads forwarding phone number should be created for call tracking. This field can only be set if *Call Tracking Enabled* field is also *TRUE*.
+You can either use your own phone number or use a Microsoft Advertising forwarding phone number. A Microsoft Advertising forwarding phone number is a unique phone number that is routed to your business phone number. With a Microsoft Advertising forwarding number, you can track all calls from your ad so that you can analyze the ad’s performance. This field determines whether a toll-free Microsoft Advertising forwarding phone number should be created for call tracking. This field can only be set if *Call Tracking Enabled* field is also *TRUE*.
 
-Set this property to *TRUE* if a Bing Ads forwarding phone number should be created for call tracking, and otherwise set it to *FALSE*.
+Set this property to *TRUE* if a Microsoft Advertising forwarding phone number should be created for call tracking, and otherwise set it to *FALSE*.
 
 > [!IMPORTANT]
-> Beginning the week of August 14th, 2017 you can no longer create a new toll-free Bing Ads forwarding phone number. If you set this value *True* then the operation will succeed; however, a toll-free number will not be created and when you retrieve the call ad extension this property will be set to *False*. If a toll-free forwarding number was provisioned prior to the week of August 14th, 2017 then this property will be *True* if the number is still active when you retrieve the call ad extension.
+> Beginning the week of August 14th, 2017 you can no longer create a new toll-free Microsoft Advertising forwarding phone number. If you set this value *True* then the operation will succeed; however, a toll-free number will not be created and when you retrieve the call ad extension this property will be set to *False*. If a toll-free forwarding number was provisioned prior to the week of August 14th, 2017 then this property will be *True* if the number is still active when you retrieve the call ad extension.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

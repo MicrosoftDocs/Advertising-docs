@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Offline Conversions Code Example
-This example demonstrates how to send Bing Ads your offline conversions using the Campaign Management service.
+This example demonstrates how to send Microsoft Advertising your offline conversions using the Campaign Management service.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

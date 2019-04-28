@@ -16,7 +16,7 @@ Defines an offline conversion that can be uploaded in a bulk file.
 
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
-After the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the offline conversion data. It can take up to five hours to view conversion data in the Bing Ads reporting. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/56852/2).
+After the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Microsoft Advertising the offline conversion data. It can take up to five hours to view conversion data in the Microsoft Advertising reporting. For more information, see [Tracking offline conversions](https://help.ads.microsoft.com/#apex/3/en/56852/2).
 
 > [!NOTE]
 > Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
@@ -102,16 +102,16 @@ This name must match an existing conversion goal name, otherwise the offline con
 ## <a name="conversiontime"></a>Conversion Time
 The date and time when the offline conversion occurred. 
 
-The date and time must be within the last 90 days, otherwise the operation will fail when you attempt to send Bing Ads the offline conversion data.
+The date and time must be within the last 90 days, otherwise the operation will fail when you attempt to send Microsoft Advertising the offline conversion data.
 
 > [!IMPORTANT]
-> The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Bing Ads web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
+> The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Microsoft Advertising web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
 
-To be counted by Bing Ads as an offline conversion after successful upload, the following additional requirements must be met:
+To be counted by Microsoft Advertising as an offline conversion after successful upload, the following additional requirements must be met:
 -  The date and time of the conversion must be set later than the date and time of the recorded click.  
 -  The date and time must be within the conversion window. The *ConversionWindowInMinutes* property of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) determines the maximum length of time in minutes after a click that conversions will be tracked.
 
-For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Bing Ads the following offline conversions on July 31st, then Bing Ads will only count the one with MicrosoftClickId=*2* as an offline conversion.
+For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Microsoft Advertising the following offline conversions on July 31st, then Microsoft Advertising will only count the one with MicrosoftClickId=*2* as an offline conversion.
 -  MicrosoftClickId=*1*; ConversionTime=*2019-04-30T17:02:35.6853793Z*  
 -  MicrosoftClickId=*2*; ConversionTime=*2019-05-15T17:02:35.6853793Z*  
 -  MicrosoftClickId=*3*; ConversionTime=*2019-06-15T17:02:35.6853793Z*

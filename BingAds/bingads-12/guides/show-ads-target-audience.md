@@ -7,13 +7,13 @@ ms.author: "eur"
 description: Get your ads in front of the right people.
 ---
 # Show Ads to Your Target Audience
-Getting your ad in front of the right people; that's what targeting is all about. With targeting, Bing Ads can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
+Getting your ad in front of the right people; that's what targeting is all about. With targeting, Microsoft Advertising can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
 > [!NOTE] 
-> Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
+> Microsoft Advertising supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
 
 Here are a few tips to keep in mind before you begin:
-- When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. Its worth noting that when creating campaigns via the Bing Ads web application, the recommended [default criterions](#defaultcriterions) are added. 
+- When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. Its worth noting that when creating campaigns via the Microsoft Advertising web application, the recommended [default criterions](#defaultcriterions) are added. 
 - If you specify the same [criterion types](#criteriontypes) at the ad group and campaign level, the ad group-level criterions will override the campaign-level criterions. For example, if the campaign location criterion is *US* and the ad group location criterion is *California*, the ads will display only to users in California. Or, if the campaign criterions are *Monday* and *Wednesday* and the ad group criterions are *Tuesday* and *Thursday*, the ads will display only on Tuesdays and Thursdays.
 - When a criterion type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example, you can specify location criterions at the campaign level and day and time criterions at the ad group level. If the location criterion is set to U.S. and the day and time criterion is set to Monday from 11am - 3pm, then the ads will display to users in the U.S. on Mondays from 11am - 3pm. 
 - You must consider the location, negative location, and radius criterions as a set of *geo criterions*. If the ad group has any geo criterions, then none of the campaign's geo criterions are inherited. If the ad group doesn't have any geo criterions, then all of the campaign's geo criterions are inherited. The geo criterions can be inherited from the campaign even if the ad group has a location intent criterion. If the ad group's geo criterions are used, then the ad group's location intent criterion is used; if the campaign's geo criterions are inherited, then the campaign's location intent criterion is used and the ad group's location intent criterion is ignored. You cannot delete a campaign or ad group's location intent criterion, although it has no purpose without location or radius criterions. 
@@ -99,7 +99,7 @@ With location criterions, you can choose to show ads to potential customers in, 
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
-Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads. Excluded locations are also known as negative location criterions.
+Although location criterions are most often used to designate the specific locations where you want to show your ads, Microsoft Advertising also lets you specify locations you want to exclude from seeing your ads. Excluded locations are also known as negative location criterions.
 
 Each negative location criterion defines a location code where you do not want your ads to show. 
 
@@ -119,7 +119,7 @@ Each location intent criterion defines the intent option for all location and ra
 
 The maximum number of location intent criterions that you can specify per campaign or ad group is one.
 
-For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
+For more information and examples, please see [How can I get my ads in front of my customers?](https://help.ads.microsoft.com/#apex/3/en/51029/0).
 
 ### <a name="profilecriterion"></a>Profile Criterion
 You can target customers by company, industry, or job function profiles (according to LinkedIn), so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
@@ -163,7 +163,7 @@ The base bid is adjusted by multipliers of the bid adjustment percentage values 
 ## <a name="defaultcriterions"></a>Default Criterion Settings
 When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. 
 
-Its worth noting that when creating campaigns via the Bing Ads web application, the recommended default criterions are added. For example if you keep the default setting in the web application e.g. *United States, Canada*, the download will include the following campaign location and campaign location intent criterions. 
+Its worth noting that when creating campaigns via the Microsoft Advertising web application, the recommended default criterions are added. For example if you keep the default setting in the web application e.g. *United States, Canada*, the download will include the following campaign location and campaign location intent criterions. 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
@@ -174,7 +174,7 @@ Campaign Location Criterion,Active,102,CampaignIdHere,Country,CampaignNameHere,,
 Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,CampaignNameHere,,41:34.8,PeopleInOrSearchingForOrViewingPages,,,,,,,,,,,,
 ```
 
-If you choose *All available countries/regions* in the Bing Ads web application, the download will only include the following campaign location intent criterion. This is the effective equivalent of targeting all ages, days, genders, hours, and locations worldwide.
+If you choose *All available countries/regions* in the Microsoft Advertising web application, the download will only include the following campaign location intent criterion. This is the effective equivalent of targeting all ages, days, genders, hours, and locations worldwide.
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
@@ -187,7 +187,7 @@ Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,Campaig
 > The above examples assume that you did not change any other defaults such as demographic or device settings. 
 
 ## <a name="usingcriterions"></a>Using Target Criterions
-Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
+Microsoft Advertising supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
 
 ### <a name="synccriterions"></a>Sync Criterions
 Sync the new criterions with campaigns and ad groups. For example you can use the Bulk service to download all criterions in the account and discover the mapping between criterions and campaigns and ad groups. Let's download the target criterions using Bing Ads API version 12, Bulk file format 6.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. 

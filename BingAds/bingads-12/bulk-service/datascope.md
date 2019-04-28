@@ -31,7 +31,7 @@ Defines the scope or types of data to download.
 |-----------|---------------|
 |<a name="bidsuggestionsdata"></a>BidSuggestionsData|Download the keyword bid suggestion records.|
 |<a name="entitydata"></a>EntityData|Download entity records e.g., campaigns and ad groups.|
-|<a name="entityperformancedata"></a>EntityPerformanceData|This value is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).|
+|<a name="entityperformancedata"></a>EntityPerformanceData|This value is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Reporting API. For more details see [Reports](../guides/reports.md).|
 |<a name="qualityscoredata"></a>QualityScoreData|Download the quality score fields i.e., Quality Score, Keyword Relevance, Landing Page Relevance, and Landing Page User Experience in the [Ad Group](ad-group.md), [Campaign](campaign.md), and [Keyword](keyword.md) records.|
 
 ## Requirements

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Desktop Application in Python"
+title: "Walkthrough: Bing Ads API Desktop Application in Python"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a desktop application using the Bing Ads Python SDK.
 dev_langs:
   - python
 ---
-# Walkthrough: Bing Ads Desktop Application in Python
+# Walkthrough: Bing Ads API Desktop Application in Python
 This example Python console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -17,7 +17,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 ## <a name="code"></a>Code Walkthrough
 
-1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](get-started.md#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
+1. Sign up for [Microsoft Advertising](https://secure.ads.microsoft.com/) and use the same credentials get a [developer token](get-started.md#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
 
 1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). Be sure to take note of the Application Id that will be used as the *CLIENT_ID* in the code example below.
 
@@ -78,10 +78,10 @@ You'll also need your production [developer token](get-started.md#get-developer-
             environment=ENVIRONMENT,
         )
 
-        # You should authenticate for Bing Ads services with a Microsoft Account.
+        # You should authenticate for Bing Ads API service operations with a Microsoft Account.
         authenticate_with_oauth(authorization_data)
             
-        # Set to an empty user identifier to get the current authenticated Bing Ads user,
+        # Set to an empty user identifier to get the current authenticated Microsoft Advertising user,
         # and then search for all accounts the user can access.
         user=get_user_response=customer_service.GetUser(
             UserId=None,
@@ -129,14 +129,14 @@ You'll also need your production [developer token](get-started.md#get-developer-
         # For Python 3.x use 'input' instead of 'raw_input'
         if(sys.version_info.major >= 3):
             response_uri=input(
-                "You need to provide consent for the application to access your Bing Ads accounts. " \
-                "After you have granted consent in the web browser for the application to access your Bing Ads accounts, " \
+                "You need to provide consent for the application to access your Microsoft Advertising accounts. " \
+                "After you have granted consent in the web browser for the application to access your Microsoft Advertising accounts, " \
                 "please enter the response URI that includes the authorization 'code' parameter: \n"
             )
         else:
             response_uri=raw_input(
-                "You need to provide consent for the application to access your Bing Ads accounts. " \
-                "After you have granted consent in the web browser for the application to access your Bing Ads accounts, " \
+                "You need to provide consent for the application to access your Microsoft Advertising accounts. " \
+                "After you have granted consent in the web browser for the application to access your Microsoft Advertising accounts, " \
                 "please enter the response URI that includes the authorization 'code' parameter: \n"
             )
 
@@ -454,11 +454,11 @@ You'll also need your production [developer token](get-started.md#get-developer-
     After granting consent and pasting the result URI with the authorization code in the console window, the application should list accounts that you can access.
 
     ```powershell
-    You need to provide consent for the application to access your Bing Ads accounts. After you have granted consent in the web browser for the application to access your Bing Ads accounts, please enter the response URI that includes the authorization 'code' parameter:
+    You need to provide consent for the application to access your Microsoft Advertising accounts. After you have granted consent in the web browser for the application to access your Microsoft Advertising accounts, please enter the response URI that includes the authorization 'code' parameter:
     AFTER GRANTING CONSENT, PASTE THE RESULT URI HERE
     ```
 
 
 ## See Also
-[Get Started Using Python with Bing Ads Services](get-started-python.md)  
+[Get Started Using Python with Bing Ads API](get-started-python.md)  
 

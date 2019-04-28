@@ -27,7 +27,7 @@ The Campaign Management service defines the following service operations.
 |[AddMedia](addmedia.md)|Adds the specified media to an account's media library.|1 *AccountId*<br/><br/>10 *Media*|
 |[AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)|Adds negative keywords to the specified campaign or ad group.|1 *EntityNegativeKeywords*<br/><br/>Each *EntityNegativeKeyword* element can contain up to 20,000 negative keywords.|
 |[AddSharedEntity](addsharedentity.md)|Adds a negative keyword list to the account's library.|1 *SharedEntity*<br/><br/>5,000 *ListItems*|
-|[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.|100 *UetTags*|
+|[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|100 *UetTags*|
 |[AppealEditorialRejections](appealeditorialrejections.md)|Appeals ads or keywords that failed editorial review.|1,000 *EntityIdToParentIdAssociations*|
 |[ApplyOfflineConversions](applyofflineconversions.md)|Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.|1,000 *OfflineConversions*|
 |[ApplyProductPartitionActions](applyproductpartitionactions.md)|Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), which each contain a [ProductPartition](productpartition.md).|5,000 *CriterionActions*|
@@ -62,8 +62,8 @@ The Campaign Management service defines the following service operations.
 |[GetAdsByEditorialStatus](getadsbyeditorialstatus.md)|Retrieves the ads that belong to the specified ad group and have the specified editorial review status.|1 *AdGroupId*|
 |[GetAdsByIds](getadsbyids.md)|Retrieves the specified ads from the specified ad group.|1 *AdGroupId*<br/><br/>20 *AdIds*|
 |[GetAudiencesByIds](getaudiencesbyids.md)|Retrieves the specified audiences from the specified account.|100 *AudienceIds*|
-|[GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md)|Gets the Bing Merchant Center stores for the specified customer.|Not applicable.|
-|[GetBSCCountries](getbsccountries.md)|Gets the list of supported sales country codes for Bing Shopping campaigns.|Not applicable.|
+|[GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md)|Gets the Microsoft Merchant Center stores for the specified customer.|Not applicable.|
+|[GetBSCCountries](getbsccountries.md)|Gets the list of supported sales country codes for Microsoft Shopping Campaigns.|Not applicable.|
 |[GetBudgetsByIds](getbudgetsbyids.md)|Gets the specified budgets from the account's shared budget library.|100 *BudgetIds*|
 |[GetCampaignCriterionsByIds](getcampaigncriterionsbyids.md)|Gets the specified campaign criterions.|100 *CampaignCriterionIds*<br/><br/>1 *CampaignId*|
 |[GetCampaignIdsByBudgetIds](getcampaignidsbybudgetids.md)|Gets the campaign identifiers that share each specified budget.|100 *BudgetIds*|

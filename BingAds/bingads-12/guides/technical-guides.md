@@ -1,20 +1,20 @@
 ---
-title: "Bing Ads Technical Guides"
+title: "Microsoft Advertising Technical Guides"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: The technical guides describe core advertising scenarios using Bing Ads services.
+description: The technical guides describe core advertising scenarios using Bing Ads API.
 ---
-# Bing Ads Technical Guides
-The technical guides below describe core advertising scenarios using Bing Ads services.
+# Microsoft Advertising Technical Guides
+The technical guides below describe core advertising scenarios using Bing Ads API.
 
 ## Guides
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](authentication-oauth.md)|Authenticate Bing Ads users via OAuth access tokens.|
-|[Bing Ads Services Protocol](services-protocol.md)|Review requirements and best practices for using Bing Ads services efficiently.|
+|[Authentication with OAuth](authentication-oauth.md)|Authenticate Microsoft Advertising users via OAuth access tokens.|
+|[Bing Ads API Services Protocol](services-protocol.md)|Review requirements and best practices for using Bing Ads API efficiently.|
 |[Handling Service Errors and Exceptions](handle-service-errors-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
 |[Customer Accounts](customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
 |[Campaigns](campaigns.md)|Set your campaign budget and bid strategy.|

@@ -16,7 +16,7 @@ Defines an experiment where you split a campaign's budget and traffic, and then 
 
 How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
 
-With Bing Ads experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:
+With Microsoft Advertising experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:
 - Try out changes in the experiment campaign.
 - See how the experiment campaign performs compared to the base campaign.
 - If you like the experiment's results, apply the changes to the base campaign or create a whole new campaign.
@@ -25,7 +25,7 @@ With Bing Ads experiments, you create a duplicate of a search campaign that rece
 > Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment. 
 
 When you create an experiment in your account, a new experiment and a new campaign are both created. Here are some of the notable details:  
-- An *Experiment* entity is created with the [Base Campaign Id](#basecampaignid), [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent) that you specified. The experiment [Status](#status) will be set automatically by Bing Ads to *Creating*, and the next time you download the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.
+- An *Experiment* entity is created with the [Base Campaign Id](#basecampaignid), [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent) that you specified. The experiment [Status](#status) will be set automatically by Microsoft Advertising to *Creating*, and the next time you download the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.
 
 - An experiment [Campaign](campaign.md) is created as a copy of the [base campaign](#basecampaignid). All base campaign settings, including ad groups, ads, ad extension associations, and target settings are copied to the new experiment campaign. You can get this new campaign's system identifier via the [Experiment Campaign Id](#experimentcampaignid) field of the *Experiment* record e.g., in the bulk upload result file. The [name](campaign.md#campaign) of the [experiment campaign](#experimentcampaignid) that is created from the [base campaign](#basecampaignid) will match the experiment [Name](#name), and vice versa. If the experiment name is updated, the experiment campaign's name will automatically be updated to match, and vice versa.
 
@@ -36,7 +36,7 @@ When you create an experiment in your account, a new experiment and a new campai
   > - Standard text ads (STA) will not be copied from the base campaign to the experiment campaign. We recommend that you upgrade to [Expanded Text Ads](../guides/expanded-text-ads.md), but if you still have STA they will not be used in the experiment campaign and they will remain in the base campaign (even if the experiment is later promoted).  
   > - Audience associations for deleted in-market audiences might initially be available in your base campaigns, although they will not be copied to experiment campaigns. If you later promote the experiment campaign, your base campaign will adopt all of the settings of the experiment campaign and the audience associations for deleted in-market audiences will be deleted from your base campaign. 
   > 
-  > In the Bing Ads web application "Experiments" tab, you can get a detailed list of items that were not copied from the base campaign to the experiment campaign. The list is formatted as a Bulk upload result file i.e., error records for the items that were not copied to the experiment campaign. If you find an error record that you believe should have been copied to the experiment campaign please feel free to contact support with details. 
+  > In the Microsoft Advertising web application "Experiments" tab, you can get a detailed list of items that were not copied from the base campaign to the experiment campaign. The list is formatted as a Bulk upload result file i.e., error records for the items that were not copied to the experiment campaign. If you find an error record that you believe should have been copied to the experiment campaign please feel free to contact support with details. 
 
 After the experiment is created you can update its [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent). There are some exceptions e.g., you cannot update the start date after the [Status](#status) has become *Active* (start date already arrived), and you cannot update the end date after the [Status](#status) has become *Ended* (end date already passed).   
 
@@ -138,7 +138,7 @@ For an *Experiment* record, the following attribute fields are available in the 
 - [Traffic Split Percent](#trafficsplitpercent)
 
 ## <a name="basecampaignid"></a>Base Campaign Id
-The Bing Ads identifier of the campaign used as the base for the experiment campaign. 
+The Microsoft Advertising identifier of the campaign used as the base for the experiment campaign. 
 
 You can create up to 10 nonconcurrent experiments per base campaign. In other words multiple experiments for the same base campaign cannot have overlapping time intervals. 
 
@@ -168,7 +168,7 @@ The end date is inclusive. For example, if you set the end date to 12/31/2020, t
 **Delete:** Read-only  
 
 ## <a name="experimentcampaignid"></a>Experiment Campaign Id
-The Bing Ads identifier of the campaign that is created as a copy of the [base campaign](#basecampaignid). 
+The Microsoft Advertising identifier of the campaign that is created as a copy of the [base campaign](#basecampaignid). 
 
 All base campaign settings, including ad groups, ads, ad extension associations, and target settings are copied to the new experiment campaign. 
 
@@ -234,10 +234,10 @@ Possible status values are described in the table below.
 |Paused|The base campaign and experiment campaign are temporarily paused and not eligible to serve ads. The experiment [Start Date](#startdate) has arrived and the [End Date](#enddate) has not yet passed.<br/><br/>Please note that when the base campaign is paused, the experiment campaign and the experiment itself are also paused. Likewise when the base campaign is unpaused, the experiment campaign and the experiment itself are unpaused. When an experiment is unpaused it will move to either an Active or Scheduled state.|
 |Promoted|Your base campaign adopted all of the settings of the experiment campaign. The experiment campaign settings and entities have been copied back to the base campaign, and the experiment campaign is paused. The base campaign once again has 100% of its original budget and traffic. The original system identifiers should be retained as much as possible. There could be some exceptions, for example if you deleted ad groups from the base campaign after the experiment campaign was created. Any changes to the base campaign settings during the experiment e.g., new ad groups have effectively been deleted.|
 |PromoteFailed|The experiment campaign settings could not be applied to the base campaign. You can try again by setting the status to Promoted, and if the PromoteFailed status persists please contact support for assistance.|
-|Promoting|The experiment campaign settings are being applied to the base campaign. Upon successful completion, the status will automatically be set to Promoted, and otherwise the status will be set to PromoteFailed. If promotion fails the experiment status can only be set to Deleted. Before you delete the experiment and experiment campaign, consider whether you want to copy any settings from the experiment campaign to the base campaign yourself e.g., via the Bing Ads web application or API.|
+|Promoting|The experiment campaign settings are being applied to the base campaign. Upon successful completion, the status will automatically be set to Promoted, and otherwise the status will be set to PromoteFailed. If promotion fails the experiment status can only be set to Deleted. Before you delete the experiment and experiment campaign, consider whether you want to copy any settings from the experiment campaign to the base campaign yourself e.g., via the Microsoft Advertising web application or API.|
 |Scheduled|The experiment campaign has been created, and the experiment is scheduled to begin serving ads once the [Start Date](#startdate) arrives.|
 
-**Add:** Required. You must set the status to *Active*; however, the status will be set automatically by Bing Ads to *Creating*, and the next time you retrieve the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.  
+**Add:** Required. You must set the status to *Active*; however, the status will be set automatically by Microsoft Advertising to *Creating*, and the next time you retrieve the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.  
 **Update:** Read-only    
 **Delete:** Required. The Status must be set to *Deleted*.
 

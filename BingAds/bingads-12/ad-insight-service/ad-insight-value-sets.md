@@ -17,7 +17,7 @@ The Ad Insight service defines the following value sets.
 |[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|
 |[BudgetPointType](budgetpointtype.md)|Defines the possible values of a campaign budget point.|
-|[CompetitionLevel](competitionlevel.md)|Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.|
+|[CompetitionLevel](competitionlevel.md)|Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising.|
 |[CurrencyCode](currencycode.md)|Defines a selection of currency values.|
 |[EntityType](entitytype.md)|Defines the entity types for retrieving auction insights.|
 |[KeywordIdeaAttribute](keywordideaattribute.md)|Determines which properties of the [KeywordIdea](keywordidea.md) object you want returned when calling the [GetKeywordIdeas](getkeywordideas.md) operation.|

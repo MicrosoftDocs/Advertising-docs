@@ -1,15 +1,15 @@
 ---
-title: "Get Started Using C# with Bing Ads Services"
+title: "Get Started Using C# with Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Install the Bing Ads .NET SDK and discover code examples.
 ---
-# Get Started Using C# with Bing Ads Services
-To get started developing Bing Ads applications with a .NET language, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application. The examples have been developed with the Bing Ads .NET [SDK](client-libraries.md) and [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
+# Get Started Using C# with Bing Ads API
+To get started developing Bing Ads API applications with a .NET language, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application. The examples have been developed with the Bing Ads .NET [SDK](client-libraries.md) and [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
 
-You will need user credentials with access to Bing Ads either in [production](https://secure.bingads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](get-started.md) and [Sandbox](sandbox.md).
+You will need user credentials with access to Microsoft Advertising either in [production](https://secure.ads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](get-started.md) and [Sandbox](sandbox.md).
 
 To authenticate via OAuth, you must also register an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md) and [Authentication With the SDKs](sdk-authentication.md#oauth). 
 
@@ -26,11 +26,11 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 3. If you do not already have references to *System.ServiceModel.Primitives 4.4.1*, *System.ServiceModel.Http 4.4.1*, and *System.ServiceModel.ConfigurationManager 4.4.1*, type `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`.
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads .NET SDK installed, you can either browse the [Bing Ads Code Examples](code-examples.md) in C# or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application.
+Once you have the Bing Ads .NET SDK installed, you can either browse the [Bing Ads API Code Examples](code-examples.md) in C# or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application.
 
 ## See Also
-[Bing Ads Client Libraries](client-libraries.md)    
-[Bing Ads Code Examples](code-examples.md)    
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Client Libraries](client-libraries.md)    
+[Bing Ads API Code Examples](code-examples.md)    
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md)  
 [Sandbox](sandbox.md)  

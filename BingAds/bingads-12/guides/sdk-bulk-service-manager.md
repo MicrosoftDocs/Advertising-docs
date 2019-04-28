@@ -831,6 +831,6 @@ bulkServiceManager.cleanupTempFiles();
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)    
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)    
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

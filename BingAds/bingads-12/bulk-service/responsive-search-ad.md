@@ -21,9 +21,9 @@ Responsive search ads allow you to set between 3-15 unique ad headlines (a.k.a. 
 
 The responsive ads shown to users appear identical to expanded text ads i.e., up to 3 headlines (title parts via expanded text ads) and 2 descriptions (text parts via expanded text ads). Two headlines and one description will always be shown in the ad. However, depending on the screen size, your ad may show without the third headline or second description.
 
-When you create responsive search ads the [Description](#description) and [Headline](#headline) lists are stored as text assets that can be shared by any responsive search ad within the account. For example if "Seamless Integration" is a text asset, you will observe that it has the same asset identifier across all ads that link to "Seamless Integration" in the same Bing Ads account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
+When you create responsive search ads the [Description](#description) and [Headline](#headline) lists are stored as text assets that can be shared by any responsive search ad within the account. For example if "Seamless Integration" is a text asset, you will observe that it has the same asset identifier across all ads that link to "Seamless Integration" in the same Microsoft Advertising account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
-Currently Bing Ads does not support deletion of account assets. Even after you delete all ads that use (are linked to) "Seamless Integration", the text asset will remain in your account with a unique system identifier. The next time you use the text asset e.g., "Seamless Integration" in an ad, it will retain the original Bing Ads system identifier.  
+Currently Microsoft Advertising does not support deletion of account assets. Even after you delete all ads that use (are linked to) "Seamless Integration", the text asset will remain in your account with a unique system identifier. The next time you use the text asset e.g., "Seamless Integration" in an ad, it will retain the original Microsoft Advertising system identifier.  
 
 You can download all *Responsive Search Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *ResponsiveSearchAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -227,7 +227,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
@@ -245,7 +245,7 @@ The list of descriptions that Bing can use to optimize the ad layout.
 
 Unless you pin one of the descriptions to a specific position, Bing will optimize the ad layout dynamically with the best headlines and descriptions for the user's search query. 
 
-From a data model perspective the descriptions are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. 
+From a data model perspective the descriptions are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. 
 
 You must set between 2-4 descriptions. The descriptions are represented in the bulk file as a JSON string. Two descriptions are included in the example JSON below, and the first is pinned to a specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#description-editorialstatus), [id](#description-id), [pinnedField](#description-pinnedfield), and [text](#description-text) below.
 
@@ -290,9 +290,9 @@ The `editorialStatus` attribute is read-only when you download the responsive se
 |Unknown|Reserved for future use.|
 
 ### <a name="description-id"></a>id
-The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads account. 
+The `id` attribute is a unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account. 
 
-The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
+The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
 ### <a name="description-pinnedfield"></a>pinnedField
 To pin an asset to a specific description position, set the `pinnedField` attribute to either "Description1" or "Description2". Unless you have a specific requirement for a text asset, don't pin it and let Bing AI optimize the text placement. 
@@ -302,11 +302,11 @@ At least one eligible text asset must be available for each description position
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
 ### <a name="description-text"></a>text
-Each description's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
+Each description's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Microsoft Advertising help article [Automatically customize your ads with dynamic text parameters](https://help.ads.microsoft.com/#apex/3/en/50811/1).
 
 The `text` attribute can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md).
 
-The maximum input length of each description's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 90 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 45 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+The maximum input length of each description's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 90 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 45 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The `text` attribute cannot contain the newline (\n) character.
 
@@ -412,7 +412,7 @@ The list of ad titles that Bing can use to optimize the ad layout.
 
 Unless you pin one of the headlines to a specific position, Bing will optimize the ad layout dynamically with the best headlines and descriptions for the user's search query. 
 
-From a data model perspective the headlines are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. 
+From a data model perspective the headlines are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. 
 
 You must set between 3-15 headlines. The headlines are represented in the bulk file as a JSON string. Three headlines are included in the example JSON below, and only the first headline is pinned to specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#headline-editorialstatus), [id](#headline-id), [pinnedField](#headline-pinnedfield), and [text](#headline-text) below.
 
@@ -465,9 +465,9 @@ The `editorialStatus` attribute is a read-only string when you download the resp
 |Unknown|Reserved for future use.|
 
 ### <a name="headline-id"></a>id
-The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads account. 
+The `id` attribute is a unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account. 
 
-The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
+The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
 ### <a name="headline-pinnedfield"></a>pinnedField
 To pin an asset to a specific headline position, set the `pinnedField` string value to either "Headline1", "Headline2", or "Headline3". Unless you have a specific requirement for a text asset, don't pin it and let Bing AI optimize the text placement. 
@@ -477,11 +477,11 @@ At least one eligible text asset must be available for each headline position, s
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
 ### <a name="headline-text"></a>text
-Each headline's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
+Each headline's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Microsoft Advertising help article [Automatically customize your ads with dynamic text parameters](https://help.ads.microsoft.com/#apex/3/en/50811/1).
 
 The `text` attribute can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md).
 
-The maximum input length of each headline's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 30 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+The maximum input length of each headline's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 30 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The `text` attribute cannot contain the newline (\n) character.
 
@@ -557,11 +557,11 @@ The first part of the optional path that will be appended to the domain portion 
 
 The path can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
-The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
+The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length is 1,000 characters if you include dynamic text strings. No more than 15 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 67 characters.
+The maximum input length is 1,000 characters if you include dynamic text strings. No more than 15 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 67 characters.
 
-For languages with double-width characters e.g. Traditional Chinese the maximum input length is 1,000 characters if you include dynamic text strings. No more than 7 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 33 characters. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 1,000 characters if you include dynamic text strings. No more than 7 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 33 characters. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 
@@ -578,11 +578,11 @@ You can only specify *Path 2* if *Path 1* is also set.
 
 The path can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 	
-The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
+The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length is 1,000 characters if you include dynamic text strings. No more than 15 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 67 characters.
+The maximum input length is 1,000 characters if you include dynamic text strings. No more than 15 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 67 characters.
 
-For languages with double-width characters e.g. Traditional Chinese the maximum input length is 1,000 characters if you include dynamic text strings. No more than 7 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.bingads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 33 characters. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 1,000 characters if you include dynamic text strings. No more than 7 final (not dynamic text) characters can be input. The ad will fail to display or the [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length of the final URL domain and the paths combined exceed 33 characters. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 	
@@ -613,7 +613,7 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for the URL specified with FinalUrls.
 
-The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
 - Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
@@ -621,7 +621,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    

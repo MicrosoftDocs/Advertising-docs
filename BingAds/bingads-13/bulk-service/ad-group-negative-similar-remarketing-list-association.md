@@ -14,7 +14,7 @@ Defines an Ad Group Negative Similar Remarketing List Association that can be up
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
-Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
+Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 
 You can download all *Ad Group Negative Similar Remarketing List Association* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeSimilarRemarketingListAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -108,7 +108,7 @@ This bulk field maps to the *Audience* field of the [Similar Remarketing List](s
 **Delete:** Read-only  
 
 ## <a name="audienceid"></a>Audience Id
-The Bing Ads identifier of the similar remarketing list associated with the ad group.
+The Microsoft Advertising identifier of the similar remarketing list associated with the ad group.
 
 This bulk field maps to the *Id* field of the [Similar Remarketing List](similar-remarketing-list.md) record.
 

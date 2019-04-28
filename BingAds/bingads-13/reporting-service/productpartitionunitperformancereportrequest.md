@@ -12,7 +12,7 @@ Defines a product partition unit performance report request that aggregates the 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 > [!NOTE]
-> You should only use this report to get performance data for Bing Shopping campaigns. It is not applicable for other campaign types. 
+> You should only use this report to get performance data for Microsoft Shopping Campaigns. It is not applicable for other campaign types. 
 
 ## Syntax
 ```xml

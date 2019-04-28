@@ -148,18 +148,18 @@ For repeat or long term authentication, you should follow the authorization code
     response.sendRedirect(authorizationEndpoint.toString());
     ```
     ```php
-    // The user needs to provide consent for the application to access their Bing Ads accounts.
+    // The user needs to provide consent for the application to access their Microsoft Advertising accounts.
     header('Location: '. $_SESSION['AuthorizationData']->Authentication->GetAuthorizationEndpoint());
     ```
     ```python
     oauth_web_auth_code_grant.get_authorization_endpoint()
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Bing Ads accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Microsoft Advertising accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Bing Ads accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their Bing Ads accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Microsoft Advertising accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their Microsoft Advertising accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3. Use the authorization code to request the access token and refresh token. Pass the full callback URI when using the *OAuthWebAuthCodeGrant* instance to request the access token and refresh token.
 
@@ -189,14 +189,14 @@ For repeat or long term authentication, you should follow the authorization code
     access_token = oauth_tokens.access_token
     ```
 
-    If this step succeeded, your application has permissions to manage the user's Bing Ads accounts. To call Bing Ads services, you should initialize either [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's Microsoft Advertising accounts. To call Bing Ads API service operations, you should initialize either [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorization-data), [Using Service Client](#serviceclient), [Using BulkServiceManager](sdk-bulk-service-manager.md), and [Using ReportingServiceManager](sdk-reporting-service-manager.md).
 
     > [!NOTE]
     > The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
 
-4. When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received. 
+4. When calling Bing Ads API service operations with [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received. 
 
     ```csharp
     // If you already have a refresh token, use it to request new access and refresh tokens.
@@ -206,7 +206,7 @@ For repeat or long term authentication, you should follow the authorization code
         oAuthWebAuthCodeGrant.RequestAccessAndRefreshTokensAsync(refreshToken);
     }
 
-    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    // When calling Bing Ads API service operations with Service Client, Bulk Service Manager, or Reporting Service Manager, 
     // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
     // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
     // You will want to subscribe to the NewOAuthTokensReceived event handler.
@@ -222,7 +222,7 @@ For repeat or long term authentication, you should follow the authorization code
         oAuthWebAuthCodeGrant.requestAccessAndRefreshTokens(refreshToken);
     }
 
-    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    // When calling Bing Ads API service operations with Service Client, Bulk Service Manager, or Reporting Service Manager, 
     // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
     // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
     // You will want to implement event handling using the NewOAuthTokensReceivedListener.
@@ -239,7 +239,7 @@ For repeat or long term authentication, you should follow the authorization code
     $_SESSION['AuthorizationData']->Authentication->RequestOAuthTokensByRefreshToken($refreshToken);
     ```
     ```python
-    # When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    # When calling Bing Ads API service operations with Service Client, Bulk Service Manager, or Reporting Service Manager, 
     # each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
     # It is important to save the most recent refresh token whenever new OAuth tokens are received. 
     # You will want to register a callback function to automatically save the refresh token anytime it is refreshed. 
@@ -259,7 +259,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData
-The *AuthorizationData* class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md) and [Reporting Service Manager](sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+The *AuthorizationData* class contains properties that Microsoft Advertising uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md) and [Reporting Service Manager](sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
 > [!NOTE]
 > The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
@@ -303,7 +303,7 @@ The *Authentication* property must be set to an Authentication-derived class suc
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the [AuthorizationData](#authorization-data) object.
 
 ## <a name="serviceclient"></a>Using Service Client
-You can use an instance of the *ServiceClient* class to call any methods of one of the Bing Ads [web services](web-service-addresses.md). The *ServiceClient* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+You can use an instance of the *ServiceClient* class to call any methods of one of the Microsoft Advertising [web services](web-service-addresses.md). The *ServiceClient* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
 > [!TIP]
 > If you are using the Bulk or Reporting services, use the [Bulk Service Manager](sdk-bulk-service-manager.md) or [Reporting Service Manager](sdk-reporting-service-manager.md) instead of *ServiceClient*. For example the [Bulk Service Manager](sdk-bulk-service-manager.md) will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. You'll save even more time because you don't have to write or parse the upload or results files. 
@@ -372,5 +372,5 @@ user = customer_service.GetUser(UserId = None).User
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)    
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)    
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  

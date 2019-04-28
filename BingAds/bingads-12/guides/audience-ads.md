@@ -9,7 +9,7 @@ description: Setup Audience ads with the Bing Ads API.
 # Audience Ads
 Microsoft Audience Ads appear on the [Microsoft Audience Network](https://advertise.bingads.microsoft.com/en-us/solutions/microsoft-audience-network). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
 
-Microsoft Audience Ads is a native advertising solution optimized for search advertisers. This feature enables advertisers to get additional high-quality traffic from non-search placements. Microsoft Audience Ads experiences, such as ads placed within articles, are engaging for users, integrate naturally into page content, and deliver visually rich ads for advertisers. Microsoft Audience Ads campaigns are easy to set up, maintain, and optimize because they are fully integrated with existing Bing Ads workflows.
+Microsoft Audience Ads is a native advertising solution optimized for search advertisers. This feature enables advertisers to get additional high-quality traffic from non-search placements. Microsoft Audience Ads experiences, such as ads placed within articles, are engaging for users, integrate naturally into page content, and deliver visually rich ads for advertisers. Microsoft Audience Ads campaigns are easy to set up, maintain, and optimize because they are fully integrated with existing Microsoft Advertising workflows.
 
 ![Audience Ads](media/audience-ads.png "Audience Ads")  
 
@@ -18,7 +18,7 @@ Microsoft Audience Ads is a native advertising solution optimized for search adv
 
 > [!TIP]
 > You can prepare for the Microsoft Audience Network now by:
-> - Add images via Image Extensions. By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage Microsoft Audience Ads in the familiar, easy-to-use Bing Ads platform. 
+> - Add images via Image Extensions. By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage Microsoft Audience Ads in the familiar, easy-to-use Microsoft Advertising platform. 
 > - Optimize Microsoft Audience Ads. You can optimize Microsoft Audience Ads by extending search campaigns and ad groups with audience ads bid adjustments. 
 > - Refine your audience targeting strategy on search. Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if you choose to run them later. 
 > - Implement and update your UET tag. Ensure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot. 
@@ -34,10 +34,10 @@ There are two great ways to run Microsoft Audience Ads:
 1. For convenience, you can extend existing Search campaigns with image ad extensions and audience ads bid adjustments. 
 2. With Audience campaigns you will have control to separate your budgets, ads, and bids from Search campaigns.
 
-![Bing Ads Buying Platform](media/bing-ads-buying-platform.png "Bing Ads Buying Platform")  
+![Microsoft Advertising Buying Platform](media/bing-ads-buying-platform.png "Microsoft Advertising Buying Platform")  
 
 The Microsoft Audience Network supports three ad formats: image-based ads, text ads and feed-based ads. For convenience, you can extend existing [Search campaigns](#search-campaigns) with image ad extensions and audience ads bid adjustments. With [Audience campaigns](#audience-campaigns) you will have control to separate your budgets, ads, and bids from search campaigns.
-- Bing search ads in the Bing Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. 
+- Bing search ads in the Microsoft Advertising Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. 
 - Bing search ads in the Microsoft Audience Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. In addition, set the audience ads bid adjustment to indicate whether you prefer audience ads for the campaign or ad group. 
 - Microsoft Audience Ads (image-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) and responsive ads. Note that Microsoft Audience Ads refers to the ad placement, while "responsive ad" refers to the data type that is used via the Bing Ads API for specific scenarios. 
 - Microsoft Audience Ads (feed-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) with the Bing Shopping setting. 
@@ -54,7 +54,7 @@ For image-based Audience Ads in the Microsoft Audience Network you'll create an 
 2. Create the [AdGroup](../campaign-management-service/adgroup.md)
    - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
    - Include a [TargetSetting](../campaign-management-service/targetsetting.md) with one [TargetSettingDetail](../campaign-management-service/targetsettingdetail.md) for each [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later.
-3. Add images via [AddMedia](../campaign-management-service/addmedia.md) that will be used later with your ad. Bing Ads supports the same aspect ratios and image specifications as the Google Display Network's responsive display ads and Facebook Audience Network's image ads. Use the AddMedia operation to add images with the required dimensions and aspect ratios. For more information, see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
+3. Add images via [AddMedia](../campaign-management-service/addmedia.md) that will be used later with your ad. Microsoft Advertising supports the same aspect ratios and image specifications as the Google Display Network's responsive display ads and Facebook Audience Network's image ads. Use the AddMedia operation to add images with the required dimensions and aspect ratios. For more information, see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
    - One landscape (wide) image with aspect ratio 1.91:1 and one square image with aspect ratio 1:1 are required. 
    - One landscape (wide) logo with aspect ratio 4:1 and one square logo with aspect ratio 1:1 are optional. 
 4. Create the [ResponsiveAd](../campaign-management-service/responsivead.md)
@@ -68,11 +68,11 @@ For image-based Audience Ads in the Microsoft Audience Network you'll create an 
 For feed-based Audience Ads in the Microsoft Audience Network you'll create an Audience campaign with shopping settings. 
 
 > [!NOTE]
-> For details about feed-based product ads via Bing Shopping Campaigns in the Bing Network, see [Product Ads](product-ads.md). 
+> For details about feed-based product ads via Microsoft Shopping Campaigns in the Microsoft Advertising Network, see [Product Ads](product-ads.md). 
 
-1. Set up the customer's Bing Merchant Center store. In the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Bing Merchant Center store](https://help.bingads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.bingads.microsoft.com/#apex/3/en/51084/1).
-2. Create a [product catalog](https://help.bingads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.bingads.microsoft.com/#apex/3/en/51086/1-500) or the [Bing Ads Content API](/bingads/shopping-content/index).
-3. Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
+1. Set up the customer's Microsoft Merchant Center store. In the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.ads.microsoft.com/#apex/3/en/51084/1).
+2. Create a [product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1-500) or the [Microsoft Advertising Content API](/bingads/shopping-content/index).
+3. Get your Microsoft Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center** to access your store details.
 4. Create the Campaign
    - The CampaignType must be set to Audience.
    - The Languages list must include All.
@@ -80,12 +80,12 @@ For feed-based Audience Ads in the Microsoft Audience Network you'll create an A
 5. Create the [AdGroup](../campaign-management-service/adgroup.md)
    - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
    - Include a TargetSetting with one TargetSettingDetail for each CriterionTypeGroup that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later. 
-6. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion via [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand or product type. A campaign can only be associated with one [ProductScope](../campaign-management-service/productscope.md), which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). 
+6. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion via [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) that will be associated with your Microsoft Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand or product type. A campaign can only be associated with one [ProductScope](../campaign-management-service/productscope.md), which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). 
 7. Add age, audience, company name, gender, industry, job function, location, or radius criteria for the ad group e.g., via [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md). 
 8. Retrieve the [AdGroup](../campaign-management-service/adgroup.md) e.g., via [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md) and make sure the PrivacyStatus is Active. If your targeting is too narrow then you'll need to include more targeting dimensions e.g., a broader set of industries or locations. 
 
 ## <a name="search-campaigns"></a>Search Campaigns
-For convenience, Audience ads are also available as an extension of search network via image ad extensions, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Audience ads on the search network are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions. The ads created using the search creative assets are then displayed to the user in native placements depending upon the surface area e.g. if a user is reading an email in Outlook then the placement will be native to the inbox environment versus if the user is clicking through a slideshow on MSN, then the ad will match the slideshow look and feel. This kind of native placement enhances user experience and delivers better engagement with the campaign. 
+For convenience, Audience ads are also available as an extension of search network via image ad extensions, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Audience ads on the search network are created automatically by Microsoft Advertising leveraging all of your Microsoft Advertising creative elements including ad title, text, URL, and ad extensions including image extensions. The ads created using the search creative assets are then displayed to the user in native placements depending upon the surface area e.g. if a user is reading an email in Outlook then the placement will be native to the inbox environment versus if the user is clicking through a slideshow on MSN, then the ad will match the slideshow look and feel. This kind of native placement enhances user experience and delivers better engagement with the campaign. 
 
 > [!NOTE]
 > Images play a key role in getting people's attention and driving clicks. You can define the imagery to use in your ads by associating Image Extensions to your campaign or ad group. If you don't have Image Extensions, our system may automatically use Image Annotations to increase the number of placements for your Microsoft Audience Ad. Image Annotations are licensed stock images that are editorially reviewed for quality and relevance and then matched with appropriate ads (to opt out of Image Annotations, [contact support](https://go.microsoft.com/fwlink?LinkId=398371)).
@@ -97,7 +97,7 @@ You can manage audience ads settings with either the [Bulk Service](../bulk-serv
 ### <a name="imageadextensions-bulkservice"></a>Image Ad Extensions with the Bulk Service
 The [Bulk Service](../bulk-service/bulk-service-reference.md) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](../bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](bulk-download-upload.md).
 
-These are the Bing Ads entities with properties for managing Audience ads that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md). Use the *Bid Adjustment* column of the following records to get and set the Audience Ads bid adjustment.
+These are the Bing Ads API entities with properties for managing Audience ads that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md). Use the *Bid Adjustment* column of the following records to get and set the Audience Ads bid adjustment.
 
 - [Campaign](../bulk-service/campaign.md)  
 - [Ad Group](../bulk-service/ad-group.md)  
@@ -137,4 +137,4 @@ Performance data for audience ads will be included in existing reports by defaul
 For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
 
 ## See Also
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  

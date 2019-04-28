@@ -20,7 +20,7 @@ Reporting is an asynchronous process. The following is the general flow for requ
 - Poll the service periodically to get the status of the report job
 - When the status is *Success*, use the URL that the service provides to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](../reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](sdk-reporting-service-manager.md). 
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads API Client Libraries](client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](../reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](sdk-reporting-service-manager.md). 
 
 For code examples that demonstrate how to download reports, see [Report Requests Code Example](code-example-report-requests.md).
 

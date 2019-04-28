@@ -26,7 +26,7 @@ Defines conversion goal revenue models that you can use to track how much each c
 |-----------|---------------|
 |<a name="fixedvalue"></a>FixedValue|Each time it happens, the conversion has the same value.|
 |<a name="novalue"></a>NoValue|Don't assign a value for the conversion.|
-|<a name="variablevalue"></a>VariableValue|The value of the conversion may vary for example, by purchase price. You'll need to customize your UET tag tracking code to report variable revenue. For more information, see [How to report variable revenue with UET](https://help.bingads.microsoft.com/#apex/3/en/56687/2/en/#ext:none).|
+|<a name="variablevalue"></a>VariableValue|The value of the conversion may vary for example, by purchase price. You'll need to customize your UET tag tracking code to report variable revenue. For more information, see [How to report variable revenue with UET](https://help.ads.microsoft.com/#apex/3/en/56687/2/en/#ext:none).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

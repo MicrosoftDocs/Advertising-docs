@@ -15,7 +15,7 @@ Defines a remarketing list that can be downloaded and uploaded in a bulk file.
 > For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
 
 > [!NOTE]
-> Bing Ads will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list. See [Similar Remarketing List](similar-remarketing-list.md) for more details. 
+> Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list. See [Similar Remarketing List](similar-remarketing-list.md) for more details. 
 
 You can download all *Remarketing List* records in the account by including the [DownloadEntity](downloadentity.md) value of *RemarketingLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -126,7 +126,7 @@ The name can contain a maximum of 128 characters
 ## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
-The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 300 people before Microsoft Advertising will use it for optimizations.
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -135,7 +135,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 ## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
-The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 1,000 people before Microsoft Advertising will use it for optimizations.
 
 This property will be empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. 
 
@@ -169,7 +169,7 @@ The system generated identifier of the remarketing list.
 **Delete:** Read-only and Required  
 
 ## <a name="membershipduration"></a>Membership Duration
-When you create a remarketing list, you can specify how far back in time Bing Ads should look for actions that match your remarketing list definition in order to add people to your list.
+When you create a remarketing list, you can specify how far back in time Microsoft Advertising should look for actions that match your remarketing list definition in order to add people to your list.
 
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 
@@ -229,7 +229,7 @@ Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campa
 **Delete:** Read-only
 
 ## <a name="uettagid"></a>UET Tag Id
-The Bing Ads identifier of the Universal Event Tracking (UET) tag that is used with the remarketing list.
+The Microsoft Advertising identifier of the Universal Event Tracking (UET) tag that is used with the remarketing list.
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

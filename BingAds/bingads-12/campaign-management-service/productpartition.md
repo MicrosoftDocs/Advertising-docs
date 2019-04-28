@@ -4,15 +4,15 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.
+description: Defines an ad group level product partition with one condition that helps determine whether a product from the Microsoft Merchant Center store gets served as a product ad.
 ---
 # ProductPartition Data Object - Campaign Management
-Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.
+Defines an ad group level product partition with one condition that helps determine whether a product from the Microsoft Merchant Center store gets served as a product ad.
 
 The *ProductPartition* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md). Also note that campaign level [ProductScope](productscope.md) can be added to [BiddableCampaignCriterion](biddablecampaigncriterion.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will fail via the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](productscope.md).
 
 > [!TIP]
-> For an implementation overview, see the [Bing Shopping Campaigns](../guides/product-ads.md) technical guide.
+> For an implementation overview, see the [Microsoft Shopping Campaigns](../guides/product-ads.md) technical guide.
 
 ## Syntax
 ```xml
@@ -33,7 +33,7 @@ The *ProductPartition* criterion can be included within [BiddableAdGroupCriterio
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="condition"></a>Condition|A condition that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br/><br/>Multiple product conditions can be specified by creating a tree of *ProductPartition* objects using [ApplyProductPartitionActions](applyproductpartitionactions.md). For a catalog item to be served as an ad, it must meet all conditions. To get a list of all conditions for an ad group, call [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md) with the *AdGroupCriterionIds* element set to null and the *CriterionType* element set to ProductPartition.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object|[ProductCondition](productcondition.md)|
+|<a name="condition"></a>Condition|A condition that helps determine whether a product from the Microsoft Merchant Center store gets served as an ad.<br/><br/>Multiple product conditions can be specified by creating a tree of *ProductPartition* objects using [ApplyProductPartitionActions](applyproductpartitionactions.md). For a catalog item to be served as an ad, it must meet all conditions. To get a list of all conditions for an ad group, call [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md) with the *AdGroupCriterionIds* element set to null and the *CriterionType* element set to ProductPartition.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object|[ProductCondition](productcondition.md)|
 |<a name="parentcriterionid"></a>ParentCriterionId|The identifier of the parent [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md).<br/><br/>This element must be set to null if the product partition represents the root node of a product partition tree.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object<br/>**Delete:** Required|**long**|
 |<a name="partitiontype"></a>PartitionType|The type of product partition, for example *Subdivision* or *Unit*.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object|[ProductPartitionType](productpartitiontype.md)|
 

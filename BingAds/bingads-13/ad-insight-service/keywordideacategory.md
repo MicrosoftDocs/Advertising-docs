@@ -25,7 +25,7 @@ You can use the category identifier in the [CategorySearchParameter](categorysea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="categoryid"></a>CategoryId|The Bing Ads identifier of the keyword idea category.|**long**|
+|<a name="categoryid"></a>CategoryId|The Microsoft Advertising identifier of the keyword idea category.|**long**|
 |<a name="categoryname"></a>CategoryName|The name of the keyword idea category.|**string**|
 
 ## Requirements

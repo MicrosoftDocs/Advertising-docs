@@ -1,19 +1,19 @@
 ---
-title: "Bing Ads Sandbox"
+title: "Microsoft Advertising Sandbox"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
+description: Microsoft Advertising provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
-# Bing Ads Sandbox
-Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](web-service-addresses.md).
+# Microsoft Advertising Sandbox
+Microsoft Advertising provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads API Web Service Addresses](web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. 
 
 ## <a name="access"></a>Get Sandbox Access
-The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Bing Ads customers can use the following universal developer token in sandbox. 
+The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Microsoft Advertising customers can use the following universal developer token in sandbox. 
 
 ```string
 BBD37VB98
@@ -33,13 +33,13 @@ For the sandbox environment, the following are the endpoints you must use to get
 |Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
 |Endpoint for OAuth requests via [Live Connect](authentication-oauth-live-connect.md)|login.live.com|login.live-int.com|
 
-Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
+Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads API Web Service Addresses](web-service-addresses.md).
 
 ### <a name="initial-sign-up"></a>Initial Customer Sign Up
 Follow these steps to get a new sandbox customer. If you already have a sandbox customer and want to add a new user e.g., with Microsoft account credentials, you can skip to the [user invitation](#invite-user) steps.
 
 1. Open a browser and navigate to [sandbox.bingads.microsoft.com](https://secure.sandbox.bingads.microsoft.com/)
-2. Click **Sign up for Bing Ads** or **Sign up now**
+2. Click **Sign up for Microsoft Advertising** or **Sign up now**
 3. Select **Create a new email address** to create an MSA. Do not use an existing email address. 
 4. Click **Next**
 5. Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
@@ -47,7 +47,7 @@ Follow these steps to get a new sandbox customer. If you already have a sandbox 
    > [!IMPORTANT]
    > Sandbox supports MSAs created using an outlook**-int**.com email account only. You may not use an outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an outlook.com or outlook**-int**.com email account. 
 
-6. Finish the MSA work flow by specifying the rest of your user and security information. You will then be redirected to Bing Ads to continue the sandbox customer and account sign up. 
+6. Finish the MSA work flow by specifying the rest of your user and security information. You will then be redirected to Microsoft Advertising to continue the sandbox customer and account sign up. 
 7. Fill out the **Create Account** form
 8. For **Import/Create Campaign**, click **Skip campaign creation**
 9. For **Go Live**, click **Skip payment information**
@@ -55,7 +55,7 @@ Follow these steps to get a new sandbox customer. If you already have a sandbox 
 ### <a name="invite-user"></a>Invite More Users
 To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
 
-1. In Bing Ads [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
+1. In Microsoft Advertising [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
 2. Click **Accounts & Billing**
 3. Click **Users**
 4. Click **Invite user**
@@ -66,9 +66,9 @@ To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). If your san
 
 6. Click **Send**
 
-Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a couple of minutes to receive the invite. The following steps show how to accept the invitation.
+Microsoft Advertising sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a couple of minutes to receive the invite. The following steps show how to accept the invitation.
 
-1. Open the email from Bing Ads with subject line, Invitation to Bing Ads
+1. Open the email from Microsoft Advertising with subject line, Invitation to Microsoft Advertising
 2. Click the embedded link
 3. Select **Create a new email address** to create an MSA. Do not use an existing email address. 
 4. Click **Next**
@@ -78,12 +78,12 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
    > Sandbox supports MSAs created using an outlook**-int**.com email account only. You may not use an outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an outlook.com or outlook**-int**.com email account. 
 
 6. Finish the work flow by specifying the rest of your user information
-7. Exit Bing Ads after completing the MSA process.
+7. Exit Microsoft Advertising after completing the MSA process.
 
 After Bing creates the account, you may use the outlook**-int**.com credentials in sandbox and during [app registration](https://apps.dev.microsoft-int.com/#/appList).
 
 > [!NOTE]
-> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
+> The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
 Sandbox should not be used in the same capacity as production.
@@ -161,11 +161,11 @@ If you specified a term using the following components, the resulting term would
   - Approved in IE
 
 ### <a name="productads"></a>Product Ads
-Product ads are supported in sandbox in the United States. To be auto-approved you must create a catalog and a Bing Merchant Center store that ends with "sandbox" as follows.
+Product ads are supported in sandbox in the United States. To be auto-approved you must create a catalog and a Microsoft Merchant Center store that ends with "sandbox" as follows.
 
-1. In the Bing Ads web application click on **Tools**.
+1. In the Microsoft Advertising web application click on **Tools**.
 
-2. Under **Management Tools**, click on **Bing Merchant Center**.
+2. Under **Management Tools**, click on **Microsoft Merchant Center**.
 
 3. Click **Create store**, and enter a store name that ends with "**sandbox**" (case-insensitive).
 

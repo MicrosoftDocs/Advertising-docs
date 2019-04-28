@@ -11,7 +11,7 @@ dev_langs:
 # Ad Group Negative Remarketing List Association Record - Bulk
 Defines an Ad Group Negative Remarketing List Association that can be uploaded and downloaded in a bulk file. 
 
-Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
+Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 
 > [!TIP]
 > For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
@@ -107,7 +107,7 @@ This bulk field maps to the *Audience* field of the [Remarketing List](remarketi
 **Delete:** Read-only  
 
 ## <a name="audienceid"></a>Audience Id
-The Bing Ads identifier of the remarketing list associated with the ad group.
+The Microsoft Advertising identifier of the remarketing list associated with the ad group.
 
 This bulk field maps to the *Id* field of the [Remarketing List](remarketing-list.md) record.
 

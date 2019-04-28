@@ -32,7 +32,7 @@ Defines the possible status values of an account.
 |<a name="inactive"></a>Inactive|The account is inactive, which means that the system deleted the account.|
 |<a name="pause"></a>Pause|For internal use only. You may update the account and its campaigns while the account is in the paused state.|
 |<a name="pending"></a>Pending|For internal use only. You may update the account and its campaigns while the account is in the pending state.|
-|<a name="suspended"></a>Suspended|Your account has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Bing Ads Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
+|<a name="suspended"></a>Suspended|Your account has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Microsoft Advertising Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

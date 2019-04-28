@@ -42,15 +42,15 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
-|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
-|<a name="adgroupcriterionid"></a>AdGroupCriterionId|The Bing Ads assigned identifier of an ad group criterion.|
-|<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
+|<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
+|<a name="adgroupcriterionid"></a>AdGroupCriterionId|The Microsoft Advertising assigned identifier of an ad group criterion.|
+|<a name="adgroupid"></a>AdGroupId|The Microsoft Advertising assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
-|<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
+|<a name="campaignid"></a>CampaignId|The Microsoft Advertising assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
-|<a name="customerid"></a>CustomerId|The Bing Ads assigned identifier of a customer.|
+|<a name="customerid"></a>CustomerId|The Microsoft Advertising assigned identifier of a customer.|
 |<a name="customername"></a>CustomerName|The customer name.|
 |<a name="matchedproductsatadgroup"></a>MatchedProductsAtAdGroup|The number of products per ad group that matched your product group targets.|
 |<a name="matchedproductsatcampaign"></a>MatchedProductsAtCampaign|The number of products per campaign that matched your product group targets.|

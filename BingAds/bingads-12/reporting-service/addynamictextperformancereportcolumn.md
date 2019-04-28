@@ -69,24 +69,24 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
-|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
+|<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
 |<a name="addescription"></a>AdDescription|The first ad description that appears below the path in your ad.|
 |<a name="addescription2"></a>AdDescription2|The second ad description that appears below the path in your ad. Ad description 2 might not appear in your ad.|
 |<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
-|<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
+|<a name="adgroupid"></a>AdGroupId|The Microsoft Advertising assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
-|<a name="adid"></a>AdId|The Bing Ads assigned identifier of an ad.|
+|<a name="adid"></a>AdId|The Microsoft Advertising assigned identifier of an ad.|
 |<a name="adlabels"></a>AdLabels|The labels applied to the ad.<br/><br/>Labels are delimited by a semicolon (;) in the report download.|
 |<a name="adstatus"></a>AdStatus|The ad status.|
 |<a name="adtitle"></a>AdTitle|The ad title.|
 |<a name="adtype"></a>AdType|The ad type.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16. The formula for calculating the average CPC is *(Spend /Clicks)*.|
 |<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
-|<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
+|<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Microsoft Advertising click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
 |<a name="conversionrate"></a>ConversionRate|The conversion rate as a percentage. The number of conversions, divided by the total number of clicks. For example, if the ads in your campaign got 300 clicks and four conversions, the conversion rate is 1.33 (%). The formula for calculating the conversion rate is *(Conversions / Clicks) x 100*.|
 |<a name="conversions"></a>Conversions|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.|
 |<a name="costperconversion"></a>CostPerConversion|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*. Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|

@@ -13,7 +13,7 @@ Defines a product audience that can be downloaded and uploaded in a bulk file.
 
 Using Product Audiences, you can remarket to customers based on the specific products they viewed or added to their cart. Feed-based ads promote those same products to customers (known as dynamic remarketing).
 
-Product audiences work best with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Bing Merchant Center [store ID](campaign.md#storeid). 
+Product audiences work best with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Microsoft Merchant Center [store ID](campaign.md#storeid). 
 
 > [!IMPORTANT]
 > Be sure to edit the script corresponding to the [UET Tag Id](#uettagid) on your website to include the `ecomm_prodid` and `ecomm_pagetype` parameters.
@@ -121,7 +121,7 @@ The name can contain a maximum of 128 characters
 ## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
-The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 300 people before Microsoft Advertising will use it for optimizations.
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -130,7 +130,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 ## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
-The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 1,000 people before Microsoft Advertising will use it for optimizations.
 
 This property will be empty for up to 24 hours while the audience is being built, for example if you add or update the product audience membership duration, rule, or tag identifier. 
 
@@ -164,7 +164,7 @@ The system generated identifier of the product audience.
 **Delete:** Read-only and Required  
 
 ## <a name="membershipduration"></a>Membership Duration
-When you create a product audience, you can specify how far back in time Bing Ads should look for actions that match your product audience definition in order to add people to your list.
+When you create a product audience, you can specify how far back in time Microsoft Advertising should look for actions that match your product audience definition in order to add people to your list.
 
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 
@@ -224,7 +224,7 @@ Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campa
 **Delete:** Read-only
 
 ## <a name="uettagid"></a>UET Tag Id
-The Bing Ads identifier of the Universal Event Tracking (UET) tag that is used with the product audience.
+The Microsoft Advertising identifier of the Universal Event Tracking (UET) tag that is used with the product audience.
 
 > [!IMPORTANT]
 > Be sure to edit the UET script on your website to include the `prodid` and `pagetype` parameters.

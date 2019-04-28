@@ -14,7 +14,7 @@ The [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service 
 - Get the estimated position where ads may appear given the specified bid. 
 - Get suggested relevant keywords from the content of a web page or from other keywords. 
 - Get the locations and demographics (age and gender) of the users who have searched for specified keywords. 
-- Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the Bing Ads web application. 
+- Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the Microsoft Advertising web application. 
 
 You can get most of this information broken out by device type.
 
@@ -29,7 +29,7 @@ Given a list of existing ad groups, the [GetBidLandscapeByAdGroupIds](../ad-insi
 ## <a name="keywordopportunities"></a>Keyword Bid Opportunities
 You can use these operations to optimize bids for existing keywords.
 
-- Given a list of existing keywords, the [GetBidLandscapeByKeywordIds](../ad-insight-service/getbidlandscapebykeywordids.md) operation returns for each a list of suggested bids and estimated performance statistics. You can use the landscape view of multiple bid points with estimated traffic for the same keyword to help make decisions about how to adjust your keyword bid to optimize for clicks, impressions, and cost. For example you might use the resulting data to visualize a clicks to cost curve or a bid to impressions curve. For more information, see the help article [View impression and cost estimates before changing your bid](https://help.bingads.microsoft.com/#apex/3/en/51096/1).
+- Given a list of existing keywords, the [GetBidLandscapeByKeywordIds](../ad-insight-service/getbidlandscapebykeywordids.md) operation returns for each a list of suggested bids and estimated performance statistics. You can use the landscape view of multiple bid points with estimated traffic for the same keyword to help make decisions about how to adjust your keyword bid to optimize for clicks, impressions, and cost. For example you might use the resulting data to visualize a clicks to cost curve or a bid to impressions curve. For more information, see the help article [View impression and cost estimates before changing your bid](https://help.ads.microsoft.com/#apex/3/en/51096/1).
 
 - To identify which keyword's performance may be improved with minimal increase in cost per click, call the [GetBidOpportunities](../ad-insight-service/getbidopportunities.md) operation. The response contains a list of [BidOpportunity](../ad-insight-service/bidopportunity.md) objects that suggest a bid value that may increase clicks and impressions while minimally increasing costs.
 
@@ -71,5 +71,5 @@ For operations that suggest keywords, such as [SuggestKeywordsFromExistingKeywor
 
 ## See Also
 [Ad Insight Service Reference](../ad-insight-service/ad-insight-service-reference.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

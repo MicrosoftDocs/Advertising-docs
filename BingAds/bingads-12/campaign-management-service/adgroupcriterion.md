@@ -32,7 +32,7 @@ Do not try to instantiate an *AdGroupCriterion*. You can create one or more foll
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to apply the criterion to.|**long**|
 |<a name="criterion"></a>Criterion|The criterion to apply to the ad group. The criterion helps determine whether ads in the ad group are served.<br/><br/>For a list of available criterion types, see [AdGroupCriterionType](adgroupcriteriontype.md).|[Criterion](criterion.md)|
-|<a name="id"></a>Id|The unique Bing Ads identifier for the ad group criterion.|**long**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier for the ad group criterion.|**long**|
 |<a name="status"></a>Status|A status value that determines whether to apply the criterion to the ad group.|[AdGroupCriterionStatus](adgroupcriterionstatus.md)|
 |<a name="type"></a>Type|The type of ad group criterion. For more information, see [Remarks](#remarks).|**string**|
 

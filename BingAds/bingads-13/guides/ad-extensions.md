@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup ad extensions with the Bing Ads API.
 ---
 # Ad Extensions
-Ad extensions are additional pieces of information about your business, like a phone number or a link to a specific page on your website, you can add to your ads. Ad extensions are free to add to your ads, with the usual charges for any clicks you get. Including ad extensions can improve the visibility of your ads, which can lead to more clicks and improve your ROI. There are many types of ad extensions available in Bing Ads: [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). For more about ad extensions, see the [About ad extensions](https://help.bingads.microsoft.com/#apex/3/en/51001/1) help article.
+Ad extensions are additional pieces of information about your business, like a phone number or a link to a specific page on your website, you can add to your ads. Ad extensions are free to add to your ads, with the usual charges for any clicks you get. Including ad extensions can improve the visibility of your ads, which can lead to more clicks and improve your ROI. There are many types of ad extensions available in Microsoft Advertising: [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). For more about ad extensions, see the [About ad extensions](https://help.ads.microsoft.com/#apex/3/en/51001/1) help article.
 
 > [!TIP]
 > Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the changes of additional space being allocated and increasing clicks for your ad.
@@ -70,7 +70,7 @@ Potential customers like to know about other customers' experiences when searchi
 ### <a name="sitelinkextensions"></a>Sitelink Extensions
 Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
-You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, Bing Ads determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
+You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, Microsoft Advertising determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
 
 ![Sitelink Ad Extension](media/overview-sitelinkadextension.png "Sitelink Ad Extension")
 
@@ -81,7 +81,7 @@ Structured Snippet Extensions give potential customers more context on a specifi
 
 This extension is not clickable and, similar to other extensions, will appear beneath your ad's description. Structured Snippets have no impact on the other extensions you're already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
-An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won't always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Bing Ads markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
+An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won't always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Microsoft Advertising markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
 
 
 ## <a name="bulkservice"></a>Managing Ad Extensions with the Bulk Service
@@ -188,5 +188,5 @@ For more information about reporting, see [Reports](reports.md) and [Request and
 
 
 ## See Also
-[Bing Ads Web Service Addresses](web-service-addresses.md)
+[Bing Ads API Web Service Addresses](web-service-addresses.md)
 

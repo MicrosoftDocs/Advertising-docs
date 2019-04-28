@@ -186,7 +186,7 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 **Delete:** Read-only  
 
 ## <a name="bidstrategytargetcpa"></a>Bid Strategy TargetCpa
-The target cost per acquisition (CPA) that you want used by Bing Ads to maximize conversions. 
+The target cost per acquisition (CPA) that you want used by Microsoft Advertising to maximize conversions. 
 
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetCpa*, and otherwise this field is ignored.
 
@@ -203,19 +203,19 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 The bid strategy type for how you want to manage your bids. A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
 
 For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). 
-* EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget. Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with the EnhancedCpc bid strategy, Bing Ads will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.  
-* ManualCpc - Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Bing Ads will use these bids every time.  
+* EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Microsoft Advertising will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget. Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.  
+* ManualCpc - Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Microsoft Advertising will use these bids every time.  
 * MaxClicks - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget.  
 * MaxConversions - Defines an automated bidding strategy to maximize conversions given your maximum allowed budget.    
 * TargetCpa - Defines an automated bidding strategy to maximize conversions at the target cost per acquisition (CPA). If you use this strategy type then you must also include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.    
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
-> - You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
-> - Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
-> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
+> - You can continue to set the ad group and keyword bids; however they will not be used by Microsoft Advertising.
+> - Microsoft Advertising will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Microsoft Advertising may change them at any time using this bid strategy type.
+> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > 
-> Also note that you must have conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
+> Also note that you must have conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Microsoft Advertising will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*.
@@ -228,9 +228,9 @@ For details about supported bid strategies per campaign type, see [Budget and Bi
 The campaign's budget amount.
 
 > [!WARNING]
-> Your budget is a target; your actual spend might be higher or lower. Variations are caused by a number of factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Bing Ads anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
+> Your budget is a target; your actual spend might be higher or lower. Variations are caused by a number of factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Microsoft Advertising anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
 > 
-> Also note that Bing Ads does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
+> Also note that Microsoft Advertising does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
 
 In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field.
 
@@ -281,7 +281,7 @@ The name of the campaign.
 ## <a name="campaigntype"></a>Campaign Type
 The type of the campaign.
 
-The campaign type determines whether the campaign is a Bing Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*.
+The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*.
 
 **Add:** Required for Audience campaigns, and otherwise this field is optional. If not specified, then default value of *Search* is used and you cannot set Audience, Dynamic Search Ads, or Shopping campaign settings. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  
@@ -295,9 +295,9 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="countrycode"></a>Country Code
-The country code for the Bing Merchant Center store.
+The country code for the Microsoft Merchant Center store.
 
-The Bing Merchant Center store catalog will be filtered to only include products for the specified country. 
+The Microsoft Merchant Center store catalog will be filtered to only include products for the specified country. 
 
 For example, the following country code values are supported.
 * AU - Australia
@@ -319,7 +319,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 532), Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 532), Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
@@ -376,7 +376,7 @@ The system generated identifier of the campaign.
 A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.
 
 > [!NOTE]
-> Keyword Relevance is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.
+> Keyword Relevance is equivalent to the **Expected Click-Through Rate** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -392,7 +392,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.
 
 > [!NOTE]
-> Landing Page Relevance is equivalent to the **Ad Relevance** label used in the Bing Ads web application.
+> Landing Page Relevance is equivalent to the **Ad Relevance** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -408,7 +408,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.
 
 > [!NOTE]
-> Landing Page User Experience is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.
+> Landing Page User Experience is equivalent to the **Landing Page Experience** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -437,7 +437,7 @@ For Dynamic Search Ads campaigns, only English is supported.
 **Delete:** Read-only  
 
 ## <a name="localinventoryadsenabled"></a>LocalInventoryAdsEnabled
-Determines whether local inventory ads are enabled for the Bing Merchant Center store.
+Determines whether local inventory ads are enabled for the Microsoft Merchant Center store.
 
 Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
@@ -467,21 +467,21 @@ This bulk field maps to the *Id* field of the [Account](account.md) record.
 **Delete:** Read-only and Required  
   
 ## <a name="priority"></a>Priority
-Helps determine which Bing Shopping campaign serves ads, in the event that two or more campaigns use the product catalog feed from the same Bing Merchant Center store.
+Helps determine which Microsoft Shopping campaign serves ads, in the event that two or more campaigns use the product catalog feed from the same Microsoft Merchant Center store.
 
 You must specify one of the supported values: 0, 1, or 2. The higher numbers are given higher priority.
 
-If two shopping campaigns use the product catalog feed from same Bing Merchant Center store, then  ads will be delivered for the [Ad Group Product Partition](ad-group-product-partition.md) with the highest bid.
+If two shopping campaigns use the product catalog feed from same Microsoft Merchant Center store, then  ads will be delivered for the [Ad Group Product Partition](ad-group-product-partition.md) with the highest bid.
 
 > [!NOTE]
-> If you create a Bing Shopping campaign in the Bing Ads web application, the default priority selected is "Low" which is the equivalent of '0'.
+> If you create a Microsoft Shopping campaign in the Microsoft Advertising web application, the default priority selected is "Low" which is the equivalent of '0'.
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.  
 **Delete:** Read-only  
 
 ## <a name="qualityscore"></a>Quality Score
-The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
+The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Microsoft Advertising using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
 
 Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the file will be "" (empty string) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
 
@@ -520,14 +520,14 @@ Possible values for download and upload are Active, Paused, and Deleted. In addi
 |BudgetPaused|The campaign is paused, which indicates that the campaign's ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to Active when the budget is restored.|
 |Deleted|The campaign is deleted. This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
 |Paused|The campaign is paused, which indicates that the campaign's ads will not serve.|
-|Suspended|Your campaign has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Bing Ads Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
+|Suspended|Your campaign has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Microsoft Advertising Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
 
 **Add:** Optional. The default value is Active.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to Deleted.
 
 ## <a name="storeid"></a>Store Id
-The unique identifier for the Bing Merchant Center store that contains a product catalog feed that you want to use for the campaign.
+The unique identifier for the Microsoft Merchant Center store that contains a product catalog feed that you want to use for the campaign.
 
 Once you choose a store for a campaign, you can't change it. If at some point you want to use a different store, you would need to create a new shopping campaign with a new shopping setting.
 
@@ -542,9 +542,9 @@ The campaign sub type.
 
 This field is only applicable for campaigns of type *Shopping*, and will be empty for all other campaign types.
 
-We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any Bing Shopping campaigns.
+We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Microsoft Shopping Campaigns. More details about Cooperative campaigns are coming soon, and whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any Microsoft Shopping Campaigns.
 
-When you download campaigns and if the [Campaign Type](#campaigntype) field is set to *Shopping*, please also check the *Sub Type* of each campaign. If the *Sub Type* is not set then it is a standard Bing Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign with different requirements.  
+When you download campaigns and if the [Campaign Type](#campaigntype) field is set to *Shopping*, please also check the *Sub Type* of each campaign. If the *Sub Type* is not set then it is a standard Microsoft Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign with different requirements.  
 
 **Add:** Optional and not applicable for most campaign types. For Cooperative campaigns you must set the sub type to *ShoppingCoOperative*.  
 **Update:** Read-only  
@@ -591,7 +591,7 @@ For possible values, see [Time Zones](../guides/time-zones.md).
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your campaign.
 
-The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
 - Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
@@ -599,7 +599,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    

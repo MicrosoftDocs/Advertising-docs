@@ -13,32 +13,32 @@
     href: ./get-started-csharp.md
     displayName: .net c# csharp
     items:
-    - name: Walkthrough - Bing Ads Desktop Application in C#
+    - name: Walkthrough - Bing Ads API Desktop Application in C#
       href: ./walkthrough-desktop-application-csharp.md
       displayName: .net c# csharp
-    - name: Walkthrough - Bing Ads Web Application in C#
+    - name: Walkthrough - Bing Ads API Web Application in C#
       href: ./walkthrough-web-application-csharp.md
       displayName: .net c# csharp
   - name: Get Started Using Java
     href: ./get-started-java.md
     items:
-    - name: Walkthrough - Bing Ads Desktop Application in Java
+    - name: Walkthrough - Bing Ads API Desktop Application in Java
       href: ./walkthrough-desktop-application-java.md
-    - name: Walkthrough - Bing Ads Web Application in Java
+    - name: Walkthrough - Bing Ads API Web Application in Java
       href: ./walkthrough-web-application-java.md
   - name: Get Started Using PHP
     href: ./get-started-php.md
     items:
-    - name: Walkthrough - Bing Ads Desktop Application in PHP
+    - name: Walkthrough - Bing Ads API Desktop Application in PHP
       href: ./walkthrough-desktop-application-php.md
-    - name: Walkthrough - Bing Ads Web Application in PHP
+    - name: Walkthrough - Bing Ads API Web Application in PHP
       href: ./walkthrough-web-application-php.md
   - name: Get Started Using Python
     href: ./get-started-python.md
     items:
-    - name: Walkthrough - Bing Ads Desktop Application in Python
+    - name: Walkthrough - Bing Ads API Desktop Application in Python
       href: ./walkthrough-desktop-application-python.md
-    - name: Walkthrough - Bing Ads Web Application in Python
+    - name: Walkthrough - Bing Ads API Web Application in Python
       href: ./walkthrough-web-application-python.md
 - name: Sandbox
   href: ./sandbox.md

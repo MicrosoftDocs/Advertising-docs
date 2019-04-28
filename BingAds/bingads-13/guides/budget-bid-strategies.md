@@ -16,17 +16,17 @@ Before your ads can run, you need to set your campaign's budget. You'll also nee
 |[Keyword Match Types](#keywordmatchtypes)|Search|
 
 ## <a name="budgettypes"></a>Budget Types
-Your budget tells Bing Ads how much you want to spend on your campaign. You can set a daily budget for each campaign and when you reach your budget, Bing Ads will stop displaying your ads until the next day or month. Keep your advertising costs under control by keeping track of your budget. 
+Your budget tells Microsoft Advertising how much you want to spend on your campaign. You can set a daily budget for each campaign and when you reach your budget, Microsoft Advertising will stop displaying your ads until the next day or month. Keep your advertising costs under control by keeping track of your budget. 
 
 > [!WARNING]
-> Your budget is a target; your actual spend might be higher or lower. Variations are caused by a number of factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Bing Ads anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
+> Your budget is a target; your actual spend might be higher or lower. Variations are caused by a number of factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Microsoft Advertising anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
 > 
-> Also note that Bing Ads does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
+> Also note that Microsoft Advertising does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
 
-With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
+With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account. 
 
 > [!IMPORTANT]
-> You might need to code for shared budgets in the Bing Ads platform, even if you do not use shared budgets. To determine whether the campaign uses a shared budget, check the value of the [BudgetId](../campaign-management-service/campaign.md#budgetid) element (via Campaign Management service) or [Budget Id](../bulk-service/campaign.md#budgetid) field (via Bulk service).
+> You might need to code for shared budgets in the Microsoft Advertising platform, even if you do not use shared budgets. To determine whether the campaign uses a shared budget, check the value of the [BudgetId](../campaign-management-service/campaign.md#budgetid) element (via Campaign Management service) or [Budget Id](../bulk-service/campaign.md#budgetid) field (via Bulk service).
 
 The Bing Ads API supports the *DailyBudgetAccelerated*  and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.
 
@@ -41,7 +41,7 @@ Show your ads evenly every day throughout the month so you don't run out of budg
 This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 ### <a name="budget_rules"></a>Budget Rules
-Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1) 
+Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](https://help.ads.microsoft.com/#apex/3/en/51006/1) 
 
 If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign's time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](currencies.md).
 
@@ -56,12 +56,12 @@ The service will use the new monthly budget for the remainder of the current mon
 The service will update the monthly budget of an existing campaign by using the new formula only if you update the campaign's budget; otherwise, the monthly budget remains unchanged and is enforced.
 
 ## <a name="bidstrategytypes"></a>Bid Strategy Types
-Your bid strategy setting tells Bing Ads how you want to manage your bids. Whichever bid strategy you use, Bing Ads will always respect your budget limit. 
+Your bid strategy setting tells Microsoft Advertising how you want to manage your bids. Whichever bid strategy you use, Microsoft Advertising will always respect your budget limit. 
 
 > [!NOTE]
-> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](../campaign-management-service/biddingscheme.md) object.
+> The Microsoft Advertising web application uses the term *Bid strategy*, the Bulk API uses the *Bid Strategy Type* column for upload and download, and the Campaign Management API derives several bid strategy objects from the [BiddingScheme](../campaign-management-service/biddingscheme.md) object.
 
-The following bid strategy types are available per campaign type. For more information see the [Let Bing Ads manage your bids with bid strategies](https://help.bingads.microsoft.com/#apex/3/en/56786/1) help article.
+The following bid strategy types are available per campaign type. For more information see the [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1) help article.
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
@@ -75,20 +75,20 @@ When you use the Bing Ads API, the default value for Search and DynamicSearchAds
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
-> - You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
-> - Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
-> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
+> - You can continue to set the ad group and keyword bids; however they will not be used by Microsoft Advertising.
+> - Microsoft Advertising will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Microsoft Advertising may change them at any time using this bid strategy type.
+> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > - Even if an ad group's ad rotation is set to *RotateAdsEvenly*, it will be ignored as these bid strategies prioritize better-performing ads. 
 > 
-> Also note that you must have conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
+> Also note that you must have conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Microsoft Advertising will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*.
 
 ### <a name="enhancedcpc"></a>EnhancedCpc
-With the *EnhancedCpc* (enhanced cost per click) bid strategy, you set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget.  
+With the *EnhancedCpc* (enhanced cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget.  
 
-Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies, with the *EnhancedCpc* bid strategy, Bing Ads will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
+Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies, with the *EnhancedCpc* bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
 
 > [!NOTE]
 > The *EnhancedCpc* bid strategy is available to all advertisers worldwide for Dynamic Search Ads and Search campaigns. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.
@@ -96,17 +96,17 @@ Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies
 > For Shopping campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
 
 ### <a name="manualcpc"></a>ManualCpc
-With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group and keyword bids, and Bing Ads uses these bids every time.  
+With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
 ### <a name="maxclicks"></a>MaxClicks
-With the *MaxClicks* bid strategy, you don't need to set ad group or keyword bids. Bing Ads automatically sets your bids in real time to get as many clicks as possible within your budget.
+With the *MaxClicks* bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.
 
-Bing Ads will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Bing Ads never pays more than a certain amount for each individual click.
+Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 ### <a name="maxconversions"></a>MaxConversions
-With the *MaxConversions* bid strategy, you don't need to set ad group or keyword bids. Bing Ads automatically sets your bids in real time to get as many conversions as possible within your budget.
+With the *MaxConversions* bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many conversions as possible within your budget.
 
-Bing Ads will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Bing Ads never pays more than a certain amount for each individual click.
+Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
@@ -114,9 +114,9 @@ You need to have conversion tracking (a UET tag and a conversion goal) set up an
 > The *MaxConversions* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ### <a name="targetcpa"></a>TargetCpa
-With the *TargetCpa* (cost per acquisition) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average CPA, and Bing Ads automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Bing Ads will try to make sure your average cost per conversion is in line with your target.
+With the *TargetCpa* (cost per acquisition) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average CPA, and Microsoft Advertising automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Microsoft Advertising will try to make sure your average cost per conversion is in line with your target.
 
-Bing Ads will always respect your overall budget limit, but if you want greater control over your bids while using Target CPA, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Bing Ads never pays more than a certain amount for each individual click.
+Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target CPA, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
@@ -124,7 +124,7 @@ You need to have conversion tracking (a UET tag and a conversion goal) set up an
 > The *TargetCpa* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
-Match type bids help Bing Ads determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.
+Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.
 
 ### <a name="exactmatchtype"></a>Exact
 An exact match results when all of the words in the keyword exactly match the user's search term.
@@ -177,17 +177,17 @@ For Search and Content campaigns, take a look at the keywords you've created for
 You can also use negative keywords to prevent you ads from being served if the user's search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](negative-keywords.md).
 
 ### <a name="normalization"></a>Keyword Normalization
-A keyword is considered a duplicate if it is the same as another keyword, but its punctuation varies. This is called keyword normalization, a process where extraneous characters like punctuation marks and accents are removed from keywords and customer queries. Keywords are normalized when you add them to an ad group to avoid duplicates of keywords that normalize into the same form. Bing Ads flags duplicate keywords so you can remove them. Removing the duplicate keywords will save you time while still giving you thorough keyword coverage. If one of your keywords is marked as a duplicate, there is no reason to manage both of them. You can remove either the duplicate or the original keyword without impacting your campaign.
+A keyword is considered a duplicate if it is the same as another keyword, but its punctuation varies. This is called keyword normalization, a process where extraneous characters like punctuation marks and accents are removed from keywords and customer queries. Keywords are normalized when you add them to an ad group to avoid duplicates of keywords that normalize into the same form. Microsoft Advertising flags duplicate keywords so you can remove them. Removing the duplicate keywords will save you time while still giving you thorough keyword coverage. If one of your keywords is marked as a duplicate, there is no reason to manage both of them. You can remove either the duplicate or the original keyword without impacting your campaign.
 
-For example, let's say you add *bike-repair* as one of your keywords, and then also add *bike repair*. Your second entry (bike repair) would be marked as a duplicate. When someone searches for *bike-repair*, Bing Ads automatically removes the hyphen and displays ads for the search query bike repair, including yours, regardless of which variation you used (*bike repair* or *bike-repair*).
+For example, let's say you add *bike-repair* as one of your keywords, and then also add *bike repair*. Your second entry (bike repair) would be marked as a duplicate. When someone searches for *bike-repair*, Microsoft Advertising automatically removes the hyphen and displays ads for the search query bike repair, including yours, regardless of which variation you used (*bike repair* or *bike-repair*).
 
-For a detailed list of normalized characters, see the Bing Ads help topic [About duplicate keywords](https://help.bingads.microsoft.com/#apex/3/en/normalization).
+For a detailed list of normalized characters, see the Microsoft Advertising help topic [About duplicate keywords](https://help.ads.microsoft.com/#apex/3/en/normalization).
 
 Please also note the following validation rules.
 - Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case. 
 - Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*. 
-- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](https://help.bingads.microsoft.com/#apex/3/en/52023/1). 
+- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Microsoft Advertising policies](https://help.ads.microsoft.com/#apex/3/en/52023/1). 
 
 ## See Also
-[Bing Ads Web Service Addresses](web-service-addresses.md)
+[Bing Ads API Web Service Addresses](web-service-addresses.md)
 

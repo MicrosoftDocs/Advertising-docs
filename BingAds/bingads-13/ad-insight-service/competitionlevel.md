@@ -4,10 +4,10 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.
+description: Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising.
 ---
 # CompetitionLevel Value Set - Ad Insight
-Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads. 
+Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising. 
 
 You can specify competition levels when calling the [GetKeywordIdeas](getkeywordideas.md) operation.
 

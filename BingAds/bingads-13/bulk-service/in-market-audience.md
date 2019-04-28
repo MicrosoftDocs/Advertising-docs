@@ -20,7 +20,7 @@ Defines an in-market audience that can be downloaded in a bulk file.
 > This feature is available only in the United States.
 
 > [!TIP]
-> For an overview of in-market audiences see the [About in-market audiences](https://help.bingads.microsoft.com/#apex/3/en/56851/0) help topic.
+> For an overview of in-market audiences see the [About in-market audiences](https://help.ads.microsoft.com/#apex/3/en/56851/0) help topic.
 
 You can download all *In Market Audience* records in the account by including the [DownloadEntity](downloadentity.md) value of *InMarketAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -93,7 +93,7 @@ The name can contain a maximum of 128 characters
 ## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
-The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 300 people before Microsoft Advertising will use it for optimizations.
 
 **Add:** Not supported  
 **Update:** Not supported    
@@ -102,7 +102,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 ## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
-The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 1,000 people before Microsoft Advertising will use it for optimizations.
 
 **Add:** Not supported  
 **Update:** Not supported   
@@ -125,7 +125,7 @@ The system generated identifier of the in-market audience.
 **Delete:** Not supported  
 
 ## <a name="membershipduration"></a>Membership Duration
-When you create an in-market audience in the Bing Ads web application, you can specify how far back in time Bing Ads should look for actions that match your in-market audience definition in order to add people to your list.
+When you create an in-market audience in the Microsoft Advertising web application, you can specify how far back in time Microsoft Advertising should look for actions that match your in-market audience definition in order to add people to your list.
 
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 
@@ -144,7 +144,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Not supported  
 
 ## <a name="parentid"></a>Parent Id
-The Bing Ads identifier of the customer that contains the in-market audience.
+The Microsoft Advertising identifier of the customer that contains the in-market audience.
 
 **Add:** Not supported  
 **Update:** Not supported    
