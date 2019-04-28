@@ -5,13 +5,13 @@ author: "eric-urban"
 ms.author: "eur"
 ms.service: "bing-ads"
 ms.topic: hub-page
-title: Bing Ads Documentation
-description: Bing Ads API documentation home.
+title: Microsoft Advertising Documentation
+description: Microsoft Advertising developer documentation home.
 ---
 
 <div id="main" class="v2">
 <div class="container">
-    <h1>Bing Ads Documentation</h1>
+    <h1>Microsoft Advertising Documentation</h1>
     <ul class="pivots">
         <li>
             <a href="#main"></a>
@@ -69,7 +69,7 @@ description: Bing Ads API documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Authentication with OAuth</h3>
-                                            <p>Learn how to leverage the OAuth 2.0 protocol to enable authentication of Microsoft Accounts for Bing Ads.</p>
+                                            <p>Learn how to leverage the OAuth 2.0 protocol to enable authentication of Microsoft Accounts for Microsoft Advertising.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@ description: Bing Ads API documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Reference</h3>
-                                            <p>Browse the SOAP web services reference content for Bing Ads.</p>
+                                            <p>Browse the SOAP web services reference content for Bing Ads API.</p>
                                         </div>
                                     </div>
                                 </div>
