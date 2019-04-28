@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Advertising Technical Guides"
+title: "Bing Ads API Technical Guides"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: The technical guides describe core advertising scenarios using Bing Ads API.
 ---
-# Microsoft Advertising Technical Guides
+# Bing Ads API Technical Guides
 The technical guides below describe core advertising scenarios using Bing Ads API.
 
 ## Guides

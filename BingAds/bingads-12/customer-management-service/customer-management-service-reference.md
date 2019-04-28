@@ -17,6 +17,6 @@ The Customer Management [service](../guides/web-service-addresses.md) defines an
 
 ## See Also
 [Get Started With the Bing Ads API](../guides/get-started.md)  
-[Microsoft Advertising Technical Guides](../guides/technical-guides.md)  
+[Bing Ads API Technical Guides](../guides/technical-guides.md)  
 [Bing Ads API Web Service Addresses](../guides/web-service-addresses.md)  
 
