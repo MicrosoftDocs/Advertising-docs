@@ -114,7 +114,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 > [!NOTE] 
 > Previously with Campaign Management API version 10 it was possible to associate one target identifier with multiple campaigns and ad groups using the AddTargetsToLibrary, SetTargetToCampaign, and SetTargetToAdGroup operations. After a campaign or ad group had been disassociated from the shared target, the criterion identifier would be set to *0* (zero) in the Bulk download or Bulk upload result file. 
@@ -155,7 +155,7 @@ The age range that you want to exclude.
 Supported values are *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFourtyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. With Audience campaigns you can also exclude *Unknown* i.e., people whose age is not known.
 
 > [!NOTE]
-> In many countries, online advertisers are not supposed to target any users less than 18 years old. Bing Ads does not deliver interest-based advertising to children whose birthdate in their Microsoft account identifies them as under 13 years of age. For more information see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+> In many countries, online advertisers are not supposed to target any users less than 18 years old. Microsoft Advertising does not deliver interest-based advertising to children whose birthdate in their Microsoft account identifies them as under 13 years of age. For more information see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 **Add:** Required  
 **Update:** Required  

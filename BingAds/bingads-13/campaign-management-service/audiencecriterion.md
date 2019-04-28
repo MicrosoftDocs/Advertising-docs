@@ -9,7 +9,7 @@ description: Defines a criterion that can be used to show ads to a specific audi
 # AudienceCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to a specific audience.
 
-The *AudienceCriterion* can be included within [AdGroupCriterion](adgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), [CampaignCriterion](campaigncriterion.md), and [NegativeCampaignCriterion](negativecampaigncriterion.md) objects. Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions. 
+The *AudienceCriterion* can be included within [AdGroupCriterion](adgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), [CampaignCriterion](campaigncriterion.md), and [NegativeCampaignCriterion](negativecampaigncriterion.md) objects. Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions. 
 
 > [!NOTE]
 > Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
@@ -32,7 +32,7 @@ The *AudienceCriterion* can be included within [AdGroupCriterion](adgroupcriteri
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceid"></a>AudienceId|The Bing Ads identifier of the [Audience](audience.md).<br/><br/>**Add:** Required<br/>**Update:** Read-only. You must leave this element null or the audience must already be associated with the specified entity. To associate a different audience with the entity, you must add a new audience criterion and optionally delete any existing audience criteria.|**long**|
+|<a name="audienceid"></a>AudienceId|The Microsoft Advertising identifier of the [Audience](audience.md).<br/><br/>**Add:** Required<br/>**Update:** Read-only. You must leave this element null or the audience must already be associated with the specified entity. To associate a different audience with the entity, you must add a new audience criterion and optionally delete any existing audience criteria.|**long**|
 |<a name="audiencetype"></a>AudienceType|The audience type.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AudienceType](audiencetype.md)|
 
 The [AudienceCriterion](audiencecriterion.md) object has [Inherited Elements](#inheritedelements).

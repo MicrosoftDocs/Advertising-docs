@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Web Application in Java"
+title: "Walkthrough: Bing Ads API Web Application in Java"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a web application using the Bing Ads Java SDK.
 dev_langs:
   - java
 ---
-# Walkthrough: Bing Ads Web Application in Java
+# Walkthrough: Bing Ads API Web Application in Java
 This example Java web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -93,7 +93,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
      %>
 
      <%! 
-    	//Gets a User object by the specified Bing Ads user identifier.
+    	//Gets a User object by the specified Microsoft Advertising user identifier.
 
     	 static User getUser(java.lang.Long userId) throws Exception
     	 {
@@ -190,7 +190,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
           ArrayOfAdvertiserAccount accounts = searchAccountsByUserId(user.getId());
           accountsCount = accounts.getAccounts().size();
 
-          System.out.println("The user can access the following Bing Ads accounts: \n");
+          System.out.println("The user can access the following Microsoft Advertising accounts: \n");
           printAccounts(accounts);
 
     	// Customer Management service operations can throw AdApiFaultDetail.
@@ -237,7 +237,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
     <html>
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <title>Bing Ads Web Application Example</title>
+        <title>Microsoft Advertising Web Application Example</title>
         <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
     </head>
     <body>
@@ -292,6 +292,6 @@ If you are using Microsoft Azure to deploy your web application, the following a
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

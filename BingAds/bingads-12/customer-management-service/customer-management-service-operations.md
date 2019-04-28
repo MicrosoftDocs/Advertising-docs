@@ -29,11 +29,11 @@ The Customer Management service defines the following service operations.
 |[SearchClientLinks](searchclientlinks.md)|Searches for the client links for the customer of the current authenticated user, filtered by the search criteria.|1 *Predicates*|
 |[SearchCustomers](searchcustomers.md)|Searches for customers that match a specified criteria.|10 *Predicates*|
 |[SearchUserInvitations](searchuserinvitations.md)|Searches for user invitations that match a specified criteria.|1 *Predicates*|
-|[SendUserInvitation](senduserinvitation.md)|Sends an email invitation for someone to manage your Bing Ads accounts.|1 *UserInvitation*|
+|[SendUserInvitation](senduserinvitation.md)|Sends an email invitation for someone to manage your Microsoft Advertising accounts.|1 *UserInvitation*|
 |[SignupCustomer](signupcustomer.md)|Creates a new customer and account that rolls up to your reseller payment method.|1 *Customer*<br/><br/>1 *Account*|
 |[UpdateAccount](updateaccount.md)|Updates the details of the specified account.|1 *Account*|
 |[UpdateClientLinks](updateclientlinks.md)|Updates the status of the specified client links.|10 *ClientLink*|
 |[UpdateCustomer](updatecustomer.md)|Updates the details of the specified customer.|1 *Customer*|
 |[UpdateUser](updateuser.md)|Updates the details of the specified user.|1 *User*|
 |[UpdateUserRoles](updateuserroles.md)|Updates the roles of the specified user.|1 *NewRoleId*<br/><br/>1 *UserId*|
-|[ValidateAddress](validateaddress.md)|Determines whether or not the submitted address is valid for Bing Ads accounts.|1 *Address*|
+|[ValidateAddress](validateaddress.md)|Determines whether or not the submitted address is valid for Microsoft Advertising accounts.|1 *Address*|

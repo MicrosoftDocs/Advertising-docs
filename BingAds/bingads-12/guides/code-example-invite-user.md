@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Invite User Code Example
-This example demonstrates how to invite a user to manage Bing Ads accounts.
+This example demonstrates how to invite a user to manage Microsoft Advertising accounts.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

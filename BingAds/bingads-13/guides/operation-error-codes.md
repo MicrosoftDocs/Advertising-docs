@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Operation Error Codes"
+title: "Microsoft Advertising Operation Error Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Reference documentation for service operation error codes.
 ---
 # Operation Error Codes
-Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. 
+Bing Ads API service operations may return error codes depending on the context. T
 
 For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).
 
@@ -32,7 +32,7 @@ Some symbolic error codes begin with the strings *BulkService* or *CampaignServi
 InternalError
 
 **Description**
-An unidentified error has occurred. You may obtain additional information about this error by contacting Bing Ads Support.
+An unidentified error has occurred. You may obtain additional information about this error by contacting Microsoft Advertising Support.
 
 ***
 
@@ -80,7 +80,7 @@ Typically indicates that while the credentials are correct for the target enviro
 UserCompromised
 
 **Description**
-We have detected suspicious activity on your Bing Ads account. We think someone may have logged into your Bing Ads account without your permission. Please create a new password to secure your account.
+We have detected suspicious activity on your Microsoft Advertising account. We think someone may have logged into your Microsoft Advertising account without your permission. Please create a new password to secure your account.
 
 ***
 
@@ -137,7 +137,7 @@ UserLoginAccessDenied
 **Description**
 The credentials are not valid for the person who attempted to login. Please login with the primary login credentials for this person.
 
-After [multi-user consolidation](customer-accounts.md#multi-user) credentials that have been merged into the primary login credentials can no longer be used to authenticate in Bing Ads. 
+After [multi-user consolidation](customer-accounts.md#multi-user) credentials that have been merged into the primary login credentials can no longer be used to authenticate in Microsoft Advertising. 
 
 ***
 
@@ -148,7 +148,7 @@ After [multi-user consolidation](customer-accounts.md#multi-user) credentials th
 PersonalIdentityNotAvailable
 
 **Description**
-You must use a work account to sign in to Bing Ads.
+You must use a work account to sign in to Microsoft Advertising.
 
 ***
 
@@ -159,7 +159,7 @@ You must use a work account to sign in to Bing Ads.
 WorkIdentityNotAvailable
 
 **Description**
-You must use a personal Microsoft account to sign in to Bing Ads.
+You must use a personal Microsoft account to sign in to Microsoft Advertising.
 
 ***
 
@@ -170,7 +170,7 @@ You must use a personal Microsoft account to sign in to Bing Ads.
 PersonalIdentityMigratedToWork
 
 **Description**
-You can no longer use this personal Microsoft account to access Bing Ads. Please sign in using your work account instead.
+You can no longer use this personal Microsoft account to access Microsoft Advertising. Please sign in using your work account instead.
 
 ***
 
@@ -181,7 +181,7 @@ You can no longer use this personal Microsoft account to access Bing Ads. Please
 PersonalIdentityNotAllowedByCustomer
 
 **Description**
-Your organization requires you to use your work email address to access Bing Ads. Please sign in using your work account instead.
+Your organization requires you to use your work email address to access Microsoft Advertising. Please sign in using your work account instead.
 
 ***
 
@@ -1684,7 +1684,7 @@ CampaignServiceEditorialValidationError
 The specified entity did not pass editorial validation. Please see the *ReasonCode* element of this error object for details.
 
 > [!NOTE] 
-> For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](editorial-failure-reason-codes.md).
+> For a list of editorial reason codes, see [Microsoft Advertising Editorial Failure Reason Codes](editorial-failure-reason-codes.md).
 
 ***
 
@@ -2124,7 +2124,7 @@ The business address country/region and currency of an account must match.
 Not applicable.
 
 **Description**
-Bing Ads does not accept this currency in your business location.
+Microsoft Advertising does not accept this currency in your business location.
 
 ***
 
@@ -7492,7 +7492,7 @@ The product condition collection contains too many conditions.
 CampaignServiceProductAdExtensionInvalidStoreId
 
 **Description**
-The Bing Merchant Center store identifier is invalid.
+The Microsoft Merchant Center store identifier is invalid.
 
 ***
 

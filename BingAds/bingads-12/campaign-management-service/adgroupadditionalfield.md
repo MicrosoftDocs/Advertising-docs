@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a list of optional ad group properties that you can request when calling GetAdGroupsByCampaignId and GetAdGroupsByIds.
 ---
 # AdGroupAdditionalField Value Set - Campaign Management
-Defines a list of optional ad group properties that you can request when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md) and [GetAdGroupsByIds](getadgroupsbyids.md). The additional field values enable you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding properties will be included in the ad group by default.  
+Defines a list of optional ad group properties that you can request when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md) and [GetAdGroupsByIds](getadgroupsbyids.md). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the ad group by default.  
 
 ## Syntax
 ```xml

@@ -13,7 +13,7 @@ Defines an ad group company name criterion that can be uploaded and downloaded i
 
 You can target people at a specific company according to LinkedIn by setting the [Profile Id](#profileid). 
 
-Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+Microsoft Advertising applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
 
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
@@ -119,7 +119,7 @@ The percentage amount that you want to adjust the bid for the corresponding [Pro
 Supported values are negative ninety (-90) through positive nine hundred (900). 
 
 > [!NOTE]
-> If the campaign uses MaxClicks, MaxConversions, or TargetCpa bid strategy types, then the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types.
+> If the campaign uses MaxClicks, MaxConversions, or TargetCpa bid strategy types, then the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types.
 > Additionally, if the campaign uses MaxClicks, MaxConversions, or TargetCpa bid strategy types, the valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 
 **Add:** Optional. The bid adjustment will be set to the default of *0* if not included.  
@@ -141,7 +141,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

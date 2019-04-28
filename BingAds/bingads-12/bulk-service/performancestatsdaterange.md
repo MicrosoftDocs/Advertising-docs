@@ -7,7 +7,7 @@ ms.author: eur
 description: This data object is not supported in Bing Ads API Version 12, and will be removed in a future version.
 ---
 # PerformanceStatsDateRange Data Object - Bulk
-This data object is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).
+This data object is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Reporting API. For more details see [Reports](../guides/reports.md).
 
 ## Syntax
 ```xml

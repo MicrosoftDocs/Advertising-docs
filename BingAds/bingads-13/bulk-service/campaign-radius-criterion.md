@@ -144,7 +144,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

@@ -10,7 +10,7 @@ description: Defines the ad group level settings for feed-based cooperative bidd
 Defines the ad group level settings for feed-based cooperative bidding campaigns.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 ## Syntax
 ```xml

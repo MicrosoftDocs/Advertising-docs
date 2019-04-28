@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Web Application in PHP"
+title: "Walkthrough: Bing Ads API Web Application in PHP"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a web application using the Bing Ads PHP SDK.
 dev_langs:
   - php
 ---
-# Walkthrough: Bing Ads Web Application in PHP
+# Walkthrough: Bing Ads API Web Application in PHP
 This example PHP web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -36,9 +36,9 @@ You'll also need your production [developer token](get-started.md#get-developer-
     Display a small form with a login button. In your application, you would implement code to allow
     the user to either log into your service or create a new account. 
     -->
-    <h2>Bing Ads OAuth Demo</h2>
+    <h2>Microsoft Advertising OAuth Demo</h2>
 
-    <p>This application would like to manage your Bing Ads data. Click below to login and authorize this application.</p>
+    <p>This application would like to manage your Microsoft Advertising data. Click below to login and authorize this application.</p>
 
     <p>When you click OK below, you'll be redirected to the following URI:</p>
     <p><?php echo WebAuthHelper::RedirectUri ?></p>
@@ -93,7 +93,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
             $_SESSION['state'] = $_SESSION['AuthorizationData']->Authentication->State;
             
-            // The user needs to provide consent for the application to access their Bing Ads accounts.
+            // The user needs to provide consent for the application to access their Microsoft Advertising accounts.
             header('Location: '. $_SESSION['AuthorizationData']->Authentication->GetAuthorizationEndpoint());
         }
         
@@ -185,14 +185,14 @@ You'll also need your production [developer token](get-started.md#get-developer-
             WebAuthHelper::GetApiEnvironment());
 
         // Set the GetUser request parameter to an empty user identifier to get the current 
-        // authenticated Bing Ads user, and then search for all accounts the user may access.
+        // authenticated Microsoft Advertising user, and then search for all accounts the user may access.
 
         $getUserRequest = new GetUserRequest();
         $getUserRequest->UserId = null;
 
         $user = $GLOBALS['CustomerManagementProxy']->GetService()->GetUser($getUserRequest)->User;
 
-        // Search for the Bing Ads accounts that the user can access.
+        // Search for the Microsoft Advertising accounts that the user can access.
 
         $pageInfo = new Paging();
         $pageInfo->Index = 0;    // The first page
@@ -255,6 +255,6 @@ You'll also need your production [developer token](get-started.md#get-developer-
 5. The application is ready to be deployed to a server with the [installed](get-started-php.md#installation) PHP client libraries. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). For more details see [Configure PHP in Azure App Service Web Apps](https://docs.microsoft.com/en-us/azure/app-service/web-sites-php-configure). 
 
 ## See Also
-[Bing Ads Code Examples](code-examples.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

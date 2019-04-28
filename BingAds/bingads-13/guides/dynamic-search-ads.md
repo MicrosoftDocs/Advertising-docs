@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup Dynamic Search ads with the Bing Ads API.
 ---
 # Dynamic Search Ads
-Dynamic search ads provide a streamlined, low-touch way to make sure customers searching on the Bing Network find your products or services.
+Dynamic search ads provide a streamlined, low-touch way to make sure customers searching on the Microsoft Advertising Network find your products or services.
 
 > [!NOTE]
 > This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States. 
@@ -23,7 +23,7 @@ Dynamic search ads are most appropriate for two types of advertisers:
 -  Advertisers who have a large catalog of webpages and a changing mix of products, making it difficult to manage search ads for each product.
 -  Advertisers who are not familiar with search advertising, but who want to quickly and easily try it out.
 
-For more information see the [Target searches automatically with dynamic search ads](https://help.bingads.microsoft.com/#apex/3/en/56794/0) help documentation.
+For more information see the [Target searches automatically with dynamic search ads](https://help.ads.microsoft.com/#apex/3/en/56794/0) help documentation.
 
 ## <a name="bulk"></a>Bulk API for Dynamic Search Ads  
 The following Bulk records are available for managing dynamic search ads campaigns.

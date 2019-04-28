@@ -171,16 +171,16 @@ The name must be unique among all active ad groups within the campaign. The name
 **Delete:** Read-only  
 
 ## <a name="adrotation"></a>Ad Rotation
-Ad rotation sets how often Bing Ads selects which ads to serve, if you have multiple ads within an ad group. Since no more than one ad from your account can show at a time, ad rotation prioritizes ads that appear statistically more likely to perform better.
+Ad rotation sets how often Microsoft Advertising selects which ads to serve, if you have multiple ads within an ad group. Since no more than one ad from your account can show at a time, ad rotation prioritizes ads that appear statistically more likely to perform better.
 
 > [!NOTE]
 > Ad rotation does not apply to Product Ads.
 
 Possible values are *OptimizeForClicks* and *RotateAdsEvenly*.
 
-If set to *OptimizeForClicks*, Bing Ads prioritizes the ad from the ad group that appears to have the best chance of performing well, based on auction characteristics or factors, such as keyword, search term, device or location. Better-performing ads will show more frequently, and others will be served less often, if at all.
+If set to *OptimizeForClicks*, Microsoft Advertising prioritizes the ad from the ad group that appears to have the best chance of performing well, based on auction characteristics or factors, such as keyword, search term, device or location. Better-performing ads will show more frequently, and others will be served less often, if at all.
 
-If set to *RotateAdsEvenly*, Bing Ads provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad quality, and therefore might display less often, or not at all.
+If set to *RotateAdsEvenly*, Microsoft Advertising provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad quality, and therefore might display less often, or not at all.
 - The *RotateAdsEvenly* setting can allow lower-performing ads to display as often as better-performing ads. This might impact ad group performance.
 - The *RotateAdsEvenly* setting will be ignored if you use an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, or *TargetCpa*, as these bid strategies prioritize better-performing ads.
 
@@ -208,7 +208,7 @@ The percentage (greater than zero) that allows your cooperative bid to flex.
 For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
@@ -220,7 +220,7 @@ Determines whether or not to amplify your partner's bid.
 Supported values are BidBoost and BidValue. A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid via the [Bid Boost Value](#bidboostvalue) and [Maximum Bid](#maximumbid) fields.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 **Add:** Optional. If this field is not set, the default Cooperative bidding option for the ad group is "bid value" i.e., the auction will use the fixed bid that you set for each [Ad Group Product Partition](ad-group-product-partition.md).  
 **Update:** Read-only. If you attempt to change the previous bid option an error will be returned.     
@@ -231,9 +231,9 @@ The bid strategy type for how you want to manage your bids. For ad groups you ca
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
-> - You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
-> - Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
-> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
+> - You can continue to set the ad group and keyword bids; however they will not be used by Microsoft Advertising.
+> - Microsoft Advertising will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Microsoft Advertising may change them at any time using this bid strategy type.
+> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > - Even if the [Ad Rotation](#adrotation) is set to *RotateAdsEvenly*, it will be ignored as these bid strategies prioritize better-performing ads.
 
 > [!TIP] 
@@ -281,7 +281,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 532), Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 532), Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
@@ -333,7 +333,7 @@ The bid strategy type that is inherited from the parent campaign if the ad group
 A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.
 
 > [!NOTE]
-> Keyword Relevance is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.
+> Keyword Relevance is equivalent to the **Expected Click-Through Rate** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -349,7 +349,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.
 
 > [!NOTE]
-> Landing Page Relevance is equivalent to the **Ad Relevance** label used in the Bing Ads web application.
+> Landing Page Relevance is equivalent to the **Ad Relevance** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -365,7 +365,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.
 
 > [!NOTE]
-> Landing Page User Experience is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.
+> Landing Page User Experience is equivalent to the **Landing Page Experience** label used in the Microsoft Advertising web application.
 
 A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
 
@@ -397,7 +397,7 @@ For ad groups in Audience campaigns, ad group level language is not supported, a
 The flat amount of your cooperative bid.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
@@ -416,7 +416,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ## <a name="networkdistribution"></a>Network Distribution
 The search networks where you want your ads to display.
 
-Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](https://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
+Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](https://help.ads.microsoft.com/#apex/3/en/50871/0) help article.
 
 For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
 
@@ -452,7 +452,7 @@ Indicates whether or not your ad group target criteria are too narrow for ad gro
 **Delete:** Read-only  
 
 ## <a name="qualityscore"></a>Quality Score
-The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
+The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Microsoft Advertising using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
 
 Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the file will be "" (empty string) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
 
@@ -514,7 +514,7 @@ An entity such as a remarketing list can be associated with multiple ad groups, 
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your ad group.
 
-The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
 - Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
@@ -522,7 +522,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. 

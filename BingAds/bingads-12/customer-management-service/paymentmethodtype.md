@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines possible payment methods for a Bing Ads account.
+description: Defines possible payment methods for a Microsoft Advertising account.
 ---
 # PaymentMethodType Value Set - Customer Management
-Defines possible payment methods for a Bing Ads account.
+Defines possible payment methods for a Microsoft Advertising account.
 
 > [!NOTE]
 > Reserved for internal use.
@@ -87,15 +87,15 @@ Defines possible payment methods for a Bing Ads account.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="boleto"></a>Boleto|Boleto is a form of payment used widely in Brazil. Bing Ads allows customers to use Boleto to fund their prepay accounts by giving them the ability to print a payment slip that they can use to make payment at various locations in Brazil (e.g. Post offices and banks). This payment method is only supported in Brazil and activity must be billed in BRL currency.|
+|<a name="boleto"></a>Boleto|Boleto is a form of payment used widely in Brazil. Microsoft Advertising allows customers to use Boleto to fund their prepay accounts by giving them the ability to print a payment slip that they can use to make payment at various locations in Brazil (e.g. Post offices and banks). This payment method is only supported in Brazil and activity must be billed in BRL currency.|
 |<a name="check"></a>Check|The payments are made with a check.|
 |<a name="creditcard"></a>CreditCard|The payments are made with a credit card.<br/><br/>If you use a credit card, the card is charged when the account balance (the amount of accrued advertising charges) reaches an internally defined threshold.|
 |<a name="electronicfundstransfer"></a>ElectronicFundsTransfer|The payments are made with an electronic funds transfer.|
-|<a name="elv"></a>ELV|The ELV value represents the SEPA payment method. SEPA is a form of a direct debit in Europe. With SEPA Bing Ads validates a customer's bank account by making a small deposit that needs to be verified in Bing Ads. This process takes some time but helps ensure the security of a customer's SEPA account. SEPA is currently only supported in Germany and activity must be billed in EUR currency. SEPA is only allowed to be used to fund prepay accounts.|
+|<a name="elv"></a>ELV|The ELV value represents the SEPA payment method. SEPA is a form of a direct debit in Europe. With SEPA Microsoft Advertising validates a customer's bank account by making a small deposit that needs to be verified in Microsoft Advertising. This process takes some time but helps ensure the security of a customer's SEPA account. SEPA is currently only supported in Germany and activity must be billed in EUR currency. SEPA is only allowed to be used to fund prepay accounts.|
 |<a name="invoice"></a>Invoice|An invoice is sent to the customer requesting payment.<br/><br/>If you use the invoice method, the customer specified in the `BillToCustomerId` element of the [AdvertiserAccount](advertiseraccount.md) is invoiced at the end of the each month.|
-|<a name="offlinepaymentmethod"></a>OfflinePaymentMethod|Meant to signal when a customer is funding a prepay account by making payment via a check or a bank transfer. When using such a payment method customers must include their Bing Ads account number for us to process the payment.|
-|<a name="paypal"></a>PayPal|A payment service that allows customers to pay for their Bing Ads transactions online. A verified PayPal account is needed, meaning that it needs a valid payment method backing it up for it to be used within Bing Ads.|
-|<a name="vba"></a>VBA|Virtual Bank Account is a form of payment used widely in Taiwan. Bing Ads allows customers to use VBA to fund their prepay accounts by giving them the ability to print a payment slip that they can use to make payment at various locations in Taiwan (e.g. Post offices and banks). This payment method is only supported in Taiwan and activity must be billed in TWD currency.|
+|<a name="offlinepaymentmethod"></a>OfflinePaymentMethod|Meant to signal when a customer is funding a prepay account by making payment via a check or a bank transfer. When using such a payment method customers must include their Microsoft Advertising account number for us to process the payment.|
+|<a name="paypal"></a>PayPal|A payment service that allows customers to pay for their Microsoft Advertising transactions online. A verified PayPal account is needed, meaning that it needs a valid payment method backing it up for it to be used within Microsoft Advertising.|
+|<a name="vba"></a>VBA|Virtual Bank Account is a form of payment used widely in Taiwan. Microsoft Advertising allows customers to use VBA to fund their prepay accounts by giving them the ability to print a payment slip that they can use to make payment at various locations in Taiwan (e.g. Post offices and banks). This payment method is only supported in Taiwan and activity must be billed in TWD currency.|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

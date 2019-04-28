@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.
+description: Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.
 dev_langs: 
   - csharp
   - java
@@ -12,11 +12,11 @@ dev_langs:
   - python
 ---
 # AddUetTags Service Operation - Campaign Management
-Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.
+Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.
 
-After you create a UET tag, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](https://help.bingads.microsoft.com/#apex/3/en/56688/2).
+After you create a UET tag, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](https://help.ads.microsoft.com/#apex/3/en/56688/2).
 
-You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).
+You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.ads.microsoft.com/#apex/3/en/56685/2).
 
 > [!TIP]
 > For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
@@ -31,7 +31,7 @@ The *AddUetTagsRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="uettags"></a>UetTags|An array of [UetTag](uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br/><br/>You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).<br/><br/>If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](uettag.md) within the response message.|[UetTag](uettag.md) array|
+|<a name="uettags"></a>UetTags|An array of [UetTag](uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br/><br/>You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.ads.microsoft.com/#apex/3/en/56685/2).<br/><br/>If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](uettag.md) within the response message.|[UetTag](uettag.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -44,7 +44,7 @@ The *AddUetTagsResponse* object defines the [body](#response-body) and [header](
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
-|<a name="uettags"></a>UetTags|An array of [UetTag](uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br/><br/>You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).<br/><br/>If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](uettag.md) within the response message.|[UetTag](uettag.md) array|
+|<a name="uettags"></a>UetTags|An array of [UetTag](uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br/><br/>You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.ads.microsoft.com/#apex/3/en/56685/2).<br/><br/>If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](uettag.md) within the response message.|[UetTag](uettag.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -157,7 +157,7 @@ This template was generated by a tool to show the order of the [body](#response-
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads API Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddUetTagsResponse> AddUetTagsAsync(
 	IList<UetTag> uetTags)

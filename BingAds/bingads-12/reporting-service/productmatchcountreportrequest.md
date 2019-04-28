@@ -9,12 +9,12 @@ description: Defines a product match count report request that aggregates the pe
 # ProductMatchCountReportRequest Data Object - Reporting
 Defines a product match count report request that aggregates the performance data by product group for a specified time period. 
 
-You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
+You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Microsoft Shopping Campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 > [!NOTE]
-> You should only use this report to get performance data for Bing Shopping campaigns. It is not applicable for other campaign types. 
+> You should only use this report to get performance data for Microsoft Shopping Campaigns. It is not applicable for other campaign types. 
 
 ## Syntax
 ```xml

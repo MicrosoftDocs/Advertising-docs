@@ -37,10 +37,10 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
-|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
-|<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
+|<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
+|<a name="campaignid"></a>CampaignId|The Microsoft Advertising assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="currencycode"></a>CurrencyCode|The account currency type. For possible values, see [Currencies](../guides/currencies.md).|
 |<a name="dailyspend"></a>DailySpend|The average amount of campaign budget spent per day.|

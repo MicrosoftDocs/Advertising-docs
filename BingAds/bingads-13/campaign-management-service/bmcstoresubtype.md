@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible values for Bing Merchant Center store sub types.
+description: Defines the possible values for Microsoft Merchant Center store sub types.
 ---
 # BMCStoreSubType Value Set - Campaign Management
-Defines the possible values for Bing Merchant Center store sub types.
+Defines the possible values for Microsoft Merchant Center store sub types.
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ Defines the possible values for Bing Merchant Center store sub types.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="coop"></a>CoOp|The Bing Merchant Center store supports Cooperative campaigns.|
+|<a name="coop"></a>CoOp|The Microsoft Merchant Center store supports Cooperative campaigns.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

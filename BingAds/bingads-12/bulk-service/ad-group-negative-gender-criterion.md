@@ -114,7 +114,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 > [!NOTE] 
 > Previously with Campaign Management API version 10 it was possible to associate one target identifier with multiple campaigns and ad groups using the AddTargetsToLibrary, SetTargetToCampaign, and SetTargetToAdGroup operations. After a campaign or ad group had been disassociated from the shared target, the criterion identifier would be set to *0* (zero) in the Bulk download or Bulk upload result file. 

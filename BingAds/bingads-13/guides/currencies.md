@@ -1,13 +1,13 @@
 ---
-title: "Bing Ads Currencies"
+title: "Microsoft Advertising Currencies"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Find out about currencies supported with the Bing Ads API. 
 ---
-# Bing Ads Currencies
-The following currency values are supported for Bing Ads advertising accounts.
+# Microsoft Advertising Currencies
+The following currency values are supported for Microsoft Advertising advertising accounts.
 
 * [Bid and Budget Currencies](#bidandbudget)
 * [Conversion Goal Revenue Currencies](#conversiongoalrevenue)

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Web Application in Python"
+title: "Walkthrough: Bing Ads API Web Application in Python"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,13 +8,13 @@ description: Create a web application using the Bing Ads Python SDK.
 dev_langs:
   - python
 ---
-# Walkthrough: Bing Ads Web Application in Python
-This tutorial explores how to get started running a Bing Ads web application using the [Bing Ads Python SDK](client-libraries.md), the [Visual Studio Code](https://code.visualstudio.com/) IDE, and the [Django](https://www.djangoproject.com/) web framework. 
+# Walkthrough: Bing Ads API Web Application in Python
+This tutorial explores how to get started running a Microsoft Advertising web application using the [Bing Ads Python SDK](client-libraries.md), the [Visual Studio Code](https://code.visualstudio.com/) IDE, and the [Django](https://www.djangoproject.com/) web framework. 
 
 This tutorial does not explore various details about Django itself, such as working with data models and creating an administrative interface. For guidance on those aspects, refer to the [Django documentation](https://docs.djangoproject.com/en/2.1/intro/tutorial01/). For more details about how to work with Django in the VS Code terminal, editor, and debugger see [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). This tutorial borrows heavily from the setup instructions in [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). 
 
 ## <a name="webapp"></a>Example Web Application Overview
-By the end of this tutorial you will have a web application running on http://localhost that will authenticate your Bing Ads user credentials and display your user and accounts info. You can then add multiple web application users, who can enable access for your application to use their Bing Ads credentials. This web application provides a one to one mapping of a web application user e.g. ContosoUser to a Bing Ads user. For information about how to modify the data model, please see [Django documentation](https://docs.djangoproject.com/) for more information. If your web application user enables access to their Bing Ads accounts with a Microsoft account, a refresh token is stored in the SQL Lite database on your web server.
+By the end of this tutorial you will have a web application running on http://localhost that will authenticate your Microsoft Advertising user credentials and display your user and accounts info. You can then add multiple web application users, who can enable access for your application to use their Microsoft Advertising credentials. This web application provides a one to one mapping of a web application user e.g. ContosoUser to a Microsoft Advertising user. For information about how to modify the data model, please see [Django documentation](https://docs.djangoproject.com/) for more information. If your web application user enables access to their Microsoft Advertising accounts with a Microsoft account, a refresh token is stored in the SQL Lite database on your web server.
 
 ## <a name="requirements"></a>Prerequisites
 You will need to have [Visual Studio Code](https://code.visualstudio.com/) installed to follow this tutorial. To run the Django web app, you can use Visual Studio Community or Visual Studio Professional; however, the setup steps will vary from those in this tutorial. 
@@ -25,7 +25,7 @@ You will need to [install](get-started-python.md#installation) the [Bing Ads Pyt
 
 You will need the [Django web framework](https://www.djangoproject.com/) installed to deploy the application locally, and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials and a [developer token](get-started.md#get-developer-token). 
+You will need at least one user with Microsoft Advertising credentials and a [developer token](get-started.md#get-developer-token). 
 
 You will need to register an application and take note of the client ID (registered application ID) and client secret (registered password). You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs, and for this tutorial you should register *http://localhost/callback*. You should instead use *https* when deployed to a production server. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md). 
 
@@ -74,7 +74,7 @@ In this section you create a virtual environment in which Django is installed. U
     python -m pip install bingads
     ```
 
-You now have an self-contained virtual environment ready for writing Django and Bing Ads code. 
+You now have an self-contained virtual environment ready for writing Django and Microsoft Advertising code. 
 
 ## Create and run a Django app
 
@@ -127,7 +127,7 @@ To create a Django app, then, it's necessary to first create the Django project 
 
 1. When you're done, close the browser window and stop the server in VS Code using `Ctrl+C` as indicated in the VS Code terminal output window.
 
-### Create A Django app for Bing Ads
+### Create A Django app for Microsoft Advertising
 
 1. In the VS Code Terminal with your virtual environment activated, run the administrative utility's `startapp` command in your project folder (where `manage.py` resides):
 
@@ -248,7 +248,7 @@ To create a Django app, then, it's necessary to first create the Django project 
     {% if bingadsuser  %}
     <div class="jumbotron">
         <section id="enabled">
-            <h1>Your credentials have access to Bing Ads.</h1>
+            <h1>Your credentials have access to Microsoft Advertising.</h1>
             <table class="message_list">
                 <tr>
                     <th>Id</th>
@@ -267,7 +267,7 @@ To create a Django app, then, it's necessary to first create the Django project 
     </div>
     <div class="jumbotron">
         <section id="revoke">
-            <p class="lead">Click here to revoke access for this app to your Bing Ads accounts. You will then be able to login with a different Bing Ads user. </p>
+            <p class="lead">Click here to revoke access for this app to your Microsoft Advertising accounts. You will then be able to login with a different Microsoft Advertising user. </p>
             <form id="revokeForm" action="/revoke" method="post" class="navbar-left">
                 {% csrf_token %}
                 <p><a href="javascript:document.getElementById('revokeForm').submit()" class="btn btn-primary btn-large">Delete Refresh Token</a></p>
@@ -298,10 +298,10 @@ To create a Django app, then, it's necessary to first create the Django project 
     {% else  %}
     <div class="jumbotron">
         <section id="enable">
-            <h1>Enable Bing Ads Access</h1>
+            <h1>Enable Microsoft Advertising Access</h1>
             <p class="lead">
-                You are logged into the Django web application, but not yet signed in with your Bing Ads credentials. 
-                You can sign in with Bing Ads credentials below.
+                You are logged into the Django web application, but not yet signed in with your Microsoft Advertising credentials. 
+                You can sign in with Microsoft Advertising credentials below.
             </p>
         </section>
     </div>
@@ -311,8 +311,8 @@ To create a Django app, then, it's necessary to first create the Django project 
                 <h1>Microsoft Account Login</h1>
                 <p class="lead">
                     Click here to authenticate your Microsoft Account. 
-                    If you don't have Bing Ads credentials, you can go to the 
-                    <a href="https://bingads.microsoft.com/customer/Signup.aspx">Bing Ads Sign Up</a> page.
+                    If you don't have Microsoft Advertising credentials, you can go to the 
+                    <a href="https://ads.microsoft.com/customer/Signup.aspx">Microsoft Advertising Sign Up</a> page.
                 </p>
                 <p><a href="/callback" class="btn btn-primary btn-large">Authenticate Microsoft Account &raquo;</a></p>
             </section>
@@ -323,9 +323,9 @@ To create a Django app, then, it's necessary to first create the Django project 
     <div class="jumbotron">
         <div class="col-md-6">
             <section id="socialLoginForm">
-                <h1>Bing Ads Example Web Application</h1>
+                <h1>Microsoft Advertising Example Web Application</h1>
                 <p class="lead">
-                    Before you can provide your Bing Ads user credentials and access Bing Ads data, 
+                    Before you can provide your Microsoft Advertising user credentials and access Microsoft Advertising data, 
                     you must <a href="{% url 'login' %}">login</a> to the Django web application.
                 </p>
                 <p class="lead">Use your site's Django admin portal to add web app users.</p>
@@ -336,7 +336,7 @@ To create a Django app, then, it's necessary to first create the Django project 
     {% endif %}
     <div>
         <div class="col-md-4">
-            <h2>Get Started Using Python with Bing Ads Services</h2>
+            <h2>Get Started Using Python with Bing Ads API</h2>
             <p>The Bing Ads Python Software Development Kit (SDK) simplifies workflows such as OAuth authentication and report file parsing.</p>
             <p><a class="btn btn-default" href="https://docs.microsoft.com/en-us/bingads/guides/get-started-python">Learn more &raquo;</a></p>
         </div>
@@ -380,7 +380,7 @@ To create a Django app, then, it's necessary to first create the Django project 
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand">Bing Ads App via Django</a>
+                    <a href="/" class="navbar-brand">Microsoft Advertising App via Django</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -490,7 +490,7 @@ To create a Django app, then, it's necessary to first create the Django project 
     from django.db import models
     from django.contrib.auth.models import User
     
-    # In this web app a Bing Ads user maps a Django web user to a refresh token.
+    # In this web app a Microsoft Advertising user maps a Django web user to a refresh token.
     
     class BingAdsUser(models.Model):
         user = models.OneToOneField(User, on_delete=models.PROTECT)
@@ -537,7 +537,7 @@ To create a Django app, then, it's necessary to first create the Django project 
         assert isinstance(request, HttpRequest)
         
         # If the Django user has a refresh token stored, 
-        # try to use it to get Bing Ads data.
+        # try to use it to get Microsoft Advertising data.
         if user_has_refresh_token(request.user.username):
             return redirect('/callback')
         else:
@@ -605,8 +605,8 @@ To create a Django app, then, it's necessary to first create the Django project 
         set_session_data(request, authentication)
         
         # At this point even if the user has valid Django web application credentials, 
-        # we don't know whether they have access to Bing Ads.
-        # Let's test to see if they can call Bing Ads services. 
+        # we don't know whether they have access to Microsoft Advertising.
+        # Let's test to see if they can call Bing Ads API service operations. 
     
         bing_ads_user = None
         accounts=[]
@@ -708,11 +708,11 @@ To create a Django app, then, it's necessary to first create the Django project 
     
     def get_user(user_id):
         ''' 
-        Gets a Bing Ads User object by the specified user ID.
+        Gets a Microsoft Advertising User object by the specified user ID.
         
-        :param user_id: The Bing Ads user identifier.
+        :param user_id: The Microsoft Advertising user identifier.
         :type user_id: long
-        :return: The Bing Ads user.
+        :return: The Microsoft Advertising user.
         :rtype: User
         '''
         global customer_service
@@ -723,7 +723,7 @@ To create a Django app, then, it's necessary to first create the Django project 
         ''' 
         Search for account details by UserId.
         
-        :param user_id: The Bing Ads user identifier.
+        :param user_id: The Microsoft Advertising user identifier.
         :type user_id: long
         :return: List of accounts that the user can manage.
         :rtype: Dictionary of AdvertiserAccount
@@ -863,7 +863,7 @@ To create a Django app, then, it's necessary to first create the Django project 
 
 1. In the VS Code Terminal, again with the virtual environment activated, run the development server with `python manage.py runserver` and open a browser to `http://127.0.0.1:8000/` to see a page that renders "Hello, Django".
 
-1. In the web browser go to `http://127.0.0.1:8000/admin/` and create a new Django web user under *Users*. This is distinct from your Bing Ads user credentials, so that multiple Bing Ads users could login to your app separately. 
+1. In the web browser go to `http://127.0.0.1:8000/admin/` and create a new Django web user under *Users*. This is distinct from your Microsoft Advertising user credentials, so that multiple Microsoft Advertising users could login to your app separately. 
 
     ![Django Admin](media/pythonweb/django-web-admin.png "Django Admin")
 
@@ -871,8 +871,8 @@ To create a Django app, then, it's necessary to first create the Django project 
 
     ![Authenticate Microsoft Account](media/pythonweb/django-logged-in.png "Authenticate Microsoft Account")
 
-1. After you click **Authenticate Microsoft Account** you will be prompted to grant your own web app permissions to manage your Bing Ads accounts. If you consent, and if you have access to Bing Ads accounts, then you should be redirected to a view of your account name(s) and ID(s). 
+1. After you click **Authenticate Microsoft Account** you will be prompted to grant your own web app permissions to manage your Microsoft Advertising accounts. If you consent, and if you have access to Microsoft Advertising accounts, then you should be redirected to a view of your account name(s) and ID(s). 
 
 ## See Also
-[Get Started Using Python with Bing Ads Services](get-started-python.md)  
+[Get Started Using Python with Bing Ads API](get-started-python.md)  
 

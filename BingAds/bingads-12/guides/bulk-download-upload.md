@@ -12,7 +12,7 @@ With the [bulk service](../bulk-service/bulk-service-reference.md) you can downl
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Likewise, unless otherwise noted in the reference documentation you should not depend on a fixed set of values returned in each field.  
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) and [GetBulkDownloadStatus](../bulk-service/getbulkdownloadstatus.md) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [Bulk Service Manager](sdk-bulk-service-manager.md).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads API Client Libraries](client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) and [GetBulkDownloadStatus](../bulk-service/getbulkdownloadstatus.md) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [Bulk Service Manager](sdk-bulk-service-manager.md).
 
 ## <a name="bulkdownload"></a>Bulk Download
 To download an account's campaign data, call the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation. To download the data of specific campaigns, call the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation.
@@ -46,7 +46,7 @@ You may request all of the campaign's data or only the data that has changed sin
 8. The download file is compressed in zip format, so you must unzip the file to access the data. For information about the schema used for the download file, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
 
 ### <a name="downloadbestpractices"></a>Download Best Practices
-Please adhere to the best practices to ensure fair usage for yourself and all Bing Ads clients.
+Please adhere to the best practices to ensure fair usage for yourself and all Microsoft Advertising clients.
 
 > [!IMPORTANT]
 > Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
@@ -81,7 +81,7 @@ The following is an overview of the request settings and upload workflow.
 3. Use the *UploadUrl* returned with the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) response to submit your bulk upload file with HTTP POST. The content type must be *multipart/form-data*. UTF-8 files must include the byte order mark (BOM). The ZIP-compressed upload should contain one file formatted as either **Csv** or **Tsv**. The ZIP file must be properly structured, including an end of central directory record.
 
    > [!NOTE]
-   > The HTTP standard Authorization header is not used. To authenticate you must add and set the Bing Ads custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials via the *AuthenticationToken* header element. For more information, see [Authentication with OAuth](authentication-oauth.md) and [Where to Use the API Credentials](get-started.md#where-to-use).
+   > The HTTP standard Authorization header is not used. To authenticate you must add and set the Microsoft Advertising custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials via the *AuthenticationToken* header element. For more information, see [Authentication with OAuth](authentication-oauth.md) and [Where to Use the API Credentials](get-started.md#where-to-use).
    >
    > You must use the same user credentials throughout the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md), HTTP POST, and [GetBulkUploadStatus](../bulk-service/getbulkuploadstatus.md) workflow. 
 
@@ -96,7 +96,7 @@ The following is an overview of the request settings and upload workflow.
    Content-Type: multipart/form-data;
    ```
 
-4. Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *AuthenticationToken* or *DeveloperToken* was invalid. If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
+4. Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Microsoft Advertising. If the HTTP response status code is 401, then authentication failed e.g. *AuthenticationToken* or *DeveloperToken* was invalid. If the HTTP response status code is 400, then you should also check the response stream for [Microsoft Advertising Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
 
    Here is an example error response message that the URL had already been used to upload a bulk file.
    ```http
@@ -121,7 +121,7 @@ The following is an overview of the request settings and upload workflow.
    > The format of the upload result file will be either **Csv** or **Tsv**, and will match the format of the file that you submitted for upload.
 
 ### <a name="uploadbestpractices"></a>Upload Best Practices
-Please adhere to the best practices to ensure fair usage for yourself and all Bing Ads clients.
+Please adhere to the best practices to ensure fair usage for yourself and all Microsoft Advertising clients.
 
 > [!IMPORTANT]
 > Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
@@ -144,5 +144,5 @@ Please adhere to the best practices to ensure fair usage for yourself and all Bi
 
 ## See Also
 [Bulk Service Reference](../bulk-service/bulk-service-reference.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)
+[Bing Ads API Web Service Addresses](web-service-addresses.md)
 

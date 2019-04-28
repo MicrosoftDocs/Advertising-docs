@@ -7,7 +7,7 @@ ms.author: eur
 description: This value set is not supported in Bing Ads API Version 12, and will be removed in a future version.
 ---
 # ReportTimePeriod Value Set - Bulk
-This value set is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).
+This value set is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Reporting API. For more details see [Reports](../guides/reports.md).
 
 ## Syntax
 ```xml

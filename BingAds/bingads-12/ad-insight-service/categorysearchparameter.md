@@ -26,7 +26,7 @@ The keyword category search parameter that you can use as a seed for new keyword
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="categoryid"></a>CategoryId|The Bing Ads identifier for the keyword category.<br/><br/>To get a list of keyword category identifiers, use the [GetKeywordIdeaCategories](getkeywordideacategories.md) service operation.|**long**|
+|<a name="categoryid"></a>CategoryId|The Microsoft Advertising identifier for the keyword category.<br/><br/>To get a list of keyword category identifiers, use the [GetKeywordIdeaCategories](getkeywordideacategories.md) service operation.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

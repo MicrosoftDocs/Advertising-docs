@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the base object of an asset with a unique Bing Ads identifier that can be reused across multiple ads.
+description: Defines the base object of an asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.
 ---
 # Asset Data Object - Campaign Management
-Defines the base object of an asset with a unique Bing Ads identifier that can be reused across multiple ads.
+Defines the base object of an asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.
 
 Do not try to instantiate an *Asset*. You can create one or more following objects that derive from it.
 - [ImageAsset](imageasset.md)
@@ -28,7 +28,7 @@ Do not try to instantiate an *Asset*. You can create one or more following objec
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The unique Bing Ads identifier for the asset in a Bing Ads account.<br/><br/>The same asset can be used by multiple ads. For example if *Seemless Integration* is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account.|**long**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account.<br/><br/>The same asset can be used by multiple ads. For example if *Seemless Integration* is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account.|**long**|
 |<a name="name"></a>Name|Reserved for future use.|**string**|
 |<a name="type"></a>Type|The type of the asset.<br/><br/>For more information about asset types, see the [Remarks](#remarks).|**string**|
 

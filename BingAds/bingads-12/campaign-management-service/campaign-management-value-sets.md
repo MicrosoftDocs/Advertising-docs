@@ -35,7 +35,7 @@ The Campaign Management service defines the following value sets.
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
-|[BMCStoreSubType](bmcstoresubtype.md)|Defines the possible values for Bing Merchant Center store sub types.|
+|[BMCStoreSubType](bmcstoresubtype.md)|Defines the possible values for Microsoft Merchant Center store sub types.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|

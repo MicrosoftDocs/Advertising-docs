@@ -87,17 +87,17 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
-|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
+|<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
 |<a name="addescription"></a>AdDescription|The first ad description that appears below the path in your ad.|
 |<a name="addescription2"></a>AdDescription2|The second ad description that appears below the path in your ad. Ad description 2 might not appear in your ad.|
 |<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
-|<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
+|<a name="adgroupid"></a>AdGroupId|The Microsoft Advertising assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
-|<a name="adid"></a>AdId|The Bing Ads assigned identifier of an ad.|
+|<a name="adid"></a>AdId|The Microsoft Advertising assigned identifier of an ad.|
 |<a name="adlabels"></a>AdLabels|The labels applied to the ad.<br/><br/>Labels are delimited by a semicolon (;) in the report download.|
 |<a name="adstatus"></a>AdStatus|The ad status.|
 |<a name="adtitle"></a>AdTitle|The ad title.|
@@ -107,18 +107,18 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
 |<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="businessname"></a>BusinessName|Depending on your responsive ad's placement, your business's name may appear in your ad.<br/><br/>This column only applies to Audience campaigns.|
-|<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
+|<a name="campaignid"></a>CampaignId|The Microsoft Advertising assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
 |<a name="campaigntype"></a>CampaignType|The campaign type.<br/><br/>Possible values include *Audience*, *Dynamic search*, *Search*, and *Shopping*.|
-|<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
+|<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Microsoft Advertising click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
 |<a name="conversionrate"></a>ConversionRate|The conversion rate as a percentage. The number of conversions, divided by the total number of clicks. For example, if the ads in your campaign got 300 clicks and four conversions, the conversion rate is 1.33 (%). The formula for calculating the conversion rate is *(Conversions / Clicks) x 100*.|
 |<a name="conversions"></a>Conversions|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.|
 |<a name="costperassist"></a>CostPerAssist|The cost per assist. The formula for calculating the cost per assist is *(Spend / Assists)*.|
 |<a name="costperconversion"></a>CostPerConversion|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*. Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 |<a name="ctr"></a>Ctr|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%). The formula for calculating CTR is *(Clicks / Impressions) x 100*.|
 |<a name="currencycode"></a>CurrencyCode|The account currency type. For possible values, see [Currencies](../guides/currencies.md).|
-|<a name="customerid"></a>CustomerId|The Bing Ads assigned identifier of a customer.|
+|<a name="customerid"></a>CustomerId|The Microsoft Advertising assigned identifier of a customer.|
 |<a name="customername"></a>CustomerName|The customer name.|
 |<a name="customparameters"></a>CustomParameters|The current custom parameters set of the ad, keyword, or criterion.<br/><br/>Each custom parameter is a key and value pair. The list of custom parameters is semicolon-delimited and each key is enclosed by braces and a leading underscore, for example `{_key1}=value1;{_key2}=value2`.|
 |<a name="deliveredmatchtype"></a>DeliveredMatchType|The match type used to deliver an ad. This can be different from the *BidMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
@@ -137,7 +137,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="path1"></a>Path1|The path 1 attribute of an ad.|
 |<a name="path2"></a>Path2|The path 2 attribute of an ad.|
 |<a name="returnonadspend"></a>ReturnOnAdSpend|The return on ad spend (ROAS). The formula for calculating the ROAS is *(Revenue / Spend)*.|
-|<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions.<br/><br/>Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](https://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
+|<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions.<br/><br/>Available for accounts that are setup to use analytics with Microsoft Advertising Universal Event Tracking. For more information, see the [Track sales and other conversions](https://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
 |<a name="revenueperassist"></a>RevenuePerAssist|The revenue per assist. The formula for calculating the revenue per assist is *(Revenue / Assists)*.|
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion. The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|

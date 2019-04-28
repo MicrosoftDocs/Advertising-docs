@@ -1,12 +1,12 @@
 ---
-title: "Bing Ads Web Service Addresses"
+title: "Bing Ads API Web Service Addresses"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Refer to the list of Bing Ads API Version 13 web service addresses.
 ---
-# Bing Ads Web Service Addresses
+# Bing Ads API Web Service Addresses
 Bing Ads API Version 13 includes the following web service addresses. Depending on your application you can use the `?wsdl` or `?singleWsdl` extension. 
 
 ## <a name="adinsight"></a>Ad Insight API

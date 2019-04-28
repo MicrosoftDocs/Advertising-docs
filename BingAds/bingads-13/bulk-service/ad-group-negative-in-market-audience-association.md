@@ -107,7 +107,7 @@ Bulk API download returns all in-market audience associations, whether the in-ma
 **Delete:** Read-only  
 
 ## <a name="audienceid"></a>Audience Id
-The Bing Ads identifier of the in-market audience associated with the ad group.
+The Microsoft Advertising identifier of the in-market audience associated with the ad group.
 
 This bulk field maps to the *Id* field of the [In Market Audience](in-market-audience.md) record.
 

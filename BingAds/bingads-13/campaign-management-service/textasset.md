@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: A text asset with a unique Bing Ads identifier that can be reused across multiple ads.
+description: A text asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.
 ---
 # TextAsset Data Object - Campaign Management
-A text asset with a unique Bing Ads identifier that can be reused across multiple ads. For example, see responsive search ad [Descriptions](responsivesearchad.md#descriptions) and [Headlines](responsivesearchad.md#headlines).
+A text asset with a unique Microsoft Advertising identifier that can be reused across multiple ads. For example, see responsive search ad [Descriptions](responsivesearchad.md#descriptions) and [Headlines](responsivesearchad.md#headlines).
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
@@ -40,7 +40,7 @@ The [TextAsset](textasset.md) object derives from the [Asset](asset.md) object, 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The unique Bing Ads identifier for the asset in a Bing Ads account.<br/><br/>The same asset can be used by multiple ads. For example if *Seemless Integration* is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. After you link a text asset to an ad and then retrieve the ad e.g., via [GetAdsByIds](getadsbyids.md), the response will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. <br/><br/>**Add:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.<br/>**Update:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.|**long**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account.<br/><br/>The same asset can be used by multiple ads. For example if *Seemless Integration* is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. After you link a text asset to an ad and then retrieve the ad e.g., via [GetAdsByIds](getadsbyids.md), the response will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. <br/><br/>**Add:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.<br/>**Update:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.|**long**|
 |<a name="name"></a>Name|Reserved for future use.|**string**|
 |<a name="type"></a>Type|The type of the asset. This value is *TextAsset* when you retrieve a text asset. For more information about asset types, see the [Asset Data Object Remarks](asset.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 

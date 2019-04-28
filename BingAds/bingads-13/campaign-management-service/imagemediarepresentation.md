@@ -44,13 +44,13 @@ The [ImageMediaRepresentation](imagemediarepresentation.md) object derives from 
 |<a name="url"></a>Url|The media download URL.|**string**|
 
 ## <a name="remarks"></a>Remarks
-Bing Ads stores three representations for each image media of varying height and width.
+Microsoft Advertising stores three representations for each image media of varying height and width.
 
 |Description|Width|Height|
 |---------------|---------|----------|
 |Thumbnail|120|68|
 |Preview|160|90|
-|Original size that you uploaded via the Bing Ads web application or the [AddMedia](addmedia.md) service operation.|For dimension restrictions, please see [Image](image.md).|For dimension restrictions, please see [Image](image.md).|
+|Original size that you uploaded via the Microsoft Advertising web application or the [AddMedia](addmedia.md) service operation.|For dimension restrictions, please see [Image](image.md).|For dimension restrictions, please see [Image](image.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

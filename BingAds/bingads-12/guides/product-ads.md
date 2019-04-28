@@ -7,22 +7,22 @@ ms.author: "eur"
 description: Setup Product ads with the Bing Ads API.
 ---
 # Product Ads
-A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text.
+A Microsoft Shopping campaign enables you to advertise the products from your Microsoft Merchant Center store product catalog. Product ads from a Microsoft Shopping campaign include details about the product, an image, and optional promotional text.
 
 You can manage Bing Shopping settings with either the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](../bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
 
-## <a name="setup"></a>Setup Bing Shopping Campaigns
-You can run Bing Shopping campaigns for [your own](#setup-bmc) Bing Merchant Center store, or bid cooperatively via [your partner's](#setup-cooperative) Bing Merchant Center store. 
+## <a name="setup"></a>Setup Microsoft Shopping Campaigns
+You can run Microsoft Shopping Campaigns for [your own](#setup-bmc) Microsoft Merchant Center store, or bid cooperatively via [your partner's](#setup-cooperative) Microsoft Merchant Center store. 
 
-### <a name="setup-bmc"></a>Setup Bing Merchant Center
-To set up your own Bing Merchant Center store with a catalog that can be used with Bing Shopping campaigns, follow these steps.
-1. Set up the customer's Bing Merchant Center store. In the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Bing Merchant Center store](https://help.bingads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.bingads.microsoft.com/#apex/3/en/51084/1).
+### <a name="setup-bmc"></a>Setup Microsoft Merchant Center
+To set up your own Microsoft Merchant Center store with a catalog that can be used with Microsoft Shopping Campaigns, follow these steps.
+1. Set up the customer's Microsoft Merchant Center store. In the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.ads.microsoft.com/#apex/3/en/51084/1).
 
-2. [Create a product catalog](https://help.bingads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.bingads.microsoft.com/#apex/3/en/51086/1-500) or the [Bing Ads Content API](/bingads/shopping-content/index).
+2. [Create a product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1-500) or the [Microsoft Advertising Content API](/bingads/shopping-content/index).
 
-3. Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
+3. Get your Microsoft Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center** to access your store details.
 
-4. Follow the steps to Create a Bing Shopping Campaign with the [Bulk Service](#bingshopping-bulkservice) or [Campaign Management Service](#bingshopping-campaignservice).
+4. Follow the steps to Create a Microsoft Shopping campaign with the [Bulk Service](#bingshopping-bulkservice) or [Campaign Management Service](#bingshopping-campaignservice).
 
 ### <a name="setup-cooperative"></a>Setup Cooperative Bidding
 In cooperative bidding, two partners share the cost of advertising as they work to drive product sales through certain channels. Typically, these two partners are manufacturers and retailers (or ad agencies and their clients) who have merchandising agreements with one another.
@@ -31,18 +31,18 @@ Let's say you manufacture widgets, and Contoso is one of your many authorized de
 > [!NOTE]
 > Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
-Both the manufacturer and the retailer have key roles in setting up cooperative bidding. Manufactures must upload a product list with Brand, GTIN, and MPN only. Retailers must grant their partners access to their Bing Merchant Center store, which is the gateway to a sales channel. Both manufacturers and retailers are then able to bid on the shared list of goods in the product feed through ad groups.
-To set up Cooperative bidding for your partner's Bing Merchant Center store with Bing Shopping campaigns, follow these steps.
+Both the manufacturer and the retailer have key roles in setting up cooperative bidding. Manufactures must upload a product list with Brand, GTIN, and MPN only. Retailers must grant their partners access to their Microsoft Merchant Center store, which is the gateway to a sales channel. Both manufacturers and retailers are then able to bid on the shared list of goods in the product feed through ad groups.
+To set up Cooperative bidding for your partner's Microsoft Merchant Center store with Microsoft Shopping Campaigns, follow these steps.
 
-1. In the Bing Ads [web application](https://secure.bingads.microsoft.com/), create a product feed and link to your partner's Bing Merchant Center store as described in the [Cooperative bidding](https://help.bingads.microsoft.com/#apex/3/en/60004/-1/en/#ext:Default) help article. Put simply, a product feed is a list of items you're promoting with a third party. Typically, a manufacturer or an advertising client is responsible for this step. A product feed contains a list of product attributes, such as Brand, GTIN, and MPN. Once you have your product feed, you'll need access to your retail partner's Bing Merchant Center store. Once you have access, keep in mind that you won't be able to see all of the products in your partner's store. You'll only see the products that are a direct match of the items in your product feed. 
+1. In the Microsoft Advertising [web application](https://secure.ads.microsoft.com/), create a product feed and link to your partner's Microsoft Merchant Center store as described in the [Cooperative bidding](https://help.ads.microsoft.com/#apex/3/en/60004/-1/en/#ext:Default) help article. Put simply, a product feed is a list of items you're promoting with a third party. Typically, a manufacturer or an advertising client is responsible for this step. A product feed contains a list of product attributes, such as Brand, GTIN, and MPN. Once you have your product feed, you'll need access to your retail partner's Microsoft Merchant Center store. Once you have access, keep in mind that you won't be able to see all of the products in your partner's store. You'll only see the products that are a direct match of the items in your product feed. 
 
-2. Follow the steps to Create a Bing Shopping Campaign with the [Bulk Service](#bingshopping-bulkservice) or [Campaign Management Service](#bingshopping-campaignservice). Please take note of the additional settings for Cooperative bidding. 
-    - When you retrieve Bing Merchant Center stores via [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md), the SubType element of the returned [BMCStore](../campaign-management-service/bmcstore.md) must be set to CoOp in order to be eligible for Cooperative bidding. 
+2. Follow the steps to Create a Microsoft Shopping campaign with the [Bulk Service](#bingshopping-bulkservice) or [Campaign Management Service](#bingshopping-campaignservice). Please take note of the additional settings for Cooperative bidding. 
+    - When you retrieve Microsoft Merchant Center stores via [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md), the SubType element of the returned [BMCStore](../campaign-management-service/bmcstore.md) must be set to CoOp in order to be eligible for Cooperative bidding. 
     - The campaign subtype must be set to ShoppingCoOperative. 
     - Optionally you can include Cooperative bidding settings for each ad group i.e., bid value or bid boost. If you do not set the bid option, by default it is set to bid value i.e., the auction will use the fixed bid that you set for each product group. If you set the bid option to bid boost, you must also specify the Bid boost percentage that allows your cooperative bid to flex, as well as the Maximum value of cost per click that you're willing to pay. Your cost per click will be the lower of the two values relative to your partner's bid. (For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.)
     - Please note the ProductType and CustomLabel [product conditions](../campaign-management-service/productcondition.md) are not supported for Cooperative bidding. The GTIN and MPN operands are optional and only available with Cooperative bidding via campaign and ad group level product conditions. 
 
-## <a name="bingshopping-bulkservice"></a>Create a Bing Shopping Campaign with the Bulk Service
+## <a name="bingshopping-bulkservice"></a>Create a Microsoft Shopping campaign with the Bulk Service
 The [Bulk Service](../bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](../bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](bulk-download-upload.md).
 
 These are the Bing Shopping entities that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md).
@@ -53,12 +53,12 @@ These are the Bing Shopping entities that can be accessed using the [Bulk Servic
 - [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md)
 - [Product Ad](../bulk-service/product-ad.md)
 
-To create a Bing Shopping campaign, follow these steps.
+To create a Microsoft Shopping campaign, follow these steps.
 
-1. Create one or more Bing Shopping campaigns.
+1. Create one or more Microsoft Shopping Campaigns.
 
     > [!NOTE]
-    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Bing Shopping campaigns.
+    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Microsoft Shopping Campaigns.
 
     - Set the *Campaign Type* field of the [Campaign](../bulk-service/campaign.md) to *Shopping*.
 
@@ -68,17 +68,17 @@ To create a Bing Shopping campaign, follow these steps.
 
     - Set the *Store Id* field of the [Campaign](../bulk-service/campaign.md).
 
-2. Optionally, you can upload a [Campaign Product Scope](../bulk-service/campaign-product-scope.md) criterion that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one [Campaign Product Scope](../bulk-service/campaign-product-scope.md), which contains a list of up to 7 product conditions. You'll also be able to specify more specific product conditions for each ad group.
+2. Optionally, you can upload a [Campaign Product Scope](../bulk-service/campaign-product-scope.md) criterion that will be associated with your Microsoft Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one [Campaign Product Scope](../bulk-service/campaign-product-scope.md), which contains a list of up to 7 product conditions. You'll also be able to specify more specific product conditions for each ad group.
 
     > [!NOTE]
-    > Product conditions may be returned by Bing Ads services in a different order from the order that you submitted.
+    > Product conditions might not be returned in the order that you submitted them.
 
 3. Upload an [Ad Group](../bulk-service/ad-group.md) and set its *Parent Id* field to the *Id* of the campaign added above.
 
 4. Upload one or more [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) records which represent product partition nodes in a tree structure that will be used to further refine the product catalog offers. Duplicate or conflicting product conditions attempted within an ad group's product partition group will fail during the upload operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [Campaign Product Scope](../bulk-service/campaign-product-scope.md). For example given one ad group and one campaign, the [Campaign Product Scope](../bulk-service/campaign-product-scope.md) and [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) may each have *Product Condition 1* set to CategoryL1 and *Product Value 1* set to Animals &amp; Pet Supplies, and the service will not throw any error or warning for a duplicate condition.
 
     > [!NOTE]
-    > There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. In the Bing Ads web application, for each ad group you would add one product group with multiple levels of division or multiple partitions. This is the equivalent of adding ad group level product partitions using the Bing Ads API. 
+    > There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. In the Microsoft Advertising web application, for each ad group you would add one product group with multiple levels of division or multiple partitions. This is the equivalent of adding ad group level product partitions using the Bing Ads API. 
 
     Please also consider the following validation rules for uploading [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) records.
 
@@ -116,31 +116,31 @@ To create a Bing Shopping campaign, follow these steps.
 
     - You may not specify duplicate product conditions in a branch. 
 
-5. Upload a product ad. You must add at least one [Product Ad](../bulk-service/product-ad.md) to the corresponding ad group. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.bingads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
+5. Upload a product ad. You must add at least one [Product Ad](../bulk-service/product-ad.md) to the corresponding ad group. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Microsoft Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
 
-After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Bing Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Bing Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
+After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Microsoft Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Microsoft Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
 
-## <a name="bingshopping-campaignservice"></a>Create a Bing Shopping Campaign with the Campaign Management Service
-To create a Bing Shopping campaign with the Campaign Management API, follow these steps.
+## <a name="bingshopping-campaignservice"></a>Create a Microsoft Shopping campaign with the Campaign Management Service
+To create a Microsoft Shopping campaign with the Campaign Management API, follow these steps.
 
 > [!TIP]
-> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Product Ads Code Example](code-example-product-ads.md).
+> For code examples that show how to apply product conditions for Microsoft Shopping Campaigns using the Campaign Management service, see [Product Ads Code Example](code-example-product-ads.md).
 
-1. Create one or more Bing Shopping campaigns.
+1. Create one or more Microsoft Shopping Campaigns.
 
     > [!NOTE]
-    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Bing Shopping campaigns.
+    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Microsoft Shopping Campaigns.
 
     - Set the *CampaignType* element of the [Campaign](../campaign-management-service/campaign.md) to *Shopping*.
 
     - Create a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) instance and set its *Priority* (0, 1, or 2), *SalesCountryCode*, and *StoreId* elements. Add this shopping setting to the *Settings* list of the [Campaign](../campaign-management-service/campaign.md).
 
-2. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one *ProductScope*, which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). You'll also be able to specify more specific product conditions for each ad group.
+2. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion that will be associated with your Microsoft Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one *ProductScope*, which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). You'll also be able to specify more specific product conditions for each ad group.
 
-    Call the [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) operation to associate the Bing Shopping campaign with your product scope criterion.
+    Call the [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) operation to associate the Microsoft Shopping campaign with your product scope criterion.
 
     > [!NOTE]
-    > Product conditions may be returned by Bing Ads services in a different order from the order that you submitted.
+    > Product conditions might not be returned in the order that you submitted them.
 
 3. Create an [AdGroup](../campaign-management-service/adgroup.md) and add it to the campaign by calling [AddAdGroups](../campaign-management-service/addadgroups.md).
 
@@ -179,7 +179,7 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
 
     - To pause any product partition you must pause the entire ad group by calling [UpdateAdGroups](../campaign-management-service/updateadgroups.md). You can call [UpdateCampaigns](../campaign-management-service/updatecampaigns.md) to pause the entire campaign.
 
-    - The *EditorialStatus* element of the *AdGroupCriterion* has no significant meaning for product partition criterion. Editorial validation for the product catalog is completed in the Bing Merchant Center store.
+    - The *EditorialStatus* element of the *AdGroupCriterion* has no significant meaning for product partition criterion. Editorial validation for the product catalog is completed in the Microsoft Merchant Center store.
 
     - For a *Delete* action you only need to specify the *Id* and *AdGroupId* in the  *AdGroupCriterion*.
 
@@ -187,14 +187,14 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
 
     - You may not specify duplicate product conditions in a branch. 
 
-5. Create a product ad. You must add at least one [ProductAd](../campaign-management-service/productad.md) to the ad group via the [AddAds](../campaign-management-service/addads.md) operation. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.bingads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
+5. Create a product ad. You must add at least one [ProductAd](../campaign-management-service/productad.md) to the ad group via the [AddAds](../campaign-management-service/addads.md) operation. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Microsoft Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
 
-After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Bing Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Bing Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
+After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Microsoft Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Microsoft Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
 
-## <a name="reports"></a>Performance Statistics for Bing Shopping Campaigns
-The [Product Ads Reports](report-types.md#productads) can be submitted and downloaded with the [Reporting Service](../reporting-service/reporting-service-reference.md) to get performance data for Bing Shopping campaigns.
+## <a name="reports"></a>Performance Statistics for Microsoft Shopping Campaigns
+The [Product Ads Reports](report-types.md#productads) can be submitted and downloaded with the [Reporting Service](../reporting-service/reporting-service-reference.md) to get performance data for Microsoft Shopping Campaigns.
 
-If you request a report using account level scope, then the performance reports will include aggregated data for all campaigns, whether or not the campaign type is Bing Shopping. To only get data for Bing Shopping campaigns, use campaign scope or ad group scope. The following is an example SOAP request that specifies campaign level scope.
+If you request a report using account level scope, then the performance reports will include aggregated data for all campaigns, whether or not the campaign type is Bing Shopping. To only get data for Microsoft Shopping Campaigns, use campaign scope or ad group scope. The following is an example SOAP request that specifies campaign level scope.
 
 ```xml
 <Scope>
@@ -211,5 +211,5 @@ If you request a report using account level scope, then the performance reports 
 For more information about using the [Reporting Service](../reporting-service/reporting-service-reference.md), see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
 
 > [!NOTE]
-> Performance statistics and the product partition tree structure returned by the Reporting service lags behind the performance statistics that you see in the Bing Ads web application by up to an hour. 
+> Performance statistics and the product partition tree structure returned by the Reporting service lags behind the performance statistics that you see in the Microsoft Advertising web application by up to an hour. 
 

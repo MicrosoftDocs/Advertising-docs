@@ -14,7 +14,7 @@ Defines a Campaign In Market Audience Association that can be uploaded and downl
 > [!NOTE]
 > Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
 
-Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
+Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 
 You can download all *Campaign In Market Audience Association* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignInMarketAudienceAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -103,7 +103,7 @@ Bulk API download returns all in-market audience associations, whether the in-ma
 **Delete:** Read-only  
 
 ## <a name="audienceid"></a>Audience Id
-The Bing Ads identifier of the in-market audience associated with the campaign.
+The Microsoft Advertising identifier of the in-market audience associated with the campaign.
 
 This bulk field maps to the *Id* field of the [In Market Audience](in-market-audience.md) record.
 
