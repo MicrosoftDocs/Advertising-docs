@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Geographical Locations Code Example
-This example demonstrates how to download the comma separated value (CSV) file that contains geographical location information that can be used with Bing Ads location targeting.
+This example demonstrates how to download the comma separated value (CSV) file that contains geographical location information that can be used with Microsoft Advertising location targeting.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

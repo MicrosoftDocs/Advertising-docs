@@ -4,10 +4,10 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Reference the data retention time periods for Bing Ads performance data.
+description: Reference the data retention time periods for Microsoft Advertising performance data.
 ---
 # Reporting Data Retention Time Periods
-Reporting data is kept for specified periods of time. This topic provides the data retention time periods for Bing Ads performance data. Use this information to see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report.
+Reporting data is kept for specified periods of time. This topic provides the data retention time periods for Microsoft Advertising performance data. Use this information to see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report.
 
 > [!NOTE]
 > Retention periods are not applicable for the [Negative Keyword Conflict Report](../reporting-service/negativekeywordconflictreportrequest.md) and [Product Match Count Report](../reporting-service/productmatchcountreportrequest.md). The reports are based on your current settings, and do not retain historical data.
@@ -18,7 +18,7 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="adextensions"></a>Ad Extensions
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Ad Extension By Ad Report](../reporting-service/adextensionbyadreportrequest.md)|Ad Extension by Ad|6|36|36|36|36|36|
 |[Ad Extension Detail Report](../reporting-service/adextensiondetailreportrequest.md)|Ad Extension by Item|6|36|36|36|36|36|
@@ -27,14 +27,14 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="budget"></a>Billing and Budget
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Budget Summary Report](../reporting-service/budgetsummaryreportrequest.md)|Budget|Not Applicable|24|Not Applicable|Not Applicable|Not Applicable|Not Applicable|
 |Not applicable|Billing Statement|Not Applicable|Not Applicable|Not Applicable|36|Not Applicable|Not Applicable|
 
 ## <a name="analytics"></a>Campaign Analytics
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Conversion Performance Report](../reporting-service/conversionperformancereportrequest.md)|Conversions|6|36|36|36|36|36|
 |[Goals And Funnels Report](../reporting-service/goalsandfunnelsreportrequest.md)|Goals|1|36|36|36|36|36|
@@ -42,13 +42,13 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="changehistory"></a>Change History
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Search Campaign Change History Report](../reporting-service/searchcampaignchangehistoryreportrequest.md)|Campaign Change History|6|6|6|6|6|6|
 
 ## <a name="dynamicsearchads"></a>Dynamic Search Ads
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[DSA Auto Target Performance Report](../reporting-service/dsaautotargetperformancereportrequest.md)|Dynamic search ad auto target|6|36|36|36|36|36|
 |[DSA Category Performance Report](../reporting-service/dsacategoryperformancereportrequest.md)|Dynamic search ad category|6|36|36|36|36|36|
@@ -56,7 +56,7 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="performance"></a>Performance
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Account Performance Report](../reporting-service/accountperformancereportrequest.md)|Account|6|36|36|36|36|36|
 |[Ad Performance Report](../reporting-service/adperformancereportrequest.md)|Ad|6|36|36|36|36|36|
@@ -72,7 +72,7 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="productads"></a>Product Ads
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Product Dimension Performance Report](../reporting-service/productdimensionperformancereportrequest.md)|Product Dimension|6|36|36|36|36|36|
 |[Product Partition Performance Report](../reporting-service/productpartitionperformancereportrequest.md)|Product Partition|6|36|36|36|36|36|
@@ -81,7 +81,7 @@ If the data aggregation is not available for a given report, it will be noted as
 
 ## <a name="targeting"></a>Targeting
 
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
+|API Report Name|Microsoft Advertising Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
 |[Age Gender Audience Report](../reporting-service/agegenderaudiencereportrequest.md)|Age and gender|6|36|36|36|36|36|
 |[Age Gender Demographic Report](../reporting-service/agegenderdemographicreportrequest.md)|Age and Gender|6|36|36|36|36|36|

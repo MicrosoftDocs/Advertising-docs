@@ -14,7 +14,7 @@ You can request conversions, assists, revenue, and revenue per conversion for yo
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 > [!NOTE]
-> You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.
+> You should not use this report to get performance data for Microsoft Shopping Campaigns. It is only applicable for other campaign types.
 
 ## Syntax
 ```xml

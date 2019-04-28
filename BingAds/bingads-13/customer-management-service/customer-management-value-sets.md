@@ -23,7 +23,7 @@ The Customer Management service defines the following value sets.
 |[LanguageType](languagetype.md)|Defines a selection of language values.|
 |[LCID](lcid.md)|Defines a selection of locale values.|
 |[OrderByField](orderbyfield.md)|Defines the field order of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
-|[PaymentMethodType](paymentmethodtype.md)|Defines possible payment methods for a Bing Ads account.|
+|[PaymentMethodType](paymentmethodtype.md)|Defines possible payment methods for a Microsoft Advertising account.|
 |[PredicateOperator](predicateoperator.md)|Defines the condition of results for one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
 |[SecretQuestion](secretquestion.md)|Defines the possible secret questions that users can choose from to help them recall their password.|
 |[ServiceLevel](servicelevel.md)|For internal use only.|

@@ -13,7 +13,7 @@ Defines an ad group negative job function criterion that can be uploaded and dow
 
 You can exclude people in a specific job function according to LinkedIn by setting the [Profile Id](#profileid). 
 
-Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+Microsoft Advertising applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
 
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
@@ -121,7 +121,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

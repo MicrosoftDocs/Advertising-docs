@@ -31,7 +31,7 @@ Should you exceed the service call limit, you will see the following error:
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
 ### HTTP 500
-All Bing Ads services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
+All Bing Ads API service operations adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
 
 ```http
 HTTP/1.1 500 Internal Server Error
@@ -42,21 +42,21 @@ This is not in and of itself representative of an actionable code, and you shoul
 You cannot create an instance of a base class such as [Ad](../campaign-management-service/ad.md). You must instantiate one of the derived classes e.g., [ExpandedTextAd](../campaign-management-service/expandedtextad.md).
 
 ### Why am I getting an empty URL from the Reporting API call? 
-Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Bing Ads web application for the same date range and filter criteria, please [contact support](#contact-support) with details.
+Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Microsoft Advertising web application for the same date range and filter criteria, please [contact support](#contact-support) with details.
 
 ## <a name="contact-support"></a>Contact Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Bing Ads product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Microsoft Advertising product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
 
 > [!TIP]
 > To resolve the issue efficiently, please provide support with the following information up front.
-> **Reproduction Steps**: Include all header and body elements of the SOAP request, except for the *AuthenticationToken* or *Password* header elements.
-> **Issue or Error**: Include the complete SOAP response with tracking ID, and please also note the date and time when the error occurred.
-> **Historical Performance**: Indicate whether the same request had worked for you in the past.
-> **Frequency**: Indicate whether you can now reproduce the issue every time or intermittently.
-> **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
+>  - **Reproduction Steps:** Include all header and body elements of the SOAP request, except for the *AuthenticationToken* or *Password* header elements.
+>  - **Issue or Error:** Include the complete SOAP response with tracking ID, and please also note the date and time when the error occurred.
+>  - **Historical Performance:** Indicate whether the same request had worked for you in the past.
+>  - **Frequency:** Indicate whether you can now reproduce the issue every time or intermittently.
+>  - **Environment:** Indicate whether the issue occurs in the production or sandbox environment.
 
 ## <a name="faultoverview"></a>Fault Model Overview
-When a Bing Ads service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads Operation Error Codes](operation-error-codes.md).
+When a Bing Ads API service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Microsoft Advertising Operation Error Codes](operation-error-codes.md).
 
 Available fault and data objects vary per service. This table describes the fault model and links to error data objects for each service.
 
@@ -117,7 +117,7 @@ ReportingOperationCouldNotBeCompletedException     |Microsoft.BingAds.V13.Report
 ReportingOperationInProgressException     |Microsoft.BingAds.V13.Reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="net-troubleshooting"></a>.NET SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="net-troubleshooting-fiddler"></a>Fiddler Options
 You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
@@ -153,7 +153,7 @@ ReportingOperationCouldNotBeCompletedException     |com.microsoft.bingads.V13.re
 ReportingOperationInProgressException     |com.microsoft.bingads.V13.reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="java-troubleshooting"></a>Java SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="java-troubleshooting-httptransportpipe"></a>HttpTransportPipe
 To output the HTTP trace you can set the HttpTransportPipe *dump* property to "true" (string) as follows:
@@ -182,7 +182,7 @@ You can follow these steps to capture the SOAP envelopes from a Java application
 #### <a name="java-troubleshooting-spring-cxf"></a>Spring Framework and Apache CXF Options
 You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application.
 
-1. Set up the development environment as described in [Get Started Using Java with Bing Ads Services](get-started-java.md). 
+1. Set up the development environment as described in [Get Started Using Java with Bing Ads API](get-started-java.md). 
    
 2. Edit pom.xml to include the *org.springframework* dependency. 
     ```xml
@@ -222,7 +222,7 @@ If you use the Bing Ads PHP [SDK](client-libraries.md), your application should 
 For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-troubleshooting).
 
 ### <a name="php-troubleshooting"></a>PHP SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="php-troubleshooting-print"></a>Print SOAP
 In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console. 
@@ -261,7 +261,7 @@ SdkException      |BingAds         |The base exception class for the Bing Ads Py
 TimeoutException      |BingAds         |This exception is thrown if timeout occurs.
      
 ### <a name="python-troubleshooting"></a>Python SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="python-troubleshooting-logging"></a>Logging
 If you are using the Bing Ads Python SDK you can include logging to output traffic, for example the SOAP request and response. Each of the Python code examples include these statements to print the output all SOAP traffic to the console. Be sure to uncomment them if you want to view the traffic.
@@ -273,6 +273,6 @@ logging.getLogger('suds.client').setLevel(logging.DEBUG)
 ```
 
 ## See Also
-[Bing Ads Operation Error Codes](operation-error-codes.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Microsoft Advertising Operation Error Codes](operation-error-codes.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

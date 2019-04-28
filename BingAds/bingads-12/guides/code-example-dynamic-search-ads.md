@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Dynamic Search Ads Code Example
-This example uses the Bing Ads Campaign Management service to setup a Dynamic Search Ads (DSA) campaign.
+This example uses the Campaign Management API to setup a Dynamic Search Ads (DSA) campaign.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

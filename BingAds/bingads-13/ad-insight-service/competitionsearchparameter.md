@@ -28,7 +28,7 @@ If you do not include the competition search parameter when calling [GetKeywordI
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="competitionlevels"></a>CompetitionLevels|The competition levels that you want for the returned keyword ideas.<br/><br/>Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads. Possible values are *Low*, *Medium*, and *High*.|[CompetitionLevel](competitionlevel.md) array|
+|<a name="competitionlevels"></a>CompetitionLevels|The competition levels that you want for the returned keyword ideas.<br/><br/>Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising. Possible values are *Low*, *Medium*, and *High*.|[CompetitionLevel](competitionlevel.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v13](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v13/AdInsightService.svc)  

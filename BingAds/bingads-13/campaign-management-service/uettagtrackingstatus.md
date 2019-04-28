@@ -27,9 +27,9 @@ Defines the possible system-determined status values of a UET tag. These are the
 
 |Value|Description|
 |-----------|---------------|
-|<a name="active"></a>Active| Your UET tag is working and sending user activity data to Bing Ads.|
-|<a name="inactive"></a>Inactive|Bing Ads has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.|
-|<a name="unverified"></a>Unverified|Bing Ads hasn't received any user activity data from the UET tag on your website. It can take up to 24 hours for Bing Ads to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.|
+|<a name="active"></a>Active| Your UET tag is working and sending user activity data to Microsoft Advertising.|
+|<a name="inactive"></a>Inactive|Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.|
+|<a name="unverified"></a>Unverified|Microsoft Advertising hasn't received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

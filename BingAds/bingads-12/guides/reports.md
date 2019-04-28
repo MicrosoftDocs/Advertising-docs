@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Track finances and measure ad performance to optimize your budget or campaign settings.
 ---
 # Reports
-The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about Bing Ads accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
+The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about Microsoft Advertising accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
 
 ## Reporting Service Overview
 When submitting a report request, you choose the [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md) to determine the contents of the report. For example, you may want to include impressions, clicks, and click-through rate. The report uses the column names as the column headers. The report includes the columns in the same order that you include them in the *Columns* element of the report request. For information about how columns affect data output, see [Columns that Group the Data](#columnsdata) below. For information about restrictions on column combinations in the same report request, see [Column Restrictions](#columnrestrictions) below.
@@ -51,8 +51,8 @@ The following report header metadata is included by default. If you don't want t
 |Report Name|The [ReportName](../reporting-service/reportrequest.md#reportname) that you chose when the report was submitted.|
 |Report Time|The report time that you chose when the report was submitted. If multiple days were requested, the start and end date will be separated by a comma e.g., "Report Time: 2/1/2019, 2/7/2019".|
 |Time Zone|Indicates which time zone was used to determine the end of the last day of the requested report time. For information about how the time zone affects report availability, see [Time Zones in Reporting](#reptimezones) below.|
-|Last Completed Available Day|The most recent date and time when Bing Ads finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
-|Last Completed Available Hour|The most recent date and time when Bing Ads finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
+|Last Completed Available Day|The most recent date and time when Microsoft Advertising finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
+|Last Completed Available Hour|The most recent date and time when Microsoft Advertising finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
 |Report Aggregation|Reflects the aggregation type that was set in the report request. For information see [Aggregation and Time](#aggregation-time) below.|
 |Report Filter|Reserved for future use.|
 |Potential Incomplete Data|If set to *true* then the report data might not be completely processed for the last day of the requested report time.<br/><br/>The [ReturnOnlyCompleteData](../reporting-service/reportrequest.md#returnonlycompletedata) request element determines whether or not the service must ensure that all the data has been processed and is available. For information about how the time zone affects report availability, see [Time Zones in Reporting](#reptimezones) below.|
@@ -186,5 +186,5 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md)  
 [Report Types](report-types.md)  
 [Request and Download a Report](request-download-report.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

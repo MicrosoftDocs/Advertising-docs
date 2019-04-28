@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Describes the schema for records in a Bulk file.
 ---
 # Bulk File Schema
-The bulk schema defines the contents of the file for download or upload with the Bing Ads Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](downloadentity.md) value set.
+The bulk schema defines the contents of the file for download or upload with the Bulk API. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](downloadentity.md) value set.
 
 For more information about using the Bulk service to manage your campaigns, see [Bulk Download and Upload](../guides/bulk-download-upload.md). For more information about understanding the data file contents, see the sections below.
 
@@ -174,11 +174,11 @@ Record Type  |Supported Campaign Types
 ## <a name="typehierarchy"></a>Type Hierarchy
 The download file will always include a record for the [Format Version](format-version.md) and [Account](account.md) record types. For upload, the [Format Version](format-version.md) is required and must precede all other record types in the bulk file.  
 
-- If a parent entity is created in the same file, it should precede any dependent child records in the bulk file. For example as shown in the diagram below, when associating a site link ad extension with a campaign, the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record must be included in the file after both the [Campaign](campaign.md) and [Sitelink Ad Extension](sitelink-ad-extension.md) records. The *Id* and *Parent Id* fields of the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record should be set to the identifier of the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records respectively. If the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records are also new and do not yet have assigned Bing Ads identifiers, then you should use [Reference Keys](#referencekeys).  
+- If a parent entity is created in the same file, it should precede any dependent child records in the bulk file. For example as shown in the diagram below, when associating a site link ad extension with a campaign, the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record must be included in the file after both the [Campaign](campaign.md) and [Sitelink Ad Extension](sitelink-ad-extension.md) records. The *Id* and *Parent Id* fields of the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record should be set to the identifier of the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records respectively. If the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records are also new and do not yet have assigned Microsoft Advertising identifiers, then you should use [Reference Keys](#referencekeys).  
 
     ![Record Type Hierarchy](media/bulkrecordhierarchy.gif)
 
-- It is not required to include the record for a parent entity that already has been assigned a valid Bing Ads identifier.
+- It is not required to include the record for a parent entity that already has been assigned a valid Microsoft Advertising identifier.
 
 - Partial success is supported when adding, updating, and deleting bulk file records. For example if you try to add three campaigns and only two are correctly specified in the file, then two will be added. The results file will include details for both successful [Campaign](campaign.md) records, one attempted [Campaign](campaign.md) record, and one *Campaign Error* record.
 
@@ -196,7 +196,7 @@ The download file will always include a record for the [Format Version](format-v
   > [!NOTE]
   > In most cases you can update the existing record instead of submitting separate delete and add records, for example you can update the *Bid Adjustment* field of an existing [Campaign Gender Criterion](campaign-gender-criterion.md). 
 
-- When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Bing Ads assigned system identifier or a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the  [Ad Group](ad-group.md) record should match the *Id* field in the [Campaign](campaign.md) record or the *Campaign* field of the  [Ad Group](ad-group.md) record should match the *Campaign* field in the [Campaign](campaign.md) record. If both are provided then the *Parent Id* field of the  [Ad Group](ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
+- When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Microsoft Advertising assigned system identifier or a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the  [Ad Group](ad-group.md) record should match the *Id* field in the [Campaign](campaign.md) record or the *Campaign* field of the  [Ad Group](ad-group.md) record should match the *Campaign* field in the [Campaign](campaign.md) record. If both are provided then the *Parent Id* field of the  [Ad Group](ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
 
 - With a few exceptions the result file will only include the columns that you uploaded. For example if you upload a new [Ad Group Negative Keyword](ad-group-negative-keyword.md) without the *Id* column header, then the result file will not include the assigned identifier for the new negative keyword. The bulk file should contain the *Id* column; however, you should leave the *Id* empty for each new [Ad Group Negative Keyword](ad-group-negative-keyword.md). The exceptions to this rule are campaigns, ad groups, ads, and keywords in which case the result file will contain all columns regardless of the uploaded columns.  
 
@@ -210,13 +210,13 @@ If you use "delete_value" in required fields, please note the following.
 - If you use the reserved "delete_value" string in place of a required value set, the field will be updated to the default value, and the results file will reflect that change. For example if you set the [Network Distribution](ad-group.md#networkdistribution) field of the [Ad Group](ad-group.md) record to "delete_value", then the ad group's network distribution would be set to *OwnedAndOperatedAndSyndicatedSearch* and the upload results file would reflect the same.  
 
 ## <a name="referencekeys"></a>Reference Keys
-When referring to a preceding record in the bulk file that does not yet have an assigned Bing Ads identifier, you may use either a logical reference key or negative reference key depending on the record type.
+When referring to a preceding record in the bulk file that does not yet have an assigned Microsoft Advertising identifier, you may use either a logical reference key or negative reference key depending on the record type.
 
 > [!NOTE]
 > If the parent entity is created in the same file, it should precede any dependent child records in the bulk file.
 
 ### <a name="negativekey"></a>Negative Reference Key
-When referring to a preceding record in the bulk file that does not yet have an assigned Bing Ads identifier, you can set the extension's *Id* field to a negative number of your choice. This custom Id is known as a negative reference key. Then you may use the negative reference key within the *Id* field of a dependent record.
+When referring to a preceding record in the bulk file that does not yet have an assigned Microsoft Advertising identifier, you can set the extension's *Id* field to a negative number of your choice. This custom Id is known as a negative reference key. Then you may use the negative reference key within the *Id* field of a dependent record.
 
 The first example shows how to create an [Ad Group](ad-group.md) for a new [Campaign](campaign.md). Set the *Parent Id* field in the [Ad Group](ad-group.md) record to the negative reference key of the [Campaign](campaign.md) (-111). If you will add additional records in the same file that should have the [Ad Group](ad-group.md) as their parent (e.g. [Keyword](keyword.md) or [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)), then you should also set the *Id* field in the [Ad Group](ad-group.md) to a negative value e.g. *-1111* which can be referenced from the child records.
 
@@ -247,7 +247,7 @@ When referring to a new [Campaign](campaign.md) or [Ad Group](ad-group.md) recor
 |Ad Group|Women's Shoes|Women's Red Shoe Sale|
 
 ## <a name="clientid"></a>Client Identifiers
-Client identifiers may be used to associate input records in the bulk upload file with output records in the results file. For example when adding new records you may set the *Client Id* field to a string value of your choosing. The Bing Ads system makes no modifications to your client identifiers and passes them through to the results file for the corresponding record.
+Client identifiers may be used to associate input records in the bulk upload file with output records in the results file. For example when adding new records you may set the *Client Id* field to a string value of your choosing. The Microsoft Advertising system makes no modifications to your client identifiers and passes them through to the results file for the corresponding record.
 
 ## <a name="errors"></a>Errors
 The bulk download file or the bulk upload results file may contain records where the corresponding *Type* field includes the Error suffix. For example a *Product Ad Error* record type represents a product ad error. The *Error* and *Error Number* columns will contain details about the error.

@@ -13,23 +13,23 @@ See below for information about changes to Bing Ads API Version 12 by month.
 See below for Bing Ads API updates during this calendar month. 
 
 - [New Production OAuth Endpoint](#oauth-april2019)  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-april2019)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-april2019)  
 
 ## <a name="oauth-april2019"></a>New Production OAuth Endpoint
 The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
 
 > [!IMPORTANT]
-> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Bing Ads users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
+> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
 
-### <a name="sdk-april2019"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated with support for version 13. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.1) SDK version 12.13.1. 
+### <a name="sdk-april2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated with support for version 13. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.1) SDK version 12.13.1. 
 
 ## <a name="march2019"></a>March 2019
 See below for Bing Ads API updates during this calendar month. 
 
 - [Final Url Suffix](#finalurlsuffix-march2019)  
 - [New Report Columns](#reportcolumns-march2019)  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-march2019)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-march2019)  
 
 ### <a name="finalurlsuffix-march2019"></a>Final Url Suffix
 The final URL suffix will include tracking parameters that will be appended to the end of your landing page URL.
@@ -74,16 +74,16 @@ The *CampaignType* column is added to the following reports.
 - [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
 - [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
 
-### <a name="sdk-march2019"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.4), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.4), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.4), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.4) SDK version 12.0.4. 
+### <a name="sdk-march2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.4), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.4), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.4), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.4) SDK version 12.0.4. 
 
 ## <a name="january2019"></a>January 2019
 See below for Bing Ads API updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-january2019)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-january2019)  
 
-### <a name="sdk-january2019"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.3) SDK version 12.0.3. 
+### <a name="sdk-january2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.3) SDK version 12.0.3. 
 
 ### <a name="biddingscheme-january2019"></a>Default Bid Strategy 
 From January 28th, 2019 onward if you do not set BiddingScheme, then EnhancedCpc will be used by default for Search and Dynamic Search Ads campaigns. Prior to January 28th, 2019 if you did not set BiddingScheme for Search and Dynamic Search Ads campaigns, then ManualCpc was used by default. 
@@ -91,20 +91,20 @@ From January 28th, 2019 onward if you do not set BiddingScheme, then EnhancedCpc
 ## <a name="december2018"></a>December 2018
 See below for Bing Ads API updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-december2018)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-december2018)  
 
-### <a name="sdk-december2018"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.2) SDK version 12.0.2. 
+### <a name="sdk-december2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.2) SDK version 12.0.2. 
 
 ## <a name="november2018"></a>November 2018
 See below for Bing Ads API updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-november2018)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-november2018)  
 - [New Report Columns](#reportcolumns-november2018)  
 - [Experiment Campaigns](#experiments-november2018)  
 
-### <a name="sdk-november2018"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.1) SDK version 12.0.1. 
+### <a name="sdk-november2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.1) SDK version 12.0.1. 
 
 ### <a name="reportcolumns-november2018"></a>New Report Columns
 The *AbsoluteTopImpressionSharePercent* and *ClickSharePercent* columns are added to the following reports. 
@@ -139,7 +139,7 @@ An experiment is where you split a Search campaign’s budget and traffic, and t
 
 How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
 
-With Bing Ads experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:
+With Microsoft Advertising experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:
 - Try out changes in the experiment campaign.
 - See how the experiment campaign performs compared to the base campaign.
 - If you like the experiment's results, apply the changes to the base campaign or create a whole new campaign.
@@ -157,14 +157,14 @@ You can manage experiment settings using the Bulk service ([Experiment Record](.
 ## <a name="october2018"></a>October 2018
 See below for Bing Ads API updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-october2018)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-october2018)  
 - [Longer Expanded Text Ads](#expandedtextads-october2018)  
 - [Paging for Media Meta Data](#mediametadatapaging-october2018)  
 - [Dynamic Search Ads Source and Custom Label](#dsasource-october2018)  
 - [Responsive Ad Type Filter for Reporting](#responsiveadfilter-october2018)  
 
-### <a name="sdk-october2018"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.7) SDK version 11.12.7. 
+### <a name="sdk-october2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.7) SDK version 11.12.7. 
 
 ### <a name="expandedtextads-october2018"></a>Longer Expanded Text Ads
 The maximum length of the Expanded Text Ad Text field is increased from 80 to 90, or from 40 to 45 for double-width characters. 
@@ -188,7 +188,7 @@ You can set the page feeds targeting source with the Campaign Management service
 You can set the page feeds custom label auto targets with the Campaign Management service via the [WebpageCondition](../campaign-management-service/webpagecondition.md) i.e., set the operand to [CustomLabel](../campaign-management-service/webpageconditionoperand.md#customlabel). You can set the page feeds custom label auto targets with the Bulk service via the the dynamic ad target condition and value fields of a [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md), [Ad Group Negative Dynamic Search Ad Target](../bulk-service/ad-group-negative-dynamic-search-ad-target.md), or [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md) record. 
 
 > [!NOTE]
-> Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Bing Ads web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.bingads.microsoft.com/#apex/3/en/60010/0) help article.
+> Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Microsoft Advertising web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.ads.microsoft.com/#apex/3/en/60010/0) help article.
 
 ### <a name="responsiveadfilter-october2018"></a>Responsive Ad Type Filter for Reporting
 The *ResponsiveAd* value is added to the [AdTypeReportFilter](../reporting-service/adtypereportfilter.md) value set. You can filter by ad type within the following report filters. 
@@ -202,11 +202,11 @@ The *ResponsiveAd* value is added to the [AdTypeReportFilter](../reporting-servi
 ## <a name="september2018"></a>September 2018
 See below for Bing Ads API updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-september2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-september2018)   
 - [Customer Id and Customer Name Report Columns](#customeridcustomername-september2018)  
 
-### <a name="sdk-september2018"></a>Bing Ads Software Development Kit (SDK) Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.6), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.6), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.6), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.6) SDK version 11.12.6. 
+### <a name="sdk-september2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.6), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.6), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.6), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.6) SDK version 11.12.6. 
 
 ### <a name="customeridcustomername-september2018"></a>Customer Id and Name Report Columns
 The *CustomerId* and *CustomerName* columns are added to the following reports. 
@@ -226,7 +226,7 @@ See below for Bing Ads API updates during this calendar month.
  
 - [Conflict Type for the Negative Keyword Conflict Report](#negativekeywordconflicttype-august2018)  
 - [Ad Click Parallel Tracking](#adclickparalleltracking-august2018)   
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-august2018)   
 - [Customer Address](#customeraddress-august2018)  
 - [Validate Address](#validateaddress-august2018)  
 - [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
@@ -244,19 +244,19 @@ Support for ad click parallel tracking is enabled for pilot customers. Parallel 
 > [!IMPORTANT]
 > Parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and currently all other customers are opted out. During pilot you can enable and disable the feature i.e., set the property to *true* or *false*. By the end of calendar year 2019 all customers will be enabled for parallel tracking, and the value can only be set to *true*. 
 
-You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
+You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2-500).
 
 You can manage parallel tracking via the [GetAccountProperties](../campaign-management-service/getaccountproperties.md) and [SetAccountProperties](../campaign-management-service/setaccountproperties.md) service operations. If the account property [Name](../campaign-management-service/accountproperty.md#name) element is set to [AdClickParallelTracking](../campaign-management-service/accountproperty.md#adclickparalleltracking), then the returned [Value](../campaign-management-service/accountproperty.md#value) can be either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
 
-### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
+### <a name="sdk-august2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 - Updated service proxies to support customer address, campaign level profile criteria, similar audiences for remarketing lists, and new change history report columns. 
 
 ### <a name="customeraddress-august2018"></a>Customer Address
-The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Bing Ads does not use the customer address, and instead uses the account business address. 
+The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Microsoft Advertising does not use the customer address, and instead uses the account business address. 
 
 ### <a name="validateaddress-august2018"></a>Validate Address
-The [ValidateAddress](../customer-management-service/validateaddress.md) operation is added. The operation determines whether or not the submitted address is valid for Bing Ads accounts. For Australia (AU), Canada (CA), and The United States (US), the operation validates whether or not you could ship something to the address. For all other countries basic address verification (AVS) is completed. 
+The [ValidateAddress](../customer-management-service/validateaddress.md) operation is added. The operation determines whether or not the submitted address is valid for Microsoft Advertising accounts. For Australia (AU), Canada (CA), and The United States (US), the operation validates whether or not you could ship something to the address. For all other countries basic address verification (AVS) is completed. 
 
 ### <a name="changehistoryreportentity-august2018"></a>Entity Attributes for the Change History Report
 The [EntityId](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityid) and [EntityName](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityname) elements are added to the [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md) value set. 
@@ -269,7 +269,7 @@ The Campaign Management service is updated to support the new campaign level pro
 The Bulk service is updated to support the new profile criterion types i.e., upload and download the [Campaign Company Name Criterion](../bulk-service/campaign-company-name-criterion.md), [Campaign Industry Criterion](../bulk-service/campaign-industry-criterion.md), and [Campaign Job Function Criterion](../bulk-service/campaign-job-function-criterion.md) records in a Bulk file. Use the existing [CampaignTargetCriterions](../bulk-service/downloadentity.md#campaigntargetcriterions) value flag for Bulk download. The Bulk service already includes definitions for ad group level profile criterion types via the [Ad Group Company Name Criterion](../bulk-service/ad-group-company-name-criterion.md), [Ad Group Industry Criterion](../bulk-service/ad-group-industry-criterion.md), and [Ad Group Job Function Criterion](../bulk-service/ad-group-job-function-criterion.md) records in a Bulk file. Use the existing [AdGroupTargetCriterions](../bulk-service/downloadentity.md#adgrouptargetcriterions) value flag for Bulk download. 
 
 ### <a name="similaraudiences-august2018"></a>Similar Audiences for Remarketing Lists
-Similar audiences for remarketing lists is coming soon. Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audiences for remarketing lists. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list.
+Similar audiences for remarketing lists is coming soon. Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audiences for remarketing lists. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list.
 
 The Campaign Management service is updated to support similar audiences for remarketing i.e., the [SimilarRemarketingList](../campaign-management-service/similarremarketinglist.md) object. Use the existing [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md) operation to retrieve the similar audiences. Use the existing [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md), [DeleteAdGroupCriterions](../campaign-management-service/deleteadgroupcriterions.md), [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md), and [UpdateAdGroupCriterions](../campaign-management-service/updateadgroupcriterions.md) operations to manage ad group level associations for the similar audiences. 
 
@@ -279,9 +279,9 @@ The Campaign Management service is updated to support similar audiences for rema
 ## <a name="july2018"></a>July 2018
 See below for Bing Ads API updates during this calendar month. 
 
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-july2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-july2018)   
 
-### <a name="sdk-july2018"></a>Bing Ads Software Development Kit (SDK) Updates
+### <a name="sdk-july2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 - Limited the scope to bingads.manage for access token requests. Previously the default scope was used, which can vary if a user granted your app permissions to multiple scopes. The Bing Ads SDKs only support the bingads.manage scope. 
 - Updated the Customer Management proxies to support [LinkedAccountIds](#linkedaccountids-june2018) for agencies. For agency users the customer role can contain a list of linked accounts that the user can access as an agency on behalf of another customer.
@@ -289,10 +289,10 @@ The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 ## <a name="june2018"></a>June 2018
 See below for Bing Ads API updates during this calendar month. 
 
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-june2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-june2018)   
 - [Linked Account Ids per Customer Role](#linkedaccountids-june2018)
 
-### <a name="sdk-june2018"></a>Bing Ads Software Development Kit (SDK) Updates
+### <a name="sdk-june2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Cooperative Bidding](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
 
 ### <a name="linkedaccountids-june2018"></a>Linked Account Ids per Customer Role
@@ -304,10 +304,10 @@ The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedacco
 ## <a name="may2018"></a>May 2018
 See below for Bing Ads API updates during this calendar month. 
 
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-may2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-may2018)   
 - [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
 
-### <a name="sdk-may2018"></a>Bing Ads Software Development Kit (SDK) Updates
+### <a name="sdk-may2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, PHP, and Python SDKs are updated to extend support for [Audience Ads](audience-ads.md). New bulk objects are added to the SDK for reading and writing Bulk file records e.g., BulkResponsiveAd and BulkResponsiveAdLabel. 
 
 The Bing Ads .NET, Java, and Python SDKs are updated with retries for the 117 throttling error if encountered while polling for the status of a bulk or reporting operation. 
@@ -319,13 +319,13 @@ Support is added for the Microsoft Audience Network in preview. For details see 
 See below for Bing Ads API updates during this calendar month. 
 
 - [Version 12 General Availability](#v12-april2018)  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-april2018)   
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-april2018)   
 - [Product Match Count Report](#reporting-productmatchcount-april2018)   
 
 ### <a name="v12-april2018"></a>Version 12 General Availability
 Bing Ads API version 12 is now generally available. With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. For more details, see [Migrate to Version 12](migration-guide.md).
 
-### <a name="sdk-april2018"></a>Bing Ads Software Development Kit (SDK) Updates
+### <a name="sdk-april2018"></a>Microsoft Advertising Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, PHP, and Python SDKs are updated to support Bing Ads API Version 12. 
 
 #### <a name="netsdk-april2018"></a>Bing Ads .NET SDK
@@ -337,7 +337,7 @@ The version parameter is now required when creating each ServiceClient. Previous
 The file_type parameter now defaults to 'Csv' as an *str* datatype instead of the DownloadFileType for BulkFileReader, BulkServiceManager, DownloadParameters and SubmitDownloadParameters. You can set 'Tsv' if you prefer the tab separated file format type.
 
 ### <a name="reporting-productmatchcount-april2018"></a>Product Match Count Report
-The [ProductMatchCountReportRequest](../reporting-service/productmatchcountreportrequest.md) is added for Bing Shopping campaigns. You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
+The [ProductMatchCountReportRequest](../reporting-service/productmatchcountreportrequest.md) is added for Microsoft Shopping Campaigns. You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Microsoft Shopping Campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
 
 ## <a name="march2018"></a>March 2018
 See below for Bing Ads API updates during this calendar month. 

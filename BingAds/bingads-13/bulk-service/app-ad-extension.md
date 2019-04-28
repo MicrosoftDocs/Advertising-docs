@@ -165,7 +165,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ## <a name="destinationurl"></a>Destination Url
 The URL of the app store download webpage that users are taken to when they click the app extension link.
 
-The URL can contain dynamic text strings such as {keyword}. For a list of supported parameters, see the Available parameters section within the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
+The URL can contain dynamic text strings such as {keyword}. For a list of supported parameters, see the Available parameters section within the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2).
 
 The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.
 

@@ -24,7 +24,7 @@ Defines a keyword with match type.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The Bing Ads identifier of the keyword.|**long**|
+|<a name="id"></a>Id|The Microsoft Advertising identifier of the keyword.|**long**|
 |<a name="matchtype"></a>MatchType|The match type of the keyword.|[MatchType](matchtype.md)|
 |<a name="text"></a>Text|The keyword text.|**string**|
 

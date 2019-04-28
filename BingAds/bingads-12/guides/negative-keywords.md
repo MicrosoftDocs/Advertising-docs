@@ -14,7 +14,7 @@ A *negative keyword* is a specific word or phrase that helps to prevent your ad 
 |Exact match|A match is prevented if all the words in the negative keyword exactly match the user's query.|
 |Phrase match|Phrase match is the default match type. A match is prevented if all the words in the negative keyword are present somewhere in the user's query and are in the same order. For example, if your ad group contains "small red shoes" as a keyword and "sandals" as a negative keyword, searching for "small red sandals" would prevent a match because the query string contains the negative keyword, "sandals".|
 
-For more information on when to use negative keywords see the Bing Ads help article, [Learn about using negative keywords to get to the right customers](https://help.bingads.microsoft.com/apex/index/3/en-us/51014).
+For more information on when to use negative keywords see the Microsoft Advertising help article, [Learn about using negative keywords to get to the right customers](https://help.ads.microsoft.com/apex/index/3/en-us/51014).
 
 You can [assign negative keywords](#assignednegativekeywords) to an individual campaign or ad group. If you specify negative keywords at both campaign and ad group levels, both sets of negative keywords will be in effect for the corresponding ad group. Negative keywords can also be added and deleted from a [shared negative keyword list](#sharednegativekeywordlists). The negative keyword list can be shared or associated with multiple campaigns. The negative keyword lists associated with a campaign are also effectively applied to all ad groups in the campaign. For example all negative keywords shown in the diagram below are applied to the Fall Sale ad group either directly or through inheritance from the campaign level associations. For other ad groups (not pictured) within the Shoe Sales campaign, the negative keywords sandals, thongs, flip flops, slides would not be in effect, unless those ad group also have the same negative keywords at ad group level.
 
@@ -47,5 +47,5 @@ To associate a negative keyword list with a campaign, specify an array of [Share
 The reporting service provides a negative-keyword conflict report that lists the negative keywords that you also specify as keywords. Specifying a negative keyword that is also a keyword negates the keyword. For more information, see the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).
 
 ## See Also
-[Bing Ads Web Service Addresses](web-service-addresses.md)
+[Bing Ads API Web Service Addresses](web-service-addresses.md)
 

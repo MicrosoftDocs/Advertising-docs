@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Product Ads Code Example
-This example demonstrates how to apply product conditions for Product Ads in Bing Shopping Campaigns.
+This example demonstrates how to apply product conditions for Product Ads in Microsoft Shopping Campaigns.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

@@ -37,7 +37,7 @@ The Campaign Management service defines the following data objects.
 |[AppInstallGoal](appinstallgoal.md)|Defines an app install conversion goal.|
 |[ApplicationFault](applicationfault.md)|Defines the base object from which all fault detail objects derive.|
 |[AppUrl](appurl.md)|Defines the operating system platform and URL of the app store download webpage.|
-|[Asset](asset.md)|Defines the base object of an asset with a unique Bing Ads identifier that can be reused across multiple ads.|
+|[Asset](asset.md)|Defines the base object of an asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
 |[AssetLink](assetlink.md)|Defines the relationship of an asset to an ad.|
 |[Audience](audience.md)|Defines the base object of an audience.|
 |[AudienceCriterion](audiencecriterion.md)|Defines a criterion that can be used to show ads to a specific audience.|
@@ -48,7 +48,7 @@ The Campaign Management service defines the following data objects.
 |[BiddableCampaignCriterion](biddablecampaigncriterion.md)|Defines a biddable criterion that you want applied to the specified campaign.|
 |[BiddingScheme](biddingscheme.md)|Defines the base object of a bidding scheme for how you want to manage your bids.|
 |[BidMultiplier](bidmultiplier.md)|Defines the multiplier by which to adjust your base bid for the corresponding criterion.|
-|[BMCStore](bmcstore.md)|Defines a Bing Merchant Center store.|
+|[BMCStore](bmcstore.md)|Defines a Microsoft Merchant Center store.|
 |[Budget](budget.md)|Represents a budget that can be shared by any campaigns in an account.|
 |[CallAdExtension](calladextension.md)|Defines an object that specifies a click-to-call phone number to include in a text ad.|
 |[CalloutAdExtension](calloutadextension.md)|Defines an object that specifies additional text about your business, products, or services to include in a text ad.|
@@ -112,7 +112,7 @@ The Campaign Management service defines the following data objects.
 |[NegativeCampaignCriterion](negativecampaigncriterion.md)|Defines a criterion that you want to exclude from the specified campaign.|
 |[NegativeKeyword](negativekeyword.md)|Defines a negative keyword with match type.|
 |[NegativeKeywordList](negativekeywordlist.md)|Defines a negative keyword list.|
-|[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Bing Ads.|
+|[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Microsoft Advertising.|
 |[OfflineConversionGoal](offlineconversiongoal.md)|Defines an offline conversion goal.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md)|Defines a pages viewed per visit conversion goal.|
@@ -123,10 +123,10 @@ The Campaign Management service defines the following data objects.
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|
 |[ProductAd](productad.md)|Defines a product ad.|
-|[ProductAudience](productaudience.md)|Defines a product audience that you can use to remarket products from your Bing Merchant Center store.|
-|[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.|
-|[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.|
-|[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.|
+|[ProductAudience](productaudience.md)|Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store.|
+|[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Microsoft Merchant Center catalog file.|
+|[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
+|[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
 |[ProfileCriterion](profilecriterion.md)|Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.|
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|
 |[RemarketingList](remarketinglist.md)|Defines a remarketing list.|
@@ -142,7 +142,7 @@ The Campaign Management service defines the following data objects.
 |[SharedEntityAssociation](sharedentityassociation.md)|Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.|
 |[SharedList](sharedlist.md)|Defines the base class of a shared list.|
 |[SharedListItem](sharedlistitem.md)|Defines the base class of a shared list item.|
-|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Bing Merchant Center store.|
+|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Microsoft Merchant Center store.|
 |[SimilarRemarketingList](similarremarketinglist.md)|Defines an audience that is similar to one of your remarketing lists.|
 |[SitelinkAdExtension](sitelinkadextension.md)|Defines an object with one sitelink per ad extension.|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
@@ -151,8 +151,8 @@ The Campaign Management service defines the following data objects.
 |[TargetSetting](targetsetting.md)|The target settings that determines whether the Age, Audience, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.|
 |[TargetSettingDetail](targetsettingdetail.md)|Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.|
 |[TextAd](textad.md)|Defines a text ad.|
-|[TextAsset](textasset.md)|A text asset with a unique Bing Ads identifier that can be reused across multiple ads.|
-|[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Bing Ads to collect actions people take on your website.|
+|[TextAsset](textasset.md)|A text asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
+|[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
 |[Webpage](webpage.md)|Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.|
 |[WebpageCondition](webpagecondition.md)|Defines a condition or criterion that helps determine whether you want to show dynamic search ads.|

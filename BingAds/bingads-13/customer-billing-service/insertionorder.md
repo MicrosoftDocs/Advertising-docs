@@ -10,7 +10,7 @@ description: An insertion order is a contract that establishes the maximum amoun
 An insertion order is a contract that establishes the maximum amount you will spend on your account over a specified period of time. If you have monthly invoice billing set up for your account, you need to have an active insertion order for your ads to be eligible for delivery. You still control your spend using your campaign budget, and you will only be charged for what you accrue. For example, if you had a month-long insertion order for $5,000 and accrued only $4,500 in charges over the billing period, then we will only deduct $4,500 from your insertion order budget.
 
 > [!WARNING]
-> The insertion order budget only applies to ad spend, which is an important distinction if your business is in a country/region where online services are taxed. If you have a strict budget limit, you may need to account for taxes in your insertion order budget. To learn more about tax requirements in your business location, see the [Tax or VAT information](https://help.bingads.microsoft.com/#apex/3/en/52032/3) help article.
+> The insertion order budget only applies to ad spend, which is an important distinction if your business is in a country/region where online services are taxed. If you have a strict budget limit, you may need to account for taxes in your insertion order budget. To learn more about tax requirements in your business location, see the [Tax or VAT information](https://help.ads.microsoft.com/#apex/3/en/52032/3) help article.
 
 Most elements of this object can only be set before the insertion order becomes approved i.e., if the [Status](#status) is set to PendingUserReview. In that case you can either make new changes or approve or decline the insertion order via elements of this object. Once the insertion order [Status](#status) is Active, Exhausted, Expired, or NotStarted, then you can either make new changes or approve or decline the current pending changes via the [PendingChanges](#pendingchanges) element. If the insertion order [Status](#status) is Canceled or Declined then you cannot update the insertion order. 
 
@@ -21,7 +21,7 @@ Most elements of this object can only be set before the insertion order becomes 
 > - If you attempt to update the [StartDate](#startdate) or [EndDate](#enddate) of an insertion order that is part of a recurring series the API will return an error. 
 > - If you update the [Status](#status) of an insertion order that is part of a recurring series, the status update will be applied to all insertion orders in the series. 
 > 
-> To manage recurring insertion orders in the Bing Ads web application, see the [How do I create and edit an insertion order?](https://help.bingads.microsoft.com/#apex/3/en/52094/0) help article.  
+> To manage recurring insertion orders in the Microsoft Advertising web application, see the [How do I create and edit an insertion order?](https://help.ads.microsoft.com/#apex/3/en/52094/0) help article.  
 
 ## Syntax
 ```xml
@@ -59,7 +59,7 @@ Most elements of this object can only be set before the insertion order becomes 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account to which the insertion order applies.<br/><br/>You cannot update the account identifier after you create the insertion order.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**long**|
-|<a name="accountnumber"></a>AccountNumber|The system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form *xxxxxxxx*, where *xxxxxxxx* is a series of any eight alphanumeric characters.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="accountnumber"></a>AccountNumber|The system generated account number that is used to identify the account in the Microsoft Advertising web application. The account number has the form *xxxxxxxx*, where *xxxxxxxx* is a series of any eight alphanumeric characters.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 |<a name="bookingcountrycode"></a>BookingCountryCode|A code that identifies the country/region in which the account operates. For a list of country code values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>You cannot update the country code after the insertion order becomes active.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
 |<a name="budgetremaining"></a>BudgetRemaining|The running balance of the insertion order.<br/><br/>The running balance value is initially the same as the [SpendCapAmount](#spendcapamount), and then decreases each time an ad in the account is served.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**double**|
 |<a name="budgetremainingpercent"></a>BudgetRemainingPercent|The percent of budget remaining for the insertion order.<br/><br/>This value is calculated as [BudgetRemaining](#budgetremaining) / [SpendCapAmount](#spendcapamount).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**double**|

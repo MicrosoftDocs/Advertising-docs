@@ -18,7 +18,7 @@ The maximum number of company name profile criterions that you can apply to each
 
 You can also exclude people from seeing your ads based on LinkedIn profiles. Excluded profiles are also known as negative profile criteria. Each negative profile criterion defines the company, industry, or job function of people who you do not want to see your ads. 
 
-The supported criteria varies by campaign type. Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+The supported criteria varies by campaign type. Microsoft Advertising applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
 
 |Criterion Association|Supported Campaign Types|
 |----------|---------------|

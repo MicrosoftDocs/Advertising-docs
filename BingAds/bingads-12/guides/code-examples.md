@@ -1,13 +1,13 @@
 ---
-title: "Bing Ads Code Examples"
+title: "Bing Ads API Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Discover code examples in C#, Java, PHP, and Python.
 ---
-# Bing Ads Code Examples
-Get started developing Bing Ads applications in any programming language which supports web services. Samples are provided for C#, Java, Php, and Python. 
+# Bing Ads API Code Examples
+Get started developing Bing Ads API applications in any programming language which supports web services. Samples are provided for C#, Java, Php, and Python. 
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
@@ -22,14 +22,14 @@ Get started developing Bing Ads applications in any programming language which s
 |[Dynamic Search Ads](./code-example-dynamic-search-ads.md)|How to setup Dynamic Search Ads using the Campaign Management service.|
 |[Expanded Text Ads](./code-example-expanded-text-ads.md)|How to setup Expanded Text Ads for a search advertising campaign.|
 |[Experiments](./code-example-experiments.md)|How to create experiment campaigns from a base campaign.|
-|[Geographical Locations](./code-example-geographical-locations.md)|How to download the comma separated value (CSV) file that contains geographical location information that can be used with Bing Ads location targeting.|
+|[Geographical Locations](./code-example-geographical-locations.md)|How to download the comma separated value (CSV) file that contains geographical location information that can be used with Microsoft Advertising location targeting.|
 |[Image Media](./code-example-image-media.md)|How to add media for responsive ads and image ad extensions.|
-|[Invite User](./code-example-invite-user.md)|How to invite a user to manage Bing Ads accounts.|
+|[Invite User](./code-example-invite-user.md)|How to invite a user to manage Microsoft Advertising accounts.|
 |[Keyword Planner](./code-example-keyword-planner.md)|How to get keyword ideas and traffic estimates for search advertising campaigns.|
 |[Labels](./code-example-labels.md)|How to add labels and associate them with campaigns, ad groups, keywords, and ads.|
 |[Negative Keywords](./code-example-negative-keywords.md)|How to associate negative keywords and negative keyword lists with a campaign.|
-|[Offline Conversions](./code-example-offline-conversions.md)|How to send Bing Ads your offline conversions using the Campaign Management service.|
-|[Product Ads](./code-example-product-ads.md)|How to apply product conditions for Product Ads in Bing Shopping Campaigns.|
+|[Offline Conversions](./code-example-offline-conversions.md)|How to send Microsoft Advertising your offline conversions using the Campaign Management service.|
+|[Product Ads](./code-example-product-ads.md)|How to apply product conditions for Product Ads in Microsoft Shopping Campaigns.|
 |[Profile Criteria](./code-example-profile-criteria.md)|How to use company, industry, and job function criteria to show ads to your target audience.|
 |[Remarketing Lists](./code-example-remarketing-lists.md)|How to associate remarketing lists with a new ad group.|
 |[Report Requests](./code-example-report-requests.md)|How to request and retrieve performance reports.|
@@ -40,5 +40,5 @@ Get started developing Bing Ads applications in any programming language which s
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 [Bing Ads API Reference](reference.md)  

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a list of optional ad group criterion properties that you can request when calling GetAdGroupCriterionsByIds.
 ---
 # AdGroupCriterionAdditionalField Value Set - Campaign Management
-Defines a list of optional ad group criterion properties that you can request when calling [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md). The additional field values enable you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding properties will be included in the ad group criterion by default. 
+Defines a list of optional ad group criterion properties that you can request when calling [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the ad group criterion by default. 
 
 ## Syntax
 ```xml

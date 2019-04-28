@@ -81,7 +81,7 @@ The label color as a hexadecimal code.
 
 The hexadecimal value must have the '#' prefix. For example you can use the value of *#FFFFFF* for a white label.
 
-The color can be viewed in the Bing Ads web application. Your application can display the color or utilize the hexadecimal value to categorize a set of labels.
+The color can be viewed in the Microsoft Advertising web application. Your application can display the color or utilize the hexadecimal value to categorize a set of labels.
 
 **Add:** Optional. If you do not specify any color, the value will be assigned at random for each label.  
 **Update:** Optional. If no value is set for the update, this setting is not changed. You can update the color code but cannot remove it.   

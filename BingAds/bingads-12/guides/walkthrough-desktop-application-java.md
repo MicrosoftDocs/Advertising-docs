@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Desktop Application in Java"
+title: "Walkthrough: Bing Ads API Desktop Application in Java"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a desktop application using the Bing Ads Java SDK.
 dev_langs:
   - java
 ---
-# Walkthrough: Bing Ads Desktop Application in Java
+# Walkthrough: Bing Ads API Desktop Application in Java
 This example Java console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -154,7 +154,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
                                 ArrayOfAdvertiserAccount accounts = searchAccountsByUserId(user.getId());
 
-                                System.out.println("The user can access the following Bing Ads accounts: \n");
+                                System.out.println("The user can access the following Microsoft Advertising accounts: \n");
                                 printAccounts(accounts);
 
                             }
@@ -209,19 +209,19 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
             webView.getEngine().load(authorizationEndpoint.toString());
 
-            // The user will be prompted to grant permissions for your application to manage their Bing Ads accounts. 
+            // The user will be prompted to grant permissions for your application to manage their Microsoft Advertising accounts. 
             // The authorization service calls back to your application with the redirection URI, which 
-            // includes an authorization code if the user authorized your application to manage their Bing Ads accounts. 
+            // includes an authorization code if the user authorized your application to manage their Microsoft Advertising accounts. 
             // For example: https://login.live.com/oauth20_desktop.srf?code=Authorization-Code-Returned-Here&lc=1033. 
 
             Scene scene = new Scene(webView, 800, 600);
 
-            primaryStage.setTitle("Bing Ads Desktop Application Example");
+            primaryStage.setTitle("Bing Ads API Desktop Application Example");
             primaryStage.setScene(scene);
             primaryStage.show();
         }
 
-        // Gets a User object by the specified Bing Ads user identifier.
+        // Gets a User object by the specified Microsoft Advertising user identifier.
 
         static User getUser(java.lang.Long userId) throws RemoteException, Exception
         {
@@ -305,6 +305,6 @@ final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAut
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

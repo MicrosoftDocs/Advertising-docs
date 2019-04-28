@@ -160,7 +160,7 @@ Supported values are 0, 15, 30, and 45.
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

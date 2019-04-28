@@ -23,7 +23,7 @@ Defines an object that contains migration status for an account.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountid"></a>AccountId|The Bing Ads identifier of the account.|**long**|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising identifier of the account.|**long**|
 |<a name="migrationstatusinfos"></a>MigrationStatusInfos|The list of migration status info for the corresponding account.|[MigrationStatusInfo](migrationstatusinfo.md) array|
 
 ## Requirements

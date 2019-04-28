@@ -8,7 +8,7 @@ description: Defines the possible search networks on which an ad can display.
 ---
 # Network Value Set - Campaign Management
 Defines the possible search networks on which an ad can display.
-For more information about networks and ad distribution, see the [About Ad Distribution](https://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
+For more information about networks and ad distribution, see the [About Ad Distribution](https://help.ads.microsoft.com/#apex/3/en/50871/0) help article.
 
 ## Syntax
 ```xml

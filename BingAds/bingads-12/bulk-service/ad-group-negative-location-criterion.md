@@ -11,7 +11,7 @@ dev_langs:
 # Ad Group Negative Location Criterion Record - Bulk
 Defines an ad group negative location criterion that can be uploaded and downloaded in a bulk file.
 
-Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads.
+Although location criterions are most often used to designate the specific locations where you want to show your ads, Microsoft Advertising also lets you specify locations you want to exclude from seeing your ads.
 
 Each negative location criterion defines a location code where you do not want your ads to show. 
 
@@ -124,7 +124,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="id"></a>Id
-The Bing Ads unique identifier of the criterion.
+The Microsoft Advertising unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

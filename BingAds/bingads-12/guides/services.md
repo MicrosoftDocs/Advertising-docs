@@ -4,7 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Reference documentation for Bing Ads web services.
+description: Reference documentation for Bing Ads API Version 12 services.
 ---
 # Version 12 Services
 Please see reference documentation below for Bing Ads API Version 12 services. 

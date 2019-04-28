@@ -4,15 +4,15 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Language options in Bing Ads give you control over your advertising campaign and experience.
+description: Language options in Microsoft Advertising give you control over your advertising campaign and experience.
 ---
 # Ad Languages
-Language options in Bing Ads give you control over your advertising campaign and experience. 
+Language options in Microsoft Advertising give you control over your advertising campaign and experience. 
 
 ## <a name="adlanguage"></a>Ad Language
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, if languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
-Your ad language in combination with your [location targeting](show-ads-target-audience.md) determines who will see your ads. When determining if your ads are eligible to be shown to a particular search user, Bing Ads first determines if your ad language allows for your ad to be shown in a particular country or region then considers the location criteria (and other criteria) settings you have configured. If the target criteria is met and the ad language is available in the country/region, the ad is eligible to display. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
+Your ad language in combination with your [location targeting](show-ads-target-audience.md) determines who will see your ads. When determining if your ads are eligible to be shown to a particular search user, Microsoft Advertising first determines if your ad language allows for your ad to be shown in a particular country or region then considers the location criteria (and other criteria) settings you have configured. If the target criteria is met and the ad language is available in the country/region, the ad is eligible to display. To learn more, see the Microsoft Advertising help article [How does ad language and location targeting affect who can see my ads?](https://help.ads.microsoft.com/#apex/3/en/51100/0)
 
 The following are the possible languages that you may use to write your ads and keywords.
 
@@ -32,12 +32,12 @@ The following are the possible languages that you may use to write your ads and 
 |TraditionalChinese|ZH|
 		
 ## <a name="productlanguage"></a>Product Language
-Your [customer](../customer-management-service/customer.md) language determines the language of the Bing Ads interface. 
+Your [customer](../customer-management-service/customer.md) language determines the language of the Microsoft Advertising interface. 
 
 The following country codes are supported per customer language e.g. [resellers](management-model-resellers.md) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
-> In New Zealand, Bing Ads is available only on the Bing network. 
+> In New Zealand, Microsoft Advertising is available only on the Microsoft Advertising Network. 
 
 |Language|Country Code|
 |------------|------------------|
@@ -95,7 +95,7 @@ Swedish,Bekvämligheter,Varumärken,Kurser,Utbildningar,Resmål,Hotellval,Varor,
 ## <a name="actionadextension-actiontext"></a>Action Text for Action Ad Extensions
 The action text displayed for action ad extensions will depend on the language that you set when creating or updating the action ad extension. For example, if you want action text displayed as *Act Now* in English you must specify the action type as *ActNow* and set the language to *English*. If you want action text displayed as *Jetzt handeln* in German you must likewise set the action type to *ActNow*, but set the language to *German*. 
 
-Bing Ads does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. This table lists the rare exceptions i.e. where the translated text exceeds 16 characters.
+Microsoft Advertising does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. This table lists the rare exceptions i.e. where the translated text exceeds 16 characters.
 
 |Language|Action Types Not Supported| 
 |-----|-----|

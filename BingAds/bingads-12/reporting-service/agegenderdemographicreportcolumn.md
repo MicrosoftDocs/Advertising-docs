@@ -49,16 +49,16 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
-|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
+|<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
 |<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
-|<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
+|<a name="adgroupid"></a>AdGroupId|The Microsoft Advertising assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
 |<a name="agegroup"></a>AgeGroup|The age group of the audience who viewed the ad. The possible values are *13-17*, *18-24*, *25-34*, *35-49*, *50-64*, and *65+*.|
-|<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
+|<a name="campaignid"></a>CampaignId|The Microsoft Advertising assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
 |<a name="estimatedclickpercent"></a>EstimatedClickPercent|The estimated number of times that an ad could be clicked by a particular age group or gender, divided by the total number of estimated clicks across the ad group (including estimated clicks for unknown age and gender demographics). The value is expressed as a percent from 0 - 100. This value is an estimate because the age and gender is not known for the entire audience.|

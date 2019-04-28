@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a product ad.
 ---
 # ProductAd Data Object - Campaign Management
-Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer's Bing Merchant Center store.
+Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer's Microsoft Merchant Center store.
 
 ## Syntax
 ```xml
@@ -26,7 +26,7 @@ Defines a product ad. A product ad is not used directly for delivered ad copy.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="promotionaltext"></a>PromotionalText|This property is reserved for internal use and will be removed from a future version of the API.<br/><br/>You can use [Merchant Promotions](https://help.bingads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
+|<a name="promotionaltext"></a>PromotionalText|This property is reserved for internal use and will be removed from a future version of the API.<br/><br/>You can use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
 
 The [ProductAd](productad.md) object has [Inherited Elements](#inheritedelements).
 
@@ -45,7 +45,7 @@ The [ProductAd](productad.md) object derives from the [Ad](ad.md) object, and in
 |<a name="finalurls"></a>FinalUrls|Not supported for product ads.|**string** array|
 |<a name="finalurlsuffix"></a>FinalUrlSuffix|Not supported for product ads.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>There are currently not any ForwardCompatibilityMap key and value pairs that are applicable for product ads.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
-|<a name="id"></a>Id|The unique Bing Ads identifier for the ad.<br/><br/>**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier for the ad.<br/><br/>**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
 |<a name="status"></a>Status|The status of the ad.<br/><br/>You can set the ad status to Active or Paused.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Not supported for product ads.|**string**|
 |<a name="type"></a>Type|The type of the ad. This value is *Product* when you retrieve a product ad. For more information about ad types, see the [Ad Data Object Remarks](ad.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdType](adtype.md)|

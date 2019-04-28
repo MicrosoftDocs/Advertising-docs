@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Bing Ads Desktop Application in C#"
+title: "Walkthrough: Bing Ads API Desktop Application in C#"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -8,7 +8,7 @@ description: Create a desktop application using the Bing Ads .NET SDK.
 dev_langs:
   - csharp
 ---
-# Walkthrough: Bing Ads Desktop Application in C# #
+# Walkthrough: Bing Ads API Desktop Application in C#
 This example C# console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
 
 You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
@@ -86,7 +86,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
                 {
                     Authentication authentication = AuthenticateWithOAuth();
     
-                    // Most Bing Ads service operations require account and customer ID. 
+                    // Most Bing Ads API service operations require account and customer ID. 
                     // This utiltiy operation sets the global authorization data instance 
                     // to the first account that the current authenticated user can access. 
                     SetAuthorizationDataAsync(authentication).Wait();
@@ -235,7 +235,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
     
                 // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
                 // You will want to subscribe to the NewOAuthTokensReceived event handler. 
-                // When calling Bing Ads services with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
+                // When calling Bing Ads API service operations with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
                 // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
                 oAuthDesktopMobileAuthCodeGrant.NewOAuthTokensReceived +=
                     (sender, tokens) => SaveRefreshToken(tokens.NewRefreshToken);
@@ -461,6 +461,6 @@ var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
 
 ## See Also
 [Sandbox](sandbox.md)  
-[Bing Ads Code Examples](code-examples.md)  
-[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Code Examples](code-examples.md)  
+[Bing Ads API Web Service Addresses](web-service-addresses.md)  
 
