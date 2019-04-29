@@ -31,7 +31,7 @@ description: Microsoft Advertising developer documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Introduction to Bing Ads API</h3>
-                                            <p>Find out whether Bing Ads is right for you.</p>
+                                            <p>Find out whether the Bing Ads API is right for your business.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +245,7 @@ description: Microsoft Advertising developer documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Manage your Products</h3>
-                                            <p>Use the Products resource to manage product offerings in your Bing Merchant Center store.</p>
+                                            <p>Use the Products resource to manage product offerings in your Microsoft Merchant Center store.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +264,7 @@ description: Microsoft Advertising developer documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Manage your Catalogs</h3>
-                                            <p>Use the Catalogs resource to manage catalogs in your Bing Merchant Center store.</p>
+                                            <p>Use the Catalogs resource to manage catalogs in your Microsoft Merchant Center store.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -478,12 +478,12 @@ description: Microsoft Advertising developer documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-introduction.svg" alt="Introduction to Bing Ads Scripts" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-introduction.svg" alt="Introduction to Microsoft Advertising Scripts" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>What's Bing Ads Scripts?</h3>
-                                            <p>Bing Ads Scripts lets you use JavaScript to access and manage your campaigns in Bing Ads' script editor.</p>
+                                            <h3>What's Microsoft Advertising Scripts?</h3>
+                                            <p>Microsoft Advertising Scripts lets you use JavaScript to access and manage your campaigns in Microsoft Advertising's script editor.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -521,7 +521,7 @@ description: Microsoft Advertising developer documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Concepts</h3>
-                                            <p>Learn about core Bing Ads Scripts concepts.</p>
+                                            <p>Learn about core Microsoft Advertising Scripts concepts.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +541,7 @@ description: Microsoft Advertising developer documentation home.
                                         </div>
                                         <div class="cardText">
                                             <h3>Script Authorization</h3>
-                                            <p>Learn how Bing Ads Scripts handles authorization.</p>
+                                            <p>Learn how Microsoft Advertising Scripts handles authorization.</p>
                                         </div>
                                     </div>
                                 </div>
