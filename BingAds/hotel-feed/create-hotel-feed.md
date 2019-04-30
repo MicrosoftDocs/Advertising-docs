@@ -15,14 +15,14 @@ ms.author: "scottwhi"
 >
 > The Hotel feed and documentation are subject to change. 
 
-To provide Bing your hotel listings, create an XML document that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, geographical coordinates, amenities, and more.
+To provide Microsoft your hotel listings, create an XML document that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, geographical coordinates, amenities, and more.
 
 The document must use UTF-8 encoding and must conform to the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotelv2.xsd). 
 
 For information about creating a feed file using CSV or TSV file format, see [Creating a CSV Hotel Feed file](create-csv-hotel-feed.md).
 
 > [!NOTE]
-> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-feed/reference.md) includes only those elements and attributes that Bing supports. 
+> Microsoft does not support all XSD elements. Microsoft ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-feed/reference.md) includes only those elements and attributes that Microsoft supports. 
 
 > [!NOTE]
 > The document must specify the elements in the order defined in the Hotel XSD (and as shown in the reference).
@@ -31,9 +31,9 @@ For information about creating a feed file using CSV or TSV file format, see [Cr
 
 ## Getting the data right
 
-Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
+Because Microsoft attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
 
-If a hotel has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the hotel, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
+If a hotel has missing or incorrect information, Microsoft may not be able to match it. If Microsoft cannot match the hotel, Microsoft will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Microsoft matched or didn't match. If Microsoft didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
 
 
 ## The top-level element in your feed
@@ -156,22 +156,22 @@ The `brand` element identifies the hotel's brand. For example, Fabrikam Residenc
 
 ## What happens if the hotel's content changes?
 
-If you change any of the hotel’s property values between feed runs (for example, its name, address, phone, etc.), Bing Ads may treat it as a new hotel property and create a new listing for it. If Bing creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
+If you change any of the hotel’s property values between feed runs (for example, its name, address, phone, etc.), Microsoft Advertising may treat it as a new hotel property and create a new listing for it. If Microsoft creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
 
-If you remove a hotel and add it back in a later feed with the same property values as before, Bing treats it as a new listing. Also, the performance report will show it as two separate listings.
+If you remove a hotel and add it back in a later feed with the same property values as before, Microsoft treats it as a new listing. Also, the performance report will show it as two separate listings.
 
 
 
 
 ## General rules
 
-- Use the Hotel XSD to validate your hotel feed file before sending it to Bing.
+- Use the Hotel XSD to validate your hotel feed file before sending it to Microsoft.
   
 - The hotel feed document must use UTF-8 encoding.
   
 - The feed must include listings for all your hotels&mdash; the feed process does not support partial updates.
   
-- Bing ignores any element or attribute that it does not support.
+- Microsoft ignores any element or attribute that it does not support.
   
 - Elements must be in the order specified in the Hotel XSD.
   
@@ -191,4 +191,4 @@ Ask your account manager to import the feed file.
 
 Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../pos-feed/pos-feed.md).
 
-After Bing successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
+After Microsoft successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 

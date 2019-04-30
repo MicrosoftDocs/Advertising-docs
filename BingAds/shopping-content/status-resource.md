@@ -23,7 +23,7 @@ The following is the base URI that you append the templates to.
 
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
 
-You may use the above Base URI or the Tenant URL shown under **Store settings** in the Bing Ads web application.
+You may use the above Base URI or the Tenant URL shown under **Store settings** in the Microsoft Advertising web application.
 
 ## <a name="templates"/>Templates
 
@@ -54,7 +54,7 @@ The following are the request and response headers.
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Microsoft Advertising credentials and developer token?](../shopping-content/get-started.md#credentials)
 |Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains the details about the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 

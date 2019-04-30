@@ -92,7 +92,7 @@ Gets this keyword's editorial approval status.
 ### Returns
 |Type|Description|
 |-|-
-string|The keyword's editorial approval status. The status indicates whether the keyword is under review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>DISAPPROVED</li><li>UNDER_REVIEW</li></ul>For information about how these status values map to Bing Ads API, see [Mapping editorial approval status values](../concepts/editorial-approval.md).
+string|The keyword's editorial approval status. The status indicates whether the keyword is under review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>DISAPPROVED</li><li>UNDER_REVIEW</li></ul>For information about how these status values map to Microsoft Advertising API, see [Mapping editorial approval status values](../concepts/editorial-approval.md).
 
 
 ## <a name="getcampaign"></a>getCampaign
@@ -137,7 +137,7 @@ Gets this keyword's match type.
 ### Returns
 |Type|Description|
 |-|-
-string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li>PHRASE</li><li>EXACT</li></ul>For information about these types, see [What are keyword match types, and how do I use them?](https://help.bingads.microsoft.com/apex/index/3/en-us/50822#!)
+string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li>PHRASE</li><li>EXACT</li></ul>For information about these types, see [What are keyword match types, and how do I use them?](https://help.ads.microsoft.com/apex/index/3/en-us/50822#!)
 
 
 ## <a name="getqualityscore"></a>getQualityScore
@@ -165,7 +165,7 @@ Gets the keyword's text. The text includes the keyword's match type syntax, if a
 - The keyword is *"books"* if the match type is **phrase**
 - The keyword is *[hardcover books]* if the match type is **exact**
 
-For information about these types, see [What are keyword match types, and how do I use them?](https://help.bingads.microsoft.com/apex/index/3/en-us/50822#!)
+For information about these types, see [What are keyword match types, and how do I use them?](https://help.ads.microsoft.com/apex/index/3/en-us/50822#!)
 
 ### Returns
 |Type|Description|

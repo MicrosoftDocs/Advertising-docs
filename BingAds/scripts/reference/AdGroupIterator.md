@@ -17,7 +17,7 @@ Example usage:
 ```javascript
     // Gets the iterator that iterates all ad groups
     // in the account.
-    var iterator = BingAdsApp.adGroups().get();
+    var iterator = AdsApp.adGroups().get();
 
     // Loops through all ad groups in the account.
     while (iterator.hasNext()) {

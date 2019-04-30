@@ -16,7 +16,7 @@ Contains the methods for accessing an entity's performance data.
 
 Example usage:
 ```javascript
-    var campaign = BingAdsApp.campaigns()
+    var campaign = AdsApp.campaigns()
         .forDateRange("LAST_WEEK")
         .get()
         .next();

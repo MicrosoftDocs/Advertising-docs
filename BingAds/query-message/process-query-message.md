@@ -1,6 +1,6 @@
 ---
 title: Process a Query message
-description: Shows how to process a Query message that Bing Ads sends you requesting your hotel itinerary data. 
+description: Shows how to process a Query message that Microsoft Advertising sends you requesting your hotel itinerary data. 
 ms.service: "hotel-ads-query-message"
 ms.topic: "article"
 author: "swhite-msft"
@@ -10,11 +10,11 @@ ms.author: "scottwhi"
 
 # Process a Query message
 
-If you sign up for pull requests or pull with hints requests, Bing sends you a [Query](../query-message/query-message.md) message that specifies the itinerary data that you need to send in your next [Transaction](../transaction-message/transaction-message.md) message.
+If you sign up for pull requests or pull with hints requests, Microsoft sends you a [Query](../query-message/query-message.md) message that specifies the itinerary data that you need to send in your next [Transaction](../transaction-message/transaction-message.md) message.
 
 ## Using pull requests
 
-If you use pull requests, the query is based on the setting you specify in your [QueryControl](../query-control-message/query-control-message.md) message. If your QueryControl message specifies a `MaxAdvancePurchase` value of 10 and a `MaxLengthOfStay` value of 3, and doesn't specify overrides, Bing sends you a request that's similar to the following Query message. 
+If you use pull requests, the query is based on the setting you specify in your [QueryControl](../query-control-message/query-control-message.md) message. If your QueryControl message specifies a `MaxAdvancePurchase` value of 10 and a `MaxLengthOfStay` value of 3, and doesn't specify overrides, Microsoft sends you a request that's similar to the following Query message. 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -31,7 +31,7 @@ If you use pull requests, the query is based on the setting you specify in your 
 </Query>
 ``` 
 
-Depending on the number of hotels you have, Bing may break the query up into several smaller queries with each query containing a subset of the hotels in the property list.
+Depending on the number of hotels you have, Microsoft may break the query up into several smaller queries with each query containing a subset of the hotels in the property list.
 
 When you get the Query message, your response should contain a [Transaction](../transaction-message/transaction-message.md) message with the following \<Result\>.
 
@@ -104,6 +104,6 @@ When you get the Query message, your response should contain a [Transaction](../
 
 ## Using pull with hints requests
 
-For examples that show the different types of Query messages that Bing sends if you use pull with hints request, see [Creating a Hint Message](../hint-message/create-hint-message.md).
+For examples that show the different types of Query messages that Microsoft sends if you use pull with hints request, see [Creating a Hint Message](../hint-message/create-hint-message.md).
 
  

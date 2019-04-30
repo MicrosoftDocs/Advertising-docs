@@ -16,7 +16,7 @@ ms.author: "scottwhi"
 >
 > The Hotel feed and documentation are subject to change. 
 
-To provide Bing your hotel listings, create a CSV file that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, and geographical coordinates.
+To provide Microsoft your hotel listings, create a CSV file that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, and geographical coordinates.
 
 For information about creating a feed file using an XML document, see [Creating an XML Hotel Feed file](create-hotel-feed.md).
 
@@ -26,9 +26,9 @@ For information about creating a feed file using an XML document, see [Creating 
 
 ## Getting the data right
 
-Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
+Because Microsoft attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
 
-If your hotel has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the hotel, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
+If your hotel has missing or incorrect information, Microsoft may not be able to match it. If Microsoft cannot match the hotel, Microsoft will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Microsoft matched or didn't match. If Microsoft didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
 
 
 
@@ -83,9 +83,9 @@ abc123,Great Ambers Getaway,1234 Porter Rd,Goldendale,WA,98234,US,47.694351,-122
 ## What happens if the hotel's content changes?
 
 
-If you change any of the hotel’s property values between feed runs (for example, its name, address, phone, etc.), Bing Ads may treat it as a new hotel property and create a new listing for it. If Bing creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
+If you change any of the hotel’s property values between feed runs (for example, its name, address, phone, etc.), Microsoft Advertising may treat it as a new hotel property and create a new listing for it. If Microsoft creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
 
-If you remove a hotel and add it back in a later feed with the same property values as before, Bing treats it as a new listing. Also, the performance report will show it as two separate listings.
+If you remove a hotel and add it back in a later feed with the same property values as before, Microsoft treats it as a new listing. Also, the performance report will show it as two separate listings.
 
 
 
@@ -95,5 +95,5 @@ Ask your account manager to import the feed file.
 
 Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../pos-feed/pos-feed.md).
 
-After Bing successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
+After Microsoft successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
 

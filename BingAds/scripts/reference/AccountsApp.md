@@ -11,9 +11,9 @@ ms.topic: "article"
 
 # AccountsApp
 
-This is the top-level object used in multi-account scripts to get the list of accounts the user has access to and to select the account to manage. After getting the account, use the [BingAdsApp](BingAdsApp.md) object to access its entities.
+This is the top-level object used in multi-account scripts to get the list of accounts the user has access to and to select the account to manage. After getting the account, use the [AdsApp](AdsApp.md) object to access its entities.
 
-This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application.
+This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Microsoft Advertising web application.
 
 
 ## Methods
@@ -42,7 +42,7 @@ The following example shows how to change the current account that the script is
 
 ```javascript
     // Get the account that the script is currently processing.
-    var oldAccount = BingAdsApp.currentAccount();
+    var oldAccount = AdsApp.currentAccount();
 
     // Get another account that the user manages.
     var newAccount = AccountsApp.accounts()

@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts best practices"
+title: "Microsoft Advertising Scripts best practices"
 description: "Identifies the best practices you should follow to improve script performance."
 author: "swhite-msft"
 manager: ehansen
@@ -31,7 +31,7 @@ Benefits of using filters:
 **Right way**
 
 ```javascript
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withCondition('Status = PAUSED')
         .get();
 
@@ -44,7 +44,7 @@ Benefits of using filters:
 **Wrong way**
 
 ```javascript
-    var adGroups = BingAdsApp.adGroups().get();
+    var adGroups = AdsApp.adGroups().get();
 
     while (adGroups.hasNext()) {
         var adGroup = adGroups.next();
@@ -66,7 +66,7 @@ To get child entities, use the child entity's collection at the level you want i
 
 ```javascript
     // Get all ads.
-    var ads = BingAdsApp.ads().get();
+    var ads = AdsApp.ads().get();
 
     while (ads.hasNext()) {
         var ad = ads.next();
@@ -78,7 +78,7 @@ Or, if you want ads from a specific campaign:
 
 ```javascript
     // Get all ads in the campaign, 'mycampaign'.
-    var ads = BingAdsApp.ads()
+    var ads = AdsApp.ads()
         .withCondition("CampaignName = 'mycampaign'")
         .get();
 
@@ -104,7 +104,7 @@ Or, getting a campaign's ads if you have the campaign object:
 
 
 ```javascript
-    var campaigns = BingAdsApp.campaigns().get();
+    var campaigns = AdsApp.campaigns().get();
 
     while (campaigns.hasNext()) {
         var adGroups = campaigns.next().adGroups().get();
@@ -127,7 +127,7 @@ The same applies if you want to get an entity's parent. Instead of traversing th
 
 ```javascript
     // Get all ads.
-    var ads = BingAdsApp.ads().get();
+    var ads = AdsApp.ads().get();
 
     while (ads.hasNext()) {
         var ad = ads.next();
@@ -143,7 +143,7 @@ The same applies if you want to get an entity's parent. Instead of traversing th
 
 
 ```javascript
-    var campaigns = BingAdsApp.campaigns().get();
+    var campaigns = AdsApp.campaigns().get();
 
     while (campaigns.hasNext()) {
         var campaign = campaigns.next();
@@ -173,7 +173,7 @@ Using IDs to filter entities provides the best performance.
 **This**
 
 ```javascript
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withIds(["123456"])
         .get();
 
@@ -188,7 +188,7 @@ Using IDs to filter entities provides the best performance.
 
 
 ```javascript
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withCondition("Name = 'myadgroup'")
         .get();
 
@@ -208,7 +208,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 **Right way**
 
 ```javascript
-    var report = BingAdsApp.report('<report query goes here>');
+    var report = AdsApp.report('<report query goes here>');
 
     var rows = report.rows();
     var idLists = []; // an array where each element contains an array of IDs.
@@ -228,7 +228,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
     }
 
     for (idList of idLists) {
-        var keywords = BingAdsApp.keywords()
+        var keywords = AdsApp.keywords()
             .withIds(idList)
             .get();
 
@@ -244,14 +244,14 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 **Wrong way**
 
 ```javascript
-    var report = BingAdsApp.report('<report query goes here>');
+    var report = AdsApp.report('<report query goes here>');
 
     var rows = report.rows();
 
     while (rows.hasNext()) {
         var row = rows.next();
 
-        var keyword = BingAdsApp.keywords()
+        var keyword = AdsApp.keywords()
             .withIds([row['id']])
             .get()
             .next();
@@ -275,7 +275,7 @@ Iterators reduce memory pressure by loading only a single item at a time rather 
 ```javascript
     var adGroups = []; 
 
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition('Status = ENABLED')
         .get();
 
@@ -292,7 +292,7 @@ Iterators reduce memory pressure by loading only a single item at a time rather 
 **Wrong way**
 
 ```javascript
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withCondition('Status = ENABLED')
         .get();
 
@@ -306,7 +306,7 @@ Iterators reduce memory pressure by loading only a single item at a time rather 
 
 ## Batching updates
 
-In order to improve performance, Bing processes build requests in batches. If you call a build request's operation method, it forces Bing to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
+In order to improve performance, Scripts processes build requests in batches. If you call a build request's operation method, it forces Scripts to process the queued build requests immediately, negating any performance gains. If you're creating more than one entity, don't execute the operation methods in the same loop that you use to build the entity. This leads to poor performance because only one entity at a time is processed. Instead, create an array of the operations and process them after the build loop.
 
 
 **Right way**
@@ -318,7 +318,7 @@ In order to improve performance, Bing processes build requests in batches. If yo
 
     // Create all the new entities.
     for (var i = 0; i < keywords.length; i++) {
-        var keywordOperation = BingAdsApp.adGroups().get().next()
+        var keywordOperation = AdsApp.adGroups().get().next()
           .newKeywordBuilder()
           .withText(keywords[i])
           .build();
@@ -336,13 +336,13 @@ In order to improve performance, Bing processes build requests in batches. If yo
 
 ``` javascript
     for (var i = 0; i < keywords.length; i++) {
-        var keywordOperation = BingAdsApp.adGroups().get().next()  // Get the first ad group
+        var keywordOperation = AdsApp.adGroups().get().next()  // Get the first ad group
           .newKeywordBuilder()  // Add the keyword to the ad group
           .withText(keywords[i])
           .build();
 
         // Don't get results in the same loop that creates
-        // the entity because Bing then only processes one
+        // the entity because Scripts then only processes one
         // entity at a time.
         var newKeyword = keywordOperation.getResult();
     }

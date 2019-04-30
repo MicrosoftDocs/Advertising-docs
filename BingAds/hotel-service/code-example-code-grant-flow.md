@@ -15,7 +15,7 @@ dev_langs:
 The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Authentication with OAuth](/bingads/guides/authentication-oauth).
 
 > [!NOTE]
-> The example currently points to the SI environment for getting Bing Ads access tokens. To use the example for the production environment, please remove the *Production OAuth server endpoints* from comments and place the *SI OAuth server endpoints* in comments.
+> The example currently points to the SI environment for getting Bing Advertising access tokens. To use the example for the production environment, please remove the *Production OAuth server endpoints* from comments and place the *SI OAuth server endpoints* in comments.
 
 ```csharp
 using System;

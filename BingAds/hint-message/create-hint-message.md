@@ -1,6 +1,6 @@
 ---
 title: "Create a hint message"
-description: Shows how to create a hint message that describes the itineraries that Bing Ads should request in a pull request.
+description: Shows how to create a hint message that describes the itineraries that Microsoft Advertising should request in a pull request.
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
 author: "swhite-msft"
@@ -10,7 +10,7 @@ ms.author: "scottwhi"
 
 # Create a Hint message
 
-If you sign up for pull with hint requests, Bing sends a message with the following form to the endpoint that you specify asking you to identify any itinerary changes since the last pull request. You decide the frequency of the requests at the time you onboard.
+If you sign up for pull with hint requests, Microsoft sends a message with the following form to the endpoint that you specify asking you to identify any itinerary changes since the last pull request. You decide the frequency of the requests at the time you onboard.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -19,7 +19,7 @@ If you sign up for pull with hint requests, Bing sends a message with the follow
 </HintRequest>
 ```
 
-The `LastFetchTime` element identifies the UTC date and time of the last successful response that you sent Bing that identified itinerary changes. If there has been no changes since that time, your response should contain an empty body. If there has been changes, the body contains a [Hint](../hint-message/reference.md) message, which identifies itineraries that have changed. You can identify the itineraries using one of the following methods:
+The `LastFetchTime` element identifies the UTC date and time of the last successful response that you sent Microsoft that identified itinerary changes. If there has been no changes since that time, your response should contain an empty body. If there has been changes, the body contains a [Hint](../hint-message/reference.md) message, which identifies itineraries that have changed. You can identify the itineraries using one of the following methods:
 
 - [Exact itineraries](#exactitineraries)
 - [Check-in date ranges](#checkindateranges)
@@ -45,7 +45,7 @@ Your hint message can identify the individual itineraries using the check-in dat
 
 Each \<Item\> represents an individual itinerary. You may specify an \<Item\> objects for each itinerary that you want to update, and each itinerary may specify one or more properties. 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you:
+When Microsoft receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you:
 
 ```xml
 <Query>
@@ -89,7 +89,7 @@ Your hint message can identify a range of itineraries. To specify the range, set
 
 Each \<Item\> represents a single range of check-in dates. You may specify an \<Item\> object for each check-in date range that identifies the itineraries you want to update, and each one may specify one or more properties. 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<Nights\> (this example assumes it's set to 3).
+When Microsoft receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<Nights\> (this example assumes it's set to 3).
 
 ```xml
 <Query>
@@ -173,7 +173,7 @@ The \<StaysIncludingRange\> identifies the hint as an expanded check-in date ran
 Each \<Item\> represents a single range of itineraries. You may specify an \<Item\> object for each check-in date range that identifies the itineraries you want to update, and each one may specify one or more properties.   
 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<AffectedNights\> (this example assumes it's set to 3).
+When Microsoft receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<AffectedNights\> (this example assumes it's set to 3).
 
 ```xml
 <Query>
@@ -257,6 +257,6 @@ When you get the Query message, your response should contain a [Transaction](../
 
 ## Batching queries
 
-Depending on the number of properties and itineraries that you need to update, Bing send you several smaller queries instead of one big query. For example, if you need to update itineraries for 1,000 properties, Bing may send you 100 query messages with 10 properties each.
+Depending on the number of properties and itineraries that you need to update, Microsoft sends you several smaller queries instead of one big query. For example, if you need to update itineraries for 1,000 properties, Microsoft may send you 100 query messages with 10 properties each.
 
 

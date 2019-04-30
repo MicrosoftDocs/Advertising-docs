@@ -115,13 +115,13 @@ function main() {
 // of findDisapprovedAds().
  
 function findDisapprovedAds() {
-    const currentAccountInfo = `${BingAdsApp.currentAccount().getName()} ${BingAdsApp.currentAccount().getAccountId()} (${BingAdsApp.currentAccount().getAccountNumber()})`;
+    const currentAccountInfo = `${AdsApp.currentAccount().getName()} ${AdsApp.currentAccount().getAccountId()} (${AdsApp.currentAccount().getAccountNumber()})`;
  
     Logger.log(`Processing account: ${currentAccountInfo}`);
  
     // Gets the list of disapproved ads in the account.
 
-    const ads = BingAdsApp.ads().withCondition('CampaignStatus = ENABLED')
+    const ads = AdsApp.ads().withCondition('CampaignStatus = ENABLED')
         .withCondition('AdGroupStatus = ENABLED')
         .withCondition('Status = ENABLED')
         .withCondition('CombinedApprovalStatus = DISAPPROVED')
@@ -167,7 +167,7 @@ function findDisapprovedAds() {
  
     Logger.log(`Found ${results.length} disapproved ads for account ${currentAccountInfo}`);
  
-    const currentAccount = BingAdsApp.currentAccount();
+    const currentAccount = AdsApp.currentAccount();
  
     // Create an object that identifies the account and its
     // list of disapproved ads, if any. Convert it to a string that's 

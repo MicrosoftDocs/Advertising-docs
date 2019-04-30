@@ -22,13 +22,13 @@ To add an ad group, first get the campaign to add the ad group to. Use the [Camp
 
 Next, call the campaign's [newAdGroupBuilder](../reference/Campaign.md#newadgroupbuilder) method to get a builder that you use to specify the ad group's properties. The only required property is the ad group's name (see the `withName` method), which must be unique within the campaign. If you don't specify a CPC value, it defaults to the minimum bid amount for your account's currency. You only need to specify language if the campaign doesn't specify it; otherwise, it inherits the campaign's language value. By default, the ad group's status is paused.
 
-Calling the builder's `build` method creates the ad group asynchronously; Bing adds the ad group at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
+Calling the builder's `build` method creates the ad group asynchronously; Scripts adds the ad group at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
 
 
 ```javascript
 function main() {
     // The ID of the campaign to add the ad groups to.
-    // IDs in Bing Scripts are string integers.
+    // IDs in Scripts are string integers.
     var campaignId = 'CAMPAIGN ID GOES HERE';  
     var campaign = getCampaign(campaignId);
 
@@ -67,7 +67,7 @@ function main() {
 
 // Get the campaign using its ID.
 function getCampaign(id) {
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withIds([id])
         .get();
 
@@ -107,12 +107,12 @@ function checkBuildStatus(operations, adGroups) {
 
 ## Get all ad groups
 
-To get all ad groups in an account, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `adGroups` method to get the [selector](../reference/AdGroupSelector.md). Then, call the selector's `get` method to get an [iterator](../reference/AdGroupIterator.md) that you use to iterate through the list of ad groups. Since the example doesn't specify any filters, the selector returns all ad groups in the account. To determine the number of ad groups in the iterator, call the iterator's `totalNumEntities` method.
+To get all ad groups in an account, first call the [AdsApp](../reference/AdsApp.md) object's `adGroups` method to get the [selector](../reference/AdGroupSelector.md). Then, call the selector's `get` method to get an [iterator](../reference/AdGroupIterator.md) that you use to iterate through the list of ad groups. Since the example doesn't specify any filters, the selector returns all ad groups in the account. To determine the number of ad groups in the iterator, call the iterator's `totalNumEntities` method.
 
 ```javascript
 function main() {
     // Gets all ad groups in the account.
-    var iterator = BingAdsApp.adGroups().get();
+    var iterator = AdsApp.adGroups().get();
     
     // Iterates through the list of ad groups and logs 
     // each ad group's name.
@@ -125,7 +125,7 @@ function main() {
 
 ## Get an ad group by name
 
-To get an ad group by name, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `adGroups` method to get the [selector](../reference/AdGroupSelector.md). The selector contains a number of filter methods that you use to filter the list of ad groups. Use the `withCondition` method to filter the ad groups for a specific ad group name. Note that the operands and operators are case sensitive.
+To get an ad group by name, first call the [AdsApp](../reference/AdsApp.md) object's `adGroups` method to get the [selector](../reference/AdGroupSelector.md). The selector contains a number of filter methods that you use to filter the list of ad groups. Use the `withCondition` method to filter the ad groups for a specific ad group name. Note that the operands and operators are case sensitive.
 
 Next, call the selector's `get` method to get the [iterator](../reference/AdGroupIterator.md). Ad group names within a campaign are unique but it is possible for multiple campaigns to have ad groups with the same name. Because of this, if you filter only by name, the iterator may contain more than one ad group. 
 
@@ -138,7 +138,7 @@ function main() {
     var adGroupName = 'AD GROUP NAME GOES HERE';
 
     // Get the ad groups with the specified name.
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
           .withCondition(`Name = '${adGroupName}'`)
           .get();
 
@@ -160,7 +160,7 @@ If you have access to the ad group's ID, use it instead. Using IDs to get entiti
 function main() {
     var adGroupId = '12345';
 
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withIds([adGroupId])
         .get();
 
@@ -179,7 +179,7 @@ function main() {
     var adGroupName = 'AD GROUP NAME GOES HERE';
     var campaignName = "CAMPAIGN NAME GOES HERE";
 
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition(`Name = '${adGroupName}'`)
         .withCondition(`CampaignName = '${campaignName}'`)
         .get();
@@ -206,7 +206,7 @@ function main() {
 
     // Get the ad group. You need to specify the date range of the
     // performance data you want to get.
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .forDateRange('LAST_WEEK')
         .withCondition(`Name = '${adGroupName}'`)
         .withCondition(`CampaignName = '${campaignName}'`)
@@ -231,7 +231,7 @@ function main() {
     var adGroupName = 'AD GROUP NAME GOES HERE';
 
     // Get the ad group. 
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition(`Name = '${adGroupName}'`)
         .withCondition(`CampaignName = '${campaignName}'`)
         .get();

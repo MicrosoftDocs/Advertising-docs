@@ -151,7 +151,7 @@ Gets ads with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only ad 33333.
 
 ```javascript
-var selector = BingAdsApp.ads()
+var selector = AdsApp.ads()
     .withIds([11111, 22222, 33333])
     .withIds([33333, 44444, 55555]);
 ```
@@ -183,7 +183,7 @@ limit|int|The number of ads to return. The actual number may be less.
 
 ## See also
 
-[BingAdsApp.ads()](BingAdsApp.md#ads)
+[AdsApp.ads()](AdsApp.md#ads)
 
 <!--
 [AdGroup.ads()](AdGroup.md#ads)

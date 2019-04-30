@@ -9,7 +9,7 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 # Testing your Code in Sandbox
-Bing Ads does not provide a sandbox for the Content API where you can test your application before you deploy it to the production environment. 
+Microsoft Advertising does not provide a sandbox for the Content API where you can test your application before you deploy it to the production environment. 
 
 However, you can use the following options to test your application in production without affecting live data. These options apply only to the [Product](products-resource.md) and [Inventory](inventory-resource.md) resources and not to the [Catalog](../shopping-content/catalogs-resource.md) resource.
 
@@ -31,7 +31,7 @@ Note that the Catalogs resource does not support the `dry-run` query parameter.
 
 Another option is to disable a catalog's ability to publish content. Catalogs that are disabled will not serve ads. This allows you to perform operations against the catalog and capture any errors that occur.  
 
-To disable a catalog in the Bing Ads web application, select the catalog from the **Catalog management** tab. Then, on the **Catalog settings** tab, deselect **Enable publishing**. 
+To disable a catalog in the Microsoft Advertising web application, select the catalog from the **Catalog management** tab. Then, on the **Catalog settings** tab, deselect **Enable publishing**. 
 
 You may also use the [Catalogs](../shopping-content/catalogs-resource.md) resource to disable publishing. For details see, [Managing your Catalogs](../shopping-content/manage-catalogs.md).
 

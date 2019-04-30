@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Selectors"
-description: "Describes how selectors work in Bing Ads Scripts."
+title: "Microsoft Advertising Scripts Selectors"
+description: "Describes how selectors work in Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Selectors let you apply filter and sort criteria when retrieving Bing Ads entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. Selectors include the following methods:
+Selectors let you apply filter and sort criteria when retrieving Microsoft Advertising entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. Selectors include the following methods:
 
 - **withCondition()** &mdash; Use to specify conditions that entities must meet to be selected. This is equivalent to a SQL `WHERE` clause.  
   
@@ -40,7 +40,7 @@ Selectors let you apply filter and sort criteria when retrieving Bing Ads entiti
 Because each method returns the selector with the filter criteria applied, you may chain together (using dot notation) multiple conditions to refine the filter criteria. For example:
 
 ```javascript
-var selector = BingAdsApp.campaigns()
+var selector = AdsApp.campaigns()
     .withCondition("ClickConversionRate > 0.5")
     .withCondition("Cost > 4.0")
     .forDateRange("LAST_WEEK")
@@ -56,7 +56,7 @@ var campaigns = selector.get();
 Or 
 
 ```javascript
-var campaigns = BingAdsApp.campaigns()
+var campaigns = AdsApp.campaigns()
     .withCondition("ClickConversionRate > 0.5")
     .withCondition("Cost > 4.0")
     .forDateRange("LAST_WEEK")

@@ -15,7 +15,7 @@ Contains the methods for filtering and ordering negative keywords lists. For inf
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.negativeKeywordLists()
+    var iterator = AdsApp.negativeKeywordLists()
         .withCondition("MemberCount > 10")
         .orderBy("Name")
         .get();
@@ -107,7 +107,7 @@ Gets negative keywords lists with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only negative keywords list 33333.
 
 ```javascript
-BingAdsApp.negativeKeywordLists()
+AdsApp.negativeKeywordLists()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```

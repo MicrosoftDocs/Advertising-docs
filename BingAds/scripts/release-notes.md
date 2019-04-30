@@ -1,5 +1,5 @@
 ---
-title: "Bing Ads Scripts release notes"
+title: "Microsoft Advertising Scripts release notes"
 description: "Describes the changes that were included with each release."
 author: "swhite-msft"
 manager: ehansen
@@ -14,9 +14,20 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## April 30, 2019
+
+The following is a documentation-only change.
+
+- Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. All references to the Bing Ads platform in the documentation were changed to Microsoft Advertising. 
+
+The following are non-breaking API changes to support the brand update.
+
+- Added the [AdsApp](reference/AdsApp.md) object. Scripts will continue to support the [BingAdsApp](reference/BingAdsApp.md) object for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
+
+
 ## March 25, 2019
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
 - Added the [Find disapproved ads](solutions/execute-in-parallel.md) solution. 
 
@@ -46,16 +57,16 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 ## November 27, 2018
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
 - Added the [Calling Google services](examples/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
 
 
 ## November 7, 2018
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
-- Changed the preview note to indicate that Scripts is now in open beta and available to all Bing Ads users.
+- Changed the preview note to indicate that Scripts is now in open beta and available to all Microsoft Advertising users.
 
 
 ## October 4, 2018
@@ -153,7 +164,7 @@ Added support for ads.
   
 - Added the [ExpandedTextAdBuilder](reference/ExpandedTextAdBuilder.md) object, which you use to add an expanded text ad to the ad group.
   
-- Added the [AdOperation](reference/AdOperation.md) object, which you use to determine whether Bing successfully added the ad.
+- Added the [AdOperation](reference/AdOperation.md) object, which you use to determine whether Scripts successfully added the ad.
   
 - Added the [AdViewSpace](reference/AdViewSpace.md) object, which contains the methods used to cast an ad to a specific type. For example, cast the base ad object to an expanded text ad.
   
@@ -178,7 +189,7 @@ Added support for ads.
 
 ## June 15, 2018
 
-Closed beta release. This release of Bing Ads Scripts is available to select participants only. For information about participating in the preview release program, please contact your account manager. The Scripts classes and documentation are subject to change.
+Closed beta release. This release of Microsoft Advertising Scripts is available to select participants only. For information about participating in the preview release program, please contact your account manager. The Scripts classes and documentation are subject to change.
 
 This initial release includes the following capabilities:
 

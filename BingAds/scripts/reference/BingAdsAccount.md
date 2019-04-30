@@ -42,7 +42,7 @@ Gets this account's account number.
 ### Returns
 |Type|Description|
 |-|-
-string|The account's account number used to identify the account in the Bing Ads web application.
+string|The account's account number used to identify the account in the Microsoft Advertising web application.
 
 
 ## <a name="getcurrencycode"></a>getCurrencyCode

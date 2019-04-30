@@ -15,7 +15,7 @@ Contains the methods for filtering and sorting a list of ad groups. For informat
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition("ClickConversionRate > 0.3")
         .forDateRange("LAST_WEEK")
         .orderBy("Clicks DESC")
@@ -162,7 +162,7 @@ Gets ad groups with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only ad group 33333.
 
 ```javascript
-var selector = BingAdsApp.adGroups()
+var selector = AdsApp.adGroups()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```
@@ -194,4 +194,4 @@ limit|int|The number of ad groups to return. The actual number may be less.
 
 ## See also
 
-[BingAdsApp.adGroups()](BingAdsApp.md#adgroups)
+[AdsApp.adGroups()](AdsApp.md#adgroups)

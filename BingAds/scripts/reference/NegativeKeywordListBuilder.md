@@ -15,7 +15,7 @@ Contains the methods for defining and creating a negative keyword list. For info
 
 Example usage:
 ```javascript
-     var operation = BingAdsApp.newNegativeKeywordListBuilder()
+     var operation = AdsApp.newNegativeKeywordListBuilder()
         .withName("NKW NAME GOES HERE")
         .build();
 

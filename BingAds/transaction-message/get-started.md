@@ -13,21 +13,21 @@ ms.author: "scottwhi"
 > [!NOTE]
 > This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 
-If you create hotel ad campaigns in Bing Ads, use transaction messages to update your itinerary data (pricing and availability). 
+If you create hotel ad campaigns in Microsoft Advertising, use transaction messages to update your itinerary data (pricing and availability). 
 
-Before you can send Bing transaction messages, you must contact your account manager to sign up.
+Before you can send Microsoft transaction messages, you must contact your account manager to sign up.
 
-## Different modes for sending Bing your transaction data
+## Different modes for sending Microsoft your transaction data
 
- Bing supports the following modes that you can use to provide your transaction data.
+ Microsoft supports the following modes that you can use to provide your transaction data.
 
 - Push mode
 - Pull mode
 - Pull mode with hints
 
-With the push mode, you send Bing your unsolicited updates at the intervals you choose. To use this mode, you must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages. For information, see [Pushing Transaction Messages to Bing](../transaction-message/push-transaction-message.md).
+With the push mode, you send Microsoft your unsolicited updates at the intervals you choose. To use this mode, you must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages. For information, see [Pushing Transaction Messages to Microsoft](../transaction-message/push-transaction-message.md).
 
-With the pull mode options, Bing sends you Query messages that specifies the hotel itinerary data you should return. The difference between the two pull modes is the amount of data that you send to Bing. With pull mode, you return data for all itineraries and all hotels. But with pull with hints, you tell Bing what data changed and it requests only that data. For information, see [Having Bing Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
+With the pull mode options, Microsoft sends you Query messages that specifies the hotel itinerary data you should return. The difference between the two pull modes is the amount of data that you send to Microsoft. With pull mode, you return data for all itineraries and all hotels. But with pull with hints, you tell Microsoft what data changed and it requests only that data. For information, see [Having Microsoft Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
 
 
 
@@ -75,7 +75,7 @@ The document must use UTF-8 encoding.
 
 ## Validate the message before sending it
 
-Before sending Bing the transaction message, use the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd) to validate the message. This saves time and round trips by catching document syntax errors and constraints imposed by the XSD. 
+Before sending Microsoft the transaction message, use the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd) to validate the message. This saves time and round trips by catching document syntax errors and constraints imposed by the XSD. 
 
 The following example shows using xmllint to validate the message contained in SampleTransaction.xml.
 
@@ -84,5 +84,5 @@ xmllint.exe --schema transaction.xsd SampleTransaction.xml
 ```
 
 > [!NOTE]
-> There are constraints not defined by the XSD that may generate errors at the time Bing processes the message. Be sure that your message complies with all constraints defined in this document.
+> There are constraints not defined by the XSD that may generate errors at the time Microsoft processes the message. Be sure that your message complies with all constraints defined in this document.
 
