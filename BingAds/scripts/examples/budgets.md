@@ -28,7 +28,7 @@ To associate a campaign with a shared budget, you must use the Microsoft Adverti
 
 ## Get all shared budgets
 
-To get all shared budgets in an account, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `budgets` method to get the [selector](../reference/BudgetSelector.md). Then, call the selector's `get` method to get an [iterator](../reference/BudgetIterator.md) that you use to iterate through the list of Shared budgets. Since the example doesn't specify any filters, the selector returns all shared budgets in the account. To determine the number of shared budgets in the iterator, call the iterator's `totalNumEntities` method.
+To get all shared budgets in an account, first call the [AdsApp](../reference/AdsApp.md) object's `budgets` method to get the [selector](../reference/BudgetSelector.md). Then, call the selector's `get` method to get an [iterator](../reference/BudgetIterator.md) that you use to iterate through the list of Shared budgets. Since the example doesn't specify any filters, the selector returns all shared budgets in the account. To determine the number of shared budgets in the iterator, call the iterator's `totalNumEntities` method.
 
 > [!NOTE]
 > Shared budgets doesn't include unshared (individual campaign) budgets.
@@ -36,7 +36,7 @@ To get all shared budgets in an account, first call the [BingAdsApp](../referenc
 ```javascript
 function main() {
     // Gets all shared budgets in the account.
-    var iterator = BingAdsApp.budgets().get();
+    var iterator = AdsApp.budgets().get();
     
     // Iterates through the list of shared budgets and logs 
     // each budgets's name and amount.
@@ -50,7 +50,7 @@ function main() {
 
 ## Get a shared budget by name
 
-To get a shared budget by name, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `budgets` method to get the [selector](../reference/BudgetSelector.md). The selector contains a number of filter methods that you use to filter the list of budgets. Use the `withCondition` method to filter the budgets by name. For example, to filter the list for a specific name, use: `withCondition("BudgetName = '<budgetnamegoeshere>'")`. To filter the list by a partial name, use: `withCondition("BudgetName CONTAINS_IGNORE_CASE '<partialnamegoeshere>'")`. Note that the operands and operators are case sensitive.
+To get a shared budget by name, first call the [AdsApp](../reference/AdsApp.md) object's `budgets` method to get the [selector](../reference/BudgetSelector.md). The selector contains a number of filter methods that you use to filter the list of budgets. Use the `withCondition` method to filter the budgets by name. For example, to filter the list for a specific name, use: `withCondition("BudgetName = '<budgetnamegoeshere>'")`. To filter the list by a partial name, use: `withCondition("BudgetName CONTAINS_IGNORE_CASE '<partialnamegoeshere>'")`. Note that the operands and operators are case sensitive.
 
 Next, call the selector's `get` method to get the [iterator](../reference/BudgetIterator.md). 
 
@@ -61,7 +61,7 @@ function main() {
     var budgetName = 'PARTIAL NAME GOES HERE';
 
     // Get the budgets that contain the partial name.
-    var iterator = BingAdsApp.budgets()
+    var iterator = AdsApp.budgets()
           .withCondition(`BudgetName CONTAINS_IGNORE_CASE '${budgetName}'`)
           .get();
 
@@ -84,7 +84,7 @@ If you have access to the shared budget's ID, use it instead. Using IDs to get e
 function main() {
     var sharedBudgetId = '12345';
 
-    var iterator = BingAdsApp.budgets()
+    var iterator = AdsApp.budgets()
         .withIds([sharedBudgetId])
         .get();
 
@@ -107,7 +107,7 @@ To get all the campaigns that share the budget, call budget's [campaigns](../ref
 function main() {
     var sharedBudgetId = '12345';
 
-    var budgets = BingAdsApp.budgets()
+    var budgets = AdsApp.budgets()
         .withIds([sharedBudgetId])
         .get();
 
@@ -139,7 +139,7 @@ function main() {
 
     // Get the shared budget. You need to specify the date range of the
     // performance data you want to get.
-    var budgets = BingAdsApp.budgets()
+    var budgets = AdsApp.budgets()
         .forDateRange('LAST_WEEK')
         .withIds([sharedBudgetId])
         .get();

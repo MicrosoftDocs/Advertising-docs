@@ -40,7 +40,7 @@ Selectors let you apply filter and sort criteria when retrieving Microsoft Adver
 Because each method returns the selector with the filter criteria applied, you may chain together (using dot notation) multiple conditions to refine the filter criteria. For example:
 
 ```javascript
-var selector = BingAdsApp.campaigns()
+var selector = AdsApp.campaigns()
     .withCondition("ClickConversionRate > 0.5")
     .withCondition("Cost > 4.0")
     .forDateRange("LAST_WEEK")
@@ -56,7 +56,7 @@ var campaigns = selector.get();
 Or 
 
 ```javascript
-var campaigns = BingAdsApp.campaigns()
+var campaigns = AdsApp.campaigns()
     .withCondition("ClickConversionRate > 0.5")
     .withCondition("Cost > 4.0")
     .forDateRange("LAST_WEEK")

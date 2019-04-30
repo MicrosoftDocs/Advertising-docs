@@ -20,5 +20,5 @@ Microsoft Advertising Scriptsâ€™ JavaScript engine supports most of [ECMAScriptÂ
 > The iterators don't support the **for-of** loop construct. For example:
 >  
 > ```javascript
->     for (var campaign of BingAdsApp.campaigns().get())
+>     for (var campaign of AdsApp.campaigns().get())
 > ```

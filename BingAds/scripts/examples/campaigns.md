@@ -18,13 +18,13 @@ The following sections show examples of scripts that perform various actions aga
 
 ## Get all campaigns
 
-To get all campaigns in an account, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `campaigns` method to get the [selector](../reference/CampaignSelector.md). Then, call the selector's `get` method get an [iterator](../reference/CampaignIterator.md) that you use to iterate through the list of campaigns. Since the example doesn't specify any filters, the selector returns all campaigns in the account. To determine the number of campaigns in the iterator, call the iterator's `totalNumEntities` method.
+To get all campaigns in an account, first call the [AdsApp](../reference/AdsApp.md) object's `campaigns` method to get the [selector](../reference/CampaignSelector.md). Then, call the selector's `get` method get an [iterator](../reference/CampaignIterator.md) that you use to iterate through the list of campaigns. Since the example doesn't specify any filters, the selector returns all campaigns in the account. To determine the number of campaigns in the iterator, call the iterator's `totalNumEntities` method.
 
 
 ```javascript
 function main() {
     // Gets all campaigns in the account.
-    var iterator = BingAdsApp.campaigns().get();
+    var iterator = AdsApp.campaigns().get();
 
     // Iterates through the list of campaigns and logs 
     // each campaign's name.
@@ -37,7 +37,7 @@ function main() {
 
 ## Get a campaign by name
 
-To get a campaign by name, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `campaigns` method to get the [selector](../reference/CampaignSelector.md). The selector contains a number of filter methods that you use to filter the list of campaigns. Use the `withCondition` method to filter the campaigns for a specific campaign name. Note that the operands and operators are case sensitive.
+To get a campaign by name, first call the [AdsApp](../reference/AdsApp.md) object's `campaigns` method to get the [selector](../reference/CampaignSelector.md). The selector contains a number of filter methods that you use to filter the list of campaigns. Use the `withCondition` method to filter the campaigns for a specific campaign name. Note that the operands and operators are case sensitive.
 
 Next, call the selector's `get` method to get the [iterator](../reference/AdGroupIterator.md). Campaign names are unique, so you'll get back only one, if it exists. 
 
@@ -46,7 +46,7 @@ Next, call the selector's `get` method to get the [iterator](../reference/AdGrou
 function main() {
     var campaignName = 'CAMPAIGN NAME GOES HERE';
 
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withCondition(`Name = '${campaignName}'`)
         .get();
 
@@ -66,7 +66,7 @@ If you have access to the campaign's ID, use it instead. Using IDs to get entiti
 function main() {
     var campaignId = '12345';
 
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withIds([campaignId])
         .get();
 
@@ -91,7 +91,7 @@ function main() {
 
     // Get the campaign. You need to specify the date range of the
     // performance data you want to get.
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withIds([campaignId])
         .forDateRange('LAST_WEEK')
         .get();
@@ -114,7 +114,7 @@ To pause a campaign, call the campaign's `pause` method. To enable it again, cal
 function main() {
     var campaignId = '12345';
 
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withIds([campaignId])
         .get();
 
@@ -132,7 +132,7 @@ function main() {
 ```javascript
 function getCampaignBidModifiers() {
   var campaignName = 'YOUR CAMPAIGN NAME';
-  var campaignIterator = BingAdsApp.campaigns()
+  var campaignIterator = AdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();
   if (campaignIterator.hasNext()) {

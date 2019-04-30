@@ -15,7 +15,7 @@ Contains the methods for filtering and sorting a list of campaigns. For informat
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.campaigns()
+    var iterator = AdsApp.campaigns()
         .withCondition("ClickConversionRate > 0.3")
         .forDateRange("LAST_WEEK")
         .orderBy("Clicks DESC")
@@ -163,7 +163,7 @@ Gets campaigns with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only campaign 33333.
 
 ```javascript
-BingAdsApp.campaigns()
+AdsApp.campaigns()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```

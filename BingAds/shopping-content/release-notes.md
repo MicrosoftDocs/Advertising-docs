@@ -11,9 +11,17 @@ ms.author: "scottwhi"
 This topic describes recent changes made to Version 9.1 of the Content API.
 
 
+## April 30, 2019
+
+The following is a documentation-only change.
+
+- Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. All references to the Bing Ads platform in the documentation were changed to Microsoft Advertising. The brand change does not affect the API at this time. For example, all endpoints remain unchanged.  
+
+
 ## November 9 2018
 
 Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to closed pilot participants only. [Read more](manage-product-pricing.md).
+
 
 ## August 1 2018
 

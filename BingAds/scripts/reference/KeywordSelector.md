@@ -15,7 +15,7 @@ Contains the methods for filtering and ordering a list of keywords. For informat
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.keywords()
+    var iterator = AdsApp.keywords()
         .withCondition("AdGroupName = 'AD GROUP NAME GOES HERE'")
         .withCondition("CampaignName = 'CAMPAIGN NAME GOES HERE'")
         .get();
@@ -161,7 +161,7 @@ Gets keywords with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only keyword 33333.
 
 ```javascript
-BingAdsApp.keywords()
+AdsApp.keywords()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```
@@ -193,7 +193,7 @@ limit|int|The number of keywords to return. The actual number may be less.
 
 ## See also
 
-- [BingAdsApp.keywords()](BingAdsApp.md)
+- [AdsApp.keywords()](AdsApp.md)
 - [KeywordIterator](./KeywordIterator.md)
 - [Keyword](./Keyword.md)
 

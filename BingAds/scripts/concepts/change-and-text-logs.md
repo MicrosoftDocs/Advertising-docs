@@ -22,7 +22,7 @@ Change logs list all changes that a script makes to Microsoft Advertising entiti
 To write text to the text log, call the [Logger](../reference/Logger.md) object's `log()` method. Writing text to the text log is useful for debugging scripts or just capturing script activity. For example, the following code prints all campaign names and progress messages to the text log.
 
 ```javascript
-var campaigns = BingAdsApp.campaigns().get();
+var campaigns = AdsApp.campaigns().get();
 Logger.log('retrieved ' + campaigns.totalNumEntities() + ' campaigns');
 while (campaigns.hasNext()) {
     var campaign = campaigns.next();

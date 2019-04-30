@@ -40,7 +40,7 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/bingads/guides/authentication-oauth), substitute them with the following sandbox endpoints.
 
- - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Microsoft Advertising sandbox
+ - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for the Hotel API's sandbox
  - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 
  - outlook-int.com&mdash;Endpoint for sandbox email used when getting a sandbox Microsoft account
  - apps.dev.microsoft-int.com/#/appList&mdash;Endpoint for getting a sandbox client ID
@@ -55,7 +55,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
-1.	Open a browser and navigate to https:\//sandbox.ads.microsoft.com.
+1.	Open a browser and navigate to https:\//sandbox.bingads.microsoft.com.
 2.	Click **Sign up for Microsoft Advertising** or **Sign up now**.
 3.	Fill out the **Create Account** form.  
   
@@ -74,7 +74,7 @@ You use the sandbox environment to test your application before putting it in pr
 After creating your sandbox account and getting your MSA, let your account manager know so they can enable it for Hotel Ads. You won't be able to use Hotel Ads or the API in sandbox until it's enabled.
 
 > [!NOTE]
-> The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.ads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access Hotel Ads using the Microsoft Advertising user interface in sandbox, go to <a href="https://ui.sandbox.ads.microsoft.com" data-raw-source="[https://ui.sandbox.ads.microsoft.com](https://ui.sandbox.ads.microsoft.com)">https://ui.sandbox.ads.microsoft.com</a> and sign in using your new MSA email address.
+> The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access Hotel Ads using the Microsoft Advertising user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
 
 
 <a name="wheretousecredentials"/>

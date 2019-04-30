@@ -14,9 +14,20 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## April 30, 2019
+
+The following is a documentation-only change.
+
+- Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. All references to the Bing Ads platform in the documentation were changed to Microsoft Advertising. 
+
+The following are non-breaking API changes to support the brand update.
+
+- Added the [AdsApp](reference/AdsApp.md) object. Scripts will continue to support the [BingAdsApp](reference/BingAdsApp.md) object for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
+
+
 ## March 25, 2019
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
 - Added the [Find disapproved ads](solutions/execute-in-parallel.md) solution. 
 
@@ -46,14 +57,14 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 ## November 27, 2018
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
 - Added the [Calling Google services](examples/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
 
 
 ## November 7, 2018
 
-The following is a documentation only change.
+The following is a documentation-only change.
 
 - Changed the preview note to indicate that Scripts is now in open beta and available to all Microsoft Advertising users.
 

@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting and selecting the account, you switch to using the [BingAdsApp](../reference/BingAdsApp.md) object to access the account's entities.
+If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting and selecting the account, you switch to using the [AdsApp](../reference/AdsApp.md) object to access the account's entities.
 
 > [!NOTE]
 > For multi-account scripts, use the Scripts editor accessed from **Accounts Summary** in the Microsoft Advertising web application. If you don't see **Accounts Summary** in the UI, you won't use the multi-accounts Scripts editor.
@@ -79,7 +79,7 @@ function main() {
 }
 
 function bump() {
-    var account = BingAdsApp.currentAccount();
+    var account = AdsApp.currentAccount();
 
     // Do something with the entities in the account.
 
@@ -109,7 +109,7 @@ function resultsHandler(results) {
 
 ## Changing the account that Scripts processes
 
-Until you select an account to process, you cannot call any of the [BingAdsApp](../reference/BingAdsApp.md) methods to get the account's entity data. To select an account, use the [select](../reference/AccountsApp.md#select-bingadsaccount-account-) method of AccountsApp. 
+Until you select an account to process, you cannot call any of the [AdsApp](../reference/AdsApp.md) methods to get the account's entity data. To select an account, use the [select](../reference/AccountsApp.md#select-bingadsaccount-account-) method of AccountsApp. 
 
 But first you need to call the [accounts](../reference/AccountsApp.md#accounts) method to select the accounts you want to process. For information about using `accounts()` to filter the list of accounts, see [Listing the accounts you have access to](#listing-the-accounts-you-have-access-to).
 
@@ -118,10 +118,10 @@ After getting an account, call the `select()` method to make the account the cur
 ```javascript
 function main() {
     // This call logs null. Before using any
-    // of the BingAdsApp methods, you must first
+    // of the AdsApp methods, you must first
     // select an account to process.
 
-    Logger.log(BingAdsApp.currentAccount());
+    Logger.log(AdsApp.currentAccount());
 
     // Select the accounts to process
 
@@ -132,11 +132,11 @@ function main() {
     while (accounts.hasNext()) {
         AccountsApp.select(accounts.next());
 
-        // Call the BingAdsApp methods to do something
+        // Call the AdsApp methods to do something
         // with the accounts entities. This simply displays
         // the first campaign found in each account.
 
-        var campaign = BingAdsApp.campaigns().get().next();
+        var campaign = AdsApp.campaigns().get().next();
         Logger.log(`${campaign.getId()} (${campaign.getName()})`);
     }
 }

@@ -15,7 +15,7 @@ Contains the methods for filtering and sorting the list of shared budgets. For i
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.budgets()
+    var iterator = AdsApp.budgets()
         .withCondition("ClickConversionRate > 0.3")
         .forDateRange("LAST_WEEK")
         .orderBy("Clicks DESC")
@@ -165,7 +165,7 @@ Gets shared budgets with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only shared budget 33333.
 
 ```javascript
-var selector = BingAdsApp.budgets()
+var selector = AdsApp.budgets()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```
@@ -197,4 +197,4 @@ limit|int|The number of shared budgets to return. The actual number may be less.
 
 ## See also
 
-[BingAdsApp.budgets()](BingAdsApp.md#budgets)
+[AdsApp.budgets()](AdsApp.md#budgets)

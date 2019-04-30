@@ -70,7 +70,7 @@ function main() {
 
 // Get the ad group using its ID.
 function getAdGroup(id) {
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withIds([id])
         .get();
 
@@ -117,7 +117,7 @@ function main() {
     var adGroupName = 'AD GROUP NAME GOES HERE';
     var keywordText = 'KEYWORD TEXT GOES HERE';
 
-    var iterator = BingAdsApp.keywords()
+    var iterator = AdsApp.keywords()
         .withCondition(`Text = '${keywordText}'`)
         .withCondition(`AdGroupName = '${adGroupName}'`)
         .withCondition(`CampaignName = '${campaignName}'`)
@@ -133,7 +133,7 @@ function main() {
 
 ## Get all keywords in an ad group
 
-To get all keywords in an ad group, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `keywords` method to get the [selector](../reference/KeywordSelector.md). Use the `withCondition` method to specify the ad group and campaign. Then, call the selector's `get` method to get an [iterator](../reference/KeywordIterator.md) that you use to iterate through the list of keywords. To determine the number of keywords in the iterator, call the iterator's `totalNumEntities` method.
+To get all keywords in an ad group, first call the [AdsApp](../reference/AdsApp.md) object's `keywords` method to get the [selector](../reference/KeywordSelector.md). Use the `withCondition` method to specify the ad group and campaign. Then, call the selector's `get` method to get an [iterator](../reference/KeywordIterator.md) that you use to iterate through the list of keywords. To determine the number of keywords in the iterator, call the iterator's `totalNumEntities` method.
 
 If you have access to the keyword IDs, use them instead. Using IDs to get entities provides better performance. Instead of using the `withCondition` filter method, use the `withIds` method. For example, `withIds(['12345'])`. There are limits on the number of entities you can retrieve using IDs. 
 
@@ -143,7 +143,7 @@ function main() {
     var campaignName = 'CAMPAIGN NAME GOES HERE';
     var adGroupName = 'AD GROUP NAME GOES HERE';
 
-    var iterator = BingAdsApp.keywords()
+    var iterator = AdsApp.keywords()
         .withCondition(`AdGroupName = '${adGroupName}'`)
         .withCondition(`CampaignName = '${campaignName}'`)
         .get();
@@ -175,7 +175,7 @@ function main() {
 
     // Get the keyword. You need to specify the date range of the
     // performance data you want to get.
-    var iterator = BingAdsApp.keywords()
+    var iterator = AdsApp.keywords()
         .forDateRange('LAST_WEEK')
         .withCondition(`Text = '${keywordText}'`)
         .withCondition(`AdGroupName = '${adGroupName}'`)

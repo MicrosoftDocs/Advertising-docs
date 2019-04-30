@@ -37,7 +37,7 @@ However, if you try to update an entity’s properties with an invalid value, Sc
 
 ```javascript
 function main() {
-    var adGroup = BingAdsApp.adGroups().get().next();
+    var adGroup = AdsApp.adGroups().get().next();
     adGroup.bidding().setCpc(-5);
     
     if (adGroup.bidding().getCpc() != -5) {

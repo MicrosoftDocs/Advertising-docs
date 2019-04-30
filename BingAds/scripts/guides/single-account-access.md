@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Ads Scripts single account access"
-description: "Provides an overview of how you use BingAdsApp to access a single account's entities."
+description: "Provides an overview of how you use AdsApp to access a single account's entities."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,14 +13,14 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-If you want to access a single user account, everything starts with the [BingAdsApp](../reference/BingAdsApp.md) object.  
+If you want to access a single user account, everything starts with the [AdsApp](../reference/AdsApp.md) object.  
 
 ## How do I access the entities in my account?
 
-Use `BingAdsApp` to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all entities for that entity type. For example, to get all the ad groups in the account, call the `adGroups()` method.
+Use `AdsApp` to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all entities for that entity type. For example, to get all the ad groups in the account, call the `adGroups()` method.
 
 ```javascript
-    var iterator = BingAdsApp.adGroups().get();
+    var iterator = AdsApp.adGroups().get();
 ```
 
 ### But what if I want a specific entity or subset of entities?
@@ -33,7 +33,7 @@ To get all ad groups in a campaign, use the `withCondition()` method to specify 
 
 ```javascript
     var campaignName = 'My Campaign';
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition(`CampaignName = '${campaignName}'`)
         .get();
 ```
@@ -44,7 +44,7 @@ To get an ad group by ID, use the `withIds()` method to specify the ad group to 
 
 ```javascript
     var ids = ["123456789"];
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withIds(ids)
         .get();
 ```
@@ -54,7 +54,7 @@ Or, you can get the ad group by name.
 ```javascript
     var campaignName = 'My Campaign';
     var adGroupName = 'My AdGroup';
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withCondition(`CampaignName = '${campaignName}'`)
         .withCondition(`Name = '${adGroupName}'`)
         .get();
@@ -69,7 +69,7 @@ You don't. The selector just defines the entities you want to get. To actually g
 
 ```javascript
     var ids = ["123456789"];
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .withIds(ids)
         .get();
 ```
@@ -94,7 +94,7 @@ Most entities let you request performance data, if available. But first you need
 ```javascript
     var campaignName = 'My Campaign';
     var adGroupName = 'My AdGroup';
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .forDateRange('LAST_30_DAYS')
         .withCondition(`CampaignName = '${campaignName}'`)
         .withCondition(`Name = '${adGroupName}'`)
@@ -116,7 +116,7 @@ You also need to specify a date range if you specify a performance data column i
     var startDate = {year: 2018, month: 6, day: 3};
     var endDate = {year: 2018, month: 6, day: 13};
 
-    var iterator = BingAdsApp.adGroups()
+    var iterator = AdsApp.adGroups()
         .forDateRange(startDate, endDate)
         .withCondition("Ctr > 0.22")
         .get();
@@ -168,7 +168,7 @@ After using a builder object to add an entity, you use the entity's methods to u
 
 ```javascript
     var ids = ["123456789"];
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withIds(ids)
         .get();
 
@@ -199,7 +199,7 @@ function main() {
 }
 
 function getKeyword(id) {
-    var keywords = BingAdsApp.keywords()
+    var keywords = AdsApp.keywords()
         .withIds([id])
         .get();
 

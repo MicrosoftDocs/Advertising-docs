@@ -17,7 +17,7 @@ Example usage:
 ```javascript
     // Gets the iterator that iterates all campaigns
     // in the account.
-    var iterator = BingAdsApp.campaigns().get();
+    var iterator = AdsApp.campaigns().get();
 
     // Loops through all campaigns in the account.
     while (iterator.hasNext()) {

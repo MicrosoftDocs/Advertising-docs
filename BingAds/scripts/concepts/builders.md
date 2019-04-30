@@ -24,7 +24,7 @@ The following example conceptually shows how to create a keyword using the build
 
 ```javascript
     // Gets the first ad group in the account.
-    var adGroup = BingAdsApp.adGroups().get().next();
+    var adGroup = AdsApp.adGroups().get().next();
 
     // Use the 'with' methods to specify the keyword's property values.
     // The .build() method adds the build request to the build queue.
@@ -63,7 +63,7 @@ In order to improve performance, Scripts processes build requests in batches. If
 
     // Create all the new entities.
     for (var i = 0; i < keywords.length; i++) {
-        var keywordOperation = BingAdsApp.adGroups().get().next()
+        var keywordOperation = AdsApp.adGroups().get().next()
           .newKeywordBuilder()
           .withText(keywords[i])
           .build();
@@ -81,7 +81,7 @@ In order to improve performance, Scripts processes build requests in batches. If
 
 ``` javascript
     for (var i = 0; i < keywords.length; i++) {
-        var keywordOperation = BingAdsApp.adGroups().get().next()
+        var keywordOperation = AdsApp.adGroups().get().next()
           .newKeywordBuilder()
           .withText(keywords[i])
           .build();

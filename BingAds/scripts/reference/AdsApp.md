@@ -1,5 +1,5 @@
 ---
-title: "BingAdsApp object"
+title: "AdsApp object"
 description: "The top-level object used to navigate all entities in a single account."
 author: "swhite-msft"
 manager: ehansen
@@ -9,12 +9,12 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# BingAdsApp
-
-> [!NOTE]
-> This object is supported for backwards compatibility only. Do not use this object. Instead, use the [AdsApp](AdsApp.md) object.
+# AdsApp
 
 This is the top-level object used to access and manage a single account.
+
+> [!NOTE]
+> This object replaces the [BingAdsApp](reference/BingAdsApp.md) object. For the immediate future, Scripts will continue to support BingAdsApp for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
 
 ## Methods
 

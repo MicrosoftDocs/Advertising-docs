@@ -67,7 +67,7 @@ function main() {
 }
 
 function getAdGroup(id) {
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withIds([id])
         .get();
 
@@ -139,7 +139,7 @@ If you have an [AdGroup](../reference/AdGroup.md) object, call the object's `ads
 
 ```javascript
 function main() {
-    var adGroups = BingAdsApp.adGroups()
+    var adGroups = AdsApp.adGroups()
         .withIds(["AD GROUP ID GOES HERE"])
         .get();
 
@@ -171,7 +171,7 @@ If you have a [Campaign](../reference/Campaign.md) object, call the object's `ad
 
 ```javascript
 function main() {
-    var campaigns = BingAdsApp.campaigns()
+    var campaigns = AdsApp.campaigns()
         .withIds(["CAMPAIGN ID GOES HERE"])
         .get();
 
@@ -200,11 +200,11 @@ function main() {
 
 ### Get all ads in the account
 
-To get all the ads in an account, call the `ads` method on the [BingAdsApp](../reference/BingAdsApp.md) object. You can use the ad selector's methods to filter the list of ads to campaigns, ad groups, or based on ad performance. This example gets all ads from the account.
+To get all the ads in an account, call the `ads` method on the [AdsApp](../reference/AdsApp.md) object. You can use the ad selector's methods to filter the list of ads to campaigns, ad groups, or based on ad performance. This example gets all ads from the account.
 
 ```javascript
 function main() {
-    var ads = BingAdsApp.ads().get();
+    var ads = AdsApp.ads().get();
 
     while (ads.hasNext()) {
         var ad = ads.next();
@@ -233,7 +233,7 @@ To get ads with a specific status, use the ad selector's `withCondition` method.
 
 ```javascript
 function main() {
-    var ads = BingAdsApp.ads()
+    var ads = AdsApp.ads()
         .forDateRange("LAST_WEEK")
         .withCondition("AdGroupName CONTAINS_IGNORE_CASE 'foo'")
         .withCondition('Status = ENABLED')
