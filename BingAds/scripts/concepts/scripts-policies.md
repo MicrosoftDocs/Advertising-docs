@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Here’s the list of things you can’t do (subject to change without notice):
 
-- Don’t use Scripts to get around usage limits and restrictions. For example, if you use up your Microsoft Advertising API usage limits, don’t switch to using Scripts to get around your limits.  
+- Don’t use Scripts to get around usage limits and restrictions. For example, if you use up your Bing Ads API usage limits, don’t switch to using Scripts to get around your limits.  
   
 - Don’t use Scripts for any purpose that's not related to Microsoft Advertising.  
   
