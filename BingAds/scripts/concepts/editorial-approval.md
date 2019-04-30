@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Advertising Scripts Editorial Approval"
-description: "Describes how Microsoft Advertising Scripts maps editorial approval statuses to Microsoft Advertising API editorial approval statuses."
+description: "Describes how Microsoft Advertising Scripts maps editorial approval statuses to Bing Ads API editorial approval statuses."
 author: "swhite-msft"
 manager: ehansen
 
@@ -13,9 +13,9 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following table maps the editorial approval status values in Scripts to their corresponding status values in Microsoft Advertising API.
+The following table maps the editorial approval status values in Scripts to their corresponding status values in Bing Ads API.
 
-|Microsoft Advertising Scripts|Microsoft Advertising
+|Microsoft Advertising Scripts|Bing Ads API
 |-|-
 APPROVED|Active
 APPROVED_LIMITED|ActiveLimited

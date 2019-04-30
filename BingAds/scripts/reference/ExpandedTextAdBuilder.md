@@ -79,7 +79,7 @@ Sets the ad's copy text.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-description|string|The ad's copy text. For information about copy limits and including dynamic text strings, see [Microsoft Advertising API](/bingads/campaign-management-service/expandedtextad#text). 
+description|string|The ad's copy text. For information about copy limits and including dynamic text strings, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#text). 
 
 ### Returns
 |Type|Description|
@@ -93,7 +93,7 @@ Sets the ad's landing page URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-finalUrl|string|The ad's landing page URL. For information about URL limits, see [Microsoft Advertising API](/bingads/campaign-management-service/expandedtextad#finalurls). 
+finalUrl|string|The ad's landing page URL. For information about URL limits, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#finalurls). 
 
 ### Returns
 |Type|Description|
@@ -107,7 +107,7 @@ Sets the first part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Microsoft Advertising API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -121,7 +121,7 @@ Sets the second part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Microsoft Advertising API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
