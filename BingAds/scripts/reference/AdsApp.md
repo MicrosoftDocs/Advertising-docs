@@ -14,7 +14,7 @@ ms.topic: "article"
 This is the top-level object used to access and manage a single account.
 
 > [!NOTE]
-> This object replaces the [BingAdsApp](reference/BingAdsApp.md) object. For the immediate future, Scripts will continue to support BingAdsApp for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
+> This object replaces the [BingAdsApp](BingAdsApp.md) object. For the immediate future, Scripts will continue to support BingAdsApp for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
 
 ## Methods
 
