@@ -17,7 +17,7 @@ Example usage:
 ```javascript
     // Gets the iterator that iterates all shared budgets
     // in the account.
-    var iterator = BingAdsApp.budgets().get();
+    var iterator = AdsApp.budgets().get();
 
     // Loops through all shared budgets in the account.
     while (iterator.hasNext()) {

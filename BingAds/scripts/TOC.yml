@@ -108,6 +108,8 @@
           href: ./reference/AdParamIterator.md 
         - name: AdParamSelector
           href: ./reference/AdParamSelector.md 
+        - name: AdsApp
+          href: ./reference/AdsApp.md 
         - name: AdSelector
           href: ./reference/AdSelector.md 
         - name: AdTypeSpace

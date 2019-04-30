@@ -1,6 +1,6 @@
 ---
-title: "Bing Ads Scripts Iterators"
-description: "Describes how iterators work in Bing Ads Scripts."
+title: "Microsoft Advertising Scripts Iterators"
+description: "Describes how iterators work in Microsoft Advertising Scripts."
 author: "swhite-msft"
 manager: ehansen
 
@@ -22,7 +22,7 @@ Iterators enumerate items that a [selector](selectors.md) returns. Iterators are
 The following code shows how to use an iterator to iterate over all ad groups in your account.
 
 ```javascript
-var iterator = BingAdsApp.adGroups().get();
+var iterator = AdsApp.adGroups().get();
 
 while (iterator.hasNext()) {
   var adGroup = iterator.next();
@@ -34,7 +34,7 @@ while (iterator.hasNext()) {
 > The iterators don't support the **for-of** loop construct. For example:
 >  
 > ```javascript
->     for (var campaign of BingAdsApp.campaigns().get())
+>     for (var campaign of AdsApp.campaigns().get())
 > ```
 
 The following is the list of iterators.

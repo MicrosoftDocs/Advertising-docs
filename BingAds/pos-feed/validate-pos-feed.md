@@ -1,6 +1,6 @@
 ---
 title: "Validating your Points of Sale Feed"
-description: Shows how to validate your points of sale feed file before sending it to Bing Ads.
+description: Shows how to validate your points of sale feed file before sending it to Microsoft Advertising.
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
 author: "swhite-msft"
@@ -10,7 +10,7 @@ ms.author: "scottwhi"
 
 # Validate your Points of Sale Feed
 
-Bing provides the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd) that you use to validate your points of sale feed before sending it to Bing. This saves time and round trips by catching document syntax errors. You should always validate your feed file before sending it to Bing. Because the PointsOfSale XSD references the [PrivateRates XSD](https://bhacstatic.blob.core.windows.net/schemas/private_rates.xsd), you'll need to copy it locally, too.
+Microsoft provides the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd) that you use to validate your points of sale feed before sending it to Microsoft. This saves time and round trips by catching document syntax errors. You should always validate your feed file before sending it to Microsoft. Because the PointsOfSale XSD references the [PrivateRates XSD](https://bhacstatic.blob.core.windows.net/schemas/private_rates.xsd), you'll need to copy it locally, too.
 
 The following example shows using xmllint to validate the SamplePointsOfSale.xml feed file.
 

@@ -35,18 +35,18 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
 2. Click **Create a project** to create a new project or select an existing project  
-   1. If creating a new project, enter the name of your project in **Project Name**. For example, Bing Ads Scripts.
+   1. If creating a new project, enter the name of your project in **Project Name**. For example, Scripts.
    2. Click **Create**
 3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
 4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
 5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
 6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
 7. On **Dashboard**, click **Credentials** in the left navigation pane and then click the **OAuth consent screen** tab
-8. Enter the name of your application in the **Application name** field (for example, Bing Ads Scripts)
+8. Enter the name of your application in the **Application name** field (for example, *Scripts client*)
 9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
 10. Click **Save**
 11. On the **Credentials** page, click **Create credentials** and then select **Oauth client ID**
-12. Select **Web application** Application type. Then, enter a name such as Bing Ads Scripts Client in the **Name** field, enter https://developers.google.com/oauthplayground in the **Authorized redirect URIs** field, and lastly click **Create**
+12. Select **Web application** Application type. Next, enter a name such as *Scripts web app* in the **Name** field. Then, enter https://developers.google.com/oauthplayground in the **Authorized redirect URIs** field. Finally, click **Create**
 13. Copy your client ID and client secret to use in steps 17, 18, and 23 and then click **OK**
 14. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
 15. Click the OAuth 2.0 Configuration icon (looks like a gear in upper right corner)
@@ -67,18 +67,18 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
 2. Click **Create a project** to create a new project or select an existing project  
-   1. If creating a new project, enter the name of your project in **Project Name**. For example, Bing Ads Scripts.
+   1. If creating a new project, enter the name of your project in **Project Name**. For example, Scripts.
    2. Click **Create**
 3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
 4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
 5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
 6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
 7. On **Dashboard**, click **Credentials** in the left navigation pane and then click the **OAuth consent screen** tab
-8. Enter the name of your application in the **Application name** field (for example, Bing Ads Scripts)
+8. Enter the name of your application in the **Application name** field (for example, *Scripts client*)
 9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
 10. Click **Save**
 11. On the **Credentials** page, click **Create credentials** and then select **Oauth client ID**
-12. Select **Other** application type, enter a name (for example, Bing Ads Scripts Client), and click **Create**
+12. Select **Other** application type, enter a name (for example, *Scripts client creds*), and click **Create**
 13. Copy your client ID and client secret to use in steps 14 and 15 and then click **OK**
 14. Create a PowerShell script to get user consent and a refresh token.  
    

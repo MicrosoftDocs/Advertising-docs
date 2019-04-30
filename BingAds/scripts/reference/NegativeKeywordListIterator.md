@@ -17,7 +17,7 @@ Example usage:
 ```javascript
     // Gets the iterator that iterates all negative keyword
     // lists in the account.
-    var iterator = BingAdsApp.negativeKeywordLists().get();
+    var iterator = AdsApp.negativeKeywordLists().get();
 
     // Loops through all lists in the account.
     while (iterator.hasNext()) {

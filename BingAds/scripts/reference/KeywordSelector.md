@@ -15,7 +15,7 @@ Contains the methods for filtering and ordering a list of keywords. For informat
 
 Example usage:
 ```javascript
-    var iterator = BingAdsApp.keywords()
+    var iterator = AdsApp.keywords()
         .withCondition("AdGroupName = 'AD GROUP NAME GOES HERE'")
         .withCondition("CampaignName = 'CAMPAIGN NAME GOES HERE'")
         .get();
@@ -117,7 +117,7 @@ Supported columns for keyword filtering. The column names are case sensitive.
 
 The following are the performance metrics columns you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 AverageCpc|double|`withCondition("AverageCpc < 2.75")`|Avg. CPC
 AverageCpm|double|`withCondition("AverageCpm > 0.65")`|Avg. CPM
@@ -131,7 +131,7 @@ Impressions|long|`withCondition("Impressions > 10")`|Impr.
 
 The following are the entity properties you may specify.
 
-|Column|Type|Example|Bing Web UI filter
+|Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 Status|enumeration|The keyword's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>`withCondition("Status = ENABLED")`|Status
 Text|string|The keyword's text. Include only the keyword's text. Don't include the keyword's match type in the text. For example, if the keyword is an exact match keyword such as [books], use *books* not *[books]*.<br /><br />`withCondition("Text STARTS_WITH 'flowers'")`|Keyword Text
@@ -161,7 +161,7 @@ Gets keywords with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only keyword 33333.
 
 ```javascript
-BingAdsApp.keywords()
+AdsApp.keywords()
     .withIds(['11111', '22222', '33333'])
     .withIds(['33333', '44444', '55555']);
 ```
@@ -193,7 +193,7 @@ limit|int|The number of keywords to return. The actual number may be less.
 
 ## See also
 
-- [BingAdsApp.keywords()](BingAdsApp.md)
+- [AdsApp.keywords()](AdsApp.md)
 - [KeywordIterator](./KeywordIterator.md)
 - [Keyword](./Keyword.md)
 

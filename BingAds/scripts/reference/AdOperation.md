@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains the methods for determining whether the ad was successfully added. For information about builders, operation objects, and performance considerations, see [What are builders?](../concepts/builders.md)
 
-Because calling any of this object's methods forces Bing to flush the build queue, be sure to read the performance considerations carefully.
+Because calling any of this object's methods forces Scripts to flush the build queue, be sure to read the performance considerations carefully.
 
 
 Example usage:

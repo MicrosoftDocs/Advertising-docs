@@ -27,7 +27,7 @@ Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_to
 Before you can run the PowerShell script, you need to follow these steps to get a client ID.
 
 1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name like Bing Ads Hotels. (Don't check Guided setup.)
+2. Enter an app name like *Hotels client*. (Don't check Guided setup.)
 3. Click **Create** and note your application ID (client ID).  
 4. Click **Add Platform** and then **Native Application**.
 5. Click **Save**.  

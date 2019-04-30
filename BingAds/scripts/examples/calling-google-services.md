@@ -67,7 +67,7 @@ function main() {
   Logger.log(`read ${keywordIds.length} keyword ids`);
  
   // Fetch keywords by IDs.
-  var keywords = BingAdsApp.keywords().withIds(keywordIds).get();
+  var keywords = AdsApp.keywords().withIds(keywordIds).get();
  
   var oldBids = [];
   var newBids = [];

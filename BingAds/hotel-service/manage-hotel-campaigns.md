@@ -20,7 +20,7 @@ The Hotel API lets you manage your hotel ad campaigns and bidding. A subaccount 
 A subaccount specifies the campaign's daily budget, maximum bid allowed, and default bid and bid multipliers for ads that don't specify bids or multipliers.
 
 > [!NOTE]
-> Hotel ad campaigns refered to here have no relationship to campaigns in Bing Ads.
+> Hotel ad campaigns referred to here have no relationship to campaigns in Microsoft Advertising.
 
 If you haven't already done so, familiarize yourself with the following topics:
 
@@ -36,10 +36,10 @@ For information about reporting, see [Hotel Ads Reporting API](reporting.md).
 
 ## Working with subaccounts
 
-Subaccounts are the top-level organization of Hotel Ads. Bing creates the default subaccount for you when you sign up for Hotel Ads. The API lets you list subaccounts, get a specific subaccount, and update a subaccount.
+Subaccounts are the top-level organization of Hotel Ads. The service creates the default subaccount for you when you sign up for Hotel Ads. The API lets you list subaccounts, get a specific subaccount, and update a subaccount.
 
 > [!NOTE]
-> The API provides the ability to add subaccounts but Bing currently restricts accounts to one subaccount.
+> The API provides the ability to add subaccounts but the service currently restricts accounts to one subaccount.
 
 The following are the REST templates that you use to manage subaccounts.
 
@@ -233,7 +233,7 @@ x-ms-trackingid: 5345bf4f-e64a-47a6-8d1e-43cc0231dc1b
 
 ## Working with hotel groups
 
-Hotel groups are the second level of organization that you use to group hotels. When you create a subaccount, Bing creates a default hotel group under the subaccount named, Ungrouped. The API lets you list, get, update, and add hotel groups.
+Hotel groups are the second level of organization that you use to group hotels. When you create a subaccount, the service creates a default hotel group under the subaccount named, Ungrouped. The API lets you list, get, update, and add hotel groups.
 
 The following are the REST templates that you use to manage hotel groups.
 

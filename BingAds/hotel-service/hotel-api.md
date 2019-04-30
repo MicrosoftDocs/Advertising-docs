@@ -1,6 +1,6 @@
 ---
 title: "Hotel API"
-description: Overview of the Hotel API, which you use to manage your hotel campaigns in Bing Ads.
+description: Overview of the Hotel API, which you use to manage your hotel campaigns in Microsoft Advertising.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
@@ -21,11 +21,11 @@ The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 ## The basics...
 
-When you get access to Hotel Ads, Bing sets up a default subaccount and hotel group that contains the hotels from your hotel feed. The subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. Currently, you can have only one subaccount, and all hotels from the feed belong to it.
+When you get access to Hotel Ads, the service sets up a default subaccount and hotel group that contains the hotels from your hotel feed. The subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. Currently, you can have only one subaccount, and all hotels from the feed belong to it.
 
 A subaccount specifies the campaign's daily budget, maximum bid allowed, and default bid and bid multipliers for ads that don't specify bids or multipliers.
 
-Hotel groups provide another level for you to logically group hotel ads. A hotel group belongs to a single subaccount. The default hotel group that Bing creates for you is named, Ungrouped. It contains all hotels from the initial hotel feed and all new hotels going forward. 
+Hotel groups provide another level for you to logically group hotel ads. A hotel group belongs to a single subaccount. The default hotel group that the service creates for you is named, Ungrouped. It contains all hotels from the initial hotel feed and all new hotels going forward. 
  
 A hotel group specifies the default bid and bid multipliers for ads that don't specify bids or multipliers. If you don't specify bids and multipliers, the group inherits them from the subaccount.
 

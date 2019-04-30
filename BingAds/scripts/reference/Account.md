@@ -18,7 +18,7 @@ Contains the methods used to get account information such as name, customer ID, 
 |Method Name|Return Type|Description|
 |-|-|-
 [getAccountId](#getaccountid)|string|Gets the ID that uniquely identifies this account.
-[getAccountNumber](#getaccountnumber)|string|Gets the account number used to identify the account in the Bing Ads web application.
+[getAccountNumber](#getaccountnumber)|string|Gets the account number used to identify the account in the Microsoft Advertising web application.
 [getCurrencyCode](#getcurrencycode)|string|Gets the currency that this account uses.
 [getCustomerId](#getcustomerid)|string|Gets the ID of the customer that owns this account.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -44,7 +44,7 @@ Gets this account's account number.
 ### Returns
 |Type|Description|
 |-|-
-string|The account number used to identify the account in the Bing Ads web application.
+string|The account number used to identify the account in the Microsoft Advertising web application.
 
 
 ## <a name="getcurrencycode"></a>getCurrencyCode
