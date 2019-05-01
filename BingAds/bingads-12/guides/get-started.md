@@ -349,7 +349,7 @@ Each SOAP request must include the following SOAP headers, which contain the use
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).
 
-To get help with issues that you cannot resolve, consider posting in the [API Developer Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) where an active Microsoft Advertising product team or community member will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+To get help with issues that you cannot resolve, consider posting in the [API Developer Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) where an active Microsoft Advertising product team or community member will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support).
 
 ## See Also
 [Bing Ads API Technical Guides](technical-guides.md)  

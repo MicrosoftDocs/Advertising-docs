@@ -28,7 +28,7 @@ The following figure shows two child customers created and managed by a reseller
 ![Management Model Direct Reseller](media/management-model-reseller.png "Management Model Direct Reseller")
 
 ## <a name="reseller_signup"></a>How to Get Reseller Credentials
-To request reseller credentials, please contact your designated account management team for details about getting the Aggregator role for resellers. If you are not currently a reseller but would like to become one, go to the [Microsoft Advertising Partner Program](https://advertise.bingads.microsoft.com/en-us/bing-partners/welcome) welcome page. 
+To request reseller credentials, please contact your designated account management team for details about getting the Aggregator role for resellers. If you are not currently a reseller but would like to become one, go to the [Microsoft Advertising Partner Program](https://about.ads.microsoft.com/en-us/partners/welcome) welcome page. 
 
 ## See Also
 [Customer Accounts](customer-accounts.md)  
