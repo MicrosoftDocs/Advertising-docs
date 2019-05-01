@@ -45,7 +45,7 @@ You cannot create an instance of a base class such as [Ad](../campaign-managemen
 Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Microsoft Advertising web application for the same date range and filter criteria, please [contact support](#contact-support) with details.
 
 ## <a name="contact-support"></a>Contact Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Microsoft Advertising product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Microsoft Advertising product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support).
 
 > [!TIP]
 > To resolve the issue efficiently, please provide support with the following information up front.
@@ -56,7 +56,7 @@ To get help with issues that you cannot resolve, consider posting in the [API De
 >  - **Environment:** Indicate whether the issue occurs in the production or sandbox environment.
 
 ## <a name="faultoverview"></a>Fault Model Overview
-When a Bing Ads API service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Microsoft Advertising Operation Error Codes](operation-error-codes.md).
+When a Bing Ads API service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Operation Error Codes](operation-error-codes.md).
 
 Available fault and data objects vary per service. This table describes the fault model and links to error data objects for each service.
 
@@ -273,6 +273,6 @@ logging.getLogger('suds.client').setLevel(logging.DEBUG)
 ```
 
 ## See Also
-[Microsoft Advertising Operation Error Codes](operation-error-codes.md)  
+[Bing Ads API Operation Error Codes](operation-error-codes.md)  
 [Bing Ads API Web Service Addresses](web-service-addresses.md)  
 

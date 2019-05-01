@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Advertising Operation Error Codes"
+title: "Bing Ads API Operation Error Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -4306,7 +4306,7 @@ Prepaid client accounts are not supported for management by agencies. The client
 Not applicable.
 
 **Description**
-You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](../customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
+You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](../customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). 
 
 ***
 
@@ -6597,7 +6597,7 @@ BulkServiceDataScopeInvalid
 **Description**
 The specified DataScope value is either invalid or no longer supported.
 
-Bulk download of performance data is not supported after Bing Ads API Version 11. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and will be removed from the service contract in a future version.
+Bulk download of performance data is not supported after Bing Ads API Version 11. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and is removed from the service contract in Bing Ads API Version 13.
 
 ***
 

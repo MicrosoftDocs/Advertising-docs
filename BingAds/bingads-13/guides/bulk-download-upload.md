@@ -96,7 +96,7 @@ The following is an overview of the request settings and upload workflow.
    Content-Type: multipart/form-data;
    ```
 
-4. Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Microsoft Advertising. If the HTTP response status code is 401, then authentication failed e.g. *AuthenticationToken* or *DeveloperToken* was invalid. If the HTTP response status code is 400, then you should also check the response stream for [Microsoft Advertising Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
+4. Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Microsoft Advertising. If the HTTP response status code is 401, then authentication failed e.g. *AuthenticationToken* or *DeveloperToken* was invalid. If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads API Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
 
    Here is an example error response message that the URL had already been used to upload a bulk file.
    ```http
