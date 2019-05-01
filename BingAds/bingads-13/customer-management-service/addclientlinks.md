@@ -14,7 +14,7 @@ dev_langs:
 # AddClientLinks Service Operation - Customer Management
 Initiates the client link process to manage the account of another customer. Sends an invitation from an agency to a potential client.  For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
-Only an agency may call this service operation. For more information about becoming an agency, see the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
+Only an agency may call this service operation. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub).
 
 The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).
 
