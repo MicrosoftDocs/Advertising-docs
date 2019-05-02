@@ -17,10 +17,10 @@ description: Microsoft Advertising developer documentation home.
             <a href="#main"></a>
             <ul id="main">
                 <li>
-                    <a href="#bingapi">Bing Ads API</a>
-                    <ul id="bingapi" class="cardsC">
+                    <a href="#bingadsapi">Bing Ads API</a>
+                    <ul id="bingadsapi" class="cardsC">
                         <li>
-                            <a href="/bingads/guides/">
+                            <a href="/advertising/guides/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -39,7 +39,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/get-started">
+                            <a href="/advertising/guides/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -58,7 +58,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/authentication-oauth">
+                            <a href="/advertising/guides/authentication-oauth">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -77,7 +77,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/customer-accounts">
+                            <a href="/advertising/guides/customer-accounts">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -96,7 +96,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/campaigns">
+                            <a href="/advertising/guides/campaigns">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -115,7 +115,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/reports">
+                            <a href="/advertising/guides/reports">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,7 +134,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/sandbox">
+                            <a href="/advertising/guides/sandbox">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -153,7 +153,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/client-libraries">
+                            <a href="/advertising/guides/client-libraries">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -172,7 +172,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/reference">
+                            <a href="/advertising/guides/reference">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -196,7 +196,7 @@ description: Microsoft Advertising developer documentation home.
                     <a href="#contentapi">Content API</a>
                     <ul id="contentapi" class="cardsC">
                         <li>
-                            <a href="/bingads/shopping-content/">
+                            <a href="/advertising/shopping-content/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -215,7 +215,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/get-started">
+                            <a href="/advertising/shopping-content/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -234,7 +234,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/manage-products">
+                            <a href="/advertising/shopping-content/manage-products">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -253,7 +253,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li> 
                         <li>
-                            <a href="/bingads/shopping-content/manage-catalogs">
+                            <a href="/advertising/shopping-content/manage-catalogs">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -272,7 +272,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>                
                         <li>
-                            <a href="/bingads/shopping-content/code-examples">
+                            <a href="/advertising/shopping-content/code-examples">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -291,7 +291,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/reference">
+                            <a href="/advertising/shopping-content/reference">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -315,7 +315,7 @@ description: Microsoft Advertising developer documentation home.
                     <a href="#hotelads">Hotel Ads</a>
                     <ul id="hotelads" class="cardsC">
                         <li>
-                            <a href="/bingads/hotel-ads/">
+                            <a href="/advertising/hotel-ads/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -334,7 +334,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-service/get-started">
+                            <a href="/advertising/hotel-service/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -353,7 +353,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-service/manage-hotel-campaigns">
+                            <a href="/advertising/hotel-service/manage-hotel-campaigns">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -372,7 +372,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/transaction-message/transaction-message">
+                            <a href="/advertising/transaction-message/transaction-message">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -391,7 +391,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-feed/hotel-feed">
+                            <a href="/advertising/hotel-feed/hotel-feed">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -410,7 +410,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/pos-feed/pos-feed">
+                            <a href="/advertising/pos-feed/pos-feed">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -429,7 +429,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-service/code-examples">
+                            <a href="/advertising/hotel-service/code-examples">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -448,7 +448,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-service/reference">
+                            <a href="/advertising/hotel-service/reference">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -469,10 +469,10 @@ description: Microsoft Advertising developer documentation home.
                     </ul>
                 </li>
                 <li>
-                    <a href="#bingadsscripts">Scripts</a>
-                    <ul id="bingadsscripts" class="cardsC">
+                    <a href="#advertisingscripts">Scripts</a>
+                    <ul id="advertisingscripts" class="cardsC">
                         <li>
-                            <a href="/bingads/scripts/">
+                            <a href="/advertising/scripts/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -491,7 +491,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/scripts/get-started">
+                            <a href="/advertising/scripts/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -510,7 +510,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/scripts/concepts/authorization">
+                            <a href="/advertising/scripts/concepts/authorization">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -530,7 +530,7 @@ description: Microsoft Advertising developer documentation home.
                         </li>
                         <!--
                         <li>
-                            <a href="/bingads/scripts/authorization">
+                            <a href="/advertising/scripts/authorization">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -550,7 +550,7 @@ description: Microsoft Advertising developer documentation home.
                         </li>
                         -->
                         <li>
-                            <a href="/bingads/scripts/examples">
+                            <a href="/advertising/scripts/examples">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -569,7 +569,7 @@ description: Microsoft Advertising developer documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/scripts/reference/BingAdsApp">
+                            <a href="/advertising/scripts/reference-overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
