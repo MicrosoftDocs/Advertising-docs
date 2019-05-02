@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordList
 
-Contains the methods for adding keywords to a negative keywords list. For information about negative keyword lists, see [Negative Keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords).
+Contains the methods for adding keywords to a negative keywords list. For information about negative keyword lists, see [Negative Keywords](/advertising/guides/entity-hierarchy-limits#negativekeywords).
 
 ## Methods
 |Method Name|Return Type|Description|
@@ -26,7 +26,7 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 
 
 ## <a name="addnegativekeyword-string-keywordtext-"></a>addNegativeKeyword(string keywordText)
-Adds a keyword to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords). 
+Adds a keyword to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/advertising/guides/entity-hierarchy-limits#negativekeywords). 
 
 To specify the match type for negative keywords:
 
@@ -52,7 +52,7 @@ void|Returns nothing.
 
 
 ## <a name="addnegativekeywords-string-keywordtexts-"></a>addNegativeKeywords(string[] keywordTexts)
-Adds a list of keywords to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords).
+Adds a list of keywords to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/advertising/guides/entity-hierarchy-limits#negativekeywords).
 
 To specify the match type for negative keywords:
 

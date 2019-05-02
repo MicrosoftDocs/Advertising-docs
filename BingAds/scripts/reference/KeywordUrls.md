@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # KeywordUrls
 
-Contains the methods for managing the keyword's URLs, tracking template, and custom parameters. For information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
+Contains the methods for managing the keyword's URLs, tracking template, and custom parameters. For information, see [URL Tracking with Upgraded URLs](/advertising/guides/url-tracking-upgraded-urls).
 
 ## Methods
 |Method Name|Return Type|Description|

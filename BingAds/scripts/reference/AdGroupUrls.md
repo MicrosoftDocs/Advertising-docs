@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # AdGroupUrls
 
-Contains the methods for managing the ad group's URLs. For more information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
+Contains the methods for managing the ad group's URLs. For more information, see [URL Tracking with Upgraded URLs](/advertising/guides/url-tracking-upgraded-urls).
 
 
 ## Methods
@@ -24,7 +24,7 @@ Contains the methods for managing the ad group's URLs. For more information, see
 [setTrackingTemplate(string trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the ad group's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Removes the tracking template from this ad group. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Removes the tracking template from this ad group. For information about tracking templates, see [Tracking Templates](/advertising/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
 
 ### Returns
 |Type|Description|

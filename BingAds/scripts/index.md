@@ -19,9 +19,9 @@ For information about accessing Scripts in the Microsoft Advertising web applica
 
 This document assumes you're familiar with Microsoft Advertising and JavaScript. For a Microsoft Advertising refresher, please see:
 
-- [Bing Ads API Overview](/bingads/guides/index)
-- [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits) 
-- [Account management models](/bingads/guides/customer-accounts)
+- [Bing Ads API Overview](/advertising/guides/index)
+- [Entity Hierarchy and Limits](/advertising/guides/entity-hierarchy-limits) 
+- [Account management models](/advertising/guides/customer-accounts)
 
 ## Next steps
 

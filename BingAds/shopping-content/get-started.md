@@ -20,7 +20,7 @@ Next, you'll need a developer token. To get a token to use in the production env
 
 ## <a name="authentication"/> Authenticating your credentials
 
-Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth). You *can* use the [Bing Ads SDK](/bingads/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
+Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with OAuth](/advertising/guides/authentication-oauth). You *can* use the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
 
 For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md).
 

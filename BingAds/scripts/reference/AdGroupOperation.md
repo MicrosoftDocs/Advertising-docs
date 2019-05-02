@@ -29,7 +29,7 @@ Gets any errors that occurred when adding the ad group.
 ### Returns
 |Type|Description|
 |-|-
-string[]|An array of error codes if the operation failed; otherwise, an empty array. For example, if the bid amount is invalid, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of error codes if the operation failed; otherwise, an empty array. For example, if the bid amount is invalid, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/advertising/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 Gets the ad group that was added.

@@ -22,7 +22,7 @@ APPROVED_LIMITED|ActiveLimited
 DISAPPROVED|Disapproved
 UNDER_REVIEW|Inactive
 
-For information about these status values, see [KeywordEditorialStatus](/bingads/campaign-management-service/keywordeditorialstatus).
+For information about these status values, see [KeywordEditorialStatus](/advertising/campaign-management-service/keywordeditorialstatus).
 
 For information about fixing keyword issues, see [How do I fix a Disapproved or Approved Limited status?](https://help.ads.microsoft.com/apex/index/3/en-us/52022#!)
 

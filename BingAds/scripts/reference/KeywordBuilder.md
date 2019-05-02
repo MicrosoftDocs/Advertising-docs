@@ -57,13 +57,13 @@ Specifies the bid amount to use when the keyword matches the user's search term.
 
 To use the bid amount specified at the ad group level, do not call this method.
 
-For more information about bid amounts, see [Bid](/bingads/campaign-management-service/keyword#bid) and [BiddingScheme](/bingads/campaign-management-service/keyword#biddingscheme). 
+For more information about bid amounts, see [Bid](/advertising/campaign-management-service/keyword#bid) and [BiddingScheme](/advertising/campaign-management-service/keyword#biddingscheme). 
 
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The maximum CPC bid to apply to the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The maximum CPC bid to apply to the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|

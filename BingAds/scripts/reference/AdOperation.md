@@ -42,7 +42,7 @@ Gets any errors that occurred when adding the ad.
 ### Returns
 |Type|Description|
 |-|-
-string[]|An array of error codes if the operation failed; otherwise, an empty array. For example, if you forget to specify the final URL, the call returns CampaignServiceInvalidAdDestinationUrl. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of error codes if the operation failed; otherwise, an empty array. For example, if you forget to specify the final URL, the call returns CampaignServiceInvalidAdDestinationUrl. For a description of these codes, see [Operation error codes](/advertising/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 Gets the ad that was added.
