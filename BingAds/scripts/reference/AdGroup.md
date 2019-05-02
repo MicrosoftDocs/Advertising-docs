@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # AdGroup
 
-Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarchy-limits#adgroup).
+Contains the methods used to manage an [ad group](/advertising/guides/entity-hierarchy-limits#adgroup).
 
 ## Methods
 |Method Name|Return Type|Description|

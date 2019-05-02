@@ -38,7 +38,7 @@ If the bid value is not valid, the call silently fails. To confirm whether the b
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The ad group's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The ad group's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|

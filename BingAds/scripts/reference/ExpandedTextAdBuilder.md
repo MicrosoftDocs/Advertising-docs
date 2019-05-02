@@ -49,7 +49,7 @@ Example usage:
 ## <a name="build"></a>build
 Creates the ad and returns an operation object used to check whether Scripts successfully added the ad.
 
-For limits on the number of ads you can add to an ad group, see [Entity hierarch limits](/bingads/guides/entity-hierarchy-limits#ads).
+For limits on the number of ads you can add to an ad group, see [Entity hierarch limits](/advertising/guides/entity-hierarchy-limits#ads).
 
 ### Returns
 |Type|Description|
@@ -79,7 +79,7 @@ Sets the ad's copy text.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-description|string|The ad's copy text. For information about copy limits and including dynamic text strings, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#text). 
+description|string|The ad's copy text. For information about copy limits and including dynamic text strings, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#text). 
 
 ### Returns
 |Type|Description|
@@ -93,7 +93,7 @@ Sets the ad's landing page URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-finalUrl|string|The ad's landing page URL. For information about URL limits, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#finalurls). 
+finalUrl|string|The ad's landing page URL. For information about URL limits, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#finalurls). 
 
 ### Returns
 |Type|Description|
@@ -107,7 +107,7 @@ Sets the first part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -121,7 +121,7 @@ Sets the second part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -154,7 +154,7 @@ Sets the first optional path to append to the ad's display URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-mobileFinalUrl|string|The first optional path to append to the ad's display URL. Microsoft uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com* and the path is *shoes*, the ad's display URL is *contoso.com/shoes*. For usage and limits, see [Path1](/bingads/campaign-management-service/expandedtextad#path1).
+mobileFinalUrl|string|The first optional path to append to the ad's display URL. Microsoft uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com* and the path is *shoes*, the ad's display URL is *contoso.com/shoes*. For usage and limits, see [Path1](/advertising/campaign-management-service/expandedtextad#path1).
 
 ### Returns
 |Type|Description|
@@ -168,7 +168,7 @@ Sets the second optional path to append to the ad's display URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-mobileFinalUrl|string|The second optional path to append to the ad's display URL. To specify the second path, first specify the first path (see `withPath1`). Microsoft uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com*, the first path is *shoes*, and the second path is *ladies*, the ad's display URL is *contoso.com/shoes/ladies*. For usage and limits, see [Path2](/bingads/campaign-management-service/expandedtextad#path2).
+mobileFinalUrl|string|The second optional path to append to the ad's display URL. To specify the second path, first specify the first path (see `withPath1`). Microsoft uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com*, the first path is *shoes*, and the second path is *ladies*, the ad's display URL is *contoso.com/shoes/ladies*. For usage and limits, see [Path2](/advertising/campaign-management-service/expandedtextad#path2).
 
 ### Returns
 |Type|Description|

@@ -51,5 +51,5 @@ See [UrlFetch limits](urlfetch-limits.md).
 
 ## Microsoft Advertising entity limits
 
-For Microsoft Advertising entity limits, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
+For Microsoft Advertising entity limits, see [Entity Hierarchy and Limits](/advertising/guides/entity-hierarchy-limits).
 

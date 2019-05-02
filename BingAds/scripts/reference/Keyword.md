@@ -10,7 +10,7 @@ ms.topic: "article"
 ---
 
 # Keyword
-Contains the methods for managing a keyword. For information about keywords, see [Keyword](/bingads/guides/entity-hierarchy-limits#keyword).
+Contains the methods for managing a keyword. For information about keywords, see [Keyword](/advertising/guides/entity-hierarchy-limits#keyword).
 
 
 ## Methods
@@ -146,7 +146,7 @@ Gets this keyword's quality score.
 ### Returns
 |Type|Description|
 |-|-
-integer|The keyword's quality score. The score is in the range 1 through 10 (highest). If the keyword's quality score cannot be computed, this method returns NULL.<br/><br/>The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. For more information, see [Keyword Performance Report](/bingads/reporting-service/keywordperformancereportcolumn#qualityscore). 
+integer|The keyword's quality score. The score is in the range 1 through 10 (highest). If the keyword's quality score cannot be computed, this method returns NULL.<br/><br/>The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. For more information, see [Keyword Performance Report](/advertising/reporting-service/keywordperformancereportcolumn#qualityscore). 
 
 
 ## <a name="getstats"></a>getStats
@@ -203,7 +203,7 @@ Boolean|Is **true** if this keyword is paused; otherwise, **false**.
 ## <a name="setadparam-int-index-string-insertiontext-"></a>setAdParam(int index, string insertionText)
 Adds the substitution parameter and sets its value to the specified text. If the substitution parameter exists, it's text is overwritten.
 
-The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/bingads/campaign-management-service/keyword#param1), [Param2](/bingads/campaign-management-service/keyword#param2), and [Param3](/bingads/campaign-management-service/keyword#param3).
+The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/advertising/campaign-management-service/keyword#param1), [Param2](/advertising/campaign-management-service/keyword#param2), and [Param3](/advertising/campaign-management-service/keyword#param3).
 
 The substitution values are also used in the tracking template if the template specifies the {param1:default}, {param2:default}, or {param3:default} placeholders. 
 

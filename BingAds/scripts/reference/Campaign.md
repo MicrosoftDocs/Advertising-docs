@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Campaign
 
-Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarchy-limits#campaign).
+Contains the methods used to manage a [campaign](/advertising/guides/entity-hierarchy-limits#campaign).
 
 ## Methods
 |Method Name|Return Type|Description|

@@ -173,7 +173,7 @@ Do not specify this class, instead specify the [FixedBid](#fixedbid) or [Percent
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](/bingads/guides/currencies) topic. The customer's account specifies the currency used.|Double|Required|Optional
+|Amount|The dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](/advertising/guides/currencies) topic. The customer's account specifies the currency used.|Double|Required|Optional
 
 
 ### Budget
@@ -182,7 +182,7 @@ Defines the daily budget for hotel ads in a subaccount.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The daily budget amount. For details about valid budgets for your market, see the Currency Value table in the [Currencies](/bingads/guides/currencies) topic. The customer's account specifies the currency used for the budget.|Double|Required|Optional
+|Amount|The daily budget amount. For details about valid budgets for your market, see the Currency Value table in the [Currencies](/advertising/guides/currencies) topic. The customer's account specifies the currency used for the budget.|Double|Required|Optional
 
 
 ### CheckinDayOfWeekMultiplier
@@ -235,7 +235,7 @@ Defines a fixed bid amount.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The fixed dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](/bingads/guides/currencies) topic. The customer's account specifies the currency used.<br /><br />The bid amount is the per-night bid. For example, if the bid is $3.50 and the itinerary is for a 3-night stay, the final bid is $10.50.|Double|Required|Optional
+|Amount|The fixed dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](/advertising/guides/currencies) topic. The customer's account specifies the currency used.<br /><br />The bid amount is the per-night bid. For example, if the bid is $3.50 and the itinerary is for a 3-night stay, the final bid is $10.50.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.FixedBid".|String|Required|Required
 
 

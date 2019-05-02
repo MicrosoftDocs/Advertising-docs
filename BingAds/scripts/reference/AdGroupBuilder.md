@@ -70,7 +70,7 @@ Sets the ad group's bidding strategy.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-biddingStrategy|string|The bidding strategy to apply to the ad group. The following are the possible case-sensitive values.<ul><li>MANUAL_CPC</li></ul>For information about these strategies, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies#bidstrategytypes).
+biddingStrategy|string|The bidding strategy to apply to the ad group. The following are the possible case-sensitive values.<ul><li>MANUAL_CPC</li></ul>For information about these strategies, see [Bid Strategy Types](/advertising/guides/budget-bid-strategies#bidstrategytypes).
 
 ### Returns
 |Type|Description|
@@ -86,7 +86,7 @@ Specifies the bid amount to use when the keyword matches the user's search term 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The ad group's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The ad group's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -145,7 +145,7 @@ By default, the ad group inherits the language from its parent campaign. Specify
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-language|string|The language used by ads in the ad group. For example, English. The string is case insensitive. Do not use a two-character language code. For a list of supported languages, see [Ad Languages](/bingads/guides/ad-languages#adlanguage).
+language|string|The language used by ads in the ad group. For example, English. The string is case insensitive. Do not use a two-character language code. For a list of supported languages, see [Ad Languages](/advertising/guides/ad-languages#adlanguage).
 
 ### Returns
 |Type|Description|
