@@ -17,7 +17,7 @@ Microsoft Advertising Scripts lets you access and manage your advertising data u
 
 This section provides information about the JavaScript objects that you use in your scripts.
 
-For information about Microsoft Advertising entities and the limits that apply to each entity, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
+For information about Microsoft Advertising entities and the limits that apply to each entity, see [Entity Hierarchy and Limits](/advertising/guides/entity-hierarchy-limits).
 
 The following are the top-level objects that you use to access your Microsoft Advertising entities and perform other tasks.
 

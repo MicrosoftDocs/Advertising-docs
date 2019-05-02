@@ -10,7 +10,7 @@ ms.topic: "article"
 ---
 
 # Budget
-Contains the methods for managing a budget. For more information, see [Budget](/bingads/guides/entity-hierarchy-limits#budget).
+Contains the methods for managing a budget. For more information, see [Budget](/advertising/guides/entity-hierarchy-limits#budget).
 
 ## Methods
 |Method Name|Return Type|Description|

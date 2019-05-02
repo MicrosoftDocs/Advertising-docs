@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # CampaignUrls
 
-Contains the methods for managing the campaign's URLs. For more information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
+Contains the methods for managing the campaign's URLs. For more information, see [URL Tracking with Upgraded URLs](/advertising/guides/url-tracking-upgraded-urls).
 
 ## Methods
 |Method Name|Return Type|Description|
@@ -23,7 +23,7 @@ Contains the methods for managing the campaign's URLs. For more information, see
 [setTrackingTemplate(String trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the campaign's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Removes the campaign's tracking template. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Removes the campaign's tracking template. For information about tracking templates, see [Tracking Templates](/advertising/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
 
 ### Returns
 |Type|Description|

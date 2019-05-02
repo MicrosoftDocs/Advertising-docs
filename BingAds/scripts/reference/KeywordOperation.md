@@ -32,7 +32,7 @@ Gets the errors that occurred when adding the ad group.
 
 |Type|Description|
 |-|-
-string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if the bid amount is not valid, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if the bid amount is not valid, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/advertising/guides/operation-error-codes).
 
 
 ## <a name="getresult"></a>getResult

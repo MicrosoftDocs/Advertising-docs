@@ -30,7 +30,7 @@ Gets the errors that occurred when adding the negative keywords list.
 
 |Type|Description|
 |-|-
-string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if one of the negative keywords matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if one of the negative keywords matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/advertising/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 

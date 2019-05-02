@@ -187,7 +187,7 @@ Date       Hotel group ID   Hotel ID   Clicks
 
 ## Books closed
 
-For information about when books close, see [Determining when books close](/bingads/guides/reports#booksclose). Determining when books close for Hotel Ads is the same as for Microsoft Advertising campaigns with the following exceptions:
+For information about when books close, see [Determining when books close](/advertising/guides/reports#booksclose). Determining when books close for Hotel Ads is the same as for Microsoft Advertising campaigns with the following exceptions:
 
 - Hotel Ads' reporting service uses the account's time zone.
 - Hotel Ads' reporting service doesn't support ReturnOnlyCompleteData.

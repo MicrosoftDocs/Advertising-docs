@@ -43,14 +43,14 @@ Specifies the bid amount to use when the keyword matches the user's search term.
 
 To use the bid amount specified at the ad group level, remove the keyword's CPC bid by calling the `clearCpc()` method.
 
-For more information about bid amounts, see [Bid](/bingads/campaign-management-service/keyword#bid) and [BiddingScheme](/bingads/campaign-management-service/keyword#biddingscheme). 
+For more information about bid amounts, see [Bid](/advertising/campaign-management-service/keyword#bid) and [BiddingScheme](/advertising/campaign-management-service/keyword#biddingscheme). 
 
 If you specify a property value that's not valid, the call silently fails. To confirm whether the property was updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The keyword's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The keyword's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
