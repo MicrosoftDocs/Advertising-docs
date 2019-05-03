@@ -99,10 +99,10 @@
       "contributors_to_exclude": ["openpublishingbuild", "Pacort", "saldana"],      
       "defaultDevLang": "csharp",
       "uhfHeaderId": "MSDocsHeader-BingAds",
-      "searchScope": ["Bing Ads"],
+      "searchScope": ["Microsoft Advertising"],
       "breadcrumb_path": "/BingAds/breadcrumb/TOC.json",
       "extendBreadcrumb": "true",
-      "titleSuffix": "Bing Ads"
+      "titleSuffix": "Microsoft Advertising"
     },
     "fileMetadata": {
       "ms.service": 
