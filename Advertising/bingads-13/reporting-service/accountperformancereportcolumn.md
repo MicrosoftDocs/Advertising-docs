@@ -131,7 +131,7 @@ The report must include at least one of the following attribute columns and at l
 
 |Column|
 |----------|
-|AccountId|
+|AccountId or any other attribute|
 |TimePeriod|
 
 ## Requirements
