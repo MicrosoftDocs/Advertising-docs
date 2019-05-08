@@ -70,7 +70,7 @@
 - name: Solutions
   href: solutions/index.md 
   items:
-    - name: Finding disapproved ads 
+    - name: Discovering disapproved ads 
       href: solutions/get-disapproved-ads.md 
 - name: Script reference
   href: reference-overview.md 
