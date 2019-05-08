@@ -60,7 +60,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include at least one of the following attribute columns and at least one performance statistics column. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
 
 |Column|
 |----------|
