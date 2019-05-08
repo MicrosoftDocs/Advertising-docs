@@ -89,7 +89,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
 
 > [!NOTE]
-> The TimePeriod column is required for all aggregation types except Summary.
+> The TimePeriod column is expected for all aggregation types except Summary. It is important to note that if you do not include TimePeriod, the aggregation you chose will be ignored and Summary aggregation will be used regardless.
 
 |Column|
 |----------|

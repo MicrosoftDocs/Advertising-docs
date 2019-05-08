@@ -34,7 +34,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br/><br/>The default is Summary.<br/><br/>The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
+|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br/><br/>The default aggregation is Summary. It is important to note that if you do not include TimePeriod in the list of [Columns](#columns), the aggregation you chose will be ignored and Summary aggregation will be used regardless.<br/><br/>The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[PublisherUsagePerformanceReportColumn](publisherusageperformancereportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[PublisherUsagePerformanceReportFilter](publisherusageperformancereportfilter.md)|
 |<a name="scope"></a>Scope|The entity scope of the report.<br/><br/>Use this element to limit the report data to specific accounts, ad groups, or campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|

@@ -39,7 +39,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data.<br/><br/>The default is Summary.<br/><br/>For this report, *Aggregation* must always be set to Summary.<br/><br/>The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
+|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data.<br/><br/>The default aggregation is Summary. It is important to note that if you do not include TimePeriod in the list of [Columns](#columns), the aggregation you chose will be ignored and Summary aggregation will be used regardless.<br/><br/>For this report, *Aggregation* must always be set to Summary.<br/><br/>The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[CallDetailReportColumn](calldetailreportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[CallDetailReportFilter](calldetailreportfilter.md)|
 |<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for specified accounts, campaigns, or ad groups.<br/><br/>For this report you may only specify one account identifier in the *AccountIds* element of the  *AccountThroughAdGroupReportScope* object.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
