@@ -100,7 +100,7 @@
       "defaultDevLang": "csharp",
       "uhfHeaderId": "MSDocsHeader-BingAds",
       "searchScope": ["Microsoft Advertising"],
-      "breadcrumb_path": "/BingAds/breadcrumb/TOC.json",
+      "breadcrumb_path": "/Advertising/breadcrumb/TOC.json",
       "extendBreadcrumb": "true",
       "titleSuffix": "Microsoft Advertising"
     },
