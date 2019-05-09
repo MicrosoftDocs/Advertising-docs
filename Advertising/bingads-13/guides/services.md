@@ -6,7 +6,7 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for Bing Ads API Version 13 services.
 ---
-# Version 12 Services
+# Version 13 Services
 Please see reference documentation below for Bing Ads API Version 13 services. 
 
 |Topic|Description|
