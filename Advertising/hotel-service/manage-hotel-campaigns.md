@@ -463,7 +463,7 @@ The following are the REST templates that you use to manage hotels.
 
 - `/SubAccounts('{subAccountId}')/Hotels` &mdash; [GET](../hotel-service/reference.md#listallhotels)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels` &mdash; [GET](../hotel-service/reference.md#listhotels)
-- `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotel) | [PATCH](../hotel-service/reference.md#updatehotel)
+- `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelId}')` &mdash; [GET](../hotel-service/reference.md#gethotel) | [PATCH](../hotel-service/reference.md#updatehotel)
 
 For an example that gets and updates hotels, see [hotel examples](../hotel-service/code-example-hotels.md). (Use the Language selector in the right pane to see the example in different languages.)
 
@@ -588,7 +588,9 @@ To remove a hotel's bid, set its `Bid` to null (for example, "Bid":null).
 If the hotel specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
 
-To update a hotel, send a PATCH request. The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object. Include only the properties that you want to update. This example shows updating the multipliers.
+To update a hotel, send a [PATCH](reference.md#updatehotel) request. The request may specify the ID that Microsoft assigned to the hotel or ID that the advertiser assigned to the hotel. If you specify the advertiser-assigned ID, the request must set the *PartnerHotelId* query parameter to **true**. 
+
+The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object. Include only the properties that you want to update. This example shows updating the multipliers.
 
 ```
 {
