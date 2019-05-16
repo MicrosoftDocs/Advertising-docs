@@ -350,7 +350,7 @@ User user = CustomerService.getService().getUser(getUserRequest).getUser();
 // You can use a single instance of the ServiceClient class to call any methods in the service, 
 // for example you can set the CustomerManagementVersion12 service client type as follows.
 
-$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion12, $authorizationData, ApiEnvironment::Production);
+$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion12, $authorizationData, ApiEnvironment::Sandbox);
 )
 ```
 ```python

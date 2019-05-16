@@ -295,7 +295,7 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="text"></a>Text
-The ad copy.
+The first part of the ad description.
 
 The text must contain at least one word.
 
@@ -304,6 +304,22 @@ The maximum input length of the copy is 90 characters. Note that for ad groups t
 The text cannot contain the newline (\n) character.
 
 **Add:** Required  
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
+## <a name="textpart2"></a>Text Part 2
+The second part of the ad description.
+
+The text must contain at least one word.
+
+The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters. Although dynamic text substitution is supported for other ad types like expanded text ads, it is not supported for dynamic search ads.
+
+The text cannot contain the newline (\n) character.
+
+> [!NOTE]
+> This feature is only available for customers in the Dynamic Search Ads Text Part 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). If you are not in the pilot and you try to set this field an error will be returned. During calendar year 2019 this feature will be enabled for all customers.
+
+**Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 

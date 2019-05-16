@@ -20,7 +20,7 @@ If you just want to get something working right away, follow these steps to get 
 ### <a name="quick-start-production"></a>Production Quick Start
 To authenticate in the production environment, you can follow either the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) guides. We'll use the Microsoft identity platform endpoint since the Live Connnect endpoint is no longer the recommended approach for Microsoft Advertising users.  
 
-1. Sign up for a [Microsoft Advertising](https://secure.ads.microsoft.com/) production account and with the same credentials get a [developer token](#get-developer-token). 
+1. Sign up for a [Microsoft Advertising](https://ads.microsoft.com/) production account and with the same credentials get a [developer token](#get-developer-token). 
 
 1. Register a native app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page. You can login using either a personal Microsoft Account or a Work or School Account. For details see [Register Your Application](authentication-oauth-identity-platform.md#registerapplication).  
 
@@ -202,7 +202,7 @@ What's next? First, congratulations on making your first call to Bing Ads API! H
 
 ## <a name="get-developer-token"></a>Get a Developer Token
 To use Bing Ads APIs, you must have a developer token and valid user credentials.   
-- If you do not yet have a Microsoft Advertising account, you can sign up via the [Microsoft Advertising web application](https://secure.ads.microsoft.com/). 
+- If you do not yet have a Microsoft Advertising account, you can sign up via the [Microsoft Advertising web application](https://ads.microsoft.com/). 
 - To get a developer token for production, you must login at the [Microsoft Advertising Developer Portal](https://developers.ads.microsoft.com/Account) as a Microsoft Account user with the Super Admin role. Then click on the **Request Token** button. The Super Admin may request API access for any user within their customer scope. 
 
 > [!NOTE]

@@ -212,7 +212,6 @@ You'll also need your production [developer token](get-started.md#get-developer-
             // The user will be prompted to grant permissions for your application to manage their Microsoft Advertising accounts. 
             // The authorization service calls back to your application with the redirection URI, which 
             // includes an authorization code if the user authorized your application to manage their Microsoft Advertising accounts. 
-            // For example: https://login.live.com/oauth20_desktop.srf?code=Authorization-Code-Returned-Here&lc=1033. 
 
             Scene scene = new Scene(webView, 800, 600);
 
