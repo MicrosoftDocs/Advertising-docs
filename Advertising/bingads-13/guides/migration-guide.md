@@ -281,3 +281,6 @@ The AverageCpp, ClickCalls, and ManualCalls columns are removed from the [Accoun
 
 #### <a name="reporting-calldetailreportcolumns"></a>Removed CallStatus and CallTypeName Columns
 The CallStatus and CallTypeName columns are removed from the [CallDetailReportColumn](../reporting-service/calldetailreportcolumn.md) value set. Microsoft Advertising stopped charging for manual calls to a tracked number on March 12, 2014. 
+
+#### <a name="reporting-scope"></a>Require Account, Campaign, or Ad Group Scope
+In version 13 you must scope the request to specific accounts, campaigns, or ad groups. For example you can include up to 1,000 accounts, 300 campaigns, or 300 ad groups via [AccountThroughAdGroupReportScope](../reporting-service/accountthroughadgroupreportscope.md). Previously in version 12 you could leave the report scope null for some report types, and data would be returned for all accounts that you could access. 

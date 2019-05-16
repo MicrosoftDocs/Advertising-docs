@@ -19,6 +19,7 @@ Defines a list of optional ad properties that you can request when calling [GetA
         <xs:enumeration value="TextPart2" />
         <xs:enumeration value="Images" />
         <xs:enumeration value="FinalUrlSuffix" />
+        <xs:enumeration value="TextPart2DSA" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -32,6 +33,7 @@ Defines a list of optional ad properties that you can request when calling [GetA
 |<a name="finalurlsuffix"></a>FinalUrlSuffix|Request that the [FinalUrlSuffix](ad.md#finalurlsuffix) element be included within each returned [Ad](ad.md) object.|
 |<a name="images"></a>Images|Request that the [Images](responsivead.md#images) element be included within each returned [ResponsiveAd](responsivead.md) object.|
 |<a name="textpart2"></a>TextPart2|Request that the [TextPart2](expandedtextad.md#textpart2) element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
+|<a name="textpart2dsa"></a>TextPart2DSA|Request that the [TextPart2](dynamicsearchad.md#textpart2) element be included within each returned [DynamicSearchAd](dynamicsearchad.md) object.|
 |<a name="titlepart3"></a>TitlePart3|Request that the [TitlePart3](expandedtextad.md#titlepart3) element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
 
 ## Requirements
