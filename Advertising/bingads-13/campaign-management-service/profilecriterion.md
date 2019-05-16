@@ -22,13 +22,8 @@ The supported criteria varies by campaign type. Microsoft Advertising applies a 
 
 |Criterion Association|Supported Campaign Types|
 |----------|---------------|
-|[BiddableCampaignCriterion](biddablecampaigncriterion.md)|DynamicSearchAds
-Search
-Shopping|
-|[BiddableAdGroupCriterion](biddableadgroupcriterion.md)|Audience
-DynamicSearchAds
-Search
-Shopping|
+|[BiddableCampaignCriterion](biddablecampaigncriterion.md)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[BiddableAdGroupCriterion](biddableadgroupcriterion.md)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
 |[NegativeAdGroupCriterion](negativeadgroupcriterion.md)|Audience|
 
 ## Syntax
