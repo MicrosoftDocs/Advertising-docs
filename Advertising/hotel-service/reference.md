@@ -42,6 +42,14 @@ Next, append a template from the following table to add, get, and update hotel r
 
 -->
 
+### <a name="listsubaccounts" /> SubAccounts template
+
+|Verb|Description|
+|-|-
+|GET|Gets the list of hotel campaigns defined for the specified account.<br /><br />NOTE: By default, the list contains a maximum of 1,000 campaigns. To determine the total number of campaigns in the subaccount, use the [$count](#count-param) query parameter. To specify the number of campaigns to return, use the [$top](#top-param) query parameter. To page through all campaigns in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [SubAccount](#subaccount) objects.
+|POST|Adds the subaccount to the specified account. You can think of subaccounts as hotel campaigns. Use subaccounts to logically organize your hotel ad campaigns. You may have up to 1,000 active hotel campaigns per account.<br /><br />**NOTE**: For the Beta release, an account may have one subaccount only.<br /><br />**Request body**: Contains the [SubAccount](#subaccount) to add.<br /><br />**Response body**: If successful, contains an [AddResponse](#addresponse) object. The `value` field contains the ID of the added hotel campaign.
+
+
 |Template|Verb|Description|
 |-|-|-
 |<a name="listsubaccounts" />SubAccounts<br /><br />**Verb:**GET<br /><br />Gets the list of hotel campaigns defined for the specified account.<br /><br />NOTE: By default, the list contains a maximum of 1,000 campaigns. To determine the total number of campaigns in the subaccount, use the [$count](#count-param) query parameter. To specify the number of campaigns to return, use the [$top](#top-param) query parameter. To page through all campaigns in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [SubAccount](#subaccount) objects.<br /><br />**Verb:**POST<br /><br />Adds the subaccount to the specified account. You can think of subaccounts as hotel campaigns. Use subaccounts to logically organize your hotel ad campaigns. You may have up to 1,000 active hotel campaigns per account.<br /><br />**NOTE**: For the Beta release, an account may have one subaccount only.<br /><br />**Request body**: Contains the [SubAccount](#subaccount) to add.<br /><br />**Response body**: If successful, contains an [AddResponse](#addresponse) object. The `value` field contains the ID of the added hotel campaign.
