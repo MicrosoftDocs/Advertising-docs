@@ -13,11 +13,15 @@ See below for information about changes to Bing Ads API Version 13 by month.
 See below for Bing Ads API updates during this calendar month. 
 
 - [Dynamic Search Ads Text Part 2](#textpart2dsa-may2019)  
+- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-may2019)  
 
 ## <a name="textpart2dsa-may2019"></a>Dynamic Search Ads Text Part 2
 Dynamic Search Ads Text Part 2 is available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). Later this year it will be available in all customers. 
 
 The [TextPart2](../campaign-management-service/dynamicsearchad.md#textpart2) element is available in the [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md) Campaign Management object. The [Text Part 2](../bulk-service/dynamic-search-ad.md#textpart2) field is available in the [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md#textpart2) Bulk record. 
+
+### <a name="sdk-may2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.2) SDK version 12.13.2. 
 
 ## <a name="april2019"></a>April 2019
 See below for Bing Ads API updates during this calendar month. 
