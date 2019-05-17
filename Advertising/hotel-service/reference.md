@@ -37,10 +37,6 @@ Next, append a template from the following table to add, get, and update hotel r
 > [!NOTE]
 > The IDs for SubAccounts, HotelGroups, Hotels, and ReportJobs are strings and must be enclosed in single quotes. For example, SubAccounts('12345')/HotelGroups. This applies to SubAccounts, HotelGroups, Hotels, and ReportJobs only; do not use single quotes for Customers and Accounts.
 
-<!--
-|<a name="listsubaccounts" />SubAccounts|GET|Gets the list of hotel campaigns defined for the specified account.<br /><br />NOTE: By default, the list contains a maximum of 1,000 campaigns. To determine the total number of campaigns in the subaccount, use the [$count](#count-param) query parameter. To specify the number of campaigns to return, use the [$top](#top-param) query parameter. To page through all campaigns in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [SubAccount](#subaccount) objects.
-
--->
 
 ### SubAccounts template
 
@@ -51,51 +47,73 @@ Next, append a template from the following table to add, get, and update hotel r
 
 ### SubAccounts('{subAccountId}') template
 
+|Verb|Description|
+|-|-
 |<a name="getsubaccount" />GET|Gets the specified subaccount.<br /><br />**Response body**: Contains a [SubAccount](#subaccount) object.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to get.</li></ul>
 |<a name="updatesubaccount" />PATCH|Updates the subaccount.<br /><br />**Request body**: Contains a [SubAccount](#subaccount) object that specifies only those fields to update.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to update.</li></ul>
 
 ### SubAccounts('{subAccountId}')/HotelGroups template
 
+|Verb|Description|
+|-|-
 |<a name="listhotelgroups" />GET|Gets the list of hotel groups in the specified subaccount.<br /><br />NOTE: By default, the list contains a maximum of 1,000 hotel groups. To determine the total number of groups in the subaccount, use the [$count](#count-param) query parameter. To specify the number of groups to return, use the [$top](#top-param) query parameter. To page through all groups in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelGroup](#hotelgroup) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel groups to get.</li></ul>
 |<a name="addhotelgroup" />POST|Adds the hotel group to the specified subaccount. Use hotel groups to create logical groupings of hotel ads. You may create up to 1,000 active hotel groups per subaccount.<br /><br />**Request body**: Contains the [HotelGroup](#hotelgroup) to add to the subaccount.<br /><br />**Response body**: If successful, contains an [AddResponse](#addresponse) object. The `value` field contains the ID of the added hotel group.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the hotel group to.</li></ul>
 
 ### SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}') template
 
+|Verb|Description|
+|-|-
 |<a name="gethotelgroup" />GET|Gets the specified hotel group.<br /><br />**Response body**: Contains a [HotelGroup](#hotelgroup) object.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group to get.</li></ul>
 |<a name="updatehotelgroup" />PATCH|Updates the hotel group.<br /><br />**Request body**: Contains a [HotelGroup](#hotelgroup) object that specifies only those fields to update.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group to update.</li></ul>
 |<a name="deletehotelgroup" />DELETE|Deletes the hotel group.<br /><br />**Request body**: None.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group to delete.</li></ul>
 
 ### SubAccounts('{subAccountId}')/Hotels template
 
+|Verb|Description|
+|-|-
 |<a name="listallhotels" />GET|Gets the list of hotel ads in the specified subaccount. The list contains all hotels across all hotel groups in the subaccount.<br /><br />NOTE: By default, the list contains a maximum of 1,000 hotels. To determine the total number of hotels in the subaccount, use the [$count](#count-param) query parameter. To specify the number of hotels to return, use the [$top](#top-param) query parameter. To page through all hotels in a subaccount, use the $top and [$skip](#skip-param) query parameters.<br/><br/>NOTE: Use this call to page through hotels in a UI experience only. Do not use this call to download all hotels. To download all hotels, instead use the [Reporting](reporting.md) feature.<br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [Hotel](#hotel) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotels to get.</li></ul>.
 
 ### SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels template
 
+|Verb|Description|
+|-|-
 |<a name="listhotels" />GET|Gets the list of hotel ads in the specified hotel group.<br /><br />NOTE: By default, the list contains a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](#count-param) query parameter. To specify the number of hotels to return, use the [$top](#top-param) query parameter. To page through all hotels in a group, use the $top and [$skip](#skip-param) query parameters.<br/><br/>NOTE: Use this call to page through hotels in a UI experience only. Do not use this call to download all hotels. To download all hotels, instead use the [Reporting](reporting.md) feature.<br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [Hotel](#hotel) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group that contains the hotels to get.</li></ul>.
 
 ### SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelId}') template
 
+|Verb|Description|
+|-|-
 |<a name="gethotel" />GET|Gets the specified hotel ad.<br /><br />**Response body**: Contains a [Hotel](#hotel) object.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group that contains the hotel to get.</li><li>`{hotelId}`&mdash;Set to the hotel ad to get.</li></ul>
 |<a name="updatehotel" />PATCH|Updates the hotel ad.<br /><br />**Request body**: Contains a [Hotel](#hotel) object that specifies only those fields to update.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group that contains the hotel to update.</li><li>`{hotelId}`&mdash;Set to the ID of the hotel to update. You may set this parameter to the ID that Microsoft assigned to the hotel or the ID that the advertiser assigned to the hotel. If you set it to the advertiser's ID, you must set the `PartnerHotelId` query parameter to **true**.</li></ul>**Query parameters**:<ul><li>`PartnerHotelId`&mdash;Set to **true** if the `{hotelId}` resource parameter contains the ID that the advertiser assigned to the hotel. If this parameter is set to **false** or is missing, the ID is the one assigned by Microsoft. The default is **false**.</li></ul>
 
 ### SubAccounts('{subAccountId}')/Ungrouped template
 
+|Verb|Description|
+|-|-
 |<a name="ungrouped" />GET|Gets the list of hotels in the Ungrouped hotel group. When you create a subaccount, the service creates the Ungrouped hotel group. All hotels from your hotel feed that are not otherwise associated with other groups are placed in this group. To associate a hotel in this group with a different hotel group, see the [Associate](#associate) template. <br /><br />NOTE: By default, the list contains a maximum of 1,000 hotels. To determine the total number of hotels in the Ungrouped hotel group, use the [$count](#count-param) query parameter. To specify the number of hotels to return, use the [$top](#top-param) query parameter. To page through all hotels in the group, use the $top and [$skip](#skip-param) query parameters.<br/><br/>NOTE: Use this call to page through hotels in a UI experience only. Do not use this call to download all hotels. To download all hotels, instead use the [Reporting](reporting.md) feature.<br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [Hotel](#hotel) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the ungrouped hotel ads to get.</li></ul>
 
 ### SubAccounts('{subAccountId}')/Associations template
 
+|Verb|Description|
+|-|-
 |<a name="associations" />GET|Gets a list of hotel and hotel group associations.<br /><br />NOTE: By default, the list contains a maximum of 1,000 associations. To determine the total number of associations in the subaccount, use the [$count](#count-param) query parameter. To specify the number of associations to return, use the [$top](#top-param) query parameter. To page through all associations in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelAssociation](#hotelassociation) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the associations to get.</li></ul>
 
 ### SubAccounts('{subAccountId}')/Associate template
 
+|Verb|Description|
+|-|-
 |<a name="associate" />POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. You can associate a hotel with only one hotel group.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
 
 ### ReportJobs template
 
+|Verb|Description|
+|-|-
 |<a name="addreportjob" />POST|Adds a report request to the report queue. <br /><br />**Request body**: Contains the [ReportJob](#reportjob) object that defines the report request that you're adding to the queue.<br /><br />**Response body**: If the report request is successfully added to the queue, the body is an [AddResponse](#addresponse) object that contains the ID of the report job. Use the ID in subsequent GET requests to get the status of the report job (see the [ReportJobs('{jobId}')](#getreportjob) template).
 
 ### ReportJobs('{jobId}')
 
+|Verb|Description|
+|-|-
 |<a name="getreportjob" />GET|Gets the status of the specified report job.<br /><br />**Response body**: Contains a [ReportJob](#reportjob) object. Use the `Status` field to determine when the job finishes. When the job is complete, use the URL in the `Url` field to download the report.<br /><br />**Resource parameters**:<ul><li>`{jobId}`&mdash;The ID of the report job to get the status of. Set to the ID of the report job that your POST request returned.</li></ul>
 |<a name="batch" />$batch|POST|Sends a batch request that may contain a maximum of 500 requests. [Read more](manage-hotel-campaigns.md#batch-processing)<br /><br />**Request body**: Contains a string of the individual requests.<br /><br />**Response body**: Contains a string of the corresponding responses.
 
