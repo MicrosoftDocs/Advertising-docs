@@ -15,7 +15,7 @@ ms.author: "scottwhi"
 >
 > The API and documentation are subject to change.
 
-The Hotel API lets you manage your hotel ad campaigns and bidding. A subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. Currently, you can have only one subaccount, and all hotels from the feed belong to it.
+The Hotel API lets you manage your hotel ad campaigns and bidding. A subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. You may have a maximum of 50 active subaccounts.
 
 A subaccount specifies the campaign's daily budget, maximum bid allowed, and default bid and bid multipliers for ads that don't specify bids or multipliers.
 
@@ -36,10 +36,7 @@ For information about reporting, see [Hotel Ads Reporting API](reporting.md).
 
 ## Working with subaccounts
 
-Subaccounts are the top-level organization of Hotel Ads. The service creates the default subaccount for you when you sign up for Hotel Ads. The API lets you list subaccounts, get a specific subaccount, and update a subaccount.
-
-> [!NOTE]
-> The API provides the ability to add subaccounts but the service currently restricts accounts to one subaccount.
+Subaccounts are the top-level organization of Hotel Ads. The service creates the default subaccount for you when you sign up for Hotel Ads. The API lets you add subaccounts, list subaccounts, get a specific subaccount, and update a subaccount.
 
 The following are the REST templates that you use to manage subaccounts.
 
