@@ -335,7 +335,9 @@ In a bulk file, the list of custom parameters are formatted as follows.
 ## <a name="domainlanguage"></a>Domain Language
 The language of the website pages that you want to target for dynamic search ads.
 
-The supported languages are English, French, and German.
+Your website language determines where your ads are eligible to appear. For example, a German-language ad can appear in Germany, Austria, and Switzerland, but not in Spain. The supported languages are English, French, and German. If your website contains pages in multiple languages and you want to advertise all of these pages, you should create a separate campaign for each language.
+
+Note, if you set the campaign [Language](#language) or ad group [Language](ad-group.md#language), they will be ignored.
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the domain language.      
@@ -430,7 +432,7 @@ The supported language strings for Search and Shopping campaigns are: All, Danis
 
 For Audience campaigns you must include all languages i.e., set this field to "All".
 
-For Dynamic Search Ads campaigns, only English is supported.
+For Dynamic Search Ads campaigns, the campaign and ad group level language settings are ignored in favor of the website [domain language](#domainlanguage). You should set campaign languages to "All" and leave the ad group level [language](ad-group.md#language) empty.
 
 **Add:** Required for Audience campaigns, and otherwise this field is optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is set for the update, this setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  

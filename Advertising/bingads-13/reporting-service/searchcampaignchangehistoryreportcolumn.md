@@ -35,6 +35,7 @@ For a list of columns that you must include, please see the [Required Columns](#
     <xs:enumeration value="NewValue" />
     <xs:enumeration value="EntityName" />
     <xs:enumeration value="EntityId" />
+    <xs:enumeration value="Tool" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -63,6 +64,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 |<a name="keyword"></a>Keyword|The keyword text. This column will be empty if [ItemChanged](#itemchanged) is not Keyword.|
 |<a name="newvalue"></a>NewValue|The value after the change. For more information, see the [HowChanged](#howchanged) column.|
 |<a name="oldvalue"></a>OldValue|The value before the change. For more information, see the [HowChanged](#howchanged) column.|
+|<a name="tool"></a>Tool|Reserved.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns

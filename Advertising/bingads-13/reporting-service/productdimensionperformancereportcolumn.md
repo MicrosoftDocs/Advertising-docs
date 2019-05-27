@@ -85,6 +85,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AssistedClicks" />
     <xs:enumeration value="ClickSharePercent" />
     <xs:enumeration value="AbsoluteTopImpressionSharePercent" />
+    <xs:enumeration value="AssistedConversions" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -104,6 +105,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adid"></a>AdId|The Microsoft Advertising assigned identifier of an ad.|
 |<a name="adstatus"></a>AdStatus|The ad status.|
 |<a name="assistedclicks"></a>AssistedClicks|Clicks on your ads that have received co-bids from your manufacturer partners. Clicks are what you pay for.<br/><br/>Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers).<br/><br/>This performance statistic is only applicable for cooperative shopping campaigns.|
+|<a name="assistedconversions"></a>AssistedConversions|Conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners.<br/><br/>This performance statistic is only applicable for cooperative shopping campaigns.|
 |<a name="assistedimpressions"></a>AssistedImpressions|The number of times an ad that is being co-bid by your manufacturer partners has been displayed on search results pages or other sites on the Microsoft Advertising Network.<br/><br/>This performance statistic is only applicable for cooperative shopping campaigns.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16. The formula for calculating the average CPC is *(Spend /Clicks)*.|
 |<a name="benchmarkbid"></a>BenchmarkBid|Shows you how much other advertisers are bidding on average on similar products as your current target. Use this information as a benchmark to compare your bidding strategy for a product group against that of other advertisers advertising similar products. If the benchmark bid is significantly higher than your bid, you might consider raising your bid.|

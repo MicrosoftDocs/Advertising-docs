@@ -21,11 +21,11 @@ For [Customer Accounts](customer-accounts.md), you should use the [Customer Mana
 ## <a name="where"></a>Where your ads will appear
 When you advertise using Microsoft Advertising, your search ads can appear on the search results page on websites throughout the world. These sites can include Bing, AOL, and Yahoo owned and operated sites as well as Bing, AOL, and Yahoo syndicated search partner sites. (Syndicated search partner sites are sites that use Bing and Yahoo search results.) For more information, see [About ad distribution](https://help.ads.microsoft.com/#apex/3/en/50871/0). 
 
-Your ads can appear on search results page when a customer does a search on Bing. Where you ad appears on search results pages is determined by the keywords you use to associate your ads. For example, Sarah owns a toy store and wants to create ads for kids' electronics. She might include keywords like "walkie-talkies", "electronic pets", and "kids' music players" so her ads could be more relevant to customers' searches, and show above or next to the search results.
+Your ads can appear on search results page when a customer does a search on Bing. Where you ad appears on search results pages is determined by the keywords you use to associate your ads. For example, Pat owns a toy store and wants to create ads for kids' electronics. They might include keywords like "walkie-talkies", "electronic pets", and "kids' music players" so their ads could be more relevant to customers' searches, and show above or next to the search results.
 
 ![Expanded Text Ad](media/overview-textad.png "Expanded Text Ad")
 
-To see where Microsoft Advertising is available and whether your ads will run, please see [Where does Microsoft Advertising show your ads?](https://help.ads.microsoft.com/#apex/3/en/50873/0) You can also set your ads to the languages your customers speak, which will influence where your ads will appear. For example, if Sarah wants her ads to be in German, her ads can appear not only in Germany but Austria and Switzerland as well. For more information, see [Ad Languages](ad-languages.md).
+To see where Microsoft Advertising is available and whether your ads will run, please see [Where does Microsoft Advertising show your ads?](https://help.ads.microsoft.com/#apex/3/en/50873/0) You can also set your ads to the languages your customers speak, which will influence where your ads will appear. For example, Pat's ads in German can appear not only in Germany but Austria and Switzerland as well. For more information, see [Ad Languages](ad-languages.md).
 
 ## <a name="what"></a>Enrich your ad layout
 You can extend the ad layout to be more visually appealing and feature rich using [Ad Extensions](#adextensions).
@@ -33,7 +33,7 @@ You can extend the ad layout to be more visually appealing and feature rich usin
 ### <a name="adextensions"></a>Ad Extensions
 With ad extensions, you can decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions. Microsoft Advertising offers the following popular ad extension types. For more information please see [Ad Extensions](ad-extensions.md) and [Microsoft Advertising Web UI Help - What are ad extensions?](https://help.ads.microsoft.com/#apex/3/en/51001/1).
 
-### <a name="bingshoppingcampaigns"></a>Microsoft Shopping Campaigns
+### <a name="shoppingcampaigns"></a>Microsoft Shopping Campaigns
 A Microsoft Shopping campaign enables you to advertise the products from your Microsoft Merchant Center store product catalog. Product ads from a Microsoft Shopping campaign include details about the product, an image, and optional promotional text. After you [create a product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1), you can then submit the catalog feed using the [Microsoft Advertising Content API](/advertising/shopping-content/index) or [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1). For more information, please see [Product Ads](product-ads.md).
 
 ## <a name="audience"></a>Show ads to your target audience
@@ -41,7 +41,7 @@ Your ads can appear specifically for customers on the go, who use their smartpho
 
 ![Search results on mobile](media/overview-mobilead.png "Search results on mobile")
 
-You can show your ads to customers in specific locations, like cities or countries. For example, Sarah wants only local customers to see her ads. She can set your ads to appear to customers within a 20-mile radius around her shop by using radius targeting.
+You can show your ads to customers in specific locations, like cities or countries. For example, Pat wants only local customers to see their ads. They can set your ads to appear to customers within a 20-mile radius around their shop by using radius targeting.
 
 You can also setup your ads to display to users of a certain age group or gender, or to display at a certain day and time of the week. For more information about showing ads to your target audience, see [Show Ads to Your Target Audience](show-ads-target-audience.md).
 

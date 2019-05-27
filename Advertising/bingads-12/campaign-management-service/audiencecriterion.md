@@ -12,7 +12,7 @@ Defines a criterion that can be used to show ads to a specific audience.
 The *AudienceCriterion* can be included within [AdGroupCriterion](adgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), [CampaignCriterion](campaigncriterion.md), and [NegativeCampaignCriterion](negativecampaigncriterion.md) objects. Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions. 
 
 > [!NOTE]
-> Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
+> Not everyone can set campaign level audience associations yet. If you don't, don't worry. It's coming soon for Dynamic Search Ads, Search, and Shopping campaigns.
 
 ## Syntax
 ```xml
