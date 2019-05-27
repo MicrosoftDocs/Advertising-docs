@@ -12,8 +12,17 @@ See below for information about changes to Bing Ads API Version 13 by month.
 ## <a name="may2019"></a>May 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [Assisted Conversions](#assistedconversions-may2019)  
 - [Dynamic Search Ads Text Part 2](#textpart2dsa-may2019)  
 - [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-may2019)  
+
+## <a name="assistedconversions-may2019"></a>Assisted Conversions
+Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only applicable for cooperative shopping campaigns. The AssistedConversions column is added to the following reports.
+
+- [ProductDimensionPerformanceReportColumn Value Set](../reporting-service/productdimensionperformancereportcolumn.md)  
+- [ProductPartitionPerformanceReportColumn Value Set](../reporting-service/productpartitionperformancereportcolumn.md)  
+- [ProductPartitionUnitPerformanceReportColumn Value Set](../reporting-service/productpartitionunitperformancereportcolumn.md)  
+- [ProductSearchQueryPerformanceReportColumn Value Set](../reporting-service/productsearchqueryperformancereportcolumn.md)  
 
 ## <a name="textpart2dsa-may2019"></a>Dynamic Search Ads Text Part 2
 Dynamic Search Ads Text Part 2 is available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). Later this year it will be available in all customers. 
