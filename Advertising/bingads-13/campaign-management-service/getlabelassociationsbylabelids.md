@@ -25,7 +25,7 @@ The *GetLabelAssociationsByLabelIdsRequest* object defines the [body](#request-b
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entitytype"></a>EntityType|Filters the returned associations by entity type.<br/><br/>The supported entity type values are *Campaign*, *AdGroup*, *Ad*, and *Keyword*.|[EntityType](entitytype.md)|
-|<a name="labelids"></a>LabelIds|The list of label identifiers used to request label associations.<br/><br/>If the list of label identifiers is null or empty then all label associations for the account will be returned page by page. See the *PageInfo* element for more information.<br/><br/>The maximum size of the list is 1 item per service request.|**long** array|
+|<a name="labelids"></a>LabelIds|The list of label identifiers used to request label associations.<br/><br/>You must include exactly one label identifier in the list.|**long** array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of label association results per page.<br/><br/>Up to 1,000 label associations will be returned per page, so you might need to request multiple pages to get all of the label associations.<br/><br/>If this element is not specified, the defaut page Index is *0* and the default Size is *1,000*.|[Paging](paging.md)|
 
 ### <a name="request-header"></a>Request Header Elements
