@@ -105,35 +105,35 @@ Record Type  |Supported Campaign Types
 [Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search      
-[Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Shopping<br/>Search            
-[Campaign Custom Audience Association](campaign-custom-audience-association.md)|All         
+[Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping            
+[Campaign Custom Audience Association](campaign-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
 [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All         
 [Campaign Gender Criterion](campaign-gender-criterion.md)|All         
-[Campaign Industry Criterion](campaign-industry-criterion.md)|DynamicSearchAds<br/>Shopping<br/>Search         
-[Campaign In Market Audience Association](campaign-in-market-audience-association.md)|All         
-[Campaign Job Function Criterion](campaign-deviceos-criterion.md)|DynamicSearchAds<br/>Shopping<br/>Search         
+[Campaign Industry Criterion](campaign-industry-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign In Market Audience Association](campaign-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign Job Function Criterion](campaign-deviceos-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Label](campaign-label.md)|All         
 [Campaign Location Ad Extension](campaign-location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Location Criterion](campaign-location-criterion.md)|All         
 [Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All         
-[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|All         
+[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
-[Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|All         
+[Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Keyword](campaign-negative-keyword.md)|All         
-[Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|All         
+[Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Location Criterion](campaign-negative-location-criterion.md)|All         
-[Campaign Negative Product Audience Association](campaign-negative-product-audience-association.md)|All         
-[Campaign Negative Remarketing List Association](campaign-negative-remarketing-list-association.md)|All         
-[Campaign Negative Similar Remarketing List Association](campaign-negative-similar-remarketing-list-association.md)|All         
+[Campaign Negative Product Audience Association](campaign-negative-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign Negative Remarketing List Association](campaign-negative-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign Negative Similar Remarketing List Association](campaign-negative-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Site](campaign-negative-site.md)|All         
 [Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Product Audience Association](campaign-product-audience-association.md)|All         
+[Campaign Product Audience Association](campaign-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping         
 [Campaign Radius Criterion](campaign-radius-criterion.md)|All         
-[Campaign Remarketing List Association](campaign-remarketing-list-association.md)|All               
+[Campaign Remarketing List Association](campaign-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping               
 [Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Similar Remarketing List Association](campaign-similar-remarketing-list-association.md)|All         
+[Campaign Similar Remarketing List Association](campaign-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
