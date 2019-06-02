@@ -145,7 +145,7 @@ Bing recommends using the same matching criteria for each POS. This minimizes th
 
 A point of sale (POS) contains a `URL` element that identifies the site where users can book rooms. The URL may contain dynamic query parameters, which are user-defined parameters that contain a predefined token for its value. Bing then substitutes the token with a value before adding the URL to the ad. By using dynamic query parameters, you can include the hotel's ID, check-in date, length of stay, and more in the URL.
 
-The following shows the syntax that you use to specify dynamic query parameters in your POS URL.
+The following shows the syntax that you use to specify dynamic query parameters in your POS URL. Because dynamic query parameters are query parameters, they must follow the question mark symbol (?) in the URL.
 
 `http://domain.com/path?param-name=(dynamic-variable-name)`
 
@@ -216,7 +216,8 @@ The following are general rules to follow when using dynamic variables.
   <URL>http://www.partnerdomain.com?checkinDate=(CHECKINDAY)%2F;(CHECKINMONTH)%2F;(CHECKINYEAR)</URL>  
   ```
   
-- For dynamic variables that Bing recognized but does not support, Bing replaces the variable string with an empty string.
+- For dynamic variables that Bing recognized but does not support, Bing replaces the variable string with an empty string.   
+- Because dynamic query parameters are query parameters, they must follow the question mark symbol (?) in the URL.
   
   
 ### Using conditional directives
