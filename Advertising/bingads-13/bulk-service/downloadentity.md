@@ -750,6 +750,20 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="Feeds">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">106</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="FeedItems">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">107</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -840,6 +854,8 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="expandedtextadlabels"></a>ExpandedTextAdLabels|Include [Expanded Text Ad Label](expanded-text-ad-label.md) records in the download that each represent a label applied to an expanded text ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="expandedtextads"></a>ExpandedTextAds|Include [Expanded Text Ad](expanded-text-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
 |<a name="experiments"></a>Experiments|Include [Experiment](experiment.md) records in the download data.<br/><br/>To get all experiments from your account, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the experiments that use the specified base or experiment campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
+|<a name="feeditems"></a>FeedItems|Include [Feed Item](feed-item.md) records in the download data.<br/><br/>To get all feed items from your account, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. If you use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation, feed items will not be included in the download data.|
+|<a name="feeds"></a>Feeds|Include [Feed](feed.md) records in the download data.<br/><br/>To get all feeds from your account, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. If you use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation, feeds will not be included in the download data.|
 |<a name="imageadextensions"></a>ImageAdExtensions|Include [Image Ad Extension](image-ad-extension.md) records in the download data.<br/><br/>To get all image ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the image ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="inmarketaudiences"></a>InMarketAudiences|Include [In Market Audience](in-market-audience.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of in-market audiences for the current authenticated user. All in-market audiences that have Scope set to Customer are included. The in-market audiences that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if an in-market audience is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="keywordlabels"></a>KeywordLabels|Include [Keyword Label](keyword-label.md) records in the download that each represent a label applied to a keyword. For [Label](label.md) records, you should include the Labels value in the download request.|

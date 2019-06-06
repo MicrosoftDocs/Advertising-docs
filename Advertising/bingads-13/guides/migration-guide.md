@@ -63,7 +63,7 @@ The sandbox endpoint is [https://bulk.api.sandbox.bingads.microsoft.com/Api/Adve
 The Landscape Image Media Id, Landscape Logo Media Id, Square Image Media Id, and Square Logo Media Id columns are deprecated from the [Responsive Ad](../bulk-service/responsive-ad.md) record. They will still be visible in the download file, although since they will be removed in a future version you should not take any dependencies on these columns. Please use the [Images](../bulk-service/responsive-ad.md#images) column instead. 
 
 #### <a name="bulk-entityperformancedata"></a>Entity Performance Data
-Bulk download of performance data was previously sunset in version 12. Now in version 13 the EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is removed from the service contract. Also the *Date* and *PerformanceStatsDateRange* objects and *ReportTimePeriod* value set are removed If you want data aggregated by day, week, or month, you can use the Reporting API. For more details see [Reports](reports.md).
+Bulk download of performance data was previously sunset in version 12. Now in version 13 the EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is removed from the service contract. Also the *Date* and *PerformanceStatsDateRange* objects and *ReportTimePeriod* value set are removed If you want data aggregated by day, week, or month, you can use the Reporting API. For more details see [Reports](reports.md).  
 
 ## <a name="campaign"></a>Campaign Management
 For comprehensive version 13 service reference documentation see [Campaign Management](../campaign-management-service/campaign-management-service-reference.md).  

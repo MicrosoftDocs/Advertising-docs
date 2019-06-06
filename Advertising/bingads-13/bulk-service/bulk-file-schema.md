@@ -142,6 +142,8 @@ Record Type  |Supported Campaign Types
 [Expanded Text Ad](expanded-text-ad.md)|Search         
 [Expanded Text Ad Label](expanded-text-ad-label.md)|Search         
 [Experiments](experiment.md)|Search         
+[Feed](feed.md)|DynamicSearchAds<br/>Search 
+[Feed Item](feed-item.md)|DynamicSearchAds<br/>Search 
 [Format Version](format-version.md)|All         
 [Image Ad Extension](image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [In Market Audience](in-market-audience.md)<br/><br/>Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         
