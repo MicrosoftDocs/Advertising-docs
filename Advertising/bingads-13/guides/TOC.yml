@@ -156,6 +156,8 @@
     items:
     - name: Overview
       href: ./campaigns.md
+    - name: Ad Customizer Feeds
+      href: ./ad-customizer-feeds.md
     - name: Budget and Bid Opportunities
       href: ./budget-bid-opportunities.md
     - name: Budget and Bid Strategies
@@ -168,6 +170,8 @@
       href: ./keyword-ideas-traffic-estimates.md
     - name: Negative Keywords
       href: ./negative-keywords.md
+    - name: Page Feeds
+      href: ./page-feeds.md
     - name: Show Ads to Your Target Audience
       href: ./show-ads-target-audience.md
     - name: Universal Event Tracking
