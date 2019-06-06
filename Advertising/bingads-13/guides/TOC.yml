@@ -830,6 +830,12 @@
         - name: Experiment
           href: ../bulk-service/experiment.md
           displayName: BulkExperiment
+        - name: Feed
+          href: ../bulk-service/feed.md
+          displayName: BulkFeed
+        - name: Feed Item
+          href: ../bulk-service/feed-item.md
+          displayName: BulkFeedItem
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image Ad Extension

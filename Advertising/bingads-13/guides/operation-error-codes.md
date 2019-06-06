@@ -10254,24 +10254,90 @@ The BidMultiplier is not set for Campaign Criterion.
 ***
 
 **Numeric Code**
-4570
+4520
 
 **Symbolic Error Code**
-CampaignServiceExpandedTextAdCombinedTitleTooLong
+CampaignCriterionStatusInvalid
 
 **Description**
-The combined character limit for title part 1 and title part 2 would be exceeded.
+The campaign criterion's status is not valid.
 
 ***
 
 **Numeric Code**
-4571
+4521
 
 **Symbolic Error Code**
-CampaignServiceExpandedTextAdFinalUrlDomainTooLong
+DuplicateCampaignCriterion
 
 **Description**
-The character limit for the domain portion of the final URL would be exceeded.
+Duplicate campaign criterions are not allowed.
+
+***
+
+**Numeric Code**
+4522
+
+**Symbolic Error Code**
+CampaignAlreadyHasAdGroupAudienceCriterion
+
+**Description**
+One or more ad groups within the campaign already has an audience target. Audience targets cannot be set both campaign and ad group level.
+
+***
+
+**Numeric Code**
+4523
+
+**Symbolic Error Code**
+AllNullCampaignCriterionTypesNotAllowedOnCreate
+
+**Description**
+The campaign criterion type is required to add a campaign criterion. 
+
+***
+
+**Numeric Code**
+4524
+
+**Symbolic Error Code**
+CampaignLevelAudienceTargetingNotEnabled
+
+**Description**
+The campaign-level audience association is not enabled.
+
+***
+
+**Numeric Code**
+4525
+
+**Symbolic Error Code**
+CustomerNotEligibleForCampaignLevelAudienceTargeting
+
+**Description**
+The customer is not eligible for campaign-level audience association.
+
+***
+
+**Numeric Code**
+4526
+
+**Symbolic Error Code**
+CampaignServiceCampaignCriterionCampaignCriterionDoesNotExist
+
+**Description**
+The campaign criterion does not exist.
+
+***
+
+**Numeric Code**
+4576
+
+**Symbolic Error Code**
+CustomerNotEnabledForLocalInventoryAds
+
+**Description**
+The customer is not enabled For Local Inventory Ads. 
 
 ***
 
@@ -11934,6 +12000,182 @@ CampaignServiceExpandedTextAdDomainInvalid
 
 **Description**
 The expanded text ad domain is invalid.
+
+***
+
+**Numeric Code**
+5043
+
+**Symbolic Error Code**
+CampaignServiceAdCustomizerFeedNameMissing
+
+**Description**
+The feed name in the ad customizer function is missing.
+
+***
+
+**Numeric Code**
+5044
+
+**Symbolic Error Code**
+CampaignServiceAdCustomizerFeedAttributeMissing
+
+**Description**
+The attribute name in the ad customizer function is missing.
+
+***
+
+**Numeric Code**
+5045
+
+**Symbolic Error Code**
+CampaignServiceAdCustomizerDefaultValueMissing
+
+**Description**
+The default value in the ad customizer function is missing.
+
+***
+
+**Numeric Code**
+5046
+
+**Symbolic Error Code**
+CampaignServiceFeedPerAdLimitExceeded
+
+**Description**
+Only one feed name can be referenced in the ad.
+
+***
+
+**Numeric Code**
+5047
+
+**Symbolic Error Code**
+CampaignServiceFeedNameDoesNotExist
+
+**Description**
+The feed name does not exist.
+
+***
+
+**Numeric Code**
+5048
+
+**Symbolic Error Code**
+CampaignServiceInvalidFeedForAdType
+
+**Description**
+The feed is not supported for the ad type.
+
+***
+
+**Numeric Code**
+5049
+
+**Symbolic Error Code**
+CampaignServiceFeedAttributeDoesNotExist
+
+**Description**
+The attribute does not exist in the feed.
+
+***
+
+**Numeric Code**
+5050
+
+**Symbolic Error Code**
+CampaignServiceInvalidFeedAttributeForAdType
+
+**Description**
+The feed attribute is not supported for the ad type.
+
+***
+
+**Numeric Code**
+5051
+
+**Symbolic Error Code**
+CampaignServiceInvalidFeedAttributeTypeInCountdown
+
+**Description**
+The feed attribute in the COUNTDOWN or GLOBAL_COUNTDOWN function should be of DateTime type only.
+
+***
+
+**Numeric Code**
+5051
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTitlePart3TooLong
+
+**Description**
+Ad title part 3 is over the character limit.
+
+***
+
+**Numeric Code**
+5052
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTitlePart3Invalid
+
+**Description**
+Ad title part 3 is not valid.
+
+***
+
+**Numeric Code**
+5053
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTextPart1TooLong
+
+**Description**
+Ad text part 1 is over the character limit.
+
+***
+
+**Numeric Code**
+5054
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTextPart1Invalid
+
+**Description**
+Ad text part 1 is not valid.
+
+***
+
+**Numeric Code**
+5055
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTextPart2TooLong
+
+**Description**
+Ad text part 2 is over the character limit.
+
+***
+
+**Numeric Code**
+5056
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdTextPart2Invalid
+
+**Description**
+Ad text part 2 is not valid.
+
+***
+
+**Numeric Code**
+5057
+
+**Symbolic Error Code**
+CampaignServiceInvalidFeedAttributeTypeInCountdown
+
+**Description**
+The feed attribute in the COUNTDOWN or GLOBAL_COUNTDOWN function should be of DateTime type.
 
 ***
 

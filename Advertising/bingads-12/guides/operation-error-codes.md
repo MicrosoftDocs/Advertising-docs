@@ -10256,24 +10256,90 @@ The BidMultiplier is not set for Campaign Criterion.
 ***
 
 **Numeric Code**
-4570
+4520
 
 **Symbolic Error Code**
-CampaignServiceExpandedTextAdCombinedTitleTooLong
+CampaignCriterionStatusInvalid
 
 **Description**
-The combined character limit for title part 1 and title part 2 would be exceeded.
+The campaign criterion's status is not valid.
 
 ***
 
 **Numeric Code**
-4571
+4521
 
 **Symbolic Error Code**
-CampaignServiceExpandedTextAdFinalUrlDomainTooLong
+DuplicateCampaignCriterion
 
 **Description**
-The character limit for the domain portion of the final URL would be exceeded.
+Duplicate campaign criterions are not allowed.
+
+***
+
+**Numeric Code**
+4522
+
+**Symbolic Error Code**
+CampaignAlreadyHasAdGroupAudienceCriterion
+
+**Description**
+One or more ad groups within the campaign already has an audience target. Audience targets cannot be set both campaign and ad group level.
+
+***
+
+**Numeric Code**
+4523
+
+**Symbolic Error Code**
+AllNullCampaignCriterionTypesNotAllowedOnCreate
+
+**Description**
+The campaign criterion type is required to add a campaign criterion. 
+
+***
+
+**Numeric Code**
+4524
+
+**Symbolic Error Code**
+CampaignLevelAudienceTargetingNotEnabled
+
+**Description**
+The campaign-level audience association is not enabled.
+
+***
+
+**Numeric Code**
+4525
+
+**Symbolic Error Code**
+CustomerNotEligibleForCampaignLevelAudienceTargeting
+
+**Description**
+The customer is not eligible for campaign-level audience association.
+
+***
+
+**Numeric Code**
+4526
+
+**Symbolic Error Code**
+CampaignServiceCampaignCriterionCampaignCriterionDoesNotExist
+
+**Description**
+The campaign criterion does not exist.
+
+***
+
+**Numeric Code**
+4576
+
+**Symbolic Error Code**
+CustomerNotEnabledForLocalInventoryAds
+
+**Description**
+The customer is not enabled For Local Inventory Ads. 
 
 ***
 
