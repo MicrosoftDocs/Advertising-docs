@@ -9,12 +9,23 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="june2019"></a>June 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Feeds via Bulk API](#feeds-june2019)  
+
+## <a name="feeds-june2019"></a>Feeds via Bulk API
+The [Feed](../bulk-service/feed.md) and [Feed Item](../bulk-service/feed-item.md) Bulk records are added to support [Bulk download and upload](bulk-download-upload.md) of both [Ad Customizer Feeds](ad-customizer-feeds.md) and [Page Feeds](page-feeds.md). 
+
+> [!NOTE]
+> The Bulk API for feeds and documentation are subject to change.  
+
 ## <a name="may2019"></a>May 2019
 See below for Bing Ads API updates during this calendar month. 
 
 - [Assisted Conversions](#assistedconversions-may2019)  
 - [Dynamic Search Ads Text Part 2](#textpart2dsa-may2019)  
-- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-may2019)  
+- [Bing Ads API SDK Updates](#sdk-may2019)  
 
 ## <a name="assistedconversions-may2019"></a>Assisted Conversions
 Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only applicable for cooperative shopping campaigns. The AssistedConversions column is added to the following reports.
@@ -29,23 +40,23 @@ Dynamic Search Ads Text Part 2 is available for pilot customers ([GetCustomerPil
 
 The [TextPart2](../campaign-management-service/dynamicsearchad.md#textpart2) element is available in the [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md) Campaign Management object. The [Text Part 2](../bulk-service/dynamic-search-ad.md#textpart2) field is available in the [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md#textpart2) Bulk record. 
 
-### <a name="sdk-may2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+### <a name="sdk-may2019"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.2) SDK version 12.13.2. 
 
 ## <a name="april2019"></a>April 2019
 See below for Bing Ads API updates during this calendar month. 
 
 - [New Production OAuth Endpoint](#oauth-april2019)  
-- [Microsoft Advertising Software Development Kit (SDK) Updates](#sdk-april2019)  
+- [Bing Ads API SDK Updates](#sdk-april2019)  
 - [Version 13 General Availability](#v13-april2019)  
 
 ## <a name="oauth-april2019"></a>New Production OAuth Endpoint
 The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
 
 > [!IMPORTANT]
-> During Q2 calendar year 2019 the Bing Ads SDKs will be updated to use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview). Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
+> Even if your users do not have work or school accounts, and even if you do not use the Bing Ads API SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
 
-### <a name="sdk-april2019"></a>Microsoft Advertising Software Development Kit (SDK) Updates
+### <a name="sdk-april2019"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated with support for version 13. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.1) SDK version 12.13.1. 
 
 ### <a name="v13-april2019"></a>Version 13 General Availability
