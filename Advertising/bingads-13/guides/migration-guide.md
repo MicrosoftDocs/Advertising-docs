@@ -274,7 +274,7 @@ In version 13 if the quality score was not computed the data returned will be "-
 #### <a name="reporting-impressionshare"></a>Replaced Some Impression Share Columns
 The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, ImpressionLostToRelevancePercent, and ImpressionLostToRankPercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 
 
-In version 13 the data that had been split between those version 12 columns is aggregated and available via the ImpressionLostToRankAggPercent column. 
+In version 13 the data that had been split between those version 12 columns is aggregated and available via the ImpressionLostToRankAggPercent column which takes all of those factors into account when calculating the impression lost to rank percent. 
 
 #### <a name="reporting-averagecpp-clickcalls"></a>Removed AverageCpp, ClickCalls, and ManualCalls Columns
 The AverageCpp, ClickCalls, and ManualCalls columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) and [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) value sets. 

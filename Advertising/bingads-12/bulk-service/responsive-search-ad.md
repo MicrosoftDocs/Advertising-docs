@@ -278,6 +278,10 @@ Here's an example Bulk download where you'll also get read-only attributes e.g.,
 }]
 ```
 
+**Add:** Required. The list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.  
+**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.   
+**Delete:** Read-only  
+
 ### <a name="description-editorialstatus"></a>editorialStatus
 The `editorialStatus` attribute is read-only when you download the responsive search ad. Possible values are described in the table below.  
 
@@ -308,11 +312,7 @@ The `text` attribute can contain a countdown function. Regardless of the total l
 
 The maximum input length of each description's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 90 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 45 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
-The `text` attribute cannot contain the newline (\n) character.
-
-**Add:** Required. The list of 3-15 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.  
-**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 3-15 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.   
-**Delete:** Read-only  
+The `text` attribute cannot contain the newline (\n) character.  
 
 ## <a name="domain"></a>Domain
 The URL that will be displayed instead of the final URL. The final URL will still be used for the landing page URL.
@@ -453,6 +453,10 @@ Here's an example Bulk download where you'll also get read-only attributes e.g.,
 }]
 ```
 
+**Add:** Required. The list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.  
+**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any headlines that were previously linked to this ad will be replaced. If you specify this field, a list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.   
+**Delete:** Read-only  
+
 ### <a name="headline-editorialstatus"></a>editorialStatus
 The `editorialStatus` attribute is a read-only string when you download the responsive search ad. Possible values are described in the table below.  
 
@@ -484,10 +488,6 @@ The `text` attribute can contain a countdown function. Regardless of the total l
 The maximum input length of each headline's `text` attribute is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 30 characters after dynamic text substitution occurs. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution. The ad will fail to display or [default text](https://help.ads.microsoft.com/#apex/3/en/50811/1/#DefaultText) will be used if the length exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The `text` attribute cannot contain the newline (\n) character.
-
-**Add:** Required. The list of 2-4 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.  
-**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 2-4 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.   
-**Delete:** Read-only  
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
