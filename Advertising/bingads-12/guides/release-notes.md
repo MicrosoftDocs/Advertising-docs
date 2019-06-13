@@ -9,6 +9,14 @@ description: Get information about changes to Bing Ads API Version 12 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 12 by month. 
 
+## <a name="june2019"></a>June 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Change History Report by Tool](#searchcampaignchangehistoryreportcolumn-june2019)  
+
+## <a name="searchcampaignchangehistoryreportcolumn-june2019"></a>Change History Report by Tool
+The [Tool](../reporting-service/searchcampaignchangehistoryreportcolumn.md#tool) column is now available with the change history report. You can determine how changes were made to account, campaign or ad attributes e.g., whether via the Web client, Editor, Bulk upload, or Campaign Management API. 
+
 ## <a name="may2019"></a>May 2019
 See below for Bing Ads API updates during this calendar month. 
 
