@@ -12,7 +12,22 @@ See below for information about changes to Bing Ads API Version 13 by month.
 ## <a name="june2019"></a>June 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [Prominence Metrics](#prominence-metrics-june2019)  
+- [Change History Report by Tool](#searchcampaignchangehistoryreportcolumn-june2019)  
 - [Feeds via Bulk API](#feeds-june2019)  
+
+## <a name="prominence-metrics-june2019"></a>Prominence Metrics
+With new and improved prominence metrics, you may now take a more holistic view of where your ads are appearing on search results pages. These clearer insights can help you better optimize your bidding strategy. 
+
+The AbsoluteTopImpressionRatePercent, AbsoluteTopImpressionShareLostToBudgetPercent, AbsoluteTopImpressionShareLostToRankPercent, TopImpressionRatePercent, TopImpressionShareLostToBudgetPercent, TopImpressionShareLostToRankPercent, and TopImpressionSharePercent columns are added to the following report column value sets.
+
+- [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md)  
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md)  
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md)  
+- [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md)  
+
+## <a name="searchcampaignchangehistoryreportcolumn-june2019"></a>Change History Report by Tool
+The [Tool](../reporting-service/searchcampaignchangehistoryreportcolumn.md#tool) column is now available with the change history report. You can determine how changes were made to account, campaign or ad attributes e.g., whether via the Web client, Editor, Bulk upload, or Campaign Management API. 
 
 ## <a name="feeds-june2019"></a>Feeds via Bulk API
 The [Feed](../bulk-service/feed.md) and [Feed Item](../bulk-service/feed-item.md) Bulk records are added to support [Bulk download and upload](bulk-download-upload.md) of both [Ad Customizer Feeds](ad-customizer-feeds.md) and [Page Feeds](page-feeds.md). 
@@ -28,12 +43,12 @@ See below for Bing Ads API updates during this calendar month.
 - [Bing Ads API SDK Updates](#sdk-may2019)  
 
 ## <a name="assistedconversions-may2019"></a>Assisted Conversions
-Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only applicable for cooperative shopping campaigns. The AssistedConversions column is added to the following reports.
+Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only applicable for cooperative shopping campaigns. The AssistedConversions column is added to the following report column value sets.
 
-- [ProductDimensionPerformanceReportColumn Value Set](../reporting-service/productdimensionperformancereportcolumn.md)  
-- [ProductPartitionPerformanceReportColumn Value Set](../reporting-service/productpartitionperformancereportcolumn.md)  
-- [ProductPartitionUnitPerformanceReportColumn Value Set](../reporting-service/productpartitionunitperformancereportcolumn.md)  
-- [ProductSearchQueryPerformanceReportColumn Value Set](../reporting-service/productsearchqueryperformancereportcolumn.md)  
+- [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md)  
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md)  
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md)  
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md)  
 
 ## <a name="textpart2dsa-may2019"></a>Dynamic Search Ads Text Part 2
 Dynamic Search Ads Text Part 2 is available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). Later this year it will be available in all customers. 

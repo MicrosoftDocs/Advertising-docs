@@ -64,7 +64,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 |<a name="keyword"></a>Keyword|The keyword text. This column will be empty if [ItemChanged](#itemchanged) is not Keyword.|
 |<a name="newvalue"></a>NewValue|The value after the change. For more information, see the [HowChanged](#howchanged) column.|
 |<a name="oldvalue"></a>OldValue|The value before the change. For more information, see the [HowChanged](#howchanged) column.|
-|<a name="tool"></a>Tool|Reserved.|
+|<a name="tool"></a>Tool|The Microsoft Advertising tool used to make changes.<br/><br/>The possible values include "API", "Automated rules", "Bulk upload", "Imports", "Editor", "Mobile Apps", "Other", "Scripts", and "Web client (manual)". New values can be added in the future, so you should not take any dependency on a fixed set of values.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
