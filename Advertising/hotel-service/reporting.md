@@ -285,7 +285,7 @@ The request must include at least one dimension column and one measure column.
 |<a name="missedimpressionscapreached"></a>MissedImpressionsSpendingCapReached|Missed impr. spending cap reached|The number of impressions lost because you reached your daily spending limit. [Read more](#sov).
 |<a name="netrevenue"></a>NetRevenue|Net revenue|The total revenue, excluding taxes. [Read more](#conversionmetrics).
 |<a name="netrevenueperclick"></a>NetRevenuePerClick|Net revenue per click|The net revenue per click. The per click revenue is calculated as (net revenue/clicks). [Read more](#conversionmetrics).
-|<a name="netrevenueperconv"></a>NetRevenuePerConv|Net revenue per conv.|The net revenue per conversion. The per conversion revenue is calculated as (net revenue/conversions). [Read more](#conversionmetrics).
+|<a name="netrevenueconv"></a>NetRevenueConv|Net revenue per conv.|The net revenue per conversion. The per conversion revenue is calculated as (net revenue/conversions). [Read more](#conversionmetrics).
 |<a name="netroas"></a>NetROAS|Net ROAS|The net return on ad spend. The ROAS is calculated as (net revenue/spend) * 100.
 |Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017. [Read more](#conversionmetrics).
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
