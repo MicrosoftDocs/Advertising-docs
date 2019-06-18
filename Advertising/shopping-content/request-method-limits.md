@@ -11,7 +11,7 @@ ms.author: "scottwhi"
 
 # Request and method call limits
 
-The following are the recommended limits that you should follow when implementing your Content API solution. These limits are currently not enforced but because they may be enforced in the future, you should implement them now.
+The following are the recommended limits that you should follow when implementing your Content API solution to ensure maximum API efficiency. 
 
 |Limit|Description
 |-|-
@@ -36,4 +36,4 @@ Although using the [dry-run](products-resource.md#dryrun) query parameter lets y
 
 A batch request may contain up to 300 method calls. If you maximize batch requests, you'll probably exceed the calls per minute and calls per day limits. For example, 40 QPS * 60 seconds * 300 methods = 720,000 methods per minute.
 
-If you want to maximize QPS, you need to limit the number of batch method calls to 25. And if you want to maximize batch method calls, you need to limit QPS to three.
+Whether you maximize for method calls or QPS, be mindful of how each option affects the other and make adjustments accordingly.
