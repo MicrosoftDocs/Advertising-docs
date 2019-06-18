@@ -11,6 +11,13 @@ ms.author: "scottwhi"
 This topic describes recent changes made to Version 9.1 of the Content API.
 
 
+## June 14, 2019
+
+The following is a documentation-only change.
+
+- Added the [Request and method call limits](request-method-limits.md) topic, which suggests limits for HTTP requests and batch method calls.
+
+
 ## April 30, 2019
 
 The following is a documentation-only change.
