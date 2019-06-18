@@ -8,6 +8,8 @@
   href: test-code-sandbox.md
 - name: API best practices
   href: api-best-practices.md
+- name: Request and method call limits
+  href: request-method-limits.md
 - name: Can I use the API and FTP?
   href: can-use-api-ftp.md
 - name: Managing your products
