@@ -13,6 +13,11 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## June 13, 2019
+
+- Added conversion tracking metrics to hotel reporting. [Read more](../hotel-service/reporting.md#conversionmetrics).
+
+
 ## April 30, 2019
 
 The following is a documentation-only change.
