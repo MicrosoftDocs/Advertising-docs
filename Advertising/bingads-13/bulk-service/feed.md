@@ -9,13 +9,10 @@ dev_langs:
   - csharp
 ---
 # Feed Record - Bulk
-> [!NOTE]
-> The Bulk API for feeds and documentation are subject to change.
-
 Defines a feed that can be downloaded and uploaded in a bulk file.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
+> [!TIP]
+> For an overview of how to use feeds and feed items, see the [Ad Customizer Feeds](../guides/ad-customizer-feeds.md) and [Page Feeds](../guides/page-feeds.md) technical guides.    
 
 If you are creating new parent and child entities in the same Bulk file, the dependent records must be included after dependencies according to hierarchy:  
 
@@ -39,7 +36,7 @@ Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,
 Feed Item,Active,-210,-21,,,,21;210,,2019/06/22 00:00:00,2019/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2019/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkFeed* object (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkFeed* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -199,7 +196,7 @@ There are four different `feedAttributeType` data types you can set for ad custo
 |String|Product names, product categories, descriptions|Any letters, numbers, or symbols|
 |Int64|Inventory count, number of colors available|Any whole number|
 |Price|Product cost, sale discount|Any number (including decimals) and valid currency characters|
-|DateTime|Event start time, last day of a sale|yyyy/mm/dd hh:mm:ss<br/>To default to midnight at the beginning of the day, you can omit the hh:mm:ss part.|
+|DateTime|Event start time, last day of a sale|yyyy/mm/dd HH:mm:ss<br/>To default to midnight at the beginning of the day, you can omit the HH:mm:ss part.|
 
 For example we can define the custom attributes of an ad customizer feed.   
 

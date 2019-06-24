@@ -27,6 +27,9 @@ Defines the predefined time and date range values for a report request.
     <xs:enumeration value="LastSixMonths" />
     <xs:enumeration value="ThisYear" />
     <xs:enumeration value="LastYear" />
+    <xs:enumeration value="ThisWeekStartingMonday" />
+    <xs:enumeration value="LastWeekStartingMonday" />
+    <xs:enumeration value="LastFourWeeksStartingMonday" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -37,15 +40,18 @@ Defines the predefined time and date range values for a report request.
 |-----------|---------------|
 |<a name="last14days"></a>Last14Days|A cumulative report for the previous 14 days.|
 |<a name="last30days"></a>Last30Days|A cumulative report for the previous 30 days.|
-|<a name="lastfourweeks"></a>LastFourWeeks|A cumulative report for the four calendar weeks prior to today.<br/><br/>A calendar week runs from Sunday to Saturday.|
+|<a name="lastfourweeks"></a>LastFourWeeks|A cumulative report for the previous four weeks that run from Sunday through Saturday.|
+|<a name="lastfourweeksstartingmonday"></a>LastFourWeeksStartingMonday|A cumulative report for the previous four weeks that run from Monday through Sunday.|
 |<a name="lastmonth"></a>LastMonth|A cumulative report for the previous calendar month.|
 |<a name="lastsevendays"></a>LastSevenDays|A cumulative report for the previous seven days.|
 |<a name="lastsixmonths"></a>LastSixMonths|A cumulative report for the previous six calendar months.|
 |<a name="lastthreemonths"></a>LastThreeMonths|A cumulative report for the previous three calendar months.|
-|<a name="lastweek"></a>LastWeek|A cumulative report for the previous calendar week.<br/><br/>A calendar week runs from Sunday to Saturday.|
+|<a name="lastweek"></a>LastWeek|A cumulative report for the previous week that runs from Sunday through Saturday.|
+|<a name="lastweekstartingmonday"></a>LastWeekStartingMonday|A cumulative report for the previous week that runs from Monday through Sunday.|
 |<a name="lastyear"></a>LastYear|A cumulative report for the previous calendar year.|
 |<a name="thismonth"></a>ThisMonth|A cumulative report for the current calendar month.|
-|<a name="thisweek"></a>ThisWeek|A cumulative report for the current calendar week.|
+|<a name="thisweek"></a>ThisWeek|A cumulative report for the current week that runs from Sunday through Saturday.|
+|<a name="thisweekstartingmonday"></a>ThisWeekStartingMonday|A cumulative report for the current week that runs from Monday through Sunday.|
 |<a name="thisyear"></a>ThisYear|A cumulative report for the current calendar year.|
 |<a name="today"></a>Today|A cumulative report for the current day.|
 |<a name="yesterday"></a>Yesterday|A cumulative report for the previous day.|
