@@ -238,67 +238,48 @@ ReportingOperationCouldNotBeCompletedException     |com.microsoft.bingads.V12.re
 ReportingOperationInProgressException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="java-troubleshooting"></a>Java SDK Troubleshooting
-Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify in any case, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
-#### <a name="java-troubleshooting-httptransportpipe"></a>HttpTransportPipe
-To output the HTTP trace you can set the HttpTransportPipe *dump* property to "true" (string) as follows:
-```java
-System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
-```
+#### <a name="java-troubleshooting-jaxws-cxf"></a>JAX WS and Apache CXF Options
+You can use [JAX WS](https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt) and [Apache CXF](https://mvnrepository.com/artifact/org.apache.cxf) to capture the SOAP envelopes, for example if you are running a Maven application.
 
-#### <a name="java-troubleshooting-fiddler"></a>Fiddler Options
-You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
-
-1. After installing Fiddler, export the Fiddler certificate from the root certificate store. Click **Tools** &gt; **Fiddler Options**. Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. Click **OK**, and then follow the prompts to export the Fiddler certificate.
-
-2. Use the following command to import the certificate into the cacert store used by Java, for example execute from PowerShell as Administrator.
-
-    ```powershell
-    PS C:\Program Files\Java\jre1.8.0_201\bin> .\keytool.exe -importcert -v -alias "Fiddler cert" -trustcacerts -keystore "C:\Program Files\Java\jre1.8.0_201\lib\security\cacerts" -storepass changeit -file <PathToFiddlerRootGoesHere>\FiddlerRoot.cer
-    ```
-
-3. Add the following lines to your Java application.
-
-    ```java
-    System.setProperty("https.proxyHost", "127.0.0.1");
-    System.setProperty("https.proxyPort", "8888");
-    ```
-    
-#### <a name="java-troubleshooting-spring-cxf"></a>Spring Framework and Apache CXF Options
-You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application.
-
-1. Set up the development environment as described in [Get Started Using Java with Bing Ads API](get-started-java.md). 
-   
-2. Edit pom.xml to include the *org.springframework* dependency. 
+1. Edit pom.xml to include the following dependencies. 
     ```xml
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>4.2.6.RELEASE</version>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-rt</artifactId>
+        <version>2.3.2</version>
+        <type>pom</type>
     </dependency>
+    <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-ri</artifactId>
+        <version>2.3.2</version>
+        <type>pom</type>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>rt</artifactId>
+        <version>2.3.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-frontend-jaxws</artifactId>
+        <version>3.3.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-transports-http</artifactId>
+        <version>3.3.2</version>
+    </dependency>  
+
     ```
    
-2. Add cxf.xml to your project, and add the following xml.
-    ```xml
-    <beans xmlns="http://www.springframework.org/schema/beans"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:cxf="http://cxf.apache.org/core"
-        xsi:schemaLocation="
-        http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-      <cxf:bus>
-        <cxf:features>
-          <cxf:logging/>
-        </cxf:features>
-      </cxf:bus> 
-    </beans>
-    ```
-    
-3. Add the following lines to your Java application.
+1. Add the following lines to your Java application.
 
     ```java
-    System.setProperty("https.proxyHost", "127.0.0.1");
-    System.setProperty("https.proxyPort", "8888");
+    System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
+    System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
     ```
 
 ## <a name="php-exceptions"><a/>PHP Exceptions

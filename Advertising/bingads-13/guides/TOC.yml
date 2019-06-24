@@ -128,12 +128,13 @@
     items:
     - name: Overview
       href: ./authentication-oauth.md
+      displayName: authentication oauth access refresh token scope
     - name: Live Connect
       href: ./authentication-oauth-live-connect.md
-      displayName: access refresh token scope
+      displayName: authentication oauth access refresh token scope
     - name: Microsoft identity platform for developers
       href: ./authentication-oauth-identity-platform.md
-      displayName: access refresh token scope
+      displayName: authentication oauth access refresh token scope
   - name: Services Protocol
     href: ./services-protocol.md
     displayName: wsdl

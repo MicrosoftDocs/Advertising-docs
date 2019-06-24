@@ -21,6 +21,7 @@ Defines the aggregation values that you can use for a report.
     <xs:enumeration value="Yearly" />
     <xs:enumeration value="HourOfDay" />
     <xs:enumeration value="DayOfWeek" />
+    <xs:enumeration value="WeeklyStartingMonday" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -35,7 +36,8 @@ Defines the aggregation values that you can use for a report.
 |<a name="hourofday"></a>HourOfDay|Each row of the report identifies the hour of the day when the transaction occurred. The report data will be aggregated by each of the 24 hours across all days. The possible values are *0* - *23*. If the report time spans multiple days, then the performance data across all days for a given hour will be aggregated in one row. For example if *Campaign A* has 5 impressions during hour *7* on each of the 3 days included in the report time range, then the report will include one row with impressions for *HourOfDay* totaling 15.|
 |<a name="monthly"></a>Monthly|Each row of the report identifies the month when the transaction occurred. The report data will be aggregated by each month. The time period that contains the first day of the month will be formatted as *yyyy-mm-dd*.|
 |<a name="summary"></a>Summary|The report data will be aggregated by the entire specified report time. The report will not include a time period column.|
-|<a name="weekly"></a>Weekly|Each row of the report identifies the week when the transaction occurred. The report data will be aggregated by each week. The time period that contains the date of the Sunday for each week will be formatted as *yyyy-mm-dd*.|
+|<a name="weekly"></a>Weekly|Each row of the report identifies the week when the transaction occurred. The report data will be aggregated by each week running from Sunday through Saturday.<br/><br/>The time period that contains the date of the Sunday for each week will be formatted as *yyyy-mm-dd*.|
+|<a name="weeklystartingmonday"></a>WeeklyStartingMonday|Each row of the report identifies the week when the transaction occurred. The report data will be aggregated by each week running from Monday through Sunday.<br/><br/>The time period that contains the date of the Monday for each week will be formatted as *yyyy-mm-dd*.|
 |<a name="yearly"></a>Yearly|Each row of the report identifies the year when the transaction occurred. The report data will be aggregated by each year. The time period that contains the year will be formatted as *yyyy*.|
 
 ## Requirements

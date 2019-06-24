@@ -12,9 +12,27 @@ See below for information about changes to Bing Ads API Version 12 by month.
 ## <a name="june2019"></a>June 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [Bing Ads API SDK Updates](#sdk-june2019)  
+- [Final Url Suffix and Custom Parameters Update](#finalurlsuffix-customparameters-june2019)  
+- [Monday to Sunday Report Aggregation](#monday-sunday-june2019)  
 - [Change History Report by Tool](#searchcampaignchangehistoryreportcolumn-june2019)  
 
-## <a name="searchcampaignchangehistoryreportcolumn-june2019"></a>Change History Report by Tool
+### <a name="sdk-june2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.3) SDK version 12.13.3. 
+
+### <a name="finalurlsuffix-customparameters-june2019"></a>Final Url Suffix and Custom Parameters Update
+Final URL suffix and custom parameter updates are now generally available at the account, campaign, ad group, and keyword level for all customers. Similar updates for ads, ad extensions, and ad group criterions are still only available for pilot customers.  
+- Final URL suffix is now available at the account, campaign, ad group, and keyword level for all customers. Final URL suffix is available for ads, ad extensions, and ad group criterions for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year the Final URL suffix will be available for ads, ad extensions, and ad group criterions for all customers.  
+- The custom parameter limit for all customers has been increased from 3 to 8 for campaigns, ad groups, and keywords. Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565) for ads, ad extensions, and ad group criterions, Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit for ads, ad extensions, and ad group criterions will be increased from 3 to 8 for all customers.  
+
+### <a name="monday-sunday-june2019"></a>Monday to Sunday Report Aggregation
+The Reporting API is updated to support Monday through Sunday weekly aggregation. Previously you could only aggregate weekly from Sunday through Saturday. 
+
+The [WeeklyStartingMonday](../reporting-service/reportaggregation.md#weeklystartingmonday) value is added to the [ReportAggregation](../reporting-service/reportaggregation.md) value set.  
+
+The [ThisWeekStartingMonday](../reporting-service/reporttimeperiod.md#thisweekstartingmonday), [LastWeekStartingMonday](../reporting-service/reporttimeperiod.md#lastweekstartingmonday), and [LastFourWeeksStartingMonday](../reporting-service/reporttimeperiod.md#lastfourweeksstartingmonday) values are added to the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) value set.  
+
+### <a name="searchcampaignchangehistoryreportcolumn-june2019"></a>Change History Report by Tool
 The [Tool](../reporting-service/searchcampaignchangehistoryreportcolumn.md#tool) column is now available with the change history report. You can determine how changes were made to account, campaign or ad attributes e.g., whether via the Web client, Editor, Bulk upload, or Campaign Management API. 
 
 ## <a name="may2019"></a>May 2019
@@ -23,7 +41,7 @@ See below for Bing Ads API updates during this calendar month.
 - [Dynamic Search Ads Text Part 2](#textpart2dsa-may2019)  
 - [Bing Ads API SDK Updates](#sdk-may2019)  
 
-## <a name="textpart2dsa-may2019"></a>Dynamic Search Ads Text Part 2
+### <a name="textpart2dsa-may2019"></a>Dynamic Search Ads Text Part 2
 Dynamic Search Ads Text Part 2 is available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). Later this year it will be available in all customers. 
 
 The [TextPart2](../campaign-management-service/dynamicsearchad.md#textpart2) element is available in the [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md) Campaign Management object. The [Text Part 2](../bulk-service/dynamic-search-ad.md#textpart2) field is available in the [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md#textpart2) Bulk record. 
@@ -37,7 +55,7 @@ See below for Bing Ads API updates during this calendar month.
 - [New Production OAuth Endpoint](#oauth-april2019)  
 - [Bing Ads API SDK Updates](#sdk-april2019)  
 
-## <a name="oauth-april2019"></a>New Production OAuth Endpoint
+### <a name="oauth-april2019"></a>New Production OAuth Endpoint
 The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
 
 > [!IMPORTANT]

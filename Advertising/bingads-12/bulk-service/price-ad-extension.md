@@ -11,9 +11,6 @@ dev_langs:
 # Price Ad Extension Record - Bulk
 Defines an ad extension that includes between 3 and 8 price table rows.
 
-> [!NOTE]
-> Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.
-
 You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions. Use the [Account Price Ad Extension](account-price-ad-extension.md), [Ad Group Price Ad Extension](ad-group-price-ad-extension.md), and [Campaign Price Ad Extension](campaign-price-ad-extension.md) records to manage price ad extension associations.
 
 You can download all *Price Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *PriceAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
