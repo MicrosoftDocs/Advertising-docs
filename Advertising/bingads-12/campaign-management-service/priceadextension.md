@@ -9,9 +9,6 @@ description: Defines an ad extension that includes between 3 and 8 price table r
 # PriceAdExtension Data Object - Campaign Management
 Defines an ad extension that includes between 3 and 8 price table rows.
 
-> [!NOTE]
-> Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.
-
 You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions.
 
 ## Syntax

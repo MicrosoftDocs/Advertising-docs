@@ -7,13 +7,10 @@ ms.author: "eur"
 description: Add page feeds to fine-tune ad copy for Dynamic Search Ads auto-targets. 
 ---
 # Page Feeds
-> [!NOTE]
-> The Bulk API for feeds and documentation are subject to change.  
+Page feeds allow you to easily upload all the relevant URLs for your dynamic search ads campaigns. This ensures maximum website coverage and enables the labeling and targeting of specific URLs via custom labels.  
 
 > [!NOTE]
 > This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States. 
-
-Page feeds allow you to easily upload all the relevant URLs for your dynamic search ads campaigns. This ensures maximum website coverage and enables the labeling and targeting of specific URLs via custom labels.
 
 Why use page feeds?
 - Improve page freshness: Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren't already in the Bing index of your website, they'll be added. This allows your dynamic search ad campaigns to display the most current version of your website.  
@@ -22,7 +19,7 @@ Why use page feeds?
 You can have 100 feeds per account (this maximum number includes all feed types) and the maximum number of feed items (rows) per account is 5 million.  
 
 > [!NOTE]
-> Feeds and feed items can only be managed using the Bulk service. You can manage ads and auto targets using either the Bulk or Campaign Management service. 
+> Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can link page feed identifiers with dynamic search ads campaigns using either the Bulk or Campaign Management service. You can also manage ads and auto targets using either the Bulk or Campaign Management service. 
 
 ## <a name="upload-pagefeed"></a>Upload page feeds
 
@@ -60,9 +57,6 @@ Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,
 
 Page feeds can be associated at the campaign level, which also applies to all the ad groups within the campaign.
 
-> [!NOTE]
-> Currently you can only associate page feed IDs with campaigns via the Microsoft Advertising web application. Support is coming soon via the Bulk API and Campaign Management API.  
-
 You can optionally set each campaign's page feed targeting source via the Bulk API [Source](../bulk-service/campaign.md#source) or Campaign Management API [Source](../campaign-management-service/dynamicsearchadssetting.md#source). You can choose one of the following options:
 
 |Value|Description|
@@ -70,6 +64,8 @@ You can optionally set each campaign's page feed targeting source via the Bulk A
 |AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.|
 |All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
+
+If the source is either AdvertiserSuppliedUrls or All, then Microsoft Advertising uses the page feed identifiers that are linked to the campaign via the Bulk API [Page Feed Ids](../bulk-service/campaign.md#pagefeedids) or Campaign Management API [PageFeedIds](../campaign-management-service/dynamicsearchadssetting.md#pagefeedids).
 
 ## <a name="customlabel-autotarget"></a>Create custom label auto targets
 

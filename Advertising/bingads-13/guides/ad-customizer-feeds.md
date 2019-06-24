@@ -7,13 +7,10 @@ ms.author: "eur"
 description: Add feeds so your ads update dynamically under specific circumstances. 
 ---
 # Ad Customizer Feeds
-> [!NOTE]
-> The Bulk API for feeds and documentation are subject to change.  
+With ad customizers, your ads can dynamically update themselves to appeal to specific customers. All it takes is uploading an ad customizer feed that tells us what information you want to insert into your ads under which circumstances.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
-
-With ad customizers, your ads can dynamically update themselves to appeal to specific customers. All it takes is uploading an ad customizer feed that tells us what information you want to insert into your ads under which circumstances.
 
 Why use ad customizer feeds?
 - Save time. Transform a single ad into hundreds of variations without having to manually update the ad.  
@@ -23,7 +20,7 @@ Why use ad customizer feeds?
 You can have 100 feeds per account (this maximum number includes all feed types) and the maximum number of feed items (rows) per account is 5 million.  
 
 > [!NOTE]
-> Feeds and feed items can only be managed using the Bulk service. You can manage ads and audiences e.g., remarketing lists using either the Bulk or Campaign Management service. 
+> Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can manage ads and audiences e.g., remarketing lists using either the Bulk or Campaign Management service. 
 
 ## <a name="upload-adcustomizerfeed"></a>Upload ad customizer feeds
 

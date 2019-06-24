@@ -24,8 +24,6 @@ The [Microsoft identity platform endpoint for developers](https://docs.microsoft
 
 You can complete these steps to get an OAuth access token and act on behalf of a Microsoft Advertising user. For your convenience this guide borrows from the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation, in particular the [Request user consent](#request-userconsent), [Request an access token](#request-accesstoken), and [Refresh the access token](#refresh-accesstoken) sections.     
 
-1. [Provision](#provision-tenant) the Tenant for Bing Ads API.
-
 1. [Register](#registerapplication) your application.
 
 1. [Request user consent](#request-userconsent) for your application to manage their Microsoft Advertising accounts.  
@@ -35,40 +33,6 @@ You can complete these steps to get an OAuth access token and act on behalf of a
 1. [Use the access token](#use-accesstoken) in calls to the Bing Ads API.  
 
 1. [Refresh the access token](#refresh-accesstoken)   
-
-## <a name="provision-tenant"></a>Provision the Tenant for Bing Ads API
-Service provisioning is only applicable if your application will support work or school accounts. 
-
-> [!TIP]
-> Skip this step if you are only authenticating personal Microsoft accounts e.g., migrating existing users away from the [Live Connect](authentication-oauth-live-connect.md) endpoint. 
-
-Eventually all Microsoft Advertising work or school accounts will be provisioned for the Microsoft identity platform endpoint automatically, and this manual provisioning step will not be required for anyone. 
-
-The following steps must be completed for each tenant that has users who you want to authenticate. If multiple users exist in the same tenant you only need to run this once per tenant. 
-
-> [!NOTE]
-> You are not required to provision the tenant that contains your developer credentials, unless you need to authenticate work or school accounts within your own tenant. 
-
-1. Ensure that you have the `AzureAD` Powershell Module installed. For more details see the [Azure Active Directory PowerShell 2.0](https://docs.microsoft.com/en-us/powershell/module/Azuread/?view=azureadps-2.0) documentation.  
-   ```powershell
-   Install-Module AzureAD
-   ```
-    
-1. Connect to the Microsoft Advertising user's tenant. For instructions on getting your tenant identifier see [Using Azure Portal - Get tenant ID](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#get-tenant-id).  
-   ```powershell
-   Connect-AzureAD -TenantId UserTenantIdGoesHere
-   ```
-
-1. Add the service principal for Bing Ads API.  
-   ```powershell
-   New-AzureADServicePrincipal -AppId d42ffc93-c136-491d-b4fd-6f18168c68fd
-   ```
-
-1. To check that the provisioning worked, run:
-   ```powershell
-   Get-AzureADServicePrincipal
-   ```
-   You should see `d42ffc93-c136-491d-b4fd-6f18168c68fd` in the returned list.
 
 ## <a name="registerapplication"></a>Register Your Application
 Before your application can authenticate Microsoft Advertising users, you must register your application and get the corresponding client ID and client secret.  

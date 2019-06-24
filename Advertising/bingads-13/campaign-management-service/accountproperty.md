@@ -45,9 +45,6 @@ If the [Name](#name) element is set to *FinalUrlSuffix*, then the [Value](#value
 
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
 
-> [!NOTE]
-> This feature is only available for customers in the Final URL Suffix Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). If you are not in the pilot and attempt to set this property an error will be returned. During calendar year 2019 this feature will be enabled for all customers.
-
 To delete the account's Final URL Suffix set the [Name](#name) to *FinalUrlSuffix* and the *Value* to *""* (empty string).
 
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled

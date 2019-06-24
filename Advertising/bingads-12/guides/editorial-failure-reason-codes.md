@@ -224,6 +224,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |321|Policy Violation: Advertising for certain content, products, and services is disallowed if the legality or regulatory status is unclear.|
 |322|Policy Violation: Advertising for certain content, products, and services is disallowed if the legality or regulatory status is unclear.|
 |323|Please ensure you comply with all applicable licensing requirements for cosmetic surgery.|
+|349|Landing page content not relevant.|
 |350|Policy Violation: Your ad or website contains content that is not allowed on Microsoft Advertising.|
 |351|Editorial Guidelines: Your ad or keyword contains symbols or special characters which are disallowed.|
 |352|Policy Violation: Microsoft Advertising requires advertisers who promote financial products and services to ensure they comply with all applicable local laws and regulatory requirements.|
@@ -334,6 +335,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |8328|Your ad might contain mature content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=534287) on Microsoft Advertising. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
 |8346|Your ad might contain download content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=2028852) in Audience Ads. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
 |8358|Your ad might contain background check content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=2028852) in Audience Ads. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
+|8370|Your ad might contain data reselling content which is [not allowed](https://go.microsoft.com/fwlink?LinkId=534502) on Microsoft Advertising. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we’ll review the content again.|
 |8388|Your ad might contain dietary supplement content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=2028852) in Audience Ads. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
 |8412|Your ad might contain penny stock content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=2028852) in Audience Ads. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
 |8430|Your ad might contain psychic or magic content which is [not allowed](https://go.microsoft.com/fwlink/?linkid=2028852) in Audience Ads. If you feel your content falls within Microsoft Advertising policies, please submit an appeal and we'll review the content again.|
