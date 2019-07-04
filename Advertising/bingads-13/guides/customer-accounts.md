@@ -59,6 +59,7 @@ Resellers can create an account for a managed customer by calling the [SignupCus
 To get a list of the accounts that you own or manage, call the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) operation. The operation returns an array of objects that contain the name, identifier, and status of each account. To get the details of each account in the list, such as the account's financial status, pass the account identifier to the [GetAccount](../customer-management-service/getaccount.md) operation. You can also search for accounts that match a specified filter criteria using the [SearchAccounts](../customer-management-service/searchaccounts.md) operation.
 
 For code examples that show how to search for accounts that can be managed by the current authenticated user, see [Search Accounts by User Code Example](code-example-search-user-accounts.md).
+
 ### Updating Accounts
 Only a super admin or aggregator user can update accounts. Because the update operation requires the time stamp of the previous write operation that was performed against the account, you must first call the [GetAccount](../customer-management-service/getaccount.md) operation. The [GetAccount](../customer-management-service/getaccount.md) operation returns the account's data, which includes the time stamp.
 

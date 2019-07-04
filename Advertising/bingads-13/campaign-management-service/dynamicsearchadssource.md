@@ -24,7 +24,7 @@ Defines the possible targeting source values for dynamic search ads campaigns.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="advertisersuppliedurls"></a>AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.|
+|<a name="advertisersuppliedurls"></a>AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. Please note that if you choose this option and [page feeds IDs](dynamicsearchadssetting.md#pagefeedids) are not set, then the campaign will not serve dynamic search ads. We recommend using this option for highly specific campaigns with tailored ad copy.|
 |<a name="all"></a>All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |<a name="systemindex"></a>SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 
