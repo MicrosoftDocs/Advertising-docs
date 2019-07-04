@@ -18,7 +18,7 @@ Any Microsoft Advertising user with a developer token can begin using the Bing A
 If you just want to get something working right away, follow these steps to get your Microsoft Advertising user information. You can follow the links below for more details and customization options. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md). 
 
 ### <a name="quick-start-production"></a>Production Quick Start
-To authenticate in the production environment, you can follow either the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) guides. We'll use the Microsoft identity platform endpoint since the Live Connnect endpoint is no longer the recommended approach for Microsoft Advertising users.  
+To authenticate in the production environment, you can follow either the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) guides. We'll use the Microsoft identity platform endpoint since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users.  
 
 1. Sign up for a [Microsoft Advertising](https://ads.microsoft.com/) production account and with the same credentials get a [developer token](#get-developer-token). 
 

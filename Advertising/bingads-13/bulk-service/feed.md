@@ -50,23 +50,23 @@ var bulkAdCustomizerFeed = new BulkFeed
 	// 'Custom Attributes' column header in the Bulk file
 	CustomAttributes = new[]
 	{
-		// Each FeedCustomAttribute is represented as a JSON list item in the Bulk file.
-		new FeedCustomAttribute
+		// Each FeedCustomAttributeContract is represented as a JSON list item in the Bulk file.
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "DateTime",
 			Name = "DateTimeName"
 		},
-		new FeedCustomAttribute
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "Int64",
 			Name = "Int64Name"
 		},
-		new FeedCustomAttribute
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "Price",
 			Name = "PriceName"
 		},
-		new FeedCustomAttribute
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "String",
 			Name = "StringName",
@@ -97,13 +97,13 @@ var bulkPageFeed = new BulkFeed
 	// 'Custom Attributes' column header in the Bulk file
 	CustomAttributes = new []
 	{
-		// Each FeedCustomAttribute is represented as a JSON list item in the Bulk file.
-		new FeedCustomAttribute
+		// Each FeedCustomAttributeContract is represented as a JSON list item in the Bulk file.
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "Url",
 			Name = "Page Url"
 		},
-		new FeedCustomAttribute
+		new FeedCustomAttributeContract
 		{
 			FeedAttributeType = "StringList",
 			Name = "Custom Label"

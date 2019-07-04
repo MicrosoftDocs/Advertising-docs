@@ -14,6 +14,7 @@ Defines an in-market audience that can be downloaded in a bulk file.
 > [!NOTE]
 > Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions. 
 > Bing Ads API will always return all currently active in-market audiences. The service does not return deleted in-market audiences, or any delta download to see what changed. 
+> The in-market audiences returned via Bing Ads API is a union of all available in-market audiences across all markets e.g., AU, CA, DE, FR, UK, and US. The [Audience Network Size](#audiencenetworksize) and [Audience Search Size](#audiencesearchsize) are a sum of lists sizes across all supported markets for a given in-market audience in the corresponding network. The Bing Ads API does not provide details of list sizes per market. For example the "Advertising and Marketing" in-market audience size in the search network might be returned as 17070879 (17.1M) via the Bing Ads API. The breakdown per market shown in the Microsoft Advertising web application might be: 2.88M in US; 474K in AU; 13.7M in UK.  
 > You should not take any dependencies on the sandbox in-market audiences. Some in-market audiences are available in sandbox, but not in production. The in-market audience property values can also differ between sandbox and production e.g., the audience name and size.  
 
 > [!NOTE]
