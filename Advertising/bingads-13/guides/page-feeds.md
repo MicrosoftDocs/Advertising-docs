@@ -21,6 +21,9 @@ You can have 100 feeds per account (this maximum number includes all feed types)
 > [!NOTE]
 > Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can link page feed identifiers with dynamic search ads campaigns using either the Bulk or Campaign Management service. You can also manage ads and auto targets using either the Bulk or Campaign Management service. 
 
+> [!TIP]
+> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkDynamicSearchAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/master/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkDynamicSearchAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/master/examples/v13/bulk_dynamic_search_ads.py) repositories on GitHub i.e., the Bulk Dynamic Search Ads example shows how to create and use a page feed. 
+
 ## <a name="upload-pagefeed"></a>Upload page feeds
 
 You can upload page feeds and feed items with the Bulk service. 
@@ -61,7 +64,7 @@ You can optionally set each campaign's page feed targeting source via the Bulk A
 
 |Value|Description|
 |-----------|---------------|
-|AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.|
+|AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. Please note that if you choose this option and page feeds IDs are not set, then the campaign will not serve dynamic search ads. We recommend using this option for highly specific campaigns with tailored ad copy.|
 |All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 

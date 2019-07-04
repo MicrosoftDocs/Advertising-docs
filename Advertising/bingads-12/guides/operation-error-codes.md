@@ -7890,7 +7890,7 @@ The end date cannot be earlier than today.
 CampaignServiceInvalidScheduleDayTimeRange
 
 **Description**
-The end date cannot be earlier than the start date.
+The schedule day and time is invalid. For example, the end date cannot be earlier than the start date.
 
 ***
 

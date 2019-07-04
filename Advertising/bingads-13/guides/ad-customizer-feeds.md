@@ -22,6 +22,9 @@ You can have 100 feeds per account (this maximum number includes all feed types)
 > [!NOTE]
 > Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can manage ads and audiences e.g., remarketing lists using either the Bulk or Campaign Management service. 
 
+> [!TIP]
+> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkExpandedTextAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/master/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkExpandedTextAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/master/examples/v13/bulk_expanded_text_ads.py) repositories on GitHub i.e., the Bulk Expanded Text Ads example shows how to create and use an ad customizer feed. 
+
 ## <a name="upload-adcustomizerfeed"></a>Upload ad customizer feeds
 
 You can upload ad customizer feeds and feed items with the Bulk service. 
@@ -76,7 +79,7 @@ Now let's say you have a remarketing list of customers who looked at a specific 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Keyword,Match Type,Name,Audience Id,Feed Name,Custom Attributes,Title Part 1,Title Part 2,Text,Text Part 2,Final Url,Path 1
 Format Version,,,,,,,6,,,,,,,,,
-Feed,Active,-21,,AdCustomizerFeed,,,,,MyAdCustomizerFeedName,"[{""name"":""Type"",""feedAttributeType"":""String""},{""name"":""Product"",""feedAttributeType"":""String""},{""name"":""Discount"",""feedAttributeType"":""String"",{""name"":""Colors"",""feedAttributeType"":""Int64""}]",,,,,,
+Feed,Active,-21,,AdCustomizerFeed,,,,,MyAdCustomizerFeedName,"[{""name"":""Type"",""feedAttributeType"":""String""},{""name"":""Product"",""feedAttributeType"":""String""},{""name"":""Discount"",""feedAttributeType"":""String""},{""name"":""Colors"",""feedAttributeType"":""Int64""}]",,,,,,
 Feed Item,Active,,-21,,lightweight sunglasses,Broad,,12345678,,"{""Type"":""Polarized"",""Product"":""Contoso 800"",""Discount"":""25% off"",""Colors"":12}",,,,,,
 Expanded Text Ad,Active,,AdGroupIdGoesHere,,,,,,,,{=Sunglasses.Type} sunglasses on sale,{=Sunglasses.Product} series,{=Sunglasses.Discount} if you order today!,Lenses come in {=Sunglasses.Colors} different colors.,https://www.contoso.com/{=Sunglasses.Type},OnSale
 ```
