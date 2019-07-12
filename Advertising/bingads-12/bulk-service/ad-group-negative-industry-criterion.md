@@ -158,7 +158,7 @@ To download profile display names in other languages you can call the [GetProfil
 ## <a name="profileid"></a>Profile Id
 The identifier of the audience profile that you want to exclude. 
 
-To download profile identifiers call the [GetProfileDataFileUrl](../campaign-management-service/getprofiledatafileurl.md) operation via the Campaign Management API.
+For details about how to get profile identifiers, see [Profile Data](../guides/profile-data-files.md).  
 
 **Add:** Required  
 **Update:** Required  

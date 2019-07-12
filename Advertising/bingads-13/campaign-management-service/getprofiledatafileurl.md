@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a temporary URL that you can use to download company name, industry, or job function profile data.
+description: Gets a temporary URL that you can use to download industry or job function profile data.
 dev_langs: 
   - csharp
   - java
@@ -12,10 +12,12 @@ dev_langs:
   - python
 ---
 # GetProfileDataFileUrl Service Operation - Campaign Management
-Gets a temporary URL that you can use to download company name, industry, or job function profile data. 
+Gets a temporary URL that you can use to download industry or job function profile data. 
+
+The downloaded CSV file includes profile identifiers that you can use with [ProfileCriterion](profilecriterion.md#profileid). 
 
 > [!NOTE]
-> This operation is reserved for internal use.
+> You can use the [SearchCompanies](searchcompanies.md) operation to search for profile data by company name. 
 
 ## <a name="request"></a>Request Elements
 The *GetProfileDataFileUrlRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -28,7 +30,7 @@ The *GetProfileDataFileUrlRequest* object defines the [body](#request-body) and 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="languagelocale"></a>LanguageLocale|The language and locale of the profile display names.<br/><br/>The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish). Please note if LinkedIn does not provide the localized profile name, then it will default to the universal name (usually defined in English).|**string**|
-|<a name="profiletype"></a>ProfileType|Determines whether you want company name, industry, or job function profile data.|[ProfileType](profiletype.md)|
+|<a name="profiletype"></a>ProfileType|Determines whether you want industry or job function profile data.<br/><br/>The [CompanyName](profiletype.md#companyname) profile type is not supported for this service operation. You can use the [SearchCompanies](searchcompanies.md) operation to search for profile data by company name.|[ProfileType](profiletype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

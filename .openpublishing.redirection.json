@@ -41,11 +41,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "BingAds/guides/profile-data-files.md",
-            "redirect_url": "show-ads-target-audience",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "BingAds/guides/code-example-profile-data.md",
             "redirect_url": "code-example-profile-criteria",
             "redirect_document_id": false
