@@ -28,7 +28,7 @@ If you do not include the location search parameter when calling [GetKeywordIdea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="locations"></a>Locations|The location criterion list for the returned keyword ideas.|[LocationCriterion](locationcriterion.md) array|
+|<a name="locations"></a>Locations|The location criterion list for the returned keyword ideas.<br/><br/>You must include between 1 to 2,000 locations.|[LocationCriterion](locationcriterion.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v13](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v13/AdInsightService.svc)  

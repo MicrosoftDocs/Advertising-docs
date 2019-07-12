@@ -9,9 +9,6 @@ description: Add feeds so your ads update dynamically under specific circumstanc
 # Ad Customizer Feeds
 With ad customizers, your ads can dynamically update themselves to appeal to specific customers. All it takes is uploading an ad customizer feed that tells us what information you want to insert into your ads under which circumstances.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
-
 Why use ad customizer feeds?
 - Save time. Transform a single ad into hundreds of variations without having to manually update the ad.  
 - More relevant ads. Customize ads based on what customers are searching for, when they're searching for it, where they are, what device they're using, and more.  

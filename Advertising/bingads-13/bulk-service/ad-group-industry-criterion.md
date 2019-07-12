@@ -176,6 +176,8 @@ The display name of the audience profile in English.
 ## <a name="profileid"></a>Profile Id
 The identifier of the audience profile that you want to target with the corresponding *Bid Adjustment*. 
 
+For details about how to get profile identifiers, see [Profile Data](../guides/profile-data-files.md).  
+
 **Add:** Required  
 **Update:** Required  
 **Delete:** Required  

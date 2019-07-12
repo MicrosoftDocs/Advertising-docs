@@ -55,6 +55,7 @@ The Campaign Management service defines the following data objects.
 |[Campaign](campaign.md)|Defines a campaign.|
 |[CampaignCriterion](campaigncriterion.md)|Defines a criterion that you want applied to the specified campaign.|
 |[CampaignNegativeSites](campaignnegativesites.md)|Defines an object that contains the negative site URLs of a campaign.|
+|[Company](company.md)|Defines the profile data for a company.|
 |[ConversionGoal](conversiongoal.md)|Defines the base object of a conversion goal.|
 |[ConversionGoalRevenue](conversiongoalrevenue.md)|Defines properties for revenue that can be tracked by a conversion goal.|
 |[CoOpSetting](coopsetting.md)|Defines the ad group level settings for feed-based cooperative bidding campaigns.|

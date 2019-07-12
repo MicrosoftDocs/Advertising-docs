@@ -16,6 +16,7 @@ Get details about Bing Ads API service operations, geographical location codes, 
 |[Editorial Reason Codes](editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
 |[Geographical Location Codes](geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area (Nielsen DMA® in the United States), and city codes that you can target or exclude.|
 |[Operation Error Codes](operation-error-codes.md)|Lists the Bing Ads API error codes.|
+|[Profile Data](profile-data-files.md)|Learn how to get profile data e.g., identifiers that are required to target by audience profile.|
 |[Time Zones](time-zones.md)|Lists the possible time zone values.|
 |[Version 12 Services](services.md)|The web service reference documentation for Bing Ads API Version 12.|
 |[Web Service Addresses](web-service-addresses.md)|The web service addresses for Bing Ads API Version 12.|
