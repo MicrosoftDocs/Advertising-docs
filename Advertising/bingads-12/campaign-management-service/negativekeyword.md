@@ -37,9 +37,9 @@ For more information about managing negative keywords and negative keyword lists
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The unique Microsoft Advertising identifier of the negative keyword.<br/><br/>**Add:** Read-only|**long**|
-|<a name="matchtype"></a>MatchType|The type of match to compare the negative keyword and the user's search term.<br/><br/>The supported values for a negative keyword are Exact and Phrase.<br/><br/>**Add:** Required|[MatchType](matchtype.md)|
-|<a name="text"></a>Text|The negative keyword text. The text can contain a maximum of 100 characters.<br/><br/>**Add:** Required|**string**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier of the negative keyword.<br/><br/>**Add:** Read-only<br/>**Delete:** Required|**long**|
+|<a name="matchtype"></a>MatchType|The type of match to compare the negative keyword and the user's search term.<br/><br/>The supported values for a negative keyword are Exact and Phrase.<br/><br/>**Add:** Required<br/>**Delete:** Required|[MatchType](matchtype.md)|
+|<a name="text"></a>Text|The negative keyword text. The text can contain a maximum of 100 characters.<br/><br/>**Add:** Required<br/>**Delete:** Optional|**string**|
 
 The [NegativeKeyword](negativekeyword.md) object has [Inherited Elements](#inheritedelements).
 

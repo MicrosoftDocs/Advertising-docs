@@ -222,6 +222,8 @@
     href: ./geographical-location-codes.md
   - name: Operation Error Codes
     href: ./operation-error-codes.md
+  - name: Profile Data
+    href: ./profile-data-files.md
   - name: Time Zones
     href: ./time-zones.md
   - name: Version 12 Services
@@ -1089,6 +1091,8 @@
           href: ../campaign-management-service/getsharedentityassociationsbysharedentityids.md
         - name: GetUetTagsByIds
           href: ../campaign-management-service/getuettagsbyids.md
+        - name: SearchCompanies
+          href: ../campaign-management-service/searchcompanies.md
         - name: SetAccountProperties
           href: ../campaign-management-service/setaccountproperties.md
         - name: SetAdExtensionsAssociations
@@ -1221,6 +1225,8 @@
           href: ../campaign-management-service/campaigncriterion.md
         - name: CampaignNegativeSites
           href: ../campaign-management-service/campaignnegativesites.md
+        - name: Company
+          href: ../campaign-management-service/company.md
         - name: ConversionGoal
           href: ../campaign-management-service/conversiongoal.md
         - name: ConversionGoalRevenue

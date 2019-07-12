@@ -285,6 +285,17 @@ The Address Line3 property is invalid.
 ***
 
 **Numeric Code**
+207
+
+**Symbolic Error Code**
+ConcurrentRequestOverLimit
+
+**Description**
+You have already reached the maximum number of concurrent report requests. Please wait until the previous reports are completed and then try to submit a new request.
+
+***
+
+**Numeric Code**
 208
 
 **Symbolic Error Code**
@@ -503,6 +514,17 @@ CampaignServiceEntityIdInvalid
 
 **Description**
 The entity identifier is invalid.
+
+***
+
+**Numeric Code**
+518
+
+**Symbolic Error Code**
+SearchStringNotSufficient
+
+**Description**
+The search string is not sufficient. For example, the minimum length of the company name filter is 3 when calling the [SearchCompanies](../campaign-management-service/searchcompanies.md) operation. 
 
 ***
 
