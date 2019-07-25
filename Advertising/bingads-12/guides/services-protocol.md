@@ -60,9 +60,9 @@ At the customer level, the number of calls a customer can make to the customer d
 
 Should you exceed the service call limit, you will see the following error:
 
-- Numeric Error Code: *117*  
-- Symbolic Error Code: *CallRateExceeded*  
-- Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+- Numeric Error Code: 117  
+- Symbolic Error Code: CallRateExceeded  
+- Message: You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.  
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
@@ -86,11 +86,22 @@ At the customer level, the number of calls a customer can make to the customer d
 
 Should you hit the service call limit, you will see the following error:
 
-- Numeric Error Code: *117*  
-- Symbolic Error Code: *CallRateExceeded*  
-- Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+- Numeric Error Code: 117  
+- Symbolic Error Code: CallRateExceeded  
+- Message: You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.  
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
+
+### <a name="throttling-reporting"></a>Reporting API
+The Reporting service limits the number of requests that you can make to [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md). The details of the service limits are internal and subject to change.
+
+Should you hit the service call limit, you will see the following error:
+
+- Numeric Error Code: 207  
+- Symbolic Error Code: ConcurrentRequestOverLimit  
+- Message: You have already reached the maximum number of concurrent report requests. Please wait until the previous reports are completed and then try to submit a new request.  
+
+If you observe this error, please wait until the previous reports are completed and then try to submit a new request.  
 
 ## See Also
 [Bing Ads API Web Service Addresses](web-service-addresses.md)  

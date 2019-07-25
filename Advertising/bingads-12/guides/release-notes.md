@@ -9,6 +9,19 @@ description: Get information about changes to Bing Ads API Version 12 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 12 by month. 
 
+
+## <a name="july2019"></a>July 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Average Position in Reports](#averageposition-reporting-july2019)  
+- [Audience Association ID in Reports](#associationid-reporting-july2019)  
+
+### <a name="averageposition-reporting-july2019"></a>Average Position in Reports
+The AveragePosition column is added to the [ProfessionalDemographicsAudienceReportColumn](../reporting-service/professionaldemographicsaudiencereportcolumn.md) value set. 
+
+### <a name="associationid-reporting-july2019"></a>Audience Association ID in Reports
+The AssociationId column is added to the [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md) value set. 
+
 ## <a name="june2019"></a>June 2019
 See below for Bing Ads API updates during this calendar month. 
 

@@ -9,9 +9,6 @@ description: Defines an experiment where you split a campaign's budget and traff
 # Experiment Data Object - Campaign Management
 Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
-
 How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
 
 With Microsoft Advertising experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:

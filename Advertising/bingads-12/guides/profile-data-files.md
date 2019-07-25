@@ -17,7 +17,7 @@ You can use the [SearchCompanies](../campaign-management-service/searchcompanies
 > - The order of profile data is not guaranteed, so you should not take dependencies on any perceived column sort order or hierarchy.  
 > - As a best practice you should download the file instead of opening it directly through an application such as Microsoft Excel. If you view the profile data in a text editor, be sure to use UTF-8 encoding instead of ANSI, otherwise some characters will not be displayed accurately.
 
-### <a name="companyname"></a>Company Name Profile
+## <a name="companyname"></a>Company Name Profile
 You can use the [SearchCompanies](../campaign-management-service/searchcompanies.md) operation to search for profile data by company name. The operation requires a company name filter with a minimum of 3 characters, and returns a list of [Company](../campaign-management-service/company.md) objects. 
 
 ## <a name="industry"></a>Industry Profile

@@ -13820,6 +13820,688 @@ CampaignServiceAdGroupLanguageCannotBeRemovedUntilCampaignLanguagesAreProcessed
 The ad group language cannot be removed until campaign language updates have been processed. Please try again in 12 hours.
 
 ***
+
+**Numeric Code**
+5900
+
+**Symbolic Error Code**
+CustomerNotEligibleForDsaPageFeed
+
+**Description**
+Customer is not eligible for DSA page feed.
+
+***
+
+**Numeric Code**
+5901
+
+**Symbolic Error Code**
+CustomerNotEligibleForFeedService
+
+**Description**
+Customer is not eligible for feed service.
+
+***
+
+**Numeric Code**
+5902
+
+**Symbolic Error Code**
+DuplicateFeedAssociation
+
+**Description**
+Duplicate feed associations are not allowed.
+
+***
+
+**Numeric Code**
+5903
+
+**Symbolic Error Code**
+FeedAssociationDoesNotExist
+
+**Description**
+The feed association does not exist.
+
+***
+
+**Numeric Code**
+5904
+
+**Symbolic Error Code**
+InvalidFeedId
+
+**Description**
+The feed identifier is invalid.
+
+***
+
+**Numeric Code**
+5905
+
+**Symbolic Error Code**
+FeedAssociationLimitationReached
+
+**Description**
+The feed association count has reached limit.
+
+***
+
+**Numeric Code**
+5906
+
+**Symbolic Error Code**
+InvalidFeedCustomAttributesDefinitionText
+
+**Description**
+The definition text of feed attributes is invalid.
+
+***
+
+**Numeric Code**
+5907
+
+**Symbolic Error Code**
+FeedTypeNotSupportedForBulkUpload
+
+**Description**
+The feed type is not supported for bulk upload.
+
+***
+
+**Numeric Code**
+5909
+
+**Symbolic Error Code**
+DuplicateFeedId
+
+**Description**
+Duplicate Feed Id.
+
+***
+
+**Numeric Code**
+5911
+
+**Symbolic Error Code**
+InvalidFeedAttribute
+
+**Description**
+Invalid Feed Attribute.
+
+***
+
+**Numeric Code**
+5912
+
+**Symbolic Error Code**
+DuplicateFeedAttributeName
+
+**Description**
+Duplicate Feed Attribute Name.
+
+***
+
+**Numeric Code**
+5913
+
+**Symbolic Error Code**
+InvalidFeedAttributeType
+
+**Description**
+Invalid Feed Attribute Type.
+
+***
+
+**Numeric Code**
+5916
+
+**Symbolic Error Code**
+InvalidFeedAttributeMapping
+
+**Description**
+Invalid Feed Attribute Mapping.
+
+***
+
+**Numeric Code**
+5919
+
+**Symbolic Error Code**
+InvalidFeedType
+
+**Description**
+Invalid Feed Type.
+
+***
+
+**Numeric Code**
+5921
+
+**Symbolic Error Code**
+TargetFeedStatusInvalid
+
+**Description**
+Target Feed Status Invalid.
+
+***
+
+**Numeric Code**
+5922
+
+**Symbolic Error Code**
+TargetFeedInvalid
+
+**Description**
+Target Feed Invalid.
+
+***
+
+**Numeric Code**
+5923
+
+**Symbolic Error Code**
+InvalidFeedItemAttributeValue
+
+**Description**
+Invalid FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5924
+
+**Symbolic Error Code**
+InvalidBooleanFeedItemAttributeValue
+
+**Description**
+Invalid Boolean Feed Item Attribute Value.
+
+***
+
+**Numeric Code**
+5925
+
+**Symbolic Error Code**
+InvalidInt64FeedItemAttributeValue
+
+**Description**
+Invalid Int64 FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5926
+
+**Symbolic Error Code**
+InvalidFloatFeedItemAttributeValue
+
+**Description**
+Invalid Float FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5927
+
+**Symbolic Error Code**
+InvalidStringFeedItemAttributeValue
+
+**Description**
+Invalid String FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5928
+
+**Symbolic Error Code**
+InvalidUrlFeedItemAttributeValue
+
+**Description**
+Invalid Url FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5929
+
+**Symbolic Error Code**
+InvalidDateTimeFeedItemAttributeValue
+
+**Description**
+Invalid DateTime FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5930
+
+**Symbolic Error Code**
+InvalidInt64ListFeedItemAttributeValue
+
+**Description**
+Invalid Int64 List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5931
+
+**Symbolic Error Code**
+InvalidFloatListFeedItemAttributeValue
+
+**Description**
+Invalid Float List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5932
+
+**Symbolic Error Code**
+InvalidStringListFeedItemAttributeValue
+
+**Description**
+Invalid String List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5933
+
+**Symbolic Error Code**
+InvalidBooleanListFeedItemAttributeValue
+
+**Description**
+Invalid Boolean List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5934
+
+**Symbolic Error Code**
+InvalidUrlListFeedItemAttributeValue
+
+**Description**
+Invalid Url List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5935
+
+**Symbolic Error Code**
+InvalidDateTimeListFeedItemAttributeValue
+
+**Description**
+Invalid DateTime List FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5936
+
+**Symbolic Error Code**
+InvalidPriceFeedItemAttributeValue
+
+**Description**
+Invalid Price FeedItem Attribute Value.
+
+***
+
+**Numeric Code**
+5937
+
+**Symbolic Error Code**
+DuplicateFeedName
+
+**Description**
+Duplicate Feed Name.
+
+***
+
+**Numeric Code**
+5938
+
+**Symbolic Error Code**
+FeedItemMaxLimitReached
+
+**Description**
+The limitation of FeedItem count reached.
+
+***
+
+**Numeric Code**
+5939
+
+**Symbolic Error Code**
+DuplicateFeedItemId
+
+**Description**
+Duplicate Feed Item Id.
+
+***
+
+**Numeric Code**
+5941
+
+**Symbolic Error Code**
+InvalidFeedItemId
+
+**Description**
+Invalid FeedItem Id.
+
+***
+
+**Numeric Code**
+5942
+
+**Symbolic Error Code**
+AccountLevelFeedLimitationReached
+
+**Description**
+Account Level Feed limitation reached.
+
+***
+
+**Numeric Code**
+5943
+
+**Symbolic Error Code**
+AttributeLimitationPerFeedReached
+
+**Description**
+Attribute Limitation per Feed reached.
+
+***
+
+**Numeric Code**
+5944
+
+**Symbolic Error Code**
+InvalidPageFeedLabel
+
+**Description**
+Invalid PageFeed label.
+
+***
+
+**Numeric Code**
+5945
+
+**Symbolic Error Code**
+TooManyPageFeedLabels
+
+**Description**
+Too many PageFeed labels.
+
+***
+
+**Numeric Code**
+5946
+
+**Symbolic Error Code**
+PageFeedLabelTooLong
+
+**Description**
+PageFeed label too long.
+
+***
+
+**Numeric Code**
+5947
+
+**Symbolic Error Code**
+PageFeedUrlTooLong
+
+**Description**
+PageFeed url too long.
+
+***
+
+**Numeric Code**
+5948
+
+**Symbolic Error Code**
+InvalidPageFeedUrl
+
+**Description**
+Invalid PageFeed url.
+
+***
+
+**Numeric Code**
+5949
+
+**Symbolic Error Code**
+InvalidCustomIdAttributeValue
+
+**Description**
+Invalid CustomId attribute value.
+
+***
+
+**Numeric Code**
+5950
+
+**Symbolic Error Code**
+InvalidDevicePreferenceAttributeValue
+
+**Description**
+Invalid DevicePreference Attribute Value.
+
+***
+
+**Numeric Code**
+5954
+
+**Symbolic Error Code**
+InvalidTargetAdGroupAttributeValue
+
+**Description**
+Invalid Target AdGroup Attribute Value.
+
+***
+
+**Numeric Code**
+5955
+
+**Symbolic Error Code**
+InvalidTargetAudienceIdAttributeValue
+
+**Description**
+Invalid Target AudienceId Attribute Value.
+
+***
+
+**Numeric Code**
+5956
+
+**Symbolic Error Code**
+InvalidTargetCampaignAttributeValue
+
+**Description**
+Invalid Target Campaign Attribute Value.
+
+***
+
+**Numeric Code**
+5957
+
+**Symbolic Error Code**
+InvalidTargetKeywordAttributeValue
+
+**Description**
+Invalid Target Keyword Attribute Value.
+
+***
+
+**Numeric Code**
+5958
+
+**Symbolic Error Code**
+InvalidTargetKeywordMatchTypeAttributeValue
+
+**Description**
+Invalid Target Keyword Match Type Attribute Value.
+
+***
+
+**Numeric Code**
+5959
+
+**Symbolic Error Code**
+InvalidTargetKeywordTextAttributeValue
+
+**Description**
+Invalid Keyword Text Attribute Value.
+
+***
+
+**Numeric Code**
+5960
+
+**Symbolic Error Code**
+InvalidTargetLocationAttributeValue
+
+**Description**
+Invalid Target Location Attribute Value.
+
+***
+
+**Numeric Code**
+5961
+
+**Symbolic Error Code**
+InvalidTargetLocationRestrictionAttributeValue
+
+**Description**
+Invalid Target Location Restriction Attribute Value.
+
+***
+
+**Numeric Code**
+5962
+
+**Symbolic Error Code**
+NestedParameterInCustomAttributeNotSupported
+
+**Description**
+Nested parameter in FeedItem CustomAttribute is not supported.
+
+***
+
+**Numeric Code**
+5963
+
+**Symbolic Error Code**
+KeyFeedItemAttributeValueConfliction
+
+**Description**
+Duplicate Feed Item Row With Same Key Attributes
+
+***
+
+**Numeric Code**
+5964
+
+**Symbolic Error Code**
+CannotUseStandardFeedAttributeName
+
+**Description**
+Feed Attribute cannot use the name of Standard attributes
+
+***
+
+**Numeric Code**
+5965
+
+**Symbolic Error Code**
+CannotUseTargetingFeedAttributeName
+
+**Description**
+Feed Attribute cannot use the name of Targeting attributes
+
+***
+
+**Numeric Code**
+5966
+
+**Symbolic Error Code**
+KeyPropertyCannotBeUpdated
+
+**Description**
+The key property of a feed item cannot be updated
+
+***
+
+**Numeric Code**
+5967
+
+**Symbolic Error Code**
+CannotUpdateFeedAttributeKey
+
+**Description**
+Feed Attribute Key cannot be updated
+
+***
+
+**Numeric Code**
+5968
+
+**Symbolic Error Code**
+CustomIdAttributeShouldBeOfStringType
+
+**Description**
+The Custom Id property should be of string type only.
+
+***
+
+**Numeric Code**
+5969
+
+**Symbolic Error Code**
+AttributeValueStringTooLong
+
+**Description**
+The string value is too long, please shorten to contain 90 characters or less.
+
+***
+
+**Numeric Code**
+5971
+
+**Symbolic Error Code**
+InvalidPageFeedAdTitle
+
+**Description**
+Invalid PageFeed Ad Title.
+
+***
+
+**Numeric Code**
+5972
+
+**Symbolic Error Code**
+PageFeedAdTitleTooLong
+
+**Description**
+PageFeed Ad Title too long.
+
+***
+
+**Numeric Code**
+5973
+
+**Symbolic Error Code**
+InvalidFeedIdsForAssociation
+
+**Description**
+Invalid Feed Ids for Association
+
+***
 ## 6000
 ***
 

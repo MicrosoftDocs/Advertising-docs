@@ -141,7 +141,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
             )
 
         if authorization_data.authentication.state != CLIENT_STATE:
-        raise Exception("The OAuth response state does not match the client request state.")
+            raise Exception("The OAuth response state does not match the client request state.")
 
         # Request access and refresh tokens using the URI that you provided manually during program execution.
         authorization_data.authentication.request_oauth_tokens_by_response_uri(response_uri=response_uri) 
