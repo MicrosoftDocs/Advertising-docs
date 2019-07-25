@@ -15,7 +15,6 @@ The following are the differences between Google's Transaction Message implement
 - Bing does not support (and will ignore) the following `Transaction` elements:  
   
   - `PartnerData`
-  - `PackageDataSet`
   
 - Bing does not support (and will ignore) the following `Transaction` attributes:  
   

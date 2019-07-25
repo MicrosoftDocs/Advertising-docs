@@ -28,7 +28,7 @@ For information about sending a transaction message, see [Pusing a Transaction M
 ----
 
  
-<a name="transaction" /> 
+<a name="transaction"></a> 
 
 ## Transaction
 
@@ -36,10 +36,10 @@ Defines the top-level element of a transaction message.
 
 |Element|Description|Children
 |-|-|-
-|Transaction|The top-level element in a transaction message.<br /><br />Attributes:<ul><li>timestamp&mdash;Required. The UTC date and time that you sent the message. The time stamp format is: YYYY-MM-DDThh:mm:ss[+/-hh:mm]. The UTC offset is optional. For example, 2017-06-14T08:00:34 or 2017-06-14T01:00:34+07:00.<br /><br />The time stamp applies to each itinerary in the message. Bing processes an itinerary only if the time stamp is later than the time stamp of the same itinerary stored in Bing. For example, if Bing processes a message with time stamp 14:10 and then processes a message with time stamp 14:09, only those itineraries not included in the 14:10 message are processed.<br /><br />Messages with a time stamp older than 24 hours are not processed.</li><li>id&mdash;Required. An opaque, user-defined ID that advertisers use to uniquely identify the message. The transaction status report includes this ID.</li></ul> |[Transaction Type](#transactiontype)
+|Transaction|The top-level element in a transaction message.<br /><br />The message must include the \<PropertyDataSet> element, \<Result> element, or both.<br /><br />Attributes:<ul><li>timestamp&mdash;Required. The UTC date and time that you sent the message. The time stamp format is: YYYY-MM-DDThh:mm:ss[+/-hh:mm]. The UTC offset is optional. For example, 2017-06-14T08:00:34 or 2017-06-14T01:00:34+07:00.<br /><br />The time stamp applies to each itinerary in the message. Bing processes an itinerary only if the time stamp is later than the time stamp of the same itinerary stored in Bing. For example, if Bing processes a message with time stamp 14:10 and then processes a message with time stamp 14:09, only those itineraries not included in the 14:10 message are processed.<br /><br />Messages with a time stamp older than 24 hours are not processed.<br /></li><li>id&mdash;Required. An opaque, user-defined ID that advertisers use to uniquely identify the message. The transaction status report includes this ID.</li></ul> |[Transaction Type](#transactiontype)
 
  
-<a name="transactiontype" /> 
+<a name="transactiontype"></a> 
 
 ## Transaction Type
 
@@ -47,11 +47,25 @@ Defines the transaction message.
 
 |Element|Description|Children
 |-|-|-
-|Result|Required.<br /><br />The `Transaction` element must contain one or more `Result` elements. Specify one `Result` element for each itinerary (`Checkin` and `Nights` combination) that you specify for a property. The amount of data that you specify for each `Result` object determines the number of itineraries that you may specify. However, the size of the list plus the `Transaction` element must be less than 100 MB (or 10 MB compressed). |[Result Type](#resulttype)
-
+|PropertyDataSet|Optional.<br /><br />A container object that contains the metadata for room bundles and rate features. Use `RoomData` and `PackageData` in combination to provide details about room bundles and rate features. For individual rooms that aren't part of a package, use just `RoomData`.|[PropertyDataSet Type](#propertydatasettype)
+|Result|Optional.<br /><br />Defines an itinerary (the combination of the `Checkin` and `Nights` elements identifies an itinerary). Specify one `Result` element for each itinerary that you define for a property. The number of itineraries that you may specify is limited by the size of the `Transaction` element, which must be less than 100 MB (or 10 MB compressed). |[Result Type](#resulttype)
 
  
-<a name="resulttype" /> 
+<a name="propertydatasettype"></a> 
+
+## PropertyDataSet Type
+
+Defines s container object that contains the metadata for room bundles and rate features.
+
+
+|Element|Description|Children
+|-|-|-
+|Property|Required.<br />Data type is string.<br /><br />The ID of the hotel property. This ID must match the ID of a hotel in your [hotel feed file](../hotel-feed/hotel-feed.md) that you submitted to Bing.|None
+|RoomData|Describes a type of room. |[RoomData Type](#roomdatatype)
+|PackageData|Describes a room bundle. Package data is similar to room data except it describes rate features (amenities) and terms that aren't part of the physical room description.|[PackageData Type](#packagedatatype)
+ 
+
+<a name="resulttype"></a> 
 
 ## Result Type
 
@@ -75,8 +89,53 @@ Defines the itinerary.
 |AllowablePointsOfSale|Optional.<br /><br />A list of points of sale (POS) that identify websites where users can book the room. By default, the user can use any POS defined in your points of sale feed file. Specify this element only if you want to limit the points of sale for this specific itinerary. |Array of [allowablePointsOfSaleType](#allowablepointsofsaletype)
 
 
+<a name="packagedatatype"></a> 
+
+## PackageData Type
+
+Defines a room bundle, which describes rate features (amenities) and terms that aren't part of the physical room description.
+
+|Element|Description|Children
+|-|-|-
+|PackageId|Required.<br />Data type is string.<br /><br />An ID that uniquely identifies the package. Use this ID to match the package with a `Result` object in your pricing updates.|None
+|Name|Required.<br /><br />A name that identifies the package. This should be the same name that you use to identify the room on your website. Specify a `Text` element for each language you support.|[Text Type](#texttype)
+|Description|Optional.<br /><br />A description of the package. |[Text Type](#texttype)
+|Capacity|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is capable of accommodating.<br /><br />**NOTES:**<ul><li>The value must be in the range 1 through 20.</li><li>The value must not be less than `Occupancy`.</li></ul> |None
+|Occupancy|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is intended to accommodate. For example, although the room is physically capable of hosting 4 guests, it's intended for only 2 guests.<br /><br />**NOTES:**<ul><li>Although optional, you're strongly encouraged to always specify this element.</li><li>The value must be in the range 1 through 20.</li></ul>|None
+|OccupancyDetails|Optional.<br /><br />A container object that contains details about occupancy. If you include `Occupancy`, you may also specify this element. |[OccupancyDetails](#occupancydetailstype)
+|ChargeCurrency| |
+|Refundable| |
+|BreakfastIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes complimentary breakfast. |
+|ParkingIncluded| |
+|InternetIncluded| |
+|RoomUpgradeIncluded| |
+|MembershipBenefitsIncluded| |
+|CarRentalIncluded| |
+|MilesIncluded| |
+|OnPropertyCredit| |
+|EarlyCheckin| |
+|LateCheckout| |
+
+
+<a name="roomdatatype"></a> 
+
+## RoomData Type
+
+Defines a type of room.
+
+|Element|Description|Children
+|-|-|-
+|RoomId|Required.<br />Data type is string.<br /><br />An ID that uniquely identifies the room. Use this ID to match the room data with a `Result` object in your pricing updates.|None
+|Name|Required.<br /><br />A name that identifies the type of room. This should be the same name that you use to identify the room on your website. Specify a `Text` element for each language you support.|[Text Type](#texttype)
+|Description|Optional.<br /><br />A description of the room. |[Text Type](#texttype)
+|PhotoURL|Optional.<br /><br />A container object that contains the URL of an image of the room type. You may specify one or more photos. |[PhotoURL Type](#photourltype)
+|Capacity|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is capable of accommodating.<br /><br />**NOTES:**<ul><li>The value must be in the range 1 through 20.</li><li>The value must not be less than `Occupancy`.</li></ul> |None
+|Occupancy|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is intended to accommodate. For example, although the room is physically capable of hosting 4 guests, it's intended for only 2 guests.<br /><br />**NOTES:**<ul><li>Although optional, you're strongly encouraged to always specify this element.</li><li>The value must be in the range 1 through 20.</li><li>The value must not be greater than `Capacity`.</li></ul>|None
+|OccupancyDetails|Optional.<br /><br />A container object that contains details about occupancy. If you include `Occupancy`, you may also specify this element. |[OccupancyDetails](#occupancydetailstype)
+
+
  
-<a name="allowablepointsofsaletype" /> 
+<a name="allowablepointsofsaletype"></a> 
 
 ## allowablePointsOfSaleType
 
@@ -86,3 +145,51 @@ Defines a point of sale (POS) where a user may book the room.
 |-|-|-
 |PointOfSale|<br /><br />Required.<br /><br />Attributes:<ul><li>id&mdash;Required. An opaque, user-defined ID that uniquely identifies a POS. This ID must match the ID of a POS defined in your pints of sale feed file.</li></ul> |None
 
+
+ 
+<a name="texttype"></a> 
+
+## Text Type
+
+Defines a text string.
+
+|Element|Description|Children
+|-|-|-
+|Text|Attributes:<ul><li>text&mdash;The text string.</li><li>language&mdash;The two-letter ISO 639-1 language code that identifies the language used by the text string. For example, 'en' for English.</li></ul> |None
+
+
+ 
+<a name="occupancydetailstype"></a> 
+
+## OccupancyDetails Type
+
+Defines a container object that contains details about occupancy.
+
+|Element|Description|Children
+|-|-|-
+|NumAdults|Required.<br />Data type is integer.<br /><br />The maximum number of adults the room is intended to accommodate.|None
+|Children|Optional.<br /><br />A container object the identifies the ages of children the room is intended to accommodate.|[Children Type](#childrentype)
+
+
+ 
+<a name="childrentype"></a> 
+
+## Children Type
+
+Defines a container object that identifies the ages of children the room is intended to accommodate.
+
+|Element|Description|Children
+|-|-|-
+|Child|Attributes:<ul><li>age&mdash;The age of the child the room is intended to accommodate.</li></ul> |None
+
+ 
+<a name="photourltype"></a> 
+
+## PhotoUrl Type
+
+Defines a container object that contains the URL of an image of the room type.
+
+|Element|Description|Children
+|-|-|-
+|URL|Required.<br /><br />A URL to the image.|None
+|Caption|Optional.<br /><br />A container object that contains a caption for the image.|[Text Type](#texttype)

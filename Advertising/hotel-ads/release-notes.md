@@ -12,6 +12,12 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## July 26, 2019
+
+- Added support for room bundles and rate features to [Transaction Message](../transaction-message/reference.md). Read more.  
+  - Updates include:  
+    - Added the \<PropertyDataSet> element as a child element of the \<Transaction> element.
+    - Added the \<RoomBundle> element as a child element of the \<Result> element.  
 
 ## June 13, 2019
 
