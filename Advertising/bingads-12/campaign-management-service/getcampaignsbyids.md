@@ -26,7 +26,7 @@ The *GetCampaignsByIdsRequest* object defines the [body](#request-body) and [hea
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
 |<a name="campaignids"></a>CampaignIds|A maximum of 100 identifiers of the campaigns to get from the specified account.<br/><br/>The identifiers must correspond to campaigns of the specified *CampaignType* or types, and otherwise the service will return error code *EntityIdFilterMismatch* (Code 516).|**long** array|
-|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
+|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.<br/><br/>This request element is optional. If you do not set any campaign type, the default value is *Search* i.e., only Search campaigns will be returned.|[CampaignType](campaigntype.md)|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Campaign](campaign.md) object. The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[CampaignAdditionalField](campaignadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements

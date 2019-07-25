@@ -84,8 +84,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
         # Set to an empty user identifier to get the current authenticated Microsoft Advertising user,
         # and then search for all accounts the user can access.
         user=get_user_response=customer_service.GetUser(
-            UserId=None,
-            IncludeLinkedAccountIds=True
+            UserId=None
         ).User
         accounts=search_accounts_by_user_id(customer_service, user.Id)
         
@@ -141,7 +140,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
             )
 
         if authorization_data.authentication.state != CLIENT_STATE:
-        raise Exception("The OAuth response state does not match the client request state.")
+            raise Exception("The OAuth response state does not match the client request state.")
 
         # Request access and refresh tokens using the URI that you provided manually during program execution.
         authorization_data.authentication.request_oauth_tokens_by_response_uri(response_uri=response_uri) 
@@ -384,8 +383,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
         try:
             output_status_message("-----\nGetUser:")
             get_user_response=customer_service.GetUser(
-                UserId=None,
-                IncludeLinkedAccountIds=True
+                UserId=None
             )
             user = get_user_response.User
             customer_roles=get_user_response.CustomerRoles

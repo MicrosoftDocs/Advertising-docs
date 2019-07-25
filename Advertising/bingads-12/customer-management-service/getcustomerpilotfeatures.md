@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of the pilot programs in which the specified customer participates.
+description: Gets a list of the pilot programs that are enabled for all of the customer's accounts.  
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetCustomerPilotFeatures Service Operation - Customer Management
-Gets a list of the pilot programs in which the specified customer participates.
+Gets a list of the pilot programs that are enabled for all of the customer's accounts.  
 
 ## <a name="request"></a>Request Elements
 The *GetCustomerPilotFeaturesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +24,7 @@ The *GetCustomerPilotFeaturesRequest* object defines the [body](#request-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customerid"></a>CustomerId|The identifier of the customer whose list of pilot programs you want to get.|**long**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer used to get a list of pilot features.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *GetCustomerPilotFeaturesResponse* object defines the [body](#response-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identifies the pilot programs in which the customer participates.<br/><br/>For example the following values correspond to active feature pilots. For more information about pilot participation please contact your account manager.<br/><br/>78 - Call Tracking<br/><br/>244 - Action Ad Extensions<br/><br/>268 - Dynamic Search Ads<br/><br/>288 - Ad Group Remarketing List Exclusions<br/><br/>295 - Maximize Clicks Bid Strategy Type<br/><br/>296 - Maximize Conversions Bid Strategy Type<br/><br/>297 - Target CPA Bid Strategy Type<br/><br/>340 - Microsoft Shopping Campaigns Enhanced CPC Bid Strategy Type<br/><br/>351 - Local Inventory Ads<br/><br/>388 - Microsoft Audience Network<br/><br/>474 - Ad Click Parallel Tracking<br/><br/>500 - Experiments<br/><br/>525 - Responsive Search Ads<br/><br/>565 - Custom Parameters Limit Increase Phase 2<br/><br/>566 - Final Url Suffix Phase 2<br/><br/>600 - Dynamic Search Ads Text Part 2|**int** array|
+|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identifies the pilot features that are enabled for all of the customer's accounts.<br/><br/>For example the following values correspond to active feature pilots. For more information about pilot participation please contact your account manager.<br/><br/>78 - Call Tracking<br/><br/>244 - Action Ad Extensions<br/><br/>268 - Dynamic Search Ads<br/><br/>288 - Ad Group Remarketing List Exclusions<br/><br/>295 - Maximize Clicks Bid Strategy Type<br/><br/>296 - Maximize Conversions Bid Strategy Type<br/><br/>297 - Target CPA Bid Strategy Type<br/><br/>340 - Microsoft Shopping Campaigns Enhanced CPC Bid Strategy Type<br/><br/>351 - Local Inventory Ads<br/><br/>388 - Microsoft Audience Network<br/><br/>474 - Ad Click Parallel Tracking<br/><br/>525 - Responsive Search Ads<br/><br/>565 - Custom Parameters Limit Increase Phase 2<br/><br/>566 - Final Url Suffix Phase 2<br/><br/>574 - Include in Conversions<br/><br/>600 - Dynamic Search Ads Text Part 2|**int** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

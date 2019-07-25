@@ -15,9 +15,6 @@ dev_langs:
 Updates the specified experiments.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
-
-> [!NOTE]
 > Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment. 
 
 ## <a name="request"></a>Request Elements

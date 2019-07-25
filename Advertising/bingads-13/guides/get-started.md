@@ -110,12 +110,13 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
 
 1. Sign up for a [Microsoft Advertising](https://sandbox.bingads.microsoft.com/) sandbox account. The Microsoft account (MSA) email address must be outlook**-int**.com (for example, someone@outlook-int.com). For more details see [Sandbox](sandbox.md#initial-sign-up).  
 
-1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft-int.com/#/appList).  
+1. Each Microsoft Advertising user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Microsoft Advertising account via the following `Get-Tokens-Sandbox.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor.  
 
-1. Each Microsoft Advertising user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Microsoft Advertising account via the following `Get-Tokens-Sandbox.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
+    > [!NOTE]
+    > Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the public "Sandbox Tutorial App" client ID in sandbox i.e., **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. For more information, please see [Sandbox](sandbox.md#access). 
    
     ```powershell
-    $clientId = "YourApplicationIdGoesHere"
+    $clientId = "db41b09d-6e50-4f4a-90ac-5a99caefb52f"
 
     Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf"
     
@@ -206,7 +207,7 @@ To use Bing Ads APIs, you must have a developer token and valid user credentials
 - To get a developer token for production, you must login at the [Microsoft Advertising Developer Portal](https://developers.ads.microsoft.com/Account) as a Microsoft Account user with the Super Admin role. Then click on the **Request Token** button. The Super Admin may request API access for any user within their customer scope. Typically clients only need one universal token per application regardless of how many users will use the application, and you can assign the universal token to one of your Super Admin users.  
 
 > [!NOTE]
-> The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
+> The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**. 
 
 There are two types of Bing Ads API developer tokens. 
 - Universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. Starting in July 2019, this is the default token type.    

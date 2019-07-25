@@ -41,6 +41,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AccountStatus" />
     <xs:enumeration value="CampaignStatus" />
     <xs:enumeration value="AdGroupStatus" />
+    <xs:enumeration value="AveragePosition" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -58,6 +59,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
 |<a name="assists"></a>Assists|The number of times an entity (an account, campaign, ad group, or keyword, for example) contributed to a conversion that is associated with a different entity.<br/>A report on this data shows you how often one keyword assists a conversion on another keyword. This helps you identify which campaigns are dependent on assists for their conversion value.|
+|<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
 |<a name="campaignid"></a>CampaignId|The Microsoft Advertising assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
