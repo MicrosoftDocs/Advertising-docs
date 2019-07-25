@@ -48,6 +48,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="CampaignStatus" />
     <xs:enumeration value="AdGroupStatus" />
     <xs:enumeration value="AudienceType" />
+    <xs:enumeration value="AssociationId" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -63,7 +64,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupid"></a>AdGroupId|The Microsoft Advertising assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
-|<a name="associationstatus"></a>AssociationStatus|The status of the association between the ad group and remarketing list, which indicates whether ads are eligible to display. The possible values are Active, Paused, and Deleted.|
+|<a name="associationid"></a>AssociationId|The Microsoft Advertising assigned identifier of the association between the audience and either an ad group or campaign.|
+|<a name="associationstatus"></a>AssociationStatus|The status of the association between the audience and either an ad group or campaign.<br/><br/>The possible values are Active, Paused, and Deleted.|
 |<a name="audienceid"></a>AudienceId|The Microsoft Advertising assigned identifier of the audience, for example the remarketing list ID.|
 |<a name="audiencename"></a>AudienceName|The audience name.|
 |<a name="audiencetype"></a>AudienceType|The audience type.|

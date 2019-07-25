@@ -19,9 +19,10 @@ The Customer Management service defines the following service operations.
 |[FindAccounts](findaccounts.md)|Gets a list of accounts owned by the specified customer that match the specified filter criteria.|1 *CustomerId*|
 |[FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md)|Gets a list of the accounts and customers that match the specified filter criteria.|Not applicable.|
 |[GetAccount](getaccount.md)|Gets the details of an account.|1 *AccountId*|
+|[GetAccountPilotFeatures](getaccountpilotfeatures.md)|Gets a list of the pilot programs that are enabled for the specified account.|1 *AccountId*|
 |[GetAccountsInfo](getaccountsinfo.md)|Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.|1 *CustomerId*|
 |[GetCustomer](getcustomer.md)|Gets the details of a customer.|1 *CustomerId*|
-|[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs in which the specified customer participates.|1 *CustomerId*|
+|[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs that are enabled for all of the customer's accounts.|1 *CustomerId*|
 |[GetCustomersInfo](getcustomersinfo.md)|Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.|Not applicable.|
 |[GetLinkedAccountsAndCustomersInfo](getlinkedaccountsandcustomersinfo.md)|Reserved for future use.|1 *CustomerId*|
 |[GetUser](getuser.md)|Gets the details of a user.|1 *UserId*|

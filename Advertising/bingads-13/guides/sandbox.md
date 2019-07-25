@@ -13,10 +13,21 @@ Microsoft Advertising provides an API sandbox environment where you can test you
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. 
 
 ## <a name="access"></a>Get Sandbox Access
-The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Microsoft Advertising customers can use the following universal developer token in sandbox. 
+The sandbox and production environments use separate credentials. 
+
+Although in production you must use your own developer token, all Microsoft Advertising customers can use the following universal developer token in sandbox. 
 
 ```string
 BBD37VB98
+```
+
+Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the following public application ID in sandbox. 
+
+> [!NOTE]
+> The "Sandbox Tutorial App" client ID is limited to desktop or console applications, and cannot be used with any client secret in a web application. You can use this for testing authentication locally in sandbox, and then register your own production application for more advance scenarios e.g., web applications with custom redirect URIs. 
+
+```string
+db41b09d-6e50-4f4a-90ac-5a99caefb52f
 ```
 
 To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Live Connect](authentication-oauth-live-connect.md) for production; however, you will use different endpoints.
@@ -30,7 +41,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 |---|---|---|
 |Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
 |Endpoint to change the Microsoft account password|[account.live.com/password/change](https://account.live.com/password/change)|[account.live-int.com/password/change](https://account.live-int.com/password/change)|
-|Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
+|Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)<br/><br/>Note the "INT" application registration site is deprecated and will not be available starting in September 2019. As described above you can use this public application ID for testing in sandbox: db41b09d-6e50-4f4a-90ac-5a99caefb52f|
 |Endpoint for OAuth requests via [Live Connect](authentication-oauth-live-connect.md)|login.live.com|login.live-int.com|
 
 Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads API Web Service Addresses](web-service-addresses.md).

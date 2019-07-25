@@ -48,7 +48,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 6. In **Project Explorer**, right-click the BingAdsDesktopApp project (or the name of your project if you chose a different artifact identifier in the previous step) and select **New** -&gt; **Class**. Choose a package name, for example *com.microsoft.bingads.examples*. Name the class *OAuthDesktopApplication* and then click **Finish**.
 
-7. Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the *ClientId* below with the Application Id that was provisioned when you registered your application. If you are targeting the production environment, then you'll also need to edit the example with your production [developer token](get-started.md#get-developer-token).
+7. Open the OAuthDesktopApplication.java file and replace its contents with the following code block. If you are targeting the production environment, then you must replace *db41b09d-6e50-4f4a-90ac-5a99caefb52f* with the *Application Id* that was provisioned when you registered your production application and replace *BBD37VB98* with your production [developer token](get-started.md#get-developer-token).
 
     > [!NOTE]
     > If you observe any errors related to *javafx* import statements, try removing the *JRE System Library* and adding it back again. In **Project Explorer**, right-click the BingAdsDesktopApp and select **Build Path** -&gt; **Configure Build Path**. In the **Libraries** tab, select JRE System Library and click **Remove**. Remain in the **Libraries** tab and click **Add Library**, select JRE System Library, click **Next**, and then click **Finish**.
@@ -78,7 +78,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
         static ServiceClient<ICustomerManagementService> CustomerService; 
 
         private static java.lang.String DeveloperToken = "BBD37VB98"; // Universal token for sandbox
-        private static java.lang.String ClientId = "ClientIdGoesHere";
+        private static java.lang.String ClientId = "db41b09d-6e50-4f4a-90ac-5a99caefb52f";
         private static ApiEnvironment API_ENVIRONMENT = ApiEnvironment.SANDBOX;
 
         @Override

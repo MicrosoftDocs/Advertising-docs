@@ -25,7 +25,7 @@ The *GetCampaignsByAccountIdRequest* object defines the [body](#request-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
-|<a name="campaigntype"></a>CampaignType|The type of campaign to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
+|<a name="campaigntype"></a>CampaignType|The type of campaign to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.<br/><br/>This request element is optional. If you do not set any campaign type, the default value is *Search* i.e., only Search campaigns will be returned.|[CampaignType](campaigntype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

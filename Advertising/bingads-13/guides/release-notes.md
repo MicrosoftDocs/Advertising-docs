@@ -9,6 +9,72 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="july2019"></a>July 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Include in Conversions](#excludefrombidding-july2019)  
+- [Base Campaign Id in Reports](#basecampaignid-reporting-july2019)  
+- [Average Position in Reports](#averageposition-reporting-july2019)  
+- [Audience Association ID in Reports](#associationid-reporting-july2019)  
+
+### <a name="excludefrombidding-july2019"></a>Include in Conversions
+Customers who are enabled for the Include in Conversions feature ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 574) can choose to exclude specific conversion goals from conversions report data. 
+
+Data will be excluded from the `Conversions`, `ConversionRate`, `CostPerConversion`, `ReturnOnAdSpend`, `RevenuePerConversion`, and `Revenue` report columns for any conversion goal that has its [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) property set as true. Also, if you use an automated bidding bid strategy, setting this property true will result in the goal's conversions no longer factoring into automated bidding calculations.
+
+The `AllConversions`, `AllConversionRate`, `AllCostPerConversion`, `AllReturnOnAdSpend`, `AllRevenuePerConversion`, and `AllRevenue` columns (NEW) will include data for all conversion goals regardless of their [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) setting. 
+
+For more information, see the help article [Conversion goals: "Conversions" versus "All conversions"](https://help.ads.microsoft.com/#apex/3/en/56920/-1/en/#ext:reporting).  
+
+After the July service update, the table below summarizes all available conversion related report performance statistics per report type. 
+
+|Reporting Value Set|Available Conversion Columns|
+|-----|-----|
+|[AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md)|AllConversions<br/>AllConversionRate<br/>AllCostPerConversion<br/>Conversions<br/>ConversionRate<br/>CostPerConversion|
+|[AdExtensionByAdReportColumn](../reporting-service/adextensionbyadreportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AdExtensionByKeywordReportColumn](../reporting-service/adextensionbykeywordreportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AdExtensionDetailReportColumn](../reporting-service/adextensiondetailreportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[AgeGenderAudienceReportColumn](../reporting-service/agegenderaudiencereportcolumn.md)|AllConversions<br/>AllRevenue<br/>Conversions<br/>Revenue|
+|[AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ConversionPerformanceReportColumn](../reporting-service/conversionperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[DSAAutoTargetPerformanceReportColumn](../reporting-service/dsaautotargetperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[DSACategoryPerformanceReportColumn](../reporting-service/dsacategoryperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[DSASearchQueryPerformanceReportColumn](../reporting-service/dsasearchqueryperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[GeographicPerformanceReportColumn](../reporting-service/geographicperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[GoalsAndFunnelsReportColumn](../reporting-service/goalsandfunnelsreportcolumn.md)|AllConversions<br/>AllRevenue<br/>Conversions<br/>Revenue|
+|[KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>RevenuePerConversion|
+|[ProfessionalDemographicsAudienceReportColumn](../reporting-service/professionaldemographicsaudiencereportcolumn.md)|AllConversions<br/>AllRevenue<br/>Conversions<br/>Revenue|
+|[PublisherUsagePerformanceReportColumn](../reporting-service/publisherusageperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+|[ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md)|AllConversions<br/>AllConversionRate<br/>AllCostPerConversion<br/>Conversions<br/>ConversionRate<br/>CostPerConversion|
+|[UserLocationPerformanceReportColumn](../reporting-service/userlocationperformancereportcolumn.md)|AllConversions<br/>AllRevenue<br/>AllConversionRate<br/>AllCostPerConversion<br/>AllReturnOnAdSpend<br/>AllRevenuePerConversion<br/>Conversions<br/>Revenue<br/>ConversionRate<br/>CostPerConversion<br/>ReturnOnAdSpend<br/>RevenuePerConversion|
+
+### <a name="basecampaignid-reporting-july2019"></a>Base Campaign Id in Reports
+The BaseCampaignId column is added to the following value sets. 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md)  
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md)  
+- [AgeGenderAudienceReportColumn](../reporting-service/agegenderaudiencereportcolumn.md)  
+- [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md)  
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md)  
+- [GeographicPerformanceReportColumn](../reporting-service/geographicperformancereportcolumn.md)  
+- [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md)  
+- [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md)  
+
+### <a name="averageposition-reporting-july2019"></a>Average Position in Reports
+The AveragePosition column is added to the [ProfessionalDemographicsAudienceReportColumn](../reporting-service/professionaldemographicsaudiencereportcolumn.md) value set. 
+
+### <a name="associationid-reporting-july2019"></a>Audience Association ID in Reports
+The AssociationId column is added to the [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md) value set. 
+
 ## <a name="june2019"></a>June 2019
 See below for Bing Ads API updates during this calendar month. 
 

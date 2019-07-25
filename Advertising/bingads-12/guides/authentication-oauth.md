@@ -25,7 +25,9 @@ Here are some of the reasons that either you or users of your application might 
 Only the Microsoft identity platform endpoint (v2.0) allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. To ensure that your application can support all users, you should use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) in production.
 
 > [!IMPORTANT]
-> The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) by default. Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the [Live Connect endpoint](authentication-oauth-live-connect.md) is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](#upgrade-identity-platform-faq) and [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
+> Starting September 1st, 2019 any Microsoft Advertising user can login with either work or school accounts from Azure AD or personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. Only the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. To ensure that your application can support all users without friction or interruption of service, you should upgrade to the Microsoft identity platform endpoint in production.  
+> 
+> The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) by default. Even if your users do not have work or school accounts, and even if you do not use the Bing Ads SDKs we encourage you to update the authorization URL during calendar year 2019, since the [Live Connect endpoint](authentication-oauth-live-connect.md) is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](#upgrade-identity-platform-faq) and [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
 
 > [!TIP]
 > To get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
@@ -52,7 +54,7 @@ Only the [Microsoft identity platform endpoint](authentication-oauth-identity-pl
 
 ### Q. If I don't want to support work or school accounts, do I need to make any changes?
 
-We recommend all clients upgrade to the new [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) during calendar year 2019. The Microsoft identity platform endpoint supports both work and personal accounts. The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) by default. 
+We recommend all clients upgrade to the new [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) during calendar year 2019. The Microsoft identity platform endpoint supports both work and personal accounts. The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) by default. 
 
 ### Q. What changes are required for my application to support work or school accounts via the API?
 
@@ -88,7 +90,7 @@ Work or school account access is not enabled simply by upgrading to Bing Ads API
 
 ### Q. Will the Bing Ads SDKs support the Microsoft identity platform endpoint?  
 
-The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) by default. To continue using an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67 via the [Live Connect endpoint](authentication-oauth-live-connect.md), you'll need to set the "require live connect" property of each OAuth object. 
+The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) by default. To continue using an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67 via the [Live Connect endpoint](authentication-oauth-live-connect.md), you'll need to set the "require live connect" property of each OAuth object. 
 
 ### Q. Will sandbox support work or school accounts?
 

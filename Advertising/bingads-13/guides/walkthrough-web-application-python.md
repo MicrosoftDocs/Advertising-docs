@@ -137,7 +137,7 @@ To create a Django app, then, it's necessary to first create the Django project 
 
     The command creates a folder called `app` that contains a number of code files and one subfolder. Of these, you frequently work with `views.py` (that contains the functions that define pages in your web app) and `models.py` (that contains classes defining your data objects). The `migrations` folder is used by Django's administrative utility to manage database versions as discussed later in this tutorial. There are also the files `apps.py` (app configuration), `admin.py` (for creating an administrative interface), and `tests.py` (for unit tests), which are not covered here.
 
-1. Within `app/settings.py` add the following code and set your own *CLIENT_ID*, *CLIENT_SECRET*, *DEVELOPER_TOKEN*, and *ENVIRONMENT* values. If you are using the sandbox environment no changes are required for *DEVELOPER_TOKEN* and *ENVIRONMENT*.
+1. Within `app/settings.py` add the following code and set your own *CLIENT_ID*, *CLIENT_SECRET*, *DEVELOPER_TOKEN*, and *ENVIRONMENT* values. 
     ```python
     """
     Bing Ads API settings
@@ -147,8 +147,8 @@ To create a Django app, then, it's necessary to first create the Django project 
     REDIRECTION_URI = "http://localhost:8000/callback"
     CLIENT_ID = "ClientIdGoesHere" # Your registered App ID
     CLIENT_SECRET="ClientSecretGoesHere" # Your registered App Password
-    DEVELOPER_TOKEN = "BBD37VB98" # Universal token for sandbox is "BBD37VB98"
-    ENVIRONMENT = 'sandbox'
+    DEVELOPER_TOKEN = "DeveloperTokenGoesHere" # Your production developer token
+    ENVIRONMENT = 'production'
     API_VERSION=13
     ```
 
