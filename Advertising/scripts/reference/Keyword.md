@@ -53,7 +53,7 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 [AdParamSelector](AdParamSelector.md)|The selector that contains the list of substitution parameters for this keyword.
 
 
-## <a name="applylabel-string-name-"></a>applyLabel(name)
+## <a name="applylabel-string-name-"></a>applyLabel(string name)
 Applies the label to the keyword.
 
 You may apply a maximum of 50 labels to a keyword.
@@ -248,7 +248,7 @@ Removes this keyword.
 void|Returns nothing.
 
 
-## <a name="removelabel-string-name-"></a>removeLabel(name)
+## <a name="removelabel-string-name-"></a>removeLabel(string name)
 Removes the label from the keyword.
 
 ### Arguments

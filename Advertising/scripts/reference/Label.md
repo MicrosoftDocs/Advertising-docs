@@ -27,12 +27,12 @@ Contains the methods for managing a label. For information about labels, see [La
 [setDescription(string description)](#setdescription-string-description-)|void|Sets the label's description.
 [setName(string name)](#setname-string-name-)|void|Sets label's name.
 
-<!-->
+<!--
 [getAds](#getads)|[AdIterator](AdIterator.md)|Gets an iterator that you use to loop through the ads that this label belongs to.
 [getAdGroups](#getadgroups)|[AdGroupIterator](AdGroupIterator.md)|Gets an iterator that you use to loop through the ad groups that this label belongs to.
 [getCampaigns](#getcampaigns)|[CampaignIterator](./CampaignIterator.md)|Gets an iterator that you use to loop through the campaigns that this label belongs to.
 [getKeywords](#getkeywords)|[KeywordIterator](./KeywordIterator.md)|Gets an iterator that you use to loop through the campaigns that this label belongs to.
-<-->
+-->
 
 
 ## <a name="getcolor"></a>getColor
