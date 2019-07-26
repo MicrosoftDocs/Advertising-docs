@@ -17,6 +17,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 |Method Name|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Gets a selector used to get all substitution parameters used in the ad for this keyword.
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this keyword.
 [bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Gets the methods used to manage this keyword's bid amount.
 [clearDestinationUrl](#cleardestinationurl)|void|Removes this keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.
@@ -33,8 +34,10 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getTopOfPageCpc](#gettopofpagecpc)|double|Gets the estimated bid needed to be at the top of the search results.
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this keyword is paused.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this keyword.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this keyword.
 [setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Adds the substitution parameter and sets its value to the specified text.
 [urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Gets the methods used to manage this keywords's final URLs, tracking template, and custom parameters.
 
@@ -48,6 +51,15 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 |Type|Description|
 |-|-
 [AdParamSelector](AdParamSelector.md)|The selector that contains the list of substitution parameters for this keyword.
+
+
+## <a name="applylabel-string-name-"></a>applyLabel(name)
+Applies the label to the keyword.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="bidding"></a>bidding
@@ -200,23 +212,15 @@ Gets a Boolean value that indicates whether this keyword is paused.
 Boolean|Is **true** if this keyword is paused; otherwise, **false**.
 
 
-## <a name="setadparam-int-index-string-insertiontext-"></a>setAdParam(int index, string insertionText)
-Adds the substitution parameter and sets its value to the specified text. If the substitution parameter exists, it's text is overwritten.
+## <a name="labels"></a>labels
 
-The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/advertising/campaign-management-service/keyword#param1), [Param2](/advertising/campaign-management-service/keyword#param2), and [Param3](/advertising/campaign-management-service/keyword#param3).
-
-The substitution values are also used in the tracking template if the template specifies the {param1:default}, {param2:default}, or {param3:default} placeholders. 
-
-### Arguments
-|Name|Type|Description|
-|-|-|-
-index|int|The index of the substitution parameter to set. Valid index values are 1 through 3, inclusive. Use 1 for Param1, 2 for Param2, and 3 for Param3.
-insertionText|string|The text to set the substitution parameter to.
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this keyword.
 
 ### Returns
+
 |Type|Description|
 |-|-
-void|Returns nothing.
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels in this keyword.
 
 
 ## <a name="pause"></a>pause
@@ -230,6 +234,34 @@ void|Returns nothing.
 
 ## <a name="remove"></a>remove
 Removes this keyword.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="removelabel-string-name-"></a>removeLabel(name)
+Removes the label from the keyword.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="setadparam-int-index-string-insertiontext-"></a>setAdParam(int index, string insertionText)
+Adds the substitution parameter and sets its value to the specified text. If the substitution parameter exists, it's text is overwritten.
+
+The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/advertising/campaign-management-service/keyword#param1), [Param2](/advertising/campaign-management-service/keyword#param2), and [Param3](/advertising/campaign-management-service/keyword#param3).
+
+The substitution values are also used in the tracking template if the template specifies the {param1:default}, {param2:default}, or {param3:default} placeholders. 
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+index|int|The index of the substitution parameter to set. Valid index values are 1 through 3, inclusive. Use 1 for Param1, 2 for Param2, and 3 for Param3.
+insertionText|string|The text to set the substitution parameter to.
 
 ### Returns
 |Type|Description|

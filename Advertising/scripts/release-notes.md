@@ -14,6 +14,28 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## July 28, 2019
+
+The following is a documentation-only change.
+
+- Clarified that Scripts uses the account's time zone as elsewhere in Microsoft Advertising. For example, if you use a selector's .forDateRange() method, Scripts uses the account's time zone to determine the data to return. [Read more](https://help.ads.microsoft.com/#apex/3/en/54483/2-500)
+- Clarified that data latency in Scripts is the same as elsewhere in Microsoft Advertising. [Read more](https://help.ads.microsoft.com/#apex/3/en/54480/2-500)
+
+The following are non-breaking API changes to support labels.
+
+- Added the following methods to the [AdsApp](reference/AdsApp.md) object.  
+  - createLabel &mdash; creates a label
+  - labels &mdash; gets a selector used to filter the list of labels in this account  
+- Added the following label-related objects.  
+  - [Label](reference/Label.md) &mdash; Defines a label.
+  - [LabelSelector](reference/LabelSelector.md) &mdash; Gets a list of labels for the account.
+  - [LabelIterator](reference/LabelIterator.md) &mdash; Iterates a list of labels that matched the selector's selection criteria.  
+- Added the following methods to the [Keyword](reference/Keyword.md) object.  
+  - applyLabel &mdash; applies the label to the keyword  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this keyword  
+  - removeLabel &mdash; removes the label from this keyword
+
+
 ## April 30, 2019
 
 The following is a documentation-only change.
