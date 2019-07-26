@@ -154,6 +154,12 @@
           href: ./reference/KeywordSelector.md 
         - name: KeywordUrls
           href: ./reference/KeywordUrls.md 
+        - name: Label
+          href: ./reference/Label.md 
+        - name: LabelIterator
+          href: ./reference/LabelIterator.md 
+        - name: LabelSelector
+          href: ./reference/LabelSelector.md 
         - name: Logger
           href: ./reference/Logger.md 
         - name: NegativeKeywordList
