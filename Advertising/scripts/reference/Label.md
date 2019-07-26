@@ -17,7 +17,7 @@ Contains the methods for managing a label. For information about labels, see [La
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getColor](#getcolor)|string|Gets the background color to use in the UX for this label.
+[getColor](#getcolor)|string|Gets the background color that's used in the UX for this label.
 [getDescription](#getdescription)|string|Gets the label's description.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this label.
@@ -36,12 +36,12 @@ Contains the methods for managing a label. For information about labels, see [La
 
 
 ## <a name="getcolor"></a>getColor
-Gets the background color to use in the UX for this label.
+Gets the background color that's used in the UX for this label.
 
 ### Returns
 |Type|Description|
 |-|-
-string|The background color to use in the UX for this label.
+string|The background color that's used in the UX for this label. The color is always returned in the form, #RRGGBB. For example, if you set color to red, this method returns #FF0000.
 
 
 ## <a name="getdescription"></a>getDescription
@@ -62,34 +62,6 @@ Gets the label's name.
 string|The label's name.
 
 
-## <a name="setcolor-string-color-"></a>setColor(string color)
-Sets the background color to use in the UX for this label.
-
-### Arguments
-|Name|Type|Description|
-|-|-|-
-color|The background color to use in the UX for this label.
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
-
-
-## <a name="setdescription-string-description-"></a>setDescription(string description)
-Sets the label's description.
-
-### Arguments
-|Name|Type|Description|
-|-|-|-
-description|The label's description.
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
-
-
 ## <a name="getentitytype"></a>getEntityType
 Returns this entity's type.
 
@@ -108,13 +80,8 @@ Gets the ID that uniquely identifies this label.
 string|The ID that uniquely identifies this label.
 
 
-## <a name="setname-string-name-"></a>setName(string name)
-Sets the label's name.
-
-### Arguments
-|Name|Type|Description|
-|-|-|-
-name|The label's name
+## <a name="remove"></a>remove
+Removes this label.
 
 ### Returns
 |Type|Description|
@@ -122,8 +89,41 @@ name|The label's name
 void|Returns nothing.
 
 
-## <a name="remove"></a>remove
-Removes this label.
+## <a name="setcolor-string-color-"></a>setColor(string color)
+Sets the background color to use in the UX for this label.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+color|The background color to use in the UX for this label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form #RRGGBB or #RBG. For example, CB0400 or F00.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="setdescription-string-description-"></a>setDescription(string description)
+Sets the label's description.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+description|A description that describes the label's use. The maximum size is 200 characters.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="setname-string-name-"></a>setName(string name)
+Sets the label's name.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|The label's new name. The name is case sensitive and must be unique within the account. The maximum size is 80 characters. To get a list of label names already used in this account, see [AdsApp.labels](AdsApp.md#labels).
 
 ### Returns
 |Type|Description|
@@ -136,3 +136,4 @@ void|Returns nothing.
 - [LabelSelector](./LabelSelector.md)
 - [LabelIterator](./LabelIterator.md)
 - [AdsApp.createLabel](./AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-)
+- [Keyword.labels](./Keyword.md#labels)

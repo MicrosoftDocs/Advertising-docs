@@ -34,7 +34,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getTopOfPageCpc](#gettopofpagecpc)|double|Gets the estimated bid needed to be at the top of the search results.
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this keyword is paused.
-[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this keyword.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this keyword.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
 [removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this keyword.
@@ -55,6 +55,13 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 
 ## <a name="applylabel-string-name-"></a>applyLabel(name)
 Applies the label to the keyword.
+
+You may apply a maximum of 50 labels to a keyword.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels in this account that you can apply, see [AdsApp.labels](AdsApp.md#labels). 
 
 ### Returns
 |Type|Description|
@@ -214,13 +221,13 @@ Boolean|Is **true** if this keyword is paused; otherwise, **false**.
 
 ## <a name="labels"></a>labels
 
-Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this keyword.
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this keyword.
 
 ### Returns
 
 |Type|Description|
 |-|-
-[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels in this keyword.
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels associated with this keyword.
 
 
 ## <a name="pause"></a>pause
@@ -243,6 +250,11 @@ void|Returns nothing.
 
 ## <a name="removelabel-string-name-"></a>removeLabel(name)
 Removes the label from the keyword.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels associated with this keyword, see [labels](#labels). 
 
 ### Returns
 |Type|Description|

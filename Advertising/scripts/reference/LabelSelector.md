@@ -17,7 +17,7 @@ Contains the methods for filtering and ordering a list of labels in the account.
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[get](#get)|[LabelIterator](./KeywordIterator.md)|Gets an iterator used to iterate through the list of labels.
+[get](#get)|[LabelIterator](./LabelIterator.md)|Gets an iterator used to iterate through the list of labels.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[LabelSelector](./LabelSelector.md)|Applies the specified ordering to the selected labels.
 [withCondition(string condition)](#withcondition-string-condition-)|[LabelSelector](./LabelSelector.md)|Applies filter criteria to the labels.
 [withIds(string[] ids)](#withids-string-ids-)|[LabelSelector](./LabelSelector.md)|Gets labels with the specified IDs.
@@ -71,19 +71,10 @@ Specify the *condition* parameter in the form, "columnName operator value" where
 <a name="supported-label-columns"></a>
 Supported columns for label filtering. The column names are case sensitive.
 
-|Column|Type|Example|Microsoft Advertising web UI filter
+|Column|Type|Example
 |-|-|-|-
-Status|enumeration|The keyword's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>`withCondition("Status = ENABLED")`|Status
-Text|string|The keyword's text. Include only the keyword's text. Don't include the keyword's match type in the text. For example, if the keyword is an exact match keyword such as [books], use *books* not *[books]*.<br /><br />`withCondition("Text STARTS_WITH 'flowers'")`|Keyword Text
-KeywordMatchType|enumeration|The keyword's match type. Possible case-sensitive values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>`withCondition("KeywordMatchType = EXACT")`|Match type
-MaxCpc|double|The keyword's maximum CPC bid amount. The CPC is in the account's currency.<br /><br />`withCondition("MaxCpc > 0.40")`|Bid
-DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.contoso.com'")`|Destination URL
-FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.contoso.com'")`|
-QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
-FirstPageCpc|double|The average amount an advertiser is charged each time their ad is clicked when it shows up on the sidebar. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. Use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up on the sidebar. The CPC is in the account's currency.<br /><br />`withCondition("FirstPageCpc > 6.00")`|Est. first page bid
-TopOfPageCpc|double|The average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. Use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results. The CPC is in the currency of the current account.<br /><br />`withCondition("TopOfPageCpc > 8.00")`|Best position
-AdGroupName|string|The name of the ad group that contains the keywords.<br /><br />`withCondition("AdGroupName = 'foo'")`|
-CampaignName|string|The name of the campaign that contains the keywords.<br /><br />`withCondition("CampaignName = 'bar'")`|
+Name|string|The label's name.<br /><br />`withCondition("Name = 'foo'")`
+KeywordCount|string|The number of keywords associated with the label.<br /><br />`withCondition("KeywordCount > 5")`
 
 ### Arguments
 |Name|Type|Description|
@@ -94,6 +85,7 @@ condition|string|The condition to add to the selector.
 |Type|Description|
 |-|-
 [LabelSelector](./LabelSelector.md)|Selector with the condition applied.
+
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
 Gets labels with the specified IDs.
