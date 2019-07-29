@@ -13635,17 +13635,6 @@ Ad modification is not allowed on this campaign.
 For example you cannot add, update, or delete responsive ads in feed-based Audience campaigns.
 
 ***
-
-**Numeric Code**
-5813
-
-**Symbolic Error Code**
-CampaignServiceAdGroupLanguageCannotBeRemovedUntilCampaignLanguagesAreProcessed
-
-**Description**
-The ad group language cannot be removed until campaign language updates have been processed. Please try again in 12 hours.
-
-***
 ## 6000
 ***
 
@@ -14042,6 +14031,17 @@ ExperimentTypeInvalid
 
 **Description**
 The Experiment type is Invalid.
+
+***
+
+**Numeric Code**
+6137
+
+**Symbolic Error Code**
+ExperimentTypeCannotBeChanged
+
+**Description**
+The experiment type cannot be changed.
 
 ***
 
