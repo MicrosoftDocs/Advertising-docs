@@ -89,7 +89,7 @@ Creates a label. For limits on the number of labels you may create per account, 
 |Name|Type|Description|
 |-|-|-
 backgroundColor|string|Optional. The background color to use in the UX for the label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form #RRGGBB or #RBG. For example, CB0400 or F00.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color. If not specified, a random color is chosen for you.
-description|string|Optional. A description that describes the label's use. The maximum size is 200 characters.
+description|string|Optional. A description that describes the label's use. The maximum size is 200 characters.<br /><br />If you specify `backgroundColor`, you must provide a description or empty string.
 name|string|Required. The label's name. The name is case sensitive and must be unique within the account. The maximum size is 80 characters.
 
 ### Returns

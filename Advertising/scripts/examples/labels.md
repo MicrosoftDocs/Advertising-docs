@@ -1,0 +1,137 @@
+---
+title: "Label script examples"
+description: "Shows examples that perform various actions against labels."
+author: "swhite-msft"
+manager: ehansen
+
+ms.author: "scottwhi"
+ms.service: "bingads-scripts"
+ms.topic: "article"
+---
+
+# Script examples for managing labels
+
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
+<!--
+Labels let you organize entities such as campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You decide what your labels mean and how to apply them to your entities. You can then filter and run reports on your labels to get the data that is most meaningful to you.
+-->
+
+
+The following sections show examples of scripts that perform various actions against labels.
+
+
+## Add labels to an account
+
+To use labels, first add them to your account. You may add a maximum of 100,000 labels to an account. To add a label, use the [createLabel](../reference/AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-) method. The method takes as input the label's name, description, and background color. The name is required but the description and color are optional.
+
+The name is case sensitive, cannot exceed 80 characters, and must be unique within the account. Although the color is optional, if you don't specify it, a random color is chosen for you. You may specify the color using a three-byte hexadecimal number in the form #RRGGBB (for example, CB0400) or one of the 16 known color names such as red, yellow, and aqua. You can use the description to document the label's use if the name isn't descriptive enough. If you specify a color, you must specify a description, but it may be an empty string.
+
+The following example, shows three ways to call the `createLabel` method.
+
+```javascript
+function main() {
+
+    AdsApp.createLabel("foo");
+    AdsApp.createLabel("bar", "a descriptive description", "aqua");
+    AdsApp.createLabel("foo foo", "", "#FF0000");
+
+}
+```
+
+
+## List an account's labels
+
+To get a list of labels in an account, use the [labels](../reference/AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-) method. You can filter the list by the label's name using the standard string operators such as =, CONTAINS, and STARTS_WITH.
+
+
+```javascript
+function main() {
+
+    // Gets all the labels in the account
+    var accountLabels = AdsApp.labels()
+        .get();  
+    
+    Logger.log(`selector returned ${accountLabels.totalNumEntities()} labels that matched the selector's conditions`);
+
+    // Gets all the labels in the account that contain foo in the name
+    accountLabels = AdsApp.labels()
+        .withCondition("Name CONTAINS 'foo'")
+        .get();
+    
+    Logger.log(`selector returned ${accountLabels.totalNumEntities()} labels that matched the selector's conditions`);
+
+    // Gets the first 15 labels in the account
+    accountLabels = AdsApp.labels()
+        .withLimit(15)
+        .get();
+    
+    Logger.log(`selector returned ${accountLabels.totalNumEntities()} labels that matched the selector's conditions`);
+
+    // Gets the first 15 labels in the account that contain foo in the name
+    accountLabels = AdsApp.labels()
+        .withCondition("Name CONTAINS 'foo'")
+        .withLimit(15)
+        .get();
+
+    Logger.log(`selector returned ${accountLabels.totalNumEntities()} labels that matched the selector's conditions`);
+
+    while (accountLabels.hasNext()){
+        var label = accountLabels.next();
+
+        Logger.log(`name: ${label.getName()}`);
+        Logger.log(`description: ${label.getDescription()}`);
+        Logger.log(`color: ${label.getColor()}\n\n`);
+    }
+
+}
+```
+
+
+## Apply a label to a keyword
+
+Labels are only useful if you apply them to entities such as keywords. To apply a label to a keyword, use the keyword's [applyLabel](../reference/Keyword.md#applylabel-string-name) method. The method takes as input the label's name. The name must exist in the account, is case sensitive, and must be unique within the keyword.
+
+The following example shows how to add labels to a keyword, list the keyword's labels, and remove labels from a keyword.
+
+```javascript
+function main() {
+
+    // Get a keyword to add labels to
+    var keyword = AdsApp.keywords().withIds(["12345"]).get().next();
+
+    // Print the keyword's existing labels
+    var labels = keyword.labels().get();
+    printLabels(labels);
+
+    // Add labels to the keyword
+    keyword.applyLabel("foo");
+    keyword.applyLabel("foo foo");
+    keyword.applyLabel("bar");
+
+    // Print the new list of labels
+    labels = keyword.labels().get();
+    printLabels(labels);
+
+    // Remove labels from the keyword
+    keyword.removeLabel("foo");
+    keyword.removeLabel("bar");
+
+    // Print the new list of labels
+    labels = keyword.labels().get();
+    printLabels(labels);
+
+}
+
+function printLabels(labels) {
+    Logger.log(`keyword has ${labels.totalNumEntities()} labels`);
+    
+    while (labels.hasNext()){
+        var label = labels.next();
+
+        Logger.log(`name: ${label.getName()}`);
+        Logger.log(`description: ${label.getDescription()}`);
+        Logger.log(`color: ${label.getColor()}\n\n`);
+    }
+}
+```

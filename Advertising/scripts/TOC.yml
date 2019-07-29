@@ -61,6 +61,8 @@
       href: examples/campaigns.md 
     - name: Keywords
       href: examples/keywords.md 
+    - name: Labels
+      href: examples/labels.md 
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
     - name: Authenticating with Google services 
