@@ -90,7 +90,7 @@ function main() {
 
 ## Apply a label to a keyword
 
-Labels are only useful if you apply them to entities such as keywords. To apply a label to a keyword, use the keyword's [applyLabel](../reference/Keyword.md#applylabel-string-name) method. The method takes as input the label's name. The name must exist in the account, is case sensitive, and must be unique within the keyword.
+Labels are only useful if you apply them to entities such as keywords. To apply a label to a keyword, use the keyword's [applyLabel](../reference/Keyword.md#applylabel-string-name-) method. The method takes as input the label's name. The name must exist in the account, is case sensitive, and must be unique within the keyword.
 
 The following example shows how to add labels to a keyword, list the keyword's labels, and remove labels from a keyword.
 
