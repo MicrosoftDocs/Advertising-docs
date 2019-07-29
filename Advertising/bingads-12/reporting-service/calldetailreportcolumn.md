@@ -71,8 +71,7 @@ The report must include at least one of the following attribute columns and at l
 
 |Column|
 |----------|
-|CallStatus|
-|CallTypeName|
+|Duration|
 |EndTime|
 |StartTime|
 
