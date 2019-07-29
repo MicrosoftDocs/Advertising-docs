@@ -83,7 +83,9 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 
 
 ## <a name="createlabel-string-name-string-description-string-backgroundcolor-"></a>createLabel(string name, string description, string backgroundColor)
-Creates a label. For limits on the number of labels you may create per account, see [Limits](/advertising/guides/entity-hierarchy-limits#label).
+Creates a label. 
+
+For limits on the number of labels you may create per account, see [Limits](/advertising/guides/entity-hierarchy-limits#label). For an example that adds a label to an account, see [Using labels](../examples/labels.md).
 
 ### Arguments
 |Name|Type|Description|

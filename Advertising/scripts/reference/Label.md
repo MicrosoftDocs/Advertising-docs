@@ -137,3 +137,4 @@ void|Returns nothing.
 - [LabelIterator](./LabelIterator.md)
 - [AdsApp.createLabel](./AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-)
 - [Keyword.labels](./Keyword.md#labels)
+- [Using labels](../examples/labels.md)

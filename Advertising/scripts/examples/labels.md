@@ -23,9 +23,9 @@ The following sections show examples of scripts that perform various actions aga
 
 ## Add labels to an account
 
-To use labels, first add them to your account. You may add a maximum of 100,000 labels to an account. To add a label, use the [createLabel](../reference/AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-) method. The method takes as input the label's name, description, and background color. The name is required but the description and color are optional.
+To use labels, first add them to your account. You may add a maximum of 100,000 labels to an account. To add a label, use the [createLabel](../reference/AdsApp.md#createlabel-string-name-string-description-string-backgroundcolor-) method. The method takes as input the label's name, description, and background color. 
 
-The name is case sensitive, cannot exceed 80 characters, and must be unique within the account. Although the color is optional, if you don't specify it, a random color is chosen for you. You may specify the color using a three-byte hexadecimal number in the form #RRGGBB (for example, CB0400) or one of the 16 known color names such as red, yellow, and aqua. You can use the description to document the label's use if the name isn't descriptive enough. If you specify a color, you must specify a description, but it may be an empty string.
+The name is required but the description and color are optional. The name is case sensitive, cannot exceed 80 characters, and must be unique within the account. Although the color is optional, if you don't specify it, the service chooses a random color for you. You may specify the color using a three-byte hexadecimal number in the form #RRGGBB (for example, CB0400) or one of the 16 known color names such as red, yellow, and aqua. If you specify a color, you must specify a description, but it may be an empty string.
 
 The following example, shows three ways to call the `createLabel` method.
 
@@ -90,7 +90,7 @@ function main() {
 
 ## Apply a label to a keyword
 
-Labels are only useful if you apply them to entities such as keywords. To apply a label to a keyword, use the keyword's [applyLabel](../reference/Keyword.md#applylabel-string-name-) method. The method takes as input the label's name. The name must exist in the account, is case sensitive, and must be unique within the keyword.
+Labels are only useful if you apply them to entities such as keywords. To apply a label to a keyword, use the keyword's [applyLabel](../reference/Keyword.md#applylabel-string-name-) method. You may apply a maximum of 50 labels to a keyword. The method takes as input the label's name. The label's name is case sensitive, must exist in the account, and must be unique within the keyword.
 
 The following example shows how to add labels to a keyword, list the keyword's labels, and remove labels from a keyword.
 

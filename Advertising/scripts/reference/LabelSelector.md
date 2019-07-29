@@ -128,4 +128,5 @@ limit|int|The number of labels to return. The actual number may be less.
 - [AdsApp.label()](AdsApp.md)
 - [LabelIterator](./LabelIterator.md)
 - [Label](./Label.md)
+- [Using labels](../examples/labels.md)
 

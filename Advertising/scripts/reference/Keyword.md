@@ -56,7 +56,7 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 ## <a name="applylabel-string-name-"></a>applyLabel(string name)
 Applies the label to the keyword.
 
-You may apply a maximum of 50 labels to a keyword.
+You may apply a maximum of 50 labels to a keyword. For an example that adds a label to a keyword, see [Using labels](../examples/labels.md).
 
 ### Arguments
 |Name|Type|Description|
