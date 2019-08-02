@@ -17,7 +17,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 |Method Name|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Gets a selector used to get all substitution parameters used in the ad for this keyword.
-[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this keyword.
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this keyword. 
 [bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Gets the methods used to manage this keyword's bid amount.
 [clearDestinationUrl](#cleardestinationurl)|void|Removes this keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.

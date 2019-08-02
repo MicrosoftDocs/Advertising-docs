@@ -135,3 +135,39 @@ function printLabels(labels) {
     }
 }
 ```
+
+
+## Get keywords that contains any of the specified labels
+
+To get keywords that contain specific label names, use the KeywordSelector object's [withCondition()](../reference/KeywordSelector.md#withcondition-string-condition-) method. Use the LabelNames column name to filter by label names. You may specify an array of one or more names. The names are case sensitive, must match exactly, and must exist in the account. You may apply the following operators:
+
+- CONTAINS_ALL &mdash; selects the keyword if it contains all of the specified labels
+- CONTAINS_ANY &mdash; selects the keyword if it contains any of the specified labels
+- CONTAINS_NONE &mdash; selects the keyword if it contains none of the specified labels
+
+Note that if the label doesn't exist in the account, the selector fails and returns an error.
+
+```javascript
+function main() {
+
+    var keywords = AdsApp.keywords()
+        .withCondition('LabelNames CONTAINS_ANY ["foo foo"]')
+        .get();
+    
+    Logger.log(`keywords with specified label names: ${keywords.totalNumEntities()}`);
+
+    while (keywords.hasNext()){
+        var keyword = keywords.next();
+
+        Logger.log(`\n${keyword.getText()}`);
+
+        var labels = keyword.labels().get();
+
+        while (labels.hasNext()) {
+            var label = labels.next();
+            Logger.log(`${label.getName()}`);
+        }
+    }
+
+}
+```

@@ -45,6 +45,8 @@ For example, the following call returns results in ascending order by the label'
 
 `selector = selector.orderBy("Name");`
 
+If you specify a count column, such as KeywordCount, the selector orders by count and then by name in ascending order.
+
 [!INCLUDE[order-by-limit](../includes/order-by-limit.md)]
 
 ### Arguments
@@ -75,6 +77,9 @@ Supported columns for label filtering. The column names are case sensitive.
 |-|-|-|-
 Name|string|The label's name.<br /><br />`withCondition("Name = 'foo'")`
 KeywordCount|string|The number of keywords associated with the label.<br /><br />`withCondition("KeywordCount > 5")`
+AdCount|string|The number of ads associated with the label.<br /><br />`withCondition("AdCount > 5")`
+AdGroupCount|string|The number of ad groups associated with the label.<br /><br />`withCondition("AdGroupCount > 5")`
+CampaignCount|string|The number of campaigns associated with the label.<br /><br />`withCondition("CampaignCount > 5")`
 
 ### Arguments
 |Name|Type|Description|

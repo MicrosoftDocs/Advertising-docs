@@ -14,7 +14,7 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## July 28, 2019
+## August 5, 2019
 
 The following is a documentation-only change.
 
@@ -34,6 +34,22 @@ The following are non-breaking API changes to support labels.
   - applyLabel &mdash; applies the label to the keyword  
   - labels &mdash; gets a selector used to filter the list of labels applied to this keyword  
   - removeLabel &mdash; removes the label from this keyword
+- Added the LabelNames column to the KeywordSelector object's [withCondition](reference/KeywordSelector.md#keywordselector-string-condition-) method.  
+- Added the following methods to the [Ad](reference/Ad.md) and [ExpandedTextAd](reference/ExpandedTextAd.md) objects.  
+  - applyLabel &mdash; applies the label to the ad  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this ad  
+  - removeLabel &mdash; removes the label from this ad
+- Added the LabelNames column to the AdSelector object's [withCondition](reference/AdSelector.md#adselector-string-condition-) method.  
+- Added the following methods to the [AdGroup](reference/AdGroup.md) object.  
+  - applyLabel &mdash; applies the label to the ad group  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this ad group  
+  - removeLabel &mdash; removes the label from this ad group
+- Added the LabelNames column to the AdGroupSelector object's [withCondition](reference/AdGroupSelector.md#adgroupselector-string-condition-) method.  
+- Added the following methods to the [Campaign](reference/Campaign.md) object.  
+  - applyLabel &mdash; applies the label to the campaign  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this campaign  
+  - removeLabel &mdash; removes the label from this campaign
+- Added the LabelNames column to the CampaignSelector object's [withCondition](reference/CampaignSelector.md#campaignselector-string-condition-) method.  
 
 
 ## April 30, 2019

@@ -17,22 +17,54 @@ Contains the methods for managing a label. For information about labels, see [La
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads associated with this label.
+[adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups associated with this label.
+[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns associated with this label.
 [getColor](#getcolor)|string|Gets the background color that's used in the UX for this label.
 [getDescription](#getdescription)|string|Gets the label's description.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this label.
 [getName](#getname)|string|Gets label's name.
+[keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords associated with this label.
 [remove](#remove)|void|Removes this label.
 [setColor(string color)](#setdescription-string-color-)|void|Sets the background color to use in the UX for this label.
 [setDescription(string description)](#setdescription-string-description-)|void|Sets the label's description.
 [setName(string name)](#setname-string-name-)|void|Sets label's name.
 
-<!--
-[getAds](#getads)|[AdIterator](AdIterator.md)|Gets an iterator that you use to loop through the ads that this label belongs to.
-[getAdGroups](#getadgroups)|[AdGroupIterator](AdGroupIterator.md)|Gets an iterator that you use to loop through the ad groups that this label belongs to.
-[getCampaigns](#getcampaigns)|[CampaignIterator](./CampaignIterator.md)|Gets an iterator that you use to loop through the campaigns that this label belongs to.
-[getKeywords](#getkeywords)|[KeywordIterator](./KeywordIterator.md)|Gets an iterator that you use to loop through the campaigns that this label belongs to.
--->
+
+
+
+## <a name="ads"></a>ads
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of ads associated with this label. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[AdSelector](./AdSelector.md)|A selector used to filter the list of ads associated with this label.
+
+
+## <a name="adgroups"></a>adGroups
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups associated with this label. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[AdGroupSelector](./AdGroupSelector.md)|A selector used to filter the list of ad groups associated with this label.
+
+
+## <a name="campaigns"></a>campaigns
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns associated with this label. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns associated with this label.
 
 
 ## <a name="getcolor"></a>getColor
@@ -80,6 +112,17 @@ Gets the ID that uniquely identifies this label.
 string|The ID that uniquely identifies this label.
 
 
+## <a name="keywords"></a>keywords
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of keywords associated with this label. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords associated with this label.
+
+
 ## <a name="remove"></a>remove
 Removes this label.
 
@@ -95,7 +138,7 @@ Sets the background color to use in the UX for this label.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-color|The background color to use in the UX for this label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form #RRGGBB or #RBG. For example, CB0400 or F00.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color.
+color|The background color to use in the UX for this label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form, #RRGGBB (Scripts doesn't support the #RGB form). For example, CB0400.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color.
 
 ### Returns
 |Type|Description|
@@ -109,7 +152,7 @@ Sets the label's description.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-description|A description that describes the label's use. The maximum size is 200 characters.
+description|A description that describes the label's use. The maximum size is 200 characters. To remove a description, use an empty string ("").
 
 ### Returns
 |Type|Description|
@@ -123,7 +166,7 @@ Sets the label's name.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|The label's new name. The name is case sensitive and must be unique within the account. The maximum size is 80 characters. To get a list of label names already used in this account, see [AdsApp.labels](AdsApp.md#labels).
+name|The label's new name. The name is case sensitive and must be unique within the account. The maximum size is 80 characters. The method trims leading and trailing whitespace from the name. To get a list of label names already used in this account, see [AdsApp.labels](AdsApp.md#labels).
 
 ### Returns
 |Type|Description|

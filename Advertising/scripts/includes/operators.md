@@ -41,3 +41,11 @@ IN []
 NOT_IN []
 ```
 
+
+Operators for columns that contain an array of strings: 
+
+```
+CONTAINS_ALL
+CONTAINS_ANY
+CONTAINS_NONE
+```
