@@ -27,7 +27,7 @@ Contains the methods for managing a label. For information about labels, see [La
 [getName](#getname)|string|Gets label's name.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords associated with this label.
 [remove](#remove)|void|Removes this label.
-[setColor(string color)](#setdescription-string-color-)|void|Sets the background color to use in the UX for this label.
+[setColor(string color)](#setcolor-string-color-)|void|Sets the background color to use in the UX for this label.
 [setDescription(string description)](#setdescription-string-description-)|void|Sets the label's description.
 [setName(string name)](#setname-string-name-)|void|Sets label's name.
 
