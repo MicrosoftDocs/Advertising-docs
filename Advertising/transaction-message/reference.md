@@ -47,7 +47,7 @@ Defines the transaction message.
 
 |Element|Description|Children
 |-|-|-
-|PropertyDataSet|Optional.<br /><br />A container object that contains the metadata for room bundles and rate features. Use `RoomData` and `PackageData` in combination to provide details about room bundles and rate features. For individual rooms that aren't part of a package, use just `RoomData`.|[PropertyDataSet Type](#propertydatasettype)
+|PropertyDataSet|Optional.<br /><br />A container object that contains the metadata for room bundles and s features. Use `RoomData` and `PackageData` in combination to provide details about room bundles and rate features. For individual rooms that aren't part of a package, use just `RoomData`.|[PropertyDataSet Type](#propertydatasettype)
 |Result|Optional.<br /><br />Defines an itinerary (the combination of the `Checkin` and `Nights` elements identifies an itinerary). Specify one `Result` element for each itinerary that you define for a property. The number of itineraries that you may specify is limited by the size of the `Transaction` element, which must be less than 100 MB (or 10 MB compressed). |[Result Type](#resulttype)
 
  
@@ -87,6 +87,7 @@ Defines the itinerary.
 |Custom4|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM4) and `Custom4` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
 |Custom5|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM5) and `Custom5` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
 |AllowablePointsOfSale|Optional.<br /><br />A list of points of sale (POS) that identify websites where users can book the room. By default, the user can use any POS defined in your points of sale feed file. Specify this element only if you want to limit the points of sale for this specific itinerary. |Array of [allowablePointsOfSaleType](#allowablepointsofsaletype)
+|RoomBundle| |Array of [roomPriceDataType](#roompricedatatype)
 
 
 <a name="packagedatatype"></a> 
@@ -102,19 +103,16 @@ Defines a room bundle, which describes rate features (amenities) and terms that 
 |Description|Optional.<br /><br />A description of the package. |[Text Type](#texttype)
 |Capacity|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is capable of accommodating.<br /><br />**NOTES:**<ul><li>The value must be in the range 1 through 20.</li><li>The value must not be less than `Occupancy`.</li></ul> |None
 |Occupancy|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is intended to accommodate. For example, although the room is physically capable of hosting 4 guests, it's intended for only 2 guests.<br /><br />**NOTES:**<ul><li>Although optional, you're strongly encouraged to always specify this element.</li><li>The value must be in the range 1 through 20.</li></ul>|None
-|OccupancyDetails|Optional.<br /><br />A container object that contains details about occupancy. If you include `Occupancy`, you may also specify this element. |[OccupancyDetails](#occupancydetailstype)
-|ChargeCurrency| |
-|Refundable| |
-|BreakfastIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes complimentary breakfast. |
-|ParkingIncluded| |
-|InternetIncluded| |
-|RoomUpgradeIncluded| |
-|MembershipBenefitsIncluded| |
-|CarRentalIncluded| |
-|MilesIncluded| |
-|OnPropertyCredit| |
-|EarlyCheckin| |
-|LateCheckout| |
+|OccupancyDetails|Optional.<br /><br />A container object that contains details about occupancy. If you include `Occupancy`, you may also specify this element. |[OccupancyDetails Type](#occupancydetailstype)
+|ChargeCurrency|Optional<br />Data type is string.<br /><br />Defines when the user pays for a booking. The following are the possible case-insensitive values.<ul><li>Deposit&mdash;The user is charged a portion at booking and the remainder at a later point in time, typically when the user checks out of the hotel.</li><li>Hotel&mdash;The user is charged at check-in. If the payment must be made in the hotel's currency, use this option.</li><li>Installment&mdash;The user is charged a fixed amount at specific intervals over fixed period of time.</li><li>Web&mdash;The user is charged online at the time of booking.</li></ul>The default is web.|None
+|Refundable|Required.<br /><br />An element that determines whether the room charge is refundable.<br /><br />**Attributes**<ul><li>available &mdash; Required. Set to true if the room charge is refundable; otherwise, false.</li><li>refundable_until_days &mdash; Optional. The date by which the guest must request a refund. Specify the date as the number of days in advance of check-in. If not specified, the room charge is refundable up to and including the check-in date.</li><li>refundable_until_time &mdash; Optional. The guest may request a refund up until this time on the date referenced in the *refundable_until_days* attribute. Specify the time in the hotel's local time. Specify the time in the form, hh:mm:ss. For example, if the refund is available until 4 PM, use 16:00:00.</li></ul>|None
+|BreakfastIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes complimentary breakfast. Valid values are:<ul><li>1 (true)</li><li>0 (false)</li><li>true</li><li>false</li></ul> The default is false. You can use \<BreakfastIncluded/> as a shortcut for true.<br /><br />Don't include in a room bundle if the hotel provides free breakfast for all guests.|None
+|ParkingIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes complimentary parking. Valid values are:<ul><li>1 (true)</li><li>0 (false)</li><li>true</li><li>false</li></ul>The default is false. You can use \<ParkingIncluded/> as a shortcut for true.<br /><br />Don't include in a room bundle if the hotel provides free parking for all guests.|None
+|InternetIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes complimentary Internet service. Valid values are:<ul><li>1 (true)</li><li>0 (false)</li><li>true</li><li>false</li></ul>The default is false. You can use \<InternetIncluded/> as a shortcut for true.<br /><br />Don't include in a room bundle if the hotel provides free internet service for all guests.|None
+|MembershipBenefitsIncluded|Optional.<br /><br />Defines membership benefits that apply for the length of the guest's stay.|[MembershipBenefits Type](#membershipbenefitstype)
+|CarRentalIncluded|Optional.<br />Data type is Boolean.<br /><br />A value that determines whether the room bundle includes a complimentary car rental for the length of the guest's stay. If the stay includes a complimentary car rental, include the \<CarRentalIncluded/> element, otherwise, don't include it.|None
+|MilesIncluded|Optional.<br />Include if the stay provides frequent flyer miles.|[Miles Type](#milestype)
+|OnPropertyCredit|Optional.<br />Include if the guest receives a one-time credit for using on-site services during their stay.|[OnPropertyCredit Type](#onpropertycredittype)
 
 
 <a name="roomdatatype"></a> 
@@ -193,3 +191,73 @@ Defines a container object that contains the URL of an image of the room type.
 |-|-|-
 |URL|Required.<br /><br />A URL to the image.|None
 |Caption|Optional.<br /><br />A container object that contains a caption for the image.|[Text Type](#texttype)
+
+ 
+<a name="membershipbenefitstype"></a> 
+
+## MembershipBenefits Type
+
+Defines a membership's benefit.
+
+|Element|Description|Children
+|-|-|-
+|ProgramName|The benefit's name.|[Text Type](#texttype)
+|ProgramLevel|The benefit's level. For example, Platinum or Gold.|[Text Type](#texttype)
+|NightlyValue|Optional.<br />Data type is decimal.<br /><br />The benefit's nightly value.<br /><br />**Attributes:**<ul><li>currency &mdash; The currency that the value is specified in. To specify the currency, use the ISO-4217 three-letter currency code. For example, use USD for United States Dollar.</li></ul>|None
+
+ 
+<a name="milestype"></a> 
+
+## Miles Type
+
+Defines the frequent flyer provider and the number of miles the stay is worth.
+
+|Element|Description|Children
+|-|-|-
+|NumberOfMiles|The number of miles the stay is worth.|None
+|Provider|The name of the frequent flyer provider.|[Text Type](#texttype)
+
+ 
+<a name="onpropertycredittype"></a> 
+
+## OnPropertyCredit Type
+
+Defines the credit the guest receives for using one of the on-site services.
+
+|Element|Description|Children
+|-|-|-
+|Amount|Data type is decimal.<br /><br />The amount of the credit given the guest if they use one of the services. <br /><br />**Attributes:**<ul><li>currency &mdash; The currency that the amount is specified in. To specify the currency, use the ISO-4217 three-letter currency code. For example, use USD for United States Dollar..|None
+
+ 
+<a name="roompricedatatype"></a> 
+
+## roomPriceDataType
+
+Defines a .
+
+|Element|Description|Children
+|-|-|-
+|RoomId|Required.<br />Data type is string.<br /><br />An ID that uniquely identifies a \<RoomData> element you defined in [<PackageDataSet>](#packagedataset).|None
+|PackageId|Required.<br />Data type is string.<br /><br />An ID that uniquely identifies a \<PackageData> element you defined in [<PackageDataSet>](#packagedataset).|None
+|Baserate|Required.<br />Data type is decimal.<br /><br />Use the room rate of the least expensive, private, double-occupancy room that's available. The base rate is the cost of the room for the entire stay&mdash;not the per night rate. For example, if the per night rate is 100.00 and the itinerary is for three nights, the base rate is 300.00. <br /><br />Attributes:<ul><!--<li>all_inclusive&mdash;Optional. If the base rate includes taxes and fees, set to **true**; otherwise, **false**. The default is **false**.<br /><br />If **true**, `Tax` and `OtherFees` must be set to 0.00.<br /><br />If the hotel is located in the US or Canada, you should not set this attribute to **true**. For information, see ???.</li>--><li>currency&mdash;Required. The three-character currency code that the rate is specified in. For example, USD for US Dollar. For a list of codes, see [ISO 4217](http://www.xe.com/iso4217.php).</li></ul>Notes:<ul><li>To remove the itinerary from inventory, set this element, `Tax`, and `OtherFees` to -1.00. You should remove the itinerary from inventory whenever there are no rooms available to satisfy the stay.</li><li>All currencies must use a decimal point (.) to separate the integer portion of the rate from the fractional portion (for example, 150.00).</li><li>Do not use a thousands separator in the integer portion of the rate. Instead of 1,150.00, use 1150.00</li></ul>|None
+|Tax|Required.<br />Data type is decimal.<br /><br />The tax amount is based on `Baserate`.<br /><br />Attributes:<ul><li>currency&mdash;Required. The three-character currency code that the tax is specified in. For example, USD for US Dollar. For a list of codes, see [ISO 4217](http://www.xe.com/iso4217.php).</li></ul>Notes:<ul><li>All currencies must use a decimal point (.) to separate the integer portion of the tax from the fractional portion (for example, 50.00).</li><li>Do not use a thousands separator in the integer portion of the tax. Instead of 1,000.00, use 1000.00</li><!--<li>If the base rate's `all_inclusive` attribute is **true**, set this field to 0.00.</li>--><li>If `Baserate` is set to -1.00, this element must also be set to -1.00. </li></ul>|None
+|OtherFees|Required.<br />Data type is decimal.<br /><br />Any fee not covered by base rate and taxes (for example, a parking fee or portable bed fee).<br /><br />Attributes:<ul><li>currency&mdash;Required. The three-character currency code that the fee is specified in. For example, USD for US Dollar. For a list of codes, see [ISO 4217](http://www.xe.com/iso4217.php).</li></ul>Notes:<ul><li>All currencies must use a decimal point (.) to separate the integer portion of the fee from the fractional portion (for example, 50.00).</li><li>Do not use a thousands separator in the integer portion of the fee. Instead of 1,000.00, use 1000.00</li><!--<li>If the base rate's `all_inclusive` attribute is **true**, set this element to 0.00.</li>--><li>If `Baserate` is set to -1.00, this element must also be set to -1.00.</ul>|None
+|Capacity|Optional.<br />Data type is integer.<br /><br />The maximum number of guests that the room is capable of accommodating.<br /><br />**NOTES:**<ul><li>The value must be in the range 1 through 20.</li><li>The value must not be less than `Occupancy`.</li></ul> |None
+|Occupancy|Required.<br />Data type is integer.<br /><br />The maximum number of guests that the room is intended to accommodate. For example, although the room is physically capable of hosting 4 guests, it's intended for only 2 guests.<br /><br />**NOTES:**<ul><li>Although optional, you're strongly encouraged to always specify this element.</li><li>The value must be in the range 1 through 20.</li><li>The value must not be greater than `Capacity`.</li></ul>|None
+|OccupancyDetails|Optional.<br /><br />A container object that contains details about occupancy. If you include `Occupancy`, you may also specify this element. |[OccupancyDetails](#occupancydetailstype)
+|Custom1|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
+|Custom2|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM2) and `Custom2` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
+|Custom3|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM3) and `Custom3` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
+|Custom4|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM4) and `Custom4` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
+|Custom5|Optional.<br />Data type is string.<br /><br />A user-defined string that Bing uses as a substitution value of a simarly named dynamic query parameter in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM5) and `Custom5` is set to summer2017, the resulting POS URL is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).|None
+|Name|Required.<br /><br />A name that identifies the type of room. This should be the same name that you use to identify the room on your website. Specify a `Text` element for each language you support.|[Text Type](#texttype)
+|Description|Optional.<br /><br />A description of the room. |[Text Type](#texttype)
+|PhotoURL|Optional.<br /><br />A container object that contains the URL of an image of the room type. You may specify one or more photos. |[PhotoURL Type](#photourltype)
+
+|Property|Required.<br />Data type is string.<br /><br />The ID of the hotel property. This ID must match the ID of a hotel in your hotel feed file that you submitted to Bing. |None
+|Checkin|Required.<br />Data type is date.<br /><br />The check-in date in the form: YYYY-MM-DD.<br /><br />Notes:<ul><li>The date cannot be earlier that message's `timestamp` date.</li><li>The check-in date must be less than 90 days (the maximum advanced booking that you may specify) out from the time stamp date.</li><li>The combination of `Checkin` and `Nights` defines an itinerary. The itinerary must be unique for a `Property`.</li></ul> |None
+|Nights|Required.<br />Data type is unsigned integer.<br /><br />The number of nights stay for this itinerary.|None
+|ExpirationTimestamp|Optional.<br />The UTC date and time that the price is considered expired. If the price is expired, the itinerary will not serve.<br /><br />The time stamp is in the form: YYYY-MM-DDThh:mm:ss[+/-hh:mm]. The UTC offset is optional. For example, 2017-06-14T08:00:34Z (no offset) or 2017-06-14T01:00:34+07:00.
+|ChargeCurrency|Optional.<br />Data type is string.<br /><br />Defines when the user pays for a booking. The following are the possible case-insensitive values.<br /><br /><ul><li>Deposit&mdash;The user is charged a portion at booking and the remainder at a later point in time, typically when the user checks out of the hotel.</li><li>Hotel&mdash;The user is charged at check-in. If the payment must be made in the hotel's currency, use this option.</li><li>Web&mdash;The user is charged online at the time of booking. This is the default value.</li></ul>|None
+|AllowablePointsOfSale|Optional.<br /><br />A list of points of sale (POS) that identify websites where users can book the room. By default, the user can use any POS defined in your points of sale feed file. Specify this element only if you want to limit the points of sale for this specific itinerary. |Array of [allowablePointsOfSaleType](#allowablepointsofsaletype)
+|RoomBundle| |Array of [roomPriceDataType](#roompricedatatype)
