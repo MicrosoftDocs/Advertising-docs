@@ -14,7 +14,7 @@ Defines an app install ad that can be downloaded and uploaded in a bulk file. Cr
 > [!NOTE]
 > App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.
 > 
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 You can download all *App Install Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *AppInstallAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
