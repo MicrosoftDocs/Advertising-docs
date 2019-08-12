@@ -138,7 +138,7 @@ Sets the background color to use in the UX for this label.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-color|The background color to use in the UX for this label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form, #RRGGBB (Scripts doesn't support the #RGB form). For example, CB0400.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color.
+color|The background color to use in the UX for this label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form, #RRGGBB. For example, #CB0400.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color.
 
 ### Returns
 |Type|Description|

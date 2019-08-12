@@ -151,7 +151,7 @@ Note that if the label doesn't exist in the account, the selector fails and retu
 function main() {
 
     var keywords = AdsApp.keywords()
-        .withCondition('LabelNames CONTAINS_ANY ["foo foo"]')
+        .withCondition('LabelNames CONTAINS_ANY ["foo", "bar"]')
         .get();
     
     Logger.log(`keywords with specified label names: ${keywords.totalNumEntities()}`);
