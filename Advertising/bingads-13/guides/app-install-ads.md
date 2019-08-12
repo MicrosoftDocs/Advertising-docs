@@ -16,7 +16,7 @@ Create an app install ad if your intention is to drive app downloads, and not ne
 > [!NOTE]
 > App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.
 > 
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 ## <a name="bulk"></a>Bulk API for App Install Ads
 The [App Install Ad](../bulk-service/app-install-ad.md) Bulk record is available for managing app install ads.

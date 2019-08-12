@@ -439,7 +439,7 @@ For Dynamic Search Ads campaigns, the campaign and ad group level language setti
 ## <a name="localinventoryadsenabled"></a>LocalInventoryAdsEnabled
 Determines whether local inventory ads are enabled for the Microsoft Merchant Center store.
 
-Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 Set this property to *TRUE* if you want to enable local inventory ads, and otherwise set it to *FALSE*.
 
@@ -568,7 +568,7 @@ When you download campaigns and if the [Campaign Type](#campaigntype) field is s
 The target settings that are applicable for criterion types e.g., audiences that are associated with this campaign. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 Include the criterion type group name in this field if you want the "target and bid" option. In this case we will only deliver ads to people who meet at least one of your criteria, while letting you make bid adjustments for specific criteria. 
 

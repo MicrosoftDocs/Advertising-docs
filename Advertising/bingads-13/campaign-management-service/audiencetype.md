@@ -34,7 +34,7 @@ Defines the possible audience types.
 |<a name="inmarket"></a>InMarket|The audience is an in-market audience.|
 |<a name="product"></a>Product|The audience is a product audience.|
 |<a name="remarketinglist"></a>RemarketingList|The audience is a remarketing list.|
-|<a name="similarremarketinglist"></a>SimilarRemarketingList|The audience is a similar remarketing list.|
+|<a name="similarremarketinglist"></a>SimilarRemarketingList|The audience is a similar remarketing list.<br/><br/>Not everyone has this feature yet. If you don't, don't worry. It's coming soon.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
