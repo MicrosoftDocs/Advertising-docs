@@ -10,6 +10,13 @@ ms.author: "scottwhi"
 # Release Notes
 This topic describes recent changes made to Version 9.1 of the Content API.
 
+## August 13, 2019
+
+This release includes the following changes:
+
+- Updated the [Products](product-resource.md) resource object to support the Netherlands market.  
+  - Added nl (Dutch) as a possible value to [contentLanguage](product-resource.md#contentlanguage)
+  - Added NL (Netherlands) as a possible value to [targetCountry](product-resource.md#targetcountry)
 
 ## June 14, 2019
 
@@ -27,7 +34,9 @@ The following is a documentation-only change.
 
 ## November 9 2018
 
-Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to closed pilot participants only. [Read more](manage-product-pricing.md).
+This release includes the following changes:
+
+- Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to closed pilot participants only. [Read more](manage-product-pricing.md).
 
 
 ## August 1 2018
