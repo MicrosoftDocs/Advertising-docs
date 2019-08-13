@@ -14,9 +14,9 @@ This topic describes recent changes made to Version 9.1 of the Content API.
 
 This release includes the following changes:
 
-- Updated the [Products](product-resource.md) resource object to support the Netherlands market.  
-  - Added nl (Dutch) as a possible value to [contentLanguage](product-resource.md#contentlanguage)
-  - Added NL (Netherlands) as a possible value to [targetCountry](product-resource.md#targetcountry)
+- Updated the [Products](products-resource.md) resource object to support the Netherlands market.  
+  - Added nl (Dutch) as a possible value to [contentLanguage](products-resource.md#contentlanguage)
+  - Added NL (Netherlands) as a possible value to [targetCountry](products-resource.md#targetcountry)
 
 ## June 14, 2019
 
