@@ -118,7 +118,7 @@ The audience needs to have at least 300 people before Microsoft Advertising will
 ## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
-The audience needs to have at least 1,000 people before Microsoft Advertising will use it for optimizations.
+The audience needs to have at least 300 people before Microsoft Advertising will use it for optimizations.
 
 This property will be empty for up to 24 hours while the audience is being built, for example if you have imported new custom audiences from DMP, it takes 24 hours to build the audience, and in the meantime this property will be empty.
 
