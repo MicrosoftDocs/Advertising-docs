@@ -144,6 +144,7 @@ FirstPageCpc|double|The average amount an advertiser is charged each time their 
 TopOfPageCpc|double|The average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. Use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results. The CPC is in the currency of the current account.<br /><br />`withCondition("TopOfPageCpc > 8.00")`|Best position
 AdGroupName|string|The name of the ad group that contains the keywords.<br /><br />`withCondition("AdGroupName = 'foo'")`|
 CampaignName|string|The name of the campaign that contains the keywords.<br /><br />`withCondition("CampaignName = 'bar'")`|
+LabelNames|string set|A list of one or more case-sensitive label names. Use to get keywords associated with the named labels.<br /><br />`withCondition("LabelNames  CONTAINS_ANY ['bar', 'foo']")`|
 
 ### Arguments
 |Name|Type|Description|

@@ -20,7 +20,7 @@ The example:
 - Writes the new and old bid values back to the spreadsheet;
 - Sends an email notification that the bids were updated.
 
-Before using this example, see [Authenticating with Google services](authenticating-with-google-services.md) for options on getting an access token to use in this example.
+Before using this example, see [Authenticating with Google services](authenticating-with-google-services.md) for options on getting an access token or refresh token to use in this example.
 
 ```javascript
 function main() {

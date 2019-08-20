@@ -61,6 +61,8 @@
       href: examples/campaigns.md 
     - name: Keywords
       href: examples/keywords.md 
+    - name: Labels
+      href: examples/labels.md 
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
     - name: Authenticating with Google services 
@@ -154,6 +156,12 @@
           href: ./reference/KeywordSelector.md 
         - name: KeywordUrls
           href: ./reference/KeywordUrls.md 
+        - name: Label
+          href: ./reference/Label.md 
+        - name: LabelIterator
+          href: ./reference/LabelIterator.md 
+        - name: LabelSelector
+          href: ./reference/LabelSelector.md 
         - name: Logger
           href: ./reference/Logger.md 
         - name: NegativeKeywordList

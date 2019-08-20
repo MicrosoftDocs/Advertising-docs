@@ -19,6 +19,7 @@ Contains the methods used to manage a [campaign](/advertising/guides/entity-hier
 [addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
 [adgroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this campaign.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this campaign.
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this campaign. 
 [enable](#enable)|void|Enables this campaign.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Gets this campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Gets this campaign's budget.
@@ -30,9 +31,11 @@ Contains the methods used to manage a [campaign](/advertising/guides/entity-hier
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this campaign.
 [newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder used to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this campaign.
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
 [urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Gets the methods for managing this campaign's tracking template and custom parameters.
 
@@ -71,6 +74,22 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of ads in th
 |Type|Description|
 |-|-
 [AdSelector](./AdSelector.md)|A selector used to filter the list of ads in this campaign.
+
+
+## <a name="applylabel-string-name-"></a>applyLabel(string name)
+Applies the label to the campaign.
+
+You may apply a maximum of 50 labels to a campaign. For an example that adds a label to an entity, see [Using labels](../examples/labels.md).
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels in this account that you can apply, see [AdsApp.labels](AdsApp.md#labels). 
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="enable"></a>enable
@@ -174,6 +193,17 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 [KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in this campaign. 
 
 
+## <a name="labels"></a>labels
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this campaign.
+
+### Returns
+
+|Type|Description|
+|-|-
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels associated with this campaign.
+
+
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
 Gets a [builder](../concepts/builders.md) used to add an ad group to this campaign.
 
@@ -194,6 +224,20 @@ void|Returns nothing.
 
 ## <a name="remove"></a>remove
 Removes this campaign.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="removelabel-string-name-"></a>removeLabel(string name)
+Removes the label from the campaign.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels associated with this campaign, see [labels](#labels). 
 
 ### Returns
 |Type|Description|

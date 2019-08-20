@@ -14,6 +14,44 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## August 5, 2019
+
+The following is a documentation-only change.
+
+- Clarified that Scripts uses the account's time zone as elsewhere in Microsoft Advertising. For example, if you use a selector's .forDateRange() method, Scripts uses the account's time zone to determine the data to return. [Read more](https://help.ads.microsoft.com/#apex/3/en/54483/2-500)
+- Clarified that data latency in Scripts is the same as elsewhere in Microsoft Advertising. [Read more](https://help.ads.microsoft.com/#apex/3/en/54480/2-500)
+
+The following are non-breaking API changes to support labels.
+
+- Added the following methods to the [AdsApp](reference/AdsApp.md) object.  
+  - createLabel &mdash; creates a label
+  - labels &mdash; gets a selector used to filter the list of labels in this account  
+- Added the following label-related objects.  
+  - [Label](reference/Label.md) &mdash; defines a label.
+  - [LabelSelector](reference/LabelSelector.md) &mdash; gets a list of labels for the account.
+  - [LabelIterator](reference/LabelIterator.md) &mdash; iterates over a list of labels that matched the selector's selection criteria.  
+- Added the following methods to the [Keyword](reference/Keyword.md) object.  
+  - applyLabel &mdash; applies the label to the keyword  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this keyword  
+  - removeLabel &mdash; removes the label from this keyword
+- Added the LabelNames column to the KeywordSelector object's [withCondition](reference/KeywordSelector.md#withcondition-string-condition-) method.  
+- Added the following methods to the [Ad](reference/Ad.md) and [ExpandedTextAd](reference/ExpandedTextAd.md) objects.  
+  - applyLabel &mdash; applies the label to the ad  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this ad  
+  - removeLabel &mdash; removes the label from this ad
+- Added the LabelNames column to the AdSelector object's [withCondition](reference/AdSelector.md#withcondition-string-condition-) method.  
+- Added the following methods to the [AdGroup](reference/AdGroup.md) object.  
+  - applyLabel &mdash; applies the label to the ad group  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this ad group  
+  - removeLabel &mdash; removes the label from this ad group
+- Added the LabelNames column to the AdGroupSelector object's [withCondition](reference/AdGroupSelector.md#withcondition-string-condition-) method.  
+- Added the following methods to the [Campaign](reference/Campaign.md) object.  
+  - applyLabel &mdash; applies the label to the campaign  
+  - labels &mdash; gets a selector used to filter the list of labels applied to this campaign  
+  - removeLabel &mdash; removes the label from this campaign
+- Added the LabelNames column to the CampaignSelector object's [withCondition](reference/CampaignSelector.md#withcondition-string-condition-) method.  
+
+
 ## April 30, 2019
 
 The following is a documentation-only change.

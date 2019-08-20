@@ -24,8 +24,10 @@ This is the top-level object used to access and manage a single account.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this account.
 [budgets](#budgets)|[BudgetSelector](./BudgetSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of shared budgets in this account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns in this account.
+[createLabel(string name, string description, string backgroundColor)](#createlabel-string-name-string-description-string-backgroundcolor-)|void|Creates a label.
 [currentAccount](#currentaccount)|[Account](./Account.md)|Gets the account that the script is currently processing.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector used to filter the list of keywords in this account.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector used to filter the list of negative keyword lists in this account.
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder used to add a negative keyword list to this account.
 
@@ -80,6 +82,24 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 [CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns in the current account.
 
 
+## <a name="createlabel-string-name-string-description-string-backgroundcolor-"></a>createLabel(string name, string description, string backgroundColor)
+Creates a label. 
+
+For limits on the number of labels you may create per account, see [Limits](/advertising/guides/entity-hierarchy-limits#label). For an example that adds a label to an account, see [Using labels](../examples/labels.md).
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+backgroundColor|string|Optional. The background color to use in the UX for the label. You may specify the color using:<ul><li>A three-byte hexadecimal number in the form, #RRGGBB. For example, #CB0400.</li><li>One of the 16 known CSS color names. For example, aqua, yellow, and fuchsia.</li></ul>Consider accessability when choosing the color. If not specified, a random color is chosen for you.
+description|string|Optional. A description that describes the label's use. The maximum size is 200 characters.<br /><br />If you specify `backgroundColor`, you must provide a description or an empty string ("").
+name|string|Required. The label's name. The name is case sensitive and must be unique within the account. The maximum size is 80 characters. The method trims leading and trailing whitespace from the name. 
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
 ## <a name="currentaccount"></a>currentAccount
 
 Gets the account that the script is currently processing.
@@ -114,6 +134,17 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 |Type|Description|
 |-|-
 [KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in the current account.
+
+
+## <a name="labels"></a>labels
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this account.
+
+### Returns
+
+|Type|Description|
+|-|-
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels in the current account.
 
 
 ## <a name="negativekeywordlists"></a>negativeKeywordLists
