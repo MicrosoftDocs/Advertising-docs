@@ -21,6 +21,7 @@ See the following topics for examples that demonstrate how to use the core featu
 - [Budgets](./budgets.md)
 - [Campaigns](./campaigns.md)
 - [Keywords](./keywords.md)
+- [Labels](./labels.md)
 - [Fetching web resources](./fetch-resources.md)
 
 For more complete solutions, see [Solutions](../solutions/index.md).

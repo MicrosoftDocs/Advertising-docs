@@ -127,14 +127,17 @@ The same applies if you want to get an entity's parent. Instead of traversing th
 
 ```javascript
     // Get all ads.
-    var ads = AdsApp.ads().get();
+    var ads = AdsApp.ads()
+        .withCondition('Clicks > 5')
+        .forDateRange('LAST_7_DAYS')
+        .get();
 
     while (ads.hasNext()) {
         var ad = ads.next();
         
         // Do something with campaign and adGroup.
         var adGroup = ad.adGroup();
-        var campaign = ad.campmaign();
+        var campaign = ad.campaign();
     }
 ```
 
@@ -264,6 +267,44 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 ### Include the forDateRange method only if you plan to call the entity's getStats method
 
 Calling a selector's `forDateRange` method causes the selector to get the entity's performance data. Getting an entity's performance data is expensive, so only get it if you plan to call the entity's `getStats` method and use the data.
+
+The date range that you specifying for an entity does not apply to the parent or child entities that you access from that entity. For example, if you get an ad group, then get its parent campaign and try access the campaign's performance metrics, the call fails.
+
+The `campaignStats.getReturnOnAdSpend()` call in the following example fails because the date range applies to the ad group and not the campaign.
+
+```javascript
+    var myAdGroups = AdsApp.adGroups().
+        .withCondition("CampaignName CONTAINS 'gen'")
+        .forDateRange("LAST_7_DAYS")
+        .get();
+
+    while (myAdGroups.hasNext()) {
+        var adGroup = myAdGroups.next();
+        var campaign = adGroup.getCampaign();
+        var campaignStats = campaign.getStats();
+        var campaignROAS = campaignStats.getReturnOnAdSpend();
+    }
+```
+
+For this to work, you need to create a selector for the campaign. 
+
+```javascript
+    var myAdGroups = AdsApp.adGroups().
+        .withCondition("CampaignName CONTAINS 'gen'")
+        .forDateRange("LAST_7_DAYS")
+        .get();
+
+    while (myAdGroups.hasNext()) {
+        var adGroup = myAdGroups.next();
+        var campaign = AdsApp.campaigns()
+            .withIds([adGroup.getCampaign().getId()])
+            .forDateRange("LAST_7_DAYS")
+            .get()
+            .next();
+        var campaignStats = campaign.getStats();
+        var campaignROAS = campaignStats.getReturnOnAdSpend();
+    }
+```
 
 
 ### Don't change an entity's property that's used as a condition in the selector

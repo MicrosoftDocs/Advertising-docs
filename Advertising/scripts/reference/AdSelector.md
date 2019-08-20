@@ -134,6 +134,8 @@ AdGroupName|string|The name of the ad group that the ads belong to.<br /><br />`
 AdGroupStatus|enumeration|The status of the ad group that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent ad group is paused.<br /><br />`withCondition("AdGroupStatus = PAUSED")`
 CampaignName|string|The name of the campaign that the ads belong to.<br /><br />`withCondition("CampaignName CONTAINS_IGNORE_CASE 'truck'")`
 CampaignStatus|enumeration|The status of the campaign that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent campaign is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
+LabelNames|string set|A list of one or more case-sensitive label names. Use to get ads associated with the named labels.<br /><br />`withCondition("LabelNames  CONTAINS_ANY ['bar', 'foo']")`
+
 
 ### Arguments
 |Name|Type|Description|

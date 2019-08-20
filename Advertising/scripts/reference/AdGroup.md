@@ -17,6 +17,7 @@ Contains the methods used to manage an [ad group](/advertising/guides/entity-hie
 |Method Name|Return Type|Description|
 |-|-|-
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this ad group.
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad group. 
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
 [getCampaign](#getcampaign)|[Campaign](Campaign.md)|Gets the campaign that this ad group belongs to.
@@ -30,9 +31,11 @@ Contains the methods used to manage an [ad group](/advertising/guides/entity-hie
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad group.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder used to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad group.
 [setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
@@ -50,6 +53,22 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of ads in th
 |Type|Description|
 |-|-
 [AdSelector](./AdSelector.md)|A selector used to filter the list of ads in this ad group.
+
+
+## <a name="applylabel-string-name-"></a>applyLabel(string name)
+Applies the label to the ad group.
+
+You may apply a maximum of 50 labels to an ad group. For an example that adds a label to an entity, see [Using labels](../examples/labels.md).
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels in this account that you can apply, see [AdsApp.labels](AdsApp.md#labels). 
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="bidding"></a>bidding
@@ -171,6 +190,17 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 [KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in this ad group.
 
 
+## <a name="labels"></a>labels
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad group.
+
+### Returns
+
+|Type|Description|
+|-|-
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels associated with this ad group.
+
+
 ## <a name="newad"></a>newAd
 Gets an object that contains methods for getting ad builders.
 
@@ -192,6 +222,20 @@ Gets a [builder](../concepts/builders.md) used to add a keyword to this ad group
 
 ## <a name="pause"></a>pause
 Pauses this ad group.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="removelabel-string-name-"></a>removeLabel(string name)
+Removes the label from the ad group.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels associated with this ad group, see [labels](#labels). 
 
 ### Returns
 |Type|Description|

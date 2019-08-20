@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Ad
 
-The base object that ads such as expanded text ads derive from. 
+The base object that ads, such as expanded text ads, derive from. 
 
 This object also represents standard text ads. You may no longer create standard text ads but you may retrieve, pause, remove, and enable them. The following methods do not apply to derived objects and should not be called.
 
@@ -24,6 +24,7 @@ This object also represents standard text ads. You may no longer create standard
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad. 
 [asType](#astype)|[AdViewSpace](AdViewSpace.md)|Contains the methods used to cast this ad to a specific ad type.
 [enable](#enable)|void|Enables this ad.
 [getAdGroup](#getadgroup)|[AdGroup](Adgroup.md)|Gets the ad group that this ad belongs to.
@@ -41,9 +42,27 @@ This object also represents standard text ads. You may no longer create standard
 [isMobilePreferred](#ismobilepreferred)|boolean|Gets a Boolean value that indicates whether the preference is for this ad to be displayed on mobile devices or all devices.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.
 [isType](#istype)|[AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.
 [pause](#pause)|void|Pauses this ad.
 [remove](#remove)|void|Removes this ad.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad.
 [urls](#urls)|[AdUrls](AdUrls.md)|Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.
+
+
+## <a name="applylabel-string-name-"></a>applyLabel(string name)
+Applies the label to the ad.
+
+You may apply a maximum of 50 labels to an ad. For an example that adds a label to an entity, see [Using labels](../examples/labels.md).
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels in this account that you can apply, see [AdsApp.labels](AdsApp.md#labels). 
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="astype"></a>asType
@@ -199,6 +218,17 @@ Contains the methods used to test if an ad is of the specified type.
 [AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type.
 
 
+## <a name="labels"></a>labels
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.
+
+### Returns
+
+|Type|Description|
+|-|-
+[LabelSelector](./LabelSelector.md)|A selector used to filter the list of labels associated with this ad.
+
+
 ## <a name="pause"></a>pause
 Pauses this ad.
 
@@ -210,6 +240,20 @@ void|Returns nothing.
 
 ## <a name="remove"></a>remove
 Removes this ad.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="removelabel-string-name-"></a>removeLabel(string name)
+Removes the label from the ad.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+name|string|The label's case-sensitive name. To get a list of labels associated with this ad, see [labels](#labels). 
 
 ### Returns
 |Type|Description|
