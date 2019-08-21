@@ -14,7 +14,7 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## August 5, 2019
+## August 20, 2019
 
 The following is a documentation-only change.
 
