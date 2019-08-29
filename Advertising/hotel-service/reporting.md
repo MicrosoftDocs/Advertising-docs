@@ -234,7 +234,7 @@ The request must include at least one dimension column and one measure column.
 |Column name|Report column name|Description
 |-|-|-
 |AdvancedBookingWindow|Adv. booking window|The number of days before the check-in date that the user is asking to book the hotel room. For example, if today is 3 May and the user is asking to book a room for 8 May, the column's value is 5.
-|CheckinDay|Checkin day|The day of the week (for example, Wednesday) the user is asking to check into the hotel.
+|CheckinDay|Checkin day|The day of the week that the user is asking to check into the hotel. The following are the possible integer values.<ul><li>1 (Monday)</li><li>2 (Tuesday)</li><li>3 (Wednesday)</li><li>4 (Thursday)</li><li>5 (Friday)</li><li>6 (Saturday)</li><li>7 (Sunday)</li></ul>
 |Date|Date|A date within the reporting period. This column is automatically added to the report if not specified. The format is YYYY-MM-dd (for example, 2017-11-16).
 |DateType|Date type|Indicates whether the user searched for hotels using specific dates. The following are the possible values.<ul><li>DefaultDate&mdash;The user didn't search for hotels using specific dates</li><li>SelectedDate&mdash;The user searched for hotels using specific dates</li>
 |DeviceType|Device type|The type of device that the ads were displayed on. The following are the possible values.<ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>
