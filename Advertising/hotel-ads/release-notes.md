@@ -12,12 +12,26 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
-## July 26, 2019
+## August 30, 2019
 
-- Added support for room bundles and rate features to [Transaction Message](../transaction-message/reference.md). [Read more](???).  
+- Added support for room bundles to [Transaction Message](../transaction-message/reference.md). [Read more](../transaction-message/using-room-bundles.md).  
   - Updates include:  
-    - Added the \<PropertyDataSet> element as a child element of the \<Transaction> element.
-    - Added the \<RoomBundle> element as a child element of the \<Result> element.  
+    - Added the [<PropertyDataSet>](../transaction-message/reference.md#propertydatasettype) element as a child element of the [<Transaction>](../transaction-message/reference.md#transaction) element. Used to specify the room and package metadata for a property.
+    - Added the [<PackageData>](../transaction-message/reference.md#packagedatatype) object as a child of \<PropertyDataSet>.
+    - Added the [<RoomData>](../transaction-message/reference.md#roomdatatype) object as a child of \<PropertyDataSet>.
+    - Added the [<RoomBundle>](../transaction-message/reference.md#roombundletype) element as a child element of the [<Result>](../transaction-message/reference.md#resulttype) element. Used to specify room types and packages for itineraries.
+    - Added the following types used by `RoomData` and `PackageData`:  
+      - [OnPropertyCredit](../transaction-message/reference.md#onpropertycredittype)   
+      - [Miles](../transaction-message/reference.md#milestype)   
+      - [MembershipBenefits](../transaction-message/reference.md#membershipbenefitstype)   
+      - [PhotoUrl](../transaction-message/reference.md#photourltype)   
+      - [OccupancyDetails](../transaction-message/reference.md#occupancydetailstype)   
+      - [Children](../transaction-message/reference.md#childrentype)   
+      - [Text](../transaction-message/reference.md#texttype)   
+
+
+
+
 
 ## June 13, 2019
 

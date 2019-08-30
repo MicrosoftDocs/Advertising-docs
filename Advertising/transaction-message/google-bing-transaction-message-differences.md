@@ -12,19 +12,17 @@ ms.author: "scottwhi"
 
 The following are the differences between Google's Transaction Message implementation and Bing's.
 
-- Bing does not support (and will ignore) the following `Transaction` elements:  
+- Bing does not support (and will ignore) the following [Transaction](reference.md#transactiontype) elements:  
   
   - `PartnerData`
   
-- Bing does not support (and will ignore) the following `Transaction` attributes:  
+- Bing does not support (and will ignore) the following [Transaction](reference.md#transaction) attributes:  
   
   - `id`
   - `partner`
   
-- Bing does not support (and will ignore) the following `Result` elements:
+- Bing does not support (and will ignore) the following [Result](reference.md#resulttype) elements:
   
-  - `RoomID`
   - `Rates`
-  - `RoomBundle`
   
-- Bing does not support (and will ignore) the `all_inclusive` attribute of the `Baserate` element (see `Result`).
+- Bing does not support (and will ignore) the `all_inclusive` attribute of the `Baserate` element (see [Result](reference.md#resulttype)).
