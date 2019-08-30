@@ -33,7 +33,7 @@ The document must use UTF-8 encoding and must conform to the [Transaction XSD](h
 
 ## The top-level Transaction element
 
-To provide Bing your room and package data, create an XML document that contains a Transaction message. The message contains a single, top-level [Transaction](../transaction-message/reference.md#transaction) element. 
+To provide Bing your room and package data, create an XML document that contains a Transaction message. The message contains a single, top-level [Transaction](reference.md#transaction) element. 
 
 ```xml
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
@@ -48,19 +48,19 @@ The `id` attribute is a user-defined ID that uniquely identifies the message to 
 
 ## Specifying the metadata
 
-The `Transaction` element contains a list of [PackageDataSet](../transaction-message/reference.md#packagedatasettype) elements, one for each property you're defining metadata for. The message should include only new metadata or those that have changed.
+The `Transaction` element contains a list of [PropertyDataSet](reference.md#propertydatasettype) elements, one for each property you're defining metadata for. The message should include only new metadata or those that have changed.
 
-The following shows a `PackageDataSet` element for property 12345. The `Property` ID must match the ID of a property in your hotel feed file. You may specify any number of `RoomData` and `PackageData` element.
+The following shows a `PropertyDataSet` element for property 12345. The `Property` ID must match the ID of a property in your hotel feed file. You may specify any number of `RoomData` and `PackageData` element.
 
 ```xml
-  <PackageDataSet>
+  <PropertyDataSet>
     <Property>88888</Property>
     <RoomData>. . .</RoomData>
     <RoomData>. . .</RoomData>
     <RoomData>. . .</RoomData>
     <PackageData>. . .</PackageData>
     <PackageData>. . .</PackageData>
-  </PackageDataSet>
+  </PropertyDataSet>
 ```
 
 Specify a `RoomData` object for each type of room and capacity that's available at the property. The following example shows all the elements that you can specify. The more information you can provide the better, but the only required elements are `RoomID` and `Name`. Although optional, you should always include `Capacity`, too. In most cases, you also include `Occupancy` unless the package specifies it (for example, a honeymoon package that's for two). 
