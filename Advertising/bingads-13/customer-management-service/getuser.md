@@ -12,7 +12,10 @@ dev_langs:
   - python
 ---
 # GetUser Service Operation - Customer Management
-Gets the details of a user.
+Gets the details of a user. 
+
+> [!TIP]
+> Please see the [Account Hierchy and User Permissions](../guides/account-hierarchy-permissions.md) guide for an overview with examples. 
 
 ## <a name="request"></a>Request Elements
 The *GetUserRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

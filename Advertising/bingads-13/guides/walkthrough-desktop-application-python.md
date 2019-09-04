@@ -19,7 +19,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 1. Sign up for [Microsoft Advertising](https://ads.microsoft.com/) and use the same credentials get a [developer token](get-started.md#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
 
-1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). Be sure to take note of the Application Id that will be used as the *CLIENT_ID* in the code example below.
+1. Register a native app via the [Application Registration Portal](https://go.microsoft.com/fwlink/?linkid=2083908). Be sure to take note of the Application Id that will be used as the *CLIENT_ID* in the code example below.
 
 1. You will need to install either Python 2.7 or 3.4 in your development environment.
 

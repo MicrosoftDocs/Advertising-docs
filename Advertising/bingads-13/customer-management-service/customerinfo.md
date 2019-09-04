@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a customer identification object that contains information that identifies a customer.
+description: Defines an object that contains a customer's identifier and name. 
 ---
 # CustomerInfo Data Object - Customer Management
-Defines a customer identification object that contains information that identifies a customer.
+Defines an object that contains a customer's identifier and name.  
 
 ## Syntax
 ```xml

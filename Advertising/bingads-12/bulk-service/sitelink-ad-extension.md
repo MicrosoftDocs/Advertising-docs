@@ -349,10 +349,7 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 ## <a name="sitelinkextensiondescription1"></a>Sitelink Extension Description1
 The site link description line 1.
 
-The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters.
-
-> [!NOTE]
-> Starting the week of September 18th, the limit will be relaxed such that only the Traditional Chinese characters will be counted double against the character limit. Each Traditional Chinese character will count as two and each English character will count only as one character.
+The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 > [!NOTE]
 > If you specify *Sitelink Extension Description1* then *Sitelink Extension Description2* is required.
@@ -364,10 +361,7 @@ The maximum input length is 35 characters. If any Traditional Chinese characters
 ## <a name="sitelinkextensiondescription2"></a>Sitelink Extension Description2
 The site link description line 2.
 
-The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters.
-
-> [!NOTE]
-> Starting the week of September 18th, the limit will be relaxed such that only the Traditional Chinese characters will be counted double against the character limit. Each Traditional Chinese character will count as two and each English character will count only as one character.
+The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 > [!NOTE]
 > If you specify *Sitelink Extension Description2* then *Sitelink Extension Description1* is required.
@@ -393,10 +387,7 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 ## <a name="sitelinkextensionlinktext"></a>Sitelink Extension Link Text
 The site-link text displayed in the ad.
 
-If you specify *Sitelink Extension Description1* or *Sitelink Extension Description2* then the display text can contain a maximum of 25 characters; otherwise, the display text can contain a maximum of 35 characters. If any Traditional Chinese characters are included, the limits are 11 characters given *Sitelink Extension Description1* or *Sitelink Extension Description2*, and 15 characters otherwise.
-
-> [!NOTE]
-> Starting the week of September 18th, the limit will be relaxed such that only the Traditional Chinese characters will be counted double against the character limit. Each Traditional Chinese character will count as two and each English character will count only as one character.
+If you specify *Sitelink Extension Description1* or *Sitelink Extension Description2* then the display text can contain a maximum of 25 characters; otherwise, the display text can contain a maximum of 35 characters. If any Traditional Chinese characters are included, the limits are 11 characters given *Sitelink Extension Description1* or *Sitelink Extension Description2*, and 15 characters otherwise. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
@@ -425,7 +416,7 @@ The tracking template to use for your sitelink URLs.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Limits](../guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

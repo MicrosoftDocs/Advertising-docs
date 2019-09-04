@@ -12,11 +12,12 @@ Microsoft Advertising is a pay-per-click (PPC) advertising platform used to disp
 ## <a name="who"></a>Who should use the Bing Ads API?
 You should consider using the Bing Ads API if your business model resembles the following:
 
-- You are a direct advertiser managing your own ad spend and you want to integrate our PPC marketing with your internal inventory management or conversion tracking systems. For more information, see [Management Model for Direct Advertisers](management-model-direct-advertisers.md). 
-- You are a tools vendor developing advertising management solutions for advertisers or agencies. For more information, see [Management Model for Tool Providers](management-model-tool-providers.md). 
-- You are an advertising agency and manage ad campaigns for many clients. For more information, see [Management Model for Agencies](management-model-agencies.md). 
-- You are a reseller and want to build Bing Ads API applications to manage the campaigns of your advertising clients. For more information, see [Management Model for Resellers](management-model-resellers.md). 
-For [Customer Accounts](customer-accounts.md), you should use the [Customer Management](../customer-management-service/customer-management-service-reference.md) service. 
+- You are a direct advertiser managing your own ad spend and you want to integrate our PPC marketing with your internal inventory management or conversion tracking systems.  
+- You are a tools vendor developing advertising management solutions for advertisers or agencies.  
+- You are an advertising agency and manage ad campaigns for many clients. 
+- You are a reseller and want to build Bing Ads API applications to manage the campaigns of your advertising clients.   
+
+For more information about becoming an agency or reseller partner, see the [Account Hierarchy](account-hierarchy-permissions.md#account-hierarchy) technical guide, the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub), and the [Microsoft Advertising Partner Program](https://about.ads.microsoft.com/en-us/partners/welcome) welcome page. 
 
 ## <a name="where"></a>Where your ads will appear
 When you advertise using Microsoft Advertising, your search ads can appear on the search results page on websites throughout the world. These sites can include Bing, AOL, and Yahoo owned and operated sites as well as Bing, AOL, and Yahoo syndicated search partner sites. (Syndicated search partner sites are sites that use Bing and Yahoo search results.) For more information, see [About ad distribution](https://help.ads.microsoft.com/#apex/3/en/50871/0). 
@@ -61,7 +62,7 @@ You can sign up for the monthly newsletter via the [News](https://developers.ads
 
 |Topic|Description|
 |---------|---------------|
-|[Entity Hierarchy and Limits](entity-hierarchy-limits.md)|Refer to this guide for a high level view of system limits for Bing Ads API entities.|
+|[Entity Limits](entity-hierarchy-limits.md)|Refer to this guide for a high level view of system limits for Bing Ads API entities.|
 |[FAQ](faq.md)|This article contains answers to some frequently asked questions about the Bing Ads API.|
 |[Get Started With the Bing Ads API](get-started.md)|To use the API, you will first need a Bing Ads API developer token and valid user credentials. Learn how to get developer credentials and how to write your first application for example, in C#, Java, PHP, or Python.|
 |[Sandbox](sandbox.md)|You may test your application in the sandbox environment before deploying it to the production environment.|

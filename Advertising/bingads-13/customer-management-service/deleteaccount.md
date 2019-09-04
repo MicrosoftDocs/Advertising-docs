@@ -15,7 +15,11 @@ dev_langs:
 Deletes an account.
 
 > [!NOTE]
-> After deleting the account it will be searchable and show as inactive in the Microsoft Advertising web application. You may or may not choose to surface inactive accounts in your application.
+> Only a user with Super Admin credentials can delete accounts. For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.  
+
+Because the delete operation requires the time stamp of the most recent account write operation, you must first call the [GetAccount](getaccount.md) operation. The [GetAccount](getaccount.md) operation returns the account's data, which includes the time stamp. The delete call will fail if you use an old time stamp e.g., the account data is updated by your application or another application after you obtained the time stamp. 
+
+After deleting the account it will be searchable and show as inactive in the Microsoft Advertising web application. You may or may not choose to surface inactive accounts in your application.
 
 ## <a name="request"></a>Request Elements
 The *DeleteAccountRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

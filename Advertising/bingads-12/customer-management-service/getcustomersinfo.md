@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
+description: Gets the identifiers and names of customers that are accessible to the current authenticated user.
 dev_langs: 
   - csharp
   - java
@@ -12,9 +12,7 @@ dev_langs:
   - python
 ---
 # GetCustomersInfo Service Operation - Customer Management
-Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
-
-The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller's user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
+Gets the identifiers and names of customers that are accessible to the current authenticated user
 
 ## <a name="request"></a>Request Elements
 The *GetCustomersInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

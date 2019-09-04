@@ -17,7 +17,7 @@ Creates a new account within an existing customer.
 Only a user with Super Admin credentials can add accounts. 
 
 > [!IMPORTANT]
-> Resellers should call [SignupCustomer](signupcustomer.md) instead of *AddAccount*. For more details see [Management Model for Resellers](../guides/management-model-resellers.md).
+> Resellers should call [SignupCustomer](signupcustomer.md) instead of *AddAccount*. For more details see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *AddAccountRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

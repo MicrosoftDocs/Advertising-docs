@@ -68,6 +68,8 @@ The Reporting service defines the following data objects.
 |[ProductDimensionPerformanceReportFilter](productdimensionperformancereportfilter.md)|Defines the criteria to use to filter the product dimension performance report data.|
 |[ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md)|Defines a product dimension performance report request that aggregates the performance data by product category, custom label, title, and type for a specified time period.|
 |[ProductMatchCountReportRequest](productmatchcountreportrequest.md)|Defines a product match count report request that aggregates the performance data by product group for a specified time period.|
+|[ProductNegativeKeywordConflictReportFilter](productnegativekeywordconflictreportfilter.md)|Defines the criteria to use to filter the product negative keyword conflict report data.|
+|[ProductNegativeKeywordConflictReportRequest](productnegativekeywordconflictreportrequest.md)|Defines a product negative keyword conflict report request.|
 |[ProductPartitionPerformanceReportFilter](productpartitionperformancereportfilter.md)|Defines the criteria to use to filter the product partition performance report data.|
 |[ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)|Defines a product partition performance report request that aggregates the performance data by product group and product partition type for a specified time period.|
 |[ProductPartitionUnitPerformanceReportFilter](productpartitionunitperformancereportfilter.md)|Defines the criteria to use to filter the product partition  performance report data.|

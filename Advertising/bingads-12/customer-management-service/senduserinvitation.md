@@ -20,10 +20,8 @@ Since a recipient can accept the invitation and sign up with credentials that di
 
 After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo.md) and [GetUser](getuser.md) to access the Microsoft Advertising user details. Once again though, since a recipient can accept the invitation and sign up with credentials that differ from the invitation email address, you cannot determine with certainty the mapping from a [UserInvitation](userinvitation.md) to a [User](user.md) or [UserInfo](userinfo.md) object. With the user ID returned by [GetUsersInfo](getusersinfo.md) or [GetUser](getuser.md), you can call [DeleteUser](deleteuser.md) to remove the user.
 
-> [!IMPORTANT]
-> With Microsoft Advertising multi-user credentials you can accept an invitation to manage a separate customer with your existing Microsoft Advertising credentials. By adding multi-user access to your existing user name, you effectively extend your reach by being able to access other people's accounts. The nice part: You don't need to remember another set of user names and passwords, and you don't need to log in and out of Microsoft Advertising to view different accounts owned by other people. If you accept the invitation with existing Microsoft Advertising credentials, you will have multi-user credentials. It is also possible to contact support directly and have multiple user names consolidated to a single user name i.e., one login will have multi-user permissions. For more details, see [Multi-User Credentials](../guides/customer-accounts.md#multi-user). 
-
-For more information about user authentication, see [Authentication with OAuth](../guides/authentication-oauth.md).
+> [!TIP]
+> With Microsoft Advertising multi-user credentials you can accept an invitation to manage a separate customer with your existing Microsoft Advertising credentials. For more information, see the [Multi-User Credentials](../guides/account-hierarchy-permissions.md#multi-user-credentials) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *SendUserInvitationRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

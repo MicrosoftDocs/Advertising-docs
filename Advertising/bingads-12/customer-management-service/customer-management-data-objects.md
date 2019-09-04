@@ -11,7 +11,7 @@ The Customer Management service defines the following data objects.
 
 |Data Object|Description|
 |---|---|
-|[AccountInfo](accountinfo.md)|Defines an account identification object that contains information that identifies an account.|
+|[AccountInfo](accountinfo.md)|Defines an object that contains an account's identifier, name, and number.|
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
 |[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
@@ -22,7 +22,7 @@ The Customer Management service defines the following data objects.
 |[ClientLink](clientlink.md)|Defines a client link object.|
 |[ContactInfo](contactinfo.md)|Defines the contact information for a user.|
 |[Customer](customer.md)|Defines a customer object that contains one or more Microsoft Advertising accounts.|
-|[CustomerInfo](customerinfo.md)|Defines a customer identification object that contains information that identifies a customer.|
+|[CustomerInfo](customerinfo.md)|Defines an object that contains a customer's identifier and name.|
 |[CustomerRole](customerrole.md)|Defines the role a user has for one customer or list of accounts within a customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
 |[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|

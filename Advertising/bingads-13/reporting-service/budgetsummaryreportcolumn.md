@@ -45,7 +45,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="currencycode"></a>CurrencyCode|The account currency type. For possible values, see [Currencies](../guides/currencies.md).|
 |<a name="dailyspend"></a>DailySpend|The average amount of campaign budget spent per day.|
 |<a name="date"></a>Date|The date for the downloaded report records. The date will be in the time zone of the campaign|
-|<a name="monthlybudget"></a>MonthlyBudget|The average amount of campaign budget spent during a calendar month.|
+|<a name="monthlybudget"></a>MonthlyBudget|The anticipated maximum monthly budget amount that was calculated on the date of the most recent budget change.<br/><br/>The formula used to forecast the maximum budget for each calendar month is Spend-to-date + (daily budget x days remaining). For example, let's say your daily campaign budget was 100.00 at the beginning of July and then was updated to 200.00 right at the start of July 22nd. Let's also assume a [month to date spend](#monthtodatespend) through July 21st of 500.00. In August when you run a report for the month of July, the monthly budget value for each day from July 1 through July 21 will be 3,100. The monthly budget value in the report for each day from July 22nd through July 31st will be 2,500.00. For more information see the [What are my budget options?](https://help.ads.microsoft.com/apex/index/3/en-us/51006) help page.|
 |<a name="monthtodatespend"></a>MonthToDateSpend|The amount of money spent to date for the month.|
 
 ## <a name="remarks"></a>Remarks

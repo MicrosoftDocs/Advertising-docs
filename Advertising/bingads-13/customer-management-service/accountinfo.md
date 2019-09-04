@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an account identification object that contains information that identifies an account.
+description: Defines an object that contains an account's identifier, name, and number.
 ---
 # AccountInfo Data Object - Customer Management
-Defines an account identification object that contains information that identifies an account.
+Defines an object that contains an account's identifier, name, and number.  
 
 ## Syntax
 ```xml

@@ -91,6 +91,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "BingAds/guides/customer-accounts.md",
+            "redirect_url": "account-hierarchy-permissions",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "BingAds/guides/management-model-agencies.md",
+            "redirect_url": "account-hierarchy-permissions",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "BingAds/guides/management-model-direct-advertisers.md",
+            "redirect_url": "account-hierarchy-permissions",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "BingAds/guides/management-model-resellers.md",
+            "redirect_url": "account-hierarchy-permissions",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "BingAds/guides/management-model-tool-providers.md",
+            "redirect_url": "account-hierarchy-permissions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "BingAds/scripts/solutions/execute-in-parallel.md",
             "redirect_url": "get-disapproved-ads",
             "redirect_document_id": false

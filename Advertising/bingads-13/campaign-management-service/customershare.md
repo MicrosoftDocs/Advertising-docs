@@ -4,10 +4,18 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: Defines a shareable audience or UET tag that a customer owns.
 ---
 # CustomerShare Data Object - Campaign Management
-Reserved for future use.
+Defines a shareable audience or UET tag that a customer owns.
+
+> [!NOTE]
+> Shared UET tags and audiences are only available for pilot customers where [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 506.
+> 
+> Shared UET tags and audiences also require customer hierarchy feature enablement. Customer to customer [hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) is only available for pilot customers where [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 449.  
+
+> [!TIP]
+> For an overview of sharing audiences and UET tags in a customer hierarchy, see the [Share Audiences and UET Tags](../guides/universal-event-tracking.md#hierarchy-share) technical guide. 
 
 ## Syntax
 ```xml
@@ -23,8 +31,8 @@ Reserved for future use.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customeraccountshares"></a>CustomerAccountShares|Reserved for future use.|[CustomerAccountShare](customeraccountshare.md) array|
-|<a name="ownercustomerid"></a>OwnerCustomerId|Reserved for future use.|**long**|
+|<a name="customeraccountshares"></a>CustomerAccountShares|Determines the list of customers and accounts that share the audience or UET tag. Details include audience association counts.<br/><br/>When the audience or UET tag has not yet been shared, this element will be nil or empty. Once an audience or UET tag is shared, a [CustomerAccountShare](customeraccountshare.md) object is returned for each customer that can use the share, including one list item for the owner.<br/><br/>**Add:** Required<br/>**Update:** Optional. Once you create this CustomerShare object, the existing [CustomerAccountShare](customeraccountshare.md) list will be removed or replaced. To remove all existing customer account shares create this CustomerShare object and set the CustomerAccountShares element to nil. To replace or append to the list of customer account shares, create this CustomerShare object and assign to the CustomerAccountShares element a new list of [CustomerAccountShare](customeraccountshare.md) objects, including any previous customer account shares that you want to retain. To retain all of the existing customer account shares, set the element that uses this CustomerShare object to nil. For example set the [CustomerShare](remarketinglist.md#customershare) element of a [RemarketingList](remarketinglist.md) to nil if you do not want to update any of the customer account shares.|[CustomerAccountShare](customeraccountshare.md) array|
+|<a name="ownercustomerid"></a>OwnerCustomerId|The customer who owns the share.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

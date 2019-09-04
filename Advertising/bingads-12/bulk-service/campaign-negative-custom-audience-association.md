@@ -18,7 +18,7 @@ You can download all *Campaign Negative Custom Audience Association* records in 
 The following Bulk CSV example would add a new Campaign Negative Custom Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
 Format Version,,,,,,,,,6.0,,
 Campaign Negative Custom Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,CustomAudienceIdHere,My Custom Audience
 ```

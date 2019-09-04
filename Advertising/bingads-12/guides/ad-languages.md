@@ -25,7 +25,7 @@ The following are the possible languages that you may use to write your ads and 
 |French|FR|
 |German|DE|
 |Italian|IT|
-|Norwegian|NO|
+|Norwegian|NB|
 |Portuguese|PT<br/><br/>This code differs from the ISO standard for Brazilian Portuguese, PTB.|
 |Spanish|ES|
 |Swedish|SV|
@@ -34,7 +34,7 @@ The following are the possible languages that you may use to write your ads and 
 ## <a name="productlanguage"></a>Product Language
 Your [customer](../customer-management-service/customer.md) language determines the language of the Microsoft Advertising interface. 
 
-The following country codes are supported per customer language e.g. [resellers](management-model-resellers.md) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
+The following country codes are supported per customer language e.g. [resellers](account-hierarchy-permissions.md#aggregator-hierarchy) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
 > In New Zealand, Microsoft Advertising is available only on the Microsoft Advertising Network. 
@@ -64,7 +64,7 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 |FR|French|
 |DE|German|
 |IT|Italian|
-|NO|Norwegian|
+|NB|Norwegian|
 |pt-BR|Portuguese|
 |pt-PT|Portuguese|
 |ES|Spanish|

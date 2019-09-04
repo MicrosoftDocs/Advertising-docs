@@ -44,12 +44,21 @@ For the [SearchAccounts](searchaccounts.md) service operation, the following are
 |UserId|Equals|Use this field to search the UserId element of the [User](user.md).|
 
 ### <a name="searchclientlinks"></a>SearchClientLinks Predicates
-For the [SearchClientLinks](searchclientlinks.md) service operation, the following are supported Field element and Operator elements of a Predicate object.
+For the [SearchClientLinks](searchclientlinks.md) service operation, the following are supported Field element and Operator elements of a Predicate object. 
 
 |Field|Operator|Description|
 |---------|------------|---------------|
-|ClientAccountId|Equals<br/><br/>In|Search for [ClientLink](clientlink.md) objects by the client account identifier.|
-|ManagingCustomerId|Equals|Search for [ClientLink](clientlink.md) objects by the managing customer identifier.|
+|ClientAccountId|Equals<br/><br/>In|Search for advertiser account [ClientLink](clientlink.md) objects by the client advertiser account identifier.|
+|ClientCustomerId|Equals<br/><br/>In|Search for customer [ClientLink](clientlink.md) objects by the client customer identifier.|
+|DirectManagingCustomerId|Equals|Search for both customer and advertiser account [ClientLink](clientlink.md) objects by the agency's managing customer identifier. If other customers also link to the client customer, the results will not include those client links.|
+|ManagingCustomerId|Equals|Search for advertiser account [ClientLink](clientlink.md) objects by the agency's managing customer identifier. If other customers also link to the client advertiser account, the results will include those client links. This predicate value is deprecated in favor of the DirectManagingCustomerId predicate.|
+
+Please note the following predicate rules for [SearchClientLinks](searchclientlinks.md).
+- You cannot include both DirectManagingCustomerId and ManagingCustomerId. 
+- You cannot include both ClientAccountId and ClientCustomerId. 
+- If you include both ClientAccountId and ManagingCustomerId predicates in the same service call, the ManagingCustomerId will be ignored. 
+- If you include both ClientCustomerId and DirectManagingCustomerId predicates in the same service call, the results will only include customer client links that meet both predicate conditions.  
+- If you include both ClientAccountId and DirectManagingCustomerId predicates in the same service call, the results will only include advertiser account client links that meet both predicate conditions.  
 
 ### <a name="searchcustomers"></a>SearchCustomers Predicates
 For the [SearchCustomers](searchcustomers.md) service operation, the following are supported Field element and Operator elements of a Predicate object.

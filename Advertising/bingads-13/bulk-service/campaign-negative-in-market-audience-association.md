@@ -18,7 +18,7 @@ You can download all *Campaign Negative In Market Audience Association* records 
 The following Bulk CSV example would add a new Campaign Negative In Market Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
 Format Version,,,,,,,,,6.0,,
 Campaign Negative In Market Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,InMarketAudienceIdHere,My In Market Audience
 ```

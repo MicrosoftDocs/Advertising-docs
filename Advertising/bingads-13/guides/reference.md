@@ -14,6 +14,7 @@ Get details about Bing Ads API service operations, geographical location codes, 
 |[Ad Languages](ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
 |[Currencies](currencies.md)|Contains a list of available currencies for Microsoft Advertising advertising accounts.|
 |[Editorial Reason Codes](editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
+|[Entity Limits](entity-hierarchy-limits.md)|Defines system limits for entities within an account.|
 |[Geographical Location Codes](geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area (Nielsen DMA® in the United States), and city codes that you can target or exclude.|
 |[Operation Error Codes](operation-error-codes.md)|Lists the Bing Ads API error codes.|
 |[Profile Data](profile-data-files.md)|Learn how to get profile data e.g., identifiers that are required to target by audience profile.|

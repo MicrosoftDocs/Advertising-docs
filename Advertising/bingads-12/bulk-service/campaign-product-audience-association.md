@@ -18,7 +18,7 @@ You can download all *Campaign Product Audience Association* records in the acco
 The following Bulk CSV example would add a new Campaign Product Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
 Format Version,,,,,,,,,6.0,,
 Campaign Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,ProductAudienceIdHere,My Product Audience
 ```
