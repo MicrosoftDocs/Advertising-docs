@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Initiates the client link process to manage the account of another customer.
+description: Initiates the client link process to manage the accounts of another customer.
 dev_langs: 
   - csharp
   - java
@@ -12,18 +12,17 @@ dev_langs:
   - python
 ---
 # AddClientLinks Service Operation - Customer Management
-Initiates the client link process to manage the account of another customer. Sends an invitation from an agency to a potential client.  For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
-
-Only an agency may call this service operation. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub).
-
-The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).
-
-There is no set limit to the amount of client accounts that can be linked to an agency.
+Initiates the client link process to manage the accounts of another customer. Sends a link request from one customer to another customer or account.
 
 > [!NOTE]
-> This feature is not supported in sandbox.
+> Only a user with Super Admin or Standard credentials can add, update, and search for client links to advertiser accounts. Only a user with Super Admin credentials can add, update, and search for client links to customers. For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.   
 > 
-> The client account must have a valid payment instrument set up for post-pay billing. Prepaid accounts are not supported for management by agencies.
+> Client links from customer to customer are only available for pilot customers where [GetCustomerPilotFeatures](getcustomerpilotfeatures.md) returns feature identifier 449. 
+
+There is no set limit to the amount of client accounts that can be linked to an agency. The client account must have a valid payment instrument set up for post-pay billing. Prepaid accounts are not supported for management by agencies.  
+
+> [!TIP]
+> For more information about the client link lifecycle, see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub). For more information from a client's perspective, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3).  
 
 ## <a name="request"></a>Request Elements
 The *AddClientLinksRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

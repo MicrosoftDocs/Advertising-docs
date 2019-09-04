@@ -203,12 +203,12 @@ Set this field to zero (0) if you do not want any bid adjustment for audience ad
 **Delete:** Read-only  
 
 ## <a name="bidboostvalue"></a>Bid Boost Value
-The percentage (greater than zero) that allows your cooperative bid to flex.
+The default bid boost percentage that you'll see in the Microsoft Advertising web application for new product groups. 
 
-For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.
+This ad group level target setting is not used directly in the auction. The product group [Bid Adjustment](ad-group-product-partition.md#bidadjustment) is used to boost your partner's [Bid](ad-group-product-partition.md#bid).
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
@@ -217,12 +217,16 @@ For example, let's say your partner bids $5 USD on a keyword. If your bid boost 
 ## <a name="bidoption"></a>Bid Option
 Determines whether or not to amplify your partner's bid.
 
-Supported values are BidBoost and BidValue. A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid via the [Bid Boost Value](#bidboostvalue) and [Maximum Bid](#maximumbid) fields.
-
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
 
-**Add:** Optional. If this field is not set, the default Cooperative bidding option for the ad group is "bid value" i.e., the auction will use the fixed bid that you set for each [Ad Group Product Partition](ad-group-product-partition.md).  
+Supported values are BidBoost and BidValue. A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid via the product group's [Bid Adjustment](ad-group-product-partition.md#bidadjustment) field (please also see ad group [Bid Boost Value](#bidboostvalue)) and the ad group's [Maximum Bid](#maximumbid) fields. You should only use BidBoost if your partner uses BidValue. 
+
+Please take note of the following impact this setting has on biddable [Ad Group Product Partition](ad-group-product-partition.md) records i.e., where the [Is Excluded](ad-group-product-partition.md#isexcluded) field is *FALSE* and the [Sub Type](ad-group-product-partition.md#subtype) is *Unit*.
+- If this element is set to BidValue, the auction will use use the [Bid](ad-group-product-partition.md#bid) field of the [Ad Group Product Partition](ad-group-product-partition.md).
+- If this element is set to BidBoost, the auction will use use the [Bid Adjustment](ad-group-product-partition.md#bidadjustment) field of the [Ad Group Product Partition](ad-group-product-partition.md).  
+
+**Add:** Optional. If this field is not set, the default Sponsored Products bidding option for the ad group is BidValue.    
 **Update:** Read-only. If you attempt to change the previous bid option an error will be returned.     
 **Delete:** Read-only  
 
@@ -391,10 +395,10 @@ For ad groups in Audience campaigns, ad group level language is not supported, a
 **Delete:** Read-only  
 
 ## <a name="maximumbid"></a>Maximum Bid
-The flat amount of your cooperative bid.
+The flat amount of your Sponsored Products bid.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
@@ -513,7 +517,7 @@ The tracking template to use as a default for all URLs in your ad group.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Limits](../guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

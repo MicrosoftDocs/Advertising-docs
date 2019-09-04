@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
+description: Gets the identifiers and names of customers that are accessible to the current authenticated user.
 dev_langs: 
   - csharp
   - java
@@ -12,9 +12,9 @@ dev_langs:
   - python
 ---
 # GetCustomersInfo Service Operation - Customer Management
-Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
+Gets the identifiers and names of customers that are accessible to the current authenticated user. 
 
-The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller's user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
+The results are filtered by customer name. 
 
 ## <a name="request"></a>Request Elements
 The *GetCustomersInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -26,7 +26,7 @@ The *GetCustomersInfoRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br/><br/>The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify "t" as the filter value, the list will include customers whose names begin with "t" or "T".|**string**|
+|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name.<br/><br/>This request element is optional. If you do not want to filter by customer name, set this element to an empty string.<br/><br/>The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify "t" as the filter value, the list will include customers whose names begin with "t" or "T".|**string**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of customers to return in the result.|**int**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -39,7 +39,7 @@ The *GetCustomersInfoResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customersinfo"></a>CustomersInfo|An array of *CustomerInfo* objects that identifies the list of customers that meet the filter criteria.<br/><br/>To get the customer data for a customer in the list, access the *Id* element of the *CustomerInfo* object and use it to call [GetCustomer](getcustomer.md).|[CustomerInfo](customerinfo.md) array|
+|<a name="customersinfo"></a>CustomersInfo|The list of information about customers that match the request criteria.|[CustomerInfo](customerinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

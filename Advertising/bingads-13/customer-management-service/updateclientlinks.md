@@ -12,18 +12,19 @@ dev_langs:
   - python
 ---
 # UpdateClientLinks Service Operation - Customer Management
-Updates the status of the specified client links. To update a client link, the *TimeStamp* element is required for validation, so you must first call the [SearchClientLinks](searchclientlinks.md) to get the existing *ClientLink* object. Then modify the *Status* element of the returned *ClientLink*, and include the updated *ClientLink* object  in a subsequent call to the *UpdateClientLinks* operation. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
-
-If your user is within an agency, then the operation may be used to update the client link status of any account that you manage or have invited to manage. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub).
-
-If your user is within a client customer that has one or more accounts managed or invited to be managed by an agency, then you may only use this operation to update the status as *LinkAccepted* or *LinkDeclined*. A  client may also accept or decline the link request via the Microsoft Advertising web application. For more information, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3).
-
-The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).
-
-There is no set limit to the amount of client accounts that can be linked to an agency.  
+Updates the status of the specified client links. 
 
 > [!NOTE]
-> This feature is not supported in sandbox.
+> Only a user with Super Admin or Standard credentials can add, update, and search for client links to advertiser accounts. Only a user with Super Admin credentials can add, update, and search for client links to customers. For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.  
+> 
+> Client links from customer to customer are only available for pilot customers where [GetCustomerPilotFeatures](getcustomerpilotfeatures.md) returns feature identifier 449. 
+
+If your user is within an agency, then the operation may be used to update the client link status of any account that you manage or have invited to manage. 
+
+If your user is within a client customer that has one or more accounts managed or invited to be managed by an agency, then you may only use this operation to update the status as *LinkAccepted* or *LinkDeclined*. A  client may also accept or decline the link request via the Microsoft Advertising web application. 
+
+> [!TIP]
+> For more information about the client link lifecycle, see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub). For more information from a client's perspective, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3). 
 
 ## <a name="request"></a>Request Elements
 The *UpdateClientLinksRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

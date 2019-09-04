@@ -14,6 +14,9 @@ dev_langs:
 # DeleteCustomer Service Operation - Customer Management
 Deletes a customer.
 
+> [!NOTE]
+> Only internal account managers can delete customers. If you want to delete a customer that you manage, contact your account manager.
+
 ## <a name="request"></a>Request Elements
 The *DeleteCustomerRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 

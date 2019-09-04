@@ -12,14 +12,19 @@ dev_langs:
   - python
 ---
 # SearchClientLinks Service Operation - Customer Management
-Searches for the client links for the customer of the current authenticated user, filtered by the search criteria. The operation returns the most recent link for each unique combination of agency customer and client account. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
+Searches for the client links for the customer of the current authenticated user, filtered by the search criteria. The operation returns the most recent link for each unique combination of agency customer and client account. 
+
+> [!NOTE]
+> Only a user with Super Admin or Standard credentials can add, update, and search for client links to advertiser accounts. 
+> 
+> Only a user with Super Admin credentials can add, update, and search for client links to customers. 
+> 
+> Customer to customer linking is only available in Bing Ads API version 13 for pilot customers where [GetCustomerPilotFeatures](getcustomerpilotfeatures.md) returns feature identifier 449. 
 
 If your user is within a client customer that has one or more accounts managed by an agency, then you may search one at a time for individual accounts that were or are eligible to be linked. To search by individual account, set the predicate field to ClientAccountId and set the predicate value to the account identifier that you want to find.
 
-> [!NOTE]
-> This feature is not supported in sandbox.
-> 
-> The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).
+> [!TIP]
+> For more information about the client link lifecycle, see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub). For more information from a client's perspective, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3). 
 
 ## <a name="request"></a>Request Elements
 The *SearchClientLinksRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -33,7 +38,7 @@ The *SearchClientLinksRequest* object defines the [body](#request-body) and [hea
 |-----------|---------------|-------------|
 |<a name="ordering"></a>Ordering|Determines the order of results.<br/><br/>This request element is optional. If specified, you should only include one *OrderBy* element in the list. Additional elements are not supported and will be ignored by the service.<br/><br/>For this service operation, the following values are supported in the *Field* element of a *OrderBy* object.<br/><br/>*Id* - The order is determined by the *ClientAccountId* element of the returned [ClientLink](clientlink.md).<br/><br/>*Name* - The order is determined by the *Name* element of the returned [ClientLink](clientlink.md).<br/><br/>*Number* - The order is determined by the *ManagingCustomerNumber* element of the returned [ClientLink](clientlink.md).|[OrderBy](orderby.md) array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of results per page.|[Paging](paging.md)|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include client links that match all of the specified predicates.<br/><br/>You can specify either one or two predicates per service call.<br/><br/>For a list of supported *Field* and *Operator* elements of a [Predicate](predicate.md) object for this service operation, see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
+|<a name="predicates"></a>Predicates|Determines the conditions that must be met to return client links.<br/><br/>You must include one or two predicates.<br/><br/>For details about how results are determined for each supported predicate [Field](predicate.md#field) value see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

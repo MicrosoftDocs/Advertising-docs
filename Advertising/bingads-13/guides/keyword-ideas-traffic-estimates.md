@@ -9,7 +9,7 @@ description: Get keyword ideas and traffic estimates.
 # Keyword Ideas and Traffic Estimates
 Choosing keywords is one of the most important aspects of creating and maintaining a successful advertising campaign. But where to start? How do you identify the many possible keywords that describe your business? How much should you bid on those keywords to be competitive with other advertisers?
 
-This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service. The results are similar to using the Keyword Planner tool in the Microsoft Advertising web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](budget-bid-opportunities.md). 
+This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service. The same data is available through the API and the Keyword Planner tool in the Microsoft Advertising web application, although the results can vary significantly depending on the respective filter criteria for each entry point. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](budget-bid-opportunities.md). 
 
 > [!NOTE]
 > Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.

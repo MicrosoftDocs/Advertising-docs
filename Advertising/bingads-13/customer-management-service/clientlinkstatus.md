@@ -9,7 +9,8 @@ description: Defines the possible status values of a ClientLink.
 # ClientLinkStatus Value Set - Customer Management
 Defines the possible status values of a [ClientLink](clientlink.md).
 
-For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
+> [!TIP]
+> For more information about the client link lifecycle, see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub). For more information from a client's perspective, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3).  
 
 ## Syntax
 ```xml

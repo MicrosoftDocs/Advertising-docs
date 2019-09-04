@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Searches for user invitations that match a specified criteria.
+description: Searches for user invitations that match the request criteria.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # SearchUserInvitations Service Operation - Customer Management
-Searches for user invitations that match a specified criteria.
+Searches for user invitations that match the request criteria.
 
 This operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the response.  
 
@@ -26,7 +26,7 @@ The *SearchUserInvitationsRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include user invitations that match all of the specified predicates.<br/><br/>Although the data type calls for a list of predicates, you can only set one predicate.<br/><br/>For a list of supported *Field* and *Operator* elements of a [Predicate](predicate.md) object for this service operation, see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
+|<a name="predicates"></a>Predicates|Determines the conditions that all must be met to return user invitations.<br/><br/>You must include exactly one predicate.<br/><br/>For details about each supported predicate [Field](predicate.md#field) value see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

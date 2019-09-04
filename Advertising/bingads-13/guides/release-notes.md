@@ -9,6 +9,32 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="september2019"></a>September 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Final Url Suffix in Reports](#finalurlsuffix-reporting-september2019)  
+- [Product Negative Keyword Report](#productnegativekeyword-reporting-september2019)  
+
+### <a name="finalurlsuffix-reporting-september2019"></a>Final Url Suffix in Reports
+The FinalUrlSuffix column is added to the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) value set. The FinalUrlSuffix column is also available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets.
+
+The final URL suffix is a place in your final URL where you can add parameters that will be attached to the end of your landing page URL.
+
+### <a name="productnegativekeyword-reporting-september2019"></a>Product Negative Keyword Report
+The [ProductNegativeKeywordConflictReportRequest](../reporting-service/productnegativekeywordconflictreportrequest.md) is added for Microsoft Shopping Campaigns. Use this report to confirm that negative keywords applied to your Shopping campaigns are not excessively restricting campaign performance. You can request negative keywords and the corresponding products which they're preventing from showing in your Shopping campaigns.
+
+## <a name="august2019"></a>August 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Audience Association Level in Reports](#associationlevel-reporting-august2019)  
+- [Bing Ads API SDK Updates](#sdk-august2019)  
+
+### <a name="associationlevel-reporting-august2019"></a>Audience Association Level in Reports
+The AssociationLevel column is added to the [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md) value set. 
+
+### <a name="sdk-august2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.4), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.4), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.4), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.4) SDK version 12.13.4. 
+
 ## <a name="july2019"></a>July 2019
 See below for Bing Ads API updates during this calendar month. 
 
@@ -126,7 +152,7 @@ See below for Bing Ads API updates during this calendar month.
 - [Bing Ads API SDK Updates](#sdk-may2019)  
 
 ### <a name="assistedconversions-may2019"></a>Assisted Conversions
-Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only applicable for cooperative shopping campaigns. The AssistedConversions column is added to the following report column value sets.
+Assisted conversions are conversions resulting from the clicks on your ads that have received co-bids from your manufacturer partners. This performance statistic is only available for Sponsored Products in Microsoft Shopping Campaigns. The AssistedConversions column is added to the following report column value sets.
 
 - [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md)  
 - [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md)  

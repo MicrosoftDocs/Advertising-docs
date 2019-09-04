@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
+description: Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetAccountsInfo Service Operation - Customer Management
-Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
+Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.
 
 ## <a name="request"></a>Request Elements
 The *GetAccountsInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

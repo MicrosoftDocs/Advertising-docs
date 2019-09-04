@@ -56,6 +56,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllReturnOnAdSpend" />
     <xs:enumeration value="AllRevenuePerConversion" />
     <xs:enumeration value="AssociationId" />
+    <xs:enumeration value="AssociationLevel" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -78,6 +79,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="allrevenue"></a>AllRevenue|The revenue optionally reported by the advertiser as a result of conversions.<br/><br/>Data will be excluded from the [Revenue](#revenue) report column for any conversion goal with the [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) property set to true. The [AllRevenue](#allrevenue) column will include data for all conversion goals regardless of their [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) setting.<br/><br/>Available for accounts that are setup to use analytics with Microsoft Advertising Universal Event Tracking. For more information, see the [Track sales and other conversions](https://help.ads.microsoft.com/#apex/3/en/n5012/2) help topic.|
 |<a name="allrevenueperconversion"></a>AllRevenuePerConversion|The revenue per conversion.<br/><br/>The formula for calculating the revenue per conversion is (Revenue / Conversions).<br/><br/>Data will be excluded from the [RevenuePerConversion](#revenueperconversion) report column for any conversion goal with the [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) property set to true. The [AllRevenuePerConversion](#allrevenueperconversion) column will include data for all conversion goals regardless of their [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) setting.<br/><br/>Available for accounts that are setup to use analytics with Microsoft Advertising Universal Event Tracking. For more information, see the [Track sales and other conversions](https://help.ads.microsoft.com/#apex/3/en/n5012/2) help topic.|
 |<a name="associationid"></a>AssociationId|The Microsoft Advertising assigned identifier of the association between the audience and either an ad group or campaign.|
+|<a name="associationlevel"></a>AssociationLevel|The level of the audience's association.<br/><br/>The possible values are "Ad group" or "Campaign".|
 |<a name="associationstatus"></a>AssociationStatus|The status of the association between the audience and either an ad group or campaign.<br/><br/>The possible values are Active, Paused, and Deleted.|
 |<a name="audienceid"></a>AudienceId|The Microsoft Advertising assigned identifier of the audience, for example the remarketing list ID.|
 |<a name="audiencename"></a>AudienceName|The audience name.|

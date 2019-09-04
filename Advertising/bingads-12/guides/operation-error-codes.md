@@ -137,7 +137,7 @@ UserLoginAccessDenied
 **Description**
 The credentials are not valid for the person who attempted to login. Please login with the primary login credentials for this person.
 
-The user credentials would have authenticated with versions prior to Bing Ads API Version 12. After [multi-user consolidation](customer-accounts.md#multi-user) credentials that have been merged into the primary login credentials can no longer be used to authenticate in Microsoft Advertising. 
+The user credentials would have authenticated with versions prior to Bing Ads API Version 12. After [multi-user consolidation](account-hierarchy-permissions.md#multi-user-credentials) credentials that have been merged into the primary login credentials can no longer be used to authenticate in Microsoft Advertising. 
 
 ***
 
@@ -150,6 +150,8 @@ PersonalIdentityNotAvailable
 **Description**
 You must use a work account to sign in to Microsoft Advertising.
 
+This error is returned for example, when the user selected their personal Microsoft Account (MSA) identity via the consent prompt, and they only have a work account with Microsoft Advertising.  
+
 ***
 
 **Numeric Code**
@@ -160,6 +162,8 @@ WorkIdentityNotAvailable
 
 **Description**
 You must use a personal Microsoft account to sign in to Microsoft Advertising.
+
+This error is returned for example, when the user selected their Azure Active Directory (AAD) identity via the consent prompt, and they only have a personal account with Microsoft Advertising.  
 
 ***
 
@@ -380,6 +384,17 @@ Not applicable.
 
 **Description**
 You should specify a Customer object, for example when creating or updating customers.
+
+***
+
+**Numeric Code**
+474
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+Required search predicate is missing.
 
 ***
 

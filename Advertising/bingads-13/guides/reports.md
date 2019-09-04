@@ -120,13 +120,13 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToAdRelevancePercent<br/><br/>ImpressionLostToBidPercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToExpectedCtrPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToAdRelevancePercent<br/><br/>ImpressionLostToBidPercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToExpectedCtrPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md).
 

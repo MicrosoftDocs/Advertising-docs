@@ -19,10 +19,10 @@ The Customer Management service defines the following service operations.
 |[FindAccounts](findaccounts.md)|Gets a list of accounts owned by the specified customer that match the specified filter criteria.|1 *CustomerId*|
 |[FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md)|Gets a list of the accounts and customers that match the specified filter criteria.|Not applicable.|
 |[GetAccount](getaccount.md)|Gets the details of an account.|1 *AccountId*|
-|[GetAccountsInfo](getaccountsinfo.md)|Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.|1 *CustomerId*|
+|[GetAccountsInfo](getaccountsinfo.md)|Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.|1 *CustomerId*|
 |[GetCustomer](getcustomer.md)|Gets the details of a customer.|1 *CustomerId*|
 |[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs that are enabled for all of the customer's accounts.|1 *CustomerId*|
-|[GetCustomersInfo](getcustomersinfo.md)|Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.|Not applicable.|
+|[GetCustomersInfo](getcustomersinfo.md)|Gets the identifiers and names of customers that are accessible to the current authenticated user.|Not applicable.|
 |[GetUser](getuser.md)|Gets the details of a user.|1 *UserId*|
 |[GetUsersInfo](getusersinfo.md)|Gets a list of objects that contains user identification information, for example the user name and identifier of the user.|1 *CustomerId*|
 |[SearchAccounts](searchaccounts.md)|Searches for accounts that match a specified criteria.|1 *Predicates*|

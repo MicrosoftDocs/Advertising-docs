@@ -15,7 +15,8 @@ Since a recipient can accept the invitation and sign into Microsoft Advertising 
 
 After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo.md) and [GetUser](getuser.md) to access the Microsoft Advertising user details. Once again though, since a recipient can accept the invitation and sign into Microsoft Advertising with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from *UserInvitation* to accepted [User](user.md). With the user ID returned by [GetUsersInfo](getusersinfo.md) or [GetUser](getuser.md), you can call [DeleteUser](deleteuser.md) to remove the user.
 
-For more information about user authentication, see [Authentication with OAuth](../guides/authentication-oauth.md).
+> [!TIP]
+> With Microsoft Advertising multi-user credentials you can accept an invitation to manage a separate customer with your existing Microsoft Advertising credentials. For more information, see the [Multi-User Credentials](../guides/account-hierarchy-permissions.md#multi-user-credentials) technical guide.
 
 ## Syntax
 ```xml
@@ -46,7 +47,7 @@ For more information about user authentication, see [Authentication with OAuth](
 |<a name="id"></a>Id|A system generated unique identifier for the user invitation.<br/><br/>**Send:** Read-only|**long**|
 |<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
 |<a name="lcid"></a>Lcid|The locale to use when sending correspondence to the user by email or postal mail. The default is EnglishUS.<br/><br/>**Send:** Required|[LCID](lcid.md)|
-|<a name="roleid"></a>RoleId|The role that the user has for each customer or list of accounts.<br/><br/>Possible values include the following:<br/>16 - The user has the **Advertiser Campaign Manager** role.<br/>33 - The user has the **Aggregator** role.<br/>41 - The user has the **Super Admin** role.<br/>100 - The user has the **ClientViewer** role.<br/>203 - The user has the **Standard** role.<br/><br/>For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).|**int**|
+|<a name="roleid"></a>RoleId|The role that the user has for each customer or list of accounts.<br/><br/>Possible values include the following:<br/>16 - The user has the **Advertiser Campaign Manager** role.<br/>33 - The user has the **Aggregator** role.<br/>41 - The user has the **Super Admin** role.<br/>100 - The user has the **ClientViewer** role.<br/>203 - The user has the **Standard** role.<br/><br/>For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.|**int**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

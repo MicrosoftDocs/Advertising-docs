@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
+description: Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetAccountsInfo Service Operation - Customer Management
-Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
+Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer. 
 
 ## <a name="request"></a>Request Elements
 The *GetAccountsInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,8 +24,8 @@ The *GetAccountsInfoRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customerid"></a>CustomerId|The identifier of the customer who owns the accounts to get. If not set, the user's credentials are used to determine the customer.|**long**|
-|<a name="onlyparentaccounts"></a>OnlyParentAccounts|Determines whether to return only the accounts that belong to the customer or to also return the accounts that the customer manages for other customers. To return all accounts (those that belong to the customer and those that the customer manages), set this element to **false**; otherwise, set to **true** to return account information for only the specified customer. The default is **false**.|**boolean**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer used to get the account information.<br/><br/>This request element is optional. If not set, the user's credentials are used to determine the customer.|**long**|
+|<a name="onlyparentaccounts"></a>OnlyParentAccounts|Determines whether to return only the advertiser accounts that belong to the customer or to also return linked advertiser accounts under other customers.<br/><br/>To limit the results to advertiser accounts directly under the specified customer, set this element to *true*, and otherwise leave it empty or set the property to *false*. The default value is *false*.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,7 +37,7 @@ The *GetAccountsInfoResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountsinfo"></a>AccountsInfo|An array of *AccountInfo* objects that identifies the list of accounts that the customer owns.<br/><br/>To get the account data for an account in the list, access the *Id* element of the *AccountInfo* object and use it to call [GetAccount](getaccount.md).<br/><br/>Note that there can be a delay of up to five minutes from the time that you add an account until the [GetAccountsInfo](getaccountsinfo.md) returns the account in the response.|[AccountInfo](accountinfo.md) array|
+|<a name="accountsinfo"></a>AccountsInfo|The list of information about advertiser accounts that match the request criteria.<br/><br/>Note that there can be a delay of up to five minutes from the time that you create an account until the account information is included in the response.|[AccountInfo](accountinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

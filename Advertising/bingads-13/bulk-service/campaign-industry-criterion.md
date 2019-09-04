@@ -23,7 +23,7 @@ You can download all *Campaign Industry Criterion* records in the account by inc
 The following Bulk CSV example would add a new campaign industry criterion if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Sub Type,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Profile Id,
+Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Profile Id,
 Format Version,,,,,,,,,,6.0,,
 Campaign Industry Criterion,Active,,-1111,,,,ClientIdGoesHere,,20,,ProfileIdGoesHere,
 ```
