@@ -1,12 +1,12 @@
 ---
-title: "Entity Hierarchy and Limits"
+title: "Entity Limits"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Learn about the Microsoft Advertising entity hierarchy to plan your campaign setup.
 ---
-# Entity Hierarchy and Limits
+# Entity Limits
 The following figure shows the high level Microsoft Advertising entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads API entities, see [Bing Ads API Overview](index.md).
 
 ![Entity Hierarchy](media/entity-hierarchy.png "Entity Hierarchy")  

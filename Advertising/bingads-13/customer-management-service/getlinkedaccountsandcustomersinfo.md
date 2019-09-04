@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: Gets the customer and account hierarchy under the specified customer. 
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetLinkedAccountsAndCustomersInfo Service Operation - Customer Management
-Reserved for future use.
+Gets the customer and account hierarchy under the specified customer.  
 
 ## <a name="request"></a>Request Elements
 The *GetLinkedAccountsAndCustomersInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,8 +24,8 @@ The *GetLinkedAccountsAndCustomersInfoRequest* object defines the [body](#reques
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customerid"></a>CustomerId|Reserved for future use.|**long**|
-|<a name="onlyparentaccounts"></a>OnlyParentAccounts|Reserved for future use.|**boolean**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer whose hierarchy you want to get.|**long**|
+|<a name="onlyparentaccounts"></a>OnlyParentAccounts|Determines whether to return only the advertiser accounts that belong to the customer or to also return linked customers and linked advertiser accounts under other customers.<br/><br/>To limit the results to advertiser accounts directly under the specified customer, set this element to *true*, and otherwise leave it empty or set the property to *false*. The default value is *false*.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,8 +37,8 @@ The *GetLinkedAccountsAndCustomersInfoResponse* object defines the [body](#respo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountsinfo"></a>AccountsInfo|Reserved for future use.|[AccountInfo](accountinfo.md) array|
-|<a name="customersinfo"></a>CustomersInfo|Reserved for future use.|[CustomerInfo](customerinfo.md) array|
+|<a name="accountsinfo"></a>AccountsInfo|The list of information about advertiser accounts that match the request criteria.<br/><br/>Note that there can be a delay of up to five minutes from the time that you create an account until the account information is included in the response.|[AccountInfo](accountinfo.md) array|
+|<a name="customersinfo"></a>CustomersInfo|The list of information about customers that match the request criteria.|[CustomerInfo](customerinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

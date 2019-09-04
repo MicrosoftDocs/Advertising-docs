@@ -9,6 +9,23 @@ description: Get information about changes to Bing Ads API Version 12 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 12 by month. 
 
+## <a name="september2019"></a>September 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Final Url Suffix in Reports](#finalurlsuffix-reporting-september2019)  
+
+### <a name="finalurlsuffix-reporting-september2019"></a>Final Url Suffix in Reports
+The FinalUrlSuffix column is added to the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) value set. The FinalUrlSuffix column is also available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets.
+
+The final URL suffix is a place in your final URL where you can add parameters that will be attached to the end of your landing page URL.
+
+## <a name="august2019"></a>August 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Bing Ads API SDK Updates](#sdk-august2019)  
+
+### <a name="sdk-august2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.4), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.4), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.4), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.4) SDK version 12.13.4. 
 
 ## <a name="july2019"></a>July 2019
 See below for Bing Ads API updates during this calendar month. 
@@ -346,7 +363,7 @@ See below for Bing Ads API updates during this calendar month.
 - [Linked Account Ids per Customer Role](#linkedaccountids-june2018)
 
 ### <a name="sdk-june2018"></a>Bing Ads API SDK Updates
-The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Cooperative Bidding](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
+The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Sponsored Products](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
 
 ### <a name="linkedaccountids-june2018"></a>Linked Account Ids per Customer Role
 The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedaccountids) element is added to the [CustomerRole](../customer-management-service/customerrole.md) object. For agency users the element contains a list of linked accounts that the user can access as an agency on behalf of another customer. 

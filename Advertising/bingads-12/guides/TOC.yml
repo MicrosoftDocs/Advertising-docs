@@ -1,8 +1,6 @@
 - name: Overview
   href: ./index.md
   displayName: faq
-- name: Entity Hierarchy and Limits
-  href: ./entity-hierarchy-limits.md
 - name: FAQ
   href: ./faq.md
 - name: Get Started
@@ -105,7 +103,6 @@
     href: ./code-example-target-criteria.md
 - name: Client Libraries
   displayName: sdk .net c# csharp java python php
-  expanded: true
   items:
   - name: Overview
     href: ./client-libraries.md
@@ -120,9 +117,13 @@
     href: ./sdk-reporting-service-manager.md
     displayName: sdk .net c# csharp java python reportingservicemanager
 - name: Technical Guides
+  expanded: true
   items:
   - name: Overview
     href: ./technical-guides.md
+  - name: Account Hierarchy and User Permissions
+    href: ./account-hierarchy-permissions.md
+    displayName: user permissions customer link account link hierarchy
   - name: Authentication with OAuth
     displayName: access refresh token scope
     items:
@@ -140,18 +141,6 @@
   - name: Handling Service Errors and Exceptions
     href: ./handle-service-errors-exceptions.md
     displayName: support help debug troubleshoot
-  - name: Customer Accounts
-    items:
-    - name: Overview
-      href: ./customer-accounts.md
-    - name: Management Model for Direct Advertisers
-      href: ./management-model-direct-advertisers.md
-    - name: Management Model for Agencies
-      href: ./management-model-agencies.md
-    - name: Management Model for Resellers
-      href: ./management-model-resellers.md
-    - name: Management Model for Tool Providers
-      href: ./management-model-tool-providers.md
   - name: Campaigns
     items:
     - name: Overview
@@ -218,6 +207,8 @@
     href: ./currencies.md
   - name: Editorial Reason Codes
     href: ./editorial-failure-reason-codes.md
+  - name: Entity Limits
+    href: ./entity-hierarchy-limits.md
   - name: Geographical Location Codes
     href: ./geographical-location-codes.md
   - name: Operation Error Codes

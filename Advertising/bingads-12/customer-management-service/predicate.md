@@ -49,7 +49,7 @@ For the [SearchClientLinks](searchclientlinks.md) service operation, the followi
 |Field|Operator|Description|
 |---------|------------|---------------|
 |ClientAccountId|Equals<br/><br/>In|Use this field to search the ClientAccountId element of the [ClientLink](clientlink.md).|
-|ManagingCustomerId|Equals|Use this field to search the ManagingCustomerId element of the [ClientLink](clientlink.md).|
+|ManagingCustomerId|Equals|Use this field to search the ManagingCustomerId element of the [ClientLink](clientlink.md). If other customers also link to the client advertiser account, the results will include those client links. This predicate value is deprecated in favor of the DirectManagingCustomerId predicate.|
 
 ### <a name="searchcustomers"></a>SearchCustomers Predicates
 For the [SearchCustomers](searchcustomers.md) service operation, the following are supported Field element and Operator elements of a Predicate object.

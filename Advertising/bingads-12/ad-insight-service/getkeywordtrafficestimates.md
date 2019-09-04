@@ -12,7 +12,10 @@ dev_langs:
   - python
 ---
 # GetKeywordTrafficEstimates Service Operation - Ad Insight
-Provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the bid, language, location, and network, with optional campaign budget and negative keyword filters.
+Provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the bid, language, location, and network, with optional campaign budget and negative keyword filters. 
+
+> [!TIP]
+> For an overview, see the [Keyword Ideas and Traffic Estimates](../guides/keyword-ideas-traffic-estimates.md) technical guide.  
 
 ## <a name="request"></a>Request Elements
 The *GetKeywordTrafficEstimatesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

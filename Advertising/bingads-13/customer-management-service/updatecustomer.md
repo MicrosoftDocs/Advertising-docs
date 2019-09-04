@@ -12,7 +12,14 @@ dev_langs:
   - python
 ---
 # UpdateCustomer Service Operation - Customer Management
-Updates the details of the specified customer.
+Updates the details of the specified customer.  
+
+> [!NOTE]
+> Only a user with Super Admin credentials can update customers. For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.  
+
+Because the update operation requires the time stamp of the most recent customer write operation, you must first call the [GetCustomer](getcustomer.md) operation. The [GetCustomer](getcustomer.md) operation returns the customer's data, which includes the time stamp. The update call will fail if you use an old time stamp e.g., the customer data is updated by your application or another application after you obtained the time stamp. 
+
+Because the update operation completely overwrites the existing customer data, the customer data must contain all required data; otherwise, the operation will fail.
 
 ## <a name="request"></a>Request Elements
 The *UpdateCustomerRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

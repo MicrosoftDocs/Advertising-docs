@@ -58,7 +58,7 @@ The Campaign Management service defines the following data objects.
 |[Company](company.md)|Defines the profile data for a company.|
 |[ConversionGoal](conversiongoal.md)|Defines the base object of a conversion goal.|
 |[ConversionGoalRevenue](conversiongoalrevenue.md)|Defines properties for revenue that can be tracked by a conversion goal.|
-|[CoOpSetting](coopsetting.md)|Defines the ad group level settings for feed-based cooperative bidding campaigns.|
+|[CoOpSetting](coopsetting.md)|Defines the ad group level settings for feed-based Microsoft Shopping Campaigns.|
 |[Criterion](criterion.md)|Defines the base object of a criterion.|
 |[CriterionBid](criterionbid.md)|Defines a base class for criterion bids.|
 |[CustomAudience](customaudience.md)|Defines a custom audience.|

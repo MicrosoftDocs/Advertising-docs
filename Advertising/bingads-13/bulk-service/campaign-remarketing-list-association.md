@@ -18,7 +18,7 @@ You can download all *Campaign Remarketing List Association* records in the acco
 The following Bulk CSV example would add a new Campaign Remarketing List Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
 Format Version,,,,,,,,,6.0,,
 Campaign Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,10,,RemarketingListIdHere,My Remarketing List
 ```

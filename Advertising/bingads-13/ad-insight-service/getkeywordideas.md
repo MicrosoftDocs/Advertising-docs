@@ -14,7 +14,10 @@ dev_langs:
 # GetKeywordIdeas Service Operation - Ad Insight
 Gets the list of keyword ideas.
 
-Suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](getkeywordtrafficestimates.md) operation.
+Suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](getkeywordtrafficestimates.md) operation.  
+
+> [!TIP]
+> For an overview, see the [Keyword Ideas and Traffic Estimates](../guides/keyword-ideas-traffic-estimates.md) technical guide.  
 
 ## <a name="request"></a>Request Elements
 The *GetKeywordIdeasRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -40,7 +43,7 @@ The *GetKeywordIdeasResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordideas"></a>KeywordIdeas|The list of keyword ideas.|[KeywordIdea](keywordidea.md) array|
+|<a name="keywordideas"></a>KeywordIdeas|The list of keyword ideas.<br/><br/>Currently up to 3,000 list items can be returned although the limit is subject to change.|[KeywordIdea](keywordidea.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

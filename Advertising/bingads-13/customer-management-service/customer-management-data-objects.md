@@ -11,7 +11,7 @@ The Customer Management service defines the following data objects.
 
 |Data Object|Description|
 |---|---|
-|[AccountInfo](accountinfo.md)|Defines an account identification object that contains information that identifies an account.|
+|[AccountInfo](accountinfo.md)|Defines an object that contains an account's identifier, name, and number.|
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
 |[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
@@ -22,8 +22,8 @@ The Customer Management service defines the following data objects.
 |[ClientLink](clientlink.md)|Defines a client link object.|
 |[ContactInfo](contactinfo.md)|Defines the contact information for a user.|
 |[Customer](customer.md)|Defines a customer object that contains one or more Microsoft Advertising accounts.|
-|[CustomerInfo](customerinfo.md)|Defines a customer identification object that contains information that identifies a customer.|
-|[CustomerRole](customerrole.md)|Defines the role a user has for one customer or list of accounts within a customer.|
+|[CustomerInfo](customerinfo.md)|Defines an object that contains a customer's identifier and name.|
+|[CustomerRole](customerrole.md)|Defines account access rights for a person who acts on behalf of a specific customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
 |[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
@@ -31,6 +31,6 @@ The Customer Management service defines the following data objects.
 |[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
 |[PersonName](personname.md)|Defines the name of a user.|
 |[Predicate](predicate.md)|Defines a predicate for the list of entities requested using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), [SearchCustomers](searchcustomers.md), or [SearchUserInvitations](searchuserinvitations.md).|
-|[User](user.md)|Defines a user.|
+|[User](user.md)|Defines personal and business contact information about a Microsoft Advertising user.|
 |[UserInfo](userinfo.md)|Defines a user identification object that contains information that identifies a user.|
-|[UserInvitation](userinvitation.md)|Defines a user invitation.|
+|[UserInvitation](userinvitation.md)|Defines an invitation for a user to sign up for Microsoft Advertising.|

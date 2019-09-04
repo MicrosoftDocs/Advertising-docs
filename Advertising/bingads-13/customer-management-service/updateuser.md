@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Updates the details of the specified user.
+description: Updates the personal and business contact information about a Microsoft Advertising user.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,12 @@ dev_langs:
   - python
 ---
 # UpdateUser Service Operation - Customer Management
-Updates the details of the specified user.
+Updates the personal and business contact information about a Microsoft Advertising user. 
+
+> [!NOTE]
+> Only a user with Super Admin or Standard credentials can update users. For more information, see the [User Roles](../guides/account-hierarchy-permissions.md#user-roles) technical guide.  
+
+Because the update operation requires the time stamp of the most recent user write operation, you must first call the [GetUser](getuser.md) operation. The [GetUser](getuser.md) operation returns the user's data, which includes the time stamp. The update call will fail if you use an old time stamp e.g., the user data is updated by your application or another application after you obtained the time stamp. 
 
 ## <a name="request"></a>Request Elements
 The *UpdateUserRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

@@ -18,7 +18,7 @@ You can download all *Campaign In Market Audience Association* records in the ac
 The following Bulk CSV example would add a new Campaign In Market Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Campaign,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
 Format Version,,,,,,,,,6.0,,
 Campaign In Market Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,InMarketAudienceIdHere,My In Market Audience
 ```

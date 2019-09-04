@@ -24,9 +24,10 @@ For more information on how to use OAuth with Microsoft Advertising, see [Authen
 #### <a name="authentication-multi-user"></a>Multi User Credentials
 Previously one Microsoft Advertising user could only access accounts within a single customer. You could manage accounts across multiple customers as an agency, however, you would have had to create a distinct user per customer. Now with multi-user credentials it is possible to use one Microsoft account and manage accounts across different customers. Your Microsoft account can be assigned a different user role (Super Admin, Standard User, Advertiser Campaign Manager, or Viewer) per customer that you can access. For example, your multi-user credentials grants you access to Customer A and Customer B. However, your Viewer user role for Customer A limits you from making any changes on the accounts that Belong to Customer A. But as a Super Admin for Customer B, you have full control over that customer's accounts. 
 
-Please note the following changes from version 11 to 12 if you or one of your clients have setup [Multi-User Credentials for Customer Accounts](customer-accounts.md#multi-user). 
+Please note the following changes from version 11 to 12 if you or one of your clients have setup [Multi-User Credentials for Customer Accounts](account-hierarchy-permissions.md#multi-user-credentials). 
 
 Starting with Bing Ads API Version 12 the multi-user credentials can access accounts across multiple customers. To switch context between customers you are required to set the CustomerId and CustomerAccountId header elements for Ad Insight, Bulk, Campaign Management, and Reporting services. 
+
 > [!NOTE]
 > The CustomerId and CustomerAccountId headers are not available for the Customer Billing and Customer Management services, because they automatically detect the customer context of the current authenticated user.
 

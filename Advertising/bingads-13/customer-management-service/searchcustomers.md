@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Searches for customers that match a specified criteria.
+description: Searches for customers that match the request criteria.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # SearchCustomers Service Operation - Customer Management
-Searches for customers that match a specified criteria.
+Searches for customers that match the request criteria.
 
 ## <a name="request"></a>Request Elements
 The *SearchCustomersRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -27,7 +27,7 @@ The *SearchCustomersRequest* object defines the [body](#request-body) and [heade
 |<a name="daterange"></a>DateRange|Determines the minimum and maximum customer creation date range.<br/><br/>This request element is optional.|[DateRange](daterange.md)|
 |<a name="ordering"></a>Ordering|Determines the order of results by the specified property of a customer.<br/><br/>This request element is optional. You can specify up to one *OrderBy* element in the array. Additional elements are not supported and will be ignored by the service.<br/><br/>For this service operation, the following values are supported in the *Field* element of a *OrderBy* object:<br/><br/>*Id* - The order is determined by the *Id* element of the returned [Customer](customer.md).<br/><br/>*Name* - The order is determined by the *Name* element of the returned [Customer](customer.md).<br/><br/>*Number* - The order is determined by the *Number* element of the returned [Customer](customer.md).|[OrderBy](orderby.md) array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of  results per page.|[Paging](paging.md)|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include customers that match all of the specified predicates.<br/><br/>You can specify up to 10 predicates. You can use the CreatedDate predicate field twice to specify a created date range, and otherwise may only use each predicate field once.<br/><br/>For a list of supported *Field* and *Operator* elements of a [Predicate](predicate.md) object for this service operation, see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
+|<a name="predicates"></a>Predicates|Determines the conditions that all must be met to return customers.<br/><br/>You must include between one and 10 predicates. To filter by the created date range, you can include two predicates with the [Field](predicate.md#field) value set to CreatedDate, and otherwise may only use each predicate field once.<br/><br/>For details about each supported predicate [Field](predicate.md#field) value see [Predicate Remarks](predicate.md#remarks).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -39,7 +39,7 @@ The *SearchCustomersResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customers"></a>Customers|A  list of customers that meet the specified criteria.|[Customer](customer.md) array|
+|<a name="customers"></a>Customers|A  list of customers that meet the request criteria.|[Customer](customer.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

@@ -58,7 +58,7 @@ If the [Name](#name) element is set to *MSCLKIDAutoTaggingEnabled*, then the [Va
 #### <a name="trackingurltemplate"></a>TrackingUrlTemplate
 If the [Name](#name) element is set to *TrackingUrlTemplate*, then the [Value](#value) represents your account's tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
 
-- Tracking templates defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](https://go.microsoft.com/fwlink/?LinkID=627130).
+- Tracking templates defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Limits](https://go.microsoft.com/fwlink/?LinkID=627130).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
