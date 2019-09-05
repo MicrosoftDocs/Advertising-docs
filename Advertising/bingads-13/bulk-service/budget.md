@@ -100,7 +100,7 @@ The service performs a case-insensitive comparison when it compares the name to 
 ## <a name="budgettype"></a>Budget Type
 The budget type determines the pace at which the budget is spent throughout the day.
 
-You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. The *MonthlyBudgetSpendUntilDepleted* value is not supported for shared budgets.
+You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. 
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
