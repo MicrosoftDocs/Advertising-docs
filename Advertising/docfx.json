@@ -4,8 +4,8 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -22,8 +22,8 @@
         "group": "bingads-12",
         "src": "bingads-12",
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -38,8 +38,8 @@
         "group": "bingads-13",
         "src": "bingads-13",
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
