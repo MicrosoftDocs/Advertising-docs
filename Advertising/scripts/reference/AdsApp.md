@@ -26,14 +26,12 @@ This is the top-level object used to access and manage a single account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns in this account.
 [createLabel(string name, string description, string backgroundColor)](#createlabel-string-name-string-description-string-backgroundcolor-)|void|Creates a label.
 [currentAccount](#currentaccount)|[Account](./Account.md)|Gets the account that the script is currently processing.
+[getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector used to filter the list of keywords in this account.
 [labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector used to filter the list of negative keyword lists in this account.
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder used to add a negative keyword list to this account.
 
-<!--
-[getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.
--->
 
 
 ## <a name="adgroups"></a>adGroups
@@ -114,7 +112,6 @@ Gets the account that the script is currently processing.
 [Account](./Account.md)|The account that the script is currently processing. To see how to use this in a multi-account scenario, see the [select](AccountsApp.md#select-bingadsaccount-account-) method of [AccountsApp](AccountsApp.md).
 
 
-<!--
 ## <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
 
@@ -122,7 +119,6 @@ Returns information about the environment in which the script is currently execu
 |Type|Description|
 |-|-
 [ExecutionInfo](./ExecutionInfo)|Information about the environment in which the script is currently executing.
--->
 
 
 ## <a name="keywords"></a>keywords
