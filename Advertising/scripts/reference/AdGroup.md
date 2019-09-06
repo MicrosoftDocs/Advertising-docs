@@ -146,6 +146,8 @@ Gets the date when ads in this ad group start serving.
 ## <a name="getstats"></a>getStats
 Gets the performance data for this ad group. 
 
+To call this method, you must include one of the `forDateRange` methods in the [ad group selector's](AdGroupSelector.md) chain.
+
 ### Returns:
 |Type|Description|
 |-|-

@@ -98,7 +98,7 @@ string|The budget's type. The following are the possible types.<ul><li>DAILY</li
 ## <a name="getstats"></a>getStats
 Gets the performance data for for campaigns that share this budget. 
 
-Performance data is available for shared budgets only. To call this method, you must have called the budget selector's [forDateRange(String dateRange)](BudgetSelector.md#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](BudgetSelector.md#fordaterange-object-datefrom-object-dateto-) method. 
+Performance data is available for shared budgets only. To call this method, you must include the [forDateRange(String dateRange)](BudgetSelector.md#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](BudgetSelector.md#fordaterange-object-datefrom-object-dateto-) method in the budget selector's chain. 
 
 ### Returns:
 |Type|Description|
