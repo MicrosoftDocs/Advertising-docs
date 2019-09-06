@@ -17,19 +17,19 @@ Contains the methods for getting information about the environment in which the 
 
 |Method Name|Return Type|Description|
 |-|-|-
-|[getRemainingTime](#getremainingtime)|int|Gets the remaining time, in seconds, that the script is allowed to execute. See [Script execution limits](../concepts/execution-limits.md).
-|[isPreview](#ispreview)|Boolean|Determines whether the script is running in preview mode or normal mode.
+|[getRemainingTime](#getremainingtime)|int|Gets the remaining time, in seconds, that the script is allowed to continue executing. See [Script execution limits](../concepts/execution-limits.md).
+|[isPreview](#ispreview)|Boolean|Determines whether the script is running in preview mode or live mode.
 
 
 ## <a name="getremainingtime"></a>getRemainingTime
 
-Gets the remaining time, in seconds, that the script is allowed to execute. See [Script execution limits](../concepts/execution-limits.md).
+Gets the remaining time, in seconds, that the script is allowed to continue executing. See [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 
 |Type|Description|
 |-|-
-int|The number of seconds that the script is allowed to execute.
+int|The number of seconds that the script is allowed to continue executing.
 
 
 ## <a name="ispreview"></a>isPreview

@@ -34,7 +34,7 @@ function main() {
 |-|-|-
 [fetch(url)](#fetch-string-url-)|[HTTPResponse](./HTTPResponse.md)|Gets a resource from the web.
 [fetch(url, params)](#fetch-string-url-urlfetchparams-params-)|[HTTPResponse](./HTTPResponse.md)|Lets you manage a web resource.
-[getRemainingDailyQuota](#getremainingdailyquota)|int|Gets the remaining number of `fetch()` calls that you can make today.
+[getRemainingDailyQuota](#getremainingdailyquota)|int|Gets the remaining number of `fetch()` calls that the user can make today.
 
 
 ## <a name="fetch-string-url-"></a>fetch(string url)
