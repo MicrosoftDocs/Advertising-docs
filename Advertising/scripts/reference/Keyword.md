@@ -171,6 +171,8 @@ integer|The keyword's quality score. The score is in the range 1 through 10 (hig
 ## <a name="getstats"></a>getStats
 Gets this keywords performance data. 
 
+To call this method, you must include one of the `forDateRange` methods in the [keyword selector's](KeywordSelector.md) chain.
+
 ### Returns
 |Type|Description|
 |-|-

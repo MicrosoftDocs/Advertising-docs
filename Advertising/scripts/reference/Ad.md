@@ -167,6 +167,8 @@ string|The ad's editorial approval status. The following are the possible values
 ## <a name="getstats"></a>getStats
 Gets this ad's performance data. 
 
+To call this method, you must include one of the `forDateRange` methods in the [ad selector's](AdSelector.md) chain.
+
 ### Returns
 |Type|Description|
 |-|-
