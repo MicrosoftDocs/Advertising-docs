@@ -71,12 +71,12 @@ params|[UrlFetchParams](UrlFetchParams.md)|The request's parameters such as its 
 
 
 ## <a name="getremainingdailyquota"></a>GetRemainingDailyQuota
-Gets the remaining number of `fetch()` calls that you can make today. See [UrlFetch limits](../concepts/urlfetch-limits.md).
+Gets the remaining number of `fetch()` calls that the user can make today. See [UrlFetch limits](../concepts/urlfetch-limits.md).
 
 ### Returns
 |Type|Description|
 |-|-
-int|The remaining number of `fetch()` calls that you can make today.
+int|The remaining number of `fetch()` calls that the user can make today.
 
 
 ## See also
