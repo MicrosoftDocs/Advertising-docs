@@ -84,6 +84,8 @@ string|The name of this managed account.
 ## <a name="getstats"></a>getStats
 Gets the performance data for this managed account. 
 
+To call this method, you must include one of the `forDateRange` methods in the [account selector's](BingAdsAccountSelector.md) chain.
+
 ### Returns:
 |Type|Description|
 |-|-

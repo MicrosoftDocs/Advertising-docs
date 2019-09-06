@@ -149,6 +149,8 @@ string|The campaign's name.
 ## <a name="getstats"></a>getStats
 Gets this campaign's performance data. 
 
+To call this method, you must include one of the `forDateRange` methods in the [campaign selector's](CampaignSelector.md) chain.
+
 ### Returns
 |Type|Description|
 |-|-

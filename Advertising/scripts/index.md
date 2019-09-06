@@ -21,7 +21,7 @@ This document assumes you're familiar with Microsoft Advertising and JavaScript.
 
 - [Bing Ads API Overview](/advertising/guides/index)
 - [Entity Hierarchy and Limits](/advertising/guides/entity-hierarchy-limits) 
-- [Account management models](/advertising/guides/customer-accounts)
+- [Account Hierarchy and User Permissions](/advertising/guides/account-hierarchy-permissions)
 
 Scripts simply provides another surface for working with your Microsoft Advertising data. For example, the same rules about [data freshness](https://help.ads.microsoft.com/#apex/3/en/54480/2-500) and [time zones](https://help.ads.microsoft.com/#apex/3/en/54483/2-500) that apply to the Microsoft Advertising's web application and API also apply to Scripts. 
 

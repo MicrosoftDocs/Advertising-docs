@@ -13,6 +13,10 @@ ms.topic: "article"
 
 Contains the methods for accessing an entity's performance data.
 
+To get performance data for an entity such as a [campaign](Campaign.md) or [keyword](Keyword.md), call the entity's `getStats` method. But you can only call `getStats` if the [selector](../concepts/selectors.md) that you used to get the entity includes one of the `forDateRange` methods in its chain.
+
+The following [campaign selector](CampaignSelector.md) uses the version of `forDateRange` that uses predefined date ranges like LAST_WEEK or LAST_MONTH. The other version lets you specify the data range using specific dates.
+
 
 Example usage:
 ```javascript
