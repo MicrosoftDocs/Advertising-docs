@@ -41,7 +41,7 @@ The *GetBidOpportunitiesResponse* object defines the [body](#response-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="opportunities"></a>Opportunities|An array of *BidOpportunity* objects that identifies the keywords whose clicks and impressions may increase if you were to apply the suggested match-type bid value.<br/><br/>Up to 500 opportunities of each *OpportunityType* will be returned for the account.|[BidOpportunity](bidopportunity.md) array|
+|<a name="opportunities"></a>Opportunities|An array of *BidOpportunity* objects that identifies the keywords whose clicks and impressions may increase if you were to apply the suggested match-type bid value.<br/><br/>Currently up to 1,000 list items can be returned although the limit is subject to change.|[BidOpportunity](bidopportunity.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

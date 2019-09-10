@@ -206,6 +206,84 @@ ReportingOperationInProgressException     |Microsoft.BingAds.V13.Reporting      
 ### <a name="net-troubleshooting"></a>.NET SDK Troubleshooting
 Unless there is a [known service issue](https://developers.ads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
+#### <a name="net-troubleshooting-tracebehavior"></a>SDK Trace
+You can use the Bing Ads .NET SDK TraceBehavior to log the SOAP request and response. 
+
+> [!NOTE]
+> The TraceBehavior is available with Bing Ads .NET SDK version 12.13.5 and later. 
+
+```csharp
+using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
+{
+    streamWriter.AutoFlush = true;
+
+    // For console output instead of file output, use new TextWriterTraceListener(Console.Out).
+    // If you only need debug output, you can remove the StreamWriter, TraceListener, and AddTraceSource.
+    TraceListener traceListener = new TextWriterTraceListener(streamWriter.BaseStream);
+
+    IServiceCollection serviceCollection = new ServiceCollection();
+    serviceCollection.AddLogging(builder => builder
+        .AddTraceSource(new SourceSwitch("ProgramSourceSwitch", "verbose"), traceListener)
+        .AddDebug()
+        .AddFilter(level => level >= LogLevel.Debug)
+    );
+    var iLoggerFactory = serviceCollection.BuildServiceProvider().GetService<ILoggerFactory>();
+    TraceBehavior.Instance.AddMessageInspector(
+        new LogMessageInspector(
+            iLoggerFactory.CreateLogger<Program>(),
+            LogLevel.Information)
+    );
+
+    Authentication authentication = AuthenticateWithOAuth();
+
+    // This utiltiy operation sets the global authorization data instance 
+    // to the first account that the current authenticated user can access. 
+
+    SetAuthorizationDataAsync(authentication).Wait();
+
+    // Run all of the examples that are included above.
+
+    foreach (var example in _examples)
+    {
+        example.RunAsync(_authorizationData).Wait();
+    }
+
+    streamWriter.Flush();
+    traceListener.Flush();
+}
+```
+
+The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 12.13.5 with the following NuGet packages. Your implementation will vary. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="Microsoft.Extensions.Configuration" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Configuration.Abstractions" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Configuration.Binder" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.DependencyInjection" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Logging" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Logging.Abstractions" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Logging.Debug" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Logging.TraceSource" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Options" version="2.2.0" targetFramework="net471" />
+  <package id="Microsoft.Extensions.Primitives" version="2.2.0" targetFramework="net471" />
+  <package id="Newtonsoft.Json" version="12.0.2" targetFramework="net471" />
+  <package id="System.Buffers" version="4.4.0" targetFramework="net471" />
+  <package id="System.ComponentModel.Annotations" version="4.5.0" targetFramework="net471" />
+  <package id="System.Configuration.ConfigurationManager" version="4.5.0" targetFramework="net471" />
+  <package id="System.Memory" version="4.5.1" targetFramework="net471" />
+  <package id="System.Numerics.Vectors" version="4.4.0" targetFramework="net471" />
+  <package id="System.Runtime.CompilerServices.Unsafe" version="4.5.1" targetFramework="net471" />
+  <package id="System.Security.AccessControl" version="4.5.0" targetFramework="net471" />
+  <package id="System.Security.Permissions" version="4.5.0" targetFramework="net471" />
+  <package id="System.Security.Principal.Windows" version="4.5.0" targetFramework="net471" />
+  <package id="System.ServiceModel.Http" version="4.5.3" targetFramework="net471" />
+  <package id="System.ServiceModel.Primitives" version="4.5.3" targetFramework="net471" />
+</packages>
+```
+
 #### <a name="net-troubleshooting-fiddler"></a>Fiddler Options
 You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
  - After installing Fiddler, export the Fiddler certificate from the root certificate store. 
