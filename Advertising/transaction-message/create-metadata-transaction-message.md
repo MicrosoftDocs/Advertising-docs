@@ -131,11 +131,6 @@ Specify a `PackageData` object for each package of amenities you define. Althoug
 ```
 
 
-## Removing rooms and package metadata
-
-??? 
-
-
 ## Next steps
 
 Before sending transaction messages, make sure your hotel feed file is up to date. To update the feed files, contact your TAM. After the TAM imports the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.

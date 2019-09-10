@@ -34,7 +34,7 @@ Here's what a default, base room itinerary looks like:
 </Transaction>
 ```
 
-To add room types and packages to the itinerary, add a [<RoomBundle>] element as a child of `Result`. You may add one or more room bundles but one of the room bundles' rate must match the itinerary's rate. You must base the room's rate on its occupancy; 2 and 4 occupancy rooms cannot have the same rate.
+To add room types and packages to the itinerary, add a [<RoomBundle>](reference.md/#roombundletype) element as a child of `Result`. You may add one or more room bundles but one of the room bundles' rate must match the itinerary's rate. You must base the room's rate on its occupancy; 2 and 4 occupancy rooms cannot have the same rate.
 
 
 ```xml
@@ -90,8 +90,7 @@ Itinerary, room, and package data include some of the same fields. The following
 
 - RoomBundle (highest)
 - PackageData
-- RoomData
-- Property data (lowest)
+- RoomData (lowest)
 
 If a room bundle references the following room and package, the room is a double-occupancy room based on the precedence rules (the package has higher precedence than a room and the package's `Occupancy` element is set to 2).
 
