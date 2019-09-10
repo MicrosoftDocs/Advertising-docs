@@ -13,11 +13,15 @@ See below for information about changes to Bing Ads API Version 12 by month.
 See below for Bing Ads API updates during this calendar month. 
 
 - [Final Url Suffix in Reports](#finalurlsuffix-reporting-september2019)  
+- [Bing Ads API SDK Updates](#sdk-september2019)  
 
 ### <a name="finalurlsuffix-reporting-september2019"></a>Final Url Suffix in Reports
 The FinalUrlSuffix column is added to the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) value set. The FinalUrlSuffix column is also available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets.
 
-The final URL suffix is a place in your final URL where you can add parameters that will be attached to the end of your landing page URL.
+The final URL suffix is a place in your final URL where you can add parameters that will be attached to the end of your landing page URL. 
+
+### <a name="sdk-september2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.5), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.5), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.5), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.5) SDK version 12.13.5. 
 
 ## <a name="august2019"></a>August 2019
 See below for Bing Ads API updates during this calendar month. 
