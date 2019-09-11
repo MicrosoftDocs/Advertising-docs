@@ -17,17 +17,17 @@ If you create hotel ad campaigns in Microsoft Advertising, use transaction messa
 
 Before you can send Microsoft transaction messages, you must contact your account manager to sign up.
 
-## Different modes for sending Microsoft your transaction data
+## Different modes for sending Microsoft your itinerary data
 
- Microsoft supports the following modes that you can use to provide your transaction data.
+ Microsoft supports the following modes that you can use to provide your itinerary data.
 
 - Push mode
 - Pull mode
 - Pull mode with hints
 
-With the push mode, you send Microsoft your unsolicited updates at the intervals you choose. To use this mode, you must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages. For information, see [Pushing Transaction Messages to Microsoft](../transaction-message/push-transaction-message.md).
+With the **push mode**, you send Microsoft your unsolicited updates at the intervals you choose. To use this mode, you must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages. For information, see [Pushing Transaction Messages to Microsoft](../transaction-message/push-transaction-message.md).
 
-With the pull mode options, Microsoft sends you Query messages that specifies the hotel itinerary data you should return. The difference between the two pull modes is the amount of data that you send to Microsoft. With pull mode, you return data for all itineraries and all hotels. But with pull with hints, you tell Microsoft what data changed and it requests only that data. For information, see [Having Microsoft Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
+With the **pull mode** options, Microsoft sends you [Query messages](../query-message/query-message.md) that specifies the hotel itinerary data you should return. The difference between the two pull modes is the amount of data that you send to Microsoft. With **pull mode**, you return data for all itineraries and all hotels. But with **pull with hints**, you tell Microsoft what data changed and it requests only that data. For information, see [Having Microsoft Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
 
 
 

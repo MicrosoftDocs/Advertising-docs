@@ -41,7 +41,7 @@ Transaction messages contain a single, top-level [Transaction](../transaction-me
 
 You must specify the `timestamp` and `id` attributes.
 
-The `Transaction` element must specify the `timestamp` attribute. The time stamp should identify the time that you submit the message. Bing uses the time stamp to ensure that it processes only the latest itineraries. For example, if Bing processes a message with a time stamp of 14:10 and then processes a message with a time stamp of 14:09, Bing only processes the itineraries in the 14:09 message that were not included in the 14:10 message.
+The `timestamp` attribute should identify the time that you submit the message. Bing uses the time stamp to ensure that it processes only the latest itineraries. For example, if Bing processes a message with a time stamp of 14:10 and then processes a message with a time stamp of 14:09, Bing only processes the itineraries in the 14:09 message that were not included in the 14:10 message.
 
 The `id` attribute is a user-defined ID that uniquely identifies the message to the advertiser. The advertiser uses the ID to identify the message in the list of hotel feed status reports. 
 
@@ -169,3 +169,5 @@ Before sending transaction messages, make sure your hotel feed file and points o
 Validate the transaction message before sending it to Bing. For information, see [Validating your Transaction Message](../transaction-message/validate-transaction-message.md).
 
 For information about sending Bing your transaction message, see [Pushing Transaction Messages to Bing](../transaction-message/push-transaction-message.md) or [Having Bing Pull Transaction Messages](pull-transaction-message.md).
+
+For information about adding room bundles to your itineraries, see [Creating a metadata Transaction message](create-metadata-transaction-message.md) and [Using Room Bundles](using-room-bundles.md).

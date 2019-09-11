@@ -149,7 +149,7 @@ The following shows the syntax that you use to specify dynamic query parameters 
 
 `http://domain.com/path?param-name=(dynamic-variable-name)`
 
-The following are the possible dynamic variable names that you may specify in the URL.
+The following are the possible case-sensitive dynamic variable names that you may specify in the URL.
 
 |Name|Description
 |-|-
@@ -173,7 +173,7 @@ The following are the possible dynamic variable names that you may specify in th
 |PRICE-DISPLAYED-TAX|The amount of tax in the user's local currency. The tax amount is based on the `Tax` element specified in the Transaction Message. For example, 3.14. 
 |PRICE‑DISPLAYED‑TOTAL|The total cost of the room in the user's local currency. The amount is based on the sum of the `Baserate`, `Tax`, and `OtherFees` elements specified in the Transaction Message. For example, 152.13.
 |SLOT_TYPE|The placement of the ad on the results page. The parameter may contain the following possible values:<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>B&mdash;The secondary slot where ads are shown only after the user clicks **More rates**.</li></ul>
-|SUBACCOUNT_ID|The ID of the subaccount that the hotel ads campaign belongs to.
+|SUBACCOUNT_ID|The ID of the subaccount that the hotel ads campaign belongs to. If your Google implementation uses CAMPAIGN-ID, substitute SUBACCOUNT_ID FOR CAMPAIGN-ID. 
 |USER-COUNTRY|Two-letter country code of the country where the user is located. The value is extracted from the end-user's client settings. For example, US.
 |USER-CURRENCY|Three-letter currency code of the local currency used by the user. The value is inferred from the end-user's client settings. For example, USD.
 |USER-DEVICE|The end-user's device type. The following are the possible values.<ul><li>mobile</li><li>tablet</li><li>desktop</li><li>unknown</li></ul>The value is inferred from the end-user's client settings.
