@@ -80,6 +80,10 @@
     href: ../transaction-message/get-started.md
   - name: Create a Transaction message
     href: ../transaction-message/create-transaction-message.md
+  - name: Create a metadata Transaction message
+    href: ../transaction-message/create-metadata-transaction-message.md
+  - name: Use room bundles
+    href: ../transaction-message/using-room-bundles.md
   - name: Pull Transaction messages
     href: ../transaction-message/pull-transaction-message.md
   - name: Push Transaction messages

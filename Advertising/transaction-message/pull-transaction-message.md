@@ -10,7 +10,10 @@ ms.author: "scottwhi"
 
 # Having Microsoft Advertising pull Transaction Messages
 
-Microsoft offers two pull modes. The first option is pull mode. With this option, Microsoft sends you requests and you send back all of your itinerary data. The second option is pull with hints. With this option, instead of returning all of your itinerary data, you return only the itineraries that you identified as having changed.
+Microsoft offers two pull modes:
+
+1. [Pull](#pull-mode) 
+2. [Pull with hints](#pull-with-hints-mode)
 
 For both modes, you work with your TAM to specify:
 
@@ -18,7 +21,7 @@ For both modes, you work with your TAM to specify:
 - The frequency that Microsoft sends requests
 - Default values for maximum advanced booking and night stays.
 
-Once a day Microsoft sends a request to an endpoint that you specify asking for updates to your maximum advanced booking and night stays default values. You respond to the request with a [QueryControl](../query-control-message/query-control-message.md) message. In addition to specifying the default values, you can use the message to override the default values for specific properties or disable specific properties so Microsoft doesn't collect data for them. For more information, see [Creating a QueryControl Message](../query-control-message/create-query-control-message.md).
+Once a day Microsoft sends a request to the endpoint you specified asking for updates to your maximum advanced booking and night stays default values. You respond to the request with a [QueryControl](../query-control-message/query-control-message.md) message. In addition to specifying the default values, you can use the message to override the default values for specific properties or disable specific properties so Microsoft doesn't collect data for them. For more information, see [Creating a QueryControl Message](../query-control-message/create-query-control-message.md).
 
 
 > [!NOTE]
@@ -31,12 +34,12 @@ Once a day Microsoft sends a request to an endpoint that you specify asking for 
 
 ## Pull mode
 
-With pull mode, Microsoft sends you a [Query](../query-message/query-message.md) message that identifies the itineraries that you should send back in the response using a [Transaction](../transaction-message/create-transaction-message.md) message. The request identifies all itineraries. Depending on the values that you specified for maximum advanced booking and nights stay, and the number of properties in your hotel feed, Microsoft may break the request into multiple requests. For information about processing the query message, see [Processing a Query Message](../query-message/process-query-message.md).
+With **pull mode**, Microsoft sends you a [Query](../query-message/query-message.md) message that identifies the itineraries you send back in the response using a [Transaction](../transaction-message/create-transaction-message.md) message. The request identifies all itineraries. Microsoft may send multiple requests depending on the values that you specified for maximum advanced booking and nights stay, and the number of properties in your hotel feed. For information about processing the query message, see [Processing a Query Message](../query-message/process-query-message.md).
 
 
 ## Pull with hints mode
 
-With pull with hints, Microsoft first sends you a hint request, which contains a time stamp of the last time you sent Microsoft updates. You respond to the hint request with a [Hint](../hint-message/hint-message.md) message that identifies the itineraries that have changed since the last successful update. You can identify individual itineraries or a range of itineraries using a range of check-in dates. For more information, see [Creating a Hint Message](../hint-message/create-hint-message.md).
+With **pull with hints**, Microsoft first sends you a hint request, which contains a time stamp of the last time you sent Microsoft updates. You respond to the hint request with a [Hint](../hint-message/hint-message.md) message that identifies the itineraries that have changed since the last successful update. You can identify individual itineraries or a range of itineraries using a range of check-in dates. For more information, see [Creating a Hint Message](../hint-message/create-hint-message.md).
 
 Microsoft uses the hints to generate and send one or more [Query](../query-message/query-message.md) messages that specify only the itineraries that you said changed. Your response should be a [Transaction](../transaction-message/create-transaction-message.md) message that contains the requested data. For information about processing the query message, see [Processing a Query Message](../query-message/process-query-message.md).
 
