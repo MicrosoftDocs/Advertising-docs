@@ -12,7 +12,7 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
-## August 30, 2019
+## September 10, 2019
 
 - Added support for room bundles to [Transaction Message](../transaction-message/reference.md). [Read more](../transaction-message/using-room-bundles.md).  
   - Updates include:  
