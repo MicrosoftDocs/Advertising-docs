@@ -19,9 +19,7 @@ Preview mode lets you test your script without actually making changes to the da
 Preview mode is specific to Microsoft Advertising components only. Calls to other services execute as normal. For example, if the script sends an email, the email is sent. The same is true for spreadsheet updates. 
 -->
 
-<!--
-To programmitcally determine if a script is executing in preview mode, see [ExecutionInfo](../reference/ExecutionInfo.md).
--->
+To programmatically determine if a script is executing in preview mode, see the `isPreview` method of [ExecutionInfo](../reference/ExecutionInfo.md).
 
 Because objects are not created, deleted, or modified in preview mode not all code will execute the same as if it were run live. The following code shows a simple example when the code behaves differently in preview mode versus live mode.
 

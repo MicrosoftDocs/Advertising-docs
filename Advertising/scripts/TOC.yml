@@ -138,6 +138,8 @@
           href: ./reference/CampaignSelector.md 
         - name: CampaignUrls
           href: ./reference/CampaignUrls.md 
+        - name: ExecutionInfo
+          href: ./reference/ExecutionInfo.md 
         - name: ExpandedTextAd
           href: ./reference/ExpandedTextAd.md 
         - name: ExpandedTextAdBuilder

@@ -10,9 +10,11 @@ ms.topic: "article"
 ---
 
 # Budget
+
 Contains the methods for managing a budget. For more information, see [Budget](/advertising/guides/entity-hierarchy-limits#budget).
 
 ## Methods
+
 |Method Name|Return Type|Description|
 |-|-|-
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns that share this budget.

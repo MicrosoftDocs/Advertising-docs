@@ -14,6 +14,15 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## September 13, 2019
+
+Added the [ExecutionInfo](reference/ExecutionInfo.md) object, which contains information about the environment in which the script is currently executing. For example, if the script is running in preview mode or the amount of time the script is allowed to continue executing.
+
+Added the `getExecutionInfo` method to the [AdsApp](reference/AdsApp.md) object. Use this method to get the `ExecutionInfo` object.
+
+Added the `getRemainingDailyQuota` method to the [UrlFetchApp](reference/UrlFetchApp.md) object. Use this method to get the remaining number of `fetch()` calls that the user can make today.
+
+
 ## August 20, 2019
 
 The following is a documentation-only change.
