@@ -14,7 +14,7 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## September 6, 2019
+## September 13, 2019
 
 Added the [ExecutionInfo](reference/ExecutionInfo.md) object, which contains information about the environment in which the script is currently executing. For example, if the script is running in preview mode or the amount of time the script is allowed to continue executing.
 
