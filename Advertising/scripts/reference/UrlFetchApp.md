@@ -34,6 +34,7 @@ function main() {
 |-|-|-
 [fetch(url)](#fetch-string-url-)|[HTTPResponse](./HTTPResponse.md)|Gets a resource from the web.
 [fetch(url, params)](#fetch-string-url-urlfetchparams-params-)|[HTTPResponse](./HTTPResponse.md)|Lets you manage a web resource.
+[getRemainingDailyQuota](#getremainingdailyquota)|int|Gets the remaining number of `fetch()` calls that the user can make today.
 
 
 ## <a name="fetch-string-url-"></a>fetch(string url)
@@ -67,6 +68,15 @@ params|[UrlFetchParams](UrlFetchParams.md)|The request's parameters such as its 
 |Type|Description|
 |-|-
 [HTTPResponse](HTTPResponse.md)|Contains the methods for getting the response's payload and status code.
+
+
+## <a name="getremainingdailyquota"></a>GetRemainingDailyQuota
+Gets the remaining number of `fetch()` calls that the user can make today. See [UrlFetch limits](../concepts/urlfetch-limits.md).
+
+### Returns
+|Type|Description|
+|-|-
+int|The remaining number of `fetch()` calls that the user can make today.
 
 
 ## See also
