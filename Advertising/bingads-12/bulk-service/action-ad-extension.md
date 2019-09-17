@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new Action Ad Extension to the accoun
 ```csv
 Type,Status,Id,Parent Id,ClientId,Language,Start Date,End Date,Name,Ad Schedule,Use Searcher Time Zone,Action Type,Action Text,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter
 Format Version,,,,,,,,6.0,,,,,,,,,
-Action Ad Extension,Active,-10,7671275,ClientIdGoesHere,English,,12/31/2019,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer
+Action Ad Extension,Active,-10,0,ClientIdGoesHere,English,,12/31/2019,,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkActionAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
