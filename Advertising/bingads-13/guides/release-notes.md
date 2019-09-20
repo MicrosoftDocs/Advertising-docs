@@ -12,6 +12,7 @@ See below for information about changes to Bing Ads API Version 13 by month.
 ## <a name="september2019"></a>September 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [Goal and Goal Type in Reports](#goals-reporting-september2019)  
 - [Final Url Suffix in Reports](#finalurlsuffix-reporting-september2019)  
 - [Product Negative Keyword Report](#productnegativekeyword-reporting-september2019)  
 - [Bing Ads API SDK Updates](#sdk-september2019)  
