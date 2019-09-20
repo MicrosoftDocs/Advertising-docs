@@ -44,6 +44,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="BaseCampaignId" />
     <xs:enumeration value="AllConversions" />
     <xs:enumeration value="AllRevenue" />
+    <xs:enumeration value="Goal" />
+    <xs:enumeration value="GoalType" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -72,6 +74,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="conversions"></a>Conversions|The number of conversions.<br/><br/>A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.<br/><br/>Conversions are measured by adding a small bit of code to your website pages so that a visitor's progress through your site can be tracked.<br/><br/>Data will be excluded from the [Conversions](#conversions) report column for any conversion goal with the [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) property set to true. The [AllConversions](#allconversions) column will include data for all conversion goals regardless of their [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) setting.<br/><br/>Available for accounts that are setup to use analytics with Microsoft Advertising Universal Event Tracking. For more information, see the [Track sales and other conversions](https://help.ads.microsoft.com/#apex/3/en/n5012/2) help topic.|
 |<a name="extendedcost"></a>ExtendedCost|Cost information that is optionally provided by advertisers, including non-advertising costs, taxes, and shipping.|
 |<a name="gender"></a>Gender|The gender (male or female) of the search users to whom the ad was delivered.|
+|<a name="goal"></a>Goal|The name of the goal you set for the conversions you want, meaning actions customers take after clicking your ad.|
+|<a name="goaltype"></a>GoalType|The type of conversion goal.<br/>Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages or other sites on the Audience Network.<br/>Regardless of whether you are driving customers to your website, tracking conversions, or just trying to get your message out, you want to track the number of times your ad is shown.<br/>Run the share of voice report to get an estimate of how many more impressions you could be getting.|
 |<a name="language"></a>Language|This is the language of the country the ad is served in.|
 |<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions.<br/><br/>Data will be excluded from the [Revenue](#revenue) report column for any conversion goal with the [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) property set to true. The [AllRevenue](#allrevenue) column will include data for all conversion goals regardless of their [ExcludeFromBidding](../campaign-management-service/conversiongoal.md#excludefrombidding) setting.<br/><br/>Available for accounts that are setup to use analytics with Microsoft Advertising Universal Event Tracking. For more information, see the [Track sales and other conversions](https://help.ads.microsoft.com/#apex/3/en/n5012/2) help topic.|

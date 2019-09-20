@@ -64,6 +64,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllCostPerConversion" />
     <xs:enumeration value="AllReturnOnAdSpend" />
     <xs:enumeration value="AllRevenuePerConversion" />
+    <xs:enumeration value="Goal" />
+    <xs:enumeration value="GoalType" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -105,6 +107,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="dynamicadtarget"></a>DynamicAdTarget|The dynamic ad target or webpage condition that Bing matched to your website. For example the condition could be returned in the report as *URL contains xyz*.|
 |<a name="dynamicadtargetid"></a>DynamicAdTargetId|The Microsoft Advertising assigned identifier of the dynamic ad target, also known in Campaign Management and Bulk API as the ad group criterion ID.|
 |<a name="dynamicadtargetstatus"></a>DynamicAdTargetStatus|The current status of the dynamic ad target.|
+|<a name="goal"></a>Goal|The name of the goal you set for the conversions you want, meaning actions customers take after clicking your ad.|
+|<a name="goaltype"></a>GoalType|The type of conversion goal.<br/>Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
