@@ -64,9 +64,9 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
 |<a name="deviceos"></a>DeviceOS|The operating system of the device reported in the *DeviceType* column. The possible values include *Android*, *Blackberry*, *iOS*, *Other*, *Unknown*, and *Windows*. If the operating system of the device cannot be determined or is not one of the operating systems that you can target, the value in this column will be *Unknown*.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads. The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|
-|<a name="goal"></a>Goal|The name of your event tracking or campaign analytics goal.|
-|<a name="goalid"></a>GoalId|The Microsoft Advertising assigned identifier of a goal.|
-|<a name="goaltype"></a>GoalType|The goal type.<br/>Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.|
+|<a name="goal"></a>Goal|The name of the goal you set for the conversions you want, meaning actions customers take after clicking your ad.|
+|<a name="goalid"></a>GoalId|The Microsoft Advertising assigned identifier of a conversion goal.|
+|<a name="goaltype"></a>GoalType|The type of conversion goal.<br/>Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.|
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordid"></a>KeywordId|The Microsoft Advertising assigned identifier of a keyword.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|
