@@ -12,9 +12,21 @@ See below for information about changes to Bing Ads API Version 13 by month.
 ## <a name="september2019"></a>September 2019
 See below for Bing Ads API updates during this calendar month. 
 
+- [Experiment Type](#experimenttype-september2019)  
 - [Final Url Suffix in Reports](#finalurlsuffix-reporting-september2019)  
 - [Product Negative Keyword Report](#productnegativekeyword-reporting-september2019)  
 - [Bing Ads API SDK Updates](#sdk-september2019)  
+
+### <a name="experimenttype-september2019"></a>Experiment Type
+You can now set the experiment split type via the [ExperimentType](../campaign-management-service/experiment.md#experimenttype) element in the [Experiment](../campaign-management-service/experiment.md) Campaign Management object or via the [Experiment Type](../bulk-service/experiment.md#experimenttype) field in the [Experiment](../bulk-service/experiment.md) Bulk record. 
+
+The experiment split type determines whether to show individual customers ads from the experiment and the original campaign randomly, or only from one or the other.
+
+The possible values include TrafficBased and CookieBased. 
+
+TrafficBased: This is also known as the search-based option. Every time customers search, they are randomly shown either ads from your experiment or ads from your original campaign. This means that individual customers could see ads from both sources if they search multiple times.
+
+CookieBased: When individual customers search, we show ads from either your experiment or your original campaign, and use a cookie to ensure that, going forward, they will only see ads from this source. The cookie-based option has an important trade-off to consider: On one hand, you may get more accurate data, since you're ensuring that an individual customer is only responding to one source or the other. On the other hand, it may take you longer to build up statistically significant comparison data than with the search-based option.  
 
 ### <a name="finalurlsuffix-reporting-september2019"></a>Final Url Suffix in Reports
 The FinalUrlSuffix column is added to the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) value set. The FinalUrlSuffix column is also available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets.

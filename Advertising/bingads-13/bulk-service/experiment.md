@@ -126,6 +126,7 @@ For an *Experiment* record, the following attribute fields are available in the 
 - [Base Campaign Id](#basecampaignid)
 - [End Date](#enddate)
 - [Experiment Campaign Id](#experimentcampaignid)
+- [Experiment Type](#experimenttype)
 - [Client Id](#clientid)
 - [Id](#id)
 - [Modified Time](#modifiedtime)
@@ -173,6 +174,19 @@ After the experiment campaign is created you can update all of its settings exce
 
 **Add:** Read-only  
 **Update:** Read-only    
+**Delete:** Read-only  
+
+## <a name="experimenttype"></a>Experiment Type
+Determines whether to show individual customers ads from the experiment and the original campaign randomly, or only from one or the other.
+
+The possible values include TrafficBased and CookieBased. 
+
+TrafficBased: This is also known as the search-based option. Every time customers search, they are randomly shown either ads from your experiment or ads from your original campaign. This means that individual customers could see ads from both sources if they search multiple times.
+
+CookieBased: When individual customers search, we show ads from either your experiment or your original campaign, and use a cookie to ensure that, going forward, they will only see ads from this source. The cookie-based option has an important trade-off to consider: On one hand, you may get more accurate data, since you're ensuring that an individual customer is only responding to one source or the other. On the other hand, it may take you longer to build up statistically significant comparison data than with the search-based option.  
+
+**Add:** Optional. The default is TrafficBased.  
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
