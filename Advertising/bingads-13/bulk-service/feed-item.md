@@ -50,11 +50,11 @@ var bulkAdCustomizerFeedItem = new BulkFeedItem
 	CustomAttributes = adCustomizerFeedItemCustomAttributesJson,
 	// 'Id' column header in the Bulk file
 	Id = null,
-	// '' column header in the Bulk file
+	// 'Ad Group' column header in the Bulk file
 	AdGroupName = null,
-	// '' column header in the Bulk file
+	// 'Audience Id' column header in the Bulk file
 	AudienceId = null,
-	// '' column header in the Bulk file
+	// 'Campaign' column header in the Bulk file
 	CampaignName = null,
 	// 'Ad Schedule' column header in the Bulk file
 	DayTimeRanges = new[]

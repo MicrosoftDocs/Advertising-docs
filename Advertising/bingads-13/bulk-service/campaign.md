@@ -261,7 +261,10 @@ This value corresponds to the *Budget Name* field of the [Budget](budget.md) rec
 **Delete:** Read-only  
 
 ## <a name="budgettype"></a>Budget Type
-The budget type determines how the budget is spent. The possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*.
+The budget type determines how the budget is spent. The possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*. 
+
+> [!IMPORTANT]
+> The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
 
 In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
 

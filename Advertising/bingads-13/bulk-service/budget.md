@@ -22,7 +22,7 @@ The following Bulk CSV example would add a new budget.
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Budget Id,Budget Name,Budget,Budget Type,Name
 Format Version,,,,,,,,,,6.0
-Budget,Active,-20,0,ClientIdGoesHere,,,My Shared Budget,50,DailyBudgetAccelerated,
+Budget,Active,-20,0,ClientIdGoesHere,,,My Shared Budget,50,DailyBudgetStandard,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkBudget* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -43,7 +43,7 @@ var bulkBudget = new BulkBudget
         // 'Budget' column header in the Bulk file
         Amount = 50,
         // 'Budget Type' column header in the Bulk file
-        BudgetType = BudgetLimitType.DailyBudgetAccelerated,
+        BudgetType = BudgetLimitType.DailyBudgetStandard,
         // 'Budget Name' column header in the Bulk file
         Name = "My Shared Budget",
         // 'Id' column header in the Bulk file
@@ -101,6 +101,9 @@ The service performs a case-insensitive comparison when it compares the name to 
 The budget type determines the pace at which the budget is spent throughout the day.
 
 You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. 
+
+> [!IMPORTANT]
+> The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
