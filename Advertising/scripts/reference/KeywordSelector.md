@@ -134,6 +134,7 @@ The following are the entity properties you may specify.
 |Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
 Status|enumeration|The keyword's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>`withCondition("Status = ENABLED")`|Status
+CombinedApprovalStatus|string|The keyword's approval status. Possible case-sensitive values are: <ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>UNDER_REVIEW</li><li>DISAPPROVED</li></ul>For information about these values, see [Editorial approval status values](../concepts/editorial-approval.md).<br /><br />This example returns keywords that need attention.<br /><br />`withCondition("CombinedApprovalStatus IN ['APPROVED_LIMITED', 'DISAPPROVED']")`
 Text|string|The keyword's text. Include only the keyword's text. Don't include the keyword's match type in the text. For example, if the keyword is an exact match keyword such as [books], use *books* not *[books]*.<br /><br />`withCondition("Text STARTS_WITH 'flowers'")`|Keyword Text
 KeywordMatchType|enumeration|The keyword's match type. Possible case-sensitive values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>`withCondition("KeywordMatchType = EXACT")`|Match type
 MaxCpc|double|The keyword's maximum CPC bid amount. The CPC is in the account's currency.<br /><br />`withCondition("MaxCpc > 0.40")`|Bid
