@@ -57,6 +57,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllRevenuePerConversion" />
     <xs:enumeration value="AssociationId" />
     <xs:enumeration value="AssociationLevel" />
+    <xs:enumeration value="ViewThroughConversions" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -103,6 +104,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="targetingsetting"></a>TargetingSetting|This attribute reflects the current value of your ad group's audience targeting setting. The possible values are "Target and bid" or "Bid only". Target and bid: Show ads only to people included in the remarketing list, with the option to change the bid amount. Bid only: Show ads to people searching for your ad, with the option to change the bid amount for people included in the remarketing list.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="viewthroughconversions"></a>ViewThroughConversions|View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.<br/><br/>View-through conversions don’t have a click associated but do have an impression associated within the advertiser defined conversion window.​ If the user also clicked on an ad that was delivered via the Microsoft Audience or Search network, there won't be any view-through conversion counted. Only the click-based conversion would be counted.<br/><br/>View-through conversions are only counted for ads in the Microsoft Audience network.<br/><br/>Not everyone has view-through conversions yet. If you don't, don't worry. It's coming soon.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
