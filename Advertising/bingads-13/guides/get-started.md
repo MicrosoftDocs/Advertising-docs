@@ -297,7 +297,7 @@ Call [GetUser](../customer-management-service/getuser.md) with your Microsoft Ad
 </s:Envelope>
 ```
 
-Then call [SearchAccounts](../customer-management-service/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
+Then call [SearchAccounts](../customer-management-service/searchaccounts.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
