@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 
 ## Do you have your Microsoft Advertising credentials?
 
-To use the Hotel API, you must have a Microsoft Advertising account and a Microsoft account. To get a Microsoft Advertising account, go to <a href="http://ads.microsoft.com" data-raw-source="[http://ads.microsoft.com](http://ads.microsoft.com)">http://ads.microsoft.com</a>. If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Microsoft Advertising account**. Select the sign-up option and continue with the sign-up process.
+To use the Hotel API, you must have a Microsoft Advertising account and a Microsoft account. To get a Microsoft Advertising account, go to <a href="http://ads.microsoft.com" data-raw-source="[http://ads.microsoft.com](http://ads.microsoft.com)">http://ads.microsoft.com</a>. If you're not signed in using your Microsoft account, you're asked to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Microsoft Advertising account**. Select the sign-up option and continue with the sign-up process.
 
 Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. The API ignores it if you include it.
 
@@ -27,7 +27,7 @@ Your account manager needs to enable your account before you can use Hotel Ads o
 
 ## Authenticating your credentials
 
-The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with OAuth](/advertising/guides/authentication-oauth). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with the Live Connect endpoint](/advertising/guides/authentication-oauth-live-connect) and [Authentication with the Microsoft identity platform](/advertising/guides/authentication-oauth-identity-platform) (using the Microsoft identity platform is recommended). 
 
 You *can* use the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](/advertising/guides/get-started-csharp) | [Java](/advertising/guides/get-started-java) | [Python](/advertising/guides/get-started-python). (You should only use the SDK to get the access token if you're using the SDK for Microsoft Advertising campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
@@ -38,14 +38,18 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 ### Authenticating your credentials in sandbox
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/advertising/guides/authentication-oauth), substitute them with the following sandbox endpoints.
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with the Live Connect endpoint](/advertising/guides/authentication-oauth-live-connect), substitute them with the following sandbox endpoints.
 
  - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for the Hotel API's sandbox
  - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 
  - outlook-int.com&mdash;Endpoint for sandbox email used when getting a sandbox Microsoft account
- - apps.dev.microsoft-int.com/#/appList&mdash;Endpoint for getting a sandbox client ID
+ - **Skip the step to register an app**. Sandbox does not support app registration. Instead, use the "Sandbox Tutorial App" client ID, which is **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. This client ID is for desktop apps only and may not be used for testing web apps.
  - login.live-int.com&mdash;Endpoint for OAuth requests
 
+<!--
+> [!NOTE]
+> If you're testing the API with a desktop or console app, you may use the public "Sandbox Tutorial App" client ID instead of registering your own app. The "Sandbox Tutorial App" client ID is **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. If you're testing a web app, you must use the endpoint above to register your own app.
+-->
 
 <a name="getsicredentials"/>
 

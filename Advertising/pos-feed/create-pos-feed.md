@@ -170,6 +170,7 @@ The following are the possible case-sensitive dynamic variable names that you ma
 |NUM-ADULTS|The number of adults occupying the room. The default value is 2.
 |PARTNER-CURRENCY|The three-letter currency code specified in the currency attribute of the `Baserate` element in the Transaction Message. For example, USD.
 |PARTNER-HOTEL-ID|The hotel's ID specified in the `id` element of the Hotel Feed.
+|PARTNER-ROOM-ID|The ID that uniquely identifies the room. This is either the ID specified in \<RoomID> element of the \<Result>, \<RoomBundle>, or \<RoomData> block, depending on usage.
 |PRICE-DISPLAYED-TAX|The amount of tax in the user's local currency. The tax amount is based on the `Tax` element specified in the Transaction Message. For example, 3.14. 
 |PRICE‑DISPLAYED‑TOTAL|The total cost of the room in the user's local currency. The amount is based on the sum of the `Baserate`, `Tax`, and `OtherFees` elements specified in the Transaction Message. For example, 152.13.
 |SLOT_TYPE|The placement of the ad on the results page. The parameter may contain the following possible values:<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>B&mdash;The secondary slot where ads are shown only after the user clicks **More rates**.</li></ul>

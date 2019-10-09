@@ -12,6 +12,14 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+
+## October 9, 2019
+
+- Added PARTNER-ROOM-ID as a possible dynamic query parameter for point of sale URLs. See [Using dynamic query parameters](../pos-feed/create-pos-feed.md#Using-dynamic-query-parameters).
+- Updated the authentication and app registration details in [Getting started](../hotel-service/get-started.md) and [Getting started with a service](../hotel-service/get-started-service.md).  
+  - Bing Advertising continues to support Live Connect but they're encouraging everyone to begin using Microsoft Identity Platform instead.
+  - Microsoft changed the portal used to register apps. Instead of using https:\//apps.dev.microsoft.com, you now use [Microsoft Azure App Registration](https://go.microsoft.com/fwlink/?linkid=2083908).
+
 ## September 10, 2019
 
 - Added support for room bundles to [Transaction Message](../transaction-message/reference.md). [Read more](../transaction-message/using-room-bundles.md).  
@@ -28,8 +36,6 @@ For information about changes that were included with each release, see the foll
       - [OccupancyDetails](../transaction-message/reference.md#occupancydetailstype)   
       - [Children](../transaction-message/reference.md#childrentype)   
       - [Text](../transaction-message/reference.md#texttype)   
-
-
 
 
 

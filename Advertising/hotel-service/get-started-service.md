@@ -10,7 +10,7 @@ ms.author: "scottwhi"
 
 # Using the Hotel API from a service
 
-Calling the Hotel API requires an access token but getting an access token requires user consent unless you have a refresh token. To get a refresh token, you can [write a simple consol app](../hotel-service/code-example-oauth.md) or you can use this PowerShell script.
+Calling the Hotel API requires an access token but getting an access token requires user consent unless you have a refresh token. To get a refresh token, you can [write a simple console app](../hotel-service/code-example-oauth.md) or you can use this PowerShell script.
 
 ```powershell
 $clientId = "your application ID goes here"
@@ -26,11 +26,11 @@ Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_to
 
 Before you can run the PowerShell script, you need to follow these steps to get a client ID.
 
-1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name like *Hotels client*. (Don't check Guided setup.)
-3. Click **Create** and note your application ID (client ID).  
-4. Click **Add Platform** and then **Native Application**.
-5. Click **Save**.  
+1. Go to [Microsoft Azure - App registration](https://go.microsoft.com/fwlink/?linkid=2083908) and click **New registration**  
+2. Enter an app name like *Hotels client* 
+3. For **Supported account types**, select **Accounts in this organizational directory only (Default Directory only - Single tenant)** 
+4. For **Redirect URI**, select **Public client/native (mobile & desktop)** and then set the redirect URI to https:\//login.live.com/oauth20_desktop.srf
+5. Click **Register** and note your **Application (client) ID**  
 
 Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientID` to the application ID you received when you registered your app.
 
@@ -79,11 +79,12 @@ The refresh token is long lived but it can become invalid. If you receive an inv
 
 Before using the refresh token, you need to register your service to get a client ID. 
 
-1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name for your service. (Don't check Guided setup.)
-3. Click **Create** and note your service's application ID (client ID).  
-4. Click **Add Platform** and then **Native Application**.
-5. Click **Save**.  
+1. Go to [Microsoft Azure - App registration](https://go.microsoft.com/fwlink/?linkid=2083908) and click **New registration**  
+2. Enter an app name for your service 
+3. For **Supported account types**, select **Accounts in this organizational directory only (Default Directory only - Single tenant)** 
+4. Provide a redirect URI as appropriate
+5. Click **Register** and note your service's **Application (client) ID**  
+
 
 Your service should follow these basic steps to get the access token that you set the Authorization header to.
 
