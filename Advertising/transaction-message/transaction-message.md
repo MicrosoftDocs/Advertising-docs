@@ -15,6 +15,9 @@ ms.author: "scottwhi"
 >
 > The Transaction Message feed and documentation are subject to change.
 
+> [!IMPORTANT]
+> Before creating transaction messages, you must first create your [hotel](../hotel-feed/hotel-feed.md) and [point of sale](../pos-feed/pos-feed.md) feeds.
+
 If you create hotel ad campaigns in Microsoft Advertising, use transaction messages to update your hotel's itinerary data. For information about working with transaction messages, see the following sections: 
 
 |Topic|Description
