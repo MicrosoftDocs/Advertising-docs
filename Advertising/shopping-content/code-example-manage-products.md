@@ -19,6 +19,8 @@ This example shows how to get, add, update, and delete products in the specified
 
 For information about the product-related classes used by this example, see [Products](../shopping-content/products-resource.md#products) and [Product](../shopping-content/products-resource.md#product).
 
+This example uses the Bing Ads SDK for user authentication.
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -55,12 +57,17 @@ namespace Products
             {
                 OAuth = AuthenticateWithOAuth();
 
-                // Get the default catalog
+                // Get the default catalog.
+                // Note that getting catalog information is an expensive call and should be limited. The example
+                // includes this call simply to demonstrate using the call. If you don't specify a catalog, the
+                // product is automatically written to the default catalog, so getting the catalog ID is only useful
+                // if you're adding the product to a non-default catalog. 
+
                 Catalog defaultCatalog = ListCatalogs().FirstOrDefault(cat => cat.IsDefault == true);
 
-                // Add a product to catalog
+                // Add a product to the catalog
                 Product testProduct = GetTestProduct("My Test Product ({0})");
-                // if catalog id is not specified the product will be added to the default catalog, here we are specifying the default explicitly
+                // If catalog id is not specified, the product is added to the default catalog.
                 Product addedProduct = AddProduct(defaultCatalog.Id, testProduct);
                 Console.WriteLine("*** Added product to catalog (catalog.Id=" + defaultCatalog.Id + ", product.Id=" + addedProduct.Id + ")***");
                 Print(addedProduct);
