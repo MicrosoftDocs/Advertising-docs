@@ -20,9 +20,13 @@ Next, you'll need a developer token. To get a token to use in the production env
 
 ## <a name="authentication"/> Authenticating your credentials
 
-Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with OAuth](/advertising/guides/authentication-oauth). You *can* use the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
+Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with the Live Connect endpoint](/advertising/guides/authentication-oauth-live-connect) and [Authentication with the Microsoft identity platform](/advertising/guides/authentication-oauth-identity-platform) (using the Microsoft identity platform is recommended). 
 
-For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md).
+You *can* use the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](/advertising/guides/get-started-csharp) | [Java](/advertising/guides/get-started-java) | [Python](/advertising/guides/get-started-python). For a Content API example that uses the SDK for authentication, see [Managing products example](code-example-manage-products.md).
+
+(Note that the Bing Ads SDK does not provide interfaces for the Content API. You should only use the SDK to get the access token if you're using the SDK for Microsoft Advertising campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+
+If you don't use the Bing Ads SDK for authentication, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md) for an example that shows how to use OAuth to authenticate Microsoft account credentials.
 
 ## Where to use your credentials and developer tokens?
 
