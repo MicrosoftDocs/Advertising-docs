@@ -146,6 +146,8 @@ TopOfPageCpc|double|The average amount an advertiser is charged each time their 
 AdGroupName|string|The name of the ad group that contains the keywords.<br /><br />`withCondition("AdGroupName = 'foo'")`|
 CampaignName|string|The name of the campaign that contains the keywords.<br /><br />`withCondition("CampaignName = 'bar'")`|
 LabelNames|string set|A list of one or more case-sensitive label names. Use to get keywords associated with the named labels.<br /><br />`withCondition("LabelNames  CONTAINS_ANY ['bar', 'foo']")`|
+Id|Long|The ID of the keyword to test. For example, you can use this column to check for keywords with IDs greater than the specified ID.<br /><br />`withCondition('Id > 1234')`
+
 
 ### Arguments
 |Name|Type|Description|
