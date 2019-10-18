@@ -1,5 +1,5 @@
 ---
-title: "Check for ads or keywords with bad URLs"
+title: "Check for ads or keywords with broken URLs"
 description: "Shows how to check whether an ad's or keyword's URL is valid. The script checks all ads or all keywords in all accounts the user has access to."
 author: "swhite-msft"
 manager: ehansen
@@ -9,17 +9,17 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Check for ads or keywords with bad URLs
+# Check for ads or keywords with broken URLs
 
-This solution shows how to check whether an ad's or keyword's URL is valid. The script performs the check on all ads or keywords in the accounts that the user has access to. The following is the high-level flow of the script. For more details, read the inline comments.
+This solution shows how to check for ads or keywords with broken URLs. The script performs the check on all ads or keywords in the accounts that the user has access to. The following is the high-level flow of the script. For more details, read the inline comments.
 
 - Before running, set the NOTIFY and ENTITY_NAME variables. Set the NOTIFY variable to the list of email addresses you want the script's results sent to. And set the ENTITY_NAME variable to specify whether you want to check ads or keywords (the default is ads).
 - Reads a file from Google Drive. The file contains a list of objects. Each object contains an account ID and a time stamp of when the account was last checked for broken URLs. The first time the script runs the file shouldn't exist. If the file doesn't exist, the script builds the complete list of accounts that the user has access to. Note that the script won't pick up any new accounts that were added after the file was built. If accounts were added, you should delete the file, so it generates a new list of accounts.
 - Sorts the account list so the accounts that haven't been checked or are the oldest show up first.
-- Gets up to the first 50 account IDs from the list and calls the selector's [executeInParallel](../reference/BingAdsAccountSelector.md) method. The method executes in parallel the findBrokenUrls function for each account. This function returns an object that contains the account's information and the list of ads or keywords with broken URLS, if any.
-- Executes the reportResults function after all the findBrokenUrls function calls complete. This function creates a spreadsheet and uses Google Sheets to create a sheet for each account. If the account contains ads or keywords with broken URLS, it writes the entity to the sheet.
+- Gets up to the first 50 account IDs from the list and calls the selector's [executeInParallel](../reference/BingAdsAccountSelector.md) method. The method executes in parallel the `findBrokenUrls` function for each account. This function returns an object that contains the account's information and the list of ads or keywords with broken URLS, if any.
+- Executes the `reportResults` function after all the `findBrokenUrls` function calls complete. This function creates a spreadsheet and uses Google Sheets to create a sheet for each account. If the account contains ads or keywords with broken URLS, it writes the entity to the sheet.
 - Uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains broken URLs and provides a link to the sheet where they can see the details.
-- Updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.
+- Updates the `lastChecked` field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the `lastChecked` time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.
 
 Before using this example, see [Authenticating with Google services](../examples/authenticating-with-google-services.md) for options on getting an access token to use in this solution.
 
