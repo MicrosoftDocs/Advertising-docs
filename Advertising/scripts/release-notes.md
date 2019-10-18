@@ -13,10 +13,17 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## October 18, 2019
+
+Added the `Id` column to the `withCondition()` method of the [AdSelector](reference/AdSelector.md) and [KeywordSelector](reference/KeywordSelector.md) objects. You can use this column to check for ads or keywords with IDs greater than the specified ID (for example, `withCondition('Id > 1234')`).
+
+Added the [Check ad and keyword URLs](solutions/check-ad-keyword-urls.md) script solution, which you can use to check whether ads or keywords in your accounts contain broken URLs.
+
 
 ## October 7, 2019
 
 Added `CombinedApprovalStatus` as a possible column that you may specify when selecting keywords. For example, you can use the column to select keywords that have been disapproved for editorial reasons. See [KeywordSelector.withCondition](reference/KeywordSelector.md#withcondition-string-condition-). 
+
 
 ## September 13, 2019
 
