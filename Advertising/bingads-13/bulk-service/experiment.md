@@ -186,7 +186,7 @@ TrafficBased: This is also known as the search-based option. Every time customer
 CookieBased: When individual customers search, we show ads from either your experiment or your original campaign, and use a cookie to ensure that, going forward, they will only see ads from this source. The cookie-based option has an important trade-off to consider: On one hand, you may get more accurate data, since you're ensuring that an individual customer is only responding to one source or the other. On the other hand, it may take you longer to build up statistically significant comparison data than with the search-based option.  
 
 **Add:** Optional. The default is TrafficBased.  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Read-only. You cannot update the experiment type.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
