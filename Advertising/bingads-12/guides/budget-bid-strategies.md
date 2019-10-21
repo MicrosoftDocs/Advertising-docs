@@ -119,7 +119,7 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The *MaxConversions* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *MaxConversions* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later.
 
 ### <a name="targetcpa"></a>TargetCpa
 With the *TargetCpa* (cost per acquisition) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average CPA, and Microsoft Advertising automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Microsoft Advertising will try to make sure your average cost per conversion is in line with your target.
@@ -129,7 +129,7 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The *TargetCpa* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *TargetCpa* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.

@@ -10,9 +10,7 @@ description: Defines an object that represents the maximum conversions bid strat
 Defines an object that represents the maximum conversions bid strategy type.
 
 > [!NOTE]
-> The *MaxConversions* bid strategy is available only for Search campaigns. 
-> 
-> The *MaxConversions* bid strategy is available only to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *MaxConversions* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later. 
 
 With the *MaxConversions* bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many conversions as possible within your budget.
 
