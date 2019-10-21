@@ -174,11 +174,11 @@ The maximum cost per click that you want to spend with the corresponding bid str
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, and otherwise this field is ignored.
 
 > [!NOTE]
-> The *MaxClicks* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States.
+> The *MaxClicks* bid strategy is available for Dynamic Search Ads and Search campaigns. 
 > 
-> The *MaxConversions* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *MaxConversions* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later. 
 > 
-> The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *TargetCpa* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later. 
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
@@ -192,7 +192,7 @@ The target cost per acquisition (CPA) that you want used by Microsoft Advertisin
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetCpa*, and otherwise this field is ignored.
 
 > [!NOTE]
-> The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *TargetCpa* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, United Kingdom, and/or United States. For some customers, available target locations also include Italy, Netherlands, Spain, Sweden, and Switzerland. If you are unable to target these locations at this time, try again later. 
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 

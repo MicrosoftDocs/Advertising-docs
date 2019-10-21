@@ -10,7 +10,7 @@ description: Defines an object that represents the maximum clicks bid strategy t
 Defines an object that represents the maximum clicks bid strategy type.
 
 > [!NOTE]
-> The *MaxClicks* bid strategy is available only for Dynamic Search Ads and Search campaigns.
+> The *MaxClicks* bid strategy is available for Dynamic Search Ads and Search campaigns.
 
 With the *MaxClicks* bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.
 
