@@ -74,6 +74,8 @@
   items:
     - name: Discovering disapproved ads 
       href: solutions/get-disapproved-ads.md 
+    - name: Checking ad or keyword URLs 
+      href: solutions/check-ad-keyword-urls.md 
 - name: Script reference
   href: reference-overview.md 
   items:    
