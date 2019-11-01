@@ -50,6 +50,7 @@ The [OfflineConversionGoal](offlineconversiongoal.md) object derives from the [C
 |<a name="tagid"></a>TagId|Not applicable for offline conversion goals.|**long**|
 |<a name="trackingstatus"></a>TrackingStatus|Not applicable for offline conversion goals.|[ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md)|
 |<a name="type"></a>Type|The type of the conversion goal. This value is *OfflineConversion* when you retrieve an offline conversion goal. For more information about conversion goal types, see the [ConversionGoal Data Object Remarks](conversiongoal.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[ConversionGoalType](conversiongoaltype.md)|
+|<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Not applicable for offline conversion goals.|**int**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

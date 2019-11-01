@@ -7,8 +7,8 @@ ms.author: "eur"
 description: Get details about migrating to Bing Ads API version 13.
 ---
 # Migrate to Version 13
-> [!IMPORTANT]
-> With the availability of Bing Ads API version 13, version 12 is deprecated and will sunset by October 31, 2019. 
+> [!NOTE]
+> Bing Ads API version 12 sunset as of October 31, 2019. 
 
 The sections below describe Bing Ads API changes from version 12 to version 13.  
 

@@ -125,17 +125,17 @@
     href: ./account-hierarchy-permissions.md
     displayName: user permissions customer link account link hierarchy
   - name: Authentication with OAuth
-    displayName: access refresh token scope
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
     items:
     - name: Overview
       href: ./authentication-oauth.md
-      displayName: authentication oauth access refresh token scope
+      displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
     - name: Live Connect
       href: ./authentication-oauth-live-connect.md
-      displayName: authentication oauth access refresh token scope
+      displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
     - name: Microsoft identity platform for developers
       href: ./authentication-oauth-identity-platform.md
-      displayName: authentication oauth access refresh token scope
+      displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
   - name: Services Protocol
     href: ./services-protocol.md
     displayName: wsdl
@@ -1499,6 +1499,8 @@
           href: ../campaign-management-service/campaignstatus.md
         - name: CampaignType
           href: ../campaign-management-service/campaigntype.md
+        - name: ConversionGoalAdditionalField
+          href: ../campaign-management-service/conversiongoaladditionalfield.md
         - name: ConversionGoalCountType
           href: ../campaign-management-service/conversiongoalcounttype.md
         - name: ConversionGoalRevenueType

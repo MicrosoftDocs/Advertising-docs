@@ -28,10 +28,10 @@ You can download all *Feed Item* records in the account by including the [Downlo
 The following Bulk CSV example would add a new page feed and ad customizer [Feed](feed.md) with one feed item for each. 
 
 ```csv
-Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Keyword,Match Type,Target,Physical Intent,Name,Ad Schedule,Audience Id,Feed Name,Custom Attributes
-Format Version,,,,,,,,,,,,,,,,6,,,,
-Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
-Feed,Active,-21,,AdCustomizerFeed,,,AdCustomizerFeedClientIdGoesHere,,,,,,,,,,,,MyAdCustomizerFeedName,"[{""name"":""DateTimeName"",""feedAttributeType"":""DateTime""},{""name"":""Int64Name"",""feedAttributeType"":""Int64""},{""name"":""PriceName"",""feedAttributeType"":""Price""},{""name"":""StringName"",""feedAttributeType"":""String"",""isPartOfKey"":true}]"
+Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Target Campaign Id,Target Ad Group Id,Client Id,Modified Time,Start Date,End Date,Device Preference,Keyword,Match Type,Target,Physical Intent,Name,Ad Schedule,Audience Id,Feed Name,Custom Attributes
+Format Version,,,,,,,,,,,,,,,,,,6,,,,
+Feed,Active,-20,,PageFeed,,,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
+Feed,Active,-21,,AdCustomizerFeed,,,,,AdCustomizerFeedClientIdGoesHere,,,,,,,,,,,,MyAdCustomizerFeedName,"[{""name"":""DateTimeName"",""feedAttributeType"":""DateTime""},{""name"":""Int64Name"",""feedAttributeType"":""Int64""},{""name"":""PriceName"",""feedAttributeType"":""Price""},{""name"":""StringName"",""feedAttributeType"":""String"",""isPartOfKey"":true}]"
 Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
 Feed Item,Active,-210,-21,,,,21;210,,2019/06/22 00:00:00,2019/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2019/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
 ```
@@ -50,10 +50,16 @@ var bulkAdCustomizerFeedItem = new BulkFeedItem
 	CustomAttributes = adCustomizerFeedItemCustomAttributesJson,
 	// 'Id' column header in the Bulk file
 	Id = null,
+	// 'Target Ad Group Id' column header in the Bulk file
+	// Support for AdGroupId mapping in the BulkFeedItem is coming soon for .NET, Java, and Python SDKs. 
+	AdGroupId = null,
 	// 'Ad Group' column header in the Bulk file
 	AdGroupName = null,
 	// 'Audience Id' column header in the Bulk file
 	AudienceId = null,
+	// 'Target Campaign Id' column header in the Bulk file
+	// Support for CampaignId mapping in the BulkFeedItem is coming soon for .NET, Java, and Python SDKs. 
+	CampaignId = null,
 	// 'Campaign' column header in the Bulk file
 	CampaignName = null,
 	// 'Ad Schedule' column header in the Bulk file
@@ -140,6 +146,8 @@ For a *Feed Item* record, the following attribute fields are available in the [B
 - [Start Date](#startdate)
 - [Status](#status)
 - [Target](#target)
+- [Target Ad Group Id](#targetadgroupid)
+- [Target Campaign Id](#targetcampaignid)
 
 ## <a name="adgroup"></a>Ad Group
 The name of the ad group used to target the feed item. If this field is set, the feed item will only be eligible for the specified ad group.  
@@ -147,8 +155,8 @@ The name of the ad group used to target the feed item. If this field is set, the
 > [!NOTE]
 > This field is only applicable for ad customizer feeds. 
 
-**Add:** Optional. If the target [campaign](#campaign) is also set, the ad group must exist within the specified campaign.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Add:** Optional. If you include this field, then the [Campaign](#campaign) field must also be set, and the ad group must exist within the specified campaign. If both the [Ad Group](#adgroup) and [Target Ad Group Id](#targetadgroupid) fields are set, an error is returned for this record in the bulk file.  
+**Update:** Optional. If you include this field, then the [Campaign](#campaign) field must also be set, and the ad group must exist within the specified campaign. If both the [Ad Group](#adgroup) and [Target Ad Group Id](#targetadgroupid) fields are set, an error is returned for this record in the bulk file. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="adschedule"></a>Ad Schedule
@@ -185,8 +193,8 @@ The name of the campaign used to target the feed item. If this field is set, the
 > [!NOTE]
 > This field is only applicable for ad customizer feeds. 
 
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Add:** Optional. If both the [Campaign](#campaign) and [Target Campaign Id](#targetcampaignid) fields are set, an error is returned for this record in the bulk file.  
+**Update:** Optional. If both the [Campaign](#campaign) and [Target Campaign Id](#targetcampaignid) fields are set, an error is returned for this record in the bulk file. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -442,4 +450,24 @@ The location identifier corresponds to the *ID* field of the geographical locati
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
+
+## <a name="targetadgroupid"></a>Target Ad Group Id
+The identifier of the ad group used to target the feed item. If this field is set, the feed item will only be eligible for the specified ad group.  
+
+> [!NOTE]
+> This field is only applicable for ad customizer feeds. 
+
+**Add:** Optional. If you also set the [Campaign](#campaign) field (not required), then the ad group must exist within the specified campaign. If both the [Ad Group](#adgroup) and [Target Ad Group Id](#targetadgroupid) fields are set, an error is returned for this record in the bulk file.  
+**Update:** Optional. If you also set the [Campaign](#campaign) field (not required), then the ad group must exist within the specified campaign. If both the [Ad Group](#adgroup) and [Target Ad Group Id](#targetadgroupid) fields are set, an error is returned for this record in the bulk file. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
+
+## <a name="targetcampaignid"></a>Target Campaign Id
+The identifier of the campaign used to target the feed item. If this field is set, the feed item will only be eligible for the specified campaign. 
+
+> [!NOTE]
+> This field is only applicable for ad customizer feeds. 
+
+**Add:** Optional. If both the [Campaign](#campaign) and [Target Campaign Id](#targetcampaignid) fields are set, an error is returned for this record in the bulk file.  
+**Update:** Optional. If both the [Campaign](#campaign) and [Target Campaign Id](#targetcampaignid) fields are set, an error is returned for this record in the bulk file. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  

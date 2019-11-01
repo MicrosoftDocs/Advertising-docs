@@ -47,6 +47,16 @@ The final URL suffix can include tracking parameters that will be appended to th
 
 To delete the account's Final URL Suffix set the [Name](#name) to *FinalUrlSuffix* and the *Value* to *""* (empty string).
 
+#### <a name="includeviewthroughconversions"></a>IncludeViewThroughConversions
+Determines whether you want to include view-through conversions for campaigns in the account. 
+
+View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.
+
+If the [Name](#name) element is set to *IncludeViewThroughConversions*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then view-through conversions will be included. By default, if you are in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 616) this property is set *true*, meaning that the values in the "All" conversions columns of your performance reports will include view-through conversions. You can choose to disable it if you don't want to include view-through conversions. 
+
+> [!NOTE]
+> View-through conversions require a [UETTag](uettag.md), so this property is not applicable for the [AppInstallGoal](appinstallgoal.md), [InStoreTransactionGoal](instoretransactiongoal.md), and [OfflineConversionGoal](offlineconversiongoal.md). 
+
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
 
@@ -54,6 +64,13 @@ If the [Name](#name) element is set to *MSCLKIDAutoTaggingEnabled*, then the [Va
 
 > [!IMPORTANT]
 > Every time you add or update a new [DurationGoal](durationgoal.md), [EventGoal](eventgoal.md), [OfflineConversionGoal](offlineconversiongoal.md), [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) or [UrlGoal](urlgoal.md) via either the Microsoft Advertising web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](accountproperty.md) is set to *true* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](accountproperty.md) for all accounts under the Customer will be set. 
+
+#### <a name="profileexpansionenabled"></a>ProfileExpansionEnabled
+Determines whether to expand LinkedIn profile targeting across your account to reach additional customers similar to the ones you currently target. 
+
+Enabling profile targeting expansion allows Microsoft Advertising to show your ads to additional customers similar to the ones you currently target. For example, if you target a specific LinkedIn audience segment, we will also target Bing users who don't have a confirmed LinkedIn account but who share the same characteristics as LinkedIn users in that segment. 
+
+If the [Name](#name) element is set to *ProfileExpansionEnabled*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then the LinkedIn profile targeting expansion feature is enabled. 
 
 #### <a name="trackingurltemplate"></a>TrackingUrlTemplate
 If the [Name](#name) element is set to *TrackingUrlTemplate*, then the [Value](#value) represents your account's tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
