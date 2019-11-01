@@ -7,7 +7,6 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "=bingads-12",
         "=bingads-13"
       ],
       "open_to_public_contributors": true,

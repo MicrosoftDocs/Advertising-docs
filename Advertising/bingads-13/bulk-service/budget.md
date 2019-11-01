@@ -9,7 +9,10 @@ dev_langs:
   - csharp
 ---
 # Budget Record - Bulk
-Defines a budget that can be uploaded and downloaded in a bulk file.
+Defines a budget that can be uploaded and downloaded in a bulk file. 
+
+> [!IMPORTANT]
+> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.  
 
 You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account.
 
@@ -103,7 +106,7 @@ The budget type determines the pace at which the budget is spent throughout the 
 You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. 
 
 > [!IMPORTANT]
-> The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
+> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
