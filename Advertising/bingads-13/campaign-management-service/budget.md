@@ -7,7 +7,10 @@ ms.author: eur
 description: Represents a budget that can be shared by any campaigns in an account.
 ---
 # Budget Data Object - Campaign Management
-Represents a budget that can be shared by any campaigns in an account.
+Represents a budget that can be shared by any campaigns in an account. 
+
+> [!IMPORTANT]
+> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.  
 
 You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account. 
 
@@ -32,7 +35,7 @@ Say you have a budget of $20 to be used uniformly between two campaigns every da
 |-----------|---------------|-------------|
 |<a name="amount"></a>Amount|The amount to spend daily across all campaigns that share the budget.<br/><br/>**Add:** Required<br/>**Update:** Optional|**decimal**|
 |<a name="associationcount"></a>AssociationCount|The number of [Campaign](campaign.md) objects that currently share this budget.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
-|<a name="budgettype"></a>BudgetType|The budget type determines the pace at which the budget is spent throughout the day.<br/><br/>Possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*.<br/><br/>**IMPORTANT:** The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.<br/><br/>**Add:** Required<br/>**Update:** Optional|[BudgetLimitType](budgetlimittype.md)|
+|<a name="budgettype"></a>BudgetType|The budget type determines the pace at which the budget is spent throughout the day.<br/><br/>Possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*.<br/><br/>**IMPORTANT:** The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.<br/><br/>**Add:** Required<br/>**Update:** Optional|[BudgetLimitType](budgetlimittype.md)|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the budget.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="name"></a>Name|The name of the budget. The name must be unique among all budgets within the account. The name can contain a maximum of 255 characters.<br/><br/>The service performs a case-insensitive comparison when it compares the name to existing budget names.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 

@@ -17,13 +17,9 @@ Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies
 > For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!NOTE]
-> The *EnhancedCpc* bid strategy is available only for Dynamic Search Ads, Search, and Shopping campaigns.
+> For search ad and dynamic search ad campaigns, the *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.  
 > 
-> The *EnhancedCpc* bid strategy is available to all advertisers worldwide for Dynamic Search Ads and Search campaigns. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.
-> 
-> For Microsoft Shopping Campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
-
-Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](../guides/universal-event-tracking.md) for more information.
+> For Microsoft Shopping Campaigns, the *EnhancedCpc* bid strategy is available to advertisers in Australia, Canada, France, Germany, India, United Kingdom, and United States.
 
 ## Syntax
 ```xml

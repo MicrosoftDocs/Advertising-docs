@@ -47,6 +47,7 @@ The [InStoreTransactionGoal](instoretransactiongoal.md) object derives from the 
 |<a name="tagid"></a>TagId|Not applicable for in-store transaction goals.|**long**|
 |<a name="trackingstatus"></a>TrackingStatus|Not applicable for in-store transaction goals.|[ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md)|
 |<a name="type"></a>Type|The type of the conversion goal. This value is *InStoreTransaction* when you retrieve an in-store transaction goal. For more information about conversion goal types, see the [ConversionGoal Data Object Remarks](conversiongoal.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[ConversionGoalType](conversiongoaltype.md)|
+|<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Not applicable for in-store transaction goals.|**int**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
