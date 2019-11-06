@@ -177,11 +177,11 @@ If you use the Bing Ads .NET [SDK](client-libraries.md), your application should
 For troubleshooting .NET applications, see [.NET SDK Troubleshooting](#net-troubleshooting).
 
 ### <a name="net-wcf-exceptions"></a>WCF Exceptions
-Generic SOAP faults that are not specific to Bing Ads API may also be thrown, and should be caught by your application. For example, .NET applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException. For information about exceptions that you should expect from WCF, see [Expected Exceptions](https://docs.microsoft.com/en-us/dotnet/framework/wcf/samples/expected-exceptions).
+Generic SOAP faults that are not specific to Bing Ads API may also be thrown, and should be caught by your application. For example, .NET applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException. For information about exceptions that you should expect from WCF, see [Expected Exceptions](https://docs.microsoft.com/dotnet/framework/wcf/samples/expected-exceptions).
 
 You should not call the *Close* method in the finally block to release the service object. The objection is that the *Close* method can throw exceptions. If *Close* throws an exception, you must call the *Abort* method to ensure that all resources are released; otherwise, you could be leaking resources on the server. The recommended practice is to call *Close* within the try block, and call *Abort* from the caught exceptions.
 
-For the same reason, the use of the **using** statement is not recommended. For more information, see [Avoiding Problems with the Using Statement](https://docs.microsoft.com/en-us/dotnet/framework/wcf/samples/avoiding-problems-with-the-using-statement).
+For the same reason, the use of the **using** statement is not recommended. For more information, see [Avoiding Problems with the Using Statement](https://docs.microsoft.com/dotnet/framework/wcf/samples/avoiding-problems-with-the-using-statement).
 
 ### <a name="net-sdk-exceptions"></a>.NET SDK Exceptions
 The Bing Ads .NET SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
@@ -210,7 +210,7 @@ Unless there is a [known service issue](https://developers.ads.microsoft.com/Sup
 You can use the Bing Ads .NET SDK TraceBehavior to log the SOAP request and response. 
 
 > [!NOTE]
-> The TraceBehavior is available with Bing Ads .NET SDK version 12.13.5 and later. 
+> The TraceBehavior is available with Bing Ads .NET SDK version 12.13.6 and later. 
 
 ```csharp
 using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
@@ -253,7 +253,7 @@ using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
 }
 ```
 
-The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 12.13.5 with the following NuGet packages. Your implementation will vary. 
+The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 12.13.6 with the following NuGet packages. Your implementation will vary. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -285,7 +285,7 @@ The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SD
 ```
 
 #### <a name="net-troubleshooting-fiddler"></a>Fiddler Options
-You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
+You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](https://fiddler2.com/get-fiddler). 
  - After installing Fiddler, export the Fiddler certificate from the root certificate store. 
  - Click **Tools** &gt; **Fiddler Options**. 
  - Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. 
@@ -363,7 +363,7 @@ You can use [JAX WS](https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt)
     ```
 
 #### <a name="java-troubleshooting-fiddler"></a>Fiddler Options
-You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
+You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](https://fiddler2.com/get-fiddler). 
 
 1. After installing Fiddler, export the Fiddler certificate from the root certificate store. Click **Tools** &gt; **Fiddler Options**. Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. Click **OK**, and then follow the prompts to export the Fiddler certificate.
 

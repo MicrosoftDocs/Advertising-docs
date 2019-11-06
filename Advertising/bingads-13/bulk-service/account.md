@@ -17,9 +17,9 @@ The *Account* record is included in the Bulk download file automatically everyti
 The following is a Bulk CSV example download for account. 
 
 ```csv
-Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Website,Sync Time,Client Id,Modified Time,MSCLKID Auto Tagging Enabled,Name,Tracking Template,Final Url Suffix
-Format Version,,,,,,,,,,,true,6.0,,
-Account,,111,222,,,,,02/12/2019 15:32:34,,,true,,,
+Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Website,Sync Time,Client Id,Modified Time,MSCLKID Auto Tagging Enabled,Include View Through Conversions,Profile Expansion Enabled,Tracking Template,Final Url Suffix,Name
+Format Version,,,,,,,,,,,true,,,,,6.0
+Account,,111,222,,,,,02/12/2019 15:32:34,,,true,,,,,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkAccount* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -28,8 +28,10 @@ For an *Account* record, the following attribute fields are available in the [Bu
 
 - [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
+- [Include View Through Conversions](#includeviewthroughconversions)
 - [MSCLKID Auto Tagging Enabled](#msclkidautotaggingenabled)
 - [Parent Id](#parentid)
+- [Profile Expansion Enabled](#profileexpansionenabled)
 - [Sync Time](#synctime)
 - [Tracking Template](#trackingtemplate)
 
@@ -48,6 +50,20 @@ The system generated identifier of the account.
 
 **Add:** Read-only  
 **Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="includeviewthroughconversions"></a>Include View Through Conversions
+Determines whether you want to include view-through conversions for campaigns in the account. 
+
+View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.
+
+If the value is *true*, then view-through conversions will be included. By default, if you are in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 616) this property is set *true*, meaning that the values in the "All" conversions columns of your performance reports will include view-through conversions. You can choose to disable it if you don't want to include view-through conversions. 
+
+> [!NOTE]
+> View-through conversions require a [UETTag](../campaign-management-service/uettag.md), so this property is not applicable for the [AppInstallGoal](../campaign-management-service/appinstallgoal.md), [InStoreTransactionGoal](../campaign-management-service/instoretransactiongoal.md), and [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). 
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="msclkidautotaggingenabled"></a>MSCLKID Auto Tagging Enabled
@@ -69,6 +85,17 @@ The system generated identifier of the customer that contains the account.
 
 **Add:** Read-only  
 **Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="profileexpansionenabled"></a>Profile Expansion Enabled
+Determines whether to expand LinkedIn profile targeting across your account to reach additional customers similar to the ones you currently target. 
+
+Enabling profile targeting expansion allows Microsoft Advertising to show your ads to additional customers similar to the ones you currently target. For example, if you target a specific LinkedIn audience segment, we will also target Bing users who don't have a confirmed LinkedIn account but who share the same characteristics as LinkedIn users in that segment. 
+
+If the value is *true*, then the LinkedIn profile targeting expansion feature is enabled. 
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="synctime"></a>Sync Time

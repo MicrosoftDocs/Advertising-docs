@@ -12,7 +12,7 @@ The Customer Management service defines the following service operations.
 |Service Operation|Description|Request Limits|
 |---|---|---|
 |[AddAccount](addaccount.md)|Creates a new account within an existing customer.|1 *Account*|
-|[AddClientLinks](addclientlinks.md)|Initiates the client link process to manage the account of another customer.|10 *ClientLink*|
+|[AddClientLinks](addclientlinks.md)|Initiates the client link process to manage the accounts of another customer.|10 *ClientLink*|
 |[DeleteAccount](deleteaccount.md)|Deletes an account.|1 *AccountId*|
 |[DeleteCustomer](deletecustomer.md)|Deletes a customer.|1 *CustomerId*|
 |[DeleteUser](deleteuser.md)|Deletes a user.|1 *UserId*|
@@ -20,7 +20,7 @@ The Customer Management service defines the following service operations.
 |[FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md)|Gets a list of the accounts and customers that match the specified filter criteria.|Not applicable.|
 |[GetAccount](getaccount.md)|Gets the details of an account.|1 *AccountId*|
 |[GetAccountPilotFeatures](getaccountpilotfeatures.md)|Gets a list of the pilot programs that are enabled for the specified account.|1 *AccountId*|
-|[GetAccountsInfo](getaccountsinfo.md)|Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.|1 *CustomerId*|
+|[GetAccountsInfo](getaccountsinfo.md)|Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.|1 *CustomerId*|
 |[GetCustomer](getcustomer.md)|Gets the details of a customer.|1 *CustomerId*|
 |[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs that are enabled for all of the customer's accounts.|1 *CustomerId*|
 |[GetCustomersInfo](getcustomersinfo.md)|Gets the identifiers and names of customers that are accessible to the current authenticated user.|Not applicable.|

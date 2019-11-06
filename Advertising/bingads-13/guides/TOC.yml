@@ -4,51 +4,61 @@
 - name: FAQ
   href: ./faq.md
 - name: Get Started
-  displayName: dev token developer token
+  displayName: dev token developer token get started
   items:
   - name: Overview
     href: ./get-started.md
-    displayName: dev token developer token
+    displayName: dev token developer token get started
   - name: Get Started Using C#
-    displayName: .net c# csharp
+    displayName: .net c# csharp get started
     items:
     - name: Overview
       href: ./get-started-csharp.md
-      displayName: .net c# csharp
+      displayName: .net c# csharp get started
     - name: Walkthrough - Bing Ads API Desktop Application in C#
       href: ./walkthrough-desktop-application-csharp.md
-      displayName: .net c# csharp
+      displayName: .net c# csharp get started
     - name: Walkthrough - Bing Ads API Web Application in C#
       href: ./walkthrough-web-application-csharp.md
-      displayName: .net c# csharp
+      displayName: .net c# csharp get started
   - name: Get Started Using Java
     items:
     - name: Overview
       href: ./get-started-java.md
+      displayName: java get started
     - name: Walkthrough - Bing Ads API Desktop Application in Java
       href: ./walkthrough-desktop-application-java.md
+      displayName: java get started
     - name: Walkthrough - Bing Ads API Web Application in Java
       href: ./walkthrough-web-application-java.md
+      displayName: java get started
   - name: Get Started Using PHP
     items:
     - name: Overview
       href: ./get-started-php.md
+      displayName: php get started
     - name: Walkthrough - Bing Ads API Desktop Application in PHP
       href: ./walkthrough-desktop-application-php.md
+      displayName: php get started
     - name: Walkthrough - Bing Ads API Web Application in PHP
       href: ./walkthrough-web-application-php.md
+      displayName: php get started
   - name: Get Started Using Python
     items:
     - name: Overview
       href: ./get-started-python.md
+      displayName: python get started
     - name: Walkthrough - Bing Ads API Desktop Application in Python
       href: ./walkthrough-desktop-application-python.md
+      displayName: python get started
     - name: Walkthrough - Bing Ads API Web Application in Python
       href: ./walkthrough-web-application-python.md
+      displayName: python get started
 - name: Sandbox
   href: ./sandbox.md
+  displayName: test get started
 - name: Code Examples
-  displayName: .net c# csharp java python php
+  displayName: .net c# csharp java python php samples
   items:
   - name: Overview
     href: ./code-examples.md

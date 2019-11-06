@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Install the Bing Ads PHP SDK and discover code examples.
 ---
 # Get Started Using PHP with Bing Ads API
-To get started developing Bing Ads API applications with PHP, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-php.md) or [Desktop](walkthrough-desktop-application-php.md) application. The examples have been developed with the Bing Ads PHP [SDK](client-libraries.md) and run with [PHP](http://php.net/) 7.0.6. You should be able to use other versions of PHP (greater than 5.6), packages, and operating systems. However, certain parts of the code and configuration might have to be changed. For information about how to set up a PHP development environment to use web services, see the documentation for your tools. The SOAP and OpenSSL extensions should also be enabled in the PHP.ini file. Enable the curl extension to run the bulk upload samples.
+To get started developing Bing Ads API applications with PHP, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-php.md) or [Desktop](walkthrough-desktop-application-php.md) application. The examples have been developed with the Bing Ads PHP [SDK](client-libraries.md) and run with [PHP](https://php.net/) 7.0.6. You should be able to use other versions of PHP (greater than 5.6), packages, and operating systems. However, certain parts of the code and configuration might have to be changed. For information about how to set up a PHP development environment to use web services, see the documentation for your tools. The SOAP and OpenSSL extensions should also be enabled in the PHP.ini file. Enable the curl extension to run the bulk upload samples.
 
 ```no-highlight
 extension=php_soap.dll
@@ -35,7 +35,7 @@ You can install the Bing Ads PHP [SDK](client-libraries.md) using the [Composer]
 Once you have the Bing Ads PHP [SDK](client-libraries.md) installed you can either browse the [Bing Ads API Code Examples](code-examples.md), download the examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/), or follow one of the application walkthroughs for a [Web](walkthrough-web-application-php.md) or [Desktop](walkthrough-desktop-application-php.md) application.
 
 ## <a name="soapvar"></a>Using SoapVar
-To send a complex type that inherits from a base class, you must encode the object as a [SoapVar](http://php.net/manual/en/class.soapvar.php). In the following example the BiddableCampaignCriterion (derived from CampaignCriterion), LocationCriterion (derived from Criterion), and BidMultiplier (derived from CriterionBid) are all encoded. 
+To send a complex type that inherits from a base class, you must encode the object as a [SoapVar](https://php.net/manual/en/class.soapvar.php). In the following example the BiddableCampaignCriterion (derived from CampaignCriterion), LocationCriterion (derived from Criterion), and BidMultiplier (derived from CriterionBid) are all encoded. 
 
 
 ```php
