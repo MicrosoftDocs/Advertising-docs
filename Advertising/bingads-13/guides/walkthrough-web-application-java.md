@@ -252,7 +252,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
     </html>
     ```
 
-12. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). For more information, see [Deploying a Web Application](#deploy). When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
+12. The application is ready to be deployed to a server. For example you can publish a [Web App](https://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](https://azure.microsoft.com/services/app-service/). For more information, see [Deploying a Web Application](#deploy). When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
 ## <a name="sandbox"></a>Configuring Sandbox
 To use the [Sandbox](sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
@@ -286,9 +286,9 @@ If you are using Microsoft Azure to deploy your web application, the following a
 
 - A distribution of a Java-based web server or application server, such as Apache Tomcat, GlassFish, JBoss Application Server, Jetty, or IBM® WebSphere® Application Server Liberty Core.
 
-- An Azure subscription, which can be acquired from [http://azure.microsoft.com/pricing/purchase-options/](http://azure.microsoft.com/pricing/purchase-options/).
+- An Azure subscription, which can be acquired from [https://azure.microsoft.com/pricing/purchase-options/](https://azure.microsoft.com/pricing/purchase-options/).
 
-- Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
+- Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse](https://docs.microsoft.com/azure/azure-toolkit-for-eclipse-installation).
 
 ## See Also
 [Sandbox](sandbox.md)  

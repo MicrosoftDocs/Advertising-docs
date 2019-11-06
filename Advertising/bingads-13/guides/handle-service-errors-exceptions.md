@@ -285,7 +285,7 @@ The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SD
 ```
 
 #### <a name="net-troubleshooting-fiddler"></a>Fiddler Options
-You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
+You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](https://fiddler2.com/get-fiddler). 
  - After installing Fiddler, export the Fiddler certificate from the root certificate store. 
  - Click **Tools** &gt; **Fiddler Options**. 
  - Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. 
@@ -363,7 +363,7 @@ You can use [JAX WS](https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt)
     ```
 
 #### <a name="java-troubleshooting-fiddler"></a>Fiddler Options
-You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
+You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](https://fiddler2.com/get-fiddler). 
 
 1. After installing Fiddler, export the Fiddler certificate from the root certificate store. Click **Tools** &gt; **Fiddler Options**. Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. Click **OK**, and then follow the prompts to export the Fiddler certificate.
 

@@ -488,7 +488,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 9. To deploy the web app on the local machine first you must set **SSL Enabled** to *True* in the BingAdsWebApp project properties window. If you have not already done so, your registered application redirect URL must include the SSL URL and port e.g., https://localhost:44383/. From the menu, select **Debug > Start without Debugging** to run the web app locally.
 
-10. To deploy your web app live using the [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) see the subscription and deployment instructions within the Azure documentation e.g., [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet-framework).
+10. To deploy your web app live using the [Azure App Service](https://azure.microsoft.com/services/app-service/) see the subscription and deployment instructions within the Azure documentation e.g., [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet-framework).
 
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* file.

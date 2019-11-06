@@ -14,7 +14,7 @@ You will need user credentials with access to Microsoft Advertising either in [p
 To authenticate via OAuth, you must also register an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For more details about registering an application in production and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md) and [Authentication With the SDKs](sdk-authentication.md#oauth). Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the public "Sandbox Tutorial App" client ID in sandbox i.e., **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. For more information, please see [Sandbox](sandbox.md#access). 
 
 ## <a name="installation"></a>Install the SDK
-The Bing Ads Java [SDK](client-libraries.md) depends on the libraries listed at the [Maven Repository](http://mvnrepository.com/artifact/com.microsoft.bingads/microsoft.bingads/).
+The Bing Ads Java [SDK](client-libraries.md) depends on the libraries listed at the [Maven Repository](https://mvnrepository.com/artifact/com.microsoft.bingads/microsoft.bingads/).
 
 When you create a Maven project and include the *microsoft.bingads* Maven artifact as shown below, additional dependencies are installed automatically. If you are not using a Maven project, you must include the correct version of each dependency. For more information, please see the [Walkthrough: Bing Ads API Web Application in Java](walkthrough-web-application-java.md) or [Walkthrough: Bing Ads API Desktop Application in Java](walkthrough-desktop-application-java.md) application examples.
 

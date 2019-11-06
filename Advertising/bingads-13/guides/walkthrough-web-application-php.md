@@ -252,7 +252,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
     }
     ```
 
-5. The application is ready to be deployed to a server with the [installed](get-started-php.md#installation) PHP client libraries. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). For more details see [Configure PHP in Azure App Service Web Apps](https://docs.microsoft.com/en-us/azure/app-service/web-sites-php-configure). 
+5. The application is ready to be deployed to a server with the [installed](get-started-php.md#installation) PHP client libraries. For example you can publish a [Web App](https://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](https://azure.microsoft.com/services/app-service/). For more details see [Configure PHP in Azure App Service Web Apps](https://docs.microsoft.com/azure/app-service/web-sites-php-configure). 
 
 ## See Also
 [Bing Ads API Code Examples](code-examples.md)  
