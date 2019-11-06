@@ -185,7 +185,7 @@ You can no longer use this personal Microsoft account to access Microsoft Advert
 PersonalIdentityNotAllowedByCustomer
 
 **Description**
-Your organization requires you to use your work email address to access Microsoft Advertising. Please sign in using your work account instead.
+Your organization requires you to use your work email address to access Microsoft Advertising. Please sign in using your work account instead. 
 
 ***
 
@@ -1432,7 +1432,9 @@ One or more required keyword idea attributes is missing.
 Not applicable.
 
 **Description**
-The user is not authorized to perform this action.
+The user is not authorized to perform this action. 
+
+In rare cases this error is returned when the customer has enforced [signing with work accounts](https://help.ads.microsoft.com/#apex/3/en/60043/-1/en/%23ext:Default), and the user attempted to authenticate with a personal Microsoft account.  
 
 ***
 

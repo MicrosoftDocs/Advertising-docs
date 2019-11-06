@@ -9,6 +9,35 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="october2019"></a>October 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Include View Through Conversions](#includeviewthroughconversions-october2019)  
+- [Profile Expansion Enabled](#profileexpansionenabled-october2019)  
+
+### <a name="includeviewthroughconversions-october2019"></a>Include View Through Conversions
+View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad. 
+
+If you are in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 616) this feature is enabled by default, meaning that the values in the "All" conversions columns of your performance reports will include view-through conversions. You can choose to disable it if you don't want to include view-through conversions. 
+
+You can enable or disable the feature for each account via Bulk and Campaign Management API.
+- With the Bulk API use the Account record and get or set the [Include View Through Conversions](../bulk-service/account.md#includeviewthroughconversions) field. 
+- With the Campaign Management API use the [AccountProperty](../campaign-management-service/accountproperty.md) and call [GetAccountProperties](../campaign-management-service/getaccountproperties.md) or [SetAccountProperties](../campaign-management-service/setaccountproperties.md) as needed.
+
+You can manage the view through conversion window with the Campaign Management API i.e., get or set the ViewThroughConversionWindowInMinutes property of the [DurationGoal](../campaign-management-service/durationgoal.md#viewthroughconversionwindowinminutes), [EventGoal](../campaign-management-service/eventgoal.md#viewthroughconversionwindowinminutes), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md#viewthroughconversionwindowinminutes), or [UrlGoal](../campaign-management-service/urlgoal.md#viewthroughconversionwindowinminutes). Be sure to explicitly request [ViewThroughConversionWindowInMinutes](../campaign-management-service/conversiongoaladditionalfield.md#viewthroughconversionwindowinminutes) as an additional field when calling [GetConversionGoalsByIds](../campaign-management-service/getconversiongoalsbyids.md#returnadditionalfields) and [GetConversionGoalsByTagIds](../campaign-management-service/getconversiongoalsbytagids.md#returnadditionalfields). 
+
+> [!NOTE]
+> View-through conversions require a [UETTag](../campaign-management-service/uettag.md), so this property is not applicable for the [AppInstallGoal](../campaign-management-service/appinstallgoal.md), [InStoreTransactionGoal](../campaign-management-service/instoretransactiongoal.md), and [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). 
+
+### <a name="profileexpansionenabled-october2019"></a>Profile Expansion Enabled
+Determines whether to expand LinkedIn profile targeting across your account to reach additional customers similar to the ones you currently target. 
+
+Enabling profile targeting expansion allows Microsoft Advertising to show your ads to additional customers similar to the ones you currently target. For example, if you target a specific LinkedIn audience segment, we will also target Bing users who don't have a confirmed LinkedIn account but who share the same characteristics as LinkedIn users in that segment. 
+
+You can enable or disable the feature for each account via Bulk and Campaign Management API.
+- With the Bulk API use the Account record and get or set the [Profile Expansion Enabled](../bulk-service/account.md#profileexpansionenabled) field. 
+- With the Campaign Management API use the [AccountProperty](../campaign-management-service/accountproperty.md) and call [GetAccountProperties](../campaign-management-service/getaccountproperties.md) or [SetAccountProperties](../campaign-management-service/setaccountproperties.md) as needed.
+
 ## <a name="september2019"></a>September 2019
 See below for Bing Ads API updates during this calendar month. 
 

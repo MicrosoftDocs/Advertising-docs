@@ -9,7 +9,7 @@ description: Authenticate for Bing Ads API using OAuth.
 # Authentication with the Live Connect endpoint
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
 
-How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
+How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
 
 > [!IMPORTANT]
 > The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users without friction or interruption of service. Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
@@ -47,7 +47,7 @@ Before you can manage authentication for users of your Bing Ads API application,
     ![Supported account types](media/supported-account-types.png "Supported account types")  
 
     > [!IMPORTANT]
-    > You must select **Accounts in any organizational directory and personal Microsoft accounts** during the initial app registration. This setting cannot be updated later in the portal unless you modify the [application manifest](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-app-manifest) e.g., ```"signInAudience": "AzureADandPersonalMicrosoftAccount"```.  
+    > You must select **Accounts in any organizational directory and personal Microsoft accounts** during the initial app registration. This setting cannot be updated later in the portal unless you modify the [application manifest](https://docs.microsoft.com/azure/active-directory/develop/reference-app-manifest) e.g., ```"signInAudience": "AzureADandPersonalMicrosoftAccount"```.  
 
 1. Select **Register** to create the application. 
 1. On the app **Overview** page, find the **Application (client) ID** value and record it for later. You will use it as the `client_id` when [requesting access tokens](#request-accesstoken).  
@@ -63,7 +63,7 @@ Before you can manage authentication for users of your Bing Ads API application,
 ## <a name="request-userconsent"></a>Request User Consent
 Each user must be prompted and provide consent through a web browser control at least once for your application to manage their Microsoft Advertising accounts. 
 
-For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.1). The authorization code flow begins with the client directing the user to the `/authorize` endpoint. In this request, the client indicates the permissions it needs to acquire from the user:
+For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#section-4.1). The authorization code flow begins with the client directing the user to the `/authorize` endpoint. In this request, the client indicates the permissions it needs to acquire from the user:
 
 ```https
 https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=code&redirect_uri=REDIRECTURI&state=ClientStateGoesHere
@@ -123,16 +123,16 @@ The following table describes response parameters.
 
 |Parameter|Description|  
 |---------|---------|
-|`access_token`|Equivalent to the *access_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.12). To authenticate with Bing Ads API you will send the access token via the AuthenticationToken header element.| 
+|`access_token`|Equivalent to the *access_token* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.12). To authenticate with Bing Ads API you will send the access token via the AuthenticationToken header element.| 
 |`authentication_token`|The registered application's authentication token.|
-|`code`|Equivalent to the *code* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.11).|
+|`code`|Equivalent to the *code* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.11).|
 |`error`|Error code identifying the error that occurred.|
 |`error_description`|A description of the error.|
-|`expires_in`|Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.14).|
+|`expires_in`|Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.14).|
 |`id_token`|An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.|  
-|`refresh_token`|Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).| 
-|`scope`|Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).|
-|`state`|Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.|
+|`refresh_token`|Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.17).| 
+|`scope`|Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.4).|
+|`state`|Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.|
 |`token_type`|The type of data to be returned in the response from the authorization server.| 
 
 ## <a name="use-accesstoken"></a> Use the access token
