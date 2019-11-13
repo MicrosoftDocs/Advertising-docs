@@ -9,11 +9,28 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="november2019"></a>November 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Final Url Suffix and Custom Parameter Expansion](#finalurlsuffix-customparameter-november2019)  
+- [Bing Ads API SDK Updates](#sdk-november2019)  
+
+### <a name="finalurlsuffix-customparameter-november2019"></a>Final Url Suffix and Custom Parameter Expansion
+Final URL suffix is now available at the account, campaign, ad group, ad group criterion, ad, and keyword level for all customers. Final URL suffix is available at the action, price, and sitelink ad extension level for Phase 3 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 636).  
+
+Up to 8 custom parameters and longer custom parameter values are now available at the account, campaign, ad group, ad group criterion, ad, and keyword level for all customers. Up to 8 custom parameters and longer custom parameter values are available at the action, price, and sitelink ad extension level for Custom Parameters Limit Increase Phase 3 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 635).  
+
+For more information see [URL Tracking with Upgraded URLs](url-tracking-upgraded-urls.md).  
+
+### <a name="sdk-november2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.1) SDK version 13.0.1. 
+
 ## <a name="october2019"></a>October 2019
 See below for Bing Ads API updates during this calendar month. 
 
 - [Include View Through Conversions](#includeviewthroughconversions-october2019)  
 - [Profile Expansion Enabled](#profileexpansionenabled-october2019)  
+- [Bing Ads API SDK Updates](#sdk-october2019)  
 
 ### <a name="includeviewthroughconversions-october2019"></a>Include View Through Conversions
 View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad. 
@@ -37,6 +54,9 @@ Enabling profile targeting expansion allows Microsoft Advertising to show your a
 You can enable or disable the feature for each account via Bulk and Campaign Management API.
 - With the Bulk API use the Account record and get or set the [Profile Expansion Enabled](../bulk-service/account.md#profileexpansionenabled) field. 
 - With the Campaign Management API use the [AccountProperty](../campaign-management-service/accountproperty.md) and call [GetAccountProperties](../campaign-management-service/getaccountproperties.md) or [SetAccountProperties](../campaign-management-service/setaccountproperties.md) as needed.
+
+### <a name="sdk-october2019"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.6), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.6), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.6), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.6) SDK version 12.13.6. 
 
 ## <a name="september2019"></a>September 2019
 See below for Bing Ads API updates during this calendar month. 

@@ -11,9 +11,6 @@ Defines a webpage parameter that contains a list of webpage conditions or criter
 
 The *Webpage* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), and [NegativeCampaignCriterion](negativecampaigncriterion.md) objects. If ad group level negative webpage criterions are specified, the campaign level negative webpage criterions are ignored for that ad group. In other words the ad group negative webpage criterions override the campaign negative webpage criterions, and are not applied as a union.   
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
-
 ## Syntax
 ```xml
 <xs:complexType name="Webpage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
