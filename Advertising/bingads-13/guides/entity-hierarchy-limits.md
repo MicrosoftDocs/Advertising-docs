@@ -186,7 +186,7 @@ Create an app install ad if your intention is to drive app downloads, and not ne
 > 
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
-You can manage dynamic search ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)). The combination of the App Platform, App Store Id, Text, and Title elements make the app install ad unique.
+You can manage app install ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)). The combination of the App Platform, App Store Id, Text, and Title elements make the app install ad unique.
 
 The following table defines limits for app install ad properties.
 
@@ -199,7 +199,7 @@ The following table defines limits for app install ad properties.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States.
+> This feature is currently available in Australia, Canada, France, Germany, the United Kingdom, and the United States.  
 
 You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](../bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)). The combination of the Path 1, Path 2, and Text elements make the dynamic search ad unique.
 
