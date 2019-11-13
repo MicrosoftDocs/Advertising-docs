@@ -56,8 +56,6 @@ var bulkResponsiveSearchAd = new BulkResponsiveSearchAd
     // ResponsiveSearchAd object of the Campaign Management service.
     ResponsiveSearchAd = new ResponsiveSearchAd
     {
-        // 'Ad Format Preference' column header in the Bulk file
-        AdFormatPreference = "All",
         // 'Description' column header in the Bulk file
         Descriptions = new AssetLink[]
         {
@@ -159,7 +157,6 @@ var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityU
 
 For a *Responsive Search Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
-- [Ad Format Preference](#adformatpreference)
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -184,17 +181,6 @@ For a *Responsive Search Ad* record, the following attribute fields are availabl
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-## <a name="adformatpreference"></a>Ad Format Preference
-The *Ad Format Preference* field is used to indicate whether or not you prefer the ad copy to be shown to users as a search or audience ad. Search ads tend to be written as a call to action, whereas audience ads should be written in more of an informational style. While you have the option to use responsive search ads as audience ads, designating an ad as Audience ads preferred format allows you to optimize its messaging for native delivery. 
-
-> [!IMPORTANT]
-> You must define at least one responsive search ad per ad group that does not prefer audience ads, otherwise the ad copy of all responsive search ads will be eligible for both search and audience ads. 
-
-Possible values are *Audience Ad* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *Audience Ad*, the ad will only be eligible for the audience ad format.
-
-**Add:** Optional. If you do not set this field when creating a responsive search ad, by default the ad format preference will be set to *All*.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, the ad format preference will effectively be set to the default value i.e. *All*.    
-**Delete:** Read-only  
 
 ## <a name="adgroup"></a>Ad Group
 The name of the ad group that contains the ad.
@@ -227,11 +213,11 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.  
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
-- The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 200 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
+- The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 250 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 
     > [!NOTE] 
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
@@ -491,9 +477,6 @@ The `text` attribute cannot contain the newline (\n) character.
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
-
-> [!NOTE]
-> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  

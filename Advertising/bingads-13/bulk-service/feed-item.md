@@ -51,14 +51,12 @@ var bulkAdCustomizerFeedItem = new BulkFeedItem
 	// 'Id' column header in the Bulk file
 	Id = null,
 	// 'Target Ad Group Id' column header in the Bulk file
-	// Support for AdGroupId mapping in the BulkFeedItem is coming soon for .NET, Java, and Python SDKs. 
 	AdGroupId = null,
 	// 'Ad Group' column header in the Bulk file
 	AdGroupName = null,
 	// 'Audience Id' column header in the Bulk file
 	AudienceId = null,
 	// 'Target Campaign Id' column header in the Bulk file
-	// Support for CampaignId mapping in the BulkFeedItem is coming soon for .NET, Java, and Python SDKs. 
 	CampaignId = null,
 	// 'Campaign' column header in the Bulk file
 	CampaignName = null,

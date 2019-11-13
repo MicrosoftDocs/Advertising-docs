@@ -210,7 +210,7 @@ Unless there is a [known service issue](https://developers.ads.microsoft.com/Sup
 You can use the Bing Ads .NET SDK TraceBehavior to log the SOAP request and response. 
 
 > [!NOTE]
-> The TraceBehavior is available with Bing Ads .NET SDK version 12.13.6 and later. 
+> The TraceBehavior is available with Bing Ads .NET SDK version 13.0.1 and later. 
 
 ```csharp
 using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
@@ -253,7 +253,7 @@ using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
 }
 ```
 
-The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 12.13.6 with the following NuGet packages. Your implementation will vary. 
+The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 13.0.1 with the following NuGet packages. Your implementation will vary. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -59,7 +59,7 @@ Also note the following validation rules for ad and site link final URLs.
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page.
 
 > [!NOTE]
-> Final URL suffix is now available at the account, campaign, ad group, and keyword level for all customers. Final URL suffix is available for ads, ad extensions, and ad group criterions for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year the Final URL suffix will be available for ads, ad extensions, and ad group criterions for all customers.  
+> Final URL suffix is now available at the account, campaign, ad group, ad group criterion, ad, and keyword level for all customers. Final URL suffix is available at the action, price, and sitelink ad extension level for Phase 3 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 636).   
 
 Final URL suffixes defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Limits](entity-hierarchy-limits.md). 
 
@@ -81,8 +81,8 @@ Custom parameters are helpful with sharing dynamic information across multiple U
 
 The following validation rules apply to custom parameters.
 - Custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Limits](entity-hierarchy-limits.md). 
-- For campaigns, ad groups, and ad groups, Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned.  
-- For ads, ad extensions, and ad group criterions, Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565) for ads, ad extensions, and ad group criterions, Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers.  
+- For campaigns, ad groups, and ad groups, ad group criterions, and ads Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned.  
+- For action, price, and sitelink ad extensions Microsoft Advertising will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 3 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 635) for action, price, and sitelink ad extensions, Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned.   
 
 ## See Also
 [Bing Ads API Web Service Addresses](web-service-addresses.md)
