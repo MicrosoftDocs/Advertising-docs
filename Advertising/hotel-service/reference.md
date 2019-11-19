@@ -490,6 +490,7 @@ You may use the following country codes to set the `Countries` field of [UserCou
 |Anguilla|AI
 |Antarctica|AQ
 |Antigua and Barbuda|AG
+|Antilles (Netherlands)|AN
 |American Samoa|AS
 |Argentina|AR
 |Armenia|AM
@@ -499,7 +500,6 @@ You may use the following country codes to set the `Countries` field of [UserCou
 |Azerbaijan|AZ
 |Bahamas|BS
 |Bahrain|BH
-|Bahamas|BS
 |Bangladesh|BD
 |Barbados|BB
 |Belarus|BY
