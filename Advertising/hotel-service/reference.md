@@ -435,10 +435,9 @@ Defines the amount to adjust the base bid by if the user accesses one of the Bin
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Countries|A list of two-letter ISO 3116 county codes. For a list of possible country codes, see [Microsoft Advertising country codes](https://help.ads.microsoft.com/apex/index/3/en-us/50873#!).<br /><br />Apply the multiplier if the user accesses the Bing domain with the specified country code. For example, if the list includes US and DE, Microsoft uses the multiplier if the user uses Bing.com with the *us* or *de* country code (for example, bing.com?cc=de).|String[]|Required|Optional
+|Countries|A list of two-letter ISO 3116 county codes. For a list of possible country codes, see [Allowed country codes](#country-codes).<br /><br />Apply the multiplier if the user accesses the Bing domain with the specified country code. For example, if the list includes US and DE, Microsoft uses the multiplier if the user uses Bing.com with the *us* or *de* country code (for example, bing.com?cc=de).|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.UserCountryMultiplier".|String|Required|Required
-
 
 
 
@@ -476,3 +475,237 @@ The requests may return the following HTTP status codes.
 |InvalidReportName|The `ReportType` field is set to a report name that is not valid. For a list of valid report names, see [ReportType](#reporttype).
 |InvalidSelect|One or more of the columns that you specified are not valid. Compare the column names that you used to those documented for the report you requested. Remember, the names are case sensitive.
 
+
+## Country codes
+
+You may use the following country codes to set the `Countries` field of [UserCountryMultiplier](#usercountrymultiplier).
+
+|Country name|Country code|
+|------------|------------------|
+|Afghanistan|AF
+|Albania|AL
+|Algeria|DZ
+|Andorra|AD
+|Angola|AO
+|Anguilla|AI
+|Antarctica|AQ
+|Antigua and Barbuda|AG
+|Antilles (Netherlands)|AN
+|American Samoa|AS
+|Argentina|AR
+|Armenia|AM
+|Aruba|AW
+|Australia|AU
+|Austria|AT
+|Azerbaijan|AZ
+|Bahamas|BS
+|Bahrain|BH
+|Bangladesh|BD
+|Barbados|BB
+|Belarus|BY
+|Belgium|BE
+|Belize|BZ
+|Bermuda|BM
+|Benin|BJ
+|Bhutan|BT
+|Bolivia|BO
+|Bosnia and Herzegovina|BA
+|Botswana|BW
+|Brazil|BR
+|Brunei|BN
+|Bulgaria|BG
+|Burkina Faso|BF
+|Burundi|BI
+|Cabo Verde|CV
+|Cambodia|KH
+|Cameroon|CM
+|Canada|CA
+|Cayman Islands|KY
+|Central African Republic|CF
+|Chad|TD
+|Chile|CL
+|China|CN
+|Christmas Island|CX
+|Cocos Islands|CC
+|Colombia|CO
+|Comoros|KM
+|Congo|CG
+|Congo (the Democratic Republic of the)|CD
+|Cook Islands|CK
+|Costa Rica|CR
+|Croatia|HR
+|Cyprus|CY
+|Czech Republic|CZ
+|Denmark|DK
+|Djibouti|DJ
+|Dominica|DM
+|Dominican Republic|DO
+|Ecuador|EC
+|Egypt|EG
+|El Salvador|SV
+|Equatorial Guinea|GQ
+|Eritrea|ER
+|Estonia|EE
+|Eswatini|SZ
+|Ethiopia|ET
+|Falkland Islands|FK
+|Faroe Islands|FO
+|Fiji|FJ 
+|Finland|FI
+|France|FR
+|French Guiana|GF
+|French Polynesia|PF
+|Gabon|GA
+|Gambia|GM
+|Georgia|GE
+|Germany|DE
+|Ghana|GH
+|Gibraltar|GI
+|Greece|GR
+|Greenland|GL
+|Grenada|GD
+|Guadeloupe|GP
+|Guam|GU
+|Guatemala|GT
+|Guinea|GN
+|Guinea-Bissau|GW
+|Guyana|GY
+|Haiti|HT
+|Holy See|VA
+|Honduras|HN
+|Hong Kong|HK
+|Hungary|HU
+|Iceland|IS
+|India|IN
+|Indonesia|ID
+|Iraq|IQ
+|Ireland|IE
+|Israel|IL
+|Italy|IT
+|Ivory Coast (Côte d'Ivoire)|CI
+|Jamaica|JM
+|Japan|JP
+|Jordan|JO
+|Kazakhstan|KZ
+|Kenya|KE
+|Kiribati|KI
+|Korea|KR
+|Kuwait|KW
+|Kyrgyzstan|KG
+|Lao People's Democratic Republic|LA
+|Latvia|LV
+|Lebanon|LB
+|Lesotho|LS
+|Liberia|LR
+|Libya|LY
+|Liechtenstein|LI
+|Lithuania|LT
+|Luxembourg|LU
+|Macao|MO
+|Madagascar|MG
+|Malawi|MW
+|Malaysia|MY
+|Maldives|MV
+|Mali|ML
+|Malta|MT
+|Marshall Islands|MH
+|Martinique|MQ
+|Mauritania|MR
+|Mauritius|MU
+|Mayotte|YT
+|Mexico|MX
+|Micronesia|FM
+|Moldova|MD
+|Monaco|MC
+|Mongolia|MN
+|Montenegro|ME
+|Montserrat|MS
+|Morocco|MA
+|Mozambique|MZ
+|Myanmar|MM
+|Namibia|NA
+|Nauru|NR
+|Nepal|NP
+|Netherlands|NL
+|New Caledonia|NC
+|New Zealand|NZ
+|Nicaragua|NI
+|Niger|NE
+|Nigeria|NG
+|Niue|NU
+|Norfolk Island|NF
+|Norway|NO
+|North Macedonia|MK
+|Northern Mariana Islands|MP
+|Oman|OM
+|Pakistan|PK
+|Palau|PW
+|Palestine|PS
+|Panama|PA
+|Papua New Guinea|PG
+|Paraguay|PY
+|Peru|PE
+|Philippines|PH
+|Pitcairn|PN
+|Poland|PL
+|Portugal|PT
+|Puerto Rico|PR
+|Qatar|QA
+|Réunion|RE
+|Romania|RO
+|Russian Federation|RU
+|Rwanda|RW
+|Saint Helena, Ascension and Tristan da Cunha|SH
+|Saint Kitts and Nevis|KN
+|Saint Lucia|LC
+|Saint Pierre and Miquelon|PM
+|Saint Vincent and the Grenadines|VC
+|San Marino|SM
+|Sao Tome and Principe|ST
+|Saudi Arabia|SA
+|Senegal|SN
+|Serbia|RS
+|Seychelles|SC
+|Sierra Leone|SL
+|Singapore|SG
+|Slovakia|SK
+|Slovenia|SI
+|Spain|ES
+|Solomon Islands|SB
+|Samoa|WS
+|Somalia|SO
+|South Africa|ZA
+|Sri Lanka|LK
+|Suriname|SR
+|Sweden|SE
+|Switzerland|CH
+|Taiwan|TW
+|Tajikistan|TJ
+|Tanzania|TZ
+|Thailand|TH
+|Timor-Leste|TL
+|Togo|TG
+|Tokelau|TK
+|Tonga|TO
+|Trinidad and Tobago|TT
+|Tunisia|TN
+|Turkey|TR
+|Turkmenistan|TM
+|Turks and Caicos Islands|TC
+|Tuvalu|TV
+|Uganda|UG
+|Ukraine|UA
+|United Arab Emirates|AE
+|United Kingdom|GB
+|United States|US
+|Uruguay|UY
+|Uzbekistan|UZ
+|Vanuatu|VU
+|Venezuela|VE
+|Viet Nam|VN
+|Virgin Islands (British)|VG
+|Virgin Islands (U.S.)|VI
+|Wallis and Futuna|WF
+|Yemen|YE
+|Zambia|ZM
+|Zimbabwe|ZW
