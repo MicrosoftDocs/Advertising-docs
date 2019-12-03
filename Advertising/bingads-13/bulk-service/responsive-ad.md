@@ -26,7 +26,7 @@ The following Bulk CSV example would add a new responsive ad if a valid [Parent 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Final Url Suffix,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Images
 Format Version,,,,,,,,,,,,,,,,,,6.0,,,,
-Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""}]"
+Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,,{_promoCode}=PROMO1; {_season}=summer,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""}]"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -55,12 +55,12 @@ var bulkResponsiveAd = new BulkResponsiveAd
         // 'Mobile Final Url' column header in the Bulk file
         FinalMobileUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://mobile.contoso.com/womenshoesale"
+            "https://mobile.contoso.com/womenshoesale"
         },
         // 'Final Url' column header in the Bulk file
         FinalUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://www.contoso.com/womenshoesale"
+            "https://www.contoso.com/womenshoesale"
         },
         // 'Headline' column header in the Bulk file
         Headline = "Short Headline Here",
@@ -602,7 +602,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    

@@ -25,7 +25,7 @@ The *GetAudiencesByIdsRequest* object defines the [body](#request-body) and [hea
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audienceids"></a>AudienceIds|A maximum of 100 identifiers of the requested audiences.<br/><br/>This request element is optional. If this element is null or empty, then you are effectively requesting all customer and account scoped audiences for the specified account.<br/><br/>If the audience identifiers do not match the requested audience types, then the operation will return a batch error for each requested audience ID.|**long** array|
-|<a name="type"></a>Type|One or more types of audiences to return.|[AudienceType](audiencetype.md)|
+|<a name="type"></a>Type|The type of audiences to return.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<Type>RemarketingList SimilarRemarketingList</Type>`.|[AudienceType](audiencetype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

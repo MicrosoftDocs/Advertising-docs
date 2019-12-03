@@ -27,7 +27,7 @@ For example, let's say that you want to write the following [Expanded Text Ad](.
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Text Part 2,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Title Part 3,Path 1,Path 2
 Format Version,,,,,,,,,,,,,,,6.0,,,,,,,,,,,
-Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
+Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
 ```
 
 First, create the BulkExpandedTextAd object as shown below in [Bulk and Campaign Management Entity Map](#bulk-campaign-map). Then you can write the BulkExpandedTextAd to a file with BulkFileWriter as shown here. 
@@ -129,12 +129,12 @@ var bulkExpandedTextAd = new BulkExpandedTextAd
         // 'Mobile Final Url' column header in the Bulk file
         FinalMobileUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://mobile.contoso.com/womenshoesale"
+            "https://mobile.contoso.com/womenshoesale"
         },
         // 'Final Url' column header in the Bulk file
         FinalUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://www.contoso.com/womenshoesale"
+            "https://www.contoso.com/womenshoesale"
         },
         // 'Id' column header in the Bulk file
         Id = null,
@@ -210,12 +210,12 @@ expandedTextAd.setAdFormatPreference("All");
 // 'Mobile Final Url' column header in the Bulk file
 // Each Url is delimited by a semicolon (;) in the Bulk file
 ArrayOfstring mobileFinalUrls = new ArrayOfstring();            
-mobileFinalUrls.getStrings().add("http://mobile.contoso.com/womenshoesale");
+mobileFinalUrls.getStrings().add("https://mobile.contoso.com/womenshoesale");
 expandedTextAd.setFinalMobileUrls(mobileFinalUrls);
 // 'Final Url' column header in the Bulk file
 // Each Url is delimited by a semicolon (;) in the Bulk file
 ArrayOfstring finalUrls = new ArrayOfstring();            
-finalUrls.getStrings().add("http://www.contoso.com/womenshoesale");
+finalUrls.getStrings().add("https://www.contoso.com/womenshoesale");
 expandedTextAd.setFinalUrls(finalUrls);
 // 'Id' column header in the Bulk file
 expandedTextAd.setId(null);
@@ -290,12 +290,12 @@ expanded_text_ad.AdFormatPreference='All'
 # 'Mobile Final Url' column header in the Bulk file
 # Each Url is delimited by a semicolon (;) in the Bulk file
 mobile_final_urls=campaign_service.factory.create('ns3:ArrayOfstring')
-mobile_final_urls.string.append('http://mobile.contoso.com/womenshoesale')
+mobile_final_urls.string.append('https://mobile.contoso.com/womenshoesale')
 expanded_text_ad.FinalUrls=mobile_final_urls
 # 'Final Url' column header in the Bulk file
 # Each Url is delimited by a semicolon (;) in the Bulk file
 final_urls=campaign_service.factory.create('ns3:ArrayOfstring')
-final_urls.string.append('http://www.contoso.com/womenshoesale')
+final_urls.string.append('https://www.contoso.com/womenshoesale')
 expanded_text_ad.FinalUrls=final_urls
 # 'Id' column header in the Bulk file
 expanded_text_ad.Id=None
