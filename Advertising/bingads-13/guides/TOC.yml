@@ -4,13 +4,11 @@
 - name: FAQ
   href: ./faq.md
 - name: Get Started
-  displayName: dev token developer token get started
   items:
   - name: Overview
     href: ./get-started.md
     displayName: dev token developer token get started
   - name: Get Started Using C#
-    displayName: .net c# csharp get started
     items:
     - name: Overview
       href: ./get-started-csharp.md
@@ -58,11 +56,10 @@
   href: ./sandbox.md
   displayName: test get started
 - name: Code Examples
-  displayName: .net c# csharp java python php samples
   items:
   - name: Overview
     href: ./code-examples.md
-    displayName: .net c# csharp java python php
+    displayName: code examples .net c# csharp java python php samples
   - name: Ad Extensions
     href: ./code-example-ad-extensions.md
   - name: Budget Opportunities
@@ -112,11 +109,10 @@
   - name: Target Criteria
     href: ./code-example-target-criteria.md
 - name: Client Libraries
-  displayName: sdk .net c# csharp java python php
   items:
   - name: Overview
     href: ./client-libraries.md
-    displayName: sdk .net c# csharp java python php
+    displayName: sdk client libraries .net c# csharp java python php
   - name: Authentication
     href: ./sdk-authentication.md
     displayName: sdk .net c# csharp java python php authorizationdata serviceclient oauthwebauthcodegrant oauthdesktopmobileauthcodegrant oauthdesktopmobileimplicitgrant
@@ -131,6 +127,7 @@
   items:
   - name: Overview
     href: ./technical-guides.md
+    displayName: technical guides
   - name: Account Hierarchy and User Permissions
     href: ./account-hierarchy-permissions.md
     displayName: user permissions customer link account link hierarchy
@@ -216,6 +213,7 @@
   items:
   - name: Overview
     href: ./reference.md
+    displayName: service reference 
   - name: Ad Languages
     href: ./ad-languages.md
   - name: Currencies
@@ -236,14 +234,17 @@
     items:
     - name: Overview
       href: ./services.md
-    - name: Ad Insight Service
+      displayName: service reference 
+    - name: Ad Insight Service Reference
       items: 
       - name: Overview
         href: ../ad-insight-service/ad-insight-service-reference.md
+        displayName: ad insight service reference adinsightservice
       - name: Ad Insight Service Operations
         items: 
         - name: Overview
           href: ../ad-insight-service/ad-insight-service-operations.md
+          displayName: ad insight service operations
         - name: GetAuctionInsightData
           href: ../ad-insight-service/getauctioninsightdata.md
         - name: GetBidLandscapeByAdGroupIds
@@ -290,6 +291,7 @@
         items: 
         - name: Overview
           href: ../ad-insight-service/ad-insight-data-objects.md
+          displayName: ad insight data objects
         - name: AdApiError
           href: ../ad-insight-service/adapierror.md
         - name: AdApiFaultDetail
@@ -442,6 +444,7 @@
         items: 
         - name: Overview
           href: ../ad-insight-service/ad-insight-value-sets.md
+          displayName: ad insight value sets
         - name: AdGroupBidLandscapeType
           href: ../ad-insight-service/adgroupbidlandscapetype.md
         - name: AdPosition
@@ -478,10 +481,12 @@
       items: 
       - name: Overview
         href: ../bulk-service/bulk-service-reference.md
+        displayName: bulk service reference bulkservice
       - name: Bulk Service Operations
         items: 
         - name: Overview
           href: ../bulk-service/bulk-service-operations.md
+          displayName: bulk service operations
         - name: DownloadCampaignsByAccountIds
           href: ../bulk-service/downloadcampaignsbyaccountids.md
         - name: DownloadCampaignsByCampaignIds
@@ -496,6 +501,7 @@
         items: 
         - name: Overview
           href: ../bulk-service/bulk-data-objects.md
+          displayName: bulk data objects
         - name: AdApiError
           href: ../bulk-service/adapierror.md
         - name: AdApiFaultDetail
@@ -518,6 +524,7 @@
         items: 
         - name: Overview
           href: ../bulk-service/bulk-value-sets.md
+          displayName: bulk value sets
         - name: CompressionType
           href: ../bulk-service/compressiontype.md
         - name: DataScope
@@ -532,6 +539,7 @@
         items: 
         - name: Overview
           href: ../bulk-service/bulk-file-schema.md
+          displayName: bulk file schema
         - name: Account
           href: ../bulk-service/account.md
           displayName: BulkAccount
@@ -931,10 +939,12 @@
       items: 
       - name: Overview
         href: ../campaign-management-service/campaign-management-service-reference.md
+        displayName: campaign management service reference campaignmanagementservice
       - name: Campaign Management Service Operations
         items: 
         - name: Overview
           href: ../campaign-management-service/campaign-management-service-operations.md
+          displayName: campaign management service operations
         - name: AddAdExtensions
           href: ../campaign-management-service/addadextensions.md
         - name: AddAdGroupCriterions
@@ -1143,6 +1153,7 @@
         items: 
         - name: Overview
           href: ../campaign-management-service/campaign-management-data-objects.md
+          displayName: campaign management data objects
         - name: AccountMigrationStatusesInfo
           href: ../campaign-management-service/accountmigrationstatusesinfo.md
         - name: AccountProperty
@@ -1451,6 +1462,7 @@
         items: 
         - name: Overview
           href: ../campaign-management-service/campaign-management-value-sets.md
+          displayName: campaign management value sets
         - name: AccountPropertyName
           href: ../campaign-management-service/accountpropertyname.md
         - name: ActionAdExtensionActionType
@@ -1581,10 +1593,12 @@
       items: 
       - name: Overview
         href: ../customer-billing-service/customer-billing-service-reference.md
+        displayName: customer billing service reference customerbillingservice
       - name: Customer Billing Service Operations
         items: 
         - name: Overview
           href: ../customer-billing-service/customer-billing-service-operations.md
+          displayName: customer billing service operations
         - name: AddInsertionOrder
           href: ../customer-billing-service/addinsertionorder.md
         - name: GetAccountMonthlySpend
@@ -1601,6 +1615,7 @@
         items: 
         - name: Overview
           href: ../customer-billing-service/customer-billing-data-objects.md
+          displayName: customer billing data objects
         - name: AdApiError
           href: ../customer-billing-service/adapierror.md
         - name: AdApiFaultDetail
@@ -1633,6 +1648,7 @@
         items: 
         - name: Overview
           href: ../customer-billing-service/customer-billing-value-sets.md
+          displayName: customer billing value sets
         - name: DataType
           href: ../customer-billing-service/datatype.md
         - name: InsertionOrderStatus
@@ -1649,10 +1665,12 @@
       items: 
       - name: Overview
         href: ../customer-management-service/customer-management-service-reference.md
+        displayName: customer management service reference customermanagementservice
       - name: Customer Management Service Operations
         items: 
         - name: Overview
-          href: ../customer-management-service/customer-management-service-operations.md     
+          href: ../customer-management-service/customer-management-service-operations.md    
+          displayName: customer management service operations
         - name: AddAccount
           href: ../customer-management-service/addaccount.md
         - name: AddClientLinks
@@ -1712,7 +1730,8 @@
       - name: Customer Management Data Objects
         items: 
         - name: Overview
-          href: ../customer-management-service/customer-management-data-objects.md
+          href: ../customer-management-service/customer-management-data-objects.md    
+          displayName: customer management data objects
         - name: AccountInfo
           href: ../customer-management-service/accountinfo.md
         - name: AccountInfoWithCustomerData
@@ -1762,7 +1781,8 @@
       - name: Customer Management Value Sets
         items: 
         - name: Overview
-          href: ../customer-management-service/customer-management-value-sets.md
+          href: ../customer-management-service/customer-management-value-sets.md    
+          displayName: customer management value sets
         - name: AccountFinancialStatus
           href: ../customer-management-service/accountfinancialstatus.md
         - name: AccountLifeCycleStatus
@@ -1804,11 +1824,13 @@
     - name: Reporting Service Reference
       items: 
       - name: Overview
-        href: ../reporting-service/reporting-service-reference.md
+        href: ../reporting-service/reporting-service-reference.md    
+        displayName: reporting service reference reportingservice
       - name: Reporting Service Operations
         items: 
         - name: Overview
-          href: ../reporting-service/reporting-service-operations.md
+          href: ../reporting-service/reporting-service-operations.md   
+          displayName: reporting service operations
         - name: PollGenerateReport
           href: ../reporting-service/pollgeneratereport.md
         - name: SubmitGenerateReport
@@ -1816,7 +1838,8 @@
       - name: Reporting Data Objects
         items: 
         - name: Overview
-          href: ../reporting-service/reporting-data-objects.md
+          href: ../reporting-service/reporting-data-objects.md   
+          displayName: reporting data objects
         - name: AccountPerformanceReportFilter
           href: ../reporting-service/accountperformancereportfilter.md
         - name: AccountPerformanceReportRequest
@@ -1980,7 +2003,8 @@
       - name: Reporting Value Sets
         items: 
         - name: Overview
-          href: ../reporting-service/reporting-value-sets.md
+          href: ../reporting-service/reporting-value-sets.md   
+          displayName: reporting value sets
         - name: AccountPerformanceReportColumn
           href: ../reporting-service/accountperformancereportcolumn.md
         - name: AccountStatusReportFilter

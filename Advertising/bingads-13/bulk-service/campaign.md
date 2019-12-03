@@ -238,8 +238,8 @@ The campaign's budget amount.
 
 In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field.
 
-**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
-**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.  
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.  
 **Delete:** Read-only   
 
 ## <a name="budgetid"></a>Budget Id
@@ -250,8 +250,8 @@ If the field is empty, then the campaign is not using a shared budget. If the fi
 > [!NOTE]
 > This value corresponds to the *Id* field of the [Budget](budget.md) record.
 	
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Add:** Optional. You can either specify an existing campaign identifier, or specify a negative identifier that is equal to the [Id](budget.md#id) field of a [Budget](budget.md) record. This is recommended if you are applying a new shared budget to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Update:** Optional. If no value is set for the update, this setting is not changed.  
 **Delete:** Read-only  
 
 ## <a name="budgetname"></a>Budget Name
@@ -271,8 +271,8 @@ The budget type determines how the budget is spent. The possible values are *Dai
 
 In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
 
-**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
-**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.  
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.  
 **Delete:** Read-only   
 
 ## <a name="campaign"></a>Campaign
@@ -619,7 +619,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    

@@ -26,7 +26,7 @@ The *GetCampaignsByIdsRequest* object defines the [body](#request-body) and [hea
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
 |<a name="campaignids"></a>CampaignIds|A maximum of 100 identifiers of the campaigns to get from the specified account.<br/><br/>The identifiers must correspond to campaigns of the specified *CampaignType* or types, and otherwise the service will return error code *EntityIdFilterMismatch* (Code 516).|**long** array|
-|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.<br/><br/>This request element is optional. If you do not set any campaign type, the default value is *Search* i.e., only Search campaigns will be returned.|[CampaignType](campaigntype.md)|
+|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *Search*, *Shopping*, or *DynamicSearchAds*.<br/><br/>This request element is optional. If you do not set any campaign type, the default value is *Search* i.e., only Search campaigns will be returned.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<CampaignType>Search Shopping</CampaignType>`.|[CampaignType](campaigntype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

@@ -23,7 +23,7 @@ The following Bulk CSV example would add a new text ad if a valid [Parent Id](#p
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
 Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,
-Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,Contoso Quick Setup,Find New Customers & Increase Sales!,contoso.com,,,All,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,,,,
+Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,Contoso Quick Setup,Find New Customers & Increase Sales!,contoso.com,,,All,False,,,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,,,,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkTextAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -58,12 +58,12 @@ var bulkTextAd = new BulkTextAd
         // 'Mobile Final Url' column header in the Bulk file
         FinalMobileUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://mobile.contoso.com/womenshoesale"
+            "https://mobile.contoso.com/womenshoesale"
         },
         // 'Final Url' column header in the Bulk file
         FinalUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://www.contoso.com/womenshoesale"
+            "https://www.contoso.com/womenshoesale"
         },
         // 'Id' column header in the Bulk file
         Id = null,
@@ -405,7 +405,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Not supported  
 **Update:** Not supported    

@@ -35,7 +35,7 @@ Defines the possible campaign types.
 |<a name="audience"></a>Audience|The campaign is an Audience campaign.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|The campaign is a Dynamic Search Ads campaign.|
 |<a name="search"></a>Search|The campaign is a Search campaign.|
-|<a name="shopping"></a>Shopping|The campaign is a Microsoft Shopping campaign.<br/><br/>You should also check the campaign [SubType](campaign.md#subtype) to determine whether it is a Cooperative campaign.|
+|<a name="shopping"></a>Shopping|The campaign is a Microsoft Shopping campaign.<br/><br/>You should also check the campaign [SubType](campaign.md#subtype) to determine whether the shopping campaign is setup for [Sponsored Products](../guides/product-ads.md#setup-cooperative).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

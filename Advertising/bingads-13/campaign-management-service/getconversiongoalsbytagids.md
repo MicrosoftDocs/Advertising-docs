@@ -27,7 +27,7 @@ The *GetConversionGoalsByTagIdsRequest* object defines the [body](#request-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conversiongoaltypes"></a>ConversionGoalTypes|One or more types of conversion goals to return. |[ConversionGoalType](conversiongoaltype.md)|
+|<a name="conversiongoaltypes"></a>ConversionGoalTypes|The type of conversion goals to return.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<ConversionGoalTypes>Url Duration</ConversionGoalTypes>`.|[ConversionGoalType](conversiongoaltype.md)|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned conversion goal. The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[ConversionGoalAdditionalField](conversiongoaladditionalfield.md)|
 |<a name="tagids"></a>TagIds|A maximum of 100 tag identifiers that are used by the returned conversion goals. |**long** array|
 

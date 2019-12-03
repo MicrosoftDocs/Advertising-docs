@@ -28,7 +28,7 @@ The *GetConversionGoalsByIdsRequest* object defines the [body](#request-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conversiongoalids"></a>ConversionGoalIds|A maximum of 100 identifiers of the conversion goals that you want to get. <br/><br/>If *ConversionGoalIds* is null or empty, then you are effectively requesting all conversion goals of the specified types for the account. |**long** array|
-|<a name="conversiongoaltypes"></a>ConversionGoalTypes|One or more types of conversion goals to return. |[ConversionGoalType](conversiongoaltype.md)|
+|<a name="conversiongoaltypes"></a>ConversionGoalTypes|The type of conversion goals to return.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<ConversionGoalTypes>Url Duration</ConversionGoalTypes>`.|[ConversionGoalType](conversiongoaltype.md)|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned conversion goal. The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[ConversionGoalAdditionalField](conversiongoaladditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements

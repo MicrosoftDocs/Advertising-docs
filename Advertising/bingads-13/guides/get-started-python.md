@@ -101,13 +101,13 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     # With FinalUrls you can separate the tracking template, custom parameters, and 
     # landing page URLs.
     final_urls=campaign_service.factory.create('ns3:ArrayOfstring')
-    final_urls.string.append('http://www.contoso.com/womenshoesale')
+    final_urls.string.append('https://www.contoso.com/womenshoesale')
     expanded_text_ad.FinalUrls=final_urls
 
     # Final Mobile URLs can also be used if you want to direct the user to a different page 
     # for mobile devices.
     final_mobile_urls=campaign_service.factory.create('ns3:ArrayOfstring')
-    final_mobile_urls.string.append('http://mobile.contoso.com/womenshoesale')
+    final_mobile_urls.string.append('https://mobile.contoso.com/womenshoesale')
     expanded_text_ad.FinalMobileUrls=final_mobile_urls
 
     # Set custom parameters that are specific to this ad.

@@ -26,7 +26,7 @@ The *GetAdExtensionsByIdsRequest* object defines the [body](#request-body) and [
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the ad extensions.|**long**|
 |<a name="adextensionids"></a>AdExtensionIds|A list of ad extension identifiers. You can specify a maximum of 100 identifiers.|**long** array|
-|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions that the list of identifiers contains.|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
+|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions that the list of identifiers contains.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<AdExtensionType>LocationAdExtension CallAdExtension</AdExtensionType>`.|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|Reserved for future use.|[AdExtensionAdditionalField](adextensionadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements

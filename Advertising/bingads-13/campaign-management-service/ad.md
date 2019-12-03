@@ -71,7 +71,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<Ad>` node (
     <Id i:nil="true" />
     <Status i:nil="true" />
     <FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <a:string>http://www.contoso.com/womenshoesale</a:string>
+      <a:string>https://www.contoso.com/womenshoesale</a:string>
     </FinalUrls>
     <Path1>seattle</Path1>
     <Path2>shoe sale</Path2>

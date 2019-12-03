@@ -25,8 +25,8 @@ The *GetAdExtensionIdsByAccountIdRequest* object defines the [body](#request-bod
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the ad extensions to get.|**long**|
-|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](adextensionstypefilter.md).|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
-|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](associationtype.md).<br/><br/>To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
+|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account.<br/><br/>You may include multiple values as flags. How you specify multiple flags depends on the programming language that you use. For example, C# treats these values as flag values and Java treats them as an array of strings. The SOAP should include a string that contains a space-delimited list of values for example, `<AdExtensionType>LocationAdExtension CallAdExtension</AdExtensionType>`.|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
+|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type.<br/><br/>For possible values, see [AssociationType](associationtype.md).<br/><br/>To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
