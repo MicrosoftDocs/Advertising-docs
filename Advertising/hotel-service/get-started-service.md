@@ -15,11 +15,11 @@ Calling the Hotel API requires an access token but getting an access token requi
 ```powershell
 $clientId = "your application ID goes here"
  
-Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=bingads.manage offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
+Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=bingads.manage offline_access&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient"
  
 $code = Read-Host "Please enter the code"
  
-$response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&redirect_uri=https://login.live.com/oauth20_desktop.srf&code=$code&grant_type=authorization_code"
+$response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&code=$code&grant_type=authorization_code"
  
 Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
 ```
@@ -28,8 +28,8 @@ Before you can run the PowerShell script, you need to follow these steps to get 
 
 1. Go to [Microsoft Azure - App registration](https://go.microsoft.com/fwlink/?linkid=2083908) and click **New registration**  
 2. Enter an app name like *Hotels client* 
-3. For **Supported account types**, select **Accounts in this organizational directory only (Default Directory only - Single tenant)** 
-4. For **Redirect URI**, select **Public client/native (mobile & desktop)** and then set the redirect URI to https:\//login.live.com/oauth20_desktop.srf
+3. For **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)** 
+4. For **Redirect URI**, select **Public client/native (mobile & desktop)** and then set the redirect URI to https:\//login.microsoftonline.com/common/oauth2/nativeclient
 5. Click **Register** and note your **Application (client) ID**  
 
 Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientID` to the application ID you received when you registered your app.
@@ -56,9 +56,10 @@ powershell.exe -File .\GetTokens.ps1
 can't get either link to work; both get mangled.
 [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170)
 <a href="https:/go.microsoft.com/fwlink/?LinkID=135170" data-raw-source="[About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170)">About Execution Policies</a>
+https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1
 -->
 
-If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1). To change the execution policy for a session, enter the following command: 
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https://go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, enter the following command: 
 
 ```
 powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
@@ -81,7 +82,7 @@ Before using the refresh token, you need to register your service to get a clien
 
 1. Go to [Microsoft Azure - App registration](https://go.microsoft.com/fwlink/?linkid=2083908) and click **New registration**  
 2. Enter an app name for your service 
-3. For **Supported account types**, select **Accounts in this organizational directory only (Default Directory only - Single tenant)** 
+3. For **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)** 
 4. Provide a redirect URI as appropriate
 5. Click **Register** and note your service's **Application (client) ID**  
 
@@ -89,16 +90,27 @@ Before using the refresh token, you need to register your service to get a clien
 Your service should follow these basic steps to get the access token that you set the Authorization header to.
 
 - Get the refresh token from secured storage
-- Send an HTTP POST request to `https://login.live.com/oauth20_token.srf`  
+- Send an HTTP POST request to `https://login.microsoftonline.com/common/oauth2/v2.0/token`  
   - The following shows the body of the POST (the parameters are separated for readability):  
      client_id=\<yourclientid>  
 &grant_type=refresh_token  
-&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf  
-&refresh_token=\<yourrefreshtoken>` 
+&redirect_uri=\<urlencodedredirecturifromstep4>  
+&refresh_token=\<yourrefreshtoken> 
 - Get the access token, refresh token, and expiration from the response
 - Set a timer that expires just before the access token expires
 - Set the Authorization header to the access token
 - Store the new refresh token in secured storage
 - When the expiration timer expires, repeat the process
+
+The following shows an example POST using a refresh token for a desktop app.
+
+```
+POST https://login.microsoftonline.com/common/oauth2/v2.0/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+client_id=2a6e519f-078e-45a5-9dfc-28d651f7fe96&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&grant_type=refresh_token&refresh_token=MCRY2sZiCLfI9OJUpW*6I...
+``` 
+
+Depending on your client app, you may also need to include `&client_secret` in your POST. 
 
 You should only get a new access token just before the current token expires. Do not get a new access token for each call.
