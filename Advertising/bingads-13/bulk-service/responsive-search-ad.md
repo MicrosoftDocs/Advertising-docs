@@ -32,7 +32,7 @@ The following Bulk CSV example would add a new responsive search ad if a valid [
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Description,Path 1,Path 2,Domain,Headline
 Format Version,,,,,,,,,6.0,,,,,,,,,,,,
-Responsive Search Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]",seattle,shoe sale,,"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"
+Responsive Search Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,False,,,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]",seattle,shoe sale,,"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveSearchAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -79,12 +79,12 @@ var bulkResponsiveSearchAd = new BulkResponsiveSearchAd
         // 'Mobile Final Url' column header in the Bulk file
         FinalMobileUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://mobile.contoso.com/womenshoesale"
+            "https://mobile.contoso.com/womenshoesale"
         },
         // 'Final Url' column header in the Bulk file
         FinalUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
-            "http://www.contoso.com/womenshoesale"
+            "https://www.contoso.com/womenshoesale"
         },
         // 'Headline' column header in the Bulk file
         Headlines = new AssetLink[]
@@ -536,7 +536,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 > For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
 ## <a name="path1"></a>Path 1
-The first part of the optional path that will be appended to the domain portion of your display URL. The domain portion of your display URL e.g. *http://www.contoso.com* will be generated from the domain of your Final URL (*Final Url* field).  Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your *Final Url* contains *http://www.contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *http://www.contoso.com/subdirectory1/subdirectory2*.
+The first part of the optional path that will be appended to the domain portion of your display URL. The domain portion of your display URL e.g. *https://www.contoso.com* will be generated from the domain of your Final URL (*Final Url* field).  Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your *Final Url* contains *https://www.contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *https://www.contoso.com/subdirectory1/subdirectory2*.
 
 The path can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
@@ -555,7 +555,7 @@ If the path includes a space, it will be replaced with an underscore (_) when th
 **Delete:** Read-only  
 
 ## <a name="path2"></a>Path 2
-The second part of the optional path that will be appended to the domain portion of your display URL. The domain portion of your display URL e.g. *http://www.contoso.com* will be generated from the domain of your Final URL (*Final Url* field).  Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your *Final Url* contains *http://www.contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *http://www.contoso.com/subdirectory1/subdirectory2*.
+The second part of the optional path that will be appended to the domain portion of your display URL. The domain portion of your display URL e.g. *https://www.contoso.com* will be generated from the domain of your Final URL (*Final Url* field).  Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your *Final Url* contains *https://www.contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *https://www.contoso.com/subdirectory1/subdirectory2*.
 
 You can only specify *Path 2* if *Path 1* is also set.
 
@@ -604,7 +604,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 - The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*. 
 
-- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
+- Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
