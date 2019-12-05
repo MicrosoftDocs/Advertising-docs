@@ -14870,7 +14870,7 @@ The experiment has already ended and cannot be changed.
 ExperimentCampaignCannotBeUpdated
 
 **Description**
-The experiment base campaign ID is invalid.
+One or more properties of the experiment campaign cannot be updated.
 
 ***
 

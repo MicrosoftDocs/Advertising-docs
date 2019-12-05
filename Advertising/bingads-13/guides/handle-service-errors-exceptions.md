@@ -13,7 +13,7 @@ This article describes details on error handling and troubleshooting your applic
 > When you create a SOAP request message, make sure that the elements are in the same order as defined in the web services description language (WSDL). If the required elements are out of order, the call will fail. If the optional elements are out of order, the call may fail or the elements will be ignored. For more details, see [SOAP XML Element Order](services-protocol.md#element-order). 
 
 ## <a name="common-api-errors"></a>Common API Errors
-Here are some tips to handle common service errors that you may encounter. 
+Here are some tips to handle common service errors that you may encounter. For a comprehensive list of Bing Ads API error codes, please see [Operation Error Codes](operation-error-codes.md). 
 
 ### Code 105
 Typically indicates usage of an incorrect access token (AuthenticationToken header element) or developer token for the target environment. For example your credentials may be valid in production; however, when targeting sandbox you would observe code *105*.
@@ -61,7 +61,7 @@ You cannot create an instance of a base class such as [Ad](../campaign-managemen
 Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Microsoft Advertising web application for the same date range and filter criteria, please [contact support](#contact-support) with details.  
 
 ## <a name="common-oauth-errors"></a>Common OAuth Errors
-Here are some tips to handle common authorization errors that you may encounter. 
+Here are some tips to handle common authorization errors that you may encounter. For a comprehensive list of AADSTS error codes, please see [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ### <a name="invalid-redirect-uri"></a>Invalid redirect URI
 An invalid redirect URI error indicates that you are requesting either user consent or access tokens with a redirect_uri value that is not properly registered.  

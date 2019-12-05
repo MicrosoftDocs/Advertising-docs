@@ -309,7 +309,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 ## <a name="id"></a>Id
 The system generated identifier of the keyword.
 
-**Add:** Read-only  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the keyword can then be referenced in the *Parent Id* field of dependent record types such as [Keyword Label](keyword-label.md#parentid). This is recommended if you are adding new keywords and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
