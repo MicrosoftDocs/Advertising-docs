@@ -236,7 +236,9 @@ The campaign's budget amount.
 > 
 > Also note that Microsoft Advertising does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
 
-In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field.
+In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
+
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), [Status](#status), or [Time Zone](#timezone). The budget, status, and time zone of an experiment campaign are always inherited from the base campaign settings. 
 
 **Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.  
 **Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.  
@@ -270,6 +272,8 @@ The budget type determines how the budget is spent. The possible values are *Dai
 > The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
 
 In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
+
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), [Status](#status), or [Time Zone](#timezone). The budget, status, and time zone of an experiment campaign are always inherited from the base campaign settings. 
 
 **Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.  
 **Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.  
@@ -355,7 +359,7 @@ The system generated identifier of the [Experiment](experiment.md).
 
 This field is only set for experiment campaigns i.e., campaigns that have been created for A/B testing based on another Search campaign. Base campaigns will not contain an experiment ID. Likewise, after an experiment has been [Graduated](experiment.md#status) to an independent campaign, this field will be empty, even though the campaign was previously an experiment campaign. 
 
-With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), or [Time Zone](#timezone). The budget and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](experiment.md#trafficsplitpercent) setting.
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), [Status](#status), or [Time Zone](#timezone). The budget, status, and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](experiment.md#trafficsplitpercent) setting.
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -531,7 +535,9 @@ Possible values are in the table below.
 ## <a name="status"></a>Status
 The status of the campaign.
 
-Possible values for download and upload are Active, Paused, and Deleted. In addition, the values BudgetAndManualPaused, BudgetPaused, and Suspended are read-only via bulk download.
+Possible values for download and upload are Active, Paused, and Deleted. In addition, the values BudgetAndManualPaused, BudgetPaused, and Suspended are read-only via bulk download. 
+
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), [Status](#status), or [Time Zone](#timezone). The budget, status, and time zone of an experiment campaign are always inherited from the base campaign settings. 
 
 |Value|Description|
 |-----------|---------------|
@@ -602,7 +608,9 @@ The time zone where the campaign operates.
 
 The time zone is used for reporting and applying the start and end date of an ad group.
 
-For possible values, see [Time Zones](../guides/time-zones.md).
+For possible values, see [Time Zones](../guides/time-zones.md). 
+
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), [Status](#status), or [Time Zone](#timezone). The budget, status, and time zone of an experiment campaign are always inherited from the base campaign settings. 
 
 **Add:** Required   
 **Update:** Optional. If no value is set for the update, this setting is not changed. You may not update the time zone if the campaign contains or has ever contained ad groups in the *Active* or *Paused* state.    

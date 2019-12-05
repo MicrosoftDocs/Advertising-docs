@@ -101,7 +101,7 @@ At this point, the user will be asked to enter their credentials and complete th
 
 Once the user authenticates and grants consent, the Microsoft identity platform endpoint will return a response to your app at the indicated `redirect_uri`, using the method specified in the `response_mode` parameter. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their Microsoft Advertising accounts: *http://localhost/myapp/?code=CodeGoesHere&state=12345*.
 
-If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *http://localhost/myapp/?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.  
+If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *http://localhost/myapp/?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ## <a name="request-accesstoken"></a>Request an access token
 
@@ -144,7 +144,7 @@ Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON r
 
 Access_tokens are short lived, and you must refresh them after they expire to continue accessing resources. You can do so by submitting another `POST` request to the `/token` endpoint, this time providing the `refresh_token` instead of the `code`.  Refresh tokens are valid for all permissions that your client has already received consent.    
 
-Refresh tokens do not have specified lifetimes. Typically, the lifetimes of refresh tokens are relatively long. However, in some cases, refresh tokens expire, are revoked, or lack sufficient privileges for the desired action. Your application needs to expect and handle errors returned by the token issuance endpoint correctly. 
+Refresh tokens do not have specified lifetimes. Typically, the lifetimes of refresh tokens are relatively long. However, in some cases, refresh tokens expire, are revoked, or lack sufficient privileges for the desired action. Your application needs to expect and handle errors returned by the token issuance endpoint correctly. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ```https
 // Line breaks for legibility only
@@ -187,7 +187,7 @@ Please keep in mind that public refresh tokens are only bound to the granted dev
 {"error":"invalid_request","error_description":"Public clients can't send a client secret."} Likewise for Web apps please note that refresh tokens can be invalidated at any moment.
 ```
 
-You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. 
+You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ## See Also
 [Bing Ads API Web Service Addresses](web-service-addresses.md)
