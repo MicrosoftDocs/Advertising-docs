@@ -18,7 +18,6 @@ The following are the differences between Google's Transaction Message implement
   
 - Bing does not support (and will ignore) the following [Transaction](reference.md#transaction) attributes:  
   
-  - `id`
   - `partner`
   
 - Bing does not support (and will ignore) the following [Result](reference.md#resulttype) elements:
