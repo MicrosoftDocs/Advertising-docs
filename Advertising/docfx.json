@@ -43,7 +43,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/bingads-13/**"
         ]
       },
       {

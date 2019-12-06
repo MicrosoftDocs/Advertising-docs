@@ -45,7 +45,7 @@ Defines a Query message.
 
 |Element|Description|Children
 |-|-|-  
-| |The group defines the list of properties that Bing wants data for, and the options for the way Bing specifies the dates in request. |[combinedQueryGroup](#combinedquerygroup)
+| |The group defines the list of properties that Bing wants data for, and the options for the way Bing specifies the dates in the request. |[combinedQueryGroup](#combinedquerygroup)
 
 <!--  
 |HotelInfoProperties|A list of one or more hotel IDs that you must return room and room bundle metadata for. |[propertyListType](#propertylisttype)  
@@ -56,11 +56,11 @@ Defines a Query message.
 
 ## combinedQueryGroup
 
-Defines the list of properties that Bing wants data for, and the options for the way it specifies the dates in request. 
+Defines the list of properties that Bing wants data for, and the options for the way it specifies the dates in the request. 
 
 |Element|Description|Children
 |-|-|-
-||Bing this option if you signed up for pull requests, or you signed up for pull with hints requests and your [Hint](../hint-message/reference.md) message specifies exact itineraries (includes the \<Stay\> element).|[pointQueryGroup](#pointquerygroup)
+||Bing uses this option if you signed up for pull requests, or you signed up for pull with hints requests and your [Hint](../hint-message/reference.md) message specifies exact itineraries (includes the \<Stay\> element).|[pointQueryGroup](#pointquerygroup)
 ||Bing uses this option if you signed up for pull with hints requests and your hint specifies a check-in date range.|[rangeQueryGroup](#rangequerygroup)
 |PropertyList|A list of one or more hotel IDs that you must return itinerary data for. |[propertyListType](#propertylisttype)
 

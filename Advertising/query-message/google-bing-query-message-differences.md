@@ -16,4 +16,4 @@ The following are the differences between Google's Query Message implementation 
   - The `latencySensitive` attribute of the `Query` element. 
   - The `DeadlineMs` element.  
   
-- Microsoft does not support room and room bundle information in Transaction Message. Microsoft will not include the `HotelInfoProperties` element.
+- Microsoft will not include the `HotelInfoProperties` element, which is used to request room and room bundle updates.
