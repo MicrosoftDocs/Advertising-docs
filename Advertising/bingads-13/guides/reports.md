@@ -63,7 +63,7 @@ The report column names e.g., *"AccountId","CampaignId","Keyword","KeywordId","D
 The report footer metadata e.g., *@2019 Microsoft Corporation. All rights reserved.* is included by default. If you don't want the footer metadata set [ExcludeReportFooter](../reporting-service/reportrequest.md#excludereportfooter) to *true*.
 
 ## <a name="columnsdata"></a>Columns that Group the Data
-The attribute columns that you include in a report affects the values within the statistics columns as well as the number or rows. For example, if you request a summary report that includes only *AccountId*, *CampaignId*, *Keyword*, *KeywordId*, and *Clicks*, the clicks column will contain the number of clicks for the keyword regardless of other attributes such as device, match type, and network. 
+The attribute columns that you include in a report affects the values within the statistics columns as well as the number or rows. For example, if you request a summary report that includes only *AccountId*, *CampaignId*, *Keyword*, *KeywordId*, and *Clicks*, the clicks column will contain the number of clicks for the keyword regardless of excluded attributes such as device, match type, and network. 
 
 ```csv
 "Report Name: My Keyword Performance Report"
