@@ -83,6 +83,8 @@ How long it takes for report jobs to finish is undetermined and is based on seve
 
 When the report job's status is Completed, the job's `Url` field contains the URL that you use to download the report. To download the report, send an HTTP GET request to the specified URL.
 
+When you use the download URL to download the report, don't specify the Authorization header like you do with the other report requests; simply use the download URL.
+
 For uncompressed reports, the GET response's Content-Type header contains text/csv. For compressed reports, the header contains application/zip.
 
 If you asked the service to compress the report's data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, performance-\<request ID\>.
