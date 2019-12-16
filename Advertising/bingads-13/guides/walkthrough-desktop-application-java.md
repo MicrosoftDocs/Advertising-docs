@@ -40,7 +40,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>13.0.1</version>
+          <version>13.0.2</version>
         </dependency>
       </dependencies>
     </project>

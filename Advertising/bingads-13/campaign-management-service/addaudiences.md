@@ -14,9 +14,6 @@ dev_langs:
 # AddAudiences Service Operation - Campaign Management
 Adds one or more audiences.
 
-> [!NOTE]
-> Microsoft Advertising will automatically generate similar remarketing lists for pilot participants. You cannot create or edit the similar remarketing lists. If you delete the source remarketing list, then the similar remarketing list will also be deleted. If a similar remarketing list is associated with an ad group, then you cannot delete the source remarketing list. See [SimilarRemarketingList](similarremarketinglist.md) for more details. 
-
 ## <a name="request"></a>Request Elements
 The *AddAudiencesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -27,7 +24,7 @@ The *AddAudiencesRequest* object defines the [body](#request-body) and [header](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audiences"></a>Audiences|The list of audiences to add.<br/><br/>The maximum size of the list is 100.<br/><br/>You can only add [RemarketingList](remarketinglist.md) objects. You cannot add [CustomAudience](customaudience.md) or [InMarketAudience](inmarketaudience.md) objects. |[Audience](audience.md) array|
+|<a name="audiences"></a>Audiences|The list of audiences to add.<br/><br/>The maximum size of the list is 100.<br/><br/>You cannot add [CustomAudience](customaudience.md), [InMarketAudience](inmarketaudience.md), or [SimilarRemarketingList](similarremarketinglist.md) objects. |[Audience](audience.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
