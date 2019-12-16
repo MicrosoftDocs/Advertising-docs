@@ -25,7 +25,7 @@ The *DeleteAdsRequest* object defines the [body](#request-body) and [header](#re
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The ID of the ad group that contains the ads to delete.|**long**|
-|<a name="adids"></a>AdIds|The IDs of the ads to delete. You can specify a maximum of 50 IDs.|**long** array|
+|<a name="adids"></a>AdIds|The IDs of the ads to delete.<br/><br/>You can specify a maximum of 50 IDs.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

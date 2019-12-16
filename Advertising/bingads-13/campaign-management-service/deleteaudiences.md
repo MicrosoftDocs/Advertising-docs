@@ -27,7 +27,7 @@ The *DeleteAudiencesRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You can only delete [RemarketingList](remarketinglist.md) objects that correspond to the IDs. You cannot add [CustomAudience](customaudience.md) or [InMarketAudience](inmarketaudience.md) objects.|**long** array|
+|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You cannot delete [InMarketAudience](inmarketaudience.md) objects.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
