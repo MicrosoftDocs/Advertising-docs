@@ -655,7 +655,32 @@ x-ms-trackingid: ceb70eb3-36ca-4b99-a5f7-b1a04de1e4ae
 }
 ```
 
-<a name="associatinghotels" />
+<a name="bidmultipliers"></a>
+
+## Length of stay and Advanced booking window multipliers
+
+The description for [LengthOfStayMultiplier](../hotel-service/reference.md#lengthofstaymultiplier) says that Bing applies the multiplier if the user is staying the specified number of nights **or longer**. And the description for [AdvanceBookingWindowMultiplier](../hotel-service/reference.md#advancebookingwindowmultiplier) also says that Bing applies the multiplier if the booking occurs in advance the specified number of days **or longer**. The key part of the description is the phrase, **or longer**. 
+
+If you specify more than one of these multipliers, the combination of factor and days/nights must be unique; otherwise, the call fails with a DuplicateValues error. In the following LengthOfStayMultiplier example, the factor for each entry is 1. Because the entry for 6 nights applies to stays of 6 nights or longer, the second entry for 8 nights is a duplicate. To fix this error, simply remove the entry for 8 nights or provide a different factor value. 
+
+
+```json
+  {
+      "MinimumNumberOfNights": 8,
+      "Factor": "1",
+      "@odata.type": "#Model.LengthOfStayMultiplier"
+    },
+    {
+      "MinimumNumberOfNights": 6,
+      "Factor": "1",
+      "@odata.type": "#Model.LengthOfStayMultiplier"
+  }
+```
+
+
+
+
+<a name="associatinghotels"></a>
 
 ## Associating a hotel with a hotel group
 
