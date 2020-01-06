@@ -101,12 +101,12 @@ The service performs a case-insensitive comparison when it compares the name to 
 **Delete:** Read-only  
 
 ## <a name="budgettype"></a>Budget Type
-The budget type determines the pace at which the budget is spent throughout the day.
+The budget type determines the pace at which the budget is spent throughout the day.  
 
-You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. 
+The only valid budget type that you can set is DailyBudgetStandard.  
 
 > [!IMPORTANT]
-> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
+> The accelerated budget type has been sunset for shared budgets. As of January 2020 the only valid budget type that you can set is DailyBudgetStandard, and any other budget type value that you attempt to set will be ignored without returning an error. If you had set the budget type to accelerated prior to January 2020, the data has been migrated and the API will only return "DailyBudgetStandard". Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
