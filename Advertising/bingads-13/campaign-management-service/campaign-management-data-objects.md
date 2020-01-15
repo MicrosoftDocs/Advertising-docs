@@ -150,6 +150,7 @@ The Campaign Management service defines the following data objects.
 |[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Microsoft Merchant Center store.|
 |[SimilarRemarketingList](similarremarketinglist.md)|Defines an audience that is similar to one of your remarketing lists.|
 |[SitelinkAdExtension](sitelinkadextension.md)|Defines an object with one sitelink per ad extension.|
+|[StoreCriterion](storecriterion.md)|Reserved for future use.|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|

@@ -1432,6 +1432,8 @@
           href: ../campaign-management-service/similarremarketinglist.md
         - name: SitelinkAdExtension
           href: ../campaign-management-service/sitelinkadextension.md
+        - name: StoreCriterion
+          href: ../campaign-management-service/storecriterion.md
         - name: StringRuleItem
           href: ../campaign-management-service/stringruleitem.md
         - name: StructuredSnippetAdExtension
