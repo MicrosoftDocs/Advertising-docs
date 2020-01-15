@@ -85,6 +85,8 @@ The displayed action text will vary depending on the [Language](actionadextensio
     <xs:enumeration value="FindStore" />
     <xs:enumeration value="SwitchNow" />
     <xs:enumeration value="VisitStore" />
+    <xs:enumeration value="RenewNow" />
+    <xs:enumeration value="Reorder" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -100,7 +102,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="bookacar"></a>BookACar|Use the translated version of *BookACar* in the action ad extension.|
 |<a name="bookhotel"></a>BookHotel|Use the translated version of *BookHotel* in the action ad extension.|
 |<a name="booknow"></a>BookNow|Use the translated version of *BookNow* in the action ad extension.|
-|<a name="browse"></a>Browse|Use the translated version of *Browse* in the action ad extension.|
+|<a name="browse"></a>Browse|Use the translated version of *LearnMore* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [LearnMore](#learnmore). If you set the action type to *Browse* no error will be returned, but [LearnMore](#learnmore) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="buynow"></a>BuyNow|Use the translated version of *BuyNow* in the action ad extension.|
 |<a name="chatnow"></a>ChatNow|Use the translated version of *ChatNow* in the action ad extension.|
 |<a name="compare"></a>Compare|Use the translated version of *Compare* in the action ad extension.|
@@ -111,7 +113,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="download"></a>Download|Use the translated version of *Download* in the action ad extension.|
 |<a name="emailnow"></a>EmailNow|Use the translated version of *EmailNow* in the action ad extension.|
 |<a name="enrollnow"></a>EnrollNow|Use the translated version of *EnrollNow* in the action ad extension.|
-|<a name="explore"></a>Explore|Use the translated version of *Explore* in the action ad extension.|
+|<a name="explore"></a>Explore|Use the translated version of *LearnMore* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [LearnMore](#learnmore). If you set the action type to *Explore* no error will be returned, but [LearnMore](#learnmore) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="filenow"></a>FileNow|Use the translated version of *FileNow* in the action ad extension.|
 |<a name="findjob"></a>FindJob|Use the translated version of *FindJob* in the action ad extension.|
 |<a name="findstore"></a>FindStore|Use the translated version of *FindStore* in the action ad extension.|
@@ -125,39 +127,41 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="learnmore"></a>LearnMore|Use the translated version of *LearnMore* in the action ad extension.|
 |<a name="listennow"></a>ListenNow|Use the translated version of *ListenNow* in the action ad extension.|
 |<a name="login"></a>LogIn|Use the translated version of *LogIn* in the action ad extension.|
-|<a name="message"></a>Message|Use the translated version of *Message* in the action ad extension.|
-|<a name="newcars"></a>NewCars|Use the translated version of *NewCars* in the action ad extension.|
+|<a name="message"></a>Message|Use the translated version of *ContactUs* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [ContactUs](#contactus). If you set the action type to *Message* no error will be returned, but [ContactUs](#contactus) is the effective value that will be stored and returned when retrieving the action ad extension.|
+|<a name="newcars"></a>NewCars|Use the translated version of *ViewCars* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [ViewCars](#viewcars). If you set the action type to *NewCars* no error will be returned, but [ViewCars](#viewcars) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="ordernow"></a>OrderNow|Use the translated version of *OrderNow* in the action ad extension.|
 |<a name="playgame"></a>PlayGame|Use the translated version of *PlayGame* in the action ad extension.|
 |<a name="playnow"></a>PlayNow|Use the translated version of *PlayNow* in the action ad extension.|
 |<a name="postjob"></a>PostJob|Use the translated version of *PostJob* in the action ad extension.|
 |<a name="register"></a>Register|Use the translated version of *Register* in the action ad extension.|
+|<a name="renewnow"></a>RenewNow|Use the translated version of *RenewNow* in the action ad extension.|
 |<a name="rentacar"></a>RentACar|Use the translated version of *RentACar* in the action ad extension.|
 |<a name="rentnow"></a>RentNow|Use the translated version of *RentNow* in the action ad extension.|
+|<a name="reorder"></a>Reorder|Use the translated version of *Reorder* in the action ad extension.|
 |<a name="reserve"></a>Reserve|Use the translated version of *Reserve* in the action ad extension.|
 |<a name="sale"></a>Sale|Use the translated version of *Sale* in the action ad extension.|
 |<a name="savenow"></a>SaveNow|Use the translated version of *SaveNow* in the action ad extension.|
 |<a name="schedule"></a>Schedule|Use the translated version of *Schedule* in the action ad extension.|
 |<a name="seemenu"></a>SeeMenu|Use the translated version of *SeeMenu* in the action ad extension.|
-|<a name="seemore"></a>SeeMore|Use the translated version of *SeeMore* in the action ad extension.|
+|<a name="seemore"></a>SeeMore|Use the translated version of *LearnMore* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [LearnMore](#learnmore). If you set the action type to *SeeMore* no error will be returned, but [LearnMore](#learnmore) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="seeoffer"></a>SeeOffer|Use the translated version of *SeeOffer* in the action ad extension.|
 |<a name="sellnow"></a>SellNow|Use the translated version of *SellNow* in the action ad extension.|
 |<a name="shopnow"></a>ShopNow|Use the translated version of *ShopNOw* in the action ad extension.|
 |<a name="showtimes"></a>Showtimes|Use the translated version of *Showtimes* in the action ad extension.|
 |<a name="signin"></a>SignIn|Use the translated version of *SignIn* in the action ad extension.|
 |<a name="signup"></a>SignUp|Use the translated version of *SignUp* in the action ad extension.|
-|<a name="startfree"></a>StartFree|Use the translated version of *StartFree* in the action ad extension.|
+|<a name="startfree"></a>StartFree|Use the translated version of *FreeTrial* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [FreeTrial](#freetrial). If you set the action type to *StartFree* no error will be returned, but [FreeTrial](#freetrial) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="startnow"></a>StartNow|Use the translated version of *StartNow* in the action ad extension.|
 |<a name="subscribe"></a>Subscribe|Use the translated version of *Subscribe* in the action ad extension.|
 |<a name="switchnow"></a>SwitchNow|Use the translated version of *SwitchNow* in the action ad extension.|
 |<a name="testdrive"></a>TestDrive|Use the translated version of *TestDrive* in the action ad extension.|
 |<a name="trynow"></a>TryNow|Use the translated version of *TryNow* in the action ad extension.|
-|<a name="unknown"></a>Unknown|Reserved for future use.|
-|<a name="usedcars"></a>UsedCars|Use the translated version of *UsedCars* in the action ad extension.|
+|<a name="unknown"></a>Unknown|The action type is either [RenewNow](#renewnow) or [Reorder](#reorder).<br/><br/>To determine the effective action type, include [ActionTypesPhase3](adextensionadditionalfield.md#actiontypesphase3) when calling [GetAdExtensionsAssociations](getadextensionsassociations.md) and [GetAdExtensionsByIds](getadextensionsbyids.md).|
+|<a name="usedcars"></a>UsedCars|Use the translated version of *ViewCars* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [ViewCars](#viewcars). If you set the action type to *UsedCars* no error will be returned, but [ViewCars](#viewcars) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="viewcars"></a>ViewCars|Use the translated version of *ViewCars* in the action ad extension.|
-|<a name="viewnow"></a>ViewNow|Use the translated version of *ViewNow* in the action ad extension.|
+|<a name="viewnow"></a>ViewNow|Use the translated version of *LearnMore* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [LearnMore](#learnmore). If you set the action type to *ViewNow* no error will be returned, but [LearnMore](#learnmore) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="viewplans"></a>ViewPlans|Use the translated version of *ViewPlans* in the action ad extension.|
-|<a name="visitsite"></a>VisitSite|Use the translated version of *VisitSite* in the action ad extension.|
+|<a name="visitsite"></a>VisitSite|Use the translated version of *LearnMore* in the action ad extension.<br/><br/>This value is deprecated as of January 2020 and replaced by [LearnMore](#learnmore). If you set the action type to *VisitSite* no error will be returned, but [LearnMore](#learnmore) is the effective value that will be stored and returned when retrieving the action ad extension.|
 |<a name="visitstore"></a>VisitStore|Use the translated version of *VisitStore* in the action ad extension.|
 |<a name="votenow"></a>VoteNow|Use the translated version of *VoteNow* in the action ad extension.|
 |<a name="watch"></a>Watch|Use the translated version of *Watch* in the action ad extension.|
