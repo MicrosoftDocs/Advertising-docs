@@ -21,6 +21,7 @@ Do not try to instantiate a *Criterion*. You can create one or more following ob
 - [ProductPartition](productpartition.md)  
 - [ProfileCriterion](profilecriterion.md)  
 - [RadiusCriterion](radiuscriterion.md)  
+- [StoreCriterion](storecriterion.md)  
 - [Webpage](webpage.md)  
 
 For a list of criterion types that you can use with [CampaignCriterion](campaigncriterion.md), see the [CampaignCriterionType](campaigncriteriontype.md) value set.

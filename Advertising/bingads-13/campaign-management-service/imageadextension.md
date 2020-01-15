@@ -39,6 +39,13 @@ You can associate an image ad extension with the account or with campaigns and a
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
+        <xs:element minOccurs="0" name="Layouts" nillable="true" type="q41:ArrayOfstring" xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>
@@ -61,6 +68,7 @@ You can associate an image ad extension with the account or with campaigns and a
 |<a name="finalurlsuffix"></a>FinalUrlSuffix|Not supported for image ad extensions.|**string**|
 |<a name="imagemediaids"></a>ImageMediaIds|The identifiers of the images to include in the ad. You may not specify media identifiers for more than one image of the same aspect ratio. In other words each of  the referenced images must have different aspect ratios.<br/><br/>You can specify up to four (4) image media  identifiers. While the minimum required is one image media ID, in order to qualify for all ad placements you must provide four image media identifiers, where each ID corresponds to an [Image](image.md) of one of the four supported [Media](media.md) types (aspect ratios). The supported aspect ratios for audience ads are 16:9, 1.5:1, 4:3, and 1.2:1. For more information see the [Image](image.md) data object reference documentation.<br/><br/>You can get the identifier of each [Image](image.md) when you add them to the image library by calling the [AddMedia](addmedia.md) operation. Otherwise after the media has been added to your image library you can get the media identifiers with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) operation.<br/><br/>**Add:** Required<br/>**Update:** Optional|**long** array|
 |<a name="images"></a>Images|Reserved for future use.|[AssetLink](assetlink.md) array|
+|<a name="layouts"></a>Layouts|Reserved for future use.|**string** array|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Not supported for image ad extensions.|**string**|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Not supported for image ad extensions.|[CustomParameters](customparameters.md)|
 

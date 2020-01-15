@@ -9,6 +9,38 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+
+
+## <a name="january2020"></a>January 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Deprecating Accelerated Budget Delivery](#accelerated-budget-january2020)  
+- [Action Ad Extension Types](#actiontypes-january2020)  
+
+### <a name="accelerated-budget-january2020"></a>Deprecating Accelerated Budget Delivery 
+As of January 2020 the budget type for shared and unshared budgets are read-only for all DynamicSearchAds, Shopping, and Search campaigns, and any budget type value that you attempt to set will be ignored without returning an error. Previous budget settings will be migrated from accelerated to standard, and the API will only return "DailyBudgetStandard" for DynamicSearchAds, Shopping, and Search campaigns, as well as for all shared budgets. You can still use accelerated budgets with Audience campaigns. The budget type data is not migrated for Audience campaign level unshared budgets. However, the budget delivery might change as described above if the Audience campaign uses a shared budget. 
+
+The accelerated budget deprecation phases started in November 2019. For more information, please see [Deprecating Accelerated Budget Delivery](budget-bid-strategies.md#deprecating-accelerated-budget). 
+
+### <a name="actiontypes-january2020"></a>Action Ad Extension Types
+Starting January 2020, nine action types are deprecated. For example, if you set the action type to "Browse" no error will be returned, but "LearnMore" is the effective value that will be stored and returned when retrieving the action ad extension. Your application should use the replacement values instead of the deprecated values. 
+
+|Deprecated Action Type|Replacement Action Type| 
+|-----|-----|
+|Browse|LearnMore|
+|Explore|LearnMore|
+|Message|ContactUs|
+|NewCars|ViewCars|
+|SeeMore|LearnMore|
+|StartFree|FreeTrial|
+|UsedCars|ViewCars|
+|ViewNow|LearnMore|
+|VisitSite|LearnMore|
+
+Also starting January 2020 two new action types are added i.e., RenewNow and Reorder. Please note that if you use the version 12 Campaign Management API, by default the action type returned is Unknown. (The design goal is to avoid a breaking change for clients with strict value set dependencies.) To determine the effective action type i.e., RenewNow or Reorder, include [ActionTypesPhase3](../campaign-management-service/adextensionadditionalfield.md#actiontypesphase3) when calling the [GetAdExtensionsAssociations](../campaign-management-service/getadextensionsassociations.md) and [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operations. 
+
+One final update starting in January 2020, only the localized text for Sale and Coupon are updated to "See Sale" and "Get Coupon" respectively for all supported languages. The API value sets are unchanged for these action types. For the current localized text please see [Action Text for Action Ad Extensions](ad-languages.md#actionadextension-actiontext).
+
 ## <a name="december2019"></a>December 2019
 See below for Bing Ads API updates during this calendar month. 
 

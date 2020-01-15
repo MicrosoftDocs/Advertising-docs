@@ -30,7 +30,7 @@ Elements of this object are defined in the Microsoft Merchant Center store, and 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="hascatalog"></a>HasCatalog|Value will be true if the store has a catalog of items, and otherwise the value is false.|**boolean**|
-|<a name="id"></a>Id|The unique identifier for the  Microsoft Merchant Center store.|**long**|
+|<a name="id"></a>Id|The unique identifier for the Microsoft Merchant Center store.|**long**|
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Microsoft Merchant Center.|**string**|
