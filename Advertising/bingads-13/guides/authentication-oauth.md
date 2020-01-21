@@ -32,7 +32,7 @@ Here are some of the reasons that either you or users of your application might 
 ## <a name="faq"></a>OAuth General FAQ
 
 ### Q. I want to run my application without user interaction. How can I authenticate without getting prompted for permission to use Microsoft Advertising credentials?
-To programatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You may need to request user consent again for example, if the user went through account recovery, changed their password, or otherwise removed permissions for your application to authenticate on their behalf. 
+To programmatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You may need to request user consent again for example, if the user went through account recovery, changed their password, or otherwise removed permissions for your application to authenticate on their behalf. 
 
 ### Q. When do the access and refresh tokens expire?
 The access token typically expires after one hour, although you should always check the expiration time each time you request a new token. 
