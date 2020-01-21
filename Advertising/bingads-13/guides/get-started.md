@@ -33,6 +33,8 @@ To authenticate in the production environment, you can follow either the [Live C
 
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
 
+    # Get the initial access and refresh tokens. 
+    
     $response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=https://ads.microsoft.com/ads.manage%20offline_access&code=$code&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.microsoftonline.com%2Fcommon%2Foauth2%2Fnativeclient"
 
     $oauthTokens = ($response.Content | ConvertFrom-Json)  
@@ -41,7 +43,7 @@ To authenticate in the production environment, you can follow either the [Live C
     Write-Output "Refresh token: " $oauthTokens.refresh_token 
 
     # The access token will expire e.g., after one hour. 
-    # Use the refresh token to get a new access token. 
+    # Use the refresh token to get new access and refresh tokens. 
 
     $response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=https://ads.microsoft.com/ads.manage%20offline_access&code=$code&grant_type=refresh_token&refresh_token=$($oauthTokens.refresh_token)"
 
@@ -53,7 +55,7 @@ To authenticate in the production environment, you can follow either the [Live C
 
     Save the file and name it `Get-Tokens-Production.ps1` (you can name it anything you want but the extension must be .ps1).
 
-    To programatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
+    To programmatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
    
 1. Now to run `Get-Tokens-Production.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-Tokens-Production.ps1` and enter the following command:  
   
@@ -67,7 +69,7 @@ To authenticate in the production environment, you can follow either the [Live C
     https://login.microsoftonline.com/common/oauth2/nativeclient?code=M7ab570e5-a1c0-32e5-a946-e490c82954
     ```  
       
-    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Production.ps1` PowerShell script again to get consent and a new refresh token.  
+    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. (The script makes a second call to Invoke-WebReqeust as an example of how to refresh the tokens.) You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Production.ps1` PowerShell script again to get user consent and a new refresh token. 
   
 1. Create a new file and paste into it the following script. Set the `accessToken` to the value you received from `Get-Tokens-Production.ps1` and set `$developerToken` to the developer token you received from Step 1 above. 
    
@@ -121,7 +123,9 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
     Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf"
     
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
-      
+    
+    # Get the initial access and refresh tokens. 
+
     $response = Invoke-WebRequest https://login.live-int.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live-int.com%2Foauth20_desktop.srf"
     
     $oauthTokens = ($response.Content | ConvertFrom-Json)  
@@ -130,7 +134,7 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
     Write-Output "Refresh token: " $oauthTokens.refresh_token 
     
     # The access token will expire e.g., after one hour. 
-    # Use the refresh token to get a new access token. 
+    # Use the refresh token to get new access and refresh tokens. 
     
     $response = Invoke-WebRequest https://login.live-int.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=refresh_token&refresh_token=$($oauthTokens.refresh_token)"
     
@@ -142,7 +146,7 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
 
     Save the file and name it `Get-Tokens-Sandbox.ps1` (you can name it anything you want but the extension must be .ps1).
 
-    To programatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
+    To programmatically manage a Microsoft Advertising account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
    
 1. Now to run `Get-Tokens-Sandbox.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-Tokens-Sandbox.ps1` and enter the following command:  
   
@@ -156,7 +160,7 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
     https://login.live-int.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e490c82954&lc=1033
     ```  
       
-    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Sandbox.ps1` PowerShell script again to get consent and a new refresh token.  
+    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. (The script makes a second call to Invoke-WebReqeust as an example of how to refresh the tokens.) You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Sandbox.ps1` PowerShell script again to get user consent and a new refresh token.  
   
 1. Create a new file and paste into it the following script. Set the `accessToken` to the value you received from `Get-Tokens-Sandbox.ps1`. 
    
