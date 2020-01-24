@@ -100,7 +100,7 @@ Casts this product group to a custom label product group.
 [ProductCustomLabel](./ProductCustomLabel.md)|Contains the methods used to access the product group's properties.
 
 
-## <a id="asitemId"></a>asItemId
+## <a id="asitemid"></a>asItemId
 
 Casts this product group to an item ID product group. 
 

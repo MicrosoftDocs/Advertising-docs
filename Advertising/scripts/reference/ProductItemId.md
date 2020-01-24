@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains the methods for managing an item ID product group. This object derives from [ProductGroup](ProductGroup.md).
 
-Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's ID matches exactly the ID returned by [getValue](#getvalue).
+Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's ID matches exactly the ID returned by [getValue](#getvalue). 
 
 Example usage:
 ```javascript

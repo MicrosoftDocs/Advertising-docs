@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains the methods for managing a condition product group. This object derives from [ProductGroup](ProductGroup.md).
 
-Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's condition matches exactly the condition returned by [getCondition](#getcondition).
+Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's condition matches exactly the condition returned by [getCondition](#getcondition). 
 
 Example usage:
 ```javascript

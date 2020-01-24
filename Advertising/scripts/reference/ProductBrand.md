@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains the methods for managing a brand product group. This object derives from [ProductGroup](ProductGroup.md).
 
-Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's brand matches exactly the brand name returned by [getName](#getname).
+Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's brand matches exactly the brand name returned by [getName](#getname). 
 
 Example usage:
 ```javascript
