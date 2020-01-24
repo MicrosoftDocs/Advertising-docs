@@ -87,7 +87,7 @@ Gets the campaign that this product group belongs to.
 [Campaign](Campaign.md)|The campaign that this product group belongs to.
 
 
-## <a id="getcondition"></a>getCondition
+## <a name="getcondition"></a>getCondition
 
 Gets the product's condition. 
 

@@ -167,7 +167,7 @@ function main() {
 
 ### Applying conditions
 
-To filter the list of product groups, use the [withCondition](../reference/ProductGroupSelector.md#withcondition) method. By using `withCondition`, you can filter product groups by the standard metric values like clicks and conversions, but you can also filter by bid amount and product group.
+To filter the list of product groups, use the [withCondition](../reference/ProductGroupSelector.md#withcondition-string-condition-) method. By using `withCondition`, you can filter product groups by the standard metric values like clicks and conversions, but you can also filter by bid amount and product group.
 
 The following example shows how to get the Skis product group if the path is 'All products > Sporting Goods > Winter Sports > Skiing > Skis > Refurbished > Cross-Country Skis'.
 

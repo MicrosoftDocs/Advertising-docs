@@ -161,7 +161,7 @@ string|The product group's tracking template.
 -->
 
 
-## <a id="gettype"></a>getType
+## <a name="gettype"></a>getType
 
 Gets the product's custom label. 
 

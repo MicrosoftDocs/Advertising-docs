@@ -46,7 +46,7 @@ Added the following methods to [AdGroup](reference/AdGroup.md):
 
 Added the following method to [Cammpaign](reference/Campaign.md):
 
-- [productGroups](reference/Campagin.md#productgroups)
+- [productGroups](reference/Campaign.md#productgroups)
 
 Added CampaignType as a possible column to the [AdGroupSelector](reference/AdGroupSelector.md) object's [withCondition](reference/AdGroupSelector.md#withcondition-string-condition-) method.
 

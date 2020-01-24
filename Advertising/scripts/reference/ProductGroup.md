@@ -56,7 +56,7 @@ Example usage:
 [getTrackingUrlTemplate](#gettrackingurltemplate)|String|Gets this product group's tracking URL template.
 -->
 
-## <a id="asBrand"></a>asBrand
+## <a id="asbrand"></a>asBrand
 
 Casts this product group to a brand product group. 
 
@@ -67,7 +67,7 @@ Casts this product group to a brand product group.
 [ProductBrand](./ProductBrand.md)|Contains the methods used to access the product group's properties.
 
 
-## <a id="asCategory"></a>asCategory
+## <a id="ascategory"></a>asCategory
 
 Casts this product group to a category product group. 
 
@@ -78,7 +78,7 @@ Casts this product group to a category product group.
 [ProductCategory](./ProductCategory.md)|Contains the methods used to access the product group's properties.
 
 
-## <a id="asCondition"></a>asCondition
+## <a id="ascondition"></a>asCondition
 
 Casts this product group to a condition product group. 
 
@@ -100,7 +100,7 @@ Casts this product group to a custom label product group.
 [ProductCustomLabel](./ProductCustomLabel.md)|Contains the methods used to access the product group's properties.
 
 
-## <a id="asItemId"></a>asItemId
+## <a id="asitemId"></a>asItemId
 
 Casts this product group to an item ID product group. 
 

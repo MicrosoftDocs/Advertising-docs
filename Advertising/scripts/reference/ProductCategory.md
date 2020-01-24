@@ -137,7 +137,7 @@ Gets this product group's maximum cost-per-click bid amount.
 double|The bid amount. Returns null if not set or this is a negative product group (`isExluded` is **true**).
 
 
-## <a id="getname"></a>getName
+## <a name="getname"></a>getName
 
 Gets the product's category name. 
 
