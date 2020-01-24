@@ -33,6 +33,7 @@ Example usage:
             // Other cases
         }
     }
+```
 
 ## Methods
 |Method Name|Return Type|Description|
