@@ -16,7 +16,7 @@ For information about changes that were included with each release, see the foll
 
 ## January 16, 2020
 
-Added support for product groups. The support is limited to enumerating product groups and updating bids.
+Added support for product groups. The support is limited to enumerating product groups and updating their bids. For examples, see [script examples](examples/product-groups.md).
 
 This change added following objects:
 
@@ -50,7 +50,7 @@ Added the following method to [Cammpaign](reference/Campaign.md):
 
 Added CampaignType as a possible column to the [AdGroupSelector](reference/AdGroupSelector.md) object's [withCondition](reference/AdGroupSelector.md#withcondition-string-condition-) method.
 
-Added CampaignType as a possible column to the [CampaignSelector](reference/CampaignSelector.md) object's [withCondition](reference/CampaignSelector.md#withcondition-string-condition-) method.
+Added Type as a possible column to the [CampaignSelector](reference/CampaignSelector.md) object's [withCondition](reference/CampaignSelector.md#withcondition-string-condition-) method.
 
 
 ## October 18, 2019
