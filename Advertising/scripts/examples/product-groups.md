@@ -66,12 +66,12 @@ function main() {
                 Logger.log(`Custom label value -> ${productGroup.asCustomLabel().getValue()}\n\n`);
                 break;
             }
-            case "ID": {
+            case "ITEM_ID": {
                 Logger.log(`Entity type: ${productGroup.asItemId().getEntityType()}`);
                 Logger.log(`Product item ID -> ${productGroup.asItemId().getValue()}\n\n`);
                 break;
             }
-            case "TYPE": {
+            case "PRODUCT_TYPE": {
                 Logger.log(`Entity type: ${productGroup.asProductType().getEntityType()}`);
                 Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
                 Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
@@ -148,12 +148,12 @@ function main() {
                     Logger.log(`Custom label value -> ${productGroup.asCustomLabel().getValue()}\n\n`);
                     break;
                 }
-                case "ID": {
+                case "ITEM_ID": {
                     Logger.log(`Entity type: ${productGroup.asItemId().getEntityType()}`);
                     Logger.log(`Product item ID -> ${productGroup.asItemId().getValue()}\n\n`);
                     break;
                 }
-                case "TYPE": {
+                case "PRODUCT_TYPE": {
                     Logger.log(`Entity type: ${productGroup.asProductType().getEntityType()}`);
                     Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
                     Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
