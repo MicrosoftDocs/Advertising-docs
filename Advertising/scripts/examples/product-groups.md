@@ -211,7 +211,7 @@ parent 4578503857653099
 
 ## Updating a product group's bid
 
-This example shows how to get product groups with a specific bid and update the bid amount. Remember not to update the bid in the iterator (see [Best practices](../concepts/best-practices.md#)).
+This example shows how to get product groups with a specific bid and update the bid amount. Because the selector is conditioned by bid, you should not to update the bid in the iterator (see [Best practices](../concepts/best-practices.md#)).
 
 The bid amount for product groups that are subdivided (those that have children), is null. If the condition's operator uses less than ('<') (for example, `.withCondition("Bid < 1.0")`), the iterator includes all product groups whose bid is set to null (which includes all subdivided product groups). To prevent this, use `.withCondition("Bid < 1.0").withCondition("Bid > 0.0")`.
 

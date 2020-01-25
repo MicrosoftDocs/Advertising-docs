@@ -159,7 +159,7 @@ Gets this product group's dimension.
 
 |Type|Description|
 |-|-
-String|This product group's dimension. Possible values are:<ul><li>ROOT mdash; The top of the tree</li><li>BRAND</li><li>CATEGORY</li><li>CONDITION</li><li>CUSTOM_LABEL</li><li>ITEM_ID</li><li>PRODUCT_TYPE</li></ul>
+String|This product group's dimension. Possible values are:<ul><li>ROOT &mdash; The top of the tree</li><li>BRAND</li><li>CATEGORY</li><li>CONDITION</li><li>CUSTOM_LABEL</li><li>ITEM_ID</li><li>PRODUCT_TYPE</li></ul>
 
 
 ## <a name="getentitytype"></a>getEntityType

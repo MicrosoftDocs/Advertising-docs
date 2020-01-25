@@ -47,6 +47,7 @@ The following is the list of iterators.
 - [CampaignIterator](../reference/CampaignIterator.md)
 - [KeywordIterator](../reference/KeywordIterator.md)
 - [NegativeKeywordListIterator](../reference/NegativeKeywordListIterator.md)
+- [ProductGroupIterator](../reference/ProductGroupIterator.md)
 
 ### Next steps
 

@@ -75,6 +75,7 @@ The following is the list of selectors.
 - [CampaignSelector](../reference/CampaignSelector.md)
 - [KeywordSelector](../reference/KeywordSelector.md)
 - [NegativeKeywordListSelector](../reference/NegativeKeywordListSelector.md)
+- [ProductGroupSelector](../reference/ProductGroupSelector.md)
 
 
 ### Next steps
