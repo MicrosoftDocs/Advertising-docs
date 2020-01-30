@@ -34,7 +34,7 @@ Defines a postal address.
 |-----------|---------------|-------------|
 |<a name="businessname"></a>BusinessName|The legal business name, which can contain a maximum of 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="city"></a>City|The city, which can contain a maximum of 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
-|<a name="countrycode"></a>CountryCode|The country/region code. For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
+|<a name="countrycode"></a>CountryCode|The country/region code. For possible values e.g., "US", see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="id"></a>Id|The system generated identifier of the address object.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="line1"></a>Line1|The first line of the address, which can contain a maximum of 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="line2"></a>Line2|The second line of the address, which can contain a maximum of 35 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|

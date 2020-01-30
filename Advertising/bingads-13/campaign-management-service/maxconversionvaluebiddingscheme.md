@@ -13,7 +13,7 @@ Reserved for future use.
 ```xml
 <xs:complexType name="MaxConversionValueBiddingScheme" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q1:BiddingScheme" xmlns:q1="https://bingads.microsoft.com/CampaignManagement/v13">
+    <xs:extension base="tns:BiddingScheme">
       <xs:sequence>
         <xs:element minOccurs="0" name="TargetRoas" nillable="true" type="xs:double" />
       </xs:sequence>
@@ -41,5 +41,5 @@ The [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V13  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v13  
 

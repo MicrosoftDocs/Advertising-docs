@@ -46,6 +46,8 @@ var bulkSitelinkAdExtension = new BulkSitelinkAdExtension
         Description1 = "Simple & Transparent.",
         // 'Sitelink Extension Description2' column header in the Bulk file
         Description2 = "No Upfront Cost.",
+        // 'Device Preference' column header in the Bulk file
+        DevicePreference = null,
         // 'Text' column header in the Bulk file
         DisplayText = "Women's Shoe Sale",
         // 'Destination Url' column header in the Bulk file
@@ -165,8 +167,8 @@ The possible values of *StartMinute* and *EndMinute* range from 00 to 60.
 
 The following example demonstrates day and time ranges during weekdays from 9:00AM through 9:00PM: *(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00])*
 
-**Add:** Optional. If you do not set this field, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
+**Add:** Optional. If you do not set this field, the ad extension will be eligible for scheduling anytime during the calendar [start](#startdate) and [end](#enddate) dates.  
+**Update:** Optional. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -195,7 +197,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="devicepreference"></a>Device Preference
@@ -208,7 +210,7 @@ The default value is *All*.
 In the bulk download and upload results file, this field will never be empty. If you did not specify a device preference, the default value of *All* will be returned.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
+**Update:** Optional. If no value is set or if you set this field to the *delete_value* string, then you are effectively resetting to the default value of *All*.    
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location
@@ -255,8 +257,8 @@ The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
 The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
-**Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Add:** Optional. If you do not specify an end date, the ad extension will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
+**Update:** Optional. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you set this field to the *delete_value* string, then you are effectively removing the end date. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.      
 **Delete:** Read-only  
 
 ## <a name="finalurl"></a>Final Url
@@ -276,10 +278,8 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 
 - If you specify Final Mobile URLs, you must also specify Final Url.
 
-Also note that  if the *Tracking Template* or *Custom Parameter* fields are set, then the *Final Url* is required.
-
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Add:** Required  
+**Update:** Required  
 **Delete:** Read-only  
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
@@ -289,7 +289,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 > This feature is only available for customers in the Final URL Suffix Phase 3 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 636). If you are not in the pilot this property will be ignored and no error will be returned.  
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Update:** Optional. If no value is set for the update, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -317,7 +317,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 Also note that you may not specify *Mobile Final Url* if the *Device Preference* is set to *Mobile*.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -354,10 +354,10 @@ The site link description line 1.
 The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 > [!NOTE]
-> If you specify *Sitelink Extension Description1* then *Sitelink Extension Description2* is required.
+> If you specify [Sitelink Extension Description1](#sitelinkextensiondescription1) then [Sitelink Extension Description2](#sitelinkextensiondescription2) is required.
 
-**Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="sitelinkextensiondescription2"></a>Sitelink Extension Description2
@@ -366,10 +366,10 @@ The site link description line 2.
 The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 > [!NOTE]
-> If you specify *Sitelink Extension Description2* then *Sitelink Extension Description1* is required.
+> If you specify [Sitelink Extension Description2](#sitelinkextensiondescription2) then [Sitelink Extension Description1](#sitelinkextensiondescription1) is required.
 
-**Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="sitelinkextensiondestinationurl"></a>Sitelink Extension Destination Url
@@ -380,19 +380,19 @@ The URL can contain dynamic parameters such as {MatchType}. For a list of suppor
 The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.
 
 > [!IMPORTANT]
-> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+> If you are currently using Destination URLs, you must replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
 
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Add:** Not allowed. The destination URL is deprecated, and instead you must set the [Final Url](#finalurl) field.  
+**Update:** Optional. The destination URL is deprecated, and instead you must set the [Final Url](#finalurl) field. You can either leave this field empty or set it to the *delete_value* string.   
 **Delete:** Read-only  
 
 ## <a name="sitelinkextensionlinktext"></a>Sitelink Extension Link Text
 The site-link text displayed in the ad.
 
-If you specify *Sitelink Extension Description1* or *Sitelink Extension Description2* then the display text can contain a maximum of 25 characters; otherwise, the display text can contain a maximum of 35 characters. If any Traditional Chinese characters are included, the limits are 11 characters given *Sitelink Extension Description1* or *Sitelink Extension Description2*, and 15 characters otherwise. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
+If you specify [Sitelink Extension Description1](#sitelinkextensiondescription1) or [Sitelink Extension Description2](#sitelinkextensiondescription2) then the display text can contain a maximum of 25 characters; otherwise, the display text can contain a maximum of 35 characters. If any Traditional Chinese characters are included, the limits are 11 characters given [Sitelink Extension Description1](#sitelinkextensiondescription1) or [Sitelink Extension Description2](#sitelinkextensiondescription2), and 15 characters otherwise. Each Traditional Chinese character countes as two characters and each English character will count only as one character.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="startdate"></a>Start Date
@@ -400,8 +400,8 @@ The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
 The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
-**Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
+**Add:** Optional. If you do not specify a start date, the ad extension is immediately eligible to be [scheduled](#adschedule).  
+**Update:** Optional. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you set this field to the *delete_value* string, then you are effectively removing the start date and the ad extension is immediately eligible to be [scheduled](#adschedule). The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -427,7 +427,7 @@ The following validation rules apply to tracking templates. For more details abo
 - Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="usesearchertimezone"></a>Use Searcher Time Zone
@@ -436,7 +436,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If you set this field to the *delete_value* string, then you are effectively resetting to the default value of *FALSE*. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

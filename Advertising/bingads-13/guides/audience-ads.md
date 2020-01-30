@@ -71,7 +71,7 @@ For feed-based Audience Ads in the Microsoft Audience Network you'll create an A
 > For details about feed-based product ads via Microsoft Shopping Campaigns in the Microsoft Advertising Network, see [Product Ads](product-ads.md). 
 
 1. Set up the customer's Microsoft Merchant Center store. In the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.ads.microsoft.com/#apex/3/en/51084/1).
-2. Create a [product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1-500) or the [Microsoft Advertising Content API](/advertising/shopping-content/index).
+2. Create a [product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1-500) or the [Content API](/advertising/shopping-content/index).
 3. Get your Microsoft Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center** to access your store details.
 4. Create the Campaign
    - The CampaignType must be set to Audience.

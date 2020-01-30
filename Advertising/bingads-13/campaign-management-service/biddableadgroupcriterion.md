@@ -77,7 +77,7 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 
 On update, to remove the destination URL, set it to an empty string (*""*). If you leave the element null it will not be updated.
 
-The destination URL is used if specified; otherwise, the destination URL is determined by the corresponding value of the 'Link' that you specified  for the product offer in your Microsoft Merchant Center catalog.
+The destination URL is used if specified; otherwise, the destination URL is determined by the corresponding value of the 'Link' that you specified for the product offer in your Microsoft Merchant Center catalog.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.  
