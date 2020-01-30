@@ -237,8 +237,8 @@ The possible values of *StartMinute* and *EndMinute* range from 00 to 60.
 
 The following example demonstrates day and time ranges during weekdays from 9:00AM through 9:00PM: *(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00])*
 
-**Add:** Optional. If you do not set this field, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
+**Add:** Optional. If you do not set this field, the ad extension will be eligible for scheduling anytime during the calendar [start](#startdate) and [end](#enddate) dates.  
+**Update:** Optional. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -256,7 +256,7 @@ The supported currency codes are ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, DKK, EU
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="customparameter"></a>Custom Parameter
@@ -278,7 +278,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location
@@ -325,8 +325,8 @@ The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
 The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
-**Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Add:** Optional. If you do not specify an end date, the ad extension will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
+**Update:** Optional. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you set this field to the *delete_value* string, then you are effectively removing the end date. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.      
 **Delete:** Read-only  
 
 ## <a name="finalmobileurl"></a>Final Mobile Url (1-8)
@@ -349,7 +349,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="finalurl"></a>Final Url (1-8)
@@ -375,8 +375,8 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Add:** Required  
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="header"></a>Header (1-8)
@@ -387,7 +387,7 @@ The bulk file includes up to 8 header columns, i.e., one for each price table it
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
@@ -397,7 +397,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 > This feature is only available for customers in the Final URL Suffix Phase 3 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 636). If you are not in the pilot this property will be ignored and no error will be returned. 
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Update:** Optional. If no value is set for the update, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -413,7 +413,7 @@ The language for the ad copy of your price ad extension.
 For possible values, see [Ad Languages](../guides/ad-languages.md).
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.   
+**Update:** Required   
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -443,7 +443,7 @@ The bulk file includes up to 8 price columns, i.e., one for each price table ite
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
   
 ## <a name="pricedescription"></a>Price Description (1-8)
@@ -454,7 +454,7 @@ The bulk file includes up to 8 price description columns, i.e., one for each pri
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="priceextensiontype"></a>Price Extension Type
@@ -463,7 +463,7 @@ The type of the price ad extension.
 Possible values include: *Brands*, *Events*, *Locations*, *Neighborhoods*, *ProductCategories*, *ProductTiers*, *ServiceCategories*, *Services*, *ServiceTiers*, and *Unknown*. (Unknown is reserved for future use and cannot be set.)
 
 **Add:** Required  
-**Update:** Read-only   
+**Update:** Required   
 **Delete:** Read-only  
 
 ## <a name="pricequalifier"></a>Price Qualifier (1-8)
@@ -476,7 +476,7 @@ The bulk file includes up to 8 price qualifier columns, i.e., one for each price
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="priceunit"></a>Price Unit (1-8)
@@ -489,7 +489,7 @@ The bulk file includes up to 8 price unit columns, i.e., one for each price tabl
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="publishercountries"></a>Publisher Countries
@@ -506,8 +506,8 @@ The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
 The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
-**Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
+**Add:** Optional. If you do not specify a start date, the ad extension is immediately eligible to be [scheduled](#adschedule).  
+**Update:** Optional. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you set this field to the *delete_value* string, then you are effectively removing the start date and the ad extension is immediately eligible to be [scheduled](#adschedule). The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -533,7 +533,7 @@ The following validation rules apply to tracking templates. For more details abo
 - Microsoft Advertising does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="usesearchertimezone"></a>Use Searcher Time Zone
@@ -542,7 +542,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If you set this field to the *delete_value* string, then you are effectively resetting to the default value of *FALSE*. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

@@ -132,8 +132,8 @@ The possible values of *StartMinute* and *EndMinute* range from 00 to 60.
 
 The following example demonstrates day and time ranges during weekdays from 9:00AM through 9:00PM: *(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00])*
 
-**Add:** Optional. If you do not set this field, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
+**Add:** Optional. If you do not set this field, the ad extension will be eligible for scheduling anytime during the calendar [start](#startdate) and [end](#enddate) dates.  
+**Update:** Optional. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -187,8 +187,8 @@ The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
 The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
-**Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Add:** Optional. If you do not specify an end date, the ad extension will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
+**Update:** Optional. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you set this field to the *delete_value* string, then you are effectively removing the end date. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.      
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -201,8 +201,8 @@ The system generated identifier of the ad extension.
 ## <a name="isexact"></a>Is Exact
 Determines whether the review text is an exact quote or paraphrased. If not specified, the default value of *FALSE* indicates that the review text is paraphrased from the source. If set to *TRUE*, the review text will be surrounded automatically with quotation marks when displayed with the ad.
 
-**Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -239,7 +239,7 @@ The review source name.
 The combined length of the *Source* and *Text* strings must not exceed 67 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="startdate"></a>Start Date
@@ -247,8 +247,8 @@ The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
 The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
-**Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
+**Add:** Optional. If you do not specify a start date, the ad extension is immediately eligible to be [scheduled](#adschedule).  
+**Update:** Optional. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you set this field to the *delete_value* string, then you are effectively removing the start date and the ad extension is immediately eligible to be [scheduled](#adschedule). The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -269,7 +269,7 @@ The combined length of the *Source* and *Text* strings must not exceed 67 charac
 > Do not surround the text with quotation marks. If the *Is Exact* field is set to *TRUE*, the review text will be surrounded automatically with quotation marks when displayed with the ad.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="url"></a>Url
@@ -280,7 +280,7 @@ The Url must begin with either the *http://* or *https://* prefix.
 The length of this string is limited to 2,048 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Required    
 **Delete:** Read-only  
 
 ## <a name="usesearchertimezone"></a>Use Searcher Time Zone
@@ -289,7 +289,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If you set this field to the *delete_value* string, then you are effectively resetting to the default value of *FALSE*. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version
