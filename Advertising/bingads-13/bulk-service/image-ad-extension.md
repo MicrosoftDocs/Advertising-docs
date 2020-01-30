@@ -97,7 +97,7 @@ Alternative description of the image media for usability. If the image could not
 The maximum length for this element is 35 characters.
 
 **Add:** Required  
-**Update:** Required    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -117,8 +117,8 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 > [!NOTE]
 > If the URL is not specified for the image ad extension, the URL of the ad is used.
 
-**Add:** Required  
-**Update:** Required    
+**Add:** Optional  
+**Update:** Optional    
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location

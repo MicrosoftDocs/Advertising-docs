@@ -70,7 +70,7 @@ The access token represents the user credentials who has access to one or more M
 ## Brand
 
 ### Q. Will Bing Ads API be rebranded along with the Microsoft Advertising platform?
-Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. To avoid any friction for clients onboarding to Bing Ads API version 13 during calendar year 2019, there are no plans to rebrand any of the current API versions. The table below lists names that either have or haven't changed. For more information please see the [brand announcement](https://go.microsoft.com/fwlink/?linkid=2087052&s_cid=nowmsa_devportal). 
+Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. There are no plans to rebrand any of the current API versions. The table below lists names that either have or haven't changed. For more information please see the [brand announcement](https://go.microsoft.com/fwlink/?linkid=2087052&s_cid=nowmsa_devportal). 
 
 |Previous Name|Current Name|
 |---------------|---------------|
