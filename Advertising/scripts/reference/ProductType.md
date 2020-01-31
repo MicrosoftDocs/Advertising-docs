@@ -47,7 +47,7 @@ Example usage:
 [getMaxCpc](#getmaxcpc)|double|Gets the maximum cost-per-click bid amount for this product group.
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this product group.
 [getType](#gettype)|string|Gets the product's type.
-[getValue](#getvalue)|string|Gets this product group's value.
+[getValue](#getvalue)|string|Gets the product type's value.
 [isExcluded](#isexcluded)|Boolean|Gets a Boolean value that determines whether this product group is excluded.
 [isOtherCase](#isothercase)|Boolean|Gets a Boolean value that determines whether this product group represents all other cases not represented by its sibling product group.
 [parent](#parent)|[ProductGroup](./ProductGroup.md)|Gets this product group's parent product group.

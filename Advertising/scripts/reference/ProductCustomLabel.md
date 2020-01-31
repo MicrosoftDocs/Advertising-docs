@@ -46,8 +46,8 @@ Example usage:
 [getId](#getid)|string|Gets the ID that uniquely identifies this product group.
 [getMaxCpc](#getmaxcpc)|double|Gets the maximum cost-per-click bid amount for this product group.
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this product group.
-[getType](#gettype)|string|Gets the product's custom label.
-[getValue](#getvalue)|string|Gets this product group's value.
+[getType](#gettype)|string|Gets the product's custom label type.
+[getValue](#getvalue)|string|Gets the custom label's value.
 [isExcluded](#isexcluded)|Boolean|Gets a Boolean value that determines whether this product group is excluded.
 [isOtherCase](#isothercase)|Boolean|Gets a Boolean value that determines whether this product group represents all other cases not represented by its sibling product group.
 [parent](#parent)|[ProductGroup](./ProductGroup.md)|Gets this product group's parent product group.
@@ -164,13 +164,13 @@ string|The product group's tracking template.
 
 ## <a name="gettype"></a>getType
 
-Gets the product's custom label. 
+Gets the product's custom label type. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-String|The product's custom label. The label matches if CustomLabel0 through CustomLabel4 specifies it.
+String|The product's custom label type. For example, CustomLabel0 through CustomLabel4.
 
 
 ## <a name="getvalue"></a>getValue

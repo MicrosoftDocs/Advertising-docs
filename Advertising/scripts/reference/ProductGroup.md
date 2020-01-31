@@ -60,6 +60,9 @@ Example usage:
 
 Casts this product group to a brand product group. 
 
+> [!NOTE]
+> It's not necessary to cast the product group to a Brand product group to access the brand's value. You can access the brand's value by calling the [getValue](#getValue) method.
+
 ### Returns
 
 |Type|Description|
@@ -70,6 +73,9 @@ Casts this product group to a brand product group.
 ## <a id="ascategory"></a>asCategory
 
 Casts this product group to a category product group. 
+
+> [!NOTE]
+> It's not necessary to cast the product group to a Category product group to access the category's value. You can access the category's value by calling the [getValue](#getValue) method.
 
 ### Returns
 
@@ -82,6 +88,9 @@ Casts this product group to a category product group.
 
 Casts this product group to a condition product group. 
 
+> [!NOTE]
+> It's not necessary to cast the product group to a Condition product group to access the condition's value. You can access the condition's value by calling the [getValue](#getValue) method.
+
 ### Returns
 
 |Type|Description|
@@ -92,6 +101,9 @@ Casts this product group to a condition product group.
 ## <a id="ascustomlabel"></a>asCustomLabel
 
 Casts this product group to a custom label product group. 
+
+> [!NOTE]
+> It's not necessary to cast the product group to a CustomLabel product group to access the label's value. You can access the label's value by calling the [getValue](#getValue) method. You only need to cast the product group to CustomLabel if you need to know which label type the value is for. For example, custom label 0 through 4.
 
 ### Returns
 
@@ -104,6 +116,9 @@ Casts this product group to a custom label product group.
 
 Casts this product group to an item ID product group. 
 
+> [!NOTE]
+> It's not necessary to cast the product group to an ItemId product group to access the ID's value. You can access the ID's value by calling the [getValue](#getValue) method.
+
 ### Returns
 
 |Type|Description|
@@ -114,6 +129,9 @@ Casts this product group to an item ID product group.
 ## <a id="asproducttype"></a>asProductType
 
 Casts this product group to a product type product group. 
+
+> [!NOTE]
+> It's not necessary to cast the product group to a ProductType product group to access the type's value. You can access the type's value by calling the [getValue](#getValue) method. You only need to cast the product group to ProductType if you need to know which type the value is for. For example, PRODUCT_TYPE_L1, etc.
 
 ### Returns
 

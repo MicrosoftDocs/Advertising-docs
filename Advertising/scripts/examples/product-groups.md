@@ -17,7 +17,7 @@ The following sections show examples of scripts that get product groups and upda
 
 ## Getting product groups
 
-To get all product groups in an account, use the [AdsApp.productGroups()](../reference/AdsApp.md#productgroups) method. By default, the selector returns the product groups in order by product group IDs.
+To get all product groups in an account, use the [AdsApp.productGroups()](../reference/AdsApp.md#productgroups) method. 
 
 ```javascript
 function main() {
@@ -46,33 +46,33 @@ function main() {
                 break;
             }
             case "CATEGORY": {
-                Logger.log(`Entity type: ${productGroup.asCategory().getEntityType()}`);
-                Logger.log(`Category name -> ${productGroup.asCategory().getName()}\n\n`);
+                Logger.log(`Category name -> ${productGroup.getName()}\n\n`);
                 break;
             }
             case "BRAND": {
-                Logger.log(`Entity type: ${productGroup.asBrand().getEntityType()}`);
-                Logger.log(`Brand name -> ${productGroup.asBrand().getName()}\n\n`);
+                Logger.log(`Brand name -> ${productGroup.getName()}\n\n`);
                 break;
             }
             case "CONDITION": {
-                Logger.log(`Entity type: ${productGroup.asCondition().getEntityType()}`);
-                Logger.log(`Condition name -> ${productGroup.asCondition().getCondition()}\n\n`);
+                Logger.log(`Condition name -> ${productGroup.getCondition()}\n\n`);
                 break;
             }
             case "CUSTOM_LABEL": {
-                Logger.log(`Entity type: ${productGroup.asCustomLabel().getEntityType()}`);
-                Logger.log(`Custom label name -> ${productGroup.asCustomLabel().getType()}`);
-                Logger.log(`Custom label value -> ${productGroup.asCustomLabel().getValue()}\n\n`);
+                // It's only necessary to cast the product group to a CustomLabel product
+                // group if you need to get the label's name (i.e., CustomLabel0).
+                var customLabel = productGroup.asCustomLabel();
+                Logger.log(`Custom label name -> ${customLabel.getType()}`);
+                Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
                 break;
             }
             case "ITEM_ID": {
-                Logger.log(`Entity type: ${productGroup.asItemId().getEntityType()}`);
-                Logger.log(`Product item ID -> ${productGroup.asItemId().getValue()}\n\n`);
+                Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
                 break;
             }
             case "PRODUCT_TYPE": {
-                Logger.log(`Entity type: ${productGroup.asProductType().getEntityType()}`);
+                // It's only necessary to cast the product group to a ProductType product
+                // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
+                var customLabel = productGroup.asCustomLabel();
                 Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
                 Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
                 break;
@@ -93,13 +93,6 @@ function main() {
         .get();  
     
     Logger.log(`shoppingAdGroups selector returned ${shoppingAdGroups.totalNumEntities()} ad groups that matched the selector's conditions`);
-
-    // Option 2 for getting all shopping ad groups
-    var shoppingAdGroups2 = AdsApp.adGroups()
-        .withCondition('CampaignType = SHOPPING')
-        .get()
-
-    Logger.log(`adGroup selector returned ${shoppingAdGroups2.totalNumEntities()} ad groups that matched the selector's conditions\n\n`);
 
     while (shoppingAdGroups.hasNext()) {
         var adGroup = shoppingAdGroups.next();
@@ -127,38 +120,38 @@ function main() {
                     Logger.log("\n");
                     break;
                 }
-                case "CATEGORY": {
-                    Logger.log(`Entity type: ${productGroup.asCategory().getEntityType()}`);
-                    Logger.log(`Category name -> ${productGroup.asCategory().getName()}\n\n`);
-                    break;
-                }
-                case "BRAND": {
-                    Logger.log(`Entity type: ${productGroup.asBrand().getEntityType()}`);
-                    Logger.log(`Brand name -> ${productGroup.asBrand().getName()}\n\n`);
-                    break;
-                }
-                case "CONDITION": {
-                    Logger.log(`Entity type: ${productGroup.asCondition().getEntityType()}`);
-                    Logger.log(`Condition name -> ${productGroup.asCondition().getCondition()}\n\n`);
-                    break;
-                }
-                case "CUSTOM_LABEL": {
-                    Logger.log(`Entity type: ${productGroup.asCustomLabel().getEntityType()}`);
-                    Logger.log(`Custom label name -> ${productGroup.asCustomLabel().getType()}`);
-                    Logger.log(`Custom label value -> ${productGroup.asCustomLabel().getValue()}\n\n`);
-                    break;
-                }
-                case "ITEM_ID": {
-                    Logger.log(`Entity type: ${productGroup.asItemId().getEntityType()}`);
-                    Logger.log(`Product item ID -> ${productGroup.asItemId().getValue()}\n\n`);
-                    break;
-                }
-                case "PRODUCT_TYPE": {
-                    Logger.log(`Entity type: ${productGroup.asProductType().getEntityType()}`);
-                    Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
-                    Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
-                    break;
-                }
+            case "CATEGORY": {
+                Logger.log(`Category name -> ${productGroup.getName()}\n\n`);
+                break;
+            }
+            case "BRAND": {
+                Logger.log(`Brand name -> ${productGroup.getName()}\n\n`);
+                break;
+            }
+            case "CONDITION": {
+                Logger.log(`Condition name -> ${productGroup.getCondition()}\n\n`);
+                break;
+            }
+            case "CUSTOM_LABEL": {
+                // It's only necessary to cast the product group to a CustomLabel product
+                // group if you need to get the label's name (i.e., CustomLabel0).
+                var customLabel = productGroup.asCustomLabel();
+                Logger.log(`Custom label name -> ${customLabel.getType()}`);
+                Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
+                break;
+            }
+            case "ITEM_ID": {
+                Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
+                break;
+            }
+            case "PRODUCT_TYPE": {
+                // It's only necessary to cast the product group to a ProductType product
+                // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
+                var customLabel = productGroup.asCustomLabel();
+                Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
+                Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
+                break;
+            }
             }
         }
     }
@@ -211,16 +204,17 @@ parent 4578503857653099
 
 ## Updating a product group's bid
 
-This example shows how to get product groups with a specific bid and update the bid amount. Because the selector is conditioned by bid, you should not to update the bid in the iterator (see [Best practices](../concepts/best-practices.md#)).
+Typically, you want to increase bids when performance is bad and decrease bids when performance is good. This example shows how to get product groups that are performing poorly and increase their bid amount. (This example uses clicks and conversion rates to determine poorly performing groups but you should use the metrics and thresholds that are appropriate for you.)
 
-The bid amount for product groups that are subdivided (those that have children), is null. If the condition's operator uses less than ('<') (for example, `.withCondition("Bid < 1.0")`), the iterator includes all product groups whose bid is set to null (which includes all subdivided product groups). To prevent this, use `.withCondition("Bid < 1.0").withCondition("Bid > 0.0")`.
 
 ```javascript
 function main() {
     var shoppingAdGroup = AdsApp.shoppingAdGroups().withIds(["123456789"]).get().next();
 
     var productGroups = shoppingAdGroup.productGroups()
-        .withCondition("Bid = 1.0")
+        .withCondition("Clicks < 30")
+        .withCondition("ClickConversionRate < .25")
+        .forDateRange("LAST_MONTH")
         .get();
 
     Logger.log(`${productGroups.totalNumEntities()} product groups to update\n\n`);
