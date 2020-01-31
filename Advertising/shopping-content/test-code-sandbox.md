@@ -9,7 +9,7 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 # Testing your Code in Sandbox
-Microsoft Advertising does not provide a sandbox for the Content API where you can test your application before you deploy it to the production environment. 
+Microsoft does not provide a sandbox for Content API where you can test your application before you deploy it to the production environment. 
 
 However, you can use the following options to test your application in production without affecting live data. These options apply only to the [Product](products-resource.md) and [Inventory](inventory-resource.md) resources and not to the [Catalog](../shopping-content/catalogs-resource.md) resource.
 
