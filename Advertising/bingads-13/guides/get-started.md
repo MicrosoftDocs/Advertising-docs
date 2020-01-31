@@ -27,9 +27,10 @@ To authenticate in the production environment, you can follow either the [Live C
 1. Each Microsoft Advertising user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Microsoft Advertising account via the following `Get-Tokens-Production.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
 
     ```powershell
-    $clientId = "YourApplicationIdGoesHere"
+    # Replace the Tutorial Sample App ID with your registered application ID. 
+    $clientId = "6731de76-14a6-49ae-97bc-6eba6914391e"
 
-    Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=openid%20profile%20https://ads.microsoft.com/ads.manage%20offline_access&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&state=ClientStateGoesHere&prompt=consent"
+    Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=openid%20profile%20https://ads.microsoft.com/ads.manage%20offline_access&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&state=ClientStateGoesHere&prompt=login"
 
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
 
@@ -120,7 +121,7 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
     ```powershell
     $clientId = "db41b09d-6e50-4f4a-90ac-5a99caefb52f"
 
-    Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf"
+    Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf&prompt=login%20consent"
     
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
     
@@ -215,7 +216,7 @@ To use Bing Ads APIs, you must have a developer token and valid user credentials
 
 There are two types of Bing Ads API developer tokens. 
 - Universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. Starting in July 2019, this is the default token type.    
-- Single-user developer token can only be used to authenticate one user for access to one customer. This token type has been deprecated in favor of the universal token. If you still have a single user token your Super Admin can upgrade it to the universal type in the Account tab of the [Microsoft Advertising Developer Portal](https://developers.ads.microsoft.com/Account). 
+- Single-user developer token can only be used to authenticate one user for access to one customer. This token type has been deprecated in favor of the universal token. If you still have a single user token your Super Admin can upgrade it to the universal type in the Account tab of the [Developer Portal](https://developers.ads.microsoft.com/Account). 
 
 Regardless of the token type, a developer token enables programmatic access to the accounts permitted for a user. Obtaining a developer token for API access does not grant additional permissions to any Microsoft Advertising accounts. Each Microsoft Advertising user is assigned a role e.g., Super Admin or Advertiser Campaign Manager for every customer they can access. With a developer token the same accounts available in the Microsoft Advertising web application are available to the user programmatically through the API. 
 

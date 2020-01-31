@@ -148,7 +148,7 @@
     displayName: wsdl
   - name: Handling Service Errors and Exceptions
     href: ./handle-service-errors-exceptions.md
-    displayName: support help debug troubleshoot
+    displayName: support help debug troubleshoot Invalid Client Data AADSTS AADSTS50011 AADSTS650052 AADSTS700016
   - name: Campaigns
     items:
     - name: Overview
