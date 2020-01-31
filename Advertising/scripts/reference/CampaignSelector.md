@@ -145,7 +145,7 @@ Type|enumeration|The campaign's type. Possible case-sensitive values are: <ul><l
 BudgetType|enumeration|The campaign's budget type. Possible case-sensitive values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>`withCondition("BudgetType = 'STANDARD'")`
 DeliveryStatus|enumeration|The campaign's delivery status. Possible case-sensitive values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>`withCondition("DeliveryStatus NOT_IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`
 LabelNames|string set|A list of one or more case-sensitive label names. Use to get campaigns associated with the named labels.<br /><br />`withCondition("LabelNames  CONTAINS_ANY ['bar', 'foo']")`
-
+Type|enumeration|The campaign's type. Possible case-sensitive values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>This example returns only campaigns whose type is Shopping.<br /><br />`withCondition("CampaignType = SHOPPING")`
 
 
 ### Arguments

@@ -34,6 +34,7 @@ Contains the methods used to manage a [campaign](/advertising/guides/entity-hier
 [labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this campaign.
 [newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder used to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
+[productGroups](#productgroups)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter the list of product groups in this campaign.
 [remove](#remove)|void|Removes this campaign.
 [removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this campaign.
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
@@ -222,6 +223,17 @@ Pauses this campaign.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a id="productgroups"></a>productGroups
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of product groups in this campaign. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductGroupSelector](./ProductGroupSelector.md)|A selector used to filter the list of product groups in this campaign.
 
 
 ## <a name="remove"></a>remove

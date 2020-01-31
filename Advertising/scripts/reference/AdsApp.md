@@ -14,7 +14,7 @@ ms.topic: "article"
 This is the top-level object used to access and manage a single account.
 
 > [!NOTE]
-> This object replaces the [BingAdsApp](BingAdsApp.md) object. For the immediate future, Scripts will continue to support BingAdsApp for backwards compatibility; however, you're encouraged to update your scripts to use the new objects at your earliest convenience.
+> This object replaces the [BingAdsApp](BingAdsApp.md) object. For the immediate future, Scripts will continue to support BingAdsApp for backwards compatibility; however, you're encouraged to update your scripts to use this object at your earliest convenience.
 
 ## Methods
 
@@ -31,6 +31,9 @@ This is the top-level object used to access and manage a single account.
 [labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector used to filter the list of negative keyword lists in this account.
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder used to add a negative keyword list to this account.
+[productGroups](#productgroups)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter the list of product groups in this account.
+[shoppingAdGroups](#shoppingadgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a selector used to filter the list of ad groups used for shopping in this account.
+[shoppingCampaigns](#shoppingcampaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns used for shopping in this account.
 
 
 
@@ -163,6 +166,39 @@ Gets a [builder](../concepts/builders.md) used to add a negative keyword list to
 |Type|Description|
 |-|-
 [NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|A builder used to add a negative keyword list to the current account.
+
+
+## <a id="productgroups"></a>productGroups
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of product groups in this account. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductGroupSelector](./ProductGroupSelector.md)|A selector used to filter the list of product groups in the current account.
+
+
+## <a id="shoppingadgroups"></a>shoppingAdGroups
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups used for shopping in this account. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[AdGroupSelector](./AdGroupSelector.md)|A selector used to filter the list of ad groups used for shopping in the current account.
+
+
+## <a id="shoppingcampaigns"></a>shoppingCampaigns
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns used for shopping in this account. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns used for shopping in the current account.
 
 
 ## See also

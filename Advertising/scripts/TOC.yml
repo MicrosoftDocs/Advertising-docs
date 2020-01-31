@@ -61,6 +61,8 @@
       href: examples/campaigns.md 
     - name: Keywords
       href: examples/keywords.md 
+    - name: Product groups
+      href: examples/product-groups.md 
     - name: Labels
       href: examples/labels.md 
     - name: Using UrlFetchApp 
@@ -178,6 +180,24 @@
           href: ./reference/NegativeKeywordListOperation.md 
         - name: NegativeKeywordListSelector
           href: ./reference/NegativeKeywordListSelector.md 
+        - name: ProductBrand
+          href: ./reference/ProductBrand.md 
+        - name: ProductCategory
+          href: ./reference/ProductCategory.md 
+        - name: ProductCondition
+          href: ./reference/ProductCondition.md 
+        - name: ProductCustomLabel
+          href: ./reference/ProductCustomLabel.md 
+        - name: ProductGroup
+          href: ./reference/ProductGroup.md 
+        - name: ProductGroupIterator
+          href: ./reference/ProductGroupIterator.md 
+        - name: ProductGroupSelector
+          href: ./reference/ProductGroupSelector.md 
+        - name: ProductItemId
+          href: ./reference/ProductItemId.md 
+        - name: ProductType
+          href: ./reference/ProductType.md 
         - name: Stats
           href: ./reference/Stats.md 
     - name: Multi-accounts

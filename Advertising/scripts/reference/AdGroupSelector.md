@@ -146,6 +146,7 @@ CampaignName|string|The campaign's name.<br /><br />`withCondition("CampaignName
 KeywordMaxCpc|double|The ad group's CPC bid. The bid is in the account's currency.<br /><br />`withCondition("KeywordMaxCpc > 5.0")`
 CampaignStatus|enumeration|The campaign's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ad groups whose parent campaign is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
 LabelNames|string set|A list of one or more case-sensitive label names. Use to get ad groups associated with the named labels.<br /><br />`withCondition("LabelNames  CONTAINS_ANY ['bar', 'foo']")`
+CampaignType|enumeration|The campaign's type. Possible case-sensitive values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>This example returns only ad groups whose parent campaign's type is Shopping.<br /><br />`withCondition("CampaignType = SHOPPING")`
 
 
 ### Arguments
