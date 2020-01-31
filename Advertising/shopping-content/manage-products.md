@@ -136,7 +136,7 @@ All other fields are considered optional; however, you should specify as many as
 > [!NOTE]
 > The `Product` object must include only fields that are set to values. Do not include null fields in the `Product` object. For example, do not include `"adult":null`.
 
-Microsoft Advertising does not use all the `Product` fields. For a list of fields that the API accepts but does not use, see [What Google attributes can I use?](https://help.ads.microsoft.com/#apex/3/en/51111/1-500) All the other fields used by Microsoft Advertising are used to filter the products when serving product ads. 
+Microsoft does not use all the `Product` fields. For a list of fields that the API accepts but does not use, see [What Google attributes can I use?](https://help.ads.microsoft.com/#apex/3/en/51111/1-500) All the other fields used by Microsoft are used to filter the products when serving product ads. 
 
 If you specify a field that is unknown to the Content API, the service ignores the field.  
 

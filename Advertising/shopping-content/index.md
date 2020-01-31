@@ -11,8 +11,7 @@ ms.author: "scottwhi"
 
 # Content API Overview
 
-Microsoft Advertising Content API is a RESTful API that lets advertisers programmatically 
-manage their [Microsoft Merchant Center](https://help.ads.microsoft.com/#apex/3/en/51083/1) catalogs. Content API is an alternative to managing your catalog using the Microsoft Merchant Center web page or by using FTP. Content API has the following advantages:
+Content API is a RESTful API that lets advertisers programmatically manage their [Microsoft Merchant Center](https://help.ads.microsoft.com/#apex/3/en/51083/1) catalogs. Content API is an alternative to managing your catalog using the Microsoft Merchant Center web page or by using FTP. Content API has the following advantages:
 
 -   Provides the ability to update product offers incrementally rather than uploading the entire data feed. Being able to update a subset of your products is more efficient than having to upload the entire feed by using FTP.
 
@@ -43,12 +42,12 @@ If your catalog is small, or you have a limited ability to integrate with your i
 
 |Topic|Description|
 |---------|---------------|
-|[Release Notes](../shopping-content/release-notes.md)|Describes changes to the Microsoft Advertising Content API for each release.|
-|[Get Started](../shopping-content/get-started.md)|Provides the steps for getting started using the Microsoft Advertising Content API.|
+|[Release Notes](../shopping-content/release-notes.md)|Describes the changes to Content API for each release.|
+|[Get Started](../shopping-content/get-started.md)|Provides the steps for getting started using Content API.|
 |[Testing your Code in Sandbox](../shopping-content/test-code-sandbox.md)|Provides options for testing your app before releasing it into production.|
-|[API Best Practices](../shopping-content/api-best-practices.md)|Provides best practices for using the Microsoft Advertising Content API.|
+|[API Best Practices](../shopping-content/api-best-practices.md)|Provides best practices for using Content API.|
 |[Managing your Products](../shopping-content/manage-products.md)|Provides details for how to use the [Products](../shopping-content/products-resource.md) resource to add, get, update, and delete product offers.|
 |[Managing your Catalogs](../shopping-content/manage-catalogs.md)|Provides details for how to use the [Catalogs](../shopping-content/catalogs-resource.md) resource to add, get, update, and delete API enabled catalogs.|
 |[How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)|Provides details for how to use the [Status](../shopping-content/catalogs-resource.md) resource to get the status of product offers in a catalog.|
-|[Code Examples](../shopping-content/code-examples.md)|Provides C# code examples that show how to use Microsoft Advertising Content API resources.|
-|[Content API Reference](../shopping-content/reference.md)|Provides details about the programming elements of the Microsoft Advertising Content API.|
+|[Code Examples](../shopping-content/code-examples.md)|Provides C# code examples that show how to use Content API resources.|
+|[Content API Reference](../shopping-content/reference.md)|Provides details about the programming elements of Content API.|

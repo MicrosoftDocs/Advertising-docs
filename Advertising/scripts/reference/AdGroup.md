@@ -35,7 +35,9 @@ Contains the methods used to manage an [ad group](/advertising/guides/entity-hie
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder used to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
+[productGroups](#productgroups)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter the list of product groups in this ad group.
 [removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad group.
+[rootProductGroup](#rootproductgroup)|[ProductGroup](./ProductGroup.md)|Gets the root product group for this ad group.
 [setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
@@ -231,6 +233,17 @@ Pauses this ad group.
 void|Returns nothing.
 
 
+## <a id="productgroups"></a>productGroups
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of product groups in this ad group. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductGroupSelector](./ProductGroupSelector.md)|A selector used to filter the list of product groups in this ad group.
+
+
 ## <a name="removelabel-string-name-"></a>removeLabel(string name)
 Removes the label from the ad group.
 
@@ -243,6 +256,17 @@ name|string|The label's case-sensitive name. To get a list of labels associated 
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a id="rootproductgroup"></a>rootProductGroup
+
+Gets the root product group in this ad group. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductGroup](./ProductGroup.md)|The root product group in this ad group. Returns null if the ad group doesn't contain product groups.
 
 
 ## <a name="setenddate-string-enddate-"></a>setEndDate(string endDate)

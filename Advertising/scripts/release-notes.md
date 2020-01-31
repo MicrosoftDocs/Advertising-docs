@@ -13,6 +13,46 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+
+## January 16, 2020
+
+Added support for product groups. The support is limited to enumerating product groups and updating their bids. For examples, see [script examples](examples/product-groups.md).
+
+This change added following objects:
+
+- [ProductGroup](reference/ProductGroup.md)
+- [ProductGroupIterator](reference/ProductGroupIterator.md)
+- [ProductGroupSelector](reference/ProductGroupSelector.md)
+
+Added the following object that derive from [ProductGroup](reference/ProductGroup.md):
+
+- [ProductBrand](reference/ProductBrand.md)
+- [ProductCategory](reference/ProductCategory.md)
+- [ProductCondition](reference/ProductCondition.md)
+- [ProductCustomLabel](reference/ProductCustomLabel.md)
+- [ProductItemId](reference/ProductItemId.md)
+- [ProductType](reference/ProductType.md)
+
+Added the following methods to [AdsApp](reference/AdsApp.md):
+
+- [productGroups](reference/AdsApp.md#productgroups)
+- [shoppingAdGroups](reference/AdsApp.md#shoppingadgroups)
+- [shoppingCampaigns](reference/AdsApp.md#shoppingcampaigns)
+
+Added the following methods to [AdGroup](reference/AdGroup.md):
+
+- [productGroups](reference/AdGroup.md#productgroups)
+- [rootProductGroup](reference/AdGroup.md#rootproductgroup)
+
+Added the following method to [Cammpaign](reference/Campaign.md):
+
+- [productGroups](reference/Campaign.md#productgroups)
+
+Added CampaignType as a possible column to the [AdGroupSelector](reference/AdGroupSelector.md) object's [withCondition](reference/AdGroupSelector.md#withcondition-string-condition-) method.
+
+Added Type as a possible column to the [CampaignSelector](reference/CampaignSelector.md) object's [withCondition](reference/CampaignSelector.md#withcondition-string-condition-) method.
+
+
 ## October 18, 2019
 
 Added the `Id` column to the `withCondition()` method of the [AdSelector](reference/AdSelector.md) and [KeywordSelector](reference/KeywordSelector.md) objects. You can use this column to check for ads or keywords with IDs greater than the specified ID (for example, `withCondition('Id > 1234')`).
