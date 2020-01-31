@@ -25,13 +25,6 @@ The following is a documentation-only change.
 - Added the [Request and method call limits](request-method-limits.md) topic, which suggests limits for HTTP requests and batch method calls.
 
 
-## April 30, 2019
-
-The following is a documentation-only change.
-
-- Bing Ads is now Microsoft Advertising. Our new name reflects how we're growing our advertising solutions to help you reach more customers. All references to the Bing Ads platform in the documentation were changed to Microsoft Advertising. The brand change does not affect the API at this time. For example, all endpoints remain unchanged.  
-
-
 ## November 9 2018
 
 This release includes the following changes:
