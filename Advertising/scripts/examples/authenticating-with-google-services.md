@@ -15,8 +15,8 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 
 For information about getting credentials, see the following Google documents:
 
-[Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2)
-[Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en)
+- [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2)
+- [Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en)
 
 
 ## <a name="option1"></a>Getting an access token from Google OAuth playground
@@ -27,11 +27,11 @@ For information about getting credentials, see the following Google documents:
 If you just want to get a short-lived access token to run or test a script, follows these steps:
 
 1. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
-2. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
+2. In **Input your own scopes**, paste https:\//www.googleapis.com/auth/drive https:\//www.googleapis.com/auth/gmail.send
 3. Click **Authorize APIs** 
 4. After the APIs are authorized, click **Exchange authorization code for tokens**
 5. Copy the access_token's value from the response
-6. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `accessToken` field to the access token copied in step 5.
+6. In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `accessToken` field to the access token copied in step 5.
 
 > [!NOTE]
 > Because the access token expires in 1 hour, you'll need to repeat these steps every hour.
@@ -51,7 +51,7 @@ Additional information:
   
 - When asked to specify a redirect URI, use https://developers.google.com/oauthplayground.  
   
-- After setting up your credentials and defining your client, copy the client ID and client secret to use steps 4 and 5 below.
+- After setting up your credentials and defining your client, copy the client ID and client secret to use in steps 4 and 5 below.
 
 > [!NOTE]
 > The following steps may change as Google updates their user experience (UX). In the case that the steps no longer align with the UX, read the Google docs mentioned at the beginning of the topic to determine the new flow, or simply navigate the UX looking for similar steps.
@@ -61,11 +61,11 @@ Additional information:
 3. Check the **Use your own OAuth credentials** box
 4. Paste your client ID into **OAuth Client ID**
 5. Paste your client secret into **OAuth Client secret**
-6. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
+6. In **Input your own scopes**, paste https:\//www.googleapis.com/auth/drive https:\//www.googleapis.com/auth/gmail.send
 7. Click **Authorize APIs** and follow the prompts to provide consent 
 8. After the APIs are authorized, click **Exchange authorization code for tokens**
 9. Copy the token from **Refresh token** to use in step 10 
-10. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values from 4, 5, and 9. 
+10. In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values from 4, 5, and 9. 
 
 You only need to repeat this process if the refresh token becomes invalid.
 
@@ -90,7 +90,7 @@ Additional information:
 
 Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token. You'll only need to rerun the PowerShell script if the refresh token becomes invalid.
 
-Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app (see step 13).  
+Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app.  
 
 ```powershell
 $clientId = "your-client-id"
@@ -126,5 +126,5 @@ When the PowerShell script successfully runs, it starts a browser session where 
 Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Copy the refresh token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. 
 
 
-In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received performing the steps above.
+In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received performing the steps above.
 
