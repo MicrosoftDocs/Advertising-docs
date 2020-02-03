@@ -236,6 +236,6 @@
 #        - name: SpreadsheetApp
 #          href: ./reference/SpreadsheetApp      
 - name: FAQ
-  href: faq.md 
+  href: guides/faq.md 
 - name: Release notes
   href: release-notes.md 
