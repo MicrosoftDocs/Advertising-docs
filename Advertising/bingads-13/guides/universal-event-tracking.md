@@ -52,7 +52,7 @@ There are five types of conversion goals. The [ConversionGoal](../campaign-manag
 - [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md)
 - [UrlGoal](../campaign-management-service/urlgoal.md)
 
-The following operations are added for managing conversion goals.
+The following operations are available for managing conversion goals.
 
 - [AddConversionGoals](../campaign-management-service/addconversiongoals.md)
 - [GetConversionGoalsByIds](../campaign-management-service/getconversiongoalsbyids.md)

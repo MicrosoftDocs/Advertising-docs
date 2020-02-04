@@ -2370,6 +2370,61 @@ You cannot update shared budget through Campaign Entity, please use Budget entit
 ***
 
 **Numeric Code**
+1160
+
+**Symbolic Error Code**
+CampaignServiceMonthlyBudgetNotSupported
+
+**Description**
+Monthly budget is deprecated and cannot be retrieved through this API version.
+
+***
+
+**Numeric Code**
+1161
+
+**Symbolic Error Code**
+CampaignServiceShoppingCampaignSubTypeInvalid
+
+**Description**
+The subtype of the shopping campaign is invalid.
+
+***
+
+**Numeric Code**
+1162
+
+**Symbolic Error Code**
+CampaignServiceCoOpCampaignShouldNotBeReturned
+
+**Description**
+Users need to ask for Co-Op campaigns explicitly.
+
+***
+
+**Numeric Code**
+1163
+
+**Symbolic Error Code**
+CampaignInvalidTargetSetting
+
+**Description**
+The campaign target setting is invalid.
+
+***
+
+**Numeric Code**
+1164
+
+**Symbolic Error Code**
+CustomerNotEnabledForSponsoredProductAdsV2
+
+**Description**
+Customer is not enabled for Sponsored Product Ads V2 pilot.
+
+***
+
+**Numeric Code**
 1200
 
 **Symbolic Error Code**
@@ -11415,6 +11470,94 @@ Max audiences per customer limit is reached.
 ***
 
 **Numeric Code**
+4867
+
+**Symbolic Error Code**
+MaxInMarketAudienceExclusionPerAccountLimitReached
+
+**Description**
+Max in-market audience exclusion per account limit is reached.
+
+***
+
+**Numeric Code**
+4868
+
+**Symbolic Error Code**
+SimilarRemarketingListIsReadOnly
+
+**Description**
+Similar remarketing list is read-only.
+
+***
+
+**Numeric Code**
+4869
+
+**Symbolic Error Code**
+SimilarRemarketingListCouldNotBeDeleted
+
+**Description**
+Could not delete similar remarketing list.
+
+***
+
+**Numeric Code**
+4870
+
+**Symbolic Error Code**
+CustomerNotEligibleForSimilarRemarketingList
+
+**Description**
+Customer is not eligible for similar remarketing list.
+
+***
+
+**Numeric Code**
+4871
+
+**Symbolic Error Code**
+AudienceCannotBeDeletedDueToPairedSimilarAudienceHasAssociations
+
+**Description**
+Audience can not be deleted due to its paired similar audience has associations.
+
+***
+
+**Numeric Code**
+4872
+
+**Symbolic Error Code**
+IllegalAudienceAssociationConversionFromExclusion
+
+**Description**
+Audience exclusions can't be changed to enabled or paused.
+
+***
+
+**Numeric Code**
+4873
+
+**Symbolic Error Code**
+CustomerShareEntityScopeDoesNotMatch
+
+**Description**
+Customer share is not supported for this entity scope.
+
+***
+
+**Numeric Code**
+4874
+
+**Symbolic Error Code**
+MaxCriterionLimitExceededForCustomer
+
+**Description**
+Max criterions per customer limit is reached.
+
+***
+
+**Numeric Code**
 4900
 
 **Symbolic Error Code**
@@ -11598,6 +11741,17 @@ CampaignServiceBudgetIsSharedWithCampaigns
 
 **Description**
 The budget is shared with at least one campaign, therefore it can't be deleted.
+
+***
+
+**Numeric Code**
+4919
+
+**Symbolic Error Code**
+CampaignServiceSharedBudgetNotAllowedWithPerformanceTargetCampaign
+
+**Description**
+The campaign associated with a Performance Target cannot use a shared budget.
 
 ***
 ## 5000
@@ -14508,6 +14662,94 @@ InvalidFeedIdsForAssociation
 Invalid Feed Ids for Association
 
 ***
+
+**Numeric Code**
+5974
+
+**Symbolic Error Code**
+FeedItemCountExceedFeedTypeLevelLimitation
+
+**Description**
+The limit on the maximum number of feed items of current feed type has been reached.
+
+***
+
+**Numeric Code**
+5975
+
+**Symbolic Error Code**
+AttributeValueLengthExceeded
+
+**Description**
+The feed item contains one or more attribute values exceed maximum length limit.
+
+***
+
+**Numeric Code**
+5976
+
+**Symbolic Error Code**
+CustomAttributeValuesEmpty
+
+**Description**
+Provide a value for at least one of the custom attributes
+
+***
+
+**Numeric Code**
+5977
+
+**Symbolic Error Code**
+TargetAdgroupWithoutTargetCampaign
+
+**Description**
+Target Campaign needed for setting target adgroup
+
+***
+
+**Numeric Code**
+5978
+
+**Symbolic Error Code**
+InvalidEndDateAttributeValue
+
+**Description**
+Invalid end date attribute value
+
+***
+
+**Numeric Code**
+5979
+
+**Symbolic Error Code**
+InvalidSchedulingAttributeValue
+
+**Description**
+Invalid scheduling attribute value
+
+***
+
+**Numeric Code**
+5980
+
+**Symbolic Error Code**
+InvalidStartDateAttributeValue
+
+**Description**
+Invalid start date attribute value
+
+***
+
+**Numeric Code**
+5981
+
+**Symbolic Error Code**
+InvalidTargetLocationIdAttributeValue
+
+**Description**
+Invalid target location id attribute value
+
+***
 ## 6000
 ***
 
@@ -15233,4 +15475,273 @@ Start date cannot be earlier than today.
 CampaignServiceFeedItemScheduleInvalidEndTime
 
 **Description**
-The End time cannot be earlier than today.
+The End time cannot be earlier than today
+
+***
+
+**Numeric Code**
+6400
+
+**Symbolic Error Code**
+IFFunctionCustomerNotInPilot
+
+**Description**
+The customer is not in pilot for IF functions
+
+***
+
+**Numeric Code**
+6401
+
+**Symbolic Error Code**
+IFFunctionIncorrectSyntaxForDevice
+
+**Description**
+Device type IF function has incorrect syntax
+
+***
+
+**Numeric Code**
+6402
+
+**Symbolic Error Code**
+IFFunctionIncorrectSyntaxForAudience
+
+**Description**
+Audience type IF function has incorrect syntax
+
+***
+
+**Numeric Code**
+6403
+
+**Symbolic Error Code**
+IFFunctionSomeHaveDefaultValueButNotAll
+
+**Description**
+Either all IF functions should have a default or none
+
+***
+
+**Numeric Code**
+6404
+
+**Symbolic Error Code**
+IFFunctionInvalidAudience
+
+**Description**
+The audience which is references in the Ad is invalid
+
+***
+
+**Numeric Code**
+6405
+
+**Symbolic Error Code**
+IFFunctionDuplicateAudiences
+
+**Description**
+Duplicate audience names have been provided in the IF function
+
+***
+
+**Numeric Code**
+6406
+
+**Symbolic Error Code**
+IFFunctionSpecialCharactersAreNotEscaped
+
+**Description**
+User needs to escape certain special charaters per guidelines
+
+***
+
+**Numeric Code**
+6407
+
+**Symbolic Error Code**
+IFFunctionNestingNotAllowed
+
+**Description**
+Nesting functions of any kind, within an IF function is not allowed
+
+***
+
+**Numeric Code**
+6408
+
+**Symbolic Error Code**
+IFFunctionNestingNotAllowed
+
+**Description**
+Cannot include audience name containing { } in IF functions. Please rename audience without { or } before referencing in IF functions
+
+***
+
+**Numeric Code**
+6409
+
+**Symbolic Error Code**
+IFFunctionInvalidSyntax
+
+**Description**
+Invalid syntax for IF function
+
+***
+
+**Numeric Code**
+6410
+
+**Symbolic Error Code**
+IFFunctionNumAudiencesExceedsMaxForAd
+
+**Description**
+Number of audiences exceeds the allowed max of 100 per ad
+
+***
+
+**Numeric Code**
+6411
+
+**Symbolic Error Code**
+IFFunctionAudiencesExceedsMaxFieldLength
+
+**Description**
+Audience names for ad exceed internal field length
+
+***
+
+**Numeric Code**
+6412
+
+**Symbolic Error Code**
+IFFunctionErrorGettingAudiences
+
+**Description**
+There was an error fetching audience list from MDS
+
+***
+## 6500
+***
+
+**Numeric Code**
+6600
+
+**Symbolic Error Code**
+ImageAdExtensionV2PilotNotEnabledForCustomer
+
+**Description**
+The customer is not part of the Image AdExtension V2 pilot program.
+
+***
+
+**Numeric Code**
+6601
+
+**Symbolic Error Code**
+CampaignServiceImageAdExtensionDisplayTextNullOrEmpty
+
+**Description**
+The image ad extension's DisplayText cannot be null or empty.
+
+***
+
+**Numeric Code**
+6602
+
+**Symbolic Error Code**
+CampaignServiceImageAdExtensionDisplayTextInvalid
+
+**Description**
+The image ad extension's DisplayText is invalid.
+
+***
+
+**Numeric Code**
+6603
+
+**Symbolic Error Code**
+CampaignServiceImageAdExtensionDisplayTextTooLong
+
+**Description**
+The image ad extension's DisplayText is too long.
+
+***
+
+**Numeric Code**
+6604
+
+**Symbolic Error Code**
+ViewThroughAccountSettingValueInvalid
+
+**Description**
+The view through conversions setting is invalid.
+
+***
+
+**Numeric Code**
+6605
+
+**Symbolic Error Code**
+CustomerNotEligibleForViewThroughConversion
+
+**Description**
+The customer is not eligible for the view through conversions feature.
+
+***
+
+**Numeric Code**
+6606
+
+**Symbolic Error Code**
+ProfileExpansionSettingInvalid
+
+**Description**
+The profile expansion setting is invalid.
+
+***
+
+**Numeric Code**
+6607
+
+**Symbolic Error Code**
+CustomerNotEligibleForProfileTargeting
+
+**Description**
+The customer is not eligible for the profile targeting feature.
+
+***
+
+**Numeric Code**
+6608
+
+**Symbolic Error Code**
+InvalidViewThroughConversionWindowInMinutes
+
+**Description**
+The view through conversion window value is invalid.
+
+***
+
+**Numeric Code**
+6609
+
+**Symbolic Error Code**
+ViewThroughConversionNotApplicableToGoalType
+
+**Description**
+The view through conversion window is not applicable to this goal type.
+
+***
+
+**Numeric Code**
+6610
+
+**Symbolic Error Code**
+CustomerNotEligibleForConversionGoalSelection
+
+**Description**
+The customer is not eligible for conversion goal selection feature.
+
+***
+
