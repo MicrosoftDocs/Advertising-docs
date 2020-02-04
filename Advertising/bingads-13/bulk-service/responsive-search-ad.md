@@ -12,9 +12,6 @@ dev_langs:
 Defines a responsive search ad format for text ads in the Search network that can be downloaded and uploaded in a bulk file.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
-
-> [!NOTE]
 > Duplicate responsive search ads are allowed in the same ad group. 
 
 Responsive search ads allow you to set between 3-15 unique ad headlines (a.k.a. "titles") and 2-4 ad descriptions within a single ad. From there, Bing will select the most relevant headline and description combination for each given query and corresponding search user. By allowing Bing AI to select the most relevant headline and description for each query, we ensure that the right message lands for each of your potential customers, at the right time, across all possible intent signals. 

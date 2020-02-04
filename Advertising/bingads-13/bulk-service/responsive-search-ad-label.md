@@ -11,9 +11,6 @@ dev_langs:
 # Responsive Search Ad Label Record - Bulk
 Defines an association record between a [Responsive Search Ad](responsive-search-ad.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the responsive search ad or label, use the [Responsive Search Ad](responsive-search-ad.md) or [Label](label.md) record.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
-
 You can download all *Responsive Search Ad Label* records in the account by including the [DownloadEntity](downloadentity.md) value of *ResponsiveSearchAdLabels* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to a responsive search ad if valid [Id](#id) and [Parent Id](#parentid) values are provided. 
