@@ -40,6 +40,9 @@ The body of the request is a [ReportJob](reference.md#reportjob) object. You mus
 
 All other fields are optional.
 
+The lowest granularity available is daily (hourly is not supported). If `Columns` includes the Date column, the report contains rows for each day in the `StartDate` and `EndDate` window, inclusively. If you don't include Date, the report data shows the total performance summary for the specified start and end dates.
+
+
 The following example shows a `ReportJob` request for a performance report.
 
 ```json
