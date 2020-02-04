@@ -432,34 +432,36 @@ For more information, see the Microsoft Advertising Help article [Understand and
 
 
 ## <a name="targets"></a>Targets
-You can set criteria to show your ads based on age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide.
+You can set criteria to show your ads based on age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as target criteria. For more information about managing targets, see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide. 
 
-### <a name="agecriterions"></a>Age Criterions
-The maximum number of age criterions that you can set per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
+The maximum number of target criteria that you can set across all ad groups and campaigns per customer (manager account) is 50,000,000. 
 
-### <a name="companynamecriterions"></a>Company Name Criterions
-The maximum number of company name profile criterions that you can apply to each campaign or ad group is 1,000.
+### <a name="agecriterions"></a>Age Criteria
+The maximum number of age criteria that you can set per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
-### <a name="daytimecriterions"></a>Day and Time Criterions
-The maximum number of day and time criterions that you can set per campaign or ad group is 49. You may not set any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can set is seven. For example you can set up to 7 day and time criterions where the *Day* is set to Monday. 
+### <a name="companynamecriterions"></a>Company Name Criteria
+The maximum number of company name profile criteria that you can apply to each campaign or ad group is 1,000.
 
-### <a name="devicecriterions"></a>Device Criterions
-The maximum number of device criterions that you can set per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
+### <a name="daytimecriterions"></a>Day and Time Criteria
+The maximum number of day and time criteria that you can set per campaign or ad group is 49. You may not set any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criteria per day that you can set is seven. For example you can set up to 7 day and time criteria where the *Day* is set to Monday. 
 
-### <a name="gendercriterions"></a>Gender Criterions
-The maximum number of gender criterions that you can set per campaign or ad group is two i.e. one for *Male* and one for *Female*.
+### <a name="devicecriterions"></a>Device Criteria
+The maximum number of device criteria that you can set per campaign or ad group is three. You must either have three separate criteria for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criteria can exist for the campaign or ad group.
 
-### <a name="locationcriterions"></a>Location Criterions
-The maximum number of combined location and negative location criterions that you can set per campaign or ad group is 10,000. For example, you can set a maximum of 10,000 city location criteria or 1,000 state location criteria and 9,000 city location criteria. 
+### <a name="gendercriterions"></a>Gender Criteria
+The maximum number of gender criteria that you can set per campaign or ad group is two i.e. one for *Male* and one for *Female*.
 
-### <a name="locationintentcriterions"></a>Location Intent Criterions
-The maximum number of location intent criterions that you can set per campaign or ad group is one.
+### <a name="locationcriterions"></a>Location Criteria
+The maximum number of combined location and negative location criteria that you can set per campaign or ad group is 10,000. For example, you can set a maximum of 10,000 city location criteria or 1,000 state location criteria and 9,000 city location criteria. 
 
-### <a name="radiuscriterions"></a>Radius Criterions
-The maximum number of radius criterions that you can set per campaign or ad group is 2,000. 
+### <a name="locationintentcriterions"></a>Location Intent Criteria
+The maximum number of location intent criteria that you can set per campaign or ad group is one.
+
+### <a name="radiuscriterions"></a>Radius Criteria
+The maximum number of radius criteria that you can set per campaign or ad group is 2,000. 
 
 > [!NOTE] 
-> Each of these limits are independent of one another e.g., the radius criterions limit stands regardless of whether or not any location criterions exist for the campaign or ad group.
+> Each of these limits are independent of one another e.g., the radius criteria limit stands regardless of whether or not any location criteria exist for the campaign or ad group.
 
 
 ## See Also
