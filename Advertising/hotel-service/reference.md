@@ -377,7 +377,7 @@ Defines a bid based on the percentage of the per night total room rate, includin
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The percentage bid amount. The valid range is 0 through 100. For example, to bid 5 percent of the room's total rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3%, the total room rate is $99, and the itinerary is for a 3-night stay, then the final bid is $8.91.|Double|Required|Optional
+|Amount|The percentage bid amount. The valid range is 0 through 1,000. For example, to bid 5 percent of the room's total rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3%, the total room rate is $99, and the itinerary is for a 3-night stay, then the final bid is $8.91.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.PercentageBid".|String|Required|Required
 
 

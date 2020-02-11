@@ -16,7 +16,7 @@ For information about changes that were included with each release, see the foll
 ## February 14, 2020
 
 - Updated the [Transaction message](../transaction-message/reference.md) doc to reflect that the sum of all [Custom[1-5]](../transaction-message/reference.md#custom1) values is limited to a maximum of 1,000 characters.
-- Updated the [Hotel API](../hotel-service/reference.md) doc to reflect that `PercentageBid` is based on the per night room rate, including taxes and other fees. Previously, the bid was based only on the room rate and did not include taxes and other fees.
+- Updated the [PercentageBid](../hotel-service/reference.md#percentagebid) object to reflect that the bid is based on the per night total room rate, which includes taxes and other fees. Previously, the bid was based only on the room rate and did not include taxes and other fees.
 
 
 ## October 9, 2019
