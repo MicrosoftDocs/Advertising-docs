@@ -115,10 +115,6 @@ The percentage amount that you want to adjust the bid for the corresponding *Tar
 
 Supported values are negative ninety (-90) through positive nine hundred (900). 
 
-> [!NOTE]
-> If the campaign uses MaxClicks, MaxConversions, or TargetCpa bid strategy types, then the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types.
-> Additionally, if the campaign uses MaxClicks, MaxConversions, or TargetCpa bid strategy types, the valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
-
 **Add:** Optional. The bid adjustment will be set to the default of *0* if not included.  
 **Update:** Required  
 **Delete:** Read-only  
