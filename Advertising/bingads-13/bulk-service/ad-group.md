@@ -182,7 +182,7 @@ If set to *OptimizeForClicks*, Microsoft Advertising prioritizes the ad from the
 
 If set to *RotateAdsEvenly*, Microsoft Advertising provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad quality, and therefore might display less often, or not at all.
 - The *RotateAdsEvenly* setting can allow lower-performing ads to display as often as better-performing ads. This might impact ad group performance.
-- The *RotateAdsEvenly* setting will be ignored if you use an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, or *TargetCpa*, as these bid strategies prioritize better-performing ads.
+- The *RotateAdsEvenly* setting will be ignored if you use an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, *TargetCpa*, or *TargetRoas*, as these bid strategies prioritize better-performing ads.
 
 **Add:** Optional. The default value is *OptimizeForClicks*.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
@@ -234,14 +234,10 @@ Please take note of the following impact this setting has on biddable [Ad Group 
 The bid strategy type for how you want to manage your bids. For ad groups you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 > [!IMPORTANT] 
-> If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
-> - You can continue to set the ad group and keyword bids; however they will not be used by Microsoft Advertising.
-> - Microsoft Advertising will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Microsoft Advertising may change them at any time using this bid strategy type.
-> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Microsoft Advertising about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
-> - Even if the [Ad Rotation](#adrotation) is set to *RotateAdsEvenly*, it will be ignored as these bid strategies prioritize better-performing ads.
+> For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
 
 > [!TIP] 
-> You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
+> You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
 
 > [!NOTE]
 > For campaigns of type *Shopping* the product partitions inherit the ad group [Bid Strategy Type](#bidstrategytype).
@@ -324,7 +320,7 @@ The system generated identifier of the ad group.
 **Delete:** Read-only and Required  
 
 ## <a name="inheritedbidstrategytype"></a>Inherited Bid Strategy Type
-The bid strategy type that is inherited from the parent campaign if the ad group's [Bid Strategy Type](#bidstrategytype) is set to *InheritFromParent*. This value is equal to the parent campaign's [Bid Strategy Type](#bidstrategytype) field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
+The bid strategy type that is inherited from the parent campaign if the ad group's [Bid Strategy Type](#bidstrategytype) is set to *InheritFromParent*. This value is equal to the parent campaign's [Bid Strategy Type](#bidstrategytype) field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas*.
 
 **Add:** Read-only  
 **Update:** Read-only  
