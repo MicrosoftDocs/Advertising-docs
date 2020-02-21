@@ -6,8 +6,8 @@ summary: Official developer documentation for Microsoft Advertising. # < 160 cha
 brand: microsoft-advertising
 
 metadata:
-  title: Microsoft Advertising Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Official documentation for Microsoft Advertising. # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft Advertising Developer Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Official developer documentation for Microsoft Advertising. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: bing-ads #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: eric-urban #Required; your GitHub user alias, with correct capitalization.
