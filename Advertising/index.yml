@@ -3,7 +3,7 @@
 title: Microsoft Advertising Developer Documentation # < 60 chars
 summary: Official developer documentation for Microsoft Advertising. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-brand: advertising
+brand: dotnet
 
 metadata:
   title: Microsoft Advertising Developer Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
