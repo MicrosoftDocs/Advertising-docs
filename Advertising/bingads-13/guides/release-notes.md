@@ -9,7 +9,42 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="februry2020"></a>February 2020
+See below for Bing Ads API updates during this calendar month. 
 
+- [Goal and Goal Type in Reports](#goals-reporting-februry2020) 
+
+### <a name="goals-reporting-februry2020"></a>Goal and Goal Type in Reports
+The Goal and GoalType columns are added to the following value sets. 
+- [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md) 
+- [AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md) 
+- [AdExtensionByAdReportColumn](../reporting-service/adextensionbyadreportcolumn.md) 
+- [AdExtensionByKeywordReportColumn](../reporting-service/adextensionbykeywordreportcolumn.md) 
+- [AdExtensionDetailReportColumn](../reporting-service/adextensiondetailreportcolumn.md) 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+- [AgeGenderAudienceReportColumn](../reporting-service/agegenderaudiencereportcolumn.md) 
+- [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md) 
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
+- [ConversionPerformanceReportColumn](../reporting-service/conversionperformancereportcolumn.md) 
+- [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md) 
+- [DSAAutoTargetPerformanceReportColumn](../reporting-service/dsaautotargetperformancereportcolumn.md) 
+- [DSACategoryPerformanceReportColumn](../reporting-service/dsacategoryperformancereportcolumn.md) 
+- [DSASearchQueryPerformanceReportColumn](../reporting-service/dsasearchqueryperformancereportcolumn.md) 
+- [GeographicPerformanceReportColumn](../reporting-service/geographicperformancereportcolumn.md) 
+- [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) 
+- [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md) 
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md) 
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md) 
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md) 
+- [ProfessionalDemographicsAudienceReportColumn](../reporting-service/professionaldemographicsaudiencereportcolumn.md) 
+- [PublisherUsagePerformanceReportColumn](../reporting-service/publisherusageperformancereportcolumn.md) 
+- [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md) 
+- [UserLocationPerformanceReportColumn](../reporting-service/userlocationperformancereportcolumn.md) 
+
+These columns were already available in the [GoalsAndFunnelsReportColumn](../reporting-service/goalsandfunnelsreportcolumn.md) value set.  
+
+The goal is the name of the goal you set for the conversions you want, meaning actions customers take after clicking your ad. The goal type is the type of conversion goal. Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.
 
 ## <a name="january2020"></a>January 2020
 See below for Bing Ads API updates during this calendar month. 

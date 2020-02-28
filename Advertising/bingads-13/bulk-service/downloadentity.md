@@ -764,6 +764,13 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeStoreCriterions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">108</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -838,6 +845,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="campaignnegativeremarketinglistassociations"></a>CampaignNegativeRemarketingListAssociations|Include [Campaign Negative Remarketing List Association](campaign-negative-remarketing-list-association.md) records in the download that each represent the association relationship between a campaign and a remarketing list exclusion. For [Remarketing List](remarketing-list.md) records, you should include the RemarketingLists value in the download request.|
 |<a name="campaignnegativesimilarremarketinglistassociations"></a>CampaignNegativeSimilarRemarketingListAssociations|Include [Campaign Negative Similar Remarketing List Association](campaign-negative-similar-remarketing-list-association.md) records in the download that each represent the association relationship between a campaign and a similar remarketing list exclusion. For [Similar Remarketing List](similar-remarketing-list.md) records, you should include the SimilarRemarketingLists value in the download request.|
 |<a name="campaignnegativesites"></a>CampaignNegativeSites|Include [Campaign Negative Site](campaign-negative-site.md) records in the download data.|
+|<a name="campaignnegativestorecriterions"></a>CampaignNegativeStoreCriterions|Reserved.|
 |<a name="campaignpriceadextensions"></a>CampaignPriceAdExtensions|Include [Campaign Price Ad Extension](campaign-price-ad-extension.md) records in the download that represents the association relationship between a campaign and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
 |<a name="campaignproductaudienceassociations"></a>CampaignProductAudienceAssociations|Include [Campaign Product Audience Association](campaign-product-audience-association.md) records in the download that each represent the association relationship between a campaign and a product audience. For [Product Audience](product-audience.md) records, you should include the ProductAudiences value in the download request.|
 |<a name="campaignproductscopes"></a>CampaignProductScopes|Include [Campaign Product Scope](campaign-product-scope.md) records in the download data.|
