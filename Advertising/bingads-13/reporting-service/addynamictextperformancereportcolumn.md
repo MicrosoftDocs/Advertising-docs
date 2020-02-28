@@ -65,6 +65,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllConversionRate" />
     <xs:enumeration value="AllCostPerConversion" />
     <xs:enumeration value="ViewThroughConversions" />
+    <xs:enumeration value="Goal" />
+    <xs:enumeration value="GoalType" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -104,6 +106,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="finalappurl"></a>FinalAppUrl|Reserved for future use.|
 |<a name="finalmobileurl"></a>FinalMobileUrl|The Final Mobile URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="finalurl"></a>FinalUrl|The Final URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="goal"></a>Goal|The name of the goal you set for the conversions you want, meaning actions customers take after clicking your ad.|
+|<a name="goaltype"></a>GoalType|The type of conversion goal.<br/>Possible values include *AppInstall*, *Duration*, *Event*, *InStoreTransaction*, *OfflineConversion*, *PagesViewedPerVisit*, and *Url*.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|
