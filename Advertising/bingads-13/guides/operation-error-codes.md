@@ -8020,6 +8020,50 @@ The schedule interval must be greater than zero.
 ***
 
 **Numeric Code**
+3937
+
+**Symbolic Error Code**
+AdExtensionScheduleInvalidUseSearcherTimeZone
+
+**Description**
+UseSearcherTimeZone should be null when startDate and endDate and DayTimeRanges are null. 
+
+***
+
+**Numeric Code**
+3938
+
+**Symbolic Error Code**
+AdExtensionTypeNotSupportAdExtensionLevelSchedule
+
+**Description**
+This AdExtension type don't support AdExtension Level Schedule
+
+***
+
+**Numeric Code**
+3939
+
+**Symbolic Error Code**
+AdExtensionTypeNotSupportSchedule
+
+**Description**
+Scheduling is not supported for the ad extension type. 
+
+***
+
+**Numeric Code**
+3940
+
+**Symbolic Error Code**
+ScheduleDaysNotInDateRange
+
+**Description**
+Schedule days not in date range. 
+
+***
+
+**Numeric Code**
 3948
 
 **Symbolic Error Code**
