@@ -176,7 +176,7 @@ The following are the resource objects used by the API.
 |[HotelAssociation](#hotelassociation)|Defines the association between a hotel and a hotel group.
 |[HotelGroup](#hotelgroup)|Defines a logical grouping of hotel ads.
 |[LengthOfStayMultiplier](#lengthofstaymultiplier)|Defines the amount to adjust the base bid by if the user stays the specified number of nights or longer.
-|[PercentageBid](#percentagebid)|Defines a bid based on the percentage of the hotel room's rate.
+|[PercentageBid](#percentagebid)|Defines a bid based on the percentage of the per night total room rate.
 |[ReportJob](#reportjob)|Defines a report job.
 |[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one of the specified Bing sites.
 |[SubAccount](#subaccount)|Defines the top-level hotel ads grouping. You can think of this logically as a hotel campaign.
@@ -214,7 +214,7 @@ Defines the amount to adjust the base bid by if the user books the specified num
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |MinimumNumberOfDays|The minimum number of days in advance of the booking. Apply the multiplier if the booking occurs in advance the specified number of days or longer.|Integer|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.AdvanceBookingWindowMultiplier".|String|Required|Required
 
@@ -256,7 +256,7 @@ Defines the amount to adjust the base bid by if the user checks in on one of the
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |DaysOfWeek|A list of weekdays. Apply the multiplier if the user is checking on one of the specified days. The following are the possible case-sensitive values.<br /><br /><ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>|String[]|Required|Optional
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.CheckinDayOfWeekMultiplier".|String|Required|Required
 
 
@@ -277,7 +277,7 @@ Defines the amount to adjust the base bid by if the user searched for hotels usi
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |DateType|The type of date used in the search. The following are the possible case-sensitive values.<br /><br /><ul><li>Default&mdash;The user didn't search for hotels using specific dates</li><li>Selected&mdash;The user searched for hotels using specific dates.</li></ul>|String[]|Required|Optional
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.DateTypeMultiplier".|String|Required|Required
 
 
@@ -288,7 +288,7 @@ Defines the amount to adjust the base bid by if the user is using one of the spe
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |DeviceTypes|A list of device types. Apply the multiplier if the user is using the device type to search for hotels. The following are the possible case-sensitive values.<br /><br /><ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>|String[]|Required|Optional
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.DeviceMultiplier".|String|Required|Required
 
 
@@ -355,7 +355,7 @@ Defines the amount to adjust the base bid by if the user stays the specified num
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |MinimumNumberOfNights|The minimum number of nights required to apply the multiplier. Apply the multiplier if the user is staying the specified number of nights or longer. Valid values are 1 through 14.|Integer|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.LengthOfStayMultiplier".|String|Required|Required
 
@@ -368,16 +368,16 @@ Do not specify this class, instead specify one of the multiplier classes such as
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 
 
 ### PercentageBid
 
-Defines a bid based on the percentage of the hotel room's rate.
+Defines a bid based on the percentage of the per night total room rate, including taxes and other fees.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The percentage bid amount. The valid range is 0 through 1000. For example, to bid 5 percent of the room's rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3% of a $99 room rate and the itinerary is for a 3-night stay, the final bid is $8.91.|Double|Required|Optional
+|Amount|The percentage bid amount. The valid range is 0 through 1,000. For example, to bid 5 percent of the room's total rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3%, the total room rate is $99, and the itinerary is for a 3-night stay, then the final bid is $8.91.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.PercentageBid".|String|Required|Required
 
 
@@ -408,7 +408,7 @@ Defines the amount to adjust the base bid by if the user is searching for hotels
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |Sites|A list of sites. Apply the multiplier if the user is using the site to search for hotels. The following are the possible case-sensitive values.<br /><br /><ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li></ul>|String[]|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.SiteMultiplier".|String|Required|Required
 
@@ -436,10 +436,8 @@ Defines the amount to adjust the base bid by if the user accesses one of the Bin
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Countries|A list of two-letter ISO 3116 county codes. For a list of possible country codes, see [Allowed country codes](#country-codes).<br /><br />Apply the multiplier if the user accesses the Bing domain with the specified country code. For example, if the list includes US and DE, Microsoft uses the multiplier if the user uses Bing.com with the *us* or *de* country code (for example, bing.com?cc=de).|String[]|Required|Optional
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.UserCountryMultiplier".|String|Required|Required
-
-
 
 
 

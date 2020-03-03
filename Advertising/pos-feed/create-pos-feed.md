@@ -155,15 +155,15 @@ The following are the possible case-sensitive dynamic variable names that you ma
 |-|-
 |ADVANCE‑BOOKING‑WINDOW|The number of days in advance of the check-in date that the booking took place. For example, 36.
 |BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>unknown&mdash;The ad originated from an undetermined source.</li><li>verification&mdash;Bing uses this value when performing data quality tests on your site. You are not billed for these queries. Bing Analytics uses this parameter and its value for identifying Hotel Ads verification traffic.</li></ul>
-|CHECKINDAY|The two-digit day specified in the `Checkin` element of the Transaction Message. For example, 20.
+|CHECKINDAY|The two-digit day specified in the `Checkin` element of the [Transaction Message](../transaction-message/reference.md#transaction). For example, 20.
 |CHECKINDAY-OF-WEEK|The day of the week that the check-in takes place. Bing uses digits 0 through 6 to represent Monday through Sunday. For example, 1 is Tuesday.
-|CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction Message. For example, 06.
-|CHECKINYEAR|The four-digit year specified in the `Checkin` element of the Transaction Message. For example, 2017.
+|CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction message. For example, 06.
+|CHECKINYEAR|The four-digit year specified in the `Checkin` element of the Transaction message. For example, 2017.
 |CHECKOUTDAY|The two-digit day that the user checks out. Bing uses the `Nights` and `Checkin` elements of the TransactionMessage to calculate the day. For example, 23.
 |CHECKOUTMONTH|The two-digit month that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the month. For example, 07.
-|CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the year. For example, 2017.
+|CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction message to calculate the year. For example, 2017.
 |CLICK-TYPE|Indicates whether the user clicked on a hotel ad or a room bundle ad. The following are the possible values.<ul><li>hotel&mdash;The user clicked on a hotel ad.</li><li>room&mdash;The user clicked on a room bundle ad.</li></ul> **NOTE:** Bing does not support the room option.
-|CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the `Result` element of the Transaction message.
+|CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the [Result](../transaction-message/reference.md#resulttype) element of the Transaction message.
 |DATE-TYPE|Indicates whether the user specified check-in and check-out dates. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specific check-in and check-out dates.</li></ul>
 |HOTELGROUP_ID|The ID of the hotel group that the hotel ad belongs to.
 |LENGTH|The length of stay specified in the `Nights` element of the Transaction Message. For example, 3.
