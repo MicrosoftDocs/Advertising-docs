@@ -166,7 +166,12 @@ Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and 
 **Delete:** Read-only  
 
 ## <a name="target"></a>Target
-The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](../guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you do not want to target. 
+
+For possible values, see the *Location Id* field of the [geographical locations file](../guides/geographical-location-codes.md). You can call the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation to download the file. 
+
+> [!IMPORTANT]
+> Please check the *Status* field in the [geographical locations file](../guides/geographical-location-codes.md) before adding or updating a location criterion. If the status is *PendingDeprecation*, the location criterion is no longer used for targeting or exclusions. Deprecated location criteria can still be retrieved, but you cannot add or update deprecated location criteria.  
 
 **Add:** Required  
 **Update:** Required  

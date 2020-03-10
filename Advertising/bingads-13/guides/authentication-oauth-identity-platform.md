@@ -12,7 +12,9 @@ Consider the user that you want to sign in e.g., example@contoso.com. The Bing A
 The [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) allows work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com.  
 
 > [!IMPORTANT]
-> You can use the Microsoft identity platform endpoint for personal MSA accounts now, but Azure AD work or school accounts are not yet available for all customers. To join the work or school account pilot, please contact your account manager.  
+> Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. To ensure that your application can support all users without friction or interruption of service, you should upgrade to the Microsoft identity platform endpoint in production.
+> 
+> As a developer, you can start using the Microsoft identity endpoint today, whether your Microsoft Advertising users have a personal Microsoft account (MSA) or Azure AD work or school account. Microsoft Advertising users who want to join the Azure AD work or school account pilot should contact their account manager.  
 
 > [!NOTE]
 > A developer token is also required for authentication. Customer and account identifiers are also required for most service operations. For more information, see [Get Started With the Bing Ads API](get-started.md). To authenticate a Microsoft Advertising user in sandbox, see [Get Sandbox Access](sandbox.md#access).  
