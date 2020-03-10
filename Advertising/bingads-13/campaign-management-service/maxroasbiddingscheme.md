@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: This object is not in use and will be removed from a future version of the API.
 ---
 # MaxRoasBiddingScheme Data Object - Campaign Management
-Reserved for future use.
+This object is not in use and will be removed from a future version of the API.
 
 ## Syntax
 ```xml
@@ -26,7 +26,7 @@ Reserved for future use.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="maxcpc"></a>MaxCpc|Reserved for future use.|[Bid](bid.md)|
+|<a name="maxcpc"></a>MaxCpc|The MaxRoasBiddingScheme object is not in use and will be removed from a future version of the API.|[Bid](bid.md)|
 
 The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object has [Inherited Elements](#inheritedelements).
 
@@ -37,7 +37,7 @@ The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object derives from the [Bid
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|Reserved for future use.|**string**|
+|<a name="type"></a>Type|The MaxRoasBiddingScheme object is not in use and will be removed from a future version of the API.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

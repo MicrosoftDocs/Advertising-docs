@@ -108,7 +108,7 @@ The Campaign Management service defines the following data objects.
 |[MaxClicksBiddingScheme](maxclicksbiddingscheme.md)|Defines an object that represents the maximum clicks bid strategy type.|
 |[MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)|Defines an object that represents the maximum conversions bid strategy type.|
 |[MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)|Reserved for future use.|
-|[MaxRoasBiddingScheme](maxroasbiddingscheme.md)|Reserved for future use.|
+|[MaxRoasBiddingScheme](maxroasbiddingscheme.md)|This object is not in use and will be removed from a future version of the API.|
 |[Media](media.md)|Defines the base object of media.|
 |[MediaAssociation](mediaassociation.md)|Defines an object that represents the identified media and an associated entity, for example media associated with an ad group.|
 |[MediaMetaData](mediametadata.md)|Defines a media meta data object.|

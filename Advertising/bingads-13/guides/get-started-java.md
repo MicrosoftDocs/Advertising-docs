@@ -36,6 +36,44 @@ When you create a Maven project and include the *microsoft.bingads* Maven artifa
 ## <a name="walkthrough"></a>Walkthroughs
 Once you have the Bing Ads Java [SDK](client-libraries.md) installed, you can either browse the [Bing Ads API Code Examples](code-examples.md), download the examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples), or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application.
 
+
+## <a name="sandbox"></a>Configuring Sandbox
+To use the [Sandbox](sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
+
+```no-highlight
+environment=Sandbox
+```
+
+You can also set the environment for each ServiceClient individually as follows.
+
+```java
+CustomerService = new ServiceClient<ICustomerManagementService>(
+    authorizationData,
+    ApiEnvironment.SANDBOX,
+    ICustomerManagementService.class
+);
+```
+
+Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
+
+```java
+final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
+    ClientId, 
+    ApiEnvironment.SANDBOX
+);
+```
+
+Web applications with a client secret and custom redirect URI should use OAuthWebAuthCodeGrant as follows. 
+
+```java
+OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
+    ClientId, 
+    ClientSecret, 
+    new URL(RedirectUri),
+    ApiEnvironment.SANDBOX
+);
+```
+
 ## See Also
 [Bing Ads API Client Libraries](client-libraries.md)    
 [Bing Ads API Code Examples](code-examples.md)    

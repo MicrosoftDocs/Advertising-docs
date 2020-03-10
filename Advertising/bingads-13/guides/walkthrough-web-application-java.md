@@ -16,7 +16,7 @@ You must first register an application and take note of the client ID (registere
 You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 > [!NOTE]
-> This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
+> This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](get-started-java.md#sandbox).
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
@@ -72,7 +72,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 10. In **Project Explorer**, right-click the Web Content folder of your BingAdsWebApp project and select **New** -&gt; **JSP File**. Name the file *index.jsp* and then click **Finish**.
 
-11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you registered your application. You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you need to follow the steps below in [Configuring Sandbox](#sandbox).
+11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you registered your application. You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you need to follow the steps in [Configuring Sandbox](get-started-java.md#sandbox).
 
     ```java
     <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
@@ -254,32 +254,6 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 12. The application is ready to be deployed to a server. For example you can publish a [Web App](https://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](https://azure.microsoft.com/services/app-service/). For more information, see [Deploying a Web Application](#deploy). When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
-## <a name="sandbox"></a>Configuring Sandbox
-To use the [Sandbox](sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
-
-```no-highlight
-environment=Sandbox
-```
-You can also set the environment for each ServiceClient individually as follows.
-
-```java
-CustomerService = new ServiceClient<ICustomerManagementService>(
-    authorizationData,
-    ApiEnvironment.SANDBOX,
-    ICustomerManagementService.class
-);
-```
-
-Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
-
-```java
-OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
-    ClientId, 
-    ClientSecret, 
-    new URL(RedirectUri),
-    ApiEnvironment.SANDBOX
-);
-```
 
 ## <a name="deploy"></a>Deploying a Web Application
 If you are using Microsoft Azure to deploy your web application, the following are required.
