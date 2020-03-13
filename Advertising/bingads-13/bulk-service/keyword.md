@@ -154,11 +154,15 @@ The name of the ad group that contains the keyword.
 > For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
 ## <a name="bid"></a>Bid
-The highest price that you want to pay each time someone clicks your ad.
+The maximum amount that you want to pay each time someone clicks your ad.  
 
-In addition to setting a default ad group level bid, you can set custom bids for each keyword. If you set a custom bid for a particular keyword, this bid amount will override the default bid set for your ad group. We recommend custom bidding for advanced advertisers who want more control of their pay-per-click rates.
+You bid against other advertisers using the same keyword, so in general, higher bids help get your ad to display in more desirable locations on the search results page.  
 
-**Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
+Instead of using the default ad group level bid, you can set custom bids for each keyword. Custom bids for keywords override the ad group default bid for those specific keywords. With custom bids, you can focus your time and money on the most profitable keywords but will need to spend more time on managing the individual bids.    
+
+If the keyword level bid is not set, the Ad Group [Cpc Bid](ad-group.md#cpcbid) bid is used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
+
+**Add:** Optional   
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
