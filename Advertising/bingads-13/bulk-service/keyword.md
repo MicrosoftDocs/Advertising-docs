@@ -160,7 +160,7 @@ You bid against other advertisers using the same keyword, so in general, higher 
 
 Instead of using the default ad group level bid, you can set custom bids for each keyword. Custom bids for keywords override the ad group default bid for those specific keywords. With custom bids, you can focus your time and money on the most profitable keywords but will need to spend more time on managing the individual bids.    
 
-If the keyword level bid is not set, the Ad Group [Cpc Bid](ad-group.md#cpcbid) bid is used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
+If the keyword level bid is not set, the Ad Group [Cpc Bid](ad-group.md#cpcbid) is used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
 
 **Add:** Optional   
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
