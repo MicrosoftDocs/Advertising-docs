@@ -3,7 +3,7 @@
 title: Microsoft Advertising Developer documentation # < 60 chars
 summary: Official developer documentation for Microsoft Advertising. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-brand: dotnet
+brand: m365
 
 metadata:
   title: Microsoft Advertising Developer documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: eric-urban #Required; your GitHub user alias, with correct capitalization.
   ms.author: eur #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/24/2020 #Required; mm/dd/yyyy format.
+  ms.date: 03/16/2020 #Required; mm/dd/yyyy format.
 
 # conceptualContent section (optional)
 conceptualContent:

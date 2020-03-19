@@ -2425,6 +2425,39 @@ Customer is not enabled for Sponsored Product Ads V2 pilot.
 ***
 
 **Numeric Code**
+1165
+
+**Symbolic Error Code**
+CustomerNotEnabledForSmartShoppignCampaign
+
+**Description**
+Customer is not enabled for Smart Shopping Campaign V2 pilot.
+
+***
+
+**Numeric Code**
+1166
+
+**Symbolic Error Code**
+CustomerHasNoUETForMaxConversionValueBiddingScheme
+
+**Description**
+Customer do not setup UET tag for Max Conversion Value Bidding Scheme.
+
+***
+
+**Numeric Code**
+1167
+
+**Symbolic Error Code**
+AccountHasNoRevenueConversionGoalForMaxConversionValueBiddingScheme
+
+**Description**
+Customer do not setup Conversion goal with revenue for Max Conversion Value Bidding Scheme.
+
+***
+
+**Numeric Code**
 1200
 
 **Symbolic Error Code**
@@ -8729,6 +8762,39 @@ The media you attempted to delete is still associated with one or more entities.
 ***
 
 **Numeric Code**
+4025
+
+**Symbolic Error Code**
+InvalidImage
+
+**Description**
+Image is invalid.
+
+***
+
+**Numeric Code**
+4026
+
+**Symbolic Error Code**
+DuplicateImage
+
+**Description**
+Image is duplicate.
+
+***
+
+**Numeric Code**
+4027
+
+**Symbolic Error Code**
+RequiredImageMissing
+
+**Description**
+Required image is missing.
+
+***
+
+**Numeric Code**
 4100
 
 **Symbolic Error Code**
@@ -10791,164 +10857,307 @@ InheritFromParentBiddingScheme is not allowed to set to campaign and can only be
 4705
 
 **Symbolic Error Code**
-AdGroupSupportOnlyManualAndInheritFromParentBiddingStrategy
+SupportOnlyManualAndInheritFromParentBiddingStrategy
 
 **Description**
-AdGroup supports only Manual and InheritFromParent bid strategy.
+Only Manual and InheritFromParent bid strategy is allowed.
 
 ***
 
 **Numeric Code**
-4800
+4706
 
 **Symbolic Error Code**
-InvalidRemarketingListId
+EnhancedCpcNotAllowedForShoppingCampaign
 
 **Description**
-The remarketing list ID is invalid.
+Enhanced CPC is not allowed for shopping campaign.
 
 ***
 
 **Numeric Code**
-4801
+4708
 
 **Symbolic Error Code**
-RemarketingListIdsNotPassed
+MaxCpcLessThanOrEqualToZero
 
 **Description**
-Remarketing list IDs are required.
+MaxCpc Less Than Or Equal To Zero.
 
 ***
 
 **Numeric Code**
-4802
+4709
 
 **Symbolic Error Code**
-DuplicateRemarketingListId
+TargetCpaLessThanOrEqualToZero
 
 **Description**
-Duplicate remarketing list IDs are not allowed.
+TargetCpa Less Than Or Equal To Zero.
 
 ***
 
 **Numeric Code**
-4803
+4710
 
 **Symbolic Error Code**
-InvalidRemarketingListName
+TargetCpaExceedsMonthlyBudget
 
 **Description**
-The remarketing list name is invalid.
+TargetCpa Exceeds Monthly Budget.
 
 ***
 
 **Numeric Code**
-4804
+4711
 
 **Symbolic Error Code**
-RemarketingListAssociationsArrayShouldNotBeNullOrEmpty
+UnsupportedBiddingSchemeForMonthlyBudgetType
 
 **Description**
-Remarketing list associations are required.
+Unsupported BiddingScheme For Campaign with Monthly Budget Type.
 
 ***
 
 **Numeric Code**
-4805
+4712
 
 **Symbolic Error Code**
-RemarketingListAssociationInvalidBidAdjustment
+MaxCpcBidAmountsLessThanFloorPrice
 
 **Description**
-The remarketing list association's bid adjustment is invalid.
+MaxCpc Bid Amounts Less Than Floor Price.
 
 ***
 
 **Numeric Code**
-4806
+4713
 
 **Symbolic Error Code**
-RemarketingListAssociationsArrayExceedsLimit
+MaxCpcBidsAmountsGreaterThanCeilingPrice
 
 **Description**
-The list of remarketing associations exceeds the limit.
+MaxCpc Bids Amounts Greater Than Ceiling Price.
 
 ***
 
 **Numeric Code**
-4807
+4714
 
 **Symbolic Error Code**
-RemarketingListAssociationDoesNotExist
+TargetCpaBidAmountsLessThanFloorPrice
 
 **Description**
-The remarketing list association does not exist.
+TargetCpa Bid Amounts Less Than Floor Price.
 
 ***
 
 **Numeric Code**
-4808
+4715
 
 **Symbolic Error Code**
-CannotAssociateRemarketingListWithContentOnlyAdGroup
+TargetCpaBidsAmountsGreaterThanCeilingPrice
 
 **Description**
-Remarketing lists cannot be associated with content only ad groups.
+TargetCpa Bids Amounts Greater Than Ceiling Price.
 
 ***
 
 **Numeric Code**
-4809
+4716
 
 **Symbolic Error Code**
-DuplicateRemarketingListAssociation
+NoEnoughConversionForMaxConversionsBiddingScheme
 
 **Description**
-Duplicate remarketing list associations are not allowed.
+Not enough conversions for MaxConversions bidding scheme.
 
 ***
 
 **Numeric Code**
-4810
+4717
 
 **Symbolic Error Code**
-RemarketingListAssociationIsNull
+NoEnoughConversionForTargetCpaBiddingScheme
 
 **Description**
-The remarketing list association cannot be null.
+Not enough conversions for TargetCPA bidding scheme.
 
 ***
 
 **Numeric Code**
-4811
+4718
 
 **Symbolic Error Code**
-RemarketingListAssociationIdIsNotNull
+MaxConversionAndSharedBudgetAreMutuallyExclusive
 
 **Description**
-The remarketing list association's Id must be null.
+MaxConversions bidding scheme and Shared Budget feature are mutually exclusive.
 
 ***
 
 **Numeric Code**
-4812
+4719
 
 **Symbolic Error Code**
-RemarketingListAssociationIdIsNull
+TargetCpaAndSharedBudgetAreMutuallyExclusive
 
 **Description**
-The remarketing list association's Id cannot be null.
+TargetCPA bidding scheme and Shared Budget feature are mutually exclusive.
 
 ***
 
 **Numeric Code**
-4813
+4720
 
 **Symbolic Error Code**
-InvalidRemarketingListAssociationStatus
+MaxConversionsNotEnabledForDynamicSearchAds
 
 **Description**
-The remarketing list association status is invalid for the current operation.
+MaxConversions bidding scheme is not enabled for dynamic search ads.
+
+***
+
+**Numeric Code**
+4721
+
+**Symbolic Error Code**
+TargetCpaNotEnabledForDynamicSearchAds
+
+**Description**
+TargetCPA bidding scheme is not enabled for dynamic search ads.
+
+***
+
+**Numeric Code**
+4722
+
+**Symbolic Error Code**
+MaxConversionsNotEnabledForTheMarkets
+
+**Description**
+MaxConversions bidding scheme is not enabled for the markets (locations).
+
+***
+
+**Numeric Code**
+4723
+
+**Symbolic Error Code**
+TargetCpaNotEnabledForTheMarkets
+
+**Description**
+TargetCPA bidding scheme is not enabled for the markets (locations).
+
+***
+
+**Numeric Code**
+4724
+
+**Symbolic Error Code**
+BiddingSchemeAndSharedBudgetAreMutuallyExclusive
+
+**Description**
+This bidding scheme and Shared Budget are mutually exclusive.
+
+***
+
+**Numeric Code**
+4725
+
+**Symbolic Error Code**
+SharedBudgetAndBiddingSchemeAreMutuallyExclusive
+
+**Description**
+Shared Budget and the existing bidding scheme are mutually exclusive.
+
+***
+
+**Numeric Code**
+4726
+
+**Symbolic Error Code**
+BiddingSchemeNotEnabledForTheLocations
+
+**Description**
+The bidding scheme is not enabled for the markets (locations).
+
+***
+
+**Numeric Code**
+4727
+
+**Symbolic Error Code**
+LocationNotEnabledForTheBiddingScheme
+
+**Description**
+The location is not enabled for the bidding scheme.
+
+***
+
+**Numeric Code**
+4728
+
+**Symbolic Error Code**
+NotEnoughConversionsForTargetRoasBiddingScheme
+
+**Description**
+There must be at least 15 conversions in the last 30 days to use this bid strategy.
+
+***
+
+**Numeric Code**
+4729
+
+**Symbolic Error Code**
+NotEnoughRevenueForTargetRoasBiddingScheme
+
+**Description**
+There must be revenue tracking set up and revenue greater than zero in the last 30 days to use this bid strategy.
+
+***
+
+**Numeric Code**
+4730
+
+**Symbolic Error Code**
+InvalidTargetRoasValue
+
+**Description**
+Target ROAS (Return on Ad Spend) needs to be a positive integer.
+
+***
+
+**Numeric Code**
+4731
+
+**Symbolic Error Code**
+CustomerNotInPilotForTargetRoas
+
+**Description**
+Customer not in pilot for Target ROAS (Return on Ad Spend) bid strategy.
+
+***
+
+**Numeric Code**
+4733
+
+**Symbolic Error Code**
+ConversionGoalCriteriaNotMetForBiddingScheme
+
+**Description**
+There must be a conversion goal set up to use this bid strategy.
+
+***
+
+**Numeric Code**
+4734
+
+**Symbolic Error Code**
+CustomerNotInPilotForMaxConversionValue
+
+**Description**
+The customer is not in pilot for Max Conversion Value.
 
 ***
 
@@ -12534,6 +12743,50 @@ DynamicSearchAdPath2SetWithoutPath1
 
 **Description**
 The path2 is set without path1. If you set path2, then path1 must also be set.
+
+***
+
+**Numeric Code**
+5111
+
+**Symbolic Error Code**
+DynamicSearchAdTextPart2PilotNotEnabledForCustomer
+
+**Description**
+The customer is not in pilot for the Dynamic Search Ads Text Part 2 feature.
+
+***
+
+**Numeric Code**
+5112
+
+**Symbolic Error Code**
+DynamicSearchAdTextPart2TooLong
+
+**Description**
+Ad text part 2 is over the character limit.
+
+***
+
+**Numeric Code**
+5113
+
+**Symbolic Error Code**
+DynamicSearchAdTextPart2Invalid
+
+**Description**
+Ad text part 2 is not valid. 
+
+***
+
+**Numeric Code**
+5114
+
+**Symbolic Error Code**
+DSADomainLanguagesPhase2PilotNotEnabledForCustomer
+
+**Description**
+The customer is not enabled for the DSA domain languages Phase 2 pilot program.
 
 ***
 
@@ -15789,3 +16042,79 @@ The customer is not eligible for conversion goal selection feature.
 
 ***
 
+**Numeric Code**
+6615
+
+**Symbolic Error Code**
+PromotionValueNotSet
+
+**Description**
+Promotion PercentOff and MoneyAmountOff not set.
+
+***
+
+**Numeric Code**
+6616
+
+**Symbolic Error Code**
+PromotionPercentAndMoneyValueSet
+
+**Description**
+Both PercentOff and MoneyAmountOff set.
+
+***
+
+**Numeric Code**
+6617
+
+**Symbolic Error Code**
+PromotionOrdersOverAndPromoCodeSet
+
+**Description**
+Both PromotionCode and OrdersOverAmount set.
+
+***
+
+**Numeric Code**
+6618
+
+**Symbolic Error Code**
+PromotionValueNegative
+
+**Description**
+PercentOff and MoneyAmountOff cannot be negative.
+
+***
+
+**Numeric Code**
+6619
+
+**Symbolic Error Code**
+PromotionOrdersOverNegative
+
+**Description**
+OrdersOverAmount cannot be negative.
+
+***
+
+**Numeric Code**
+6620
+
+**Symbolic Error Code**
+PromotionDatesInvalid
+
+**Description**
+The Promotion Start and End Dates are invalid.
+
+***
+
+**Numeric Code**
+7000
+
+**Symbolic Error Code**
+AdScheduleTimeZoneSettingNotInPilot
+
+**Description**
+The customer is not enabled for the ad scheduling by account time zone feature pilot.  
+
+***
