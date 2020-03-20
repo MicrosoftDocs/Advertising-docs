@@ -17,7 +17,6 @@ The following is the base URI that you append the templates to.
 
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
 
-You may use the above Base URI or the Tenant URL shown under **Store settings** in the Microsoft Advertising web application.
 
 ## <a name="templates"/>Templates
 
