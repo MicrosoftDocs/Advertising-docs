@@ -11,7 +11,9 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
+
 # Creating a Batch Request Code Example
 This example shows how to create a batch request that can contain thousands of insert, get, and delete operations. 
 
@@ -1906,4 +1908,169 @@ class ContentError
     public ErrorCollection getError() { return this.error; }
 }
 
+```
+
+```python
+# A simple example that shows how to batch multiple inserts/updates 
+# in a single request. This example adds products to the default
+# catalog.
+
+import string
+import json
+import requests
+from datetime import datetime, timedelta
+
+# Creates the endpoint to send the batch request to. If you want to
+# add products to a specific catalog, include the following line:
+# BATCH_URI_WITH_CATALOG = BATCH_URI + '?bmc-catalog-id={1}
+
+BASE_URI = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+BMC_URI = BASE_URI + '/bmc/{0}'  # {0} will contain the merchant ID 
+BATCH_URI = BMC_URI + '/products/batch'
+
+DEV_TOKEN = '<developer token goes here>'
+MERCHANT_ID = '<merchant store id goes here>'
+
+# This example does not show how to get the access token. Copy
+# it here from another source.
+
+AUTHENTICATION_TOKEN = "<oauth access token goes here>"
+
+AUTHENTICATION_HEADERS = {'DeveloperToken': DEV_TOKEN, 'AuthenticationToken': AUTHENTICATION_TOKEN}
+
+
+# Prints the batch error.
+
+def print_error(errors):
+    print('HTTP status code: ' + errors['code'])
+    print('The following issues were found:\n')
+
+    for error in errors['errors']:
+        print('Reason: {0}'.format(error['reason']))
+        print('Message: {0}'.format(error['message']))
+        print()
+
+
+# Prints warning messages if there's an issue with a product.
+# For example, the API returns a warning if you don't specify the 
+# brand, gtin, and mpn identifiers and forgot to set the 
+# identifierExists field to false.
+
+def print_warnings(warnings):
+    print('The following issues were found:\n')
+
+    for warning in warnings:
+        print('Reason: {0}'.format(warning['reason']))
+        print('Message: {0}'.format(warning['message']))
+        print()
+
+
+# Check batch response for errors and warnings.
+# Either the 'product' or 'errors' field will exist, not both.
+# If the 'product' field exists, print the product's ID.
+# Otherwise, print the errors that occurred.
+
+def check_for_errors(batch):
+    for item in batch['entries']:
+        print('Batch ID:' + item['batchId'])
+
+        try:
+            print('Successfully added product: ' + item['product']['id'])
+
+            if 'warnings' in item['product']:
+                print_warnings(item['product']['warnings']) 
+
+        except KeyError as ex:
+            print_error(item['errors'])
+
+
+# Runs the batch request.
+
+def run_batch_request(batch):
+    url = BATCH_URI.format(MERCHANT_ID)
+    response = requests.post(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(batch))
+    response.raise_for_status()
+    print('Request activity ID: {0}'.format(response.headers['WebRequestActivityId']))
+    return json.loads(response.text)
+
+
+# For simplicity, this example hard-codes a couple of records.
+
+def get_batch_data():
+    batch = {}
+    batch['entries'] = []
+
+    # Add the first batch record.
+
+    product = {}
+    product['offerId'] = 'xyz-abc-123'
+    product['channel'] = 'Online'
+    product['contentLanguage'] = 'en'
+    product['targetCountry'] = 'US'
+    product['title'] = 'product title 1'
+    product['availability'] = 'in stock'
+    product['condition'] = 'new'
+    product['price'] = {}
+    product['price']['currency'] = 'USD'
+    product['price']['value'] = 50.50
+    product['link'] = 'http://www.contoso.com/apperal/men/tshirts.htm'
+    product['imageLink'] = 'http://www.contoso.com/pics/tees.jpg'
+    product['promotionId'] = 'promo1!,promo2,promo3'
+    # product['identifierExists'] = False  # Un-comment to remove warning case
+
+    batchitem = {
+        'batchId': 1, 
+        'merchantId': MERCHANT_ID, 
+        'method': 'Insert', 
+        'product': product 
+    }
+
+    batch['entries'].append(batchitem)
+    
+    # Add the second batch record.
+
+    product = {}
+    product['offerId'] = 'xyz-def-456'
+    product['channel'] = 'Online'
+    product['contentLanguage'] = 'en'
+    product['targetCountry'] = 'US'
+    product['title'] = 'product title 2'
+    product['availability'] = 'in stock'
+    product['condition'] = 'new'
+    product['price'] = {}
+    product['price']['currency'] = 'USD'
+    product['price']['value'] = 750.33
+    product['link'] = 'http://www.contoso.com/apperal/men/shorts.htm'
+    product['imageLink'] = 'http://www.contoso.com/pics/shorts.jpg'
+    product['promotionId'] = 'promo1'
+    product['identifierExists'] = False
+    product['expirationDate'] = (datetime.utcnow()+timedelta(days=14)).strftime("%Y-%m-%dT%H:%M:%S")
+
+    batchitem = {
+        'batchId': 2, 
+        'merchantId': MERCHANT_ID, 
+        'method': 'Insert', 
+        'product': product
+    }
+
+    batch['entries'].append(batchitem)
+
+    return batch
+
+
+def main():
+    # The main entry point of this example
+
+    try:
+
+        batch = get_batch_data()
+        batchResponse = run_batch_request(batch)
+        check_for_errors(batchResponse)
+
+    except Exception as ex:
+        raise ex
+
+# Main execution
+if __name__ == '__main__':
+    main()
 ```

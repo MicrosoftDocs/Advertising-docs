@@ -12,11 +12,15 @@ ms.author: "scottwhi"
 # Get Started with the Content API
 
 <a name="credentials"/>
-To use the Content API, you must have a Microsoft Advertising account and use a Microsoft account to access Microsoft Advertising. 
+To use the Content API, you'll need a couple of things:
 
-To get a Microsoft Advertising account, go to [https://ads.microsoft.com](https://ads.microsoft.com). If you're not signed in to your Microsoft account, you're redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Microsoft Advertising account**. Select the sign up option and **Continue** with the sign up process.
+1. A Microsoft account
+1. A Microsoft Advertising account
+1. A developer token
 
-Next, you'll need a developer token. To get a token to use in the production environment, see the [Developer Portal](https://developers.ads.microsoft.com/account). Click **Request Token** and provide the requested information. If you use the API to manage your own account, you'll receive your token immediately; however, if you're managing accounts for others, it may take up to five business days to get a token.
+To get a Microsoft Advertising account, go to [https://ads.microsoft.com](https://ads.microsoft.com). If you're not signed in to your Microsoft account, you're redirected to sign in to your account or to sign up for one. After signing in, you'll have the option to **Sign up for a new Microsoft Advertising account**. Select the sign up option and click **Continue**.
+
+Next, if you don't already have a Microsoft Advertising developer token for the production environment, go to the [Developer Portal](https://developers.ads.microsoft.com/account). Click **Request Token** and provide the requested information. If you use the API to manage your own account, you'll receive your token immediately; however, if you're managing accounts for others, it may take up to five business days to get a token.
 
 ## <a name="authentication"/> Authenticating your credentials
 
@@ -32,10 +36,13 @@ If you don't use the Bing Ads SDK for authentication, see [Authenticating Micros
 
 All calls must specify:
 
-- The DeveloperToken header and set it to the developer token that you were given.
-- The AuthenticationToken header and set it to your access token.
+- The DeveloperToken header that's set to your developer token.
+- The AuthenticationToken header that's set to your access token.
 
-If you manage catalogs on behalf of other customers, you must set the `CustomerId` header to the customer ID of the customer whose store you're managing, and the `CustomerAccountId` header to the account ID of any of the customer's accounts that you manage (it doesn't matter which managed account). 
+If you manage catalogs on behalf of other customers, you must also set the following headers:
+
+- The CustomerId header that's set to the customer ID of the customer whose store you're managing
+- The CustomerAccountId header that's set to the account ID of any of the customer's accounts that you manage (it doesn't matter which managed account). 
 
 For information about these and other headers that the request and response may contain, see [Headers](../shopping-content/products-resource.md#headers). 
 
@@ -50,14 +57,12 @@ You must complete the following steps if you haven't already done so.
 2. [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1)
 3. [Add a catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1)
 
-When you create a MMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product gets, inserts, updates, and deletes apply to unless you specify the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
+When you create a MMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product operations (add, update, delete, and get) apply to by default. To specify a different catalog, use the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
 
-The **Store Setting** tab contains the Tenant URL, which you use as the base URI of your resource URL.
-
-As an alternative to adding and enabling catalogs using the MMC web application, you may use the [Catalogs](../shopping-content/catalogs-resource.md) resource. For information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
+To add and enable catalogs, use the [Catalogs](../shopping-content/catalogs-resource.md) resource. For more information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
 
 > [!NOTE] 
-> In certain circumstances, you can use the API with FTP to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](../shopping-content/can-use-api-ftp.md) 
+> In certain circumstances, you can use the API and FTP to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](../shopping-content/can-use-api-ftp.md) 
 
 
 ## Next Steps

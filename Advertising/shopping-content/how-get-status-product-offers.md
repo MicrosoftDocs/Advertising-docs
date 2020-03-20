@@ -13,10 +13,10 @@ ms.author: "scottwhi"
 
 When you add or update a product offer in a catalog or store, the offer goes through an initial validation before going through editorial review. That process can take up to 36 hours. To see whether the offer passed the review process, use the [Status](../shopping-content/status-resource.md) resource. 
 
-The following are the base URIs that you may use to get the `Status` resource. You may use either URI.
+The following is the base URI that you use to get the `Status` resource.
 
-* `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
-* The tenant URL shown under **Store Settings** in the BMC web application
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
+
 
 Each HTTP request must include the user's OAuth access token and your developer token. To specify the user's access token, set the [AuthenticationToken](../shopping-content/status-resource.md#authtoken) header. To specify your developer token, set the [DeveloperToken](../shopping-content/status-resource.md#devtoken) header.
 

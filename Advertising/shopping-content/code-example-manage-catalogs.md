@@ -1119,93 +1119,158 @@ class ContentError
 ```
 
 ```python
-"""Content API Manage Catalogs Example"""
-import json
+# A simple example that shows how to get all catalogs in a store, 
+# add a catalog, update the catalog, and then delete it.
+
 import string
-import random
+import json
 import requests
 
+# Concatenate together these strings to create the endpoint
+# to send request to the Content API.
+
 BASE_URI = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
-BMC_URI = BASE_URI + '/bmc/{0}'
+BMC_URI = BASE_URI + '/bmc/{0}'  # {0} will contain the merchant ID 
 
-CLIENT_ID = '<CLIENTIDGOESHERE>'
-DEV_TOKEN = '<DEVELOPERTOKENGOESHERE>'
-MERCHANT_ID = '<STOREIDGOESHERE>'
+DEV_TOKEN = '<your dev token goes here>'
+MERCHANT_ID = '<your store ID goes here>'
 
-AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+# This example does not show how to get the access token. Copy
+# it here from another source.
+
+AUTHENTICATION_TOKEN = "<your access token goes here>"
 
 AUTHENTICATION_HEADERS = {'DeveloperToken': DEV_TOKEN, 'AuthenticationToken': AUTHENTICATION_TOKEN}
 
-def main():
-    """The main entry point of this example"""
 
-    # List catalogs
-    print("*** List catalogs ***")
-    catalogs = list_catalogs()
-    for catalog in catalogs:
-        print_json(catalog)
-    print("*** / End of catalogs list ***")
+# Prints the error that was raised.
 
-    # Add catalog
-    added_catalog = add_catalog("My Test Catalog")
-    print("*** Added test catalog (catalog.Id=" + str(added_catalog['id']) + ")")
-    print_json(added_catalog)
-    print("*** / End added test catalog (catalog.Id=" + str(added_catalog['id']) + ")")
+def print_error(errors):
+    print('The following errors occurred:')
+    for error in errors:
+        print('Reason: {0}'.format(error['reason']))
+        print('Message: {0}'.format(error['message']))
+        print()
 
-    # Update catalog
-    added_catalog['name'] = "Updated - " + added_catalog['name']
-    updated_catalog = update_catalog(added_catalog)
-    print("*** Updated test catalog (catalog.Id=" + str(updated_catalog['id']) + ") ***")
-    print_json(updated_catalog)
-    print("*** / End of updated test catalog (catalog.Id=" + str(updated_catalog['id']) + ")***")
 
-    # Delete catalog
-    print("*** Deleting catalog (" + str(updated_catalog['id']) + "***")
-    delete_catalog(updated_catalog['id'])
-    print("*** / End deleting catalog (" + str(updated_catalog['id']) + "***")
+# Prints the catalog's values.
 
-CATALOGS_URI = BMC_URI + "/catalogs"
-def list_catalogs():
-    """list catalogs for the specified merchant"""
+def print_catalog_values(catalog):
+    print('Name: {0} ({1})'.format(catalog['name'], catalog['id']))
+    print('Default catalog: {0}'.format(catalog['isDefault']))
+    print('Publishing enabled: {0}'.format(catalog['isPublishingEnabled']))
+    print('Market: {0}'.format(catalog['market']))
+    print()
+
+
+# Gets a list of catalogs in the merchant's store.
+
+def get_catalogs():
+    CATALOGS_URI = BMC_URI + "/catalogs"
     url = CATALOGS_URI.format(MERCHANT_ID)
+    print(url)
     response = requests.get(url, headers=AUTHENTICATION_HEADERS)
     response.raise_for_status()
     return json.loads(response.text)['catalogs']
 
-def add_catalog(catalog_name):
-    """Add a catalog"""
-    url = CATALOGS_URI.format(MERCHANT_ID)
-    catalog = {'Name': catalog_name + "(" + random_string(16) +")", 'Market': "en-US", 'IsPublishingEnabled': True}
-    response = requests.post(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(catalog))
+
+# Print all of the merchant's catalogs.
+
+def print_catalogs():
+    catalogs = get_catalogs()
+    for catalog in catalogs:
+        print_catalog_values(catalog)
+
+
+# Gets a specific catalog in the merchant's store.
+
+def get_catalog(catalogId):
+    CATALOG_URI = BMC_URI + "/catalogs/{1}"
+    url = CATALOG_URI.format(MERCHANT_ID, catalogId)
+    print(url)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
     response.raise_for_status()
     return json.loads(response.text)
 
-CATALOG_URI = CATALOGS_URI + "/{1}"
-def update_catalog(catalog):
-    """Update a catalog"""
-    url = CATALOG_URI.format(MERCHANT_ID, catalog['id'])
+
+# Adds an en-US catalog to the merchant's store.
+
+def add_catalog(catalog_name, isEnabled=False):
+    CATALOGS_URI = BMC_URI + "/catalogs"
+    url = CATALOGS_URI.format(MERCHANT_ID)
+    catalog = {'name': catalog_name, 'market': "en-US", 'isPublishingEnabled': isEnabled}
+    response = requests.post(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(catalog))
+    response.raise_for_status()
+    print('Request activity ID: {0}'.format(response.headers['WebRequestActivityId']))
+    return json.loads(response.text)
+
+
+# Update publishing flag
+
+def update_catalog(catalogId, isEnabled):
+    CATALOG_URI = BMC_URI + "/catalogs/{1}"
+    url = CATALOG_URI.format(MERCHANT_ID, catalogId)
+    catalog = get_catalog(catalogId)
+    catalog = {'name': catalog['name'], 'isPublishingEnabled': isEnabled}
     response = requests.put(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(catalog))
     response.raise_for_status()
     return json.loads(response.text)
 
-def delete_catalog(catalog_id):
-    """Delete a catalog"""
-    url = CATALOG_URI.format(MERCHANT_ID, catalog_id)
+
+# Delete catalog
+
+def delete_catalog(catalogId):
+    CATALOG_URI = BMC_URI + "/catalogs/{1}"
+    url = CATALOG_URI.format(MERCHANT_ID, catalogId)
     response = requests.delete(url, headers=AUTHENTICATION_HEADERS)
     response.raise_for_status()
 
-def print_json(obj):
-    """Print the object as json"""
-    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
 
-def random_string(length=6):
-    """Get a random string of characters of the specified length"""
-    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+def main():
+    # The main entry point of this example
+
+    try:
+
+        print("*** Catalogs ***")
+        print_catalogs()
+
+        # Adds a catalog with publishing disabled.
+
+        print("*** Adding catalog ***")
+        catalog = add_catalog('Everything Sale')
+        print_catalog_values(catalog)
+
+        # Gets the catalog that was just added.
+
+        msg = "*** Getting catalog {0} ***".format(catalog['id'])
+        print(msg)
+        catalog = get_catalog(catalog['id'])
+        print_catalog_values(catalog)
+
+        # Enable the catalog for publishing.
+
+        msg = "*** Updating catalog {0} ***".format(catalog['id'])
+        print(msg)
+        catalog = update_catalog(catalog['id'], True)
+        print_catalog_values(catalog)
+
+        # Delete the catalog that was added.
+
+        msg = "*** Deleting catalog {0} ***\n".format(catalog['id'])
+        print(msg)
+        delete_catalog(catalog['id'])
+
+        print("*** Catalogs ***")
+        print_catalogs()
+
+    except Exception as ex:
+        print('Request activity ID: {0}'.format(ex.response.headers['WebRequestActivityId']))
+        print_error(json.loads(ex.response.text)['error']['errors'])
+        raise ex
 
 # Main execution
 if __name__ == '__main__':
     main()
-
 ```
 
 ```php
