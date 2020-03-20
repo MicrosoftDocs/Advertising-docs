@@ -13,10 +13,10 @@ ms.author: "scottwhi"
 
 Content API is a RESTful API that uses the [Catalogs](../shopping-content/catalogs-resource.md) resource to manage catalogs in your Bing Merchant Center (BMC) store. 
 
-The following are the base URIs that you may use to call the Content API. You may use either URI.
+The following is the base URI that you use to call the Content API.
 
-* `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
-* The tenant URL shown under **Store Settings** in the BMC web application
+`https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
+
 
 Each HTTP request must include the user's OAuth access token and your developer token. To specify the user's access token, set the [AuthenticationToken](../shopping-content/catalogs-resource.md#authtoken) header. To specify your developer token, set the [DeveloperToken](../shopping-content/catalogs-resource.md#devtoken) header.
 
