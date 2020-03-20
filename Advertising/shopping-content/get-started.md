@@ -57,11 +57,9 @@ You must complete the following steps if you haven't already done so.
 2. [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1)
 3. [Add a catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1)
 
-When you create a MMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product add, update, delete, and get operations apply to. To specify a different catalog, use the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
+When you create a MMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product operations (add, update, delete, and get) apply to by default. To specify a different catalog, use the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
 
-The **Store Setting** tab contains the Tenant URL, which you use as the base URI of your resource URL.
-
-To add and enable catalogs, the [Catalogs](../shopping-content/catalogs-resource.md) resource. For information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
+To add and enable catalogs, use the [Catalogs](../shopping-content/catalogs-resource.md) resource. For more information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
 
 > [!NOTE] 
 > In certain circumstances, you can use the API and FTP to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](../shopping-content/can-use-api-ftp.md) 
