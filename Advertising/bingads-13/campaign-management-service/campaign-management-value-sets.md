@@ -18,6 +18,7 @@ The Campaign Management service defines the following value sets.
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
 |[AdExtensionStatus](adextensionstatus.md)|Defines the possible status values of an ad extension.|
 |[AdExtensionsTypeFilter](adextensionstypefilter.md)|Defines the possible ad extension types.|
+|[AdGroupAdditionalField](adgroupadditionalfield.md)|Defines a list of optional ad group properties that you can request when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md) and [GetAdGroupsByIds](getadgroupsbyids.md).|
 |[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|Defines the editorial review status values of an ad group criterion.|
 |[AdGroupCriterionStatus](adgroupcriterionstatus.md)|Defines the possible ad group criterion status values.|
 |[AdGroupCriterionType](adgroupcriteriontype.md)|Defines the possible types of ad group criterions.|
@@ -36,6 +37,7 @@ The Campaign Management service defines the following value sets.
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
+|[CampaignAdditionalField](campaignadditionalfield.md)|Defines a list of optional campaign properties that you can request when calling [GetCampaignsByAccountId](getcampaignsbyaccountid.md) and [GetCampaignsByIds](getcampaignsbyids.md).|
 |[CampaignCriterionStatus](campaigncriterionstatus.md)|Defines the possible campaign criterion status values.|
 |[CampaignCriterionType](campaigncriteriontype.md)|Defines the possible types of campaign criterions.|
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|

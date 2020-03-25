@@ -1481,6 +1481,8 @@
           href: ../campaign-management-service/adextensionstatus.md
         - name: AdExtensionsTypeFilter
           href: ../campaign-management-service/adextensionstypefilter.md
+        - name: AdGroupAdditionalField
+          href: ../campaign-management-service/adgroupadditionalfield.md
         - name: AdGroupCriterionEditorialStatus
           href: ../campaign-management-service/adgroupcriterioneditorialstatus.md
         - name: AdGroupCriterionStatus
@@ -1517,6 +1519,8 @@
           href: ../campaign-management-service/businessgeocodestatus.md
         - name: CallToAction
           href: ../campaign-management-service/calltoaction.md
+        - name: CampaignAdditionalField
+          href: ../campaign-management-service/campaignadditionalfield.md
         - name: CampaignCriterionStatus
           href: ../campaign-management-service/campaigncriterionstatus.md
         - name: CampaignCriterionType

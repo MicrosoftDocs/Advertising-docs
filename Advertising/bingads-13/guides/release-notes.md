@@ -9,6 +9,22 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="march2020"></a>March 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Ad Scheduling by Account Time Zone](#adscheduling-accounttimezone-march2020) 
+
+### <a name="adscheduling-accounttimezone-march2020"></a>Ad Scheduling by Account Time Zone
+
+Ad scheduling by account time zone is available for customers in the pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 655). Later this year it will be available in all customers. 
+
+The AdScheduleUseSearcherTimeZone element is available in the [Campaign](../campaign-management-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../campaign-management-service/adgroup.md#adscheduleusesearchertimezone) Campaign Management objects. The [Ad Schedule Use Searcher Time Zone](../bulk-service/campaign.md#adscheduleusesearchertimezone) field is available in the [Campaign](../bulk-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../bulk-service/ad-group.md#adscheduleusesearchertimezone) Bulk records. 
+
+The new property for each campaign and ad group determines whether to use the account time zone or the time zone of the search user where the ads could be delivered. 
+
+> [!NOTE] 
+> If you do not specify this element or leave it null, the default value of *true* will be set and the search user's time zone will be used. Towards the end of Q2 or the beginning of Q3 Calendar Year 2020 and going forward, the new default value of *false* will be set and the account time zone will be used.
+
 ## <a name="februry2020"></a>February 2020
 See below for Bing Ads API updates during this calendar month. 
 

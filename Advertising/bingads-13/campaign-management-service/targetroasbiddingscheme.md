@@ -23,6 +23,7 @@ You need to have conversion tracking (a UET tag and a conversion goal) set up an
 
 > [!TIP] 
 > You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetRoas, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
+
 ## Syntax
 ```xml
 <xs:complexType name="TargetRoasBiddingScheme" xmlns:xs="http://www.w3.org/2001/XMLSchema">
