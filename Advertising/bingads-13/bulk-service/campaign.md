@@ -40,7 +40,9 @@ var bulkCampaign = new BulkCampaign
     // Map properties in the Bulk file to the 
     // Campaign object of the Campaign Management service.
     Campaign = new Campaign
-    {
+    {        
+        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (SDK support coming soon)
+        AdScheduleUseSearcherTimeZone = true,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new EnhancedCpcBiddingScheme { },
         // 'Budget Id' column header in the Bulk file
@@ -122,6 +124,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 
 |Column Header|Supported Campaign Types|
 |-----------------|---------------|
+|[Ad Schedule Use Searcher Time Zone](#adscheduleusesearchertimezone)|All|
 |[Bid Adjustment](#bidadjustment)|All|
 |[Bid Strategy MaxCpc](#bidstrategymaxcpc)|Search<br>DynamicSearchAds<br/>Shopping|
 |[Bid Strategy TargetCpa](#bidstrategytargetcpa)|Search<br>DynamicSearchAds|
@@ -157,6 +160,18 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Time Zone](#timezone)|All|
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|DynamicSearchAds|
+
+## <a name="adscheduleusesearchertimezone"></a>Ad Schedule Use Searcher Time Zone
+Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
+
+Set this property to *TRUE* if you want the ads to be shown in the search user's time zone, and otherwise set it to *FALSE*.
+
+> [!NOTE]
+> This field can only be set to *FALSE* by customers in the ad scheduling by account time zone feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 655).  
+
+**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. Towards the end of Q2 or the beginning of Q3 Calendar Year 2020 and going forward, the new default value of *FALSE* will be set and the account time zone will be used.  
+**Update:** Optional. If no value is set for the update, this setting is not changed.   
+**Delete:** Read-only  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
@@ -359,9 +374,11 @@ In a bulk file, the list of custom parameters are formatted as follows.
 **Delete:** Read-only  
 
 ## <a name="domainlanguage"></a>Domain Language
-The language of the website pages that you want to target for dynamic search ads.
+The [language](../guides/ad-languages.md#adlanguage) of the website pages that you want to target for dynamic search ads.
 
-Your website language determines where your ads are eligible to appear. For example, a German-language ad can appear in Germany, Austria, and Switzerland, but not in Spain. The supported languages are English, French, and German. If your website contains pages in multiple languages and you want to advertise all of these pages, you should create a separate campaign for each language.
+Your website language determines where your ads are eligible to appear. For example, a German-language ad can appear in Germany, Austria, and Switzerland, but not in Spain. If your website contains pages in multiple languages and you want to advertise all of these pages, you should create a separate campaign for each language. 
+
+The supported languages are English, French, and German. The language values Dutch, Spanish, Italian, and Swedish can also be set by customers in the DSA Domain Language Phase 2 feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 653).
 
 Note, if you set the campaign [Language](#language) or ad group [Language](ad-group.md#language), they will be ignored.
 
@@ -446,7 +463,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 **Delete:** Read-only  
 
 ## <a name="language"></a>Language
-Your ad language setting determines the language you will use when you write your ads and should be the language of your customers.  
+Your [ad language](../guides/ad-languages.md#adlanguage) setting determines the language you will use when you write your ads and should be the language of your customers.  
 
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
