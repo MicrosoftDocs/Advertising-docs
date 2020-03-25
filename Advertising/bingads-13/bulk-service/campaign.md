@@ -41,7 +41,7 @@ var bulkCampaign = new BulkCampaign
     // Campaign object of the Campaign Management service.
     Campaign = new Campaign
     {        
-        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (coming soon)
+        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (SDK support coming soon)
         AdScheduleUseSearcherTimeZone = true,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new EnhancedCpcBiddingScheme { },
