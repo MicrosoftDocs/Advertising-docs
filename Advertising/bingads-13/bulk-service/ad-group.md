@@ -45,6 +45,8 @@ var bulkAdGroup = new BulkAdGroup
         {
             Type = AdRotationType.RotateAdsEvenly
         },
+        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (coming soon)
+        AdScheduleUseSearcherTimeZone = true,
         // 'Bid Adjustment' column header in the Bulk file
         AudienceAdsBidAdjustment = 10,
         // 'Bid Strategy Type' column header in the Bulk file
@@ -134,6 +136,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 
 - [Ad Group](#adgroup)
 - [Ad Rotation](#adrotation)
+- [Ad Schedule Use Searcher Time Zone](#adscheduleusesearchertimezone)
 - [Bid Adjustment](#bidadjustment)
 - [Bid Boost Value](#bidboostvalue)
 - [Bid Option](#bidoption)
@@ -186,6 +189,18 @@ If set to *RotateAdsEvenly*, Microsoft Advertising provides more balance in rota
 
 **Add:** Optional. The default value is *OptimizeForClicks*.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
+## <a name="adscheduleusesearchertimezone"></a>Ad Schedule Use Searcher Time Zone
+Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
+
+Set this property to *TRUE* if you want the ads to be shown in the search user's time zone, and otherwise set it to *FALSE*.
+
+> [!NOTE]
+> This field can only be set to *FALSE* by customers in the ad scheduling by account time zone feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 655).  
+
+**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. Towards the end of Q2 or the beginning of Q3 Calendar Year 2020 and going forward, the new default value of *false* will be set and the account time zone will be used.  
+**Update:** Optional. If no value is set for the update, this setting is not changed.   
 **Delete:** Read-only  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
@@ -375,7 +390,7 @@ Data for this column is typically updated 14-18 hours after the UTC day ends.
 **Delete:** Read-only  
 
 ## <a name="language"></a>Language
-Your ad language setting determines the language you will use when you write your ads and should be the language of your customers.  
+Your [ad language](../guides/ad-languages.md#adlanguage) setting determines the language you will use when you write your ads and should be the language of your customers.  
 
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
