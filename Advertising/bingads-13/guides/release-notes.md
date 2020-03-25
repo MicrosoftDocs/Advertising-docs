@@ -18,7 +18,7 @@ See below for Bing Ads API updates during this calendar month.
 
 Ad scheduling by account time zone is available for customers in the pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 655). Later this year it will be available in all customers. 
 
-The AdScheduleUseSearcherTimeZone element is available in the [Campaign](../campaign-management-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../campaign-management-service/ad-group.md#adscheduleusesearchertimezone) Campaign Management objects. The [Ad Schedule Use Searcher Time Zone](../bulk-service/campaign.md#adscheduleusesearchertimezone) field is available in the [Campaign](../bulk-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../bulk-service/ad-group.md#adscheduleusesearchertimezone) Bulk records. 
+The AdScheduleUseSearcherTimeZone element is available in the [Campaign](../campaign-management-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../campaign-management-service/adgroup.md#adscheduleusesearchertimezone) Campaign Management objects. The [Ad Schedule Use Searcher Time Zone](../bulk-service/campaign.md#adscheduleusesearchertimezone) field is available in the [Campaign](../bulk-service/campaign.md#adscheduleusesearchertimezone) and [Ad Group](../bulk-service/ad-group.md#adscheduleusesearchertimezone) Bulk records. 
 
 The new property for each campaign and ad group determines whether to use the account time zone or the time zone of the search user where the ads could be delivered. 
 
