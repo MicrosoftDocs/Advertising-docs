@@ -389,7 +389,7 @@ In order to improve performance, Scripts processes build requests in batches. If
     }
 ```
 
-The same is true if you update an entity and then get the same property you updated. Don't do this:
+The same is true if you update an entity and then get the same property you updated. **Don't do this**:
 
 ``` javascript
     while (keywords.hasNext()) {

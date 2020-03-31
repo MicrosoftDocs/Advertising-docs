@@ -232,8 +232,6 @@ function main() {
         Logger.log(`cpc before update ${group.getMaxCpc()}`);
 
         group.setMaxCpc(.35);
-
-        Logger.log(`cpc after update ${group.getMaxCpc()}\n\n`);
     }
 }
 ```
