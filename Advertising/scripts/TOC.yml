@@ -184,6 +184,10 @@
           href: ./reference/ProductBrand.md 
         - name: ProductCategory
           href: ./reference/ProductCategory.md 
+        - name: ProductChannel
+          href: ./reference/ProductChannel.md 
+        - name: ProductChannelExclusivity
+          href: ./reference/ProductChannelExclusivity.md 
         - name: ProductCondition
           href: ./reference/ProductCondition.md 
         - name: ProductCustomLabel

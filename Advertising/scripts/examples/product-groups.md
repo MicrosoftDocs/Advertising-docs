@@ -46,15 +46,23 @@ function main() {
                 break;
             }
             case "CATEGORY": {
-                Logger.log(`Category name -> ${productGroup.getName()}\n\n`);
+                Logger.log(`Category name -> ${productGroup.getValue()}\n\n`);
+                break;
+            }
+            case "CHANNEL": {
+                Logger.log(`Channel name -> ${productGroup.getValue()}\n\n`);
+                break;
+            }
+            case "CHANNEL_EXCLUSIVITY": {
+                Logger.log(`Channel exclusivity name -> ${productGroup.getValue()}\n\n`);
                 break;
             }
             case "BRAND": {
-                Logger.log(`Brand name -> ${productGroup.getName()}\n\n`);
+                Logger.log(`Brand name -> ${productGroup.getValue()}\n\n`);
                 break;
             }
             case "CONDITION": {
-                Logger.log(`Condition name -> ${productGroup.getCondition()}\n\n`);
+                Logger.log(`Condition name -> ${productGroup.getValue()}\n\n`);
                 break;
             }
             case "CUSTOM_LABEL": {
@@ -72,9 +80,9 @@ function main() {
             case "PRODUCT_TYPE": {
                 // It's only necessary to cast the product group to a ProductType product
                 // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
-                var customLabel = productGroup.asCustomLabel();
-                Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
-                Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
+                var productType = productGroup.asProductType();
+                Logger.log(`Product type name -> ${productType.getType()}`);
+                Logger.log(`Product type value -> ${productType.getValue()}\n\n`);
                 break;
             }
         }
@@ -88,7 +96,6 @@ Another option is to get product groups by shopping campaigns or shopping ad gro
 ```javascript
 function main() {
 
-    // Option 1 for getting all shopping ad groups
     var shoppingAdGroups = AdsApp.shoppingAdGroups()
         .get();  
     
@@ -120,38 +127,46 @@ function main() {
                     Logger.log("\n");
                     break;
                 }
-            case "CATEGORY": {
-                Logger.log(`Category name -> ${productGroup.getName()}\n\n`);
-                break;
-            }
-            case "BRAND": {
-                Logger.log(`Brand name -> ${productGroup.getName()}\n\n`);
-                break;
-            }
-            case "CONDITION": {
-                Logger.log(`Condition name -> ${productGroup.getCondition()}\n\n`);
-                break;
-            }
-            case "CUSTOM_LABEL": {
-                // It's only necessary to cast the product group to a CustomLabel product
-                // group if you need to get the label's name (i.e., CustomLabel0).
-                var customLabel = productGroup.asCustomLabel();
-                Logger.log(`Custom label name -> ${customLabel.getType()}`);
-                Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
-                break;
-            }
-            case "ITEM_ID": {
-                Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
-                break;
-            }
-            case "PRODUCT_TYPE": {
-                // It's only necessary to cast the product group to a ProductType product
-                // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
-                var customLabel = productGroup.asCustomLabel();
-                Logger.log(`Product type name -> ${productGroup.asProductType().getType()}`);
-                Logger.log(`Product type value -> ${productGroup.asProductType().getValue()}\n\n`);
-                break;
-            }
+                case "CATEGORY": {
+                    Logger.log(`Category name -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "CHANNEL": {
+                    Logger.log(`Channel name -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "CHANNEL_EXCLUSIVITY": {
+                    Logger.log(`Channel exclusivity name -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "BRAND": {
+                    Logger.log(`Brand name -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "CONDITION": {
+                    Logger.log(`Condition name -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "CUSTOM_LABEL": {
+                    // It's only necessary to cast the product group to a CustomLabel product
+                    // group if you need to get the label's name (i.e., CustomLabel0).
+                    var customLabel = productGroup.asCustomLabel();
+                    Logger.log(`Custom label name -> ${customLabel.getType()}`);
+                    Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
+                    break;
+                }
+                case "ITEM_ID": {
+                    Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
+                    break;
+                }
+                case "PRODUCT_TYPE": {
+                    // It's only necessary to cast the product group to a ProductType product
+                    // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
+                    var productType = productGroup.asProductType();
+                    Logger.log(`Product type name -> ${productType.getType()}`);
+                    Logger.log(`Product type value -> ${productType.getValue()}\n\n`);
+                    break;
+                }
             }
         }
     }

@@ -33,6 +33,8 @@ Example usage:
 |-|-|-
 [asBrand](#asbrand)|[ProductBrand](./ProductBrand.md)|Casts the product group to a brand product group.
 [asCategory](#ascategory)|[ProductCategory](./ProductCategory.md)|Casts the product group to a category product group.
+[asChannel](#aschannel)|[ProductChannel](./ProductChannel.md)|Casts the product group to a channel product group.
+[asChannelExclusivity](#aschannelexclusivity)|[ProductChannelExclusivity](./ProductChannelExclusivity.md)|Casts the product group to a channel exclusivity product group.
 [asCondition](#ascondition)|[ProductCondition](./ProductCondition.md)|Casts the product group to a condition product group.
 [asCustomLabel](#ascustomlabel)|[ProductCustomLabel](./ProductCustomLabel.md)|Casts the product group to a custom label product group.
 [asItemId](#asitemid)|[ProductItemId](./ProductItemId.md)|Casts the product group to an item ID product group.
@@ -82,6 +84,34 @@ Casts this product group to a category product group.
 |Type|Description|
 |-|-
 [ProductCategory](./ProductCategory.md)|Contains the methods used to access the product group's properties.
+
+
+## <a id="aschannel"></a>asChannel
+
+Casts this product group to a Channel product group. 
+
+> [!NOTE]
+> It's not necessary to cast the product group to a Channel product group to access the channel's value. You can access the channel's value by calling the [getValue](#getvalue) method.
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductChannel](./ProductChannel.md)|Contains the methods used to access the product group's properties.
+
+
+## <a id="aschannelexclusivity"></a>asChannelExclusivity
+
+Casts this product group to a Channel Exclusivity product group. 
+
+> [!NOTE]
+> It's not necessary to cast the product group to a Channel Exclusivity product group to access the channel's value. You can access the channel's value by calling the [getValue](#getvalue) method.
+
+### Returns
+
+|Type|Description|
+|-|-
+[ProductChannelExclusivity](./ProductChannelExclusivity.md)|Contains the methods used to access the product group's properties.
 
 
 ## <a id="ascondition"></a>asCondition

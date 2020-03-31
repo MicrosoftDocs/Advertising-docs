@@ -1,5 +1,5 @@
 ---
-title: "ProductCategory object"
+title: "ProductChannel object"
 description: "Contains the methods used to manage the product group."
 author: "swhite-msft"
 manager: ehansen
@@ -9,11 +9,11 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ProductCategory
+# ProductChannel
 
-Contains the methods for managing a category product group. This object derives from [ProductGroup](ProductGroup.md).
+Contains the methods for managing a channel product group. This object derives from [ProductGroup](ProductGroup.md).
 
-Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's category matches exactly the category name returned by [getName](#getname). 
+Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's channel matches exactly the channel name that [getChannel](#getchannel) returns. 
 
 Example usage:
 ```javascript
@@ -25,11 +25,11 @@ Example usage:
         var group = productGroups.next();
 
         switch (group.getDimension()) {
-            case "CATEGORY": {
-                // It's not necessary to cast the product group to a category product
-                // group since the getValue() method returns the same value as getName().
-                // Logger.log(`Category name: ${group.asCategory().getName()}`);
-                Logger.log(`Category name: ${group.getValue()}`);
+            case "CHANNEL": {
+                // It's not necessary to cast the product group to a channel product
+                // group since the getValue() method returns the same value as getChannel().
+                // Logger.log(`Channel name: ${group.asChannel().getChannel()}`);
+                Logger.log(`Channel name: ${group.getValue()}`);
                 break;
             }
             // Other cases
@@ -43,11 +43,11 @@ Example usage:
 [children](#children)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter this product group's list of child product groups.
 [getAdGroup](#getadgroup)|[AdGroup](./AdGroup.md)|Gets the ad group that this product group belongs to.
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Gets the campaign that this product group belongs to.
+[getChannel](#getchannel)|string|Gets the product's channel name.
 [getDimension](#getdimension)|string|Gets this product group's dimension.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this product group.
 [getMaxCpc](#getmaxcpc)|double|Gets the maximum cost-per-click bid amount for this product group.
-[getName](#getname)|string|Gets the product's category name.
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this product group.
 [getValue](#getvalue)|string|Gets this product group's value.
 [isExcluded](#isexcluded)|Boolean|Gets a Boolean value that determines whether this product group is excluded.
@@ -90,6 +90,17 @@ Gets the campaign that this product group belongs to.
 [Campaign](Campaign.md)|The campaign that this product group belongs to.
 
 
+## <a name="getchannel"></a>getChannel
+
+Gets the product's channel name. This method returns the same value as the `getValue()` method.
+
+### Returns
+
+|Type|Description|
+|-|-
+string|The product's channel name. For example, Online or Local Stores.
+
+
 ## <a id="getdimension"></a>getDimension
 
 Gets this product group's dimension. 
@@ -98,7 +109,7 @@ Gets this product group's dimension.
 
 |Type|Description|
 |-|-
-String|This product group's dimension, which is set to CATEGORY.
+String|This product group's dimension, which is set to CHANNEL.
 
 
 ## <a name="getentitytype"></a>getEntityType
@@ -107,7 +118,7 @@ Gets this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is *ProductCategory*.
+string|This entity's type, which is *ProductChannel*.
 
 <!--
 ## <a name="getfinalurlsuffix"></a>getFinalUrlSuffix
@@ -141,17 +152,6 @@ Gets this product group's maximum cost-per-click bid amount.
 double|The bid amount. Returns null if not set or this is a negative product group (`isExluded` is **true**).
 
 
-## <a name="getname"></a>getName
-
-Gets the product's category name. This method returns the same value as the `getValue()` method.
-
-### Returns
-
-|Type|Description|
-|-|-
-string|The product's category name. For example, Animals & Pet Supplies.
-
-
 ## <a name="getstats"></a>getStats
 Gets the performance data for this product group. 
 
@@ -175,12 +175,12 @@ string|The product group's tracking template.
 -->
 
 ## <a name="getvalue"></a>getValue
-Gets the product's category name. 
+Gets the product's channel name. 
 
 ### Returns:
 |Type|Description|
 |-|-
-string|The product's category name. This is the same value that the [getName](#getname) method returns.
+string|The product's channel name. This is the same value that the [getChannel](#getchannel) method returns.
 
 
 ## <a name="isexcluded"></a>isExcluded
