@@ -26,8 +26,14 @@ Example usage:
 
         switch (group.getDimension()) {
             case "CUSTOM_LABEL": {
-                Logger.log(`Custom label name: ${group.asCustomLabel().getType()}`);
-                Logger.log(`Custom label value: ${group.asCustomLabel().getValue()}`);
+                // It's only necessary to cast the product group to a ProductCustomLabel product
+                // group if you need to get the label's name by calling getType(). Otherwise,
+                // you can simply use ProductGroup if you want to get the label's value by
+                // calling getValue().
+
+                var customLabel = productGroup.asCustomLabel();
+                var labelName = customLabel.getType();
+                var labelValue = customLabel.getValue();
                 break;
             }
             // Other cases

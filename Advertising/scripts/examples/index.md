@@ -22,6 +22,7 @@ See the following topics for examples that demonstrate how to use the core featu
 - [Campaigns](./campaigns.md)
 - [Keywords](./keywords.md)
 - [Labels](./labels.md)
+- [Product Groups](./product-groups.md)
 - [Fetching web resources](./fetch-resources.md)
 
 For more complete solutions, see [Solutions](../solutions/index.md).

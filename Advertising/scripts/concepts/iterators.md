@@ -26,7 +26,6 @@ var iterator = AdsApp.adGroups().get();
 
 while (iterator.hasNext()) {
   var adGroup = iterator.next();
-  Logger.log(`${adGroup.getName()} has a CPC bid of ${adGroup.bidding().getCpc()}`);
 }
 ```
 

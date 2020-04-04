@@ -22,7 +22,6 @@ Example usage:
     // Loops through all labels in the account.
     while (iterator.hasNext()) {
         var label = iterator.next();
-        Logger.log(`${label.getName()}`);
     }
 ```
 

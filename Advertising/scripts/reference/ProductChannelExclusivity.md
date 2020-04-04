@@ -1,5 +1,5 @@
 ---
-title: "ProductType object"
+title: "ProductChannelExclusivity object"
 description: "Contains the methods used to manage the product group."
 author: "swhite-msft"
 manager: ehansen
@@ -9,11 +9,11 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ProductCategory
+# ProductChannelExclusivity
 
-Contains the methods for managing a product type product group. This object derives from [ProductGroup](ProductGroup.md).
+Contains the methods for managing a channel exclusivity product group. This object derives from [ProductGroup](ProductGroup.md).
 
-Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's type matches exactly the type returned by [getType](#gettype). 
+Used by the delivery engine to determine whether a product from the advertiser's catalog is served. The engine may serve the product if the product's channel exclusivity matches exactly the channel exclusivity name that [getChannelExclusivity](#getchannelexclusivity) returns. 
 
 Example usage:
 ```javascript
@@ -25,15 +25,12 @@ Example usage:
         var group = productGroups.next();
 
         switch (group.getDimension()) {
-            case "PRODUCT_TYPE": {
-                // It's only necessary to cast the product group to a ProductType product
-                // group if you need to get the type's name by calling getType(). Otherwise,
-                // you can simply use ProductGroup if you want to get the type's value by
-                // calling getValue().
+            case "CHANNEL_EXCLUSIVITY": {
+                // It's not necessary to cast the product group to a channel exclusivity product
+                // group since the getValue() method returns the same value as getChannelExclusivity().
+                // var channelExclusivity = group.asChannelExclusivity().getChannelExclusivity();
 
-                var productType = productGroup.asProductType();
-                var typeName = productType.getType();
-                var typeValue = productType.getValue();
+                var channelExclusivity = group.getValue();
                 break;
             }
             // Other cases
@@ -47,13 +44,13 @@ Example usage:
 [children](#children)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter this product group's list of child product groups.
 [getAdGroup](#getadgroup)|[AdGroup](./AdGroup.md)|Gets the ad group that this product group belongs to.
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Gets the campaign that this product group belongs to.
+[getChannelExclusivity](#getchannelexclusivity)|string|Gets the product's channel exclusivity name.
 [getDimension](#getdimension)|string|Gets this product group's dimension.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this product group.
 [getMaxCpc](#getmaxcpc)|double|Gets the maximum cost-per-click bid amount for this product group.
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this product group.
-[getType](#gettype)|string|Gets the product's type.
-[getValue](#getvalue)|string|Gets the product type's value.
+[getValue](#getvalue)|string|Gets this product group's value.
 [isExcluded](#isexcluded)|Boolean|Gets a Boolean value that determines whether this product group is excluded.
 [isOtherCase](#isothercase)|Boolean|Gets a Boolean value that determines whether this product group represents all other cases not represented by its sibling product group.
 [parent](#parent)|[ProductGroup](./ProductGroup.md)|Gets this product group's parent product group.
@@ -94,6 +91,17 @@ Gets the campaign that this product group belongs to.
 [Campaign](Campaign.md)|The campaign that this product group belongs to.
 
 
+## <a name="getchannelexclusivity"></a>getChannelExclusivity
+
+Gets the product's channel exclusivity name. This method returns the same value as the `getValue()` method.
+
+### Returns
+
+|Type|Description|
+|-|-
+string|The product's channel exclusivity name. For example, Multi-channel or Single-channel.
+
+
 ## <a id="getdimension"></a>getDimension
 
 Gets this product group's dimension. 
@@ -102,7 +110,7 @@ Gets this product group's dimension.
 
 |Type|Description|
 |-|-
-String|This product group's dimension, which is set to PRODUCT_TYPE.
+String|This product group's dimension, which is set to CHANNEL_EXCLUSIVITY.
 
 
 ## <a name="getentitytype"></a>getEntityType
@@ -111,7 +119,7 @@ Gets this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is *ProductType*.
+string|This entity's type, which is *ProductChannelExclusivity*.
 
 <!--
 ## <a name="getfinalurlsuffix"></a>getFinalUrlSuffix
@@ -167,25 +175,13 @@ Gets the product group's tracking template.
 string|The product group's tracking template.
 -->
 
-
-## <a id="gettype"></a>getType
-
-Gets the product's type. 
-
-### Returns
-
-|Type|Description|
-|-|-
-String|The product's type. For example, PRODUCT_TYPE_L1, PRODUCT_TYPE_L2, etc.
-
-
 ## <a name="getvalue"></a>getValue
-Gets the product type's value. 
+Gets the product's channel exclusivity name. 
 
 ### Returns:
 |Type|Description|
 |-|-
-string|The product type's value.
+string|The product's channel exclusivity name. This is the same value that the [getChannelExclusivity](#getchannelexclusivity) method returns.
 
 
 ## <a name="isexcluded"></a>isExcluded

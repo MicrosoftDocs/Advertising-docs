@@ -22,7 +22,6 @@ Example usage:
     // Loops through all lists in the account.
     while (iterator.hasNext()) {
         var nkwList = iterator.next();
-        Logger.log(`${nkwList.getName()}`);
     }
 }
 ```

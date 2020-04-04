@@ -26,7 +26,11 @@ Example usage:
 
         switch (group.getDimension()) {
             case "CATEGORY": {
-                Logger.log(`Category name: ${group.asCategory().getName()}`);
+                // It's not necessary to cast the product group to a category product
+                // group since the getValue() method returns the same value as getName().
+                // var category = group.asCategory().getName();
+
+                var category = group.getValue();
                 break;
             }
             // Other cases
@@ -140,7 +144,7 @@ double|The bid amount. Returns null if not set or this is a negative product gro
 
 ## <a name="getname"></a>getName
 
-Gets the product's category name. 
+Gets the product's category name. This method returns the same value as the `getValue()` method.
 
 ### Returns
 

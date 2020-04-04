@@ -42,8 +42,6 @@ function main() {
     // each budgets's name and amount.
     while (iterator.hasNext()) {
         var budget = iterator.next();
-        Logger.log(`Name:  ${budget.getName()}
-            Amount: ${budget.getAmount()}\n\n`);
     }
 }
 ```
@@ -69,8 +67,6 @@ function main() {
     // each budget's name and amount.
     while (iterator.hasNext()) {
         var budget = iterator.next();
-        Logger.log(`Name:  ${budget.getName()}
-            Amount: ${budget.getAmount()}\n\n`);
     }
 }
 ```
@@ -90,8 +86,6 @@ function main() {
 
     while (iterator.hasNext()) {
         var budget = iterator.next();
-        Logger.log(`Name:  ${budget.getName()}
-            Amount: ${budget.getAmount()}\n\n`);
     }
 }
 ```
@@ -113,13 +107,11 @@ function main() {
 
     while (budgets.hasNext()) {
         var budget = budgets.next();
-        Logger.log(`${budget.getName()} (${budget.getAmount()}) shared by campaigns:\n\n`);
 
         var campaigns = budget.campaigns().get();
 
         while (campaigns.hasNext()) {
             var campaign = campaigns.next();
-            Logger.log(`${campaign.getName()} (${campaign.getId()})`);
         }
     }
 }
@@ -148,7 +140,6 @@ function main() {
     while (budgets.hasNext()) {
         var budget = budgets.next();
         var metrics = budget.getStats(); // Gets the performance metrics.
-        Logger.log(`${budget.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```

@@ -35,12 +35,12 @@ function main() {
     while (accounts.hasNext()) {
         var account = accounts.next();
 
-        Logger.log("Account ID: " + account.getAccountId());
-        Logger.log("Account name: " + account.getName());
-        Logger.log("Account number: " + account.getAccountNumber());
-        Logger.log("Customer ID: " + account.getCustomerId());
-        Logger.log("Currency code: " + account.getCurrencyCode());
-        Logger.log("Time zone: " + account.getTimeZone() + "\n\n");
+        Logger.log(`Account ID: ${account.getAccountId()}
+            Account name: ${account.getName()}
+            Account number: ${account.getAccountNumber()}
+            Customer ID: ${account.getCustomerId()}
+            Currency code: ${account.getCurrencyCode()}
+            Time zone: ${account.getTimeZone()}\n\n`);
     }
 }
 ```
@@ -83,7 +83,7 @@ function bump() {
 
     // Do something with the entities in the account.
 
-    Logger.log(`ID: ${account.getAccountId()} (${account.getName()})`);
+    Logger.log(`Processing account: ${account.getAccountId()} (${account.getName()})`);
 
     // Return a value that's processed by resultsHandler(). If 
     // the function returns a value, it must be a string. To return
@@ -97,11 +97,10 @@ function bump() {
 // function completes for all accounts.
 
 function resultsHandler(results) {
-    Logger.log('\n\n');
     
     for (var result of results) {
         if (result.getStatus() === 'OK') {
-            Logger.log(`ID: ${result.getReturnValue()}`);
+            value = result.getReturnValue();
         }
     }
 }
@@ -132,12 +131,8 @@ function main() {
     while (accounts.hasNext()) {
         AccountsApp.select(accounts.next());
 
-        // Call the AdsApp methods to do something
-        // with the accounts entities. This simply displays
-        // the first campaign found in each account.
-
-        var campaign = AdsApp.campaigns().get().next();
-        Logger.log(`${campaign.getId()} (${campaign.getName()})`);
+        // AdsApp is now set to the current account.
+        // Do something with the account's entities.
     }
 }
 ```

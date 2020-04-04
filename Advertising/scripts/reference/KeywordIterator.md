@@ -21,7 +21,6 @@ Example usage:
     // Loops through all keywords in the account.
     while (iterator.hasNext()) {
         var keyword = iterator.next();
-        Logger.log(`${keyword.getName()}`);
     }
 ```
 

@@ -26,7 +26,11 @@ Example usage:
 
         switch (group.getDimension()) {
             case "CONDITION": {
-                Logger.log(`Condition name: ${group.asCondition().getName()}`);
+                // It's not necessary to cast the product group to a condition product
+                // group since the getValue() method returns the same value as getName().
+                // var condition = group.asCondition().getName();
+
+                var condition = group.getValue();
                 break;
             }
             // Other cases
@@ -152,7 +156,7 @@ double|The bid amount. Returns null if not set or this is a negative product gro
 
 ## <a id="getname"></a>getName
 
-Gets the product's condition. 
+Gets the product's condition. This method returns the same value as the `getValue()` method. 
 
 ### Returns
 

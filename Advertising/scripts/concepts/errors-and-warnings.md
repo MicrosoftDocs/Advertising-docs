@@ -33,25 +33,24 @@ The only time Scripts returns errors is when you add an entity with invalid valu
         }
 ``` 
 
-However, if you try to update an entity’s properties with an invalid value, Scripts does not return an error. Instead, Scripts writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code continues executing. Because Scripts does not return errors in this case, you should test each set operation to ensure the update succeeded. For example, the following code attempts to set the ad group's CPC bid. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
+However, if you try to update an entity’s properties with an invalid value, Scripts does not return an error. Instead, Scripts writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code continues executing. For example, the following code attempts to set the ad group's CPC bid. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
 
 ```javascript
 function main() {
     var adGroup = AdsApp.adGroups().get().next();
     adGroup.bidding().setCpc(-5);
-    
-    if (adGroup.bidding().getCpc() != -5) {
-        // The bid amount doesn't match the updated value,
-        // so the update failed.
-    }
 }
 ```
+
+> [!NOTE]
+> Although you may be tempted to call `getCpc` method after setting its value to verify that the update succeeded, don't. Calling the get method after calling the set method degrades performance by eliminating the batch update feature. For more information, see [Batching updates](best-practices.md#batching-updates) in [Best practices](best-practices.md).
+
 
 Other errors such as runtime errors or entity retrieval failures cause script execution to stop. When this happens, the error message is written to the [Text Log](./change-and-text-logs.md#text-log). The following code attempts to call the `foo()` function but because the function is not defined the script terminates execution. 
 
 ```javascript
 function main() {
-    foo(); // The script stops because foo() is undefinded and generates a reference error
+    foo(); // The script stops because foo() is undefined and generates a reference error
     Logger.log('This line is never logged!');
 }
 ```

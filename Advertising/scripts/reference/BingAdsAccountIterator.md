@@ -22,7 +22,6 @@ Example usage:
     // Loops through the list of accounts.
     while (accounts.hasNext()) {
         var account = accounts.next();
-        Logger.log(`${account.getName()} (${account.getCustomerId()})`);
     }
 ```
 
