@@ -78,10 +78,6 @@ function main() {
 
     while (accountLabels.hasNext()){
         var label = accountLabels.next();
-
-        Logger.log(`name: ${label.getName()}`);
-        Logger.log(`description: ${label.getDescription()}`);
-        Logger.log(`color: ${label.getColor()}\n\n`);
     }
 
 }
@@ -129,9 +125,9 @@ function printLabels(labels) {
     while (labels.hasNext()){
         var label = labels.next();
 
-        Logger.log(`name: ${label.getName()}`);
-        Logger.log(`description: ${label.getDescription()}`);
-        Logger.log(`color: ${label.getColor()}\n\n`);
+        Logger.log(`name: ${label.getName()}
+            description: ${label.getDescription()}
+            color: ${label.getColor()}\n\n`);
     }
 }
 ```
@@ -154,18 +150,13 @@ function main() {
         .withCondition('LabelNames CONTAINS_ANY ["foo", "bar"]')
         .get();
     
-    Logger.log(`keywords with specified label names: ${keywords.totalNumEntities()}`);
-
     while (keywords.hasNext()){
         var keyword = keywords.next();
-
-        Logger.log(`\n${keyword.getText()}`);
 
         var labels = keyword.labels().get();
 
         while (labels.hasNext()) {
             var label = labels.next();
-            Logger.log(`${label.getName()}`);
         }
     }
 

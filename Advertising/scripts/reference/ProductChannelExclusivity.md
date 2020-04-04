@@ -28,8 +28,9 @@ Example usage:
             case "CHANNEL_EXCLUSIVITY": {
                 // It's not necessary to cast the product group to a channel exclusivity product
                 // group since the getValue() method returns the same value as getChannelExclusivity().
-                // Logger.log(`Channel exclusivity name: ${group.asChannelExclusivity().getChannelExclusivity()}`);
-                Logger.log(`Channel exclusivity name: ${group.getValue()}`);
+                // var channelExclusivity = group.asChannelExclusivity().getChannelExclusivity();
+
+                var channelExclusivity = group.getValue();
                 break;
             }
             // Other cases

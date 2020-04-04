@@ -28,8 +28,9 @@ Example usage:
             case "BRAND": {
                 // It's not necessary to cast the product group to a brand product
                 // group since the getValue() method returns the same value as getName().
-                // Logger.log(`Brand name: ${group.asBrand().getName()}`);
-                Logger.log(`Brand name: ${group.getValue()}`);
+                // var brand = group.asBrand().getName();
+
+                var brand = group.getValue();
                 break;
             }
             // Other cases

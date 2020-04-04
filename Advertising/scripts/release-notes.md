@@ -26,6 +26,8 @@ Added the following methods to [ProductGroup](reference/ProductGroup.md):
 - `asChannel()`
 - `asChannelExclusivity()`
 
+Removed calls to [Logger.Log()](reference/Logger.md) from some script examples. Because logging is an expensive call in terms of performance, guidance is to use logging sparingly and probably not within high volume loops except to provide notification of issues. Also, instead of using multiple `Log()` calls to write multiple lines, use a single call and include newline characters ('\n'). 
+
 
 ## January 16, 2020
 

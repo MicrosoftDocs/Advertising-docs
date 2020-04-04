@@ -21,12 +21,12 @@ If you need to manage resources on the web, use the following methods of [UrlFet
 Use `fetch(url)` if you just need to get a web resource.
 
 ```javascript
-    var response = UrlFetchApp.fetch('https://api.iextrading.com/1.0/stock/msft/quote');
+    var response = UrlFetchApp.fetch('https://www.contoso.com');
 ```
 
 The `fetch(url)` method returns an [HTTResponse](../reference/HTTPResponse.md) object, which has the methods for reading the response. Use the `getContentText` method for reading a text response and `getContent` for reading a binary response.
 
-For the stock quote request above, use `getContentText` to get the JSON response. To access the individual fields in the JSON response, use the `JSON.parse()` method to parse the response.
+If the response body contains a JSON object, use `getContentText` to get the JSON object. To access the individual fields in the JSON object, use the `JSON.parse()` method to parse the response.
 
 ```javascript
     var stock = JSON.parse(response.getContentText());

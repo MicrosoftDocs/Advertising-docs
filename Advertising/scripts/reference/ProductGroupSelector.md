@@ -24,7 +24,6 @@ Example usage:
     while (iterator.hasNext()) {
         var productGroup = iterator.next();
         var metrics = productGroup.getStats();
-        Logger.log(`${productGroup.getId()} | clicks: ${metrics.getClicks()} | conversion rate: ${metrics.getConversionRate()}`);
     }
 ```
 

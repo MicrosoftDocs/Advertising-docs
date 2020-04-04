@@ -15,10 +15,10 @@ The base object that ads, such as expanded text ads, derive from.
 
 This object also represents standard text ads. You may no longer create standard text ads but you may retrieve, pause, remove, and enable them. The following methods do not apply to derived objects and should not be called.
 
-- getDestinationUrl
-- getDisplayUrl
-- getHeadline
-- isMobilePreferred
+- getDestinationUrl()
+- getDisplayUrl()
+- getHeadline()
+- isMobilePreferred()
 
 
 ## Methods

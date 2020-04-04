@@ -21,7 +21,6 @@ Example usage:
 
     while (accounts.hasNext()) {
         var account = accounts.next();
-        Logger.log(`${account.getText()}`);
     }
 ```
 

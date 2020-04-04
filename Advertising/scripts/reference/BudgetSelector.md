@@ -24,7 +24,6 @@ Example usage:
     while (iterator.hasNext()) {
         var budget = iterator.next();
         var metrics = budget.getStats();
-        Logger.log(`${budget.getName()} | clicks: ${metrics.getClick()} | conversion rate: ${metrics.getConversionRate()}`);
     }
 ```
 

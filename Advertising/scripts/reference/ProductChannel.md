@@ -28,8 +28,9 @@ Example usage:
             case "CHANNEL": {
                 // It's not necessary to cast the product group to a channel product
                 // group since the getValue() method returns the same value as getChannel().
-                // Logger.log(`Channel name: ${group.asChannel().getChannel()}`);
-                Logger.log(`Channel name: ${group.getValue()}`);
+                // var channel = group.asChannel().getChannel();
+
+                var channel = group.getValue();
                 break;
             }
             // Other cases

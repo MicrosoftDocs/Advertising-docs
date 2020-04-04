@@ -27,62 +27,48 @@ function main() {
     while (productGroups.hasNext()) {
         var productGroup = productGroups.next();
 
-        Logger.log(`  campaign ID: ${productGroup.getCampaign().getId()}`);
-        Logger.log(`  ad group ID: ${productGroup.getAdGroup().getId()}`);
-        Logger.log(`  product group ID: ${productGroup.getId()}`);
-        Logger.log(`  dimension: ${productGroup.getDimension()}`);
-        Logger.log(`  cpc: ${productGroup.getMaxCpc()}`);
-        Logger.log(`  other case: ${productGroup.isOtherCase()}`);
-        Logger.log(`  excluded: ${productGroup.isExcluded()}`);
-        Logger.log(`  children count: ${productGroup.children().get().totalNumEntities()}`);
-
-        if (productGroup.parent() != null) {
-            Logger.log(`  parent: ${productGroup.parent().getId()}`);
-        }
-
         switch (productGroup.getDimension()) {
             case "ROOT": {
-                Logger.log("\n");
                 break;
             }
             case "CATEGORY": {
-                Logger.log(`Category name -> ${productGroup.getValue()}\n\n`);
+                var category = productGroup.getValue();
                 break;
             }
             case "CHANNEL": {
-                Logger.log(`Channel name -> ${productGroup.getValue()}\n\n`);
+                var channel = productGroup.getValue();
                 break;
             }
             case "CHANNEL_EXCLUSIVITY": {
-                Logger.log(`Channel exclusivity name -> ${productGroup.getValue()}\n\n`);
+                var channelExclusivity = productGroup.getValue();
                 break;
             }
             case "BRAND": {
-                Logger.log(`Brand name -> ${productGroup.getValue()}\n\n`);
+                var brand = productGroup.getValue();
                 break;
             }
             case "CONDITION": {
-                Logger.log(`Condition name -> ${productGroup.getValue()}\n\n`);
+                var condition = productGroup.getValue();
                 break;
             }
             case "CUSTOM_LABEL": {
                 // It's only necessary to cast the product group to a CustomLabel product
                 // group if you need to get the label's name (i.e., CustomLabel0).
                 var customLabel = productGroup.asCustomLabel();
-                Logger.log(`Custom label name -> ${customLabel.getType()}`);
-                Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
+                var labelType = customLabel.getType();
+                var labelValue = customLabel.getValue();
                 break;
             }
             case "ITEM_ID": {
-                Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
+                var id = productGroup.getValue();
                 break;
             }
             case "PRODUCT_TYPE": {
                 // It's only necessary to cast the product group to a ProductType product
                 // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
                 var productType = productGroup.asProductType();
-                Logger.log(`Product type name -> ${productType.getType()}`);
-                Logger.log(`Product type value -> ${productType.getValue()}\n\n`);
+                var typeName = productType.getType();
+                var typeValue = productType.getValue());
                 break;
             }
         }
@@ -99,72 +85,56 @@ function main() {
     var shoppingAdGroups = AdsApp.shoppingAdGroups()
         .get();  
     
-    Logger.log(`shoppingAdGroups selector returned ${shoppingAdGroups.totalNumEntities()} ad groups that matched the selector's conditions`);
-
     while (shoppingAdGroups.hasNext()) {
         var adGroup = shoppingAdGroups.next();
-
-        Logger.log(`Product groups for ad group, ${adGroup.getId()} of campaign ${adGroup.getCampaign().getId()}\n\n`);
 
         var productGroups = adGroup.productGroups().get();
 
         while (productGroups.hasNext()) {
             var productGroup = productGroups.next();
 
-            Logger.log(`  product group ID: ${productGroup.getId()}`);
-            Logger.log(`  dimension: ${productGroup.getDimension()}`);
-            Logger.log(`  cpc: ${productGroup.getMaxCpc()}`);
-            Logger.log(`  other case: ${productGroup.isOtherCase()}`);
-            Logger.log(`  excluded: ${productGroup.isExcluded()}`);
-            Logger.log(`  children count: ${productGroup.children().get().totalNumEntities()}`);
-
-            if (productGroup.parent() != null) {
-                Logger.log(`  parent: ${productGroup.parent().getId()}`);
-            }
-
             switch (productGroup.getDimension()) {
                 case "ROOT": {
-                    Logger.log("\n");
                     break;
                 }
                 case "CATEGORY": {
-                    Logger.log(`Category name -> ${productGroup.getValue()}\n\n`);
+                    var category = productGroup.getValue();
                     break;
                 }
                 case "CHANNEL": {
-                    Logger.log(`Channel name -> ${productGroup.getValue()}\n\n`);
+                    var channel = productGroup.getValue();
                     break;
                 }
                 case "CHANNEL_EXCLUSIVITY": {
-                    Logger.log(`Channel exclusivity name -> ${productGroup.getValue()}\n\n`);
+                    var channelExclusivity = productGroup.getValue();
                     break;
                 }
                 case "BRAND": {
-                    Logger.log(`Brand name -> ${productGroup.getValue()}\n\n`);
+                    var brand = productGroup.getValue();
                     break;
                 }
                 case "CONDITION": {
-                    Logger.log(`Condition name -> ${productGroup.getValue()}\n\n`);
+                    var condition = productGroup.getValue();
                     break;
                 }
                 case "CUSTOM_LABEL": {
                     // It's only necessary to cast the product group to a CustomLabel product
                     // group if you need to get the label's name (i.e., CustomLabel0).
                     var customLabel = productGroup.asCustomLabel();
-                    Logger.log(`Custom label name -> ${customLabel.getType()}`);
-                    Logger.log(`Custom label value -> ${customLabel.getValue()}\n\n`);
+                    var labelType = customLabel.getType();
+                    var labelValue = customLabel.getValue();
                     break;
                 }
                 case "ITEM_ID": {
-                    Logger.log(`Product item ID -> ${productGroup.getValue()}\n\n`);
+                    var id = productGroup.getValue();
                     break;
                 }
                 case "PRODUCT_TYPE": {
                     // It's only necessary to cast the product group to a ProductType product
                     // group if you need to get the type's name (i.e., PRODUCT_TYPE_1).
-                    var productType = productGroup.asProductType();
-                    Logger.log(`Product type name -> ${productType.getType()}`);
-                    Logger.log(`Product type value -> ${productType.getValue()}\n\n`);
+                        var productType = productGroup.asProductType();
+                        var typeName = productType.getType();
+                    var typeValue = productType.getValue());
                     break;
                 }
             }
@@ -189,16 +159,6 @@ function main() {
 
     while (productGroups.hasNext()) {
         var group = productGroups.next();
-
-        Logger.log(`dimension ${group.getDimension()}`)
-        Logger.log(`value ${group.getValue()}`)
-        Logger.log(`cpc ${group.getMaxCpc()}`)
-
-        if (group.parent() != null) {
-            Logger.log(`parent ${group.parent().getId()}`)
-        }
-
-        Logger.log("\n");
     }
 }
 ```
@@ -232,8 +192,6 @@ function main() {
         .forDateRange("LAST_MONTH")
         .get();
 
-    Logger.log(`${productGroups.totalNumEntities()} product groups to update\n\n`);
-
     var groupsToUpdate = [];
 
     while (productGroups.hasNext()) {
@@ -241,11 +199,6 @@ function main() {
     }
     
     for (var group of groupsToUpdate) {
-
-        Logger.log(`id ${group.getId()}`);
-        Logger.log(`dimension ${group.getDimension()}`);
-        Logger.log(`cpc before update ${group.getMaxCpc()}`);
-
         group.setMaxCpc(.35);
     }
 }

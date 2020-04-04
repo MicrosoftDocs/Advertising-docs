@@ -19,7 +19,7 @@ Example usage:
     if (ad.isType().expandedTextAd()) {
         var expandedAd = ad.asType().expandedTextAd();
         Logger.log(`Id: ${expandedAd.getId()}
-            copy:${expandedAd.getDescription()}
+            copy: ${expandedAd.getDescription()}
             title part 1: ${expandedAd.getHeadlinePart1()}
             title part 2: ${expandedAd.getHeadlinePart2()}
             final URL: ${expandedAd.urls().getFinalUrl()}\n\n`);

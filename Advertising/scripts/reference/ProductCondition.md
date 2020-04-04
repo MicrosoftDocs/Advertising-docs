@@ -28,8 +28,9 @@ Example usage:
             case "CONDITION": {
                 // It's not necessary to cast the product group to a condition product
                 // group since the getValue() method returns the same value as getName().
-                // Logger.log(`Condition name: ${group.asCondition().getName()}`);
-                Logger.log(`Condition name: ${group.getValue()}`);
+                // var condition = group.asCondition().getName();
+
+                var condition = group.getValue();
                 break;
             }
             // Other cases

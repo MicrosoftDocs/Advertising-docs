@@ -102,10 +102,7 @@ Most entities let you request performance data, if available. But first you need
 
     while (iterator.hasNext()) {
         var adGroup = iterator.next();
-        
         var stats = adGroup.getStats();
-        Logger.log(`Ad group: ${adGroup.getName()} (${adGroup.getId()})`);
-        Logger.log(`Clicks: ${stats.getClicks()}, Impressions: ${stats.getImpressions()}\n`);
     }
 ```
 
@@ -145,13 +142,12 @@ The builder object contains methods for setting all the object's properties that
             .build();
 ```
 
-The `build` method returns an operation object, which you can use to check whether Scripts successfully created the entity. The following shows the typical calling pattern. You need to call the `getResult` method only if you want to access the new entity's properties.
+The `build` method returns an operation object, which you can use to check whether Scripts successfully created the entity. The following shows the typical calling pattern. Call the `getResult` method only if you want to access the new entity's properties.
 
 ```javascript
     if (adGroupOperation.isSuccessful()) {
         var adGroup = adGroupOperation.getResult();
 
-        Logger.log("Added ad group, " + adGroup.getName());
     }
     else {
         for (var error of adGroupOperation.getErrors()) {
@@ -180,7 +176,7 @@ After using a builder object to add an entity, you use the entity's methods to u
 
 ### But how do I know that the update worked?
 
-If you try to update a property with an invalid value, Scripts writes an error to the Change log but it doesn't throw an exception, so your script continues executing. The only way to know whether a property update succeeds is to check if the property contains the new value.
+If you try to update a property with an invalid value, Scripts writes an error to the Change log but it doesn't throw an exception, so your script continues executing. Don't get the property after updating it to check if the property contains the new value; doing this negatively affects performance.
 
 ```javascript
 function main() {
@@ -190,10 +186,6 @@ function main() {
 
     if (keyword != null) {
         keyword.bidding().setCpc(bidAmount);  // Bid is not set because bid amount is not valid
-
-        if (keyword.bidding().getCpc() != bidAmount) {
-            Logger.log(`Failed to update bid amount for keyword, ${keyword.getText()} (${keyword.getId()})`);
-        }
     }
 
 }

@@ -392,12 +392,16 @@ In order to improve performance, Scripts processes build requests in batches. If
 The same is true if you update an entity and then get the same property you updated. **Don't do this**:
 
 ``` javascript
+    var bidAmount = 1.2;
+
     while (keywords.hasNext()) {
         var keyword = keywords.next();
 
-        // Update and log the keyword that was updated
-        keyword.bidding().setCpc(1.2);
-        Logger.log(`${keyword.getText()} : ${keyword.bidding().getCpc()}`);
+        keyword.bidding().setCpc(bidAmount);
+
+        if (keyword.bidding().getCpc() != bidAmount) {
+            Logger.log(`Failed to update bid amount for keyword, ${keyword.getText()} (${keyword.getId()})`);
+        }
     }
 ```
 

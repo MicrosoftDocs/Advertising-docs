@@ -25,9 +25,15 @@ Example usage:
         var group = productGroups.next();
 
         switch (group.getDimension()) {
-            case "TYPE": {
-                Logger.log(`Product type name: ${group.asProductType().getType()}`);
-                Logger.log(`Product type value: ${group.asProductType().getValue()}`);
+            case "PRODUCT_TYPE": {
+                // It's only necessary to cast the product group to a ProductType product
+                // group if you need to get the type's name by calling getType(). Otherwise,
+                // you can simply use ProductGroup if you want to get the type's value by
+                // calling getValue().
+
+                var productType = productGroup.asProductType();
+                var typeName = productType.getType();
+                var typeValue = productType.getValue();
                 break;
             }
             // Other cases

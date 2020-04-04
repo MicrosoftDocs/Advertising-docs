@@ -13,6 +13,10 @@ ms.topic: "article"
 
 This is the top-level object used to fetch resources from the web.
 
+<!--
+This example throws 403 now. They've updated the service and now require a 
+token. See https://iexcloud.io/docs/api/. They also require attribution, so
+we need to find another endpoint to use.
 
 Example usage:
 ```javascript
@@ -26,7 +30,7 @@ function main() {
     Logger.log("\nstatus code: " + response.getResponseCode());
 }
 ```
-
+-->
 
 ## Methods
 

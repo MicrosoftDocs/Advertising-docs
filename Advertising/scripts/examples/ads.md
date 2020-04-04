@@ -51,11 +51,7 @@ function main() {
             .withHeadlinePart2("AD TITLE PART 2 GOES HERE")
             .build();
 
-        if (operation.isSuccessful()) {
-            var ad = operation.getResult();
-            logAdContents(ad);
-        }
-        else {
+        if (!operation.isSuccessful()) {
             for (var error of operation.getErrors()) {
                 Logger.log(error);
             }
@@ -76,17 +72,6 @@ function getAdGroup(id) {
     }
     else {
         return null;
-    }
-}
-
-function logAdContents(ad) {
-    if (ad.isType().expandedTextAd()) {
-        var expandedAd = ad.asType().expandedTextAd();
-        Logger.log(`Id: ${expandedAd.getId()}
-            copy:${expandedAd.getDescription()}
-            title part 1: ${expandedAd.getHeadlinePart1()}
-            title part 2: ${expandedAd.getHeadlinePart2()}
-            final URL: ${expandedAd.urls().getFinalUrl()}\n\n`);
     }
 }
 ```
@@ -115,11 +100,7 @@ If a previously added ad with the same values for the combination of required fi
         operations.push(adOperation);
         
         for (var operation of operations) {
-            if (operation.isSuccessful()) {
-                var ad = operation.getResult();
-                logAdContents(ad);
-            }
-            else {
+            if (!operation.isSuccessful()) {
                 for (var error of operation.getErrors()) {
                     Logger.log(error);
                 }
@@ -153,11 +134,6 @@ function main() {
 
             if (ad.isType().expandedTextAd()) {
                 var expandedAd = ad.asType().expandedTextAd();
-                Logger.log(`Id: ${expandedAd.getId()}
-                    copy:${expandedAd.getDescription()}
-                    title part 1: ${expandedAd.getHeadlinePart1()}
-                    title part 2: ${expandedAd.getHeadlinePart2()}
-                    final URL: ${expandedAd.urls().getFinalUrl()}\n\n`);
             }
         }
     } 
@@ -187,11 +163,6 @@ function main() {
 
             if (ad.isType().expandedTextAd()) {
                 var expandedAd = ad.asType().expandedTextAd();
-                Logger.log(`Ad ID: ${expandedAd.getId()} 
-                    copy:${expandedAd.getDescription()}
-                    title part 1: ${expandedAd.getHeadlinePart1()}
-                    title part 2: ${expandedAd.getHeadlinePart2()}
-                    final URL: ${expandedAd.urls().getFinalUrl()}\n\n`);
             }
         }
     } 
@@ -211,11 +182,6 @@ function main() {
 
         if (ad.isType().expandedTextAd()) {
             var expandedAd = ad.asType().expandedTextAd();
-            Logger.log(`Ad ID: ${expandedAd.getId()} 
-                copy:${expandedAd.getDescription()}
-                title part 1: ${expandedAd.getHeadlinePart1()}
-                title part 2: ${expandedAd.getHeadlinePart2()}
-                final URL: ${expandedAd.urls().getFinalUrl()}\n\n`);
         }
     }
 } 
@@ -243,7 +209,6 @@ function main() {
     while (ads.hasNext()) {
         var ad = ads.next();
         ad.pause();
-        Logger.log(`Paused ad with ID, ${ad.getId()}`);
     }
 }
 ```

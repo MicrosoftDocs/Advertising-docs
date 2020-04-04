@@ -21,10 +21,6 @@ Example usage:
 
     while (productGroups.hasNext()) {
         var group = productGroups.next();
-
-        Logger.log(`dimension ${group.getDimension()}`)
-        Logger.log(`entity type ${group.getEntityType()}`)
-        Logger.log(`value ${group.getValue()}\n\n`)
     }
 ```
 

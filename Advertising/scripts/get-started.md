@@ -31,10 +31,11 @@ Accessing your Microsoft Advertising data with Scripts is easy. Just follow thes
             .get();
     
         Logger.log("15 keywords with the least impressions over the last week");
+
         while (iterator.hasNext()) {
             var keyword = iterator.next();
             Logger.log(`${keyword.getText()}: 
-                ${keyword.getStats().getImpressions()} impressions`);  //gets the number of impressions
+                ${keyword.getStats().getImpressions()} impressions`);  //writes the number of impressions
         }
     }
     ```
