@@ -30,7 +30,6 @@ function main() {
     // each campaign's name.
     while (iterator.hasNext()) {
         var campaign = iterator.next();
-        Logger.log(`Campaign name:  ${campaign.getName()}`);
     }
 }
 ```
@@ -52,7 +51,6 @@ function main() {
 
     while (iterator.hasNext()) {
         var campaign = iterator.next();
-        Logger.log(`Campaign name: ${campaign.getName()}`);
     }
 }
 ```
@@ -72,7 +70,6 @@ function main() {
 
     while (iterator.hasNext()) {
         var campaign = iterator.next();
-        Logger.log(`Campaign name: ${campaign.getName()}`);
     }
 }
 ```
@@ -100,7 +97,6 @@ function main() {
     while (iterator.hasNext()) {
         var campaign = iterator.next();
         var metrics = campaign.getStats(); // Gets the performance metrics.
-        Logger.log(`${campaign.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```
@@ -122,7 +118,6 @@ function main() {
     while (iterator.hasNext()) {
         var campaign = iterator.next();
         campaign.pause();
-        Logger.log(`Paused campaign: ${campaign.getName()}`);
     }
 }
 ```

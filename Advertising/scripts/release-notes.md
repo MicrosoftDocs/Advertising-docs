@@ -14,6 +14,21 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## March 31, 2020
+
+Added the following objects that derive from [ProductGroup](reference/ProductGroup.md):
+
+- [ProductChannel](reference/ProductChannel.md)
+- [ProductChannelExclusivity](reference/ProductChannelExclusivity.md)
+
+Added the following methods to [ProductGroup](reference/ProductGroup.md):
+
+- `asChannel()`
+- `asChannelExclusivity()`
+
+Removed calls to [Logger.Log()](reference/Logger.md) from some script examples. Because logging is an expensive call in terms of performance, guidance is to use logging sparingly and probably not within high volume loops except to provide notification of issues. Also, instead of using multiple `Log()` calls to write multiple lines, use a single call and include newline characters ('\n'). 
+
+
 ## January 16, 2020
 
 Added support for product groups. The support is limited to enumerating product groups and updating their bids. For examples, see [script examples](examples/product-groups.md).
@@ -24,7 +39,7 @@ This change added following objects:
 - [ProductGroupIterator](reference/ProductGroupIterator.md)
 - [ProductGroupSelector](reference/ProductGroupSelector.md)
 
-Added the following object that derive from [ProductGroup](reference/ProductGroup.md):
+Added the following objects that derive from [ProductGroup](reference/ProductGroup.md):
 
 - [ProductBrand](reference/ProductBrand.md)
 - [ProductCategory](reference/ProductCategory.md)

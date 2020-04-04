@@ -118,7 +118,6 @@ function main() {
     // each ad group's name.
     while (iterator.hasNext()) {
         var adGroup = iterator.next();
-        Logger.log(`AdGroup name:  ${adGroup.getName()}`);
     }
 }
 ```
@@ -146,7 +145,6 @@ function main() {
     // an ad group with the same name.
     while (iterator.hasNext()) {
         var adGroup = iterator.next();
-        Logger.log(`AdGroup name: ${adGroup.getName()}`);
     }
 }
 ```
@@ -166,7 +164,6 @@ function main() {
 
     if (iterator.hasNext()) {
         var adGroup = iterator.next();
-        Logger.log(`AdGroup name: ${adGroup.getName()}`);
     }
 }
 ```
@@ -186,7 +183,6 @@ function main() {
 
     if (iterator.hasNext()) {
         var adGroup = iterator.next();
-        Logger.log(`AdGroup name: ${adGroup.getName()}`);
     }
 }
 ```
@@ -216,7 +212,6 @@ function main() {
     if (iterator.hasNext()) {
         var adGroup = iterator.next();
         var metrics = adGroup.getStats(); // Gets the performance metrics.
-        Logger.log(`${adGroup.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```
@@ -239,7 +234,6 @@ function main() {
     if (iterator.hasNext()) {
         var adGroup = iterator.next();
         adGroup.pause();
-        Logger.log(`Paused ad group: ${adGroup.getName()}`);
     }
 }
 ```

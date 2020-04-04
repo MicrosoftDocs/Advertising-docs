@@ -22,7 +22,6 @@ Example usage:
     // Loops through all campaigns in the account.
     while (iterator.hasNext()) {
         var campaign = iterator.next();
-        Logger.log(`${campaign.getName()}`);
     }
 ```
 

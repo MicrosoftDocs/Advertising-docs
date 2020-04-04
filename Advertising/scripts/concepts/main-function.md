@@ -24,7 +24,6 @@ function getAllCampaigns() {
   var campaigns = AdsApp.campaigns().get();
     while(campaigns.hasNext()){
         var campaign = campaigns.next();
-        Logger.log(`Campaign: ${campaign.getName()}`);
     }
 }
 ```

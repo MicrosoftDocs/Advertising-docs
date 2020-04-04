@@ -22,7 +22,6 @@ Example usage:
     // Loops through all ad groups in the account.
     while (iterator.hasNext()) {
         var adGroup = iterator.next();
-        Logger.log(`${adGroup.getName()}`);
     }
 ```
 

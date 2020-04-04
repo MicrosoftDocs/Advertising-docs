@@ -22,7 +22,6 @@ Example usage:
     // Loops through all product groups in the account.
     while (iterator.hasNext()) {
         var group = iterator.next();
-        Logger.log(`${group.getId()}`);
     }
 }
 ```

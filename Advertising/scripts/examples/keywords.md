@@ -126,7 +126,6 @@ function main() {
     while (iterator.hasNext()) {
         var keyword = iterator.next();
         keyword.pause();
-        Logger.log(`Paused keyword: ${keyword.getText()}`);
     }
 }
 ```
@@ -150,12 +149,6 @@ function main() {
         
     while (iterator.hasNext()) {
         var keyword = iterator.next();
-        Logger.log(`Text: ${keyword.getText()}
-            Match type: ${keyword.getMatchType()}
-            CPC: ${keyword.bidding().getCpc()}
-            Final URL: ${keyword.urls().getFinalUrl()}
-            Approval Status: ${keyword.getApprovalStatus()}
-            Enabled: ${keyword.isEnabled()}\n\n`);
     }
 }
 ```
@@ -186,7 +179,6 @@ function main() {
     if (iterator.hasNext()) {
         var keyword = iterator.next();
         var metrics = keyword.getStats(); // Gets the performance metrics.
-        Logger.log(`${keyword.getText()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```

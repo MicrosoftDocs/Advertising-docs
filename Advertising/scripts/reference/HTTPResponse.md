@@ -18,8 +18,8 @@ Example usage:
 ```javascript
 function main() {
     var response = UrlFetchApp.fetch('http://microsoft.com');
-    Logger.log("payload as a string: " + response.getContentText());
-    Logger.log("\nstatus code: " + response.getResponseCode());
+    Logger.log('status code: ' + response.getResponseCode() + '\n' +
+        'payload as a string: ' + response.getContentText());
 }
 ```
 

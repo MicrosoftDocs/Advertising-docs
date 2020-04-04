@@ -22,7 +22,6 @@ Example usage:
 
     while (iterator.hasNext()) {
         var nkwList = iterator.next();
-        Logger.log(`${nkwList.getName()}`);
     }
 ```
 

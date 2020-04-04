@@ -26,7 +26,10 @@ Example usage:
 
         switch (group.getDimension()) {
             case "ITEM_ID": {
-                Logger.log(`Product item ID: ${group.asItemId().getValue()}`);
+                // It's not necessary to cast the product group to a ProductItemId product
+                // group to get the ID by calling getValue().
+
+                var id = group.getValue();
                 break;
             }
             // Other cases

@@ -22,7 +22,6 @@ Example usage:
     // Loops through all shared budgets in the account.
     while (iterator.hasNext()) {
         var budget = iterator.next();
-        Logger.log(`${budget.getName()}'s budget is ${budget.getAmount()}.`);
     }
 ```
 

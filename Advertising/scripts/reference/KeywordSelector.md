@@ -22,7 +22,6 @@ Example usage:
 
     while (iterator.hasNext()) {
         var keyword = iterator.next();
-        Logger.log(`${keyword.getText()}`);
     }
 ```
 
