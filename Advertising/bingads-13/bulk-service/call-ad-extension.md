@@ -309,7 +309,7 @@ Set this property to *TRUE* if you want the ad extensions to be shown in the sea
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version
-The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.
+The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.
 
 **Add:** Read-only  
 **Update:** Read-only    

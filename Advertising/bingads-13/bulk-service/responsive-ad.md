@@ -300,6 +300,13 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 **Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only  
 
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
+
 ## <a name="headline"></a>Headline
 This is one of two possible headlines that could appear in your audience ads. 
 
@@ -310,13 +317,6 @@ The length of the string is limited to 25 characters.
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
-
-## <a name="finalurlsuffix"></a>Final Url Suffix
-The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
-
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
-**Delete:** Read-only  
 
 ## <a name="id"></a>Id
 The system generated identifier of the ad.

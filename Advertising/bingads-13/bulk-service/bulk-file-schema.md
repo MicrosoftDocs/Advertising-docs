@@ -49,6 +49,7 @@ Record Type  |Supported Campaign Types
 [Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Location Ad Extension](account-location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Account Promotion Ad Extension](account-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Action Ad Extension](action-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -87,6 +88,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Product Audience Association](ad-group-product-audience-association.md)|All         
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
+[Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
 [Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -130,6 +132,7 @@ Record Type  |Supported Campaign Types
 [Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Product Audience Association](campaign-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping         
+[Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Radius Criterion](campaign-radius-criterion.md)|All         
 [Campaign Remarketing List Association](campaign-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping               
 [Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -160,6 +163,7 @@ Record Type  |Supported Campaign Types
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
 [Product Audience](product-audience.md)|All       
+[Promotion Ad Extension](promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Remarketing List](remarketing-list.md)|All         
 [Responsive Ad](responsive-ad.md)|Audience         
 [Responsive Ad Label](responsive-ad-label.md)|Audience        

@@ -14,8 +14,6 @@ Microsoft Advertising users can use the same login credentials to access multipl
 - [Account Hierarchy](#account-hierarchy) describes how you can provide access to a hierarchy of accounts for one or more users in a customer. Effectively you can manage all users and accounts from one parent account, and use one central wallet to pay for everything. Also with hierarchies, you can share campaign resources such as [Universal Event Tracking](universal-event-tracking.md) (UET) tags and remarketing lists across customers. 
 
 > [!NOTE]
-> This beta release of customer to customer [hierarchy](#account-hierarchy) is available to select participants only i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 449. For information about participating in the beta release program, please contact your account manager.
-> 
 > In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account". 
 > 
 > The API and documentation for hierarchies are subject to change.
@@ -295,8 +293,6 @@ Regardless of the business model, the initial sign up and [user role](#user-role
 An agency builds a Bing Ads API application for their company to manage the campaigns of their advertising clients. Client links enable an agency to manage some or all aspects of an advertiser account. The client link request can limit the scope to individual client advertiser accounts or all accounts under the customer. 
 
 > [!NOTE]
-> This beta release of customer to customer [hierarchy](#account-hierarchy) is available to select participants only i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 449. For information about participating in the beta release program, please contact your account manager.
-> 
 > In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account". 
 > 
 > The API and documentation for hierarchies are subject to change.  

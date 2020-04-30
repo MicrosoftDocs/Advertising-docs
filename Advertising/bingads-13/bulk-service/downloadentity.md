@@ -771,6 +771,34 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="PromotionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">109</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="AccountPromotionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">110</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignPromotionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">111</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="AdGroupPromotionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">112</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -785,6 +813,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="accountimageadextensions"></a>AccountImageAdExtensions|Include [Account Image Ad Extension](account-image-ad-extension.md) records in the download that represents the association relationship between an account and an image ad extension. For [Image Ad Extension](image-ad-extension.md) records, you should include the ImageAdExtensions value in the download request.|
 |<a name="accountlocationadextensions"></a>AccountLocationAdExtensions|Include [Account Location Ad Extension](account-location-ad-extension.md) records in the download that represents the association relationship between an account and a location ad extension. For [Location Ad Extension](location-ad-extension.md) records, you should include the LocationAdExtensions value in the download request.|
 |<a name="accountpriceadextensions"></a>AccountPriceAdExtensions|Include [Account Price Ad Extension](account-price-ad-extension.md) records in the download that represents the association relationship between an account and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
+|<a name="accountpromotionadextensions"></a>AccountPromotionAdExtensions|Include [Account Promotion Ad Extension](account-promotion-ad-extension.md) records in the download that represents the association relationship between an account and a promotion ad extension. For [Promotion Ad Extension](promotion-ad-extension.md) records, you should include the PromotionAdExtensions value in the download request.|
 |<a name="accountreviewadextensions"></a>AccountReviewAdExtensions|Include [Account Review Ad Extension](account-review-ad-extension.md) records in the download that each represent the association relationship between an account and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="accountsitelinkadextensions"></a>AccountSitelinkAdExtensions|Include [Account Sitelink Ad Extension](account-sitelink-ad-extension.md) records in the download that represents the association relationship between an account and a sitelink ad extension. For [Sitelink Ad Extension](sitelink-ad-extension.md) records, you should include the SitelinkAdExtensions value in the download request.|
 |<a name="accountstructuredsnippetadextensions"></a>AccountStructuredSnippetAdExtensions|Include [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md) records in the download that represents the association relationship between an account and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
@@ -810,6 +839,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="adgrouppriceadextensions"></a>AdGroupPriceAdExtensions|Include [Ad Group Price Ad Extension](ad-group-price-ad-extension.md) records in the download that each represent the association relationship between an ad group and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
 |<a name="adgroupproductaudienceassociations"></a>AdGroupProductAudienceAssociations|Include [Ad Group Product Audience Association](ad-group-product-audience-association.md) records in the download that each represent the association relationship between an ad group and a product audience. For [Product Audience](product-audience.md) records, you should include the ProductAudiences value in the download request.|
 |<a name="adgroupproductpartitions"></a>AdGroupProductPartitions|Include [Ad Group Product Partition](ad-group-product-partition.md) records in the download data.|
+|<a name="adgrouppromotionadextensions"></a>AdGroupPromotionAdExtensions|Include [Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md) records in the download that each represent the association relationship between an ad group and a promotion ad extension. For [Promotion Ad Extension](promotion-ad-extension.md) records, you should include the PromotionAdExtensions value in the download request.|
 |<a name="adgroupremarketinglistassociations"></a>AdGroupRemarketingListAssociations|Include [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md) records in the download that each represent the association relationship between an ad group and a remarketing list. For [Remarketing List](remarketing-list.md) records, you should include the RemarketingLists value in the download request.|
 |<a name="adgroupreviewadextensions"></a>AdGroupReviewAdExtensions|Include [Ad Group Review Ad Extension](ad-group-review-ad-extension.md) records in the download that each represent the association relationship between an ad group and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="adgroups"></a>AdGroups|Include [Ad Group](ad-group.md) records in the download data.|
@@ -849,6 +879,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="campaignpriceadextensions"></a>CampaignPriceAdExtensions|Include [Campaign Price Ad Extension](campaign-price-ad-extension.md) records in the download that represents the association relationship between a campaign and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
 |<a name="campaignproductaudienceassociations"></a>CampaignProductAudienceAssociations|Include [Campaign Product Audience Association](campaign-product-audience-association.md) records in the download that each represent the association relationship between a campaign and a product audience. For [Product Audience](product-audience.md) records, you should include the ProductAudiences value in the download request.|
 |<a name="campaignproductscopes"></a>CampaignProductScopes|Include [Campaign Product Scope](campaign-product-scope.md) records in the download data.|
+|<a name="campaignpromotionadextensions"></a>CampaignPromotionAdExtensions|Include [Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md) records in the download that represents the association relationship between a campaign and a promotion ad extension. For [Promotion Ad Extension](promotion-ad-extension.md) records, you should include the PromotionAdExtensions value in the download request.|
 |<a name="campaignremarketinglistassociations"></a>CampaignRemarketingListAssociations|Include [Campaign Remarketing List Association](campaign-remarketing-list-association.md) records in the download that each represent the association relationship between a campaign and a remarketing list. For [Remarketing List](remarketing-list.md) records, you should include the RemarketingLists value in the download request.|
 |<a name="campaignreviewadextensions"></a>CampaignReviewAdExtensions|Include [Campaign Review Ad Extension](campaign-review-ad-extension.md) records in the download that each represent the association relationship between a campaign and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="campaigns"></a>Campaigns|Include [Campaign](campaign.md) records in the download data.<br/><br/>New campaign types can be added anytime, so please be sure to leverage the [Campaign Type](campaign.md#campaigntype) and [Sub Type](campaign.md#subtype) fields to filter as needed.|
@@ -875,6 +906,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="productadlabels"></a>ProductAdLabels|Include [Product Ad Label](product-ad-label.md) records in the download that each represent a label applied to a product ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="productads"></a>ProductAds|Include [Product Ad](product-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
 |<a name="productaudiences"></a>ProductAudiences|Include [Product Audience](product-audience.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of product audiences for the current authenticated user. All product audiences that have Scope set to Customer are included. The product audiences that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a product audience is in account scope for an account that the user cannot access, then it is excluded from the download results.|
+|<a name="promotionadextensions"></a>PromotionAdExtensions|Include [Promotion Ad Extension](promotion-ad-extension.md) records in the download data.<br/><br/>To get all promotion ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the promotion ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="remarketinglists"></a>RemarketingLists|Include [Remarketing List](remarketing-list.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of remarketing lists for the current authenticated user. All remarketing lists that have Scope set to Customer are included. The remarketing lists that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a remarketing list is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="responsiveadlabels"></a>ResponsiveAdLabels|Include [Responsive Ad Label](responsive-ad-label.md) records in the download that each represent a label applied to a responsive ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="responsiveads"></a>ResponsiveAds|Include [Responsive Ad](responsive-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|

@@ -118,6 +118,7 @@ The Campaign Management service defines the following data objects.
 |[NegativeCampaignCriterion](negativecampaigncriterion.md)|Defines a criterion that you want to exclude from the specified campaign.|
 |[NegativeKeyword](negativekeyword.md)|Defines a negative keyword with match type.|
 |[NegativeKeywordList](negativekeywordlist.md)|Defines a negative keyword list.|
+|[NegativeSite](negativesite.md)|Defines a website URL where you do not want your ads displayed.|
 |[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Microsoft Advertising.|
 |[OfflineConversionGoal](offlineconversiongoal.md)|Defines an offline conversion goal.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
@@ -126,6 +127,7 @@ The Campaign Management service defines the following data objects.
 |[PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md)|Defines a page visitors who did not visit another page remarketing rule.|
 |[PageVisitorsWhoVisitedAnotherPageRule](pagevisitorswhovisitedanotherpagerule.md)|Defines a page visitors who visited another page remarketing rule.|
 |[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
+|[PlacementExclusionList](placementexclusionlist.md)|Defines a website exclusion list in the manager account (customer) shared library.|
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|
 |[ProductAd](productad.md)|Defines a product ad.|
@@ -134,6 +136,7 @@ The Campaign Management service defines the following data objects.
 |[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
 |[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
 |[ProfileCriterion](profilecriterion.md)|Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.|
+|[PromotionAdExtension](promotionadextension.md)|Promotion Extensions highlight special sales and offers in your text ads.|
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|
 |[RemarketingList](remarketinglist.md)|Defines a remarketing list.|
 |[RemarketingRule](remarketingrule.md)|Defines the base object of a remarketing rule.|
@@ -145,7 +148,7 @@ The Campaign Management service defines the following data objects.
 |[Schedule](schedule.md)|Defines the start and end date ranges for ad extension scheduling.|
 |[Setting](setting.md)|Defines the base class of a setting.|
 |[SharedEntity](sharedentity.md)|Defines the base class of a shared entity.|
-|[SharedEntityAssociation](sharedentityassociation.md)|Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.|
+|[SharedEntityAssociation](sharedentityassociation.md)|Defines an object that associates a campaign to negative keyword list, or an ad account to a website exclusion list.|
 |[SharedList](sharedlist.md)|Defines the base class of a shared list.|
 |[SharedListItem](sharedlistitem.md)|Defines the base class of a shared list item.|
 |[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Microsoft Merchant Center store.|

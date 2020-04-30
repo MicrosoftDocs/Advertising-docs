@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Campaign Price Ad Extension Record - Bulk
-Defines an association record between a [Campaign](campaign.md) and an [Price Ad Extension](price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or price ad extension, use the [Campaign](campaign.md) or [Price Ad Extension](price-ad-extension.md) record.
+Defines an association record between a [Campaign](campaign.md) and a [Price Ad Extension](price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or price ad extension, use the [Campaign](campaign.md) or [Price Ad Extension](price-ad-extension.md) record.
 
 > [!NOTE]
 > Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.

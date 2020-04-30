@@ -9,7 +9,7 @@ description: Defines the base object of an ad.
 # Ad Data Object - Campaign Management
 Defines the base object of an ad.
 
-Do not try to instantiate an *Ad*. You can create one or more following objects that derive from it.
+Do not try to instantiate an *Ad*. You can create one or more of the following objects that derive from it.
 - [AppInstallAd](appinstallad.md)
 - [DynamicSearchAd](dynamicsearchad.md)
 - [ExpandedTextAd](expandedtextad.md)

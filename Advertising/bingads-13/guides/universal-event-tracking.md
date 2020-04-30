@@ -186,13 +186,6 @@ By default ads in a campaign and ad group can show to everyone, but the bid adju
 ## <a name="hierarchy-share"></a>Share Audiences and UET Tags
 Once enabled for both the customer [hierarchy](account-hierarchy-permissions.md#account-hierarchy) and shared UET tags and audiences features you can share UET tags and remarketing lists with other customers. 
 
-> [!NOTE]
-> This beta release of Shared UET tags and audiences is available to select participants only i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 506. For information about participating in the beta release program, please contact your account manager. 
-> 
-> Shared UET tags and audiences also require customer [hierarchy](account-hierarchy-permissions.md#account-hierarchy) feature enablement i.e., where [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 449.  
-> 
-> The API and documentation for Shared UET tags and audiences are subject to change.  
-
 Shared UET tags and audiences can only be managed via the Campaign Management API. Although you can add, get, update, and delete audiences with the Bulk API, you cannot use the Bulk API to manage any aspects of sharing audiences in a customer hierarchy. 
 
 Here are some rules for audience associations that depend on a UET Tag. 

@@ -9,7 +9,7 @@ description: Defines the base object of a criterion.
 # Criterion Data Object - Campaign Management
 Defines the base object of a criterion.
 
-Do not try to instantiate a *Criterion*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *Criterion*. You can create one or more of the following objects that derive from it.
 - [AgeCriterion](agecriterion.md)  
 - [AudienceCriterion](audiencecriterion.md)  
 - [DayTimeCriterion](daytimecriterion.md)  

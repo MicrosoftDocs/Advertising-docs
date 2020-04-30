@@ -9,7 +9,7 @@ description: Defines the base object of a bidding scheme for how you want to man
 # BiddingScheme Data Object - Campaign Management
 Defines the base object of a bidding scheme for how you want to manage your bids. A bidding scheme is known as a *bid strategy type* in the Microsoft Advertising web application.
 
-Do not try to instantiate a *BiddingScheme*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *BiddingScheme*. You can create one or more of the following objects that derive from it.
 - [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md)
 - [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)
 - [ManualCpcBiddingScheme](manualcpcbiddingscheme.md) 

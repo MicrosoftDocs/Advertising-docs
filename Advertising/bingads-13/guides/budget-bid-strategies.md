@@ -134,7 +134,7 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The TargetRoas bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. All of your target locations must be within the United States.  
+> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the respective feature pilots. If you are in the US pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721), then all of your target locations must be within the United States. If you are also in the UK/CA/AU/DE/FR pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns both 704 and 721), then all of your target locations must be within Australia, Canada, Germany, France, United Kingdom, or United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.
