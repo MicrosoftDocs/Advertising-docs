@@ -34,5 +34,238 @@ If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](../c
 |Status|Indicates whether the location in this row is active, pending deprecation, or deprecated.<br/><br/>- Active: You can target or exclude the location.<br/>- Pending Deprecation: The location is still used by the delivery engine for targeting or exclusions; however, the location will be deprecated within the next 30 days.<br/>- Deprecated: the location criterion is no longer used for targeting or exclusions. Deprecated location criteria can still be retrieved via the Bing Ads API e.g., [GetCampaignCriterionsByIds](../campaign-management-service/getcampaigncriterionsbyids.md), but you cannot add or update deprecated location criteria. Please consider calling the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation once or twice each month to determine if the contents of the file have changed e.g., status. You should not need to download the entire file unless the returned [LastModifiedTimeUtc](../campaign-management-service/getgeolocationsfileurl.md#lastmodifiedtimeutc) value has changed since the last time you synced the locations data.|
 |AdWords Location Id|The Google Ads location ID that matches closest to the Microsoft Advertising geographical location ID. You can use this for mapping Microsoft Advertising locations to the estimated Google Ads locations.<br/><br/>This value is a heuristic estimate that can be used for mapping Google Ads and Microsoft Advertising geographical locations.|
 
+## <a name="countrycodes"></a>Country Codes
+In some contexts the API requires a country code string e.g., for the business address of an [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. The following country codes are supported by Microsoft Advertising. 
+
+|Country Code|Country/Region Name|
+|-----|-----|
+|AF|Afghanistan|
+|AL|Albania|
+|DZ|Algeria|
+|AS|American Samoa|
+|AD|Andorra|
+|AO|Angola|
+|AI|Anguilla|
+|AQ|Antarctica|
+|AG|Antigua and Barbuda|
+|AR|Argentina|
+|AM|Armenia|
+|AW|Aruba|
+|AU|Australia|
+|AT|Austria|
+|AZ|Azerbaijan|
+|BS|Bahamas, The|
+|BH|Bahrain|
+|BD|Bangladesh|
+|BB|Barbados|
+|BY|Belarus|
+|BE|Belgium|
+|BZ|Belize|
+|BJ|Benin|
+|BM|Bermuda|
+|BT|Bhutan|
+|BO|Bolivia|
+|AN|Bonaire, Curaçao, Saba, Sint Eustatius, Sint Maarten|
+|BA|Bosnia and Herzegovina|
+|BW|Botswana|
+|BR|Brazil|
+|BN|Brunei|
+|BG|Bulgaria|
+|BF|Burkina Faso|
+|BI|Burundi|
+|CV|Cabo Verde|
+|KH|Cambodia|
+|CM|Cameroon|
+|CA|Canada|
+|KY|Cayman Islands|
+|CF|Central African Republic|
+|TD|Chad|
+|CL|Chile|
+|CN|China|
+|CX|Christmas Island|
+|CC|Cocos (Keeling) Islands|
+|CO|Colombia|
+|KM|Comoros|
+|CG|Congo|
+|CD|Congo (DRC)|
+|CK|Cook Islands|
+|CR|Costa Rica|
+|CI|Côte d'Ivoire|
+|HR|Croatia|
+|CY|Cyprus|
+|CZ|Czech Republic|
+|DK|Denmark|
+|DJ|Djibouti|
+|DM|Dominica|
+|DO|Dominican Republic|
+|EC|Ecuador|
+|EG|Egypt|
+|SV|El Salvador|
+|GQ|Equatorial Guinea|
+|ER|Eritrea|
+|EE|Estonia|
+|ET|Ethiopia|
+|FK|Falkland Islands (Islas Malvinas)|
+|FO|Faroe Islands|
+|FJ|Fiji Islands|
+|FI|Finland|
+|FR|France|
+|GF|French Guiana|
+|PF|French Polynesia|
+|GA|Gabon|
+|GM|Gambia, The|
+|GE|Georgia|
+|DE|Germany|
+|GH|Ghana|
+|GI|Gibraltar|
+|GR|Greece|
+|GL|Greenland|
+|GD|Grenada|
+|GP|Guadeloupe|
+|GU|Guam|
+|GT|Guatemala|
+|GN|Guinea|
+|GW|Guinea-Bissau|
+|GY|Guyana|
+|HT|Haiti|
+|HN|Honduras|
+|HK|Hong Kong SAR|
+|HU|Hungary|
+|IS|Iceland|
+|IN|India|
+|ID|Indonesia|
+|IQ|Iraq|
+|IE|Ireland|
+|IL|Israel|
+|IT|Italy|
+|JM|Jamaica|
+|JP|Japan|
+|JO|Jordan|
+|KZ|Kazakhstan|
+|KE|Kenya|
+|KI|Kiribati|
+|KR|Korea|
+|KW|Kuwait|
+|KG|Kyrgyzstan|
+|LA|Laos|
+|LV|Latvia|
+|LB|Lebanon|
+|LS|Lesotho|
+|LR|Liberia|
+|LY|Libya|
+|LI|Liechtenstein|
+|LT|Lithuania|
+|LU|Luxembourg|
+|MO|Macao SAR|
+|MK|Macedonia, Former Yugoslav Republic of|
+|MG|Madagascar|
+|MW|Malawi|
+|MY|Malaysia|
+|MV|Maldives|
+|ML|Mali|
+|MT|Malta|
+|MH|Marshall Islands|
+|MQ|Martinique|
+|MR|Mauritania|
+|MU|Mauritius|
+|YT|Mayotte|
+|MX|Mexico|
+|FM|Micronesia|
+|MD|Moldova|
+|MC|Monaco|
+|MN|Mongolia|
+|ME|Montenegro|
+|MS|Montserrat|
+|MA|Morocco|
+|MZ|Mozambique|
+|MM|Myanmar|
+|NA|Namibia|
+|NR|Nauru|
+|NP|Nepal|
+|NL|Netherlands|
+|NC|New Caledonia|
+|NZ|New Zealand|
+|NI|Nicaragua|
+|NE|Niger|
+|NG|Nigeria|
+|NU|Niue|
+|NF|Norfolk Island|
+|MP|Northern Mariana Islands|
+|NO|Norway|
+|OM|Oman|
+|PK|Pakistan|
+|PW|Palau|
+|PS|Palestinian Authority|
+|PA|Panama|
+|PG|Papua New Guinea|
+|PY|Paraguay|
+|PE|Peru|
+|PH|Philippines|
+|PN|Pitcairn Islands|
+|PL|Poland|
+|PT|Portugal|
+|PR|Puerto Rico|
+|QA|Qatar|
+|RE|Reunion|
+|RO|Romania|
+|RU|Russia|
+|RW|Rwanda|
+|SH|Saint Helena|
+|KN|Saint Kitts and Nevis|
+|LC|Saint Lucia|
+|PM|Saint Pierre and Miquelon|
+|VC|Saint Vincent and the Grenadines|
+|WS|Samoa|
+|SM|San Marino|
+|ST|Sao Tomé and Príncipe|
+|SA|Saudi Arabia|
+|SN|Senegal|
+|RS|Serbia|
+|SC|Seychelles|
+|SL|Sierra Leone|
+|SG|Singapore|
+|SK|Slovakia|
+|SI|Slovenia|
+|SB|Solomon Islands|
+|SO|Somalia|
+|ZA|South Africa|
+|ES|Spain|
+|LK|Sri Lanka|
+|SR|Suriname|
+|SZ|Swaziland|
+|SE|Sweden|
+|CH|Switzerland|
+|TW|Taiwan|
+|TJ|Tajikistan|
+|TZ|Tanzania|
+|TH|Thailand|
+|TL|Timor-Leste|
+|TG|Togo|
+|TK|Tokelau|
+|TO|Tonga|
+|TT|Trinidad and Tobago|
+|TN|Tunisia|
+|TR|Turkey|
+|TM|Turkmenistan|
+|TC|Turks and Caicos Islands|
+|TV|Tuvalu|
+|UG|Uganda|
+|UA|Ukraine|
+|AE|United Arab Emirates|
+|GB|United Kingdom|
+|US|United States|
+|UY|Uruguay|
+|UZ|Uzbekistan|
+|VU|Vanuatu|
+|VA|Vatican City|
+|VE|Venezuela|
+|VN|Vietnam|
+|VG|Virgin Islands, British|
+|VI|Virgin Islands, U.S.|
+|WF|Wallis and Futuna|
+|YE|Yemen|
+|ZM|Zambia|
+|ZW|Zimbabwe|
+
 ## See Also
 [Show Ads to Your Target Audience](show-ads-target-audience.md)  

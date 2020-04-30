@@ -25,6 +25,7 @@ Defines the possible ad extension types.
         <xs:enumeration value="StructuredSnippetAdExtension" />
         <xs:enumeration value="PriceAdExtension" />
         <xs:enumeration value="ActionAdExtension" />
+        <xs:enumeration value="PromotionAdExtension" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -35,16 +36,17 @@ Defines the possible ad extension types.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="actionadextension"></a>ActionAdExtension|An ad extension that contains a call-to-action button.|
-|<a name="appadextension"></a>AppAdExtension|An ad extension that contains a link to install an application from a supported app store. For more information, see [AppAdExtension](appadextension.md).|
-|<a name="calladextension"></a>CallAdExtension|An ad extension that contains a phone number and whether it's the only clickable item in an ad. For more information, see [CallAdExtension](calladextension.md).|
-|<a name="calloutadextension"></a>CalloutAdExtension|An ad extension that contains additional text in the ad that can describe more about your business, products, or services. For more information, see [CalloutAdExtension](calloutadextension.md).|
-|<a name="imageadextension"></a>ImageAdExtension|An ad extension that contains an image with alternative text. For more information, see [ImageAdExtension](imageadextension.md).|
-|<a name="locationadextension"></a>LocationAdExtension|An ad extension that contains the address and phone number of the business. For more information, see [LocationAdExtension](locationadextension.md).|
-|<a name="priceadextension"></a>PriceAdExtension|An ad extension that includes between 3 and 8 price table rows. For more information, see [PriceAdExtension](priceadextension.md).|
-|<a name="reviewadextension"></a>ReviewAdExtension|An ad extension that contains third-party reviews (exact or paraphrased) about your business, products, or services. For more information, see [ReviewAdExtension](reviewadextension.md).|
-|<a name="sitelinkadextension"></a>SitelinkAdExtension|An ad extension that contains one site link. For more information, see [SitelinkAdExtension](sitelinkadextension.md).|
-|<a name="structuredsnippetadextension"></a>StructuredSnippetAdExtension|An ad extension that contains a header and values that tell customers more about your business. For more information, see [StructuredSnippetAdExtension](structuredsnippetadextension.md).|
+|<a name="actionadextension"></a>ActionAdExtension|An ad extension that contains a call-to-action button.<br/><br/>For more information, see [ActionAdExtension](actionadextension.md).|
+|<a name="appadextension"></a>AppAdExtension|An ad extension that contains a link to install an application from a supported app store.<br/><br/>For more information, see [AppAdExtension](appadextension.md).|
+|<a name="calladextension"></a>CallAdExtension|An ad extension that contains a phone number and whether it's the only clickable item in an ad.<br/><br/>For more information, see [CallAdExtension](calladextension.md).|
+|<a name="calloutadextension"></a>CalloutAdExtension|An ad extension that contains additional text in the ad that can describe more about your business, products, or services.<br/><br/>For more information, see [CalloutAdExtension](calloutadextension.md).|
+|<a name="imageadextension"></a>ImageAdExtension|An ad extension that contains an image with alternative text.<br/><br/>For more information, see [ImageAdExtension](imageadextension.md).|
+|<a name="locationadextension"></a>LocationAdExtension|An ad extension that contains the address and phone number of the business.<br/><br/>For more information, see [LocationAdExtension](locationadextension.md).|
+|<a name="priceadextension"></a>PriceAdExtension|An ad extension that includes between 3 and 8 price table rows.<br/><br/>For more information, see [PriceAdExtension](priceadextension.md).|
+|<a name="promotionadextension"></a>PromotionAdExtension|An ad extension that highlights special sales and offers in your text ads.<br/><br/>For more information, see [PromotionAdExtension](promotionadextension.md).|
+|<a name="reviewadextension"></a>ReviewAdExtension|An ad extension that contains third-party reviews (exact or paraphrased) about your business, products, or services.<br/><br/>For more information, see [ReviewAdExtension](reviewadextension.md).|
+|<a name="sitelinkadextension"></a>SitelinkAdExtension|An ad extension that contains one site link.<br/><br/>For more information, see [SitelinkAdExtension](sitelinkadextension.md).|
+|<a name="structuredsnippetadextension"></a>StructuredSnippetAdExtension|An ad extension that contains a header and values that tell customers more about your business.<br/><br/>For more information, see [StructuredSnippetAdExtension](structuredsnippetadextension.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
