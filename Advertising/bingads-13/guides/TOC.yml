@@ -167,6 +167,8 @@
       href: ./keyword-ideas-traffic-estimates.md
     - name: Negative Keywords
       href: ./negative-keywords.md
+    - name: Negative Sites
+      href: ./negative-sites.md
     - name: Page Feeds
       href: ./page-feeds.md
     - name: Show Ads to Your Target Audience
@@ -561,6 +563,9 @@
         - name: Account Price Ad Extension
           href: ../bulk-service/account-price-ad-extension.md
           displayName: BulkAccountPriceAdExtension
+        - name: Account Promotion Ad Extension
+          href: ../bulk-service/account-promotion-ad-extension.md
+          displayName: BulkAccountPromotionAdExtension
         - name: Account Review Ad Extension
           href: ../bulk-service/account-review-ad-extension.md
           displayName: BulkAccountReviewAdExtension
@@ -678,6 +683,9 @@
         - name: Ad Group Product Partition
           href: ../bulk-service/ad-group-product-partition.md
           displayName: BulkAdGroupProductPartition
+        - name: Ad Group Promotion Ad Extension
+          href: ../bulk-service/ad-group-promotion-ad-extension.md
+          displayName: BulkAdGroupPromotionAdExtension
         - name: Ad Group Radius Criterion
           href: ../bulk-service/ad-group-radius-criterion.md
           displayName: BulkAdGroupRadiusCriterion
@@ -810,6 +818,9 @@
         - name: Campaign Product Scope
           href: ../bulk-service/campaign-product-scope.md
           displayName: BulkCampaignProductScope
+        - name: Campaign Promotion Ad Extension
+          href: ../bulk-service/campaign-promotion-ad-extension.md
+          displayName: BulkCampaignPromotionAdExtension
         - name: Campaign Radius Criterion
           href: ../bulk-service/campaign-radius-criterion.md
           displayName: BulkCampaignRadiusCriterion
@@ -899,6 +910,9 @@
         - name: Product Audience
           href: ../bulk-service/product-audience.md
           displayName: BulkProductAudience
+        - name: Promotion Ad Extension
+          href: ../bulk-service/promotion-ad-extension.md
+          displayName: BulkPromotionAdExtension
         - name: Remarketing List
           href: ../bulk-service/remarketing-list.md
           displayName: BulkRemarketingList
@@ -1368,6 +1382,8 @@
           href: ../campaign-management-service/negativekeyword.md
         - name: NegativeKeywordList
           href: ../campaign-management-service/negativekeywordlist.md
+        - name: NegativeSite
+          href: ../campaign-management-service/negativesite.md
         - name: OfflineConversion
           href: ../campaign-management-service/offlineconversion.md
         - name: OfflineConversionGoal
@@ -1384,6 +1400,8 @@
           href: ../campaign-management-service/pagevisitorswhovisitedanotherpagerule.md
         - name: Paging
           href: ../campaign-management-service/paging.md
+        - name: PlacementExclusionList
+          href: ../campaign-management-service/placementexclusionlist.md
         - name: PriceAdExtension
           href: ../campaign-management-service/priceadextension.md
         - name: PriceTableRow
@@ -1400,6 +1418,8 @@
           href: ../campaign-management-service/productscope.md
         - name: ProfileCriterion
           href: ../campaign-management-service/profilecriterion.md
+        - name: PromotionAdExtension
+          href: ../campaign-management-service/promotionadextension.md
         - name: RadiusCriterion
           href: ../campaign-management-service/radiuscriterion.md
         - name: RemarketingList
@@ -1589,6 +1609,10 @@
           href: ../campaign-management-service/productpartitiontype.md
         - name: ProfileType
           href: ../campaign-management-service/profiletype.md
+        - name: PromotionDiscountModifier
+          href: ../campaign-management-service/promotiondiscountmodifier.md
+        - name: PromotionOccasion
+          href: ../campaign-management-service/promotionoccasion.md
         - name: StringOperator
           href: ../campaign-management-service/stringoperator.md
         - name: UetTagTrackingStatus

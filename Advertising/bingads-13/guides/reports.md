@@ -25,10 +25,10 @@ You can request Csv, Tsv, or Xml report data. By default if you do not choose an
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 2/7/2019"
+"Report Time: 2/7/2020"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 2/8/2019 10:15:00 PM (GMT)"
-"Last Completed Available Hour: 2/8/2019 10:15:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2020 10:15:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2020 10:15:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -41,7 +41,7 @@ You can request Csv, Tsv, or Xml report data. By default if you do not choose an
 "YourAccountId","YourCampaignId","shoe sale","345","Computer","80"
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 
-"@2019 Microsoft Corporation. All rights reserved. "
+"@2020 Microsoft Corporation. All rights reserved. "
 ```
 
 The following report header metadata is included by default. If you don't want the header metadata set [ExcludeReportHeader](../reporting-service/reportrequest.md#excludereportheader) to *true*.
@@ -49,7 +49,7 @@ The following report header metadata is included by default. If you don't want t
 |Header Metadata|Description|
 |-----|-----|
 |Report Name|The [ReportName](../reporting-service/reportrequest.md#reportname) that you chose when the report was submitted.|
-|Report Time|The report time that you chose when the report was submitted. If multiple days were requested, the start and end date will be separated by a comma e.g., "Report Time: 2/1/2019, 2/7/2019".|
+|Report Time|The report time that you chose when the report was submitted. If multiple days were requested, the start and end date will be separated by a comma e.g., "Report Time: 2/1/2020, 2/7/2020".|
 |Time Zone|Indicates which time zone was used to determine the end of the last day of the requested report time. For information about how the time zone affects report availability, see [Time Zones in Reporting](#reptimezones) below.|
 |Last Completed Available Day|The most recent date and time when Microsoft Advertising finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
 |Last Completed Available Hour|The most recent date and time when Microsoft Advertising finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
@@ -60,17 +60,17 @@ The following report header metadata is included by default. If you don't want t
 
 The report column names e.g., *"AccountId","CampaignId","Keyword","KeywordId","DeviceType","Clicks"* are included by default. If you don't want the report columns set [ExcludeColumnHeaders](../reporting-service/reportrequest.md#excludecolumnheaders) to *true*. 
 
-The report footer metadata e.g., *@2019 Microsoft Corporation. All rights reserved.* is included by default. If you don't want the footer metadata set [ExcludeReportFooter](../reporting-service/reportrequest.md#excludereportfooter) to *true*.
+The report footer metadata e.g., *@2020 Microsoft Corporation. All rights reserved.* is included by default. If you don't want the footer metadata set [ExcludeReportFooter](../reporting-service/reportrequest.md#excludereportfooter) to *true*.
 
 ## <a name="columnsdata"></a>Columns that Group the Data
 The attribute columns that you include in a report affects the values within the statistics columns as well as the number or rows. For example, if you request a summary report that includes only *AccountId*, *CampaignId*, *Keyword*, *KeywordId*, and *Clicks*, the clicks column will contain the number of clicks for the keyword regardless of excluded attributes such as device, match type, and network. 
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 2/7/2019"
+"Report Time: 2/7/2020"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 2/8/2019 2:55:00 PM (GMT)"
-"Last Completed Available Hour: 2/8/2019 2:55:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2020 2:55:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2020 2:55:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -81,17 +81,17 @@ The attribute columns that you include in a report affects the values within the
 "YourAccountId","YourCampaignId","shoes delivered","234","1"
 "YourAccountId","YourCampaignId","shoe sale","345","98"
 
-"@2019 Microsoft Corporation. All rights reserved. "
+"@2020 Microsoft Corporation. All rights reserved. "
 ```
 
 If you then include the *DeviceType* column, the report will contain a row for each unique combination of keyword and device type values, and the value in the clicks column for each row is broken down accordingly. 
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 2/7/2019"
+"Report Time: 2/7/2020"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 2/8/2019 2:55:00 PM (GMT)"
-"Last Completed Available Hour: 2/8/2019 2:55:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2020 2:55:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2020 2:55:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -106,7 +106,7 @@ If you then include the *DeviceType* column, the report will contain a row for e
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 "YourAccountId","YourCampaignId","shoe sale","345","Tablet","13"
 
-"@2019 Microsoft Corporation. All rights reserved. "
+"@2020 Microsoft Corporation. All rights reserved. "
 ```
 
 For more information about each type of available columns, see [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md).
@@ -116,29 +116,35 @@ The *TimePeriod* attribute is required for most reports, so you should also cons
 ## <a name="columnrestrictions"></a>Column Restrictions
 For reports that include impression share performance statistics columns you cannot include constrained attributes in the same report request. If you include any of the impression share performance statistics columns, then you must exclude all of the below attribute columns. Likewise, if you include any of the below attribute columns, then you must exclude all of the impression share performance statistics columns.
 
-The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md).
+The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md). 
+
+> [!NOTE]
+> In addition, if you include any of the AudienceImpressionLostToBudgetPercent, AudienceImpressionLostToRankPercent, or AudienceImpressionSharePercent columns, then you must exclude the CustomerId, CustomerName, and DeliveredMatchType attribute columns, and vice versa. 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md).
 
+> [!NOTE]
+> In addition, if you include any of the AudienceImpressionLostToBudgetPercent, AudienceImpressionLostToRankPercent, or AudienceImpressionSharePercent columns, then you must exclude the CustomerId, CustomerName, and DeliveredMatchType attribute columns, and vice versa. 
+
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 	
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>BidMatchType<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>DeliveredMatchType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>BidMatchType<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>DeliveredMatchType<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
 ## <a name="timeperiod"></a>Time Period Column
 If you include the *TimePeriod* column, then the format of the values in the downloaded report will vary depending on the aggregation level that you specify in the report request. For example, if the aggregation level is Daily, each field in TimePeriod column will contain the day formatted as *yyyy-mm-dd*.
@@ -147,7 +153,7 @@ If you include the *TimePeriod* column, then the format of the values in the dow
 |---------------|---------------|
 |Daily|Each row of the report identifies the month, day, and year when the transaction occurred. The report data will be aggregated by each day. The time period will be formatted as *yyyy-mm-dd*.|
 |DayOfWeek|Each row of the report identifies the day of the week when the transaction occurred. The report data will be aggregated by each of the seven days in a week. The possible data values are *1* - *7* where *1* represents Sunday and *7* represents Saturday. If the report time spans multiple weeks, then the performance data across all weeks for a given day of the week will be aggregated in one row. For example if *Campaign A* has 5 impressions every Monday (day 2) throughout each of the 3 weeks included in the report time range, then the report will include one row with a *2* in the TimePeriod column and the impressions in that row totaling 15.|
-|Hourly|Each row of the report identifies the hour when the transaction occurred. The report data will be aggregated by each hour of the day.<br/><br/>The time period will be formatted with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy 12:00:00 AM&#124;hour" where 12:00:00 AM can be ignored. For example, if the click occurred March 15, 2019 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2019 12:00:00 AM&#124;7". The possible values for the hour component are *0* - *23*. If the report time spans multiple days, then the performance data for a given hour will be provided separately across multiple rows i.e. the report will include one row for each unique day and hour. For example if *Campaign A* has 5 impressions during *Hour* 7 on each of the 3 days included in the report time range, then the report will include three rows each with 5 impressions for *Hour* 7.|
+|Hourly|Each row of the report identifies the hour when the transaction occurred. The report data will be aggregated by each hour of the day.<br/><br/>The time period will be formatted with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy 12:00:00 AM&#124;hour" where 12:00:00 AM can be ignored. For example, if the click occurred March 15, 2020 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2020 12:00:00 AM&#124;7". The possible values for the hour component are *0* - *23*. If the report time spans multiple days, then the performance data for a given hour will be provided separately across multiple rows i.e. the report will include one row for each unique day and hour. For example if *Campaign A* has 5 impressions during *Hour* 7 on each of the 3 days included in the report time range, then the report will include three rows each with 5 impressions for *Hour* 7.|
 |HourOfDay|Each row of the report identifies the hour of the day when the transaction occurred. The report data will be aggregated by each of the 24 hours across all days. The possible values are *0* - *23*. If the report time spans multiple days, then the performance data across all days for a given hour will be aggregated in one row. For example if *Campaign A* has 5 impressions during hour *7* on each of the 3 days included in the report time range, then the report will include one row with impressions for *HourOfDay* totaling 15.|
 |Monthly|Each row of the report identifies the month when the transaction occurred. The report data will be aggregated by each month. The time period that contains the first day of the month will be formatted as *yyyy-mm-dd*.|
 |Weekly|Each row of the report identifies the week when the transaction occurred. The report data will be aggregated by each week. The time period that contains the date of the Sunday for each week will be formatted as *yyyy-mm-dd*.|
@@ -173,7 +179,7 @@ The report data can include rows with zero impressions if the impression occurre
 ## <a name="reptimezones"></a>Time Zones in Reporting
 The downloaded report data is always relative to UTC time. For example an hourly report might attribute 5 clicks to hour 7. In that case the 5 clicks occurred between 07:00 and 08:00 UTC. 
 
-The [ReportTimeZone](../reporting-service/reporttime.md#reporttimezone) request element determines the time zone that is used to establish today's date. When you submit the report request today's date can vary around the world depending on the time zone. The report time period that you choose e.g., 'Yesterday' is then relative to today's date. If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default. For example, a report requested without a time zone specified at 2 AM EasternTimeUSCanada on 2/2/2019 for 'Yesterday' will be interpreted as a request for 1/31/2019. A report requested at the same time for 'Yesterday' with time zone set as EasternTimeUSCanada will be interpreted as a request for 2/1/2019. 
+The [ReportTimeZone](../reporting-service/reporttime.md#reporttimezone) request element determines the time zone that is used to establish today's date. When you submit the report request today's date can vary around the world depending on the time zone. The report time period that you choose e.g., 'Yesterday' is then relative to today's date. If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default. For example, a report requested without a time zone specified at 2 AM EasternTimeUSCanada on 2/2/2020 for 'Yesterday' will be interpreted as a request for 1/31/2020. A report requested at the same time for 'Yesterday' with time zone set as EasternTimeUSCanada will be interpreted as a request for 2/1/2020. 
 
 The [ReturnOnlyCompleteData](../reporting-service/reportrequest.md#returnonlycompletedata) request element determines whether or not the service must ensure that all the data has been processed and is available. If set to *true* and if the system has not finished processing all the data based on the requested aggregation, scope, and time, the service returns error code NoCompleteDataAvaliable (2004). Otherwise by default the request can succeed, there is no indication as to whether the data is complete, and the report will contain only the data that the system has finished processing at the time of the request. While today is still in progress you can get the most current data by not requesting completed data. Then after the books close for the day, you might want to set this flag true and look back to what is now 'Yesterday' and get the final report data. 
 

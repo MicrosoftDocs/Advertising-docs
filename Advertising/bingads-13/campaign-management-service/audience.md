@@ -9,7 +9,7 @@ description: Defines the base object of an audience.
 # Audience Data Object - Campaign Management
 Defines the base object of an audience.
 
-Do not try to instantiate an *Audience*. You can create one or more following objects that derive from it.
+Do not try to instantiate an *Audience*. You can create one or more of the following objects that derive from it.
 - [CustomAudience](customaudience.md)  
 - [InMarketAudience](inmarketaudience.md)  
 - [ProductAudience](productaudience.md)  
@@ -26,14 +26,14 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
     <xs:element minOccurs="0" name="AudienceNetworkSize" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="CustomerShare" nillable="true" type="tns:CustomerShare" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q86:ArrayOfKeyValuePairOfstringstring" xmlns:q86="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q88:ArrayOfKeyValuePairOfstringstring" xmlns:q88="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
     <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q87:ArrayOfstring" xmlns:q87="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q89:ArrayOfstring" xmlns:q89="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>

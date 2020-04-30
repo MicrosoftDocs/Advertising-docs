@@ -22,7 +22,7 @@ Defines the set of accounts to include in the report.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.|**long** array|
+|<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.<br/><br/>This element is required.|**long** array|
 
 ## Requirements
 Service: [ReportingService.svc v13](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v13/ReportingService.svc)  

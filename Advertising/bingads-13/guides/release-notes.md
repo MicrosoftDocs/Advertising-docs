@@ -9,6 +9,50 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="april2020"></a>April 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Promotion Ad Extensions](#promotionadextension-april2020) 
+- [Placement Exclusion List](#placementexclusionlist-april2020) 
+- [Impression Share for Microsoft Audience Network](#audiencenetworksov-april2020) 
+
+### <a name="promotionadextension-april2020"></a>Promotion Ad Extensions
+
+Promotion Extensions highlight special sales and offers in your text ads. By making offers stand out, potential customers are more likely to click on your ad, helping to generate more sales for you. 
+
+You can associate a promotion ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 promotion ad extensions.  
+
+> [!NOTE]
+> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+
+#### <a name="bulk-promotionadextension-april2020"></a>Bulk API for Promotion Ad Extensions
+
+With the Bulk API use the following record types to manage promotion ad extensions.  
+- [Promotion Ad Extension](../bulk-service/promotion-ad-extension.md)   
+- [Account Promotion Ad Extension](../bulk-service/account-promotion-ad-extension.md)   
+- [Campaign Promotion Ad Extension](../bulk-service/campaign-promotion-ad-extension.md)   
+- [Ad Group Promotion Ad Extension](../bulk-service/ad-group-promotion-ad-extension.md)   
+
+#### <a name="campaign-promotionadextension-april2020"></a>Campaign Management API for Promotion Ad Extensions
+
+With the Campaign Management API use the [PromotionAdExtension](../campaign-management-service/promotionadextension.md) object e.g., via the [AddAdExtensions](../campaign-management-service/addadextensions.md) service operation.  
+
+### <a name="placementexclusionlist-april2020"></a>Placement Exclusion List
+
+Support for Account level website exclusions is added to the Campaign Management API. Negative sites ([NegativeSite](../campaign-management-service/negativesite.md)) can be added and deleted from a shared website exclusion list ([PlacementExclusionList](../campaign-management-service/placementexclusionlist.md)). The website exclusion list can be shared or associated with multiple ad accounts. 
+
+> [!NOTE] 
+> Account level website exclusions are available for customers in the pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 697). You can only view website exclusion lists in the redesigned Microsoft Advertising UI i.e., via Tools -> Shared Library -> Website exclusion lists. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522).   
+
+You can manage the new website exclusions lists via the shared entity and shared list operations e.g., [AddSharedEntity](../campaign-management-service/addsharedentity.md) and [AddListItemsToSharedList](../campaign-management-service/addlistitemstosharedlist.md). Previously these operations were used exclusively for negative keyword lists, and existing applications should work without any code changes. For more details, see the [Negative Sites](negative-sites.md) technical guide. 
+
+### <a name="audiencenetworksov-april2020"></a>Impression Share for Microsoft Audience Network
+
+The AudienceImpressionLostToBudgetPercent, AudienceImpressionLostToRankPercent, and AudienceImpressionSharePercent columns are added to the following value sets. 
+- [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md) 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
+
 ## <a name="march2020"></a>March 2020
 See below for Bing Ads API updates during this calendar month. 
 
@@ -88,7 +132,7 @@ Starting January 2020, nine action types are deprecated. For example, if you set
 |ViewNow|LearnMore|
 |VisitSite|LearnMore|
 
-Also starting January 2020 two new action types are added i.e., RenewNow and Reorder. Please note that if you use the version 12 Campaign Management API, by default the action type returned is Unknown. (The design goal is to avoid a breaking change for clients with strict value set dependencies.) To determine the effective action type i.e., RenewNow or Reorder, include [ActionTypesPhase3](../campaign-management-service/adextensionadditionalfield.md#actiontypesphase3) when calling the [GetAdExtensionsAssociations](../campaign-management-service/getadextensionsassociations.md) and [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operations. 
+Also starting January 2020 two new action types are added i.e., RenewNow and Reorder. Please note that if you use the Campaign Management API, by default the action type returned is Unknown. (The design goal is to avoid a breaking change for clients with strict value set dependencies.) To determine the effective action type i.e., RenewNow or Reorder, include [ActionTypesPhase3](../campaign-management-service/adextensionadditionalfield.md#actiontypesphase3) when calling the [GetAdExtensionsAssociations](../campaign-management-service/getadextensionsassociations.md) and [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operations. 
 
 One final update starting in January 2020, only the localized text for Sale and Coupon are updated to "See Sale" and "Get Coupon" respectively for all supported languages. The API value sets are unchanged for these action types. For the current localized text please see [Action Text for Action Ad Extensions](ad-languages.md#actionadextension-actiontext).
 
@@ -99,7 +143,6 @@ See below for Bing Ads API updates during this calendar month.
 
 ### <a name="sdk-december2019"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.2) SDK version 13.0.2. 
-
 
 ## <a name="november2019"></a>November 2019
 See below for Bing Ads API updates during this calendar month. 

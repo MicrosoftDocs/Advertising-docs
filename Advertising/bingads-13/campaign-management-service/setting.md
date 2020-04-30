@@ -9,7 +9,7 @@ description: Defines the base class of a setting.
 # Setting Data Object - Campaign Management
 Defines the base class of a setting.
 
-Do not try to instantiate a *Setting*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *Setting*. You can create one or more of the following objects that derive from it.
 
 |Setting|Supported Entity|
 |-----|-----|

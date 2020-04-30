@@ -207,18 +207,24 @@ What's next? First, congratulations on making your first call to Bing Ads API! H
 - The access token represents the user credentials who has access to one or more Microsoft Advertising accounts. The application ID (a.k.a. client_id) identifies your application for each Microsoft Advertising user who grants consent. The developer token gives your application permission to use the Bing Ads API. 
 
 ## <a name="get-developer-token"></a>Get a Developer Token
-To use Bing Ads APIs, you must have a developer token and valid user credentials.   
-- If you do not yet have a Microsoft Advertising account, you can sign up via the [Microsoft Advertising web application](https://ads.microsoft.com/). 
-- To get a developer token for production, you must login at the [Microsoft Advertising Developer Portal](https://developers.ads.microsoft.com/Account) as a Microsoft Account user with the Super Admin role. Then click on the **Request Token** button. The Super Admin may request API access for any user within their customer scope. Typically clients only need one universal token per application regardless of how many users will use the application, and you can assign the universal token to one of your Super Admin users.  
+To use Bing Ads APIs, you must have a developer token and valid user credentials. If you do not yet have a Microsoft Advertising account, you can sign up via the [Microsoft Advertising web application](https://ads.microsoft.com/). 
 
 > [!NOTE]
 > The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**. 
 
-There are two types of Bing Ads API developer tokens. 
-- Universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. Starting in July 2019, this is the default token type.    
-- Single-user developer token can only be used to authenticate one user for access to one customer. This token type has been deprecated in favor of the universal token. If you still have a single user token your Super Admin can upgrade it to the universal type in the Account tab of the [Developer Portal](https://developers.ads.microsoft.com/Account). 
+You can follow these steps to get a developer token for production.
 
-Regardless of the token type, a developer token enables programmatic access to the accounts permitted for a user. Obtaining a developer token for API access does not grant additional permissions to any Microsoft Advertising accounts. Each Microsoft Advertising user is assigned a role e.g., Super Admin or Advertiser Campaign Manager for every customer they can access. With a developer token the same accounts available in the Microsoft Advertising web application are available to the user programmatically through the API. 
+1. Sign in with [Super Admin](account-hierarchy-permissions.md#user-roles-permissions) credentials at the [Microsoft Advertising Developer Portal](https://developers.ads.microsoft.com/Account) account tab. 
+1. Choose the user that you want associated with the developer token. Typically an application only needs one universal token regardless how many users will be supported. 
+1. Click on the **Request Token** button.    
+
+The universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. Starting in July 2019, this is the default token type.    
+
+The single-user developer token can only be used to authenticate one user for access to one customer. This token type has been deprecated in favor of the universal token. If you still see that a single user token is assigned to one of your users, you can click "Upgrade to Universal" as shown here. 
+
+![Upgrade to Universal Developer Token](media/upgrade-token-single-universal.png "Upgrade to Universal Developer Token")  
+
+A developer token enables programmatic access to the accounts permitted for a user. Obtaining a developer token for API access does not grant additional permissions to any Microsoft Advertising accounts. Each Microsoft Advertising user is assigned a [role](account-hierarchy-permissions.md#user-roles-permissions) e.g., Super Admin or Advertiser Campaign Manager for every customer they can access. With a developer token the same accounts available in the Microsoft Advertising web application are available to the user programmatically through the API. 
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
 When you call a service operation such as [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.

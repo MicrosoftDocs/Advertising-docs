@@ -72,6 +72,8 @@ The Campaign Management service defines the following value sets.
 |[ProductAudienceType](productaudiencetype.md)|Defines the possible types of product audiences.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
 |[ProfileType](profiletype.md)|Defines the possible types of profile criterions.|
+|[PromotionDiscountModifier](promotiondiscountmodifier.md)|Defines the possible types of promotion discount modifiers.|
+|[PromotionOccasion](promotionoccasion.md)|Defines the possible types of promotion occasions.|
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|
 |[ValueOperator](valueoperator.md)|Defines the operators that can be applied to values within a conversion event goal.|

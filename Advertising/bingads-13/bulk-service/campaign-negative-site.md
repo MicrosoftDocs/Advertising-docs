@@ -91,7 +91,6 @@ For a *Campaign Negative Site* record, the following attribute fields are availa
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
-- [Id](#id)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
 - [Status](#status)
@@ -113,13 +112,6 @@ Used to associate records in the bulk upload file with records in the results fi
 **Add:** Optional  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.    
 **Delete:** Read-only  
-
-## <a name="id"></a>Id
-The system generated identifier of the negative site.
-
-**Add:** Read-only  
-**Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.  
-**Delete:** Read-only and Required  
 
 ## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
@@ -152,10 +144,16 @@ Possible values are *Active* or *Deleted*.
 
 **Add:** Optional. The default value is *Active*.  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.    
-**Delete:**Required. The Status must be set to *Deleted*. To delete a specific negative site, you must upload the [Status](#status), [Parent Id](#parentid), and [Website](#website). To delete all negative sites for the campaign, you only need to upload the [Status](#status) and [Parent Id](#parentid) in a single record. Then optionally you can add new negative site records to replace the deleted set. 
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative site, you must upload the [Status](#status), [Parent Id](#parentid), and [Website](#website). To delete all negative sites for the campaign, you only need to upload the [Status](#status) and [Parent Id](#parentid) in a single record. Then optionally you can add new negative site records to replace the deleted set. 
 
 ## <a name="website"></a>Website
+The URL of the website where you do not want your ads displayed.
 
+Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not. Duplicate negative site URLs per campaign or ad group are not allowed.
+
+You can only exclude websites for syndicated search websites. The ad group's [network](ad-group.md#networkdistribution) must be set to either *OwnedAndOperatedAndSyndicatedSearch* or *SyndicatedSearchOnly*. 
+
+Negative site URLs specified at the ad group level are used instead of any negative site URLs specified at the campaign level. If you associate any [website exclusion lists](../campaign-management-service/placementexclusionlist.md) with an ad account (available via the Campaign Management service), the list of [negative sites](../campaign-management-service/negativesite.md) are used in addition to the [campaign negative sites](campaign-negative-site.md) or [ad group negative sites](ad-group-negative-site.md).  
 
 **Add:** Required  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.    

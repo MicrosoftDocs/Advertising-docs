@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Ad Group Image Ad Extension Record - Bulk
-Defines an association record between an [Ad Group](ad-group.md) and a [Image Ad Extension](image-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or image ad extension, use the [Ad Group](ad-group.md) or [Image Ad Extension](image-ad-extension.md) record.
+Defines an association record between an [Ad Group](ad-group.md) and an [Image Ad Extension](image-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or image ad extension, use the [Ad Group](ad-group.md) or [Image Ad Extension](image-ad-extension.md) record.
 
 You can download all *Ad Group Image Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupImageAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

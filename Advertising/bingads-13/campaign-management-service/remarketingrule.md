@@ -9,7 +9,7 @@ description: Defines the base object of a remarketing rule.
 # RemarketingRule Data Object - Campaign Management
 Defines the base object of a remarketing rule.
 
-Do not try to instantiate a *RemarketingRule*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *RemarketingRule*. You can create one or more of the following objects that derive from it.
 - [CustomEventsRule](customeventsrule.md)
 - [PageVisitorsRule](pagevisitorsrule.md)
 - [PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md) 

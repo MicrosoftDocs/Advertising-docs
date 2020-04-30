@@ -9,7 +9,7 @@ description: Defines a criterion that you want applied to the specified ad group
 # AdGroupCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified ad group.
 
-Do not try to instantiate an *AdGroupCriterion*. You can create one or more following objects that derive from it.
+Do not try to instantiate an *AdGroupCriterion*. You can create one or more of the following objects that derive from it.
 - [BiddableAdGroupCriterion](biddableadgroupcriterion.md)
 - [NegativeAdGroupCriterion](negativeadgroupcriterion.md)
 
