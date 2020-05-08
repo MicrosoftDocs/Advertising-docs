@@ -11,6 +11,9 @@ dev_langs:
 # Ad Group Promotion Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Promotion Ad Extension](promotion-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or promotion ad extension, use the [Ad Group](ad-group.md) or [Promotion Ad Extension](promotion-ad-extension.md) record. 
 
+> [!NOTE]
+> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+
 You can download all *Ad Group Promotion Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupPromotionAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a promotion ad extension to an ad group if valid [Id](#id) and [Parent Id](#parentid) values are provided. 

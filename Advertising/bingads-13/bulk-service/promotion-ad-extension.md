@@ -11,6 +11,9 @@ dev_langs:
 # Promotion Ad Extension Record - Bulk
 Defines a promotion ad extension that can be downloaded and uploaded in a bulk file.
 
+> [!NOTE]
+> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+
 You can associate a promotion ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 promotion ad extensions. Use the [Account Promotion Ad Extension](account-promotion-ad-extension.md), [Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md), and [Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md) records to manage promotion ad extension associations.
 
 You can download all *Promotion Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *PromotionAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
