@@ -193,7 +193,7 @@ The maximum cost per click that you want to spend with the corresponding bid str
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to MaxClicks, MaxConversions, TargetCpa, or TargetRoas, and otherwise this field is ignored.
 
 > [!NOTE]
-> The MaxClicks bid strategy is available for Dynamic Search Ads and Search campaigns. 
+> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns.  
 > 
 > The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
 > 
