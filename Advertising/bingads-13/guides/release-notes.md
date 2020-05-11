@@ -9,6 +9,15 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="may2020"></a>May 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Parallel tracking](#paralleltracking-may2020) 
+
+### <a name="paralleltracking-may2020"></a>Parallel tracking
+
+Parallel tracking is required for all accounts created after May 31st, 2020. Until November 2020 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the [account property](../campaign-management-service/accountproperty.md#adclickparalleltracking) to *true* or *false*. By the end of November 2020 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
+
 ## <a name="april2020"></a>April 2020
 See below for Bing Ads API updates during this calendar month. 
 

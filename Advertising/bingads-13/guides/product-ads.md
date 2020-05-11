@@ -7,7 +7,10 @@ ms.author: "eur"
 description: Setup Product ads with the Bing Ads API.
 ---
 # Product Ads
-A Microsoft Shopping campaign enables you to advertise the products from your Microsoft Merchant Center store product catalog. Product ads from a Microsoft Shopping campaign include details about the product, an image, and optional promotional text.
+A Microsoft Shopping campaign enables you to advertise the products from your Microsoft Merchant Center store product catalog. Product ads from a Microsoft Shopping campaign include details about the product, an image, and optional promotional text. 
+
+> [!NOTE]
+> Microsoft Shopping Campaigns and product ads are available only in Australia, Canada (English only and excluding Quebec), Germany, France, India, United Kingdom, and the United States. 
 
 You can manage Bing Shopping settings with either the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](../bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
 
@@ -58,9 +61,6 @@ To create a Microsoft Shopping campaign, follow these steps.
 
 1. Create one or more Microsoft Shopping Campaigns.
 
-    > [!NOTE]
-    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Microsoft Shopping Campaigns.
-
     - Set the *Campaign Type* field of the [Campaign](../bulk-service/campaign.md) to *Shopping*.
 
     - Set the *Priority* field of the [Campaign](../bulk-service/campaign.md) to 0, 1, or 2.
@@ -70,9 +70,6 @@ To create a Microsoft Shopping campaign, follow these steps.
     - Set the *Store Id* field of the [Campaign](../bulk-service/campaign.md).
 
 2. Optionally, you can upload a [Campaign Product Scope](../bulk-service/campaign-product-scope.md) criterion that will be associated with your Microsoft Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one [Campaign Product Scope](../bulk-service/campaign-product-scope.md), which contains a list of up to 7 product conditions. You'll also be able to specify more specific product conditions for each ad group.
-
-    > [!NOTE]
-    > Product conditions might not be returned in the order that you submitted them.
 
 3. Upload an [Ad Group](../bulk-service/ad-group.md) and set its *Parent Id* field to the *Id* of the campaign added above.
 
@@ -129,19 +126,13 @@ To create a Microsoft Shopping campaign with the Campaign Management API, follow
 
 1. Create one or more Microsoft Shopping Campaigns.
 
-    > [!NOTE]
-    > You must create designated campaigns for Bing Shopping. You may not create text ads in your Microsoft Shopping Campaigns.
-
     - Set the *CampaignType* element of the [Campaign](../campaign-management-service/campaign.md) to *Shopping*.
 
     - Create a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) instance and set its *Priority* (0, 1, or 2), *SalesCountryCode*, and *StoreId* elements. Add this shopping setting to the *Settings* list of the [Campaign](../campaign-management-service/campaign.md).
 
 2. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion that will be associated with your Microsoft Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one *ProductScope*, which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). You'll also be able to specify more specific product conditions for each ad group.
 
-    Call the [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) operation to associate the Microsoft Shopping campaign with your product scope criterion.
-
-    > [!NOTE]
-    > Product conditions might not be returned in the order that you submitted them.
+    Call the [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) operation to associate the Microsoft Shopping campaign with your product scope criterion.  
 
 3. Create an [AdGroup](../campaign-management-service/adgroup.md) and add it to the campaign by calling [AddAdGroups](../campaign-management-service/addadgroups.md).
 
