@@ -9,11 +9,10 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 
+# Inventory resource
+
 > [!NOTE]
 > The Inventory API is available to closed pilot participants only. The API and documentation are subject to change.
-
-
-# Inventory resource
 
 The Inventory resource lets you update pricing and availability of products in your Microsoft Merchant Center (MMC) store. For information about using the Inventory resources, see [Updating product pricing](manage-product-pricing.md). For examples that show how to update pricing and availability, see [Code Examples](code-examples.md).
 
