@@ -12,7 +12,7 @@ Defines the campaign level settings to leverage your Microsoft Merchant Center s
 You can include a shopping setting with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Microsoft Merchant Center [store ID](#storeid). 
 
 Supported shopping settings vary by campaign type.
-- Audience campaigns only support the StoreId element. 
+- Audience campaigns only support the [StoreId](#storeid) element. 
 - Shopping campaigns support all shopping settings.
 
 ## Syntax

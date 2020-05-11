@@ -9986,10 +9986,10 @@ Negative Keyword types cannot be mixed in one call.
 4345
 
 **Symbolic Error Code**
-CampaignServiceNegativeKeywordDuplicate
+CampaignServiceDuplicateNegativeKeyword
 
 **Description**
-Duplicate negative keyword are not allowed.
+Duplicate negative keywords are not allowed.
 
 ***
 
