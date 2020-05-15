@@ -16,34 +16,13 @@ The following currency values are supported for Microsoft Advertising advertisin
 
 You must first set up an [AdvertiserAccount](../customer-management-service/advertiseraccount.md) with one of the supported currency values listed below.
 
-> [!NOTE]
-> The possible range of values for bid and budget are subject to change.
-
-Using the [Campaign Management](../campaign-management-service/campaign-management-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Amount* element of a [Budget](../campaign-management-service/budget.md) object
-- The *DailyBudget* element of a [Campaign](../campaign-management-service/campaign.md) object
-- The *CpcBid* element of an [AdGroup](../campaign-management-service/adgroup.md) object
-- The *Bid* element of a [Keyword](../campaign-management-service/keyword.md) object
-- The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) object
-
-Using the [Bulk](../bulk-service/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Budget* field of a [Budget](../bulk-service/budget.md) record
-- The *Budget* field of a [Campaign](../bulk-service/campaign.md) record
-- The *Cpc Bid* field of an [AdGroup](../bulk-service/ad-group.md) record
-- The *Bid* field of a [Keyword](../bulk-service/keyword.md) record
-- The *Bid* field of an [Ad Group Product Partition](../bulk-service/campaign.md) record
-
-With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service.
-
-- The *Currency* element of the [BidLandscapePoint](../ad-insight-service/bidlandscapepoint.md) object is available in the response from the [GetBidLandscapeByAdGroupIds](../ad-insight-service/getbidlandscapebyadgroupids.md) and [GetBidLandscapeByKeywordIds](../ad-insight-service/getbidlandscapebykeywordids.md) operations.
-- The *Currency* element of the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) object is available in the response from the [GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md) and [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) operations.
-- The *Currency* element of the [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) object is available in the response from the [GetEstimatedPositionByKeywordIds](../ad-insight-service/getestimatedpositionbykeywordids.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations.
-
+### <a name="keywordcpc"></a>Keyword and Cpc
+The minimum and maximum bid and budget for each currency below are subject to change.
 
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
 |-----|-----|-----|-----|-----|-------|-------|
 |ArgentinePeso|The Argentine Peso (ARS).|0.05|5,000.00|0.05|2.00|152,500,000.00|
-|AustralianDollar|The Australian Dollar (AUD).|0.01|1,000.00|0.05|5.00|30,000,000.00|
+|AustralianDollar|The Australian Dollar (AUD).|0.05|1,000.00|0.05|5.00|30,000,000.00|
 |Baht|The Thai Baht (THB).|0.14|31,000.00|2.00|150.00|927,000,000.00|
 |Bolivar|The Venezuelan Bolivar Fuerte (VEF).|0.05|5,000.00|0.05|2.00|152,500,000.00|
 |BrazilianReal|The Brazilian Real (BRL).|0.01|2,000.00|0.10|10.00|60,000,000.00|
@@ -66,8 +45,7 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 |SwedishKrona|The Swedish Krona (SEK).|0.07|7,000.00|0.07|2.00|213,500,000.00|
 |SwissFranc|The Swiss Franc (CHF).|0.05|1,500.00|0.05|5.00|8,931,900.00|
 |UKPound|The Pound Sterling (GBP).|0.05|1,000.00|0.05|5.00|3,938,700.00|
-|USDollar|The U.S. Dollar (USD).|Keyword and Cpc: 0.05<br/><br/>Product Ad Fixed Bid: 0.01|1,000.00|0.05|5.00|30,000,000.00|
-
+|USDollar|The U.S. Dollar (USD).|0.05|1,000.00|0.05|5.00|30,000,000.00|
 
 ## <a name="conversiongoalrevenue"></a>Conversion Goal Revenue Currencies
 

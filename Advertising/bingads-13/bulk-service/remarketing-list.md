@@ -11,11 +11,11 @@ dev_langs:
 # Remarketing List Record - Bulk
 Defines a remarketing list that can be downloaded and uploaded in a bulk file. 
 
-> [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
-
 > [!NOTE]
 > Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list. See [Similar Remarketing List](similar-remarketing-list.md) for more details. 
+
+> [!TIP]
+> For an overview and more information about audiences, see the [Audience APIs](../guides/universal-event-tracking.md#audience) technical guide. 
 
 You can download all *Remarketing List* records in the account by including the [DownloadEntity](downloadentity.md) value of *RemarketingLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -270,7 +270,7 @@ Evaluation of the logical expression determines which of the following example u
 |User 3|C<br/>|Z|Yes. Evaluation of the logical expression results as *True*.<br/><br/>*(((Url Contains X) and (ReferrerUrl NotEquals Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))) and (((Url BeginsWith A) and (ReferrerUrl BeginsWith B)) or ((Url Contains C)))*<br/><br/>*((False and True) or (True) or (True)) and ((False and False) or (True))*<br/><br/>*(False or True or True) and (False or True)*<br/><br/>*True and True*<br/><br/>*True*|
 
 ## <a name="scope"></a>Scope
-Scope defines what accounts can use this remarketing list. If scope is set to *Account*, the remarketing list can only be associated with ad groups within one specified account ([Parent Id](#parentid)). If scope is set to *Customer*, the remarketing list can be associated with any ad groups across all of the customer's accounts.
+Scope defines what accounts can use this remarketing list. If scope is set to *Account*, the remarketing list can only be associated with campaigns and ad groups within one specified account ([Parent Id](#parentid)). If scope is set to *Customer*, the remarketing list can be associated with any campaigns and ad groups across all of the customer's accounts.
 
 **Add:** Required  
 **Update:** Read-only. You cannot change the scope.    

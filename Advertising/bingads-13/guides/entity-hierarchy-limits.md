@@ -305,7 +305,7 @@ The following table defines limits for audience properties.
 
 You can have up to 1,000 custom audiences per customer. You can have up to 1,000 remarketing lists per account, or 5,000 per customer. The in-market audiences maximum is only limited by the number of in-market audiences provided by Microsoft Advertising. 
 
-There is a limit of 20,000,000 associations per account combined for custom audience, in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
+There is a limit of 20,000,000 associations per account combined for all audience types e.g., combined list, custom audience, customer list (coming soon), in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
 
 ## <a name="budget"></a>Budgets
 Represents a budget that can be shared by any campaigns in an account. You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account.

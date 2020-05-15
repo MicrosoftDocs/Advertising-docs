@@ -204,12 +204,14 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="currencycode"></a>Currency Code
-The currency code for the promotion price or discount.
+The currency code for the promotion price or discount. 
 
-The supported currency codes are ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, DKK, EUR, GBP, HKD, INR, MXN, NZD, PEN, PHP, PLN, SEK, SGD, USD, TWD, and VEF.
+This field is only applicable if you set [Money Amount Off](#moneyamountoff) or [Orders Over Amount](#ordersoveramount). 
+
+The supported currency codes are ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, DKK, EUR, GBP, HKD, INR, MXN, NZD, PEN, PHP, PLN, SEK, SGD, USD, TWD, and VEF. 
 
 **Add:** Required if [Money Amount Off](#moneyamountoff) or [Orders Over Amount](#ordersoveramount) are set.     
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set either [Percent Off](#percentoff) or [Promotion Code](#promotioncode), this setting is no longer applicable and will be deleted.    
 **Delete:** Read-only  
 
 ## <a name="customparameter"></a>Custom Parameter
@@ -459,7 +461,7 @@ The percent off promotion value in micros.
 For example, 10000000 represents a 10% discount.
 
 **Add:** Required. You must set either [Money Amount Off](#moneyamountoff) or [Percent Off](#percentoff), but you cannot set both.  
-**Update:** Optional. You can set either [Money Amount Off](#moneyamountoff) or [Percent Off](#percentoff), but you cannot set both..  
+**Update:** Optional. You can set either [Money Amount Off](#moneyamountoff) or [Percent Off](#percentoff), but you cannot set both. If you set this field, then the [Currency Code](#currencycode) setting is no longer applicable and will be deleted if it was previously set.  
 **Delete:** Read-only  
 
 ## <a name="promotioncode"></a>Promotion Code
@@ -470,7 +472,7 @@ For example, to promote "$20 off shoes - Promocode SAVE20", set the [Promotion T
 The string can contain a maximum of 15 characters. 
 
 **Add:** Optional. You cannot set both [Orders Over Amount](#ordersoveramount) and [Promotion Code](#promotioncode).  
-**Update:** Optional. You cannot set both [Orders Over Amount](#ordersoveramount) and [Promotion Code](#promotioncode). If no value is set for the update, this setting is not changed. If you set this field to to the *delete_value* string, the previous setting will be deleted.  
+**Update:** Optional. You cannot set both [Orders Over Amount](#ordersoveramount) and [Promotion Code](#promotioncode). If no value is set for the update, this setting is not changed. If you set this field to to the *delete_value* string, the previous setting will be deleted. If you set this field, then the [Currency Code](#currencycode) setting is no longer applicable and will be deleted if it was previously set. 
 **Delete:** Read-only  
 
 ## <a name="promotionend"></a>Promotion End

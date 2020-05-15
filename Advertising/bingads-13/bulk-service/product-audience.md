@@ -25,6 +25,9 @@ window.uetq = window.uetq || [];
 window.uetq.push('event', '', {'ecomm_prodid': 'REPLACE_WITH_PRODUCT_ID', 'ecomm_pagetype': 'REPLACE_WITH_PAGE_TYPE'});
 ```
 
+> [!TIP]
+> For an overview and more information about audiences, see the [Audience APIs](../guides/universal-event-tracking.md#audience) technical guide. 
+
 You can download all *Product Audience* records in the account by including the [DownloadEntity](downloadentity.md) value of *ProductAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new product audience. 
@@ -199,7 +202,7 @@ The possible values are GeneralVisitors, ProductSearchers, ProductViewers, Shopp
 **Delete:** Read-only  
 
 ## <a name="scope"></a>Scope
-Scope defines what accounts can use this product audience. If scope is set to *Account*, the product audience can only be associated with ad groups within one specified account ([Parent Id](#parentid)). If scope is set to *Customer*, the product audience can be associated with any ad groups across all of the customer's accounts.
+Scope defines what accounts can use this product audience. If scope is set to *Account*, the product audience can only be associated with campaigns and ad groups within one specified account ([Parent Id](#parentid)). If scope is set to *Customer*, the product audience can be associated with any campaigns and ad groups across all of the customer's accounts.
 
 **Add:** Required  
 **Update:** Read-only. You cannot change the scope.    

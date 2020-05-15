@@ -11,7 +11,7 @@ ms.author: "scottwhi"
 
 # Managing your Catalogs
 
-Content API is a RESTful API that uses the [Catalogs](../shopping-content/catalogs-resource.md) resource to manage catalogs in your Bing Merchant Center (BMC) store. 
+Content API is a RESTful API that uses the [Catalogs](../shopping-content/catalogs-resource.md) resource to manage catalogs in your Microsoft Merchant Center (MMC) store. 
 
 The following is the base URI that you use to call the Content API.
 
@@ -44,7 +44,7 @@ To get a catalog from the store, append the following template to the base URI.
 
 `{bmcMerchantId}/catalogs/{catalogId}`
 
-Set `{bmcMerchantId}` to your BMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
+Set `{bmcMerchantId}` to your MMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
 
 Send an HTTP GET request to the resulting URL. If the catalog was found, the response contains a [Catalog](../shopping-content/catalogs-resource.md#catalog) object that contains the catalog's details.
 
@@ -55,7 +55,7 @@ To get a list of catalogs from the store, append the following template to the b
 
 `{bmcMerchantId}/catalogs`
 
-Set `{bmcMerchantId}` to your BMC store ID.
+Set `{bmcMerchantId}` to your MMC store ID.
 
 Send an HTTP GET request to the resulting URL. If the store contains catalogs, the response contains a [Catalogs](../shopping-content/catalogs-resource.md#catalogs) object that contains the list of catalogs. 
 
@@ -66,7 +66,7 @@ To delete a catalog from the store, append the following template to the base UR
 
 `{bmcMerchantId}/catalogs/{catalogId}`
 
-Set `{bmcMerchantId}` to your BMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
+Set `{bmcMerchantId}` to your MMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
 
 Send an HTTP DELETE request to the resulting URL. If the catalog was found, it is deleted. 
 
@@ -77,7 +77,7 @@ You use catalogs to logically group your products. To add a catalog to the store
 
 `{bmcMerchantId}/catalogs`
 
-Set `{bmcMerchantId}` to your BMC store ID. 
+Set `{bmcMerchantId}` to your MMC store ID. 
 
 Send an HTTP POST request to the resulting URL. If the catalog is added, the response contains a [Catalog](../shopping-content/catalogs-resource.md#catalog) object. The `Catalog` object includes the catalog's [ID](../shopping-content/catalogs-resource.md#id). Use the ID to get and delete the catalog.
 
@@ -96,7 +96,7 @@ To update a catalog in the store, append the following template to the base URI.
 
 `{bmcMerchantId}/catalogs/{catalogId}`
 
-Set `{bmcMerchantId}` to your BMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
+Set `{bmcMerchantId}` to your MMC store ID and set `{catalogId}` to the catalog's [ID](../shopping-content/catalogs-resource.md#id). 
 
 The body of the request is a [Catalog](../shopping-content/catalogs-resource.md#catalog) object. You must specify the following fields.
 
