@@ -15,7 +15,7 @@ dev_langs:
 Gets negative keyword lists. 
 
 > [!NOTE] 
-> This operation is deprecated and will be removed in a future version of the Bing Ads API. You should use the GetSharedEntities operation (coming soon) instead. 
+> This operation is deprecated and will be removed in a future version of the Bing Ads API. You should use the [GetSharedEntities](getsharedentities.md) operation instead. To get website exclusion lists, you must use the [GetSharedEntities](getsharedentities.md) operation. 
 
 ## <a name="request"></a>Request Elements
 The *GetSharedEntitiesByAccountIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -27,7 +27,7 @@ The *GetSharedEntitiesByAccountIdRequest* object defines the [body](#request-bod
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="sharedentitytype"></a>SharedEntityType|The type of shared entity to get from the ad account or manager account (customer) library.<br/><br/>Set this element to NegativeKeywordList to get negative keyword lists ([NegativeKeywordList](negativekeywordlist.md)) in your ad account shared library.|**string**|
+|<a name="sharedentitytype"></a>SharedEntityType|The type of shared entity to get from the ad account shared library.<br/><br/>Set this element to NegativeKeywordList to get negative keyword lists ([NegativeKeywordList](negativekeywordlist.md)) in your ad account shared library.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

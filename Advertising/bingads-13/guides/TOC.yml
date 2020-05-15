@@ -593,6 +593,9 @@
         - name: Ad Group Callout Ad Extension
           href: ../bulk-service/ad-group-callout-ad-extension.md
           displayName: BulkAdGroupCalloutAdExtension
+        - name: Ad Group Combined List Association
+          href: ../bulk-service/ad-group-combined-list-association.md
+          displayName: BulkAdGroupCombinedListAssociation
         - name: Ad Group Company Name Criterion
           href: ../bulk-service/ad-group-company-name-criterion.md
           displayName: BulkAdGroupCompanyNameCriterion
@@ -635,6 +638,9 @@
         - name: Ad Group Negative Age Criterion
           href: ../bulk-service/ad-group-negative-age-criterion.md
           displayName: BulkAdGroupNegativeAgeCriterion
+        - name: Ad Group Negative Combined List Association
+          href: ../bulk-service/ad-group-negative-combined-list-association.md
+          displayName: BulkAdGroupNegativeCombinedListAssociation
         - name: Ad Group Negative Company Name Criterion
           href: ../bulk-service/ad-group-negative-company-name-criterion.md
           displayName: BulkAdGroupNegativeCompanyNameCriterion
@@ -740,6 +746,9 @@
         - name: Campaign Callout Ad Extension
           href: ../bulk-service/campaign-callout-ad-extension.md
           displayName: BulkCampaignCalloutAdExtension
+        - name: Campaign Combined List Association
+          href: ../bulk-service/campaign-combined-list-association.md
+          displayName: BulkCampaignCombinedListAssociation
         - name: Campaign Company Name Criterion
           href: ../bulk-service/campaign-company-name-criterion.md
           displayName: BulkCampaignCompanyNameCriterion
@@ -779,6 +788,9 @@
         - name: Campaign Location Intent Criterion
           href: ../bulk-service/campaign-location-intent-criterion.md
           displayName: BulkCampaignLocationIntentCriterion
+        - name: Campaign Negative Combined List Association
+          href: ../bulk-service/campaign-negative-combined-list-association.md
+          displayName: BulkCampaignNegativeCombinedListAssociation
         - name: Campaign Negative Custom Audience Association
           href: ../bulk-service/campaign-negative-custom-audience-association.md
           displayName: BulkCampaignNegativeCustomAudienceAssociation
@@ -839,6 +851,9 @@
         - name: Campaign Structured Snippet Ad Extension
           href: ../bulk-service/campaign-structured-snippet-ad-extension.md
           displayName: BulkCampaignStructuredSnippetAdExtension
+        - name: Combined List
+          href: ../bulk-service/combined-list.md
+          displayName: BulkCombinedList
         - name: Custom Audience
           href: ../bulk-service/custom-audience.md
           displayName: BulkCustomAudience
@@ -1113,6 +1128,8 @@
           href: ../campaign-management-service/getnegativesitesbycampaignids.md
         - name: GetProfileDataFileUrl
           href: ../campaign-management-service/getprofiledatafileurl.md
+        - name: GetSharedEntities
+          href: ../campaign-management-service/getsharedentities.md
         - name: GetSharedEntitiesByAccountId
           href: ../campaign-management-service/getsharedentitiesbyaccountid.md
         - name: GetSharedEntityAssociationsByEntityIds
