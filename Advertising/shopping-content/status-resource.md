@@ -30,7 +30,7 @@ To create the endpoints used to get the status of product offerings in a catalog
 
 |Template|HTTP Verb|Description|Resource
 |--------|---------|-----------|--------
-|`{bmcMerchantId}/catalogs/{catalogId}/status`|GET|Use to get the number of uploaded offers that passed or failed validation and editorial review.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: [Status](#status) 
+|`{bmcMerchantId}/catalogs/{catalogId}/status`|GET|Use to get the number of uploaded offers that passed or failed validation and editorial review.<br/><br/>Set `{bmcMerchantId}` to the MMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: [Status](#status) 
 
 
 ## <a name="queryparameters"/> Query parameters
