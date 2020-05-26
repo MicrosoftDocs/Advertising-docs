@@ -77,13 +77,11 @@ Microsoft Advertising supports several audience types.
 A combined list is an audience created from a combination of multiple existing audiences. 
 
 > [!NOTE]
-> Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).  
-> 
-> Combined lists are available via the [Bulk API](#audience-bulk), but not yet available via the [Campaign Management API](#audience-campaign).  
+> Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).   
 
 You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
 
-You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. The combination rule of each list can include up to 100 sets of logical conditions, and each set can contain up to 100 audience IDs.
+You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. Each list can include up to 100 combination rules or sets of logical conditions, and each combination rule can contain up to 100 audience IDs.
 
 With some restrictions described below, you can combine audiences using these logical operators:
 
@@ -91,15 +89,7 @@ With some restrictions described below, you can combine audiences using these lo
 - AND: This will include only customers who are in every single one of these audience lists.  
 - NOT: This will exclude customers who are in any of these audience lists. 
 
-A logical condition set refers to a group of audience IDs qualified by either OR, AND, or NOT. 
-
-For example here are 10 sets, each with one audience ID:
-*NOT(1)&AND(2)&OR(3)&NOT(4)&AND(5)&OR(6)&NOT(7)&AND(8)&OR(9)&NOT(10)*
-
-Here is an example of 10 sets, each with two audience IDs:
-*NOT(1,101)&AND(2,102)&OR(3,103)&NOT(4,104)&AND(5,105)&OR(6,106)&NOT(7,107)&AND(8,108)&OR(9,109)&NOT(10,110)*
-
-Evaluation of the logical expression determines who will be added to the combined list. Multiple combinations are always combined with an AND function. This means that a customer must meet all of the criteria of each combination in order to appear in this custom combination audience list. For example, let's say the combination rule is set to *NOT(123,234)&NOT(345,456)&AND(567,678)&OR(789,890)&OR(987,876)*. The combined list will include customers who a) are in both audience 567 and 678, and b) are in either audience 789 or 890, and c) are in either audience 987 or 876, unless d) the customer is in either audience 123, 234, 345, or 456.  
+Evaluation of the logical expression determines who will be added to the combined list. Multiple combinations are always combined with an AND function. This means that a customer must meet all of the criteria of each combination in order to appear in this custom combination audience list. 
 
 A combined list must include at least one audience using the OR or AND operators. A combined list cannot use only the NOT operator. In that case you should use audience exclusions instead. 
 
@@ -204,10 +194,10 @@ With the Bulk service you can use the following record types to download and upl
 > [!NOTE]
 > Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 
-By default ads in a campaign and ad group can show to everyone, but the bid adjustment will apply to people included in the audience. If you only want the ads to show to people included in the audience, you'll want to set the "target and bid" target setting. You can use the *Target Setting* field in the [Campaign](../bulk-service/campaign.md#targetsetting) or [Ad Group](../bulk-service/ad-group.md#targetsetting) record to determine the target setting that is applicable for all audiences (i.e., custom audiences, in-market audiences, product audiences, remarketing lists, and similar audiences for remarketing lists) that are associated with the campaign or ad group. Each audience can be associated with multiple campaigns and ad groups, and each target setting is applied independently for delivery. 
+By default ads in a campaign and ad group can show to everyone, but the bid adjustment will apply to people included in the audience. If you only want the ads to show to people included in the audience, you'll want to set the "target and bid" target setting. You can use the *Target Setting* field in the [Campaign](../bulk-service/campaign.md#targetsetting) or [Ad Group](../bulk-service/ad-group.md#targetsetting) record to determine the target setting that is applicable for all audiences (i.e., combined lists, custom audiences, in-market audiences, product audiences, remarketing lists, and similar audiences for remarketing lists) that are associated with the campaign or ad group. Each audience can be associated with multiple campaigns and ad groups, and each target setting is applied independently for delivery. 
 
 ### <a name="audience-campaign"></a>Audience Campaign Management APIs
-The [CustomAudience](../campaign-management-service/customaudience.md), [InMarketAudience](../campaign-management-service/inmarketaudience.md), [ProductAudience](../campaign-management-service/productaudience.md), [RemarketingList](../campaign-management-service/remarketinglist.md), and [SimilarRemarketingList](../campaign-management-service/similarremarketinglist.md) objects all derive from the [Audience](../campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the audience with the respective [AddAudiences](../campaign-management-service/addaudiences.md), [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](../campaign-management-service/updateaudiences.md), and [DeleteAudiences](../campaign-management-service/deleteaudiences.md) operations.
+The [CombinedList](../campaign-management-service/combinedlist.md), [CustomAudience](../campaign-management-service/customaudience.md), [InMarketAudience](../campaign-management-service/inmarketaudience.md), [ProductAudience](../campaign-management-service/productaudience.md), [RemarketingList](../campaign-management-service/remarketinglist.md), and [SimilarRemarketingList](../campaign-management-service/similarremarketinglist.md) objects all derive from the [Audience](../campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the audience with the respective [AddAudiences](../campaign-management-service/addaudiences.md), [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](../campaign-management-service/updateaudiences.md), and [DeleteAudiences](../campaign-management-service/deleteaudiences.md) operations.
 
 > [!NOTE]
 > With custom audiences, only update of the Name and Description are supported. You can delete but cannot add a custom audience using the Bing Ads API. Having said that, you can add and delete custom audience associations and exclusions.
@@ -223,7 +213,7 @@ To add, get, update, or delete the association between your audience and ad grou
 > [!NOTE]
 > Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 
-By default ads in a campaign and ad group can show to everyone, but the bid adjustment will apply to people included in the audience. If you only want the ads to show to people included in the audience, you'll want to set the "target and bid" target setting. You can use the *Settings* element of the [Campaign](../campaign-management-service/campaign.md) or [AdGroup](../campaign-management-service/adgroup.md) object to determine the target setting that is applicable for all audiences (i.e., custom audiences, in-market audiences, product audiences, remarketing lists, and similar audiences for remarketing lists) that are associated with the campaign or ad group. Each audience can be associated with multiple campaigns and ad groups, and each target setting is applied independently for delivery. 
+By default ads in a campaign and ad group can show to everyone, but the bid adjustment will apply to people included in the audience. If you only want the ads to show to people included in the audience, you'll want to set the "target and bid" target setting. You can use the *Settings* element of the [Campaign](../campaign-management-service/campaign.md) or [AdGroup](../campaign-management-service/adgroup.md) object to determine the target setting that is applicable for all audiences (i.e., combined lists, custom audiences, in-market audiences, product audiences, remarketing lists, and similar audiences for remarketing lists) that are associated with the campaign or ad group. Each audience can be associated with multiple campaigns and ad groups, and each target setting is applied independently for delivery. 
 
 ## <a name="hierarchy-share"></a>Share Audiences and UET Tags
 Once enabled for both the customer [hierarchy](account-hierarchy-permissions.md#account-hierarchy) and shared UET tags and audiences features you can share UET tags and remarketing lists with other customers. 

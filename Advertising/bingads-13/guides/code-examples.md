@@ -18,7 +18,7 @@ Get started developing Bing Ads API applications in any programming language whi
 |[Bulk Requests](./code-example-bulk-requests.md)|How to download campaigns, ad groups, and ads in a .csv file using the Bulk service.|
 |[Client Links](./code-example-client-links.md)|How to use agency credentials to invite a client, and use client credentials to accept the invitation.|
 |[Conversion Goals](./code-example-conversion-goals.md)|How to manage UET tags and conversion goals.|
-|[Customer Signup](./code-example-customer-signup.md)|How a reseller can call SignupCustomer to create a new customer and account.|
+|[Customer Signup](./code-example-customer-signup.md)|How an aggregator can call SignupCustomer to create a new customer and account.|
 |[Dynamic Search Ads](./code-example-dynamic-search-ads.md)|How to setup Dynamic Search Ads using the Campaign Management service.|
 |[Expanded Text Ads](./code-example-expanded-text-ads.md)|How to setup Expanded Text Ads for a search advertising campaign.|
 |[Experiments](./code-example-experiments.md)|How to create experiment campaigns from a base campaign.|

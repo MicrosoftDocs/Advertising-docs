@@ -22,12 +22,14 @@ A combined list is an audience created from a combination of multiple existing a
 > [!NOTE]
 > Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).  
 
-Combined lists are available via the Bulk API, but not yet available via the Campaign Management API. With the Bulk API you can use the following record types for combined list targets or exclusions.  
+With the Bulk API you can use the following record types for combined list targets or exclusions.  
 - [Combined List](../bulk-service/combined-list.md)   
 - [Campaign Combined List Association](../bulk-service/campaign-combined-list-association.md)   
 - [Campaign Negative Combined List Association](../bulk-service/campaign-negative-combined-list-association.md)   
 - [Ad Group Combined List Association](../bulk-service/ad-group-combined-list-association.md)   
 - [Ad Group Negative Combined List Association](../bulk-service/ad-group-negative-combined-list-association.md)   
+
+With the Campaign Management API you can use the [CombinedList](../campaign-management-service/combinedlist.md) object.  
 
 For an overview and more information about audiences, see the [Audience APIs](universal-event-tracking.md#audience) technical guide. 
 

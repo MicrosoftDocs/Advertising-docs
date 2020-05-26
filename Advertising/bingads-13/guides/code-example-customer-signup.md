@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Customer Signup Code Example
-This example demonstrates how a reseller can call SignupCustomer to create a new customer and account.
+This example demonstrates how an aggregator can call SignupCustomer to create a new customer and account.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

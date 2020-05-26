@@ -45,7 +45,7 @@ var bulkAdGroup = new BulkAdGroup
         {
             Type = AdRotationType.RotateAdsEvenly
         },
-        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (SDK support coming soon)
+        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file
         AdScheduleUseSearcherTimeZone = true,
         // 'Bid Adjustment' column header in the Bulk file
         AudienceAdsBidAdjustment = 10,
