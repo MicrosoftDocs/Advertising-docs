@@ -60,5 +60,6 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 ## Used By
 [AddSharedEntity](addsharedentity.md)  
 [DeleteSharedEntities](deletesharedentities.md)  
+[GetSharedEntities](getsharedentities.md)  
 [GetSharedEntitiesByAccountId](getsharedentitiesbyaccountid.md)  
 [UpdateSharedEntities](updatesharedentities.md)  

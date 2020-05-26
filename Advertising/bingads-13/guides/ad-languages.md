@@ -34,7 +34,7 @@ The following are the possible languages that you may use to write your ads and 
 ## <a name="productlanguage"></a>Product Language
 Your [customer](../customer-management-service/customer.md) language determines the language of the Microsoft Advertising interface. 
 
-The following country codes are supported per customer language e.g. [resellers](account-hierarchy-permissions.md#aggregator-hierarchy) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
+The following country codes are supported per customer language e.g. [aggregators](account-hierarchy-permissions.md#aggregator-hierarchy) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
 > In New Zealand, Microsoft Advertising is available only on the Microsoft Advertising Network. 

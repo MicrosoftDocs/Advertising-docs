@@ -211,6 +211,9 @@
       href: ./request-download-report.md
     - name: Report Data Retention Time Periods
       href: ./report-data-retention-time-periods.md
+  - name: Google Ads Import
+    href: ./google-ads-import.md
+    displayName: google ads import as a service
 - name: API Reference
   items:
   - name: Overview
@@ -994,6 +997,8 @@
           href: ../campaign-management-service/addconversiongoals.md
         - name: AddExperiments
           href: ../campaign-management-service/addexperiments.md
+        - name: AddImportJobs
+          href: ../campaign-management-service/addimportjobs.md
         - name: AddKeywords
           href: ../campaign-management-service/addkeywords.md
         - name: AddLabels
@@ -1034,6 +1039,8 @@
           href: ../campaign-management-service/deletecampaigns.md
         - name: DeleteExperiments
           href: ../campaign-management-service/deleteexperiments.md
+        - name: DeleteImportJobs
+          href: ../campaign-management-service/deleteimportjobs.md
         - name: DeleteKeywords
           href: ../campaign-management-service/deletekeywords.md
         - name: DeleteLabelAssociations
@@ -1098,8 +1105,14 @@
           href: ../campaign-management-service/geteditorialreasonsbyids.md
         - name: GetExperimentsByIds
           href: ../campaign-management-service/getexperimentsbyids.md
+        - name: GetFileImportUploadUrl
+          href: ../campaign-management-service/getfileimportuploadurl.md
         - name: GetGeoLocationsFileUrl
           href: ../campaign-management-service/getgeolocationsfileurl.md
+        - name: GetImportJobsByIds
+          href: ../campaign-management-service/getimportjobsbyids.md
+        - name: GetImportResults
+          href: ../campaign-management-service/getimportresults.md
         - name: GetKeywordsByAdGroupId
           href: ../campaign-management-service/getkeywordsbyadgroupid.md
         - name: GetKeywordsByEditorialStatus
@@ -1269,10 +1282,16 @@
           href: ../campaign-management-service/calloutadextension.md
         - name: Campaign
           href: ../campaign-management-service/campaign.md
+        - name: CampaignAdGroupIds
+          href: ../campaign-management-service/campaignadgroupids.md
         - name: CampaignCriterion
           href: ../campaign-management-service/campaigncriterion.md
         - name: CampaignNegativeSites
           href: ../campaign-management-service/campaignnegativesites.md
+        - name: CombinedList
+          href: ../campaign-management-service/combinedlist.md
+        - name: CombinationRule
+          href: ../campaign-management-service/combinationrule.md
         - name: Company
           href: ../campaign-management-service/company.md
         - name: ConversionGoal
@@ -1335,12 +1354,22 @@
           href: ../campaign-management-service/expandedtextad.md
         - name: Experiment
           href: ../campaign-management-service/experiment.md
+        - name: FileImportJob
+          href: ../campaign-management-service/fileimportjob.md
+        - name: FileImportOption
+          href: ../campaign-management-service/fileimportoption.md
         - name: FixedBid
           href: ../campaign-management-service/fixedbid.md
+        - name: Frequency
+          href: ../campaign-management-service/frequency.md
         - name: GenderCriterion
           href: ../campaign-management-service/gendercriterion.md
         - name: GeoPoint
           href: ../campaign-management-service/geopoint.md
+        - name: GoogleImportJob
+          href: ../campaign-management-service/googleimportjob.md
+        - name: GoogleImportOption
+          href: ../campaign-management-service/googleimportoption.md
         - name: IdCollection
           href: ../campaign-management-service/idcollection.md
         - name: Image
@@ -1351,6 +1380,16 @@
           href: ../campaign-management-service/imageasset.md
         - name: ImageMediaRepresentation
           href: ../campaign-management-service/imagemediarepresentation.md
+        - name: ImportEntityStatistics
+          href: ../campaign-management-service/importentitystatistics.md
+        - name: ImportJob
+          href: ../campaign-management-service/importjob.md
+        - name: ImportOption
+          href: ../campaign-management-service/importoption.md
+        - name: ImportResult
+          href: ../campaign-management-service/importresult.md
+        - name: ImportSearchAndReplaceForStringProperty
+          href: ../campaign-management-service/importsearchandreplaceforstringproperty.md
         - name: InheritFromParentBiddingScheme
           href: ../campaign-management-service/inheritfromparentbiddingscheme.md
         - name: InMarketAudience
@@ -1602,6 +1641,8 @@
           href: ../campaign-management-service/keywordeditorialstatus.md
         - name: KeywordStatus
           href: ../campaign-management-service/keywordstatus.md
+        - name: LogicalOperator
+          href: ../campaign-management-service/logicaloperator.md
         - name: MatchType
           href: ../campaign-management-service/matchtype.md
         - name: MediaEnabledEntityFilter
