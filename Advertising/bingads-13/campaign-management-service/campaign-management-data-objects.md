@@ -53,8 +53,11 @@ The Campaign Management service defines the following data objects.
 |[CallAdExtension](calladextension.md)|Defines an object that specifies a click-to-call phone number to include in a text ad.|
 |[CalloutAdExtension](calloutadextension.md)|Defines an object that specifies additional text about your business, products, or services to include in a text ad.|
 |[Campaign](campaign.md)|Defines a campaign.|
+|[CampaignAdGroupIds](campaignadgroupids.md)|Identifies a campaign and the list of its ad groups to include within the operation scope.|
 |[CampaignCriterion](campaigncriterion.md)|Defines a criterion that you want applied to the specified campaign.|
 |[CampaignNegativeSites](campaignnegativesites.md)|Defines an object that contains the negative site URLs of a campaign.|
+|[CombinationRule](combinationrule.md)|A combination rule includes logical conditions used to determine who to add to your combined list.|
+|[CombinedList](combinedlist.md)|A combined list is an audience created from a combination of multiple existing audiences.|
 |[Company](company.md)|Defines the profile data for a company.|
 |[ConversionGoal](conversiongoal.md)|Defines the base object of a conversion goal.|
 |[ConversionGoalRevenue](conversiongoalrevenue.md)|Defines properties for revenue that can be tracked by a conversion goal.|
@@ -86,14 +89,24 @@ The Campaign Management service defines the following data objects.
 |[EventGoal](eventgoal.md)|Defines a custom event conversion goal.|
 |[ExpandedTextAd](expandedtextad.md)|Defines an expanded text ad.|
 |[Experiment](experiment.md)|Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.|
+|[FileImportJob](fileimportjob.md)|Reserved for future use.|
+|[FileImportOption](fileimportoption.md)|Reserved for future use.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
+|[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
 |[GenderCriterion](gendercriterion.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
 |[GeoPoint](geopoint.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|
+|[GoogleImportJob](googleimportjob.md)|Defines a Google import job that can be run once or scheduled on a recurring basis.|
+|[GoogleImportOption](googleimportoption.md)|Defines the Google import options that are available via API.|
 |[IdCollection](idcollection.md)|Defines an object that contains a list of entity identifiers.|
 |[Image](image.md)|Defines an image object that can be added to an account's media library.|
 |[ImageAdExtension](imageadextension.md)|Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.|
 |[ImageAsset](imageasset.md)|Applies crop settings to stored image media for a specific aspect ratio.|
 |[ImageMediaRepresentation](imagemediarepresentation.md)|Defines an image media representation with height and width.|
+|[ImportEntityStatistics](importentitystatistics.md)|The statistical import results for an entity type.|
+|[ImportJob](importjob.md)|Defines the base object of an import job.|
+|[ImportOption](importoption.md)|Defines the base object of an import option.|
+|[ImportResult](importresult.md)|Contains the status, run time, and statistical results for an import job that has run.|
+|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|Defines the string search and replace Google import option.|
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|
 |[InStoreTransactionGoal](instoretransactiongoal.md)|Defines an in-store transaction goal.|

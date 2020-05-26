@@ -21,6 +21,7 @@ The Campaign Management service defines the following service operations.
 |[AddCampaigns](addcampaigns.md)|Adds one or more campaigns to the specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
 |[AddConversionGoals](addconversiongoals.md)|Adds new conversion goals to the account's shared conversion goal library.|100 *ConversionGoals*|
 |[AddExperiments](addexperiments.md)|Adds experiments and creates experiment campaigns based on existing campaigns in an account.|100 *Experiments*|
+|[AddImportJobs](addimportjobs.md)|Creates a new import job.|1 *ImportJobs*|
 |[AddKeywords](addkeywords.md)|Adds one or more keywords to an ad group.|1 *AdGroupId*<br/><br/>1,000 *Keywords*|
 |[AddLabels](addlabels.md)|Adds one or more labels to an account.|100 *Labels*|
 |[AddListItemsToSharedList](addlistitemstosharedlist.md)|Adds negative keywords to a negative keyword list, or negative sites to a website exclusion list.|1 *SharedList*<br/><br/>5,000 *ListItems*|
@@ -41,6 +42,7 @@ The Campaign Management service defines the following service operations.
 |[DeleteCampaignCriterions](deletecampaigncriterions.md)|Deletes one or more campaign criterions.|100 *CampaignCriterionIds*|
 |[DeleteCampaigns](deletecampaigns.md)|Deletes one or more campaigns in a specified account.|1 *AccountId*<br/><br/>100 *CampaignIds*|
 |[DeleteExperiments](deleteexperiments.md)|Deletes one or more experiments.|100 *ExperimentIds*|
+|[DeleteImportJobs](deleteimportjobs.md)|Deletes the import jobs.|N/A.|
 |[DeleteKeywords](deletekeywords.md)|Deletes one or more keywords in a specified ad group.|1 *AdGroupId*<br/><br/>1,000 *KeywordIds*|
 |[DeleteLabelAssociations](deletelabelassociations.md)|Deletes label associations.|100 *LabelAssociations*|
 |[DeleteLabels](deletelabels.md)|Deletes one or more labels from the account.|100 *LabelIds*|
@@ -73,7 +75,10 @@ The Campaign Management service defines the following service operations.
 |[GetConversionGoalsByTagIds](getconversiongoalsbytagids.md)|Gets the conversion goals that use the specified UET tags.|100 *TagIds*|
 |[GetEditorialReasonsByIds](geteditorialreasonsbyids.md)|Gets the reasons why the specified entities failed editorial review and whether the issue is appealable.|1 *AccountId*<br/><br/>1,000 *EntityIdToParentIdAssociations*|
 |[GetExperimentsByIds](getexperimentsbyids.md)|Gets experiments by experiment identifiers.|5,000 *ExperimentIds*|
+|[GetFileImportUploadUrl](getfileimportuploadurl.md)|Reserved for future use.|N/A.|
 |[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.|Not applicable.|
+|[GetImportJobsByIds](getimportjobsbyids.md)|Gets import jobs by their type and identifiers.|N/A.|
+|[GetImportResults](getimportresults.md)|Gets results for completed import jobs.|N/A.|
 |[GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md)|Gets the keywords within an ad group.|1 *AdGroupId*|
 |[GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md)|Retrieves the keywords with the specified editorial review status.|1 *AdGroupId*|
 |[GetKeywordsByIds](getkeywordsbyids.md)|Retrieves the specified keywords.|1 *AdGroupId*<br/><br/>1,000 *KeywordIds*|
@@ -89,7 +94,7 @@ The Campaign Management service defines the following service operations.
 |[GetNegativeSitesByCampaignIds](getnegativesitesbycampaignids.md)|Gets the negative site URLs that are assigned directly to campaigns.|1 *AccountId*<br/><br/>15 *CampaignIds*|
 |[GetProfileDataFileUrl](getprofiledatafileurl.md)|Gets a temporary URL that you can use to download industry or job function profile data.|1 *ProfileType*|
 |[GetSharedEntities](getsharedentities.md)|Gets negative keyword lists or website exclusion lists.|Not applicable.|
-|[GetSharedEntitiesByAccountId](getsharedentitiesbyaccountid.md)|Gets the negative keyword lists or website exclusion lists.|Not applicable.|
+|[GetSharedEntitiesByAccountId](getsharedentitiesbyaccountid.md)|Gets negative keyword lists.|Not applicable.|
 |[GetSharedEntityAssociationsByEntityIds](getsharedentityassociationsbyentityids.md)|Gets the negative keyword list to campaign associations by campaign IDs, or website exclusion list to ad account associations by ad account IDs.|100 *EntityIds*|
 |[GetSharedEntityAssociationsBySharedEntityIds](getsharedentityassociationsbysharedentityids.md)|Gets the negative keyword list to campaign associations by negative keyword list IDs, or website exclusion list to ad account associations by website exclusion list IDs.|1 *SharedEntityIds*|
 |[GetUetTagsByIds](getuettagsbyids.md)|Gets the specified Universal Event Tracking (UET) tags.|100 *TagIds*|

@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Creates a new customer and account that rolls up to your reseller payment method.
+description: Creates a new customer and account that rolls up to your aggregator payment method.
 dev_langs: 
   - csharp
   - java
@@ -12,16 +12,16 @@ dev_langs:
   - python
 ---
 # SignupCustomer Service Operation - Customer Management
-Creates a new customer and account that rolls up to your reseller payment method.
+Creates a new customer and account that rolls up to your aggregator payment method.
 
 > [!NOTE]
-> You must be a reseller with the Aggregator user role to call this operation. For more details see the [Aggregator Hierarchy](../guides/account-hierarchy-permissions.md#aggregator-hierarchy) technical guide.  
+> You must be a user with the aggregator role to call this operation. For more details see the [Aggregator Hierarchy](../guides/account-hierarchy-permissions.md#aggregator-hierarchy) technical guide.  
 
 Pass both [Customer](customer.md) and [AdvertiserAccount](advertiseraccount.md) objects in the request. 
 - The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
-- The advertiser account object must include the name of the account, the type of currency to use to settle the account, and the payment method identifier must be set to null. The operation generates an invoice account and sets the payment method identifier to the identifier associated with the reseller's invoice. You are invoiced for all charges incurred by the customers that you manage.
+- The advertiser account object must include the name of the account, the type of currency to use to settle the account, and the payment method identifier must be set to null. The operation generates an invoice account and sets the payment method identifier to the identifier associated with the aggregator's invoice. You are invoiced for all charges incurred by the customers that you manage.
 
-When the operation succeeds, a new managed customer is created outside of the reseller customer and an advertiser account is created within the managed customer. 
+When the operation succeeds, a new managed customer is created outside of the aggregator customer and an advertiser account is created within the managed customer. 
 
 ## <a name="request"></a>Request Elements
 The *SignupCustomerRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -35,7 +35,7 @@ The *SignupCustomerRequest* object defines the [body](#request-body) and [header
 |-----------|---------------|-------------|
 |<a name="account"></a>Account|An [AdvertiserAccount](advertiseraccount.md) that specifies the details of the customer's primary account.|[AdvertiserAccount](advertiseraccount.md)|
 |<a name="customer"></a>Customer|A [Customer](customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
-|<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the reseller that will manage this customer.|**long**|
+|<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the aggregator that will manage this customer.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

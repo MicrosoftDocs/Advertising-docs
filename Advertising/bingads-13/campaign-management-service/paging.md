@@ -32,6 +32,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 
 ## Used By
 [GetExperimentsByIds](getexperimentsbyids.md)  
+[GetImportResults](getimportresults.md)  
 [GetLabelAssociationsByLabelIds](getlabelassociationsbylabelids.md)  
 [GetLabelsByIds](getlabelsbyids.md)  
 [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)  

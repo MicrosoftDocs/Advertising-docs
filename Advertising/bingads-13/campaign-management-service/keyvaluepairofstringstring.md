@@ -48,6 +48,8 @@ Namespace: http\://schemas.datacontract.org/2004/07/System.Collections.Generic
 [BatchErrorCollection](batcherrorcollection.md)  
 [Campaign](campaign.md)  
 [CampaignCriterion](campaigncriterion.md)  
+[ImportOption](importoption.md)  
+[ImportResult](importresult.md)  
 [Keyword](keyword.md)  
 [SharedEntity](sharedentity.md)  
 [SharedListItem](sharedlistitem.md)  

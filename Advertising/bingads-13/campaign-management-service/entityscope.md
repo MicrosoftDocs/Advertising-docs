@@ -39,6 +39,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [DeleteSharedEntities](deletesharedentities.md)  
 [DeleteSharedEntityAssociations](deletesharedentityassociations.md)  
 [GetListItemsBySharedList](getlistitemsbysharedlist.md)  
+[GetSharedEntities](getsharedentities.md)  
 [GetSharedEntityAssociationsByEntityIds](getsharedentityassociationsbyentityids.md)  
 [GetSharedEntityAssociationsBySharedEntityIds](getsharedentityassociationsbysharedentityids.md)  
 [SetSharedEntityAssociations](setsharedentityassociations.md)  
