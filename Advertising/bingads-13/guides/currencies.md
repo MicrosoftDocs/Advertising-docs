@@ -47,6 +47,18 @@ The minimum and maximum bid and budget for each currency below are subject to ch
 |UKPound|The Pound Sterling (GBP).|0.05|1,000.00|0.05|5.00|3,938,700.00|
 |USDollar|The U.S. Dollar (USD).|0.05|1,000.00|0.05|5.00|30,000,000.00|
 
+### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
+The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids below are subject to change. 
+
+|Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Bid|
+|-----|-----|-----|-----|-----|-------|-------|
+|AustralianDollar|Australia|0.01|0.05|
+|CanadianDollar|Canada|0.01|0.05|
+|Euro|Austria, Belgium, France, Germany, Netherlands, Spain, and Switzerland.|0.01|0.05|
+|IndianRupee|India|0.01|0.50|
+|UKPound|United Kingdom|0.01|0.05|
+|USDollar|United States of America|0.01|0.05|
+
 ## <a name="conversiongoalrevenue"></a>Conversion Goal Revenue Currencies
 
 The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) object.
