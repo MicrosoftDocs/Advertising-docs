@@ -38,7 +38,7 @@ For an overview and more information about audiences, see the [Audience APIs](un
 
 Parallel tracking is required for all accounts created after May 31st, 2020. Until November 2020 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the [account property](../campaign-management-service/accountproperty.md#adclickparalleltracking) to *true* or *false*. By the end of November 2020 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
 
-### <a name="sdk-december2019"></a>Bing Ads API SDK Updates
+### <a name="sdk-may2020"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.3) SDK version 13.0.3. 
 
 ## <a name="april2020"></a>April 2020
