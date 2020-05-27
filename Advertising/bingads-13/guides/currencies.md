@@ -47,7 +47,7 @@ The minimum and maximum bid and budget for each currency below are subject to ch
 |UKPound|The Pound Sterling (GBP).|0.05|1,000.00|0.05|5.00|3,938,700.00|
 |USDollar|The U.S. Dollar (USD).|0.05|1,000.00|0.05|5.00|30,000,000.00|
 
-### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
+### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
 The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids below are subject to change. 
 
 |Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Bid|
