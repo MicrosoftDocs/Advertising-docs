@@ -50,11 +50,11 @@ The minimum and maximum bid and budget for each currency below are subject to ch
 ### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
 The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids below are subject to change. 
 
-|Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Bid|
+|Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Minimum Bid|
 |-----|-----|-----|-----|-----|-------|-------|
 |AustralianDollar|Australia|0.01|0.05|
 |CanadianDollar|Canada|0.01|0.05|
-|Euro|Austria, Belgium, France, Germany, Netherlands, Spain, and Switzerland.|0.01|0.05|
+|Euro|Austria, Belgium, France, Germany, Italy, Netherlands, Spain, Switzerland, and Sweden.|0.01|0.05|
 |IndianRupee|India|0.01|0.50|
 |UKPound|United Kingdom|0.01|0.05|
 |USDollar|United States of America|0.01|0.05|
