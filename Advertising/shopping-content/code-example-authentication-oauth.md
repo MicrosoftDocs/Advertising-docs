@@ -12,11 +12,13 @@ dev_langs:
   - csharp
 ---
 
-# Authenticating Microsoft Account Credentials Code Example
+# Authenticating Microsoft Account Credentials code example
 
-This simple example shows to use OAuth to authenticate your Microsoft Advertising users. For information about using OAuth, see [Authentication with OAuth](/advertising/guides/authentication-oauth). If you're currently using the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
+For information about using OAuth to authenticate your Microsoft Advertising users, see [Authentication with OAuth](/advertising/guides/authentication-oauth). If you're currently using the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
 
-This examples shows how to get an OAuth token that you use to set the AuthenticationToken header. The example is broken out into two part: the first example shows a simple client that calls the [second example](#secondexample) which implements the code grant flow process. 
+This example shows how to get an OAuth access token that you use to set the AuthenticationToken header. The example is broken out into two part. The first part shows a simple client that calls the [second part](#secondexample) which implements the code grant flow process. 
+
+## Part One: The client
 
 ```csharp
 using System;
@@ -114,7 +116,8 @@ namespace Content
 
 ```
 
-### <a name="secondexample" /> Code grant flow implementation 
+<a name="secondexample"></a> 
+## Part Two: Code grant flow implementation 
 
  
 ```csharp
