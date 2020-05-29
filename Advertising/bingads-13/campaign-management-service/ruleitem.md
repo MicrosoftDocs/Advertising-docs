@@ -9,7 +9,7 @@ description: Defines the base class of a remarketing list rule item.
 # RuleItem Data Object - Campaign Management
 Defines the base class of a remarketing list rule item.
 
-Do not try to instantiate a *RuleItem*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *RuleItem*. You can create one or more of the following objects that derive from it.
 - [StringRuleItem](stringruleitem.md)
 
 ## Syntax

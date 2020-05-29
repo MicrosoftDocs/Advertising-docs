@@ -9,7 +9,7 @@ description: Defines a criterion that you want applied to the specified campaign
 # CampaignCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified campaign.
 
-Do not try to instantiate a *CampaignCriterion*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *CampaignCriterion*. You can create one or more of the following objects that derive from it.
 - [BiddableCampaignCriterion](biddablecampaigncriterion.md)
 - [NegativeCampaignCriterion](negativecampaigncriterion.md)
 
@@ -19,7 +19,7 @@ Do not try to instantiate a *CampaignCriterion*. You can create one or more foll
   <xs:sequence>
     <xs:element name="CampaignId" type="xs:long" />
     <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q78:ArrayOfKeyValuePairOfstringstring" xmlns:q78="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q80:ArrayOfKeyValuePairOfstringstring" xmlns:q80="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:CampaignCriterionStatus" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />

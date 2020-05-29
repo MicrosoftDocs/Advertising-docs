@@ -93,7 +93,7 @@ If you observe this error, either your redirect URI is not properly [registered]
 
 The 650052 error code can be returned with message "The app needs access to a service (\"https://ads.microsoft.com\") that your organization \"{organization}\" has not subscribed to or enabled." 
 
-If you observe this error please ensure that you at least one of the users in your tenant is enabled for work accounts in the Microsoft Advertising web application. Please [contact support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support) for further assistance. 
+If you observe this error please ensure that you at least one of the users in your tenant is enabled for [work accounts](https://help.ads.microsoft.com/#apex/3/en/60043/-1) in the Microsoft Advertising web application. Please [contact support](#contact-support) for further assistance. 
 
 ### <a name="aadsts700016"></a>AADSTS700016
 
@@ -282,7 +282,7 @@ using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
 }
 ```
 
-The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 13.0.2 with the following NuGet packages. Your implementation will vary. 
+The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 13.0.3 with the following NuGet packages. Your implementation will vary. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

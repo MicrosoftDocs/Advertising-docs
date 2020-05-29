@@ -429,7 +429,7 @@ Set this property to *TRUE* if you want the ad extensions to be shown in the sea
 **Update:** Optional. If you set this field to the *delete_value* string, then you are effectively resetting to the default value of *FALSE*. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  
 **Delete:** Read-only  
 ## <a name="version"></a>Version
-The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.
+The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.
 
 **Add:** Read-only  
 **Update:** Read-only    

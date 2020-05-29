@@ -31,5 +31,16 @@ Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.micros
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v13  
 
 ## Used By
+[AddListItemsToSharedList](addlistitemstosharedlist.md)  
+[AddSharedEntity](addsharedentity.md)  
 [Audience](audience.md)  
 [ConversionGoal](conversiongoal.md)  
+[DeleteListItemsFromSharedList](deletelistitemsfromsharedlist.md)  
+[DeleteSharedEntities](deletesharedentities.md)  
+[DeleteSharedEntityAssociations](deletesharedentityassociations.md)  
+[GetListItemsBySharedList](getlistitemsbysharedlist.md)  
+[GetSharedEntities](getsharedentities.md)  
+[GetSharedEntityAssociationsByEntityIds](getsharedentityassociationsbyentityids.md)  
+[GetSharedEntityAssociationsBySharedEntityIds](getsharedentityassociationsbysharedentityids.md)  
+[SetSharedEntityAssociations](setsharedentityassociations.md)  
+[UpdateSharedEntities](updatesharedentities.md)  

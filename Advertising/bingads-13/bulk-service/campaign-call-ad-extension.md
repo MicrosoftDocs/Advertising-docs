@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Campaign Call Ad Extension Record - Bulk
-Defines an association record between a [Campaign](campaign.md) and an [Call Ad Extension](call-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or call ad extension, use the [Campaign](campaign.md) or [Call Ad Extension](call-ad-extension.md) record.
+Defines an association record between a [Campaign](campaign.md) and a [Call Ad Extension](call-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or call ad extension, use the [Campaign](campaign.md) or [Call Ad Extension](call-ad-extension.md) record.
 
 You can download all *Campaign Call Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignCallAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

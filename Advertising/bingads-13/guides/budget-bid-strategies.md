@@ -104,7 +104,10 @@ With the ManualCpc (manual cost per click) bid strategy, you set your ad group a
 ### <a name="maxclicks"></a>MaxClicks
 With the MaxClicks bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.
 
-Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
+Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.  
+
+> [!NOTE]
+> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. 
 
 ### <a name="maxconversions"></a>MaxConversions
 With the MaxConversions bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many conversions as possible within your budget.
@@ -134,7 +137,7 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The TargetRoas bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. All of your target locations must be within the United States.  
+> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the respective feature pilots. If you are in the US pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721), then all of your target locations must be within the United States. If you are also in the UK/CA/AU/DE/FR pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns both 704 and 721), then all of your target locations must be within Australia, Canada, Germany, France, United Kingdom, or United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.

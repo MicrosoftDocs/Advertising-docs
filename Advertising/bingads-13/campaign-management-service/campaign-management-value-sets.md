@@ -60,6 +60,7 @@ The Campaign Management service defines the following value sets.
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|
 |[KeywordStatus](keywordstatus.md)|Defines the possible status values of a keyword.|
+|[LogicalOperator](logicaloperator.md)|Defines the supported set of logical operators for combined list audiences.|
 |[MatchType](matchtype.md)|Defines the possible match types for a keyword or negative keyword.|
 |[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|Defines the possible values representing entities that are enabled for media such as images.|
 |[MigrationStatus](migrationstatus.md)|Defines the possible migration status values.|
@@ -72,6 +73,8 @@ The Campaign Management service defines the following value sets.
 |[ProductAudienceType](productaudiencetype.md)|Defines the possible types of product audiences.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
 |[ProfileType](profiletype.md)|Defines the possible types of profile criterions.|
+|[PromotionDiscountModifier](promotiondiscountmodifier.md)|Defines the possible types of promotion discount modifiers.|
+|[PromotionOccasion](promotionoccasion.md)|Defines the possible types of promotion occasions.|
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|
 |[ValueOperator](valueoperator.md)|Defines the operators that can be applied to values within a conversion event goal.|

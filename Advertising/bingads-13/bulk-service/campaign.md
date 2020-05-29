@@ -41,7 +41,7 @@ var bulkCampaign = new BulkCampaign
     // Campaign object of the Campaign Management service.
     Campaign = new Campaign
     {        
-        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file (SDK support coming soon)
+        // 'Ad Schedule Use Searcher Time Zone' column header in the Bulk file
         AdScheduleUseSearcherTimeZone = true,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new EnhancedCpcBiddingScheme { },
@@ -193,7 +193,7 @@ The maximum cost per click that you want to spend with the corresponding bid str
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to MaxClicks, MaxConversions, TargetCpa, or TargetRoas, and otherwise this field is ignored.
 
 > [!NOTE]
-> The MaxClicks bid strategy is available for Dynamic Search Ads and Search campaigns. 
+> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns.  
 > 
 > The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
 > 
@@ -229,7 +229,7 @@ The supported target ROAS values range from 0.01 (1 percent) to 1,000.00 (100,00
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetRoas*, and otherwise this field is ignored. 
 
 > [!NOTE]
-> The *TargetRoas* bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721). All of your target locations must be within the United States. 
+> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the respective feature pilots. If you are in the US pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721), then all of your target locations must be within the United States. If you are also in the UK/CA/AU/DE/FR pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns both 704 and 721), then all of your target locations must be within Australia, Canada, Germany, France, United Kingdom, or United States.
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 

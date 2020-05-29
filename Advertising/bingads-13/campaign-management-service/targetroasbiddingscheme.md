@@ -10,7 +10,7 @@ description: Defines an object that represents the target ROAS bid strategy type
 Defines an object that represents the target ROAS bid strategy type. 
 
 > [!NOTE]
-> The *TargetRoas* bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721). All of your target locations must be within the United States. 
+> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the respective feature pilots. If you are in the US pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721), then all of your target locations must be within the United States. If you are also in the UK/CA/AU/DE/FR pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns both 704 and 721), then all of your target locations must be within Australia, Canada, Germany, France, United Kingdom, or United States.
 
 With the TargetRoas (return on ad spend) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average ROAS, and Microsoft Advertising automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Microsoft Advertising will try to make sure your return on ad spend is in line with your target.
 

@@ -74,7 +74,7 @@ The Reporting service defines the following data objects.
 |[ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)|Defines a product partition performance report request that aggregates the performance data by product group and product partition type for a specified time period.|
 |[ProductPartitionUnitPerformanceReportFilter](productpartitionunitperformancereportfilter.md)|Defines the criteria to use to filter the product partition  performance report data.|
 |[ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)|Defines a product partition unit performance report request that aggregates the performance data by product partition unit for a specified time period.|
-|[ProductSearchQueryPerformanceReportFilter](productsearchqueryperformancereportfilter.md)|Defines the criteria to use to filter the Bing Shopping product search query performance report data.|
+|[ProductSearchQueryPerformanceReportFilter](productsearchqueryperformancereportfilter.md)|Defines the criteria to use to filter the product search query performance report data.|
 |[ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md)|Defines a Microsoft Shopping campaign product search query performance report request.|
 |[ProfessionalDemographicsAudienceReportFilter](professionaldemographicsaudiencereportfilter.md)|Defines the criteria to use to filter the professional demographics audience report.|
 |[ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md)|Defines a professional demographics audience report request.|

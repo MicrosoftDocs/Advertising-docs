@@ -38,7 +38,7 @@ You need to have {lpurl] or one of its variants in your URL's tracking template 
 If the [Name](#name) element is set to *AdClickParallelTracking*, then the returned [Value](#value) can be either *true* or *false*. If the value is *true*, then parallel tracking is enabled. 
 
 > [!IMPORTANT]
-> Parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and currently all other customers are opted out. During pilot you can enable and disable the feature i.e., set the property to *true* or *false*. By the end of calendar year 2019 all customers will be enabled for parallel tracking, and the value can only be set to *true*. 
+> Parallel tracking is required for all accounts created after May 31st, 2020. Until November 2020 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the property to *true* or *false*. By the end of November 2020 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
 
 #### <a name="finalurlsuffix"></a>FinalUrlSuffix
 If the [Name](#name) element is set to *FinalUrlSuffix*, then the [Value](#value) represents your account's Final URL Suffix. 

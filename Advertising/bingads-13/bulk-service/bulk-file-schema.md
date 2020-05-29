@@ -49,6 +49,7 @@ Record Type  |Supported Campaign Types
 [Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Location Ad Extension](account-location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Account Promotion Ad Extension](account-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Action Ad Extension](action-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -57,6 +58,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Action Ad Extension](ad-group-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group App Ad Extension](ad-group-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Ad Group Combined List Association](ad-group-combined-list-association.md)|All         
 [Ad Group Company Name Criterion](ad-group-company-name-criterion.md)|All  
 [Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
@@ -70,7 +72,8 @@ Record Type  |Supported Campaign Types
 [Ad Group Label](ad-group-label.md)|All         
 [Ad Group Location Criterion](ad-group-location-criterion.md)|All         
 [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md)|All         
-[Ad Group Negative Age Criterion](ad-group-negative-age-criterion.md)|Audience  
+[Ad Group Negative Age Criterion](ad-group-negative-age-criterion.md)|Audience    
+[Ad Group Negative Combined List Association](ad-group-negative-combined-list-association.md)|All         
 [Ad Group Negative Company Name Criterion](ad-group-negative-company-name-criterion.md)|Audience  
 [Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All         
 [Ad Group Negative Gender Criterion](ad-group-negative-gender-criterion.md)|Audience  
@@ -87,6 +90,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Product Audience Association](ad-group-product-audience-association.md)|All         
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
+[Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
 [Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -104,7 +108,8 @@ Record Type  |Supported Campaign Types
 [Campaign Action Ad Extension](campaign-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search      
+[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search        
+[Campaign Combined List Association](campaign-combined-list-association.md)|All         
 [Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping            
 [Campaign Custom Audience Association](campaign-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
@@ -117,6 +122,7 @@ Record Type  |Supported Campaign Types
 [Campaign Location Ad Extension](campaign-location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Location Criterion](campaign-location-criterion.md)|All         
 [Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All         
+[Campaign Negative Combined List Association](campaign-negative-combined-list-association.md)|All         
 [Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
 [Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
@@ -130,12 +136,14 @@ Record Type  |Supported Campaign Types
 [Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Product Audience Association](campaign-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping         
+[Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Radius Criterion](campaign-radius-criterion.md)|All         
 [Campaign Remarketing List Association](campaign-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping               
 [Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Similar Remarketing List Association](campaign-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Combined List](combined-list.md)|All         
 [Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
 [Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds         
 [Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds         
@@ -160,6 +168,7 @@ Record Type  |Supported Campaign Types
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
 [Product Audience](product-audience.md)|All       
+[Promotion Ad Extension](promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Remarketing List](remarketing-list.md)|All         
 [Responsive Ad](responsive-ad.md)|Audience         
 [Responsive Ad Label](responsive-ad-label.md)|Audience        

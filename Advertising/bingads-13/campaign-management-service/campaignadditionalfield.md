@@ -16,6 +16,7 @@ Defines a list of optional campaign properties that you can request when calling
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="AdScheduleUseSearcherTimeZone" />
+        <xs:enumeration value="MaxConversionValueBiddingScheme" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -27,6 +28,7 @@ Defines a list of optional campaign properties that you can request when calling
 |Value|Description|
 |-----------|---------------|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](campaign.md#adscheduleusesearchertimezone) element be included within each returned [Campaign](campaign.md) object.|
+|<a name="maxconversionvaluebiddingscheme"></a>MaxConversionValueBiddingScheme|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

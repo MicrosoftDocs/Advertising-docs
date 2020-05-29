@@ -44,7 +44,7 @@ You could upload the ad customizer feed and feed items via the Bulk API as follo
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Keyword,Match Type,Name,Audience Id,Feed Name,Custom Attributes
 Format Version,,,,,,,6,,,
-Feed,Active,-21,,AdCustomizerFeed,,,,,MyAdCustomizerFeedName,"[{""name"":""Column1_Name"",""feedAttributeType"":""DateTime""},{""name"":""Column2_Name"",""feedAttributeType"":""Int64""},{""name"":""Column3_Name"",""feedAttributeType"":""Price"",{""name"":""Column4_Name"",""feedAttributeType"":""String""}]"
+Feed,Active,-21,,AdCustomizerFeed,,,,,MyAdCustomizerFeedName,"[{""name"":""Column1_Name"",""feedAttributeType"":""DateTime""},{""name"":""Column2_Name"",""feedAttributeType"":""Int64""},{""name"":""Column3_Name"",""feedAttributeType"":""Price""},{""name"":""Column4_Name"",""feedAttributeType"":""String""}]"
 Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 00:00:00"",""Column2_Name"":8,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 700""}"
 Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 01:00:00"",""Column2_Name"":10,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 800""}"
 Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 02:00:00"",""Column2_Name"":12,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 900""}"

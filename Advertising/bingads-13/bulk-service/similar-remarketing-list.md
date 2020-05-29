@@ -11,11 +11,12 @@ dev_langs:
 # Similar Remarketing List Record - Bulk
 Defines an audience that is similar to one of your remarketing lists.
 
-> [!NOTE]
-> Bulk upload is not supported. Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
+Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 317. 
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
+
+> [!TIP]
+> For an overview and more information about audiences, see the [Audience APIs](../guides/universal-event-tracking.md#audience) technical guide. 
 
 You can download all *Similar Remarketing List* records in the account by including the [DownloadEntity](downloadentity.md) value of *SimilarRemarketingLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -139,7 +140,7 @@ Scope defines what accounts can use this audience.
 
 The scope of a similar audience is automatically set to the scope of the [source](#sourceid) remarketing list.
 
-If scope is set to *Account*, the audience can only be associated with ad groups within one specified account (ParentId). If scope is set to *Customer*, the audience can be associated with any ad groups across all of the customer's accounts.
+If scope is set to *Account*, the audience can only be associated with campaigns and ad groups within one specified account (ParentId). If scope is set to *Customer*, the audience can be associated with any campaigns and ad groups across all of the customer's accounts.
 
 **Add:** Not supported  
 **Update:** Not supported    

@@ -9,7 +9,7 @@ description: Defines the base object of a conversion goal.
 # ConversionGoal Data Object - Campaign Management
 Defines the base object of a conversion goal.
 
-Do not try to instantiate a *ConversionGoal*. You can create one or more following objects that derive from it.
+Do not try to instantiate a *ConversionGoal*. You can create one or more of the following objects that derive from it.
 - [AppInstallGoal](appinstallgoal.md)
 - [DurationGoal](durationgoal.md)
 - [EventGoal](eventgoal.md) 

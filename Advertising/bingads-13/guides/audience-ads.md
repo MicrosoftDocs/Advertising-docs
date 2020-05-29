@@ -40,7 +40,7 @@ The Microsoft Audience Network supports three ad formats: image-based ads, text 
 - Bing search ads in the Microsoft Advertising Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. 
 - Bing search ads in the Microsoft Audience Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. In addition, set the audience ads bid adjustment to indicate whether you prefer audience ads for the campaign or ad group. 
 - Microsoft Audience Ads (image-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) and responsive ads. Note that Microsoft Audience Ads refers to the ad placement, while "responsive ad" refers to the data type that is used via the Bing Ads API for specific scenarios. 
-- Microsoft Audience Ads (feed-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) with the Bing Shopping setting. 
+- Microsoft Audience Ads (feed-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) with a Microsoft Shopping Campaigns setting. 
 
 ## <a name="audience-campaigns"></a>Audience Campaigns
 For image-based or feed-based ads in the Microsoft Audience Network, you'll need to be enabled for Audience campaigns. With Audience campaigns you will have control to separate your budgets, ads, and bids from search campaigns. 

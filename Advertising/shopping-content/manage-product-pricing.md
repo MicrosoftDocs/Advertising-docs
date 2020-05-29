@@ -9,7 +9,6 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 
-
 # Updating product pricing and availability
 
 > [!NOTE]

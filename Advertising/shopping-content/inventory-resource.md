@@ -9,7 +9,6 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 
-
 # Inventory resource
 
 > [!NOTE]

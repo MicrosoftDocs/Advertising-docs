@@ -9986,10 +9986,10 @@ Negative Keyword types cannot be mixed in one call.
 4345
 
 **Symbolic Error Code**
-CampaignServiceNegativeKeywordDuplicate
+CampaignServiceDuplicateNegativeKeyword
 
 **Description**
-Duplicate negative keyword are not allowed.
+Duplicate negative keywords are not allowed.
 
 ***
 
@@ -10067,6 +10067,83 @@ CampaignServiceSharedEntityAssociationsAccountLimitExceeded
 
 **Description**
 Shared entity association limit at account level would be exceeded.
+
+***
+
+**Numeric Code**
+4353
+
+**Symbolic Error Code**
+CampaignServiceNotInPilotForManagerAccountSharedWebsiteExclusions
+
+**Description**
+The customer is not in pilot for Manager account website exclusion lists.
+
+***
+
+**Numeric Code**
+4354
+
+**Symbolic Error Code**
+CampaignServiceDuplicateSharedListName
+
+**Description**
+Shared list with the same name already exists.
+
+***
+
+**Numeric Code**
+4355
+
+**Symbolic Error Code**
+CampaignServiceMaxListItemLimitExceededForList
+
+**Description**
+Limit for shared list items in list has been reached.
+
+***
+
+**Numeric Code**
+4356
+
+**Symbolic Error Code**
+CampaignServiceDuplicateListItemInList
+
+**Description**
+A matching list item already exists.
+
+***
+
+**Numeric Code**
+4357
+
+**Symbolic Error Code**
+CampaignServiceInvalidListItemTypeForList
+
+**Description**
+The list item type is not valid for the list type.
+
+***
+
+**Numeric Code**
+4358
+
+**Symbolic Error Code**
+CampaignServiceSharedEntitiesWithActiveAssociationsCannotBeDeleted
+
+**Description**
+All associations must be removed before the shared entity can be deleted.
+
+***
+
+**Numeric Code**
+4359
+
+**Symbolic Error Code**
+CampaignServiceSharedListItemNotInList
+
+**Description**
+The list item was not found in the list.
 
 ***
 

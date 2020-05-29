@@ -50,6 +50,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 |[Image Ad Extension](#imageadextension)|6|
 |[Location Ad Extension](#locationadextension)|Up to the total number of location ad extensions in your account|
 |[Price Ad Extension](#priceadextension)|20|
+|[Promotion Ad Extension](#promotionadextension)|20|
 |[Review Ad Extension](#reviewadextension)|20|
 |[Sitelink Ad Extension](#sitelinkadextension)|20|
 |[Structured Snippet Ad Extension](#structuredsnippetadextension)|20|
@@ -121,6 +122,16 @@ The following table defines limits for price ad extension properties.
 |Property|Limit|
 |------------|---------|
 |Table Rows|You must have between 3 and 8 price table rows.|
+
+### <a name="promotionadextension"></a>Promotion Ad Extensions
+You can manage promotion ad extensions using the Bulk service ([Promotion Ad Extension Record](../bulk-service/promotion-ad-extension.md)) or Campaign Management service ([PromotionAdExtension](../campaign-management-service/promotionadextension.md)).
+
+The following table defines limits for promotion ad extension properties.
+
+|Property|Limit|
+|------------|---------|
+|PromotionCode|The string can contain a maximum of 15 characters.|
+|PromotionTarget|The string can contain a maximum of 20 characters.|
 
 ### <a name="reviewadextension"></a>Review Ad Extensions
 You can manage review ad extensions using the Bulk service ([Review Ad Extension Record](../bulk-service/review-ad-extension.md)) or Campaign Management service ([ReviewAdExtension](../campaign-management-service/reviewadextension.md)).
@@ -294,7 +305,7 @@ The following table defines limits for audience properties.
 
 You can have up to 1,000 custom audiences per customer. You can have up to 1,000 remarketing lists per account, or 5,000 per customer. The in-market audiences maximum is only limited by the number of in-market audiences provided by Microsoft Advertising. 
 
-There is a limit of 20,000,000 associations per account combined for custom audience, in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
+There is a limit of 20,000,000 associations per account combined for all audience types e.g., combined list, custom audience, customer list (coming soon), in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
 
 ## <a name="budget"></a>Budgets
 Represents a budget that can be shared by any campaigns in an account. You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account.
@@ -343,7 +354,7 @@ For more information, see the Microsoft Advertising Help article [Target searche
 ## <a name="experiment"></a>Experiments
 An experiment is where you split a Search campaign’s budget and traffic, and then run an A/B test during a limited date range.
 
-The number of experiments that you can have is only limited by the number of campaigns in your account i.e., you can create up to 10 experiments per base campaign.
+The number of experiments that you can have is only limited by the number of campaigns in your account i.e., you can create up to 10 experiments per base campaign. Since an ad account can contain a maximum of 10,000 campaigns (base campaigns + experiment campaigns), you can have at most 5,000 experiments corresponding to 5,000 base campaigns. 
 
 You can manage experiments using the Bulk service ([Experiment Record](../bulk-service/experiment.md)) or Campaign Management service ([Experiment](../campaign-management-service/experiment.md)).
 
@@ -387,8 +398,7 @@ Each account can contain 100,000 labels.
 
 Although not pictured above, labels can be associated with campaigns, ad groups, ads, and keywords. You can apply one label to multiple entities. The association count is only limited by the number of campaigns, ad groups, ads, and keywords in your account.
 
-You can manage labels using the Bulk service ([Label Record](../bulk-service/label.md)) or Campaign Management service ([Label](../campaign-management-service/label.md)).
-
+You can manage labels using the Bulk service ([Label Record](../bulk-service/label.md)) or Campaign Management service ([Label](../campaign-management-service/label.md)).  
 
 |Property|Limit|
 |------------|---------|
@@ -419,12 +429,14 @@ You can manage negative site placements using the Campaign Management service ([
 
 Each ad group or campaign can contain up to 2,500 negative site placements. Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not.
 
+Additionally an ad account can be associated with any number of website exclusion lists ([PlacementExclusionList](../campaign-management-service/placementexclusionlist.md)). Each manager account (customer) can own up to three website exclusion lists. Each list can contain up to 10,000 negative sites ([NegativeSite](../campaign-management-service/negativesite.md)). 
+
 ## <a name="productgroup"></a>Product Groups
 Product groups are used to determine which products from your Microsoft Merchant Center catalog should be included in a particular ad group. In order to understand product groups, first make sure you are familiar with [Product Ads](product-ads.md).
 
 After you create a shopping campaign, Microsoft Advertising creates a default ad group. That ad group includes a product group containing all of the products in your Microsoft Merchant Center catalog feed. However, you don't typically want an ad group to contain all products. Instead, you likely want each ad group to contain only very closely related products in order more effectively manage which ads show, and when. With product groups you can narrow down that default group to a customized list of specific products.
 
-There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa.
+There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. Within a product group you can subdivide products e.g., by category into product partitions. The entire product partition tree node count for an ad group cannot exceed 20,000.
 
 You can manage product groups using the Bulk service ([Ad Group Product Partition](../bulk-service/ad-group-product-partition.md)) or Campaign Management service ([ProductPartition](../campaign-management-service/productpartition.md)).
 
