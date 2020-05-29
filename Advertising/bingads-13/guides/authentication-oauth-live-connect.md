@@ -29,8 +29,6 @@ How can you get an access token? Microsoft Advertising leverages the Microsoft i
 
 1. [Refresh the access token](#refresh-accesstoken)   
 
-1. [Register](#registerapplication) your application.
-
 ## <a name="registerapplication"></a>Register Your Application
 Before you can manage authentication for users of your Bing Ads API application, you must register your application and get the corresponding client ID and client secret.  
 
