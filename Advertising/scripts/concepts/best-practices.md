@@ -268,7 +268,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 
 Calling a selector's `forDateRange` method causes the selector to get the entity's performance data. Getting an entity's performance data is expensive, so only get it if you plan to call the entity's `getStats` method and use the data.
 
-The date range that you specifying for an entity does not apply to the parent or child entities that you access from that entity. For example, if you get an ad group, then get its parent campaign and try access the campaign's performance metrics, the call fails.
+The date range that you specify for an entity does not apply to the parent or child entities that you access from that entity. For example, if you get an ad group and then get its parent campaign and try to access the campaign's performance metrics, the call fails.
 
 The `campaignStats.getReturnOnAdSpend()` call in the following example fails because the date range applies to the ad group and not the campaign.
 
