@@ -27,7 +27,7 @@ For information about creating a QueryControl message, see [Creating a QueryCont
 ----
 
  
-<a name="querycontrol" />
+<a name="querycontrol"></a>
 
 ## QueryControl
 
@@ -38,7 +38,7 @@ Defines the root element of a QueryControl message.
 |QueryControl|The root element in a QueryControl message.|[QueryControl Type](#querycontroltype)
 
 
-<a name="querycontroltype" />
+<a name="querycontroltype"></a>
 
 ## QueryControl Type
 
@@ -49,7 +49,7 @@ Defines a QueryControl message.
 |ItineraryCapabilities|The parent object that contains the default settings and overrides for pull requests. |[ItineraryCapabilities Type](#itinerarycapabilitiestype)
 
 
-<a name="itinerarycapabilitiestype" />
+<a name="itinerarycapabilitiestype"></a>
 
 ## ItineraryCapabilities Type
 
@@ -62,7 +62,7 @@ Defines the object that contains the default settings and overrides for pull req
 
 
 
-<a name="defaultitinerarycapability" /> 
+<a name="defaultitinerarycapability"></a> 
 
 ## defaultItineraryCapability Type
 
@@ -80,7 +80,7 @@ Defines the default settings for pull requests.
 
 
 
-<a name="propertycapabilityoverride" /> 
+<a name="propertycapabilityoverride"></a> 
 
 ## propertyCapabilityOverride Type
 

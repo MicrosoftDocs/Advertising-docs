@@ -11,7 +11,7 @@ ms.author: "scottwhi"
 
 # Get Started with the Content API
 
-<a name="credentials"/>
+<a name="credentials"></a>
 To use the Content API, you'll need a couple of things:
 
 1. A Microsoft account
@@ -22,7 +22,7 @@ To get a Microsoft Advertising account, go to [https://ads.microsoft.com](https:
 
 Next, if you don't already have a Microsoft Advertising developer token for the production environment, go to the [Developer Portal](https://developers.ads.microsoft.com/account). Click **Request Token** and provide the requested information. If you use the API to manage your own account, you'll receive your token immediately; however, if you're managing accounts for others, it may take up to five business days to get a token.
 
-## <a name="authentication"/> Authenticating your credentials
+## <a name="authentication"></a> Authenticating your credentials
 
 Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with the Live Connect endpoint](/advertising/guides/authentication-oauth-live-connect) and [Authentication with the Microsoft identity platform](/advertising/guides/authentication-oauth-identity-platform) (using the Microsoft identity platform is recommended). 
 
@@ -46,7 +46,7 @@ If you manage catalogs on behalf of other customers, you must also set the follo
 
 For information about these and other headers that the request and response may contain, see [Headers](../shopping-content/products-resource.md#headers). 
 
-## <a name="configurebmc"/> Configuring Microsoft Merchant Center to use the API
+## <a name="configurebmc"></a> Configuring Microsoft Merchant Center to use the API
 
 For an overview of Microsoft Merchant Center (MMC), see [What is Microsoft Merchant Center?](https://help.ads.microsoft.com/#apex/3/en/51083/1) The topic includes links to all the Merchant Center topics and related videos.
 

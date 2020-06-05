@@ -32,7 +32,7 @@ For Hotel API endpoints, see [Endpoints](../hotel-service/reference.md#endpoints
 
 For information about reporting, see [Hotel Ads Reporting API](reporting.md).
 
-<a name="workingwithsubaccounts" />
+<a name="workingwithsubaccounts"></a>
 
 ## Working with subaccounts
 
@@ -45,7 +45,7 @@ The following are the REST templates that you use to manage subaccounts.
 
 For an example that gets and updates subaccounts, see [code examples](../hotel-service/code-example-subaccounts.md). (Use the Language selector in the right pane to see the example in different languages.)
 
-<a name="listingsubaccounts" />
+<a name="listingsubaccounts"></a>
 
 ### Listing subaccounts
 
@@ -88,7 +88,7 @@ x-ms-trackingid: 7cd2710c-821a-48e8-99af-efdc05aebe86
 }
 ```
 
-<a name="updatingasubaccount" />
+<a name="updatingasubaccount"></a>
 
 ### Updating a subaccount
 
@@ -151,7 +151,7 @@ Content-Length: 682
 }
 ```
 
-<a name="gettingsubaccounts" />
+<a name="gettingsubaccounts"></a>
 
 ### Getting a subaccount
 
@@ -226,7 +226,7 @@ x-ms-trackingid: 5345bf4f-e64a-47a6-8d1e-43cc0231dc1b
 }
 ```
 
-<a name="workingwithhotelgroups" />
+<a name="workingwithhotelgroups"></a>
 
 ## Working with hotel groups
 
@@ -239,7 +239,7 @@ The following are the REST templates that you use to manage hotel groups.
 
 For an example that gets, adds, and updates hotel groups, see [code examples](../hotel-service/code-example-hotel-groups.md). (Use the Language selector in the right pane to see the example in different languages.)
 
-<a name="listinghotelgroups" />
+<a name="listinghotelgroups"></a>
 
 ### Listing hotel groups
 
@@ -296,7 +296,7 @@ x-ms-trackingid: 21fafae0-4053-46e0-8271-87bc5fce6312
 }
 ```
 
-<a name="addingahotelgroup" />
+<a name="addingahotelgroup"></a>
 
 ### Adding a hotel group
 
@@ -332,7 +332,7 @@ x-ms-trackingid: e86fcdbd-613e-44a9-b5fc-528cfa87297a
 
 After adding a hotel group, use the [associate](../hotel-service/reference.md#associate) template to add hotels to the group. For information, see [Associating a hotel with a hotel group](#associatinghotels).
 
-<a name="updatingahotelgroup" />
+<a name="updatingahotelgroup"></a>
 
 ### Updating a hotel group
 
@@ -391,7 +391,7 @@ Host: <host>
 }
 ```
 
-<a name="gettingahotelgroup" />
+<a name="gettingahotelgroup"></a>
 
 ### Getting a hotel group
 
@@ -450,7 +450,7 @@ x-ms-trackingid: e5eba818-2ef7-4fe6-9225-9e2325414e3b
 ```
 
 
-<a name="workingwithhotels" />
+<a name="workingwithhotels"></a>
 
 ## Working with hotels
 
@@ -465,7 +465,7 @@ The following are the REST templates that you use to manage hotels.
 For an example that gets and updates hotels, see [hotel examples](../hotel-service/code-example-hotels.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 
-<a name="listinghotels" />
+<a name="listinghotels"></a>
 
 ### Listing hotels
 
@@ -566,7 +566,7 @@ x-ms-trackingid: 3787a393-eca3-4ad0-be3d-dd4c7ae08906
 }
 ```
 
-<a name="updatingahotel" />
+<a name="updatingahotel"></a>
 
 ### Updating a hotel
 
@@ -606,7 +606,7 @@ The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object
 }
 ```
 
-<a name="gettingahotel" />
+<a name="gettingahotel"></a>
 
 ### Getting a hotel
 
@@ -788,7 +788,7 @@ x-ms-trackingid: 4fa56e03-7e86-4f44-b671-8e00a67c2eed
 ```
 
 
-<a name="filterassociations" />
+<a name="filterassociations"></a>
 
 ### Filtering hotel associations
 

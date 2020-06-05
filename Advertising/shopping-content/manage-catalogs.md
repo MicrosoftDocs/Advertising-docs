@@ -38,7 +38,7 @@ For details about using the Catalogs resource, see the following sections.
 For a code example that shows how to get, add, update, and delete catalogs, see [Managing Catalogs Code Example](../shopping-content/code-examples.md#catalog).
 
 
-## <a name="get" /> Getting a catalog from the store
+## <a name="get"></a> Getting a catalog from the store
 
 To get a catalog from the store, append the following template to the base URI.
 
@@ -49,7 +49,7 @@ Set `{bmcMerchantId}` to your MMC store ID and set `{catalogId}` to the catalog'
 Send an HTTP GET request to the resulting URL. If the catalog was found, the response contains a [Catalog](../shopping-content/catalogs-resource.md#catalog) object that contains the catalog's details.
 
 
-## <a name="list" /> Getting a list of catalogs from the store
+## <a name="list"></a> Getting a list of catalogs from the store
 
 To get a list of catalogs from the store, append the following template to the base URI.
 
@@ -60,7 +60,7 @@ Set `{bmcMerchantId}` to your MMC store ID.
 Send an HTTP GET request to the resulting URL. If the store contains catalogs, the response contains a [Catalogs](../shopping-content/catalogs-resource.md#catalogs) object that contains the list of catalogs. 
 
 
-## <a name="delete" /> Deleting a catalog from the store
+## <a name="delete"></a> Deleting a catalog from the store
 
 To delete a catalog from the store, append the following template to the base URI.
 
@@ -71,7 +71,7 @@ Set `{bmcMerchantId}` to your MMC store ID and set `{catalogId}` to the catalog'
 Send an HTTP DELETE request to the resulting URL. If the catalog was found, it is deleted. 
 
 
-## <a name="insert" /> Adding a catalog to the store
+## <a name="insert"></a> Adding a catalog to the store
 
 You use catalogs to logically group your products. To add a catalog to the store, append the following template to the base URI.
 
@@ -90,7 +90,7 @@ The body of the request is a [Catalog](../shopping-content/catalogs-resource.md#
 The name that you specify must be unique within the store, and is limited to a maximum of 70 characters. The market identifies where the products are served. For a list of supported markets, see [market](../shopping-content/catalogs-resource.md#market). Products are served only if `isPublishingEnabled` is **true**. For details about how you can use `isPublishingEnabled` for testing your app, see [Testing your Code in Sandbox](../shopping-content/test-code-sandbox.md).
  
 
-## <a name="update" /> Updating a catalog in the store
+## <a name="update"></a> Updating a catalog in the store
 
 To update a catalog in the store, append the following template to the base URI.
 

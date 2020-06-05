@@ -17,7 +17,7 @@ ms.author: "scottwhi"
 
 The Hotel API lets you manage your hotel ad campaigns and bidding.
 
-<a name="thebasics"/>
+<a name="thebasics"></a>
 
 ## The basics...
 

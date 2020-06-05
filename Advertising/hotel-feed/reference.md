@@ -23,7 +23,7 @@ For information about creating a hotel feed, see [Creating a Hotel Feed](../hote
 ----
 
  
-<a name="listings" /> 
+<a name="listings"></a> 
 
 ## Listings
 
@@ -34,7 +34,7 @@ Defines the top-level element of a hotel feed.
 |listings|The top-level element in a hotel feed.|[Listings Type](#listingstype)
 
  
-<a name="listingstype" /> 
+<a name="listingstype"></a> 
 
 ## Listings Type
 
@@ -47,7 +47,7 @@ Defines a list of hotels in the feed.
 
 
  
-<a name="listingtype" /> 
+<a name="listingtype"></a> 
 
 ## Listing Type
 
@@ -61,12 +61,12 @@ Defines a hotel.
 |country|Required.<br />Data type is string.<br /><br/>The country where the hotel is located. Specify the country using the two-letter ISO 3116 country code. For example, use **US** for United States.|None
 |latitude|Required.<br /> Data type is decimal.<br /><br />The latitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The latitude must be in the range -90.0 through 90.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates.</li></ul>|None
 |longitude|Required.<br /> Data type is decimal.<br /><br />The longitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The longitude must be in the range -180.0 through 180.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates.</li></ul>|None
-|<a name="phone" />phone|Required.<br />Data type is string.<br /><br />A list of telephone numbers that customers use to contact the hotel.<br /><br />Attributes:<ul><li>type&mdash;Required. The type of telephone number specified. The following are the possible values.<br /><ul><li>main&mdash;Required. The hotel's main voice telephone number.</li><li>tollfree&mdash;Optional. The hotel's toll-free voice telephone number.</li><li>fax&mdash;Optional. The hotel's fax telephone number.</li><li>tdd&mdash;Optional. The hotel's telecommunications device for the deaf telephone number.</li><li>mobile&mdash;Optional. The hotel's mobile telephone number.</li></ul></ul>Notes:<ul><li>A phone number is required only if you don't specify `latitude` and `longitude`. It's preferred that you specify both the phone and geographical coordinates.</li><li>Provide unique telephone numbers for the listing.</li><li>Use dashes, spaces, or parentheses in the phone number to make it easier to read. For example, use “610-222-3333” or “(610) 222-3333” rather than “6102223333”.</li><li>Specify only one telephone number in each `phone` element. Do not specify multiple numbers, such as 650-123-2222/33.</li><li>The telephone number may contain an extension of up to 7 digits. Precede extensions with one of the following abbreviations: "ext", "extn", and "x". For example, "408-555-1111x12345" or "408-555-1111 x12345".</li><li>The telephone number may not include alphabetical characters.</li><li>Each listing should specify one of each type of phone number: "main", "mobile", "tollfree", "fax", or "tdd", if applicable.</li><li>If the telephone number includes the country code, precede it with a "+". For example, “+65 6722-2323” for a number in Singapore where the country code is 65, or “+001 (408) 555-1111” for a number in the United States where the country code is 001.</li></ul>|None
+|<a name="phone"></a>phone|Required.<br />Data type is string.<br /><br />A list of telephone numbers that customers use to contact the hotel.<br /><br />Attributes:<ul><li>type&mdash;Required. The type of telephone number specified. The following are the possible values.<br /><ul><li>main&mdash;Required. The hotel's main voice telephone number.</li><li>tollfree&mdash;Optional. The hotel's toll-free voice telephone number.</li><li>fax&mdash;Optional. The hotel's fax telephone number.</li><li>tdd&mdash;Optional. The hotel's telecommunications device for the deaf telephone number.</li><li>mobile&mdash;Optional. The hotel's mobile telephone number.</li></ul></ul>Notes:<ul><li>A phone number is required only if you don't specify `latitude` and `longitude`. It's preferred that you specify both the phone and geographical coordinates.</li><li>Provide unique telephone numbers for the listing.</li><li>Use dashes, spaces, or parentheses in the phone number to make it easier to read. For example, use “610-222-3333” or “(610) 222-3333” rather than “6102223333”.</li><li>Specify only one telephone number in each `phone` element. Do not specify multiple numbers, such as 650-123-2222/33.</li><li>The telephone number may contain an extension of up to 7 digits. Precede extensions with one of the following abbreviations: "ext", "extn", and "x". For example, "408-555-1111x12345" or "408-555-1111 x12345".</li><li>The telephone number may not include alphabetical characters.</li><li>Each listing should specify one of each type of phone number: "main", "mobile", "tollfree", "fax", or "tdd", if applicable.</li><li>If the telephone number includes the country code, precede it with a "+". For example, “+65 6722-2323” for a number in Singapore where the country code is 65, or “+001 (408) 555-1111” for a number in the United States where the country code is 001.</li></ul>|None
 |category|Optional.<br />Data type is string.<br /><br/>A user-defined category that identifies the type of hotel. For example, extended stay, economy, or motel.|None
 |content|Optional.<br />Data type is [Content Type](#contenttype).<br /><br/>Provides additional information about the hotel such as a description, reviews, and amenities.|[Content Type](#contenttype)
 
 
-<a name="componenttype" /> 
+<a name="componenttype"></a> 
 
 ## Component Type
 
@@ -77,7 +77,7 @@ Defines a component of a street address.
 |component|Optional.<br />Data type is string.<br /><br />Specify a `component` element for each component of the address. <br /><br />Attributes:<ul><li>name&mdash;Required. The name of the address component. The following are the possible values.<br /><ul><li>addr1&mdash;Required. The hotel's street address.</li><li>addr2&mdash;Optional. Second street address line.</li><li>addr3&mdash;Optional. Third street address line. </li><li>city&mdash;Required. The name of the city where the hotel is located.</li><li>province&mdash;Required. The name of the state, region, or province where the hotel is located.</li><li>postal_code&mdash;Required. The address' postal code.</li></ul></li></ul> |None
 
 
-<a name="contenttype" /> 
+<a name="contenttype"></a> 
 
 ## Content Type
 
@@ -93,7 +93,7 @@ Defines additional information about the hotel. (These elements may appear in an
 |brand|Optional.<br />Data type is string.<br /><br />The hotel chain's brand.|None
 
 
-<a name="descriptiontype" /> 
+<a name="descriptiontype"></a> 
 
 ## Description Type
 
@@ -106,7 +106,7 @@ Defines a description of the hotel.
 |body|Required.<br />Data type is string.<br /><br />A description of the hotel.|None
 
 
-<a name="imagetype" /> 
+<a name="imagetype"></a> 
 
 ## Image Type
 
@@ -120,7 +120,7 @@ Defines an image of the hotel.
 |author|Optional.<br />Data type is string.<br /><br />The name of the person that took the image.|None
 
 
-<a name="neighborhoodtype" /> 
+<a name="neighborhoodtype"></a> 
 
 ## Neighborhood Type
 
@@ -131,7 +131,7 @@ Defines a neighborhood where the hotel is located.
 |neighborhood|Optional.<br />Data type is string.<br /><br />The name of the neighborhood where the hotel is located.|None
 
 
-<a name="reviewtype" /> 
+<a name="reviewtype"></a> 
 
 ## Review Type
 
@@ -147,7 +147,7 @@ Defines a hotel review.
 |title|Optional.<br />Data type is string.<br /><br />The review's title. Specify the title only if the review's type is *editorial*.|None
 
 
-<a name="attributetype" /> 
+<a name="attributetype"></a> 
 
 ## Attribute Type
 

@@ -232,7 +232,7 @@ And if the request contains SubaccountId, HotelGroupId, and Clicks, the clicks r
 
 The request must include at least one dimension column and one measure column.
 
-<a name="dimensioncolumns" />
+<a name="dimensioncolumns"></a>
 
 ### Dimension columns
 
@@ -257,7 +257,7 @@ The request must include at least one dimension column and one measure column.
 |UserCountry|User country|The two-letter ISO 3116 country code of the country where the user is located. For example, US for United States.<br /><br />**NOTE:** Prior to August 2, 2018, UserCountry contains the publisher's country. After August 2, 2018, UserCountry contains the user’s country.
 
 
-<a name="measurecolumns" />
+<a name="measurecolumns"></a>
 
 ### Measure columns
 
@@ -297,7 +297,7 @@ The request must include at least one dimension column and one measure column.
 |<a name="totalbookednights"></a>TotalBookedNights|Booked length of stay|The total nights booked for the hotel. [Read more](#conversionmetrics).
 
 
-<a name="sov" />
+<a name="sov"></a>
 
 ### Share of voice
 
