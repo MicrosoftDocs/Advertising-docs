@@ -43,7 +43,7 @@ Defines the top-level element of an error response.
 |-|-|-
 |ArrayOfApiError|The top-level element of an error response. This element contains a list of errors that occurred.|Array of [ApiError](#apierror)
 
-<a name="apierror" />
+<a name="apierror"></a>
 ### ApiError
 Defines an error that occurred.
 

@@ -23,7 +23,7 @@ The following is the base URI that you append the templates to.
 `https://content.api.bingads.microsoft.com/shopping/v9.1`
 
 
-## <a name="templates"/>Templates
+## <a name="templates"></a>Templates
 
 To create the endpoints used to update your product offerings, append the appropriate template to the base URI.
 
@@ -32,30 +32,30 @@ To create the endpoints used to update your product offerings, append the approp
 |/bmc/{mmcMerchantId}/inventory/batch|POST|Use to perform multiple product pricing updates in a single request.<br/><br/>Set `{mmcMerchantId}` to the MMC store ID.<br/><br/>Request object: [Batch](#batch)<br>Response object: [Batch](#batch) 
 |/bmc/{mmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}|POST|Use to update pricing and availability of a single product.<br/><br/>Set `{mmcMerchantId}` to the MMC store ID.<br/><br/>Set `{storeCode}` to online.<br/><br/>Set `{productUniqueId}` to the fully qualified product ID (for example, Online:en:US:Sku123).<br/><br/>Request object: [Product](#product)<br>Response object: [Product](#product)
 
-## <a name="queryparameters"/> Query parameters
+## <a name="queryparameters"></a> Query parameters
 
 The endpoints may include the following query parameters.
 
 |Parameter|Description|
 |---------|-----------|
-|<a name="dryrun"/>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter won't affect production data. If an error occurs, the response contains any errors that the call normally generates except secondary error messages such as data quality, editorial issues, and database-related validations. For more information about testing your application, see [Sandbox](../shopping-content/test-code-sandbox.md). 
+|<a name="dryrun"></a>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter won't affect production data. If an error occurs, the response contains any errors that the call normally generates except secondary error messages such as data quality, editorial issues, and database-related validations. For more information about testing your application, see [Sandbox](../shopping-content/test-code-sandbox.md). 
 
-## <a name="headers"/> Headers
+## <a name="headers"></a> Headers
 
 The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth access token. For information about getting an access token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
+|<a name="authtoken"></a>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth access token. For information about getting an access token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
 |Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. Set to *application/json*.
-|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any account that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
-|<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer token. Each request must include this header. For information about getting a token, see [Do you have your Microsoft Advertising credentials and developer token?](../shopping-content/get-started.md#credentials)
+|<a name="customeraccountid"></a> CustomerAccountId|Request header.<br/><br/>The account ID of any account that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
+|<a name="customerid"></a> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
+|<a name="devtoken"></a> DeveloperToken|Request header.<br/><br/>The client application's developer token. Each request must include this header. For information about getting a token, see [Do you have your Microsoft Advertising credentials and developer token?](../shopping-content/get-started.md#credentials)
 |Location|Response header.<br/><br/>The URL of the product that was updated.
 |WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
 
-## <a name="objects"/> Request and response objects
+## <a name="objects"></a> Request and response objects
 
 The following are the request and response objects used by the API.
  
@@ -70,7 +70,7 @@ The following are the request and response objects used by the API.
 |[ProductPrice](#productprice)|Defines a product's price.
 
 
-### <a name="batch"/>Batch
+### <a name="batch"></a>Batch
 
 Defines the list of products to update in a batch.
 
@@ -78,7 +78,7 @@ Defines the list of products to update in a batch.
 |----|-----|----
 |entries|A list of products to update in a batch. The maximum number of products that you can specify is 400.|[Entry](#entry)[]
 
-### <a name="batchentryerror"/>BatchEntryError
+### <a name="batchentryerror"></a>BatchEntryError
 
 Defines errors that occurred for an entry during batch processing.
 
@@ -89,7 +89,7 @@ Defines errors that occurred for an entry during batch processing.
 |message|The message associated with the error.|String
  
 
-### <a name="error"/>Error
+### <a name="error"></a>Error
 
 Defines an error.
 
@@ -100,7 +100,7 @@ Defines an error.
 |reason|The reason why the request failed. For example, the product failed validation.|String
 
 
-### <a name="errorresponse"/>ErrorResponse
+### <a name="errorresponse"></a>ErrorResponse
 
 Defines the top-level error object for a single product update.
 
@@ -108,7 +108,7 @@ Defines the top-level error object for a single product update.
 |----|-----|----
 |error|A list of errors that occurred while processing the item.|[Errors](#errors)[]
 
-### <a name="errors"/>Errors
+### <a name="errors"></a>Errors
 
 Defines the list of errors for a product.
 
@@ -120,7 +120,7 @@ Defines the list of errors for a product.
 
 
 
-### <a name="entry"/>Entry
+### <a name="entry"></a>Entry
 
 Defines an entry in a batch request.
 
@@ -133,17 +133,17 @@ Defines an entry in a batch request.
 |productId|The fully qualified product ID (for example, Online:en:US:Sku123) of the product to update. Do not include multiple entries with the same product ID.|String
 |storeCode|The code that identifies the store to update. Set to *online* to update price and availability of products in the online store.|String
 
-### <a name="product"/>Product
+### <a name="product"></a>Product
 
 Defines a product. 
 
 |Property|Description|Type|Required
 |----|-----|----|-
-|<a name="availability" />availability|The product's availability. Possible values:<ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>|String|Yes
+|<a name="availability"></a>availability|The product's availability. Possible values:<ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>|String|Yes
 |kind|The object's type. Set to *content#inventory*.|String|No
-|<a name="price" />price|The product's new price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Microsoft Merchant Center catalog tax policy](https://help.ads.microsoft.com/#apex/3/en/56731/1).<br/><br/>The price must match the price shown on the product's webpage, and must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the price to 0.0 (zero).<ol><li>The product's `googleProductCategory` field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul><li>The product's `title` field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>|[ProductPrice](#productprice)|Yes
-|<a name="saleprice" />salePrice|The product's sale price. For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the sale price to 0.0 (zero).<ol><li>The googleProductCategory field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul></li><li>The title field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>If not specified, the current sale's price is removed from the offer. Do not pass null.|[ProductPrice](#productprice)|No
-|<a name="salepricedate" />salePriceEffectiveDate|The sale's UTC start and end date. Specify a date only if you set `salePrice`.<br/><br/>Specify the begin and end dates in [ISO 8601](https://www.iso.org/iso/iso8601) format. For example, 2016-04-05T08:00-08:00/2016-04-10T19:30-08:00 (use a slash ('/') to separate the start and end dates). For more information, see `salePrice`.<br/><br/>If not specified, the current sale's date is removed from the offer. Do not pass null.|String|No
+|<a name="price"></a>price|The product's new price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Microsoft Merchant Center catalog tax policy](https://help.ads.microsoft.com/#apex/3/en/56731/1).<br/><br/>The price must match the price shown on the product's webpage, and must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the price to 0.0 (zero).<ol><li>The product's `googleProductCategory` field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul><li>The product's `title` field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>|[ProductPrice](#productprice)|Yes
+|<a name="saleprice"></a>salePrice|The product's sale price. For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the sale price to 0.0 (zero).<ol><li>The googleProductCategory field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul></li><li>The title field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>If not specified, the current sale's price is removed from the offer. Do not pass null.|[ProductPrice](#productprice)|No
+|<a name="salepricedate"></a>salePriceEffectiveDate|The sale's UTC start and end date. Specify a date only if you set `salePrice`.<br/><br/>Specify the begin and end dates in [ISO 8601](https://www.iso.org/iso/iso8601) format. For example, 2016-04-05T08:00-08:00/2016-04-10T19:30-08:00 (use a slash ('/') to separate the start and end dates). For more information, see `salePrice`.<br/><br/>If not specified, the current sale's date is removed from the offer. Do not pass null.|String|No
 
 	
 ### <a name="productprice"></a>ProductPrice

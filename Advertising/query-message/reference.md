@@ -25,7 +25,7 @@ For information about processing Query messages, see [Processing a Query Message
 ----
 
  
-<a name="query" /> 
+<a name="query"></a> 
 
 ## Query
 
@@ -37,7 +37,7 @@ Defines the root element of a Query message.
 
 
 
-<a name="querytype" /> 
+<a name="querytype"></a> 
 
 ## Query Type
 
@@ -52,7 +52,7 @@ Defines a Query message.
  -->  
 
 
-<a name="combinedquerygroup" /> 
+<a name="combinedquerygroup"></a> 
 
 ## combinedQueryGroup
 
@@ -66,7 +66,7 @@ Defines the list of properties that Bing wants data for, and the options for the
 
 
 
-<a name="pointquerygroup" /> 
+<a name="pointquerygroup"></a> 
 
 ## pointQueryGroup
 
@@ -79,7 +79,7 @@ Defines a check-in date query.
 
 
 
-<a name="rangequerygroup" /> 
+<a name="rangequerygroup"></a> 
 
 ## rangeQueryGroup
 
@@ -94,7 +94,7 @@ Defines a date range query.
 
 
 
-<a name="propertylisttype" /> 
+<a name="propertylisttype"></a> 
 
 ## PropertyListType
 

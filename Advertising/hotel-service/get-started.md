@@ -10,7 +10,7 @@ ms.author: "scottwhi"
 
 # Get started with the Hotel API
 
-<a name="doyouhavecredentials"/>
+<a name="doyouhavecredentials"></a>
 
 ## Do you have your Microsoft Advertising credentials?
 
@@ -23,7 +23,7 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 Your account manager needs to enable your account before you can use Hotel Ads or the API. Please confirm with your account manager that your account is enabled in both the production and sandbox environments.
 
 
-<a name="authenticatingcredentials"/>
+<a name="authenticatingcredentials"></a>
 
 ## Authenticating your credentials
 
@@ -51,7 +51,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 > If you're testing the API with a desktop or console app, you may use the public "Sandbox Tutorial App" client ID instead of registering your own app. The "Sandbox Tutorial App" client ID is **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. If you're testing a web app, you must use the endpoint above to register your own app.
 -->
 
-<a name="getsicredentials"/>
+<a name="getsicredentials"></a>
 
 ## Getting sandbox credentials
 
@@ -81,7 +81,7 @@ After creating your sandbox account and getting your MSA, let your account manag
 > The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access Hotel Ads using the Microsoft Advertising user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
 
 
-<a name="wheretousecredentials"/>
+<a name="wheretousecredentials"></a>
 
 ## Where do you use your credentials?
 
@@ -97,7 +97,7 @@ For information about the Authorization header and other headers that the reques
 > [!NOTE]
 > The Hotel API uses the standard Authorization header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
 
-<a name="feeds"/>
+<a name="feeds"></a>
 
 ## Do you have your hotel feed set up?
 

@@ -153,7 +153,7 @@ For apparel products that are available in multiple colors, patterns or material
 For a code example that shows how to insert a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
-## <a name="batch" /> Using batch processing
+## <a name="batch"></a> Using batch processing
 
 If you're processing multiple product offers, you should consider using the API's batch processing feature. This feature lets you process multiple inserts, gets, and deletes in a single request. Processing multiple offers in the same request is more efficient than sending a separate request for each offer. The cost incurred  with processing a single request is spread over the thousands of offers in the batch request instead of incurring that cost for each individual request.
 

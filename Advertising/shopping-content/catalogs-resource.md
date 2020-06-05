@@ -18,7 +18,7 @@ The following is the base URI that you append the templates to.
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
 
 
-## <a name="templates"/>Templates
+## <a name="templates"></a>Templates
 
 To create the endpoints that you use to manage your catalogs, append the appropriate template to the base URI.
 
@@ -31,31 +31,31 @@ To create the endpoints that you use to manage your catalogs, append the appropr
 |{mmcMerchantId}/catalogs|GET|Use to get a list of catalogs from the store.<br/><br/>Set `{mmcMerchantId}` to the MMC store ID.|Request: N/A<br>Response: [Catalogs](#catalogs)
 
 
-## <a name="queryparameters"/> Query parameters
+## <a name="queryparameters"></a> Query parameters
 
 The endpoints may include the following query parameters.
 
 |Parameter|Description|
 |---------|-----------|
-|<a name="alt"/>alt|Optional. Use to specify the type of content that's used in the request and response. The possible values are `json` and `xml`. The default is `json`.
+|<a name="alt"></a>alt|Optional. Use to specify the type of content that's used in the request and response. The possible values are `json` and `xml`. The default is `json`.
 
 
-## <a name="headers"/> Headers
+## <a name="headers"></a> Headers
 
 The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
+|<a name="authtoken"></a>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the catalog was inserted into. This header is included in the response of an Insert request. 
-|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
-|<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId` header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Microsoft Advertising credentials and developer token?](../shopping-content/get-started.md#credentials)
+|<a name="customeraccountid"></a> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
+|<a name="customerid"></a> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId` header.  
+|<a name="devtoken"></a> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Microsoft Advertising credentials and developer token?](../shopping-content/get-started.md#credentials)
 |Location|Response header.<br/><br/>A URL that identifies the store that the catalog was inserted into. This header is included in the response of an Insert request. 
 |WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains details about the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
 
-## <a name="objects"/> Request and response objects
+## <a name="objects"></a> Request and response objects
 
 The following are the request and response objects used by the API.
  
@@ -67,20 +67,20 @@ Each object defines the JSON key name and XML element name that you use dependin
 |[Catalogs](#catalogs)|Defines the list of catalogs.
 
  
-### <a name="catalog"/>Catalog
+### <a name="catalog"></a>Catalog
 
 Defines a catalog.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|<a name="id"/>id|An ID that uniquely identifies the catalog in the store.<br/><br/>This field is read-only; do not set this field.|Unsigned Long|\<id\> 
-|<a name="isdefault"/>isDefault|A Boolean value that determines whether the catalog is the store's default catalog. Is **true** if the catalog is the store's default catalog; otherwise, **false**.<br/><br/>When you create a store, you get a default catalog that products are written to if you do not specify another catalog.<br/><br/>This field is read-only; do not set this field.|Boolean|\<is_default\> 
-|<a name="ispublishingenabled"/>isPublishingEnabled|A Boolean value that determines whether Microsoft may publish products from the catalog. Set to **true** if Microsoft may publish products from the catalog; otherwise, set it to **false**.<br/><br/>You may update this field.<br/><br/>You can also use this field to test your application before deploying it to production. By setting this field to **false**, you may make [Products Resource](../shopping-content/products-resource.md) calls without changing or publishing your production data.|Boolean|\<is_publishing_enabled\>
-|<a name="market"/>market|The market where products in the catalog are published to. The following are the possible markets that you may specify.<ul><li>de-DE (German-Germany)</li><li>en-AU (English-Australia)</li><li>en-CA (English-Canada)</li><li>en-GB (English-Great Britain)</li><li>en-IN (English-India)</li><li>en-US (English-United States)</li><li>fr-CA (French-Canada)</li><li>fr-FR (French-France)</li><li>nl-NL (Dutch-Netherlands)</li></ul>All products that you add to the catalog must specify the same market (see [contentLanguage](../shopping-content/products-resource.md#contentlanguage) and [targetCountry](../shopping-content/products-resource.md#targetcountry)).<br/><br/>You may not update this field after adding the catalog to the store.<br/><br/>In the above list, de-DE is the market value that you specify; do not include (German-Germany) in your market string.|String|\<market\>
-|<a name="name"/>name|The name of the store. The name may contain a maximum of 70 characters.<br/><br/>You may update this field.|String|\<name\> 
+|<a name="id"></a>id|An ID that uniquely identifies the catalog in the store.<br/><br/>This field is read-only; do not set this field.|Unsigned Long|\<id\> 
+|<a name="isdefault"></a>isDefault|A Boolean value that determines whether the catalog is the store's default catalog. Is **true** if the catalog is the store's default catalog; otherwise, **false**.<br/><br/>When you create a store, you get a default catalog that products are written to if you do not specify another catalog.<br/><br/>This field is read-only; do not set this field.|Boolean|\<is_default\> 
+|<a name="ispublishingenabled"></a>isPublishingEnabled|A Boolean value that determines whether Microsoft may publish products from the catalog. Set to **true** if Microsoft may publish products from the catalog; otherwise, set it to **false**.<br/><br/>You may update this field.<br/><br/>You can also use this field to test your application before deploying it to production. By setting this field to **false**, you may make [Products Resource](../shopping-content/products-resource.md) calls without changing or publishing your production data.|Boolean|\<is_publishing_enabled\>
+|<a name="market"></a>market|The market where products in the catalog are published to. The following are the possible markets that you may specify.<ul><li>de-DE (German-Germany)</li><li>en-AU (English-Australia)</li><li>en-CA (English-Canada)</li><li>en-GB (English-Great Britain)</li><li>en-IN (English-India)</li><li>en-US (English-United States)</li><li>fr-CA (French-Canada)</li><li>fr-FR (French-France)</li><li>nl-NL (Dutch-Netherlands)</li></ul>All products that you add to the catalog must specify the same market (see [contentLanguage](../shopping-content/products-resource.md#contentlanguage) and [targetCountry](../shopping-content/products-resource.md#targetcountry)).<br/><br/>You may not update this field after adding the catalog to the store.<br/><br/>In the above list, de-DE is the market value that you specify; do not include (German-Germany) in your market string.|String|\<market\>
+|<a name="name"></a>name|The name of the store. The name may contain a maximum of 70 characters.<br/><br/>You may update this field.|String|\<name\> 
 
 
-### <a name="catalogs"/>Catalogs
+### <a name="catalogs"></a>Catalogs
 
 Defines a list of catalogs.
 

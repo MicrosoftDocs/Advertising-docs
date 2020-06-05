@@ -56,7 +56,8 @@ Depending on the activity associated with the catalog, the report can be large. 
 
 For a code example that shows how to get the catalog's status and download the report, see [Downloading the Catalog Status Report](../shopping-content/code-examples.md#status).
 
-<a name="examplereport" />The following shows an example report.  
+<a name="examplereport"></a>
+The following shows an example report.  
 
 ```csv
 "Catalog Name","Catalog Id","Store Id","Upload Time"
