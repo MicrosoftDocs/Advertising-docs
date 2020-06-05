@@ -23,7 +23,7 @@ Every method call is a single HTTP request except for batch requests, which may 
 
 ### How do batch requests count against the limits?
 
-Using [batch requests](manage-products.md#using-batch-processing) to process multiple product offers does reduce the number of requests that count against the QPS limit. For example, if you update 10 offers using a batch request, it counts as one request against the QPS limit instead of 10.
+Using [batch requests](manage-products.md#batch) to process multiple product offers does reduce the number of requests that count against the QPS limit. For example, if you update 10 offers using a batch request, it counts as one request against the QPS limit instead of 10.
 
 But, using batch requests doesn't help you reduce the number of method calls. Each item in the batch request counts as one method call. For example, a batch request with 100 items counts as 100 method calls against the method call limits.  
 
