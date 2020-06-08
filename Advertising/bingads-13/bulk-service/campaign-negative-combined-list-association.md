@@ -29,7 +29,57 @@ Format Version,,,,,,,,,6.0,,
 Campaign Negative Combined List Association,Paused,,-1111,,,ClientIdGoesHere,,,,CombinedListIdHere,My Combined List
 ```
 
-For an *Campaign Negative Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignNegativeCombinedListAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkCampaignNegativeCombinedListAssociation
+var bulkCampaignNegativeCombinedListAssociation = new BulkCampaignNegativeCombinedListAssociation
+{
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+
+    // Map properties in the Bulk file to the 
+    // NegativeCampaignCriterion object of the Campaign Management service.
+    NegativeCampaignCriterion = new NegativeCampaignCriterion
+    {
+        // 'Parent Id' column header in the Bulk file
+        CampaignId = campaignIdKey,
+        Criterion = new AudienceCriterion
+        {
+            // 'Audience Id' column header in the Bulk file
+            AudienceId = combinedListIdKey,
+        },
+        // 'Id' column header in the Bulk file
+        Id = null,
+        // 'Status' column header in the Bulk file
+        Status = CampaignCriterionStatus.Paused
+    },
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+    // 'Audience' column header in the Bulk file
+    AudienceName = null,
+};
+
+uploadEntities.Add(bulkCampaignNegativeCombinedListAssociation);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
+For a *Campaign Negative Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Audience](#audience)
 - [Audience Id](#audienceid)

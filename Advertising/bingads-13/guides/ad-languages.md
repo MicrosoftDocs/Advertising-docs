@@ -68,7 +68,7 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 |pt-BR|Portuguese|
 |pt-PT|Portuguese|
 |ES|Spanish|
-|ES-41Spanish|
+|ES-419|Spanish|
 |SV|Swedish|
 |zh-HK|TraditionalChinese|
 |zh-TW|TraditionalChinese|

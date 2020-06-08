@@ -100,7 +100,7 @@ For a *Custom Audience* record, the following attribute fields are available in 
 ## <a name="audience"></a>Audience
 The name of the custom audience.
 
-The name can contain a maximum of 128 characters
+The name can contain a maximum of 128 characters.  
 
 **Add:** Not supported  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

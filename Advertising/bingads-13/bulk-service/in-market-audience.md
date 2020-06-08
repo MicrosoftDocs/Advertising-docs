@@ -85,7 +85,7 @@ For an *In Market Audience* record, the following attribute fields are available
 ## <a name="audience"></a>Audience
 The name of the in-market audience.
 
-The name can contain a maximum of 128 characters
+The name can contain a maximum of 128 characters.  
 
 **Add:** Not supported  
 **Update:** Not supported    

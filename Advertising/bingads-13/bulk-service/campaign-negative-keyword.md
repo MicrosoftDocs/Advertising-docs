@@ -71,7 +71,7 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-For an *Campaign Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For a *Campaign Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
