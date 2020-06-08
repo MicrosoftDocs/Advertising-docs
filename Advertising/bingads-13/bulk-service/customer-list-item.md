@@ -54,8 +54,8 @@ The name of the parent customer list audience.
 
 The name can contain a maximum of 128 characters. 
 
-**Add:** Optional  
-**Delete:** Optional  
+**Add:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.  
+**Delete:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.   
 
 ## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
@@ -66,8 +66,8 @@ Used to associate records in the bulk upload file with records in the results fi
 ## <a name="parentid"></a>Parent Id
 The identifier of the parent customer list audience.
 
-**Add:** Optional  
-**Delete:** Optional  
+**Add:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.  
+**Delete:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.  
 
 ## <a name="subtype"></a>Sub Type
 Determines whether the [Text](#text) field represents a CRMID or hashed Email value. 
