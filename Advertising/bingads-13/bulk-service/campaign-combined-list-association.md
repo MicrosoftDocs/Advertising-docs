@@ -29,7 +29,58 @@ Format Version,,,,,,,,,6.0,,
 Campaign Combined List Association,Paused,,-1111,,,ClientIdGoesHere,,10,,CombinedListIdHere,My Combined List
 ```
 
-For an *Campaign Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignCombinedListAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkCampaignCombinedListAssociation
+var bulkCampaignCombinedListAssociation = new BulkCampaignCombinedListAssociation
+{
+    // Map properties in the Bulk file to the 
+    // BiddableCampaignCriterion object of the Campaign Management service.
+    BiddableCampaignCriterion = new BiddableCampaignCriterion
+    {
+        // 'Parent Id' column header in the Bulk file
+        CampaignId = campaignIdKey,
+        Criterion = new AudienceCriterion
+        {
+            // 'Audience Id' column header in the Bulk file
+            AudienceId = combinedListIdKey,
+        },
+        // 'Bid Adjustment' column header in the Bulk file
+        CriterionBid = new BidMultiplier
+        {
+            Multiplier = 10
+        },
+        // 'Id' column header in the Bulk file
+        Id = null,
+        // 'Status' column header in the Bulk file
+        Status = CampaignCriterionStatus.Paused
+    },
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+    // 'Audience' column header in the Bulk file
+    AudienceName = null,
+};
+
+uploadEntities.Add(bulkCampaignCombinedListAssociation);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
+For a *Campaign Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Audience](#audience)
 - [Audience Id](#audienceid)

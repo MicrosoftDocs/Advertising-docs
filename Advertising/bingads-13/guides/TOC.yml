@@ -605,6 +605,9 @@
         - name: Ad Group Custom Audience Association
           href: ../bulk-service/ad-group-custom-audience-association.md
           displayName: BulkAdGroupCustomAudienceAssociation
+        - name: Ad Group Customer List Association
+          href: ../bulk-service/ad-group-customer-list-association.md
+          displayName: BulkAdGroupCustomerListAssociation
         - name: Ad Group DayTime Criterion
           href: ../bulk-service/ad-group-daytime-criterion.md
           displayName: BulkAdGroupDayTimeCriterion
@@ -650,6 +653,9 @@
         - name: Ad Group Negative Custom Audience Association
           href: ../bulk-service/ad-group-negative-custom-audience-association.md
           displayName: BulkAdGroupNegativeCustomAudienceAssociation
+        - name: Ad Group Negative Customer List Association
+          href: ../bulk-service/ad-group-negative-customer-list-association.md
+          displayName: BulkAdGroupNegativeCustomerListAssociation
         - name: Ad Group Negative Dynamic Search Ad Target
           href: ../bulk-service/ad-group-negative-dynamic-search-ad-target.md
           displayName: BulkAdGroupNegativeDynamicSearchAdTarget
@@ -758,6 +764,9 @@
         - name: Campaign Custom Audience Association
           href: ../bulk-service/campaign-custom-audience-association.md
           displayName: BulkCampaignCustomAudienceAssociation
+        - name: Campaign Customer List Association
+          href: ../bulk-service/campaign-customer-list-association.md
+          displayName: BulkCampaignCustomerListAssociation
         - name: Campaign DayTime Criterion
           href: ../bulk-service/campaign-daytime-criterion.md
           displayName: BulkCampaignDayTimeCriterion
@@ -797,6 +806,9 @@
         - name: Campaign Negative Custom Audience Association
           href: ../bulk-service/campaign-negative-custom-audience-association.md
           displayName: BulkCampaignNegativeCustomAudienceAssociation
+        - name: Campaign Negative Customer List Association
+          href: ../bulk-service/campaign-negative-customer-list-association.md
+          displayName: BulkCampaignNegativeCustomerListAssociation
         - name: Campaign Negative Dynamic Search Ad Target
           href: ../bulk-service/campaign-negative-dynamic-search-ad-target.md
           displayName: BulkCampaignNegativeDynamicSearchAdTarget
@@ -860,6 +872,12 @@
         - name: Custom Audience
           href: ../bulk-service/custom-audience.md
           displayName: BulkCustomAudience
+        - name: Customer List
+          href: ../bulk-service/customer-list.md
+          displayName: BulkCustomerList
+        - name: Customer List Item
+          href: ../bulk-service/customer-list-item.md
+          displayName: BulkCustomerListItem
         - name: Dynamic Search Ad
           href: ../bulk-service/dynamic-search-ad.md
           displayName: BulkDynamicSearchAd
@@ -1518,6 +1536,8 @@
           href: ../campaign-management-service/structuredsnippetadextension.md
         - name: TargetCpaBiddingScheme
           href: ../campaign-management-service/targetcpabiddingscheme.md
+        - name: TargetImpressionShareBiddingScheme
+          href: ../campaign-management-service/targetimpressionsharebiddingscheme.md
         - name: TargetRoasBiddingScheme
           href: ../campaign-management-service/targetroasbiddingscheme.md
         - name: TargetSetting

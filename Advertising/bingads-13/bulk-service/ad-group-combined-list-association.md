@@ -29,6 +29,60 @@ Format Version,,,,,,,,,6.0,,
 Ad Group Combined List Association,Paused,,-1111,,,ClientIdGoesHere,,10,,CombinedListIdHere,My Combined List
 ```
 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupCombinedListAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkAdGroupCombinedListAssociation
+var bulkAdGroupCombinedListAssociation = new BulkAdGroupCombinedListAssociation
+{
+    // 'Ad Group' column header in the Bulk file
+    AdGroupName = null,
+
+    // Map properties in the Bulk file to the 
+    // BiddableAdGroupCriterion object of the Campaign Management service.
+    BiddableAdGroupCriterion = new BiddableAdGroupCriterion
+    {
+        // 'Parent Id' column header in the Bulk file
+        AdGroupId = adGroupIdKey,
+        Criterion = new AudienceCriterion
+        {
+            // 'Audience Id' column header in the Bulk file
+            AudienceId = combinedListIdKey,
+        },
+        // 'Bid Adjustment' column header in the Bulk file
+        CriterionBid = new BidMultiplier
+        {
+            Multiplier = 10
+        },
+        // 'Id' column header in the Bulk file
+        Id = null,
+        // 'Status' column header in the Bulk file
+        Status = AdGroupCriterionStatus.Paused
+    },
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+    // 'Audience' column header in the Bulk file
+    AudienceName = null,
+};
+
+uploadEntities.Add(bulkAdGroupCombinedListAssociation);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
 For an *Ad Group Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
@@ -80,7 +134,7 @@ Supported values are negative ninety (-90.00) through positive nine hundred (900
 > If not specified, the default bid adjustment value is *0*. The default value is subject to change.
 
 > [!IMPORTANT]
-> Microsoft Advertising won't apply any bid boosts until the associated combined list has at least 1,000 users. If someone qualifies to be part of multiple combined lists AND the combined lists are associated with the same ad group with different bid adjustments, the highest bid adjustment will be applied. For more information about Remarketing in Paid Search, see [Reach your audience](https://help.ads.microsoft.com/#apex/3/en/n5022/1).
+> Microsoft Advertising won't apply any bid boosts until the associated combined list has at least 1,000 users. If someone qualifies to be part of multiple combined lists AND the combined lists are associated with the same ad group with different bid adjustments, the highest bid adjustment will be applied. For more information about Combined in Paid Search, see [Reach your audience](https://help.ads.microsoft.com/#apex/3/en/n5022/1).
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

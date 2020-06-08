@@ -143,8 +143,15 @@ You'll also need your production [developer token](get-started.md#get-developer-
                     Authentication = authentication,
                     DeveloperToken = Settings.Default["DeveloperToken"].ToString()
                 };
-    
-                _customerManagementService = new ServiceClient<ICustomerManagementService>(_authorizationData);
+                
+                var apiEnvironment = 
+                    ConfigurationManager.AppSettings["BingAdsEnvironment"] == ApiEnvironment.Sandbox.ToString() ?
+                    ApiEnvironment.Sandbox : ApiEnvironment.Production;
+                
+                _customerManagementService = new ServiceClient<ICustomerManagementService>(
+                    _authorizationData, 
+                    apiEnvironment
+                );
     
                 var getUserRequest = new GetUserRequest
                 {

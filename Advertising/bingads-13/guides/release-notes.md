@@ -9,6 +9,27 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="june2020"></a>June 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Customer list](#customerlist-june2020) 
+
+### <a name="customerlist-june2020"></a>Customer list
+
+A customer list is a set of customer contact information that you have compiled to enable customer match. 
+
+> [!NOTE]
+> Customer lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 579).  
+
+Customer lists are available via the Bulk API, but not yet available via the Campaign Management API. With the Bulk API you can use the following record types for customer list targets or exclusions. 
+- [Customer List](../bulk-service/customer-list.md)   
+- [Campaign Customer List Association](../bulk-service/campaign-customer-list-association.md)   
+- [Campaign Negative Customer List Association](../bulk-service/campaign-negative-customer-list-association.md)   
+- [Ad Group Customer List Association](../bulk-service/ad-group-customer-list-association.md)   
+- [Ad Group Negative Customer List Association](../bulk-service/ad-group-negative-customer-list-association.md)   
+
+For an overview and more information about audiences, see the [Audience APIs](universal-event-tracking.md#audience) technical guide. 
+
 ## <a name="may2020"></a>May 2020
 See below for Bing Ads API updates during this calendar month. 
 

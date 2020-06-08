@@ -29,6 +29,74 @@ Format Version,,,,,,6.0,,,,,,
 Combined List,Active,-10,,ClientIdGoesHere,,,New combined list description,Customer,New Combined List,NOT(123IdGoesHere,234IdGoesHere)&AND(345IdGoesHere,456IdGoesHere)&OR(567IdGoesHere)
 ```
 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCombinedList* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkCombinedList
+var bulkCombinedList = new BulkCombinedList
+{
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+
+    // Map properties in the Bulk file to the 
+    // CombinedList object of the Campaign Management service.
+    CombinedList = new CombinedList
+    {
+        // 'Audience Network Size' column header in the Bulk file
+        AudienceNetworkSize = null,
+        // 'Description' column header in the Bulk file
+        Description = "New Combined List",
+        // 'Id' column header in the Bulk file
+        Id = combinedListIdKey,
+        // 'Membership Duration' column header in the Bulk file
+        MembershipDuration = 30,
+        // 'Audience' column header in the Bulk file
+        Name = "Combined List " + DateTime.UtcNow,
+        // 'Parent Id' column header in the Bulk file
+        ParentId = accountIdKey,
+        // 'Combination Rule' column header in the Bulk file
+        CombinationRules = new[]
+        {
+            // Each rule is delimited by a semicolon (;) in the Bulk file
+            new CombinationRule
+            {
+                AudienceIds = new [] { 123, 234 },
+                Operator = LogicalOperator.And
+            },
+            new CombinationRule
+            {
+                AudienceIds = new [] { 345, 456 },
+                Operator = LogicalOperator.And
+            },
+        },
+        // 'Scope' column header in the Bulk file
+        Scope = EntityScope.Account,
+        // 'Audience Search Size' column header in the Bulk file
+        SearchSize = null,
+        // 'Supported Campaign Types' column header in the Bulk file
+        SupportedCampaignTypes = null,
+    },
+
+    // 'Status' column header in the Bulk file
+    Status = Status.Active
+};
+
+uploadEntities.Add(bulkCombinedList);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
 For a *Combined List* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Audience](#audience)
@@ -47,7 +115,7 @@ For a *Combined List* record, the following attribute fields are available in th
 ## <a name="audience"></a>Audience
 The name of the combined list.
 
-The name can contain a maximum of 128 characters
+The name can contain a maximum of 128 characters.  
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

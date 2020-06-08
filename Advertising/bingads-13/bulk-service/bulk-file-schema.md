@@ -61,6 +61,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Combined List Association](ad-group-combined-list-association.md)|All         
 [Ad Group Company Name Criterion](ad-group-company-name-criterion.md)|All  
 [Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All         
+[Ad Group Customer List Association](ad-group-customer-list-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
 [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
 [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds         
@@ -76,6 +77,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Combined List Association](ad-group-negative-combined-list-association.md)|All         
 [Ad Group Negative Company Name Criterion](ad-group-negative-company-name-criterion.md)|Audience  
 [Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All         
+[Ad Group Negative Customer List Association](ad-group-negative-combined-list-association.md)|All         
 [Ad Group Negative Gender Criterion](ad-group-negative-gender-criterion.md)|Audience  
 [Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
 [Ad Group Negative Industry Criterion](ad-group-negative-industry-criterion.md)|Audience  
@@ -109,9 +111,10 @@ Record Type  |Supported Campaign Types
 [Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search        
-[Campaign Combined List Association](campaign-combined-list-association.md)|All         
+[Campaign Combined List Association](campaign-combined-list-association.md)|All           
 [Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping            
-[Campaign Custom Audience Association](campaign-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign Custom Audience Association](campaign-custom-audience-association.md)|All         
+[Campaign Customer List Association](campaign-customer-list-association.md)|All         
 [Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
 [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All         
 [Campaign Gender Criterion](campaign-gender-criterion.md)|All         
@@ -123,7 +126,8 @@ Record Type  |Supported Campaign Types
 [Campaign Location Criterion](campaign-location-criterion.md)|All         
 [Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All         
 [Campaign Negative Combined List Association](campaign-negative-combined-list-association.md)|All         
-[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
+[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|All         
+[Campaign Negative Customer List Association](campaign-negative-customer-list-association.md)|All         
 [Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
 [Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Keyword](campaign-negative-keyword.md)|All         
@@ -145,6 +149,8 @@ Record Type  |Supported Campaign Types
 [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Combined List](combined-list.md)|All         
 [Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
+[Customer List](customer-list.md)|All         
+[Customer List Item](customer-list-item.md)<br/><br/>Bulk download of customer list items is not supported.|All         
 [Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds         
 [Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds         
 [Expanded Text Ad](expanded-text-ad.md)|Search         
@@ -163,7 +169,7 @@ Record Type  |Supported Campaign Types
 [Label](label.md)|All         
 [Location Ad Extension](location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Negative Keyword List](negative-keyword-list.md)|All         
-[Offline Conversion](offline-conversion.md)<br/><br/>Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported. |All         
+[Offline Conversion](offline-conversion.md)<br/><br/>Bulk download is not supported. You cannot get, update, or delete an offline conversion.|All         
 [Price Ad Extension](price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         

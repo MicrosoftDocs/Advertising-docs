@@ -68,6 +68,7 @@ Improve your return on investment by optimizing your campaigns for specific audi
 Microsoft Advertising supports several audience types. 
 - [Combined List](#combinedlist)
 - [Custom Audience](#customaudience)
+- [Customer List](#customerlist)
 - [In-Market Audience](#inmarketaudience)
 - [Product Audience](#productaudience)
 - [Remarketing List](#remarketinglist)
@@ -119,6 +120,27 @@ Depending on the provider, they'll have their own enablement steps within their 
 
 Once the integration has been completed, your custom audiences will appear in the Audiences section of the Shared Library in the Microsoft Advertising web application. You can also download custom audiences via Bulk and Campaign Management APIs as described below.
 
+#### <a name="customerlist"></a>Customer List
+A customer list is a set of customer contact information that you have compiled to enable customer match. 
+
+> [!NOTE]
+> Customer lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 579).   	
+> 	
+> Customer lists are available via the [Bulk API](#audience-bulk), but not yet available via the [Campaign Management API](#audience-campaign). 
+
+> [!IMPORTANT]
+> Before you can upload customer list data via Bulk API, you must first create one customer list audience and accept the terms and conditions in the Microsoft Advertising UI. The initial customer list doesn't need to contain any customer data, but you must click I ACCEPT. 
+> ![Customer Match Terms](media/customer-match-terms.png "Customer Match Terms")
+> By clicking "I accept" you (1) agree that you are able to lawfully disclose audience details, which is personal data, to Microsoft and (2) accept the Customer Match Terms, the Microsoft Advertising Agreement, and the Microsoft Advertising policies. Microsoft will use the data that you upload in accordance with the [Customer Match Terms](https://go.microsoft.com/fwlink/?linkid=2106709).  
+
+Each list can include multiple Email and CRMID items. 
+- Include the [Customer List](../bulk-service/customer-list.md) record in the Bulk upload file and set its [Action Type](../bulk-service/customer-list.md#actiontype) field to "Add", "Remove", or "Replace". 
+- Include one or more [Customer List Item](../bulk-service/customer-list-item.md) records in the same Bulk upload file and set the [Parent Id](../bulk-service/customer-list-item.md#parentid), [Sub Type](../bulk-service/customer-list-item.md#subtype), and [Text](../bulk-service/customer-list-item.md#text) fields. 
+
+You can add or update a [Customer List](../bulk-service/customer-list.md) record without any [Customer List Item](../bulk-service/customer-list-item.md) records in the same Bulk upload file; however, you cannot upload any [Customer List Item](../bulk-service/customer-list-item.md) records without the accompanying parent [Customer List](../bulk-service/customer-list.md) record. 
+
+After 48 hours, check the Audience Size fields e.g., [Audience Search Size](../bulk-service/customer-list.md#audiencesearchsize) to see how many of these customers we matched on the Bing Network. At that point, your ads can start showing for this new audience.
+
 #### <a name="inmarketaudience"></a>In-Market Audiences
 In-market audiences are curated lists of customers who have shown purchase intent signals within a particular category, including searches and clicks on Bing and page views on Microsoft services. Microsoft Advertising supplies the curated list of potential customers, unlike remarketing in paid search, where the advertiser creates the list. You can target and modify bids for these audiences by associating in-market audience lists with campaigns and ad groups, similar to what you do with remarketing lists. For more information, see [About in-market audiences](https://help.ads.microsoft.com/#apex/3/en/56851/0).
 
@@ -152,6 +174,7 @@ With the Bulk service you can use the following record types to download and upl
 
 - [Combined List](../bulk-service/combined-list.md)
 - [Custom Audience](../bulk-service/custom-audience.md)
+- [Customer List](../bulk-service/customer-list.md)
 - [In Market Audience](../bulk-service/in-market-audience.md)
 - [Product Audience](../bulk-service/product-audience.md) 
 - [Remarketing List](../bulk-service/remarketing-list.md)   
@@ -168,9 +191,11 @@ With the Bulk service you can use the following record types to download and upl
 
 - [Ad Group Combined List Association](../bulk-service/ad-group-combined-list-association.md)
 - [Ad Group Custom Audience Association](../bulk-service/ad-group-custom-audience-association.md)
+- [Ad Group Customer List Association](../bulk-service/ad-group-customer-list-association.md)
 - [Ad Group In Market Audience Association](../bulk-service/ad-group-in-market-audience-association.md)
 - [Ad Group Negative Combined List Association](../bulk-service/ad-group-negative-combined-list-association.md)
 - [Ad Group Negative Custom Audience Association](../bulk-service/ad-group-negative-custom-audience-association.md)
+- [Ad Group Negative Customer List Association](../bulk-service/ad-group-negative-customer-list-association.md)
 - [Ad Group Negative In Market Audience Association](../bulk-service/ad-group-negative-in-market-audience-association.md)
 - [Ad Group Negative Product Audience Association](../bulk-service/ad-group-negative-product-audience-association.md)
 - [Ad Group Negative Remarketing List Association](../bulk-service/ad-group-negative-remarketing-list-association.md)
@@ -180,9 +205,11 @@ With the Bulk service you can use the following record types to download and upl
 - [Ad Group Similar Remarketing List Association](../bulk-service/ad-group-similar-remarketing-list-association.md)
 - [Campaign Combined List Association](../bulk-service/campaign-combined-list-association.md)
 - [Campaign Custom Audience Association](../bulk-service/campaign-custom-audience-association.md)
+- [Campaign Customer List Association](../bulk-service/campaign-customer-list-association.md)
 - [Campaign In Market Audience Association](../bulk-service/campaign-in-market-audience-association.md)
 - [Campaign Negative Combined List Association](../bulk-service/campaign-negative-combined-list-association.md)
 - [Campaign Negative Custom Audience Association](../bulk-service/campaign-negative-custom-audience-association.md)
+- [Campaign Negative Customer List Association](../bulk-service/campaign-negative-customer-list-association.md)
 - [Campaign Negative In Market Audience Association](../bulk-service/campaign-negative-in-market-audience-association.md)
 - [Campaign Negative Product Audience Association](../bulk-service/campaign-negative-product-audience-association.md)
 - [Campaign Negative Remarketing List Association](../bulk-service/campaign-negative-remarketing-list-association.md)
