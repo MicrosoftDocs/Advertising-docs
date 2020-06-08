@@ -76,7 +76,7 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-For an *Campaign Negative Remarketing List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For a *Campaign Negative Remarketing List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Audience](#audience)
 - [Audience Id](#audienceid)

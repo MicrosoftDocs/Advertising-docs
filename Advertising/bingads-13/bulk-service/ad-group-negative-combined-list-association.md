@@ -29,6 +29,55 @@ Format Version,,,,,,,,,6.0,,
 Ad Group Negative Combined List Association,Paused,,-1111,,,ClientIdGoesHere,,,,CombinedListIdHere,My Combined List
 ```
 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeCombinedListAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkAdGroupNegativeCombinedListAssociation
+var bulkAdGroupNegativeCombinedListAssociation = new BulkAdGroupNegativeCombinedListAssociation
+{
+    // 'Ad Group' column header in the Bulk file
+    AdGroupName = null,
+
+    // Map properties in the Bulk file to the 
+    // NegativeAdGroupCriterion object of the Campaign Management service.
+    NegativeAdGroupCriterion = new NegativeAdGroupCriterion
+    {
+        // 'Parent Id' column header in the Bulk file
+        AdGroupId = adGroupIdKey,
+        Criterion = new AudienceCriterion
+        {
+            // 'Audience Id' column header in the Bulk file
+            AudienceId = combinedListIdKey,
+        },
+        // 'Id' column header in the Bulk file
+        Id = null,
+        // 'Status' column header in the Bulk file
+        Status = AdGroupCriterionStatus.Paused
+    },
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+    // 'Audience' column header in the Bulk file
+    AudienceName = null,
+};
+
+uploadEntities.Add(bulkAdGroupNegativeCombinedListAssociation);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
 For an *Ad Group Negative Combined List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
