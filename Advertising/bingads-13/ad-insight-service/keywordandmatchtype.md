@@ -21,6 +21,8 @@ Defines an object that contains a keyword and corresponding match types.
 
 ## <a name="elements"></a>Elements
 
+The [KeywordAndMatchType](keywordandmatchtype.md) object has the following elements: [KeywordText](#keywordtext), [MatchTypes](#matchtypes).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keywordtext"></a>KeywordText|The keyword text.|**string**|

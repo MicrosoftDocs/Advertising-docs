@@ -24,6 +24,8 @@ Defines the operating system platform and URL of the app store download webpage.
 
 ## <a name="elements"></a>Elements
 
+The [AppUrl](appurl.md) object has the following elements: [OsType](#ostype), [Url](#url).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="ostype"></a>OsType|Reserved for future use.|**string**|

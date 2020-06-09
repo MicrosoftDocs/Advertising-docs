@@ -22,6 +22,8 @@ Defines the set of accounts, campaigns, and ad groups to include in the report.
 
 ## <a name="elements"></a>Elements
 
+The [AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md) object has the following elements: [AccountIds](#accountids), [AdGroups](#adgroups), [Campaigns](#campaigns).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.<br/><br/>The report scope includes a union of the [AccountIds](#accountids), [AdGroups](#adgroups), and [Campaigns](#campaigns) elements. You must include at least one of these elements.|**long** array|

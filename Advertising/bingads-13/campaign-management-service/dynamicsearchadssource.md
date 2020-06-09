@@ -22,6 +22,8 @@ Defines the possible targeting source values for dynamic search ads campaigns.
 
 ## <a name="values"></a>Values
 
+The [DynamicSearchAdsSource](dynamicsearchadssource.md) value set has the following values: [AdvertiserSuppliedUrls](#advertisersuppliedurls), [All](#all), [SystemIndex](#systemindex).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="advertisersuppliedurls"></a>AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. Please note that if you choose this option and [page feeds IDs](dynamicsearchadssetting.md#pagefeedids) are not set, then the campaign will not serve dynamic search ads. We recommend using this option for highly specific campaigns with tailored ad copy.|

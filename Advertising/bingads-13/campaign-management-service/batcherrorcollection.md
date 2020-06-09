@@ -30,6 +30,8 @@ For example in the *NestedPartialErrors* response element for [AddNegativeKeywor
 
 ## <a name="elements"></a>Elements
 
+The [BatchErrorCollection](batcherrorcollection.md) object has the following elements: [BatchErrors](#batcherrors), [Code](#code), [Details](#details), [ErrorCode](#errorcode), [FieldPath](#fieldpath), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Index](#index), [Message](#message), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="batcherrors"></a>BatchErrors|A list of batch errors corresponding to the nested list index.|[BatchError](batcherror.md) array|

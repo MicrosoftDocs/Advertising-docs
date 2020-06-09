@@ -45,6 +45,8 @@ Defines an advertiser account.
 
 ## <a name="elements"></a>Elements
 
+The [AdvertiserAccount](advertiseraccount.md) object has the following elements: [AccountFinancialStatus](#accountfinancialstatus), [AccountLifeCycleStatus](#accountlifecyclestatus), [AutoTagType](#autotagtype), [BackUpPaymentInstrumentId](#backuppaymentinstrumentid), [BillingThresholdAmount](#billingthresholdamount), [BillToCustomerId](#billtocustomerid), [BusinessAddress](#businessaddress), [CurrencyCode](#currencycode), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Language](#language), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [LinkedAgencies](#linkedagencies), [Name](#name), [Number](#number), [ParentCustomerId](#parentcustomerid), [PauseReason](#pausereason), [PaymentMethodId](#paymentmethodid), [PaymentMethodType](#paymentmethodtype), [PrimaryUserId](#primaryuserid), [SalesHouseCustomerId](#saleshousecustomerid), [SoldToPaymentInstrumentId](#soldtopaymentinstrumentid), [TaxInformation](#taxinformation), [TimeStamp](#timestamp), [TimeZone](#timezone).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountfinancialstatus"></a>AccountFinancialStatus|The financial status of the account. For example, the status can indicate whether the account is in good standing or is past due.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AccountFinancialStatus](accountfinancialstatus.md)|

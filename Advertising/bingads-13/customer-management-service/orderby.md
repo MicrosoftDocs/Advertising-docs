@@ -21,6 +21,8 @@ Defines an order for the list of entities returned using one of the search opera
 
 ## <a name="elements"></a>Elements
 
+The [OrderBy](orderby.md) object has the following elements: [Field](#field), [Order](#order).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="field"></a>Field|Determines the field to order the results. For example order the results by *Id*.|[OrderByField](orderbyfield.md)|

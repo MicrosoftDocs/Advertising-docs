@@ -28,6 +28,8 @@ Defines the aggregation values that you can use for a report.
 
 ## <a name="values"></a>Values
 
+The [ReportAggregation](reportaggregation.md) value set has the following values: [Daily](#daily), [DayOfWeek](#dayofweek), [Hourly](#hourly), [HourOfDay](#hourofday), [Monthly](#monthly), [Summary](#summary), [Weekly](#weekly), [WeeklyStartingMonday](#weeklystartingmonday), [Yearly](#yearly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="daily"></a>Daily|Each row of the report identifies the month, day, and year when the transaction occurred. The report data will be aggregated by each day. The time period will be formatted as *yyyy-mm-dd*.|

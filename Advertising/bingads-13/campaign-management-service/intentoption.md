@@ -27,6 +27,8 @@ Defines the possible intent options for location criterion, for example to targe
 
 ## <a name="values"></a>Values
 
+The [IntentOption](intentoption.md) value set has the following values: [PeopleIn](#peoplein), [PeopleInOrSearchingForOrViewingPages](#peopleinorsearchingfororviewingpages), [PeopleSearchingForOrViewingPages](#peoplesearchingfororviewingpages).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="peoplein"></a>PeopleIn|Show ads to people in your targeted location.|

@@ -39,6 +39,8 @@ window.uetq.push('event', '', {'ecomm_prodid': 'REPLACE_WITH_PRODUCT_ID', 'ecomm
 
 ## <a name="elements"></a>Elements
 
+The [ProductAudience](productaudience.md) object has the following elements: [ProductAudienceType](#productaudiencetype), [TagId](#tagid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="productaudiencetype"></a>ProductAudienceType|Determines whether to remarket your products to general visitors, product searchers, product viewers, shopping cart abandoners, or past buyers.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|[ProductAudienceType](productaudiencetype.md)|
@@ -49,7 +51,7 @@ The [ProductAudience](productaudience.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [ProductAudience](productaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [ProductAudience](productaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [ProductAudience](productaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [ProductAudience](productaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -29,6 +29,8 @@ Defines the possible secret questions that users can choose from to help them re
 
 ## <a name="values"></a>Values
 
+The [SecretQuestion](secretquestion.md) value set has the following values: [Anniversary](#anniversary), [FatherMiddleName](#fathermiddlename), [FavoriteMovie](#favoritemovie), [FavoritePetsName](#favoritepetsname), [FavoriteSportsTeam](#favoritesportsteam), [FavoriteTeacherName](#favoriteteachername), [FirstChildMiddleName](#firstchildmiddlename), [HighSchoolName](#highschoolname), [None](#none), [SpouseMiddleName](#spousemiddlename).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="anniversary"></a>Anniversary|An anniversary date.|

@@ -56,6 +56,8 @@ You can associate an image ad extension with the account or with campaigns and a
 
 ## <a name="elements"></a>Elements
 
+The [ImageAdExtension](imageadextension.md) object has the following elements: [AlternativeText](#alternativetext), [Description](#description), [DestinationUrl](#destinationurl), [DisplayText](#displaytext), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ImageMediaIds](#imagemediaids), [Images](#images), [Layouts](#layouts), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="alternativetext"></a>AlternativeText|Alternative description of the image media for usability. If the image could not be displayed, the alternative text is used instead.<br/><br/>The maximum length for this element is 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -77,7 +79,7 @@ The [ImageAdExtension](imageadextension.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [ImageAdExtension](imageadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [ImageAdExtension](imageadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [ImageAdExtension](imageadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [ImageAdExtension](imageadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

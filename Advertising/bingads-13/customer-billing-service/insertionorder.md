@@ -56,6 +56,8 @@ Most elements of this object can only be set before the insertion order becomes 
 
 ## <a name="elements"></a>Elements
 
+The [InsertionOrder](insertionorder.md) object has the following elements: [AccountId](#accountid), [AccountNumber](#accountnumber), [BookingCountryCode](#bookingcountrycode), [BudgetRemaining](#budgetremaining), [BudgetRemainingPercent](#budgetremainingpercent), [BudgetSpent](#budgetspent), [BudgetSpentPercent](#budgetspentpercent), [Comment](#comment), [EndDate](#enddate), [Id](#id), [IsInSeries](#isinseries), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [Name](#name), [NotificationThreshold](#notificationthreshold), [PendingChanges](#pendingchanges), [PurchaseOrder](#purchaseorder), [ReferenceId](#referenceid), [SeriesFrequencyType](#seriesfrequencytype), [SeriesName](#seriesname), [SpendCapAmount](#spendcapamount), [StartDate](#startdate), [Status](#status).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account to which the insertion order applies.<br/><br/>You cannot update the account identifier after you create the insertion order.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**long**|

@@ -25,6 +25,8 @@ Defines the possible values representing entities that are enabled for media suc
 
 ## <a name="values"></a>Values
 
+The [MediaEnabledEntityFilter](mediaenabledentityfilter.md) value set has the following values: [ImageAdExtension](#imageadextension), [ResponsiveAd](#responsivead).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](imageadextension.md).|

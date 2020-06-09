@@ -26,6 +26,8 @@ Defines an object that contains information that identifies an account and the c
 
 ## <a name="elements"></a>Elements
 
+The [AccountInfoWithCustomerData](accountinfowithcustomerdata.md) object has the following elements: [AccountId](#accountid), [AccountLifeCycleStatus](#accountlifecyclestatus), [AccountName](#accountname), [AccountNumber](#accountnumber), [CustomerId](#customerid), [CustomerName](#customername), [PauseReason](#pausereason).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The system generated identifier of the account.|**long**|

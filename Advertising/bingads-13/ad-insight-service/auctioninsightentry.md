@@ -22,6 +22,8 @@ Defines an auction insight entry for a domain.
 
 ## <a name="elements"></a>Elements
 
+The [AuctionInsightEntry](auctioninsightentry.md) object has the following elements: [AggregatedKpi](#aggregatedkpi), [DisplayDomain](#displaydomain), [SegmentedKpis](#segmentedkpis).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="aggregatedkpi"></a>AggregatedKpi|The auction insight key performance indicators across all segments for the display domain.<br/><br/>The aggregated data is available whether or not you also requested [SegmentedKpis](#segmentedkpis).|[AuctionInsightKpi](auctioninsightkpi.md)|

@@ -22,6 +22,8 @@ Defines a keyword with match type.
 
 ## <a name="elements"></a>Elements
 
+The [Keyword](keyword.md) object has the following elements: [Id](#id), [MatchType](#matchtype), [Text](#text).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The Microsoft Advertising identifier of the keyword.|**long**|

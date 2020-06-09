@@ -26,6 +26,8 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
 
 ## <a name="elements"></a>Elements
 
+The [Image](image.md) object has the following elements: [Data](#data).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="data"></a>Data|A base64 string that represents the image or icon to add to the library. The base64 string can contain a maximum of 102,400 characters.<br/><br/>For information about restrictions and supported data types, see [Remarks](#remarks) below.|**string**|
@@ -35,7 +37,7 @@ The [Image](image.md) object has [Inherited Elements](#inheritedelements).
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsmedia"></a>Inherited Elements from Media
-The [Image](image.md) object derives from the [Media](media.md) object, and inherits the following elements. The descriptions below are specific to [Image](image.md), and might not apply to other objects that inherit the same elements from the [Media](media.md) object.  
+The [Image](image.md) object derives from the [Media](media.md) object, and inherits the following elements: [Id](#id), [MediaType](#mediatype), [Type](#type). The descriptions below are specific to [Image](image.md), and might not apply to other objects that inherit the same elements from the [Media](media.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

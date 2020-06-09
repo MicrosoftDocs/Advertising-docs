@@ -22,6 +22,8 @@ Defines an object that contains the migration type and status for an account.
 
 ## <a name="elements"></a>Elements
 
+The [MigrationStatusInfo](migrationstatusinfo.md) object has the following elements: [MigrationType](#migrationtype), [StartTimeInUtc](#starttimeinutc), [Status](#status).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="migrationtype"></a>MigrationType|The migration type.|**string**|

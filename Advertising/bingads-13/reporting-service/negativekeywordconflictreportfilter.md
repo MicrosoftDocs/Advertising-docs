@@ -23,6 +23,8 @@ Defines the criteria to use to filter the negative keyword conflict report data.
 
 ## <a name="elements"></a>Elements
 
+The [NegativeKeywordConflictReportFilter](negativekeywordconflictreportfilter.md) object has the following elements: [AccountStatus](#accountstatus), [AdGroupStatus](#adgroupstatus), [CampaignStatus](#campaignstatus), [KeywordStatus](#keywordstatus).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountstatus"></a>AccountStatus|The report will only include data for accounts with the specified status. For example, you can use the filter to include data for only active accounts.<br/><br/>You can specify one or more account statuses.|[AccountStatusReportFilter](accountstatusreportfilter.md)|

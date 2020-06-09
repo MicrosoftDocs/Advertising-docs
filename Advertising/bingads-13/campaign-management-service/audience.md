@@ -42,6 +42,8 @@ Do not try to instantiate an *Audience*. You can create one or more of the follo
 
 ## <a name="elements"></a>Elements
 
+The [Audience](audience.md) object has the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audiencenetworksize"></a>AudienceNetworkSize|The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.<br/><br/>Please see more details in documentation for the objects that inherit this element e.g., [RemarketingList](remarketinglist.md#audiencenetworksize).|**long**|

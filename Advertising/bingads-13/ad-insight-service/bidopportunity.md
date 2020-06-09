@@ -35,6 +35,8 @@ Defines an object that contains the suggested bid with estimated clicks and impr
 
 ## <a name="elements"></a>Elements
 
+The [BidOpportunity](bidopportunity.md) object has the following elements: [AdGroupId](#adgroupid), [CampaignId](#campaignid), [CurrentBid](#currentbid), [EstimatedIncreaseInClicks](#estimatedincreaseinclicks), [EstimatedIncreaseInCost](#estimatedincreaseincost), [EstimatedIncreaseInImpressions](#estimatedincreaseinimpressions), [KeywordId](#keywordid), [MatchType](#matchtype), [SuggestedBid](#suggestedbid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the keyword.|**long**|
@@ -52,7 +54,7 @@ The [BidOpportunity](bidopportunity.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsopportunity"></a>Inherited Elements from Opportunity
-The [BidOpportunity](bidopportunity.md) object derives from the [Opportunity](opportunity.md) object, and inherits the following elements. The descriptions below are specific to [BidOpportunity](bidopportunity.md), and might not apply to other objects that inherit the same elements from the [Opportunity](opportunity.md) object.  
+The [BidOpportunity](bidopportunity.md) object derives from the [Opportunity](opportunity.md) object, and inherits the following elements: [OpportunityKey](#opportunitykey). The descriptions below are specific to [BidOpportunity](bidopportunity.md), and might not apply to other objects that inherit the same elements from the [Opportunity](opportunity.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

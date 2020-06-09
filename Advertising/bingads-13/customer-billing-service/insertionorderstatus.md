@@ -75,6 +75,8 @@ Defines the possible status values of an [InsertionOrder](insertionorder.md).
 
 ## <a name="values"></a>Values
 
+The [InsertionOrderStatus](insertionorderstatus.md) value set has the following values: [Active](#active), [Canceled](#canceled), [Declined](#declined), [Exhausted](#exhausted), [Expired](#expired), [NotStarted](#notstarted), [PendingUserReview](#pendinguserreview), [Queued](#queued).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|You have an approved insertion order, and your ads are eligible to run.<br/><br/>You can also use this value on update to approve an insertion order if its [Status](insertionorder.md#status) is PendingUserReview.<br/><br/>Once approved, the insertion order can only be updated via the [InsertionOrderPendingChanges](insertionorderpendingchanges.md) object.|

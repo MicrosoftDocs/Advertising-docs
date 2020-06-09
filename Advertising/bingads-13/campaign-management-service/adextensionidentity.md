@@ -21,6 +21,8 @@ Defines an object that identifies an ad extension revision.
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionIdentity](adextensionidentity.md) object has the following elements: [Id](#id), [Version](#version).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system-generated identifier of the ad extension.|**long**|

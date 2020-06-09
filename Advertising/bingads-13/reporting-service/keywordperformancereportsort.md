@@ -21,6 +21,8 @@ Defines a keyword performance report column and corresponding sort order.
 
 ## <a name="elements"></a>Elements
 
+The [KeywordPerformanceReportSort](keywordperformancereportsort.md) object has the following elements: [SortColumn](#sortcolumn), [SortOrder](#sortorder).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="sortcolumn"></a>SortColumn|The keyword performance report column by which to sort.|[KeywordPerformanceReportColumn](keywordperformancereportcolumn.md)|

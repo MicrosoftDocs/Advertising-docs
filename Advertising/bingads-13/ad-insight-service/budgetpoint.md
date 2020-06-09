@@ -27,6 +27,8 @@ Defines an object that contains a budget amount and an estimate of weekly impres
 
 ## <a name="elements"></a>Elements
 
+The [BudgetPoint](budgetpoint.md) object has the following elements: [BudgetAmount](#budgetamount), [BudgetPointType](#budgetpointtype), [EstimatedWeeklyClicks](#estimatedweeklyclicks), [EstimatedWeeklyCost](#estimatedweeklycost), [EstimatedWeeklyImpressions](#estimatedweeklyimpressions).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="budgetamount"></a>BudgetAmount|A potential new budget.<br/><br/>This budget amount is your current campaign budget if the *BudgetPointType* value is *Current*.|**double**|

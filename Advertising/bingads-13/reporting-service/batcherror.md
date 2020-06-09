@@ -24,6 +24,8 @@ Defines an error object that identifies the item within the batch of items in th
 
 ## <a name="elements"></a>Elements
 
+The [BatchError](batcherror.md) object has the following elements: [Code](#code), [Details](#details), [ErrorCode](#errorcode), [Index](#index), [Message](#message).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="code"></a>Code|A numeric error code that identifies the error.|**int**|

@@ -23,6 +23,8 @@ Defines the profile data for a company.
 
 ## <a name="elements"></a>Elements
 
+The [Company](company.md) object has the following elements: [LogoUrl](#logourl), [Name](#name), [ProfileId](#profileid), [Status](#status).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="logourl"></a>LogoUrl|The full https path for the company's logo image.|**string**|

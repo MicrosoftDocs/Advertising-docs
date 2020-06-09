@@ -22,6 +22,8 @@ Defines the name of a user.
 
 ## <a name="elements"></a>Elements
 
+The [PersonName](personname.md) object has the following elements: [FirstName](#firstname), [LastName](#lastname), [MiddleInitial](#middleinitial).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="firstname"></a>FirstName|The first name of the user. The first name is limited to 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|

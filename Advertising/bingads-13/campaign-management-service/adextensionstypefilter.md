@@ -34,6 +34,8 @@ Defines the possible ad extension types.
 
 ## <a name="values"></a>Values
 
+The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="actionadextension"></a>ActionAdExtension|An ad extension that contains a call-to-action button.<br/><br/>For more information, see [ActionAdExtension](actionadextension.md).|

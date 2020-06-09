@@ -21,6 +21,8 @@ Defines an object that contains the locations where users were located when they
 
 ## <a name="elements"></a>Elements
 
+The [KeywordLocationResult](keywordlocationresult.md) object has the following elements: [Keyword](#keyword), [KeywordLocations](#keywordlocations).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword.|**string**|

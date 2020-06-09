@@ -22,6 +22,8 @@ Defines a predicate for the list of entities requested using one of the search o
 
 ## <a name="elements"></a>Elements
 
+The [Predicate](predicate.md) object has the following elements: [Field](#field), [Operator](#operator), [Value](#value).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="field"></a>Field|The name of the element for  the object you are searching.<br/><br/>For possible values, see the [Remarks](#remarks) below.|**string**|

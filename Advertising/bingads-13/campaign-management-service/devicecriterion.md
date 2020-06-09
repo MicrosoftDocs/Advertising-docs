@@ -33,6 +33,8 @@ The *DeviceCriterion* criterion can be included within [BiddableAdGroupCriterion
 
 ## <a name="elements"></a>Elements
 
+The [DeviceCriterion](devicecriterion.md) object has the following elements: [DeviceName](#devicename), [OSName](#osname).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="devicename"></a>DeviceName|The name of the device to target.<br/><br/>The following are the possible device names that you can specify.<br/>- Computers<br/>- Smartphones<br/>- Tablets<br/><br/>Three separate bids for Computers, Tablets, and Smartphones should always be specified together. If you do not add individual device criterions representing each of the three device types, the missing device criterions will be added with the default bid adjustment of zero.<br/><br/>**Add:** Required. Three separate criterions for *Computers*, *Smartphones*, and *Tablets* should be specified together in the same add criterions request. If you do not add individual device criterions representing each of the three device types, no device criterions will be added to the campaign or ad group.<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|**string**|
@@ -43,7 +45,7 @@ The [DeviceCriterion](devicecriterion.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [DeviceCriterion](devicecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [DeviceCriterion](devicecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [DeviceCriterion](devicecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [DeviceCriterion](devicecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

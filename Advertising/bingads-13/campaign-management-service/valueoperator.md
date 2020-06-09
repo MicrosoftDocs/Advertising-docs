@@ -22,6 +22,8 @@ Defines the operators that can be applied to values within a conversion event go
 
 ## <a name="values"></a>Values
 
+The [ValueOperator](valueoperator.md) value set has the following values: [Equals](#equals), [GreaterThan](#greaterthan), [LessThan](#lessthan).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="equals"></a>Equals|The property should be equal to the corresponding value.|

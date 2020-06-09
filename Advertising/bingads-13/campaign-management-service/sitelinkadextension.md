@@ -35,6 +35,8 @@ You can associate a sitelink ad extension with the account or with campaigns and
 
 ## <a name="elements"></a>Elements
 
+The [SitelinkAdExtension](sitelinkadextension.md) object has the following elements: [Description1](#description1), [Description2](#description2), [DestinationUrl](#destinationurl), [DisplayText](#displaytext), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="description1"></a>Description1|The site link description line 1.<br/><br/>The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters. Each Traditional Chinese character countes as two characters and each English character will count only as one character.<br/><br/>If you specify *Description1* then *Description2* is required.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, the prior setting is removed.|**string**|
@@ -53,7 +55,7 @@ The [SitelinkAdExtension](sitelinkadextension.md) object has [Inherited Elements
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [SitelinkAdExtension](sitelinkadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [SitelinkAdExtension](sitelinkadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [SitelinkAdExtension](sitelinkadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [SitelinkAdExtension](sitelinkadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

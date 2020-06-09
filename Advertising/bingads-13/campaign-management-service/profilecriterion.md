@@ -42,6 +42,8 @@ The supported criteria varies by campaign type. Microsoft Advertising applies a 
 
 ## <a name="elements"></a>Elements
 
+The [ProfileCriterion](profilecriterion.md) object has the following elements: [ProfileId](#profileid), [ProfileType](#profiletype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="profileid"></a>ProfileId|The identifier of the company name, industry, or job function profile that you want to target.<br/><br/>For details about how to get profile identifiers, see [Profile Data](../guides/profile-data-files.md).<br/><br/>**Add:** Required<br/>**Update:** Required|**long**|
@@ -52,7 +54,7 @@ The [ProfileCriterion](profilecriterion.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [ProfileCriterion](profilecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [ProfileCriterion](profilecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [ProfileCriterion](profilecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [ProfileCriterion](profilecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

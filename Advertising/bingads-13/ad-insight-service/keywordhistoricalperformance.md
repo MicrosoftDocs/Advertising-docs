@@ -21,6 +21,8 @@ Defines an object that contains the key performance index data for the specified
 
 ## <a name="elements"></a>Elements
 
+The [KeywordHistoricalPerformance](keywordhistoricalperformance.md) object has the following elements: [Keyword](#keyword), [KeywordKPIs](#keywordkpis).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword to which the keyword performance data applies.|**string**|

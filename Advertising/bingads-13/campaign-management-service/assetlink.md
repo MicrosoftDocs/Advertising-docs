@@ -28,6 +28,8 @@ For example, within a [ResponsiveSearchAd](responsivesearchad.md) there is an ar
 
 ## <a name="elements"></a>Elements
 
+The [AssetLink](assetlink.md) object has the following elements: [Asset](#asset), [AssetPerformanceLabel](#assetperformancelabel), [EditorialStatus](#editorialstatus), [PinnedField](#pinnedfield).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="asset"></a>Asset|The asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.<br/><br/>For asset links included in a responsive search ad's [Headlines](responsivesearchad.md#headlines) and [Descriptions](responsivesearchad.md#descriptions) lists, the asset must be a [TextAsset](textasset.md).<br/><br/>**Add:** Required<br/>**Update:** Required|[Asset](asset.md)|

@@ -29,7 +29,7 @@ The [NegativeKeywordList](negativekeywordlist.md) object has [Inherited Elements
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedlist"></a>Inherited Elements from SharedList
-The [NegativeKeywordList](negativekeywordlist.md) object derives from the [SharedList](sharedlist.md) object, and inherits the following elements. The descriptions below are specific to [NegativeKeywordList](negativekeywordlist.md), and might not apply to other objects that inherit the same elements from the [SharedList](sharedlist.md) object.  
+The [NegativeKeywordList](negativekeywordlist.md) object derives from the [SharedList](sharedlist.md) object, and inherits the following elements: [ItemCount](#itemcount). The descriptions below are specific to [NegativeKeywordList](negativekeywordlist.md), and might not apply to other objects that inherit the same elements from the [SharedList](sharedlist.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -38,7 +38,7 @@ The [NegativeKeywordList](negativekeywordlist.md) object derives from the [Share
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedentity"></a>Inherited Elements from SharedEntity
-The [NegativeKeywordList](negativekeywordlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements. The descriptions below are specific to [NegativeKeywordList](negativekeywordlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
+The [NegativeKeywordList](negativekeywordlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements: [AssociationCount](#associationcount), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [NegativeKeywordList](negativekeywordlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

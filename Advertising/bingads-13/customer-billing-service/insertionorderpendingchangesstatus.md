@@ -49,6 +49,8 @@ If the [Status](insertionorder.md#status) element of the [InsertionOrder](insert
 
 ## <a name="values"></a>Values
 
+The [InsertionOrderPendingChangesStatus](insertionorderpendingchangesstatus.md) value set has the following values: [ApproveChanges](#approvechanges), [CancelChanges](#cancelchanges), [DeclineChanges](#declinechanges), [PendingUserReview](#pendinguserreview).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="approvechanges"></a>ApproveChanges|Approve the pending changes.|

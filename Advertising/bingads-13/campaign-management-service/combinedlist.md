@@ -34,6 +34,8 @@ You can create a maximum of 1,000 combined lists per ad account, and up to 5,000
 
 ## <a name="elements"></a>Elements
 
+The [CombinedList](combinedlist.md) object has the following elements: [CombinationRules](#combinationrules).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="combinationrules"></a>CombinationRules|Logical conditions used to determine who to add to your combined list.<br/><br/>Each list can include up to 100 combinatin rules or sets of logical conditions, and each [CombinationRule](combinationrule.md) can contain up to 100 audience IDs.<br/><br/>For details, please see the [CombinationRule Remarks](combinationrule.md#remarks).<br/><br/>**Add:** Required<br/>**Update:** Required. If you want to keep any of the previous rules, then you must explicitly set them again during update.|[CombinationRule](combinationrule.md) array|
@@ -43,7 +45,7 @@ The [CombinedList](combinedlist.md) object has [Inherited Elements](#inheritedel
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [CombinedList](combinedlist.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [CombinedList](combinedlist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [CombinedList](combinedlist.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [CombinedList](combinedlist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

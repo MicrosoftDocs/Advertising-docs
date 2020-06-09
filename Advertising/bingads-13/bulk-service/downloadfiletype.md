@@ -24,6 +24,8 @@ Defines the file formats for a download request.
 
 ## <a name="values"></a>Values
 
+The [DownloadFileType](downloadfiletype.md) value set has the following values: [Csv](#csv), [Tsv](#tsv).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="csv"></a>Csv|The file format is comma separated values (CSV).<br/><br/>The downloaded file will be ZIP compressed.|

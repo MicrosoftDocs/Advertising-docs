@@ -28,6 +28,8 @@ For a list of criterion bids that you can use with [BiddableAdGroupCriterion](bi
 
 ## <a name="elements"></a>Elements
 
+The [CriterionBid](criterionbid.md) object has the following elements: [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of criterion bid. For more information, see [Remarks](#remarks).|**string**|

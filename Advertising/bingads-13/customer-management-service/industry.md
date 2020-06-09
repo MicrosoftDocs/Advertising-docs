@@ -40,6 +40,8 @@ Defines the possible industry segments in which a customer operates.
 
 ## <a name="values"></a>Values
 
+The [Industry](industry.md) value set has the following values: [AgencySalesHouse](#agencysaleshouse), [Automotive](#automotive), [ConsumerPackagedGoods](#consumerpackagedgoods), [Education](#education), [Entertainment](#entertainment), [FinancialServices](#financialservices), [FoodServices](#foodservices), [Gaming](#gaming), [GovernmentNonprofitPolitical](#governmentnonprofitpolitical), [Healthcare](#healthcare), [Internal](#internal), [NA](#na), [Other](#other), [Pharmaceuticals](#pharmaceuticals), [PublishingAndWebMedia](#publishingandwebmedia), [RealEstate](#realestate), [Retail](#retail), [Services](#services), [Technology](#technology), [Telecommunications](#telecommunications), [TravelHospitality](#travelhospitality).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="agencysaleshouse"></a>AgencySalesHouse|The advertising agency sales house industry.|

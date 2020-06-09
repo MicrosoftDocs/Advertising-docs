@@ -66,6 +66,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [AudiencePerformanceReportColumn](audienceperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssociationId](#associationid), [AssociationLevel](#associationlevel), [AssociationStatus](#associationstatus), [AudienceId](#audienceid), [AudienceName](#audiencename), [AudienceType](#audiencetype), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [BaseCampaignId](#basecampaignid), [BidAdjustment](#bidadjustment), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TargetingSetting](#targetingsetting), [TimePeriod](#timeperiod), [ViewThroughConversions](#viewthroughconversions).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

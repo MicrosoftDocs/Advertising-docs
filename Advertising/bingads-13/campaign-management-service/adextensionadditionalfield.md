@@ -27,6 +27,8 @@ Defines a list of optional ad extension properties that you can request when cal
 
 ## <a name="values"></a>Values
 
+The [AdExtensionAdditionalField](adextensionadditionalfield.md) value set has the following values: [ActionTypesPhase3](#actiontypesphase3), [DisplayText](#displaytext), [Images](#images), [Layouts](#layouts).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="actiontypesphase3"></a>ActionTypesPhase3|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype). If the stored action type is either RenewNow or Reorder, then Campaign Management API Version 13 returns Unknown by default.|

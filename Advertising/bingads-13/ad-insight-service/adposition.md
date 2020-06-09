@@ -38,6 +38,8 @@ Defines the possible positions of an ad in the search results.
 
 ## <a name="values"></a>Values
 
+The [AdPosition](adposition.md) value set has the following values: [Aggregate](#aggregate), [All](#all), [FirstPage1](#firstpage1), [FirstPage10](#firstpage10), [FirstPage2](#firstpage2), [FirstPage3](#firstpage3), [FirstPage4](#firstpage4), [FirstPage5](#firstpage5), [FirstPage6](#firstpage6), [FirstPage7](#firstpage7), [FirstPage8](#firstpage8), [FirstPage9](#firstpage9), [MainLine1](#mainline1), [MainLine2](#mainline2), [MainLine3](#mainline3), [MainLine4](#mainline4).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="aggregate"></a>Aggregate|Aggregates the data for all supported positions.<br/><br/>The following are examples of how the data is aggregated: Average bid would be the average bid of all the keywords in all the ad positions; Impressions is the sum of the number of impressions in all the ad positions; Clicks is the sum of the number of clicks in all the ad positions; Total cost is the sum of the cost of using the keywords in all the ad positions; AverageCTR is calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100; AverageCPC is calculated by dividing the cost of all clicks by the number of clicks.|

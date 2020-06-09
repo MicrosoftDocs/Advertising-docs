@@ -21,6 +21,8 @@ Maps an account level property name to a string value.
 
 ## <a name="elements"></a>Elements
 
+The [AccountProperty](accountproperty.md) object has the following elements: [Name](#name), [Value](#value).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="name"></a>Name|The name of the account property.|[AccountPropertyName](accountpropertyname.md)|

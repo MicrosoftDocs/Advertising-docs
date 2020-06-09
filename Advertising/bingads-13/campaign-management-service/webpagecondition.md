@@ -21,6 +21,8 @@ Defines a condition or criterion that helps determine whether you want to show d
 
 ## <a name="elements"></a>Elements
 
+The [WebpageCondition](webpagecondition.md) object has the following elements: [Argument](#argument), [Operand](#operand).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="argument"></a>Argument|The webpage condition or criterion. The condition is met if the webpage property that is referenced by the operand contains or equals the argument's value.<br/><br/>For example you can set this string to the URL, category, page title, or page content for your site.<br/><br/>**Add:** Required<br/>**Update:** Not applicable. You cannot update the webpage conditions. To update the conditions you must delete the criterion and add a new criterion.|**string**|

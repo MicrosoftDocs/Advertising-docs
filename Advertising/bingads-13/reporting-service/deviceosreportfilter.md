@@ -28,6 +28,8 @@ Defines the device operating system values that you can use to filter the report
 
 ## <a name="values"></a>Values
 
+The [DeviceOSReportFilter](deviceosreportfilter.md) value set has the following values: [Android](#android), [BlackBerry](#blackberry), [iOS](#ios), [Other](#other), [Windows](#windows).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="android"></a>Android|The report will include ads displayed on Android device operating systems.|

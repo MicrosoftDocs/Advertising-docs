@@ -30,6 +30,8 @@ Defines a duration conversion goal. Use this type of goal to count every time so
 
 ## <a name="elements"></a>Elements
 
+The [DurationGoal](durationgoal.md) object has the following elements: [MinimumDurationInSeconds](#minimumdurationinseconds).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="minimumdurationinseconds"></a>MinimumDurationInSeconds|The minimum amount of time in seconds that the user must spend on your website to track as a conversion. If you don't specify a value, the default value is 0, and the possible range is 0 through 86,399 (1 second less than a full 24 hour day).<br/><br/>**Add:** Optional<br/>**Update:** Optional|**int**|
@@ -39,7 +41,7 @@ The [DurationGoal](durationgoal.md) object has [Inherited Elements](#inheritedel
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsconversiongoal"></a>Inherited Elements from ConversionGoal
-The [DurationGoal](durationgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements. The descriptions below are specific to [DurationGoal](durationgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
+The [DurationGoal](durationgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements: [ConversionWindowInMinutes](#conversionwindowinminutes), [CountType](#counttype), [ExcludeFromBidding](#excludefrombidding), [Id](#id), [Name](#name), [Revenue](#revenue), [Scope](#scope), [Status](#status), [TagId](#tagid), [TrackingStatus](#trackingstatus), [Type](#type), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes). The descriptions below are specific to [DurationGoal](durationgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

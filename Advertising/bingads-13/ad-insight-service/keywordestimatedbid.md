@@ -24,6 +24,8 @@ Defines an object that contains the keyword and the estimated bid value for each
 
 ## <a name="elements"></a>Elements
 
+The [KeywordEstimatedBid](keywordestimatedbid.md) object has the following elements: [EstimatedBids](#estimatedbids), [Keyword](#keyword).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="estimatedbids"></a>EstimatedBids|A list of [EstimatedBidAndTraffic](estimatedbidandtraffic.md) data objects that contains the suggested bid value for the keyword and match type. If there is data available for the keyword, the [EstimatedBidAndTraffic](estimatedbidandtraffic.md) object will provide an estimated bid value. Otherwise, if no data is available the *EstimatedBids* element will be null.<br/><br/>Each object also contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost given the suggested bid.<br/><br/>If there is no data available for a match type, the array will not include estimates for the match type.<br/><br/>Some returned elements of the [EstimatedBidAndTraffic](estimatedbidandtraffic.md) may be NULL.|[EstimatedBidAndTraffic](estimatedbidandtraffic.md) array|

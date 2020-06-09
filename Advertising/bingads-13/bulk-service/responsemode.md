@@ -21,6 +21,8 @@ Defines elements to specify whether the bulk service should return upload errors
 
 ## <a name="values"></a>Values
 
+The [ResponseMode](responsemode.md) value set has the following values: [ErrorsAndResults](#errorsandresults), [ErrorsOnly](#errorsonly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="errorsandresults"></a>ErrorsAndResults|Return errors and results in the bulk upload response file.|

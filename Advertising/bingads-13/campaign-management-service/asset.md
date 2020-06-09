@@ -26,6 +26,8 @@ Do not try to instantiate an *Asset*. You can create one or more of the followin
 
 ## <a name="elements"></a>Elements
 
+The [Asset](asset.md) object has the following elements: [Id](#id), [Name](#name), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account.<br/><br/>The same asset can be used by multiple ads. For example if *Seemless Integration* is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account.|**long**|

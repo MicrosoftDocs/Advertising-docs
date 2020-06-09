@@ -24,6 +24,8 @@ This object is not in use and will be removed from a future version of the API.
 
 ## <a name="elements"></a>Elements
 
+The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object has the following elements: [MaxCpc](#maxcpc).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maxcpc"></a>MaxCpc|The MaxRoasBiddingScheme object is not in use and will be removed from a future version of the API.|[Bid](bid.md)|
@@ -33,7 +35,7 @@ The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object has [Inherited Elemen
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [MaxRoasBiddingScheme](maxroasbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [MaxRoasBiddingScheme](maxroasbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [MaxRoasBiddingScheme](maxroasbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

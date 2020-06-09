@@ -53,6 +53,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [AgeGenderAudienceReportColumn](agegenderaudiencereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AgeGroup](#agegroup), [AllConversions](#allconversions), [AllRevenue](#allrevenue), [Assists](#assists), [BaseCampaignId](#basecampaignid), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [Conversions](#conversions), [ExtendedCost](#extendedcost), [Gender](#gender), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [Revenue](#revenue), [Spend](#spend), [TimePeriod](#timeperiod), [ViewThroughConversions](#viewthroughconversions).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

@@ -21,6 +21,8 @@ Defines a collection of ad extensions that failed editorial review.
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionEditorialReasonCollection](adextensioneditorialreasoncollection.md) object has the following elements: [AdExtensionId](#adextensionid), [Reasons](#reasons).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adextensionid"></a>AdExtensionId|The identifier of the ad extension that failed editorial review.|**long**|

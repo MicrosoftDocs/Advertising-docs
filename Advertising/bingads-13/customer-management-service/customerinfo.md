@@ -21,6 +21,8 @@ Defines an object that contains a customer's identifier and name.
 
 ## <a name="elements"></a>Elements
 
+The [CustomerInfo](customerinfo.md) object has the following elements: [Id](#id), [Name](#name).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system generated identifier of the customer.|**long**|

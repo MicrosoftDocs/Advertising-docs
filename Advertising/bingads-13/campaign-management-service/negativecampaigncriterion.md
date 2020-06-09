@@ -27,7 +27,7 @@ The [NegativeCampaignCriterion](negativecampaigncriterion.md) object has [Inheri
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscampaigncriterion"></a>Inherited Elements from CampaignCriterion
-The [NegativeCampaignCriterion](negativecampaigncriterion.md) object derives from the [CampaignCriterion](campaigncriterion.md) object, and inherits the following elements. The descriptions below are specific to [NegativeCampaignCriterion](negativecampaigncriterion.md), and might not apply to other objects that inherit the same elements from the [CampaignCriterion](campaigncriterion.md) object.  
+The [NegativeCampaignCriterion](negativecampaigncriterion.md) object derives from the [CampaignCriterion](campaigncriterion.md) object, and inherits the following elements: [CampaignId](#campaignid), [Criterion](#criterion), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [Type](#type). The descriptions below are specific to [NegativeCampaignCriterion](negativecampaigncriterion.md), and might not apply to other objects that inherit the same elements from the [CampaignCriterion](campaigncriterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

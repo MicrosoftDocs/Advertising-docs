@@ -22,6 +22,8 @@ Defines an ad group to include in the report.
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupReportScope](adgroupreportscope.md) object has the following elements: [AccountId](#accountid), [AdGroupId](#adgroupid), [CampaignId](#campaignid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that the ad group belongs to.|**long**|

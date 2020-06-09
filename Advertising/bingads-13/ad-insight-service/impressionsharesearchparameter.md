@@ -27,6 +27,8 @@ If you do not include the impression share search parameter when calling [GetKey
 
 ## <a name="elements"></a>Elements
 
+The [ImpressionShareSearchParameter](impressionsharesearchparameter.md) object has the following elements: [Maximum](#maximum), [Minimum](#minimum).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maximum"></a>Maximum|The maximum impression share that you want for keyword ideas.|**double**|

@@ -27,6 +27,8 @@ Defines price units for price ad extensions.
 
 ## <a name="values"></a>Values
 
+The [PriceUnit](priceunit.md) value set has the following values: [None](#none), [PerDay](#perday), [PerHour](#perhour), [PerMonth](#permonth), [PerNight](#pernight), [PerWeek](#perweek), [PerYear](#peryear), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="none"></a>None|The price of the [PriceAdExtension](priceadextension.md) will not be appended with price unit text.|

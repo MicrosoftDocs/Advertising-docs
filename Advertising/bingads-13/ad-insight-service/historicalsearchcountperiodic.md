@@ -21,6 +21,8 @@ Defines an object that contains the number of times that the keyword was used in
 
 ## <a name="elements"></a>Elements
 
+The [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) object has the following elements: [DayMonthAndYear](#daymonthandyear), [SearchCount](#searchcount).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="daymonthandyear"></a>DayMonthAndYear|The time period in which the count was captured. The type of aggregation (daily, weekly, or monthly) that you specify in the request determines the length of the time period. For example, if you specified weekly aggregation, the time period is a week and the date is the Sunday of the week when the count was captured.|[DayMonthAndYear](daymonthandyear.md)|

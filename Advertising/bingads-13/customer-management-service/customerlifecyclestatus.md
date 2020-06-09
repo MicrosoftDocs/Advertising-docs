@@ -21,6 +21,8 @@ Defines the possible status values of a customer.
 
 ## <a name="values"></a>Values
 
+The [CustomerLifeCycleStatus](customerlifecyclestatus.md) value set has the following values: [Active](#active), [Inactive](#inactive).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The customer is active.|

@@ -22,6 +22,8 @@ Defines the possible positions where you can target an ad to appear in the searc
 
 ## <a name="values"></a>Values
 
+The [TargetAdPosition](targetadposition.md) value set has the following values: [FirstPage](#firstpage), [MainLine](#mainline), [MainLine1](#mainline1).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="firstpage"></a>FirstPage|Target any position on the right side of the search results page.|

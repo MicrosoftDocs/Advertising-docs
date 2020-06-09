@@ -21,6 +21,8 @@ Defines an object that contains the negative site URLs of an ad group.
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupNegativeSites](adgroupnegativesites.md) object has the following elements: [AdGroupId](#adgroupid), [NegativeSites](#negativesites).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to which the negative site URLs belong.|**long**|

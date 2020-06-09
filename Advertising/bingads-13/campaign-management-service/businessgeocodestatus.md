@@ -23,6 +23,8 @@ Defines the possible status values that indicate the progress of determining the
 
 ## <a name="values"></a>Values
 
+The [BusinessGeoCodeStatus](businessgeocodestatus.md) value set has the following values: [Complete](#complete), [Failed](#failed), [Invalid](#invalid), [Pending](#pending).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="complete"></a>Complete|Successfully determined the latitude and longitude of the business.|

@@ -42,6 +42,8 @@ You can specify competition levels when calling the [GetKeywordIdeas](getkeyword
 
 ## <a name="values"></a>Values
 
+The [CompetitionLevel](competitionlevel.md) value set has the following values: [High](#high), [Low](#low), [Medium](#medium).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="high"></a>High|The competition level is high.|

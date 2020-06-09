@@ -21,6 +21,8 @@ Defines an object that contains a list of suggested keywords that may perform be
 
 ## <a name="elements"></a>Elements
 
+The [KeywordSuggestion](keywordsuggestion.md) object has the following elements: [Keyword](#keyword), [SuggestionsAndConfidence](#suggestionsandconfidence).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword to which the suggested keywords apply.|**string**|

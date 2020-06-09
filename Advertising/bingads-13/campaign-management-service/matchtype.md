@@ -27,6 +27,8 @@ Defines the possible match types for a keyword or negative keyword.
 
 ## <a name="values"></a>Values
 
+The [MatchType](matchtype.md) value set has the following values: [Broad](#broad), [Exact](#exact), [Phrase](#phrase).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="broad"></a>Broad|The match type is Broad.|

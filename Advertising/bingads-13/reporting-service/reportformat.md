@@ -22,6 +22,8 @@ Defines the file formats that you can use for a report.
 
 ## <a name="values"></a>Values
 
+The [ReportFormat](reportformat.md) value set has the following values: [Csv](#csv), [Tsv](#tsv), [Xml](#xml).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="csv"></a>Csv|The report format will be comma-separated values (.csv).|

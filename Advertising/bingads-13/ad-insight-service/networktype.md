@@ -36,6 +36,8 @@ You can specify a network type when calling the [GetKeywordIdeas](getkeywordidea
 
 ## <a name="values"></a>Values
 
+The [NetworkType](networktype.md) value set has the following values: [OwnedAndOperatedAndSyndicatedSearch](#ownedandoperatedandsyndicatedsearch), [OwnedAndOperatedOnly](#ownedandoperatedonly), [SyndicatedSearchOnly](#syndicatedsearchonly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="ownedandoperatedandsyndicatedsearch"></a>OwnedAndOperatedAndSyndicatedSearch|Indicates that you want keyword ideas or traffic estimates for ads on owned and operated networks, as well as syndicated search networks.|

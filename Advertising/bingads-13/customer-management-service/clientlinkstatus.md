@@ -41,6 +41,8 @@ Defines the possible status values of a [ClientLink](clientlink.md).
 
 ## <a name="values"></a>Values
 
+The [ClientLinkStatus](clientlinkstatus.md) value set has the following values: [Active](#active), [Inactive](#inactive), [LinkAccepted](#linkaccepted), [LinkCanceled](#linkcanceled), [LinkDeclined](#linkdeclined), [LinkExpired](#linkexpired), [LinkFailed](#linkfailed), [LinkInProgress](#linkinprogress), [LinkPending](#linkpending), [UnlinkCanceled](#unlinkcanceled), [UnlinkFailed](#unlinkfailed), [UnlinkInProgress](#unlinkinprogress), [UnlinkPending](#unlinkpending), [UnlinkRequested](#unlinkrequested).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The link is established and the managing customer can access the client account.<br/><br/>The previous status was LinkInProgress.|

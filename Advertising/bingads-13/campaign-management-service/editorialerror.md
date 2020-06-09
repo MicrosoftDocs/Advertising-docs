@@ -28,6 +28,8 @@ Defines an error object that identifies one of potentially many reasons why an e
 
 ## <a name="elements"></a>Elements
 
+The [EditorialError](editorialerror.md) object has the following elements: [Appealable](#appealable), [DisapprovedText](#disapprovedtext), [Location](#location), [PublisherCountry](#publishercountry), [ReasonCode](#reasoncode).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appealable"></a>Appealable|Reserved for future use.|**boolean**|
@@ -41,7 +43,7 @@ The [EditorialError](editorialerror.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbatcherror"></a>Inherited Elements from BatchError
-The [EditorialError](editorialerror.md) object derives from the [BatchError](batcherror.md) object, and inherits the following elements. The descriptions below are specific to [EditorialError](editorialerror.md), and might not apply to other objects that inherit the same elements from the [BatchError](batcherror.md) object.  
+The [EditorialError](editorialerror.md) object derives from the [BatchError](batcherror.md) object, and inherits the following elements: [Code](#code), [Details](#details), [ErrorCode](#errorcode), [FieldPath](#fieldpath), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Index](#index), [Message](#message), [Type](#type). The descriptions below are specific to [EditorialError](editorialerror.md), and might not apply to other objects that inherit the same elements from the [BatchError](batcherror.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

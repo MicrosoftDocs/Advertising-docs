@@ -26,6 +26,8 @@ Defines the criteria to use to filter the conversion performance report data.
 
 ## <a name="elements"></a>Elements
 
+The [ConversionPerformanceReportFilter](conversionperformancereportfilter.md) object has the following elements: [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupStatus](#adgroupstatus), [CampaignStatus](#campaignstatus), [DeviceType](#devicetype), [Keywords](#keywords), [KeywordStatus](#keywordstatus).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountstatus"></a>AccountStatus|The report will include data for only the account status. For example, you can use the filter to include data for only active accounts.<br/><br/>You can specify one or more account statuses.|[AccountStatusReportFilter](accountstatusreportfilter.md)|

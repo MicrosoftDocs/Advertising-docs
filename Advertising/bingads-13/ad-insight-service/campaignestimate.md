@@ -24,6 +24,8 @@ Contains a nested list of suggested keywords for the campaign's ad groups with m
 
 ## <a name="elements"></a>Elements
 
+The [CampaignEstimate](campaignestimate.md) object has the following elements: [AdGroupEstimates](#adgroupestimates), [CampaignId](#campaignid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupestimates"></a>AdGroupEstimates|The nested list of suggested keywords for the campaign's ad groups with minimum and maximum traffic estimates.<br/><br/>Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.|[AdGroupEstimate](adgroupestimate.md) array|

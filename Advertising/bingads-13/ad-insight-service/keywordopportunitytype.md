@@ -25,6 +25,8 @@ Defines the possible keyword opportunity types you can request when calling [Get
 
 ## <a name="values"></a>Values
 
+The [KeywordOpportunityType](keywordopportunitytype.md) value set has the following values: [BroadMatch](#broadmatch), [CampaignContext](#campaigncontext).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="broadmatch"></a>BroadMatch|The keyword opportunity will be suggested based on the marketplace impact of adding keywords with the broad match type.|

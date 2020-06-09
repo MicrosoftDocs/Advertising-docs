@@ -30,6 +30,8 @@ For other conversion goal types you create a Universal Event Tracking (UET) tag,
 
 ## <a name="elements"></a>Elements
 
+The [AppInstallGoal](appinstallgoal.md) object has the following elements: [AppPlatform](#appplatform), [AppStoreId](#appstoreid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appplatform"></a>AppPlatform|The application platform.<br/><br/>Possible values include *Android*, *iOS*, *Windows* and *WindowsPhone*.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
@@ -40,7 +42,7 @@ The [AppInstallGoal](appinstallgoal.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsconversiongoal"></a>Inherited Elements from ConversionGoal
-The [AppInstallGoal](appinstallgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements. The descriptions below are specific to [AppInstallGoal](appinstallgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
+The [AppInstallGoal](appinstallgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements: [ConversionWindowInMinutes](#conversionwindowinminutes), [CountType](#counttype), [ExcludeFromBidding](#excludefrombidding), [Id](#id), [Name](#name), [Revenue](#revenue), [Scope](#scope), [Status](#status), [TagId](#tagid), [TrackingStatus](#trackingstatus), [Type](#type), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes). The descriptions below are specific to [AppInstallGoal](appinstallgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

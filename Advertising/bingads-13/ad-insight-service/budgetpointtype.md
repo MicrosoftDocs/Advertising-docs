@@ -23,6 +23,8 @@ Defines the possible values of a campaign budget point.
 
 ## <a name="values"></a>Values
 
+The [BudgetPointType](budgetpointtype.md) value set has the following values: [Current](#current), [Maximum](#maximum), [Other](#other), [Suggested](#suggested).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="current"></a>Current|The budget point includes the current budget.|

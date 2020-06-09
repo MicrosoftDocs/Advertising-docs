@@ -21,6 +21,8 @@ Contains a keyword estimators with your keyword level filter criteria for traffi
 
 ## <a name="elements"></a>Elements
 
+The [KeywordEstimator](keywordestimator.md) object has the following elements: [Keyword](#keyword), [MaxCpc](#maxcpc).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword used for traffic estimates.<br/><br/>You can request estimates for Phrase and Broad match types.|[Keyword](keyword.md)|

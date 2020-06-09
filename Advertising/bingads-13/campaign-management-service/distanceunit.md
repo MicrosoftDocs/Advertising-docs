@@ -26,6 +26,8 @@ Defines the possible distance units of a geographical location.
 
 ## <a name="values"></a>Values
 
+The [DistanceUnit](distanceunit.md) value set has the following values: [Kilometers](#kilometers), [Miles](#miles).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="kilometers"></a>Kilometers|The distance of the specified geographical location is specified in kilometers.|

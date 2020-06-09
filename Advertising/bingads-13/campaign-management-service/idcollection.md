@@ -20,6 +20,8 @@ Defines an object that contains a list of entity identifiers.
 
 ## <a name="elements"></a>Elements
 
+The [IdCollection](idcollection.md) object has the following elements: [Ids](#ids).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="ids"></a>Ids|A list of entity identifiers.|**long** array|

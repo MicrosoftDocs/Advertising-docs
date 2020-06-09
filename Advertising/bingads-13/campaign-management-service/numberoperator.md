@@ -25,6 +25,8 @@ Defines the operators that can be applied to remarketing list rule item number v
 
 ## <a name="values"></a>Values
 
+The [NumberOperator](numberoperator.md) value set has the following values: [Equals](#equals), [GreaterThan](#greaterthan), [GreaterThanEqualTo](#greaterthanequalto), [LessThan](#lessthan), [LessThanEqualTo](#lessthanequalto), [None](#none).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="equals"></a>Equals|Equals the corresponding number value.|

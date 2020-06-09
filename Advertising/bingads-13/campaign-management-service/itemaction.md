@@ -40,6 +40,8 @@ Defines the possible types of item actions, for example to add, delete, or updat
 
 ## <a name="values"></a>Values
 
+The [ItemAction](itemaction.md) value set has the following values: [Add](#add), [Delete](#delete), [Update](#update).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="add"></a>Add|The requested action is to add the item, for example add the [ProductPartition](productpartition.md).|

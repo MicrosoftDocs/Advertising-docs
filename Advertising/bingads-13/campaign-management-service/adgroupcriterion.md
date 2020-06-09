@@ -28,6 +28,8 @@ Do not try to instantiate an *AdGroupCriterion*. You can create one or more of t
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupCriterion](adgroupcriterion.md) object has the following elements: [AdGroupId](#adgroupid), [Criterion](#criterion), [Id](#id), [Status](#status), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to apply the criterion to.|**long**|

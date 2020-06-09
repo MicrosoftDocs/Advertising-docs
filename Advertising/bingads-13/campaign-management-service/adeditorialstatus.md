@@ -23,6 +23,8 @@ Defines the editorial review status values of an ad.
 
 ## <a name="values"></a>Values
 
+The [AdEditorialStatus](adeditorialstatus.md) value set has the following values: [Active](#active), [ActiveLimited](#activelimited), [Disapproved](#disapproved), [Inactive](#inactive).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The ad passed editorial review.|

@@ -42,6 +42,8 @@ For a list of columns that you must include, please see the [Required Columns](#
 
 ## <a name="values"></a>Values
 
+The [SearchCampaignChangeHistoryReportColumn](searchcampaignchangehistoryreportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdDescription](#addescription), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdTitle](#adtitle), [AttributeChanged](#attributechanged), [CampaignId](#campaignid), [CampaignName](#campaignname), [ChangedBy](#changedby), [DateTime](#datetime), [DisplayUrl](#displayurl), [EntityId](#entityid), [EntityName](#entityname), [HowChanged](#howchanged), [ItemChanged](#itemchanged), [Keyword](#keyword), [NewValue](#newvalue), [OldValue](#oldvalue), [Tool](#tool).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

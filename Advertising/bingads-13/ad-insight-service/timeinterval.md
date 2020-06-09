@@ -22,6 +22,8 @@ Defines the possible time periods that determine the pool of data that the servi
 
 ## <a name="values"></a>Values
 
+The [TimeInterval](timeinterval.md) value set has the following values: [LastDay](#lastday), [LastMonth](#lastmonth), [LastWeek](#lastweek).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="lastday"></a>LastDay|Use data from yesterday. If data from yesterday is not yet available, data from the most recently completed day is provided. Note that it can take up to 72 hours for the most recent day's data to be available.|

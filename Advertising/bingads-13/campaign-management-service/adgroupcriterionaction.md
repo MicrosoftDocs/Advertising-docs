@@ -21,6 +21,8 @@ Defines the action to apply to a [BiddableAdGroupCriterion](biddableadgroupcrite
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupCriterionAction](adgroupcriterionaction.md) object has the following elements: [Action](#action), [AdGroupCriterion](#adgroupcriterion).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="action"></a>Action|The action to be applied for the *AdGroupCriterion*.|[ItemAction](itemaction.md)|

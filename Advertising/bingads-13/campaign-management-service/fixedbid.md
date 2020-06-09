@@ -24,6 +24,8 @@ Defines the fixed bid to use in the auction.
 
 ## <a name="elements"></a>Elements
 
+The [FixedBid](fixedbid.md) object has the following elements: [Amount](#amount).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](../guides/currencies.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
@@ -33,7 +35,7 @@ The [FixedBid](fixedbid.md) object has [Inherited Elements](#inheritedelements).
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterionbid"></a>Inherited Elements from CriterionBid
-The [FixedBid](fixedbid.md) object derives from the [CriterionBid](criterionbid.md) object, and inherits the following elements. The descriptions below are specific to [FixedBid](fixedbid.md), and might not apply to other objects that inherit the same elements from the [CriterionBid](criterionbid.md) object.  
+The [FixedBid](fixedbid.md) object derives from the [CriterionBid](criterionbid.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [FixedBid](fixedbid.md), and might not apply to other objects that inherit the same elements from the [CriterionBid](criterionbid.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

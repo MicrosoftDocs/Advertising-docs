@@ -21,6 +21,8 @@ Defines a key and value custom parameter for URL tracking. Used for campaign, ad
 
 ## <a name="elements"></a>Elements
 
+The [CustomParameter](customparameter.md) object has the following elements: [Key](#key), [Value](#value).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="key"></a>Key|The name of the custom parameter that you want to track.<br/><br/>The maximum length of this string is 16, in UTF-8 bytes. With the Campaign Management service you may not specify special characters such as braces and underscore: \"\{\", \"\_\", and \"\}\".  With the Bulk service the surrounding braces and underscore are required. The maximum length of 16 UTF-8 bytes does not include the optional braces and underscore: \"\{\", \"\_\", and \"\}\".<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|

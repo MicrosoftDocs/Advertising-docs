@@ -28,6 +28,8 @@ Defines the possible minute values for ad extension scheduling or day and time c
 
 ## <a name="values"></a>Values
 
+The [Minute](minute.md) value set has the following values: [Fifteen](#fifteen), [FortyFive](#fortyfive), [Thirty](#thirty), [Zero](#zero).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="fifteen"></a>Fifteen|The starting or ending minute of the hour range is fifteen.|

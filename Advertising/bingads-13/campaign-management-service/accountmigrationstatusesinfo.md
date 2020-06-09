@@ -21,6 +21,8 @@ Defines an object that contains migration status for an account.
 
 ## <a name="elements"></a>Elements
 
+The [AccountMigrationStatusesInfo](accountmigrationstatusesinfo.md) object has the following elements: [AccountId](#accountid), [MigrationStatusInfos](#migrationstatusinfos).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising identifier of the account.|**long**|

@@ -117,8 +117,8 @@ The Microsoft Advertising identifier of the in-market audience associated with t
 This bulk field maps to the *Id* field of the [In Market Audience](in-market-audience.md) record.
 
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you set the [Audience Id](#audienceid) field, you must either specify an existing in-market audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [In Market Audience](in-market-audience.md) record. If the [Audience Id](#audienceid) field is not set, then you must set the [Audience](#audience) field as a logical key to the same value as the *Audience* field of the [In Market Audience](in-market-audience.md) record. Any of these options are recommended if you are adding new Ad Group Negative In Market Audience Associations with new in-market audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only    
-**Delete:** Read-only  
+**Update:** Read-only and Required   
+**Delete:** Read-only and Required  
 
 ## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group.

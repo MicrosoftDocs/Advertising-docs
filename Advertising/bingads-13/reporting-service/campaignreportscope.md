@@ -21,6 +21,8 @@ Defines a campaign to include in the report.
 
 ## <a name="elements"></a>Elements
 
+The [CampaignReportScope](campaignreportscope.md) object has the following elements: [AccountId](#accountid), [CampaignId](#campaignid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that the campaign belongs to.|**long**|

@@ -26,6 +26,8 @@ Defines a postal address.
 
 ## <a name="elements"></a>Elements
 
+The [Address](address.md) object has the following elements: [CityName](#cityname), [CountryCode](#countrycode), [PostalCode](#postalcode), [ProvinceCode](#provincecode), [ProvinceName](#provincename), [StreetAddress](#streetaddress), [StreetAddress2](#streetaddress2).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="cityname"></a>CityName|The name of the city where the street address is located. The name can contain a maximum of 80 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|

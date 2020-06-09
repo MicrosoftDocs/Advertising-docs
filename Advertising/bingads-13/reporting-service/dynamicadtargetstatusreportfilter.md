@@ -26,6 +26,8 @@ Defines the dynamic ad target status values that you can use to filter the repor
 
 ## <a name="values"></a>Values
 
+The [DynamicAdTargetStatusReportFilter](dynamicadtargetstatusreportfilter.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Paused](#paused).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The report will contain dynamic ad targets that are active.|

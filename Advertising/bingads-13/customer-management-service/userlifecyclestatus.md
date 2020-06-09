@@ -23,6 +23,8 @@ Defines the possible status values of a user.
 
 ## <a name="values"></a>Values
 
+The [UserLifeCycleStatus](userlifecyclestatus.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Inactive](#inactive), [Pending](#pending).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The user is active.|
