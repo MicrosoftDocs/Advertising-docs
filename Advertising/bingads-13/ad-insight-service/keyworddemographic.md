@@ -29,6 +29,8 @@ Defines an object that contains the device, age and gender of the user who enter
 
 ## <a name="elements"></a>Elements
 
+The [KeywordDemographic](keyworddemographic.md) object has the following elements: [AgeUnknown](#ageunknown), [Device](#device), [EighteenToTwentyFour](#eighteentotwentyfour), [Female](#female), [FiftyToSixtyFour](#fiftytosixtyfour), [GenderUnknown](#genderunknown), [Male](#male), [SixtyFiveAndAbove](#sixtyfiveandabove), [ThirtyFiveToFourtyNine](#thirtyfivetofourtynine), [TwentyFiveToThirtyFour](#twentyfivetothirtyfour).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="ageunknown"></a>AgeUnknown|Not used.|**double**|

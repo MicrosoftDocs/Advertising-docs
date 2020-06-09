@@ -25,6 +25,8 @@ Defines the possible system-determined status values of a UET tag. These are the
 
 ## <a name="values"></a>Values
 
+The [UetTagTrackingStatus](uettagtrackingstatus.md) value set has the following values: [Active](#active), [Inactive](#inactive), [Unverified](#unverified).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active| Your UET tag is working and sending user activity data to Microsoft Advertising.|

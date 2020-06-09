@@ -32,6 +32,8 @@ This is the default bid strategy type for your ad groups and keywords. Use this 
 
 ## <a name="elements"></a>Elements
 
+The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object has the following elements: [InheritedBidStrategyType](#inheritedbidstrategytype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|The type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This value is equal to the *Type* element of the campaign or ad group's [BiddingScheme](biddingscheme.md) object. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas*.<br/><br/>This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md), [GetAdGroupsByIds](getadgroupsbyids.md), [GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](getkeywordsbyids.md).|**string**|
@@ -41,7 +43,7 @@ The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object h
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

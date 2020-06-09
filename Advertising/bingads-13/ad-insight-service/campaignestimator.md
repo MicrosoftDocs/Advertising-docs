@@ -24,6 +24,8 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
 
 ## <a name="elements"></a>Elements
 
+The [CampaignEstimator](campaignestimator.md) object has the following elements: [AdGroupEstimators](#adgroupestimators), [CampaignId](#campaignid), [Criteria](#criteria), [DailyBudget](#dailybudget), [NegativeKeywords](#negativekeywords).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupestimators"></a>AdGroupEstimators|The list of ad group estimators with your ad group and keyword level filter criteria for traffic estimates.|[AdGroupEstimator](adgroupestimator.md) array|

@@ -25,6 +25,8 @@ Defines the possible operand values that can be applied to the argument of a web
 
 ## <a name="values"></a>Values
 
+The [WebpageConditionOperand](webpageconditionoperand.md) value set has the following values: [Category](#category), [CustomLabel](#customlabel), [PageContent](#pagecontent), [PageTitle](#pagetitle), [Unknown](#unknown), [Url](#url).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="category"></a>Category|Set a condition that the [argument](webpagecondition.md#argument) must match one of the categories that Bing thinks is applicable for your site.|

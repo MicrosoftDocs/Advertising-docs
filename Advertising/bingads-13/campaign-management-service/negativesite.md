@@ -34,6 +34,8 @@ For more information about managing negative sites and website exclusion lists, 
 
 ## <a name="elements"></a>Elements
 
+The [NegativeSite](negativesite.md) object has the following elements: [Id](#id), [Url](#url).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the negative site.<br/><br/>**Add:** Read-only<br/>**Delete:** Required|**long**|
@@ -44,7 +46,7 @@ The [NegativeSite](negativesite.md) object has [Inherited Elements](#inheritedel
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedlistitem"></a>Inherited Elements from SharedListItem
-The [NegativeSite](negativesite.md) object derives from the [SharedListItem](sharedlistitem.md) object, and inherits the following elements. The descriptions below are specific to [NegativeSite](negativesite.md), and might not apply to other objects that inherit the same elements from the [SharedListItem](sharedlistitem.md) object.  
+The [NegativeSite](negativesite.md) object derives from the [SharedListItem](sharedlistitem.md) object, and inherits the following elements: [ForwardCompatibilityMap](#forwardcompatibilitymap), [Type](#type). The descriptions below are specific to [NegativeSite](negativesite.md), and might not apply to other objects that inherit the same elements from the [SharedListItem](sharedlistitem.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

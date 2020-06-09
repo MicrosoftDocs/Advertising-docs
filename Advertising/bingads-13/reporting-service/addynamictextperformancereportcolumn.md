@@ -73,6 +73,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDescription](#addescription), [AdDescription2](#addescription2), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdLabels](#adlabels), [AdStatus](#adstatus), [AdTitle](#adtitle), [AdType](#adtype), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CurrencyCode](#currencycode), [DestinationUrl](#destinationurl), [DeviceType](#devicetype), [FinalAppUrl](#finalappurl), [FinalMobileUrl](#finalmobileurl), [FinalUrl](#finalurl), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Keyword](#keyword), [KeywordStatus](#keywordstatus), [Language](#language), [Param1](#param1), [Param2](#param2), [Param3](#param3), [Path1](#path1), [Path2](#path2), [Spend](#spend), [TimePeriod](#timeperiod), [TitlePart1](#titlepart1), [TitlePart2](#titlepart2), [TitlePart3](#titlepart3), [ViewThroughConversions](#viewthroughconversions).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

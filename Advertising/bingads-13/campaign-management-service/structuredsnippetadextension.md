@@ -31,6 +31,8 @@ You can associate a structured snippet ad extension with the account or with cam
 
 ## <a name="elements"></a>Elements
 
+The [StructuredSnippetAdExtension](structuredsnippetadextension.md) object has the following elements: [Header](#header), [Values](#values).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="header"></a>Header|The header that is appended with a colon (*:*) and precedes the snippet values. <br/><br/>Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Structured Snippet Header Languages](../guides/ad-languages.md#structuredsnippetheaders).<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -41,7 +43,7 @@ The [StructuredSnippetAdExtension](structuredsnippetadextension.md) object has [
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [StructuredSnippetAdExtension](structuredsnippetadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [StructuredSnippetAdExtension](structuredsnippetadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [StructuredSnippetAdExtension](structuredsnippetadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [StructuredSnippetAdExtension](structuredsnippetadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

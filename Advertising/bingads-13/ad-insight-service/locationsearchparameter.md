@@ -26,6 +26,8 @@ If you do not include the location search parameter when calling [GetKeywordIdea
 
 ## <a name="elements"></a>Elements
 
+The [LocationSearchParameter](locationsearchparameter.md) object has the following elements: [Locations](#locations).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="locations"></a>Locations|The location criterion list for the returned keyword ideas.<br/><br/>You must include between 1 to 2,000 locations.|[LocationCriterion](locationcriterion.md) array|

@@ -21,6 +21,8 @@ Defines the possible compression types for the file to download.
 
 ## <a name="values"></a>Values
 
+The [CompressionType](compressiontype.md) value set has the following values: [GZip](#gzip), [Zip](#zip).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="gzip"></a>GZip|The file should be GZIP compressed.|

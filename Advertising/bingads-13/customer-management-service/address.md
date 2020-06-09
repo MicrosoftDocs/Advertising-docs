@@ -30,6 +30,8 @@ Defines a postal address.
 
 ## <a name="elements"></a>Elements
 
+The [Address](address.md) object has the following elements: [BusinessName](#businessname), [City](#city), [CountryCode](#countrycode), [Id](#id), [Line1](#line1), [Line2](#line2), [Line3](#line3), [Line4](#line4), [PostalCode](#postalcode), [StateOrProvince](#stateorprovince), [TimeStamp](#timestamp).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="businessname"></a>BusinessName|The legal business name, which can contain a maximum of 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|

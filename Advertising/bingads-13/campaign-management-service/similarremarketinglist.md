@@ -29,6 +29,8 @@ You cannot create or edit the similar audience for a remarketing list. Having sa
 
 ## <a name="elements"></a>Elements
 
+The [SimilarRemarketingList](similarremarketinglist.md) object has the following elements: [SourceId](#sourceid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="sourceid"></a>SourceId|The Microsoft Advertising identifier of the remarketing list that Microsoft Advertising used to generate this similar audience.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**long**|
@@ -38,7 +40,7 @@ The [SimilarRemarketingList](similarremarketinglist.md) object has [Inherited El
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [SimilarRemarketingList](similarremarketinglist.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [SimilarRemarketingList](similarremarketinglist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [SimilarRemarketingList](similarremarketinglist.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [SimilarRemarketingList](similarremarketinglist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

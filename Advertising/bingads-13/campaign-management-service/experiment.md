@@ -68,6 +68,8 @@ When you delete an *Experiment*, the experiment [Campaign](campaign.md) will als
 
 ## <a name="elements"></a>Elements
 
+The [Experiment](experiment.md) object has the following elements: [BaseCampaignId](#basecampaignid), [EndDate](#enddate), [ExperimentCampaignId](#experimentcampaignid), [ExperimentStatus](#experimentstatus), [ExperimentType](#experimenttype), [Id](#id), [Name](#name), [StartDate](#startdate), [TrafficSplitPercent](#trafficsplitpercent).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="basecampaignid"></a>BaseCampaignId|The Microsoft Advertising identifier of the campaign used as the base for the experiment campaign.<br/><br/>You can create up to 10 nonconcurrent experiments per base campaign. In other words multiple experiments for the same base campaign cannot have overlapping time intervals.<br/><br/>Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment.<br/><br/>**Add:** Read-only and Required.<br/>**Update:** Read-only. You cannot change the base campaign of an experiment.|**long**|

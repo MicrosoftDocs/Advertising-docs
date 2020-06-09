@@ -24,6 +24,8 @@ You can get this object by calling [GetMediaAssociations](getmediaassociations.m
 
 ## <a name="elements"></a>Elements
 
+The [MediaAssociation](mediaassociation.md) object has the following elements: [EntityId](#entityid), [MediaEnabledEntity](#mediaenabledentity), [MediaId](#mediaid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The system identifier of the media enabled entity, for example the identifier of an ImageAdExtension.|**long**|

@@ -38,7 +38,7 @@ The [PlacementExclusionList](placementexclusionlist.md) object has [Inherited El
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedlist"></a>Inherited Elements from SharedList
-The [PlacementExclusionList](placementexclusionlist.md) object derives from the [SharedList](sharedlist.md) object, and inherits the following elements. The descriptions below are specific to [PlacementExclusionList](placementexclusionlist.md), and might not apply to other objects that inherit the same elements from the [SharedList](sharedlist.md) object.  
+The [PlacementExclusionList](placementexclusionlist.md) object derives from the [SharedList](sharedlist.md) object, and inherits the following elements: [ItemCount](#itemcount). The descriptions below are specific to [PlacementExclusionList](placementexclusionlist.md), and might not apply to other objects that inherit the same elements from the [SharedList](sharedlist.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -47,7 +47,7 @@ The [PlacementExclusionList](placementexclusionlist.md) object derives from the 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedentity"></a>Inherited Elements from SharedEntity
-The [PlacementExclusionList](placementexclusionlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements. The descriptions below are specific to [PlacementExclusionList](placementexclusionlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
+The [PlacementExclusionList](placementexclusionlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements: [AssociationCount](#associationcount), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [PlacementExclusionList](placementexclusionlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -22,6 +22,8 @@ Defines an object that contains the location, network, device, and the percentag
 
 ## <a name="elements"></a>Elements
 
+The [KeywordLocation](keywordlocation.md) object has the following elements: [Device](#device), [Location](#location), [Percentage](#percentage).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="device"></a>Device|The device of the user who entered the search query.|**string**|

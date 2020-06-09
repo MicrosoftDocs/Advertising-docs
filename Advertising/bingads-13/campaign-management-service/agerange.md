@@ -25,6 +25,8 @@ Defines the possible age range values that you can use to target ads to people.
 
 ## <a name="values"></a>Values
 
+The [AgeRange](agerange.md) value set has the following values: [EighteenToTwentyFour](#eighteentotwentyfour), [FiftyToSixtyFour](#fiftytosixtyfour), [SixtyFiveAndAbove](#sixtyfiveandabove), [ThirtyFiveToFourtyNine](#thirtyfivetofourtynine), [TwentyFiveToThirtyFour](#twentyfivetothirtyfour), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="eighteentotwentyfour"></a>EighteenToTwentyFour|People from the ages of 18 through 24 years.|

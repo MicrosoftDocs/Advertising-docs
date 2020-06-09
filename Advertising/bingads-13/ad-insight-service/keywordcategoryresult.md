@@ -21,6 +21,8 @@ Defines an object that contains the keyword and a list of keyword categories tha
 
 ## <a name="elements"></a>Elements
 
+The [KeywordCategoryResult](keywordcategoryresult.md) object has the following elements: [Keyword](#keyword), [KeywordCategories](#keywordcategories).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword being categorized.|**string**|

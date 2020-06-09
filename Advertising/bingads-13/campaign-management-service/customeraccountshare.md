@@ -25,6 +25,8 @@ Defines a customer or account that can use the shared audience or UET tag.
 
 ## <a name="elements"></a>Elements
 
+The [CustomerAccountShare](customeraccountshare.md) object has the following elements: [AccountId](#accountid), [Associations](#associations), [CustomerId](#customerid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of an advertiser account that can use the shared audience.<br/><br/>This element is not applicable for UET tags since you cannot restrict UET tags to a subset of advertiser accounts. You can only create and share UET tags at the [CustomerId](#customerid) level.<br/><br/>If this element is not set, then all accounts under the [CustomerId](#customerid) can use the shared audience or UET tag. One CustomerAccountShare object per advertiser account must be present in the [CustomerShare](customershare.md#customeraccountshares) for an audience that is shared with a subset of advertiser accounts, whether or not the advertiser accounts are under the same customer.<br/><br/>**Add:** Optional. You must set the [AccountId](#accountid) or [CustomerId](#customerid), but you cannot set both.<br/>**Update:** Optional. You must set the [AccountId](#accountid) or [CustomerId](#customerid), but you cannot set both. If no value is set for the update, this setting is not changed.|**long**|

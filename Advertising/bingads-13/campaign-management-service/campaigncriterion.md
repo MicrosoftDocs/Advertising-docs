@@ -29,6 +29,8 @@ Do not try to instantiate a *CampaignCriterion*. You can create one or more of t
 
 ## <a name="elements"></a>Elements
 
+The [CampaignCriterion](campaigncriterion.md) object has the following elements: [CampaignId](#campaignid), [Criterion](#criterion), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to apply the criterion to.|**long**|

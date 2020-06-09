@@ -27,7 +27,7 @@ The [FileImportOption](fileimportoption.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsimportoption"></a>Inherited Elements from ImportOption
-The [FileImportOption](fileimportoption.md) object derives from the [ImportOption](importoption.md) object, and inherits the following elements. The descriptions below are specific to [FileImportOption](fileimportoption.md), and might not apply to other objects that inherit the same elements from the [ImportOption](importoption.md) object.  
+The [FileImportOption](fileimportoption.md) object derives from the [ImportOption](importoption.md) object, and inherits the following elements: [ForwardCompatibilityMap](#forwardcompatibilitymap), [Type](#type). The descriptions below are specific to [FileImportOption](fileimportoption.md), and might not apply to other objects that inherit the same elements from the [ImportOption](importoption.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

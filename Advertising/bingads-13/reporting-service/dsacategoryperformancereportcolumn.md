@@ -71,6 +71,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [DSACategoryPerformanceReportColumn](dsacategoryperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdStatus](#adstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [Assists](#assists), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Category0](#category0), [Category1](#category1), [Category2](#category2), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [Network](#network), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TimePeriod](#timeperiod), [TopVsOther](#topvsother), [ViewThroughConversions](#viewthroughconversions).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

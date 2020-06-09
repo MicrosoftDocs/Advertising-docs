@@ -24,6 +24,8 @@ Defines a biddable criterion that you want applied to the specified campaign.
 
 ## <a name="elements"></a>Elements
 
+The [BiddableCampaignCriterion](biddablecampaigncriterion.md) object has the following elements: [CriterionBid](#criterionbid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="criterionbid"></a>CriterionBid|The bid to use in the auction.<br/><br/>If the inherited [Criterion](#criterion) is a [ProductScope](productscope.md) criterion, then you can use a [FixedBid](fixedbid.md). For all other biddable campaign criterions use the [BidMultiplier](bidmultiplier.md). If you do not use the correct object type, then your requested bid will be ignored: If the bid is required, the operation will fail; If the bid is optional, the default bid will be used.<br/><br/>**Add:** Requirements vary depending on the inherited [Criterion](#criterion) type. The bid is optional and will be set to the default of *0* if not included for [AgeCriterion](agecriterion.md), [DayTimeCriterion](daytimecriterion.md), [DeviceCriterion](devicecriterion.md), [GenderCriterion](gendercriterion.md), [LocationCriterion](locationcriterion.md), [ProfileCriterion](profilecriterion.md), and [RadiusCriterion](radiuscriterion.md). The bid is not applicable for [LocationIntentCriterion](locationintentcriterion.md) and [ProductScope](productscope.md) (The service will not return any error and the bid will be ignored even if you include it).<br/>**Update:** Requirements vary depending on the inherited [Criterion](#criterion) type. The bid is required for [AgeCriterion](agecriterion.md), [DayTimeCriterion](daytimecriterion.md), [DeviceCriterion](devicecriterion.md), [GenderCriterion](gendercriterion.md), [LocationCriterion](locationcriterion.md), [ProfileCriterion](profilecriterion.md), and [RadiusCriterion](radiuscriterion.md). The bid is not applicable for [LocationIntentCriterion](locationintentcriterion.md) and [ProductScope](productscope.md) (The service will not return any error and the bid will be ignored even if you include it).|[CriterionBid](criterionbid.md)|
@@ -33,7 +35,7 @@ The [BiddableCampaignCriterion](biddablecampaigncriterion.md) object has [Inheri
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscampaigncriterion"></a>Inherited Elements from CampaignCriterion
-The [BiddableCampaignCriterion](biddablecampaigncriterion.md) object derives from the [CampaignCriterion](campaigncriterion.md) object, and inherits the following elements. The descriptions below are specific to [BiddableCampaignCriterion](biddablecampaigncriterion.md), and might not apply to other objects that inherit the same elements from the [CampaignCriterion](campaigncriterion.md) object.  
+The [BiddableCampaignCriterion](biddablecampaigncriterion.md) object derives from the [CampaignCriterion](campaigncriterion.md) object, and inherits the following elements: [CampaignId](#campaignid), [Criterion](#criterion), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [Type](#type). The descriptions below are specific to [BiddableCampaignCriterion](biddablecampaigncriterion.md), and might not apply to other objects that inherit the same elements from the [CampaignCriterion](campaigncriterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

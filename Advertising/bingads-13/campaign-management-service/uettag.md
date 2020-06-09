@@ -33,6 +33,8 @@ You can use one UET tag with all of your conversion goals and audiences. Before 
 
 ## <a name="elements"></a>Elements
 
+The [UetTag](uettag.md) object has the following elements: [CustomerShare](#customershare), [Description](#description), [Id](#id), [Name](#name), [TrackingNoScript](#trackingnoscript), [TrackingScript](#trackingscript), [TrackingStatus](#trackingstatus).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customershare"></a>CustomerShare|Determines the list of customers that share the UET tag. Details include UET tag to audience association counts.<br/><br/>Shared UET tags and audiences are only available for pilot customers. For an overview of sharing audiences and UET tags in a customer hierarchy, see the [Share Audiences and UET Tags](../guides/universal-event-tracking.md#hierarchy-share) technical guide.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. Set this element to null or empty to retain any existing customer account shares. To remove all customer account shares, set the [CustomerAccountShares](customershare.md#customeraccountshares) element of the [CustomerShare](customershare.md) object to null or empty. To remove a subset of customer account shares, specify the customer account shares that you want to keep in the [CustomerAccountShares](customershare.md#customeraccountshares) element of the [CustomerShare](customershare.md) object.|[CustomerShare](customershare.md)|

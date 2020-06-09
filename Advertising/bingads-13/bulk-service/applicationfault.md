@@ -20,6 +20,8 @@ Defines the base object from which all fault detail objects derive.
 
 ## <a name="elements"></a>Elements
 
+The [ApplicationFault](applicationfault.md) object has the following elements: [TrackingId](#trackingid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|

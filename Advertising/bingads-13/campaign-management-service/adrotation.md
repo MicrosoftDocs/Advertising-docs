@@ -22,6 +22,8 @@ Defines an object that specifies the type of ad rotation to apply to the ad grou
 
 ## <a name="elements"></a>Elements
 
+The [AdRotation](adrotation.md) object has the following elements: [EndDate](#enddate), [StartDate](#startdate), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="enddate"></a>EndDate|Reserved for future use only. Must be null.|**dateTime**|

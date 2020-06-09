@@ -25,6 +25,8 @@ Do not try to instantiate a *SharedListItem*. You can create one or more of the 
 
 ## <a name="elements"></a>Elements
 
+The [SharedListItem](sharedlistitem.md) object has the following elements: [ForwardCompatibilityMap](#forwardcompatibilitymap), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|

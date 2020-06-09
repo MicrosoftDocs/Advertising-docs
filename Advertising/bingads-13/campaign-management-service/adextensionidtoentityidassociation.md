@@ -21,6 +21,8 @@ Defines an object that associates an ad extension to a supported entity, for exa
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md) object has the following elements: [AdExtensionId](#adextensionid), [EntityId](#entityid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adextensionid"></a>AdExtensionId|The system-generated identifier of the ad extension.|**long**|

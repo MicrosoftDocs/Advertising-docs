@@ -24,6 +24,8 @@ The network criterion that you can include when requesting keyword ideas or traf
 
 ## <a name="elements"></a>Elements
 
+The [NetworkCriterion](networkcriterion.md) object has the following elements: [Network](#network).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="network"></a>Network|The network that you want to target.<br/><br/>Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*.|[NetworkType](networktype.md)|

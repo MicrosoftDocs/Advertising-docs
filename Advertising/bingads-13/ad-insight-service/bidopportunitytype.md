@@ -26,6 +26,8 @@ Defines the possible bid opportunity types you can request when calling [GetBidO
 
 ## <a name="values"></a>Values
 
+The [BidOpportunityType](bidopportunitytype.md) value set has the following values: [FirstPage](#firstpage), [MainLine](#mainline), [MainLine1](#mainline1).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="firstpage"></a>FirstPage|The bid opportunity may lead to ads shown in one of the first page positions of search results.|

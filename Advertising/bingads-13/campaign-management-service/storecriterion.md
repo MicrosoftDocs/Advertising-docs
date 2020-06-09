@@ -24,6 +24,8 @@ Reserved for future use.
 
 ## <a name="elements"></a>Elements
 
+The [StoreCriterion](storecriterion.md) object has the following elements: [StoreId](#storeid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="storeid"></a>StoreId|Reserved for future use.|**long**|
@@ -33,7 +35,7 @@ The [StoreCriterion](storecriterion.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [StoreCriterion](storecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [StoreCriterion](storecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [StoreCriterion](storecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [StoreCriterion](storecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

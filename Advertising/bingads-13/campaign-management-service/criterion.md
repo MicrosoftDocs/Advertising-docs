@@ -39,6 +39,8 @@ For a list of criterion types that you can use with [AdGroupCriterion](adgroupcr
 
 ## <a name="elements"></a>Elements
 
+The [Criterion](criterion.md) object has the following elements: [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of criterion. For more information, see [Remarks](#remarks).|**string**|

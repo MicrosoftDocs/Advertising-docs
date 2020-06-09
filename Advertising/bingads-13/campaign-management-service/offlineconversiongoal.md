@@ -35,7 +35,7 @@ The [OfflineConversionGoal](offlineconversiongoal.md) object has [Inherited Elem
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsconversiongoal"></a>Inherited Elements from ConversionGoal
-The [OfflineConversionGoal](offlineconversiongoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements. The descriptions below are specific to [OfflineConversionGoal](offlineconversiongoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
+The [OfflineConversionGoal](offlineconversiongoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements: [ConversionWindowInMinutes](#conversionwindowinminutes), [CountType](#counttype), [ExcludeFromBidding](#excludefrombidding), [Id](#id), [Name](#name), [Revenue](#revenue), [Scope](#scope), [Status](#status), [TagId](#tagid), [TrackingStatus](#trackingstatus), [Type](#type), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes). The descriptions below are specific to [OfflineConversionGoal](offlineconversiongoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

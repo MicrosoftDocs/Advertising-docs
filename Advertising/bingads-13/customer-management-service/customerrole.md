@@ -31,6 +31,8 @@ Taken individually, a user has the same role on the [CustomerId](customerrole.md
 
 ## <a name="elements"></a>Elements
 
+The [CustomerRole](customerrole.md) object has the following elements: [AccountIds](#accountids), [CustomerId](#customerid), [CustomerLinkPermission](#customerlinkpermission), [LinkedAccountIds](#linkedaccountids), [RoleId](#roleid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|The list of accounts that the user can access in the customer.<br/><br/>If this element is nil, the user has access to all of the accounts (current and future) in the customer.|**long** array|

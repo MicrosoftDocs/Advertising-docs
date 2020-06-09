@@ -32,6 +32,8 @@ To run the import "now", you can leave the Google import job [Frequency](googlei
 
 ## <a name="elements"></a>Elements
 
+The [Frequency](frequency.md) object has the following elements: [Cron](#cron), [TimeZone](#timezone), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="cron"></a>Cron|Represents a simplified implementation of Cron frequency.<br/><br/>For example, set the string to "0 16 * * 3 *" if you want the import to run weekly, every Wednesday at 4:00 PM.<br/><br/>For details about supported frequency values, see the [Remarks](#remarks).<br/><br/>**Add:** Required if the [Type](#type) is set to "Scheduling", and otherwise the cron value is ignored.|**string**|

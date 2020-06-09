@@ -28,6 +28,8 @@ Determines which properties of the [KeywordIdea](keywordidea.md) object you want
 
 ## <a name="values"></a>Values
 
+The [KeywordIdeaAttribute](keywordideaattribute.md) value set has the following values: [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdImpressionShare](#adimpressionshare), [Competition](#competition), [Keyword](#keyword), [MonthlySearchCounts](#monthlysearchcounts), [Relevance](#relevance), [Source](#source), [SuggestedBid](#suggestedbid).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="adgroupid"></a>AdGroupId|Include the ad group identifier.|

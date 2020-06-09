@@ -24,6 +24,8 @@ These are the status values that a user can decide to set, for example a goal ca
 
 ## <a name="values"></a>Values
 
+The [ConversionGoalStatus](conversiongoalstatus.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Paused](#paused).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The conversion goal is active.<br/><br/>The status is shown as "Enabled" in the Microsoft Advertising UI.|

@@ -23,6 +23,8 @@ Defines the possible status values of a keyword.
 
 ## <a name="values"></a>Values
 
+The [KeywordStatus](keywordstatus.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Inactive](#inactive), [Paused](#paused).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The keyword can be used to match user search queries.|

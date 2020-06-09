@@ -35,6 +35,8 @@ Do not try to instantiate a *BiddingScheme*. You can create one or more of the f
 
 ## <a name="elements"></a>Elements
 
+The [BiddingScheme](biddingscheme.md) object has the following elements: [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of bidding scheme that is set for this campaign, ad group, or keyword. <br/><br/>For more information about bidding scheme types, see the [Remarks](#remarks).|**string**|

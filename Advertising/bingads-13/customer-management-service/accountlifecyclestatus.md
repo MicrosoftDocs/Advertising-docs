@@ -25,6 +25,8 @@ Defines the possible status values of an account.
 
 ## <a name="values"></a>Values
 
+The [AccountLifeCycleStatus](accountlifecyclestatus.md) value set has the following values: [Active](#active), [Draft](#draft), [Inactive](#inactive), [Pause](#pause), [Pending](#pending), [Suspended](#suspended).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The account is active, which means that the account and its campaigns can be managed and its ads served.|

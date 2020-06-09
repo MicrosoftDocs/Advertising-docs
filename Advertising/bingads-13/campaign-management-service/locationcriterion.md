@@ -42,6 +42,8 @@ Also note that you must consider the location, negative location, and radius cri
 
 ## <a name="elements"></a>Elements
 
+The [LocationCriterion](locationcriterion.md) object has the following elements: [DisplayName](#displayname), [EnclosedLocationIds](#enclosedlocationids), [LocationId](#locationid), [LocationType](#locationtype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="displayname"></a>DisplayName|The location display name.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
@@ -54,7 +56,7 @@ The [LocationCriterion](locationcriterion.md) object has [Inherited Elements](#i
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [LocationCriterion](locationcriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [LocationCriterion](locationcriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [LocationCriterion](locationcriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [LocationCriterion](locationcriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

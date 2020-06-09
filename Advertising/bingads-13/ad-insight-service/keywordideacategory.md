@@ -23,6 +23,8 @@ You can use the category identifier in the [CategorySearchParameter](categorysea
 
 ## <a name="elements"></a>Elements
 
+The [KeywordIdeaCategory](keywordideacategory.md) object has the following elements: [CategoryId](#categoryid), [CategoryName](#categoryname).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="categoryid"></a>CategoryId|The Microsoft Advertising identifier of the keyword idea category.|**long**|

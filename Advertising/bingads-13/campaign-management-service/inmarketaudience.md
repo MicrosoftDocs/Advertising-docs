@@ -39,7 +39,7 @@ The [InMarketAudience](inmarketaudience.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [InMarketAudience](inmarketaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [InMarketAudience](inmarketaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [InMarketAudience](inmarketaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [InMarketAudience](inmarketaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

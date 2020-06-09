@@ -33,6 +33,8 @@ Defines the possible formats in which to generate the billing document.
 
 ## <a name="values"></a>Values
 
+The [DataType](datatype.md) value set has the following values: [Pdf](#pdf), [Xml](#xml).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="pdf"></a>Pdf|Use PDF format.|

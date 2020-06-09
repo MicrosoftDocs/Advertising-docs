@@ -31,6 +31,8 @@ Defines a remarketing list.
 
 ## <a name="elements"></a>Elements
 
+The [RemarketingList](remarketinglist.md) object has the following elements: [Rule](#rule), [TagId](#tagid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="rule"></a>Rule|A rule includes conditions used to determine who to add to your remarketing list.<br/><br/>You can choose one of the four types of rules to target different audiences: [CustomEventsRule](customeventsrule.md), [PageVisitorsRule](pagevisitorsrule.md), [PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md), and [PageVisitorsWhoVisitedAnotherPageRule](pagevisitorswhovisitedanotherpagerule.md).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. If you want to keep any of the previous rule items, then you must explicitly set them again during update. You can choose to change the type of rule during update.|[RemarketingRule](remarketingrule.md)|
@@ -41,7 +43,7 @@ The [RemarketingList](remarketinglist.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [RemarketingList](remarketinglist.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [RemarketingList](remarketinglist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [RemarketingList](remarketinglist.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [RemarketingList](remarketinglist.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -28,6 +28,8 @@ Defines a nested list of error object that identifies one of potentially many re
 
 ## <a name="elements"></a>Elements
 
+The [EditorialErrorCollection](editorialerrorcollection.md) object has the following elements: [Appealable](#appealable), [DisapprovedText](#disapprovedtext), [Location](#location), [PublisherCountry](#publishercountry), [ReasonCode](#reasoncode).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appealable"></a>Appealable|Reserved for future use.|**boolean**|
@@ -41,7 +43,7 @@ The [EditorialErrorCollection](editorialerrorcollection.md) object has [Inherite
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbatcherrorcollection"></a>Inherited Elements from BatchErrorCollection
-The [EditorialErrorCollection](editorialerrorcollection.md) object derives from the [BatchErrorCollection](batcherrorcollection.md) object, and inherits the following elements. The descriptions below are specific to [EditorialErrorCollection](editorialerrorcollection.md), and might not apply to other objects that inherit the same elements from the [BatchErrorCollection](batcherrorcollection.md) object.  
+The [EditorialErrorCollection](editorialerrorcollection.md) object derives from the [BatchErrorCollection](batcherrorcollection.md) object, and inherits the following elements: [BatchErrors](#batcherrors), [Code](#code), [Details](#details), [ErrorCode](#errorcode), [FieldPath](#fieldpath), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Index](#index), [Message](#message), [Type](#type). The descriptions below are specific to [EditorialErrorCollection](editorialerrorcollection.md), and might not apply to other objects that inherit the same elements from the [BatchErrorCollection](batcherrorcollection.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

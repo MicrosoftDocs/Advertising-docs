@@ -29,6 +29,8 @@ Defines the ad group level settings for feed-based Microsoft Shopping Campaigns.
 
 ## <a name="elements"></a>Elements
 
+The [CoOpSetting](coopsetting.md) object has the following elements: [BidBoostValue](#bidboostvalue), [BidMaxValue](#bidmaxvalue), [BidOption](#bidoption).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="bidboostvalue"></a>BidBoostValue|The default bid boost percentage that you'll see in the Microsoft Advertising web application for new product groups.<br/><br/>This ad group level target setting is not used directly in the auction. The product group bids are used to boost your partner's bid.<br/><br/>**Add:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.|**double**|
@@ -40,7 +42,7 @@ The [CoOpSetting](coopsetting.md) object has [Inherited Elements](#inheritedelem
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssetting"></a>Inherited Elements from Setting
-The [CoOpSetting](coopsetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements. The descriptions below are specific to [CoOpSetting](coopsetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
+The [CoOpSetting](coopsetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [CoOpSetting](coopsetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

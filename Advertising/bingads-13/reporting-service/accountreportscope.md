@@ -20,6 +20,8 @@ Defines the set of accounts to include in the report.
 
 ## <a name="elements"></a>Elements
 
+The [AccountReportScope](accountreportscope.md) object has the following elements: [AccountIds](#accountids).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.<br/><br/>This element is required.|**long** array|

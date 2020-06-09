@@ -21,6 +21,8 @@ Defines an object that contains a keyword category and a confidence score. The c
 
 ## <a name="elements"></a>Elements
 
+The [KeywordCategory](keywordcategory.md) object has the following elements: [Category](#category), [ConfidenceScore](#confidencescore).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="category"></a>Category|The keyword category that the keyword might belong to.<br/><br/>If the category is undetermined, this element is set to Unknown Category and the ConfidenceScore element is set to 0.0.|**string**|

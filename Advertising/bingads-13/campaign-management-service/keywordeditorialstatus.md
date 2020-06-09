@@ -23,6 +23,8 @@ Defines the editorial review status values of a keyword.
 
 ## <a name="values"></a>Values
 
+The [KeywordEditorialStatus](keywordeditorialstatus.md) value set has the following values: [Active](#active), [ActiveLimited](#activelimited), [Disapproved](#disapproved), [Inactive](#inactive).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The keyword passed editorial review.|

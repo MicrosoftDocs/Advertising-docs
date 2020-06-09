@@ -24,6 +24,8 @@ Defines the multiplier by which to adjust your base bid for the corresponding cr
 
 ## <a name="elements"></a>Elements
 
+The [BidMultiplier](bidmultiplier.md) object has the following elements: [Multiplier](#multiplier).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="multiplier"></a>Multiplier|The percentage amount that you want to adjust the bid for the corresponding criterion. If the campaign uses MaxClicks, MaxConversions, TargetCpa, or TargetRoas bid strategy types, then the multiplier will inform rather than directly modify or override the automated bid.<br/><br/>For most criterion types the valid bid multiplier range is -90 through 900. For exceptions, see [DeviceCriterion Usage](#devicecriterion) and [LocationIntentCriterion Usage](#locationintentcriterion) below.<br/><br/>Although this element supports a double data type, you should use whole integer values i.e., -90 through 900, for parity with the web application.<br/><br/>**Add:** Required<br/>**Update:** Required|**double**|
@@ -33,7 +35,7 @@ The [BidMultiplier](bidmultiplier.md) object has [Inherited Elements](#inherited
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterionbid"></a>Inherited Elements from CriterionBid
-The [BidMultiplier](bidmultiplier.md) object derives from the [CriterionBid](criterionbid.md) object, and inherits the following elements. The descriptions below are specific to [BidMultiplier](bidmultiplier.md), and might not apply to other objects that inherit the same elements from the [CriterionBid](criterionbid.md) object.  
+The [BidMultiplier](bidmultiplier.md) object derives from the [CriterionBid](criterionbid.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [BidMultiplier](bidmultiplier.md), and might not apply to other objects that inherit the same elements from the [CriterionBid](criterionbid.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -35,6 +35,8 @@ The combination of the FinalUrls, Path1, Path2, Text, TextPart2, TitlePart1, Tit
 
 ## <a name="elements"></a>Elements
 
+The [ExpandedTextAd](expandedtextad.md) object has the following elements: [Domain](#domain), [Path1](#path1), [Path2](#path2), [Text](#text), [TextPart2](#textpart2), [TitlePart1](#titlepart1), [TitlePart2](#titlepart2), [TitlePart3](#titlepart3).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="domain"></a>Domain|The URL that will be displayed instead of the final URL. The final URL will still be used for the landing page URL.<br/><br/>Reserved for limited pilot usage e.g. pharmaceutical customers.<br/><br/>The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this element to an empty string (*""*), the previous setting will be deleted.|**string**|
@@ -51,7 +53,7 @@ The [ExpandedTextAd](expandedtextad.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsad"></a>Inherited Elements from Ad
-The [ExpandedTextAd](expandedtextad.md) object derives from the [Ad](ad.md) object, and inherits the following elements. The descriptions below are specific to [ExpandedTextAd](expandedtextad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
+The [ExpandedTextAd](expandedtextad.md) object derives from the [Ad](ad.md) object, and inherits the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters). The descriptions below are specific to [ExpandedTextAd](expandedtextad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

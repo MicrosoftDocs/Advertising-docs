@@ -21,6 +21,8 @@ Defines a date range object.
 
 ## <a name="elements"></a>Elements
 
+The [DateRange](daterange.md) object has the following elements: [MaxDate](#maxdate), [MinDate](#mindate).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maxdate"></a>MaxDate|The maximum date.<br/><br/>The date format should be specified as *"yyyyMMdd"*. For example December 31, 2050 should be specified as *"20501231"*.|**string**|

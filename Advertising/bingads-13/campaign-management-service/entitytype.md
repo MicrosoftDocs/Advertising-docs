@@ -47,6 +47,8 @@ Defines the possible types of entities.
 
 ## <a name="values"></a>Values
 
+The [EntityType](entitytype.md) value set has the following values: [Ad](#ad), [AdGroup](#adgroup), [Campaign](#campaign), [Keyword](#keyword).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="ad"></a>Ad|Request editorial appeal or status for ads.|

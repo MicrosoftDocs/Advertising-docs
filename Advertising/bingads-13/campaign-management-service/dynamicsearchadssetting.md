@@ -27,6 +27,8 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
 
 ## <a name="elements"></a>Elements
 
+The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object has the following elements: [DomainName](#domainname), [Language](#language), [PageFeedIds](#pagefeedids), [Source](#source).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="domainname"></a>DomainName|The domain name of the website that you want to target for dynamic search ads.<br/><br/>The length of the string is limited to 2,048 characters. If the domain name includes *www* it will be trimmed and not used.<br/><br/>**Add:** Required<br/>**Update:** Read-only and required. You cannot update the domain or language, but you must include the current domain and language when updating other properties such as [Source](#source).|**string**|
@@ -39,7 +41,7 @@ The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object has [Inherited 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssetting"></a>Inherited Elements from Setting
-The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements. The descriptions below are specific to [DynamicSearchAdsSetting](dynamicsearchadssetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
+The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [DynamicSearchAdsSetting](dynamicsearchadssetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

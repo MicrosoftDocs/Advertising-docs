@@ -167,6 +167,8 @@ Defines the possible types of campaign criterions.
 
 ## <a name="values"></a>Values
 
+The [CampaignCriterionType](campaigncriteriontype.md) value set has the following values: [Age](#age), [Audience](#audience), [CombinedList](#combinedlist), [CompanyName](#companyname), [CustomAudience](#customaudience), [DayTime](#daytime), [Device](#device), [Gender](#gender), [Industry](#industry), [InMarketAudience](#inmarketaudience), [JobFunction](#jobfunction), [Location](#location), [LocationIntent](#locationintent), [ProductAudience](#productaudience), [ProductScope](#productscope), [Radius](#radius), [RemarketingList](#remarketinglist), [SimilarRemarketingList](#similarremarketinglist), [Store](#store), [Targets](#targets), [Webpage](#webpage).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="age"></a>Age|The campaign criterion is an age criterion.<br/><br/>The *Criterion* element of a [BiddableCampaignCriterion](biddablecampaigncriterion.md) can be an instance of [AgeCriterion](agecriterion.md), but age criterion are not supported with [NegativeCampaignCriterion](negativecampaigncriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableCampaignCriterion](biddablecampaigncriterion.md) must be an instance of [BidMultiplier](bidmultiplier.md) when paired with this criterion type.|

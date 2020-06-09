@@ -24,6 +24,8 @@ Defines a fault object that operations return when generic errors occur, such as
 
 ## <a name="elements"></a>Elements
 
+The [AdApiFaultDetail](adapifaultdetail.md) object has the following elements: [Errors](#errors).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="errors"></a>Errors|An array of *AdApiError* objects that contains the details that explain why the service operation failed.|[AdApiError](adapierror.md) array|
@@ -33,7 +35,7 @@ The [AdApiFaultDetail](adapifaultdetail.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsapplicationfault"></a>Inherited Elements from ApplicationFault
-The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements. The descriptions below are specific to [AdApiFaultDetail](adapifaultdetail.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
+The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements: [TrackingId](#trackingid). The descriptions below are specific to [AdApiFaultDetail](adapifaultdetail.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

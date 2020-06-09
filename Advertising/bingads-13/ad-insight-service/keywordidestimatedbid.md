@@ -24,6 +24,8 @@ Defines an object that contains the identifier of the keyword and the suggested 
 
 ## <a name="elements"></a>Elements
 
+The [KeywordIdEstimatedBid](keywordidestimatedbid.md) object has the following elements: [KeywordEstimatedBid](#keywordestimatedbid), [KeywordId](#keywordid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keywordestimatedbid"></a>KeywordEstimatedBid|An object that contains the keyword string and the suggested bid value for each match type.|[KeywordEstimatedBid](keywordestimatedbid.md)|

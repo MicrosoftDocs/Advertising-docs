@@ -40,6 +40,8 @@ For a list of columns that you must include, please see the [Required Columns](#
 
 ## <a name="values"></a>Values
 
+The [ProductNegativeKeywordConflictReportColumn](productnegativekeywordconflictreportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [ConflictLevel](#conflictlevel), [MerchantProductId](#merchantproductid), [NegativeKeyword](#negativekeyword), [NegativeKeywordId](#negativekeywordid), [NegativeKeywordListId](#negativekeywordlistid), [NegativeKeywordMatchType](#negativekeywordmatchtype), [ProductGroup](#productgroup), [Title](#title).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

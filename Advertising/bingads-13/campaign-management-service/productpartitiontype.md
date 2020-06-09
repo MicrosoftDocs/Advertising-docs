@@ -33,6 +33,8 @@ Defines the possible types of product partitions.
 
 ## <a name="values"></a>Values
 
+The [ProductPartitionType](productpartitiontype.md) value set has the following values: [Subdivision](#subdivision), [Unit](#unit).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="subdivision"></a>Subdivision|The [ProductPartition](productpartition.md) is a product group subdivision. A subdivision is also referred to as a branch node in a tree.|

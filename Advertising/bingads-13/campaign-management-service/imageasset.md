@@ -31,6 +31,8 @@ Applies crop settings to stored image media for a specific aspect ratio.
 
 ## <a name="elements"></a>Elements
 
+The [ImageAsset](imageasset.md) object has the following elements: [CropHeight](#cropheight), [CropWidth](#cropwidth), [CropX](#cropx), [CropY](#cropy), [SubType](#subtype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="cropheight"></a>CropHeight|The number of pixels to use from the image asset source, starting from the CropY position and moving upwards.|**int**|
@@ -44,7 +46,7 @@ The [ImageAsset](imageasset.md) object has [Inherited Elements](#inheritedelemen
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsasset"></a>Inherited Elements from Asset
-The [ImageAsset](imageasset.md) object derives from the [Asset](asset.md) object, and inherits the following elements. The descriptions below are specific to [ImageAsset](imageasset.md), and might not apply to other objects that inherit the same elements from the [Asset](asset.md) object.  
+The [ImageAsset](imageasset.md) object derives from the [Asset](asset.md) object, and inherits the following elements: [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [ImageAsset](imageasset.md), and might not apply to other objects that inherit the same elements from the [Asset](asset.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

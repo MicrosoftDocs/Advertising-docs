@@ -25,6 +25,8 @@ Defines an image media representation with height and width.
 
 ## <a name="elements"></a>Elements
 
+The [ImageMediaRepresentation](imagemediarepresentation.md) object has the following elements: [Height](#height), [Width](#width).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="height"></a>Height|The height of the image in pixels.<br/><br/>For more information, see [Remarks](#remarks) below.|**int**|
@@ -35,7 +37,7 @@ The [ImageMediaRepresentation](imagemediarepresentation.md) object has [Inherite
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsmediarepresentation"></a>Inherited Elements from MediaRepresentation
-The [ImageMediaRepresentation](imagemediarepresentation.md) object derives from the [MediaRepresentation](mediarepresentation.md) object, and inherits the following elements. The descriptions below are specific to [ImageMediaRepresentation](imagemediarepresentation.md), and might not apply to other objects that inherit the same elements from the [MediaRepresentation](mediarepresentation.md) object.  
+The [ImageMediaRepresentation](imagemediarepresentation.md) object derives from the [MediaRepresentation](mediarepresentation.md) object, and inherits the following elements: [Name](#name), [Type](#type), [Url](#url). The descriptions below are specific to [ImageMediaRepresentation](imagemediarepresentation.md), and might not apply to other objects that inherit the same elements from the [MediaRepresentation](mediarepresentation.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -26,6 +26,8 @@ Defines the possible values for Microsoft Merchant Center store sub types.
 
 ## <a name="values"></a>Values
 
+The [BMCStoreSubType](bmcstoresubtype.md) value set has the following values: [CoOp](#coop).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="coop"></a>CoOp|The Microsoft Merchant Center store supports Cooperative campaigns.|

@@ -30,6 +30,8 @@ Defines the contact information for a user.
 
 ## <a name="elements"></a>Elements
 
+The [ContactInfo](contactinfo.md) object has the following elements: [Address](#address), [ContactByPhone](#contactbyphone), [ContactByPostalMail](#contactbypostalmail), [Email](#email), [EmailFormat](#emailformat), [Fax](#fax), [HomePhone](#homephone), [Id](#id), [Mobile](#mobile), [Phone1](#phone1), [Phone2](#phone2).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="address"></a>Address|The address of the user.<br/><br/>Note that the address BusinessName element is ignored if you try to set it for a user's contact information. The business name is only required for an [AdvertiserAccount](advertiseraccount.md) object.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|[Address](address.md)|

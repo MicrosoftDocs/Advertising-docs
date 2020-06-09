@@ -34,6 +34,8 @@ The combination of the AppPlatform, AppStoreId, Text, and Title elements make th
 
 ## <a name="elements"></a>Elements
 
+The [AppInstallAd](appinstallad.md) object has the following elements: [AppPlatform](#appplatform), [AppStoreId](#appstoreid), [Text](#text), [Title](#title).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appplatform"></a>AppPlatform|The application platform.<br/><br/>Possible values include *iOS* and *Android*.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
@@ -46,7 +48,7 @@ The [AppInstallAd](appinstallad.md) object has [Inherited Elements](#inheritedel
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsad"></a>Inherited Elements from Ad
-The [AppInstallAd](appinstallad.md) object derives from the [Ad](ad.md) object, and inherits the following elements. The descriptions below are specific to [AppInstallAd](appinstallad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
+The [AppInstallAd](appinstallad.md) object derives from the [Ad](ad.md) object, and inherits the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters). The descriptions below are specific to [AppInstallAd](appinstallad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

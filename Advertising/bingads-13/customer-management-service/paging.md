@@ -21,6 +21,8 @@ Defines a paging object that you can use to request objects in batches.
 
 ## <a name="elements"></a>Elements
 
+The [Paging](paging.md) object has the following elements: [Index](#index), [Size](#size).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="index"></a>Index|The zero-based results page index.<br/><br/>For example to request the first page of results, set this value to 0 (zero).|**int**|

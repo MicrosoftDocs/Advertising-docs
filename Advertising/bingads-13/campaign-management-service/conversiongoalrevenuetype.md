@@ -22,6 +22,8 @@ Defines conversion goal revenue models that you can use to track how much each c
 
 ## <a name="values"></a>Values
 
+The [ConversionGoalRevenueType](conversiongoalrevenuetype.md) value set has the following values: [FixedValue](#fixedvalue), [NoValue](#novalue), [VariableValue](#variablevalue).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="fixedvalue"></a>FixedValue|Each time it happens, the conversion has the same value.|

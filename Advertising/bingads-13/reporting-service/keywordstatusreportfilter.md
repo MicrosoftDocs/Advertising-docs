@@ -26,6 +26,8 @@ Defines the keyword status values that you can use to filter the report data. Th
 
 ## <a name="values"></a>Values
 
+The [KeywordStatusReportFilter](keywordstatusreportfilter.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Paused](#paused).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The report will contain keywords that are active.|

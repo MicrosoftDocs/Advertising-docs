@@ -28,6 +28,8 @@ Defines the possible financial status values of an account.
 
 ## <a name="values"></a>Values
 
+The [AccountFinancialStatus](accountfinancialstatus.md) value set has the following values: [ClearFinancialStatus](#clearfinancialstatus), [CreditWarning](#creditwarning), [Hold](#hold), [PendingCreditCheck](#pendingcreditcheck), [Proposed](#proposed), [SoldToOnly](#soldtoonly), [TaxOnHold](#taxonhold), [UserHold](#userhold), [WriteOff](#writeoff).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="clearfinancialstatus"></a>ClearFinancialStatus|The account is in good standing.|

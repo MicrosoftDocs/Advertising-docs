@@ -23,6 +23,8 @@ Do not try to instantiate a *RuleItem*. You can create one or more of the follow
 
 ## <a name="elements"></a>Elements
 
+The [RuleItem](ruleitem.md) object has the following elements: [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of rule item. For more information, see [Remarks](#remarks).|**string**|

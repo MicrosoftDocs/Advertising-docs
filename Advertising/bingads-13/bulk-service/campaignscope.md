@@ -21,6 +21,8 @@ Defines an object that identifies a campaign to download.
 
 ## <a name="elements"></a>Elements
 
+The [CampaignScope](campaignscope.md) object has the following elements: [CampaignId](#campaignid), [ParentAccountId](#parentaccountid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to download.|**long**|

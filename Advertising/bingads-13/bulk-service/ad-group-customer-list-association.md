@@ -67,8 +67,8 @@ The Microsoft Advertising identifier of the customer list associated with the ad
 This bulk field maps to the *Id* field of the [Customer List](customer-list.md) record.
 
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you set the [Audience Id](#audienceid) field, you must either specify an existing customer list identifier or specify a negative identifier that is equal to the *Id* field of the parent [Customer List](customer-list.md) record. If the [Audience Id](#audienceid) field is not set, then you must set the [Audience](#audience) field as a logical key to the same value as the *Audience* field of the [Customer List](customer-list.md) record. Any of these options are recommended if you are adding new ad group customer list associations with new customer lists in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only    
-**Delete:** Read-only  
+**Update:** Read-only and Required  
+**Delete:** Read-only and Required  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
 The percentage you want to increase/decrease the bid amount for the customer list.

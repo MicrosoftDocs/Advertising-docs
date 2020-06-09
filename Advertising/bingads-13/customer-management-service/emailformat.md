@@ -33,6 +33,8 @@ Defines the possible formats of the body of an email message.
 
 ## <a name="values"></a>Values
 
+The [EmailFormat](emailformat.md) value set has the following values: [Html](#html), [Text](#text).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="html"></a>Html|The format of the body of the email message is HTML.|

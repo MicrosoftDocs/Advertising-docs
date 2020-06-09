@@ -44,6 +44,8 @@ Defines the possible types of profile criterions.
 
 ## <a name="values"></a>Values
 
+The [ProfileType](profiletype.md) value set has the following values: [CompanyName](#companyname), [Industry](#industry), [JobFunction](#jobfunction).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="companyname"></a>CompanyName|Target people at a specific company according to LinkedIn.|

@@ -24,6 +24,8 @@ Contains a list of suggested keywords for the ad group with minimum and maximum 
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupEstimate](adgroupestimate.md) object has the following elements: [AdGroupId](#adgroupid), [KeywordEstimates](#keywordestimates).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The ad group identifier.|**long**|

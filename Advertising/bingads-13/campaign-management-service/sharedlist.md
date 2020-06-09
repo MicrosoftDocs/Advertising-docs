@@ -28,6 +28,8 @@ Do not try to instantiate a *SharedList*. You can create one or more of the foll
 
 ## <a name="elements"></a>Elements
 
+The [SharedList](sharedlist.md) object has the following elements: [ItemCount](#itemcount).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="itemcount"></a>ItemCount|The number of [SharedListItem](sharedlistitem.md) objects that are added to this shared list.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
@@ -37,7 +39,7 @@ The [SharedList](sharedlist.md) object has [Inherited Elements](#inheritedelemen
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedentity"></a>Inherited Elements from SharedEntity
-The [SharedList](sharedlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements. The descriptions below are specific to [SharedList](sharedlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
+The [SharedList](sharedlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements: [AssociationCount](#associationcount), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [SharedList](sharedlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

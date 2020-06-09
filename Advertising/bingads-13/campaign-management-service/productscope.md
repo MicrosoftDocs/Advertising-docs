@@ -28,6 +28,8 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 
 ## <a name="elements"></a>Elements
 
+The [ProductScope](productscope.md) object has the following elements: [Conditions](#conditions).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Microsoft Merchant Center store gets served as an ad.<br/><br/>Product conditions might not be returned in the order that you submitted them.<br/><br/>The available *Attribute* and *Operand* values vary depending on the campaign type. For supported attribute and operand values, see [ProductCondition Remarks](productcondition.md#remarks).<br/><br/>Conditions might not be returned in the order that you submitted them.<br/><br/>**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
@@ -37,7 +39,7 @@ The [ProductScope](productscope.md) object has [Inherited Elements](#inheritedel
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [ProductScope](productscope.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [ProductScope](productscope.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [ProductScope](productscope.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [ProductScope](productscope.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

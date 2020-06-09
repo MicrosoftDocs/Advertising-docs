@@ -21,6 +21,8 @@ Defines an object that contains the requested bid landscape type for the corresp
 
 ## <a name="elements"></a>Elements
 
+The [AdGroupBidLandscapeInput](adgroupbidlandscapeinput.md) object has the following elements: [AdGroupBidLandscapeType](#adgroupbidlandscapetype), [AdGroupId](#adgroupid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupbidlandscapetype"></a>AdGroupBidLandscapeType|Determines whether all or a subset of an ad group's existing keywords should be used to determine the bid landscape.<br/><br/>If not specified in a request, the default value is Uniform.|[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|

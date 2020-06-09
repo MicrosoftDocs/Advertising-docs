@@ -39,7 +39,7 @@ The [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md) object has [Inherite
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

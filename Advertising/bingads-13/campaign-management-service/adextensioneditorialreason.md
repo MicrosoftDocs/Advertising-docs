@@ -23,6 +23,8 @@ Defines an object that you can use to determine the component of an ad extension
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionEditorialReason](adextensioneditorialreason.md) object has the following elements: [Location](#location), [PublisherCountries](#publishercountries), [ReasonCode](#reasoncode), [Term](#term).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="location"></a>Location|The component of the ad extension that failed editorial review.|**string**|

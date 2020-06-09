@@ -25,6 +25,8 @@ Defines a fault object that operations return when web service-specific errors o
 
 ## <a name="elements"></a>Elements
 
+The [ApiFaultDetail](apifaultdetail.md) object has the following elements: [BatchErrors](#batcherrors), [OperationErrors](#operationerrors).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="batcherrors"></a>BatchErrors|An array of batch errors that identifies the items in the batch of items in the request message that caused the operation to fail. Each object contains the details that explain why the item caused the failure.|[BatchError](batcherror.md) array|
@@ -35,7 +37,7 @@ The [ApiFaultDetail](apifaultdetail.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsapplicationfault"></a>Inherited Elements from ApplicationFault
-The [ApiFaultDetail](apifaultdetail.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements. The descriptions below are specific to [ApiFaultDetail](apifaultdetail.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
+The [ApiFaultDetail](apifaultdetail.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements: [TrackingId](#trackingid). The descriptions below are specific to [ApiFaultDetail](apifaultdetail.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

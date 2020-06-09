@@ -30,6 +30,8 @@ Defines an action ad extension with a call-to-action button.
 
 ## <a name="elements"></a>Elements
 
+The [ActionAdExtension](actionadextension.md) object has the following elements: [ActionType](#actiontype), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [Language](#language), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="actiontype"></a>ActionType|The action type that you choose here, as well as the [Language](#language) that you set, determines the text that is displayed on your call-to-action button.<br/><br/>Microsoft Advertising does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. For details see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).<br/><br/>**Add:** Required<br/>**Update:** Required|[ActionAdExtensionActionType](actionadextensionactiontype.md)|
@@ -45,7 +47,7 @@ The [ActionAdExtension](actionadextension.md) object has [Inherited Elements](#i
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [ActionAdExtension](actionadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [ActionAdExtension](actionadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [ActionAdExtension](actionadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [ActionAdExtension](actionadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

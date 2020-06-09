@@ -24,6 +24,8 @@ Defines a list of optional ad group properties that you can request when calling
 
 ## <a name="values"></a>Values
 
+The [AdGroupAdditionalField](adgroupadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](adgroup.md#adscheduleusesearchertimezone) element be included within each returned [AdGroup](adgroup.md) object.|

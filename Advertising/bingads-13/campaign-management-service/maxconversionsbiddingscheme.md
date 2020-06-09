@@ -39,6 +39,8 @@ You need to have conversion tracking (a UET tag and a conversion goal) set up an
 
 ## <a name="elements"></a>Elements
 
+The [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md) object has the following elements: [MaxCpc](#maxcpc).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maxcpc"></a>MaxCpc|The maximum cost per click that you want to spend.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[Bid](bid.md)|
@@ -48,7 +50,7 @@ The [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md) object has [In
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

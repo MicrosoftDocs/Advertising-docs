@@ -30,6 +30,8 @@ The *DayTimeCriterion* criterion can be included within [BiddableAdGroupCriterio
 
 ## <a name="elements"></a>Elements
 
+The [DayTimeCriterion](daytimecriterion.md) object has the following elements: [Day](#day), [FromHour](#fromhour), [FromMinute](#fromminute), [ToHour](#tohour), [ToMinute](#tominute).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="day"></a>Day|The day of the week to target. For example, you can target the ads to run only on Friday or Saturday.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Day](day.md)|
@@ -43,7 +45,7 @@ The [DayTimeCriterion](daytimecriterion.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [DayTimeCriterion](daytimecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [DayTimeCriterion](daytimecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [DayTimeCriterion](daytimecriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [DayTimeCriterion](daytimecriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

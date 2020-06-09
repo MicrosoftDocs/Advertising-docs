@@ -21,6 +21,8 @@ Defines an object that contains the negative site URLs of a campaign.
 
 ## <a name="elements"></a>Elements
 
+The [CampaignNegativeSites](campaignnegativesites.md) object has the following elements: [CampaignId](#campaignid), [NegativeSites](#negativesites).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to which the negative site URLs belong.|**long**|

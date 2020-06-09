@@ -24,6 +24,8 @@ Defines a list of optional conversion goal properties that you can request when 
 
 ## <a name="values"></a>Values
 
+The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set has the following values: [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Request that the [ViewThroughConversionWindowInMinutes](conversiongoal.md#viewthroughconversionwindowinminutes) element be included within each returned [ConversionGoal](conversiongoal.md) object.|

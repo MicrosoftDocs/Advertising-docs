@@ -26,6 +26,8 @@ Reserved for future use.
 
 ## <a name="elements"></a>Elements
 
+The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object has the following elements: [MaxCpc](#maxcpc), [TargetAdPosition](#targetadposition), [TargetImpressionShare](#targetimpressionshare).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maxcpc"></a>MaxCpc|Reserved.|[Bid](bid.md)|
@@ -37,7 +39,7 @@ The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

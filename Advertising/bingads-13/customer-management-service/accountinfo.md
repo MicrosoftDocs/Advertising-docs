@@ -24,6 +24,8 @@ Defines an object that contains an account's identifier, name, and number.
 
 ## <a name="elements"></a>Elements
 
+The [AccountInfo](accountinfo.md) object has the following elements: [AccountLifeCycleStatus](#accountlifecyclestatus), [Id](#id), [Name](#name), [Number](#number), [PauseReason](#pausereason).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountlifecyclestatus"></a>AccountLifeCycleStatus|The status of the account.|[AccountLifeCycleStatus](accountlifecyclestatus.md)|

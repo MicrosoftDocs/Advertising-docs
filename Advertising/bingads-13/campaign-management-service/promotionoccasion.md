@@ -64,6 +64,8 @@ The [Scheduling](promotionadextension.md#scheduling) can limit the promotion to 
 
 ## <a name="values"></a>Values
 
+The [PromotionOccasion](promotionoccasion.md) value set has the following values: [BackToSchool](#backtoschool), [BlackFriday](#blackfriday), [BoxingDay](#boxingday), [Carnival](#carnival), [ChineseNewYear](#chinesenewyear), [Christmas](#christmas), [CyberMonday](#cybermonday), [Diwali](#diwali), [Easter](#easter), [EidAlAdha](#eidaladha), [EidAlFitr](#eidalfitr), [EndOfSeason](#endofseason), [Epiphany](#epiphany), [FallSale](#fallsale), [FathersDay](#fathersday), [Halloween](#halloween), [Hanukkah](#hanukkah), [Holi](#holi), [IndependenceDay](#independenceday), [LaborDay](#laborday), [MothersDay](#mothersday), [NationalDay](#nationalday), [Navratri](#navratri), [NewYears](#newyears), [None](#none), [ParentsDay](#parentsday), [Passover](#passover), [Ramadan](#ramadan), [RoshHashanah](#roshhashanah), [SinglesDay](#singlesday), [Songkran](#songkran), [SpringSale](#springsale), [StNicholasDay](#stnicholasday), [SummerSale](#summersale), [Unknown](#unknown), [ValentinesDay](#valentinesday), [WinterSale](#wintersale), [WomensDay](#womensday), [YearEndGift](#yearendgift).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="backtoschool"></a>BackToSchool|The "Back to School" promotion can run anytime according to your ad extension scheduling.|

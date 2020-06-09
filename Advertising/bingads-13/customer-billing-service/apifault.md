@@ -24,6 +24,8 @@ Defines a fault object that operations return when web service-specific errors o
 
 ## <a name="elements"></a>Elements
 
+The [ApiFault](apifault.md) object has the following elements: [OperationErrors](#operationerrors).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="operationerrors"></a>OperationErrors|An array of OperationError objects that contains the reasons that explain why the service operation failed when the error is not related to a specific item in the batch of items.|[OperationError](operationerror.md) array|
@@ -33,7 +35,7 @@ The [ApiFault](apifault.md) object has [Inherited Elements](#inheritedelements).
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsapplicationfault"></a>Inherited Elements from ApplicationFault
-The [ApiFault](apifault.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements. The descriptions below are specific to [ApiFault](apifault.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
+The [ApiFault](apifault.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements: [TrackingId](#trackingid). The descriptions below are specific to [ApiFault](apifault.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

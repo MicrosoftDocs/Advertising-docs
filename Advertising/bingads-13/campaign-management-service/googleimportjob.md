@@ -32,6 +32,8 @@ You can [add](addimportjobs.md) and [delete](deleteimportjobs.md) scheduled impo
 
 ## <a name="elements"></a>Elements
 
+The [GoogleImportJob](googleimportjob.md) object has the following elements: [CampaignAdGroupIds](#campaignadgroupids), [CredentialId](#credentialid), [GoogleAccountId](#googleaccountid), [GoogleUserName](#googleusername).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaignadgroupids"></a>CampaignAdGroupIds|The list of campaigns and their ad groups to import from Google Ads.<br/><br/>The identifiers are saved but not validated when you create an import job. If you include invalid campaign or ad group IDs, or if they become invalid e.g., later deleted from Google Ads, the invalid entities will be skipped during import.<br/><br/>**Add:** Optional. If this element is not set, and also depending on the [import options](#importoption) that you set, then all of the campaigns and ad groups in the [Google Ads account](#googleaccountid) are eligible for import.|[CampaignAdGroupIds](campaignadgroupids.md) array|
@@ -44,7 +46,7 @@ The [GoogleImportJob](googleimportjob.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsimportjob"></a>Inherited Elements from ImportJob
-The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements. The descriptions below are specific to [GoogleImportJob](googleimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
+The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [GoogleImportJob](googleimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

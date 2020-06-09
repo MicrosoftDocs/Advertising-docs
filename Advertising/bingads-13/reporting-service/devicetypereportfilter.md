@@ -27,6 +27,8 @@ Defines the device type values that you can use to filter the report data. These
 
 ## <a name="values"></a>Values
 
+The [DeviceTypeReportFilter](devicetypereportfilter.md) value set has the following values: [Computer](#computer), [NonSmartPhone](#nonsmartphone), [SmartPhone](#smartphone), [Tablet](#tablet).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="computer"></a>Computer|The report will include text ads displayed on computers.|

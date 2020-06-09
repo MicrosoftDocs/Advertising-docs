@@ -25,6 +25,8 @@ Do not try to instantiate a *Media*. You can create the following object that de
 
 ## <a name="elements"></a>Elements
 
+The [Media](media.md) object has the following elements: [Id](#id), [MediaType](#mediatype), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the media.<br/><br/>**Add:** Read-only|**long**|

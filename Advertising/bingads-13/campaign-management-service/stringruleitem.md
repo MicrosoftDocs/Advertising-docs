@@ -26,6 +26,8 @@ Defines a rule expression that depends on the string values of the Url or Referr
 
 ## <a name="elements"></a>Elements
 
+The [StringRuleItem](stringruleitem.md) object has the following elements: [Operand](#operand), [Operator](#operator), [Value](#value).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="operand"></a>Operand|The rule operand or key on the left hand side of the operator. <br/><br/>Supported values are *Url* and *ReferrerUrl*.<br/><br/>For example to define a rule where the page Url must contain *page.html*, set the *Operand* to *Url*, *Operator* to *Contains*, and *Value* to *page.html*.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -37,7 +39,7 @@ The [StringRuleItem](stringruleitem.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsruleitem"></a>Inherited Elements from RuleItem
-The [StringRuleItem](stringruleitem.md) object derives from the [RuleItem](ruleitem.md) object, and inherits the following elements. The descriptions below are specific to [StringRuleItem](stringruleitem.md), and might not apply to other objects that inherit the same elements from the [RuleItem](ruleitem.md) object.  
+The [StringRuleItem](stringruleitem.md) object derives from the [RuleItem](ruleitem.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [StringRuleItem](stringruleitem.md), and might not apply to other objects that inherit the same elements from the [RuleItem](ruleitem.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

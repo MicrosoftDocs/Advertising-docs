@@ -21,6 +21,8 @@ Identifies a campaign and the list of its ad groups to include within the operat
 
 ## <a name="elements"></a>Elements
 
+The [CampaignAdGroupIds](campaignadgroupids.md) object has the following elements: [AdGroupIds](#adgroupids), [CampaignId](#campaignid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupids"></a>AdGroupIds|Identifies the list a campaign's ad groups to include within the operation scope.<br/><br/>If this element is nil or empty, include all ad groups of the campaign.|**long** array|

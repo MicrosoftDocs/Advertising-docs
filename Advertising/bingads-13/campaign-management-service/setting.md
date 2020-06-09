@@ -29,6 +29,8 @@ Do not try to instantiate a *Setting*. You can create one or more of the followi
 
 ## <a name="elements"></a>Elements
 
+The [Setting](setting.md) object has the following elements: [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of setting. For more information, see [Remarks](#remarks).|**string**|

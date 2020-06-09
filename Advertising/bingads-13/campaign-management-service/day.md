@@ -26,6 +26,8 @@ Defines the day values that you can specify for day and time criterion.
 
 ## <a name="values"></a>Values
 
+The [Day](day.md) value set has the following values: [Friday](#friday), [Monday](#monday), [Saturday](#saturday), [Sunday](#sunday), [Thursday](#thursday), [Tuesday](#tuesday), [Wednesday](#wednesday).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="friday"></a>Friday|The day is Friday.|

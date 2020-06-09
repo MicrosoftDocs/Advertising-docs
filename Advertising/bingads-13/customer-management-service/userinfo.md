@@ -21,6 +21,8 @@ Defines a user identification object that contains information that identifies a
 
 ## <a name="elements"></a>Elements
 
+The [UserInfo](userinfo.md) object has the following elements: [Id](#id), [UserName](#username).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system generated identifier of the user.|**long**|
