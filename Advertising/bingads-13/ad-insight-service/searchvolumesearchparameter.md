@@ -27,6 +27,8 @@ If you do not include the search volume search parameter when calling [GetKeywor
 
 ## <a name="elements"></a>Elements
 
+The [SearchVolumeSearchParameter](searchvolumesearchparameter.md) object has the following elements: [Maximum](#maximum), [Minimum](#minimum).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maximum"></a>Maximum|The maximum search volume that you want for keyword ideas.|**long**|

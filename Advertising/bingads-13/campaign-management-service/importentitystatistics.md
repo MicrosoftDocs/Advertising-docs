@@ -25,6 +25,8 @@ The statistical import results for an entity type.
 
 ## <a name="elements"></a>Elements
 
+The [ImportEntityStatistics](importentitystatistics.md) object has the following elements: [Additions](#additions), [Changes](#changes), [Deletions](#deletions), [EntityType](#entitytype), [Errors](#errors), [Total](#total).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="additions"></a>Additions|The count of items added during import of the [entity type](#entitytype).|**int**|

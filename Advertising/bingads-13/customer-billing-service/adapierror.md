@@ -23,6 +23,8 @@ Defines an error object that contains the details that explain why the service o
 
 ## <a name="elements"></a>Elements
 
+The [AdApiError](adapierror.md) object has the following elements: [Code](#code), [Detail](#detail), [ErrorCode](#errorcode), [Message](#message).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="code"></a>Code|A numeric error code that identifies the error.|**int**|

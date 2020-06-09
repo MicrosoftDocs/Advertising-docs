@@ -21,6 +21,8 @@ Defines the possible status values of an ad extension.
 
 ## <a name="values"></a>Values
 
+The [AdExtensionStatus](adextensionstatus.md) value set has the following values: [Active](#active), [Deleted](#deleted).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The ad extension is active. You can associate an active ad extension with a campaign or ad group.|

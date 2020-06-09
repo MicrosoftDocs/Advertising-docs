@@ -21,6 +21,8 @@ Defines an object that contains the keyword and percentage of users by age and g
 
 ## <a name="elements"></a>Elements
 
+The [KeywordDemographicResult](keyworddemographicresult.md) object has the following elements: [Keyword](#keyword), [KeywordDemographics](#keyworddemographics).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword.|**string**|

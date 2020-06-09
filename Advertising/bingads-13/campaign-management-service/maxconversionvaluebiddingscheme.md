@@ -24,6 +24,8 @@ Reserved for future use.
 
 ## <a name="elements"></a>Elements
 
+The [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object has the following elements: [TargetRoas](#targetroas).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="targetroas"></a>TargetRoas|Reserved for future use.|**double**|
@@ -33,7 +35,7 @@ The [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsbiddingscheme"></a>Inherited Elements from BiddingScheme
-The [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements. The descriptions below are specific to [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
+The [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object derives from the [BiddingScheme](biddingscheme.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md), and might not apply to other objects that inherit the same elements from the [BiddingScheme](biddingscheme.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

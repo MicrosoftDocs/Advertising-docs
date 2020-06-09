@@ -26,6 +26,8 @@ If you do not include the language search parameter when calling [GetKeywordIdea
 
 ## <a name="elements"></a>Elements
 
+The [LanguageSearchParameter](languagesearchparameter.md) object has the following elements: [Languages](#languages).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="languages"></a>Languages|The language criterion list for the returned keyword ideas.|[LanguageCriterion](languagecriterion.md) array|

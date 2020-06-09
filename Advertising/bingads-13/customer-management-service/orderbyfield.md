@@ -23,6 +23,8 @@ Defines the field order of entities returned using one of the search operations,
 
 ## <a name="values"></a>Values
 
+The [OrderByField](orderbyfield.md) value set has the following values: [Id](#id), [LifeCycleStatus](#lifecyclestatus), [Name](#name), [Number](#number).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="id"></a>Id|The order is determined by a predicate identifier.|

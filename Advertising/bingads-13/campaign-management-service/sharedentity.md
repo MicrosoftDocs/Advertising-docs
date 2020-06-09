@@ -30,6 +30,8 @@ The [NegativeKeywordList](negativekeywordlist.md) and [PlacementExclusionList](p
 
 ## <a name="elements"></a>Elements
 
+The [SharedEntity](sharedentity.md) object has the following elements: [AssociationCount](#associationcount), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Name](#name), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="associationcount"></a>AssociationCount|The number of active associations between this shared entity and another entity such as campaign or ad account.<br/><br/>For a [NegativeKeywordList](negativekeywordlist.md), the maximum number of active associations between the negative keyword list and campaign is 20. For a [PlacementExclusionList](placementexclusionlist.md), the maximum number of active associations between the website exclusion list and ad account is undefined.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|

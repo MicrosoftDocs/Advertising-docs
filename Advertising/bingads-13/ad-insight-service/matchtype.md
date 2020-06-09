@@ -23,6 +23,8 @@ Defines the possible keyword match type values.
 
 ## <a name="values"></a>Values
 
+The [MatchType](matchtype.md) value set has the following values: [Aggregate](#aggregate), [Broad](#broad), [Exact](#exact), [Phrase](#phrase).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="aggregate"></a>Aggregate|Aggregates the data across all match types.|

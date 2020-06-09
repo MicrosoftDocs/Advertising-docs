@@ -73,6 +73,8 @@ Defines the ad type values that you can use to filter the report data. These val
 
 ## <a name="values"></a>Values
 
+The [AdTypeReportFilter](adtypereportfilter.md) value set has the following values: [AppInstall](#appinstall), [DynamicSearchAd](#dynamicsearchad), [ExpandedText](#expandedtext), [Local](#local), [Product](#product), [ResponsiveAd](#responsivead), [ResponsiveSearchAd](#responsivesearchad), [Text](#text).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="appinstall"></a>AppInstall|The report will include app install ads.|

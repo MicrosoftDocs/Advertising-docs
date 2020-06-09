@@ -23,6 +23,8 @@ For ad groups with more than one ad, these options determine how the ads are rot
 
 ## <a name="values"></a>Values
 
+The [AdRotationType](adrotationtype.md) value set has the following values: [OptimizeForClicks](#optimizeforclicks), [RotateAdsEvenly](#rotateadsevenly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="optimizeforclicks"></a>OptimizeForClicks|Microsoft Advertising prioritizes the ad from the ad group that appears to have the best chance of performing well, based on auction characteristics or factors, such as keyword, search term, device or location. Better-performing ads will show more frequently, and others will be served less often, if at all.<br/><br/>This is the default.|

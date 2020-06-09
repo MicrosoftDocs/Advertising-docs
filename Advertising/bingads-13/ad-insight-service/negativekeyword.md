@@ -22,6 +22,8 @@ Defines a negative keyword with match type.
 
 ## <a name="elements"></a>Elements
 
+The [NegativeKeyword](negativekeyword.md) object has the following elements: [Id](#id), [MatchType](#matchtype), [Text](#text).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The Microsoft Advertising identifier of the negative keyword.|**long**|

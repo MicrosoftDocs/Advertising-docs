@@ -30,6 +30,8 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 
 ## <a name="elements"></a>Elements
 
+The [KeyValuePairOfstringstring](keyvaluepairofstringstring.md) object has the following elements: [key](#key), [value](#value).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="key"></a>key|The name of the setting.|**string**|

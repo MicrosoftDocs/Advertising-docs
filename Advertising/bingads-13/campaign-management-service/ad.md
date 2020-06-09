@@ -41,6 +41,8 @@ Do not try to instantiate an *Ad*. You can create one or more of the following o
 
 ## <a name="elements"></a>Elements
 
+The [Ad](ad.md) object has the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adformatpreference"></a>AdFormatPreference|The Ad Format Preference is used to indicate whether or not you prefer the ad copy to be shown to users as a search or audience ad. Search ads tend to be written as a call to action, whereas audience ads should be written in more of an informational style. While you have the option to use search ads as audience ads, designating an ad as Audience ads preferred format allows you to optimize its messaging for native delivery.<br/><br/>Possible values are *AudienceAd* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *AudienceAd*, the ad will only be eligible for the audience ad format.<br/><br/>Ad Format Preference is only supported for [ExpandedTextAd](expandedtextad.md) and [TextAd](textad.md) objects.|**string**|

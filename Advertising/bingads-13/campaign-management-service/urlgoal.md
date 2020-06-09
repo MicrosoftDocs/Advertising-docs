@@ -31,6 +31,8 @@ Defines a URL conversion goal. Use this type of goal to count every time someone
 
 ## <a name="elements"></a>Elements
 
+The [UrlGoal](urlgoal.md) object has the following elements: [UrlExpression](#urlexpression), [UrlOperator](#urloperator).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="urlexpression"></a>UrlExpression|The expression used to determine the page or pages the user has to visit in order to count as a conversion. <br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
@@ -41,7 +43,7 @@ The [UrlGoal](urlgoal.md) object has [Inherited Elements](#inheritedelements).
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsconversiongoal"></a>Inherited Elements from ConversionGoal
-The [UrlGoal](urlgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements. The descriptions below are specific to [UrlGoal](urlgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
+The [UrlGoal](urlgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements: [ConversionWindowInMinutes](#conversionwindowinminutes), [CountType](#counttype), [ExcludeFromBidding](#excludefrombidding), [Id](#id), [Name](#name), [Revenue](#revenue), [Scope](#scope), [Status](#status), [TagId](#tagid), [TrackingStatus](#trackingstatus), [Type](#type), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes). The descriptions below are specific to [UrlGoal](urlgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

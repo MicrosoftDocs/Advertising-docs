@@ -25,6 +25,8 @@ Defines the criteria to use to filter the product partition  performance report 
 
 ## <a name="elements"></a>Elements
 
+The [ProductPartitionUnitPerformanceReportFilter](productpartitionunitperformancereportfilter.md) object has the following elements: [AccountStatus](#accountstatus), [AdGroupStatus](#adgroupstatus), [AdStatus](#adstatus), [CampaignStatus](#campaignstatus), [DeviceType](#devicetype), [Language](#language).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountstatus"></a>AccountStatus|The report will include data for only the account status. For example, you can use the filter to include data for only active accounts.<br/><br/>You can specify one or more account statuses.|[AccountStatusReportFilter](accountstatusreportfilter.md)|

@@ -23,6 +23,8 @@ Defines an object that you can use to determine the component of an ad or keywor
 
 ## <a name="elements"></a>Elements
 
+The [EditorialReason](editorialreason.md) object has the following elements: [Location](#location), [PublisherCountries](#publishercountries), [ReasonCode](#reasoncode), [Term](#term).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="location"></a>Location|The component of the ad or keyword that failed editorial review.|**string**|

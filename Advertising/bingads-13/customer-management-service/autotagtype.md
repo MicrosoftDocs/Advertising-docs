@@ -24,6 +24,8 @@ Microsoft Advertising can automatically add UTM tags to your destination URL so 
 
 ## <a name="values"></a>Values
 
+The [AutoTagType](autotagtype.md) value set has the following values: [Inactive](#inactive), [Preserve](#preserve), [Replace](#replace).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="inactive"></a>Inactive|Microsoft Advertising will not append any UTM tracking codes to your ad or keyword final URL.|

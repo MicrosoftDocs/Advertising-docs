@@ -52,6 +52,8 @@ Defines the campaign status values that you can use to filter the report data. T
 
 ## <a name="values"></a>Values
 
+The [CampaignStatusReportFilter](campaignstatusreportfilter.md) value set has the following values: [Active](#active), [BudgetPaused](#budgetpaused), [Deleted](#deleted), [Paused](#paused), [Suspended](#suspended).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The report will contain campaigns that are active.|

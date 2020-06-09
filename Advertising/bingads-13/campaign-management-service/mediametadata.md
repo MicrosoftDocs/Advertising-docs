@@ -23,6 +23,8 @@ Defines a media meta data object. The meta data includes download Urls for one o
 
 ## <a name="elements"></a>Elements
 
+The [MediaMetaData](mediametadata.md) object has the following elements: [Id](#id), [MediaType](#mediatype), [Representations](#representations), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system identifier of the media meta data.|**long**|

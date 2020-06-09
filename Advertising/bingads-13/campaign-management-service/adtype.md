@@ -27,6 +27,8 @@ Defines the type of ad.
 
 ## <a name="values"></a>Values
 
+The [AdType](adtype.md) value set has the following values: [AppInstall](#appinstall), [DynamicSearch](#dynamicsearch), [ExpandedText](#expandedtext), [Image](#image), [Product](#product), [ResponsiveAd](#responsivead), [ResponsiveSearch](#responsivesearch), [Text](#text).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="appinstall"></a>AppInstall|Refers to an [AppInstallAd](appinstallad.md).|

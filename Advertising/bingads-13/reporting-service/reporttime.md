@@ -23,6 +23,8 @@ Defines the date range values of a report request.
 
 ## <a name="elements"></a>Elements
 
+The [ReportTime](reporttime.md) object has the following elements: [CustomDateRangeEnd](#customdaterangeend), [CustomDateRangeStart](#customdaterangestart), [PredefinedTime](#predefinedtime), [ReportTimeZone](#reporttimezone).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customdaterangeend"></a>CustomDateRangeEnd|The end date of the custom date range. The end date cannot be later than today's date.|[Date](date.md)|

@@ -26,6 +26,8 @@ Defines the scope or types of data to download.
 
 ## <a name="values"></a>Values
 
+The [DataScope](datascope.md) value set has the following values: [BidSuggestionsData](#bidsuggestionsdata), [EntityData](#entitydata), [QualityScoreData](#qualityscoredata).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="bidsuggestionsdata"></a>BidSuggestionsData|Download the keyword bid suggestion records.|

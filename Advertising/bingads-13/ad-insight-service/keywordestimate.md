@@ -25,6 +25,8 @@ A suggested keyword with minimum and maximum traffic estimates. Traffic estimate
 
 ## <a name="elements"></a>Elements
 
+The [KeywordEstimate](keywordestimate.md) object has the following elements: [Keyword](#keyword), [Maximum](#maximum), [Minimum](#minimum).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The suggested keyword.|[Keyword](keyword.md)|

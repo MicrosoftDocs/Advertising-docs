@@ -30,6 +30,8 @@ Defines an object that associates a campaign to negative keyword list, or an ad 
 
 ## <a name="elements"></a>Elements
 
+The [SharedEntityAssociation](sharedentityassociation.md) object has the following elements: [EntityId](#entityid), [EntityType](#entitytype), [SharedEntityCustomerId](#sharedentitycustomerid), [SharedEntityId](#sharedentityid), [SharedEntityType](#sharedentitytype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The identifier of the campaign or ad account (according to [EntityType](#entitytype)) that is associated with the shared entity.|**long**|

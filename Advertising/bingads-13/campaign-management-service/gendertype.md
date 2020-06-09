@@ -22,6 +22,8 @@ Defines the genders that are available for gender criterion.
 
 ## <a name="values"></a>Values
 
+The [GenderType](gendertype.md) value set has the following values: [Female](#female), [Male](#male), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="female"></a>Female|The gender is identified as female.|

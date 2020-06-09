@@ -26,6 +26,8 @@ Defines the types of changes to entities by which you can filter the report data
 
 ## <a name="values"></a>Values
 
+The [ChangeTypeReportFilter](changetypereportfilter.md) value set has the following values: [Added](#added), [Changed](#changed), [Deleted](#deleted).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="added"></a>Added|The report will include data for entities that have been added.|

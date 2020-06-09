@@ -24,6 +24,8 @@ For more information about networks and ad distribution, see the [About Ad Distr
 
 ## <a name="values"></a>Values
 
+The [Network](network.md) value set has the following values: [InHousePromotion](#inhousepromotion), [OwnedAndOperatedAndSyndicatedSearch](#ownedandoperatedandsyndicatedsearch), [OwnedAndOperatedOnly](#ownedandoperatedonly), [SyndicatedSearchOnly](#syndicatedsearchonly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="inhousepromotion"></a>InHousePromotion|Reserved for future use.|

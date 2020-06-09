@@ -33,6 +33,8 @@ Defines an object that contains the estimated search results position and estima
 
 ## <a name="elements"></a>Elements
 
+The [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) object has the following elements: [AverageCPC](#averagecpc), [CTR](#ctr), [CurrencyCode](#currencycode), [EstimatedAdPosition](#estimatedadposition), [MatchType](#matchtype), [MaxClicksPerWeek](#maxclicksperweek), [MaxImpressionsPerWeek](#maximpressionsperweek), [MaxTotalCostPerWeek](#maxtotalcostperweek), [MinClicksPerWeek](#minclicksperweek), [MinImpressionsPerWeek](#minimpressionsperweek), [MinTotalCostPerWeek](#mintotalcostperweek).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="averagecpc"></a>AverageCPC|The estimated average CPC.<br/><br/>The formula used to calculate the average CPC is (maximum total cost / maximum number of clicks).|**double**|

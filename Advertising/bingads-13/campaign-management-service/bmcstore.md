@@ -27,6 +27,8 @@ Elements of this object are defined in the Microsoft Merchant Center store, and 
 
 ## <a name="elements"></a>Elements
 
+The [BMCStore](bmcstore.md) object has the following elements: [HasCatalog](#hascatalog), [Id](#id), [IsActive](#isactive), [IsProductAdsEnabled](#isproductadsenabled), [Name](#name), [SubType](#subtype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="hascatalog"></a>HasCatalog|Value will be true if the store has a catalog of items, and otherwise the value is false.|**boolean**|

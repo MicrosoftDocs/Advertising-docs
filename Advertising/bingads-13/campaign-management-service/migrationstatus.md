@@ -23,6 +23,8 @@ Defines the possible migration status values.
 
 ## <a name="values"></a>Values
 
+The [MigrationStatus](migrationstatus.md) value set has the following values: [Completed](#completed), [InProgress](#inprogress), [NotInPilot](#notinpilot), [NotStarted](#notstarted).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="completed"></a>Completed|The migration is complete, or migration is not needed because the account was created after all of the customer's other accounts were added to the pilot queue for the corresponding migration type.|

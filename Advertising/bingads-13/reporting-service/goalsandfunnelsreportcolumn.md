@@ -48,6 +48,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [GoalsAndFunnelsReportColumn](goalsandfunnelsreportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AllConversions](#allconversions), [AllRevenue](#allrevenue), [Assists](#assists), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalId](#goalid), [GoalType](#goaltype), [Keyword](#keyword), [KeywordId](#keywordid), [KeywordStatus](#keywordstatus), [TimePeriod](#timeperiod), [ViewThroughConversions](#viewthroughconversions).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

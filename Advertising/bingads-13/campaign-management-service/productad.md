@@ -24,6 +24,8 @@ Defines a product ad. A product ad is not used directly for delivered ad copy.  
 
 ## <a name="elements"></a>Elements
 
+The [ProductAd](productad.md) object has the following elements: [PromotionalText](#promotionaltext).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="promotionaltext"></a>PromotionalText|This property is reserved for internal use and will be removed from a future version of the API.<br/><br/>You can use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
@@ -33,7 +35,7 @@ The [ProductAd](productad.md) object has [Inherited Elements](#inheritedelements
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsad"></a>Inherited Elements from Ad
-The [ProductAd](productad.md) object derives from the [Ad](ad.md) object, and inherits the following elements. The descriptions below are specific to [ProductAd](productad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
+The [ProductAd](productad.md) object derives from the [Ad](ad.md) object, and inherits the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters). The descriptions below are specific to [ProductAd](productad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

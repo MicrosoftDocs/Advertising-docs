@@ -24,6 +24,8 @@ Contains the association count for the corresponding usage type.
 
 ## <a name="elements"></a>Elements
 
+The [CustomerAccountShareAssociation](customeraccountshareassociation.md) object has the following elements: [AssociationCount](#associationcount), [UsageType](#usagetype).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="associationcount"></a>AssociationCount|The association count for the corresponding usage type.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|

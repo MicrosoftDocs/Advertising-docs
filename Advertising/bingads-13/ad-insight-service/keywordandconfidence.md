@@ -21,6 +21,8 @@ Defines an object that contains a suggested keyword and a confidence score. The 
 
 ## <a name="elements"></a>Elements
 
+The [KeywordAndConfidence](keywordandconfidence.md) object has the following elements: [ConfidenceScore](#confidencescore), [SuggestedKeyword](#suggestedkeyword).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user's search query.|**double**|

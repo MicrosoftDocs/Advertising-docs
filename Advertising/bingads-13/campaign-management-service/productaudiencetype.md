@@ -28,6 +28,8 @@ Defines the possible types of product audiences.
 
 ## <a name="values"></a>Values
 
+The [ProductAudienceType](productaudiencetype.md) value set has the following values: [GeneralVisitors](#generalvisitors), [PastBuyers](#pastbuyers), [ProductSearchers](#productsearchers), [ProductViewers](#productviewers), [ShoppingCartAbandoners](#shoppingcartabandoners).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="generalvisitors"></a>GeneralVisitors|The audience includes general visitors.|

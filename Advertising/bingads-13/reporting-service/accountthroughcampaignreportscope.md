@@ -21,6 +21,8 @@ Defines the set of accounts and campaigns to include in the report.
 
 ## <a name="elements"></a>Elements
 
+The [AccountThroughCampaignReportScope](accountthroughcampaignreportscope.md) object has the following elements: [AccountIds](#accountids), [Campaigns](#campaigns).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.<br/><br/>The report scope includes a union of the [AccountIds](#accountids) and [Campaigns](#campaigns) elements. You must include at least one of these elements.|**long** array|

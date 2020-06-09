@@ -39,6 +39,8 @@ Do not try to instantiate an *AdExtension*. You can create one or more of the fo
 
 ## <a name="elements"></a>Elements
 
+The [AdExtension](adextension.md) object has the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="devicepreference"></a>DevicePreference|This element determines whether the preference is for the ad extension to be displayed on mobile devices or all devices.<br/><br/>To specify a preference for mobile devices, set this element to *30001*.<br/><br/>To specify all devices, set this element to *0* (zero) or leave the element nil. By default, this element will be nil.<br/><br/>This element is only applicable for the [AppAdExtension](appadextension.md) and [SitelinkAdExtension](sitelinkadextension.md) types.|**long**|

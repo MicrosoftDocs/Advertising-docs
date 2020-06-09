@@ -61,6 +61,8 @@ Defines the possible auction segment values.
 
 ## <a name="values"></a>Values
 
+The [AuctionSegment](auctionsegment.md) value set has the following values: [Day](#day), [DayOfWeek](#dayofweek), [Device](#device), [Month](#month), [Quarter](#quarter), [Week](#week).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="day"></a>Day|The auction insight data is segmented by day.|

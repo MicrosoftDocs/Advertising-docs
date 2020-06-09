@@ -33,6 +33,8 @@ Defines a text ad.
 
 ## <a name="elements"></a>Elements
 
+The [TextAd](textad.md) object has the following elements: [DestinationUrl](#destinationurl), [DisplayUrl](#displayurl), [Text](#text), [Title](#title).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="destinationurl"></a>DestinationUrl|The URL of the webpage to take the user to when they click the ad.<br/><br/>The URL can contain dynamic parameters such as {MatchType}.<br/><br/>For a list of supported parameters, see the Microsoft Advertising help article [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2).<br/><br/>The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.<br/><br/>**Important:** If you are currently using Destination URLs, you must replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).<br/><br/>This URL is used only if the keyword does not specify a destination URL.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**string**|
@@ -45,7 +47,7 @@ The [TextAd](textad.md) object has [Inherited Elements](#inheritedelements).
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsad"></a>Inherited Elements from Ad
-The [TextAd](textad.md) object derives from the [Ad](ad.md) object, and inherits the following elements. The descriptions below are specific to [TextAd](textad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
+The [TextAd](textad.md) object derives from the [Ad](ad.md) object, and inherits the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters). The descriptions below are specific to [TextAd](textad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

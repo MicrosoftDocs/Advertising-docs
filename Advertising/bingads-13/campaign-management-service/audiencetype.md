@@ -29,6 +29,8 @@ Defines the possible audience types.
 
 ## <a name="values"></a>Values
 
+The [AudienceType](audiencetype.md) value set has the following values: [CombinedList](#combinedlist), [Custom](#custom), [InMarket](#inmarket), [Product](#product), [RemarketingList](#remarketinglist), [SimilarRemarketingList](#similarremarketinglist).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="combinedlist"></a>CombinedList|The audience is a combined list.|

@@ -32,6 +32,8 @@ Defines the supported set of logical operators for combined list audiences.
 
 ## <a name="values"></a>Values
 
+The [LogicalOperator](logicaloperator.md) value set has the following values: [And](#and), [Not](#not), [Or](#or).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="and"></a>And|Include only customers who are in every single one of these audience lists.|

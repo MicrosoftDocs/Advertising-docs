@@ -23,6 +23,8 @@ You can use campaign level production conditions with both Shopping campaigns an
 
 ## <a name="elements"></a>Elements
 
+The [ProductCondition](productcondition.md) object has the following elements: [Attribute](#attribute), [Operand](#operand).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="attribute"></a>Attribute|The condition's attribute value.<br/><br/>An attribute's value must exactly match the value specified in the customer's Microsoft Merchant Center catalog file.<br/><br/>The available *Attribute* and *Operand* values vary depending on the campaign type. For supported attribute and operand values, see [Remarks](#remarks) below.<br/><br/>**Add or Apply:** Required<br/>**Update:** Optional|**string**|

@@ -24,6 +24,8 @@ The keyword category search parameter that you can use as a seed for new keyword
 
 ## <a name="elements"></a>Elements
 
+The [CategorySearchParameter](categorysearchparameter.md) object has the following elements: [CategoryId](#categoryid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="categoryid"></a>CategoryId|The Microsoft Advertising identifier for the keyword category.<br/><br/>To get a list of keyword category identifiers, use the [GetKeywordIdeaCategories](getkeywordideacategories.md) service operation.|**long**|

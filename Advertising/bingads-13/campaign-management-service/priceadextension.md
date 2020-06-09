@@ -31,6 +31,8 @@ You can associate a price ad extension with the account or with campaigns and ad
 
 ## <a name="elements"></a>Elements
 
+The [PriceAdExtension](priceadextension.md) object has the following elements: [FinalUrlSuffix](#finalurlsuffix), [Language](#language), [PriceExtensionType](#priceextensiontype), [TableRows](#tablerows), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="finalurlsuffix"></a>FinalUrlSuffix|The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides.<br/><br/>This feature is only available for customers in the Final URL Suffix Phase 3 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 636). If you are not in the pilot this property will be ignored and no error will be returned.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
@@ -45,7 +47,7 @@ The [PriceAdExtension](priceadextension.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [PriceAdExtension](priceadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [PriceAdExtension](priceadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [PriceAdExtension](priceadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [PriceAdExtension](priceadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

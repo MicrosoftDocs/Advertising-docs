@@ -21,6 +21,8 @@ Defines the possible budget types that you can specify for a campaign.
 
 ## <a name="values"></a>Values
 
+The [BudgetLimitType](budgetlimittype.md) value set has the following values: [DailyBudgetAccelerated](#dailybudgetaccelerated), [DailyBudgetStandard](#dailybudgetstandard).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="dailybudgetaccelerated"></a>DailyBudgetAccelerated|A daily budget that is spent until it is depleted. Depending on the activity, the complete budget could be spent within a couple of minutes, hours, or not at all.<br/><br/>The daily spend will not exceed the daily budget limit and the accumulated daily spend will not exceed the calculated monthly budget limit.<br/><br/>To specify an accelerated daily budget, set the [BudgetType](campaign.md#budgettype) element of the [Campaign](campaign.md) object to DailyBudgetAccelerated and set the [DailyBudget](campaign.md#dailybudget) element to the amount that you want to spend daily on the campaign.<br/><br/>This budget type is only available for Audience campaigns that use unshared campaign-level budgets.|

@@ -27,6 +27,8 @@ Do not instantiate this object. Instead, you may instantiate one of the report r
 
 ## <a name="elements"></a>Elements
 
+The [ReportRequest](reportrequest.md) object has the following elements: [ExcludeColumnHeaders](#excludecolumnheaders), [ExcludeReportFooter](#excludereportfooter), [ExcludeReportHeader](#excludereportheader), [Format](#format), [ReportName](#reportname), [ReturnOnlyCompleteData](#returnonlycompletedata).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="excludecolumnheaders"></a>ExcludeColumnHeaders|Determines whether or not the downloaded report should contain header descriptions for each column. The report column header matches the requested column name e.g. *Impressions* and *Clicks*.<br/><br/>Set this property *true* if you want the report column headers excluded from the downloaded report. The default value is *false*.|**boolean**|

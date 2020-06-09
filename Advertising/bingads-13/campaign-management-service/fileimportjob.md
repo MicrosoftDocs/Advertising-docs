@@ -25,6 +25,8 @@ Reserved for future use.
 
 ## <a name="elements"></a>Elements
 
+The [FileImportJob](fileimportjob.md) object has the following elements: [FileSource](#filesource), [FileUrl](#fileurl).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="filesource"></a>FileSource|Reserved for future use.|**string**|
@@ -35,7 +37,7 @@ The [FileImportJob](fileimportjob.md) object has [Inherited Elements](#inherited
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsimportjob"></a>Inherited Elements from ImportJob
-The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements. The descriptions below are specific to [FileImportJob](fileimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
+The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [FileImportJob](fileimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -49,7 +51,7 @@ The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](import
 |<a name="name"></a>Name|The name of the import job|**string**|
 |<a name="notificationtype"></a>NotificationType|Determines whether and how often you want to receive email notifications about the import job results.|**string**|
 |<a name="status"></a>Status|The status of the import job.|**string**|
-|<a name="type"></a>Type|The type of the import job.<br/><br/>This value is *FileImportJob* when you retrieve a File import job.<br/><br/>**Add:** Read-only<br/><br/>For more information about import job types, see the [ImportJob Data Object Remarks](importjob.md#remarks).|**string**|
+|<a name="type"></a>Type|The type of the import job.<br/><br/>This value is *FileImportJob* when you retrieve a File import job.<br/><br/>For more information about import job types, see the [ImportJob Data Object Remarks](importjob.md#remarks).|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

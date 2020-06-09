@@ -23,6 +23,8 @@ Defines the operators that can be applied to expressions within a conversion goa
 
 ## <a name="values"></a>Values
 
+The [ExpressionOperator](expressionoperator.md) value set has the following values: [BeginsWith](#beginswith), [Contains](#contains), [Equals](#equals), [RegularExpression](#regularexpression).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="beginswith"></a>BeginsWith|The property should begin with the corresponding fixed string expression.|

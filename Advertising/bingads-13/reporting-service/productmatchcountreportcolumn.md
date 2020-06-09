@@ -40,6 +40,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [ProductMatchCountReportColumn](productmatchcountreportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [CampaignId](#campaignid), [CampaignName](#campaignname), [CustomerId](#customerid), [CustomerName](#customername), [MatchedProductsAtAdGroup](#matchedproductsatadgroup), [MatchedProductsAtCampaign](#matchedproductsatcampaign), [MatchedProductsAtProductGroup](#matchedproductsatproductgroup), [PartitionType](#partitiontype), [ProductGroup](#productgroup).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

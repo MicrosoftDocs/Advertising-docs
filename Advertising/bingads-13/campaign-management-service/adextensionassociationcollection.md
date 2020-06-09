@@ -20,6 +20,8 @@ Defines an array of objects that associate an ad extension and its editorial sta
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionAssociationCollection](adextensionassociationcollection.md) object has the following elements: [AdExtensionAssociations](#adextensionassociations).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adextensionassociations"></a>AdExtensionAssociations|An array of objects that associate an ad extension and its editorial status to an account, campaign, or ad group.<br/><br/>**Add:** Required<br/>**Update:** Required|[AdExtensionAssociation](adextensionassociation.md) array|

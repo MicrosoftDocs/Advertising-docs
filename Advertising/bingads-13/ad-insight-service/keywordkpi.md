@@ -28,6 +28,8 @@ Defines a key performance index object for a keyword. The object contains the hi
 
 ## <a name="elements"></a>Elements
 
+The [KeywordKPI](keywordkpi.md) object has the following elements: [AdPosition](#adposition), [AverageBid](#averagebid), [AverageCPC](#averagecpc), [Clicks](#clicks), [CTR](#ctr), [Device](#device), [Impressions](#impressions), [MatchType](#matchtype), [TotalCost](#totalcost).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adposition"></a>AdPosition|The position in the search results in which the ad appeared.|[AdPosition](adposition.md)|

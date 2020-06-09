@@ -28,6 +28,8 @@ Defines the ad status values that you can use to filter the report data. These v
 
 ## <a name="values"></a>Values
 
+The [AdStatusReportFilter](adstatusreportfilter.md) value set has the following values: [Active](#active), [Deleted](#deleted), [Paused](#paused), [Pending](#pending), [Rejected](#rejected).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The report will contain ads that are active.|

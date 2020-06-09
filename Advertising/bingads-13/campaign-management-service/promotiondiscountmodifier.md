@@ -22,6 +22,8 @@ Defines the possible types of promotion discount modifiers.
 
 ## <a name="values"></a>Values
 
+The [PromotionDiscountModifier](promotiondiscountmodifier.md) value set has the following values: [None](#none), [Unknown](#unknown), [UpTo](#upto).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="none"></a>None|The promotion discount is not modified.|

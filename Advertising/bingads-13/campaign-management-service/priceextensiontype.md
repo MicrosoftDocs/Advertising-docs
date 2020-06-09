@@ -29,6 +29,8 @@ Defines the possible types of price ad extensions.
 
 ## <a name="values"></a>Values
 
+The [PriceExtensionType](priceextensiontype.md) value set has the following values: [Brands](#brands), [Events](#events), [Locations](#locations), [Neighborhoods](#neighborhoods), [ProductCategories](#productcategories), [ProductTiers](#producttiers), [ServiceCategories](#servicecategories), [Services](#services), [ServiceTiers](#servicetiers), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="brands"></a>Brands|The header and description of the [PriceAdExtension](priceadextension.md) are related to brands.|

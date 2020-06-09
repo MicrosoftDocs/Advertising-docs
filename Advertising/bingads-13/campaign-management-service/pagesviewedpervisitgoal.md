@@ -30,6 +30,8 @@ Defines a pages viewed per visit conversion goal. Use this type of goal to count
 
 ## <a name="elements"></a>Elements
 
+The [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) object has the following elements: [MinimumPagesViewed](#minimumpagesviewed).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="minimumpagesviewed"></a>MinimumPagesViewed|The minimum number of pages the user must visit, in order to count as a conversion.<br/><br/>**Add:** Required<br/>**Update:** Optional|**int**|
@@ -39,7 +41,7 @@ The [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) object has [Inherited 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsconversiongoal"></a>Inherited Elements from ConversionGoal
-The [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements. The descriptions below are specific to [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
+The [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) object derives from the [ConversionGoal](conversiongoal.md) object, and inherits the following elements: [ConversionWindowInMinutes](#conversionwindowinminutes), [CountType](#counttype), [ExcludeFromBidding](#excludefrombidding), [Id](#id), [Name](#name), [Revenue](#revenue), [Scope](#scope), [Status](#status), [TagId](#tagid), [TrackingStatus](#trackingstatus), [Type](#type), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes). The descriptions below are specific to [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md), and might not apply to other objects that inherit the same elements from the [ConversionGoal](conversiongoal.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

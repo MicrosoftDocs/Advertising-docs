@@ -26,6 +26,8 @@ Contains the status, run time, and statistical results for an import job that ha
 
 ## <a name="elements"></a>Elements
 
+The [ImportResult](importresult.md) object has the following elements: [EntityStatistics](#entitystatistics), [ErrorLogUrl](#errorlogurl), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [ImportJob](#importjob), [StartTimeInUTC](#starttimeinutc), [Status](#status).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entitystatistics"></a>EntityStatistics|The statistical import results for each supported entity type.<br/><br/>For more information, see the [ImportEntityStatistics Remarks](importentitystatistics.md#remarks).|[ImportEntityStatistics](importentitystatistics.md) array|

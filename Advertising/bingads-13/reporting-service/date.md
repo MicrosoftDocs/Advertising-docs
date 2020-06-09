@@ -22,6 +22,8 @@ Defines a calendar date by month, day, and year.
 
 ## <a name="elements"></a>Elements
 
+The [Date](date.md) object has the following elements: [Day](#day), [Month](#month), [Year](#year).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="day"></a>Day|Specifies the day of the month.|**int**|

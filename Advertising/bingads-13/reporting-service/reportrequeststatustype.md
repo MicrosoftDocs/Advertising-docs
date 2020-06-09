@@ -22,6 +22,8 @@ Defines the status of a report.
 
 ## <a name="values"></a>Values
 
+The [ReportRequestStatusType](reportrequeststatustype.md) value set has the following values: [Error](#error), [Pending](#pending), [Success](#success).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="error"></a>Error|An error occurred while generating the report. You will need to submit your report request again. If the request continues to fail, consider getting the tracking identifier from the response message and contacting support.|

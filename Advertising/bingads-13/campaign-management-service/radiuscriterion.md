@@ -41,6 +41,8 @@ Also note that you must consider the location, negative location, and radius cri
 
 ## <a name="elements"></a>Elements
 
+The [RadiusCriterion](radiuscriterion.md) object has the following elements: [LatitudeDegrees](#latitudedegrees), [LongitudeDegrees](#longitudedegrees), [Name](#name), [Radius](#radius), [RadiusUnit](#radiusunit).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="latitudedegrees"></a>LatitudeDegrees|The latitude, in degrees, of the target location.<br/><br/>The latitude must be greater than or equal to -85.0 and less than or equal to +85.0.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|**double**|
@@ -54,7 +56,7 @@ The [RadiusCriterion](radiuscriterion.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementscriterion"></a>Inherited Elements from Criterion
-The [RadiusCriterion](radiuscriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements. The descriptions below are specific to [RadiusCriterion](radiuscriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
+The [RadiusCriterion](radiuscriterion.md) object derives from the [Criterion](criterion.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [RadiusCriterion](radiuscriterion.md), and might not apply to other objects that inherit the same elements from the [Criterion](criterion.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

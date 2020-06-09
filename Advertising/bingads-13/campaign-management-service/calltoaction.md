@@ -42,6 +42,8 @@ Each of the values correspond to a friendly and readable call to action in a res
 
 ## <a name="values"></a>Values
 
+The [CallToAction](calltoaction.md) value set has the following values: [AddToCart](#addtocart), [ApplyNow](#applynow), [BookNow](#booknow), [BookTravel](#booktravel), [Buy](#buy), [BuyNow](#buynow), [ContactUs](#contactus), [Download](#download), [GetQuote](#getquote), [Install](#install), [LearnMore](#learnmore), [NoButton](#nobutton), [OpenLink](#openlink), [OrderNow](#ordernow), [RegisterNow](#registernow), [SeeMore](#seemore), [ShopNow](#shopnow), [SignUp](#signup), [Subscribe](#subscribe), [Unknown](#unknown), [VisitSite](#visitsite).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="addtocart"></a>AddToCart|The corresponding call to action in the ad.|

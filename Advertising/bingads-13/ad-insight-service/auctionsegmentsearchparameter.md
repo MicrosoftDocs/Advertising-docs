@@ -24,6 +24,8 @@ Defines an auction segment search parameter.
 
 ## <a name="elements"></a>Elements
 
+The [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) object has the following elements: [Segment](#segment).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="segment"></a>Segment|Determines how you want the [SegmentedKpis](auctioninsightentry.md#segmentedkpis) data segmented in the result from the [GetAuctionInsightData](getauctioninsightdata.md) operation.<br/><br/>You can request auction insight data segmented by Day, DayOfWeek, Device, Month, Quarter, and Week.|[AuctionSegment](auctionsegment.md)|

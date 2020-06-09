@@ -21,6 +21,8 @@ Defines the possible values that indicate whether all or a subset of an ad group
 
 ## <a name="values"></a>Values
 
+The [AdGroupBidLandscapeType](adgroupbidlandscapetype.md) value set has the following values: [DefaultBidOnly](#defaultbidonly), [Uniform](#uniform).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="defaultbidonly"></a>DefaultBidOnly|Only existing keywords that use the ad group's default bid are used to determine the bid landscape.|

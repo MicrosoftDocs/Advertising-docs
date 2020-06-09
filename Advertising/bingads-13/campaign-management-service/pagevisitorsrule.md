@@ -28,6 +28,8 @@ For a detailed example, see the [Remarks](#remarks) section below.
 
 ## <a name="elements"></a>Elements
 
+The [PageVisitorsRule](pagevisitorsrule.md) object has the following elements: [RuleItemGroups](#ruleitemgroups).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="ruleitemgroups"></a>RuleItemGroups|The list of rule item groups that you want applied to the remarketing list.<br/><br/>The maximum number of rule item groups in this element is 100. The maximum number of rule items per rule item group is 100.<br/><br/>**Add:** Required<br/>**Update:** Required. If you want to keep any of the previous rule item groups, then you must explicitly set them again during update.|[RuleItemGroup](ruleitemgroup.md) array|
@@ -37,7 +39,7 @@ The [PageVisitorsRule](pagevisitorsrule.md) object has [Inherited Elements](#inh
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsremarketingrule"></a>Inherited Elements from RemarketingRule
-The [PageVisitorsRule](pagevisitorsrule.md) object derives from the [RemarketingRule](remarketingrule.md) object, and inherits the following elements. The descriptions below are specific to [PageVisitorsRule](pagevisitorsrule.md), and might not apply to other objects that inherit the same elements from the [RemarketingRule](remarketingrule.md) object.  
+The [PageVisitorsRule](pagevisitorsrule.md) object derives from the [RemarketingRule](remarketingrule.md) object, and inherits the following elements: [Type](#type). The descriptions below are specific to [PageVisitorsRule](pagevisitorsrule.md), and might not apply to other objects that inherit the same elements from the [RemarketingRule](remarketingrule.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -26,6 +26,8 @@ Defines a list of optional campaign properties that you can request when calling
 
 ## <a name="values"></a>Values
 
+The [CampaignAdditionalField](campaignadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [MaxConversionValueBiddingScheme](#maxconversionvaluebiddingscheme), [TargetImpressionShareBiddingScheme](#targetimpressionsharebiddingscheme).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](campaign.md#adscheduleusesearchertimezone) element be included within each returned [Campaign](campaign.md) object.|

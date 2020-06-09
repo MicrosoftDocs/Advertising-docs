@@ -37,6 +37,8 @@ For more information about managing negative keywords and negative keyword lists
 
 ## <a name="elements"></a>Elements
 
+The [NegativeKeyword](negativekeyword.md) object has the following elements: [Id](#id), [MatchType](#matchtype), [Text](#text).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the negative keyword.<br/><br/>**Add:** Read-only<br/>**Delete:** Required|**long**|
@@ -48,7 +50,7 @@ The [NegativeKeyword](negativekeyword.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssharedlistitem"></a>Inherited Elements from SharedListItem
-The [NegativeKeyword](negativekeyword.md) object derives from the [SharedListItem](sharedlistitem.md) object, and inherits the following elements. The descriptions below are specific to [NegativeKeyword](negativekeyword.md), and might not apply to other objects that inherit the same elements from the [SharedListItem](sharedlistitem.md) object.  
+The [NegativeKeyword](negativekeyword.md) object derives from the [SharedListItem](sharedlistitem.md) object, and inherits the following elements: [ForwardCompatibilityMap](#forwardcompatibilitymap), [Type](#type). The descriptions below are specific to [NegativeKeyword](negativekeyword.md), and might not apply to other objects that inherit the same elements from the [SharedListItem](sharedlistitem.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

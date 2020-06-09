@@ -21,6 +21,8 @@ Defines the ascending or descending sort order of values within the specified re
 
 ## <a name="values"></a>Values
 
+The [SortOrder](sortorder.md) value set has the following values: [Ascending](#ascending), [Descending](#descending).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="ascending"></a>Ascending|The results will be sorted ascending.|

@@ -22,6 +22,8 @@ Defines an object that contains a set of negative keywords that are only associa
 
 ## <a name="elements"></a>Elements
 
+The [EntityNegativeKeyword](entitynegativekeyword.md) object has the following elements: [EntityId](#entityid), [EntityType](#entitytype), [NegativeKeywords](#negativekeywords).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The system-generated identifier of a campaign or ad group that is associated with the negative keywords.|**long**|

@@ -36,6 +36,8 @@ Defines the predefined time and date range values for a report request.
 
 ## <a name="values"></a>Values
 
+The [ReportTimePeriod](reporttimeperiod.md) value set has the following values: [Last14Days](#last14days), [Last30Days](#last30days), [LastFourWeeks](#lastfourweeks), [LastFourWeeksStartingMonday](#lastfourweeksstartingmonday), [LastMonth](#lastmonth), [LastSevenDays](#lastsevendays), [LastSixMonths](#lastsixmonths), [LastThreeMonths](#lastthreemonths), [LastWeek](#lastweek), [LastWeekStartingMonday](#lastweekstartingmonday), [LastYear](#lastyear), [ThisMonth](#thismonth), [ThisWeek](#thisweek), [ThisWeekStartingMonday](#thisweekstartingmonday), [ThisYear](#thisyear), [Today](#today), [Yesterday](#yesterday).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="last14days"></a>Last14Days|A cumulative report for the previous 14 days.|

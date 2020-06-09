@@ -30,6 +30,8 @@ Defines the criteria to use to filter the share of voice report data.
 
 ## <a name="elements"></a>Elements
 
+The [ShareOfVoiceReportFilter](shareofvoicereportfilter.md) object has the following elements: [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupStatus](#adgroupstatus), [BidMatchType](#bidmatchtype), [BidStrategyType](#bidstrategytype), [CampaignStatus](#campaignstatus), [DeliveredMatchType](#deliveredmatchtype), [DeviceType](#devicetype), [Keywords](#keywords), [KeywordStatus](#keywordstatus), [Language](#language).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountstatus"></a>AccountStatus|The report will include data for only the account status. For example, you can use the filter to include data for only active accounts.<br/><br/>You can specify one or more account statuses.|[AccountStatusReportFilter](accountstatusreportfilter.md)|

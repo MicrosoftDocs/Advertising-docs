@@ -30,6 +30,8 @@ You can associate a call ad extension with campaigns in the account. Each entity
 
 ## <a name="elements"></a>Elements
 
+The [CallAdExtension](calladextension.md) object has the following elements: [CountryCode](#countrycode), [IsCallOnly](#iscallonly), [IsCallTrackingEnabled](#iscalltrackingenabled), [PhoneNumber](#phonenumber), [RequireTollFreeTrackingNumber](#requiretollfreetrackingnumber).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="countrycode"></a>CountryCode|The country code where the phone number is registered. The country code must contain a 2 character country code. The supported country code values include AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, GB, HK, ID, IE, IN, IT, MX, MY, NL, NZ, NO, PE, PH, SE, SG, TH, TW, US, VE, and VN.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -43,7 +45,7 @@ The [CallAdExtension](calladextension.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [CallAdExtension](calladextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [CallAdExtension](calladextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [CallAdExtension](calladextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [CallAdExtension](calladextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

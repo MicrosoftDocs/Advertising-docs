@@ -40,6 +40,8 @@ Finally you can [add](addads.md) a [DynamicSearchAd](dynamicsearchad.md) to the 
 
 ## <a name="elements"></a>Elements
 
+The [DynamicSearchAd](dynamicsearchad.md) object has the following elements: [Path1](#path1), [Path2](#path2), [Text](#text), [TextPart2](#textpart2).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="path1"></a>Path1|The first part of the optional path that will be appended to the domain portion of your display URL. The display URL e.g. *www.contoso.com* will be generated from the domain of your display URL. Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your domain is *contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *www.contoso.com/subdirectory1/subdirectory2*. <br/><br/>The maximum input length of the path is 15 characters. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 7 characters. Although dynamic text substitution is supported for other ad types like Expanded Text ads, it is not supported for dynamic search ads.<br/><br/>The path cannot contain the forward slash (/) or newline (\n) characters.<br/><br/>If the path includes a space, it will be replaced with an underscore (_) when the ad is shown.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
@@ -52,7 +54,7 @@ The [DynamicSearchAd](dynamicsearchad.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsad"></a>Inherited Elements from Ad
-The [DynamicSearchAd](dynamicsearchad.md) object derives from the [Ad](ad.md) object, and inherits the following elements. The descriptions below are specific to [DynamicSearchAd](dynamicsearchad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
+The [DynamicSearchAd](dynamicsearchad.md) object derives from the [Ad](ad.md) object, and inherits the following elements: [AdFormatPreference](#adformatpreference), [DevicePreference](#devicepreference), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Status](#status), [TrackingUrlTemplate](#trackingurltemplate), [Type](#type), [UrlCustomParameters](#urlcustomparameters). The descriptions below are specific to [DynamicSearchAd](dynamicsearchad.md), and might not apply to other objects that inherit the same elements from the [Ad](ad.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

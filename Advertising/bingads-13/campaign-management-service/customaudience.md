@@ -35,7 +35,7 @@ The [CustomAudience](customaudience.md) object has [Inherited Elements](#inherit
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsaudience"></a>Inherited Elements from Audience
-The [CustomAudience](customaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements. The descriptions below are specific to [CustomAudience](customaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
+The [CustomAudience](customaudience.md) object derives from the [Audience](audience.md) object, and inherits the following elements: [AudienceNetworkSize](#audiencenetworksize), [CustomerShare](#customershare), [Description](#description), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [MembershipDuration](#membershipduration), [Name](#name), [ParentId](#parentid), [Scope](#scope), [SearchSize](#searchsize), [SupportedCampaignTypes](#supportedcampaigntypes), [Type](#type). The descriptions below are specific to [CustomAudience](customaudience.md), and might not apply to other objects that inherit the same elements from the [Audience](audience.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

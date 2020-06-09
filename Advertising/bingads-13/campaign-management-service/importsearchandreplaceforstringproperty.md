@@ -21,6 +21,8 @@ Defines the string search and replace Google import option.
 
 ## <a name="elements"></a>Elements
 
+The [ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md) object has the following elements: [ReplaceString](#replacestring), [SearchString](#searchstring).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="replacestring"></a>ReplaceString|The replacement string to use in place of the search string.|**string**|

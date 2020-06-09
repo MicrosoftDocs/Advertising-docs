@@ -45,6 +45,8 @@ A client link does not have a public system identifier. You can identify distinc
 
 ## <a name="elements"></a>Elements
 
+The [ClientLink](clientlink.md) object has the following elements: [ClientEntityId](#cliententityid), [ClientEntityName](#cliententityname), [ClientEntityNumber](#cliententitynumber), [CustomerLinkPermission](#customerlinkpermission), [ForwardCompatibilityMap](#forwardcompatibilitymap), [InviterEmail](#inviteremail), [InviterName](#invitername), [InviterPhone](#inviterphone), [IsBillToClient](#isbilltoclient), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedDateTime](#lastmodifieddatetime), [ManagingCustomerId](#managingcustomerid), [ManagingCustomerName](#managingcustomername), [ManagingCustomerNumber](#managingcustomernumber), [Name](#name), [Note](#note), [StartDate](#startdate), [Status](#status), [SuppressNotification](#suppressnotification), [Timestamp](#timestamp), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="cliententityid"></a>ClientEntityId|The identifier of the client advertiser account or client customer to manage<br/><br/>The [Type](#type) element determines whether the link is to a client advertiser account or a client customer.<br/><br/>**Add:** Required. Either the *ClientEntityId* or *ClientEntityNumber* is required, but specifying both will cause the operation to fail.<br/>**Update:** Read-only and Required.|**long**|

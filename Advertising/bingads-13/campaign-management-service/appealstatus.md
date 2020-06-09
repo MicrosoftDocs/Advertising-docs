@@ -40,6 +40,8 @@ Defines the values that you use to determine whether an editorial issue is appea
 
 ## <a name="values"></a>Values
 
+The [AppealStatus](appealstatus.md) value set has the following values: [Appealable](#appealable), [AppealPending](#appealpending), [NotAppealable](#notappealable).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="appealable"></a>Appealable|The editorial issue is appealable.|

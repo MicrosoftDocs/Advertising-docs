@@ -47,6 +47,8 @@ Defines the entity types for retrieving auction insights.
 
 ## <a name="values"></a>Values
 
+The [EntityType](entitytype.md) value set has the following values: [Account](#account), [AdGroup](#adgroup), [Campaign](#campaign), [Keyword](#keyword).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="account"></a>Account|Request account level auction insight data.|

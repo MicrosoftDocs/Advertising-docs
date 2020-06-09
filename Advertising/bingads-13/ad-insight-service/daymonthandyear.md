@@ -22,6 +22,8 @@ Defines an object that you use to specify the start and end dates of a date rang
 
 ## <a name="elements"></a>Elements
 
+The [DayMonthAndYear](daymonthandyear.md) object has the following elements: [Day](#day), [Month](#month), [Year](#year).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="day"></a>Day|The day of the month.|**int**|

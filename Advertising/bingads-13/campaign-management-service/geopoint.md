@@ -21,6 +21,8 @@ Defines an object that contains the longitude and latitude coordinates of a geog
 
 ## <a name="elements"></a>Elements
 
+The [GeoPoint](geopoint.md) object has the following elements: [LatitudeInMicroDegrees](#latitudeinmicrodegrees), [LongitudeInMicroDegrees](#longitudeinmicrodegrees).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="latitudeinmicrodegrees"></a>LatitudeInMicroDegrees|The latitude specified in micro degrees. The latitude must be greater than or equal to -85000000 and less than or equal to +85000000.|**int**|

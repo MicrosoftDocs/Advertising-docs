@@ -24,6 +24,8 @@ The URL search parameter that you can use as a seed for new keyword ideas.
 
 ## <a name="elements"></a>Elements
 
+The [UrlSearchParameter](urlsearchparameter.md) object has the following elements: [Url](#url).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="url"></a>Url|The URL of your website or a page on your website.<br/><br/>Microsoft Advertising extracts keywords from the HTML code on your website or landing page. If your HTML code contains Javascript, which generates content at runtime, Microsoft Advertising will not extract keywords rendered from the Javascript and you'll see fewer or no keywords.|**string**|

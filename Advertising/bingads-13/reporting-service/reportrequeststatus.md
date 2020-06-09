@@ -21,6 +21,8 @@ Defines the status of a report request.
 
 ## <a name="elements"></a>Elements
 
+The [ReportRequestStatus](reportrequeststatus.md) object has the following elements: [ReportDownloadUrl](#reportdownloadurl), [Status](#status).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="reportdownloadurl"></a>ReportDownloadUrl|The encoded URL from where the report can be downloaded.<br/><br/>Once returned, the URL is valid for five minutes. You should not take a dependency on the domain of the download URL as it is subject to change.<br/><br/>The report that you download is compressed by using zip compression. You must first unzip the report before you can use its contents.<br/><br/>Use the download URL only if the *Status* element is set to *Success*. Even when the *Status* is set to *Success*, this element can be nil if no data is available for the submitted report parameters.|**string**|

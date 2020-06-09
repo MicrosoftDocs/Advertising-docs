@@ -26,6 +26,8 @@ You can request that the source be returned in the [KeywordIdea](keywordidea.md)
 
 ## <a name="values"></a>Values
 
+The [SourceType](sourcetype.md) value set has the following values: [Seed](#seed), [SuggestionFromCategory](#suggestionfromcategory), [SuggestionFromKeyword](#suggestionfromkeyword), [SuggestionFromUrl](#suggestionfromurl), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="seed"></a>Seed|The keyword idea source is a seed that you provided such as the query search parameter.|

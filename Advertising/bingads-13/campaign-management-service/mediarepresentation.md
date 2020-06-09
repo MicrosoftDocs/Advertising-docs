@@ -24,6 +24,8 @@ Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMedi
 
 ## <a name="elements"></a>Elements
 
+The [MediaRepresentation](mediarepresentation.md) object has the following elements: [Name](#name), [Type](#type), [Url](#url).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="name"></a>Name|The name of the media representation.|**string**|

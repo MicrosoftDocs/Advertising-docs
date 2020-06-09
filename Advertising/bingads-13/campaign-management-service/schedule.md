@@ -25,6 +25,8 @@ Use the *StartDate* and *EndDate* elements for calendar level scheduling, and th
 
 ## <a name="elements"></a>Elements
 
+The [Schedule](schedule.md) object has the following elements: [DayTimeRanges](#daytimeranges), [EndDate](#enddate), [StartDate](#startdate), [UseSearcherTimeZone](#usesearchertimezone).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="daytimeranges"></a>DayTimeRanges|The list of day and time ranges. Each day and time range includes the scheduled day of week, start/end hour, and start/end minute.<br/><br/>**Add:** Optional. If you set this element to null, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.<br/>**Update:** Optional. The individual [DayTime](daytime.md) objects cannot be updated. You can effectively update the day and time ranges by sending a new list of all [DayTime](daytime.md) settings that should replace the prior set. If you set this element to null, then you are effectively removing all existing day and time ranges.|[DayTime](daytime.md) array|

@@ -26,6 +26,8 @@ If you do not include the competition search parameter when calling [GetKeywordI
 
 ## <a name="elements"></a>Elements
 
+The [CompetitionSearchParameter](competitionsearchparameter.md) object has the following elements: [CompetitionLevels](#competitionlevels).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="competitionlevels"></a>CompetitionLevels|The competition levels that you want for the returned keyword ideas.<br/><br/>Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising. Possible values are *Low*, *Medium*, and *High*.|[CompetitionLevel](competitionlevel.md) array|

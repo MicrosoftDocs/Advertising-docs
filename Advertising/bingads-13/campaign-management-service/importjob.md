@@ -34,6 +34,8 @@ Do not try to instantiate an *ImportJob*. You can create one or more of the foll
 
 ## <a name="elements"></a>Elements
 
+The [ImportJob](importjob.md) object has the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="createdbyuserid"></a>CreatedByUserId|The unique identifier of the Microsoft Advertising user who created the import job.|**long**|

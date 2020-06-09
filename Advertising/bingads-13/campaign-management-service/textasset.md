@@ -27,6 +27,8 @@ A text asset with a unique Microsoft Advertising identifier that can be reused a
 
 ## <a name="elements"></a>Elements
 
+The [TextAsset](textasset.md) object has the following elements: [Text](#text).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="text"></a>Text|The meaning and business rules for the text asset vary depending on where it is used. For example, see responsive search ad [Descriptions](responsivesearchad.md#descriptions) and [Headlines](responsivesearchad.md#headlines).<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -36,7 +38,7 @@ The [TextAsset](textasset.md) object has [Inherited Elements](#inheritedelements
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsasset"></a>Inherited Elements from Asset
-The [TextAsset](textasset.md) object derives from the [Asset](asset.md) object, and inherits the following elements. The descriptions below are specific to [TextAsset](textasset.md), and might not apply to other objects that inherit the same elements from the [Asset](asset.md) object.  
+The [TextAsset](textasset.md) object derives from the [Asset](asset.md) object, and inherits the following elements: [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [TextAsset](textasset.md), and might not apply to other objects that inherit the same elements from the [Asset](asset.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

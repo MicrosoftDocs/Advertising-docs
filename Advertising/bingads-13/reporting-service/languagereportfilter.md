@@ -40,6 +40,8 @@ Defines the language values that you can use to filter the report data. These va
 
 ## <a name="values"></a>Values
 
+The [LanguageReportFilter](languagereportfilter.md) value set has the following values: [Arabic](#arabic), [Danish](#danish), [Dutch](#dutch), [English](#english), [Finnish](#finnish), [French](#french), [German](#german), [Hebrew](#hebrew), [Italian](#italian), [Japanese](#japanese), [Korean](#korean), [Norwegian](#norwegian), [Portuguese](#portuguese), [Russian](#russian), [Spanish](#spanish), [Swedish](#swedish), [TraditionalChinese](#traditionalchinese).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="arabic"></a>Arabic|The report will contain data for ads that were viewed in Arabic.|

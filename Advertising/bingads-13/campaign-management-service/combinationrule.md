@@ -21,6 +21,8 @@ A combination rule includes logical conditions used to determine who to add to y
 
 ## <a name="elements"></a>Elements
 
+The [CombinationRule](combinationrule.md) object has the following elements: [AudienceIds](#audienceids), [Operator](#operator).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audienceids"></a>AudienceIds|The list of audience identifiers to combine in a logical set.<br/><br/>You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list. For details, please see the [remarks](#remarks) section below.<br/><br/>Each combination rule set can contain up to 100 audience IDs.|**long** array|

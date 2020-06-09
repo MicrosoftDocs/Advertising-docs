@@ -23,6 +23,8 @@ For example, you track two conversions: leads and sales. You pick *Unique* for l
 
 ## <a name="values"></a>Values
 
+The [ConversionGoalCountType](conversiongoalcounttype.md) value set has the following values: [All](#all), [Unique](#unique).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="all"></a>All|All conversions that happen after an ad click will be counted. This is a common choice for sales.|

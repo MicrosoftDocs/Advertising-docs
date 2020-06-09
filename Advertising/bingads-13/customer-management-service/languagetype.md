@@ -40,6 +40,8 @@ Defines a selection of language values.
 
 ## <a name="values"></a>Values
 
+The [LanguageType](languagetype.md) value set has the following values: [Arabic](#arabic), [Danish](#danish), [Dutch](#dutch), [English](#english), [Finnish](#finnish), [French](#french), [German](#german), [Hebrew](#hebrew), [Italian](#italian), [Japanese](#japanese), [Korean](#korean), [Norwegian](#norwegian), [Portuguese](#portuguese), [Russian](#russian), [SimplifiedChinese](#simplifiedchinese), [Spanish](#spanish), [Swedish](#swedish), [TraditionalChinese](#traditionalchinese).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="arabic"></a>Arabic|The corresponding language type.|

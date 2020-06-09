@@ -23,6 +23,8 @@ Labels let you organize campaigns, ad groups, ads, and keywords into groups base
 
 ## <a name="elements"></a>Elements
 
+The [Label](label.md) object has the following elements: [ColorCode](#colorcode), [Description](#description), [Id](#id), [Name](#name).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="colorcode"></a>ColorCode|The label color as a hexadecimal code.<br/><br/>The hexadecimal value must have the '#' prefix. For example you can use the value of *#FFFFFF* for a white label.<br/><br/>The color can be viewed in the Microsoft Advertising web application. Your application can display the color or utilize the hexadecimal value to categorize a set of labels.<br/><br/>**Add:** Optional. If you do not specify any color, the value will be assigned at random for each label.<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. You can update the color code but cannot remove it.|**string**|

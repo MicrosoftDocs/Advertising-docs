@@ -30,6 +30,8 @@ Defines the possible campaign types.
 
 ## <a name="values"></a>Values
 
+The [CampaignType](campaigntype.md) value set has the following values: [Audience](#audience), [DynamicSearchAds](#dynamicsearchads), [Search](#search), [Shopping](#shopping).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="audience"></a>Audience|The campaign is an Audience campaign.|

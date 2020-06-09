@@ -25,6 +25,8 @@ Defines the possible financial status values of a customer.
 
 ## <a name="values"></a>Values
 
+The [CustomerFinancialStatus](customerfinancialstatus.md) value set has the following values: [ClearFinancialStatus](#clearfinancialstatus), [CreditHold](#credithold), [CreditWarning](#creditwarning), [PendingCreditCheck](#pendingcreditcheck), [ProposalsOnly](#proposalsonly), [SoldToOnly](#soldtoonly).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="clearfinancialstatus"></a>ClearFinancialStatus|The customer is in good standing.|

@@ -29,6 +29,8 @@ You can use one of the criterion type group values in each [TargetSettingDetail]
 
 ## <a name="values"></a>Values
 
+The [CriterionTypeGroup](criteriontypegroup.md) value set has the following values: [Age](#age), [Audience](#audience), [CompanyName](#companyname), [Gender](#gender), [IncomeRange](#incomerange), [Industry](#industry), [JobFunction](#jobfunction), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="age"></a>Age|The age criterion type group.|

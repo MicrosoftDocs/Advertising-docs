@@ -29,6 +29,8 @@ Defines pricing information by currency and unit that you can use with price ad 
 
 ## <a name="elements"></a>Elements
 
+The [PriceTableRow](pricetablerow.md) object has the following elements: [CurrencyCode](#currencycode), [Description](#description), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [Header](#header), [Price](#price), [PriceQualifier](#pricequalifier), [PriceUnit](#priceunit), [TermsAndConditions](#termsandconditions), [TermsAndConditionsUrl](#termsandconditionsurl).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="currencycode"></a>CurrencyCode|The currency code for the listed price.<br/><br/>The supported currency codes are ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, DKK, EUR, GBP, HKD, INR, MXN, NZD, PEN, PHP, PLN, SEK, SGD, USD, TWD, and VEF.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|

@@ -40,6 +40,8 @@ Defines the entity types that can be associated with an ad extension.
 
 ## <a name="values"></a>Values
 
+The [AssociationType](associationtype.md) value set has the following values: [Account](#account), [AdGroup](#adgroup), [Campaign](#campaign).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="account"></a>Account|Refers to ad extension associations with accounts.<br/><br/>Call ad extensions cannot be associated with an account.|

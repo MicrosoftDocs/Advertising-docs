@@ -39,6 +39,8 @@ Multiple user objects can be assigned to the same person i.e., one user per pers
 
 ## <a name="elements"></a>Elements
 
+The [User](user.md) object has the following elements: [ContactInfo](#contactinfo), [CustomerId](#customerid), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [JobTitle](#jobtitle), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [Lcid](#lcid), [Name](#name), [Password](#password), [SecretAnswer](#secretanswer), [SecretQuestion](#secretquestion), [TimeStamp](#timestamp), [UserLifeCycleStatus](#userlifecyclestatus), [UserName](#username).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="contactinfo"></a>ContactInfo|The user's contact information.<br/><br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|[ContactInfo](contactinfo.md)|

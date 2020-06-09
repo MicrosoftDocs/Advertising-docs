@@ -24,6 +24,8 @@ For internal use only.
 
 ## <a name="values"></a>Values
 
+The [ServiceLevel](servicelevel.md) value set has the following values: [Internal](#internal), [Premium](#premium), [Select](#select), [SelfServe](#selfserve), [SelfServeTrusted](#selfservetrusted).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="internal"></a>Internal|For internal use only.|

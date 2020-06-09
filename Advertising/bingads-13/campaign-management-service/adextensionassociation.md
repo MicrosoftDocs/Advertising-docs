@@ -23,6 +23,8 @@ Defines the relationship and editorial status of an ad extension with an account
 
 ## <a name="elements"></a>Elements
 
+The [AdExtensionAssociation](adextensionassociation.md) object has the following elements: [AdExtension](#adextension), [AssociationType](#associationtype), [EditorialStatus](#editorialstatus), [EntityId](#entityid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adextension"></a>AdExtension|The ad extension associated with a supported entity.<br/><br/>**Add:** Required<br/>**Update:** Required|[AdExtension](adextension.md)|

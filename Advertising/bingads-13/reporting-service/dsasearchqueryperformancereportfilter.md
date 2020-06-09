@@ -27,6 +27,8 @@ Defines the criteria to use to filter the DSA search query performance report da
 
 ## <a name="elements"></a>Elements
 
+The [DSASearchQueryPerformanceReportFilter](dsasearchqueryperformancereportfilter.md) object has the following elements: [AccountStatus](#accountstatus), [AdGroupStatus](#adgroupstatus), [AdStatus](#adstatus), [CampaignStatus](#campaignstatus), [ExcludeZeroClicks](#excludezeroclicks), [FeedUrl](#feedurl), [Language](#language), [SearchQueries](#searchqueries).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountstatus"></a>AccountStatus|The report will include data for only the account status. For example, you can use the filter to include data for only active accounts.<br/><br/>You can specify one or more account statuses.|[AccountStatusReportFilter](accountstatusreportfilter.md)|

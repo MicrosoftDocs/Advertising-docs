@@ -40,6 +40,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="values"></a>Values
 
+The [CallDetailReportColumn](calldetailreportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountStatus](#accountstatus), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AreaCode](#areacode), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [City](#city), [Duration](#duration), [EndTime](#endtime), [StartTime](#starttime), [State](#state).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|

@@ -24,6 +24,8 @@ Determines whether or not to amplify your partner's bid.
 
 ## <a name="values"></a>Values
 
+The [BidOption](bidoption.md) value set has the following values: [BidBoost](#bidboost), [BidValue](#bidvalue).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="bidboost"></a>BidBoost|A bid boost allows you to amplify your partner's bid.<br/><br/>You should only use BidBoost if your partner uses BidValue.|

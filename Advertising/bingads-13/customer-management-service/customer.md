@@ -33,6 +33,8 @@ Defines a customer object that contains one or more Microsoft Advertising accoun
 
 ## <a name="elements"></a>Elements
 
+The [Customer](customer.md) object has the following elements: [CustomerAddress](#customeraddress), [CustomerFinancialStatus](#customerfinancialstatus), [CustomerLifeCycleStatus](#customerlifecyclestatus), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Industry](#industry), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [MarketCountry](#marketcountry), [MarketLanguage](#marketlanguage), [Name](#name), [Number](#number), [ServiceLevel](#servicelevel), [TimeStamp](#timestamp).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customeraddress"></a>CustomerAddress|The customer's business address.<br/><br/>This property is not used by Microsoft Advertising, and you must set the account business address instead.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[Address](address.md)|

@@ -32,6 +32,8 @@ If the [Status](insertionorder.md#status) element of the [InsertionOrder](insert
 
 ## <a name="elements"></a>Elements
 
+The [InsertionOrderPendingChanges](insertionorderpendingchanges.md) object has the following elements: [ChangeStatus](#changestatus), [Comment](#comment), [EndDate](#enddate), [ModifiedDateTime](#modifieddatetime), [Name](#name), [NotificationThreshold](#notificationthreshold), [PurchaseOrder](#purchaseorder), [ReferenceId](#referenceid), [RequestedByUserId](#requestedbyuserid), [SpendCapAmount](#spendcapamount), [StartDate](#startdate).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="changestatus"></a>ChangeStatus|Can be used to accept or decline the insertion order pending changes.<br/><br/>When you call [UpdateInsertionOrder](updateinsertionorder.md) you can either set this ChangeStatus element or modify other elements of this object, but you cannot change the status in parallel with other property updates.|[InsertionOrderPendingChangesStatus](insertionorderpendingchangesstatus.md)|

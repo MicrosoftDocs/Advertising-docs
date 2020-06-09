@@ -28,6 +28,8 @@ Ad extensions that are associated at the ad group level will override ad extensi
 
 ## <a name="elements"></a>Elements
 
+The [CalloutAdExtension](calloutadextension.md) object has the following elements: [Text](#text).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="text"></a>Text|Additional callout text about your business, products, or services to include in a text ad. The callout extension text must be different than the text of your ad.<br/><br/>The length of this string must be between 1 and 25 characters. Note that for Traditional Chinese characters, the length of this string must be between 1 and 12 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -37,7 +39,7 @@ The [CalloutAdExtension](calloutadextension.md) object has [Inherited Elements](
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [CalloutAdExtension](calloutadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [CalloutAdExtension](calloutadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [CalloutAdExtension](calloutadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [CalloutAdExtension](calloutadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

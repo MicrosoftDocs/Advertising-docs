@@ -36,6 +36,8 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 
 ## <a name="elements"></a>Elements
 
+The [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md) object has the following elements: [Aggregation](#aggregation), [Columns](#columns), [Filter](#filter), [Scope](#scope), [Time](#time).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br/><br/>The default aggregation is Summary. It is important to note that if you do not include TimePeriod in the list of [Columns](#columns), the aggregation you chose will be ignored and Summary aggregation will be used regardless.|[ReportAggregation](reportaggregation.md)|
@@ -49,7 +51,7 @@ The [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsreportrequest"></a>Inherited Elements from ReportRequest
-The [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md) object derives from the [ReportRequest](reportrequest.md) object, and inherits the following elements. The descriptions below are specific to [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md), and might not apply to other objects that inherit the same elements from the [ReportRequest](reportrequest.md) object.  
+The [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md) object derives from the [ReportRequest](reportrequest.md) object, and inherits the following elements: [ExcludeColumnHeaders](#excludecolumnheaders), [ExcludeReportFooter](#excludereportfooter), [ExcludeReportHeader](#excludereportheader), [Format](#format), [ReportName](#reportname), [ReturnOnlyCompleteData](#returnonlycompletedata). The descriptions below are specific to [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md), and might not apply to other objects that inherit the same elements from the [ReportRequest](reportrequest.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

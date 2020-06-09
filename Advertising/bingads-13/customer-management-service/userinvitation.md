@@ -37,6 +37,8 @@ After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo
 
 ## <a name="elements"></a>Elements
 
+The [UserInvitation](userinvitation.md) object has the following elements: [AccountIds](#accountids), [CustomerId](#customerid), [Email](#email), [ExpirationDate](#expirationdate), [FirstName](#firstname), [Id](#id), [LastName](#lastname), [Lcid](#lcid), [RoleId](#roleid).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|An array of identifiers of the accounts that the user can manage. To specify that the user can manage all current and future accounts of the customer to which the user belongs, set to NULL.<br/><br/>Users with account level roles such as Advertiser Campaign Manager can be restricted to specific accounts. Users with customer level roles such as Super Admin can access all accounts within the user's customer, and their access cannot be restricted to specific accounts.<br/><br/>When attempting to restrict customer level user roles, for example attempting to restrict a Super Admin to specific accounts, the operation will not fail and the user will be granted access for all accounts within the specified customer.<br/><br/>**Send:** Optional|**long** array|

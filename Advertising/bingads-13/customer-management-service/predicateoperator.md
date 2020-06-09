@@ -27,6 +27,8 @@ Defines the condition of results for one of the search operations, for example [
 
 ## <a name="values"></a>Values
 
+The [PredicateOperator](predicateoperator.md) value set has the following values: [Contains](#contains), [Equals](#equals), [GreaterThanEquals](#greaterthanequals), [In](#in), [LessThanEquals](#lessthanequals), [NotContains](#notcontains), [NotEquals](#notequals), [StartsWith](#startswith).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="contains"></a>Contains|The field must contain the specified value.|

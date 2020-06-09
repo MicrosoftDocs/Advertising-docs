@@ -24,6 +24,8 @@ Defines the editorial review status values of a linked asset.
 
 ## <a name="values"></a>Values
 
+The [AssetLinkEditorialStatus](assetlinkeditorialstatus.md) value set has the following values: [Active](#active), [ActiveLimited](#activelimited), [Disapproved](#disapproved), [Inactive](#inactive), [Unknown](#unknown).
+
 |Value|Description|
 |-----------|---------------|
 |<a name="active"></a>Active|The asset passed editorial review.|

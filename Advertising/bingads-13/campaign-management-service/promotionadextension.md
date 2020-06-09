@@ -45,6 +45,8 @@ You can associate a promotion ad extension with the account or with campaigns an
 
 ## <a name="elements"></a>Elements
 
+The [PromotionAdExtension](promotionadextension.md) object has the following elements: [CurrencyCode](#currencycode), [DiscountModifier](#discountmodifier), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [Language](#language), [MoneyAmountOff](#moneyamountoff), [OrdersOverAmount](#ordersoveramount), [PercentOff](#percentoff), [PromotionCode](#promotioncode), [PromotionEndDate](#promotionenddate), [PromotionItem](#promotionitem), [PromotionOccasion](#promotionoccasion), [PromotionStartDate](#promotionstartdate), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="currencycode"></a>CurrencyCode|The currency code for the promotion price or discount.<br/><br/>This field is only applicable if you set [MoneyAmountOff](#moneyamountoff) or [OrdersOverAmount](#ordersoveramount).<br/><br/>The supported currency codes are ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, DKK, EUR, GBP, HKD, INR, MXN, NZD, PEN, PHP, PLN, SEK, SGD, USD, TWD, and VEF.<br/><br/>**Add:** Required if [MoneyAmountOff](#moneyamountoff) or [OrdersOverAmount](#ordersoveramount) are set.<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. If you set either [PercentOff](#percentoff) or [PromotionCode](#promotioncode), this setting is no longer applicable and will be deleted.|**string**|
@@ -70,7 +72,7 @@ The [PromotionAdExtension](promotionadextension.md) object has [Inherited Elemen
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsadextension"></a>Inherited Elements from AdExtension
-The [PromotionAdExtension](promotionadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements. The descriptions below are specific to [PromotionAdExtension](promotionadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
+The [PromotionAdExtension](promotionadextension.md) object derives from the [AdExtension](adextension.md) object, and inherits the following elements: [DevicePreference](#devicepreference), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Scheduling](#scheduling), [Status](#status), [Type](#type), [Version](#version). The descriptions below are specific to [PromotionAdExtension](promotionadextension.md), and might not apply to other objects that inherit the same elements from the [AdExtension](adextension.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
