@@ -120,8 +120,8 @@ The Microsoft Advertising identifier of the custom audience associated with the 
 This bulk field maps to the *Id* field of the [Custom Audience](custom-audience.md) record.
 
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you set the [Audience Id](#audienceid) field, you must either specify an existing custom audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [Custom Audience](custom-audience.md) record. If the [Audience Id](#audienceid) field is not set, then you must set the [Audience](#audience) field as a logical key to the same value as the *Audience* field of the [Custom Audience](custom-audience.md) record. Any of these options are recommended if you are adding new Ad Group Custom Audience Associations with new custom audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only and Required  
-**Delete:** Read-only and Required  
+**Update:** Read-only  
+**Delete:** Read-only  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
 The percentage you want to increase/decrease the bid amount for the custom audience.
@@ -176,7 +176,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.  
 
 ## <a name="status"></a>Status
 The association status. 

@@ -122,8 +122,8 @@ The Microsoft Advertising identifier of the similar remarketing list associated 
 This bulk field maps to the *Id* field of the [Similar Remarketing List](similar-remarketing-list.md) record.
 
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you set the [Audience Id](#audienceid) field, you must either specify an existing similar remarketing list identifier or specify a negative identifier that is equal to the *Id* field of the parent [Similar Remarketing List](similar-remarketing-list.md) record. If the [Audience Id](#audienceid) field is not set, then you must set the [Audience](#audience) field as a logical key to the same value as the *Audience* field of the [Similar Remarketing List](similar-remarketing-list.md) record. Any of these options are recommended if you are adding new ad group similar remarketing list associations with new similar remarketing lists in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only and Required  
-**Delete:** Read-only and Required  
+**Update:** Read-only  
+**Delete:** Read-only  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
 The percentage you want to increase/decrease the bid amount for the similar remarketing list.
@@ -177,8 +177,8 @@ The system generated identifier of the ad group that is associated to the simila
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
 **Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are associating similar remarketing lists to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only  
-**Delete:** Read-only  
+**Update:** Read-only and Required  
+**Delete:** Read-only and Required  
 
 > [!NOTE]
 > For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
