@@ -456,9 +456,9 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 **Delete:** Read-only  
 
 ## <a name="percentoff"></a>Percent Off
-The percent off promotion value in micros.
+The percent off promotion value as a double value.
 
-For example, 10000000 represents a 10% discount.
+For example, 10.0 represents a 10% discount.
 
 **Add:** Required. You must set either [Money Amount Off](#moneyamountoff) or [Percent Off](#percentoff), but you cannot set both.  
 **Update:** Optional. You can set either [Money Amount Off](#moneyamountoff) or [Percent Off](#percentoff), but you cannot set both. If you set this field, then the [Currency Code](#currencycode) setting is no longer applicable and will be deleted if it was previously set.  

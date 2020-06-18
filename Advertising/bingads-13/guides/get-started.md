@@ -24,7 +24,7 @@ To authenticate in the production environment, you can follow either the [Live C
 
 1. Register a native app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page. You can login using either a personal Microsoft Account or a Work or School Account. For details see [Register Your Application](authentication-oauth-identity-platform.md#registerapplication).  
 
-1. Each Microsoft Advertising user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Microsoft Advertising account via the following `Get-Tokens-Production.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
+1. Each Microsoft Advertising user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Microsoft Advertising account via the following `Get-Tokens-Production.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. If you registered a web application with client secret, then you'll also need to include `$client_secret=YourWebAppClientSecret` when requesting the access tokens. 
 
     ```powershell
     # Replace the Tutorial Sample App ID with your registered application ID. 
