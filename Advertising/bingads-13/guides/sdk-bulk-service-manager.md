@@ -417,7 +417,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
     {
         CampaignIds = null,
         DataScope = DataScope.EntityData,
-        Entities = BulkDownloadEntity.Keywords,
+        Entities = DownloadEntity.Keywords,
         FileType = DownloadFileType.Csv,
         LastSyncTimeInUTC = null,
         ResultFileDirectory = FileDirectory,
@@ -464,8 +464,8 @@ dataScope.add(DataScope.ENTITY_DATA);
 downloadParameters.setDataScope(dataScope);
 downloadParameters.setFileType(FileType);
 downloadParameters.setLastSyncTimeInUTC(null);
-ArrayList<BulkDownloadEntity> bulkDownloadEntities = new ArrayList<BulkDownloadEntity>();
-bulkDownloadEntities.add(BulkDownloadEntity.KEYWORDS);
+ArrayList<DownloadEntity> bulkDownloadEntities = new ArrayList<DownloadEntity>();
+bulkDownloadEntities.add(DownloadEntity.KEYWORDS);
 downloadParameters.setEntities(bulkDownloadEntities);
 downloadParameters.setResultFileDirectory(new File(FileDirectory));
 downloadParameters.setResultFileName(ResultFileName);
@@ -533,7 +533,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
     {
         CampaignIds = null,
         DataScope = DataScope.EntityData,
-        Entities = BulkDownloadEntity.Keywords,
+        Entities = DownloadEntity.Keywords,
         FileType = DownloadFileType.Csv,
         LastSyncTimeInUTC = null
     };
@@ -569,8 +569,8 @@ dataScope.add(DataScope.ENTITY_DATA);
 submitDownloadParameters.setDataScope(dataScope);
 submitDownloadParameters.setFileType(FileType);
 submitDownloadParameters.setLastSyncTimeInUTC(null);
-ArrayList<BulkDownloadEntity> bulkDownloadEntities = new ArrayList<BulkDownloadEntity>();
-bulkDownloadEntities.add(BulkDownloadEntity.KEYWORDS);
+ArrayList<DownloadEntity> bulkDownloadEntities = new ArrayList<DownloadEntity>();
+bulkDownloadEntities.add(DownloadEntity.KEYWORDS);
 submitDownloadParameters.setEntities(bulkDownloadEntities);
 
 // Submit the download request. You can use the BulkDownloadOperation result to track status yourself using getStatusAsync,
@@ -750,7 +750,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
     {
         CampaignIds = null,
         DataScope = DataScope.EntityData,
-        Entities = BulkDownloadEntity.Keywords,
+        Entities = DownloadEntity.Keywords,
         FileType = DownloadFileType.Csv,
         LastSyncTimeInUTC = null,
         ResultFileDirectory = FileDirectory,
@@ -794,8 +794,8 @@ dataScope.add(DataScope.ENTITY_DATA);
 downloadParameters.setDataScope(dataScope);
 downloadParameters.setFileType(FileType);
 downloadParameters.setLastSyncTimeInUTC(null);
-ArrayList<BulkDownloadEntity> bulkDownloadEntities = new ArrayList<BulkDownloadEntity>();
-bulkDownloadEntities.add(BulkDownloadEntity.KEYWORDS);
+ArrayList<DownloadEntity> bulkDownloadEntities = new ArrayList<DownloadEntity>();
+bulkDownloadEntities.add(DownloadEntity.KEYWORDS);
 downloadParameters.setEntities(bulkDownloadEntities);
 downloadParameters.setResultFileDirectory(new File(FileDirectory));
 downloadParameters.setResultFileName(ResultFileName);
