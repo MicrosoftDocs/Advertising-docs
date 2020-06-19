@@ -45,13 +45,16 @@ Additional information:
 
 - To use the example [solutions](../solutions/index.md) in this document, you must enable APIs and services for Google Sheets API, Google Drive API, and Gmail API.  
   
-- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. Selecting these scopes requires Google verification.  
+- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. **Selecting these scopes require that you submit your app for Google verification**. If you don't submit your app for Google verification, you'll get a warning message when trying to authorize the app.  
   
 - When asked to specify the type of application, select Web application.  
   
 - When asked to specify a redirect URI, use https://developers.google.com/oauthplayground.  
   
 - After setting up your credentials and defining your client, copy the client ID and client secret to use in steps 4 and 5 below.
+
+> [!NOTE]
+> If you don't submit your app for Google verification and try authorizing it in the playground, Google displays a warning dialog that says, "This app isn't verified." To run the script anyway, click **Advanced** and then **Go to [app name] (unsafe)**.
 
 > [!NOTE]
 > The following steps may change as Google updates their user experience (UX). In the case that the steps no longer align with the UX, read the Google docs mentioned at the beginning of the topic to determine the new flow, or simply navigate the UX looking for similar steps.
@@ -78,11 +81,14 @@ Additional information:
 
 - To use the example [solutions](../solutions/index.md) in this document, you must enable APIs and services for Google Sheets API, Google Drive API, and Gmail API.  
   
-- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. Selecting these scopes requires Google verification.  
+- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. **Selecting these scopes require that you submit your app for Google verification**. If you don't submit your app for Google verification, you'll get a warning message when trying to authorizing the app.  
   
 - When asked to specify the type of application, select Other.  
   
 - After setting up your credentials and defining your client, copy the client ID and client secret to use in the PowerShell script below.
+
+> [!NOTE]
+> If you don't submit your app for Google verification and try authorizing it in the playground, Google displays a warning dialog that says, "This app isn't verified." To run the script anyway, click **Advanced** and then **Go to [app name] (unsafe)**.
 
 
 ### Create the following PowerShell script to get user consent and a refresh token. 
