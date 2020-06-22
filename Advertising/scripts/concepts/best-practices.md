@@ -405,3 +405,47 @@ The same is true if you update an entity and then get the same property you upda
     }
 ```
 
+<a id="using-yield-keyword"></a>
+## Use the yield keyword when getting large sets of entities
+
+Retrieving a large number of entities and loading them into a single list that you process in a loop has a couple of disadvantages:
+
+1. Depending on the size of the request, it may take *n* number of back-end requests to fetch all the entities before the loop starts. If you don't process them all, then the time and computing power used to get the unprocessed entities is wasted. For example, if you retrieve 10K keywords and the loop breaks after processing only 2K keywords, the time and computing power used to get the remaining 8K keywords is wasted.  
+  
+1. Creating the list requires more memory to hold all the entities at the same time.
+
+To address these issues, use the **yield** keyword, which allows your script to fetch entities on demand, or, in some sense, "lazily" fetch them only when they are needed. This means your script isn't making more calls than it needs at the moment and not passing around large lists of objects.
+
+This example includes logging to illustrate the flow of control when using the **yield** keyword.
+
+```javascript
+function main() {
+    const keywords = getKeywords();
+
+    //@ts-ignore <-- suppresses iterator error
+    for (const keyword of keywords) {
+        Logger.log("in for loop\n\n");
+    }
+}
+
+// Note that you must use the yield keyword in a generator function - see the
+// '*' at the end of the function keyword.
+
+function* getKeywords() {
+    const keywords = AdsApp.keywords()
+        .withCondition("Status = ENABLED")
+        .withCondition("CombinedApprovalStatus = APPROVED")
+        .withLimit(10)
+        .get();
+
+    Logger.log(`total keywords in account: ${keywords.totalNumEntities()} \n\n`);
+
+    while (keywords.hasNext()) {
+        Logger.log("before next()\n\n");
+        yield keywords.next();
+        Logger.log("after next\n\n");
+    }
+}
+```
+
+

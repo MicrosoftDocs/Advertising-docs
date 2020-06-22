@@ -153,6 +153,54 @@ function main() {
 }
 ```
 
+
+## Getting all keywords in an account
+
+There's a limit to the number of keywords that Scripts can return for an account. The limit is undefined and may change. The following example shows how you might handle cases where an account has too many keywords. The example tries to fetch all keywords at the account level first. If that fails due to the "There are too many entities" error, it tries to make multiple calls to fetch keywords by campaign, since there are typically fewer entities at the campaign level. 
+
+For information about using the **yield** keyword, see [Use the yield keyword when getting large sets of entities](..\concepts\best-practices.md#using-yield-keyword).
+
+```javascript
+function* getEntities() {
+    const applyConditions = _ => _
+        .withCondition('CampaignStatus = ENABLED')
+        .withCondition('AdGroupStatus = ENABLED')
+        .withCondition('Status = ENABLED')
+        .withCondition("CombinedApprovalStatus = DISAPPROVED");
+
+    try {
+        // Get the account's keywords. 
+        const keywords = applyConditions(AdsApp.keywords()).get();
+
+        while (keywords.hasNext()) {
+            yield keywords.next();
+        }
+    } catch (e) {
+        if (!e.message.startsWith('There are too many entities')) {
+            throw e;
+        }
+
+        // If there are too many keywords at the account level,
+        // get keywords by campaigns under the account.
+        const campaigns = AdsApp.campaigns().get();
+
+        while (campaigns.hasNext()) {
+            const campaign = campaigns.next();
+
+            const keywords = applyConditions(campaign.keywords()).get();
+
+            while (keywords.hasNext()) {
+                yield keywords.next();
+            }
+        }
+    }
+}
+```
+
+
+
+
+
 ## Get a keyword's performance data
 
 To get a keyword's performance metrics, call the keyword's [getStats](../reference/Keyword.md#getstats) method. When you get the keyword, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range, use one of the `forDateRange` methods when you select the keyword (see [KeywordSelector](../reference/KeywordSelector.md)). 
