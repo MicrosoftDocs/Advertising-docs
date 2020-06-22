@@ -158,7 +158,7 @@ function main() {
 
 There's a limit to the number of keywords that Scripts can return for an account. The limit is undefined and may change. The following example shows how you might handle cases where an account has too many keywords. The example tries to fetch all keywords at the account level first. If that fails due to the "There are too many entities" error, it tries to make multiple calls to fetch keywords by campaign, since there are typically fewer entities at the campaign level. 
 
-For information about using the **yield** keyword, see [](..\concepts\best-practices.md#using-yield-keyword)
+For information about using the **yield** keyword, see [Use the yield keyword when getting large sets of entities](..\concepts\best-practices.md#using-yield-keyword).
 
 ```javascript
 function* getEntities() {
