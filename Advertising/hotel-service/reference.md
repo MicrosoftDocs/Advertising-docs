@@ -409,7 +409,7 @@ Defines the amount to adjust the base bid by if the user is searching for hotels
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
-|Sites|A list of sites. Apply the multiplier if the user is using the site to search for hotels. The following are the possible case-sensitive values.<br /><br /><ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li></ul>|String[]|Required|Optional
+|Sites|A list of sites. Apply the multiplier if the user is using the specified site to search for hotels. The following are the possible case-sensitive values.<ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li><li>PropertyPromotionAd&mdash;The first results page shown in the maps search.</li></ul>|String[]|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.SiteMultiplier".|String|Required|Required
 
 

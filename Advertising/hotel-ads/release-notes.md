@@ -13,6 +13,15 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## June 26, 2020
+
+- Added PropertyPromotionAd as a possible site value to:
+  - [SiteMultiplier](..\hotel-service\reference.md#sitemultiplier)
+  - [SiteType](..\hotel-service\reporting.md#dimensioncolumns) dimension column
+  - [BING-SITE](..\hotel-service\pos-feed.md#using-dynamic-query-parameters) dynamic query parameter
+
+
+
 ## February 14, 2020
 
 - Updated the [Transaction message](../transaction-message/reference.md) doc to reflect that the sum of all [Custom[1-5]](../transaction-message/reference.md#custom1) values is limited to a maximum of 1,000 characters.
