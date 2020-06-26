@@ -21,7 +21,6 @@ For information about changes that were included with each release, see the foll
   - [BING-SITE](..\hotel-service\pos-feed.md#using-dynamic-query-parameters) dynamic query parameter
 
 
-
 ## February 14, 2020
 
 - Updated the [Transaction message](../transaction-message/reference.md) doc to reflect that the sum of all [Custom[1-5]](../transaction-message/reference.md#custom1) values is limited to a maximum of 1,000 characters.
