@@ -18,7 +18,7 @@ For information about changes that were included with each release, see the foll
 - Added PropertyPromotionAd as a possible site value to:
   - [SiteMultiplier](..\hotel-service\reference.md#sitemultiplier)
   - [SiteType](..\hotel-service\reporting.md#dimensioncolumns) dimension column
-  - [BING-SITE](..\hotel-service\pos-feed.md#using-dynamic-query-parameters) dynamic query parameter
+  - [BING-SITE](..\pos-feed\create-pos-feed.md#using-dynamic-query-parameters) dynamic query parameter
 
 
 ## February 14, 2020
