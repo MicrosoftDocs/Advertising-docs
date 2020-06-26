@@ -250,7 +250,7 @@ The request must include at least one dimension column and one measure column.
 |HotelName|Hotel name|The hotel's name.
 |LengthOfStay|Length of stay|The itinerary's length of stay.
 |PartnerHotelId|Partner hotel ID|The ID that the partner uses to uniquely identify the hotel.
-|SiteType|Site type|The Bing site that users used to search for hotels. The following are the possible values.<ul><li>LocalUniversal&mdash;The user used Bing.com to search for hotels</li><li>MapResults&mdash;The user used Bing.com/maps to search for hotels</li> 
+|SiteType|Site type|The Bing website that users used to search for hotels. The following are the possible values.<ul><li>LocalUniversal&mdash;The user used Bing.com to search for hotels</li><li>MapResults&mdash;The user used Bing.com/maps to search for hotels</li><li>PropertyPromotionAd&mdash;The user was looking at the first results page shown in the maps search.</li></ul>
 |SlotType|Slot type|The placement of the ads on the results page. The following are the possible values.<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>M&mdash;The secondary slot where ads are shown only after the user clicks *More rates*.</li></ul>
 |SubAccountId|Subaccount ID|The ID that uniquely identifies the subaccount (hotel campaign).
 |SubAccountName|Subaccount name|The subaccount's display name.
