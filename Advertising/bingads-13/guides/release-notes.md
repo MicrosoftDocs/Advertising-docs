@@ -23,6 +23,7 @@ A customer list is a set of customer contact information that you have compiled 
 
 Customer lists are available via the Bulk API, but not yet available via the Campaign Management API. With the Bulk API you can use the following record types for customer list targets or exclusions. 
 - [Customer List](../bulk-service/customer-list.md)   
+- [Customer List Item](../bulk-service/customer-list-item.md)   
 - [Campaign Customer List Association](../bulk-service/campaign-customer-list-association.md)   
 - [Campaign Negative Customer List Association](../bulk-service/campaign-negative-customer-list-association.md)   
 - [Ad Group Customer List Association](../bulk-service/ad-group-customer-list-association.md)   

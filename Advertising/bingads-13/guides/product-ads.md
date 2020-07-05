@@ -78,41 +78,7 @@ To create a Microsoft Shopping campaign, follow these steps.
     > [!NOTE]
     > There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. In the Microsoft Advertising web application, for each ad group you would add one product group with multiple levels of division or multiple partitions. This is the equivalent of adding ad group level product partitions using the Bing Ads API. 
 
-    Please also consider the following validation rules for uploading [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) records.
-
-    - At minimum you must specify at least the root node for the product partition group tree structure. The product partition group's root node must have its *Product Condition 1* field set to "All" and *Product Value 1* null or empty. If you are bidding on all products in the catalog equally, set the *Sub Type* field to *Unit*. If you are partitioning the bids based on more specific product conditions, then set the *Sub Type* field to *Subdivision*, the *Parent Criterion Id* to null or empty, and the *Id* to a negative value. You will use the negative value as *Parent Criterion Id* for any child nodes.
-
-    - The root node is considered level 0, and a tree can have branches up to 7 levels deep.
-
-    - Per upload request, you can include a maximum of 20,000 product partition tree nodes per ad group. The entire product partition tree node count for an ad group cannot exceed 20,000.
-
-    - The product partition tree nodes for the same tree (same ad group) must be grouped together in the file.
-
-    - The order of the product partition nodes is not guaranteed during download, and parent nodes might be provided after child nodes; however, all nodes for the same ad group will be grouped together in the file.
-
-    - If you are creating or modifying the tree structure, parent product partition tree nodes must be ordered ahead of the child product partition tree nodes ; however, the order does not matter for non-structural changes such as updating the bid. For example if you want to update the bids without adding, deleting, or updating the tree structure, then you only need to upload the *Id*, *Parent Id*, and *Bid* fields.
-
-    - To update the *Product Condition 1*, *Product Value 1* or *Is Excluded* field, you must delete the existing product partition tree node and upload a new product partition tree node which will get a new identifier.
-
-    - If any action fails, all remaining actions that might have otherwise succeeded will also fail.
-
-    - All product partition node addition and deletion actions must result in a complete tree structure.
-
-    - Every path from the root node to the end of a branch must terminate with a leaf node (*Sub Type*=Unit). Every Unit must have a bid, unless the *Is Excluded* field is TRUE which means that the node is a negative ad group criterion.
-
-    - Every subdivision must have at least one leaf node that bids on the remainder of the subdivision's conditions, i.e. use the same operand as its sibling unit(s) and set its *Product Value 1* null or empty.
-
-    - If you are adding partitions with multiple levels where neither the parent or child yet exist, use a negative int value as a reference to identify the parent. For example set the both the parent's *Id*, and the child's *Parent Criterion Id* field to the same negative value. The negative IDs are only valid for the duration of the call. Unique system identifiers for each successfully added ad group criterion are returned in the upload result file.
-
-    - The *Bid* and *Destination Url* fields are only applicable if the *Is Excluded* field is FALSE which means that the node is a biddable ad group criterion. However, these fields are ignored for *Subdivision* partition nodes. Those elements are only relevant for *Unit* (leaf) partition nodes.
-
-    - To pause any product partition you must pause the entire ad group by updating the *Status* field of the [Ad Group](../bulk-service/ad-group.md) to Paused. You can pause the entire campaign by updating the *Status* field of the [Campaign](../bulk-service/campaign.md) to Paused.
-
-    - For a *Deleted* action you only need to specify the *Id* and *Parent Id*.
-
-    - If you delete a parent product partition, all of its children and descendants will also be deleted.
-
-    - You may not specify duplicate product conditions in a branch. 
+    Please also consider the validation rules described in the [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) documentation. 
 
 5. Upload a product ad. You must add at least one [Product Ad](../bulk-service/product-ad.md) to the corresponding ad group. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Microsoft Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
 
@@ -141,43 +107,7 @@ To create a Microsoft Shopping campaign with the Campaign Management API, follow
     > [!NOTE]
     > To retrieve product partitions after they have been applied, call [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) and set the *AdGroupCriterionIds* element to *null* to get all product partitions for the ad group. The product partition with *ParentCriterionId* set to *null* is the root node.
 
-    Please also consider the following validation rules for the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation.
-
-    - At minimum you must specify at least the root node for the product partition group tree structure. The product partition group's root [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must have its condition *Operand* set to "All" and *Attribute* to *null*. If you are bidding on all products in the catalog equally, set the *PartitionType* to Unit. If you are partitioning the bids based on more specific product conditions, then set the *PartitionType* to Subdivision, the *ParentCriterionId* to *null*, and the *Id* to a negative value. You will use the negative value as *ParentCriterionId* for any child nodes.
-
-    - The root node is considered level 0, and a tree can have branches up to 7 levels deep.
-
-    - You may specify up to 5,000 [AdGroupCriterionAction](../campaign-management-service/adgroupcriterion.md) objects per call. The entire tree created through multiple calls can have up to 20,000 nodes.
-
-    - Each of the [AdGroupCriterionAction](../campaign-management-service/adgroupcriterion.md) objects must have the same *AdGroupId*, otherwise the call will fail.
-    
-    - To update the *Condition* or *Attribute* properties, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. Likewise to update from a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) to a [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) or vice versa, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. 
-
-    - If any action fails, all remaining actions that might have otherwise succeeded will also fail.
-
-    - All actions in one call must result in a complete tree structure. If you need to apply more than 5,000 actions per ad group, you must make multiple calls. Get the parent ad group criterion identifiers from the first call, and then add more children as needed in subsequent calls.
-
-    - Every path from the root node to the end of a branch must terminate with a leaf node (*ProductPartitionType*=Unit). Every Unit must have a bid, unless the node is a [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).
-
-    - Every subdivision must have at least one leaf node that bids on the remainder of the subdivision's conditions, i.e. use the same operand as its sibling unit(s) and set its *Attribute* to *null*.
-
-    - You may only specify a child node after its parent.
-
-    - If you are adding partitions with multiple levels where neither the parent or child yet exist, use a negative int value as a reference to identify the parent. For example set the both the parent's *Id*, and the child's *ParentCriterionId* element to the same negative value. The negative IDs are only valid for the duration of the call. Unique system identifiers for each successfully added ad group criterion are returned in the response message.
-
-    - The *CriterionBid* and *DestinationUrl* elements of the [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) are ignored for *Subdivision* partition nodes. Those elements are only relevant for *Unit* (leaf) partition nodes.
-
-    - The *Status* element of the *AdGroupCriterion* is always ignored for product partition criterion. To add, update, or delete a product partition, set the *Action* element of the corresponding [AdGroupCriterionAction](../campaign-management-service/adgroupcriterion.md).
-
-    - To pause any product partition you must pause the entire ad group by calling [UpdateAdGroups](../campaign-management-service/updateadgroups.md). You can call [UpdateCampaigns](../campaign-management-service/updatecampaigns.md) to pause the entire campaign.
-
-    - The *EditorialStatus* element of the *AdGroupCriterion* has no significant meaning for product partition criterion. Editorial validation for the product catalog is completed in the Microsoft Merchant Center store.
-
-    - For a *Delete* action you only need to specify the *Id* and *AdGroupId* in the  *AdGroupCriterion*.
-
-    - If you delete a parent product partition, all of its children and descendants will also be deleted.
-
-    - You may not specify duplicate product conditions in a branch. 
+    Please also consider the validation rules described in the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) documentation. 
 
 5. Create a product ad. You must add at least one [ProductAd](../campaign-management-service/productad.md) to the ad group via the [AddAds](../campaign-management-service/addads.md) operation. A product ad is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Microsoft Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. 
 
