@@ -74,6 +74,9 @@ Each device criterion defines a device name for the accompanying criterion bid a
 
 The maximum number of device criteria that you can set per campaign or ad group is three. You must either have three separate criteria for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criteria can exist for the campaign or ad group.
 
+> [!NOTE]
+> This criterion type is not supported with smart shopping campaigns i.e., campaigns with Type set to *Shopping* and SubType set to *ShoppingSmartAds*.  
+
 ### <a name="gendercriterion"></a>Gender Criterion
 You can target customers by gender so that your ads are displayed more frequently to people who will be interested in them. 
 
@@ -136,8 +139,8 @@ The supported criteria varies by campaign type.
 |Criterion Association|Supported Campaign Types|
 |----------|---------------|
 |Campaign Biddable Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
-|Ad Group Biddable Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
-|Ad Group Negative Criterion|Audience|
+|Ad Group Biddable Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping*|
+|Ad Group Negative Criterion|Audience| 
 
 The maximum number of company name profile criteria that you can apply to each campaign or ad group is 1,000.
 
@@ -146,7 +149,7 @@ With radius criteria, you can choose to show ads to potential customers in, sear
 
 Each radius criterion defines a radius, latitude, and longitude for the accompanying criterion bid adjustment. 
 
-The maximum number of radius criteria that you can set per campaign or ad group is 2,000.
+The maximum number of radius criteria that you can set per campaign or ad group is 2,000.  
 
 ## <a name="bidadjust"></a>Criterion Bid Adjustments
 The ad group or keyword bid is used as the default or base bid. When you define a criterion, you can choose to adjust the base bid by a specified percentage. This is known as a bid adjustment or bid multiplier. For example, if your business sells pet supplies on the Internet, and you also have a storefront in Seattle, you can set your base bid for the "pet supplies" keyword to $1, and create a location criterion for your campaign that adjusts the bid by 50% for users in the Seattle metropolitan area. If a user in Los Angeles searches for "pet supplies", your bid for that keyword will be the base bid of $1.00. If a user in Seattle searches for "pet supplies", your bid is adjusted by 50% to $1.50. Placing a bid adjustment increases the likelihood that your ad is displayed in a better position for customers who meet your targeting criteria.

@@ -12,7 +12,48 @@ dev_langs:
   - python
 ---
 # ApplyProductPartitionActions Service Operation - Campaign Management
-Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), which each contain a [ProductPartition](productpartition.md).
+Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), which each contain a [ProductPartition](productpartition.md).  
+
+> [!TIP]
+> For an overview and more information about Microsoft shopping campaigns, see the [Product Ads](../guides/product-ads.md) and [Smart Shopping Campaigns](../guides/smart-shopping-campaigns.md) technical guides. 
+
+Please note the following validation rules. 
+
+- At minimum you must specify at least the root node for the product partition group tree structure. The product partition group's root [BiddableAdGroupCriterion](biddableadgroupcriterion.md) must have its condition *Operand* set to "All" and *Attribute* to *null*. If you are bidding on all products in the catalog equally, set the *PartitionType* to Unit. If you are partitioning the bids based on more specific product conditions, then set the *PartitionType* to Subdivision, the *ParentCriterionId* to *null*, and the *Id* to a negative value. You will use the negative value as *ParentCriterionId* for any child nodes.
+
+- The root node is considered level 0, and a tree can have branches up to 7 levels deep.
+
+- You may specify up to 5,000 [AdGroupCriterionAction](adgroupcriterion.md) objects per call. The entire tree created through multiple calls can have up to 20,000 nodes.
+
+- Each of the [AdGroupCriterionAction](adgroupcriterion.md) objects must have the same *AdGroupId*, otherwise the call will fail.
+
+- To update the *Condition* or *Attribute* properties, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. Likewise to update from a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) to a [NegativeAdGroupCriterion](negativeadgroupcriterion.md) or vice versa, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. 
+
+- If any action fails, all remaining actions that might have otherwise succeeded will also fail.
+
+- All actions in one call must result in a complete tree structure. If you need to apply more than 5,000 actions per ad group, you must make multiple calls. Get the parent ad group criterion identifiers from the first call, and then add more children as needed in subsequent calls.
+
+- Every path from the root node to the end of a branch must terminate with a leaf node (*ProductPartitionType*=Unit). Every Unit must have a bid, unless the node is a [NegativeAdGroupCriterion](negativeadgroupcriterion.md).
+
+- Every subdivision must have at least one leaf node that bids on the remainder of the subdivision's conditions, i.e. use the same operand as its sibling unit(s) and set its *Attribute* to *null*.
+
+- You may only specify a child node after its parent.
+
+- If you are adding partitions with multiple levels where neither the parent or child yet exist, use a negative int value as a reference to identify the parent. For example set the both the parent's *Id*, and the child's *ParentCriterionId* element to the same negative value. The negative IDs are only valid for the duration of the call. Unique system identifiers for each successfully added ad group criterion are returned in the response message.
+
+- The *CriterionBid* and *DestinationUrl* elements of the [BiddableAdGroupCriterion](biddableadgroupcriterion.md) are ignored for *Subdivision* partition nodes. Those elements are only relevant for *Unit* (leaf) partition nodes.
+
+- The *Status* element of the *AdGroupCriterion* is always ignored for product partition criterion. To add, update, or delete a product partition, set the *Action* element of the corresponding [AdGroupCriterionAction](adgroupcriterion.md).
+
+- To pause any product partition you must pause the entire ad group by calling [UpdateAdGroups](updateadgroups.md). You can call [UpdateCampaigns](updatecampaigns.md) to pause the entire campaign.
+
+- The *EditorialStatus* element of the *AdGroupCriterion* has no significant meaning for product partition criterion. Editorial validation for the product catalog is completed in the Microsoft Merchant Center store.
+
+- For a *Delete* action you only need to specify the *Id* and *AdGroupId* in the  *AdGroupCriterion*.
+
+- If you delete a parent product partition, all of its children and descendants will also be deleted.
+
+- You may not specify duplicate product conditions in a branch. 
 
 ## <a name="request"></a>Request Elements
 The *ApplyProductPartitionActionsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -187,11 +228,11 @@ This template was generated by a tool to show the order of the [body](#response-
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e44="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e44:KeyValuePairOfstringstring>
-              <e44:key d4p1:nil="false">ValueHere</e44:key>
-              <e44:value d4p1:nil="false">ValueHere</e44:value>
-            </e44:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e250="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e250:KeyValuePairOfstringstring>
+              <e250:key d4p1:nil="false">ValueHere</e250:key>
+              <e250:value d4p1:nil="false">ValueHere</e250:value>
+            </e250:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

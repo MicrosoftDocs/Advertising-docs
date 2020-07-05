@@ -16,6 +16,7 @@ The Campaign Management service defines the following value sets.
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionAdditionalField](adextensionadditionalfield.md)|Defines a list of optional ad extension properties that you can request when calling [GetAdExtensionsAssociations](getadextensionsassociations.md) and [GetAdExtensionsByIds](getadextensionsbyids.md).|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
+|[AdExtensionHeaderType](adextensionheadertype.md)|Reserved.|
 |[AdExtensionStatus](adextensionstatus.md)|Defines the possible status values of an ad extension.|
 |[AdExtensionsTypeFilter](adextensionstypefilter.md)|Defines the possible ad extension types.|
 |[AdGroupAdditionalField](adgroupadditionalfield.md)|Defines a list of optional ad group properties that you can request when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md) and [GetAdGroupsByIds](getadgroupsbyids.md).|

@@ -13,7 +13,7 @@ Defines an object that contains a list of entity identifiers.
 ```xml
 <xs:complexType name="IdCollection" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Ids" nillable="true" type="q71:ArrayOfNullableOflong" xmlns:q71="http://schemas.datacontract.org/2004/07/System" />
+    <xs:element minOccurs="0" name="Ids" nillable="true" type="q74:ArrayOfNullableOflong" xmlns:q74="http://schemas.datacontract.org/2004/07/System" />
   </xs:sequence>
 </xs:complexType>
 ```

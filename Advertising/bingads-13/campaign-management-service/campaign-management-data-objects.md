@@ -91,6 +91,7 @@ The Campaign Management service defines the following data objects.
 |[Experiment](experiment.md)|Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.|
 |[FileImportJob](fileimportjob.md)|Reserved for future use.|
 |[FileImportOption](fileimportoption.md)|Reserved for future use.|
+|[FilterLinkAdExtension](filterlinkadextension.md)|Reserved.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
 |[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
 |[GenderCriterion](gendercriterion.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
@@ -120,7 +121,7 @@ The Campaign Management service defines the following data objects.
 |[ManualCpcBiddingScheme](manualcpcbiddingscheme.md)|Defines an object that represents the manual CPC bid strategy type.|
 |[MaxClicksBiddingScheme](maxclicksbiddingscheme.md)|Defines an object that represents the maximum clicks bid strategy type.|
 |[MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)|Defines an object that represents the maximum conversions bid strategy type.|
-|[MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)|Reserved for future use.|
+|[MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)|Defines an object that represents the maximum conversion value bid strategy type.|
 |[MaxRoasBiddingScheme](maxroasbiddingscheme.md)|This object is not in use and will be removed from a future version of the API.|
 |[Media](media.md)|Defines the base object of media.|
 |[MediaAssociation](mediaassociation.md)|Defines an object that represents the identified media and an associated entity, for example media associated with an ad group.|
@@ -147,7 +148,7 @@ The Campaign Management service defines the following data objects.
 |[ProductAudience](productaudience.md)|Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store.|
 |[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Microsoft Merchant Center catalog file.|
 |[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
-|[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Microsoft Merchant Center store gets served as a product ad.|
+|[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine which items from your catalog to include in the campaign e.g., filter by brand or condition.|
 |[ProfileCriterion](profilecriterion.md)|Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.|
 |[PromotionAdExtension](promotionadextension.md)|Promotion Extensions highlight special sales and offers in your text ads.|
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|

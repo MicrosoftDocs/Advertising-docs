@@ -26,6 +26,7 @@ Defines the possible ad extension types.
         <xs:enumeration value="PriceAdExtension" />
         <xs:enumeration value="ActionAdExtension" />
         <xs:enumeration value="PromotionAdExtension" />
+        <xs:enumeration value="FilterLinkAdExtension" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -34,7 +35,7 @@ Defines the possible ad extension types.
 
 ## <a name="values"></a>Values
 
-The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension).
+The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [FilterLinkAdExtension](#filterlinkadextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension).
 
 |Value|Description|
 |-----------|---------------|
@@ -42,6 +43,7 @@ The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the follow
 |<a name="appadextension"></a>AppAdExtension|An ad extension that contains a link to install an application from a supported app store.<br/><br/>For more information, see [AppAdExtension](appadextension.md).|
 |<a name="calladextension"></a>CallAdExtension|An ad extension that contains a phone number and whether it's the only clickable item in an ad.<br/><br/>For more information, see [CallAdExtension](calladextension.md).|
 |<a name="calloutadextension"></a>CalloutAdExtension|An ad extension that contains additional text in the ad that can describe more about your business, products, or services.<br/><br/>For more information, see [CalloutAdExtension](calloutadextension.md).|
+|<a name="filterlinkadextension"></a>FilterLinkAdExtension|Reserved.|
 |<a name="imageadextension"></a>ImageAdExtension|An ad extension that contains an image with alternative text.<br/><br/>For more information, see [ImageAdExtension](imageadextension.md).|
 |<a name="locationadextension"></a>LocationAdExtension|An ad extension that contains the address and phone number of the business.<br/><br/>For more information, see [LocationAdExtension](locationadextension.md).|
 |<a name="priceadextension"></a>PriceAdExtension|An ad extension that includes between 3 and 8 price table rows.<br/><br/>For more information, see [PriceAdExtension](priceadextension.md).|

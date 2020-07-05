@@ -15,7 +15,9 @@ Do not try to instantiate a *BiddingScheme*. You can create one or more of the f
 - [ManualCpcBiddingScheme](manualcpcbiddingscheme.md) 
 - [MaxClicksBiddingScheme](maxclicksbiddingscheme.md)
 - [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)  
+- [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)  
 - [TargetCpaBiddingScheme](targetcpabiddingscheme.md) 
+- [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) 
 - [TargetRoasBiddingScheme](targetroasbiddingscheme.md) 
 
 > [!IMPORTANT] 

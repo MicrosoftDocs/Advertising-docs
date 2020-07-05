@@ -177,7 +177,7 @@ Set this property to *TRUE* if you want the ads to be shown in the search user's
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network.
+> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network. This property is not available with [smart shopping campaigns](../guides/smart-shopping-campaigns.md).
 
 Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this campaign.
 
@@ -254,7 +254,7 @@ The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, Max
 > [!TIP] 
 > You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
 
-**Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default value for Shopping campaigns is ManualCpc. The only supported value for Audience campaigns is ManualCpc.    
+**Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default bid strategy type for most Shopping campaigns is EnhancedCpc; however, the only supported bid strategy type for [smart shopping campaigns](../guides/smart-shopping-campaigns.md) is MaxConversionValue. The only supported value for Audience campaigns is ManualCpc.    
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc), [Bid Strategy TargetCpa](#bidstrategytargetcpa), and [Bid Strategy TargetRoas](#bidstrategytargetroas) fields will be deleted.       
 **Delete:** Read-only  
 
@@ -280,7 +280,10 @@ The system generated identifier of the [Budget](budget.md) that this campaign sh
 If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this field to '0' (zero) and set the [Budget](#budget) field to a valid budget amount.
 
 > [!NOTE]
-> This value corresponds to the *Id* field of the [Budget](budget.md) record.
+> This value corresponds to the *Id* field of the [Budget](budget.md) record. 
+
+> [!NOTE]
+> Shared budgets are not supported with [smart shopping campaigns](../guides/smart-shopping-campaigns.md) i.e., campaigns with [Campaign Type](#campaigntype) set to *Shopping* and [Sub Type](#subtype) set to *ShoppingSmartAds*. With [smart shopping campaigns](../guides/smart-shopping-campaigns.md), you must set the daily [Budget](#budget) amount.  
 	
 **Add:** Optional. You can either specify an existing campaign identifier, or specify a negative identifier that is equal to the [Id](budget.md#id) field of a [Budget](budget.md) record. This is recommended if you are applying a new shared budget to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Optional. If no value is set for the update, this setting is not changed.  
@@ -378,7 +381,7 @@ The [language](../guides/ad-languages.md#adlanguage) of the website pages that y
 
 Your website language determines where your ads are eligible to appear. For example, a German-language ad can appear in Germany, Austria, and Switzerland, but not in Spain. If your website contains pages in multiple languages and you want to advertise all of these pages, you should create a separate campaign for each language. 
 
-The supported languages are English, French, and German. The language values Dutch, Spanish, Italian, and Swedish can also be set by customers in the DSA Domain Language Phase 2 feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 653).
+The supported domain languages are Dutch, English, French, German, Italian, Spanish, and Swedish. 
 
 Note, if you set the campaign [Language](#language) or ad group [Language](ad-group.md#language), they will be ignored.
 
@@ -525,9 +528,9 @@ This bulk field maps to the *Id* field of the [Account](account.md) record.
 ## <a name="priority"></a>Priority
 Helps determine which Microsoft Shopping campaign serves ads, in the event that two or more campaigns use the product catalog feed from the same Microsoft Merchant Center store.
 
-You must specify one of the supported values: 0, 1, or 2. The higher numbers are given higher priority.
+A higher priority value denotes a higher priority. The supported values for most shopping campaigns are 0, 1, and 2. For [smart shopping campaigns](../guides/smart-shopping-campaigns.md) (campaign [Sub Type](#subtype) set to *ShoppingSmartAds*), you must set the priority to 3.
 
-If two shopping campaigns use the product catalog feed from same Microsoft Merchant Center store, then  ads will be delivered for the [Ad Group Product Partition](ad-group-product-partition.md) with the highest bid.
+If two shopping campaigns use the product catalog feed from same Microsoft Merchant Center store, then ads will be delivered for the [Ad Group Product Partition](ad-group-product-partition.md) with the highest bid.
 
 > [!NOTE]
 > If you create a Microsoft Shopping campaign in the Microsoft Advertising web application, the default priority selected is "Low" which is the equivalent of '0'.
@@ -598,13 +601,15 @@ To get your store identifiers, call the [GetBMCStoresByCustomerId](../campaign-m
 ## <a name="subtype"></a>Sub Type
 The campaign sub type.
 
-This field is only applicable for campaigns of type *Shopping*, and will be empty for all other campaign types.
+This field is only applicable for campaigns with [Campaign Type](#campaigntype) set to *Shopping*, and will be empty for all other campaign types.
 
-We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Microsoft Shopping Campaigns. More details about Cooperative campaigns are coming soon, and whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any Microsoft Shopping Campaigns.
+If the sub type is not set, the campaign is a standard Microsoft Shopping campaign.  
 
-When you download campaigns and if the [Campaign Type](#campaigntype) field is set to *Shopping*, please also check the *Sub Type* of each campaign. If the *Sub Type* is not set then it is a standard Microsoft Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign with different requirements.  
+If the sub type is set to *ShoppingSmartAds*, the campaign is a Microsoft Smart Shopping campaign.  
 
-**Add:** Optional and not applicable for most campaign types. For Cooperative campaigns you must set the sub type to *ShoppingCoOperative*.  
+If the sub type is set to *ShoppingCoOperative*, the campaign is a Microsoft Shopping campaign with [Sponsored Products](https://help.ads.microsoft.com/#apex/3/en/60004/1).  
+
+**Add:** Optional and not applicable for most campaign types. For Microsoft [smart shopping campaigns](../guides/smart-shopping-campaigns.md) you must set the sub type to *ShoppingSmartAds*. For Microsoft Shopping campaign with [Sponsored Products](https://help.ads.microsoft.com/#apex/3/en/60004/1) you must set the sub type to *ShoppingCoOperative*.  
 **Update:** Read-only  
 **Delete:** Read-only  
 

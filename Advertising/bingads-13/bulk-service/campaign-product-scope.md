@@ -9,9 +9,15 @@ dev_langs:
   - csharp
 ---
 # Campaign Product Scope Record - Bulk
-Defines a campaign's set of product conditions that can be uploaded and downloaded in a bulk file.
+Defines a campaign level product scope with list of conditions that help determine which items from your catalog to include in the campaign e.g., filter by brand or condition.
 
 You can use campaign product scopes with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Microsoft Merchant Center [store ID](campaign.md#storeid). The product scope allows you to choose which items from your catalog to include in the campaign e.g., filter by  brand or condition. 
+
+> [!TIP]
+> For an overview and more information about Microsoft shopping campaigns, see the [Product Ads](../guides/product-ads.md) technical guide. 
+
+> [!NOTE]
+> Campaign level product scope conditions are not supported with [Smart Shopping Campaigns](../guides/smart-shopping-campaigns.md) i.e., campaigns with [Campaign Type](campaign.md#campaigntype) set to *Shopping* and [Sub Type](campaign.md#subtype) set to *ShoppingSmartAds*.  
 
 You can download all *Campaign Product Scope* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
