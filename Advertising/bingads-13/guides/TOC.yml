@@ -173,6 +173,8 @@
       href: ./page-feeds.md
     - name: Show Ads to Your Target Audience
       href: ./show-ads-target-audience.md
+    - name: Smart Shopping Campaigns
+      href: ./smart-shopping-campaigns.md
     - name: Universal Event Tracking
       href: ./universal-event-tracking.md
     - name: URL Tracking with Upgraded URLs
@@ -1376,6 +1378,8 @@
           href: ../campaign-management-service/fileimportjob.md
         - name: FileImportOption
           href: ../campaign-management-service/fileimportoption.md
+        - name: FilterLinkAdExtension
+          href: ../campaign-management-service/filterlinkadextension.md
         - name: FixedBid
           href: ../campaign-management-service/fixedbid.md
         - name: Frequency
@@ -1573,6 +1577,8 @@
           href: ../campaign-management-service/adextensionadditionalfield.md
         - name: AdExtensionEditorialStatus
           href: ../campaign-management-service/adextensioneditorialstatus.md
+        - name: AdExtensionHeaderType
+          href: ../campaign-management-service/adextensionheadertype.md
         - name: AdExtensionStatus
           href: ../campaign-management-service/adextensionstatus.md
         - name: AdExtensionsTypeFilter

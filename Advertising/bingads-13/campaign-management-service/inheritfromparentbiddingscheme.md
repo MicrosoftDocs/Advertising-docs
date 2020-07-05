@@ -36,7 +36,7 @@ The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|The type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This value is equal to the *Type* element of the campaign or ad group's [BiddingScheme](biddingscheme.md) object. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas*.<br/><br/>This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md), [GetAdGroupsByIds](getadgroupsbyids.md), [GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](getkeywordsbyids.md).|**string**|
+|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|The type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group.<br/><br/>This value is equal to the *Type* element of the parent campaign or ad group's [BiddingScheme](biddingscheme.md) object. Possible values include *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *MaxConversionValue*, *TargetCpa*, *TargetImpressionShare*, and *TargetRoas*. New bid strategy types might be added in the future, so you should not take any dependency on a fixed set of values.|**string**|
 
 The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object has [Inherited Elements](#inheritedelements).
 

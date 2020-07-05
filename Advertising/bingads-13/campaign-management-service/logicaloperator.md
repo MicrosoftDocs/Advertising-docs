@@ -12,21 +12,29 @@ Defines the supported set of logical operators for combined list audiences.
 ## Syntax
 ```xml
 <xs:simpleType name="LogicalOperator" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="And" />
-        <xs:enumeration value="Or" />
-        <xs:enumeration value="Not">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="And">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="Or">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="Not">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+  </xs:restriction>
 </xs:simpleType>
 ```
 

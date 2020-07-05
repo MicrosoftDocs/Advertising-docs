@@ -4,10 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: Defines an object that represents the maximum conversion value bid strategy type.
 ---
 # MaxConversionValueBiddingScheme Data Object - Campaign Management
-Reserved for future use.
+Defines an object that represents the maximum conversion value bid strategy type. 
+
+Smart shopping campaigns use the Maximize Conversion Value bid strategy (where Microsoft Advertising automatically sets your bids in real time to maximize total conversion value within your budget) and automated targeting to maximize overall revenue numbers with an option to define return on ad spend (ROAS) targets.  
 
 ## Syntax
 ```xml

@@ -207,7 +207,7 @@ Set this property to *TRUE* if you want the ads to be shown in the search user's
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network.
+> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network. This property is not available with [smart shopping campaigns](../guides/smart-shopping-campaigns.md). 
 
 Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this ad group.
 
@@ -246,16 +246,15 @@ Please take note of the following impact this setting has on biddable [Ad Group 
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
-The bid strategy type for how you want to manage your bids. For ad groups you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+The bid strategy type for how you want to manage your bids. 
+
+For most ad groups you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. Ad groups in [smart shopping campaigns](../guides/smart-shopping-campaigns.md) only support the *InheritFromParent* bid strategy, and do not support *ManualCpc* bid strategy. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
 
-> [!TIP] 
-> You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
-
 > [!NOTE]
-> For campaigns of type *Shopping* the product partitions inherit the ad group [Bid Strategy Type](#bidstrategytype).
+> For campaigns of type *Shopping* the ad group [Bid Strategy Type](#bidstrategytype) is effectively used for all product partitions.  
 
 **Add:** Optional. If you do not set this field, then *InheritFromParent* is used by default.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
@@ -431,6 +430,8 @@ The search networks where you want your ads to display.
 Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](https://help.ads.microsoft.com/#apex/3/en/50871/0) help article.
 
 For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
+
+For ad groups in [smart shopping campaigns](../guides/smart-shopping-campaigns.md), you cannot set the network. The service will set the network to *OwnedAndOperatedAndSyndicatedSearch*. 
 
 If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
