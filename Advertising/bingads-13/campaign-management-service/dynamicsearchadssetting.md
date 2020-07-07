@@ -17,7 +17,7 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
       <xs:sequence>
         <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="PageFeedIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="PageFeedIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="Source" nillable="true" type="tns:DynamicSearchAdsSource" />
       </xs:sequence>
     </xs:extension>

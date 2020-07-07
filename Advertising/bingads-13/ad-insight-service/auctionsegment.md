@@ -16,42 +16,42 @@ Defines the possible auction segment values.
     <xs:enumeration value="Day">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Week">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">20</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">20</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Month">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">30</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">30</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Quarter">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">40</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">40</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="DayOfWeek">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">60</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">60</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Device">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">70</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">70</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

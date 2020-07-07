@@ -19,28 +19,28 @@ Defines the name of account level properties.
     <xs:enumeration value="AdClickParallelTracking">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="FinalUrlSuffix">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="IncludeViewThroughConversions">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="ProfileExpansionEnabled">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

@@ -19,7 +19,7 @@ Defines the ad distribution medium values that you can use to filter the report 
         <xs:enumeration value="Audience">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

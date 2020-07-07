@@ -19,63 +19,63 @@ Defines possible payment methods for a Microsoft Advertising account.
     <xs:enumeration value="CreditCard">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Invoice">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Check">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="ElectronicFundsTransfer">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="PayPal">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="ELV">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="OfflinePaymentMethod">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="VBA">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Boleto">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

@@ -22,140 +22,140 @@ Defines the possible types of campaign criterions.
         <xs:enumeration value="Webpage">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Targets">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Age">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="DayTime">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Gender">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Location">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Radius">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">256</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">256</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Device">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">512</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">512</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="LocationIntent">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1024</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1024</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Audience">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2048</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">2048</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="CustomAudience">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4096</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4096</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="InMarketAudience">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8192</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8192</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="RemarketingList">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16384</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16384</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="CompanyName">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32768</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">32768</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="JobFunction">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">65536</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">65536</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Industry">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">131072</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">131072</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="ProductAudience">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">262144</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">262144</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="SimilarRemarketingList">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">524288</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">524288</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Store">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1048576</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1048576</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="CombinedList">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2097152</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">2097152</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

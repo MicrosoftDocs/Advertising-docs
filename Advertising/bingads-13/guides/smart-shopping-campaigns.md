@@ -88,7 +88,7 @@ Here's an example [AddCampaigns](../campaign-management-service/addcampaigns.md)
                     <StoreId>StoreIdGoesHere</StoreId>
                 </Setting>
             </Settings>
-            <Languages xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <Languages xmlns:a="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
                 <a:string>All</a:string>
             </Languages>
         </Campaign>
@@ -254,7 +254,7 @@ You can create both ad types together or seperately via the [AddAds](../campaign
             <PromotionalText i:nil="true"/>
         </Ad>
         <Ad i:type="ResponsiveAd">
-            <FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <FinalUrls xmlns:a="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
                 <a:string>https://www.contoso.com/womenshoesale</a:string>
             </FinalUrls>
             <BusinessName>Contoso</BusinessName>

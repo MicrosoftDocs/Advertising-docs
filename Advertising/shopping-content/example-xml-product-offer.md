@@ -17,7 +17,7 @@ The following shows an example of a product offer in XML that a GET request retu
   <additional_image_link>http://www.tailspintoys.com/images?id=123def</additional_image_link>
   <additional_image_link>http://www.tailspintoys.com/images?id=567def</additional_image_link>
   <adult>False</adult>
-  <adwords_redirect>http://contoso.com/hury</adwords_redirect>
+  <adwords_redirect>https://contoso.com/hury</adwords_redirect>
   <age_group>kids</age_group>
   <availability>in stock</availability>
   <brand>Tailspin</brand>

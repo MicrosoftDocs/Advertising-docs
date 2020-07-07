@@ -18,7 +18,7 @@ The following shows an example of a product offer in JSON that a GET request ret
     "http://www.tailspintoys.com/images?id=567def"
   ],
   "adult": "False",
-  "adwordsRedirect": "http://contoso.com/hury",
+  "adwordsRedirect": "https://contoso.com/hury",
   "ageGroup": "kids",
   "availability": "in stock",
   "brand": "Tailspin",

@@ -307,8 +307,8 @@ namespace Batch
                 Channel = Channel.Online.ToString(),
                 Condition = Condition.New.ToString(),
                 ContentLanguage = "en",
-                Link = "http://www.contoso.com/apparel/men/tshirts.htm",
-                ImageLink = "http://www.contoso.com/pics/tees.jpg",
+                Link = "https://www.contoso.com/apparel/men/tshirts.htm",
+                ImageLink = "https://www.contoso.com/pics/tees.jpg",
                 OfferId = "1",
                 Price = new Price()
                 {
@@ -1242,7 +1242,7 @@ class ProductsEx {
         product.setChannel(ProductChannel.Online.toString());
         product.setCondition(ProductCondition.New.toString());
         product.setContentLanguage(ContentLanguage.EN.toString());
-        product.setLink("http://www.contoso.com");
+        product.setLink("https://www.contoso.com");
         product.setImageLink("https://tse3.mm.bing.net/th?id=Ma8674a23cc755995efecf822b3836f07o0&pid=Api");
         product.setOfferId("1");
         product.setPrice(new Price());
@@ -2013,8 +2013,8 @@ def get_batch_data():
     product['price'] = {}
     product['price']['currency'] = 'USD'
     product['price']['value'] = 50.50
-    product['link'] = 'http://www.contoso.com/apperal/men/tshirts.htm'
-    product['imageLink'] = 'http://www.contoso.com/pics/tees.jpg'
+    product['link'] = 'https://www.contoso.com/apperal/men/tshirts.htm'
+    product['imageLink'] = 'https://www.contoso.com/pics/tees.jpg'
     product['promotionId'] = 'promo1!,promo2,promo3'
     # product['identifierExists'] = False  # Un-comment to remove warning case
 
@@ -2040,8 +2040,8 @@ def get_batch_data():
     product['price'] = {}
     product['price']['currency'] = 'USD'
     product['price']['value'] = 750.33
-    product['link'] = 'http://www.contoso.com/apperal/men/shorts.htm'
-    product['imageLink'] = 'http://www.contoso.com/pics/shorts.jpg'
+    product['link'] = 'https://www.contoso.com/apperal/men/shorts.htm'
+    product['imageLink'] = 'https://www.contoso.com/pics/shorts.jpg'
     product['promotionId'] = 'promo1'
     product['identifierExists'] = False
     product['expirationDate'] = (datetime.utcnow()+timedelta(days=14)).strftime("%Y-%m-%dT%H:%M:%S")

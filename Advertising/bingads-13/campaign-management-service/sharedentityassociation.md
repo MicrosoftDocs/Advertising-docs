@@ -18,7 +18,7 @@ Defines an object that associates a campaign to negative keyword list, or an ad 
     <xs:element minOccurs="0" name="SharedEntityCustomerId" nillable="true" type="xs:long">
       <xs:annotation>
         <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          <DefaultValue EmitDefaultValue="false" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
         </xs:appinfo>
       </xs:annotation>
     </xs:element>

@@ -14,7 +14,7 @@ Defines the possible match types for a keyword or negative keyword.
 <xs:simpleType name="MatchType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:appinfo>
-      <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
     </xs:appinfo>
   </xs:annotation>
   <xs:restriction base="xs:string">

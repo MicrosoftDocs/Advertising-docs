@@ -36,7 +36,7 @@ Do not try to instantiate a *ConversionGoal*. You can create one or more of the 
     <xs:element minOccurs="0" name="ViewThroughConversionWindowInMinutes" nillable="true" type="xs:int">
       <xs:annotation>
         <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          <DefaultValue EmitDefaultValue="false" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
         </xs:appinfo>
       </xs:annotation>
     </xs:element>

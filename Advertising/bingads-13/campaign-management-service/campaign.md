@@ -33,11 +33,11 @@ Defines a campaign.
     <xs:element minOccurs="0" name="CampaignType" nillable="true" type="tns:CampaignType" />
     <xs:element minOccurs="0" name="Settings" nillable="true" type="tns:ArrayOfSetting" />
     <xs:element minOccurs="0" name="BudgetId" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="Languages" nillable="true" type="q5:ArrayOfstring" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="Languages" nillable="true" type="q5:ArrayOfstring" xmlns:q5="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="AdScheduleUseSearcherTimeZone" nillable="true" type="xs:boolean">
       <xs:annotation>
         <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          <DefaultValue EmitDefaultValue="false" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
         </xs:appinfo>
       </xs:annotation>
     </xs:element>

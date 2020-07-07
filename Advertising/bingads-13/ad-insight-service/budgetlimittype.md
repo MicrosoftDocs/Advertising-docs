@@ -16,14 +16,14 @@ Defines the possible types of campaign budgets.
     <xs:enumeration value="DailyBudgetStandard">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="DailyBudgetAccelerated">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

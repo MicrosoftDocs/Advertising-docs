@@ -34,7 +34,7 @@ Do not try to instantiate an *Audience*. You can create one or more of the follo
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
     <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q92:ArrayOfstring" xmlns:q92="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q92:ArrayOfstring" xmlns:q92="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>

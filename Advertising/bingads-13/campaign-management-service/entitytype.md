@@ -16,28 +16,28 @@ Defines the possible types of entities.
     <xs:enumeration value="Campaign">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="AdGroup">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Ad">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
     <xs:enumeration value="Keyword">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

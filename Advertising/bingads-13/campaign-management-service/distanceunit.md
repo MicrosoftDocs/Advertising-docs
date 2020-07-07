@@ -14,7 +14,7 @@ Defines the possible distance units of a geographical location.
 <xs:simpleType name="DistanceUnit" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:appinfo>
-      <ActualType Name="short" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <ActualType Name="short" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
     </xs:appinfo>
   </xs:annotation>
   <xs:restriction base="xs:string">

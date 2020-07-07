@@ -20,7 +20,7 @@ This is the default bid strategy type for your ad groups and keywords. Use this 
         <xs:element minOccurs="0" name="InheritedBidStrategyType" nillable="true" type="xs:string">
           <xs:annotation>
             <xs:appinfo>
-              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              <DefaultValue EmitDefaultValue="false" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
             </xs:appinfo>
           </xs:annotation>
         </xs:element>

@@ -19,49 +19,49 @@ Defines the ad type values that you can use to filter the report data. These val
         <xs:enumeration value="Local">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Product">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="AppInstall">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">256</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">256</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="DynamicSearchAd">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">512</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">512</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="ExpandedText">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1024</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1024</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="ResponsiveAd">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4096</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4096</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="ResponsiveSearchAd">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8192</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8192</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

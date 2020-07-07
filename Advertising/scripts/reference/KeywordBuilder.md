@@ -18,7 +18,7 @@ Example usage:
     var operation = adGroup.newKeywordBuilder()
         .withText("KEYWORD TEXT GOES HERE")
         .withCpc(0.5)
-        .withFinalUrl("http://www.contoso.com")
+        .withFinalUrl("https://www.contoso.com")
         .build();
 
     // See the Builders topic for performance considerations

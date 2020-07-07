@@ -14,7 +14,7 @@ Defines the possible intent options for location criterion, for example to targe
 <xs:simpleType name="IntentOption" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:appinfo>
-      <ActualType Name="short" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <ActualType Name="short" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
     </xs:appinfo>
   </xs:annotation>
   <xs:restriction base="xs:string">

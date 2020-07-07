@@ -21,7 +21,7 @@ Defines the ad group status values that you can use to filter the report data. T
         <xs:enumeration value="Paused">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

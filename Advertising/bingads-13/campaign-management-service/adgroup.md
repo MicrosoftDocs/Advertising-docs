@@ -33,7 +33,7 @@ Defines an ad group.
     <xs:element minOccurs="0" name="AdScheduleUseSearcherTimeZone" nillable="true" type="xs:boolean">
       <xs:annotation>
         <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          <DefaultValue EmitDefaultValue="false" xmlns="https://schemas.microsoft.com/2003/10/Serialization/" />
         </xs:appinfo>
       </xs:annotation>
     </xs:element>

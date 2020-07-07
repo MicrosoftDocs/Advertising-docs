@@ -19,7 +19,7 @@ Defines the possible values that you can use to use to filter the report data by
         <xs:enumeration value="EnhancedCpc">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

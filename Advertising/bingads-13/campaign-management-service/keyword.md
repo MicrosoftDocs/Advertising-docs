@@ -26,9 +26,9 @@ As shown above, a keyword can be just a single word, several words, or even a ph
     <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:KeywordEditorialStatus" />
     <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q27:ArrayOfstring" xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q27:ArrayOfstring" xmlns:q27="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q28:ArrayOfstring" xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q28:ArrayOfstring" xmlns:q28="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q29:ArrayOfKeyValuePairOfstringstring" xmlns:q29="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MatchType" nillable="true" type="tns:MatchType" />

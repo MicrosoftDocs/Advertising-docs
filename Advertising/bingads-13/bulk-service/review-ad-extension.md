@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new Review Ad Extension to the accoun
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Is Exact,Source,Url
 Format Version,,,,,,,,,,,,6.0,,,,,
-Review Ad Extension,Active,-16,0,,,ClientIdGoesHere,,,12/31/2019,Review Text,,,(Monday[09:00-21:00]),FALSE,TRUE,Review Source Name,http://review.contoso.com
+Review Ad Extension,Active,-16,0,,,ClientIdGoesHere,,,12/31/2019,Review Text,,,(Monday[09:00-21:00]),FALSE,TRUE,Review Source Name,https://review.contoso.com
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkReviewAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -49,7 +49,7 @@ var bulkReviewAdExtension = new BulkReviewAdExtension
         // 'Text' column header in the Bulk file
         Text = "Review Text",
         // 'Url' column header in the Bulk file
-        Url = "http://review.contoso.com", 
+        Url = "https://review.contoso.com", 
                     
         // 'Ad Schedule' column header in the Bulk file
         Scheduling = new Schedule

@@ -19,28 +19,28 @@ Defines the campaign status values that you can use to filter the report data. T
         <xs:enumeration value="Deleted">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Paused">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="BudgetPaused">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="Suspended">
           <xs:annotation>
             <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
+              <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>

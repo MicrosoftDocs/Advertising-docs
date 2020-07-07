@@ -17,7 +17,7 @@ Contains the methods for getting the response's payload and status code.
 Example usage:
 ```javascript
 function main() {
-    var response = UrlFetchApp.fetch('http://microsoft.com');
+    var response = UrlFetchApp.fetch('https://microsoft.com');
     Logger.log('status code: ' + response.getResponseCode() + '\n' +
         'payload as a string: ' + response.getContentText());
 }

@@ -16,7 +16,7 @@ Defines the possible values for Microsoft Merchant Center store sub types.
     <xs:enumeration value="CoOp">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          <EnumerationValue xmlns="https://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>

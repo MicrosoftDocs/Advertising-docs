@@ -13,7 +13,7 @@ A combination rule includes logical conditions used to determine who to add to y
 ```xml
 <xs:complexType name="CombinationRule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="AudienceIds" nillable="true" type="q93:ArrayOflong" xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element name="AudienceIds" nillable="true" type="q93:ArrayOflong" xmlns:q93="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element name="Operator" type="tns:LogicalOperator" />
   </xs:sequence>
 </xs:complexType>
@@ -42,35 +42,35 @@ Evaluation of the logical expression determines who will be added to the combine
 ```xml
 <CombinationRules i:nil="false">
   <CombinationRule>
-    <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <AudienceIds i:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>123</a1:long>
       <a1:long>234</a1:long>
     </AudienceIds>
     <Operator>Not</Operator>
   </CombinationRule>
   <CombinationRule>
-    <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <AudienceIds i:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>345</a1:long>
       <a1:long>456</a1:long>
     </AudienceIds>
     <Operator>Not</Operator>
   </CombinationRule>
   <CombinationRule>
-    <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <AudienceIds i:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>567</a1:long>
       <a1:long>678</a1:long>
     </AudienceIds>
     <Operator>And</Operator>
   </CombinationRule>
   <CombinationRule>
-    <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <AudienceIds i:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>789</a1:long>
       <a1:long>890</a1:long>
     </AudienceIds>
     <Operator>Or</Operator>
   </CombinationRule>
   <CombinationRule>
-    <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <AudienceIds i:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>987</a1:long>
       <a1:long>876</a1:long>
     </AudienceIds>

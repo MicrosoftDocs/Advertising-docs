@@ -13,7 +13,7 @@ Defines an auction insight key performance indicator.
 ```xml
 <xs:complexType name="AuctionInsightKpi" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Segments" nillable="true" type="q23:ArrayOfstring" xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="Segments" nillable="true" type="q23:ArrayOfstring" xmlns:q23="https://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ImpressionShare" type="xs:double" />
     <xs:element minOccurs="0" name="OverlapRate" type="xs:double" />
     <xs:element minOccurs="0" name="AveragePosition" type="xs:double" />

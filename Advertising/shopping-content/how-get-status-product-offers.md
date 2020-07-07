@@ -65,9 +65,9 @@ The following shows an example report.
 
 "Item Id","Message","Type","Values","Offer Snippet"
 "SKU1234","The product URL should be a sub-path of the store's domain. ","Error","",";eBay Motors>Parts & Accessories>Car & Truck Parts>Brakes>Brake Hoses>;http://contentapis.cloudapp.net/sku123;http://i.ebayimg.com/00/s/NzY4WDI5Mg==/z/irkAAOxyB9RS14Rj/$_1.JPG?set_id=880000500F;24.25;-1;;"
-"SKU5678","The product URL should be a sub-path of the store's domain. ","Error","",";;http://www.contoso.com/;https://tse3.mm.bing.net/th?id=Ma8674a23cc755995efecf822b3836f07o0&pid=Api;1205;-1;;"
+"SKU5678","The product URL should be a sub-path of the store's domain. ","Error","",";;https://www.contoso.com/;https://tse3.mm.bing.net/th?id=Ma8674a23cc755995efecf822b3836f07o0&pid=Api;1205;-1;;"
 "SKU0987","The product URL should be a sub-path of the store's domain. ","Error","",";Apparel & Accessories > Clothing > Outerwear;http://v-vagancclaimedapi.cloudapp.net/;http://google.com/;1;-1;;"
-"SKU6543","The price field is required.","Error","","Mens T-shirt;N/A;http://www.contoso.com/;https://tse3.mm.bing.net/th?id=OIP.Ma8674a23cc755995efecf822b3836f07o0&pid=Api;N/A"
+"SKU6543","The price field is required.","Error","","Mens T-shirt;N/A;https://www.contoso.com/;https://tse3.mm.bing.net/th?id=OIP.Ma8674a23cc755995efecf822b3836f07o0&pid=Api;N/A"
 "SKU2435","The offer expiration date is in the past.","Error","","full product title;Apparel & Accessories > Clothing > Outerwear;http://v-vagancclaimedapi.cloudapp.net/;http://google.com/;1.00"
-"SKU8675","The price field is required.","Error","","Mens T-shirt;N/A;http://www.contoso.com/;https://tse3.mm.bing.net/th?id=OIP.Ma8674a23cc755995efecf822b3836f07o0&pid=Api;N/A"
+"SKU8675","The price field is required.","Error","","Mens T-shirt;N/A;https://www.contoso.com/;https://tse3.mm.bing.net/th?id=OIP.Ma8674a23cc755995efecf822b3836f07o0&pid=Api;N/A"
 ```

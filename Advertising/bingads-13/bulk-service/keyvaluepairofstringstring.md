@@ -14,11 +14,11 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 <xs:complexType name="KeyValuePairOfstringstring" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:appinfo>
-      <GenericType Name="KeyValuePairOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <GenericType Name="KeyValuePairOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="https://schemas.microsoft.com/2003/10/Serialization/">
         <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
         <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
       </GenericType>
-      <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      <IsValueType xmlns="https://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
     </xs:appinfo>
   </xs:annotation>
   <xs:sequence>

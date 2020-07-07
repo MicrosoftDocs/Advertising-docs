@@ -117,10 +117,10 @@ Given the [GetAdsByAdGroupId](getadsbyadgroupid.md) response example below, plea
 					<DevicePreference>0</DevicePreference>
 					<EditorialStatus>Inactive</EditorialStatus>
 					<FinalAppUrls i:nil="true"/>
-					<FinalMobileUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+					<FinalMobileUrls xmlns:a="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
 						<a:string>https://mobile.contoso.com/womenshoesale</a:string>
 					</FinalMobileUrls>
-					<FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+					<FinalUrls xmlns:a="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
 						<a:string>https://www.contoso.com/womenshoesale</a:string>
 					</FinalUrls>
 					<ForwardCompatibilityMap xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>

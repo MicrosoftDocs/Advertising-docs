@@ -63,10 +63,10 @@ Here is an example [CustomerRoles](../customer-management-service/getuser.md#cus
   <e1335:CustomerRole>
     <e1335:RoleId>ValueHere</e1335:RoleId>
     <e1335:CustomerId>ValueHere</e1335:CustomerId>
-    <e1335:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <e1335:AccountIds d4p1:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>ValueHere</a1:long>
     </e1335:AccountIds>
-    <e1335:LinkedAccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <e1335:LinkedAccountIds d4p1:nil="false" xmlns:a1="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <a1:long>ValueHere</a1:long>
     </e1335:LinkedAccountIds>
     <e1335:CustomerLinkPermission d4p1:nil="false">ValueHere</e1335:CustomerLinkPermission>
@@ -96,8 +96,8 @@ If you just signed up for the first time with Microsoft Advertising and created 
 	<a:CustomerRole>
 	   <a:RoleId>41</a:RoleId>
 	   <a:CustomerId>999</a:CustomerId>
-	   <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-	   <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+	   <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+	   <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
 	   <a:CustomerLinkPermission i:nil="true"/>
 	</a:CustomerRole>
  </CustomerRoles>
@@ -111,15 +111,15 @@ If you accept an invitation to be a user in another customer with your existing 
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>999</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
       <a:CustomerLinkPermission i:nil="true"/>
   </a:CustomerRole>
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>111</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
       <a:CustomerLinkPermission i:nil="true"/>
   </a:CustomerRole>
 </CustomerRoles>
@@ -138,29 +138,29 @@ You still have access to the original customer you signed up i.e., 999, and you 
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>999</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
       <a:CustomerLinkPermission i:nil="true"/>
   </a:CustomerRole>
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>111</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
       <a:CustomerLinkPermission i:nil="true"/>
   </a:CustomerRole>
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>222</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
       <a:CustomerLinkPermission>Administrative</a:CustomerLinkPermission>
   </a:CustomerRole>
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>333</a:CustomerId>
-      <a:AccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <a:AccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <b:long>444111</b:long>
       </a:LinkedAccountIds>
       <a:CustomerLinkPermission>Standard</a:CustomerLinkPermission>
@@ -183,8 +183,8 @@ If you just signed up for the first time with Microsoft Advertising, obtained [A
   <a:CustomerRole>
       <a:RoleId>33</a:RoleId>
       <a:CustomerId>111</a:CustomerId>
-      <a:AccountIds i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <a:AccountIds i:nil="true" xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <b:long>111222</b:long>                  
       </a:LinkedAccountIds>
       <a:CustomerLinkPermission i:nil="true"/>
@@ -192,8 +192,8 @@ If you just signed up for the first time with Microsoft Advertising, obtained [A
   <a:CustomerRole>
       <a:RoleId>41</a:RoleId>
       <a:CustomerId>111</a:CustomerId>
-      <a:AccountIds i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-      <a:LinkedAccountIds xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <a:AccountIds i:nil="true" xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <a:LinkedAccountIds xmlns:b="https://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <b:long>111222</b:long>                  
       </a:LinkedAccountIds>
       <a:CustomerLinkPermission i:nil="true"/>

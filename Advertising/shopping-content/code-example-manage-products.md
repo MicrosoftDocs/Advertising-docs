@@ -190,8 +190,8 @@ namespace Products
                 Channel = ProductChannel.Online.ToString(),
                 Condition = ProductCondition.New.ToString(),
                 ContentLanguage = "en",
-                Link = "http://www.contoso.com/apperal/men/tshirts.htm",
-                ImageLink = "http://www.contoso.com/pics/tees.jpg",
+                Link = "https://www.contoso.com/apperal/men/tshirts.htm",
+                ImageLink = "https://www.contoso.com/pics/tees.jpg",
                 OfferId = id,
                 Price = new Price()
                 {
@@ -956,8 +956,8 @@ public class ManageProductsExample {
         product.setChannel("Online");
         product.setCondition("New");
         product.setContentLanguage("en");
-        product.setLink("http://www.contoso.com/apperal/men/tshirts.htm");
-        product.setImageLink("http://www.contoso.com/pics/tees.jpg");
+        product.setLink("https://www.contoso.com/apperal/men/tshirts.htm");
+        product.setImageLink("https://www.contoso.com/pics/tees.jpg");
         product.setOfferId(id);
         Price price = new Price();
         price.setCurrency("USD");
@@ -1743,8 +1743,8 @@ def create_test_product(title_prefix):
         'channel': 'Online',
         'condition': 'New',
         'contentLanguage': 'en',
-        'link': 'http://www.contoso.com/apperal/men/tshirts.htm',
-        'imageLink': 'http://www.contoso.com/pics/tees.jpg',
+        'link': 'https://www.contoso.com/apperal/men/tshirts.htm',
+        'imageLink': 'https://www.contoso.com/pics/tees.jpg',
         'price': {
             'currency': 'USD',
             'value': 1205.00
@@ -1920,8 +1920,8 @@ function create_test_product($titlePrefix){
         'channel' => "Online",
         'condition' => "New",
         'contentLanguage' => "en",
-        'link' => "http://www.contoso.com/apperal/men/tshirts.htm",
-        'imageLink' => "http://www.contoso.com/pics/tees.jpg",
+        'link' => "https://www.contoso.com/apperal/men/tshirts.htm",
+        'imageLink' => "https://www.contoso.com/pics/tees.jpg",
         'price' => array(
             'currency' => 'USD',
             'value' => 5.00,
