@@ -92,6 +92,9 @@ The following table includes parameters that Bing Ads API clients should include
 |Parameter|Required/Optional|Description|
 |--------------|-------------|--------------|
 |`client_id`|required|The application (client) ID that the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) portal assigned your app.|
+|`code_challenge`|recommended|Used to secure authorization code grants via Proof Key for Code Exchange (PKCE). Required if `code_challenge_method` is included. For more information, see the [PKCE RFC](https://tools.ietf.org/html/rfc7636). This is now recommended for all application types - native apps, SPAs, and confidential clients like web apps.|
+|`code_challenge_method`|recommended|The method used to encode the `code_verifier` for the `code_challenge` parameter. Can be one of the following values:<br/><br/>- `plain` <br/>- `S256`<br/><br/>If excluded, `code_challenge` is assumed to be plaintext if `code_challenge` is included. Microsoft identity platform supports both `plain` and `S256`. For more information, see the [PKCE RFC](https://tools.ietf.org/html/rfc7636). This is required for [single page apps using the authorization code flow](reference-third-party-cookies-spas.md).|
+|`prompt`|optional|Indicates the type of user interaction that your application requires. Supported values include the following:<br/>- `prompt=login` will force the user to enter their credentials on that request, negating single-sign on.<br/>- `prompt=none` is the opposite of "login" i.e., it will ensure that the user is not presented with any interactive prompt whatsoever. If the request can't be completed silently via single-sign on, the Microsoft identity platform endpoint will return an interaction_required error.<br/>- `prompt=consent` will trigger the OAuth consent dialog after the user signs in, asking the user to grant permissions to the app.<br/>- `prompt=select_account` will interrupt single sign-on and provide the account selection experience, listing all the accounts in session or any remembered account or an option to choose to use a different account altogether.|
 |`redirect_uri`|required|The redirect_uri of your app, where authentication responses can be sent and received by your app. It must exactly match one of the redirect_uris you registered in the portal, except it must be url encoded. For native & mobile apps, you should use the default value of `https://login.microsoftonline.com/common/oauth2/nativeclient`.|
 |`response_mode`|recommended|Specifies the method that should be used to send the resulting token back to your app. Can be one of the following:<br/><br/>- `query`<br/>- `fragment`<br/>- `form_post`<br/><br/>`query` provides the code as a query string parameter on your redirect URI. If you're requesting an ID token using the implicit flow, you cannot use `query` as specified in the [OpenID spec](https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#Combinations). If you're requesting just the code, you can use `query`, `fragment`, or `form_post`. `form_post` executes a POST containing the code to your redirect URI. For more info, see [OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code).|
 |`response_type`|required|Must include `code` for the authorization code flow.|
@@ -121,7 +124,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=authorization_code
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
+&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only applicable for web apps
 ```
 
 The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the code parameter to the value of the authorization code retrieved in the previous step, and the grant type set to *authorization_code*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Register Your Application](#registerapplication).
@@ -133,6 +136,7 @@ The following table includes parameters that Bing Ads API clients should include
 |`client_id`|required|The application (client) ID that the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) portal assigned your app.|
 |`client_secret`|required for web apps|The application secret that you created in the app registration portal for your app. It should not be used in a native app, because client_secrets cannot be reliably stored on devices. It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.  The client secret must be URL-encoded before being sent.|
 |`code`|required|The authorization_code that you acquired as a result of [requesting user consent](#request-userconsent).|
+|`code_verifier`|recommended|The same code_verifier that was used to obtain the authorization_code. Required if PKCE was used in the authorization code grant request. For more information, see the [PKCE RFC](https://tools.ietf.org/html/rfc7636).|
 |`grant_type`|required|Must be `authorization_code` for the authorization code flow.|
 |`redirect_uri`|required|The same redirect_uri value that was used to acquire the authorization_code.|
 |`scope`|required|A space-separated list of scopes. The scopes requested in this leg must be equivalent to or a subset of the scopes included when you [requested user consent](#request-userconsent). If the scopes specified in this request span multiple resource servers, then the Microsoft identity platform endpoint will return a token for the resource specified in the first scope. For a more detailed explanation of scopes, refer to [permissions, consent, and scopes](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).|
@@ -159,7 +163,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &scope=https%3A%2F%2Fads.microsoft.com%2Fads.manage
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
 &grant_type=refresh_token
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh      // NOTE: Only required for web apps
+&client_secret=JqQX2PNo9bpM0uEihUPzyrh      // NOTE: Only applicable for web apps
 ```
 
 The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the refresh token parameter to the value of the refresh token retrieved in the previous step, and the grant type set to *refresh_token*. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Register Your Application](#registerapplication).
