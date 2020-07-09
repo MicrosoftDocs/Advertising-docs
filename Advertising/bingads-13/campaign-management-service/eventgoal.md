@@ -7,9 +7,11 @@ ms.author: eur
 description: Defines a custom event conversion goal.
 ---
 # EventGoal Data Object - Campaign Management
-Defines a custom event conversion goal. Use this type of goal to count every time someone completes a specific action such as, subscribing to newsletter or downloading white paper, as a conversion. 
+Defines a custom event conversion goal. 
 
-By default, the UET tag logs user visits to pages on your website that allows Microsoft Advertising to support goal types such as [UrlGoal](urlgoal.md), [DurationGoal](durationgoal.md) and [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md). However, you may want to track other types of events such as downloading white papers or subscribing to newsletters as conversions. Microsoft Advertising enables this scenario with the *EventGoal*. In addition to creating an *EventGoal*, you must customize your UET tag tracking code to report the values for one or more of the custom event parameters. To learn more, see [How to report custom events with UET](https://help.ads.microsoft.com/#apex/3/en/56684/2). 
+Use this type of goal to count every time someone completes a specific action such as subscribing to newsletter or downloading a document as a conversion. 
+
+By default, the UET tag logs user visits to pages on your website that allows Microsoft Advertising to support goal types such as [UrlGoal](urlgoal.md), [DurationGoal](durationgoal.md) and [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md). However, you may want to track other types of events such as subscribing to a newsletter or downloading a document. Microsoft Advertising enables this scenario with the *EventGoal*. In addition to creating an *EventGoal*, you must customize your UET tag tracking code to report the values for one or more of the custom event parameters. To learn more, see [How to report custom events with UET](https://help.ads.microsoft.com/#apex/3/en/56684/2). 
 
 > [!TIP]
 > For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.

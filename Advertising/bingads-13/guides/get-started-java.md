@@ -25,13 +25,13 @@ When you create a Maven project and include the *microsoft.bingads* Maven artifa
     <dependency>
       <groupId>com.microsoft.bingads</groupId>
       <artifactId>microsoft.bingads</artifactId>
-      <version>13.0.3</version>
+      <version>13.0.4</version>
     </dependency>
   </dependencies>
 </project>
 ```
 > [!NOTE]
-> Version 13.0.3 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
+> Version 13.0.4 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
 
 ## <a name="walkthrough"></a>Walkthroughs
 Once you have the Bing Ads Java [SDK](client-libraries.md) installed, you can either browse the [Bing Ads API Code Examples](code-examples.md), download the examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples), or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application.
