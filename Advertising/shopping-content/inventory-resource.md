@@ -152,7 +152,7 @@ Defines a product's price or sale price.
 
 |Name|Value|Type
 |----|-----|----
-|currency|The currency that the price is stated in. Possible values:<ul><li>AUD (Australian dollar)</li><li>CAD (Canadian dollar)</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>INR (Indian rupee)</li><li>USD (United States dollar)</li></ul>|String
+|currency|The currency that the price is stated in. Possible values:<ul><li>AUD (Australian dollar)</li><li>CAD (Canadian dollar)</li><li>CHF (Swiss franc)</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>INR (Indian rupee)</li><li>SEK (Swedish krona)</li><li>USD (United States dollar)</li></ul>|String
 |value|The product's price.|Double
 
 
