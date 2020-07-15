@@ -9,11 +9,12 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 # Testing your Code in Sandbox
+
 Microsoft does not provide a sandbox for Content API where you can test your application before you deploy it to the production environment. 
 
 However, you can use the following options to test your application in production without affecting live data. These options apply only to the [Product](products-resource.md) and [Inventory](inventory-resource.md) resources and not to the [Catalog](../shopping-content/catalogs-resource.md) resource.
 
-### Using dry-run query parameter
+## Using dry-run query parameter
 
 To test your code in  production without modifying your live feed and impacting served ads, include the [dry-run](../shopping-content/products-resource.md#dryrun) query parameter in the endpoint URL as shown below. 
 
@@ -27,7 +28,7 @@ Because data is not stored in the database when using the dry-run parameter, con
 
 Note that the Catalogs resource does not support the `dry-run` query parameter.
 
-### Disabling publishing
+## Disabling publishing
 
 Another option is to disable a catalog's ability to publish content. Catalogs that are disabled will not serve ads. This allows you to perform operations against the catalog and capture any errors that occur.  
 
