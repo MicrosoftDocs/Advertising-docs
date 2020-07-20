@@ -1,5 +1,6 @@
 ---
-title: "ProductItemId object"
+title: "ProductItemId"
+subtitle: "Scripts"
 description: "Contains the methods used to manage the product group."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +10,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ProductCategory
+# ProductItemId
 
 Contains the methods for managing an item ID product group. This object derives from [ProductGroup](ProductGroup.md).
 

@@ -1,5 +1,6 @@
 ---
-title: "ProductGroupSelector object"
+title: "ProductGroupSelector"
+subtitle: "Scripts"
 description: "Contains the methods for filtering the list of product groups to return."
 author: "swhite-msft"
 manager: ehansen

@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Best practices
+# Best practices for Microsoft Advertising Scripts
 
 To improve your scripts' performance, and that of the platform, please review and follow the best practices outlined below.
 

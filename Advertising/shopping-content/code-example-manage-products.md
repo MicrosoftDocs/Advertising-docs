@@ -1,5 +1,5 @@
 ---
-title: "Managing Catalogs Code Example"
+title: "Managing Products Code Example"
 description: "Code sample showing how to manage catalogs with the Content API."
 author: "swhite-msft"
 manager: "ehansen"
@@ -14,7 +14,9 @@ dev_langs:
   - python
   - php
 ---
+
 # Managing Products Code Example
+
 This example shows how to get, add, update, and delete products in the specified store.  
 
 For information about the product-related classes used by this example, see [Products](../shopping-content/products-resource.md#products) and [Product](../shopping-content/products-resource.md#product).

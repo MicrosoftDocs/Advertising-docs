@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Release Notes
+# Release Notes for Microsoft Advertising Scripts
 
 For information about changes that were included with each release, see the following sections.
 

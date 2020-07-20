@@ -1,5 +1,6 @@
 ---
-title: "ProductType object"
+title: "ProductType"
+subtitle: "Scripts"
 description: "Contains the methods used to manage the product group."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +10,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ProductCategory
+# ProductType
 
 Contains the methods for managing a product type product group. This object derives from [ProductGroup](ProductGroup.md).
 
