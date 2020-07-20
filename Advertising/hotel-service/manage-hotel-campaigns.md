@@ -684,9 +684,9 @@ If you specify more than one of these multipliers, the combination of factor and
 
 ## Associating a hotel with a hotel group
 
-When you import your hotel feed file, the hotels are placed in the *Ungrouped* hotel group. The Ungrouped hotel group is the default hotel group. If you create new hotel groups to logically organize your hotels, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
+When you import your hotel feed file, the hotels are placed in the *Ungrouped* hotel group, which is the default hotel group. A hotel may be associated with only one hotel group. If you create new hotel groups to logically organize your hotels, you'll want to move the hotels from the *Ungrouped* hotel group to the new group you created. To associate a hotel with a new hotel group, use the [Associate](reference.md/associate-template) template. When you associate a hotel with a new hotel group, the service removes the previous association.
 
-To move a hotel from one group to another, send the following request. The body of the request is an [AssociationCollection](../hotel-service/reference.md#associationcollection) object. The collection may contain a maximum of 500 [HotelAssociation](../hotel-service/reference.md#hotelassociation) objects.
+The following POST example, shows how to specify the association. The body of the request is an [AssociationCollection](../hotel-service/reference.md#associationcollection) object. The collection may contain a maximum of 500 [HotelAssociation](../hotel-service/reference.md#hotelassociation) objects.
 
 ```
 POST https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associate HTTP/1.1
