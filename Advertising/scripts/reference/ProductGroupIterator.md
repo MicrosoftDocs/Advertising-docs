@@ -1,5 +1,6 @@
 ---
-title: "ProductGroupIterator object"
+title: "ProductGroupIterator"
+subtitle: "Scripts"
 description: "Contains the methods for iterating through a list of product groups."
 author: "swhite-msft"
 manager: ehansen

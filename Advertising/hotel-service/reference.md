@@ -98,11 +98,12 @@ Next, append a template from the following table to add, get, and update hotel r
 |-|-
 |<a name="associations"></a>GET|Gets a list of hotel and hotel group associations.<br /><br />**NOTE**: By default, the list contains a maximum of 1,000 associations. To determine the total number of associations in the subaccount, use the [$count](#count-param) query parameter. To specify the number of associations to return, use the [$top](#top-param) query parameter. To page through all associations in a subaccount, use the $top and [$skip](#skip-param) query parameters. <br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelAssociation](#hotelassociation) objects.<br /><br />**Template parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the associations to get.</li></ul>
 
+<a id="associate-template"></a>
 ### SubAccounts('{subAccountId}')/Associate template
 
 |Verb|Description|
 |-|-
-|<a name="associate"></a>POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. You can associate a hotel with only one hotel group.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Template parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
+|<a name="associate"></a>POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. <br/><br/>You may associate a hotel with one hotel group only. By default, hotels are associated with the *Ungrouped* hotel group. To associate a hotel with a new hotel group, use this template. When you associate a hotel with a new hotel group, the service removes the previous association.<br/><br/>**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Template parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
 
 ### ReportJobs template
 
@@ -323,12 +324,14 @@ Defines a hotel ad.
 
 Defines the association between a hotel and a hotel group.
 
+The Update column contains N/A values because there's no HTTP update operation. To update a hotel's association, use an Add (POST) operation. See the [Associate](#associate-template) template.
+
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Errors|The list of reasons why the association failed validation.<br /><br />The response includes this field only if the association failed validation when you tried to add it.|[AdsApiError](#adsapierror)|Read-only|N/A
 |HotelGroupId|The ID of the hotel group to associate the hotel with.|String|Required|N/A
 |HotelGroupName|The name of the hotel group.|String|Read-only|N/A
-|HotelId|The ID of the hotel to associate with the specified hotel group. You may associate the hotel with one hotel group only.<br /><br />By default, all hotels are associated with a hotel group whether it's a user-defined group or the default Ungrouped hotel group. To move a hotel from one group to another, post a new association that specifies the hotel ID and new hotel group ID.|String|Required|N/A
+|HotelId|The ID of the hotel to associate with the specified hotel group (see `HotelGroupId`). You may associate the hotel with one hotel group only.<br/><br/>By default, all hotels are associated with a hotel group whether it's a user-defined group or the default *Ungrouped* hotel group. To move a hotel from one group to another, post a new association that specifies the hotel ID and new hotel group ID; the service removes the prior association.|String|Required|N/A
 |HotelName|The name of the hotel.|String|Read-only|N/A
 |PartnerHotelId|The ID that you used to specify the hotel in the hotel feeds file.|String|Read-only|N/A
 
