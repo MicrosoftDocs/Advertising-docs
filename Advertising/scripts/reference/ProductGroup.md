@@ -1,5 +1,6 @@
 ---
-title: "ProductGroup object"
+title: "ProductGroup"
+subtitle: "Scripts"
 description: "Contains the methods used to manage the product group."
 author: "swhite-msft"
 manager: ehansen

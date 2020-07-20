@@ -1,6 +1,6 @@
 ---
-title: "Release notes"
-description: Identifies the changes made to Hotel Ads for each release.
+title: "Best practices for Hotel Service API"
+description: Identifies best practices with using the Hotel Service API.
 ms.service: "hotel-ads"
 ms.topic: "article"
 author: "swhite-msft"
@@ -8,7 +8,9 @@ manager: ehansen
 ms.author: "scottwhi"
 ---
 
-# Best practices
+# Best practices for Hotel Service API
+
+This section lists best practices that you should consider when building your application.
 
 ## Retrieving hotels
 

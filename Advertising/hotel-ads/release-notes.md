@@ -1,5 +1,5 @@
 ---
-title: "Release notes"
+title: "Release notes for Hotel Ads Service"
 description: Identifies the changes made to Hotel Ads for each release.
 ms.service: "hotel-ads"
 ms.topic: "article"
@@ -8,7 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 ---
 
-# Release notes
+# Release notes for Hotel Ads Service
 
 For information about changes that were included with each release, see the following sections.
 
