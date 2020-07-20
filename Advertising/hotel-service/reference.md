@@ -324,7 +324,7 @@ Defines a hotel ad.
 
 Defines the association between a hotel and a hotel group.
 
-The Update column contains N/A values because there's no HTTP update operation. To update a hotel's association, use an Add (POST) operation. See the [Associate](#associate-template).
+The Update column contains N/A values because there's no HTTP update operation. To update a hotel's association, use an Add (POST) operation. See the [Associate](#associate-template) template.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
