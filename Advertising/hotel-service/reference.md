@@ -215,7 +215,7 @@ Defines the amount to adjust the base bid by if the user books the specified num
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 10.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
+|Factor|The percentage amount to adjust the base bid by. The valid range is 0.00 through 11.00. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $25.|Double|Required|Optional
 |MinimumNumberOfDays|The minimum number of days in advance of the booking. Apply the multiplier if the booking occurs in advance the specified number of days or longer.|Integer|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.AdvanceBookingWindowMultiplier".|String|Required|Required
 
