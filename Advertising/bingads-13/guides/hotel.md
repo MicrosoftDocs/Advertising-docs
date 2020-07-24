@@ -212,6 +212,9 @@ For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is
 ## <a name="sitepropertypromotionad"></a>Site PropertyPromotionAd
 Adjust the base bid if the hotel ad is shown in the first results page shown in the maps search. 
 
+> [!NOTE]
+> Site PropertyPromotionAd is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 764).  
+
 The valid range for this field is 0.00 through 11.00. Values less than 1.00 will decrease the base bid by up to 100% (0.00). Values greater than 1.00 will increase the base bid up to 1,000% (11.00). Set this field to 1.00 if you do not want to adjust the base bid. 
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
