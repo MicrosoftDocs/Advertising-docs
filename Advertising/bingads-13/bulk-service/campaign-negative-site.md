@@ -124,7 +124,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the campaign that contains the negative site.
+The system-generated identifier of the campaign that contains the negative site.
 
 This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 

@@ -286,7 +286,7 @@ authorization_data = AuthorizationData(
 To get a user's customer ID and account ID, you can sign in to the Microsoft Advertising web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.ads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
 
 > [!TIP]
-> Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Microsoft Advertising web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
+> Do not mistake the account number for the account identifier. The account number is the system-generated account number that is used to identify the account in the Microsoft Advertising web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
 
 With the Customer Management API you can get the customer and account identifiers for each authenticated user. 
 

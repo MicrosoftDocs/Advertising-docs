@@ -132,7 +132,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the product scope.
+The system-generated identifier of the product scope.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -149,7 +149,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the campaign that contains the product scope.
+The system-generated identifier of the campaign that contains the product scope.
 
 This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 

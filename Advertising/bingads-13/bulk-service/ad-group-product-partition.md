@@ -255,7 +255,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the product partition.
+The system-generated identifier of the product partition.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -291,7 +291,7 @@ The criterion identifier of the parent product partition.
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the product partition.
+The system-generated identifier of the ad group that contains the product partition.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

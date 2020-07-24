@@ -308,7 +308,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the keyword.
+The system-generated identifier of the keyword.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the keyword can then be referenced in the *Parent Id* field of dependent record types such as [Keyword Label](keyword-label.md#parentid). This is recommended if you are adding new keywords and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -471,7 +471,7 @@ Also note that if the ad group only has one ad, and if that ad uses {Param3} but
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the keyword.
+The system-generated identifier of the ad group that contains the keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

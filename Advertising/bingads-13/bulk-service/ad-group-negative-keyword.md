@@ -111,7 +111,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the negative keyword.
+The system-generated identifier of the negative keyword.
 
 **Add:** Read-only  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
@@ -146,7 +146,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the negative keyword.
+The system-generated identifier of the ad group that contains the negative keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

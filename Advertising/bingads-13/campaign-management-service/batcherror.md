@@ -60,6 +60,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [AddUetTags](adduettags.md)  
 [ApiFaultDetail](apifaultdetail.md)  
 [AppealEditorialRejections](appealeditorialrejections.md)  
+[ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md)  
 [ApplyOfflineConversions](applyofflineconversions.md)  
 [ApplyProductPartitionActions](applyproductpartitionactions.md)  
 [BatchErrorCollection](batcherrorcollection.md)  

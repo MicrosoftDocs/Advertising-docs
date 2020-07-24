@@ -247,7 +247,7 @@ You can set this string to the URL, category, page title, or page content for yo
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the dynamic ad target (webpage criterion).
+The system-generated identifier of the dynamic ad target (webpage criterion).
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -280,7 +280,7 @@ The criterion name length must be between 1 to 2048, inclusive.
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the dynamic ad target (webpage criterion).
+The system-generated identifier of the ad group that contains the dynamic ad target (webpage criterion).
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

@@ -99,7 +99,7 @@ The Campaign Management service defines the following data objects.
 |[GoogleImportJob](googleimportjob.md)|Defines a Google import job that can be run once or scheduled on a recurring basis.|
 |[GoogleImportOption](googleimportoption.md)|Defines the Google import options that are available via API.|
 |[IdCollection](idcollection.md)|Defines an object that contains a list of entity identifiers.|
-|[Image](image.md)|Defines an image object that can be added to an account's media library.|
+|[Image](image.md)|Defines an image that can be added to an account's media library.|
 |[ImageAdExtension](imageadextension.md)|Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.|
 |[ImageAsset](imageasset.md)|Applies crop settings to stored image media for a specific aspect ratio.|
 |[ImageMediaRepresentation](imagemediarepresentation.md)|Defines an image media representation with height and width.|
@@ -134,6 +134,7 @@ The Campaign Management service defines the following data objects.
 |[NegativeKeywordList](negativekeywordlist.md)|Defines a negative keyword list.|
 |[NegativeSite](negativesite.md)|Defines a website URL where you do not want your ads displayed.|
 |[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Microsoft Advertising.|
+|[OfflineConversionAdjustment](offlineconversionadjustment.md)|Defines an object to retract or restate an offline conversion via the [ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md) operation.|
 |[OfflineConversionGoal](offlineconversiongoal.md)|Defines an offline conversion goal.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md)|Defines a pages viewed per visit conversion goal.|
@@ -168,7 +169,7 @@ The Campaign Management service defines the following data objects.
 |[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Microsoft Merchant Center store.|
 |[SimilarRemarketingList](similarremarketinglist.md)|Defines an audience that is similar to one of your remarketing lists.|
 |[SitelinkAdExtension](sitelinkadextension.md)|Defines an object with one sitelink per ad extension.|
-|[StoreCriterion](storecriterion.md)|Reserved for future use.|
+|[StoreCriterion](storecriterion.md)|Defines a criterion to exclude one Microsoft Merchant Center store from your [shopping campaign for brands](../guides/product-ads.md#setup-cooperative).|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|

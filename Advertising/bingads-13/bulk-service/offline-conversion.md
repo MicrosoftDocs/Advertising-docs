@@ -12,14 +12,19 @@ dev_langs:
 Defines an offline conversion that can be uploaded in a bulk file.
 
 > [!NOTE]
-> Bulk download is not supported. You cannot get, update, or delete an offline conversion.
+> Bulk download is not supported. You cannot get, update, or delete an offline conversion. 
+
+You can add, restate (update), or restract (delete) offline conversions. 
+- To upload an offline conversion, set the [Conversion Currency Code](#conversioncurrencycode), [Conversion Name](#conversionname), [Conversion Time](#conversiontime), [Conversion Value](#conversionvalue), and [Microsoft Click Id](#microsoftclickid) fields.  
+- To restate or correct a previously uploaded offline conversion as needed, set the [Adjustment Type](#adjustmenttype) field to "Restate" and set the original [Conversion Name](#conversionname), [Conversion Time](#conversiontime), and [Microsoft Click Id](#microsoftclickid) fields. Include any adjustments in the same record e.g., [Adjustment Value](#adjustmentvalue), [Adjustment Time](#adjustmenttime), and [Adjustment Currency Code](#adjustmentcurrencycode).  
+- To retract or delete a previously uploaded offline conversion as needed, set the [Adjustment Type](#adjustmenttype) field to "Retract" and set the original [Conversion Name](#conversionname), [Conversion Time](#conversiontime), and [Microsoft Click Id](#microsoftclickid) fields.  
 
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
 After the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Microsoft Advertising the offline conversion data. It can take up to five hours to view conversion data in the Microsoft Advertising reporting. For more information, see [Tracking offline conversions](https://help.ads.microsoft.com/#apex/3/en/56852/2).
 
 > [!NOTE]
-> Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
+> Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.  
 
 The following Bulk CSV example would add a new offline conversion. 
 
@@ -54,7 +59,25 @@ var bulkOfflineConversion = new BulkOfflineConversion
         ConversionValue = 10,
         // 'Microsoft Click Id' column header in the Bulk file
         MicrosoftClickId = "f894f652ea334e739002f7167ab8f8e3"
-    }
+    },
+
+    // 'Adjustment Currency Code' column header in the Bulk file (coming soon)
+    AdjustmentCurrencyCode = null,
+
+    // 'Adjustment Time' column header in the Bulk file (coming soon)
+    AdjustmentTime = null,
+
+    // 'Adjustment Type' column header in the Bulk file (coming soon)
+    AdjustmentType = null,
+
+    // 'Adjustment Value' column header in the Bulk file (coming soon)
+    AdjustmentValue = null,
+
+    // 'External Attribution Credit' column header in the Bulk file (coming soon)
+    ExternalAttributionCredit = null,
+
+    // 'External Attribution Model' column header in the Bulk file (coming soon)
+    ExternalAttributionModel = null,
 };
 
 uploadEntities.Add(bulkOfflineConversion);
@@ -73,17 +96,64 @@ var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityU
 
 For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
+- [Adjustment Currency Code](#adjustmentcurrencycode)
+- [Adjustment Time](#adjustmenttime)
+- [Adjustment Type](#adjustmenttype)
+- [Adjustment Value](#adjustmentvalue)
 - [Client Id](#clientid)
 - [Conversion Currency Code](#conversioncurrencycode)
 - [Conversion Name](#conversionname)
 - [Conversion Time](#conversiontime)
 - [Conversion Value](#conversionvalue)
+- [External Attribution Credit](#externalattributioncredit)
+- [External Attribution Model](#externalattributionmodel)
 - [Microsoft Click Id](#microsoftclickid)
+
+## <a name="adjustmentcurrencycode"></a>Adjustment Currency Code
+The currency code for the restated offline conversion.
+
+For more information, see [Currencies](../guides/currencies.md).
+
+**Add:** Not applicable  
+**Restate:** Required. If you do not specify an adjustment currency code with the restatement, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
+**Retract:** Not applicable  
+
+## <a name="adjustmenttime"></a>Adjustment Time
+The date and time when the adjustment occurred.
+
+The adjustment time cannot be earlier than the original offline [conversion date and time](#conversiontime).  
+
+> [!IMPORTANT]
+> The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Microsoft Advertising web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
+
+**Add:** Not applicable  
+**Restate:** Required  
+**Retract:** Required  
+
+## <a name="adjustmenttype"></a>Adjustment Type
+Determines whether to retract or restate the offline conversion.
+
+If this value is "Restate", the offline conversion previously attributed to the specified [Microsoft Click Id](#microsoftclickid) will be adjusted according to the new [Adjustment Currency Code](#adjustmentcurrencycode), [Adjustment Time](#adjustmenttime), and [Adjustment Value](#adjustmentvalue).
+
+If this value is "Retract", the offline conversion previously attributed to the specified [Microsoft Click Id](#microsoftclickid) will be retracted or deleted.
+
+**Add:** Not applicable  
+**Restate:** Required. This field must be set to "Restate".  
+**Retract:** Required. This field must be set to "Retract".  
+
+## <a name="adjustmentvalue"></a>Adjustment Value
+The adjusted offline conversion value.
+
+**Add:** Not applicable  
+**Restate:** Required     
+**Retract:** Not applicable  
 
 ## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
+**Restate:** Optional  
+**Retract:** Optional  
 
 ## <a name="conversioncurrencycode"></a>Conversion Currency Code
 The currency code for the offline conversion.
@@ -91,6 +161,8 @@ The currency code for the offline conversion.
 For more information, see [Currencies](../guides/currencies.md).
 
 **Add:** Optional. If you do not specify an offline conversion currency code, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
+**Restate:** Not applicable  
+**Retract:** Not applicable  
 
 ## <a name="conversionname"></a>Conversion Name
 The conversion goal name.
@@ -98,6 +170,8 @@ The conversion goal name.
 This name must match an existing conversion goal name, otherwise the offline conversion goal data will not be applied.
 
 **Add:** Required  
+**Restate:** Required  
+**Retract:** Required  
 
 ## <a name="conversiontime"></a>Conversion Time
 The date and time when the offline conversion occurred. 
@@ -112,18 +186,36 @@ To be counted by Microsoft Advertising as an offline conversion after successful
 -  The date and time must be within the conversion window. The *ConversionWindowInMinutes* property of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) determines the maximum length of time in minutes after a click that conversions will be tracked.
 
 For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Microsoft Advertising the following offline conversions on July 31st, then Microsoft Advertising will only count the one with MicrosoftClickId=*2* as an offline conversion.
--  MicrosoftClickId=*1*; ConversionTime=*2019-04-30T17:02:35.6853793Z*  
--  MicrosoftClickId=*2*; ConversionTime=*2019-05-15T17:02:35.6853793Z*  
--  MicrosoftClickId=*3*; ConversionTime=*2019-06-15T17:02:35.6853793Z*
+-  MicrosoftClickId=*1*; ConversionTime=*2020-04-30T17:02:35.6853793Z*  
+-  MicrosoftClickId=*2*; ConversionTime=*2020-05-15T17:02:35.6853793Z*  
+-  MicrosoftClickId=*3*; ConversionTime=*2020-06-15T17:02:35.6853793Z*
 
 The offline conversion data with MicrosoftClickId=*1* will not be uploaded since the conversion date and time is more than 90 days ago, and the offline conversion data with MicrosoftClickId=*3* will not be counted because it does not fall within the conversion window (April 30 through May 29).
 
-**Add:** Required   
+**Add:** Required  
+**Restate:** Required  
+**Retract:** Required  
 
 ## <a name="conversionvalue"></a>Conversion Value
 The offline conversion value.
 
 **Add:** Optional. If you do not specify an offline conversion value, then the *Value* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
+**Restate:** Not applicable  
+**Retract:** Not applicable  
+
+## <a name="externalattributioncredit"></a>External Attribution Credit
+Reserved for future use. 
+
+**Add:** Optional    
+**Restate:** Not applicable  
+**Retract:** Not applicable  
+
+## <a name="externalattributionmodel"></a>External Attribution Model
+Reserved for future use. 
+
+**Add:** Optional    
+**Restate:** Not applicable  
+**Retract:** Not applicable  
 
 ## <a name="microsoftclickid"></a>Microsoft Click Id
 The MSCLKID for the offline conversion.
@@ -131,5 +223,7 @@ The MSCLKID for the offline conversion.
 To ensure that auto-tagging is enabled for Microsoft click ID tracking, use the *MSCLKID Auto Tagging Enabled* field of the [Account](account.md) record. 
 
 **Add:** Required  
+**Restate:** Required  
+**Retract:** Required  
 
 

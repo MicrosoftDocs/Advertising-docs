@@ -115,7 +115,7 @@ The description can contain a maximum of 1,024 characters.
 **Delete:** Not supported  
 
 ## <a name="id"></a>Id
-The system generated identifier of the in-market audience.
+The system-generated identifier of the in-market audience.
 
 **Add:** Not supported  
 **Update:** Not supported    

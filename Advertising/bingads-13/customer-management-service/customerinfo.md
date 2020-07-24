@@ -25,7 +25,7 @@ The [CustomerInfo](customerinfo.md) object has the following elements: [Id](#id)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The system generated identifier of the customer.|**long**|
+|<a name="id"></a>Id|The system-generated identifier of the customer.|**long**|
 |<a name="name"></a>Name|The name of the customer.|**string**|
 
 ## Requirements

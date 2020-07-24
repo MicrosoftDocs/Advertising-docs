@@ -104,7 +104,7 @@ The label description can be between 1 to 200 characters in length.
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the label.
+The system-generated identifier of the label.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the label can then be referenced in the *Parent Id* field of dependent record types such as [Campaign Label](campaign-label.md). This is recommended if you are adding new label and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  

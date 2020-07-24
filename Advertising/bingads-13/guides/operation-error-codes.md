@@ -16183,6 +16183,273 @@ PromotionDatesInvalid
 **Description**
 The Promotion Start and End Dates are invalid.
 
+
+***
+
+**Numeric Code**
+6621
+
+**Symbolic Error Code**
+CurrencyCodeSetWithoutMonetaryValue
+
+**Description**
+Currency Code can only be set if MoneyAmountOff or PercentOff are set.
+
+***
+
+**Numeric Code**
+6626
+
+**Symbolic Error Code**
+InvalidFilterLinkTextCharacter
+
+**Description**
+Filter Link text contains an invalid character.
+
+***
+
+**Numeric Code**
+6627
+
+**Symbolic Error Code**
+TooFewFilterLinkText
+
+**Description**
+You must include between 3 to 10 Filter Link Texts.
+
+***
+
+**Numeric Code**
+6628
+
+**Symbolic Error Code**
+TooManyFilterLinkText
+
+**Description**
+You must include between 3 to 10 Filter Link Texts.
+
+***
+
+**Numeric Code**
+6629
+
+**Symbolic Error Code**
+FinalUrlandTextNotMatch
+
+**Description**
+The count of list items in Final Urls and Texts must match.
+
+***
+
+**Numeric Code**
+6630
+
+**Symbolic Error Code**
+EmptyElementInListNotAllowed
+
+**Description**
+Empty Element In List Not Allowed.
+
+***
+
+**Numeric Code**
+6650
+
+**Symbolic Error Code**
+GoogleDirectImportNotEnabledForCustomer
+
+**Description**
+The customer is not in the Google Import as a Service pilot program.
+
+***
+
+**Numeric Code**
+6651
+
+**Symbolic Error Code**
+ ImportJobsNull
+
+**Description**
+Import Jobs is null or empty.
+
+***
+
+**Numeric Code**
+6652
+
+**Symbolic Error Code**
+ScheduledImportNumberLimitExceed
+
+**Description**
+The maximum number of scheduled imports for the account would be exceeded.
+
+***
+
+**Numeric Code**
+6653
+
+**Symbolic Error Code**
+ImportCredentialIdInvalid
+
+**Description**
+The import credential ID is invalid.
+
+***
+
+**Numeric Code**
+6654
+
+**Symbolic Error Code**
+ImportTypeInvalid
+
+**Description**
+The import type is invalid.
+
+***
+
+**Numeric Code**
+6655
+
+**Symbolic Error Code**
+ImportJobNameNull
+
+**Description**
+The import name cannot be empty.
+
+***
+
+**Numeric Code**
+6656
+
+**Symbolic Error Code**
+ImportFromAccountIdNull
+
+**Description**
+The import from account ID is required.
+
+***
+
+**Numeric Code**
+6657
+
+**Symbolic Error Code**
+ImportNameInvalid
+
+**Description**
+The import name is invalid.
+
+***
+
+**Numeric Code**
+6658
+
+**Symbolic Error Code**
+ImportSchedulingInvalid
+
+**Description**
+The import schedule is invalid.
+
+***
+
+**Numeric Code**
+6659
+
+**Symbolic Error Code**
+FileImportFileSourceInvalid
+
+**Description**
+The file source for this import is invalid.
+
+***
+
+**Numeric Code**
+6660
+
+**Symbolic Error Code**
+FileImportFileUrlInvalid
+
+**Description**
+The file url for this import is invalid.
+
+***
+
+**Numeric Code**
+6661
+
+**Symbolic Error Code**
+InvalidImportJobId
+
+**Description**
+Import job id array cannot be null or empty.
+
+***
+
+**Numeric Code**
+6662
+
+**Symbolic Error Code**
+DuplicateInImportJobIds
+
+**Description**
+Duplicate IDs are contained in the array of import jobs.
+
+***
+
+**Numeric Code**
+6663
+
+**Symbolic Error Code**
+FileImportFrequencyInvalid
+
+**Description**
+File Import does not support scheduling.
+
+***
+
+**Numeric Code**
+6664
+
+**Symbolic Error Code**
+FileImportNotEnabledForCustomer
+
+**Description**
+The customer is not in the File Import as a Service pilot program.
+
+***
+
+**Numeric Code**
+6665
+
+**Symbolic Error Code**
+CampaignServiceImportOptionNotSupportedForJob
+
+**Description**
+This import job type does not support the specified option type.
+
+***
+
+**Numeric Code**
+6666
+
+**Symbolic Error Code**
+CampaignServiceImportNameTooLong
+
+**Description**
+This import job name exceeds the limit.
+
+***
+
+**Numeric Code**
+6999
+
+**Symbolic Error Code**
+CampaignServiceBatchLimitExceeded
+
+**Description**
+The maximum number of items per request would be exceeded.
+
+***
+## 7000
 ***
 
 **Numeric Code**
@@ -16195,3 +16462,289 @@ AdScheduleTimeZoneSettingNotInPilot
 The customer is not enabled for the ad scheduling by account time zone feature pilot.  
 
 ***
+
+**Numeric Code**
+7001
+
+**Symbolic Error Code**
+KeywordSubstitutionNotSupported
+
+**Description**
+Substitution with the {Keyword} parameter is not supported for this property.
+
+***
+## 8000
+***
+
+**Numeric Code**
+8000
+
+**Symbolic Error Code**
+InvalidCustomerListId
+
+**Description**
+Invalid CustomerList Id
+
+***
+
+**Numeric Code**
+8001
+
+**Symbolic Error Code**
+InvalidCustomerListActionType
+
+**Description**
+The Customer List Action Type can only be Add, Replace, or Delete.
+
+***
+
+**Numeric Code**
+8002
+
+**Symbolic Error Code**
+CustomerListItemSubTypeNotSupported
+
+**Description**
+The Customer List Item sub type is not supported.
+
+***
+
+**Numeric Code**
+8003
+
+**Symbolic Error Code**
+CustomerListTermsAndConditionsNotAccepted
+
+**Description**
+The Customer Match 'Terms And Conditions' are not yet Accepted in the Microsoft Advertising web UI. Please visit [https://go.microsoft.com/fwlink/?linkid=2126222](https://go.microsoft.com/fwlink/?linkid=2126222) for details.
+
+***
+
+**Numeric Code**
+8004
+
+**Symbolic Error Code**
+EmailMustBeHashed
+
+**Description**
+Email address can't be in plain text and must be hashed.
+
+***
+
+**Numeric Code**
+8005
+
+**Symbolic Error Code**
+CRMIdLengthExceedLimitation
+
+**Description**
+CRM Id exceeds the limitation of 100 characters.
+
+***
+
+**Numeric Code**
+8006
+
+**Symbolic Error Code**
+EitherEmailOrCRMIDShouldBeProvided
+
+**Description**
+Either email address or CRM Id should be provided.
+
+***
+
+**Numeric Code**
+8100
+
+**Symbolic Error Code**
+CombinationRulesNullOrEmpty
+
+**Description**
+Combination rules are required.
+
+***
+
+**Numeric Code**
+8101
+
+**Symbolic Error Code**
+CombinationRulesExceedsLimit
+
+**Description**
+The number of combination rules exceeds the maximum per combined list or per combination relationship.
+
+***
+
+**Numeric Code**
+8102
+
+**Symbolic Error Code**
+NoAudienceSelected
+
+**Description**
+No audience is selected for the CombinedListAudience.
+
+***
+
+**Numeric Code**
+8103
+
+**Symbolic Error Code**
+InvalidCombinationRuleOperator
+
+**Description**
+The operator of Combination rule is invalid.
+
+***
+
+**Numeric Code**
+8104
+
+**Symbolic Error Code**
+OnlyNotCombinationUnsupported
+
+**Description**
+If you combine audiences using the NOT relationship, you must also combine audiences using the AND relationship or the OR relationship.
+
+***
+
+**Numeric Code**
+8105
+
+**Symbolic Error Code**
+AndCombinationUnsupportedForAudienceType
+
+**Description**
+The audience type cannot be combined using the AND relationship.
+
+***
+
+**Numeric Code**
+8106
+
+**Symbolic Error Code**
+OrCombinationUnsupportedForAudienceType
+
+**Description**
+The audience type cannot be combined using the OR relationship.
+
+***
+
+**Numeric Code**
+8107
+
+**Symbolic Error Code**
+NotCombinationUnsupportedForAudienceType
+
+**Description**
+The audience type cannot be combined using the NOT relationship.
+
+***
+
+**Numeric Code**
+8108
+
+**Symbolic Error Code**
+SimilarAudienceCanOnlyBeInSingleORSet
+
+**Description**
+You can only include one Similar Audience per combined list, and only by using the OR relationship without any other audiences.
+
+***
+
+**Numeric Code**
+8109
+
+**Symbolic Error Code**
+CustomerListsCanOnlyBeCombinedWithOtherCustomerLists
+
+**Description**
+Customer Lists cannot be combined with other audience types.
+
+***
+
+**Numeric Code**
+8110
+
+**Symbolic Error Code**
+AudienceUsedByCombinedListCannotBeDeleted
+
+**Description**
+The audience cannot be deleted because it is used by a Combined List.
+
+***
+
+**Numeric Code**
+8111
+
+**Symbolic Error Code**
+AudienceCannotBeDeletedDueToPairedSimilarAudienceUsedByCombinedList
+
+**Description**
+The audience cannot be deleted because its paired Similar Audience is used by a Combined List.
+
+***
+
+**Numeric Code**
+8112
+
+**Symbolic Error Code**
+CustomerNotEligibleForAudienceCombination
+
+**Description**
+The Combined List feature is not yet enabled for the customer.
+
+***
+
+**Numeric Code**
+8113
+
+**Symbolic Error Code**
+CombinedListCanOnlyBeEditedByOwner
+
+**Description**
+A Combined List can only be edited by its owner.
+
+***
+
+**Numeric Code**
+8114
+
+**Symbolic Error Code**
+CombinedListCanOnlyBeDeletedByOwner
+
+**Description**
+A Combined List can only be deleted by its owner.
+
+***
+
+**Numeric Code**
+8115
+
+**Symbolic Error Code**
+CustomAudienceCanOnlyBeCombinedWithOtherCustomAudience
+
+**Description**
+Custom Audiences cannot be combined with other audience types.
+
+***
+
+**Numeric Code**
+8116
+
+**Symbolic Error Code**
+InvalidCombinationRule
+
+**Description**
+The Combination Rule is invalid.
+
+***
+
+**Numeric Code**
+8119
+
+**Symbolic Error Code**
+CombinedAudienceForLocationNotAllowed
+
+**Description**
+You cannot associate any combination of customer list or custom audience with campaigns or ad groups that target the European Union or locations with similar restrictions.

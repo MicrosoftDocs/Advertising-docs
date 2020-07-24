@@ -124,7 +124,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier for the association between a campaign and remarketing list.
+The system-generated identifier for the association between a campaign and remarketing list.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -141,7 +141,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the campaign that is associated to the remarketing list.
+The system-generated identifier of the campaign that is associated to the remarketing list.
 
 This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 

@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: Defines a criterion to exclude one Microsoft Merchant Center store from your shopping campaign for brands.
 ---
 # StoreCriterion Data Object - Campaign Management
-Reserved for future use. 
+Defines a criterion to exclude one Microsoft Merchant Center store from your [shopping campaign for brands](../guides/product-ads.md#setup-cooperative). 
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ The [StoreCriterion](storecriterion.md) object has the following elements: [Stor
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="storeid"></a>StoreId|Reserved for future use.|**long**|
+|<a name="storeid"></a>StoreId|The system-generated identifier of the Microsoft Merchant Center store to exclude.|**long**|
 
 The [StoreCriterion](storecriterion.md) object has [Inherited Elements](#inheritedelements).
 

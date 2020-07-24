@@ -239,10 +239,8 @@ For more details about Product Condition (operand) and Product Value (attribute)
 ## <a name="ads-campaignservice"></a>Create the ads
 You must add exactly one [ProductAd](../campaign-management-service/productad.md) to the ad group. Product ads are shown to users on the Search network. A product ad is not used directly for delivered ad copy. Instead, Microsoft Advertising generates product ads from the product details that it finds in your Microsoft Merchant Center store's product catalog. The product ad identifier can be used for reporting analytics. Use [Merchant Promotions](https://help.ads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement. For more information about product ads see the API [technical guide](product-ads.md) and Microsoft Advertising [help article](https://help.ads.microsoft.com/#apex/3/en/51082/1). 
 
-Optionally (and recommended) you can also add exactly one [ResponsiveAd](../campaign-management-service/responsivead.md). Audience ads (responsive ads via API) are shown to users on the Microsoft Audience network. For more information about audience ads (responsive ads via API) see the API [technical guide](audience-ads.md) and Microsoft Advertising [help article](https://help.ads.microsoft.com/#apex/3/en/56674/0).  
-
 > [!NOTE]
-> Although the Microsoft Audience network does not yet support responsive ads from smart shopping campaigns, you can start creating the ads now. 
+> The Microsoft Audience network does not yet support responsive ads from smart shopping campaigns. Customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 777) will be able to add exactly one [ResponsiveAd](../campaign-management-service/responsivead.md). Audience ads (responsive ads via API) are shown to users on the Microsoft Audience network. For more information about audience ads (responsive ads via API) see the API [technical guide](audience-ads.md) and Microsoft Advertising [help article](https://help.ads.microsoft.com/#apex/3/en/56674/0).
 
 You can create both ad types together or seperately via the [AddAds](../campaign-management-service/addads.md) operation.
 
@@ -290,7 +288,6 @@ Responsive ads also require at least one image asset. If you don't already have 
     </Media>
 </AddMediaRequest>
 ```
-
 
 ## See Also
 [Bing Ads API Web Service Addresses](web-service-addresses.md)  

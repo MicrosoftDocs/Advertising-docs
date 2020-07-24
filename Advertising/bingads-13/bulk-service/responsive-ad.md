@@ -319,7 +319,7 @@ The length of the string is limited to 25 characters.
 **Delete:** Read-only 
 
 ## <a name="id"></a>Id
-The system generated identifier of the ad.
+The system-generated identifier of the ad.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad can then be referenced in the *Parent Id* field of dependent record types such as [Responsive Ad Label](responsive-ad-label.md#parentid). This is recommended if you are adding new ads and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -413,7 +413,7 @@ The image assets are represented in the bulk file as a JSON string. Seven images
 Given the upload response JSON example above, please take note of the following:
 - The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Microsoft Advertising automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad. 
 - Because the ad in this example was created without crop settings for the LandscapeImageMedia image asset sub type, all image assets are cropped except for the original landscape image. 
-- Whether or not the landscape image has its own crop settings, Microsoft Advertising uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
+- Whether or not the landscape image has its own crop settings, Microsoft Advertising uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system-generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
 - Although in Bing Ads API version 12 you could use the [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field. 
 
 ### <a name="images-cropheight"></a>cropHeight
@@ -433,12 +433,12 @@ The `id` attribute is a unique Microsoft Advertising identifier for the asset in
 
 The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Microsoft Advertising account. The identifier of image asset with [SubType](#images-subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Microsoft Advertising automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
 
-You can create media for responsive ads via the [AddMedia](../campaign-management-service/addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#images-subtype).
+You can create images for responsive ads via the [Image](image.md) bulk record. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#images-subtype). 
 
 ### <a name="images-subtype"></a>subType
 The `subType` attribute represents the aspect ratio for this image asset.
 
-The aspect ratio for the sub type must match the effective image asset dimensions. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are not used then the aspect ratio for the sub type must match the aspect ratio of the stored image media. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are used then the true aspect ratio of the media that is stored in the account level media library can differ, so long as [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) result in the correct aspect ratio. In either case the true aspect ratio of the media that is stored in the account level media library will remain unchanged.
+The true aspect ratio of the [Image](image.md) that is stored in the account level media library can vary, so long as the resulting [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) result in the expected aspect ratio per sub type. If you do not set the [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth), the service will automatically crop the image. In any case the true aspect ratio of the media that is stored in the account level media library will remain unchanged. 
 
 The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, ImageMedia133X100, ImageMedia178X100, and ImageMedia172X100. New sub types might be added in the future, so you should not take any dependency on a fixed set of values.
 
@@ -528,7 +528,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the ad.
+The system-generated identifier of the ad group that contains the ad.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

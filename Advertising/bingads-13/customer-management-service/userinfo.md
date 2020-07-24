@@ -25,7 +25,7 @@ The [UserInfo](userinfo.md) object has the following elements: [Id](#id), [UserN
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|The system generated identifier of the user.|**long**|
+|<a name="id"></a>Id|The system-generated identifier of the user.|**long**|
 |<a name="username"></a>UserName|The logon user name of the user.|**string**|
 
 ## Requirements
