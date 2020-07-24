@@ -322,7 +322,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the ad extension.
+The system-generated identifier of the ad extension.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md) and [Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -438,7 +438,7 @@ For example, to promote "$20 off shoes - On orders over $100", set the [Promotio
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the account that contains the ad extension.
+The system-generated identifier of the account that contains the ad extension.
 
 This bulk field maps to the *Id* field of the [Account](account.md) record.
 

@@ -43,7 +43,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the account.
+The system-generated identifier of the account.
 
 > [!IMPORTANT]
 > The Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) service request.
@@ -81,7 +81,7 @@ If the value is *True*, then the MSCLKID auto tagging feature is enabled. Otherw
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the customer that contains the account.
+The system-generated identifier of the customer that contains the account.
 
 **Add:** Read-only  
 **Update:** Read-only  

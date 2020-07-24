@@ -10,7 +10,7 @@ description: Defines the ad group level settings for feed-based Microsoft Shoppi
 Defines the ad group level settings for feed-based Microsoft Shopping Campaigns.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
+> This object is reserved for internal use, and will be removed in a future API version.  
 
 ## Syntax
 ```xml
@@ -34,8 +34,8 @@ The [CoOpSetting](coopsetting.md) object has the following elements: [BidBoostVa
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="bidboostvalue"></a>BidBoostValue|The default bid boost percentage that you'll see in the Microsoft Advertising web application for new product groups.<br/><br/>This ad group level target setting is not used directly in the auction. The product group bids are used to boost your partner's bid.<br/><br/>**Add:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.|**double**|
-|<a name="bidmaxvalue"></a>BidMaxValue|The flat amount of your Sponsored Products bid.<br/><br/>**Add:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Optional if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.|**double**|
-|<a name="bidoption"></a>BidOption|Determines whether or not to amplify your partner's bid.<br/><br/>A bid value ad group allows you to bid on products that your merchandising partner doesn't target. If this element is set to BidValue, the auction will use use a [FixedBid](fixedbid.md) for product groups that have a [CriterionBid](biddableadgroupcriterion.md#criterionbid).<br/><br/>A bid boost allows you to amplify your partner's bid. If this element is set to BidBoost, the auction will use use a [BidMultiplier](bidmultiplier.md) for product groups that have a [CriterionBid](biddableadgroupcriterion.md#criterionbid). You should only use BidBoost if your partner uses BidValue.<br/><br/>**Add:** If this element is not set, the default Sponsored Products bidding option for the ad group is BidValue.<br/>**Update:** Read-only. If you attempt to change the previous bid option an error will be returned.|[BidOption](bidoption.md)|
+|<a name="bidmaxvalue"></a>BidMaxValue|The fixed bid maximum.<br/><br/>**Add:** Required if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Optional if the [BidOption](#bidoption) is set to BidBoost, and otherwise you may not set this element.|**double**|
+|<a name="bidoption"></a>BidOption|Determines whether or not to amplify your partner's bid.<br/><br/>A bid value ad group allows you to bid on products that your merchandising partner doesn't target. If this element is set to BidValue, the auction will use use a [FixedBid](fixedbid.md) for product groups that have a [CriterionBid](biddableadgroupcriterion.md#criterionbid).<br/><br/>A bid boost allows you to amplify your partner's bid. If this element is set to BidBoost, the auction will use use a [BidMultiplier](bidmultiplier.md) for product groups that have a [CriterionBid](biddableadgroupcriterion.md#criterionbid). You should only use BidBoost if your partner uses BidValue.<br/><br/>**Add:** If this element is not set, the default bid option is BidValue.<br/>**Update:** Read-only. If you attempt to change the previous bid option an error will be returned.|[BidOption](bidoption.md)|
 
 The [CoOpSetting](coopsetting.md) object has [Inherited Elements](#inheritedelements).
 
@@ -46,7 +46,7 @@ The [CoOpSetting](coopsetting.md) object derives from the [Setting](setting.md) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the setting. This value is *CoOp* when you retrieve a Sponsored Products setting. For more information about setting types, see the [Setting Data Object Remarks](setting.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the setting.<br/><br/>This value is *CoOp* when you retrieve a CoOp setting. For more information about setting types, see the [Setting Data Object Remarks](setting.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

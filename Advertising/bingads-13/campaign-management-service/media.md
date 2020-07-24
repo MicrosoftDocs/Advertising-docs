@@ -38,9 +38,6 @@ For Java and the .NET languages, do not set the *Type* element because the value
 
 If you generate the SOAP manually, use the *type* attribute of the `<Media>` node as shown in the following example, to specify that the media is an image.
 
-> [!NOTE]
-> Images and icons are both created as [Image](image.md) objects. 
-
 ```xml
 <Media xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <Media i:type="Image">

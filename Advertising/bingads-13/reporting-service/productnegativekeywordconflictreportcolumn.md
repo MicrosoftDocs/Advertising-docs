@@ -56,7 +56,7 @@ The [ProductNegativeKeywordConflictReportColumn](productnegativekeywordconflictr
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The current campaign status.|
 |<a name="conflictlevel"></a>ConflictLevel|The entity level where the keyword and negative keyword conflict occurs. The possible values are AdGroup and Campaign.|
-|<a name="merchantproductid"></a>MerchantProductId|The report will include a column that contains the unique identifier provided by a merchant for each product offer.|
+|<a name="merchantproductid"></a>MerchantProductId|The unique identifier provided by a merchant for each product offer.|
 |<a name="negativekeyword"></a>NegativeKeyword|The negative keyword text.|
 |<a name="negativekeywordid"></a>NegativeKeywordId|The Microsoft Advertising assigned identifier of a negative keyword.|
 |<a name="negativekeywordlistid"></a>NegativeKeywordListId|The Microsoft Advertising assigned identifier of a negative keyword list.|

@@ -219,7 +219,7 @@ The final URL suffix can include tracking parameters that will be appended to th
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the ad.
+The system-generated identifier of the ad.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad can then be referenced in the *Parent Id* field of dependent record types such as [Dynamic Search Ad Label](dynamic-search-ad-label.md#parentid). This is recommended if you are adding new ads and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -236,7 +236,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the ad.
+The system-generated identifier of the ad group that contains the ad.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

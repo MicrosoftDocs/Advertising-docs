@@ -116,7 +116,7 @@ The description can contain a maximum of 1,024 characters.
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the customer list.
+The system-generated identifier of the customer list.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
