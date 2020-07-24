@@ -348,7 +348,7 @@ To create a Django app, then, it's necessary to first create the Django project 
         <div class="col-md-4">
             <h2>Microsoft Azure</h2>
             <p>You can publish your web app to Microsoft Azure. Find out how you can host your application with a free trial today.</p>
-            <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default" href="https://azure.microsoft.com">Learn more &raquo;</a></p>
         </div>
     </div>
     {% endblock %}

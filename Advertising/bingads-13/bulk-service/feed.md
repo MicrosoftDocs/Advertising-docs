@@ -291,7 +291,7 @@ The name must be unique (case-insensitive) among all feeds within the account. T
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the feed.
+The system-generated identifier of the feed.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the feed can then be referenced in the *Id* field of dependent record types such as [Feed Item](feed-item.md). This is recommended if you are adding new feeds and feed items in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -308,7 +308,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the account that contains the feed.
+The system-generated identifier of the account that contains the feed.
 
 This bulk field maps to the *Id* field of the [Account](account.md) record.
 

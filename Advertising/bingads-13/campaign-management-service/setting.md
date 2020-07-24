@@ -13,7 +13,6 @@ Do not try to instantiate a *Setting*. You can create one or more of the followi
 
 |Setting|Supported Entity|
 |-----|-----|
-|[CoOpSetting](coopsetting.md)|[AdGroup](adgroup.md)| 
 |[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|[Campaign](campaign.md)|
 |[ShoppingSetting](shoppingsetting.md)|[Campaign](campaign.md)|
 |[TargetSetting](targetsetting.md)|[AdGroup](adgroup.md)| 

@@ -30,11 +30,11 @@ The [AccountInfoWithCustomerData](accountinfowithcustomerdata.md) object has the
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountid"></a>AccountId|The system generated identifier of the account.|**long**|
+|<a name="accountid"></a>AccountId|The system-generated identifier of the account.|**long**|
 |<a name="accountlifecyclestatus"></a>AccountLifeCycleStatus|The status of the account.|[AccountLifeCycleStatus](accountlifecyclestatus.md)|
 |<a name="accountname"></a>AccountName|The name of the account.|**string**|
-|<a name="accountnumber"></a>AccountNumber|The system generated account number that is used to identify the account in the Microsoft Advertising web application.<br/><br/>The account number has the form *xxxxxxxx*, where *xxxxxxxx* is a series of any eight alphanumeric characters.|**string**|
-|<a name="customerid"></a>CustomerId|The system generated identifier of the customer that manages or owns the account.<br/><br/>If this account is the result of an account match using the [FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md), the customer identifier is that of the customer that owns the account. However, if the account is the result of a customer match, the customer identifier is that of the aggregator that manages the account, if the account is managed by an aggregator; otherwise, the identifier is that of the customer that owns the account.|**long**|
+|<a name="accountnumber"></a>AccountNumber|The system-generated account number that is used to identify the account in the Microsoft Advertising web application.<br/><br/>The account number has the form *xxxxxxxx*, where *xxxxxxxx* is a series of any eight alphanumeric characters.|**string**|
+|<a name="customerid"></a>CustomerId|The system-generated identifier of the customer that manages or owns the account.<br/><br/>If this account is the result of an account match using the [FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md), the customer identifier is that of the customer that owns the account. However, if the account is the result of a customer match, the customer identifier is that of the aggregator that manages the account, if the account is managed by an aggregator; otherwise, the identifier is that of the customer that owns the account.|**long**|
 |<a name="customername"></a>CustomerName|The name of the customer that manages or owns the account.|**string**|
 |<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br/><br/>1 - The user paused the account.<br/><br/>2 - The billing service paused the account.<br/><br/>4 - The user and billing service paused the account.|**unsignedByte**|
 

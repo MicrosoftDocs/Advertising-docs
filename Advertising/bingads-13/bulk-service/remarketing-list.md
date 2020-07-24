@@ -162,7 +162,7 @@ The description can contain a maximum of 1,024 characters.
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the remarketing list.
+The system-generated identifier of the remarketing list.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -188,7 +188,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the account or customer. If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
+The system-generated identifier of the account or customer. If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
 
 **Add:** Optional  
 **Update:** Read-only. You cannot change the parent ID.  

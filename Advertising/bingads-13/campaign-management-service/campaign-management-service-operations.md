@@ -30,6 +30,7 @@ The Campaign Management service defines the following service operations.
 |[AddSharedEntity](addsharedentity.md)|Adds a negative keyword list to the ad account library, or adds a website exclusion list to the manager account (customer) library.|1 *SharedEntity*<br/><br/>5,000 *ListItems*|
 |[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|100 *UetTags*|
 |[AppealEditorialRejections](appealeditorialrejections.md)|Appeals ads or keywords that failed editorial review.|1,000 *EntityIdToParentIdAssociations*|
+|[ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md)|Applies offline conversion adjustments.|1,000 *OfflineConversionAdjustments*|
 |[ApplyOfflineConversions](applyofflineconversions.md)|Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.|1,000 *OfflineConversions*|
 |[ApplyProductPartitionActions](applyproductpartitionactions.md)|Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), which each contain a [ProductPartition](productpartition.md).|5,000 *CriterionActions*|
 |[DeleteAdExtensions](deleteadextensions.md)|Deletes one or more ad extensions from the account's ad extension library.|1 *AccountId*<br/><br/>100 *AdExtensionIds*|
@@ -77,8 +78,8 @@ The Campaign Management service defines the following service operations.
 |[GetExperimentsByIds](getexperimentsbyids.md)|Gets experiments by experiment identifiers.|5,000 *ExperimentIds*|
 |[GetFileImportUploadUrl](getfileimportuploadurl.md)|Reserved for future use.|N/A.|
 |[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.|Not applicable.|
-|[GetImportJobsByIds](getimportjobsbyids.md)|Gets import jobs by their type and identifiers.|N/A.|
-|[GetImportResults](getimportresults.md)|Gets results for completed import jobs.|N/A.|
+|[GetImportJobsByIds](getimportjobsbyids.md)|Gets import jobs by their type and identifiers.|100 *ImportJobIds*|
+|[GetImportResults](getimportresults.md)|Gets results for import jobs completed within the last 90 days.|100 *ImportJobIds*|
 |[GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md)|Gets the keywords within an ad group.|1 *AdGroupId*|
 |[GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md)|Retrieves the keywords with the specified editorial review status.|1 *AdGroupId*|
 |[GetKeywordsByIds](getkeywordsbyids.md)|Retrieves the specified keywords.|1 *AdGroupId*<br/><br/>1,000 *KeywordIds*|

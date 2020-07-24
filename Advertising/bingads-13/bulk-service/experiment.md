@@ -190,7 +190,7 @@ CookieBased: When individual customers search, we show ads from either your expe
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the experiment.
+The system-generated identifier of the experiment.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  

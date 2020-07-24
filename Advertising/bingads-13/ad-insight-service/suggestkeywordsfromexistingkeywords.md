@@ -216,7 +216,15 @@ The following are the possible suggestion providers that you can specify.
 |2|Returns keywords from other ad groups that include the specified keyword.|
 |3|Returns search queries that are related to the specified keyword.|
 |4|Returns the best suggestions from the other providers.|
-The following are the providers that each country supports.
+
+The following are the providers that each country supports. 
+
+|Country|Language|Supported Provider Types|Default Provider Type|
+|-------------------|---------------|---------------|---------------|
+|Australia (AU)|English|2,3,4|4|
+|Canada (CA)|English|2,3,4|4||
+|France (FR)|French|2,3,4|4|
+|Germany (DE)|German|1,2,3,4|4|
 
 ## Requirements
 Service: [AdInsightService.svc v13](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v13/AdInsightService.svc)  

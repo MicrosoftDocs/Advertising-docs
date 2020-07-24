@@ -16,7 +16,7 @@ With the TargetRoas (return on ad spend) bid strategy, you don't need to set ad 
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target ROAS, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
-You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
+You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 

@@ -143,7 +143,7 @@ The description can contain a maximum of 1,024 characters.
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the custom audience.
+The system-generated identifier of the custom audience.
 
 **Add:** Not supported  
 **Update:** Required  

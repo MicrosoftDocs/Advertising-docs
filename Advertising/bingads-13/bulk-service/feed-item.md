@@ -365,7 +365,7 @@ The end date is inclusive. For example, if you set this field to 2019/12/31 00:0
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the feed.
+The system-generated identifier of the feed.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
@@ -404,7 +404,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the parent [Feed](feed.md). 
+The system-generated identifier of the parent [Feed](feed.md). 
 
 The parent feed's [Custom Attributes](feed.md#customattributes) and [Sub Type](feed.md#subtype) determine which [Custom Attributes](#customattributes) are valid for this feed item. Currently ad customizer feeds and page feeds are supported, and other feed types could be added in the future. 
 

@@ -76,7 +76,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
-The system generated identifier of the negative keyword list.
+The system-generated identifier of the negative keyword list.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the negative keyword list can then be referenced in the *Id* field of dependent record types such as [Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md). This is recommended if you are adding new negative keyword list and associating it with campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  

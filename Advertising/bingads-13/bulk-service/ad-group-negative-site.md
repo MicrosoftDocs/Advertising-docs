@@ -136,7 +136,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the ad group that contains the negative site.
+The system-generated identifier of the ad group that contains the negative site.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 

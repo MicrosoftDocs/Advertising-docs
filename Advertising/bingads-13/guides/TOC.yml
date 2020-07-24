@@ -216,6 +216,20 @@
   - name: Google Ads Import
     href: ./google-ads-import.md
     displayName: google ads import as a service
+  - name: Hotel Ads Bulk Update
+    items:
+    - name: Overview
+      href: ./hotel-ads-bulk.md
+      displayName: hotel ads bulk update bulk upload
+    - name: Hotel
+      href: ./hotel.md
+      displayName: BulkHotel
+    - name: Hotel Association
+      href: ./hotel-association.md
+      displayName: BulkHotelAssociation
+    - name: Hotel Group
+      href: ./hotel-group.md
+      displayName: BulkHotelGroup
 - name: API Reference
   items:
   - name: Overview
@@ -838,6 +852,9 @@
         - name: Campaign Negative Site
           href: ../bulk-service/campaign-negative-site.md
           displayName: BulkCampaignNegativeSite
+        - name: Campaign Negative Store Criterion
+          href: ../bulk-service/campaign-negative-store-criterion.md
+          displayName: BulkCampaignNegativeStoreCriterion
         - name: Campaign Price Ad Extension
           href: ../bulk-service/campaign-price-ad-extension.md
           displayName: BulkCampaignPriceAdExtension
@@ -903,6 +920,9 @@
           displayName: BulkFeedItem
         - name: Format Version
           href: ../bulk-service/format-version.md
+        - name: Image
+          href: ../bulk-service/image.md
+          displayName: BulkImage
         - name: Image Ad Extension
           href: ../bulk-service/image-ad-extension.md
           displayName: BulkImageAdExtension
@@ -1035,6 +1055,8 @@
           href: ../campaign-management-service/adduettags.md
         - name: AppealEditorialRejections
           href: ../campaign-management-service/appealeditorialrejections.md
+        - name: ApplyOfflineConversionAdjustments
+          href: ../campaign-management-service/applyofflineconversionadjustments.md
         - name: ApplyOfflineConversions
           href: ../campaign-management-service/applyofflineconversions.md
         - name: ApplyProductPartitionActions
@@ -1464,6 +1486,8 @@
           href: ../campaign-management-service/negativesite.md
         - name: OfflineConversion
           href: ../campaign-management-service/offlineconversion.md
+        - name: OfflineConversionAdjustment
+          href: ../campaign-management-service/offlineconversionadjustment.md
         - name: OfflineConversionGoal
           href: ../campaign-management-service/offlineconversiongoal.md
         - name: OperationError

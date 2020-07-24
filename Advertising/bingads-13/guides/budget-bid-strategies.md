@@ -114,7 +114,7 @@ With the MaxConversions bid strategy, you don't need to set ad group or keyword 
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
-You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
+You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
 > The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
@@ -124,7 +124,7 @@ With the TargetCpa (cost per acquisition) bid strategy, you don't need to set ad
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target CPA, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
-You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
+You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
 > The TargetCpa bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
@@ -134,7 +134,7 @@ With the TargetRoas (return on ad spend) bid strategy, you don't need to set ad 
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target ROAS, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
-You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
+You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
 > The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers in the respective feature pilots. If you are in the US pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 721), then all of your target locations must be within the United States. If you are also in the UK/CA/AU/DE/FR pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns both 704 and 721), then all of your target locations must be within Australia, Canada, Germany, France, United Kingdom, or United States.

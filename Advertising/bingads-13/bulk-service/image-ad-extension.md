@@ -164,7 +164,7 @@ This field will not be set if a combination of terms caused the failure or if th
 This field is not supported for image ad extensions. Scheduling is supported for other ad extension types.
 
 ## <a name="id"></a>Id
-The system generated identifier of the ad extension.
+The system-generated identifier of the ad extension.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Image Ad Extension](ad-group-image-ad-extension.md) and [Campaign Image Ad Extension](campaign-image-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
@@ -194,7 +194,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
-The system generated identifier of the account that contains the ad extension.
+The system-generated identifier of the account that contains the ad extension.
 
 This bulk field maps to the *Id* field of the [Account](account.md) record.
 
