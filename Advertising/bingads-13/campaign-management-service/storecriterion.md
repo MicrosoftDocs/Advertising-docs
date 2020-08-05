@@ -9,6 +9,8 @@ description: Defines a criterion to exclude one Microsoft Merchant Center store 
 # StoreCriterion Data Object - Campaign Management
 Defines a criterion to exclude one Microsoft Merchant Center store from your [shopping campaign for brands](../guides/product-ads.md#setup-cooperative). 
 
+Each campaign can have a maximum of 10 excluded stores. 
+
 ## Syntax
 ```xml
 <xs:complexType name="StoreCriterion" xmlns:xs="http://www.w3.org/2001/XMLSchema">

@@ -9,6 +9,16 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="august2020"></a>August 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Report Format Version](#formatversion-reporting-august2020)  
+
+### <a name="formatversion-reporting-august2020"></a>Report Format Version
+The [FormatVersion](../reporting-service/reportrequest.md#formatversion) element is added to the [ReportRequest](../reporting-service/reportrequest.md) data object. 
+
+The data format for certain fields can be updated within the current API version without breaking existing client applications. See the [Report Format Version](reports.md#formatversion) technical guide for differences between format version 1.0 and 2.0. 
+
 ## <a name="july2020"></a>July 2020
 See below for Bing Ads API updates during this calendar month. 
 

@@ -33,7 +33,7 @@ The *GetBSCCountriesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Microsoft Shopping Campaigns. You can pass any one of the returned values in the *SalesCountryCode* element of a [ShoppingSetting](shoppingsetting.md) object.|**string** array|
+|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Microsoft Shopping Campaigns.<br/><br/>For example, supported country codes include "AU" (Australia), "CA" (Canada), "DE" (Germany), "FR" (France), "GB" (United Kingdom), "IN" (India), and "US" (United States). You can pass any one of the returned values in the [SalesCountryCode](shoppingsetting.md#salescountrycode) element of a [ShoppingSetting](shoppingsetting.md) object.|**string** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

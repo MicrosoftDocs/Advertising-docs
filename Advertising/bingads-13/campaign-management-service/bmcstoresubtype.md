@@ -30,7 +30,7 @@ The [BMCStoreSubType](bmcstoresubtype.md) value set has the following values: [C
 
 |Value|Description|
 |-----------|---------------|
-|<a name="coop"></a>CoOp|The Microsoft Merchant Center store supports Cooperative campaigns.|
+|<a name="coop"></a>CoOp|The Microsoft Merchant Center store supports Shopping Campaigns for Brands.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

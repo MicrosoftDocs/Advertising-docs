@@ -36,7 +36,7 @@ The [BMCStore](bmcstore.md) object has the following elements: [HasCatalog](#has
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Microsoft Merchant Center.|**string**|
-|<a name="subtype"></a>SubType|The Microsoft Merchant Center store sub type.<br/><br/>This element is only applicable for Microsoft Merchant Center stores of subtype *CoOp*, and will be nil for all other stores. If the subtype is set to *CoOp* then you have linked from a partner's store via Sponsored Products. When your partner retrieves the same store via [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) the subtype would be nil, since from their perspective the store is not restricted to Sponsored Products.|[BMCStoreSubType](bmcstoresubtype.md)|
+|<a name="subtype"></a>SubType|The Microsoft Merchant Center store sub type.<br/><br/>This element is only applicable for Microsoft Merchant Center stores of subtype *CoOp*, and will be nil for all other stores. If the subtype is set to *CoOp* then you have linked from a partner's store via Shopping Campaigns for Brands. When your partner retrieves the same store via [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) the subtype would be nil, since from their perspective the store is not restricted to Shopping Campaigns for Brands.|[BMCStoreSubType](bmcstoresubtype.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

@@ -11,7 +11,7 @@ dev_langs:
 # Campaign Negative Store Criterion Record - Bulk
 Defines a Campaign Negative Store Criterion that can be uploaded and downloaded in a bulk file. 
 
-Each *Campaign Negative Store Criterion* excludes one Microsoft Merchant Center store from your [shopping campaign for brands](../guides/product-ads.md#setup-cooperative). 
+Each *Campaign Negative Store Criterion* excludes one Microsoft Merchant Center store from your [shopping campaign for brands](../guides/product-ads.md#setup-cooperative). Each campaign can have a maximum of 10 excluded stores. 
 
 You can download all *Campaign Negative Store Criterion* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignNegativeStoreCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

@@ -42,7 +42,7 @@ Let's use the following CSV file as an example. For example, let's say that you 
 "YourAccountId","YourCampaignId","shoe sale","345","Computer","80"
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 
-"@2019 Microsoft Corporation. All rights reserved. "
+"@2020 Microsoft Corporation. All rights reserved. "
 ```
 
 Just provide the ReportFileReader with the file path and file name. Then close the file when you are finished reading.  
