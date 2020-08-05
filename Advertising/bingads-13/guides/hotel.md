@@ -9,7 +9,7 @@ description: Describes the Hotel fields in a Bulk file.
 # Hotel Record - Bulk
 Defines the Hotel record that can be uploaded in a Bulk file.  
 
-The following Bulk CSV example would update the Hotel bid and tablet bid modifier. 
+The following Bulk CSV example would update the Hotel bid and tablet bid multiplier. 
 
 ```csv
 Type,Name,Id,Parent Id,Client Id,Modified Time,Bid,Bid Type,Device Tablet
@@ -22,6 +22,7 @@ For a *Hotel* record, the following attribute fields are available via [Bulk Upl
 - [Advance Booking Window Min Days 1-10](#advancebookingwindowmindays)
 - [Advance Booking Window Multiplier 1-10](#advancebookingwindowmultiplier)
 - [Bid](#bid)
+- [Bid Multiplier Source](#bidmultipliersource)
 - [Bid Type](#bidtype)
 - [Checkin Monday - Sunday](#checkin)
 - [Client Id](#clientid)
@@ -40,11 +41,11 @@ For a *Hotel* record, the following attribute fields are available via [Bulk Upl
 - [Site PropertyPromotionAd](#sitepropertypromotionad)
 
 > [!IMPORTANT]
-> The hotel can inherit the [Bid](#bid) from its parent hotel group, while specifying its own bid modifiers, or vice versa. Bid modifiers include [Advance Booking Window Multiplier 1-10](#advancebookingwindowmultiplier), [Checkin Monday - Sunday](#checkin), [Country AA-ZZ](#country), [DateType Default](#datetypedefault), [DateType Selected](#datetypeselected), [Device Desktop](#devicedesktop), [Device Mobile](#devicemobile), [Device Tablet](#devicetablet), [Length of Stay 1-14](#lengthofstay), [Site LocalUniversal](#sitelocaluniversal), [Site MapResults](#sitemapresults), and [Site PropertyPromotionAd](#sitepropertypromotionad). 
+> The hotel can inherit the [Bid](#bid) from its parent hotel group, while specifying its own bid multipliers, or vice versa. Bid multipliers include [Advance Booking Window Multiplier 1-10](#advancebookingwindowmultiplier), [Checkin Monday - Sunday](#checkin), [Country AA-ZZ](#country), [DateType Default](#datetypedefault), [DateType Selected](#datetypeselected), [Device Desktop](#devicedesktop), [Device Mobile](#devicemobile), [Device Tablet](#devicetablet), [Length of Stay 1-14](#lengthofstay), [Site LocalUniversal](#sitelocaluniversal), [Site MapResults](#sitemapresults), and [Site PropertyPromotionAd](#sitepropertypromotionad). 
 > 
-> If any bid modifiers are set for a hotel, then the hotel will not inherit any bid modifiers from its parent hotel group. If you only want to update the bid, be sure to leave all bid modifiers empty. If the hotel already has bid modifiers and you want to start inheriting bid modifiers from the parent hotel group, then you'll need to delete each bid modifier at the hotel level e.g., "delete_value" per field as described below. 
+> If any bid multipliers are set for a hotel, then the hotel will not inherit any bid multipliers from its parent hotel group. If you only want to update the bid, be sure to leave all bid multipliers empty. If the hotel already has bid multipliers and you want to start inheriting the parent hotel group's bid multipliers, then you can either set [Bid Multiplier Source](#bidmultipliersource) to "InheritFromParent" or delete each hotel bid multiplier.  
 > 
-> To remove the hotel's bid and inherit from the hotel group bid, you only need to set the [Bid](#bid) field to "delete_value".
+> Separately, to remove the hotel's bid and inherit the hotel group bid, you only need to set the [Bid](#bid) field to "delete_value".
 
 ## <a name="advancebookingwindowmindays"></a>Advance Booking Window Min Days 1-10
 Adjust your bids based on how many days in advance the reservation is being made, also known as advanced booking window (ABW). 
@@ -75,7 +76,20 @@ If the [Bid Type](#bidtype) is "Fixed", this [Bid](#bid) field is the fixed per-
 
 If the [Bid Type](#bidtype) is "Percentage", this [Bid](#bid) field is based on the percentage of the per night total room rate, including taxes and other fees. For example, to bid 3 percent of the room's total rate, set this field to 3.0. In effect if the total room rate is $99, and the itinerary is for a 3-night stay, then the final bid is $8.91. 
 
-**Update:** Optional. To remove the hotel's bid and inherit from the hotel group bid, set this field to "delete_value".  
+**Update:** Optional. To remove the hotel's bid and inherit the hotel group bid, set this field to "delete_value". If the parent hotel group inherits the bid from its parent subaccount, the hotel likewise inherits the subaccount level bid.   
+
+## <a name="bidmultipliersource"></a>Bid Multiplier Source
+Determines whether to inherit the hotel group bid multipliers. 
+
+If you set this field to "InheritFromParent", the hotel bid multiplier fields will be ignored and the hotel will inherit the bid multipliers from its parent hotel group. If the parent hotel group inherits bid multipliers from its parent subaccount, the hotel likewise inherits the subaccount level bid multipliers. 
+
+Bid multipliers include [Advance Booking Window Multiplier 1-10](#advancebookingwindowmultiplier), [Checkin Monday - Sunday](#checkin), [Country AA-ZZ](#country), [DateType Default](#datetypedefault), [DateType Selected](#datetypeselected), [Device Desktop](#devicedesktop), [Device Mobile](#devicemobile), [Device Tablet](#devicetablet), [Length of Stay 1-14](#lengthofstay), [Site LocalUniversal](#sitelocaluniversal), [Site MapResults](#sitemapresults), and [Site PropertyPromotionAd](#sitepropertypromotionad). 
+
+If this field is empty and if any bid multipliers are set for a hotel, then the hotel will cease to inherit any bid multipliers from its parent hotel group. 
+
+The hotel can inherit the [Bid](#bid) from its parent hotel group, while specifying its own bid multipliers, or vice versa. To remove the hotel's bid and inherit from the hotel group bid, you only need to set the [Bid](#bid) field to "delete_value".
+
+**Update:** Optional. To remove the hotel's bid multipliers and inherit the hotel group bid multipliers, set this field to "InheritFromParent".  
 
 ## <a name="bidtype"></a>Bid Type
 Determines whether the [Bid](#bid) is a fixed amount or percentage. 
@@ -95,7 +109,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing checkin bid modifier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid on Wednesdays, set the *Checkin Wednesday* field to "delete_value". 
+**Update:** Optional. To remove an existing checkin bid multiplier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid on Wednesdays, set the *Checkin Wednesday* field to "delete_value". 
 
 ## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
@@ -113,7 +127,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing country bid modifier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid for US and DE, set both the *Country US* and *Country DE* fields to "delete_value". 
+**Update:** Optional. To remove an existing country bid multiplier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid for US and DE, set both the *Country US* and *Country DE* fields to "delete_value". 
 
 ## <a name="datetypedefault"></a>DateType Default
 Adjust the base bid if the user didn't search for hotels using specific dates. 
@@ -122,7 +136,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing default date bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing default date bid multiplier, set this field to "delete_value". 
 
 ## <a name="datetypeselected"></a>DateType Selected
 Adjust the base bid if the user searched for hotels using specific dates. 
@@ -131,7 +145,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing selected date bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing selected date bid multiplier, set this field to "delete_value". 
 
 ## <a name="devicedesktop"></a>Device Desktop
 Adjust the base bid if the user is using a desktop device to search for hotels. 
@@ -140,7 +154,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing desktop bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing desktop bid multiplier, set this field to "delete_value". 
 
 ## <a name="devicemobile"></a>Device Mobile
 Adjust the base bid if the user is using a smartphone device to search for hotels. 
@@ -149,7 +163,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing smartphone bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing smartphone bid multiplier, set this field to "delete_value". 
 
 ## <a name="devicetablet"></a>Device Tablet
 Adjust the base bid if the user is using a tablet device to search for hotels. 
@@ -158,7 +172,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing tablet bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing tablet bid multiplier, set this field to "delete_value". 
 
 ## <a name="id"></a>Id
 A system-generated ID that uniquely identifies the hotel.
@@ -176,7 +190,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing length of stay bid modifier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid for stays of 8 or more nights, set the *Length of Stay 8* field to "delete_value". 
+**Update:** Optional. To remove an existing length of stay bid multiplier, set the corresponding field to "delete_value". For example, if you no longer want to modify the base bid for stays of 8 or more nights, set the *Length of Stay 8* field to "delete_value". 
 
 ## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
@@ -198,7 +212,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing bid multiplier, set this field to "delete_value". 
 
 ## <a name="sitemapresults"></a>Site MapResults
 Adjust the base bid if the user is searching for hotels on Bing.com/maps. 
@@ -207,7 +221,7 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing bid multiplier, set this field to "delete_value". 
 
 ## <a name="sitepropertypromotionad"></a>Site PropertyPromotionAd
 Adjust the base bid if the hotel ad is shown in the first results page shown in the maps search. 
@@ -219,5 +233,5 @@ The valid range for this field is 0.00 through 11.00. Values less than 1.00 will
 
 For example, if the fixed bid is $5 and the multiplier is 1.05, the final bid is $5.25. Using the same multiplier, if the percentage bid is 5% and the total room rate is $100, the final bid is $5.25.
 
-**Update:** Optional. To remove an existing bid modifier, set this field to "delete_value". 
+**Update:** Optional. To remove an existing bid multiplier, set this field to "delete_value". 
 

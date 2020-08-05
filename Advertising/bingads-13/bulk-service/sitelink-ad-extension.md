@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new Sitelink Ad Extension to the acco
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Sitelink Extension Order,Sitelink Extension Link Text,Sitelink Extension Destination Url,Sitelink Extension Description1,Sitelink Extension Description2,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter
 Format Version,,,,,,,,,,,6.0,,,,,,,,,,,,
-Sitelink Ad Extension,Active,-17,0,,,ClientIdGoesHere,,,12/31/2019,,,(Monday[09:00-21:00]),FALSE,,Women's Shoe Sale 1,,Simple & Transparent.,No Upfront Cost.,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer
+Sitelink Ad Extension,Active,-17,0,,,ClientIdGoesHere,,,12/31/2020,,,(Monday[09:00-21:00]),FALSE,,Women's Shoe Sale 1,,Simple & Transparent.,No Upfront Cost.,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkSitelinkAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -255,7 +255,7 @@ This field will not be set if a combination of terms caused the failure or if th
 ## <a name="enddate"></a>End Date
 The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
-The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
+The end date is inclusive. For example, if you set this field to 12/31/2020, the ad extensions will stop being shown at 11:59 PM on 12/31/2020.
 
 **Add:** Optional. If you do not specify an end date, the ad extension will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you set this field to the *delete_value* string, then you are effectively removing the end date. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.      
@@ -398,7 +398,7 @@ If you specify [Sitelink Extension Description1](#sitelinkextensiondescription1)
 ## <a name="startdate"></a>Start Date
 The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
-The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
+The start date is inclusive. For example, if you set *StartDate* to 5/5/2020, the ad extensions will start being shown at 12:00 AM on 5/5/2020.
 
 **Add:** Optional. If you do not specify a start date, the ad extension is immediately eligible to be [scheduled](#adschedule).  
 **Update:** Optional. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you set this field to the *delete_value* string, then you are effectively removing the start date and the ad extension is immediately eligible to be [scheduled](#adschedule). The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.  

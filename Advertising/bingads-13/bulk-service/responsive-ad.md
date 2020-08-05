@@ -312,7 +312,7 @@ This is one of two possible headlines that could appear in your audience ads.
 
 Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements. 
 
-The length of the string is limited to 25 characters.
+The length of the string is limited to 30 characters.
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.     
@@ -438,7 +438,7 @@ You can create images for responsive ads via the [Image](image.md) bulk record. 
 ### <a name="images-subtype"></a>subType
 The `subType` attribute represents the aspect ratio for this image asset.
 
-The true aspect ratio of the [Image](image.md) that is stored in the account level media library can vary, so long as the resulting [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) result in the expected aspect ratio per sub type. If you do not set the [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth), the service will automatically crop the image. In any case the true aspect ratio of the media that is stored in the account level media library will remain unchanged. 
+The true aspect ratio of the [Image](image.md) that is stored in the account level media library can vary, so long as the resulting dimensions result in the expected aspect ratio per sub type. If you do not specify crop settings, the service will automatically crop up to the maximum possible area from the center of the image. For example, given a 1000x1000 pixel [image](image.md), for the 1.91:1 aspect ratio, the auto crop setting will be [cropWidth](#images-cropwidth)=1000, [cropHeight](#images-cropheight)=524, [cropX](#images-cropx)=0, and [cropY](#images-cropy)=238. 
 
 The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, ImageMedia133X100, ImageMedia178X100, and ImageMedia172X100. New sub types might be added in the future, so you should not take any dependency on a fixed set of values.
 
@@ -453,11 +453,6 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 |ImageMedia133X100|100 width x 75 height<br/>Aspect radio 1.33:1|
 |ImageMedia178X100|624 width x 350 height<br/>Aspect radio 1.78:1|
 |ImageMedia172X100|300 width x 174 height<br/>Aspect radio 1.72:1|
-
-> [!NOTE]
-> Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the [AddMedia](../campaign-management-service/addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](../campaign-management-service/addmedia.md) operation, you can use crop settings i.e., [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropx), and [cropY](#images-cropy) to determine the effective aspect ratio. The aspect ratio of the stored image would be unchanged in the account level media library.
-> 
-> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
 
 **Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.  
 **Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any images that were previously linked to this ad will be replaced. If you set this field, only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.   
