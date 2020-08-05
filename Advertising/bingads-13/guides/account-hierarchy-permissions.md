@@ -15,8 +15,6 @@ Microsoft Advertising users can use the same login credentials to access multipl
 
 > [!NOTE]
 > In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account". 
-> 
-> The API and documentation for hierarchies are subject to change.
 
 For more information about the campaign hierarchy within an account, see [Entity Limits](entity-hierarchy-limits.md), [Campaigns](campaigns.md), and [Ads](ads.md).
 
@@ -294,10 +292,8 @@ An agency builds a Bing Ads API application for their company to manage the camp
 
 > [!NOTE]
 > In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account". 
-> 
-> The API and documentation for hierarchies are subject to change.  
 
-There is no set limit to the amount of client accounts that can be linked to an agency. For more information about becoming an agency, see the help article [Managing your clients as an agency on Microsoft Advertising](https://help.ads.microsoft.com/#apex/3/en/52083/3) or [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub).  
+There is no set limit to the amount of client accounts that can be linked to an agency; however, only 5 levels of depth are supported for manager account to manager account links. At each level (L1, L2, L3, L4, L5) a manager account could link to any number of manager accounts and ad accounts. For more information about becoming an agency, see the help article [Managing your clients as an agency on Microsoft Advertising](https://help.ads.microsoft.com/#apex/3/en/52083/3) or [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub).  
 
 #### <a name="clientlink"></a>Setup the Hierarchy
 

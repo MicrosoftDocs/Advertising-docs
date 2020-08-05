@@ -39,56 +39,60 @@ The [ImportEntityStatistics](importentitystatistics.md) object has the following
 ## <a name="remarks"></a>Remarks
 Import additions, updates, deletions, and errors results are available for the following entity types. New entity types might be added in the future, so you should not take any dependency on a fixed set of values. You can download similar Google import entity statistics as follows via the Microsoft Advertising web application. 
 
-```txt
-Campaigns
-Ad Groups
-Ads
-Keywords
-Ad extensions
-Product Groups
-Campaign Criteria
-Campaign Auto Target Exclusions
-Ad Group Auto Targets and Exclusions
-Campaign Negative Keywords
-Ad Group Negative Keywords
-Campaign Negative Sites
-Ad Group Negative Sites
-Negative Keyword Lists
-Shared Negative Keywords
-Campaign Device Targets
-Ad Group Device Targets
-Campaign Day Time Targets
-Ad Group Day Time Targets
-Campaign Location Targets
-Ad Group Location Targets
-Campaign Negative Location Targets
-Ad Group Negative Location Targets
-Campaign Location Intent Targets
-Ad Group Location Intent Targets
-Campaign Radius Targets
-Ad Group Radius Targets
-Campaign Age Targets
-Ad Group Age Targets
-Ad Group Negative Age Targets
-Campaign Gender Targets
-Ad Group Gender Targets
-Ad Group Negative Gender Targets
-Campaign In-market Audience Targets
-Ad Group In-market Audience Targets
-Campaign Negative In-market Audience Targets
-Ad Group Negative In-market Audience Targets
-Feeds
-Feed items
-Remarketing lists
-Combined lists
-Ad Group Remarketing List Targets
-Ad Group Negative Remarketing List Targets
-Campaign Remarketing List Targets
-Campaign Negative Remarketing List Targets
-Ad Group Combined List Targets
-Ad Group Negative Combined List Targets
-Campaign Combined List Targets
-Campaign Negative Combined List Targets
+```csv
+EntityType via API,EntityType via Microsoft Advertising UI
+Ad,Ads
+Ad Extension,Ad extensions
+Ad Group,Ad Groups
+Ad Group Age Criterion,Ad Group Age Targets
+Ad Group Combined List Association,Ad Group Combined List Targets
+Ad Group DayTime Criterion,Ad Group Day Time Targets
+Ad Group DeviceOS Criterion,Ad Group Device Targets
+Ad Group Gender Criterion,Ad Group Gender Targets
+Ad Group In Market Audience Association,Ad Group In-market Audience Targets
+Ad Group Location Criterion,Ad Group Location Targets
+Ad Group Location Intent Criterion,Ad Group Location Intent Targets
+Ad Group Negative Age Criterion,Ad Group Negative Age Targets
+Ad Group Negative Combined List Association,Ad Group Negative Combined List Targets
+Ad Group Negative Gender Criterion,Ad Group Negative Gender Targets
+Ad Group Negative In Market Audience Association,Ad Group Negative In-market Audience Targets
+Ad Group Negative Keyword,Ad Group Negative Keywords
+Ad Group Negative Location Criterion,Ad Group Negative Location Targets
+Ad Group Negative Remarketing List Association,Ad Group Negative Remarketing List Targets
+Ad Group Negative Site,Ad Group Negative Sites
+Ad Group Product Partition,Product Groups
+Ad Group Radius Criterion,Ad Group Radius Targets
+Ad Group Remarketing List Association,Ad Group Remarketing List Targets
+AdGroup DSA Criterion,Ad Group Auto Targets and Exclusions
+Campaign,Campaigns
+Campaign Age Criterion,Campaign Age Targets
+Campaign Combined List Association,Campaign Combined List Targets
+Campaign DayTime Criterion,Campaign Day Time Targets
+Campaign DeviceOS Criterion,Campaign Device Targets
+Campaign Feed,Campaign Criteria
+Campaign Gender Criterion,Campaign Gender Targets
+Campaign In Market Audience Association,Campaign In-market Audience Targets
+Campaign Location Criterion,Campaign Location Targets
+Campaign Location Intent Criterion,Campaign Location Intent Targets
+Campaign Negative Combined List Association,Campaign Negative Combined List Targets
+Campaign Negative Dynamic Search Ad Target,Campaign Auto Target Exclusions
+Campaign Negative In Market Audience Association,Campaign Negative In-market Audience Targets
+Campaign Negative Keyword,Campaign Negative Keywords
+Campaign Negative Keyword List Association,Campaign Criteria
+Campaign Negative Location Criterion,Campaign Negative Location Targets
+Campaign Negative Remarketing List Association,Campaign Negative Remarketing List Targets
+Campaign Negative Site,Campaign Negative Sites
+Campaign Product Scope,Campaign Criteria
+Campaign Radius Criterion,Campaign Radius Targets
+Campaign Remarketing List Association,Campaign Remarketing List Targets
+Combined List,Combined lists
+Feed,Feeds
+Feed Item,Feed items
+Keyword,Keywords
+Media,N/A
+Negative Keyword List,Negative Keyword Lists
+Remarketing List,Remarketing lists
+Shared Negative Keyword,Shared Negative Keywords
 ```
 
 ## Requirements

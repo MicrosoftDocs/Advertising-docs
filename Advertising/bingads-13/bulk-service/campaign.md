@@ -345,10 +345,12 @@ The Microsoft Merchant Center store catalog will be filtered to only include pro
 
 For example, the following country code values are supported.
 * AU - Australia
-* GB - United Kingdom
+* CA - Canada
 * DE - Germany
 * FR - France
-* US - United States
+* GB - United Kingdom
+* IN - India
+* US - United States 
 
 To get the current list of supported country codes use the [GetBSCCountries](../campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
 
