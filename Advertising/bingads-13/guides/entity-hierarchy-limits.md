@@ -267,7 +267,7 @@ The following table defines limits for responsive ad properties.
 |Property|Limit|
 |------------|---------|
 |Business Name|The string can contain a maximum of 25 characters.|
-|Headline|The string can contain a maximum of 25 characters.|
+|Headline|The string can contain a maximum of 30 characters.|
 |LongHeadline|The string can contain a maximum of 90 characters.|
 |Text|The string can contain a maximum of 90 characters.|
 
