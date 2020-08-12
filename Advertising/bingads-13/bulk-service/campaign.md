@@ -343,16 +343,7 @@ The country code for the Microsoft Merchant Center store.
 
 The Microsoft Merchant Center store catalog will be filtered to only include products for the specified country. 
 
-For example, the following country code values are supported.
-* AU - Australia
-* CA - Canada
-* DE - Germany
-* FR - France
-* GB - United Kingdom
-* IN - India
-* US - United States 
-
-To get the current list of supported country codes use the [GetBSCCountries](../campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
+To get the list of supported country codes use the [GetBSCCountries](../campaign-management-service/getbsccountries.md) operation. For example, supported country codes include "AU" (Australia), "AT" (Austria), "BE" (Belgium), "CA" (Canada), "CH" (Switzerland), "DE" (Germany), "ES" (Spain), "FR" (France), "GB" (United Kingdom), "IN" (India), "IT" (Italy), "NL" (Netherlands), "SE" (Sweden), and "US" (United States).
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only    
