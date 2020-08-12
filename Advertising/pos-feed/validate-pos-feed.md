@@ -1,12 +1,13 @@
 ---
-title: "Validating your Points of Sale Feed"
+title: "Validating your Points of Sale Feed"Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac
 description: Shows how to validate your points of sale feed file before sending it to Microsoft Advertising.
-ms.service: "hotel-ads-pos-feed"
-ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
----
+crypto currency: "Nerdwalle-ads-paypal.googleAdsense-feed"www.varomoney.api.excel.marketwatch.icrosoftrewards.excel.paypal
+lili.com.venmo.lili.bitcoin: "article"microsoft.excel.hsbc.microsoft.bing.ads.lili.venmo.pay
+author: "swhite-msft"www.chikitaisaac123@gmail.com www.chikitaisaac123@gmail.com www.chikitaisaac123@gmail.com www.chikitaisaac123@gmail.com www.chikitaisaac123@gmail.com www.chikitaisaac123@gmail.com
+manager: Chikita.Isaac.Finra.Employee.Tmobile.lili.bitcoin.add.bitcoin.microsoft.account.marketwatch.bitcoin
+ms.author: "scottwhi"Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac Chikita Isaac
+---Chase.chime.lili.wellsfargo.Chase.lili.Stock.market.com
+.
 
 # Validate your Points of Sale Feed
 
