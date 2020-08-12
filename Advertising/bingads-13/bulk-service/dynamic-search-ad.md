@@ -250,7 +250,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 ## <a name="path1"></a>Path 1
 The first part of the optional path that will be appended to the domain portion of your display URL. The display URL e.g. *www.contoso.com* will be generated from the domain of your display URL. Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your domain is *contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *www.contoso.com/subdirectory1/subdirectory2*.
 
-The maximum input length of the path is 15 characters. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 7 characters. Although dynamic text substitution is supported for other ad types like Expanded Text ads, it is not supported for dynamic search ads.
+The maximum input length of the path is 15 characters. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 7 characters. 
+
+The path can contain [IF](https://help.ads.microsoft.com/#apex/3/en/56922/0) and [countdown](https://help.ads.microsoft.com/#apex/3/en/56853/0-500) functions. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 
@@ -265,7 +267,9 @@ The second part of the optional path that will be appended to the domain portion
 
 You can only specify *Path 2* if *Path 1* is also set.
 
-The maximum input length of the path is 15 characters. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 7 characters. Although dynamic text substitution is supported for other ad types like Expanded Text ads, it is not supported for dynamic search ads.
+The maximum input length of the path is 15 characters. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 7 characters. 
+
+The path can contain [IF](https://help.ads.microsoft.com/#apex/3/en/56922/0) and [countdown](https://help.ads.microsoft.com/#apex/3/en/56853/0-500) functions. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
 The path cannot contain the forward slash (/) or newline (\n) characters. If the path includes a space, it will be replaced with an underscore (_) when the ad is shown.
 
@@ -294,9 +298,11 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 ## <a name="text"></a>Text
 The first part of the ad description.
 
-The text must contain at least one word.
+The text must contain at least one word. 
 
-The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters. Although dynamic text substitution is supported for other ad types like expanded text ads, it is not supported for dynamic search ads.
+The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters.  
+
+The text can contain [IF](https://help.ads.microsoft.com/#apex/3/en/56922/0) and [countdown](https://help.ads.microsoft.com/#apex/3/en/56853/0-500) functions. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
 The text cannot contain the newline (\n) character.
 
@@ -309,12 +315,11 @@ The second part of the ad description.
 
 The text must contain at least one word.
 
-The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters. Although dynamic text substitution is supported for other ad types like expanded text ads, it is not supported for dynamic search ads.
+The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters.  
+
+The text can contain [IF](https://help.ads.microsoft.com/#apex/3/en/56922/0) and [countdown](https://help.ads.microsoft.com/#apex/3/en/56853/0-500) functions. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md). 
 
 The text cannot contain the newline (\n) character.
-
-> [!NOTE]
-> This feature is only available for customers in the Dynamic Search Ads Text Part 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 600). If you are not in the pilot and you try to set this field an error will be returned. During calendar year 2019 this feature will be enabled for all customers.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
