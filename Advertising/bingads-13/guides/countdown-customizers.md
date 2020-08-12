@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Add a countdown to an event by day, hour, and minute. 
 ---
 # Countdown Customizers
-Countdown customizers let you easily add a countdown -- by day, hour, and then minute -- to an event in expanded text ads and responsive search ads. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
+Countdown customizers let you easily add a countdown -- by day, hour, and then minute -- to an event in dynamic search ads, expanded text ads, and responsive search ads. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
 
 Let's say you're going to have a big online sale for 3 days from February 14 through 16 (ending at midnight as soon as February 17th begins). With the countdown syntax, you could set the ad's Title Part 2 like this: "Sale ends in {=countdown("2019/02/17 00:00:00","en-us",3)}!". Here's when your ad would run and examples of how it would look:
 
@@ -44,5 +44,6 @@ The second function parameter is used to specify the language that the countdown
 The third function parameter is used to specify how many days before the Countdown End Date and Time you want this ad to start running e.g., *3* (the maximum is 999). If not specified, the default will be set to *5* and the countdown will start five days before your Countdown End Date and Time. 
 
 ## See Also
+[Dynamic Search Ads](dynamic-search-ads.md)  
 [Expanded Text Ads](expanded-text-ads.md)  
 [Responsive Search Ads](responsive-search-ads.md)  
