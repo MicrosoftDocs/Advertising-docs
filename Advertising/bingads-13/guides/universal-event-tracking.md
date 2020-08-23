@@ -80,7 +80,7 @@ A combined list is an audience created from a combination of multiple existing a
 > [!NOTE]
 > Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).   
 
-You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
+You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
 
 You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. Each list can include up to 100 combination rules or sets of logical conditions, and each combination rule can contain up to 100 audience IDs.
 
@@ -94,7 +94,7 @@ Evaluation of the logical expression determines who will be added to the combine
 
 A combined list must include at least one audience using the OR or AND operators. A combined list cannot use only the NOT operator. In that case you should use audience exclusions instead. 
 
-Custom audiences and customer lists (coming soon) cannot be combined with other audience types. 
+Custom audiences and customer lists cannot be combined with other audience types. 
 
 Similar audiences cannot be combined via the AND or NOT operators. Similar audiences can only be used in a single OR condition. In other words, there can only be one audience set that contains similar audiences, and that set must use the OR operator. 
 
@@ -167,7 +167,7 @@ After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bi
 Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 317.  
 
 ### <a name="audience-bulk"></a>Audience Bulk APIs
 With the Bulk service you can use the following record types to download and upload audiences:

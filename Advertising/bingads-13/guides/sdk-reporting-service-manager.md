@@ -26,10 +26,10 @@ Let's use the following CSV file as an example. For example, let's say that you 
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 2/7/2019"
+"Report Time: 2/7/2020"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 2/8/2019 10:15:00 PM (GMT)"
-"Last Completed Available Hour: 2/8/2019 10:15:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2020 10:15:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2020 10:15:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"

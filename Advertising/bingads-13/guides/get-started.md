@@ -218,7 +218,7 @@ You can follow these steps to get a developer token for production.
 1. Choose the user that you want associated with the developer token. Typically an application only needs one universal token regardless how many users will be supported. 
 1. Click on the **Request Token** button.    
 
-The universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. Starting in July 2019, this is the default token type.    
+The universal developer token can be used to authenticate with any valid user credentials. You can use the same universal developer token whether your application will be used by one or multiple Microsoft Advertising users. As of July 2019, this is the default token type.    
 
 The single-user developer token can only be used to authenticate one user for access to one customer. This token type has been deprecated in favor of the universal token. If you still see that a single user token is assigned to one of your users, you can click "Upgrade to Universal" as shown here. 
 

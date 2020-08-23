@@ -52,7 +52,7 @@ Even if the current users of your application do not have work or school account
 
 ### Q. If I don't want to support work or school accounts, do I need to make any changes?
 
-We recommend all clients upgrade to the new [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) during calendar year 2019. The Microsoft identity platform endpoint supports both work and personal accounts. The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) by default. 
+We recommend all clients upgrade to the new [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). The Microsoft identity platform endpoint supports both work and personal accounts. The Bing Ads SDKs version 12.13.2 and later use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) by default. 
 
 ### Q. What changes are required for my application to support work or school accounts via the API?
 
@@ -80,11 +80,7 @@ If the user no longer has an MSA personal account identity, then Bing Ads API wi
 
 ### Q. Are work or school accounts only supported with Bing Ads API Version 13?
 
-Work or school accounts are not tied to any Bing Ads API version. A Microsoft Advertising user access tokens obtained using the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) can be used in production with all supported versions of the Bing Ads API.
-
-### Q. Once I have upgraded to Bing Ads API Version 13, does my application automatically support work or school accounts?
-
-Work or school account access is not enabled simply by upgrading to Bing Ads API Version 13. You'll also need to use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for access and refresh token requests.
+Work or school accounts are not tied to a specific Bing Ads API version. A Microsoft Advertising user access tokens obtained using the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) can be used in production with all supported versions of the Bing Ads API. 
 
 ### Q. Will the Bing Ads SDKs support the Microsoft identity platform endpoint?  
 

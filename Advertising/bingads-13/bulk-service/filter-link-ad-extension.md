@@ -1,56 +1,94 @@
 ---
-title: "Structured Snippet Ad Extension Record - Bulk"
+title: "Filter Link Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Describes the Structured Snippet Ad Extension fields in a Bulk file.
+description: Describes the Filter Link Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Structured Snippet Ad Extension Record - Bulk
-Defines a structured snippet ad extension that can be downloaded and uploaded in a bulk file.
+# Filter Link Ad Extension Record - Bulk
+Defines a filter link ad extension that can be downloaded and uploaded in a bulk file.
 
-A structured snippet ad extension pairs one header with between 3 and 10 snippet values that tell customers more about your business.
+A filter link ad extension pairs one header with between 3 and 10 clickable text values that tell customers more about your business. 
 
-In the following example, *Courses* is the header, and *.NET*, *Java*, *Python*, and *PHP* are examples of individual values.
+> [!NOTE]
+> Filter Link Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 732).  
 
-**Courses: .NET, Java, Python, PHP**
+You can associate a filter link ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 filter link ad extensions. An expanded text ad will only include one filter link (one headline with 3 - 10 values) per impression. Use the [Account Filter Link Ad Extension](account-filter-link-ad-extension.md), [Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md), and [Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md) records to manage filter link ad extension associations.
 
-You can associate a structured snippet ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 structured snippet ad extensions. An expanded text ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Use the [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md), [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md), and [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md) records to manage structured snippet ad extension associations. 
+You can download all *Filter Link Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *FilterLinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-You can download all *Structured Snippet Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *StructuredSnippetAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new Structured Snippet Ad Extension to the account's shared library. 
+The following Bulk CSV example would add a new Filter Link Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Structured Snippet Header,Structured Snippet Values
-Format Version,,,,,,,,,,,6.0,,,,
-Structured Snippet Ad Extension,Active,-18,0,,,ClientIdGoesHere,,,12/31/2020,,,(Monday[09:00-21:00]),FALSE,Brands,Windows;Xbox;Skype
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Language,Name,Ad Schedule,Use Searcher Time Zone,AdExtension Header Type,Texts,Final Url,Mobile Final Url
+Format Version,,,,,,,,,,,6.0,,,,,,
+Filter Link Ad Extension,Active,-18,0,,,ClientIdGoesHere,,,12/31/2020,English,,(Monday[09:00-21:00]),FALSE,Amenities,ValueOne;ValueTwo;ValueThree,https://www.contoso.com/one; https://www.contoso.com/two; https://www.contoso.com/three,https://mobile.contoso.com/one; https://mobile.contoso.com/two; https://mobile.contoso.com/three
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkStructuredSnippetAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkFilterLinkAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-// Map properties in the Bulk file to the BulkStructuredSnippetAdExtension
-var bulkStructuredSnippetAdExtension = new BulkStructuredSnippetAdExtension
+// Map properties in the Bulk file to the BulkFilterLinkAdExtension
+var bulkFilterLinkAdExtension = new BulkFilterLinkAdExtension
 {
     // 'Parent Id' column header in the Bulk file
     AccountId = 0,
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
-                
+
     // Map properties in the Bulk file to the 
-    // StructuredSnippetAdExtension object of the Campaign Management service.
-    StructuredSnippetAdExtension = new StructuredSnippetAdExtension
+    // FilterLinkAdExtension object of the Campaign Management service.
+    FilterLinkAdExtension = new FilterLinkAdExtension
     {
-        // 'Header' column header in the Bulk file
-        Header = "Brands",
+        // 'AdExtension Header Type' column header in the Bulk file
+        AdExtensionHeaderType = AdExtensionHeaderType.Amenities,
+        // 'Language' column header in the Bulk file
+        Language = "English",
         // 'Id' column header in the Bulk file
-        Id = structuredSnippetAdExtensionIdKey,
-                    
+        Id = filterLinkAdExtensionIdKey,
+        // 'Texts' column header in the Bulk file
+        Texts = new[] {
+            // Each string value is delimited by a semicolon (;) in the Bulk file
+            "ValueOne",
+            "ValueTwo",
+            "ValueThreee"
+        },
+        // 'Final Url' column header in the Bulk file
+        FinalUrls = new[] {
+            // Each Url is delimited by a semicolon (;) in the Bulk file
+            "https://www.contoso.com/one",
+            "https://www.contoso.com/two",
+            "https://www.contoso.com/three"
+        },
+        // 'Mobile Final Url' column header in the Bulk file
+        FinalMobileUrls = new[] {
+            // Each Url is delimited by a semicolon (;) in the Bulk file
+            "https://mobile.contoso.com/one",
+            "https://mobile.contoso.com/two",
+            "https://mobile.contoso.com/three"
+        },
+        // 'Tracking Template' column header in the Bulk file
+        TrackingUrlTemplate = null,
+        // 'Custom Parameter' column header in the Bulk file
+        UrlCustomParameters = new CustomParameters
+        {
+            // Each custom parameter is delimited by a semicolon (;) in the Bulk file
+            Parameters = new[] {
+                new CustomParameter(){
+                    Key = "promoCode",
+                    Value = "PROMO1"
+                },
+                new CustomParameter(){
+                    Key = "season",
+                    Value = "summer"
+                },
+            }
+        },
         // 'Ad Schedule' column header in the Bulk file
         Scheduling = new Schedule
         {
@@ -82,14 +120,10 @@ var bulkStructuredSnippetAdExtension = new BulkStructuredSnippetAdExtension
 
         // 'Status' column header in the Bulk file
         Status = AdExtensionStatus.Active,
-        // 'Structured Snippet Values' column header in the Bulk file
-        // Each value is delimited by a semicolon (;) in the Bulk file
-        Values = new[] { "Windows", "Xbox", "Skype" },
-
     },
 };
 
-uploadEntities.Add(bulkStructuredSnippetAdExtension);
+uploadEntities.Add(bulkFilterLinkAdExtension);
 
 var entityUploadParameters = new EntityUploadParameters
 {
@@ -103,8 +137,9 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-For a *Structured Snippet Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For a *Filter Link Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
+- [AdExtension Header Type](#adextensionheadertype)
 - [Ad Schedule](#adschedule)
 - [Client Id](#clientid)
 - [Editorial Location](#editoriallocation)
@@ -112,16 +147,29 @@ For a *Structured Snippet Ad Extension* record, the following attribute fields a
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
 - [End Date](#enddate)
+- [Final Url](#finalurl)
 - [Id](#id)
+- [Language](#language)
+- [Mobile Final Url](#mobilefinalurl)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
 - [Publisher Countries](#publishercountries)
 - [Start Date](#startdate)
 - [Status](#status)
-- [Structured Snippet Header](#structuredsnippetheader)
-- [Structured Snippet Values](#structuredsnippetvalues)
+- [Texts](#texts)
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
+
+## <a name="adextensionheadertype"></a>AdExtension Header Type
+The header that is appended with a colon (:) and precedes the filter link values in the ad that is shown.
+
+Filter link headers will be shown in the language that you specify. For example, if you want header Amenities in English you must set the [Language](#language) to English and the [AdExtension Header Type](#adextensionheadertype) to "Amenities". If you want header Ausstattung (Amenities in German) you must set the [Language](#language) to German and the [AdExtension Header Type](#adextensionheadertype) to "Amenities". 
+
+The following filter link header types are supported: Amenities, Brands, Classes, Courses, DailyRates, DegreePrograms, Departments, Destinations, FeaturedHotels, Goods, Grades, Highlights, InsuranceCoverage, Items, Languages, Locations, Models, Neighborhoods, Prices, Rates, Ratings, SchoolDistricts, Services, ServiceCatalog, Shows, Sizes, Styles, Tools, Topics, Types, Vacations, Vehicles, What, Who, Why. 
+
+**Add:** Required  
+**Update:** Required    
+**Delete:** Read-only  
 
 ## <a name="adschedule"></a>Ad Schedule
 The list of day and time ranges that you want the ad extension to be displayed with your ads. Each day and time range includes the scheduled day of week, start/end hour, and start/end minute. Each day and time range is enclosed by left and right parentheses, and separated from other day and time ranges with a semicolon (;) delimiter. Within each day and time range the format is *Day[StartHour:StartMinue-EndHour:EndMinute]*.
@@ -193,12 +241,51 @@ The end date is inclusive. For example, if you set this field to 12/31/2020, the
 **Update:** Optional. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you set this field to the *delete_value* string, then you are effectively removing the end date. The [Ad Schedule](#adschedule), [End Date](#enddate), [Start Date](#startdate), and [Use Searcher Time Zone](#usesearchertimezone) fields depend on each other and are updated together. If you leave all of these fields empty during update, then none of them are updated. If you include values for any of these fields, then the prior values for all of these fields are removed or replaced. To remove all prior schedule settings, set each of these fields to *delete_value*.      
 **Delete:** Read-only  
 
+## <a name="finalurl"></a>Final Url
+The landing page URL.
+
+The following validation rules apply to Final URLs and Final Mobile URLs.  
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- You may specify up to 10 list items for both [Final Url](#finalurl) and [Mobile Final Url](#mobilefinalurl); however, only the first item in each list is used for delivery. The service allows up to 10 list items for potential forward compatibility.  
+- Each URL is delimited by a semicolon and space ("; ").  
+- Usage of '{' and '}' is only allowed to delineate tags, for example *{lpurl}*.  
+- Final URLs must each be a well-formed URL starting with either http:// or https://.  
+- If you specify [Mobile Final Url](#mobilefinalurl), you must also specify [Final Url](#finalurl).  
+
+**Add:** Required  
+**Update:** Optional. If no value is set for the update, this setting is not changed.   
+**Delete:** Read-only  
+
 ## <a name="id"></a>Id
 The system-generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md) and [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md) and [Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
+
+## <a name="language"></a>Language
+The language you want to use for the filter link headers.
+
+Filter link headers will be shown in the language that you specify. For example, if you want header Amenities in English you must set the [Language](#language) to English and the [AdExtension Header Type](#adextensionheadertype) to "Amenities". If you want header Ausstattung (Amenities in German) you must set the [Language](#language) to German and the [AdExtension Header Type](#adextensionheadertype) to "Amenities". 
+
+**Add:** Required  
+**Update:** Required    
+**Delete:** Read-only  
+
+## <a name="mobilefinalurl"></a>Mobile Final Url
+The landing page URL for mobile devices.
+
+The following validation rules apply to Final URLs and Final Mobile URLs.  
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.  
+- You may specify up to 10 list items for both [Final Url](#finalurl) and [Mobile Final Url](#mobilefinalurl); however, only the first item in each list is used for delivery. The service allows up to 10 list items for potential forward compatibility.  
+- Each URL is delimited by a semicolon and space ("; ").  
+- Usage of '{' and '}' is only allowed to delineate tags, for example *{lpurl}*.  
+- Final URLs must each be a well-formed URL starting with either http:// or https://.  
+- If you specify [Mobile Final Url](#mobilefinalurl), you must also specify [Final Url](#finalurl).  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
@@ -246,19 +333,10 @@ Possible values are *Active* or *Deleted*.
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
-## <a name="structuredsnippetheader"></a>Structured Snippet Header
-The header that is appended with a colon (*:*) and precedes the snippet values. 
+## <a name="texts"></a>Texts
+The text values that follow after the [AdExtension Header Type](#adextensionheadertype) component of the ad that is shown. 
 
-Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Ad Extension Header Languages](../guides/ad-languages.md#adextensionheaders).
-
-**Add:** Required  
-**Update:** Required    
-**Delete:** Read-only  
-
-## <a name="structuredsnippetvalues"></a>Structured Snippet Values
-The snippet values that follow after the [Structured Snippet Header](#structuredsnippetheader) component of the ad that is shown. 
-
-Each text value that you choose can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value can have a maximum length of 12 characters. 
+Each text value that you choose can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value can have a maximum length of 12 characters.  
 
 In a bulk file, the list of values are delimited with a semicolon (;).
 

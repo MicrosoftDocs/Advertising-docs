@@ -80,7 +80,7 @@ The following bid strategy types are available per campaign type. For more infor
 |[TargetCpa](#targetcpa)|DynamicSearchAds<br/>Search|
 |[TargetRoas](#targetroas)|DynamicSearchAds<br/>Search<br/>Shopping|
 
-When you use the Bing Ads API, the default value for Search and DynamicSearchAds campaigns is [EnhancedCpc](#enhancedcpc). The default value for Shopping campaigns is [ManualCpc](#manualcpc). The only supported value for Audience campaigns is [ManualCpc](#manualcpc).
+When you use the Bing Ads API, the default value for Search and DynamicSearchAds campaigns is [EnhancedCpc](#enhancedcpc). The default value for most Shopping campaigns is [EnhancedCpc](#enhancedcpc); however, the only supported bid strategy type for [smart shopping campaigns](smart-shopping-campaigns.md) is MaxConversionValue. The only supported value for Audience campaigns is [ManualCpc](#manualcpc).
 
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
@@ -94,9 +94,9 @@ With the EnhancedCpc (enhanced cost per click) bid strategy, you set your ad gro
 Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
 
 > [!NOTE]
-> For search ad and dynamic search ad campaigns, the EnhancedCpc bid strategy is available to all advertisers worldwide. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.  
+> For search ad and dynamic search ad campaigns, the EnhancedCpc bid strategy is available to all advertisers worldwide. 
 > 
-> For Microsoft Shopping Campaigns, the EnhancedCpc bid strategy is available to advertisers in Australia, Canada, France, Germany, India, United Kingdom, and United States.
+> For Microsoft Shopping Campaigns, the EnhancedCpc bid strategy is available wherever Microsoft Shopping Campaigns are available.
 
 ### <a name="manualcpc"></a>ManualCpc
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  

@@ -32,8 +32,8 @@ Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Target Campaign Id,Target Ad
 Format Version,,,,,,,,,,,,,,,,,,6,,,,
 Feed,Active,-20,,PageFeed,,,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
 Feed,Active,-21,,AdCustomizerFeed,,,,,AdCustomizerFeedClientIdGoesHere,,,,,,,,,,,,MyAdCustomizerFeedName,"[{""name"":""DateTimeName"",""feedAttributeType"":""DateTime""},{""name"":""Int64Name"",""feedAttributeType"":""Int64""},{""name"":""PriceName"",""feedAttributeType"":""Price""},{""name"":""StringName"",""feedAttributeType"":""String"",""isPartOfKey"":true}]"
-Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
-Feed Item,Active,-210,-21,,,,21;210,,2019/06/22 00:00:00,2019/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2019/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
+Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
+Feed Item,Active,-210,-21,,,,21;210,,2020/06/22 00:00:00,2020/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2020/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkFeedItem* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -230,7 +230,7 @@ Here are example custom attributes that you could upload for an ad customizer fe
 
 ```json
 {
-	"DateTimeName": "2019/06/22 00:00:00",
+	"DateTimeName": "2020/06/22 00:00:00",
 	"Int64Name": 237601,
 	"PriceName": "$601",
 	"StringName": "s237601"
@@ -281,7 +281,7 @@ Then we can map each feed [name](feed.md#customattributes-name) i.e., "DateTimeN
 
 ```json
 {
-	"DateTimeName": "2019/06/22 00:00:00",
+	"DateTimeName": "2020/06/22 00:00:00",
 	"Int64Name": 237601,
 	"PriceName": "$601",
 	"StringName": "s237601"
@@ -358,7 +358,7 @@ The feed item scheduled end date string formatted as *yyyy/mm/dd HH:mm:ss*. To d
 > [!NOTE]
 > This field is only applicable for ad customizer feeds. 
 
-The end date is inclusive. For example, if you set this field to 2019/12/31 00:00:00, the feed item will stop being eligible at 12:00 AM on 12/31/2019.  
+The end date is inclusive. For example, if you set this field to 2020/12/31 00:00:00, the feed item will stop being eligible at 12:00 AM on 12/31/2020.  
 
 **Add:** Optional. If you do not specify an end date, the feed item will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the feed item will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
@@ -424,7 +424,7 @@ By default the feed item can be shown to people in, searching for, or viewing pa
 ## <a name="startdate"></a>Start Date
 The feed item scheduled start date string formatted as *yyyy/mm/dd HH:mm:ss*. To default to midnight at the beginning of the day, you can omit the HH:mm:ss part.  
 
-The start date is inclusive. For example, if you set this field to 2019/06/15 00:00:00, the feed item will start being eligible at 12:00 AM on June 15th, 2019.
+The start date is inclusive. For example, if you set this field to 2020/06/15 00:00:00, the feed item will start being eligible at 12:00 AM on June 15th, 2020.
 
 **Add:** Optional. If you do not specify a start date, the feed item are immediately eligible to be scheduled during the day and time ranges.  
 **Update:** Optional. If no value is set for the update, this setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the feed item are immediately eligible to be scheduled during the day and time ranges.    

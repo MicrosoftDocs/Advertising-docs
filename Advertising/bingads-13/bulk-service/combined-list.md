@@ -153,7 +153,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ## <a name="combinationrule"></a>Combination Rule
 A combination rule includes conditions used to determine who to add to your combined list.
 
-You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
+You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
 
 You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. The combination rule of each list can include up to 100 sets of logical conditions, and each set can contain up to 100 audience IDs.
 
@@ -175,7 +175,7 @@ Evaluation of the logical expression determines who will be added to the combine
 
 A combined list must include at least one audience using the OR or AND operators. A combined list cannot use only the NOT operator. In that case you should use audience exclusions instead. 
 
-Custom audiences and customer lists (coming soon) cannot be combined with other audience types. 
+Custom audiences and customer lists cannot be combined with other audience types. 
 
 Similar audiences cannot be combined via the AND or NOT operators. Similar audiences can only be used in a single OR condition. In other words, there can only be one audience set that contains similar audiences, and that set must use the OR operator. 
 

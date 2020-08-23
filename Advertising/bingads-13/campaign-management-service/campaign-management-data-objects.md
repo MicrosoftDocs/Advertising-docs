@@ -91,7 +91,7 @@ The Campaign Management service defines the following data objects.
 |[Experiment](experiment.md)|Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.|
 |[FileImportJob](fileimportjob.md)|Reserved for future use.|
 |[FileImportOption](fileimportoption.md)|Reserved for future use.|
-|[FilterLinkAdExtension](filterlinkadextension.md)|Reserved.|
+|[FilterLinkAdExtension](filterlinkadextension.md)|Filter Link Extensions pair one header with between 3 and 10 clickable text values that tell customers more about your business.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
 |[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
 |[GenderCriterion](gendercriterion.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
