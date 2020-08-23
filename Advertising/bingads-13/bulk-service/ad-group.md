@@ -18,7 +18,7 @@ The following Bulk CSV example would add a new ad group if the correct campaign 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Network Distribution,Ad Rotation,Cpc Bid,Language,Bid Adjustment,Name,Tracking Template,Final Url Suffix,Custom Parameter,Bid Strategy Type,Target Setting
 Format Version,,,,,,,,,,,,,,,6.0,,,,,
-Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/12/2018,12/31/2019,OwnedAndOperatedAndSyndicatedSearch,RotateAdsEvenly,0.1,English,10,,https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},,{_promoCode}=PROMO1; {_season}=summer,ManualCpc,Audience
+Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/12/2020,12/31/2021,OwnedAndOperatedAndSyndicatedSearch,RotateAdsEvenly,0.1,English,10,,https://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},,{_promoCode}=PROMO1; {_season}=summer,ManualCpc,Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroup* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -482,7 +482,7 @@ If you specify a time period that spans multiple days, the quality score is the 
 ## <a name="startdate"></a>Start Date
 The date that the ads in the ad group can begin serving; otherwise, the service can begin serving the ads in the ad group the day that the ad group becomes active.
 
-The start date is inclusive. For example, if you set *Start Date* to 5/5/2019, the ads in the ad group will start at 12:00 AM on 5/5/2019. The time is based on the time zone that you specify at the campaign level.
+The start date is inclusive. For example, if you set *Start Date* to 5/5/2020, the ads in the ad group will start at 12:00 AM on 5/5/2020. The time is based on the time zone that you specify at the campaign level.
 
 **Add:** Optional. If you do not set this field or if the date you submit is prior to today's date, then today's date will be set and the service can begin serving the ads in the ad group as soon as the ad group status is active.  
 **Update:** Optional. If no value is set for the update, this setting is not changed. The start date cannot be updated after the ad group is submitted i.e., once the start date has arrived.  

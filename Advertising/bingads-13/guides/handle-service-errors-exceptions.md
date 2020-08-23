@@ -282,7 +282,7 @@ using (StreamWriter streamWriter = new StreamWriter(@"tracelog.txt"))
 }
 ```
 
-The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 13.0.4 with the following NuGet packages. Your implementation will vary. 
+The above snippet from [Program.cs](https://github.com/BingAds/BingAds-dotNet-SDK/blob/main/examples/BingAdsExamples/BingAdsConsoleApp/Program.cs) was run using Bing Ads .NET SDK version 13.0.5 with the following NuGet packages. Your implementation will vary. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

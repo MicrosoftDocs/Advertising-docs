@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup ad extensions with the Bing Ads API.
 ---
 # Ad Extensions
-Ad extensions are additional pieces of information about your business, like a phone number or a link to a specific page on your website, you can add to your ads. Ad extensions are free to add to your ads, with the usual charges for any clicks you get. Including ad extensions can improve the visibility of your ads, which can lead to more clicks and improve your ROI. There are many types of ad extensions available in Microsoft Advertising: [Action Extensions](#actionextensions), [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Promotion Extensions](#promotionextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). For more about ad extensions, see the [About ad extensions](https://help.ads.microsoft.com/#apex/3/en/51001/1) help article.
+Ad extensions are additional pieces of information about your business, like a phone number or a link to a specific page on your website, you can add to your ads. Ad extensions are free to add to your ads, with the usual charges for any clicks you get. Including ad extensions can improve the visibility of your ads, which can lead to more clicks and improve your ROI. There are many types of ad extensions available in Microsoft Advertising: [Action Extensions](#actionextensions), [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Filter Link Extensions](#filterlinkextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Promotion Extensions](#promotionextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). For more about ad extensions, see the [About ad extensions](https://help.ads.microsoft.com/#apex/3/en/51001/1) help article.
 
 > [!TIP]
 > Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the changes of additional space being allocated and increasing clicks for your ad.
@@ -24,7 +24,7 @@ Ad extensions that are associated at a lower level e.g., ad group will override 
 You can manage ad extensions with either the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](../bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad extensions for your entire account in a single upload. In comparison, with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad extensions per call. For details see the following sections.
 
 ## <a name="adextensiontypes"></a>Ad Extension Types
-Ad extension types include [Action Extensions](#actionextensions), [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Promotion Extensions](#promotionextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). 
+Ad extension types include [Action Extensions](#actionextensions), [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Filter Link Extensions](#filterlinkextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Promotion Extensions](#promotionextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions). 
 
 ### <a name="actionextensions"></a>Action Extensions
 With Action Extensions, your ads will include with a call-to-action button.
@@ -47,6 +47,9 @@ With Callout Extensions, you can provide an extra snippet of text that highlight
 Each account, campaign, or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your account, campaign, or ad group, no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
 ![Callout Ad Extension](media/callout-ad-extension.png "Callout Ad Extension")
+
+### <a name="filterlinkextensions"></a>Filter Link Extensions
+With Filter Link Extensions, your ads will include one header with between 3 and 10 clickable text values that tell customers more about your business. 
 
 ### <a name="imageextensions"></a>Image Extensions
 With Image Extensions, your ads may include an image or alternative text.
@@ -120,6 +123,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 - [Campaign Callout Ad Extension](../bulk-service/campaign-callout-ad-extension.md)
 - [Ad Group Callout Ad Extension](../bulk-service/ad-group-callout-ad-extension.md)
 
+### Filter Link Ad Extensions
+- [Filter Link Ad Extension](../bulk-service/filter-link-ad-extension.md)
+- [Account Filter Link Ad Extension](../bulk-service/account-filter-link-ad-extension.md)
+- [Campaign Filter Link Ad Extension](../bulk-service/campaign-filter-link-ad-extension.md)
+- [Ad Group Filter Link Ad Extension](../bulk-service/ad-group-filter-link-ad-extension.md)
+
 ### Image Ad Extensions
 - [Image Ad Extension](../bulk-service/image-ad-extension.md)
 - [Account Image Ad Extension](../bulk-service/account-image-ad-extension.md)
@@ -173,6 +182,7 @@ These are the ad extension entities that can be accessed using the [Campaign Man
 - [AppAdExtension](../campaign-management-service/appadextension.md)
 - [CallAdExtension](../campaign-management-service/calladextension.md)
 - [CalloutAdExtension](../campaign-management-service/calloutadextension.md)
+- [FilterLinkAdExtension](../campaign-management-service/filterlinkadextension.md)
 - [ImageAdExtension](../campaign-management-service/imageadextension.md)
 - [LocationAdExtension](../campaign-management-service/locationadextension.md)
 - [PriceAdExtension](../campaign-management-service/priceadextension.md)

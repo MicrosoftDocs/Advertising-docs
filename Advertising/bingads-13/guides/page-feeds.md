@@ -22,7 +22,7 @@ You can have 100 feeds per account (this maximum number includes all feed types)
 > Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can link page feed identifiers with dynamic search ads campaigns using either the Bulk or Campaign Management service. You can also manage ads and auto targets using either the Bulk or Campaign Management service. 
 
 > [!TIP]
-> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkDynamicSearchAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/master/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkDynamicSearchAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/master/examples/v13/bulk_dynamic_search_ads.py) repositories on GitHub i.e., the Bulk Dynamic Search Ads example shows how to create and use a page feed. 
+> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/main/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkDynamicSearchAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/main/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkDynamicSearchAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/main/examples/v13/bulk_dynamic_search_ads.py) repositories on GitHub i.e., the Bulk Dynamic Search Ads example shows how to create and use a page feed. 
 
 ## <a name="upload-pagefeed"></a>Upload page feeds
 
@@ -53,7 +53,7 @@ You could upload the page feed and feed items via the Bulk API as follows:
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Keyword,Match Type,Target,Physical Intent,Name,Ad Schedule,Audience Id,Feed Name,Custom Attributes
 Format Version,,,,,,,,,,,,,,,,6,,,,
 Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
-Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
+Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
 ```
 
 ## <a name="associate-pagefeed"></a>Associate a page feed

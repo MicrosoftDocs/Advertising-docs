@@ -15,6 +15,9 @@ As your campaign progresses, you may find that your click-through rate and conve
 
 Each day and time criterion defines the day, from hour, from minute, to hour, and to minute requirements for the accompanying criterion bid adjustment. 
 
+> [!NOTE]
+> You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion. 
+
 The maximum number of day and time criterions that you can specify per campaign or ad group is 49. You may not specify any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can specify is seven. For example you can specify up to 7 day and time criterions where the *Day* is set to Monday.
 
 If ad group level day and time criterions are specified, the campaign level day and time criterions are ignored for that ad group. In other words the ad group day and time criterions override the campaign day and time criterions, and are not applied as a union. 
@@ -147,7 +150,7 @@ The starting hour to target.
 Supported values range from 0 to 23.
 
 **Add:** Required  
-**Update:** Required  
+**Update:** Required. You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion.  
 **Delete:** Read-only  
 
 ## <a name="fromminute"></a>From Minute
@@ -156,7 +159,7 @@ The starting minute to target.
 Supported values are 0, 15, 30, and 45. 
 
 **Add:** Required  
-**Update:** Required  
+**Update:** Required. You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -198,7 +201,7 @@ The day that you want to target with the corresponding *Bid Adjustment*.
 Supported values are *Sunday*, *Monday*, *Tuesday*, *Wednesday*, *Thursday*, *Friday*, and *Saturday*. 
 
 **Add:** Required  
-**Update:** Required  
+**Update:** Required. You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion.  
 **Delete:** Read-only  
 
 ## <a name="tohour"></a>To Hour
@@ -207,7 +210,7 @@ The ending hour to target.
 Supported values range from 0 to 24. If the [To Hour](#tohour) is set to 24, the [To Minute](#tominute) must be *Zero*.
 
 **Add:** Required  
-**Update:** Required  
+**Update:** Required. You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion.  
 **Delete:** Read-only  
 
 ## <a name="tominute"></a>To Minute
@@ -216,5 +219,5 @@ The ending minute to target.
 Supported values are 0, 15, 30, and 45. 
 
 **Add:** Required  
-**Update:** Required  
+**Update:** Required. You cannot modify the [Target](#target), [From Hour](#fromhour), [From Minute](#fromminute), [To Hour](#tohour), or [To Minute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion.  
 **Delete:** Read-only  

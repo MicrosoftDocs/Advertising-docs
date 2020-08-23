@@ -22,6 +22,9 @@ There is no set limit to the amount of client accounts that can be linked to an 
 > [!TIP]
 > For more information about the client link lifecycle, see the [Account Hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) technical guide. For more information about becoming an agency, see the [Resources for agency partners](https://about.ads.microsoft.com/en-us/resources/agency-hub). For more information from a client's perspective, see [How to have an agency manage your Microsoft Advertising account](https://help.ads.microsoft.com/#apex/3/en/52004/3).  
 
+> [!NOTE]
+> Agency customers in the Create Accounts on Behalf of Client pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 793) can also establish ad account level client links via the [SignupCustomer](../customer-management-service/signupcustomer.md) service operation. Please see [SignupCustomer](../customer-management-service/signupcustomer.md) for more information. 
+
 ## <a name="request"></a>Request Elements
 The *AddClientLinksRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 

@@ -21,7 +21,7 @@ Format Version,,,,,,,,,,6.0
 Image,Active,-20,0,ClientIdGoesHere,,My Image,https://contoso.com/PhotoStock_123.jpg,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkImage* object (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkImage* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -139,7 +139,15 @@ All supported sub type values with corresponding dimension and aspect ratio rest
 |Image4x1|4:1|512 width x 128 height, in pixels|
 
 > [!NOTE]
-> The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example, if the sub type is Image191x100 and the width is 2592, then the height must be 1357.
+> The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example, if the sub type is Image191x100 and the width is 2592, then the height must be 1357.  
+
+Images with animation are not supported. The following MIME types are supported.  
+- GIF  
+- JPEG  
+- PNG  
+
+> [!TIP]
+> The PNG images are converted to JPEG. If you are not satisfied with the quality after conversion, we recommend that you provide JPEG directly.  
 
 **Add:** Required   
 **Delete:** Read-only  

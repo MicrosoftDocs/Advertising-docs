@@ -73,7 +73,7 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 |zh-HK|TraditionalChinese|
 |zh-TW|TraditionalChinese|
 
-## <a name="structuredsnippetheaders"></a>Structured Snippet Headers
+## <a name="adextensionheaders"></a>Ad Extension Headers
 Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*. If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). The following headers are supported per language.
 
 ```csv

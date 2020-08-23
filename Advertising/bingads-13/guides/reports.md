@@ -133,7 +133,7 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionRatePercent<br/><br/>AbsoluteTopImpressionShareLostToBudgetPercent<br/><br/>AbsoluteTopImpressionShareLostToRankPercent<br/><br/>AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md).
 
@@ -142,13 +142,13 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent|
+|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>Goal<br/><br/>GoalType<br/><br/>TopVsOther|AbsoluteTopImpressionRatePercent<br/><br/>AbsoluteTopImpressionShareLostToBudgetPercent<br/><br/>AbsoluteTopImpressionShareLostToRankPercent<br/><br/>AbsoluteTopImpressionSharePercent<br/><br/>AudienceImpressionLostToBudgetPercent<br/><br/>AudienceImpressionLostToRankPercent<br/><br/>AudienceImpressionSharePercent<br/><br/>ClickSharePercent<br/><br/>ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankAggPercent<br/><br/>ImpressionSharePercent<br/><br/>TopImpressionRatePercent<br/><br/>TopImpressionShareLostToBudgetPercent<br/><br/>TopImpressionShareLostToRankPercent<br/><br/>TopImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionRatePercent<br/><br/>AbsoluteTopImpressionShareLostToBudgetPercent<br/><br/>AbsoluteTopImpressionShareLostToRankPercent<br/><br/>AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent<br/><br/>TopImpressionRatePercent<br/><br/>TopImpressionShareLostToBudgetPercent<br/><br/>TopImpressionShareLostToRankPercent<br/><br/>TopImpressionSharePercent|
 	
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md).
 

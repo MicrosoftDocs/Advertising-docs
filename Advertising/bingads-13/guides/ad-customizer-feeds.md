@@ -20,7 +20,7 @@ You can have 100 feeds per account (this maximum number includes all feed types)
 > Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can manage ads and audiences e.g., remarketing lists using either the Bulk or Campaign Management service. 
 
 > [!TIP]
-> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkExpandedTextAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/master/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkExpandedTextAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/master/examples/v13/bulk_expanded_text_ads.py) repositories on GitHub i.e., the Bulk Expanded Text Ads example shows how to create and use an ad customizer feed. 
+> For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/main/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkExpandedTextAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/main/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkExpandedTextAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/main/examples/v13/bulk_expanded_text_ads.py) repositories on GitHub i.e., the Bulk Expanded Text Ads example shows how to create and use an ad customizer feed. 
 
 ## <a name="upload-adcustomizerfeed"></a>Upload ad customizer feeds
 
@@ -35,9 +35,9 @@ You might visualize the feed column names and field values in a table:
 
 |Column1_Name (DateTime)|Column2_Name (Int64)|Column3_Name (Price)|Column4_Name (String)|
 |-----|-----|-----|-----|
-|2019/06/22 00:00:00|8|$24.99|Contoso 700|
-|2019/06/22 01:00:00|10|$24.99|Contoso 800|
-|2019/06/22 02:00:00|12|$24.99|Contoso 900|
+|2020/06/22 00:00:00|8|$24.99|Contoso 700|
+|2020/06/22 01:00:00|10|$24.99|Contoso 800|
+|2020/06/22 02:00:00|12|$24.99|Contoso 900|
 
 You could upload the ad customizer feed and feed items via the Bulk API as follows:
 
@@ -45,9 +45,9 @@ You could upload the ad customizer feed and feed items via the Bulk API as follo
 Type,Status,Id,Parent Id,Sub Type,Keyword,Match Type,Name,Audience Id,Feed Name,Custom Attributes
 Format Version,,,,,,,6,,,
 Feed,Active,-21,,AdCustomizerFeed,,,,,MyAdCustomizerFeedName,"[{""name"":""Column1_Name"",""feedAttributeType"":""DateTime""},{""name"":""Column2_Name"",""feedAttributeType"":""Int64""},{""name"":""Column3_Name"",""feedAttributeType"":""Price""},{""name"":""Column4_Name"",""feedAttributeType"":""String""}]"
-Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 00:00:00"",""Column2_Name"":8,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 700""}"
-Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 01:00:00"",""Column2_Name"":10,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 800""}"
-Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2019/06/22 02:00:00"",""Column2_Name"":12,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 900""}"
+Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2020/06/22 00:00:00"",""Column2_Name"":8,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 700""}"
+Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2020/06/22 01:00:00"",""Column2_Name"":10,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 800""}"
+Feed Item,Active,,-21,,lightweight sunglasses,Broad,,,,"{""Column1_Name"":""2020/06/22 02:00:00"",""Column2_Name"":12,""Column3_Name"":""$24.99"",""Column4_Name"":""Contoso 900""}"
 ```
 
 ## <a name="expandedtextad-examples"></a>Adding ad customizers to Expanded Text Ads
