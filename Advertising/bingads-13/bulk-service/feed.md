@@ -32,8 +32,8 @@ Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Star
 Format Version,,,,,,,,,,,,,,,,6,,,,
 Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
 Feed,Active,-21,,AdCustomizerFeed,,,AdCustomizerFeedClientIdGoesHere,,,,,,,,,,,,MyAdCustomizerFeedName,"[{""name"":""DateTimeName"",""feedAttributeType"":""DateTime""},{""name"":""Int64Name"",""feedAttributeType"":""Int64""},{""name"":""PriceName"",""feedAttributeType"":""Price""},{""name"":""StringName"",""feedAttributeType"":""String"",""isPartOfKey"":true}]"
-Feed Item,Active,-200,-20,,,,20;200,,2019/06/22 00:00:00,2019/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
-Feed Item,Active,-210,-21,,,,21;210,,2019/06/22 00:00:00,2019/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2019/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
+Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
+Feed Item,Active,-210,-21,,,,21;210,,2020/06/22 00:00:00,2020/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2020/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkFeed* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -226,7 +226,7 @@ Then we can map each feed [name](#customattributes-name) i.e., "DateTimeName", "
 
 ```json
 {
-	"DateTimeName": "2019/06/22 00:00:00",
+	"DateTimeName": "2020/06/22 00:00:00",
 	"Int64Name": 237601,
 	"PriceName": "$601",
 	"StringName": "s237601"

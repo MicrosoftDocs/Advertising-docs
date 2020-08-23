@@ -85,7 +85,7 @@ The LandscapeImageMediaId, LandscapeLogoMediaId, SquareImageMediaId, and SquareL
 #### <a name="campaign-responsivead-textassets"></a>Responsive Ad Text Assets
 If you used the *LongHeadline* string element in version 12 you should use the [LongHeadlineString](../campaign-management-service/responsivead.md#longheadlinestring) (string) element in version 13. The data type of [LongHeadline](../campaign-management-service/responsivead.md#longheadline) is updated from string to [AssetLink](../campaign-management-service/assetlink.md). This asset link is reserved for future use. 
 
-The [Headlines](../campaign-management-service/responsivead.md#headlines) and [Descriptions](../campaign-management-service/responsivead.md#descriptions) asset link lists are added for future use. More details will be announced during calendar year 2019. 
+The [Headlines](../campaign-management-service/responsivead.md#headlines) and [Descriptions](../campaign-management-service/responsivead.md#descriptions) asset link lists are added for future use.  
 
 #### <a name="campaign-getmediametadatabyaccountid"></a>Default Paging for GetMediaMetaDataByAccountId
 If the [PageInfo](../campaign-management-service/getmediametadatabyaccountid.md#pageinfo) element is not set when you call the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) operation, the defaut page Index will be 0 and the default Size will be 1,000. In version 12 if PageInfo was not set, all media meta data in the account would be returned. 

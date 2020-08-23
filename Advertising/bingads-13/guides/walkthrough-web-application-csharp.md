@@ -13,7 +13,7 @@ This example C# web application prompts for user consent via the credentials tha
 
 You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
 
-You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/main/examples/BingAdsExamples). 
 
 > [!TIP]
 > This example references steps from [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework). For more details about deploying web apps to Azure, you can refer to the Azure documentation. 
@@ -362,7 +362,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
     
             /**
              * You can extend the app with example output helpers at:
-             * https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples/BingAdsExamplesLibrary/v13
+             * https://github.com/BingAds/BingAds-dotNet-SDK/tree/main/examples/BingAdsExamples/BingAdsExamplesLibrary/v13
              * 
              * AdInsightExampleHelper.cs
              * BulkExampleHelper.cs

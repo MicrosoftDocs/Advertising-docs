@@ -31,7 +31,7 @@ The following Bulk CSV example would add a new offline conversion.
 ```csv
 Type,Status,Id,Parent Id,Client Id,Name,Conversion Currency Code,Conversion Name,Conversion Time,Conversion Value,Microsoft Click Id
 Format Version,,,,,6.0,,,,,
-Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,4/1/2019 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
+Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,4/1/2020 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload the *BulkOfflineConversion* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -61,22 +61,22 @@ var bulkOfflineConversion = new BulkOfflineConversion
         MicrosoftClickId = "f894f652ea334e739002f7167ab8f8e3"
     },
 
-    // 'Adjustment Currency Code' column header in the Bulk file (coming soon)
+    // 'Adjustment Currency Code' column header in the Bulk file
     AdjustmentCurrencyCode = null,
 
-    // 'Adjustment Time' column header in the Bulk file (coming soon)
+    // 'Adjustment Time' column header in the Bulk file
     AdjustmentTime = null,
 
-    // 'Adjustment Type' column header in the Bulk file (coming soon)
+    // 'Adjustment Type' column header in the Bulk file
     AdjustmentType = null,
 
-    // 'Adjustment Value' column header in the Bulk file (coming soon)
+    // 'Adjustment Value' column header in the Bulk file
     AdjustmentValue = null,
 
-    // 'External Attribution Credit' column header in the Bulk file (coming soon)
+    // 'External Attribution Credit' column header in the Bulk file
     ExternalAttributionCredit = null,
 
-    // 'External Attribution Model' column header in the Bulk file (coming soon)
+    // 'External Attribution Model' column header in the Bulk file
     ExternalAttributionModel = null,
 };
 

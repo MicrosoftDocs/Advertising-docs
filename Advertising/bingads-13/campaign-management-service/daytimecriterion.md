@@ -11,6 +11,9 @@ Defines a criterion that can be used to show ads to users during a specific day 
 
 The *DayTimeCriterion* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and[BiddableCampaignCriterion](biddablecampaigncriterion.md) objects. If ad group level day and time criterions are specified, the campaign level day and time criterions are ignored for that ad group. In other words the ad group day and time criterions override the campaign day and time criterions, and are not applied as a union.   
 
+> [!NOTE]
+> You cannot modify the [Day](#day), [FromHour](#fromhour), [FromMinute](#fromminute), [ToHour](#tohour), or [ToMinute](#tominute) values for an existing criterion. To modify the day and time ranges, you must delete the criterion and add a new criterion. 
+
 ## Syntax
 ```xml
 <xs:complexType name="DayTimeCriterion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -34,11 +37,11 @@ The [DayTimeCriterion](daytimecriterion.md) object has the following elements: [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="day"></a>Day|The day of the week to target. For example, you can target the ads to run only on Friday or Saturday.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Day](day.md)|
-|<a name="fromhour"></a>FromHour|The starting hour range to target.<br/><br/>The possible values range from 0 to 23.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |**int**|
-|<a name="fromminute"></a>FromMinute|The starting minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Minute](minute.md)|
+|<a name="day"></a>Day|The day of the week to target. For example, you can target the ads to run only on Friday or Saturday.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|[Day](day.md)|
+|<a name="fromhour"></a>FromHour|The starting hour range to target.<br/><br/>The possible values range from 0 to 23.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|**int**|
+|<a name="fromminute"></a>FromMinute|The starting minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|[Minute](minute.md)|
 |<a name="tohour"></a>ToHour|The ending hour range to target.<br/><br/>Supported values range from 0 to 24. If the [ToHour](#tohour) is set to 24, the [ToMinute](#tominute) must be *Zero*.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |**int**|
-|<a name="tominute"></a>ToMinute|The ending minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Minute](minute.md)|
+|<a name="tominute"></a>ToMinute|The ending minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|[Minute](minute.md)|
 
 The [DayTimeCriterion](daytimecriterion.md) object has [Inherited Elements](#inheritedelements).
 

@@ -573,6 +573,9 @@
         - name: Account Callout Ad Extension
           href: ../bulk-service/account-callout-ad-extension.md
           displayName: BulkAccountCalloutAdExtension
+        - name: Account Filter Link Ad Extension
+          href: ../bulk-service/account-filter-link-ad-extension.md
+          displayName: BulkAccountFilterLinkAdExtension
         - name: Account Image Ad Extension
           href: ../bulk-service/account-image-ad-extension.md
           displayName: BulkAccountImageAdExtension
@@ -636,6 +639,9 @@
         - name: Ad Group Gender Criterion
           href: ../bulk-service/ad-group-gender-criterion.md
           displayName: BulkAdGroupGenderCriterion
+        - name: Ad Group Filter Link Ad Extension
+          href: ../bulk-service/ad-group-filter-link-ad-extension.md
+          displayName: BulkAdGroupFilterLinkAdExtension
         - name: Ad Group Image Ad Extension
           href: ../bulk-service/ad-group-image-ad-extension.md
           displayName: BulkAdGroupImageAdExtension
@@ -789,6 +795,9 @@
         - name: Campaign DeviceOS Criterion
           href: ../bulk-service/campaign-deviceos-criterion.md
           displayName: BulkCampaignDeviceCriterion
+        - name: Campaign Filter Link Ad Extension
+          href: ../bulk-service/campaign-filter-link-ad-extension.md
+          displayName: BulkCampaignFilterLinkAdExtension
         - name: Campaign Image Ad Extension
           href: ../bulk-service/campaign-image-ad-extension.md
           displayName: BulkCampaignImageAdExtension
@@ -918,6 +927,9 @@
         - name: Feed Item
           href: ../bulk-service/feed-item.md
           displayName: BulkFeedItem
+        - name: Filter Link Ad Extension
+          href: ../bulk-service/filter-link-ad-extension.md
+          displayName: BulkFilterLinkAdExtension
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image
@@ -1657,6 +1669,8 @@
           href: ../campaign-management-service/campaigntype.md
         - name: ConversionGoalAdditionalField
           href: ../campaign-management-service/conversiongoaladditionalfield.md
+        - name: ConversionGoalCategory
+          href: ../campaign-management-service/conversiongoalcategory.md
         - name: ConversionGoalCountType
           href: ../campaign-management-service/conversiongoalcounttype.md
         - name: ConversionGoalRevenueType

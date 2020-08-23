@@ -47,6 +47,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 |[App Ad Extension](#appadextension)|Up to the total number of app ad extensions in your account|
 |[Call Ad Extension](#calladextension)|1|
 |[Callout Ad Extension](#calloutadextension)|20|
+|[Filter Link Ad Extension](#filterlinkadextension)|20|
 |[Image Ad Extension](#imageadextension)|6|
 |[Location Ad Extension](#locationadextension)|Up to the total number of location ad extensions in your account|
 |[Price Ad Extension](#priceadextension)|20|
@@ -93,6 +94,15 @@ The following table defines limits for call ad extension properties.
 |Property|Limit|
 |------------|---------|
 |Text|The string can contain a maximum of 25 characters. Note that for Traditional Chinese characters, the text is limited to 12 characters.|
+
+### <a name="filterlinkadextension"></a>Filter Link Ad Extensions
+You can manage filter link ad extensions using the Bulk service ([Filter Link Ad Extension Record](../bulk-service/filter-link-ad-extension.md)) or Campaign Management service ([FilterLinkAdExtension](../campaign-management-service/filterlinkadextension.md)).
+
+The following table defines limits for filter link ad extension properties.
+
+|Property|Limit|
+|------------|---------|
+|Texts|Each value can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value is limited to 12 characters.|
 
 ### <a name="imageadextension"></a>Image Ad Extensions
 You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](../bulk-service/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](../campaign-management-service/imageadextension.md)).
@@ -193,9 +203,7 @@ Each customer can have up to 20 million ads.
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create an expanded text ad with app ad extensions.
 
 > [!NOTE]
-> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.
-> 
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.  
 
 You can manage app install ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)). The combination of the App Platform, App Store Id, Text, and Title elements make the app install ad unique.
 
@@ -305,7 +313,7 @@ The following table defines limits for audience properties.
 
 You can have up to 1,000 custom audiences per customer. You can have up to 1,000 remarketing lists per account, or 5,000 per customer. The in-market audiences maximum is only limited by the number of in-market audiences provided by Microsoft Advertising. 
 
-There is a limit of 20,000,000 associations per account combined for all audience types e.g., combined list, custom audience, customer list (coming soon), in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
+There is a limit of 20,000,000 associations per account combined for all audience types e.g., combined list, custom audience, customer list, in-market audience, product audience, and remarketing list associations (whether the associations are used for inclusion or exclusion). Within the 20,000,000 limit across all audience types, there is a limit of 1,000 in-market audience exclusions per account.
 
 ## <a name="budget"></a>Budgets
 Represents a budget that can be shared by any campaigns in an account. You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account.

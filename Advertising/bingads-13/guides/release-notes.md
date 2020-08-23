@@ -13,11 +13,15 @@ See below for information about changes to Bing Ads API Version 13 by month.
 See below for Bing Ads API updates during this calendar month. 
 
 - [Report Format Version](#formatversion-reporting-august2020)  
+- [Bing Ads API SDK Updates](#sdk-august2020)  
 
 ### <a name="formatversion-reporting-august2020"></a>Report Format Version
 The [FormatVersion](../reporting-service/reportrequest.md#formatversion) element is added to the [ReportRequest](../reporting-service/reportrequest.md) data object. 
 
 The data format for certain fields can be updated within the current API version without breaking existing client applications. See the [Report Format Version](reports.md#formatversion) technical guide for differences between format version 1.0 and 2.0. 
+
+### <a name="sdk-august2020"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.5), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.5), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.5), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.5) SDK version 13.0.5. 
 
 ## <a name="july2020"></a>July 2020
 See below for Bing Ads API updates during this calendar month. 

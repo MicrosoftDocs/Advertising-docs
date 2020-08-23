@@ -14,7 +14,7 @@ If you already are using Google Ads to advertise on Google, you can import these
 > 
 > The Import API documentation is subject to change. 
 
-To import campaigns from Google Ads, [get a credential ID](#get-credentialid) to represent your Google Ads credentials (see also: [Import credential ID workaround](#sessionid-credentialid)), [choose the Google Ads account and campaigns](#choose-google-campaigns) that you want to import, [choose import options](#import-options) e.g., the entities that you want to import, and then [schedule the import](#import-schedule). 
+To import campaigns from Google Ads, [get a credential ID](#get-credentialid) to represent your Google Ads credentials, [choose the Google Ads account and campaigns](#choose-google-campaigns) that you want to import, [choose import options](#import-options) e.g., the entities that you want to import, and then [schedule the import](#import-schedule). 
 
 You can add and delete scheduled imports, but cannot edit or update via API. A scheduled import that you added via API can be edited in the Microsoft Advertising UI. 
 
@@ -23,55 +23,9 @@ You can get all of your ad account's scheduled import results via API, whether a
 > [!NOTE]
 > The API supports import from one Google Ads account to one Microsoft Advertising account. When you schedule an import job via [AddImportJobs](../campaign-management-service/addimportjobs.md) operation, then in the Microsoft Advertising UI you'll see it in the context of an ad account, and it will not be included under your manager account's scheduled imports. If you follow the [Import multiple accounts from Google Ads](https://help.ads.microsoft.com/#apex/3/en/51050/0) workflow in the context of a manager account, the import jobs and results will be returned via the [GetImportJobsByIds](../campaign-management-service/getimportjobsbyids.md) and [GetImportResults](../campaign-management-service/getimportresults.md) operations.    
 
-## <a name="sessionid-credentialid"></a>Import credential ID workaround
-
-Early adopters will need to capture an import credential ID in the Microsoft Advertising UI using web debug tools. The experience described in [Get an import credential ID](#get-credentialid) is coming soon. 
-
-1. Go to Import from Google Ads in the Microsoft Advertising UI.
-
-    ![Import from Google Ads](media/google-import-sign-in.png "Import from Google Ads")
-
-1. Start web debug e.g., Fiddler or Chrome Developer Tools. 
-1. Sign in to Google
-1. After you sign in to your Google account, you'll see a GET request via https://accounts.google.com/o/oauth2/iframerpc, and the access_token returned
-1. Then you'll see multiple calls via https://ui.sandbox.bingads.microsoft.com/ODataApi/Campaign/V2
-1. Look an ImportSession request with SessionId. The SessionId is your import credential ID. 
-
-For example, you'll see a GUID in the StartGoogleSession response and the GoogleLoginEmail request.
-
-ImportSession/StartGoogleSession request:
-
-```https
-POST https://ui.sandbox.bingads.microsoft.com/ODataApi/Campaign/V2/ImportSession/StartGoogleSession
-HTTP/1.1
-Host: ui.sandbox.bingads.microsoft.com
-```
-
-ImportSession/StartGoogleSession response:
-
-```https
-HTTP/1.1 200 OK
-…
-Access-Control-Allow-Origin: https://ui.sandbox.bingads.microsoft.com
-…
-Content-Length: 38
-
-"ImportCredentialIdHere"
-```
-
-ImportSession/GoogleLoginEmail request:
-
-```https
-GET https://ui.sandbox.bingads.microsoft.com/ODataApi/Campaign/V2/ImportSession/GoogleLoginEmail(CustomerId=YourCustomerIdHere,AccountId=YourAccountIdHere,SessionId=ImportCredentialIdHere)?ReqId=RequestIdHere&_=123 HTTP/1.1
-Host: ui.sandbox.bingads.microsoft.com
-```
-
 ## <a name="get-credentialid"></a>Get an Import credential ID
 
 The import credential ID links your Google Ads and Microsoft Advertising user credentials. Each import credential ID is only valid for importing into ad accounts under one manager account (customer).  
-
-> [!IMPORTANT]
-> Early adopters will need to capture an import credential ID in the Microsoft Advertising UI using web debug tools as described in [Import credential ID workaround](#sessionid-credentialid). The experience described here in [Get an import credential ID](#get-credentialid) is coming soon. 
 
 1. Sign in to Microsoft Advertising and navigate to the ad account where you want to import Google Ads campaigns. You must sign in and get an import credential ID with the same user credentials that will be used later when you [schedule the import](#import-schedule) via the [AddImportJobs](../campaign-management-service/addimportjobs.md) operation.  
 

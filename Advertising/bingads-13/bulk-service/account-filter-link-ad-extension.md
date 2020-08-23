@@ -1,40 +1,43 @@
 ---
-title: "Account Structured Snippet Ad Extension Record - Bulk"
+title: "Account Filter Link Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Describes the Account Structured Snippet Ad Extension fields in a Bulk file.
+description: Describes the Account Filter Link Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Account Structured Snippet Ad Extension Record - Bulk
-Defines an association record between an [Account](account.md) and a [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or structured snippet ad extension, use the [Account](account.md) or [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) record.
+# Account Filter Link Ad Extension Record - Bulk
+Defines an association record between an [Account](account.md) and a [Filter Link Ad Extension](filter-link-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or filter link ad extension, use the [Account](account.md) or [Filter Link Ad Extension](filter-link-ad-extension.md) record.
 
-You can download all *Account Structured Snippet Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AccountStructuredSnippetAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+> [!NOTE]
+> Filter Link Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 732).  
 
-The following Bulk CSV example would associate a structured snippet ad extension to an account if the valid *Id* is provided. 
+You can download all *Account Filter Link Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AccountFilterLinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+
+The following Bulk CSV example would associate a filter link ad extension to an account if the valid *Id* is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name
 Format Version,,,,,,6.0
-Account Structured Snippet Ad Extension,Active,-11,,ClientIdGoesHere,,
+Account Filter Link Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAccountStructuredSnippetAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAccountFilterLinkAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-// Map properties in the Bulk file to the BulkAccountStructuredSnippetAdExtension
-var bulkAccountStructuredSnippetAdExtension = new BulkAccountStructuredSnippetAdExtension
+// Map properties in the Bulk file to the BulkAccountFilterLinkAdExtension
+var bulkAccountFilterLinkAdExtension = new BulkAccountFilterLinkAdExtension
 {
     // Map properties in the Bulk file to the 
     // AdExtensionIdToEntityIdAssociation object of the Campaign Management service.
     AdExtensionIdToEntityIdAssociation = new AdExtensionIdToEntityIdAssociation
     {
         // 'Id' column header in the Bulk file
-        AdExtensionId = structuredSnippetAdExtensionIdKey,
+        AdExtensionId = filterLinkAdExtensionIdKey,
         // 'Parent Id' column header in the Bulk file
         EntityId = accountIdKey,
     },
@@ -45,7 +48,7 @@ var bulkAccountStructuredSnippetAdExtension = new BulkAccountStructuredSnippetAd
     Status = Status.Active,
 };
 
-uploadEntities.Add(bulkAccountStructuredSnippetAdExtension);
+uploadEntities.Add(bulkAccountFilterLinkAdExtension);
 
 var entityUploadParameters = new EntityUploadParameters
 {
@@ -59,7 +62,7 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 	
-For an *Account Structured Snippet Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For an *Account Filter Link Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Client Id](#clientid)
 - [Editorial Location](#editoriallocation)
@@ -116,9 +119,9 @@ This field will not be set if a combination of terms caused the failure or if th
 ## <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the account.
 
-This bulk field maps to the *Id* field of the [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) record. 
+This bulk field maps to the *Id* field of the [Filter Link Ad Extension](filter-link-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Filter Link Ad Extension](filter-link-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ## <a name="modifiedtime"></a>Modified Time

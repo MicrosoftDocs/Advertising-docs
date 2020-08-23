@@ -17,9 +17,9 @@ Differing from the *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas* 
 > You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
 
 > [!NOTE]
-> For search ad and dynamic search ad campaigns, the *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.  
+> For search ad and dynamic search ad campaigns, the *EnhancedCpc* bid strategy is available to all advertisers worldwide. 
 > 
-> For Microsoft Shopping Campaigns, the *EnhancedCpc* bid strategy is available to advertisers in Australia, Canada, France, Germany, India, United Kingdom, and United States.
+> For Microsoft Shopping Campaigns, the *EnhancedCpc* bid strategy is available wherever Microsoft Shopping Campaigns are available.
 
 ## Syntax
 ```xml

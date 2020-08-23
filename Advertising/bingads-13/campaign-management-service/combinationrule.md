@@ -25,11 +25,11 @@ The [CombinationRule](combinationrule.md) object has the following elements: [Au
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceids"></a>AudienceIds|The list of audience identifiers to combine in a logical set.<br/><br/>You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list. For details, please see the [remarks](#remarks) section below.<br/><br/>Each combination rule set can contain up to 100 audience IDs.|**long** array|
+|<a name="audienceids"></a>AudienceIds|The list of audience identifiers to combine in a logical set.<br/><br/>You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list. For details, please see the [remarks](#remarks) section below.<br/><br/>Each combination rule set can contain up to 100 audience IDs.|**long** array|
 |<a name="operator"></a>Operator|Determines whether to include or exclude any or all of the [AudienceIds](#audienceids).|[LogicalOperator](logicaloperator.md)|
 
 ## <a name="remarks"></a>Remarks
-You can combine custom audiences, customer lists (coming soon), product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
+You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
 
 With some restrictions described below, you can combine audiences using these [logical operators](logicaloperator.md):
 
