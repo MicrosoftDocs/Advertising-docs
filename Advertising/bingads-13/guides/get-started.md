@@ -361,7 +361,9 @@ Each SOAP request must include the following SOAP headers, which contain the use
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).
 
-To get help with issues that you cannot resolve, consider posting in the [API Developer Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) where an active Microsoft Advertising product team or community member will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support).
+The [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. To make sure that we see your question, tag it with 'advertising-api'.  
+
+If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support). 
 
 ## See Also
 [Bing Ads API Technical Guides](technical-guides.md)  
