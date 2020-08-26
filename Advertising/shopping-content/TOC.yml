@@ -53,10 +53,14 @@
   items:
   - name: Catalogs resource
     href: catalogs-resource.md
-  - name: Products resource
-    href: products-resource.md
   - name: Inventory resource
     href: inventory-resource.md
+  - name: Products resource
+    href: products-resource.md
+  - name: ProductStatuses resource
+    href: productstatus-resource.md
   - name: Status resource
     href: status-resource.md
+  - name: Store resource
+    href: store-resource.md
 
