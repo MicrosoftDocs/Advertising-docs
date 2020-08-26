@@ -31,10 +31,10 @@ The [AdExtensionAdditionalField](adextensionadditionalfield.md) value set has th
 
 |Value|Description|
 |-----------|---------------|
-|<a name="actiontypesphase3"></a>ActionTypesPhase3|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype). If the stored action type is either RenewNow or Reorder, then Campaign Management API Version 13 returns Unknown by default.|
-|<a name="displaytext"></a>DisplayText|Request that the [DisplayText](imageadextension.md#displaytext) element be included within each returned [ImageAdExtension](imageadextension.md) object.<br/><br/>This value is reserved for future use.|
-|<a name="images"></a>Images|Request that the [Images](imageadextension.md#images) element be included within each returned [ImageAdExtension](imageadextension.md) object.<br/><br/>This value is reserved for future use.|
-|<a name="layouts"></a>Layouts|Request that the [Layouts](imageadextension.md#layouts) element be included within each returned [ImageAdExtension](imageadextension.md) object.<br/><br/>This value is reserved for future use.|
+|<a name="actiontypesphase3"></a>ActionTypesPhase3|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>If the action type that is stored in Microsoft Advertising is either [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), you must include ActionTypesPhase3 in the request.|
+|<a name="displaytext"></a>DisplayText|Request that the [DisplayText](imageadextension.md#displaytext) element be included within each returned [ImageAdExtension](imageadextension.md) object.|
+|<a name="images"></a>Images|Request that the [Images](imageadextension.md#images) element be included within each returned [ImageAdExtension](imageadextension.md) object.|
+|<a name="layouts"></a>Layouts|Request that the [Layouts](imageadextension.md#layouts) element be included within each returned [ImageAdExtension](imageadextension.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

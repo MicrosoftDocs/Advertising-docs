@@ -151,15 +151,12 @@ In-market audiences are curated lists of customers who have shown purchase inten
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 #### <a name="productaudience"></a>Product Audiences
-Product audiences are dynamic remarketing lists that pair customers with specific products based on the products they have looked at, considered, or already purchased on your website. You can use product audiences in both search campaigns and audience campaigns. For more information, see [About product audiences](https://help.ads.microsoft.com/#apex/3/en/56910/0).
-
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+Product audiences are dynamic remarketing lists that pair customers with specific products based on the products they have looked at, considered, or already purchased on your website. You can use product audiences in both search campaigns and audience campaigns. For more information, see [About product audiences](https://help.ads.microsoft.com/#apex/3/en/56910/0). 
 
 #### <a name="remarketinglist"></a>Remarketing Lists
 Remarketing in Paid Search lets you improve your return on investment by optimizing your campaigns for specific audiences, which are the people who have visited your website before. When you create remarketing lists, you specify what user actions on your website qualify them to be part of the remarketing lists. 
 
-When users perform qualifying actions, they are added to the remarketing lists within minutes. If the remarketing list minimum size of 1,000 (minimum cookie pool) is met and you have associated the remarketing list with a campaign or ad group and set a specific bid amount, the ad delivery engine will start serving remarketed ads to those users on the Microsoft Advertising Network. For more information about Remarketing in Paid Search, see [Reach your audience](https://help.ads.microsoft.com/#apex/3/en/n5022/1) and [FAQ: Remarketing in Paid Search](https://help.ads.microsoft.com/#apex/3/en/56727/1).  
+When users perform qualifying actions, they are added to the remarketing lists within minutes. If the remarketing list minimum size of 1,000 (minimum cookie pool) is met and you have associated the remarketing list with a campaign or ad group and set a specific bid amount, the ad delivery engine will start serving remarketed ads to those users on the Microsoft Advertising Network. For more information about Remarketing in Paid Search, see [Reach your audience](https://help.ads.microsoft.com/#apex/3/en/n5022/1) and [FAQ: Remarketing](https://help.ads.microsoft.com/#apex/3/en/56727/1).  
 
 After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bing Ads API to create remarketing lists and associate them with campaigns or ad groups. 
 
@@ -384,4 +381,4 @@ Finally, let's say Manager Account L1 (customer ID 111) shares the remarketing l
 
 [Bing Ads API Web Service Addresses](web-service-addresses.md)  
 [FAQ: Universal Event Tracking](https://help.ads.microsoft.com/#apex/3/en/53056/2)  
-[FAQ: Remarketing in Paid Search](https://help.ads.microsoft.com/#apex/3/en/56727/1)  
+[FAQ: Remarketing](https://help.ads.microsoft.com/#apex/3/en/56727/1)  
