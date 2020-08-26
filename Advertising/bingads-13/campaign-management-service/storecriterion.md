@@ -30,7 +30,7 @@ The [StoreCriterion](storecriterion.md) object has the following elements: [Stor
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="storeid"></a>StoreId|The system-generated identifier of the Microsoft Merchant Center store to exclude.|**long**|
+|<a name="storeid"></a>StoreId|The system-generated identifier of the Microsoft Merchant Center store to exclude.<br/><br/>You cannot exclude the global store (store [SubType](bmcstore.md#subtype) set to [GlobalStore](bmcstoresubtype.md#globalstore)).|**long**|
 
 The [StoreCriterion](storecriterion.md) object has [Inherited Elements](#inheritedelements).
 

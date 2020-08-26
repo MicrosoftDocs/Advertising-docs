@@ -16,7 +16,7 @@ The Campaign Management service defines the following value sets.
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionAdditionalField](adextensionadditionalfield.md)|Defines a list of optional ad extension properties that you can request when calling [GetAdExtensionsAssociations](getadextensionsassociations.md) and [GetAdExtensionsByIds](getadextensionsbyids.md).|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
-|[AdExtensionHeaderType](adextensionheadertype.md)|Reserved.|
+|[AdExtensionHeaderType](adextensionheadertype.md)|Defines the possible types of ad extension headers.|
 |[AdExtensionStatus](adextensionstatus.md)|Defines the possible status values of an ad extension.|
 |[AdExtensionsTypeFilter](adextensionstypefilter.md)|Defines the possible ad extension types.|
 |[AdGroupAdditionalField](adgroupadditionalfield.md)|Defines a list of optional ad group properties that you can request when calling [GetAdGroupsByCampaignId](getadgroupsbycampaignid.md) and [GetAdGroupsByIds](getadgroupsbyids.md).|
@@ -34,6 +34,7 @@ The Campaign Management service defines the following value sets.
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
+|[BMCStoreAdditionalField](bmcstoreadditionalfield.md)|Defines a list of optional store properties that you can request when calling [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md).|
 |[BMCStoreSubType](bmcstoresubtype.md)|Defines the possible values for Microsoft Merchant Center store sub types.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
@@ -58,6 +59,7 @@ The Campaign Management service defines the following value sets.
 |[EntityType](entitytype.md)|Defines the possible types of entities.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
+|[ImportAdditionalField](importadditionalfield.md)|Reserved for future use.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|

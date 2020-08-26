@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the possible types of ad extension headers.
 ---
 # AdExtensionHeaderType Value Set - Campaign Management
-Reserved.
+Defines the possible types of ad extension headers.
 
 ## Syntax
 ```xml
@@ -59,42 +59,42 @@ The [AdExtensionHeaderType](adextensionheadertype.md) value set has the followin
 
 |Value|Description|
 |-----------|---------------|
-|<a name="amenities"></a>Amenities|Reserved.|
-|<a name="brands"></a>Brands|Reserved.|
-|<a name="classes"></a>Classes|Reserved.|
-|<a name="courses"></a>Courses|Reserved.|
-|<a name="dailyrates"></a>DailyRates|Reserved.|
-|<a name="degreeprograms"></a>DegreePrograms|Reserved.|
-|<a name="departments"></a>Departments|Reserved.|
-|<a name="destinations"></a>Destinations|Reserved.|
-|<a name="featuredhotels"></a>FeaturedHotels|Reserved.|
-|<a name="goods"></a>Goods|Reserved.|
-|<a name="grades"></a>Grades|Reserved.|
-|<a name="highlights"></a>Highlights|Reserved.|
-|<a name="insurancecoverage"></a>InsuranceCoverage|Reserved.|
-|<a name="items"></a>Items|Reserved.|
-|<a name="languages"></a>Languages|Reserved.|
-|<a name="locations"></a>Locations|Reserved.|
-|<a name="models"></a>Models|Reserved.|
-|<a name="neighborhoods"></a>Neighborhoods|Reserved.|
-|<a name="prices"></a>Prices|Reserved.|
-|<a name="rates"></a>Rates|Reserved.|
-|<a name="ratings"></a>Ratings|Reserved.|
-|<a name="schooldistricts"></a>SchoolDistricts|Reserved.|
-|<a name="servicecatalog"></a>ServiceCatalog|Reserved.|
-|<a name="services"></a>Services|Reserved.|
-|<a name="shows"></a>Shows|Reserved.|
-|<a name="sizes"></a>Sizes|Reserved.|
-|<a name="styles"></a>Styles|Reserved.|
-|<a name="tools"></a>Tools|Reserved.|
-|<a name="topics"></a>Topics|Reserved.|
-|<a name="types"></a>Types|Reserved.|
-|<a name="unknown"></a>Unknown|Reserved.|
-|<a name="vacations"></a>Vacations|Reserved.|
-|<a name="vehicles"></a>Vehicles|Reserved.|
-|<a name="what"></a>What|Reserved.|
-|<a name="who"></a>Who|Reserved.|
-|<a name="why"></a>Why|Reserved.|
+|<a name="amenities"></a>Amenities|Use the translated version of *Amenities* in the ad extension header.|
+|<a name="brands"></a>Brands|Use the translated version of *Brands* in the ad extension header.|
+|<a name="classes"></a>Classes|Use the translated version of *Classes* in the ad extension header.|
+|<a name="courses"></a>Courses|Use the translated version of *Courses* in the ad extension header.|
+|<a name="dailyrates"></a>DailyRates|Use the translated version of *DailyRates* in the ad extension header.|
+|<a name="degreeprograms"></a>DegreePrograms|Use the translated version of *DegreePrograms* in the ad extension header.|
+|<a name="departments"></a>Departments|Use the translated version of *Departments* in the ad extension header.|
+|<a name="destinations"></a>Destinations|Use the translated version of *Destinations* in the ad extension header.|
+|<a name="featuredhotels"></a>FeaturedHotels|Use the translated version of *FeaturedHotels* in the ad extension header.|
+|<a name="goods"></a>Goods|Use the translated version of *Goods* in the ad extension header.|
+|<a name="grades"></a>Grades|Use the translated version of *Grades* in the ad extension header.|
+|<a name="highlights"></a>Highlights|Use the translated version of *Highlights* in the ad extension header.|
+|<a name="insurancecoverage"></a>InsuranceCoverage|Use the translated version of *InsuranceCoverage* in the ad extension header.|
+|<a name="items"></a>Items|Use the translated version of *Items* in the ad extension header.|
+|<a name="languages"></a>Languages|Use the translated version of *Languages* in the ad extension header.|
+|<a name="locations"></a>Locations|Use the translated version of *Locations* in the ad extension header.|
+|<a name="models"></a>Models|Use the translated version of *Models* in the ad extension header.|
+|<a name="neighborhoods"></a>Neighborhoods|Use the translated version of *Neighborhoods* in the ad extension header.|
+|<a name="prices"></a>Prices|Use the translated version of *Prices* in the ad extension header.|
+|<a name="rates"></a>Rates|Use the translated version of *Rates* in the ad extension header.|
+|<a name="ratings"></a>Ratings|Use the translated version of *Ratings* in the ad extension header.|
+|<a name="schooldistricts"></a>SchoolDistricts|Use the translated version of *SchoolDistricts* in the ad extension header.|
+|<a name="servicecatalog"></a>ServiceCatalog|Use the translated version of *ServiceCatalog* in the ad extension header.|
+|<a name="services"></a>Services|Use the translated version of *Services* in the ad extension header.|
+|<a name="shows"></a>Shows|Use the translated version of *Shows* in the ad extension header.|
+|<a name="sizes"></a>Sizes|Use the translated version of *Sizes* in the ad extension header.|
+|<a name="styles"></a>Styles|Use the translated version of *Styles* in the ad extension header.|
+|<a name="tools"></a>Tools|Use the translated version of *Tools* in the ad extension header.|
+|<a name="topics"></a>Topics|Use the translated version of *Topics* in the ad extension header.|
+|<a name="types"></a>Types|Use the translated version of *Types* in the ad extension header.|
+|<a name="unknown"></a>Unknown|Reserved for future use.|
+|<a name="vacations"></a>Vacations|Use the translated version of *Vacations* in the ad extension header.|
+|<a name="vehicles"></a>Vehicles|Use the translated version of *Vehicles* in the ad extension header.|
+|<a name="what"></a>What|Use the translated version of *What* in the ad extension header.|
+|<a name="who"></a>Who|Use the translated version of *Who* in the ad extension header.|
+|<a name="why"></a>Why|Use the translated version of *Why* in the ad extension header.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

@@ -1649,6 +1649,8 @@
           href: ../campaign-management-service/audiencetype.md
         - name: BidOption
           href: ../campaign-management-service/bidoption.md
+        - name: BMCStoreAdditionalField
+          href: ../campaign-management-service/bmcstoreadditionalfield.md
         - name: BMCStoreSubType
           href: ../campaign-management-service/bmcstoresubtype.md
         - name: BudgetLimitType
@@ -1697,6 +1699,8 @@
           href: ../campaign-management-service/expressionoperator.md
         - name: GenderType
           href: ../campaign-management-service/gendertype.md
+        - name: ImportAdditionalField
+          href: ../campaign-management-service/importadditionalfield.md
         - name: IntentOption
           href: ../campaign-management-service/intentoption.md
         - name: ItemAction
