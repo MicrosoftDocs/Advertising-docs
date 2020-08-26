@@ -16,7 +16,7 @@ ms.author: "scottwhi"
 >
 > All Store programming elements and documentation are subject to change during the beta.
 
-Use the Store resource to manage the stores that the user owns. You can add stores, get a specific store, or get all stores owned by the user.  
+Use the Store resource to manage the stores owned by the user. You can add stores, get a specific store, or get all stores owned by the user.  
 
 <!--
 For an overview of how the process works, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
@@ -33,7 +33,7 @@ The following is the base URI that you append the [templates](#templates) to.
 
 For example, to add a store or get a list of stores owned by the user, use the following endpoint:
 
-`https://https://content.api.ads.microsoft.com/v9.1/bmc/stores` 
+`https://content.api.ads.microsoft.com/v9.1/bmc/stores` 
 
 
 ## Templates
@@ -102,7 +102,7 @@ Defines an error.
 |location|Not used.|String
 |locationType|Not used.|String
 |message|A description of the error.|String
-|reason|The reason why the request failed. For example, the store failed validation.
+|reason|The reason why the request failed. For example, the store failed validation.|String
 
 
 ### ErrorResponse
@@ -111,7 +111,7 @@ Defines the top-level error object.
 
 |Name|Value|Type
 |-|-|-
-|error|A list of errors that occurred while processing the request.|[Errors](#errors)[]
+|errors|A list of errors that occurred while processing the request.|[Error](#error)[]
 
 
 ### Store
@@ -120,11 +120,11 @@ Defines a store in Microsoft Merchant Center.
 
 |Name|Value|Type
 |-|-|-
-|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, we will block aggregators for both stores. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Is **true** if you want to prevent your products from showing up in aggregators' ads on Bing.|Boolean
+|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, then both stores block aggregators. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Is **true** if you want to prevent your products from showing up in aggregators' ads on Bing.|Boolean
 |isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Is **true** if your store's website is SSL enabled.|Boolean|
 |merchantId|The store's ID.|Unsigned long
 |notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store.|String[]
-|notificationLanguage|The language used to write the notification. The language is in the form, \<language>-<country/region>.|String
+|notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. For example, en-US.|String
 |storeDescription|A description that describes the store's use.|String
 |storeName|The store's name.|String
 |storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad.|String
@@ -139,16 +139,16 @@ Defines a list of stores.
 |stores|A list of stores owned by the user.|[Store](#store)[]
 
 
-### Store
+### StoreCreate
 
 Defines a store to add to Microsoft Merchant Center.
 
 |Name|Value|Type|Required
 |-|-|-|-
-|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, we will block aggregators for both stores. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Set to **true** to prevent your products from showing up in aggregators' ads on Bing. Defaults to **false**.|Boolean|No
+|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, then both stores block aggregators. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Set to **true** to prevent your products from showing up in aggregators' ads on Bing. Defaults to **false**.|Boolean|No
 |isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Set to **true** if your store's website is SSL enabled.<br/><br/>Defaults to **true**.|Boolean|No
-|notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store. The maximum number of recipients is 14.|String[]|Yes
-|notificationLanguage|The language used to write the notification. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE(German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
+|notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store. The maximum number of email addresses that you can specify is 14.|String[]|Yes
+|notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE (German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
 |storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]). If not specified, the description defaults to the store's name.|String|No
 |storeName|The store's name. The name must be unique within Bing Merchant Center, is limited to a maximum of 70 characters, and may contain only alphanumeric characters ([a-zA-Z0-9]). The store's name appears in your product ads, so be sure to use a name that accurately represents your website.|String|Yes
 |storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad. This is the URL that you claimed belonged to the user (see <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">Verify and claim your website's URL</a>). The URL must be well formed, use the HTTPS protocol if `isSslCheckout` is true, and have a maximum of 1,024 characters.|String|Yes
@@ -158,10 +158,10 @@ Defines a store to add to Microsoft Merchant Center.
 
 Defines the store's status.
 
-|Name|Value|Type|Required
-|-|-|-|-
-|message|The reason whey the store was disapproved. The object includes this field only if `status` is Disapproved.|String
-|status|The store's status. The following are the possible values.<ul><li>Approved</li><li>Disapproved</li><li>ManualReview</li></ul>If the store is disapproved, see `message` for the reason.<br/><br/>A store that was initially automatically approved, may move from Approved to ManualReview. You cannot add products to a store that's under manual review and products in the store do not serve.|String
+|Name|Value|Type
+|-|-|-
+|message|The reason why the store was disapproved. The object includes this field only if `status` is Disapproved.|String
+|status|The store's status. The following are the possible values.<ul><li>Approved</li><li>Disapproved</li><li>ManualReview</li></ul>If the store is disapproved, see `message` for the reason.<br/><br/>A store that was initially automatically approved, may move from Approved to ManualReview. You cannot add products to a store that's under manual review and products in the store will not serve.|String
 
 
 ## HTTP status codes
@@ -171,7 +171,7 @@ The requests may return the following HTTP status codes.
 |Status code|Description
 |-|-
 |200|Success.
-|201|Store successfully added.
+|201|Store was successfully added.
 |400|Bad request. Most likely the body of the POST request contains invalid data or is malformed.
 |401|Unauthorized. The user's credentials are not valid. 
 |404|Not found. The requested store was not found. 

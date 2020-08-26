@@ -34,7 +34,7 @@ The following is the base URI that you append the [templates](#templates) to.
 
 For example, to get a summary view of the status of product offers in a store, use the following endpoint:
 
-`https://https://content.api.ads.microsoft.com/v9.1/bmc/stores/{merchantId}/productstatusessummary` 
+`https://content.api.ads.microsoft.com/v9.1/bmc/stores/{merchantId}/productstatusessummary` 
 
 
 ## Templates
@@ -45,14 +45,14 @@ These are the templates that you append to the [base URI](#base-uri) to create a
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a summary view of the status of product offers in a store. This returns the number of offers approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get statuses from.|Request: N/A<br/>Response:[ProductStatusesSummary](#productstatusessummary)
+|Get|Gets a summary view of the status of product offers in a store. This returns the number of offers approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get the statuses from.|Request: N/A<br/>Response:[ProductStatusesSummary](#productstatusessummary)
 
 
 ### /stores/{merchantId}/productstatuses 
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a detail view of the status of product offers in a store. Details are returned for products with a status of disapproved or warning. Set `{merchantId}` to the ID of the store to get statuses from.<br/><br/>This request get the first 25 statuses only. To page through all product status details, use the *max-results* and *start-token* [query parameters](#query-parameters).|Request: N/A<br/>Response:[ProductStatuses](#productstatuses)
+|Get|Gets a detail view of the status of product offers in a store. Details are returned for products with a status of disapproved or warning. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>This request get the first 25 statuses only. To page through all product status details, use the *max-results* and *start-token* [query parameters](#query-parameters).|Request: N/A<br/>Response:[ProductStatuses](#productstatuses)
 
 
 ## Query parameters
@@ -61,7 +61,7 @@ The request may include the following query parameters:
 
 |Parameter|Description
 |-|-
-|<a name="maxresults"></a>max-results|Optional. Use to specify the maximum number of items to return in a List request (like `/stores/{merchantId}/productstatuses`). The maximum value that you may specify is 250. The default is 25. 
+|<a name="maxresults"></a>max-results|Optional. Use to specify the maximum number of items to return in a List request such as `/stores/{merchantId}/productstatuses`. The maximum value that you may specify is 250. The default is 25. 
 |<a name="starttoken"></a>start-token|Optional. Use to page through a store's list of product statuses. The token identifies the next page of product statuses to return. Do not specify this parameter in the first List request. If the store contains more than the requested number of products (see the *max-results* query parameter), the response includes the `nextPageToken` field. In the next request, set *start-token* to the token value in `nextPageToken`.
 
 
@@ -103,7 +103,7 @@ Defines an error.
 |location|Not used.|String
 |locationType|Not used.|String
 |message|A description of the error.|String
-|reason|The reason why the request failed. For example, the store failed validation.
+|reason|The reason why the request failed.|String
 
 
 ### ErrorResponse
@@ -112,7 +112,7 @@ Defines the top-level error object.
 
 |Name|Value|Type
 |-|-|-
-|error|A list of errors that occurred while processing the request.|[Errors](#errors)[]
+|errors|A list of errors that occurred while processing the request.|[Error](#error)[]
 
 
 ### ProductStatus
@@ -126,7 +126,7 @@ Defines a product offer's status.
 |itemLevelIssues|The list of issues with the product offer.|[ProductStatusItemLevelIssue](#productstatusitemlevelissue)[]
 |lastUpdateDate|The date and time when the product offer was last updated.|DateTime 
 |productId|The product's ID.|String
-|status|The product's approval status. Possible values are:<ul><li>Disapproved</li><li>Warning</li></ul>A warning status indicates a product that has issues that should be addressed but do not prevent the product offer from serving.|String
+|status|The product's approval status. Possible values are:<ul><li>Disapproved</li><li>Warning</li></ul>A warning status indicates that the product has issues that should be addressed but they won't prevent the product offer from serving.|String
 |title|The product's title|String
 
 

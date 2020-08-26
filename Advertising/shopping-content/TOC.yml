@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: Release notes
-  href: release-notes.md
 - name: Get started
   href: get-started.md
 - name: Testing your code in sandbox
@@ -63,4 +61,6 @@
     href: status-resource.md
   - name: Store resource
     href: store-resource.md
+- name: Release notes
+  href: release-notes.md
 
