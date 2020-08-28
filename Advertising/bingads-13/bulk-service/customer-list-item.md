@@ -36,9 +36,10 @@ You can download all *Customer List Item* records in the account by including th
 The following Bulk CSV example would add a new customer list item. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Sub Type,Text
+Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Scope,Audience,Action Type,Sub Type,Text
 Format Version,,,,,,6.0,,,,,,
-Customer List Item,,-10,,ClientIdGoesHere,,,CRMID,ABCD123457
+Customer List,Active,-10,,ClientIdGoesHere,,,New customer list description,Customer,New Customer List,Add,,
+Customer List Item,,,-10,ClientIdGoesHere,,,,,,,CRMID,ABCD123457
 ```
 
 For a *Customer List Item* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
