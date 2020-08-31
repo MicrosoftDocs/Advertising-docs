@@ -7,11 +7,14 @@ ms.author: eur
 description: Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store.
 ---
 # ProductAudience Data Object - Campaign Management
-Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store.
+Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store. 
 
-Using Product Audiences, you can remarket to customers based on the specific products they viewed or added to their cart. Feed-based ads promote those same products to customers (known as dynamic remarketing).
+> [!NOTE]
+> Dynamic remarketing lists were formerly known as product audiences in Microsoft Advertising. You'll see "Dynamic remarketing list" in the Microsoft Advertising UI, but to avoid breaking changes the API objets are still named "product audience". 
 
-Product audiences work best with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Microsoft Merchant Center [store ID](shoppingsetting.md#storeid). 
+Dynamic remarketing lists pair customers with specific products based on what they have looked at, considered, or already purchased on your website. You can use dynamic remarketing lists in both search campaigns and audience campaigns (not everyone has audience campaigns yet). 
+
+Dynamic remarketing lists work best with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Microsoft Merchant Center [store ID](shoppingsetting.md#storeid). 
 
 > [!IMPORTANT]
 > Be sure to edit the script corresponding to the [UET Tag Id](#tagid) on your website to include the `ecomm_prodid` and `ecomm_pagetype` parameters.

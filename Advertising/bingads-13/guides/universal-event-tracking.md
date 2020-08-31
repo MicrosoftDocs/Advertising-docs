@@ -142,16 +142,21 @@ You can add or update a [Customer List](../bulk-service/customer-list.md) record
 After 48 hours, check the Audience Size fields e.g., [Audience Search Size](../bulk-service/customer-list.md#audiencesearchsize) to see how many of these customers we matched on the Bing Network. At that point, your ads can start showing for this new audience.
 
 #### <a name="inmarketaudience"></a>In-Market Audiences
-In-market audiences are curated lists of customers who have shown purchase intent signals within a particular category, including searches and clicks on Bing and page views on Microsoft services. Microsoft Advertising supplies the curated list of potential customers, unlike remarketing in paid search, where the advertiser creates the list. You can target and modify bids for these audiences by associating in-market audience lists with campaigns and ad groups, similar to what you do with remarketing lists. For more information, see [About in-market audiences](https://help.ads.microsoft.com/#apex/3/en/56851/0).
+In-market audiences are curated lists of customers who have shown purchase intent signals within a particular category, including searches and clicks on Bing and page views on Microsoft services. Microsoft Advertising supplies the curated list of potential customers, unlike remarketing in paid search, where the advertiser creates the list. You can target and modify bids for these audiences by associating in-market audience lists to ad groups or campaigns, similar to what you do with remarketing lists. For more information, see [In-market audiences: Reach people who are ready to buy](https://help.ads.microsoft.com/#apex/3/en/56851/0). 
 
 > [!NOTE]
 > You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> This feature is available in Australia, Canada, France, Germany, United Kingdom, and United States.
 
 #### <a name="productaudience"></a>Product Audiences
-Product audiences are dynamic remarketing lists that pair customers with specific products based on the products they have looked at, considered, or already purchased on your website. You can use product audiences in both search campaigns and audience campaigns. For more information, see [About product audiences](https://help.ads.microsoft.com/#apex/3/en/56910/0). 
+Dynamic remarketing lists pair customers with specific products based on what they have looked at, considered, or already purchased on your website. You can use dynamic remarketing lists in both search campaigns and audience campaigns (not everyone has audience campaigns yet). 
+
+> [!NOTE]
+> Dynamic remarketing lists were formerly known as product audiences in Microsoft Advertising. You'll see "Dynamic remarketing list" in the Microsoft Advertising UI, but to avoid breaking changes the API objets are still named "product audience". 
+
+For more information, see [Dynamic remarketing lists: Remarketing for products](https://help.ads.microsoft.com/#apex/3/en/56910/0). 
 
 #### <a name="remarketinglist"></a>Remarketing Lists
 Remarketing in Paid Search lets you improve your return on investment by optimizing your campaigns for specific audiences, which are the people who have visited your website before. When you create remarketing lists, you specify what user actions on your website qualify them to be part of the remarketing lists. 

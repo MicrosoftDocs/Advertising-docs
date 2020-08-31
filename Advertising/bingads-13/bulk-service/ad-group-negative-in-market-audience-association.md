@@ -12,7 +12,7 @@ dev_langs:
 Defines an Ad Group Negative In Market Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]
-> This feature is available only in the United States.
+> This feature is available in Australia, Canada, France, Germany, United Kingdom, and United States. 
 
 Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Microsoft Advertising applies a union of both campaign and ad group level exclusions.
 

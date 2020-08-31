@@ -4,7 +4,7 @@ ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Describes the fields in a Bulk file.
+description: Describes the Ad Group Combined List Association fields in a Bulk file.
 dev_langs:
   - csharp
 ---
