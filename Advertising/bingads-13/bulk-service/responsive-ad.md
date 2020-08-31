@@ -582,8 +582,8 @@ The length of the string is limited to 90 characters.
 
 The text cannot contain the newline (\n) character.
 
-**Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Add:** Required  
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
