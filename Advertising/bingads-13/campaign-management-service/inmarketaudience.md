@@ -16,7 +16,7 @@ Defines an in-market audience.
 > You should not take any dependencies on the sandbox in-market audiences. Some in-market audiences are available in sandbox, but not in production. The in-market audience property values can also differ between sandbox and production e.g., the audience name and size. 
 
 > [!NOTE]
-> This feature is available only in the United States.
+> This feature is available in Australia, Canada, France, Germany, United Kingdom, and United States.  
 
 > [!TIP]
 > For an overview of in-market audiences see the [About in-market audiences](https://help.ads.microsoft.com/#apex/3/en/56851/-1) help topic.

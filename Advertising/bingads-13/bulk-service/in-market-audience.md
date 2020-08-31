@@ -12,7 +12,7 @@ dev_langs:
 Defines an in-market audience that can be downloaded in a bulk file. 
 
 > [!NOTE]
-> This feature is available only in the United States.
+> This feature is available in Australia, Canada, France, Germany, United Kingdom, and United States. 
 
 > [!NOTE]
 > Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions. 

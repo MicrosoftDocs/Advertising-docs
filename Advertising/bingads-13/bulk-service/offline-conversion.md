@@ -19,6 +19,9 @@ You can add, restate (update), or restract (delete) offline conversions.
 - To restate or correct a previously uploaded offline conversion as needed, set the [Adjustment Type](#adjustmenttype) field to "Restate" and set the original [Conversion Name](#conversionname), [Conversion Time](#conversiontime), and [Microsoft Click Id](#microsoftclickid) fields. Include any adjustments in the same record e.g., [Adjustment Value](#adjustmentvalue), [Adjustment Time](#adjustmenttime), and [Adjustment Currency Code](#adjustmentcurrencycode).  
 - To retract or delete a previously uploaded offline conversion as needed, set the [Adjustment Type](#adjustmenttype) field to "Retract" and set the original [Conversion Name](#conversionname), [Conversion Time](#conversiontime), and [Microsoft Click Id](#microsoftclickid) fields.  
 
+> [!NOTE]
+> Support for offline conversion adjustments is coming soon.  
+
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
 After the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Microsoft Advertising the offline conversion data. It can take up to five hours to view conversion data in the Microsoft Advertising reporting. For more information, see [Tracking offline conversions](https://help.ads.microsoft.com/#apex/3/en/56852/2).
@@ -114,6 +117,9 @@ The currency code for the restated offline conversion.
 
 For more information, see [Currencies](../guides/currencies.md).
 
+> [!NOTE]
+> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
+
 **Add:** Not applicable  
 **Restate:** Required. If you do not specify an adjustment currency code with the restatement, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
 **Retract:** Not applicable  
@@ -126,6 +132,9 @@ The adjustment time cannot be earlier than the original offline [conversion date
 > [!IMPORTANT]
 > The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Microsoft Advertising web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
 
+> [!NOTE]
+> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
+
 **Add:** Not applicable  
 **Restate:** Required  
 **Retract:** Required  
@@ -137,12 +146,18 @@ If this value is "Restate", the offline conversion previously attributed to the 
 
 If this value is "Retract", the offline conversion previously attributed to the specified [Microsoft Click Id](#microsoftclickid) will be retracted or deleted.
 
+> [!NOTE]
+> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
+
 **Add:** Not applicable  
 **Restate:** Required. This field must be set to "Restate".  
 **Retract:** Required. This field must be set to "Retract".  
 
 ## <a name="adjustmentvalue"></a>Adjustment Value
 The adjusted offline conversion value.
+
+> [!NOTE]
+> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
 
 **Add:** Not applicable  
 **Restate:** Required     
