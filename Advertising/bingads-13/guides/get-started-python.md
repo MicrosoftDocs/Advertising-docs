@@ -16,7 +16,7 @@ You will need user credentials with access to Microsoft Advertising either in [p
 To authenticate via OAuth, you must also register an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For more details about registering an application in production and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md) and [Authentication With the SDKs](sdk-authentication.md#oauth). Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the public "Sandbox Tutorial App" client ID in sandbox i.e., **db41b09d-6e50-4f4a-90ac-5a99caefb52f**. For more information, please see [Sandbox](sandbox.md#access). 
 
 ## <a name="dependencies"></a> Dependencies
-The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all Bing Ads API programming elements. For more information about using Suds with Microsoft Advertising, see [Using Suds](#suds).
+The Bing Ads Python SDK uses the [suds-jurko-0.6](https://pypi.org/project/suds-jurko/) library as a proxy for all Bing Ads API programming elements. For more information about using Suds with Microsoft Advertising, see [Using Suds](#suds).
 
 The Bing Ads Python [SDK](client-libraries.md) supports Python 2.6, 2.7, and 3.3 or higher. You should install and run one of the supported versions. 
 
@@ -41,7 +41,7 @@ pip.exe install --upgrade bingads
 Once you have the Bing Ads Python [SDK](client-libraries.md) installed, you can either download the examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Walkthrough: Bing Ads API Web Application in Python](walkthrough-web-application-python.md) or [Walkthrough: Bing Ads API Desktop Application in Python](walkthrough-desktop-application-python.md) application.
 
 ## <a name="suds"></a>Using Suds
-The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programming elements for the Bing Ads API i.e., service operations, data objects, and value sets. You will pass Suds factory objects via either a *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* class. Since Suds is included as an SDK dependency, you can use Suds directly to call any of the Bing Ads API service operations.
+The Bing Ads Python SDK uses the [suds-jurko-0.6](https://pypi.org/project/suds-jurko/) SOAP SDK to instantiate programming elements for the Bing Ads API i.e., service operations, data objects, and value sets. You will pass Suds factory objects via either a *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* class. Since Suds is included as an SDK dependency, you can use Suds directly to call any of the Bing Ads API service operations.
 
 Please keep in mind the following rules, suggestions, and tips related to Suds in the Bing Ads Python SDK.
 

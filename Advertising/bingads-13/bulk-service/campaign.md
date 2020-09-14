@@ -166,10 +166,7 @@ Determines whether to use the account time zone or the time zone of the search u
 
 Set this property to *TRUE* if you want the ads to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
-> [!NOTE]
-> This field can only be set to *FALSE* by customers in the ad scheduling by account time zone feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 655).  
-
-**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. Towards the end of Q2 or the beginning of Q3 Calendar Year 2020 and going forward, the new default value of *FALSE* will be set and the account time zone will be used.  
+**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. After September 30, 2020, if you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.   
 **Delete:** Read-only  
 
