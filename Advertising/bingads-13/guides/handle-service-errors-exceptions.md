@@ -145,7 +145,10 @@ Application 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx' is not configured as a mult
 If you registered the app in the Azure portal, in the Supported account types section ensure that you selected "Accounts in any organizational directory and personal Microsoft accounts". (Please see step 3 [here](authentication-oauth-identity-platform.md#registerapplication).) If you did not choose this option during initial setup, the Azure portal might require that you register a new application. 
 
 ## <a name="contact-support"></a>Contact Support
-The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. To make sure that we see your question, tag it with 'advertising-api'.  
+The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. 
+
+> [!IMPORTANT]
+> To make sure that we see your question, tag it with 'advertising-api'.  
 
 If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support).  
 

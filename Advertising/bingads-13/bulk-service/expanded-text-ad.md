@@ -22,7 +22,7 @@ The following Bulk CSV example would add a new expanded text ad if a valid [Pare
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Text Part 2,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Title Part 1,Title Part 2,Title Part 3,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,,6.0,,,,,,,,,,,,
+Format Version,,,,,,,,,,,,,,,,6.0,,,,,,,,,,,,,
 Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
 ```
 

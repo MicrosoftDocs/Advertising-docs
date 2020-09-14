@@ -282,7 +282,7 @@ authorization_data = AuthorizationData(
 )
 ```
 
-## <a name="get-ids"></a> Get Your Account and Customer Ids
+## <a name="get-ids"></a>Get Your Account and Customer IDs
 To get a user's customer ID and account ID, you can sign in to the Microsoft Advertising web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.ads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
 
 > [!TIP]
@@ -361,7 +361,10 @@ Each SOAP request must include the following SOAP headers, which contain the use
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).
 
-The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. To make sure that we see your question, tag it with 'advertising-api'.  
+The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered.
+
+> [!IMPORTANT]
+> To make sure that we see your question, tag it with 'advertising-api'.  
 
 If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support). 
 

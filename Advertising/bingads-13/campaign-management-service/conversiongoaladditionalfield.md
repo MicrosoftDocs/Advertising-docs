@@ -30,7 +30,7 @@ The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="goalcategory"></a>GoalCategory|Reserved.|
+|<a name="goalcategory"></a>GoalCategory|Request that the [GoalCategory](conversiongoal.md#goalcategory) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
 |<a name="isexternallyattributed"></a>IsExternallyAttributed|Request that the [IsExternallyAttributed](offlineconversiongoal.md#isexternallyattributed) element be included within each returned [OfflineConversionGoal](offlineconversiongoal.md) object.|
 |<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Request that the [ViewThroughConversionWindowInMinutes](conversiongoal.md#viewthroughconversionwindowinminutes) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
 
