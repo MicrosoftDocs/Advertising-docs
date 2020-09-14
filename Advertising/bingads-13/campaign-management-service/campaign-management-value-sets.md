@@ -45,7 +45,7 @@ The Campaign Management service defines the following value sets.
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|
 |[CampaignType](campaigntype.md)|Defines the possible campaign types.|
 |[ConversionGoalAdditionalField](conversiongoaladditionalfield.md)|Defines a list of optional conversion goal properties that you can request when calling [GetConversionGoalsByIds](getconversiongoalsbyids.md) and [GetConversionGoalsByTagIds](getconversiongoalsbytagids.md).|
-|[ConversionGoalCategory](conversiongoalcategory.md)|Reserved.|
+|[ConversionGoalCategory](conversiongoalcategory.md)|Defines categories used to segment conversion goals.|
 |[ConversionGoalCountType](conversiongoalcounttype.md)|Defines how your conversions are recorded within your chosen conversion window.|
 |[ConversionGoalRevenueType](conversiongoalrevenuetype.md)|Defines conversion goal revenue models that you can use to track how much each conversion is worth to your business.|
 |[ConversionGoalStatus](conversiongoalstatus.md)|Defines the possible user-determined status values of a conversion goal.|

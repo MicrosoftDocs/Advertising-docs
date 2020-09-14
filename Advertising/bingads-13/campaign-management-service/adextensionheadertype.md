@@ -49,13 +49,14 @@ Defines the possible types of ad extension headers.
     <xs:enumeration value="What" />
     <xs:enumeration value="Who" />
     <xs:enumeration value="Why" />
+    <xs:enumeration value="Deals" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [AdExtensionHeaderType](adextensionheadertype.md) value set has the following values: [Amenities](#amenities), [Brands](#brands), [Classes](#classes), [Courses](#courses), [DailyRates](#dailyrates), [DegreePrograms](#degreeprograms), [Departments](#departments), [Destinations](#destinations), [FeaturedHotels](#featuredhotels), [Goods](#goods), [Grades](#grades), [Highlights](#highlights), [InsuranceCoverage](#insurancecoverage), [Items](#items), [Languages](#languages), [Locations](#locations), [Models](#models), [Neighborhoods](#neighborhoods), [Prices](#prices), [Rates](#rates), [Ratings](#ratings), [SchoolDistricts](#schooldistricts), [ServiceCatalog](#servicecatalog), [Services](#services), [Shows](#shows), [Sizes](#sizes), [Styles](#styles), [Tools](#tools), [Topics](#topics), [Types](#types), [Unknown](#unknown), [Vacations](#vacations), [Vehicles](#vehicles), [What](#what), [Who](#who), [Why](#why).
+The [AdExtensionHeaderType](adextensionheadertype.md) value set has the following values: [Amenities](#amenities), [Brands](#brands), [Classes](#classes), [Courses](#courses), [DailyRates](#dailyrates), [Deals](#deals), [DegreePrograms](#degreeprograms), [Departments](#departments), [Destinations](#destinations), [FeaturedHotels](#featuredhotels), [Goods](#goods), [Grades](#grades), [Highlights](#highlights), [InsuranceCoverage](#insurancecoverage), [Items](#items), [Languages](#languages), [Locations](#locations), [Models](#models), [Neighborhoods](#neighborhoods), [Prices](#prices), [Rates](#rates), [Ratings](#ratings), [SchoolDistricts](#schooldistricts), [ServiceCatalog](#servicecatalog), [Services](#services), [Shows](#shows), [Sizes](#sizes), [Styles](#styles), [Tools](#tools), [Topics](#topics), [Types](#types), [Unknown](#unknown), [Vacations](#vacations), [Vehicles](#vehicles), [What](#what), [Who](#who), [Why](#why).
 
 |Value|Description|
 |-----------|---------------|
@@ -64,6 +65,7 @@ The [AdExtensionHeaderType](adextensionheadertype.md) value set has the followin
 |<a name="classes"></a>Classes|Use the translated version of *Classes* in the ad extension header.|
 |<a name="courses"></a>Courses|Use the translated version of *Courses* in the ad extension header.|
 |<a name="dailyrates"></a>DailyRates|Use the translated version of *DailyRates* in the ad extension header.|
+|<a name="deals"></a>Deals|Use the translated version of *Deals* in the ad extension header.|
 |<a name="degreeprograms"></a>DegreePrograms|Use the translated version of *DegreePrograms* in the ad extension header.|
 |<a name="departments"></a>Departments|Use the translated version of *Departments* in the ad extension header.|
 |<a name="destinations"></a>Destinations|Use the translated version of *Destinations* in the ad extension header.|
