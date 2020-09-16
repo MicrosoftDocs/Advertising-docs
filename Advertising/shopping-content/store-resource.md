@@ -185,12 +185,12 @@ The requests may return the following error codes.
 |Error code|Description
 |-|-
 |AdultAdvertiserErr|Adult advertisers may not create stores.
-|DomainNotOwnedByCustomerErr|The specified domain is not owned by the customer. Make sure the customer verified that they own the domain specified in the `storeUrl` field of [StoreCreate](#storecreate).
+|DomainNotOwnedByCustomerErr|The domain specified in the [storeUrl](#storeurl) field is not owned by the customer. Make sure the customer verified that they own the domain.
 |DuplicateStoreNameErr|Another store with the specified store name exists; store names must be unique with Microsoft Merchant Center.
 |ExceededMaxStoresForCustomerErr|The customer exceeded the number of stores they may create. For limits, see [Add store POST](#addstorepost).
 |ExceededMaxStoresForDestinationUrlErr|The customer exceeded the number of stores they may create using the same destination URL. For limits, see [Add store POST](#addstorepost).
 |InvalidStoreDescriptionErr|The store's description is not valid. For limits, see [storeDescription](#storedescription).
-|InvalidStoreDestinationUrlErr|The store's destination URL that you specified in the [storeUrl](#storedescription) field is not valid.
+|InvalidStoreDestinationUrlErr|The store's destination URL that you specified in the [storeUrl](#storeurl) field is not valid.
 |InvalidStoreNameErr|The store's name is not valid. For limits, see [storeName](#storename).
 |MarketNotSupportedErr|The market that you specified in the [notificationLanguage](#notificationlanguage) field is not valid.
 |NoDomainsFoundForCustomerErr|There are no verified domains owned by the customer.
