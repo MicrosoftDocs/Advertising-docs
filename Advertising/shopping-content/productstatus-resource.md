@@ -62,7 +62,7 @@ The request may include the following query parameters:
 |Parameter|Description
 |-|-
 |<a name="maxresults"></a>max-results|Optional. Use to specify the maximum number of items to return in a List request such as `/stores/{merchantId}/productstatuses`. The maximum value that you may specify is 250. The default is 25. 
-|<a name="starttoken"></a>start-token|Optional. Use to page through a store's list of product statuses. The token identifies the next page of product statuses to return. Do not specify this parameter in the first List request. If the store contains more than the requested number of products (see the *max-results* query parameter), the response includes the `nextPageToken` field. In the next request, set *start-token* to the token value in `nextPageToken`.
+|<a name="continuationtoken"></a>continuation-token|Optional. Use to page through a store's list of product statuses. The token identifies the next page of product statuses to return. Do not specify this parameter in the first List request. If the store contains more than the requested number of products (see the *max-results* query parameter), the response includes the `nextPageToken` field. In the next request, set *continuation-token* to the token value in `nextPageToken`.
 
 
 ## Headers
@@ -136,7 +136,7 @@ Defines a list of the product offers that have issues.
 
 |Name|Value|Type
 |-|-|-
-|nextPageToken|The token to set the [start-token](#starttoken) query parameter to if there are more product offers available to get.|String
+|nextPageToken|The token to set the [continuation-token](#continuationtoken) query parameter to if there are more product offers available to get.|String
 |resources|The list of product offers that have issues. The [max-results](#maxresults) query parameter determines the maximum number of offers in the list; the actual number may be less.|[ProductStatus](#productstatus)[]
 
 
@@ -178,6 +178,11 @@ The requests may return the following HTTP status codes.
 |500|Server error.
 
 
-  
+## Error codes
 
+The requests may return the following error codes.
+
+|Error code|Description
+|-|-
+|ContinuationTokenInvalidErr|The [continuation-token](#continuationtoken) query parameter value is not valid. Make sure you set the parameter using the value in the [ProductStatuses](#productstatuses) object's `nextPageToken` field.
 

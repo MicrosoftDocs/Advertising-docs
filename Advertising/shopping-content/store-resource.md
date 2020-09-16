@@ -44,7 +44,7 @@ These are the templates that you append to the [base URI](#base-uri) to create a
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|POST|Adds a store. The following limits apply and are subject to change:<ul><li>A customer may add a maximum of 14 stores that specify the same store URL.</li><li>A customer may add a maximum of 1,024 stores.</li></ul>|Request: [StoreCreate](#storecreate)<br/>Response: [Store](#store)
+|<a name="addstorepost"></a>POST|Adds a store. The following limits apply and are subject to change:<ul><li>A customer may add a maximum of 14 stores that specify the same store URL.</li><li>A customer may add a maximum of 1,024 stores.</li></ul>|Request: [StoreCreate](#storecreate)<br/>Response: [Store](#store)
 |GET|Gets a list of stores owned by the user.|Request: N/A<br/>Response: [StoreCollection](#storecollection)
 
 
@@ -148,10 +148,10 @@ Defines a store to add to Microsoft Merchant Center.
 |isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, then both stores block aggregators. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Set to **true** to prevent your products from showing up in aggregators' ads on Bing. Defaults to **false**.|Boolean|No
 |isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Set to **true** if your store's website is SSL enabled.<br/><br/>Defaults to **true**.|Boolean|No
 |notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store. The maximum number of email addresses that you can specify is 14.|String[]|Yes
-|notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE (German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
-|storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]). If not specified, the description defaults to the store's name.|String|No
-|storeName|The store's name. The name must be unique within Bing Merchant Center, is limited to a maximum of 70 characters, and may contain only alphanumeric characters ([a-zA-Z0-9]). The store's name appears in your product ads, so be sure to use a name that accurately represents your website.|String|Yes
-|storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad. This is the URL that you claimed belonged to the user (see <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">Verify and claim your website's URL</a>). The URL must be well formed, use the HTTPS protocol if `isSslCheckout` is true, and have a maximum of 1,024 characters.|String|Yes
+|<a name="notificationlanguage"></a>notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE (German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
+|<a name="storedescription"></a>storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]). If not specified, the description defaults to the store's name.|String|No
+|<a name="storename"></a>storeName|The store's name. The name must be unique within Bing Merchant Center, is limited to a maximum of 70 characters, and may contain only alphanumeric characters ([a-zA-Z0-9]). The store's name appears in your product ads, so be sure to use a name that accurately represents your website.|String|Yes
+|<a name="storeurl"></a>storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad. This is the URL that you claimed belonged to the user (see <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">Verify and claim your website's URL</a>). The URL must be well formed, use the HTTPS protocol if `isSslCheckout` is true, and have a maximum of 1,024 characters.|String|Yes
 
 
 ### StoreStatus
@@ -176,3 +176,21 @@ The requests may return the following HTTP status codes.
 |401|Unauthorized. The user's credentials are not valid. 
 |404|Not found. The requested store was not found. 
 |500|Server error.
+
+
+## Error codes
+
+The requests may return the following error codes.
+
+|Error code|Description
+|-|-
+|AdultAdvertiserErr|Adult advertisers may not create stores.
+|DomainNotOwnedByCustomerErr|The specified domain is not owned by the customer. Make sure the customer verified that they own the domain specified in the `storeUrl` field of [StoreCreate](#storecreate).
+|DuplicateStoreNameErr|Another store with the specified store name exists; store names must be unique with Microsoft Merchant Center.
+|ExceededMaxStoresForCustomerErr|The customer exceeded the number of stores they may create. For limits, see [Add store POST](#addstorepost).
+|ExceededMaxStoresForDestinationUrlErr|The customer exceeded the number of stores they may create using the same destination URL. For limits, see [Add store POST](#addstorepost).
+|InvalidStoreDescriptionErr|The store's description is not valid. For limits, see [storeDescription](#storedescription).
+|InvalidStoreDestinationUrlErr|The store's destination URL that you specified in the [storeUrl](#storedescription) field is not valid.
+|InvalidStoreNameErr|The store's name is not valid. For limits, see [storeName](#storename).
+|MarketNotSupportedErr|The market that you specified in the [notificationLanguage](#notificationlanguage) field is not valid.
+|NoDomainsFoundForCustomerErr|There are no verified domains owned by the customer.

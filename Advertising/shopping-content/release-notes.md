@@ -13,7 +13,7 @@ ms.author: "scottwhi"
 This topic describes recent changes made to Version 9.1 of the Content API.
 
 
-## September 4, 2020
+## September 16, 2020
 
 This release includes the following changes:
 
