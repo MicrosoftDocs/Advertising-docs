@@ -1,7 +1,7 @@
 ---
 title: Query Message
 description: Landing page for Query Message
-ms.service: "hotel-ads-query-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

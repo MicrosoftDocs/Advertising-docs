@@ -1,7 +1,7 @@
 ---
 title: "Subaccount Code Example"
 description: Shows hot to list, get, and update hotel subaccounts.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

@@ -1,7 +1,7 @@
 ---
 title: Hint message schema
 description: Lists the schemas the define a hint message.
-ms.service: "hotel-ads-hint-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

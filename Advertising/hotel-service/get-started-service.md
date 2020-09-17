@@ -1,7 +1,7 @@
 ---
 title: "Get Started using the Hotel API from a service"
 description: Provides details about getting credentials from a service.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

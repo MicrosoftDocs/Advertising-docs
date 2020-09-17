@@ -1,7 +1,7 @@
 ---
 title: "Creating a Points of Sale Feed"
 description: Shows how to create a points of sale feed file that contains a list of booking sites.
-ms.service: "hotel-ads-pos-feed"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

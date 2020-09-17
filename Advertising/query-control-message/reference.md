@@ -1,7 +1,7 @@
 ---
 title: QueryControl message reference
 description: Describes the schema elements that you use to create a QueryControl message.
-ms.service: "hotel-ads-query-control-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

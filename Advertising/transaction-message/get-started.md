@@ -1,7 +1,7 @@
 ---
 title: "Get Started with Transaction Messages"
 description: Quick start guide to getting started with Transaction Messages
-ms.service: "hotel-ads-transaction-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

@@ -1,7 +1,7 @@
 ---
 title: "Release notes for Hotel Ads Service"
 description: Identifies the changes made to Hotel Ads for each release.
-ms.service: "hotel-ads"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

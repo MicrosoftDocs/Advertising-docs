@@ -5,7 +5,7 @@ author: "swhite-msft"
 manager: ehansen
 
 ms.author: "scottwhi"
-ms.service: "bingads-scripts"
+ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
 

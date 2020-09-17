@@ -1,7 +1,7 @@
 ---
 title: "Creating a Transaction Message"
 description: Shows how to create a transaction message that describes your hotels' itineraries.
-ms.service: "hotel-ads-transaction-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
