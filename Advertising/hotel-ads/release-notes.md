@@ -38,18 +38,18 @@ For information about changes that were included with each release, see the foll
 
 - Added support for room bundles to [Transaction Message](../transaction-message/reference.md). [Read more](../transaction-message/using-room-bundles.md).  
   - Updates include:  
-    - Added the [<PropertyDataSet>](../transaction-message/reference.md#propertydatasettype) element as a child element of the [<Transaction>](../transaction-message/reference.md#transaction) element. Used to specify the room and package metadata for a property.
-    - Added the [<PackageData>](../transaction-message/reference.md#packagedatatype) object as a child of \<PropertyDataSet>.
-    - Added the [<RoomData>](../transaction-message/reference.md#roomdatatype) object as a child of \<PropertyDataSet>.
-    - Added the [<RoomBundle>](../transaction-message/reference.md#roombundletype) element as a child element of the [<Result>](../transaction-message/reference.md#resulttype) element. Used to specify room types and packages for itineraries.
+    - Added the [<PropertyDataSet>](../transaction-message/reference.md#propertydataset-type) element as a child element of the [<Transaction>](../transaction-message/reference.md#transaction) element. Used to specify the room and package metadata for a property.
+    - Added the [<PackageData>](../transaction-message/reference.md#packagedata-type) object as a child of \<PropertyDataSet>.
+    - Added the [<RoomData>](../transaction-message/reference.md#roomdata-type) object as a child of \<PropertyDataSet>.
+    - Added the [<RoomBundle>](../transaction-message/reference.md#roombundle) element as a child element of the [<Result>](../transaction-message/reference.md#result-type) element. Used to specify room types and packages for itineraries.
     - Added the following types used by `RoomData` and `PackageData`:  
-      - [OnPropertyCredit](../transaction-message/reference.md#onpropertycredittype)   
-      - [Miles](../transaction-message/reference.md#milestype)   
-      - [MembershipBenefits](../transaction-message/reference.md#membershipbenefitstype)   
-      - [PhotoUrl](../transaction-message/reference.md#photourltype)   
-      - [OccupancyDetails](../transaction-message/reference.md#occupancydetailstype)   
-      - [Children](../transaction-message/reference.md#childrentype)   
-      - [Text](../transaction-message/reference.md#texttype)   
+      - [OnPropertyCredit](../transaction-message/reference.md#onpropertycredit-type)   
+      - [Miles](../transaction-message/reference.md#miles=type)   
+      - [MembershipBenefits](../transaction-message/reference.md#membershipbenefits-type)   
+      - [PhotoUrl](../transaction-message/reference.md#photourl-type)   
+      - [OccupancyDetails](../transaction-message/reference.md#occupancydetails-type)   
+      - [Children](../transaction-message/reference.md#children-type)   
+      - [Text](../transaction-message/reference.md#text-type)   
 
 
 
@@ -153,7 +153,7 @@ The following is a documentation-only change.
 
 ## March 16, 2018
 
-- Added the \<ExpirationTimestamp\> element to the [Transaction](../transaction-message/reference.md#resulttype) message. You use this element to specify an expiry date for the itinerary. When the expiry date passes, Bing stops serving the itinerary. 
+- Added the \<ExpirationTimestamp\> element to the [Transaction](../transaction-message/reference.md#result-type) message. You use this element to specify an expiry date for the itinerary. When the expiry date passes, Bing stops serving the itinerary. 
 
 
 

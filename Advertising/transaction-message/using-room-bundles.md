@@ -34,7 +34,7 @@ Here's what a default, base room itinerary looks like:
 </Transaction>
 ```
 
-To add room types and packages to the itinerary, add a [\<RoomBundle>](reference.md#roombundletype) element as a child of `Result`. You may add one or more room bundles but one of the room bundles' rate must match the itinerary's rate. You must base the room's rate on its occupancy; 2 and 4 occupancy rooms cannot have the same rate.
+To add room types and packages to the itinerary, add a [\<RoomBundle>](reference.md#roombundle) element as a child of `Result`. You may add one or more room bundles but one of the room bundles' rate must match the itinerary's rate. You must base the room's rate on its occupancy; 2 and 4 occupancy rooms cannot have the same rate.
 
 
 ```xml

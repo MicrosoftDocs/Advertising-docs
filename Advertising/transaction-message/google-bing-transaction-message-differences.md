@@ -12,7 +12,7 @@ ms.author: "scottwhi"
 
 The following are the differences between Google's Transaction Message implementation and Bing's.
 
-- Bing does not support (and will ignore) the following [Transaction](reference.md#transactiontype) elements:  
+- Bing does not support (and will ignore) the following [Transaction](reference.md#transaction-type) elements:  
   
   - `PartnerData`
   
@@ -20,8 +20,8 @@ The following are the differences between Google's Transaction Message implement
   
   - `partner`
   
-- Bing does not support (and will ignore) the following [Result](reference.md#resulttype) elements:
+- Bing does not support (and will ignore) the following [Result](reference.md#result-type) elements:
   
   - `Rates`
   
-- Bing does not support (and will ignore) the `all_inclusive` attribute of the `Baserate` element (see [Result](reference.md#resulttype)).
+- Bing does not support (and will ignore) the `all_inclusive` attribute of the `Baserate` element (see [Result](reference.md#result-type)).

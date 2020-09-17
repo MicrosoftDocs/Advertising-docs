@@ -47,7 +47,7 @@ The `id` attribute is a user-defined ID that uniquely identifies the message to 
 
 ## Specifying the list of itineraries
 
-The `Transaction` element contains a list of [Result](../transaction-message/reference.md#resulttype) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
+The `Transaction` element contains a list of [Result](../transaction-message/reference.md#result-type) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
 
 The following shows a `Result` element that specifies the required child elements.
 

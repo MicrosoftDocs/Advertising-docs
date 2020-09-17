@@ -48,7 +48,7 @@ The `id` attribute is a user-defined ID that uniquely identifies the message to 
 
 ## Specifying the metadata
 
-The `Transaction` element contains a list of [PropertyDataSet](reference.md#propertydatasettype) elements, one for each property you're defining metadata for. The message should include only new metadata or those that have changed.
+The `Transaction` element contains a list of [PropertyDataSet](reference.md#propertydataset-type) elements, one for each property you're defining metadata for. The message should include only new metadata or those that have changed.
 
 The following shows a `PropertyDataSet` element for property 12345. The `Property` ID must match the ID of a property in your hotel feed file. You may specify any number of `RoomData` and `PackageData` element.
 
