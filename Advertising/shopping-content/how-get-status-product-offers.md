@@ -4,7 +4,7 @@ description: "Learn how to get the status of product offers with the Content API
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---

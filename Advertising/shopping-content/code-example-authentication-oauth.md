@@ -4,7 +4,7 @@ description: "Code samples showing Microsoft Account Crendential authentication.
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 

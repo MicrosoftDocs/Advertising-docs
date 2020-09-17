@@ -4,7 +4,7 @@ description: "Provides limits for HTTP requests and batch method calls"
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---

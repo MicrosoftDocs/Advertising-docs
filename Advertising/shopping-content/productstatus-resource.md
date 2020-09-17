@@ -4,7 +4,7 @@ description: "Describes the Product Statuses resource and related programming el
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---

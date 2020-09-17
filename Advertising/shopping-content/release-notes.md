@@ -3,7 +3,7 @@ title: "Release Notes for Shopping Content API"
 description: "Describes the history of changes made to the Content API."
 author: "swhite-msft"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---

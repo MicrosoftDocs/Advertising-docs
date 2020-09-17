@@ -4,7 +4,7 @@ description: "Describes the Store resource and related programming elements of C
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
