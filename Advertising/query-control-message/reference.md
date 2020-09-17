@@ -27,18 +27,14 @@ For information about creating a QueryControl message, see [Creating a QueryCont
 ----
 
  
-<a name="querycontrol"></a>
-
 ## QueryControl
 
 Defines the root element of a QueryControl message.
 
 |Element|Description|Children
 |-|-|-
-|QueryControl|The root element in a QueryControl message.|[QueryControl Type](#querycontroltype)
+|QueryControl|The root element in a QueryControl message.|[QueryControl Type](#querycontrol-type)
 
-
-<a name="querycontroltype"></a>
 
 ## QueryControl Type
 
@@ -46,10 +42,8 @@ Defines a QueryControl message.
 
 |Element|Description|Children
 |-|-|-
-|ItineraryCapabilities|The parent object that contains the default settings and overrides for pull requests. |[ItineraryCapabilities Type](#itinerarycapabilitiestype)
+|ItineraryCapabilities|The parent object that contains the default settings and overrides for pull requests. |[ItineraryCapabilities Type](#itinerarycapabilities-type)
 
-
-<a name="itinerarycapabilitiestype"></a>
 
 ## ItineraryCapabilities Type
 
@@ -57,12 +51,9 @@ Defines the object that contains the default settings and overrides for pull req
 
 |Element|Description|Children
 |-|-|-
-|DefaultValue|Contains the default pull request settings, which specifies the amount of data that Bing should request. |[defaultItineraryCapability Type](#defaultitinerarycapability)
-|PropertyOverride|Optional.<br /><br />Defines the pull request settings that override the default settings for the specified hotels. You can also use this element to identify hotels that you don't want Bing to request updates for.|[propertyCapabilityOverride Type](#propertycapabilityoverride)
+|DefaultValue|Contains the default pull request settings, which specifies the amount of data that Bing should request. |[defaultItineraryCapability Type](#defaultitinerarycapability-type)
+|PropertyOverride|Optional.<br /><br />Defines the pull request settings that override the default settings for the specified hotels. You can also use this element to identify hotels that you don't want Bing to request updates for.|[propertyCapabilityOverride Type](#propertycapabilityoverride-type)
 
-
-
-<a name="defaultitinerarycapability"></a> 
 
 ## defaultItineraryCapability Type
 
@@ -76,11 +67,6 @@ Defines the default settings for pull requests.
 |MaxLengthOfStay|Optional.<br /><br />The maximum length of stay that Bing may request itinerary data for. <br /><br />You set the default value for this setting at the time you onboard. If you subsequently specify this setting in a QueryControl message, the value may not exceeed 14 days.<br /><br />Bing uses this value to specify the `Nights` value in pull requests and pull with hints requests that specify data ranges. If your hints specify `StaysIncludingRange`, this value is used to specify the `AffectedNights` value.  |PositiveInteger
 |State|Optional.<br /><br />Determines whether to include or exclude all properties from pull requests. To enable pull requests, set to "enabled" (default). To disable pull requests, set to "disabled". |String
 
-
-
-
-
-<a name="propertycapabilityoverride"></a> 
 
 ## propertyCapabilityOverride Type
 
