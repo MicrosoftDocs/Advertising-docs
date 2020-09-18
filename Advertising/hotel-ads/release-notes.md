@@ -44,7 +44,7 @@ For information about changes that were included with each release, see the foll
     - Added the [<RoomBundle>](../transaction-message/reference.md#roombundle) element as a child element of the [<Result>](../transaction-message/reference.md#result-type) element. Used to specify room types and packages for itineraries.
     - Added the following types used by `RoomData` and `PackageData`:  
       - [OnPropertyCredit](../transaction-message/reference.md#onpropertycredit-type)   
-      - [Miles](../transaction-message/reference.md#miles=type)   
+      - [Miles](../transaction-message/reference.md#miles-type)   
       - [MembershipBenefits](../transaction-message/reference.md#membershipbenefits-type)   
       - [PhotoUrl](../transaction-message/reference.md#photourl-type)   
       - [OccupancyDetails](../transaction-message/reference.md#occupancydetails-type)   

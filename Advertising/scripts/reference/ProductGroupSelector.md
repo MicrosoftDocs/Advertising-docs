@@ -140,7 +140,7 @@ The following are the entity properties you may specify.
 
 |Column|Type|Example|
 |-|-|-
-ProductGroup|double|The product group's value. For example, if the path is 'All products > Sporting Goods > Winter Sports > Skiing > Skis > Downhill Skis > New', you might set the operand to Skis.<br /><br />`withCondition("ProductGroup = Skis")`<br /><br />The selector includes the Skis product group and its "other case" product group, if it exists.<br /><br />Note that you may not specify 'OtherCase' as the operand.
+ProductGroup|string|The product group's value. For example, if the path is 'All products > Sporting Goods > Winter Sports > Skiing > Skis > Downhill Skis > New', you might set the operand to Skis.<br /><br />`withCondition("ProductGroup = Skis")`<br /><br />The selector includes the Skis product group and its "other case" product group, if it exists.<br /><br />Note that you may not specify 'OtherCase' as the operand.
 Bid|double|The bid amount. Returns all product groups that match the bid condition.<br /><br />`withCondition("Bid < 2.75")`<br /><br />Using '<' returns groups with a CPC bid amount that's less than the specified amount or that's set to null. To prevent the selector from including the null case, use for example, `.withCondition("Bid < 2.75").withCondition("Bid > 0.0")`.
 
 ### Arguments

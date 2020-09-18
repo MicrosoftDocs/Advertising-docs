@@ -198,9 +198,6 @@ function* getEntities() {
 ```
 
 
-
-
-
 ## Get a keyword's performance data
 
 To get a keyword's performance metrics, call the keyword's [getStats](../reference/Keyword.md#getstats) method. When you get the keyword, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range, use one of the `forDateRange` methods when you select the keyword (see [KeywordSelector](../reference/KeywordSelector.md)). 

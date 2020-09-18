@@ -448,4 +448,46 @@ function* getKeywords() {
 }
 ```
 
+## Calling pattern to avoid entity limits
+
+There's a limit to the number of entities that Scripts can return for an account. If the request would return more than this limit, Scripts throws an error with the message, *There are too many entities*. The following example shows the calling pattern you should use when getting large numbers of entities. The example tries to fetch all keywords at the account level first. If that fails, it tries to make multiple calls to fetch keywords by campaign, since there are typically fewer entities at the campaign level. You can generally continue this pattern down to the ad group level if needed.
+
+For information about using the **yield** keyword, see [Use the yield keyword when getting large sets of entities](#using-yield-keyword).
+
+```javascript
+function* getEntities() {
+    const applyConditions = _ => _
+        .withCondition('CampaignStatus = ENABLED')
+        .withCondition('AdGroupStatus = ENABLED')
+        .withCondition('Status = ENABLED')
+        .withCondition("CombinedApprovalStatus = DISAPPROVED");
+
+    try {
+        // Get the account's keywords. 
+        const keywords = applyConditions(AdsApp.keywords()).get();
+
+        while (keywords.hasNext()) {
+            yield keywords.next();
+        }
+    } catch (e) {
+        if (!e.message.startsWith('There are too many entities')) {
+            throw e;
+        }
+
+        // If there are too many keywords at the account level,
+        // get keywords by campaigns under the account.
+        const campaigns = AdsApp.campaigns().get();
+
+        while (campaigns.hasNext()) {
+            const campaign = campaigns.next();
+
+            const keywords = applyConditions(campaign.keywords()).get();
+
+            while (keywords.hasNext()) {
+                yield keywords.next();
+            }
+        }
+    }
+}
+```
 
