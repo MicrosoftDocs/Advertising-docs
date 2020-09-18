@@ -1,7 +1,7 @@
 ---
 title: QueryControl Message
 description: Landing page for QueryControl Message
-ms.service: "hotel-ads-query-control-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

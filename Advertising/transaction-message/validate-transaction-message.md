@@ -1,7 +1,7 @@
 ---
 title: "Validating your Transaction Message"
 description: Shows how to validate a transaction message.
-ms.service: "hotel-ads-transaction-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

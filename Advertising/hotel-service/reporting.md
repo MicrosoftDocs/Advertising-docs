@@ -1,7 +1,7 @@
 ---
 title: "Hotel Ads Reporting"
 description: Describes how to request and download a Hotel Ads report.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

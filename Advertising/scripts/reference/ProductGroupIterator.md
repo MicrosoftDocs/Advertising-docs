@@ -5,8 +5,8 @@ description: "Contains the methods for iterating through a list of product group
 author: "swhite-msft"
 manager: ehansen
 
-ms.author: "scottwhhi"
-ms.service: "bingads-scripts"
+ms.author: "scottwhi"
+ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
 

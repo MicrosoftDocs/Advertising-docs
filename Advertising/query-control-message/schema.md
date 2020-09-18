@@ -1,7 +1,7 @@
 ---
 title: QueryControl message schema
 description: Lists the QueryControl schemas.
-ms.service: "hotel-ads-query-control-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

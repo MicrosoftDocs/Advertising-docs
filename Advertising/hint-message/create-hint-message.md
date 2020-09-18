@@ -1,7 +1,7 @@
 ---
 title: "Create a hint message"
 description: Shows how to create a hint message that describes the itineraries that Microsoft Advertising should request in a pull request.
-ms.service: "hotel-ads-hint-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen
@@ -21,11 +21,10 @@ If you sign up for pull with hint requests, Microsoft sends a message with the f
 
 The `LastFetchTime` element identifies the UTC date and time of the last successful response that you sent Microsoft that identified itinerary changes. If there has been no changes since that time, your response should contain an empty body. If there has been changes, the body contains a [Hint](../hint-message/reference.md) message, which identifies itineraries that have changed. You can identify the itineraries using one of the following methods:
 
-- [Exact itineraries](#exactitineraries)
-- [Check-in date ranges](#checkindateranges)
-- [Expanded check-in date ranges](#expandedcheckindateranges)
+- [Exact itineraries](#exact-itineraries)
+- [Check-in date ranges](#check-in-date-ranges)
+- [Expanded check-in date ranges](#expanded-check-in-date-ranges)
 
-<a name="exactitineraries" />
 
 ## Exact itineraries
 
@@ -68,9 +67,8 @@ When you get the Query message, your response should contain a [Transaction](../
   </Result>
 ```
 
-If the above hint specfied two properties, the transaction message would contain two \<Result\> elements (one for each property).
+If the above hint specified two properties, the transaction message would contain two \<Result\> elements (one for each property).
 
-<a name="checkindateranges" />
 
 ## Check-in date ranges
 
@@ -148,8 +146,6 @@ When you get the Query message, your response should contain a [Transaction](../
 
 For this example, the maximum number of results that the transaction message should contain is 18 (6 check-in dates * 3 nights). Your transaction message may contain less if some itineraries with the date range did not change.
 
-
-<a name="expandedcheckindateranges" />
 
 ## Expanded check-in date ranges
 

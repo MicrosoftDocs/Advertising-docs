@@ -1,7 +1,7 @@
 ---
 title: Hint message reference
 description: Describes the schema that defines the elements for creating a hint message.
-ms.service: "hotel-ads-hint-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen
@@ -28,18 +28,14 @@ For information about creating a Hint response message, see [Creating a Hint Mes
 ----
 
  
-<a name="hint" /> 
-
 ## Hint
 
 Defines the root element of a Hint response message.
 
 |Element|Description|Children
 |-|-|-
-|Hint|The root element in a Hint response message.|[Hint Type](#hinttype)
+|Hint|The root element in a Hint response message.|[Hint Type](#hint-type)
 
-
-<a name="hinttype" /> 
 
 ## Hint Type
 
@@ -47,11 +43,8 @@ Defines a Hint response message.
 
 |Element|Description|Children
 |-|-|-
-|Item|A list of one or more hints. |[Item Type](#itemtype)
+|Item|A list of one or more hints. |[Item Type](#item-type)
 
-
-
-<a name="itemtype" /> 
 
 ## Item Type
 
@@ -62,10 +55,6 @@ Defines a hint.
 |Property|The hotel ID. This ID must match an ID of a hotel in your Hotel Feeds file. Specify a \<Property\> element for each hotel that the hint applies to. |String
 | |The group that defines the options for specifying the exact date or date range that Bing should request data for. The option that you choose determines the elements that you include in the hint. |[itemmodechoicegroup](#itemmodechoicegroup)
 
-
-
-
-<a name="itemmodechoicegroup" /> 
 
 ## itemmodechoicegroup
 
@@ -78,9 +67,6 @@ Defines the options for specifying the dates that Bing should request data for.
 |Stay|The check-in date and length of stay. |[staytype](#staytype)
 
 
-
-<a name="checkindategroup" /> 
-
 ## checkindategroup
 
 Defines the first and last date of a date range. 
@@ -91,9 +77,6 @@ Defines the first and last date of a date range.
 |LastDate|The last date of the date range. |Date
 
 
-
-<a name="staysincludingrangetype" /> 
-
 ## staysincludingrangetype
 
 Defines the first and last date of an affected date range. 
@@ -103,9 +86,6 @@ Defines the first and last date of an affected date range.
 |FirstDate|The first date of the date range. |Date
 |LastDate|The last date of the date range. |Date
 
-
-
-<a name="staytype" /> 
 
 ## staytype
 
