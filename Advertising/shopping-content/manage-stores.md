@@ -24,7 +24,7 @@ The following shows an example request that specifies only the required fields.
 curl -X POST -H "AuthenticationToken: <access token goes here>" -H "DeveloperToken: <developer token goes here>" -H "Content-Type: application/json" --data "{\"storeName\": \"Contoso Sports\",\"storeUrl\": \"https://contoso.com\",\"notificationEmail\": [\"someone@example.com\"]}"  https://content.api.ads.microsoft.com/v9.1/bmc/stores
 ```
 
-If the request succeeds, the body of the response is the [Store](store-resource.md#store) object. The object contains the fields that you specified in the request plus all optional fields that provide default values. The `merchantId` field contains the new store's ID and the `storeStatus` field indicates whether the store is approved. If the status is Disapproved, the [StoreStatus](store-resource.md#storestatus) object includes the `message` field which indicates why the store wasn't approved.
+If the request succeeds, the body of the response contains a [Store](store-resource.md#store) object. The object contains the fields that you specified in the request plus all optional fields that provide default values. The `merchantId` field contains the new store's ID and the `storeStatus` field indicates whether the store is approved. 
 
 ```json
 {

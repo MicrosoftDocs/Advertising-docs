@@ -111,15 +111,15 @@ Defines a store in Microsoft Merchant Center.
 
 |Name|Value|Type
 |-|-|-
-|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, then both stores block aggregators. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Is **true** if you want to prevent your products from showing up in aggregators' ads on Bing.|Boolean
+|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads from your store. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Is **true** if you want to prevent your products from showing up in aggregators' ads on Bing. If you have two stores (one for the United States and one for the United Kingdom) that use http:\//www.contoso.com and either one of them blocks aggregators, then both stores block aggregators.|Boolean
 |isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Is **true** if your store's website is SSL enabled.|Boolean|
 |merchantId|The store's ID.|Unsigned long
-|notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store.|String[]
+|notificationEmail|A list of recipients to receive notification emails. The emails notify you when the store is approved or if there are validation errors with the store.|String[]
 |notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. For example, en-US.|String
 |storeDescription|A description that describes the store's use.|String
 |storeName|The store's name.|String
 |storeStatus|The store's status.|[StoreStatus](#storestatus)
-|storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad.|String
+|storeUrl|The store's destination URL. The destination URL is the web page where people are directed to when they click your ad.|String
 
 
 ### StoreCollection
@@ -137,13 +137,13 @@ Defines a store to add to Microsoft Merchant Center.
 
 |Name|Value|Type|Required
 |-|-|-|-
-|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads for the entire domain of your store. For example, if there are two stores (one for the United States and one for the United Kingdom) that use http://www.contoso.com and either one of them blocks aggregators, then both stores block aggregators. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Set to **true** to prevent your products from showing up in aggregators' ads on Bing. Defaults to **false**.|Boolean|No
-|isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Set to **true** if your store's website is SSL enabled.<br/><br/>Defaults to **true**. If **false** the store is disapproved.|Boolean|No
-|notificationEmail|A list of recipients to receive technical notification emails. The emails notify you when the store is approved or if there are validation errors with the store. The maximum number of email addresses that you can specify is 14.|String[]|Yes
+|isBlockAggregator|A Boolean value that indicates whether you want to prevent aggregators from serving any ads from your store. Aggregators consolidate product offers from multiple, often unrelated, businesses. By default, aggregators can include your catalog in their ads.<br/><br/>Set to **true** to prevent your products from showing up in aggregators' ads on Bing. If you have two stores (one for the United States and one for the United Kingdom) that use http:\//www.contoso.com and either one of them blocks aggregators, then both stores block aggregators.<br/><br/>Defaults to **false**.|Boolean|No
+|isSslCheckout|A Boolean value that indicates whether your store is SSL enabled. All stores must have SSL log-in and checkout pages. Set to **true** if your store's website is SSL enabled. If **false** the store is disapproved.<br/><br/>Defaults to **true**.|Boolean|No
+|notificationEmail|A list of recipients to receive notification emails. The emails notify you when the store is approved or if there are validation errors with the store. The maximum number of email addresses that you may specify is 14.|String[]|Yes
 |<a name="notificationlanguage"></a>notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE (German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
-|<a name="storedescription"></a>storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]). If not specified, the description defaults to the store's name.|String|No
-|<a name="storename"></a>storeName|The store's name. The name must be unique within Bing Merchant Center, is limited to a maximum of 70 characters, and may contain only alphanumeric characters ([a-zA-Z0-9]). The store's name appears in your product ads, so be sure to use a name that accurately represents your website.|String|Yes
-|<a name="storeurl"></a>storeUrl|The store's destination URL. The destination URL is the web page people are directed to when they click your ad. The URL must be well formed and have a maximum of 1,024 characters. You must <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">verify and claim your website's URL</a>. Stores are disapproved if Microsoft cannot verify that your website is SSL compliant. Merchant websites must have SSL log-in and checkout pages. Verify that your SSL certificates are valid.|String|Yes
+|<a name="storedescription"></a>storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]).|String|No
+|<a name="storename"></a>storeName|The store's name. Because the store's name appears in your product ads, be sure to use a name that accurately represents your website. The name must:<ul><li>Be unique within Bing Merchant Center</li><li>Contain no more than 70 characters</li><li>Contain only alphanumeric characters ([a-zA-Z0-9])</li></ul>|String|Yes
+|<a name="storeurl"></a>storeUrl|The store's destination URL. The destination URL is the web page where people are directed to when they click your ad. The URL must be well formed and have a maximum of 1,024 characters. You must <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">verify and claim your website's URL</a>. Stores are disapproved if Microsoft cannot verify that your website is SSL compliant. Merchant websites must have SSL log-in and checkout pages. Verify that your SSL certificates are valid.|String|Yes
 
 
 ### StoreStatus

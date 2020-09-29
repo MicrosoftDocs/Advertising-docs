@@ -31,7 +31,7 @@ The response body is a [ProductStatuses](productstatus-resource.md#productstatus
 }
 ```
 
-Here's what the response looks like when the products have their status set to Warning and Disapproved. The `itemLevelIssues` field contains the list of issues that you should address.
+Here's what the response looks like when products have their status set to Warning and Disapproved. The `itemLevelIssues` field contains the list of issues that you should address.
 
 
 ```json

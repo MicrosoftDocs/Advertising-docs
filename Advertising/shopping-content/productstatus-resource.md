@@ -38,14 +38,14 @@ These are the templates that you append to the [base URI](#base-uri) to create a
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a summary view of the status of product offers in a store. This returns the number of offers approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>It may take up to two hours for the summary information to be available.|Request: N/A<br/>Response: [ProductStatusesSummary](#productstatusessummary)
+|Get|Gets a summary view of the status of product offers in a store. The service returns the number of offers that are approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>It may take up to two hours from the time an offer's status changes to the time it's reflected in the summary view.|Request: N/A<br/>Response: [ProductStatusesSummary](#productstatusessummary)
 
 
 ### /stores/{merchantId}/productstatuses 
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a detail view of the status of product offers in a store. Details are returned for products with a status of disapproved or warning. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>This request gets the first 25 statuses only. To page through all product status details, use the *max-results* and *continuation-token* [query parameters](#query-parameters).|Request: N/A<br/>Response: [ProductStatuses](#productstatuses)
+|Get|Gets a detail view of the status of product offers in a store. Details are returned only for products with a status of Disapproved or Warning. Set `{merchantId}` to the ID of the store that you want to get the statuses from.<br/><br/>The [max-results](#maxresults) query parameter determines the number of offers that the service returns. To page through all offers, use the [continuation-token](#continuationtoken) query parameter.|Request: N/A<br/>Response: [ProductStatuses](#productstatuses)
 
 
 ## Query parameters
@@ -127,7 +127,7 @@ Defines a list of the product offers that have issues.
 |Name|Value|Type
 |-|-|-
 |nextPageToken|The token to set the [continuation-token](#continuationtoken) query parameter to if there are more product offers available to get.|String
-|resources|The list of product offers that have issues. The [max-results](#maxresults) query parameter determines the maximum number of offers in the list; the actual number may be less.|[ProductStatus](#productstatus)[]
+|resources|The list of product offers that have issues. The [max-results](#maxresults) query parameter determines the maximum number of offers in the list; the actual number returned may be less.|[ProductStatus](#productstatus)[]
 
 
 ### ProductStatusesSummary
