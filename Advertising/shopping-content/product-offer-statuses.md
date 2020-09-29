@@ -16,14 +16,14 @@ ms.author: "scottwhi"
 >
 > All Store programming elements and documentation are subject to change during the beta.
 
-To get a list of product offers in your store that have their status set to Disapproved or Warning, use the [get product statuses template](productstatuses-resource.md#storesmerchantidproductstatuses). 
+To get a list of product offers in your store that have their status set to Disapproved or Warning, use the [get product statuses template](productstatus-resource.md#storesmerchantidproductstatuses). 
 
 
 ```curl
 curl -H "AuthenticationToken: <access token goes here>" -H "DeveloperToken: <developer token goes here>"  https://content.api.ads.microsoft.com/v9.1/bmc/stores/12345/productstatuses
 ```
 
-The response body is a [ProductStatuses](productstatuses-resource.md#productstatuses) object. If the store doesn't contain products with Disapproved or Warning statuses, the `resources` field contains an empty array.
+The response body is a [ProductStatuses](productstatus-resource.md#productstatuses) object. If the store doesn't contain products with Disapproved or Warning statuses, the `resources` field contains an empty array.
 
 ```json
 {
@@ -108,7 +108,7 @@ The typically calling pattern is to call this template in a loop until the respo
 
 The ProductStatuses resource offers a summary view of the status of product offers in a store. The view reports approved and disapproved offers along with offers that are pending review or are about to expire.
 
-To request a summary view, use the [summary view template](productstatuses-resource.md#storesmerchantidproductstatusessummary). Set `{merchantId}` to the ID of the store that you want the view from.
+To request a summary view, use the [summary view template](productstatus-resource.md#storesmerchantidproductstatusessummary). Set `{merchantId}` to the ID of the store that you want the view from.
 
 ```curl
 curl -H "AuthenticationToken: <access token goes here>" -H "DeveloperToken: <developer token goes here"  https://content.api.ads.microsoft.com/v9.1/bmc/stores/12345/productstatusessummary
