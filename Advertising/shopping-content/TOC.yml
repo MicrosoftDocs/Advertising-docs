@@ -18,12 +18,16 @@
   href: how-get-status-product-offers.md
 - name: Managing your catalogs
   href: manage-catalogs.md
+- name: Managing your stores
+  href: manage-stores.md
+- name: Get product statuses
+  href: product-offer-statuses.md
 - name: Code Examples
   href: code-examples.md
   displayName: .net c# csharp java
   items:
-  - name: Authenticating Microsoft Account credentials
-    href: code-example-authentication-oauth.md
+  # - name: Authenticating Microsoft Account credentials
+  #   href: code-example-authentication-oauth.md
   - name: Creating a batch request
     href: code-example-create-batch-request.md
   - name: Managing products

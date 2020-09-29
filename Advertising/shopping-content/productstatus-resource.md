@@ -19,13 +19,6 @@ ms.author: "scottwhi"
 Use the ProductStatuses resource to get the status of product offers in a store.
 
 
-<!--
-For an overview of how the process works, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
-
-For a code example that shows how to get the catalog's status and download the report, see [Downloading the Catalog Status Report](../shopping-content/code-examples.md#status).
--->
-
-
 ## Base URI
 
 The following is the base URI that you append the [templates](#templates) to.  
@@ -45,14 +38,14 @@ These are the templates that you append to the [base URI](#base-uri) to create a
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a summary view of the status of product offers in a store. This returns the number of offers approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get the statuses from.|Request: N/A<br/>Response:[ProductStatusesSummary](#productstatusessummary)
+|Get|Gets a summary view of the status of product offers in a store. This returns the number of offers approved, disapproved, and expiring in the store. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>It may take up to two hours for the summary information to be available.|Request: N/A<br/>Response: [ProductStatusesSummary](#productstatusessummary)
 
 
 ### /stores/{merchantId}/productstatuses 
 
 |HTTP Verb|Description|Resource
 |-|-|-
-|Get|Gets a detail view of the status of product offers in a store. Details are returned for products with a status of disapproved or warning. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>This request get the first 25 statuses only. To page through all product status details, use the *max-results* and *start-token* [query parameters](#query-parameters).|Request: N/A<br/>Response:[ProductStatuses](#productstatuses)
+|Get|Gets a detail view of the status of product offers in a store. Details are returned for products with a status of disapproved or warning. Set `{merchantId}` to the ID of the store to get the statuses from.<br/><br/>This request gets the first 25 statuses only. To page through all product status details, use the *max-results* and *continuation-token* [query parameters](#query-parameters).|Request: N/A<br/>Response: [ProductStatuses](#productstatuses)
 
 
 ## Query parameters
@@ -99,11 +92,8 @@ Defines an error.
 
 |Name|Value|Type
 |-|-|-
-|domain|For internal use only.|String
-|location|Not used.|String
-|locationType|Not used.|String
+|code|The reason why the request failed. |String
 |message|A description of the error.|String
-|reason|The reason why the request failed.|String
 
 
 ### ErrorResponse
@@ -126,7 +116,7 @@ Defines a product offer's status.
 |itemLevelIssues|The list of issues with the product offer.|[ProductStatusItemLevelIssue](#productstatusitemlevelissue)[]
 |lastUpdateDate|The date and time when the product offer was last updated.|DateTime 
 |productId|The product's ID.|String
-|status|The product's approval status. Possible values are:<ul><li>Disapproved</li><li>Warning</li></ul>A warning status indicates that the product has issues that should be addressed but they won't prevent the product offer from serving.|String
+|status|The product's approval status. Possible values are:<ul><li>Disapproved</li><li>Warning</li></ul>Disapproved products are not served. Warnings indicate that the product has issues that you should address but they don't prevent the product offer from serving. You should fix the issues and resubmit the product offer.|String
 |title|The product's title|String
 
 
@@ -159,7 +149,7 @@ Defines an issue with the product offer.
 
 |Name|Value|Type
 |-|-|-
-|attributeName|The name of the product offer's property that is causing the issue.|String
+|attributeName|The name of the product offer's property that is causing the issue. Not all issues identify a property. For example, the object does not include this field if the issue is caused by more than one property.|String
 |code|The error code that identifies the issue. For example, TitleTooLongErr.|String
 |description|A description that explains the issue with the property.|String
 |servability|A value that indicates whether the issue prevents the offer from serving. Possible values are:<ul><li>Disapproved</li><li>Unaffected</li></ul>If Disapproved, the offer will not serve.|String
