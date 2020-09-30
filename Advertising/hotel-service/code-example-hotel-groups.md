@@ -1,7 +1,7 @@
 ---
 title: "Hotel Group Code Example"
 description: Shows how to add, list, and update hotel groups.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

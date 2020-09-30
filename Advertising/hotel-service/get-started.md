@@ -1,7 +1,7 @@
 ---
 title: "Get Started with the Hotel API"
 description: Provides details about getting credentials and authenticating users.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

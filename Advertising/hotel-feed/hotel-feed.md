@@ -1,7 +1,7 @@
 ---
 title: "Hotel Feed"
 description: Hotel feed overview.
-ms.service: "hotel-ads-hotel-feed"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

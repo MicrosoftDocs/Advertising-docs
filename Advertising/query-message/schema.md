@@ -1,7 +1,7 @@
 ---
 title: Query message schema
 description: Lists the Query schemas.
-ms.service: "hotel-ads-query-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

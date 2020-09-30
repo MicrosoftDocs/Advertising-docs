@@ -1,7 +1,7 @@
 ---
 title: "Hotel Code Example"
 description: Shows you how to list, get, and update hotels.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

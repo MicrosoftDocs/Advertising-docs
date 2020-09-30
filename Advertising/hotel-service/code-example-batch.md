@@ -1,7 +1,7 @@
 ---
 title: "Batch Processing Code Example"
 description: Shows how to use batch processing to send multiple requests in a single HTTP request.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

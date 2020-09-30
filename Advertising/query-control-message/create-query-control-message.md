@@ -1,7 +1,7 @@
 ---
 title: Create a QueryControl message
 description: Shows how to create a QueryControl message, which describes the default values and overrides for Query messages. 
-ms.service: "hotel-ads-query-control-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

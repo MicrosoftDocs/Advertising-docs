@@ -1,7 +1,7 @@
 ---
 title: "Hotel Ads Reporting Code Example"
 description: Shows how to request and download a hotel ads report.
-ms.service: "hotel-ads-hotel-service"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

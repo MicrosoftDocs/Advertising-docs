@@ -1,7 +1,7 @@
 ---
 title: "Points of Sale Feed"
 description: Points of sale landing page
-ms.service: "hotel-ads-pos-feed"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen

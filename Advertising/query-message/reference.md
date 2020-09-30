@@ -1,7 +1,7 @@
 ---
 title: Query message reference
 description: Describes the schema elements of a Query message.
-ms.service: "hotel-ads-query-message"
+ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen
@@ -24,8 +24,6 @@ For information about processing Query messages, see [Processing a Query Message
 
 ----
 
- 
-<a name="query"></a> 
 
 ## Query
 
@@ -33,11 +31,8 @@ Defines the root element of a Query message.
 
 |Element|Description|Children
 |-|-|-
-|Query|The root element in a Query message.|[Query Type](#querytype)
+|Query|The root element in a Query message.|[Query Type](#query-type)
 
-
-
-<a name="querytype"></a> 
 
 ## Query Type
 
@@ -52,8 +47,6 @@ Defines a Query message.
  -->  
 
 
-<a name="combinedquerygroup"></a> 
-
 ## combinedQueryGroup
 
 Defines the list of properties that Bing wants data for, and the options for the way it specifies the dates in the request. 
@@ -65,9 +58,6 @@ Defines the list of properties that Bing wants data for, and the options for the
 |PropertyList|A list of one or more hotel IDs that you must return itinerary data for. |[propertyListType](#propertylisttype)
 
 
-
-<a name="pointquerygroup"></a> 
-
 ## pointQueryGroup
 
 Defines a check-in date query. 
@@ -77,9 +67,6 @@ Defines a check-in date query.
 |Checkin|The itinerary's check-in date in the form, YYYY-mm-dd. |Date
 |Nights|The number of nights stay. |PositiveInteger
 
-
-
-<a name="rangequerygroup"></a> 
 
 ## rangeQueryGroup
 
@@ -92,9 +79,6 @@ Defines a date range query.
 |Nights|The number of nights stay. The Query message contains this element if your [Hint](../hint-message/reference.md) message does not include the \<StaysIncludingRange\> element.<br /><br />Return data only for itineraries that fall within the check-in date range, including of the first and last dates.  |PositiveInteger
 |AffectedNights|The affected number of nights stay. The Query message contains this element if your [Hint](../hint-message/reference.md) message includes the \<StaysIncludingRange\> element.<br /><br />Return data for all itineraries whose check-out date intersects the date range.  |PositiveInteger
 
-
-
-<a name="propertylisttype"></a> 
 
 ## PropertyListType
 

@@ -5,7 +5,7 @@ author: "swhite-msft"
 manager: ehansen
 
 ms.author: "scottwhi"
-ms.service: "bingads-scripts"
+ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
 
@@ -32,6 +32,11 @@ These single account limits are the per script (they are not the aggregation of 
   
 - A script can write a maximum 100 KB of output to the console log. When you exceed the limit, Scripts logs a warning.
 
+
+## Calling pattern to avoid entity limits
+
+For information about handling entity limits in your scripts, see [Calling pattern to avoid entity limits](best-practices.md#calling-pattern-to-avoid-entity-limits) in [Best practices](best-practices.md).
+ 
 
 ## Multi-account limits
 
