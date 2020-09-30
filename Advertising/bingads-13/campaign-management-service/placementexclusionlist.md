@@ -10,7 +10,7 @@ description: Defines a website exclusion list in the manager account (customer) 
 Defines a website exclusion list in the manager account (customer) shared library. 
 
 > [!NOTE] 
-> Account level website exclusions are available for customers in the pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 697). You can only view website exclusion lists in the redesigned Microsoft Advertising UI i.e., via Tools -> Shared Library -> Website exclusion lists. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522).  
+> You can only view website exclusion lists in the redesigned Microsoft Advertising UI i.e., via Tools -> Shared Library -> Website exclusion lists. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522).  
 
 A manager account can own up to three website exclusion lists. Each list can contain up to 10,000 negative sites. 
 
