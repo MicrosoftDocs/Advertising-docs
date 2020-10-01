@@ -143,7 +143,7 @@ Defines a store to add to Microsoft Merchant Center.
 |<a name="notificationlanguage"></a>notificationLanguage|The language used to write the notification emails. The language is in the form, \<language>-<country/region>. The following are the possible case-insensitive values that you may specify.<ul><li>en-US (English-United States)</li><li>en-AU (English-Australia)</li><li>en-GB (English-United Kingdom)</li><li>fr-FR (French-France)</li><li>de-DE (German-Germany)</li><li>ja-JP (Japanese-Japan)</li></ul>|String|Yes
 |<a name="storedescription"></a>storeDescription|A description that describes the store's use. The description is limited to a maximum of 350 characters and may contain only alphanumeric characters ([a-zA-Z0-9]).|String|No
 |<a name="storename"></a>storeName|The store's name. Because the store's name appears in your product ads, be sure to use a name that accurately represents your website. The name must:<ul><li>Be unique within Bing Merchant Center</li><li>Contain no more than 70 characters</li><li>Contain only alphanumeric characters ([a-zA-Z0-9])</li></ul>|String|Yes
-|<a name="storeurl"></a>storeUrl|The store's destination URL. The destination URL is the web page where people are directed to when they click your ad. The URL must be well formed and have a maximum of 1,024 characters. You must <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">verify and claim your website's URL</a>. Stores are disapproved if Microsoft cannot verify that your website is SSL compliant. Merchant websites must have SSL log-in and checkout pages. Verify that your SSL certificates are valid.|String|Yes
+|<a name="storeurl"></a>storeUrl|The store's destination URL. The destination URL is the web page where people are directed to when they click your ad. The URL must not redirect to another location. The URL must be well formed and have a maximum of 1,024 characters. You must <a href="https://help.ads.microsoft.com/#apex/3/en/50888/1" target="_blank">verify and claim your website's URL</a>. Stores are disapproved if Microsoft cannot verify that your website is SSL compliant. Merchant websites must have SSL log-in and checkout pages. Verify that your SSL certificates are valid.|String|Yes
 
 
 ### StoreStatus
@@ -152,7 +152,7 @@ Defines the store's status.
 
 |Name|Value|Type
 |-|-|-
-|message|The reason why the store was disapproved. The object includes this field only if `status` is Disapproved.<br/><br/>Note that this field may contain a reason code or a message string. The following are the possible reason codes.<ul><li>Adult &mdash;</li><li>CheckOutProcess &mdash;</li><li>DestinationUrl &mdash;</li><li>NoProducts &mdash;</li><li>NotSupportedMarket &mdash;</li><li>ProductUrl &mdash;</li><li>ProfessionalSite &mdash;</li><li>UnSecuredCheckOut &mdash;</li></ul>|String
+|message|The reason why the store was disapproved. The object includes this field only if `status` is Disapproved.|String
 |status|The store's status. The following are the possible values.<ul><li>Approved</li><li>Disapproved</li><li>ManualReview</li></ul>If the store is disapproved, see `message` for the reason.<br/><br/>A store that was initially automatically approved, may move from Approved to ManualReview. You cannot add products to a store that's under manual review and products in the store will not serve.<br/><br/>Depending on the disapproval reason, you may be able to fix the issue by using the Microsoft Ads application. Otherwise, you will need to create a new store with appropriate values.|String
 
 

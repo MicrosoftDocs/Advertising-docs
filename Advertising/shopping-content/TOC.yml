@@ -14,14 +14,14 @@
   href: manage-products.md
 - name: Updating product pricing and availability
   href: manage-product-pricing.md
-- name: How do I get the status of product offers?
-  href: how-get-status-product-offers.md
+- name: Get the status of product offers
+  href: product-offer-statuses.md
 - name: Managing your catalogs
   href: manage-catalogs.md
 - name: Managing your stores
   href: manage-stores.md
-- name: Get product statuses
-  href: product-offer-statuses.md
+- name: How do I get the status of product offers?
+  href: how-get-status-product-offers.md
 - name: Code Examples
   href: code-examples.md
   displayName: .net c# csharp java
