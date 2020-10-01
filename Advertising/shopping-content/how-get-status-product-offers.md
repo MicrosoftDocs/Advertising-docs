@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 When you add or update a product offer in a catalog or store, the offer goes through an initial validation before going through editorial review. That process can take up to 36 hours. To see whether the offer passed the review process, use the [Status](../shopping-content/status-resource.md) resource. 
 
 > [!NOTE]
-> To get a list of products that have their status set to Disapproved or Warning, see [Getting the status of your product offers](product-off-statuses.md).
+> To get a list of products that have their status set to Disapproved or Warning, see [Getting the status of your product offers](product-offer-statuses.md).
 
 The following is the base URI that you use to get the `Status` resource.
 
