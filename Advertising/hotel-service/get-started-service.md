@@ -15,7 +15,7 @@ Calling the Hotel API requires an access token but getting an access token requi
 ```powershell
 $clientId = "your application ID goes here"
  
-Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=bingads.manage offline_access&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient"
+Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=https://ads.microsoft.com/ads.manage&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient"
  
 $code = Read-Host "Please enter the code"
  

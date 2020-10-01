@@ -3,7 +3,7 @@ title: "Release Notes for Shopping Content API"
 description: "Describes the history of changes made to the Content API."
 author: "swhite-msft"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
@@ -11,6 +11,15 @@ ms.author: "scottwhi"
 # Release Notes for Shopping Content API
 
 This topic describes recent changes made to Version 9.1 of the Content API.
+
+
+## October 1, 2020
+
+This release includes the following changes:
+
+- Added the [Store](store-resource.md) resource. This resource lets you add and get stores in Microsoft Merchant Center. [Read more](manage-stores.md). The resource is available to closed-beta participants only. 
+- Added the [ProductStatuses](productstatus-resource.md) resource. This resource lets you get the status of product offers in a store. [Read more](product-offer-statuses.md). The resource is available to closed-beta participants only. 
+
 
 ## August 13, 2019
 
