@@ -4,7 +4,7 @@ description: "Code sample showing how to download a catalog status report with t
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 

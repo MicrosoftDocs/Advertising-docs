@@ -4,7 +4,7 @@ description: "A list of links providing more information on each operation avail
 author: "swhite-msft"
 manager: "ehnasen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---

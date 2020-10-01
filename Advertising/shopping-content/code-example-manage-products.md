@@ -1,10 +1,10 @@
 ---
 title: "Managing Products Code Example"
-description: "Code sample showing how to manage catalogs with the Content API."
+description: "Code sample showing how to manage products with the Content API."
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 

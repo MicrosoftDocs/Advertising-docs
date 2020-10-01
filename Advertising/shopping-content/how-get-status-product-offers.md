@@ -4,7 +4,7 @@ description: "Learn how to get the status of product offers with the Content API
 author: "swhite-msft"
 manager: "ehansen"
 
-ms.service: "shopping-content-api"
+ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
@@ -13,10 +13,18 @@ ms.author: "scottwhi"
 
 When you add or update a product offer in a catalog or store, the offer goes through an initial validation before going through editorial review. That process can take up to 36 hours. To see whether the offer passed the review process, use the [Status](../shopping-content/status-resource.md) resource. 
 
+> [!NOTE]
+> To get a list of products that have their status set to Disapproved or Warning, see [Getting the status of your product offers](product-offer-statuses.md).
+
 The following is the base URI that you use to get the `Status` resource.
 
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/`
 
+To get the status of product offers, append the following template to the base URI.
+
+`{bmcMerchantId}/catalogs/{catalogId}/status`
+
+Set `{bmcMerchantId}` to your BMC store ID and set `{catalogId}` to the ID of the catalog that contains the product offers that you want to get the status of. 
 
 Each HTTP request must include the user's OAuth access token and your developer token. To specify the user's access token, set the [AuthenticationToken](../shopping-content/status-resource.md#authtoken) header. To specify your developer token, set the [DeveloperToken](../shopping-content/status-resource.md#devtoken) header.
 
@@ -28,12 +36,6 @@ If you manage catalogs on behalf of other customers, you must set:
 You do not need to specify the access token or developer token to download the report; you only need to specify them to get the status.
 
 By default, the Content API uses JSON objects to represent the status. To use XML, set the [alt](../shopping-content/status-resource.md#alt) query parameter to XML.
-
-To get the status of product offers, append the following template to the base URI.
-
-`{bmcMerchantId}/catalogs/{catalogId}/status`
-
-Set `{bmcMerchantId}` to your BMC store ID and set `{catalogId}` to the ID of the catalog that contains the product offers that you want to get the status of. 
 
 Send an HTTP GET request to the resulting URL. The response contains a [Status](../shopping-content/status-resource.md#status) object that contains the number of offers that passed or failed the review process in the last 30 days. If an offer failed the review, the `Status` resource includes a URL that you can use to download a report that describes why the offer failed.
 
