@@ -138,7 +138,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Campaign Type](#campaigntype)|All|
 |[Client Id](#clientid)|All|
 |[Country Code](#countrycode)|Shopping|
-|[Domain Language](#domainlanguage)|DynamicSearchAds|
+|[Domain Language](#domainlanguage)|Search\*<br>DynamicSearchAds|
 |[Experiment Id](#experimentid)|Search|
 |[Final Url Suffix](#finalurlsuffix)|All|
 |[Id](#id)|All|
@@ -148,18 +148,20 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Language](#language)|All|
 |[LocalInventoryAdsEnabled](#language)|Shopping|
 |[Modified Time](#modifiedtime)|All|
-|[Page Feed Ids](#pagefeedids)|DynamicSearchAds|
+|[Page Feed Ids](#pagefeedids)|Search\*<br>DynamicSearchAds|
 |[Parent Id](#parentid)|All|
 |[Priority](#priority)|Shopping|
 |[Quality Score](#qualityscore)|All|
-|[Source](#source)|DynamicSearchAds|
+|[Source](#source)|Search\*<br>DynamicSearchAds|
 |[Status](#status)|All|
 |[Store Id](#storeid)|Audience<br>Shopping|
 |[Sub Type](#subtype)|Shopping|
 |[Target Setting](#targetsetting)|All|
 |[Time Zone](#timezone)|All|
 |[Tracking Template](#trackingtemplate)|All|
-|[Website](#website)|DynamicSearchAds|
+|[Website](#website)|Search\*<br>DynamicSearchAds|
+
+\* Only supported for accounts in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) or [GetAccountPilotFeatures](../customer-management-service/getaccountpilotfeatures.md) returns 791). 
 
 ## <a name="adscheduleusesearchertimezone"></a>Ad Schedule Use Searcher Time Zone
 Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
@@ -324,7 +326,7 @@ The type of the campaign.
 
 The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*.
 
-**Add:** Required for Audience campaigns, and otherwise this field is optional. If not specified, then default value of *Search* is used and you cannot set Audience, Dynamic Search Ads, or Shopping campaign settings. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
+**Add:** Optional. If not specified, then default value of *Search* is used. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -373,9 +375,12 @@ Your website language determines where your ads are eligible to appear. For exam
 
 The supported domain languages are Dutch, English, French, German, Italian, Spanish, and Swedish. 
 
-Note, if you set the campaign [Language](#language) or ad group [Language](ad-group.md#language), they will be ignored.
+Note, if you set the campaign [Language](#language) or ad group [Language](ad-group.md#language), they will be ignored.  
 
-**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
+> [!NOTE]
+> Experiments are not supported for [mixed campaigns](../guides/mixed-campaigns.md) with dynamic search ads settings. Experiment campaigns and base campaigns of experiments cannot include dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). If you intend to use this campaign for experiments, do not include dynamic search ads settings. If an existing experiment is already based on this campaign, you cannot update the campaign to include dynamic search ads settings.  
+
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the domain language.      
 **Delete:** Read-only  
 
@@ -502,8 +507,11 @@ The [Source](#source) determines whether or not Microsoft Advertising will use t
 > [!TIP]
 > See the [Page Feeds](../guides/page-feeds.md) technical guide for an implementation overview. 
 
-**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
-**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.      
+> [!NOTE]
+> Experiments are not supported for [mixed campaigns](../guides/mixed-campaigns.md) with dynamic search ads settings. Experiment campaigns and base campaigns of experiments cannot include dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). If you intend to use this campaign for experiments, do not include dynamic search ads settings. If an existing experiment is already based on this campaign, you cannot update the campaign to include dynamic search ads settings.  
+
+**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types.  
+**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.      
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
@@ -551,8 +559,11 @@ Possible values are in the table below.
 |All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 
-**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*.  
-**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is set for the update, this setting is not changed.      
+> [!NOTE]
+> Experiments are not supported for [mixed campaigns](../guides/mixed-campaigns.md) with dynamic search ads settings. Experiment campaigns and base campaigns of experiments cannot include dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). If you intend to use this campaign for experiments, do not include dynamic search ads settings. If an existing experiment is already based on this campaign, you cannot update the campaign to include dynamic search ads settings.  
+
+**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*.  
+**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types. If no value is set for the update, this setting is not changed.      
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -665,6 +676,9 @@ The domain name of the website that you want to target for dynamic search ads.
 
 The length of the string is limited to 2,048 characters. If the domain name includes *www* it will be trimmed and not used.
 
-**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
+> [!NOTE]
+> Experiments are not supported for [mixed campaigns](../guides/mixed-campaigns.md) with dynamic search ads settings. Experiment campaigns and base campaigns of experiments cannot include dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). If you intend to use this campaign for experiments, do not include dynamic search ads settings. If an existing experiment is already based on this campaign, you cannot update the campaign to include dynamic search ads settings.  
+
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. Optional if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](#campaigntype) field is set to *Search*, and if the [Experiment Id](#experimentid) field is not set. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the domain name.      
 **Delete:** Read-only  

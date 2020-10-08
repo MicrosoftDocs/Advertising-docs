@@ -11,6 +11,10 @@ dev_langs:
 # Ad Group Dynamic Search Ad Target Record - Bulk
 Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.  
 
+The Ad Group Dynamic Search Ad Target record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
+- Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
+- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+
 You can download all *Ad Group Dynamic Search Ad Target* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group dynamic search ad target if a valid [Parent Id](#parentid) value is provided. 
@@ -21,8 +25,7 @@ Format Version,,,,,,,,,6.0,,,,,,,,
 Ad Group Dynamic Search Ad Target,Paused,,-1113,,,ClientIdGoesHere,,0.5,Bulk Ad Group Dynamic Search Ad Target,,{_promoCode}=PROMO1; {_season}=summer,Url,Category,PageContent,contoso.com,US/CA/SFO,flowers
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupDynamicSearchAdTarget* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupDynamicSearchAdTarget* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file.  
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();

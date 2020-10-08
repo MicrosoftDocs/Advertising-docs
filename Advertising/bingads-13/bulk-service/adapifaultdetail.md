@@ -4,10 +4,10 @@ ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
+description: Defines a Bulk Ad API fault detail object that operations return when generic errors occur, such as an authentication error.
 ---
 # AdApiFaultDetail Data Object - Bulk
-Defines a fault object that operations return when generic errors occur, such as an authentication error.
+Defines a Bulk Ad API fault detail object that operations return when generic errors occur, such as an authentication error.
 
 ## Syntax
 ```xml

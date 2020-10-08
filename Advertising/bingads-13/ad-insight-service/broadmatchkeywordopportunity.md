@@ -66,8 +66,6 @@ The [BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md) object deriv
 |<a name="suggestedbid"></a>SuggestedBid|The suggested bid that may result in your ads serving on the first page of the search query results.|**double**|
 |<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|
 
-## <a name="inheritedelements"></a>Inherited Elements
-
 ### <a name="inheritedelementsopportunity"></a>Inherited Elements from Opportunity
 The [BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md) object derives from the [Opportunity](opportunity.md) object, and inherits the following elements: [OpportunityKey](#opportunitykey). The descriptions below are specific to [BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md), and might not apply to other objects that inherit the same elements from the [Opportunity](opportunity.md) object.  
 

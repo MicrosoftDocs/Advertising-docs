@@ -11,6 +11,9 @@ Responsive search ads in the Search network allow you to set between 3-15 unique
 
 The responsive ads shown to users appear identical to expanded text ads i.e., up to 3 headlines (title parts via expanded text ads) and 2 descriptions (text parts via expanded text ads). Two headlines and one description will always be shown in the ad. However, depending on the screen size, your ad may show without the third headline or second description.
 
+> [!NOTE]
+> Responsive search ads can only be created in Search campaigns where the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchStandard". If the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support responsive search ads.  
+
 ## <a name="bulk"></a>Bulk API for Responsive Search Ads
 The [Responsive Search Ad](../bulk-service/responsive-search-ad.md) Bulk record is available for managing responsive search ads i.e., you can upload or download data in this format.
 

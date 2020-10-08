@@ -9,14 +9,15 @@ description: Setup App Install ads with the Bing Ads API.
 # App Install Ads
 App Install Ads are similar to expanded text ads but provide direct links to your apps with a button, sending customers directly to the applicable store to download the application. This is an ideal solution for advertisers wanting to manage and drive downloads of their apps, rather than website traffic.
 
-App Install Ads automatically detect the customer’s mobile device and operating system, sending them to the corresponding Apple App Store or Google Play. You can also track conversions with the same conversion tracking partners as [App Ad Extensions](ad-extensions.md): AppsFlyer, Kochava, Tune, Singular, and Adjust. To learn more, see the Microsoft Advertising help article [What is an App Install Ad?](https://help.ads.microsoft.com/#apex/3/en/56836/0)
-
-Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create an expanded text ad with app ad extensions.
+App Install Ads automatically detect the customer's mobile device and operating system, sending them to the corresponding Apple App Store or Google Play. You can also track conversions with the same conversion tracking partners as [App Extensions](ad-extensions.md): AppsFlyer, Kochava, Tune, Singular, Adjust, and Branch. To learn more, see the Microsoft Advertising help article [What is an App Install Ad?](https://help.ads.microsoft.com/#apex/3/en/56836/0)
 
 > [!NOTE]
-> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.
+> App Install Ads are available in Australia, Brazil, Canada, France, Germany, India, the United Kingdom, and the United States on iOS and Android only. Only apps available in the United States in the Apple App Store and Google Play Store are currently supported. There is no support for Windows or Windows Phone. 
 > 
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
+
+> [!NOTE]
+> App install ads can only be created in Search campaigns where the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchStandard". If the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support app install ads.  
 
 ## <a name="bulk"></a>Bulk API for App Install Ads
 The [App Install Ad](../bulk-service/app-install-ad.md) Bulk record is available for managing app install ads.

@@ -11,6 +11,9 @@ The expanded text ad format works seamlessly on mobile, tablet and desktop devic
 
 ![expandedtextad](media/expanded-text-ad.png)
 
+> [!NOTE]
+> Expanded text ads can only be created in Search campaigns where the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchStandard". If the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support expanded text ads.  
+
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
 The [Expanded Text Ad](../bulk-service/expanded-text-ad.md) Bulk record is available for managing expanded text ads i.e., you can upload or download data in this format.
 

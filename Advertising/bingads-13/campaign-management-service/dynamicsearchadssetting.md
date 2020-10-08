@@ -4,10 +4,14 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the campaign level settings for a Dynamic Search Ads campaign.
+description: Defines the Dynamic Search Ads setting for a campaign.
 ---
 # DynamicSearchAdsSetting Data Object - Campaign Management
-Defines the campaign level settings for a Dynamic Search Ads campaign.
+Defines the Dynamic Search Ads setting for a campaign.  
+
+A dynamic search ads setting can only be created within certain campaign types.  
+- Dynamic search ads campaigns where [CampaignType](campaign.md#campaigntype) is set to "DynamicSearchAds". 
+- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [CampaignType](campaign.md#campaigntype) is set to "Search", and if the [ExperimentId](campaign.md#experimentid) element is not set.   
 
 ## Syntax
 ```xml

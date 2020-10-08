@@ -25,7 +25,7 @@ The *GetLabelAssociationsByEntityIdsRequest* object defines the [body](#request-
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityids"></a>EntityIds|The list of entity identifiers used to request label associations.<br/><br/>The maximum size of the list is 100 items per service request.|**long** array|
-|<a name="entitytype"></a>EntityType|Filters the returned associations by entity type.<br/><br/>The supported entity type values are *Campaign*, *AdGroup*, *Ad*, and *Keyword*.|[EntityType](entitytype.md)|
+|<a name="entitytype"></a>EntityType|Filters the returned associations by entity type.<br/><br/>The supported entity type values are [Campaign](entitytype.md#campaign), [AdGroup](entitytype.md#adgroup), [Ad](entitytype.md#ad), and [Keyword](entitytype.md#keyword).|[EntityType](entitytype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

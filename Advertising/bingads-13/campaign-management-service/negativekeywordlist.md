@@ -35,8 +35,6 @@ The [NegativeKeywordList](negativekeywordlist.md) object derives from the [Share
 |-----------|---------------|-------------|
 |<a name="itemcount"></a>ItemCount|The number of [SharedListItem](sharedlistitem.md) objects that are added to this shared list.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 
-## <a name="inheritedelements"></a>Inherited Elements
-
 ### <a name="inheritedelementssharedentity"></a>Inherited Elements from SharedEntity
 The [NegativeKeywordList](negativekeywordlist.md) object derives from the [SharedEntity](sharedentity.md) object, and inherits the following elements: [AssociationCount](#associationcount), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Name](#name), [Type](#type). The descriptions below are specific to [NegativeKeywordList](negativekeywordlist.md), and might not apply to other objects that inherit the same elements from the [SharedEntity](sharedentity.md) object.  
 

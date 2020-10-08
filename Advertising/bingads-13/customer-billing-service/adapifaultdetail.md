@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
+description: Defines a Customer Billing Ad API fault detail object that operations return when generic errors occur, such as an authentication error.
 ---
 # AdApiFaultDetail Data Object - Customer Billing
-Defines a fault object that operations return when generic errors occur, such as an authentication error.
+Defines a Customer Billing Ad API fault detail object that operations return when generic errors occur, such as an authentication error.
 
 ## Syntax
 ```xml

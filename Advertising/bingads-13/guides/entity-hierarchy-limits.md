@@ -341,6 +341,17 @@ The following table defines limits for campaign properties.
 |Name|The string can contain a maximum of 128 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
+## <a name="conversiongoals"></a>Conversion Goals
+The following table defines limits for conversion goal properties.
+
+|Property|Limit|
+|------------|---------|
+|ConversionWindowInMinutes|The minimum value supported is 1 minute. The maximum value supported is 129600 minutes (90 days).|
+|Name|The name of the conversion goal. The name can contain a maximum of 100 characters.|
+|ViewThroughConversionWindowInMinutes|The minimum value supported is 1 minute. The maximum value supported is 43200 minutes (30 days).|
+
+You can have up to 1,000 conversion goals per account, or 5,000 per customer. Having said that, you can have only one In-Store Transaction Goal per customer.
+
 ## <a name="customer"></a>Customers
 Defines a customer. All advertising activity is organized by customer. Each customer can have between one and six accounts, and be managed by up to 15 users.
 

@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a list of the pilot programs that are enabled for all of the customer's accounts.
+description: Gets a list of the feature pilot IDs that are enabled for all ad accounts owned by a customer (manager account).
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,12 @@ dev_langs:
   - python
 ---
 # GetCustomerPilotFeatures Service Operation - Customer Management
-Gets a list of the pilot programs that are enabled for all of the customer's accounts.
+Gets a list of the feature pilot IDs that are enabled for all ad accounts owned by a customer (manager account).
+
+> [!NOTE]
+> A pilot flag might only be enabled for a subset of ad accounts under a customer. Use the [GetAccountPilotFeatures](getaccountpilotfeatures.md) operation to get ad account level feature pilot IDs.  
+> 
+> Please note [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) might also return account level pilot IDs for internal use; however, for account level pilots you should ignore the results of [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md).  
 
 ## <a name="request"></a>Request Elements
 The *GetCustomerPilotFeaturesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +29,7 @@ The *GetCustomerPilotFeaturesRequest* object defines the [body](#request-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customerid"></a>CustomerId|The identifier of the customer used to get a list of pilot features.|**long**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer used to get a list of feature pilot IDs.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +41,7 @@ The *GetCustomerPilotFeaturesResponse* object defines the [body](#response-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identifies the pilot features that are enabled for all of the customer's accounts.<br/><br/>For example the following values correspond to active feature pilots. For more information about pilot participation please contact your account manager.<br/><br/>78 - Call Tracking<br/><br/>268 - Dynamic Search Ads<br/><br/>295 - Maximize Clicks Bid Strategy Type<br/><br/>296 - Maximize Conversions Bid Strategy Type<br/><br/>297 - Target CPA Bid Strategy Type<br/><br/>317 - Similar Remarketing Lists<br/><br/>340 - Microsoft Shopping Campaigns Enhanced CPC Bid Strategy Type<br/><br/>351 - Local Inventory Ads<br/><br/>388 - Microsoft Audience Network<br/><br/>522 - Redesigned Microsoft Advertising UI<br/><br/>567 - Azure AD Work and School Accounts<br/><br/>574 - Include in Conversions<br/><br/>579 - Customer List Audience<br/><br/>600 - Dynamic Search Ads Text Part 2<br/><br/>616 - View-through conversions<br/><br/>618 - Combined List Audience<br/><br/>626 - Multi-Image Ad Extensions<br/><br/>635 - Custom Parameters Limit Increase Phase 3<br/><br/>636 - Final Url Suffix Phase 3<br/><br/>637 - Cookie-Based Experiments<br/><br/>684 - Shopping Campaigns for Brands<br/><br/>697 - Manager Account Website Exclusion Lists<br/><br/>704 - Target ROAS Bid Strategy Type in UK/CA/AU/DE/FR<br/><br/>718 - Smart Shopping Campaigns<br/><br/>720 - Promotion Ad Extensions<br/><br/>721 - Target ROAS Bid Strategy Type in US<br/><br/>732 - Filter Link Ad Extensions<br/><br/>734 - Google Import As A Service<br/><br/>762 - Target Impression Share Bid Strategy Type<br/><br/>764 - Site Property Promotion Ad for Hotels<br/><br/>777 - Responsive Ads for Smart Shopping Campaigns<br/><br/>793 - Create Accounts on Behalf of Client|**int** array|
+|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identify the feature pilots that are enabled for all accounts owned by a customer (manager account).<br/><br/>For more information about pilot participation please contact your account manager.<br/><br/>For example the following values correspond to customer level feature pilots.<br/><br/>78 - Call Tracking<br/><br/>268 - Dynamic Search Ads<br/><br/>317 - Similar Remarketing Lists<br/><br/>351 - Local Inventory Ads<br/><br/>388 - Microsoft Audience Network<br/><br/>522 - Redesigned Microsoft Advertising UI<br/><br/>567 - Azure AD Work and School Accounts<br/><br/>574 - Include in Conversions<br/><br/>579 - Customer List Audience<br/><br/>600 - Dynamic Search Ads Text Part 2<br/><br/>616 - View-through conversions<br/><br/>618 - Combined List Audience<br/><br/>626 - Multi-Image Ad Extensions<br/><br/>635 - Custom Parameters Limit Increase Phase 3<br/><br/>636 - Final Url Suffix Phase 3<br/><br/>637 - Cookie-Based Experiments<br/><br/>684 - Shopping Campaigns for Brands<br/><br/>704 - Target ROAS Bid Strategy Type in UK/CA/AU/DE/FR<br/><br/>718 - Smart Shopping Campaigns<br/><br/>720 - Promotion Ad Extensions<br/><br/>721 - Target ROAS Bid Strategy Type in US<br/><br/>732 - Filter Link Ad Extensions<br/><br/>734 - Google Import As A Service<br/><br/>762 - Target Impression Share Bid Strategy Type<br/><br/>764 - Site Property Promotion Ad for Hotels<br/><br/>777 - Responsive Ads for Smart Shopping Campaigns<br/><br/>793 - Create Accounts on Behalf of Client<br/><br/>Please note the list of pilot IDs might also include [account level pilot IDs](getaccountpilotfeatures.md#featurepilotflags) for internal use. You should ignore account level pilot IDs returned by this operation and use the [GetAccountPilotFeatures](getaccountpilotfeatures.md) operation instead.|**int** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

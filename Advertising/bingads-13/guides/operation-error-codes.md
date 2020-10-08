@@ -5813,6 +5813,28 @@ Billing of the balance amount in the account failed.
 > This error could occur when attempting to delete an account. Before an account can be deleted the final billing must succeed.
 
 ***
+
+**Numeric Code**
+2207
+
+**Symbolic Error Code**
+Not applicable
+
+**Description**
+The GSTIN you entered doesn't match the business location on your registration. Please check your GSTIN and try again.
+
+***
+
+**Numeric Code**
+2208
+
+**Symbolic Error Code**
+Not applicable
+
+**Description**
+Microsoft Advertising encountered a system issue. Please try again later. 
+
+***
 ## 2500
 ***
 
@@ -7976,6 +7998,105 @@ Param3 in product target is invalid.
 ***
 
 **Numeric Code**
+3899
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionIdToAccountIdAssociationArrayShouldNotBeNullOrEmpty
+
+**Description**
+The list of ad extension to account associations cannot be null or empty.
+
+***
+
+**Numeric Code**
+3900
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionIdToAccountIdAssociationArrayLimitExceeded
+
+**Description**
+The list of ad extension to account associations is too long.
+
+***
+
+**Numeric Code**
+3901
+
+**Symbolic Error Code**
+CampaignServiceInvalidAdExtensionIdToAccountIdAssociation
+
+**Description**
+The ad extension Id to account Id association provided is not valid.
+
+***
+
+**Numeric Code**
+3902
+
+**Symbolic Error Code**
+CampaignServiceDuplicateInAdExtensionIdToAccountIdAssociations
+
+**Description**
+The list of ad extension to account associations contains duplicates.
+
+***
+
+**Numeric Code**
+3903
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionTypeNotAllowedForAccountAssociation
+
+**Description**
+Ad extension type not allowed for ad group association.
+
+***
+
+**Numeric Code**
+3904
+
+**Symbolic Error Code**
+CampaignServiceDevicePreferenceIncompatibleWithAdExtensionType
+
+**Description**
+DevicePreference is incompatible with this ad extension type.
+
+***
+
+**Numeric Code**
+3905
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionIdToAccountIdAssociationNotPassed
+
+**Description**
+The account Id to Ad extension Id association is null.
+
+***
+
+**Numeric Code**
+3906
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionAccountAssociationEntityIdNotEqualToAccountId
+
+**Description**
+Entity id shoud be same with account id in Ad extension account association.
+
+***
+
+**Numeric Code**
+3907
+
+**Symbolic Error Code**
+CampaignServiceAdExtensionAccountAssociationShouldHaveOneEntityId
+
+**Description**
+There should be only one entity id in Ad extension account association.
+
+***
+
+**Numeric Code**
 3930
 
 **Symbolic Error Code**
@@ -8489,6 +8610,28 @@ CampaignServiceImageAdExtensionImageMediaIdsNullOrEmpty
 
 **Description**
 Image media identifiers cannot be null or empty.
+
+***
+
+**Numeric Code**
+3994
+
+**Symbolic Error Code**
+CampaignServiceImageAdExtensionImageAltTextInvalid
+
+**Description**
+The image ad extension's ImageAltText is invalid.
+
+***
+
+**Numeric Code**
+3995
+
+**Symbolic Error Code**
+CampaignServiceImageAdExtensionImageAltTextTooLong
+
+**Description**
+The image ad extension's ImageAltText is too long.
 
 ***
 ## 4000
@@ -10887,6 +11030,94 @@ Tracking template and custom parameters cannot be added to a product partition s
 ***
 
 **Numeric Code**
+4624
+
+**Symbolic Error Code**
+UpgradedUrlsPilotNotEnabledCustomParametersNotImported
+
+**Description**
+The customer is not in the Upgraded URLs pilot. The tracking template from this entity is imported as a destination url instead of being imported as a tracking template. If you tried to import any custom parameters, they were not imported.
+
+***
+
+**Numeric Code**
+4625
+
+**Symbolic Error Code**
+FinalUrlRequiredWhenUsingFinalUrlSuffix
+
+**Description**
+Final Url is required when using final url suffix.
+
+***
+
+**Numeric Code**
+4626
+
+**Symbolic Error Code**
+FinalUrlSuffixInvalidCharacters
+
+**Description**
+Final Url Suffix contains invalid characters.
+
+***
+
+**Numeric Code**
+4627
+
+**Symbolic Error Code**
+FinalUrlSuffixInvalidParameters
+
+**Description**
+Final Url Suffix contains invalid parameters.
+
+***
+
+**Numeric Code**
+4628
+
+**Symbolic Error Code**
+BothDestinationUrlAndFinalUrlSuffixNotAllowed
+
+**Description**
+Having both destination url and final url suffix is not allowed.
+
+***
+
+**Numeric Code**
+4629
+
+**Symbolic Error Code**
+FinalUrlSuffixTooLong
+
+**Description**
+The Final Url Suffix is too long
+
+***
+
+**Numeric Code**
+4630
+
+**Symbolic Error Code**
+CustomerNotEnabledForFinalUrlSuffixPhase1Pilot
+
+**Description**
+Final Url Suffix phase 1 pilot is not enabled for customer
+
+***
+
+**Numeric Code**
+4631
+
+**Symbolic Error Code**
+CustomerNotEnabledForFinalUrlSuffixPhase2Pilot
+
+**Description**
+Final Url Suffix phase 2 pilot is not enabled for customer
+
+***
+
+**Numeric Code**
 4700
 
 **Symbolic Error Code**
@@ -10916,6 +11147,17 @@ TargetCpaIsRequired
 
 **Description**
 TargetCpa is required for this bidding scheme.
+
+***
+
+**Numeric Code**
+4703
+
+**Symbolic Error Code**
+MaxCpcExceedsMonthlyBudget
+
+**Description**
+MaxCpc exceeds campaign monthly budget.
 
 ***
 
@@ -11987,6 +12229,17 @@ The budget type must be specified.
 ***
 
 **Numeric Code**
+4909
+
+**Symbolic Error Code**
+CampaignServiceMonthlyBudgetNotAllowed
+
+**Description**
+Monthly budget type is not a valid Shared Budget type.
+
+***
+
+**Numeric Code**
 4910
 
 **Symbolic Error Code**
@@ -12060,6 +12313,17 @@ CampaignServiceBudgetIdInvalid
 
 **Description**
 The budget id is invalid.
+
+***
+
+**Numeric Code**
+4917
+
+**Symbolic Error Code**
+CampaignServiceCannotUpdateSharedDailyBudgetToUnsharedMonthlyBudget
+
+**Description**
+The campaign is using a shared daily budget, therefore it can't be updated to use an unshared monthly budget. You can use an unshared daily budget instead.
 
 ***
 
@@ -12348,16 +12612,17 @@ CampaignServiceExpandedTextAdDisplayUrlDomainTooLong
 
 **Description**
 The expanded text ad domain is too long.
+
 ***
 
 **Numeric Code**
 5026
 
 **Symbolic Error Code**
-CampaignServiceExpandedTextAdFinalUrlDomainInvalid
+CampaignServiceExpandedTextAdDisplayUrlDomainInvalid
 
 **Description**
-The expanded text ad domain is invalid.
+Display Url domain is Invalid.
 
 ***
 
@@ -12864,6 +13129,149 @@ DSADomainLanguagesPhase2PilotNotEnabledForCustomer
 
 **Description**
 The customer is not enabled for the DSA domain languages Phase 2 pilot program.
+
+***
+
+**Numeric Code**
+5115
+
+**Symbolic Error Code**
+AdGroupTypeInvalid
+
+**Description**
+The ad group type field of the ad group is invalid.
+
+***
+
+**Numeric Code**
+5116
+
+**Symbolic Error Code**
+AdGroupTypeImmutable
+
+**Description**
+The ad group type field of an ad group cannot be updated.
+
+***
+
+**Numeric Code**
+5117
+
+**Symbolic Error Code**
+AccountNotInPilotForMixedModeCampaign
+
+**Description**
+The account is not in the mixed mode campaign pilot.
+
+***
+
+**Numeric Code**
+5118
+
+**Symbolic Error Code**
+InvalidAdGroupTypeForCampaignType
+
+**Description**
+The ad group type is not valid for the campaign type.
+
+***
+
+**Numeric Code**
+5119
+
+**Symbolic Error Code**
+CannotAddDynamicSearchAdGroupToCampaignWithoutDynamicSearchSettings
+
+**Description**
+Dynamic search ad groups cannot be added to campaigns without dynamic search settings.
+
+***
+
+**Numeric Code**
+5120
+
+**Symbolic Error Code**
+DynamicSearchAdNotAllowedForNonDynamicSearchAdsAdGroup
+
+**Description**
+Dynamic search ads cannot be added to non dynamic search ad groups.
+
+***
+
+**Numeric Code**
+5121
+
+**Symbolic Error Code**
+AdTypeInvalidForAdGroup
+
+**Description**
+The ad type is not valid for the ad group type.
+
+***
+
+**Numeric Code**
+5122
+
+**Symbolic Error Code**
+InvalidCriterionForCampaignType
+
+**Description**
+The criterion is not valid for the campaign type.
+
+***
+
+**Numeric Code**
+5123
+
+**Symbolic Error Code**
+InvalidCriterionForAdGroupType
+
+**Description**
+The criterion is not valid for the ad group type.
+
+***
+
+**Numeric Code**
+5124
+
+**Symbolic Error Code**
+DynamicSearchAdsNotSupportedForDisclaimerCampaign
+
+**Description**
+Dynamic search ads are not supported for disclaimer campaigns.
+
+***
+
+**Numeric Code**
+5125
+
+**Symbolic Error Code**
+EntityNotAllowedForDynamicSearchAdsAdGroup
+
+**Description**
+The entity is not allowed for dynamic search ad groups.
+
+***
+
+**Numeric Code**
+5126
+
+**Symbolic Error Code**
+DSADomainLanguagesPhase3PilotNotEnabledForCustomer
+
+**Description**
+The customer is not enabled for the DSA domain languages Phase 3 pilot program.
+
+***
+
+**Numeric Code**
+5127
+
+**Symbolic Error Code**
+DSADomainLanguagesPhase4PilotNotEnabledForCustomer
+
+**Description**
+The customer is not enabled for the DSA domain languages Phase 4 pilot program.
 
 ***
 
@@ -13626,6 +14034,61 @@ Campaign language specified more than once.
 ***
 
 **Numeric Code**
+5355
+
+**Symbolic Error Code**
+GoalCurrencyCodeIsNull
+
+**Description**
+The currency code is required for this goal type.
+
+***
+
+**Numeric Code**
+5356
+
+**Symbolic Error Code**
+GoalTypeCannotBeChanged
+
+**Description**
+The goal type can't be changed for In-Store Transaction Goal or Offline Conversion Goal.
+
+***
+
+**Numeric Code**
+5357
+
+**Symbolic Error Code**
+InStoreTransactionGoalScopeInvalid
+
+**Description**
+In-Store Transaction goals must be set to Customer level scope.
+
+***
+
+**Numeric Code**
+5358
+
+**Symbolic Error Code**
+OnlyOneInStoreTransactionGoalAllowedPerCustomer
+
+**Description**
+Only one In-Store Transaction Goal can be created per customer.
+
+***
+
+**Numeric Code**
+5359
+
+**Symbolic Error Code**
+InStoreTransactionPilotNotEnabledForCustomer
+
+**Description**
+In-Store Transaction pilot not enabled for current customer.
+
+***
+
+**Numeric Code**
 5400
 
 **Symbolic Error Code**
@@ -14156,6 +14619,116 @@ The date and time for the click ID is outside the conversion window for this goa
 ***
 
 **Numeric Code**
+5618
+
+**Symbolic Error Code**
+OfflineConversionInvalidAdjustmentType
+
+**Description**
+The offline conversion adjustment type is invalid.
+
+***
+
+**Numeric Code**
+5619
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentTimeNullOrEmpty
+
+**Description**
+The offline conversion adjustment time is empty.
+
+***
+
+**Numeric Code**
+5620
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentTimeEarlierThanConversionTime
+
+**Description**
+The offline conversion adjustment time is earlier than conversion time.
+
+***
+
+**Numeric Code**
+5621
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentTimeInvalid
+
+**Description**
+The offline conversion adjustment time is invalid.
+
+***
+
+**Numeric Code**
+5622
+
+**Symbolic Error Code**
+OfflineConversionFutureAdjustmentTimeCannotBeSet
+
+**Description**
+The offline conversion adjustment time cannot be in the future.
+
+***
+
+**Numeric Code**
+5623
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentTimeOutOfWindow
+
+**Description**
+The offline conversion adjustment time is out of the window.
+
+***
+
+**Numeric Code**
+5624
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentValueNotExpected
+
+**Description**
+The offline conversion adjustment value is not expected.
+
+***
+
+**Numeric Code**
+5625
+
+**Symbolic Error Code**
+OfflineConversionAdjustmentValueRequired
+
+**Description**
+The offline conversion adjustment value is required.
+
+***
+
+**Numeric Code**
+5626
+
+**Symbolic Error Code**
+OfflineConversionCurrencyValueRequired
+
+**Description**
+The offline conversion currency value is required.
+
+***
+
+**Numeric Code**
+5627
+
+**Symbolic Error Code**
+OfflineConversionRestateRetractNotSupported
+
+**Description**
+The offline conversion restate or retract operation is not supported.
+
+***
+
+**Numeric Code**
 5700
 
 **Symbolic Error Code**
@@ -14356,6 +14929,149 @@ For example you cannot add, update, or delete responsive ads in feed-based Audie
 ***
 
 **Numeric Code**
+5718
+
+**Symbolic Error Code**
+InvalidProfileType
+
+**Description**
+This is not a valid ProfileType.
+
+***
+
+**Numeric Code**
+5719
+
+**Symbolic Error Code**
+CustomerNotEligibleForProductAudience
+
+**Description**
+Customer Not Eligible For Product Audience.
+
+***
+
+**Numeric Code**
+5720
+
+**Symbolic Error Code**
+CustomerNotEligibleForEnhancedResponsiveAd
+
+**Description**
+Customer Not Eligible For Enhanced Responsive Ad.
+
+***
+
+**Numeric Code**
+5721
+
+**Symbolic Error Code**
+ResponsiveAdInvalidImage
+
+**Description**
+Image is invalid for Responsive Ad
+
+***
+
+**Numeric Code**
+5722
+
+**Symbolic Error Code**
+ResponsiveAdDuplicateImage
+
+**Description**
+Image is duplicate for Responsive Ad
+
+***
+
+**Numeric Code**
+5723
+
+**Symbolic Error Code**
+ResponsiveAdRequiredImageMissing
+
+**Description**
+Image required by Responsive Ad is missing.
+
+***
+
+**Numeric Code**
+5724
+
+**Symbolic Error Code**
+AIMCampaignLevelAudienceTargetingNotEnabled
+
+**Description**
+Audience campaign is not eligible to create campaign-level audience association.
+
+***
+
+**Numeric Code**
+5801
+
+**Symbolic Error Code**
+TooManyValues
+
+**Description**
+There are too many values in request.
+
+***
+
+**Numeric Code**
+5802
+
+**Symbolic Error Code**
+DuplicateValues
+
+**Description**
+Duplicate values in request.
+
+***
+
+**Numeric Code**
+5803
+
+**Symbolic Error Code**
+InvalidBidMultiplier
+
+**Description**
+The bid multiplier is invalid.
+
+***
+
+**Numeric Code**
+5804
+
+**Symbolic Error Code**
+ImmutableProperty
+
+**Description**
+The property is immutable.
+
+***
+
+**Numeric Code**
+5809
+
+**Symbolic Error Code**
+UnsupportedAssociationType
+
+**Description**
+The association type does not be supported.
+
+***
+
+**Numeric Code**
+5813
+
+**Symbolic Error Code**
+CampaignServiceAdGroupLanguageCannotBeRemovedUntilCampaignLanguagesAreProcessed
+
+**Description**
+The ad group language cannot be removed until campaign language updates have been processed. Please try again in 12 hours.
+
+***
+
+**Numeric Code**
 5900
 
 **Symbolic Error Code**
@@ -14444,6 +15160,17 @@ The feed type is not supported for bulk upload.
 ***
 
 **Numeric Code**
+5908
+
+**Symbolic Error Code**
+DualFeedNotSupported
+
+**Description**
+Dual feed type is currently not supported.
+
+***
+
+**Numeric Code**
 5909
 
 **Symbolic Error Code**
@@ -14488,6 +15215,28 @@ Invalid Feed Attribute Type.
 ***
 
 **Numeric Code**
+5914
+
+**Symbolic Error Code**
+ScheduleNotAllowedForFeedType
+
+**Description**
+Schedule Not Allowed For Feed Type.
+
+***
+
+**Numeric Code**
+5915
+
+**Symbolic Error Code**
+UrlNotAllowedForFeedType
+
+**Description**
+Url Not Allowed For Feed Type.
+
+***
+
+**Numeric Code**
 5916
 
 **Symbolic Error Code**
@@ -14499,6 +15248,17 @@ Invalid Feed Attribute Mapping.
 ***
 
 **Numeric Code**
+5918
+
+**Symbolic Error Code**
+DuplicateFeedPropertyId
+
+**Description**
+Duplicate Feed Property Id.
+
+***
+
+**Numeric Code**
 5919
 
 **Symbolic Error Code**
@@ -14506,6 +15266,17 @@ InvalidFeedType
 
 **Description**
 Invalid Feed Type.
+
+***
+
+**Numeric Code**
+5920
+
+**Symbolic Error Code**
+CustomerNotEligibleForAdCustomizersFeed
+
+**Description**
+Customer is not eligible for Ad Customizer Feed.
 
 ***
 
@@ -14568,10 +15339,10 @@ Invalid Int64 FeedItem Attribute Value.
 5926
 
 **Symbolic Error Code**
-InvalidFloatFeedItemAttributeValue
+InvalidDoubleFeedItemAttributeValue
 
 **Description**
-Invalid Float FeedItem Attribute Value.
+Invalid Double FeedItem Attribute Value.
 
 ***
 
@@ -15535,6 +16306,28 @@ The experiment type cannot be changed.
 ***
 
 **Numeric Code**
+6138
+
+**Symbolic Error Code**
+ExperimentDoesNotSupportMixedModeCampaign
+
+**Description**
+The experiment does not support mixed mode campaign.
+
+***
+
+**Numeric Code**
+6139
+
+**Symbolic Error Code**
+DSASettingCannotBeAddedToExperimentRelatedCampaign
+
+**Description**
+DSA Setting can not be added to ExperimentRelatedCampaign.
+
+***
+
+**Numeric Code**
 6200
 
 **Symbolic Error Code**
@@ -16183,7 +16976,6 @@ PromotionDatesInvalid
 **Description**
 The Promotion Start and End Dates are invalid.
 
-
 ***
 
 **Numeric Code**
@@ -16741,6 +17533,28 @@ The Combination Rule is invalid.
 ***
 
 **Numeric Code**
+8117
+
+**Symbolic Error Code**
+ImpressionTrackingUrlInvalid
+
+**Description**
+The Impression Tracking Url is invalid.
+
+***
+
+**Numeric Code**
+8118
+
+**Symbolic Error Code**
+ImpressionTrackingUrlsExceedMaxCount
+
+**Description**
+The Impression Tracking Url count exceed the max count.
+
+***
+
+**Numeric Code**
 8119
 
 **Symbolic Error Code**
@@ -16748,3 +17562,14 @@ CombinedAudienceForLocationNotAllowed
 
 **Description**
 You cannot associate any combination of customer list or custom audience with campaigns or ad groups that target the European Union or locations with similar restrictions.
+
+***
+
+**Numeric Code**
+8120
+
+**Symbolic Error Code**
+ImpressionTrackingUrlInaccessible
+
+**Description**
+The Impression Tracking Url is inaccessible.

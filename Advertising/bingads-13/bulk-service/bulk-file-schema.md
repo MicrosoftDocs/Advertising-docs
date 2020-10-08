@@ -64,7 +64,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Customer List Association](ad-group-customer-list-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
 [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
-[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds         
+[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
 [Ad Group Gender Criterion](ad-group-gender-criterion.md)|All         
 [Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Industry Criterion](ad-group-industry-criterion.md)|All  
@@ -79,7 +79,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All         
 [Ad Group Negative Customer List Association](ad-group-negative-combined-list-association.md)|All         
 [Ad Group Negative Gender Criterion](ad-group-negative-gender-criterion.md)|Audience  
-[Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
+[Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
 [Ad Group Negative Industry Criterion](ad-group-negative-industry-criterion.md)|Audience  
 [Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md)|All         
 [Ad Group Negative Job Function Criterion](ad-group-negative-job-function-criterion.md)|Audience  
@@ -128,7 +128,7 @@ Record Type  |Supported Campaign Types
 [Campaign Negative Combined List Association](campaign-negative-combined-list-association.md)|All         
 [Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|All         
 [Campaign Negative Customer List Association](campaign-negative-customer-list-association.md)|All         
-[Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
+[Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
 [Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign Negative Keyword](campaign-negative-keyword.md)|All         
 [Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
@@ -151,8 +151,8 @@ Record Type  |Supported Campaign Types
 [Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
 [Customer List](customer-list.md)|All         
 [Customer List Item](customer-list-item.md)<br/><br/>Bulk download of customer list items is not supported.|All         
-[Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds         
-[Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds         
+[Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds<br/>Search\*         
+[Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds<br/>Search\*         
 [Expanded Text Ad](expanded-text-ad.md)|Search         
 [Expanded Text Ad Label](expanded-text-ad-label.md)|Search         
 [Experiments](experiment.md)|Search         
@@ -187,6 +187,8 @@ Record Type  |Supported Campaign Types
 [Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Text Ad](text-ad.md)|Search         
 [Text Ad Label](text-ad-label.md)|Search         
+
+\* Only supported for accounts in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) or [GetAccountPilotFeatures](../customer-management-service/getaccountpilotfeatures.md) returns 791). The [Campaign Type](campaign.md#campaigntype) must be set to "Search", the [Experiment Id](campaign.md#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
 
 ## <a name="typehierarchy"></a>Type Hierarchy
 The download file will always include a record for the [Format Version](format-version.md) and [Account](account.md) record types. For upload, the [Format Version](format-version.md) is required and must precede all other record types in the bulk file.  

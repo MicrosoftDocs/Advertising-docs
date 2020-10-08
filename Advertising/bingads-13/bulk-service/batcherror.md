@@ -4,10 +4,10 @@ ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
+description: Defines a Bulk batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 ---
 # BatchError Data Object - Bulk
-Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
+Defines a Bulk batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 
 ## Syntax
 ```xml

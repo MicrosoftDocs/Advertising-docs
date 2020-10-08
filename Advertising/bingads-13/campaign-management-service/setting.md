@@ -15,7 +15,7 @@ Do not try to instantiate a *Setting*. You can create one or more of the followi
 |-----|-----|
 |[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|[Campaign](campaign.md)|
 |[ShoppingSetting](shoppingsetting.md)|[Campaign](campaign.md)|
-|[TargetSetting](targetsetting.md)|[AdGroup](adgroup.md)| 
+|[TargetSetting](targetsetting.md)|[Campaign](campaign.md)<br/><br/>[AdGroup](adgroup.md)| 
 
 ## Syntax
 ```xml
@@ -32,7 +32,7 @@ The [Setting](setting.md) object has the following elements: [Type](#type).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of setting. For more information, see [Remarks](#remarks).|**string**|
+|<a name="type"></a>Type|The type of setting.<br/><br/>For more information, see [Remarks](#remarks).|**string**|
 
 ## <a name="remarks"></a>Remarks
 For Java and the .NET languages, do not set the *Type* element because the value is determined by the type of setting you instantiate.

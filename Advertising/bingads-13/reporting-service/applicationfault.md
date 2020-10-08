@@ -4,10 +4,10 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the base object from which all fault detail objects derive.
+description: Defines the base object from which all Reporting fault detail objects derive.
 ---
 # ApplicationFault Data Object - Reporting
-Defines the base object from which all fault detail objects derive.
+Defines the base object from which all Reporting fault detail objects derive.
 
 ## Syntax
 ```xml

@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
+description: Defines a Customer Billing API batch fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
 # ApiBatchFault Data Object - Customer Billing
-Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
+Defines a Customer Billing API batch fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
 ## Syntax
 ```xml
@@ -40,8 +40,6 @@ The [ApiBatchFault](apibatchfault.md) object derives from the [ApiFault](apifaul
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="operationerrors"></a>OperationErrors|An array of OperationError objects that contains the reasons that explain why the service operation failed when the error is not related to a specific item in the batch of items.|[OperationError](operationerror.md) array|
-
-## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsapplicationfault"></a>Inherited Elements from ApplicationFault
 The [ApiBatchFault](apibatchfault.md) object derives from the [ApplicationFault](applicationfault.md) object, and inherits the following elements: [TrackingId](#trackingid). The descriptions below are specific to [ApiBatchFault](apibatchfault.md), and might not apply to other objects that inherit the same elements from the [ApplicationFault](applicationfault.md) object.  
