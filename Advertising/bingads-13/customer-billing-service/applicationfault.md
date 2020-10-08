@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the base object from which all fault detail objects derive.
+description: Defines the base object from which all Customer Billing fault detail objects derive.
 ---
 # ApplicationFault Data Object - Customer Billing
-Defines the base object from which all fault detail objects derive.
+Defines the base object from which all Customer Billing fault detail objects derive.
 
 ## Syntax
 ```xml

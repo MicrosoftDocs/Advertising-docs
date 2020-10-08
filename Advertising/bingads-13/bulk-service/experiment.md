@@ -4,12 +4,14 @@ ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
+description: Defines an experiment that can be downloaded in a bulk file. 
 dev_langs:
   - csharp
 ---
 # Experiment Record - Bulk
-Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
+Defines an experiment that can be downloaded in a bulk file. 
+
+With an experiment you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 
 How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
 

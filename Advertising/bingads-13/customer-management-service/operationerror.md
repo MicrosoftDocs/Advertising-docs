@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an error object that contains the details that explain why the service operation failed.
+description: Defines a Customer Management operation error object that contains the details that explain why the service operation failed.
 ---
 # OperationError Data Object - Customer Management
-Defines an error object that contains the details that explain why the service operation failed.
+Defines a Customer Management operation error object that contains the details that explain why the service operation failed.
 
 ## Syntax
 ```xml
@@ -26,7 +26,7 @@ The [OperationError](operationerror.md) object has the following elements: [Code
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="code"></a>Code|A numeric error code that identifies the error|**int**|
+|<a name="code"></a>Code|A numeric error code that identifies the error.|**int**|
 |<a name="details"></a>Details|A message that provides additional details about the error. This string can be empty.|**string**|
 |<a name="message"></a>Message|A message that describes the error.<br/><br/>For more information about troubleshooting and error handling, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md) and [Operation Error Codes](../guides/operation-error-codes.md).|**string**|
 
