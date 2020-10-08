@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible types of entities.
+description: Defines entity types for association and editorial service operations.
 ---
 # EntityType Value Set - Campaign Management
-Defines the possible types of entities.
+Defines entity types for association and editorial service operations.
 
 ## Syntax
 ```xml
@@ -51,10 +51,10 @@ The [EntityType](entitytype.md) value set has the following values: [Ad](#ad), [
 
 |Value|Description|
 |-----------|---------------|
-|<a name="ad"></a>Ad|Request editorial appeal or status for ads.|
-|<a name="adgroup"></a>AdGroup|Reserved for future use.|
-|<a name="campaign"></a>Campaign|Reserved for future use.|
-|<a name="keyword"></a>Keyword|Request editorial appeal or status for keywords.|
+|<a name="ad"></a>Ad|The entity is an ad.|
+|<a name="adgroup"></a>AdGroup|The entity is an ad group.|
+|<a name="campaign"></a>Campaign|The entity is a campaign.|
+|<a name="keyword"></a>Keyword|The entity is a keyword.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

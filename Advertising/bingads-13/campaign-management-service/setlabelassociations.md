@@ -24,7 +24,7 @@ The *SetLabelAssociationsRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entitytype"></a>EntityType|Indicates the entity type associated with the label.<br/><br/>The supported entity type values are *Campaign*, *AdGroup*, *Ad*, and *Keyword*.|[EntityType](entitytype.md)|
+|<a name="entitytype"></a>EntityType|Indicates the entity type associated with the label.<br/><br/>The supported entity type values are [Campaign](entitytype.md#campaign), [AdGroup](entitytype.md#adgroup), [Ad](entitytype.md#ad), and [Keyword](entitytype.md#keyword).|[EntityType](entitytype.md)|
 |<a name="labelassociations"></a>LabelAssociations|The list of label associations to set.<br/><br/>Each label association includes label and entity identifiers.<br/><br/>The maximum size of the list is 100 items per service request.<br/><br/>Each entity can be associated with a maximum of 50 labels. For example *Campaign A* can be associated with up to 50 labels.|[LabelAssociation](labelassociation.md) array|
 
 ### <a name="request-header"></a>Request Header Elements

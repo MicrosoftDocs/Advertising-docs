@@ -24,7 +24,7 @@ The *DeleteLabelAssociationsRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entitytype"></a>EntityType|Indicates the entity type associated with the label.<br/><br/>The supported entity type values are *Campaign*, *AdGroup*, *Ad*, and *Keyword*.|[EntityType](entitytype.md)|
+|<a name="entitytype"></a>EntityType|Indicates the entity type associated with the label.<br/><br/>The supported entity type values are [Campaign](entitytype.md#campaign), [AdGroup](entitytype.md#adgroup), [Ad](entitytype.md#ad), and [Keyword](entitytype.md#keyword).|[EntityType](entitytype.md)|
 |<a name="labelassociations"></a>LabelAssociations|The list of label associations to delete.<br/><br/>Each label association includes label and entity identifiers.<br/><br/>The maximum size of the list is 100 items per service request.|[LabelAssociation](labelassociation.md) array|
 
 ### <a name="request-header"></a>Request Header Elements

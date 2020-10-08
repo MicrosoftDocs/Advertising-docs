@@ -135,6 +135,7 @@ var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityU
 For an *Ad Group* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
+- [Ad Group Type](#adgrouptype)
 - [Ad Rotation](#adrotation)
 - [Ad Schedule Use Searcher Time Zone](#adscheduleusesearchertimezone)
 - [Bid Adjustment](#bidadjustment)
@@ -171,6 +172,19 @@ The name must be unique among all active ad groups within the campaign. The name
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
+## <a name="adgrouptype"></a>Ad Group Type
+The ad group type.
+
+In a [mixed campaign](../guides/mixed-campaigns.md) where the [Campaign Type](campaign.md#campaigntype) is "Search", the [Experiment Id](campaign.md#experimentid) is not set, and the campaign already has valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields), the possible values are "SearchDynamic" and "SearchStandard". Otherwise the type of ad groups within "Search" campaigns can only be set to "SearchStandard". If the ad group type is "SearchDynamic", then you can only add dynamic search ads within this ad group. If the ad group type is "SearchStandard", then you can add expanded text ads or responsive search ads within this ad group.  
+
+The type of ad groups within "DynamicSearchAds" campaigns can only be set to "SearchDynamic". You don't need to set the ad group type for "DynamicSearchAds" campaigns, but please note when you retrieve ad groups this field will be set to "SearchDynamic".
+
+This field cannot be set for "Audience" or "Shopping" campaign types. When you retrieve an ad group within unsupported campaigns, this field will be empty.
+
+**Add:** Optional. The default value for Search campaigns is "SearchStandard". The default value for "DynamicSearchAds" campaigns is "SearchDynamic".  
+**Update:** Read-only. You cannot update the ad group type.     
 **Delete:** Read-only  
 
 ## <a name="adrotation"></a>Ad Rotation

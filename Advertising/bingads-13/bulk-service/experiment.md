@@ -4,12 +4,14 @@ ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
+description: Defines an experiment that can be downloaded in a bulk file. 
 dev_langs:
   - csharp
 ---
 # Experiment Record - Bulk
-Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
+Defines an experiment that can be downloaded in a bulk file. 
+
+With an experiment you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 
 How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
 
@@ -19,7 +21,9 @@ With Microsoft Advertising experiments, you create a duplicate of a search campa
 - If you like the experiment's results, apply the changes to the base campaign or create a whole new campaign.
 
 > [!NOTE]
-> Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment. 
+> Experiments are only available for Search campaigns that do not have Dynamic Search Ads settings. A [mixed campaign](../guides/mixed-campaigns.md) cannot be an experiment campaign or the base campaign of an experiment. 
+> 
+> Experiments do not support shared budgets. If a campaign uses a shared budget, then you cannot use it as the base campaign for an experiment.  
 
 When you create an experiment in your account, a new experiment and a new campaign are both created. Here are some of the notable details:  
 - An *Experiment* entity is created with the [Base Campaign Id](#basecampaignid), [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent) that you specified. The experiment [Status](#status) will be set automatically by Microsoft Advertising to *Creating*, and the next time you download the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.

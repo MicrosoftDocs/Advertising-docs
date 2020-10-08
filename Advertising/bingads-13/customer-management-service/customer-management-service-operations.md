@@ -19,10 +19,10 @@ The Customer Management service defines the following service operations.
 |[FindAccounts](findaccounts.md)|Gets a list of accounts owned by the specified customer that match the specified filter criteria.|1 *CustomerId*|
 |[FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md)|Gets a list of the accounts and customers that match the specified filter criteria.|Not applicable.|
 |[GetAccount](getaccount.md)|Gets the details of an account.|1 *AccountId*|
-|[GetAccountPilotFeatures](getaccountpilotfeatures.md)|Gets a list of the pilot programs that are enabled for the specified account.|1 *AccountId*|
+|[GetAccountPilotFeatures](getaccountpilotfeatures.md)|Gets a list of the feature pilot IDs that are enabled for an ad account.|1 *AccountId*|
 |[GetAccountsInfo](getaccountsinfo.md)|Gets the identifiers, names, and numbers of accounts that are accessible from the specified customer.|1 *CustomerId*|
 |[GetCustomer](getcustomer.md)|Gets the details of a customer.|1 *CustomerId*|
-|[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs that are enabled for all of the customer's accounts.|1 *CustomerId*|
+|[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the feature pilot IDs that are enabled for all ad accounts owned by a customer (manager account).|1 *CustomerId*|
 |[GetCustomersInfo](getcustomersinfo.md)|Gets the identifiers and names of customers that are accessible to the current authenticated user.|Not applicable.|
 |[GetLinkedAccountsAndCustomersInfo](getlinkedaccountsandcustomersinfo.md)|Gets the customer and account hierarchy under the specified customer.|1 *CustomerId*|
 |[GetUser](getuser.md)|Gets the details of a user.|1 *UserId*|

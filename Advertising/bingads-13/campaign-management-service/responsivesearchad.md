@@ -20,6 +20,9 @@ When you create responsive search ads the [Descriptions](#descriptions) and [Hea
 
 Currently Microsoft Advertising does not support deletion of account assets. Even after you delete all ads that use (are linked to) "Seamless Integration", the text asset will remain in your account with a unique system identifier. The next time you use the text asset e.g., "Seamless Integration" in an ad, it will retain the original Microsoft Advertising system identifier. 
 
+> [!NOTE]
+> Responsive search ads can only be created in Search campaigns where the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchStandard". If the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support responsive search ads.  
+
 ## Syntax
 ```xml
 <xs:complexType name="ResponsiveSearchAd" xmlns:xs="http://www.w3.org/2001/XMLSchema">

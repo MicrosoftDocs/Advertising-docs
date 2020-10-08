@@ -9,9 +9,12 @@ description: Defines an expanded text ad.
 # ExpandedTextAd Data Object - Campaign Management
 Defines an expanded text ad.
 
-This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
+This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad. 
 
-The combination of the FinalUrls, Path1, Path2, Text, TextPart2, TitlePart1, TitlePart2 and TitlePart3 elements make the expanded text ad unique.
+> [!NOTE]
+> Expanded text ads can only be created in Search campaigns where the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchStandard". If the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support expanded text ads.  
+
+The combination of the FinalUrls, Path1, Path2, Text, TextPart2, TitlePart1, TitlePart2 and TitlePart3 elements make the expanded text ad unique. 
 
 ## Syntax
 ```xml

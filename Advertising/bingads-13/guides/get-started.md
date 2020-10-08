@@ -121,7 +121,7 @@ To authenticate in the sandbox environment only the [Live Connect](authenticatio
     ```powershell
     $clientId = "db41b09d-6e50-4f4a-90ac-5a99caefb52f"
 
-    Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf&prompt=login%20consent"
+    Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf&prompt=login"
     
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
     

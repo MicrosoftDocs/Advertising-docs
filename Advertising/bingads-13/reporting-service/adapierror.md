@@ -4,10 +4,10 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an error object that contains the details that explain why the service operation failed.
+description: Defines a Reporting Ad API error object that contains the details that explain why the service operation failed.
 ---
 # AdApiError Data Object - Reporting
-Defines an error object that contains the details that explain why the service operation failed.
+Defines a Reporting Ad API error object that contains the details that explain why the service operation failed.
 
 ## Syntax
 ```xml
