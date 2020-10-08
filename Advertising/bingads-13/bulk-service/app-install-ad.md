@@ -9,12 +9,19 @@ dev_langs:
   - csharp
 ---
 # App Install Ad Record - Bulk
-Defines an app install ad that can be downloaded and uploaded in a bulk file. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
+Defines an app install ad that can be downloaded and uploaded in a bulk file. 
+
+App Install Ads are similar to text ads but provide direct links to your apps with a button, sending customers directly to the applicable store to download the application. This is an ideal solution for advertisers wanting to manage and drive downloads of their apps, rather than website traffic.
+
+App Install Ads automatically detect the customer's mobile device and operating system, sending them to the corresponding Apple App Store or Google Play. You can also track conversions with the same conversion tracking partners as App Extensions: AppsFlyer, Kochava, Tune, Singular, Adjust, and Branch. 
 
 > [!NOTE]
-> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Microsoft Advertising only supports apps available in the United States Google Play store.
+> App Install Ads are available in Australia, Brazil, Canada, France, Germany, India, the United Kingdom, and the United States on iOS and Android only. Only apps available in the United States in the Apple App Store and Google Play Store are currently supported. There is no support for Windows or Windows Phone. 
 > 
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
+
+> [!NOTE]
+> App install ads can only be created in Search campaigns where the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchStandard". If the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support app install ads.  
 
 You can download all *App Install Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *AppInstallAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

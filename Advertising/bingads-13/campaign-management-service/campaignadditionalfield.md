@@ -18,6 +18,7 @@ Defines a list of optional campaign properties that you can request when calling
         <xs:enumeration value="AdScheduleUseSearcherTimeZone" />
         <xs:enumeration value="MaxConversionValueBiddingScheme" />
         <xs:enumeration value="TargetImpressionShareBiddingScheme" />
+        <xs:enumeration value="TargetSetting" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -26,13 +27,14 @@ Defines a list of optional campaign properties that you can request when calling
 
 ## <a name="values"></a>Values
 
-The [CampaignAdditionalField](campaignadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [MaxConversionValueBiddingScheme](#maxconversionvaluebiddingscheme), [TargetImpressionShareBiddingScheme](#targetimpressionsharebiddingscheme).
+The [CampaignAdditionalField](campaignadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [MaxConversionValueBiddingScheme](#maxconversionvaluebiddingscheme), [TargetImpressionShareBiddingScheme](#targetimpressionsharebiddingscheme), [TargetSetting](#targetsetting).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](campaign.md#adscheduleusesearchertimezone) element be included within each returned [Campaign](campaign.md) object.|
 |<a name="maxconversionvaluebiddingscheme"></a>MaxConversionValueBiddingScheme|Request that the [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
 |<a name="targetimpressionsharebiddingscheme"></a>TargetImpressionShareBiddingScheme|Request that the [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
+|<a name="targetsetting"></a>TargetSetting|Request that the [TargetSetting](targetsetting.md) object be returned within the [Settings](campaign.md#settings) element of each returned [Campaign](campaign.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

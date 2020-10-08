@@ -77,7 +77,7 @@ The Campaign Management service defines the following data objects.
 |[DeviceCriterion](devicecriterion.md)|Defines a criterion that can be used to show ads on specific devices.|
 |[DurationGoal](durationgoal.md)|Defines a duration conversion goal.|
 |[DynamicSearchAd](dynamicsearchad.md)|Defines a dynamic search ad.|
-|[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|Defines the campaign level settings for a Dynamic Search Ads campaign.|
+|[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|Defines the Dynamic Search Ads setting for a campaign.|
 |[EditorialApiFaultDetail](editorialapifaultdetail.md)|Defines a fault object that operations such as [AddAdGroupCriterions](addadgroupcriterions.md), [UpdateAdGroupCriterions](updateadgroupcriterions.md), [SetAdExtensionsAssociations](setadextensionsassociations.md), and [UpdateAdExtensions](updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.|
 |[EditorialError](editorialerror.md)|Defines an error object that identifies one of potentially many reasons why an entity failed editorial review.|
 |[EditorialErrorCollection](editorialerrorcollection.md)|Defines a nested list of error object that identifies one of potentially many reasons why an entity failed editorial review.|

@@ -56,7 +56,7 @@ The Campaign Management service defines the following value sets.
 |[DistanceUnit](distanceunit.md)|Defines the possible distance units of a geographical location.|
 |[DynamicSearchAdsSource](dynamicsearchadssource.md)|Defines the possible targeting source values for dynamic search ads campaigns.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
-|[EntityType](entitytype.md)|Defines the possible types of entities.|
+|[EntityType](entitytype.md)|Defines entity types for association and editorial service operations.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
 |[ImportAdditionalField](importadditionalfield.md)|Reserved for future use.|

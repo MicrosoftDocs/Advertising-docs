@@ -28,7 +28,7 @@ After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo
     <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
     <xs:element minOccurs="0" name="RoleId" type="xs:int" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q9:ArrayOflong" xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q4:ArrayOflong" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
   </xs:sequence>
@@ -58,3 +58,4 @@ Namespace: https\://bingads.microsoft.com/Customer/v13/Entities
 ## Used By
 [SearchUserInvitations](searchuserinvitations.md)  
 [SendUserInvitation](senduserinvitation.md)  
+[SignupCustomer](signupcustomer.md)  

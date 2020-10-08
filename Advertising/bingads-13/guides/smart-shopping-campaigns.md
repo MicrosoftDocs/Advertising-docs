@@ -22,7 +22,10 @@ Smart shopping campaigns automate bids and ads delivery based on customer signal
 > Smart shopping campaigns do not support negative keywords, website exclusions, IP exclusions, audience targets, or audience exclusions. 
 
 ## <a name="uettag-conversiongoal"></a>UET Tag and Conversion Goal
-Create a [UET tag]() and add the tracking script to your website. The additional code needed to track variable revenue data (or fixed revenue > 0) is required for smart shopping campaigns, so be sure to have it created and added to your website before you begin creating your smart shopping campaign.  
+Create a [UET tag](../campaign-management-service/uettag.md) and add the tracking script to your website. The additional code needed to track variable revenue data (or fixed revenue > 0) is required for smart shopping campaigns, so be sure to have it created and added to your website before you begin creating your smart shopping campaign.  
+
+> [!NOTE] 
+> Universal event tracking is not required if you have an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) and upload offline conversions. 
 
 Variable revenue tracking is available via [EventGoal](../campaign-management-service/eventgoal.md) and [UrlGoal](../campaign-management-service/urlgoal.md), so you'll need to create and leverage at least one of those conversion goals.  
 

@@ -7,20 +7,16 @@ ms.author: eur
 description: Defines a dynamic search ad.
 ---
 # DynamicSearchAd Data Object - Campaign Management
-Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique.
+Defines a dynamic search ad. 
+
+With dynamic search ads, the ad title and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique.
 
 > [!NOTE]
-> This feature is currently available in Australia, Canada, France, Germany, the United Kingdom, and the United States.  
+> This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
 
-To get started with dynamic search ads, first you'll need to [add](addcampaigns.md) a new [Campaign](campaign.md) with its type set to *DynamicSearchAds*. When you create the campaign, you'll need to include a [DynamicSearchAdsSetting](dynamicsearchadssetting.md) that specifies the target website domain and language.
-
-Next, [create](addadgroups.md) a new [AdGroup](adgroup.md) within the dynamic search ads campaign. You can add one or more [Webpage](webpage.md) criterion to each ad group that helps determine whether or not to serve dynamic search ads, by calling the [AddAdGroupCriterions](addadgroupcriterions.md) operation. 
-
-If you want to exclude certain portions of your website, you can add negative [Webpage](webpage.md) criterion at the campaign and ad group level using the respective [AddCampaignCriterions](addcampaigncriterions.md) and [AddAdGroupCriterions](addadgroupcriterions.md) service operations. The negative [Webpage](webpage.md) criterion at the campaign level applies to all ad groups within the campaign; however, if you define ad group level negative [Webpage](webpage.md) criterion, the campaign criterion is ignored for that ad group. 
-
-Whether the criterion is positive or negative, you can choose whether you want the criterion argument to match partial URLs, page content, page title, or categories that Bing thinks applies to your website. To discover the categories that you can use for [Webpage](webpage.md) criterion (positive or negative), use the [GetDomainCategories](../ad-insight-service/getdomaincategories.md) operation with the Ad Insight service.
-
-Finally you can [add](addads.md) a [DynamicSearchAd](dynamicsearchad.md) to the ad group. The ad title and display URL are generated automatically based on the website domain and language that you want to target.
+Dynamic search ads can only be created within campaigns that have a [DynamicSearchAdsSetting](dynamicsearchadssetting.md).  
+- Dynamic search ads campaigns where [CampaignType](campaign.md#campaigntype) is set to "DynamicSearchAds". 
+- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [CampaignType](campaign.md#campaigntype) is set to "Search", if the [ExperimentId](campaign.md#experimentid) element is not set, and if the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchDynamic".   
 
 ## Syntax
 ```xml

@@ -31,16 +31,18 @@ The [AccountProperty](accountproperty.md) object has the following elements: [Na
 ## <a name="remarks"></a>Remarks
 ### <a name="accountpropertyvalues"></a>Account Property Values
 #### <a name="adclickparalleltracking"></a>AdClickParallelTracking
-Determines whether parallel tracking is enabled. Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
+Determines whether parallel tracking is enabled. 
 
-Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
+If you use URL tracking, when customers click your ad, they usually have to go through a number of redirects before reaching your page. This is known as sequential tracking.
 
-You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2-500).
+With parallel tracking, when customers click your ad, they immediately see your landing page. Simultaneously, Microsoft Advertising runs your tracking URLs in the background. So your customers' user experience is improved and you still get the same great measurement tracking. 
+
+You need to have {lpurl} or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [Parallel tracking gets customers to your landing page more quickly](https://help.ads.microsoft.com/#apex/ads/en/56918/2) and [What tracking or URL parameters can I use?](https://help.ads.microsoft.com/#apex/3/en/56799/2-500).
 
 If the [Name](#name) element is set to *AdClickParallelTracking*, then the returned [Value](#value) can be either *true* or *false*. If the value is *true*, then parallel tracking is enabled. 
 
 > [!IMPORTANT]
-> Parallel tracking is required for all accounts created after May 31st, 2020. Until November 2020 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the property to *true* or *false*. By the end of November 2020 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
+> Parallel tracking is required for all accounts created after May 31st, 2020. Until January 2021 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the property to *true* or *false*. By the middle of January 2021 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
 
 #### <a name="finalurlsuffix"></a>FinalUrlSuffix
 If the [Name](#name) element is set to *FinalUrlSuffix*, then the [Value](#value) represents your account's Final URL Suffix. 
