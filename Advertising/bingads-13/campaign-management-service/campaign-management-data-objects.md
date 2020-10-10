@@ -15,8 +15,8 @@ The Campaign Management service defines the following data objects.
 |[AccountProperty](accountproperty.md)|Maps an account level property name to a string value.|
 |[ActionAdExtension](actionadextension.md)|Defines an action ad extension with a call-to-action button.|
 |[Ad](ad.md)|Defines the base object of an ad.|
-|[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
-|[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
+|[AdApiError](adapierror.md)|Defines a Campaign Management Ad API error object that contains the details that explain why the service operation failed.|
+|[AdApiFaultDetail](adapifaultdetail.md)|Defines a Campaign Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
 |[Address](address.md)|Defines a postal address.|
 |[AdExtension](adextension.md)|Defines the base object of an ad extension.|
 |[AdExtensionAssociation](adextensionassociation.md)|Defines the relationship and editorial status of an ad extension with an account, campaign, or ad group.|
@@ -31,17 +31,17 @@ The Campaign Management service defines the following data objects.
 |[AdGroupNegativeSites](adgroupnegativesites.md)|Defines an object that contains the negative site URLs of an ad group.|
 |[AdRotation](adrotation.md)|Defines an object that specifies the type of ad rotation to apply to the ad group.|
 |[AgeCriterion](agecriterion.md)|Defines a criterion that can be used to show ads to users in a specific age range.|
-|[ApiFaultDetail](apifaultdetail.md)|Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
+|[ApiFaultDetail](apifaultdetail.md)|Defines a Campaign Management API fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
 |[AppAdExtension](appadextension.md)|Defines an app ad extension that can be included in an ad.|
 |[AppInstallAd](appinstallad.md)|Defines an app install ad.|
 |[AppInstallGoal](appinstallgoal.md)|Defines an app install conversion goal.|
-|[ApplicationFault](applicationfault.md)|Defines the base object from which all fault detail objects derive.|
+|[ApplicationFault](applicationfault.md)|Defines the base object from which all Campaign Management fault detail objects derive.|
 |[AppUrl](appurl.md)|Defines the operating system platform and URL of the app store download webpage.|
 |[Asset](asset.md)|Defines the base object of an asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
 |[AssetLink](assetlink.md)|Defines the relationship of an asset to an ad.|
 |[Audience](audience.md)|Defines the base object of an audience.|
 |[AudienceCriterion](audiencecriterion.md)|Defines a criterion that can be used to show ads to a specific audience.|
-|[BatchError](batcherror.md)|Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
+|[BatchError](batcherror.md)|Defines a Campaign Management batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
 |[BatchErrorCollection](batcherrorcollection.md)|Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.|
 |[Bid](bid.md)|The highest price that you want to pay each time someone clicks your ad.|
 |[BiddableAdGroupCriterion](biddableadgroupcriterion.md)|Defines a biddable criterion that you want applied to the specified ad group.|
@@ -136,7 +136,7 @@ The Campaign Management service defines the following data objects.
 |[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Microsoft Advertising.|
 |[OfflineConversionAdjustment](offlineconversionadjustment.md)|Defines an object to retract or restate an offline conversion via the [ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md) operation.|
 |[OfflineConversionGoal](offlineconversiongoal.md)|Defines an offline conversion goal.|
-|[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
+|[OperationError](operationerror.md)|Defines a Campaign Management operation error that contains the details that explain why the service operation failed.|
 |[PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md)|Defines a pages viewed per visit conversion goal.|
 |[PageVisitorsRule](pagevisitorsrule.md)|Defines a page visitors remarketing rule.|
 |[PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md)|Defines a page visitors who did not visit another page remarketing rule.|
