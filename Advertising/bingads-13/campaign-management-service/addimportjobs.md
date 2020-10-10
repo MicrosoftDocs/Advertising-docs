@@ -17,7 +17,7 @@ Creates a new import job.
 > [!NOTE]
 > This closed beta is available to select participants only. 
 > 
-> The Import As A Service documentation is subject to change. 
+> The Import As A Service documentation is subject to change during the beta. 
 
 A [GoogleImportJob](googleimportjob.md) can be run once or scheduled on a recurring basis. 
 
@@ -47,7 +47,7 @@ The *AddImportJobsResponse* object defines the [body](#response-body) and [heade
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="importjobids"></a>ImportJobIds|A list of unique system identifiers corresponding to the import jobs that were added.<br/><br/>The list of identifiers corresponds directly to the list of import jobs in the request. Items of the list may be returned as null. For each list index where an import job was not added, the corresponding element will be null.|**long** array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|A list of [BatchError](batcherror.md) objects that contain details for any list item requests that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list will be empty if there were no errors.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

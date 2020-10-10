@@ -7,12 +7,12 @@ ms.author: "eur"
 description: Import Google Ads campaigns.
 ---
 # Google Ads Import
-If you already are using Google Ads to advertise on Google, you can import these campaigns into Microsoft Advertising so that you can run the same ads on Bing. This is an easy way to expand your online advertising reach.
+If you already are using Google Ads to advertise on Google, you can import these campaigns into Microsoft Advertising and run the same ads on Bing. This is an easy way to expand your online advertising reach. 
 
 > [!NOTE]
 > This closed beta release of Google Import As A Service is available to select participants only ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 734). 
 > 
-> The Import API documentation is subject to change. 
+> The Import API documentation is subject to change during the beta. 
 
 To import campaigns from Google Ads, [get a credential ID](#get-credentialid) to represent your Google Ads credentials, [choose the Google Ads account and campaigns](#choose-google-campaigns) that you want to import, [choose import options](#import-options) e.g., the entities that you want to import, and then [schedule the import](#import-schedule). 
 
@@ -67,12 +67,12 @@ Here are some example customizations.
 - If you want the import service to delete items that have been removed from your Google Ads account, then set [DeleteRemovedEntities](../campaign-management-service/googleimportoption.md#deleteremovedentities) to true. 
 - If you want to increase the Microsoft Advertising campaign budgets 25 percent higher than your Google Ads campaign budgets, then set [AdjustmentForCampaignBudgets](../campaign-management-service/googleimportoption.md#adjustmentforcampaignbudgets) to 25. 
 - If you do not want to update existing campaign budgets that are already in Microsoft Advertising, set [UpdateCampaignBudgets](../campaign-management-service/googleimportoption.md#updatecampaignbudgets) to false. 
-- Set [AssociatedStoreId](../campaign-management-service/googleimportoption.md#associatedstoreid) to the identifier of the Microsoft Merchant Center store that you want to associate with imported product ads and product filters. If this option is null or empty, your product ads and product filters will not be imported. 
+- Set the [AssociatedStoreId](../campaign-management-service/googleimportoption.md#associatedstoreid) to the identifier of the Microsoft Merchant Center store that you want to associate with imported product ads and product filters. If this option is null or empty, your product ads and product filters will not be imported. 
 
 > [!NOTE]
 > Please note that the [GoogleImportOption](../campaign-management-service/googleimportoption.md) object does not include a comprehensive list of imported items. Microsoft Advertising imports all the data needed to manage your campaigns and aims to provide the best experience for you. 
 > 
-> There is no option to exclude future supported entities from scheduled imports. For example, you cannot choose to only import "these specific ad extension types, but no other current or future ad extension types". Let's say promotion ad extensions is not yet available in the [GoogleImportOption](../campaign-management-service/googleimportoption.md) object. Once Microsoft Advertising supports it generally e.g., via the UI, all current and future scheduled imports will include promotion ad extensions until users opt out. After "PromotionAdExtensions" is added to the list of import options, then you could explicitly set it false as needed.  
+> There is no option to exclude future supported entities from scheduled imports. For example, you cannot choose to only import "these specific ad extension types, but no other current or future ad extension types". Let's say promotion ad extensions is not yet available in the [GoogleImportOption](../campaign-management-service/googleimportoption.md) object. Once Microsoft Advertising supports it generally e.g., via the UI, all current and future scheduled imports will include promotion ad extensions until users opt out. After **PromotionAdExtensions** is added to the list of [import options](../campaign-management-service/googleimportoption.md), then you could explicitly set it false as needed.  
 
 For more details about what does and doesn't get imported from Google Ads, see [What gets imported](https://help.ads.microsoft.com/#apex/3/en/50851/0). 
 
@@ -129,11 +129,11 @@ Please also note, changing your Google account password does not invalidate the 
 
 ### <a name="account-owner"></a>Account Owner
 
-Each account has an "owner" i.e., the parent customer or manager account. You can confirm the owner for each account via *Tools > Accounts > Accounts summary*. In the example below, "Manager Account L4" is the owner of "Ad Account 4A" and "Manager Account L3" is the owner of both "Ad Account 3A" and "Ad Account 3B". If you don't see the "Owner" you can add this detail by modifying the set of columns displayed. 
+Each account has an "owner" i.e., the parent customer or manager account. You can confirm the owner for each account via *Tools > Accounts > Accounts summary*. In the example below, **Manager Account L4** is the owner of **Ad Account 4A** and **Manager Account L3** is the owner of both **Ad Account 3A** and **Ad Account 3B**. If you don't see the "Owner" you can add this detail by modifying the set of columns displayed. 
 
 ![Owner via Accounts Summary](media/account-owner.png "Owner via Accounts Summary")
 
-You can use the same import credential ID to import any account under the same manager account. In the example above if we navigate to "Ad Account 3A" and request a credential ID, it can be used for import into both "Ad Account 3A" and "Ad Account 3B" (the owner of both accounts is "Manager Account L3"). This credential ID cannot be used to add an import job for "Ad Account 4A". Likewise, if we navigate to "Ad Account 4A" and request a credential ID, it can only be used for imports into "Ad Account 4A". Having said that, if new accounts are later added under "Manager Account L4", we could use the same import credential ID already provisioned. 
+You can use the same import credential ID to import any account under the same manager account. In the example above if we navigate to **Ad Account 3A** and request a credential ID, it can be used for import into both **Ad Account 3A** and **Ad Account 3B** (the owner of both accounts is **Manager Account L3**). This credential ID cannot be used to add an import job for **Ad Account 4A**. Likewise, if we navigate to **Ad Account 4A** and request a credential ID, it can only be used for imports into **Ad Account 4A**. Having said that, if new accounts are later added under **Manager Account L4**, we could use the same import credential ID already provisioned. 
 
 How can you confirm the owner for accounts that you can access? When you [get an Import credential ID](#get-credentialid) you will sign in to Microsoft Advertising and navigate to the ad account where you want to import Google Ads campaigns. Whether you own the account directly or have linked access as an agency, you'll see the owner identified below the "Owner" label as shown here. 
 

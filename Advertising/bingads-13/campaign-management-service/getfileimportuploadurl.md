@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: GetFileImportUploadUrl is reserved for future use.
 dev_langs: 
   - csharp
   - java
@@ -12,12 +12,12 @@ dev_langs:
   - python
 ---
 # GetFileImportUploadUrl Service Operation - Campaign Management
-Reserved for future use.
+GetFileImportUploadUrl is reserved for future use.
 
 > [!NOTE]
 > This closed beta is available to select participants only. 
 > 
-> The Import As A Service documentation is subject to change.
+> The Import As A Service documentation is subject to change during the beta.
 
 ## <a name="request"></a>Request Elements
 The *GetFileImportUploadUrlRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

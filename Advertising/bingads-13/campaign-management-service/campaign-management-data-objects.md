@@ -15,8 +15,8 @@ The Campaign Management service defines the following data objects.
 |[AccountProperty](accountproperty.md)|Maps an account level property name to a string value.|
 |[ActionAdExtension](actionadextension.md)|Defines an action ad extension with a call-to-action button.|
 |[Ad](ad.md)|Defines the base object of an ad.|
-|[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
-|[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
+|[AdApiError](adapierror.md)|Defines a Campaign Management Ad API error object that contains the details that explain why the service operation failed.|
+|[AdApiFaultDetail](adapifaultdetail.md)|Defines a Campaign Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
 |[Address](address.md)|Defines a postal address.|
 |[AdExtension](adextension.md)|Defines the base object of an ad extension.|
 |[AdExtensionAssociation](adextensionassociation.md)|Defines the relationship and editorial status of an ad extension with an account, campaign, or ad group.|
@@ -31,17 +31,17 @@ The Campaign Management service defines the following data objects.
 |[AdGroupNegativeSites](adgroupnegativesites.md)|Defines an object that contains the negative site URLs of an ad group.|
 |[AdRotation](adrotation.md)|Defines an object that specifies the type of ad rotation to apply to the ad group.|
 |[AgeCriterion](agecriterion.md)|Defines a criterion that can be used to show ads to users in a specific age range.|
-|[ApiFaultDetail](apifaultdetail.md)|Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
+|[ApiFaultDetail](apifaultdetail.md)|Defines a Campaign Management API fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
 |[AppAdExtension](appadextension.md)|Defines an app ad extension that can be included in an ad.|
 |[AppInstallAd](appinstallad.md)|Defines an app install ad.|
 |[AppInstallGoal](appinstallgoal.md)|Defines an app install conversion goal.|
-|[ApplicationFault](applicationfault.md)|Defines the base object from which all fault detail objects derive.|
+|[ApplicationFault](applicationfault.md)|Defines the base object from which all Campaign Management fault detail objects derive.|
 |[AppUrl](appurl.md)|Defines the operating system platform and URL of the app store download webpage.|
 |[Asset](asset.md)|Defines the base object of an asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
 |[AssetLink](assetlink.md)|Defines the relationship of an asset to an ad.|
 |[Audience](audience.md)|Defines the base object of an audience.|
 |[AudienceCriterion](audiencecriterion.md)|Defines a criterion that can be used to show ads to a specific audience.|
-|[BatchError](batcherror.md)|Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
+|[BatchError](batcherror.md)|Defines a Campaign Management batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
 |[BatchErrorCollection](batcherrorcollection.md)|Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.|
 |[Bid](bid.md)|The highest price that you want to pay each time someone clicks your ad.|
 |[BiddableAdGroupCriterion](biddableadgroupcriterion.md)|Defines a biddable criterion that you want applied to the specified ad group.|
@@ -89,8 +89,8 @@ The Campaign Management service defines the following data objects.
 |[EventGoal](eventgoal.md)|Defines a custom event conversion goal.|
 |[ExpandedTextAd](expandedtextad.md)|Defines an expanded text ad.|
 |[Experiment](experiment.md)|Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.|
-|[FileImportJob](fileimportjob.md)|Reserved for future use.|
-|[FileImportOption](fileimportoption.md)|Reserved for future use.|
+|[FileImportJob](fileimportjob.md)|FileImportJob is reserved for future use.|
+|[FileImportOption](fileimportoption.md)|FileImportOption is reserved for future use.|
 |[FilterLinkAdExtension](filterlinkadextension.md)|Filter Link Extensions pair one header with between 3 and 10 clickable text values that tell customers more about your business.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
 |[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
@@ -136,7 +136,7 @@ The Campaign Management service defines the following data objects.
 |[OfflineConversion](offlineconversion.md)|Defines an offline conversion that you send to Microsoft Advertising.|
 |[OfflineConversionAdjustment](offlineconversionadjustment.md)|Defines an object to retract or restate an offline conversion via the [ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md) operation.|
 |[OfflineConversionGoal](offlineconversiongoal.md)|Defines an offline conversion goal.|
-|[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
+|[OperationError](operationerror.md)|Defines a Campaign Management operation error that contains the details that explain why the service operation failed.|
 |[PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md)|Defines a pages viewed per visit conversion goal.|
 |[PageVisitorsRule](pagevisitorsrule.md)|Defines a page visitors remarketing rule.|
 |[PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md)|Defines a page visitors who did not visit another page remarketing rule.|
@@ -173,7 +173,7 @@ The Campaign Management service defines the following data objects.
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|
-|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|Reserved for future use.|
+|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|TargetImpressionShareBiddingScheme is reserved for future use.|
 |[TargetRoasBiddingScheme](targetroasbiddingscheme.md)|Defines an object that represents the target ROAS bid strategy type.|
 |[TargetSetting](targetsetting.md)|The target settings that determines whether the Age, Audience, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.|
 |[TargetSettingDetail](targetsettingdetail.md)|Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.|

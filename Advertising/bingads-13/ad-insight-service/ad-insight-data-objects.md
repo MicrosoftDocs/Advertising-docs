@@ -11,19 +11,19 @@ The Ad Insight service defines the following data objects.
 
 |Data Object|Description|
 |---|---|
-|[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
-|[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
+|[AdApiError](adapierror.md)|Defines an Ad Insight Ad API error object that contains the details that explain why the service operation failed.|
+|[AdApiFaultDetail](adapifaultdetail.md)|Defines an Ad Insight Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
 |[AdGroupBidLandscape](adgroupbidlandscape.md)|Defines an object that contains a list of estimated clicks, cost, and impressions from 1 to 7 days for the ad group identifier given the suggested bid.|
 |[AdGroupBidLandscapeInput](adgroupbidlandscapeinput.md)|Defines an object that contains the requested bid landscape type for the corresponding ad group identifier.|
 |[AdGroupEstimate](adgroupestimate.md)|Contains a list of suggested keywords for the ad group with minimum and maximum traffic estimates.|
 |[AdGroupEstimator](adgroupestimator.md)|Contains a list of keyword estimators with your keyword level filter criteria for traffic estimates.|
-|[ApiFaultDetail](apifaultdetail.md)|Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
-|[ApplicationFault](applicationfault.md)|Defines the base object from which all fault detail objects derive.|
+|[ApiFaultDetail](apifaultdetail.md)|Defines an Ad Insight API fault detail object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
+|[ApplicationFault](applicationfault.md)|Defines the base object from which all Ad Insight fault detail objects derive.|
 |[AuctionInsightEntry](auctioninsightentry.md)|Defines an auction insight entry for a domain.|
 |[AuctionInsightKpi](auctioninsightkpi.md)|Defines an auction insight key performance indicator.|
 |[AuctionInsightResult](auctioninsightresult.md)|Defines the auction insight results from calling the [GetAuctionInsightData](getauctioninsightdata.md) operation.|
 |[AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md)|Defines an auction segment search parameter.|
-|[BatchError](batcherror.md)|Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
+|[BatchError](batcherror.md)|Defines an Ad Insight batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
 |[BidLandscapePoint](bidlandscapepoint.md)|Defines an object that contains estimates of clicks, cost, and impressions  given the suggested bid.|
 |[BidOpportunity](bidopportunity.md)|Defines an object that contains the suggested bid with estimated clicks and impressions opportunities.|
 |[BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md)|Defines an object that contains the marketplace impact statistics of including broad match type keyword bids.|
@@ -76,7 +76,7 @@ The Ad Insight service defines the following data objects.
 |[NegativeKeyword](negativekeyword.md)|Defines a negative keyword with match type.|
 |[NetworkCriterion](networkcriterion.md)|The network criterion that you can include when requesting keyword ideas or traffic estimates.|
 |[NetworkSearchParameter](networksearchparameter.md)|The network search parameter filter that you can include when requesting keyword ideas.|
-|[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
+|[OperationError](operationerror.md)|Defines an Ad Insight operation error object that contains the details that explain why the service operation failed.|
 |[Opportunity](opportunity.md)|This is the base class from which opportunity objects derive.|
 |[QuerySearchParameter](querysearchparameter.md)|The query search parameter that you can use as a seed for new keyword ideas.|
 |[SearchCountsByAttributes](searchcountsbyattributes.md)|Defines an object that contains a list of keyword historical search counts for the corresponding device attribute.|

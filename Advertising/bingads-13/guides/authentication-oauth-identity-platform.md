@@ -7,7 +7,9 @@ ms.author: "eur"
 description: Authenticate for Bing Ads API using the Microsoft identity platform endpoint for developers.
 ---
 # Authentication with the Microsoft identity platform endpoint for developers
-Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. 
+Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
+
+How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use the Microsoft authorization URL to prompt a Microsoft Advertising user for their consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once consent is granted you can obtain an access token and act on behalf of the user via Bing Ads API. 
 
 The [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) allows work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com.  
 
