@@ -89,8 +89,8 @@ The Campaign Management service defines the following data objects.
 |[EventGoal](eventgoal.md)|Defines a custom event conversion goal.|
 |[ExpandedTextAd](expandedtextad.md)|Defines an expanded text ad.|
 |[Experiment](experiment.md)|Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.|
-|[FileImportJob](fileimportjob.md)|Reserved for future use.|
-|[FileImportOption](fileimportoption.md)|Reserved for future use.|
+|[FileImportJob](fileimportjob.md)|FileImportJob is reserved for future use.|
+|[FileImportOption](fileimportoption.md)|FileImportOption is reserved for future use.|
 |[FilterLinkAdExtension](filterlinkadextension.md)|Filter Link Extensions pair one header with between 3 and 10 clickable text values that tell customers more about your business.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
 |[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
@@ -173,7 +173,7 @@ The Campaign Management service defines the following data objects.
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|
-|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|Reserved for future use.|
+|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|TargetImpressionShareBiddingScheme is reserved for future use.|
 |[TargetRoasBiddingScheme](targetroasbiddingscheme.md)|Defines an object that represents the target ROAS bid strategy type.|
 |[TargetSetting](targetsetting.md)|The target settings that determines whether the Age, Audience, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.|
 |[TargetSettingDetail](targetsettingdetail.md)|Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.|

@@ -7,7 +7,7 @@ ms.author: eur
 description: TargetImpressionShareBiddingScheme is reserved for future use.
 ---
 # TargetImpressionShareBiddingScheme Data Object - Campaign Management
-Reserved for future use.
+TargetImpressionShareBiddingScheme is reserved for future use.
 
 ## Syntax
 ```xml

@@ -7,7 +7,7 @@ ms.author: eur
 description: ImportAdditionalField is reserved for future use.
 ---
 # ImportAdditionalField Value Set - Campaign Management
-Reserved for future use.
+ImportAdditionalField is reserved for future use.
 
 ## Syntax
 ```xml

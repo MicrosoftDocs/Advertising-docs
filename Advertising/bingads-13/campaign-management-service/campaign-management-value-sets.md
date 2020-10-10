@@ -59,7 +59,7 @@ The Campaign Management service defines the following value sets.
 |[EntityType](entitytype.md)|Defines entity types for association and editorial service operations.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
-|[ImportAdditionalField](importadditionalfield.md)|Reserved for future use.|
+|[ImportAdditionalField](importadditionalfield.md)|ImportAdditionalField is reserved for future use.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|

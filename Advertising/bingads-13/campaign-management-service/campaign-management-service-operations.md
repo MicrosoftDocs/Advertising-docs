@@ -76,7 +76,7 @@ The Campaign Management service defines the following service operations.
 |[GetConversionGoalsByTagIds](getconversiongoalsbytagids.md)|Gets the conversion goals that use the specified UET tags.|100 *TagIds*|
 |[GetEditorialReasonsByIds](geteditorialreasonsbyids.md)|Gets the reasons why the specified entities failed editorial review and whether the issue is appealable.|1 *AccountId*<br/><br/>1,000 *EntityIdToParentIdAssociations*|
 |[GetExperimentsByIds](getexperimentsbyids.md)|Gets experiments by experiment identifiers.|5,000 *ExperimentIds*|
-|[GetFileImportUploadUrl](getfileimportuploadurl.md)|Reserved for future use.|N/A.|
+|[GetFileImportUploadUrl](getfileimportuploadurl.md)|GetFileImportUploadUrl is reserved for future use.|N/A.|
 |[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.|Not applicable.|
 |[GetImportJobsByIds](getimportjobsbyids.md)|Gets import jobs by their type and identifiers.|100 *ImportJobIds*|
 |[GetImportResults](getimportresults.md)|Gets results for import jobs completed within the last 90 days.|100 *ImportJobIds*|

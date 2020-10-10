@@ -7,7 +7,7 @@ ms.author: eur
 description: FileImportJob is reserved for future use.
 ---
 # FileImportJob Data Object - Campaign Management
-Reserved for future use. 
+FileImportJob is reserved for future use. 
 
 ## Syntax
 ```xml

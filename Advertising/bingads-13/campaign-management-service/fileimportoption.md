@@ -7,7 +7,7 @@ ms.author: eur
 description: FileImportOption is reserved for future use.
 ---
 # FileImportOption Data Object - Campaign Management
-Reserved for future use.
+FileImportOption is reserved for future use.
 
 ## Syntax
 ```xml

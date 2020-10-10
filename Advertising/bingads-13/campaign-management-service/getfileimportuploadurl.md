@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetFileImportUploadUrl Service Operation - Campaign Management
-Reserved for future use.
+GetFileImportUploadUrl is reserved for future use.
 
 > [!NOTE]
 > This closed beta is available to select participants only. 
