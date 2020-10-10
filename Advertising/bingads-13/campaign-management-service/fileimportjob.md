@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: FileImportJob is reserved for future use.
 ---
 # FileImportJob Data Object - Campaign Management
-Reserved for future use. 
+FileImportJob is reserved for future use. 
 
 ## Syntax
 ```xml

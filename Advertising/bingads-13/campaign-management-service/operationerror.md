@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a Campaign Management operation error object that contains the details that explain why the service operation failed.
+description: Defines a Campaign Management operation error that contains the details that explain why the service operation failed.
 ---
 # OperationError Data Object - Campaign Management
 Defines a Campaign Management operation error that contains the details that explain why the service operation failed.

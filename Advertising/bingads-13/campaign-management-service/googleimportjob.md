@@ -9,7 +9,7 @@ description: Defines a Google import job that can be run once or scheduled on a 
 # GoogleImportJob Data Object - Campaign Management
 Defines a Google import job that can be run once or scheduled on a recurring basis. 
 
-You can [add](addimportjobs.md) and [delete](deleteimportjobs.md) scheduled imports, but cannot edit or update via API. A scheduled import that you added via API can be edited in the Microsoft Advertising UI. 
+You can [add](addimportjobs.md) and [delete](deleteimportjobs.md) scheduled imports, but cannot edit or update them via the API. A scheduled import that was added via the API can be edited in the Microsoft Advertising UI. 
 
 > [!TIP]
 > For an implementation overview, see the [Google Ads Import](../guides/google-ads-import.md) technical guide.
@@ -36,8 +36,8 @@ The [GoogleImportJob](googleimportjob.md) object has the following elements: [Ca
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaignadgroupids"></a>CampaignAdGroupIds|The list of campaigns and their ad groups to import from Google Ads.<br/><br/>The identifiers are saved but not validated when you create an import job. If you include invalid campaign or ad group IDs, or if they become invalid e.g., later deleted from Google Ads, the invalid entities will be skipped during import.<br/><br/>**Add:** Optional. If this element is not set, and also depending on the [import options](#importoption) that you set, then all of the campaigns and ad groups in the [Google Ads account](#googleaccountid) are eligible for import.|[CampaignAdGroupIds](campaignadgroupids.md) array|
-|<a name="credentialid"></a>CredentialId|Authorizes a Google Ads user to import accounts to Microsoft Advertising.<br/><br/>This element is not returned when you retrieve or get the [GoogleImportJob](googleimportjob.md).<br/><br/>See the [Get an Import Credential ID](../guides/google-ads-import.md#get-credentialid) guide for more details.<br/><br/>**Add:** Required|**string**|
+|<a name="campaignadgroupids"></a>CampaignAdGroupIds|The list of campaigns and their ad groups to import from Google Ads.<br/><br/>The identifiers are saved but not validated when you create an import job. If you include invalid campaign or ad group IDs, or if they become invalid e.g., deleted later from Google Ads, the invalid entities will be skipped during import.<br/><br/>**Add:** Optional. If this element is not set, then all of the campaigns and ad groups in the [Google Ads account](#googleaccountid) are eligible for import. The set of imported entities also depends on your [import options](#importoption).|[CampaignAdGroupIds](campaignadgroupids.md) array|
+|<a name="credentialid"></a>CredentialId|Authorizes a Google Ads user to import accounts to Microsoft Advertising.<br/><br/>This element is not returned when you get the [GoogleImportJob](googleimportjob.md).<br/><br/>See the [Get an Import Credential ID](../guides/google-ads-import.md#get-credentialid) guide for more details.<br/><br/>**Add:** Required|**string**|
 |<a name="googleaccountid"></a>GoogleAccountId|The Google Ads account to import.<br/><br/>**Add:** Required|**long**|
 |<a name="googleusername"></a>GoogleUserName|The Google account i.e., the Google user credentials with access to the Google Ads [account](#googleaccountid).<br/><br/>**Add:** Read-only|**string**|
 
@@ -53,7 +53,7 @@ The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](im
 |<a name="createdbyuserid"></a>CreatedByUserId|The unique identifier of the Microsoft Advertising user who created the import job.<br/><br/>**Add:** Read-only|**long**|
 |<a name="createdbyusername"></a>CreatedByUserName|The login user name of the Microsoft Advertising user who created the import job.<br/><br/>**Add:** Read-only|**string**|
 |<a name="createddatetimeinutc"></a>CreatedDateTimeInUTC|The date and time when the import job was created.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).<br/><br/>**Add:** Read-only|**dateTime**|
-|<a name="frequency"></a>Frequency|Determines whether the import job should be run once or scheduled on a recurring basis.<br/><br/>To run the import job now, this element should be nil or empty.<br/><br/>**Add:** Optional|[Frequency](frequency.md)|
+|<a name="frequency"></a>Frequency|Determines whether the import job should be run once or scheduled on a recurring basis.<br/><br/>To run the import job now, this element must be nil or empty.<br/><br/>**Add:** Optional|[Frequency](frequency.md)|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the import job.<br/><br/>**Add:** Read-only|**long**|
 |<a name="importoption"></a>ImportOption|The Google import options that are available via API.<br/><br/>To customize Google import options, you can include a [GoogleImportOption](googleimportoption.md) object. Otherwise to use the default Google import options, you can leave this element nil or empty. For more information about default options, see [GoogleImportOption](googleimportoption.md).<br/><br/>**Add:** Optional|[ImportOption](importoption.md)|
 |<a name="lastruntimeinutc"></a>LastRunTimeInUTC|The most recent import date and time for this job.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).<br/><br/>**Add:** Read-only|**dateTime**|
