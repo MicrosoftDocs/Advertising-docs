@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: GetFileImportUploadUrl is reserved for future use.
 dev_langs: 
   - csharp
   - java

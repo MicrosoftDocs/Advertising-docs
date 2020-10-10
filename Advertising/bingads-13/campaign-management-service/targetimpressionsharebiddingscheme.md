@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: TargetImpressionShareBiddingScheme is reserved for future use.
 ---
 # TargetImpressionShareBiddingScheme Data Object - Campaign Management
 Reserved for future use.
