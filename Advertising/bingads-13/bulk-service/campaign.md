@@ -12,7 +12,7 @@ dev_langs:
 Defines a campaign that can be uploaded and downloaded in a bulk file.  
 
 > [!IMPORTANT]
-> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.  
+> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.
 
 You can download all *Campaign* records in the account by including the [DownloadEntity](downloadentity.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. To include the [Keyword Relevance](#keywordrelevance), [Landing Page Relevance](#landingpagerelevance), [Landing Page User Experience](#landingpageuserexperience), and [Quality Score](#qualityscore) fields within the downloaded *Campaign* records, you must also include the [QualityScoreData](datascope.md#qualityscoredata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
