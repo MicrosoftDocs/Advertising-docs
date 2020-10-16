@@ -1,12 +1,11 @@
 ---
 title: "Content API Overview"
 description: "Describes the Content API, what it does, and who should use it."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: matrob
 ---
 
 # Content API Overview

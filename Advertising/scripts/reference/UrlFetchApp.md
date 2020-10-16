@@ -1,10 +1,9 @@
 ---
 title: "UrlFetchApp object"
 description: "The top-level object used to fetch resources from the web."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

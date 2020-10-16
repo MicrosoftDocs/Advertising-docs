@@ -2,8 +2,8 @@
 title: CampaignAdGroupIds Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Identifies a campaign and the list of its ad groups to include within the operation scope.
 ---
 # CampaignAdGroupIds Data Object - Campaign Management

@@ -2,8 +2,8 @@
 title: "Walkthrough: Bing Ads API Web Application in Java"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Create a web application using the Bing Ads Java SDK.
 dev_langs:
   - java

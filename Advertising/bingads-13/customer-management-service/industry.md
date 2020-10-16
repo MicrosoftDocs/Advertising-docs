@@ -2,8 +2,8 @@
 title: Industry Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines the possible industry segments in which a customer operates.
 ---
 # Industry Value Set - Customer Management

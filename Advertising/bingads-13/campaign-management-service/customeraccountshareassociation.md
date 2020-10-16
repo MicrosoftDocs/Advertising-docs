@@ -2,8 +2,8 @@
 title: CustomerAccountShareAssociation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Contains the association count for the corresponding usage type.
 ---
 # CustomerAccountShareAssociation Data Object - Campaign Management

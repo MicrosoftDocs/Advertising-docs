@@ -2,8 +2,8 @@
 title: AudiencePerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines an audience performance report request.
 ---
 # AudiencePerformanceReportRequest Data Object - Reporting

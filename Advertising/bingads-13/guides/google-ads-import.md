@@ -2,8 +2,8 @@
 title: "Google Ads Import"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Import Google Ads campaigns.
 ---
 # Google Ads Import

@@ -2,8 +2,8 @@
 title: "Get Started Using PHP with Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Install the Bing Ads PHP SDK and discover code examples.
 ---
 # Get Started Using PHP with Bing Ads API

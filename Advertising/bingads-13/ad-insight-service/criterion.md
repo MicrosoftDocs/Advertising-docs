@@ -2,8 +2,8 @@
 title: Criterion Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: This is the base class from which keyword planner criterion objects derive.
 ---
 # Criterion Data Object - Ad Insight

@@ -2,8 +2,8 @@
 title: "Bing Ads API Client Libraries"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: The Bing Ads API Software Development Kits enhance the experience of developing Bing Ads API applications with .NET, Java, PHP, and Python languages.
 ---
 # Bing Ads API Client Libraries

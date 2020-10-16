@@ -3,9 +3,8 @@ title: "Validating your Points of Sale Feed"
 description: Shows how to validate your points of sale feed file before sending it to Microsoft Advertising.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 # Validate your Points of Sale Feed

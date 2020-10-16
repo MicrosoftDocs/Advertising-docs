@@ -2,8 +2,8 @@
 title: Frequency Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Determines whether an import job should be run once or scheduled on a recurring basis.
 ---
 # Frequency Data Object - Campaign Management

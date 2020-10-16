@@ -2,8 +2,8 @@
 title: EstimatedBidAndTraffic Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines an object that contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost for the corresponding keyword or ad group given the suggested bid.
 ---
 # EstimatedBidAndTraffic Data Object - Ad Insight

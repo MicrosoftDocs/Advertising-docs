@@ -3,9 +3,8 @@ title: Differences between Google's and Microsoft Advertising's QueryControl mes
 description: Lists the differences between Google's and Microsoft Advertising's QueryControl messages
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 # Differences between Google's and Microsoft Advertising's QueryControl messages

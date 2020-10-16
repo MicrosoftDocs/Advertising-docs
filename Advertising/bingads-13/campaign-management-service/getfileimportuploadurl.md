@@ -2,8 +2,8 @@
 title: GetFileImportUploadUrl Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: GetFileImportUploadUrl is reserved for future use.
 dev_langs: 
   - csharp
