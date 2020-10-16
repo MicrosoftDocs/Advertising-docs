@@ -2,8 +2,8 @@
 title: "Hotel Group Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Describes the Hotel Group fields in a Bulk file. 
 ---
 # Hotel Group Record - Bulk

@@ -2,8 +2,8 @@
 title: "Bulk Service Reference"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Reference documentation for the Bulk API.
 ---
 # Bulk Service Reference

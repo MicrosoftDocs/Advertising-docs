@@ -2,8 +2,8 @@
 title: SearchAccounts Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Searches for accounts that match the request criteria.
 dev_langs: 
   - csharp

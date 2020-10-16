@@ -2,8 +2,8 @@
 title: "Get Started Using Java with Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Install the Bing Ads Java SDK and discover code examples.
 ---
 # Get Started Using Java with Bing Ads API

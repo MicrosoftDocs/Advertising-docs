@@ -2,8 +2,8 @@
 title: BidLandscapePoint Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines an object that contains estimates of clicks, cost, and impressions  given the suggested bid.
 ---
 # BidLandscapePoint Data Object - Ad Insight

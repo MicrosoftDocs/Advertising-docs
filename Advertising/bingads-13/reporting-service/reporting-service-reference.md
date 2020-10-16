@@ -2,8 +2,8 @@
 title: "Reporting Service Reference"
 ms.service: "bing-ads-reporting-service"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Reference documentation for the Reporting API.
 ---
 # Reporting Service Reference

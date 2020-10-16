@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Advertising Scripts Builders"
 description: "Describes how builders work in Microsoft Advertising Scripts."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

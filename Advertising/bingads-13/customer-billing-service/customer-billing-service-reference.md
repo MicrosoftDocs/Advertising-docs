@@ -2,8 +2,8 @@
 title: "Customer Billing Service Reference"
 ms.service: "bing-ads-customer-billing-service"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Reference documentation for the Customer Billing API.
 ---
 # Customer Billing Service Reference

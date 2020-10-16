@@ -2,8 +2,8 @@
 title: SharedEntityAssociation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines an object that associates a campaign to negative keyword list, or an ad account to a website exclusion list.
 ---
 # SharedEntityAssociation Data Object - Campaign Management

@@ -2,8 +2,8 @@
 title: "Campaign Remarketing List Association Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Describes the Campaign Remarketing List Association fields in a Bulk file.
 dev_langs:
   - csharp

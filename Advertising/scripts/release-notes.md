@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Advertising Scripts release notes"
 description: "Describes the changes that were included with each release."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

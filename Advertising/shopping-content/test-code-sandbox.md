@@ -1,12 +1,11 @@
 ---
 title: "Testing your Code in Sandbox"
 description: "Describes options for testing Content API client code."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 # Testing your Code in Sandbox
 

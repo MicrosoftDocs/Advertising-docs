@@ -2,8 +2,8 @@
 title: BudgetPointType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines the possible values of a campaign budget point.
 ---
 # BudgetPointType Value Set - Ad Insight

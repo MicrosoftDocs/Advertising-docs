@@ -1,12 +1,11 @@
 ---
 title: "Get Started with the Content API"
 description: "Learn how to get started using the Content API."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 
 # Get Started with the Content API

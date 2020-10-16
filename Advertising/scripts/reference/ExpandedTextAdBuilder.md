@@ -1,10 +1,9 @@
 ---
 title: "ExpandedTextAdBuilder object"
 description: "Contains the methods for creating an expanded text ad."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

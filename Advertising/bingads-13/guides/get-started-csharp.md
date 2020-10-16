@@ -2,8 +2,8 @@
 title: "Get Started Using C# with Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Install the Bing Ads .NET SDK and discover code examples.
 ---
 # Get Started Using C# with Bing Ads API

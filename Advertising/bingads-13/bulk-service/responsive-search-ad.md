@@ -2,8 +2,8 @@
 title: "Responsive Search Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Describes the Responsive Search Ad fields in a Bulk file.
 dev_langs:
   - csharp

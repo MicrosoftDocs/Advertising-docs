@@ -3,9 +3,8 @@ title: "Validating your Hotel Feed"
 description: Shows how to validate your hotel feed file before sending it to Bing.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Validate your Hotel Feed

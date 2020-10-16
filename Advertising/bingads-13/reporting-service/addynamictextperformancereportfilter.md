@@ -2,8 +2,8 @@
 title: AdDynamicTextPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines the criteria to use to filter the ad dynamic text performance report data.
 ---
 # AdDynamicTextPerformanceReportFilter Data Object - Reporting

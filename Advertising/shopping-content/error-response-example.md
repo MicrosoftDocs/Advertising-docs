@@ -1,12 +1,11 @@
 ---
 title: "Error Response Example"
 description: "Shows example json representing an error response returned by the Content API."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 # Error Response Example
 The error response varies depending on the URI being called. See the following responses for JSON and XML examples.

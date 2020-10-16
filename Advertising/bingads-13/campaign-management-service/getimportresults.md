@@ -2,8 +2,8 @@
 title: GetImportResults Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Gets results for import jobs completed within the last 90 days.
 dev_langs: 
   - csharp

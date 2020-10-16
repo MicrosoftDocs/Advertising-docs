@@ -2,8 +2,8 @@
 title: GetListItemsBySharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Gets the negative keywords of a negative keyword list, or negative sites of a website exclusion list.
 dev_langs: 
   - csharp

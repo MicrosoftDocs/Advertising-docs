@@ -2,8 +2,8 @@
 title: GetBMCStoresByCustomerId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Gets the Microsoft Merchant Center stores for the specified customer.
 dev_langs: 
   - csharp

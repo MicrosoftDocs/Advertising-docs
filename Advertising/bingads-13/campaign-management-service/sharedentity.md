@@ -2,8 +2,8 @@
 title: SharedEntity Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines the base class of a shared entity.
 ---
 # SharedEntity Data Object - Campaign Management

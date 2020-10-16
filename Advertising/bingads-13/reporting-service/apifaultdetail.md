@@ -2,8 +2,8 @@
 title: ApiFaultDetail Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines a Reporting API fault detail object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
 # ApiFaultDetail Data Object - Reporting

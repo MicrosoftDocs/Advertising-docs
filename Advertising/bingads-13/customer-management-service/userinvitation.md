@@ -2,8 +2,8 @@
 title: UserInvitation Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines an invitation for a user to sign up for Microsoft Advertising.
 ---
 # UserInvitation Data Object - Customer Management

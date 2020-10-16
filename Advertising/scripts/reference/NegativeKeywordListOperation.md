@@ -1,10 +1,9 @@
 ---
 title: "NegativeKeywordListOperation object"
 description: "Contains the methods for determining whether the negative keyword list was successfully added."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

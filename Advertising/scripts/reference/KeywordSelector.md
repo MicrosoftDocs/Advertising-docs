@@ -1,10 +1,9 @@
 ---
 title: "KeywordSelector object"
 description: "Contains the methods for filtering the list of keywords to return."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

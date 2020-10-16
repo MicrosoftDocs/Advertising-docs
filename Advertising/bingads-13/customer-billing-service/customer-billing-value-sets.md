@@ -2,8 +2,8 @@
 title: Customer Billing Value Sets
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Value sets reference for the CustomerBilling service.
 ---
 # Customer Billing Value Sets

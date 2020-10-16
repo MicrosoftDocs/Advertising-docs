@@ -3,9 +3,8 @@ title: "Using room bundles"
 description: Shows how to include room bundles in your itinerary data.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-ms.author: "scottwhi"
-manager: ehansen
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Using room bundles

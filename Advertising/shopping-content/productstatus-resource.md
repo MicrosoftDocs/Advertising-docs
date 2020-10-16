@@ -1,12 +1,11 @@
 ---
 title: "ProductStatuses Resource"
 description: "Describes the Product Statuses resource and related programming elements of Content API."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 
 # ProductStatuses Resource

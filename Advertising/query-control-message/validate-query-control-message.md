@@ -3,9 +3,8 @@ title: Validate QueryControl messages
 description: Shows how to validate a QueryControl message
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Validate QueryControl messages

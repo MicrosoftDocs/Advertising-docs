@@ -2,8 +2,8 @@
 title: "Ad Extensions"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Setup ad extensions with the Bing Ads API.
 ---
 # Ad Extensions

@@ -2,8 +2,8 @@
 title: DeleteAudiences Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Deletes the specified audiences.
 dev_langs: 
   - csharp

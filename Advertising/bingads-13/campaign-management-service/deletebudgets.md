@@ -2,8 +2,8 @@
 title: DeleteBudgets Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Deletes budgets from the account's shared budget library.
 dev_langs: 
   - csharp

@@ -3,9 +3,8 @@ title: "Hotel API"
 description: Overview of the Hotel API, which you use to manage your hotel campaigns in Microsoft Advertising.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Hotel API

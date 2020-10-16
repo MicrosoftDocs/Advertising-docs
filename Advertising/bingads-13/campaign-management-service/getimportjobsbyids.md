@@ -2,8 +2,8 @@
 title: GetImportJobsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Gets import jobs by their type and identifiers.
 dev_langs: 
   - csharp

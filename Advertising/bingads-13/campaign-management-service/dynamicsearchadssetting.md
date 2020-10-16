@@ -2,8 +2,8 @@
 title: DynamicSearchAdsSetting Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines the Dynamic Search Ads setting for a campaign.
 ---
 # DynamicSearchAdsSetting Data Object - Campaign Management

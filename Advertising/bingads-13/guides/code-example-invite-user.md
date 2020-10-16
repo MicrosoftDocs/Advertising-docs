@@ -2,8 +2,8 @@
 title: "Invite User Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Setup new users in C#, Java, Php, or Python.
 dev_langs:
   - csharp

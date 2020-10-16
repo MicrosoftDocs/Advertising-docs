@@ -2,8 +2,8 @@
 title: UpdateCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Updates the details of the specified customer.
 dev_langs: 
   - csharp

@@ -2,8 +2,8 @@
 title: AdExtensionByKeywordReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines an ad extension by keyword report request.
 ---
 # AdExtensionByKeywordReportRequest Data Object - Reporting

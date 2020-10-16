@@ -3,9 +3,8 @@ title: "Manage Hotel Ad Campaigns"
 description: Shows how to manage your hotel campaign's subaccounts, hotel groups, and hotels.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Manage Hotel Ad campaigns

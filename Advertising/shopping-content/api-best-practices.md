@@ -1,12 +1,11 @@
 ---
 title: "API Best Practices"
 description: "Describes best practices when using the Content API."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 
 # API Best Practices

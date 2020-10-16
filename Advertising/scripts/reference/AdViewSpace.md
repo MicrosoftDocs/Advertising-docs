@@ -1,10 +1,9 @@
 ---
 title: "AdViewSpace object"
 description: "Contains the methods used to cast this ad to a specific type."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

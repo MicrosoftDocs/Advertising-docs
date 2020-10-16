@@ -2,8 +2,8 @@
 title: Paging Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines a paging object that you can use to request objects in batches.
 ---
 # Paging Data Object - Customer Billing

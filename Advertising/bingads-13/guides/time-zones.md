@@ -2,8 +2,8 @@
 title: "Time Zones"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Find out about currencies supported with the Bing Ads API.
 ---
 # Time Zones

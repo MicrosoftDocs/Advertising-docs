@@ -2,8 +2,8 @@
 title: "Walkthrough: Bing Ads API Web Application in PHP"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Create a web application using the Bing Ads PHP SDK.
 dev_langs:
   - php

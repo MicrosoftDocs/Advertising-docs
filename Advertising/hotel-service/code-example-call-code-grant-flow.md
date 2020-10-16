@@ -3,9 +3,8 @@ title: "Call CodeGrantFlow Code Example"
 description: Shows how to call the CodeGrantFlow code example to authenticate the user.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 dev_langs:
   - csharp
 ---

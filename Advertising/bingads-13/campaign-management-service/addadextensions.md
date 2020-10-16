@@ -2,8 +2,8 @@
 title: AddAdExtensions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Adds one or more ad extensions to an account's ad extension library.
 dev_langs: 
   - csharp

@@ -1,10 +1,9 @@
 ---
 title: "Keyword object"
 description: "Contains the methods for managing a keyword."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

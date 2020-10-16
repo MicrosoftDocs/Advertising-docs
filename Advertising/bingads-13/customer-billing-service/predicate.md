@@ -2,8 +2,8 @@
 title: Predicate Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines a predicate for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 # Predicate Data Object - Customer Billing

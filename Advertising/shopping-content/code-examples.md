@@ -1,12 +1,12 @@
 ---
 title: "Content API Code Examples"
 description: "A list of links providing more information on each operation available in the Content API."
-author: "swhite-msft"
+author: Matt-UX
 manager: "ehnasen"
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: mattrob
 ---
 
 # Content API Code Examples

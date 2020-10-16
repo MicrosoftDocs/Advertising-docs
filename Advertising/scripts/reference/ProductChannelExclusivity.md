@@ -2,10 +2,9 @@
 title: "ProductChannelExclusivity"
 subtitle: "Scripts"
 description: "Contains the methods used to manage the product group."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

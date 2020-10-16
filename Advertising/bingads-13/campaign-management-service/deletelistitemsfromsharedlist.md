@@ -2,8 +2,8 @@
 title: DeleteListItemsFromSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Deletes negative keywords from a negative keyword list, or negative sites from a website exclusion list.
 dev_langs: 
   - csharp

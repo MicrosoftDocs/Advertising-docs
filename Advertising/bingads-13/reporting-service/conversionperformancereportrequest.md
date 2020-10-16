@@ -2,8 +2,8 @@
 title: ConversionPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines a conversion performance report request.
 ---
 # ConversionPerformanceReportRequest Data Object - Reporting

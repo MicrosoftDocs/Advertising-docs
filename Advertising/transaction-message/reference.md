@@ -3,9 +3,8 @@ title: "Transaction Message Reference"
 description: Describes the schema that defines a transaction message. 
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: mattrob
 ---
 
 # Transaction Message reference

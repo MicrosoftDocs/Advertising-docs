@@ -2,8 +2,8 @@
 title: "Frequently Asked Questions"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Find answers to some frequently asked questions about the Bing Ads API.
 ---
 # Frequently Asked Questions

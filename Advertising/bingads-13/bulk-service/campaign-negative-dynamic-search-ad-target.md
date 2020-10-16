@@ -2,8 +2,8 @@
 title: "Campaign Negative Dynamic Search Ad Target Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Describes the Campaign Negative Dynamic Search Ad Target fields in a Bulk file.
 dev_langs:
   - csharp

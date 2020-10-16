@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Advertising Scripts Preview Mode"
 description: "Describes how preview mode works in Microsoft Advertising Scripts."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

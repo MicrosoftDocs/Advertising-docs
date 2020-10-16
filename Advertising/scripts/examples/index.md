@@ -1,10 +1,9 @@
 ---
 title: "Script examples"
 description: "Shows examples that perform various actions against different resources."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: mattrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

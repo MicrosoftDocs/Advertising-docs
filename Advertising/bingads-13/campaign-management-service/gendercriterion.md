@@ -2,8 +2,8 @@
 title: GenderCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: mattrob
 description: Defines a criterion that can be used to show ads to users of a specific gender.
 ---
 # GenderCriterion Data Object - Campaign Management

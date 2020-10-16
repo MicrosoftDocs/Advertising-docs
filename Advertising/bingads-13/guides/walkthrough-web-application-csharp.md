@@ -2,8 +2,8 @@
 title: "Walkthrough: Bing Ads API Web Application in C#"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: mattrob
 description: Create a web application using the Bing Ads .NET SDK.
 dev_langs:
   - csharp
