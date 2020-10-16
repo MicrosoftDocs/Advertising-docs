@@ -3,7 +3,7 @@ title: DeleteKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Deletes one or more keywords in a specified ad group.
 dev_langs: 
   - csharp

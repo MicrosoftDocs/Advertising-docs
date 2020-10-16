@@ -3,7 +3,7 @@ title: "Hotel Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Describes the Hotel fields in a Bulk file. 
 ---
 # Hotel Record - Bulk

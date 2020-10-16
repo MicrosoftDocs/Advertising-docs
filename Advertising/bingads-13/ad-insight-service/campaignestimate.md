@@ -3,7 +3,7 @@ title: CampaignEstimate Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Contains a nested list of suggested keywords for the campaign's ad groups with minimum and maximum traffic estimates.
 ---
 # CampaignEstimate Data Object - Ad Insight

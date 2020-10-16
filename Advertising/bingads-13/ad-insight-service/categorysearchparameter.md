@@ -3,7 +3,7 @@ title: CategorySearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The keyword category search parameter that you can use as a seed for new keyword ideas.
 ---
 # CategorySearchParameter Data Object - Ad Insight

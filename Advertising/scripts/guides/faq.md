@@ -3,7 +3,7 @@ title: "FAQ"
 description: "Get answers to commonly asked questions."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

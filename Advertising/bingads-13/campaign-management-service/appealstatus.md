@@ -3,7 +3,7 @@ title: AppealStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the values that you use to determine whether an editorial issue is appealable.
 ---
 # AppealStatus Value Set - Campaign Management

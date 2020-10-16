@@ -3,7 +3,7 @@ title: "Account Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Describes the Account fields in a Bulk file.
 ---
 # Account Record - Bulk

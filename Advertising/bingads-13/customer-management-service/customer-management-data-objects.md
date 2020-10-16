@@ -3,7 +3,7 @@ title: Customer Management Data Objects
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Data objects reference for the CustomerManagement service.
 ---
 # Customer Management Data Objects

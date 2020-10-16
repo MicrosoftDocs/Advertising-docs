@@ -4,7 +4,7 @@ description: Provides the details for sending transaction messages to Microsoft 
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Pushing Transaction Messages to Microsoft Advertising

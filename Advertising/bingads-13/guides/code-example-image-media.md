@@ -3,7 +3,7 @@ title: "Image Media Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Add media for responsive ads and image ad extensions in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

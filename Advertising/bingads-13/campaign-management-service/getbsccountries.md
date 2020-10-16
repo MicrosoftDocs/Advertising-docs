@@ -3,7 +3,7 @@ title: GetBSCCountries Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the list of supported sales country codes for Microsoft Shopping Campaigns.
 dev_langs: 
   - csharp

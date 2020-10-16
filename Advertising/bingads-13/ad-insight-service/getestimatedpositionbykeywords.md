@@ -3,7 +3,7 @@ title: GetEstimatedPositionByKeywords Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the estimated position in the search results if the specified bid value would be used for the specified keywords.
 dev_langs: 
   - csharp

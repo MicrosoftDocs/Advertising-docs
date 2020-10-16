@@ -3,7 +3,7 @@ title: GetBidLandscapeByAdGroupIds Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Given a list of existing ad groups, this operation returns for each a list of suggested bids and estimated performance statistics.
 dev_langs: 
   - csharp

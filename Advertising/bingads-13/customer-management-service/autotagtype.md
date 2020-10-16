@@ -3,7 +3,7 @@ title: AutoTagType Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines possible values for an account level setting that determines whether to append or replace the supported UTM tracking codes.
 ---
 # AutoTagType Value Set - Customer Management

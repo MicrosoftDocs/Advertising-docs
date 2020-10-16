@@ -3,7 +3,7 @@ title: AdRotationType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the possible ad rotation types that you can apply to an ad group.
 ---
 # AdRotationType Value Set - Campaign Management

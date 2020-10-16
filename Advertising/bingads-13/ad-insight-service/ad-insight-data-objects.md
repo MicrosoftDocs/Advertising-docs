@@ -3,7 +3,7 @@ title: Ad Insight Data Objects
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Data objects reference for the AdInsight service.
 ---
 # Ad Insight Data Objects

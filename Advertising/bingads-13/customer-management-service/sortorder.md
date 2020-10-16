@@ -3,7 +3,7 @@ title: SortOrder Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the ascending or descending sort order of results for one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
 # SortOrder Value Set - Customer Management

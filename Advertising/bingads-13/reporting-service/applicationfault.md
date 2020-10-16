@@ -3,7 +3,7 @@ title: ApplicationFault Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the base object from which all Reporting fault detail objects derive.
 ---
 # ApplicationFault Data Object - Reporting

@@ -3,7 +3,7 @@ title: OrderBy Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an order for the list of entities returned using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
 # OrderBy Data Object - Customer Management

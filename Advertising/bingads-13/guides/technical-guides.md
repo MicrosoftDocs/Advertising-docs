@@ -3,7 +3,7 @@ title: "Bing Ads API Technical Guides"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The technical guides describe core advertising scenarios using Bing Ads API.
 ---
 # Bing Ads API Technical Guides

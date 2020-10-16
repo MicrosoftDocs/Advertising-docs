@@ -3,7 +3,7 @@ title: SearchCampaignChangeHistoryReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the attribute columns that you can include in the SearchCampaignChangeHistoryReportRequest.
 ---
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting

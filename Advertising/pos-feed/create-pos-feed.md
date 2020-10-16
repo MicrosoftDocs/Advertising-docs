@@ -4,7 +4,7 @@ description: Shows how to create a points of sale feed file that contains a list
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Create a Points of Sale Feed

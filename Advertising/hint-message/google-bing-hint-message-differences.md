@@ -4,7 +4,7 @@ description: Lists the differences between Google and Microsoft Advertising hint
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Differences between Google and Microsoft Advertising Hint messages

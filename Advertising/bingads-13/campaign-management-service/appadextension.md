@@ -3,7 +3,7 @@ title: AppAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an app ad extension that can be included in an ad.
 ---
 # AppAdExtension Data Object - Campaign Management

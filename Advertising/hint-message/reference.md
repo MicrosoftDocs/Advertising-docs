@@ -4,7 +4,7 @@ description: Describes the schema that defines the elements for creating a hint 
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Hint Message reference

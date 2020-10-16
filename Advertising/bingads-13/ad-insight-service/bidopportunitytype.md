@@ -3,7 +3,7 @@ title: BidOpportunityType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the possible bid opportunity types you can request when calling GetBidOpportunities.
 ---
 # BidOpportunityType Value Set - Ad Insight

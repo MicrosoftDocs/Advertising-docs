@@ -3,7 +3,7 @@ title: "UrlFetchParams object"
 description: "Defines the parameters used in a web resource request."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

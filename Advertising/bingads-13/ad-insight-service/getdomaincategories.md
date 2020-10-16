@@ -3,7 +3,7 @@ title: GetDomainCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the list of categories available for the website domain and language.
 dev_langs: 
   - csharp

@@ -4,7 +4,7 @@ description: Lists the schemas the define a hint message.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Hint message schema

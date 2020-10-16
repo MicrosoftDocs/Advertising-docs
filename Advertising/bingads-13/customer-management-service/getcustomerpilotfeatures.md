@@ -3,7 +3,7 @@ title: GetCustomerPilotFeatures Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets a list of the feature pilot IDs that are enabled for all ad accounts owned by a customer (manager account).
 dev_langs: 
   - csharp

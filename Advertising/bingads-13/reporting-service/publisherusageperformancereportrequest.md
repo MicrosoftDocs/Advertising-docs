@@ -3,7 +3,7 @@ title: PublisherUsagePerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a publisher usage performance report request.
 ---
 # PublisherUsagePerformanceReportRequest Data Object - Reporting

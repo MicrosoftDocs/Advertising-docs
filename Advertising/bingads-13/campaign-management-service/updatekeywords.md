@@ -3,7 +3,7 @@ title: UpdateKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Updates the keywords within a specified ad group.
 dev_langs: 
   - csharp

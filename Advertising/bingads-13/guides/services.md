@@ -3,7 +3,7 @@ title: "Version 13 Services"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Reference documentation for Bing Ads API Version 13 services.
 ---
 # Version 13 Services

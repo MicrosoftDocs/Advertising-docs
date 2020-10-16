@@ -3,7 +3,7 @@ title: "Microsoft Advertising Scripts policies"
 description: "Describes the list of things you can’t do with Scripts."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

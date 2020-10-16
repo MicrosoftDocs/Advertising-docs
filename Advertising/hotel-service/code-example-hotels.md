@@ -4,7 +4,7 @@ description: Shows you how to list, get, and update hotels.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 dev_langs:
   - csharp
   - curl

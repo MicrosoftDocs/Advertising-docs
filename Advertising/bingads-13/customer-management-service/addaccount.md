@@ -3,7 +3,7 @@ title: AddAccount Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Creates a new account within an existing customer.
 dev_langs: 
   - csharp

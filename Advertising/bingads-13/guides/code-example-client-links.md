@@ -3,7 +3,7 @@ title: "Client Links Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Manage client links as an agency in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

@@ -3,7 +3,7 @@ title: KeywordEstimator Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Contains a keyword estimators with your keyword level filter criteria for traffic estimates.
 ---
 # KeywordEstimator Data Object - Ad Insight

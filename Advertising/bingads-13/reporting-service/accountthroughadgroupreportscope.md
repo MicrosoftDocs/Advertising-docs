@@ -3,7 +3,7 @@ title: AccountThroughAdGroupReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the set of accounts, campaigns, and ad groups to include in the report.
 ---
 # AccountThroughAdGroupReportScope Data Object - Reporting

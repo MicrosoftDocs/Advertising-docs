@@ -3,7 +3,7 @@ title: BatchError Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a Reporting batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 ---
 # BatchError Data Object - Reporting

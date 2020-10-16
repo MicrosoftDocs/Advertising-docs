@@ -3,7 +3,7 @@ title: ApplicationFault Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the base object from which all Campaign Management fault detail objects derive.
 ---
 # ApplicationFault Data Object - Campaign Management

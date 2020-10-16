@@ -3,7 +3,7 @@ title: AdRotation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that specifies the type of ad rotation to apply to the ad group.
 ---
 # AdRotation Data Object - Campaign Management

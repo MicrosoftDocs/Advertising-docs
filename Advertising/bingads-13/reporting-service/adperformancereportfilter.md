@@ -3,7 +3,7 @@ title: AdPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the criteria to use to filter the ad performance report request data.
 ---
 # AdPerformanceReportFilter Data Object - Reporting

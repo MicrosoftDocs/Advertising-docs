@@ -3,7 +3,7 @@ title: AddClientLinks Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Initiates the client link process to manage the accounts of another customer.
 dev_langs: 
   - csharp

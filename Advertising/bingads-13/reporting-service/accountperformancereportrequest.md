@@ -3,7 +3,7 @@ title: AccountPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an account performance report request.
 ---
 # AccountPerformanceReportRequest Data Object - Reporting

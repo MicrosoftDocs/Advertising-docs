@@ -3,7 +3,7 @@ title: CampaignReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a campaign to include in the report.
 ---
 # CampaignReportScope Data Object - Reporting

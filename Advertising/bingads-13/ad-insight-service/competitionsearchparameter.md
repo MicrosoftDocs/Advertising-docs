@@ -3,7 +3,7 @@ title: CompetitionSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The competition search parameter filter that you can include when requesting keyword ideas.
 ---
 # CompetitionSearchParameter Data Object - Ad Insight

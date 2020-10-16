@@ -3,7 +3,7 @@ title: "BingAdsAccountSelector object"
 description: "Contains the methods for filtering the list of accounts that you have access to."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

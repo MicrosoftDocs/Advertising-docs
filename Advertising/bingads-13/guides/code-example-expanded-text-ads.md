@@ -3,7 +3,7 @@ title: "Expanded Text Ads Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Setup Expanded Text Ads in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

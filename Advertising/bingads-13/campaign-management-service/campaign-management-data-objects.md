@@ -3,7 +3,7 @@ title: Campaign Management Data Objects
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Data objects reference for the CampaignManagement service.
 ---
 # Campaign Management Data Objects

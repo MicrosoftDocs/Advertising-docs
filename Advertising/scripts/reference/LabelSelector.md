@@ -3,7 +3,7 @@ title: "LabelSelector object"
 description: "Contains the methods for filtering and ordering the list of labels to return."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

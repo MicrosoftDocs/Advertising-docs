@@ -3,7 +3,7 @@ title: GetAudiencesByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Retrieves the specified audiences from the specified account.
 dev_langs: 
   - csharp

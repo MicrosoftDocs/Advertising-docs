@@ -3,7 +3,7 @@ title: "Bing Ads API Release Notes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Get information about changes to Bing Ads API Version 13 by month. 
 ---
 # Bing Ads API Release Notes

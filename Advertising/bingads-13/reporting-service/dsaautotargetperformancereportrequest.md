@@ -3,7 +3,7 @@ title: DSAAutoTargetPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a DSA auto target performance report request.
 ---
 # DSAAutoTargetPerformanceReportRequest Data Object - Reporting

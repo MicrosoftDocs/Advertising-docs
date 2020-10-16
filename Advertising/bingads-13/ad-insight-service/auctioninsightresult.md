@@ -3,7 +3,7 @@ title: AuctionInsightResult Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the auction insight results from calling the GetAuctionInsightData operation.
 ---
 # AuctionInsightResult Data Object - Ad Insight

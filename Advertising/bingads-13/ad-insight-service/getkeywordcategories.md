@@ -3,7 +3,7 @@ title: GetKeywordCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the keyword categories to which the specified keywords belong.
 dev_langs: 
   - csharp

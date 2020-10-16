@@ -6,7 +6,7 @@ manager: "ehnasen"
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Content API Code Examples

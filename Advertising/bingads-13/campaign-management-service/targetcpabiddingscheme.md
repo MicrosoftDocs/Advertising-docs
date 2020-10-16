@@ -3,7 +3,7 @@ title: TargetCpaBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that represents the target CPA bid strategy type.
 ---
 # TargetCpaBiddingScheme Data Object - Campaign Management

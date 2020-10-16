@@ -4,7 +4,7 @@ description: Provides details about getting credentials from a service.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Using the Hotel API from a service

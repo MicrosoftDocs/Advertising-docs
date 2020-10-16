@@ -3,7 +3,7 @@ title: FindAccounts Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets a list of accounts owned by the specified customer that match the specified filter criteria.
 dev_langs: 
   - csharp

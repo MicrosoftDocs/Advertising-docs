@@ -4,7 +4,7 @@ description: Quick start guide to getting started with Transaction Messages
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Get started with Transaction Messages

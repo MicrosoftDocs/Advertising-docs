@@ -3,7 +3,7 @@ title: "AdGroupSelector object"
 description: "Contains the methods for filtering the list of ad groups to return."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

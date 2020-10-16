@@ -4,7 +4,7 @@ description: Shows how to validate a transaction message.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Validate your Transaction Message

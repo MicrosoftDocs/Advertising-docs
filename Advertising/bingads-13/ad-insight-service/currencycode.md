@@ -3,7 +3,7 @@ title: CurrencyCode Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a selection of currency values.
 ---
 # CurrencyCode Value Set - Ad Insight

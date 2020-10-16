@@ -4,7 +4,7 @@ description: Describes the experience when your app exceeds the number of reques
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Throttling requests

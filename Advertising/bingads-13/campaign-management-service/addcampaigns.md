@@ -3,7 +3,7 @@ title: AddCampaigns Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Adds one or more campaigns to the specified account.
 dev_langs: 
   - csharp

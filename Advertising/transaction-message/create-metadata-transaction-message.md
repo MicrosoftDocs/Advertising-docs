@@ -4,7 +4,7 @@ description: Shows how to create a metadata transaction message that describes r
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Create a metadata Transaction Message

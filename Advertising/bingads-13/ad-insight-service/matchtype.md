@@ -3,7 +3,7 @@ title: MatchType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the possible keyword match type values.
 ---
 # MatchType Value Set - Ad Insight

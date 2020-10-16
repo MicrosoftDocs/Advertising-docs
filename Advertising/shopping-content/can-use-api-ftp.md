@@ -5,7 +5,7 @@ author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 # Can I Use the API and FTP?
 Yes, in the following, very limited cases you may use the API and FTP together without conflicts occurring.

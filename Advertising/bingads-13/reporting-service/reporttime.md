@@ -3,7 +3,7 @@ title: ReportTime Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the date range values of a report request.
 ---
 # ReportTime Data Object - Reporting

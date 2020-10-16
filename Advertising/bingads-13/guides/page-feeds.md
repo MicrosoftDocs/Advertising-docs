@@ -3,7 +3,7 @@ title: "Page Feeds"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Add page feeds to fine-tune ad copy for Dynamic Search Ads auto-targets. 
 ---
 # Page Feeds

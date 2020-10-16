@@ -3,7 +3,7 @@ title: KeyValuePairOfstringstring Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 ---
 # KeyValuePairOfstringstring Data Object - Customer Management

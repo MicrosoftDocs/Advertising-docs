@@ -3,7 +3,7 @@ title: DeviceSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The device search parameter filter that you can include when requesting keyword ideas.
 ---
 # DeviceSearchParameter Data Object - Ad Insight

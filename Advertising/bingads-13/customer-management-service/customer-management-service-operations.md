@@ -3,7 +3,7 @@ title: Customer Management Service Operations
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Service operations reference for the CustomerManagement service.
 ---
 # Customer Management Service Operations

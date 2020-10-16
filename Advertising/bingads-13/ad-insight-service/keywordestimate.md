@@ -3,7 +3,7 @@ title: KeywordEstimate Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: A suggested keyword with minimum and maximum traffic estimates.
 ---
 # KeywordEstimate Data Object - Ad Insight

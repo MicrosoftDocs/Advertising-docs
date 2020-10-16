@@ -3,7 +3,7 @@ title: AdDistributionReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the ad distribution medium values that you can use to filter the report data.
 ---
 # AdDistributionReportFilter Value Set - Reporting

@@ -4,7 +4,7 @@ description: Shows how to validate your points of sale feed file before sending 
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Validate your Points of Sale Feed

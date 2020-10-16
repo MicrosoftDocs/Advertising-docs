@@ -3,7 +3,7 @@ title: NegativeKeyword Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a negative keyword with match type.
 ---
 # NegativeKeyword Data Object - Ad Insight

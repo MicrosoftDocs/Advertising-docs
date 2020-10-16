@@ -3,7 +3,7 @@ title: AccountReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the set of accounts to include in the report.
 ---
 # AccountReportScope Data Object - Reporting

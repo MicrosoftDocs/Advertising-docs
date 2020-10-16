@@ -3,7 +3,7 @@ title: SubmitGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Submits a report request.
 dev_langs: 
   - csharp

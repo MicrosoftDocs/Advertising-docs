@@ -3,7 +3,7 @@ title: "Authentication with the Microsoft identity platform endpoint for develop
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Authenticate for Bing Ads API using the Microsoft identity platform endpoint for developers.
 ---
 # Authentication with the Microsoft identity platform endpoint for developers

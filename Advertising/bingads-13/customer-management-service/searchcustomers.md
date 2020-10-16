@@ -3,7 +3,7 @@ title: SearchCustomers Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Searches for customers that match the request criteria.
 dev_langs: 
   - csharp

@@ -3,7 +3,7 @@ title: "Hotel Ads Bulk Update"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Update hotels, hotel groups, and hotel associations with the Bulk API.
 ---
 # Hotel Ads Bulk Update

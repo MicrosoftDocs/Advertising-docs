@@ -3,7 +3,7 @@ title: KeywordPerformanceReportSort Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a keyword performance report column and corresponding sort order.
 ---
 # KeywordPerformanceReportSort Data Object - Reporting

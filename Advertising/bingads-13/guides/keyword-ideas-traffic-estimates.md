@@ -3,7 +3,7 @@ title: "Keyword Ideas and Traffic Estimates"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Get keyword ideas and traffic estimates.
 ---
 # Keyword Ideas and Traffic Estimates

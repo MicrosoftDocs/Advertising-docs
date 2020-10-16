@@ -4,7 +4,7 @@ description: Describes the schema elements that you use to create a QueryControl
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # QueryControl message reference

@@ -3,7 +3,7 @@ title: GetAdExtensionIdsByAccountId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the ad extensions from the account's ad extension library.
 dev_langs: 
   - csharp

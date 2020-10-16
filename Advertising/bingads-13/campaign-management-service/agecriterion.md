@@ -3,7 +3,7 @@ title: AgeCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a criterion that can be used to show ads to users in a specific age range.
 ---
 # AgeCriterion Data Object - Campaign Management

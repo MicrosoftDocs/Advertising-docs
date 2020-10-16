@@ -3,7 +3,7 @@ title: GetKeywordOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets a list of keyword suggestions that are relevant to the specified ad group.
 dev_langs: 
   - csharp

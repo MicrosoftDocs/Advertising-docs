@@ -3,7 +3,7 @@ title: PromotionAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Promotion Extensions highlight special sales and offers in your text ads.
 ---
 # PromotionAdExtension Data Object - Campaign Management

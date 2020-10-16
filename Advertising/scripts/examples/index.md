@@ -3,7 +3,7 @@ title: "Script examples"
 description: "Shows examples that perform various actions against different resources."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

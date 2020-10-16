@@ -4,7 +4,7 @@ description: Shows how to use batch processing to send multiple requests in a si
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 dev_langs:
   - csharp
 ---

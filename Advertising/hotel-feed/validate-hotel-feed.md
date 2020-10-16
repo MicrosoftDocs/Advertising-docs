@@ -4,7 +4,7 @@ description: Shows how to validate your hotel feed file before sending it to Bin
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Validate your Hotel Feed

@@ -5,7 +5,7 @@ author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 # Example XML Product Offer
 The following shows an example of a product offer in XML that a GET request returns. 

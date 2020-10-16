@@ -3,7 +3,7 @@ title: MediaRepresentation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a media representation base class that includes a  media download Url.
 ---
 # MediaRepresentation Data Object - Campaign Management

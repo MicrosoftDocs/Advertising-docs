@@ -3,7 +3,7 @@ title: PollGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the status of a report request.
 dev_langs: 
   - csharp

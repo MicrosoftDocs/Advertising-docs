@@ -3,7 +3,7 @@ title: "AdGroup object"
 description: "Contains the methods used to manage the ad group."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

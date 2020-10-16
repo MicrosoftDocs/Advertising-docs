@@ -3,7 +3,7 @@ title: AdGroupPrivacyStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines possible values for ad group privacy status in Audience campaigns.
 ---
 # AdGroupPrivacyStatus Value Set - Campaign Management

@@ -3,7 +3,7 @@ title: ProductMatchCountReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a product match count report request that aggregates the performance data by product group for a specified time period.
 ---
 # ProductMatchCountReportRequest Data Object - Reporting

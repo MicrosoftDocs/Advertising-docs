@@ -5,7 +5,7 @@ author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 # Example JSON Product Offer
 The following shows an example of a product offer in JSON that a GET request returns. 

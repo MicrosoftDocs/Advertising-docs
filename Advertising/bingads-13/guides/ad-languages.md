@@ -3,7 +3,7 @@ title: "Ad Languages"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Language options in Microsoft Advertising give you control over your advertising campaign and experience.
 ---
 # Ad Languages

@@ -3,7 +3,7 @@ title: "BingAdsAccountStats object"
 description: "Contains the methods for accessing an account's performance data."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

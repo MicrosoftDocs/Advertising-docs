@@ -3,7 +3,7 @@ title: "AdTypeSpace object"
 description: "Contains the methods used to test if an ad is of the specified type."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

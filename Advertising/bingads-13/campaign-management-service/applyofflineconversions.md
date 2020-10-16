@@ -3,7 +3,7 @@ title: ApplyOfflineConversions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 dev_langs: 
   - csharp

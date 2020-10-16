@@ -3,7 +3,7 @@ title: "Ad Group Job Function Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Describes the Ad Group Job Function Criterion fields in a Bulk file.
 dev_langs:
   - csharp

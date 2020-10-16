@@ -4,7 +4,7 @@ description: Shows a simple implementation for calling the identity service and 
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 dev_langs:
   - csharp
 ---

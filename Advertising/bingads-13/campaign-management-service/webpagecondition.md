@@ -3,7 +3,7 @@ title: WebpageCondition Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a condition or criterion that helps determine whether you want to show dynamic search ads.
 ---
 # WebpageCondition Data Object - Campaign Management

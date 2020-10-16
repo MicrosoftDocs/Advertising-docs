@@ -5,7 +5,7 @@ author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 # Error Response Example
 The error response varies depending on the URI being called. See the following responses for JSON and XML examples.

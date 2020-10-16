@@ -3,7 +3,7 @@ title: "Audience Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Setup Audience ads with the Bing Ads API.
 ---
 # Audience Ads

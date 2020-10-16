@@ -4,7 +4,7 @@ description: Points of sale landing page
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Points of Sale Feed

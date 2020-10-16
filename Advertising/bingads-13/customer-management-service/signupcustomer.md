@@ -3,7 +3,7 @@ title: SignupCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Creates a new customer and account.
 dev_langs: 
   - csharp

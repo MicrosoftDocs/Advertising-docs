@@ -3,7 +3,7 @@ title: "URL Tracking with Upgraded URLs"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: URL tracking allows you to find out how people got to your website by adding tracking parameters in Microsoft Advertising and then using a third-party tracking tool or service to analyze the data.
 ---
 # URL Tracking with Upgraded URLs

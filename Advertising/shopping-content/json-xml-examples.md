@@ -5,7 +5,7 @@ author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: mattrob
+ms.author: matrob
 ---
 # JSON and XML Examples
 This section provides JSON and XML example responses.

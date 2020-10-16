@@ -3,7 +3,7 @@ title: "Show Ads to Your Target Audience"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Get your ads in front of the right people.
 ---
 # Show Ads to Your Target Audience

@@ -3,7 +3,7 @@ title: "Keyword Planner Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Get keyword ideas and traffic estimates in C#, Java, PHP, or Python. 
 dev_langs:
   - csharp

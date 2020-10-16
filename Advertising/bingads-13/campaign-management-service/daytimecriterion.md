@@ -3,7 +3,7 @@ title: DayTimeCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a criterion that can be used to show ads to users during a specific day and time range.
 ---
 # DayTimeCriterion Data Object - Campaign Management

@@ -3,7 +3,7 @@ title: BudgetPoint Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that contains a budget amount and an estimate of weekly impressions, clicks, and cost for this budget amount.
 ---
 # BudgetPoint Data Object - Ad Insight

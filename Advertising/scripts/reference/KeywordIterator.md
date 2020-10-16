@@ -3,7 +3,7 @@ title: "KeywordIterator object"
 description: "Contains the methods for iterating through a list of keywords."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

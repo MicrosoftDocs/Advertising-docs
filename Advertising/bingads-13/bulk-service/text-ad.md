@@ -3,7 +3,7 @@ title: "Text Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Describes the Text Ad fields in a Bulk file.
 dev_langs:
   - csharp

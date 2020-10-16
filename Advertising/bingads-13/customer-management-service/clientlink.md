@@ -3,7 +3,7 @@ title: ClientLink Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a client link object.
 ---
 # ClientLink Data Object - Customer Management

@@ -3,7 +3,7 @@ title: OrderByField Value Set - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the field order of insertion orders returned using SearchInsertionOrders.
 ---
 # OrderByField Value Set - Customer Billing

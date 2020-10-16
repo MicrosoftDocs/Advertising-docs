@@ -3,7 +3,7 @@ title: CallDetailReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a call detail report request.
 ---
 # CallDetailReportRequest Data Object - Reporting

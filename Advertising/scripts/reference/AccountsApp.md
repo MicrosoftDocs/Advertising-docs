@@ -3,7 +3,7 @@ title: "AccountsApp object"
 description: "Contains the methods used to get the list of managed accounts the user have access to and to select the account to manage."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

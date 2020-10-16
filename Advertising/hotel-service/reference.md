@@ -4,7 +4,7 @@ description: Describes the endpoint, headers, query parameters, and objects of t
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Hotel API reference

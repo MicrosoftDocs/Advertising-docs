@@ -4,7 +4,7 @@ description: Lists the QueryControl schemas.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # QueryControl message schema

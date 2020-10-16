@@ -3,7 +3,7 @@ title: AdExtensionDetailReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the attributes and performance statistics columns that you can include in the AdExtensionDetailReportRequest.
 ---
 # AdExtensionDetailReportColumn Value Set - Reporting

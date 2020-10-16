@@ -4,7 +4,7 @@ description: Landing page for transaction message
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Transaction Message

@@ -3,7 +3,7 @@ title: "BingAdsApp object"
 description: "The top-level object used to navigate all entities in a single account."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

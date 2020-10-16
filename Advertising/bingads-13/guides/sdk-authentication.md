@@ -3,7 +3,7 @@ title: "Authentication With the SDKs"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Learn about authentication and basic service calls with the Bing Ads SDKs.
 dev_langs:
   - csharp

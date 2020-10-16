@@ -3,7 +3,7 @@ title: SetAccountProperties Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Sets account level properties by name.
 dev_langs: 
   - csharp

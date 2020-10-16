@@ -3,7 +3,7 @@ title: "Geographical Location Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Find out about geographical location codes supported with the Bing Ads API.
 ---
 # Geographical Location Codes

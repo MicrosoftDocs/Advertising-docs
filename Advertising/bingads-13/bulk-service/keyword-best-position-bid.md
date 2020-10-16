@@ -3,7 +3,7 @@ title: "Keyword Best Position Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Describes the Keyword Best Position Bid fields in a Bulk file.
 ---
 # Keyword Best Position Bid Record - Bulk

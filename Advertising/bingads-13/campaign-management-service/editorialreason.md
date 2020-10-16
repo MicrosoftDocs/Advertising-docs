@@ -3,7 +3,7 @@ title: EditorialReason Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that you can use to determine the component of an ad or keyword that failed editorial review, and the reason for the failure.
 ---
 # EditorialReason Data Object - Campaign Management

@@ -3,7 +3,7 @@ title: InheritFromParentBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that represents the inherit from parent bid strategy type.
 ---
 # InheritFromParentBiddingScheme Data Object - Campaign Management

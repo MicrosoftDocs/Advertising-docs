@@ -3,7 +3,7 @@ title: "Microsoft Advertising Scripts Authorization"
 description: "Describes how authorization works in Microsoft Advertising Scripts."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

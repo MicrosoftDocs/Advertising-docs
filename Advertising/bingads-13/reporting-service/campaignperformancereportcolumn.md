@@ -3,7 +3,7 @@ title: CampaignPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the attributes and performance statistics columns that you can include in the CampaignPerformanceReportRequest.
 ---
 # CampaignPerformanceReportColumn Value Set - Reporting

@@ -3,7 +3,7 @@ title: Campaign Management Service Operations
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Service operations reference for the CampaignManagement service.
 ---
 # Campaign Management Service Operations

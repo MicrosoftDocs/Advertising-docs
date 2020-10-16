@@ -3,7 +3,7 @@ title: AdApiError Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a Customer Management Ad API error object that contains the details that explain why the service operation failed.
 ---
 # AdApiError Data Object - Customer Management

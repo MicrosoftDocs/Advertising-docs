@@ -3,7 +3,7 @@ title: UetTag Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.
 ---
 # UetTag Data Object - Campaign Management

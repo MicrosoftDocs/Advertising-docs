@@ -3,7 +3,7 @@ title: "Request and Download a Report"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Learn about the steps to request and download a report.
 dev_langs:
   - csharp

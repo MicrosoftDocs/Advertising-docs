@@ -3,7 +3,7 @@ title: ValidateAddress Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Determines whether or not the submitted address is valid for Microsoft Advertising accounts.
 dev_langs: 
   - csharp

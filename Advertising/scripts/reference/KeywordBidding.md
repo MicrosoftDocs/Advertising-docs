@@ -3,7 +3,7 @@ title: "KeywordBidding object"
 description: "Contains the methods for specifying the keyword's bid values."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

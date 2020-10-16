@@ -4,7 +4,7 @@ description: Lits the code examples that show how to use the Hotel API to manage
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Hotel API code examples

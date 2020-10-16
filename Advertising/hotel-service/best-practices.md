@@ -4,7 +4,7 @@ description: Identifies best practices with using the Hotel Service API.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Best practices for Hotel Service API

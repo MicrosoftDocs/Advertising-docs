@@ -4,7 +4,7 @@ description: Provides the details for having Microsoft Advertising pull transact
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Having Microsoft Advertising pull Transaction Messages

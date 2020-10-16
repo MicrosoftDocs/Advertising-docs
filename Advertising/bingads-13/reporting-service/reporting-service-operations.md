@@ -3,7 +3,7 @@ title: Reporting Service Operations
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Service operations reference for the Reporting service.
 ---
 # Reporting Service Operations

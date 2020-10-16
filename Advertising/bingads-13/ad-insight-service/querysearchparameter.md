@@ -3,7 +3,7 @@ title: QuerySearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: The query search parameter that you can use as a seed for new keyword ideas.
 ---
 # QuerySearchParameter Data Object - Ad Insight

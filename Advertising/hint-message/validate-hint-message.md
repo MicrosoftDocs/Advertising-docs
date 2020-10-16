@@ -4,7 +4,7 @@ description: Shows how to validate a hint message before sending it to Microsoft
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Validate a hint message

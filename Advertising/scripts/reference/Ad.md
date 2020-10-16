@@ -3,7 +3,7 @@ title: "Ad object"
 description: "The base object that ads such as expanded text ads derive from."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

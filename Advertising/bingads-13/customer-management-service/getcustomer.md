@@ -3,7 +3,7 @@ title: GetCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the details of a customer.
 dev_langs: 
   - csharp

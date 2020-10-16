@@ -4,7 +4,7 @@ description: Shows how to create a CSV hotel feed file that lists the hotel prop
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 

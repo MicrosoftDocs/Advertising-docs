@@ -3,7 +3,7 @@ title: AdPosition Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the possible positions of an ad in the search results.
 ---
 # AdPosition Value Set - Ad Insight

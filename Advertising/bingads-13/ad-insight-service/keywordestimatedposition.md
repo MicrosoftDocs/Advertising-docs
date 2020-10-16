@@ -3,7 +3,7 @@ title: KeywordEstimatedPosition Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that contains the keyword and the estimated position in the search results for each match type.
 ---
 # KeywordEstimatedPosition Data Object - Ad Insight

@@ -3,7 +3,7 @@ title: ClientLinkStatus Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the possible status values of a ClientLink.
 ---
 # ClientLinkStatus Value Set - Customer Management

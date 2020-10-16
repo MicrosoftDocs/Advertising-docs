@@ -3,7 +3,7 @@ title: DownloadCampaignsByAccountIds Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Downloads settings and performance data for all of the account's campaigns.
 dev_langs: 
   - csharp

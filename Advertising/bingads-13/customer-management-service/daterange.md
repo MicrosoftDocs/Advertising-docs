@@ -3,7 +3,7 @@ title: DateRange Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a date range object.
 ---
 # DateRange Data Object - Customer Management

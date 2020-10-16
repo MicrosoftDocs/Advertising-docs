@@ -3,7 +3,7 @@ title: "Get Started With the Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Get a developer token and learn about authentication with the Bing Ads API.
 dev_langs:
   - csharp

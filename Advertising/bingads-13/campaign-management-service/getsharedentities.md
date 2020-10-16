@@ -3,7 +3,7 @@ title: GetSharedEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets negative keyword lists or website exclusion lists.
 dev_langs: 
   - csharp

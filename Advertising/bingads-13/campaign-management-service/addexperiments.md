@@ -3,7 +3,7 @@ title: AddExperiments Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Adds experiments and creates experiment campaigns based on existing campaigns in an account.
 dev_langs: 
   - csharp

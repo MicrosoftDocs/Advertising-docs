@@ -3,7 +3,7 @@ title: UpdateClientLinks Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Updates the status of the specified client links.
 dev_langs: 
   - csharp

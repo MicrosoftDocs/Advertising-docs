@@ -3,7 +3,7 @@ title: CompetitionLevel Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising.
 ---
 # CompetitionLevel Value Set - Ad Insight

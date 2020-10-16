@@ -4,7 +4,7 @@ description: Lists the difference in usage between Bing's and Google's transacti
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Differences between Google's and Bing's Transaction Message

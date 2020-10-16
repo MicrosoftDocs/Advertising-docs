@@ -4,7 +4,7 @@ description: Shows how to create an XML hotel feed file that lists the hotel pro
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Create an XML Hotel Feed file

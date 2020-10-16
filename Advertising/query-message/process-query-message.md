@@ -4,7 +4,7 @@ description: Shows how to process a Query message that Microsoft Advertising sen
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Process a Query message

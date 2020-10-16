@@ -3,7 +3,7 @@ title: "Microsoft Advertising Scripts Errors and Warnings"
 description: "Describes how errors and warnings are handled in Microsoft Advertising Scripts."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

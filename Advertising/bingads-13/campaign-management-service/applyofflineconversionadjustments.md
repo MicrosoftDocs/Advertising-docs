@@ -3,7 +3,7 @@ title: ApplyOfflineConversionAdjustments Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Applies offline conversion adjustments.
 dev_langs: 
   - csharp

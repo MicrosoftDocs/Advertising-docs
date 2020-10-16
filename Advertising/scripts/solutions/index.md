@@ -3,7 +3,7 @@ title: "Script solutions"
 description: "Shows complete solutions that perform specific tasks."
 author: Matt-UX
 
-ms.author: mattrob
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

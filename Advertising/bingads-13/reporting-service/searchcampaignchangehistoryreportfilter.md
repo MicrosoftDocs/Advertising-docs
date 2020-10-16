@@ -3,7 +3,7 @@ title: SearchCampaignChangeHistoryReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the criteria to use to filter the campaign change history report data.
 ---
 # SearchCampaignChangeHistoryReportFilter Data Object - Reporting

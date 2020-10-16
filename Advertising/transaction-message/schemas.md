@@ -4,7 +4,7 @@ description: Lists the schemas that define a transaction message.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Transaction Message schemas

@@ -3,7 +3,7 @@ title: GetAdGroupCriterionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets ad group criterions by identifiers and types.
 dev_langs: 
   - csharp

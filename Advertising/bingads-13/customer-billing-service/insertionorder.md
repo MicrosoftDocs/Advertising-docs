@@ -3,7 +3,7 @@ title: InsertionOrder Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: An insertion order is a contract that establishes the maximum amount you will spend on your account over a specified period of time.
 ---
 # InsertionOrder Data Object - Customer Billing

@@ -3,7 +3,7 @@ title: CriterionBid Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a base class for criterion bids.
 ---
 # CriterionBid Data Object - Campaign Management

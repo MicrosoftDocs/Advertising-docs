@@ -3,7 +3,7 @@ title: AdEditorialStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines the editorial review status values of an ad.
 ---
 # AdEditorialStatus Value Set - Campaign Management

@@ -3,7 +3,7 @@ title: GetCustomersInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the identifiers and names of customers that are accessible to the current authenticated user.
 dev_langs: 
   - csharp

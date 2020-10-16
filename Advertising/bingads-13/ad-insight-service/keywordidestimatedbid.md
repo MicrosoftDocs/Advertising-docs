@@ -3,7 +3,7 @@ title: KeywordIdEstimatedBid Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines an object that contains the identifier of the keyword and the suggested bid value for the keyword and match type.
 ---
 # KeywordIdEstimatedBid Data Object - Ad Insight

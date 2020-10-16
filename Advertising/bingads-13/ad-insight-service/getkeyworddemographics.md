@@ -3,7 +3,7 @@ title: GetKeywordDemographics Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the age and gender of users who have searched for the specified keywords.
 dev_langs: 
   - csharp

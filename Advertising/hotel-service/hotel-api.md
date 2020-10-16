@@ -4,7 +4,7 @@ description: Overview of the Hotel API, which you use to manage your hotel campa
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Hotel API

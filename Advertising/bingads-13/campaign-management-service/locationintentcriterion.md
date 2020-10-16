@@ -3,7 +3,7 @@ title: LocationIntentCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group.
 ---
 # LocationIntentCriterion Data Object - Campaign Management

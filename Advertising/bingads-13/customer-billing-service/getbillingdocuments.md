@@ -3,7 +3,7 @@ title: GetBillingDocuments Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the specified billing documents.
 dev_langs: 
   - csharp

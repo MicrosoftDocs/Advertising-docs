@@ -3,7 +3,7 @@ title: "Negative Sites"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: You can use negative sites to prevent your ad from being displayed on specific website URLs.
 ---
 # Negative Sites

@@ -3,7 +3,7 @@ title: GetBudgetOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the campaign budget opportunities of the specified campaign.
 dev_langs: 
   - csharp

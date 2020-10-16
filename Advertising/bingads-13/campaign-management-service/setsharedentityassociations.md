@@ -3,7 +3,7 @@ title: SetSharedEntityAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Sets the negative keyword list to campaign associations, or website exclusion list to ad account associations.
 dev_langs: 
   - csharp

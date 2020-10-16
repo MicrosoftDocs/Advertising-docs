@@ -4,7 +4,7 @@ description: Shows how to create a hint message that describes the itineraries t
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 ---
 
 # Create a Hint message

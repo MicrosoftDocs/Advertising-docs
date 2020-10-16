@@ -3,7 +3,7 @@ title: Opportunity Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: This is the base class from which opportunity objects derive.
 ---
 # Opportunity Data Object - Ad Insight

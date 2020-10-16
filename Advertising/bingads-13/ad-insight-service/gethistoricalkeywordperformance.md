@@ -3,7 +3,7 @@ title: GetHistoricalKeywordPerformance Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
-ms.author: mattrob
+ms.author: matrob
 description: Gets the historical performance of the normalized search term.
 dev_langs: 
   - csharp
