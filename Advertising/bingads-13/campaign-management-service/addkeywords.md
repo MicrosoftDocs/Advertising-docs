@@ -2,8 +2,8 @@
 title: AddKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Adds one or more keywords to an ad group.
 dev_langs: 
   - csharp

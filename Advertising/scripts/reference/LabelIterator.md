@@ -1,10 +1,9 @@
 ---
 title: "LabelIterator object"
 description: "Contains the methods for iterating through a list of labels."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

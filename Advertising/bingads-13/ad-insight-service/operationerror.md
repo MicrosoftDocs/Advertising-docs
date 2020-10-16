@@ -2,8 +2,8 @@
 title: OperationError Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines an Ad Insight operation error object that contains the details that explain why the service operation failed.
 ---
 # OperationError Data Object - Ad Insight

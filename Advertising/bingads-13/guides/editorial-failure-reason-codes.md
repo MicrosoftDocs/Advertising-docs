@@ -2,8 +2,8 @@
 title: "Editorial Reason Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Reference documentation for editorial failure reason codes. 
 ---
 # Editorial Reason Codes

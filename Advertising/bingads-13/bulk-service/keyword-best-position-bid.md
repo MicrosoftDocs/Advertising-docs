@@ -2,8 +2,8 @@
 title: "Keyword Best Position Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Describes the Keyword Best Position Bid fields in a Bulk file.
 ---
 # Keyword Best Position Bid Record - Bulk

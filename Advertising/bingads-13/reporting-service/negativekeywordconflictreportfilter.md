@@ -2,8 +2,8 @@
 title: NegativeKeywordConflictReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines the criteria to use to filter the negative keyword conflict report data.
 ---
 # NegativeKeywordConflictReportFilter Data Object - Reporting

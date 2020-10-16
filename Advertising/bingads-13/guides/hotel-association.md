@@ -2,8 +2,8 @@
 title: "Hotel Association Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Describes the Hotel Association fields in a Bulk file. 
 ---
 # Hotel Association Record - Bulk

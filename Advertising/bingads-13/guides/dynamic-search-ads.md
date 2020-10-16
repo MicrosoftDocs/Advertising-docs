@@ -2,8 +2,8 @@
 title: "Dynamic Search Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Setup Dynamic Search ads with the Bing Ads API.
 ---
 # Dynamic Search Ads

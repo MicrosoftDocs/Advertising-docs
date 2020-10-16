@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Advertising Scripts Iterators"
 description: "Describes how iterators work in Microsoft Advertising Scripts."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

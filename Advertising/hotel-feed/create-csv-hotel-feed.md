@@ -3,9 +3,8 @@ title: "Create CSV Hotel Feed"
 description: Shows how to create a CSV hotel feed file that lists the hotel properties you want to advertise.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 

@@ -2,8 +2,8 @@
 title: ServiceLevel Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: For internal use only.
 ---
 # ServiceLevel Value Set - Customer Management

@@ -1,10 +1,9 @@
 ---
 title: "KeywordUrls object"
 description: "Contains the methods for managing the keyword's URLs."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

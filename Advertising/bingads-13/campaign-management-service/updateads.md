@@ -2,8 +2,8 @@
 title: UpdateAds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Updates the specified ads within an ad group.
 dev_langs: 
   - csharp

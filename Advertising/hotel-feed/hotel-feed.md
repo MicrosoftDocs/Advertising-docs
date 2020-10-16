@@ -3,9 +3,8 @@ title: "Hotel Feed"
 description: Hotel feed overview.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 # Hotel Feed

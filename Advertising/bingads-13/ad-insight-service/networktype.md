@@ -2,8 +2,8 @@
 title: NetworkType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines the possible search networks on which an ad can display.
 ---
 # NetworkType Value Set - Ad Insight
