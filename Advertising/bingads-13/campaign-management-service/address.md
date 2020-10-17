@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: Defines a postal address.
+description: Defines a postal address for location ad extensions.
 ---
 # Address Data Object - Campaign Management
-Defines a postal address.
+Defines a postal address for location ad extensions.
 
 ## Syntax
 ```xml

@@ -1,7 +1,7 @@
 ---
 title: "ProductChannel"
 subtitle: "Scripts"
-description: "Contains the methods used to manage the product group."
+description: "Contains the methods used to manage the channel product group."
 author: Matt-UX
 
 ms.author: matrob

@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: Defines a selection of currency values.
+description: Defines currency codes for the Customer Billing service.
 ---
 # CurrencyCode Value Set - Customer Management
 Defines a selection of currency values.

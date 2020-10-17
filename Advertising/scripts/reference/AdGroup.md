@@ -1,6 +1,6 @@
 ---
 title: "AdGroup object"
-description: "Contains the methods used to manage the ad group."
+description: "Contains the methods used in single-account scripts to manage the ad group."
 author: Matt-UX
 
 ms.author: matrob

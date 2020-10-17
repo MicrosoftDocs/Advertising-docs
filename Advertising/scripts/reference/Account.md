@@ -1,6 +1,6 @@
 ---
 title: "Account object"
-description: "Contains the methods used to get account information such as name, customer ID, and account-level performance data."
+description: "Contains the methods used in single-account scripts to get account information such as name, customer ID, and account-level performance data."
 author: Matt-UX
 
 ms.author: matrob

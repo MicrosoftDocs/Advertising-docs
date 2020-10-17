@@ -1,7 +1,7 @@
 ---
 title: "ProductType"
 subtitle: "Scripts"
-description: "Contains the methods used to manage the product group."
+description: "Contains the methods used to manage the product type product group."
 author: Matt-UX
 
 ms.author: matrob

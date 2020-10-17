@@ -1,6 +1,6 @@
 ---
 title: "Campaign object"
-description: "Contains the methods used to manage the ad group."
+description: "Contains the methods used to manage the campaign."
 author: Matt-UX
 
 ms.author: matrob

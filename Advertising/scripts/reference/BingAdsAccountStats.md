@@ -1,6 +1,6 @@
 ---
 title: "BingAdsAccountStats object"
-description: "Contains the methods for accessing an account's performance data."
+description: "Contains the methods used in multi-account scripts for accessing an account's performance data."
 author: Matt-UX
 
 ms.author: matrob

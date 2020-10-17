@@ -4,7 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: Matt-UX
 ms.author: matrob
-description: Authenticate for Bing Ads API using OAuth.
+description: Authenticate for Bing Ads API using the Live Connect endpoint.
 ---
 # Authentication with the Live Connect endpoint
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 

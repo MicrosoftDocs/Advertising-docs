@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: Defines a paging object that you can use to request objects in batches.
+description: Defines a paging object to request Campaign Management objects in batches.
 ---
 # Paging Data Object - Campaign Management
-Defines a paging object that you can use to request objects in batches.
+Defines a paging object to request Campaign Management objects in batches.
 
 ## Syntax
 ```xml

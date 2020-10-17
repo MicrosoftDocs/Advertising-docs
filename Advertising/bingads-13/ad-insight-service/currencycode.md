@@ -4,7 +4,7 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: Defines a selection of currency values.
+description: Defines currency codes for the Ad Insight service.
 ---
 # CurrencyCode Value Set - Ad Insight
 Defines a selection of currency values.

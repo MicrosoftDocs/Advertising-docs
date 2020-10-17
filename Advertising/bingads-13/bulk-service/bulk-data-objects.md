@@ -18,5 +18,5 @@ The Bulk service defines the following data objects.
 |[BatchError](batcherror.md)|Defines a Bulk batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
 |[CampaignScope](campaignscope.md)|Defines an object that identifies a campaign to download.|
 |[EditorialError](editorialerror.md)|Defines an error object that identifies the entity with the batch of entities that failed editorial review.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Bulk API version.|
 |[OperationError](operationerror.md)|Defines a Bulk operation error object that contains the details that explain why the service operation failed.|

@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+description: The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.
 ---
 # KeyValuePairOfstringstring Data Object - Campaign Management
-The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.
 
 ## Syntax
 ```xml
