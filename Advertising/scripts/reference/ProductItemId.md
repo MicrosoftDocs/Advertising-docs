@@ -3,7 +3,6 @@ title: "ProductItemId"
 subtitle: "Scripts"
 description: "Contains the methods used to manage the item ID product group."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

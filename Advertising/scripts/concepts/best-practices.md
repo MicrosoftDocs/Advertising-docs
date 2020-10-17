@@ -2,7 +2,6 @@
 title: "Microsoft Advertising Scripts best practices"
 description: "Identifies the best practices you should follow to improve script performance."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

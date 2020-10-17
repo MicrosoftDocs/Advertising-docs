@@ -2,7 +2,6 @@
 title: "Label script examples"
 description: "Shows examples that perform various actions against labels."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

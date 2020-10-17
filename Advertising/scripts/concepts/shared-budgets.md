@@ -2,7 +2,6 @@
 title: "Shared budgets versus campaign-specific budgets"
 description: "Provides the basics about using shared budgets in Microsoft Advertising Scripts."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

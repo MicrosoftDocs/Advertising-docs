@@ -2,7 +2,6 @@
 title: "Microsoft Advertising Scripts"
 description: "Provides a short introduction to Microsoft Advertising Scripts."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

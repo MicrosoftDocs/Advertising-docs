@@ -2,7 +2,6 @@
 title: "BingAdsDate object"
 description: "Contains properties that define a date."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

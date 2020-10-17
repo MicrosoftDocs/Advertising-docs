@@ -2,7 +2,6 @@
 title: "Downloading a Catalog Status Report Code Example"
 description: "Code sample showing how to download a catalog status report with the Content API."
 author: Matt-UX
-
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: matrob

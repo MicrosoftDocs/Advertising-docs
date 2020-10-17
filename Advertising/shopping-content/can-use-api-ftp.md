@@ -2,7 +2,6 @@
 title: "Can I Use the API and FTP?"
 description: "Describes the use of FTP with the Content API."
 author: Matt-UX
-
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: matrob

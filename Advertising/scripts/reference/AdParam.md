@@ -2,7 +2,6 @@
 title: "AdParam object"
 description: "Contains the methods used to manage the substitution parameter."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
