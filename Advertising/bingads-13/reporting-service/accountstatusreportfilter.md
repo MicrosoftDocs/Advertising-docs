@@ -2,8 +2,8 @@
 title: AccountStatusReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines the account status values that you can use to filter the report data.
 ---
 # AccountStatusReportFilter Value Set - Reporting

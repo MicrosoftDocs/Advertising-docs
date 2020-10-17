@@ -2,8 +2,8 @@
 title: SendUserInvitation Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Sends an email invitation for a user to sign up for Microsoft Advertising.
 dev_langs: 
   - csharp

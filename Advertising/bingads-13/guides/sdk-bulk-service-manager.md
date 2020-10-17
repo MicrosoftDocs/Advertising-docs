@@ -2,8 +2,8 @@
 title: "Bulk Service Manager"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Learn about using Bulk Service Manager with the Bing Ads SDKs.
 dev_langs:
   - csharp

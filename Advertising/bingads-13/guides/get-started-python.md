@@ -2,8 +2,8 @@
 title: "Get Started Using Python with Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Install the Bing Ads Python SDK and discover code examples.
 dev_langs:
   - python

@@ -2,8 +2,8 @@
 title: "Offline Conversions Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Upload offline conversions in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

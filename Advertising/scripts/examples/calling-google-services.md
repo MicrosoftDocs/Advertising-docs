@@ -1,10 +1,9 @@
 ---
 title: "Calling Google services"
 description: "Shows how to call Google services such as Google Drive, Sheets, and Email."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

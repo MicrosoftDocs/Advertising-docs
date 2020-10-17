@@ -2,10 +2,9 @@
 title: "ProductGroupSelector"
 subtitle: "Scripts"
 description: "Contains the methods for filtering the list of product groups to return."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

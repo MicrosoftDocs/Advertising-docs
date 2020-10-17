@@ -2,8 +2,8 @@
 title: "Campaign Negative Site Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Describes the Campaign Negative Site fields in a Bulk file.
 dev_langs:
   - csharp

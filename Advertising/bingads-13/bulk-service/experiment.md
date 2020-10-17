@@ -2,8 +2,8 @@
 title: "Experiment Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: Matt-UX
+ms.author: matrob
 description: Defines an experiment that can be downloaded in a bulk file. 
 dev_langs:
   - csharp

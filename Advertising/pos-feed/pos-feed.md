@@ -3,9 +3,8 @@ title: "Points of Sale Feed"
 description: Points of sale landing page
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 # Points of Sale Feed

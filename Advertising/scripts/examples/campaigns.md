@@ -1,10 +1,9 @@
 ---
 title: "Campaign script examples"
 description: "Shows examples that perform various actions against campaigns."
-author: "swhite-msft"
-manager: ehansen
+author: Matt-UX
 
-ms.author: "scottwhi"
+ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

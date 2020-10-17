@@ -3,9 +3,8 @@ title: "OAuth Code Example"
 description: Lists the code examples that show how call the identity service to get an access and refresh token.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 dev_langs:
   - csharp
 ---

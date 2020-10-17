@@ -2,8 +2,8 @@
 title: DataScope Value Set - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines the scope or types of data to download.
 ---
 # DataScope Value Set - Bulk

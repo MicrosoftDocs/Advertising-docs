@@ -1,12 +1,11 @@
 ---
 title: "Managing Catalogs Code Example"
 description: "Code sample showing how to manage catalogs with the Content API."
-author: "swhite-msft"
-manager: "ehansen"
+author: Matt-UX
 
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: "scottwhi"
+ms.author: matrob
 
 dev_langs: 
   - csharp

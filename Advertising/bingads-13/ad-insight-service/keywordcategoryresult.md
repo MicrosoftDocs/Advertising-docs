@@ -2,8 +2,8 @@
 title: KeywordCategoryResult Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines an object that contains the keyword and a list of keyword categories that the keyword might belong to.
 ---
 # KeywordCategoryResult Data Object - Ad Insight

@@ -2,8 +2,8 @@
 title: Reporting Value Sets
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Value sets reference for the Reporting service.
 ---
 # Reporting Value Sets

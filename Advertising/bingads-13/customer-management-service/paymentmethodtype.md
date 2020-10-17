@@ -2,8 +2,8 @@
 title: PaymentMethodType Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines possible payment methods for a Microsoft Advertising account.
 ---
 # PaymentMethodType Value Set - Customer Management

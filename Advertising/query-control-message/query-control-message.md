@@ -3,9 +3,8 @@ title: QueryControl Message
 description: Landing page for QueryControl Message
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: "swhite-msft"
-manager: ehansen
-ms.author: "scottwhi"
+author: Matt-UX
+ms.author: matrob
 ---
 
 # QueryControl Message

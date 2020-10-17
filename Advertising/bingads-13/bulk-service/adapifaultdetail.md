@@ -2,8 +2,8 @@
 title: AdApiFaultDetail Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
-author: eric-urban
-ms.author: eur
+author: Matt-UX
+ms.author: matrob
 description: Defines a Bulk Ad API fault detail object that operations return when generic errors occur, such as an authentication error.
 ---
 # AdApiFaultDetail Data Object - Bulk
