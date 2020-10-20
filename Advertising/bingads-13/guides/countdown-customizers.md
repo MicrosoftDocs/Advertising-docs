@@ -7,7 +7,7 @@ ms.author: matrob
 description: Add a countdown to an event by day, hour, and minute. 
 ---
 # Countdown Customizers
-Countdown customizers let you easily add a countdown -- by day, hour, and then minute -- to an event in dynamic search ads, expanded text ads, and responsive search ads. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
+Countdown customizers let you easily add a countdown -- by day, hour, and then minute -- to an event in dynamic search ads and expanded text ads. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
 
 Let's say you're going to have a big online sale for 3 days from February 14 through 16 (ending at midnight as soon as February 17th begins). With the countdown syntax, you could set the ad's Title Part 2 like this: "Sale ends in {=countdown("2021/02/17 00:00:00","en-us",3)}!". Here's when your ad would run and examples of how it would look:
 
@@ -20,7 +20,7 @@ After an ad's countdown ends, the ad will stop running but will retain the statu
 Let's break down the countdown requirements and options. All countdown options and parameters are case-insensitive.
 
 ## <a name="adcomponent"></a>Ad Component
-You can set a countdown function in the expanded text ad's path, text, or title components. You can set a countdown function in the responsive search ad's description, headline, or path components. Where you want the countdown to appear, begin with a '{' (known as a left brace or a left curly bracket) and end with a '}' (known as a right brace or a right curly bracket). All of the remaining countdown components will be enclosed between these brackets. 
+You can set a countdown function in the expanded text ad's path, text, or title components. Where you want the countdown to appear, begin with a '{' (known as a left brace or a left curly bracket) and end with a '}' (known as a right brace or a right curly bracket). All of the remaining countdown components will be enclosed between these brackets. 
  
 > [!NOTE]
 > Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available per component. For example if the title part 2 is set to *"Sale ends in {=countdown("2021/02/17 00:00:00","en-us",3)}!"* the unsubstituted character count of the countdown function (*{=countdown("2021/02/17 00:00:00","en-us",3)}*) is 46; however, only 8 characters will be used from the total of 30 available substituted characters for the title part 2 component. In this example *Sale ends in !* uses up 14 characters, so you could use up to an additional 8 characters (8 + 14 + 8 = 30). 
@@ -46,4 +46,3 @@ The third function parameter is used to specify how many days before the Countdo
 ## See Also
 [Dynamic Search Ads](dynamic-search-ads.md)  
 [Expanded Text Ads](expanded-text-ads.md)  
-[Responsive Search Ads](responsive-search-ads.md)  
