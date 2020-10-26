@@ -210,6 +210,6 @@ The name of the device that you want to target with the corresponding *Bid Adjus
 
 Supported values are *Computers*, *Smartphones*, and *Tablets*.
 
-**Add:** Required. Three separate bids for *Computers*, *Smartphones*, and *Tablets* should be specified together in the bulk file (each bid in a seperate record / row). If you do not add individual device criterions representing each of the three device types, no device criterions will be added for the ad group.  
+**Add:** Required. Three separate bids for *Computers*, *Smartphones*, and *Tablets* should be specified together in the bulk file (each bid in a separate record / row). If you do not add individual device criterions representing each of the three device types, no device criterions will be added for the ad group.  
 **Update:** Required  
 **Delete:** Read-only  
