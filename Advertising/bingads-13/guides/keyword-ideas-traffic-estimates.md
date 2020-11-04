@@ -12,7 +12,8 @@ Choosing keywords is one of the most important aspects of creating and maintaini
 This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service. The same data is available through the API and the Keyword Planner tool in the Microsoft Advertising web application, although the results can vary significantly depending on the respective filter criteria for each entry point. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](budget-bid-opportunities.md). 
 
 > [!NOTE]
-> Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.
+> Keyword planner is now available to all customers, and more capabilities are coming soon!
+
 
 ## <a name="keywordideas"></a>Keyword Ideas
 Given a list of existing keywords, the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md) operation.
