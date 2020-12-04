@@ -2,8 +2,8 @@
 title: "Authentication with OAuth"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Authenticate for Bing Ads API using OAuth.
 ---
 # Authentication with OAuth

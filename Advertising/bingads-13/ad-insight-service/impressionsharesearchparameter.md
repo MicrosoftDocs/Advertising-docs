@@ -2,8 +2,8 @@
 title: ImpressionShareSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: The impression share search parameter filter that you can include when requesting keyword ideas.
 ---
 # ImpressionShareSearchParameter Data Object - Ad Insight

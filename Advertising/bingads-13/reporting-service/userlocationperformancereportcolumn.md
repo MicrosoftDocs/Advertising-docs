@@ -2,8 +2,8 @@
 title: UserLocationPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the UserLocationPerformanceReportRequest.
 ---
 # UserLocationPerformanceReportColumn Value Set - Reporting
@@ -76,16 +76,19 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ViewThroughConversions" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
+    <xs:enumeration value="TopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [Assists](#assists), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [BidMatchType](#bidmatchtype), [CampaignId](#campaignid), [CampaignName](#campaignname), [City](#city), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Country](#country), [County](#county), [Ctr](#ctr), [CurrencyCode](#currencycode), [DeliveredMatchType](#deliveredmatchtype), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [LocationId](#locationid), [MetroArea](#metroarea), [Network](#network), [PostalCode](#postalcode), [ProximityTargetLocation](#proximitytargetlocation), [QueryIntentCity](#queryintentcity), [QueryIntentCountry](#queryintentcountry), [QueryIntentCounty](#queryintentcounty), [QueryIntentDMA](#queryintentdma), [QueryIntentLocationId](#queryintentlocationid), [QueryIntentPostalCode](#queryintentpostalcode), [QueryIntentState](#queryintentstate), [Radius](#radius), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [State](#state), [TimePeriod](#timeperiod), [TopVsOther](#topvsother), [ViewThroughConversions](#viewthroughconversions).
+The [UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [Assists](#assists), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [BidMatchType](#bidmatchtype), [CampaignId](#campaignid), [CampaignName](#campaignname), [City](#city), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Country](#country), [County](#county), [Ctr](#ctr), [CurrencyCode](#currencycode), [DeliveredMatchType](#deliveredmatchtype), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [LocationId](#locationid), [MetroArea](#metroarea), [Network](#network), [PostalCode](#postalcode), [ProximityTargetLocation](#proximitytargetlocation), [QueryIntentCity](#queryintentcity), [QueryIntentCountry](#queryintentcountry), [QueryIntentCounty](#queryintentcounty), [QueryIntentDMA](#queryintentdma), [QueryIntentLocationId](#queryintentlocationid), [QueryIntentPostalCode](#queryintentpostalcode), [QueryIntentState](#queryintentstate), [Radius](#radius), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [State](#state), [TimePeriod](#timeperiod), [TopImpressionRatePercent](#topimpressionratepercent), [TopVsOther](#topvsother), [ViewThroughConversions](#viewthroughconversions).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|Reserved.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
@@ -122,14 +125,14 @@ The [UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="locationid"></a>LocationId|The Microsoft Advertising identifier of the location where the user was physically located when they clicked the ad.<br/><br/>For geographical location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).If the location ID is in the report but not found in the file downloaded via [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md), it is not targetable.|
-|<a name="metroarea"></a>MetroArea|The metro area (Nielsen DMAÂ® in the United States) where the user was physically located when they clicked the ad.|
+|<a name="metroarea"></a>MetroArea|The metro area (Nielsen DMA® in the United States) where the user was physically located when they clicked the ad.|
 |<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="postalcode"></a>PostalCode|The postal code where the user was physically located when they clicked the ad.|
 |<a name="proximitytargetlocation"></a>ProximityTargetLocation|The radius target bid name. The name of the geographic radius where the user was physically located when they clicked the ad. The *Radius* attribute column contains the distance of the radius.|
 |<a name="queryintentcity"></a>QueryIntentCity|The name of a city if the user's geographical intent can be determined. The city is set if the user's intent is a city, and not necessarily if they are physically located in the city.|
 |<a name="queryintentcountry"></a>QueryIntentCountry|The name of a country if the user's geographical intent can be determined. The country is set if the user's intent is related to a country, and not necessarily if they are physically located in the county.|
 |<a name="queryintentcounty"></a>QueryIntentCounty|The name of a county if the user's geographical intent can be determined. The county is set if the user's intent is related to a county, and not necessarily if they are physically located in the county. |
-|<a name="queryintentdma"></a>QueryIntentDMA|The name of a metro area (Nielsen DMAÂ® in the United States) if the user's geographical intent can be determined. The metro area is set if the user's intent is a metro area or city within the metro area, and not necessarily if they are physically located in the metro area.|
+|<a name="queryintentdma"></a>QueryIntentDMA|The name of a metro area (Nielsen DMA® in the United States) if the user's geographical intent can be determined. The metro area is set if the user's intent is a metro area or city within the metro area, and not necessarily if they are physically located in the metro area.|
 |<a name="queryintentlocationid"></a>QueryIntentLocationId|The location identifier if the user's geographical intent can be determined. |
 |<a name="queryintentpostalcode"></a>QueryIntentPostalCode|The name of a postal code if the user's geographical intent can be determined. The postal code is set if the user's intent is a postal code, and not necessarily if they are physically located in the postal code. |
 |<a name="queryintentstate"></a>QueryIntentState|The name of a state if the user's geographical intent can be determined. The state is set if the user's intent is a state or sub geography of the state, and not necessarily if they are physically located in the state.|
@@ -141,6 +144,7 @@ The [UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="state"></a>State|The state where the user was physically located when they clicked the ad.<br/><br/>The location where the user was in physically when they clicked the ad.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|Reserved.|
 |<a name="topvsother"></a>TopVsOther|Indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="viewthroughconversions"></a>ViewThroughConversions|View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.<br/><br/>View-through conversions don't have a click associated but do have an impression associated within the advertiser defined conversion window. If the user also clicked on an ad that was delivered via the Microsoft Audience or Search network, there won't be any view-through conversion counted. Only the click-based conversion would be counted.<br/><br/>View-through conversions are only counted for ads in the Microsoft Audience network.<br/><br/>Not everyone has view-through conversions yet. If you don't, don't worry. It's coming soon.|
 

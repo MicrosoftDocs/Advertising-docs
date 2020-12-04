@@ -2,8 +2,8 @@
 title: TimeZoneType Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the possible time zones for the customer management service.
 ---
 # TimeZoneType Value Set - Customer Management

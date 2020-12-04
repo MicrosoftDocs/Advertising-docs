@@ -2,8 +2,8 @@
 title: KeywordIdeaAttribute Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Determines which properties of the KeywordIdea object you want returned when calling the GetKeywordIdeas operation.
 ---
 # KeywordIdeaAttribute Value Set - Ad Insight

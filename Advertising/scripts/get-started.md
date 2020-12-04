@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Advertising Scripts Quickstart"
 description: "Shows you how to get started quickly using Microsoft Advertising Scripts."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

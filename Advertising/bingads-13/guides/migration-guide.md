@@ -2,8 +2,8 @@
 title: "Migrate to Bing Ads API Version 13"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Get details about migrating to Bing Ads API version 13.
 ---
 # Migrate to Version 13

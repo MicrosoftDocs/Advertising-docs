@@ -2,8 +2,8 @@
 title: CampaignNegativeSites Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that contains the negative site URLs of a campaign.
 ---
 # CampaignNegativeSites Data Object - Campaign Management
@@ -14,7 +14,7 @@ Defines an object that contains the negative site URLs of a campaign.
 <xs:complexType name="CampaignNegativeSites" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
-    <xs:element minOccurs="0" name="NegativeSites" nillable="true" type="q13:ArrayOfstring" xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="NegativeSites" nillable="true" type="q14:ArrayOfstring" xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

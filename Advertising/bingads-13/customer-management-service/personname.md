@@ -2,8 +2,8 @@
 title: PersonName Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the name of a user.
 ---
 # PersonName Data Object - Customer Management

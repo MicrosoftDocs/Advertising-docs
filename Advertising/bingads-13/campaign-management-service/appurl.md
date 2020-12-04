@@ -2,8 +2,8 @@
 title: AppUrl Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the operating system platform and URL of the app store download webpage.
 ---
 # AppUrl Data Object - Campaign Management
@@ -39,6 +39,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [Ad](ad.md)  
 [AppAdExtension](appadextension.md)  
 [BiddableAdGroupCriterion](biddableadgroupcriterion.md)  
+[FlyerAdExtension](flyeradextension.md)  
 [ImageAdExtension](imageadextension.md)  
 [Keyword](keyword.md)  
 [PromotionAdExtension](promotionadextension.md)  

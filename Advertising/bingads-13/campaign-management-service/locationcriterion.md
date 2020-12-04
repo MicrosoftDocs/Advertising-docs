@@ -2,8 +2,8 @@
 title: LocationCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a criterion that can be used to show ads to users in a specific location.
 ---
 # LocationCriterion Data Object - Campaign Management
@@ -11,7 +11,7 @@ Defines a criterion that can be used to show ads to users in a specific location
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 * All available countries/regions
-* Selected cities, postal codes, metro areas (Nielsen DMAÂ® in the United States), counties, states/provinces, and countries/regions
+* Selected cities, postal codes, metro areas (Nielsen DMA® in the United States), counties, states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
@@ -31,7 +31,7 @@ Also note that you must consider the location, negative location, and radius cri
     <xs:extension base="tns:Criterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q67:ArrayOflong" xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q72:ArrayOflong" xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="LocationType" nillable="true" type="xs:string" />
       </xs:sequence>

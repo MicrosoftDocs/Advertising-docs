@@ -2,8 +2,8 @@
 title: BatchError Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a Campaign Management batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 ---
 # BatchError Data Object - Campaign Management
@@ -17,7 +17,7 @@ Defines a Campaign Management batch error object that identifies the item within
     <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q8:ArrayOfKeyValuePairOfstringstring" xmlns:q8="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring" xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Index" type="xs:int" />
     <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
@@ -48,6 +48,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [AddAdGroups](addadgroups.md)  
 [AddAds](addads.md)  
 [AddAudiences](addaudiences.md)  
+[AddBidStrategies](addbidstrategies.md)  
 [AddBudgets](addbudgets.md)  
 [AddCampaigns](addcampaigns.md)  
 [AddConversionGoals](addconversiongoals.md)  
@@ -70,6 +71,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [DeleteAdGroups](deleteadgroups.md)  
 [DeleteAds](deleteads.md)  
 [DeleteAudiences](deleteaudiences.md)  
+[DeleteBidStrategies](deletebidstrategies.md)  
 [DeleteBudgets](deletebudgets.md)  
 [DeleteCampaignCriterions](deletecampaigncriterions.md)  
 [DeleteCampaigns](deletecampaigns.md)  
@@ -90,14 +92,17 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [GetAdGroupsByIds](getadgroupsbyids.md)  
 [GetAdsByIds](getadsbyids.md)  
 [GetAudiencesByIds](getaudiencesbyids.md)  
+[GetBidStrategiesByIds](getbidstrategiesbyids.md)  
 [GetBudgetsByIds](getbudgetsbyids.md)  
 [GetCampaignCriterionsByIds](getcampaigncriterionsbyids.md)  
+[GetCampaignIdsByBidStrategyIds](getcampaignidsbybidstrategyids.md)  
 [GetCampaignIdsByBudgetIds](getcampaignidsbybudgetids.md)  
 [GetCampaignsByIds](getcampaignsbyids.md)  
 [GetConversionGoalsByIds](getconversiongoalsbyids.md)  
 [GetConversionGoalsByTagIds](getconversiongoalsbytagids.md)  
 [GetEditorialReasonsByIds](geteditorialreasonsbyids.md)  
 [GetExperimentsByIds](getexperimentsbyids.md)  
+[GetImportEntityIdsMapping](getimportentityidsmapping.md)  
 [GetImportJobsByIds](getimportjobsbyids.md)  
 [GetKeywordsByIds](getkeywordsbyids.md)  
 [GetLabelAssociationsByEntityIds](getlabelassociationsbyentityids.md)  
@@ -119,6 +124,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [UpdateAdGroups](updateadgroups.md)  
 [UpdateAds](updateads.md)  
 [UpdateAudiences](updateaudiences.md)  
+[UpdateBidStrategies](updatebidstrategies.md)  
 [UpdateBudgets](updatebudgets.md)  
 [UpdateCampaigns](updatecampaigns.md)  
 [UpdateConversionGoals](updateconversiongoals.md)  

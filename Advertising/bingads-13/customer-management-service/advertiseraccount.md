@@ -2,8 +2,8 @@
 title: AdvertiserAccount Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an advertiser account.
 ---
 # AdvertiserAccount Data Object - Customer Management
@@ -39,13 +39,20 @@ Defines an advertiser account.
     <xs:element minOccurs="0" name="BusinessAddress" nillable="true" type="tns:Address" />
     <xs:element minOccurs="0" name="AutoTagType" nillable="true" type="tns:AutoTagType" />
     <xs:element minOccurs="0" name="SoldToPaymentInstrumentId" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="TaxCertificate" nillable="true" type="tns:AccountTaxCertificate">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
   </xs:sequence>
 </xs:complexType>
 ```
 
 ## <a name="elements"></a>Elements
 
-The [AdvertiserAccount](advertiseraccount.md) object has the following elements: [AccountFinancialStatus](#accountfinancialstatus), [AccountLifeCycleStatus](#accountlifecyclestatus), [AutoTagType](#autotagtype), [BackUpPaymentInstrumentId](#backuppaymentinstrumentid), [BillingThresholdAmount](#billingthresholdamount), [BillToCustomerId](#billtocustomerid), [BusinessAddress](#businessaddress), [CurrencyCode](#currencycode), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Language](#language), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [LinkedAgencies](#linkedagencies), [Name](#name), [Number](#number), [ParentCustomerId](#parentcustomerid), [PauseReason](#pausereason), [PaymentMethodId](#paymentmethodid), [PaymentMethodType](#paymentmethodtype), [PrimaryUserId](#primaryuserid), [SalesHouseCustomerId](#saleshousecustomerid), [SoldToPaymentInstrumentId](#soldtopaymentinstrumentid), [TaxInformation](#taxinformation), [TimeStamp](#timestamp), [TimeZone](#timezone).
+The [AdvertiserAccount](advertiseraccount.md) object has the following elements: [AccountFinancialStatus](#accountfinancialstatus), [AccountLifeCycleStatus](#accountlifecyclestatus), [AutoTagType](#autotagtype), [BackUpPaymentInstrumentId](#backuppaymentinstrumentid), [BillingThresholdAmount](#billingthresholdamount), [BillToCustomerId](#billtocustomerid), [BusinessAddress](#businessaddress), [CurrencyCode](#currencycode), [ForwardCompatibilityMap](#forwardcompatibilitymap), [Id](#id), [Language](#language), [LastModifiedByUserId](#lastmodifiedbyuserid), [LastModifiedTime](#lastmodifiedtime), [LinkedAgencies](#linkedagencies), [Name](#name), [Number](#number), [ParentCustomerId](#parentcustomerid), [PauseReason](#pausereason), [PaymentMethodId](#paymentmethodid), [PaymentMethodType](#paymentmethodtype), [PrimaryUserId](#primaryuserid), [SalesHouseCustomerId](#saleshousecustomerid), [SoldToPaymentInstrumentId](#soldtopaymentinstrumentid), [TaxCertificate](#taxcertificate), [TaxInformation](#taxinformation), [TimeStamp](#timestamp), [TimeZone](#timezone).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -72,6 +79,7 @@ The [AdvertiserAccount](advertiseraccount.md) object has the following elements:
 |<a name="primaryuserid"></a>PrimaryUserId|The identifier of the account manager who is primarily responsible for managing this account.<br/><br/>Only Super Admin and Standard users can be set as the primary contact for an account.<br/><br/>**Add:** For [AddAccount](addaccount.md) if the new client account is being linked to an agency via [LinkedAgencies](#linkedagencies), then you can assign one of the agency users as primary user for the new account. When you call [SignupCustomer](signupcustomer.md) as an aggregator without including the [UserInvitation](signupcustomer.md#userinvitation), you should leave this element empty and the primary user will be set to the aggregator user identifier. When you call [SignupCustomer](signupcustomer.md) and the [UserInvitation](signupcustomer.md#userinvitation) is included, you can leave this element empty and the primary user will be set to the identifier of the new client user who accepts the invitation. When you call [SignupCustomer](signupcustomer.md) and if the [UserInvitation](signupcustomer.md#userinvitation) is set, and if the new client account is being linked to an agency via [LinkedAgencies](#linkedagencies), then you can assign one of the agency users as primary user for the new account.<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**long**|
 |<a name="saleshousecustomerid"></a>SalesHouseCustomerId|The identifier of the third party that is responsible for a sales lead.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
 |<a name="soldtopaymentinstrumentid"></a>SoldToPaymentInstrumentId|The identifier of the payment instrument of your client (the sold-to customer) to use to settle the account.<br/><br/>**Add:** Required for [AddAccount](addaccount.md) if the [BillToCustomerId](#billtocustomerid) differs from the [ParentCustomerId](#parentcustomerid); Read-only and not applicable for [SignupCustomer](signupcustomer.md). <br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**long**|
+|<a name="taxcertificate"></a>TaxCertificate|Reserved.|[AccountTaxCertificate](accounttaxcertificate.md)|
 |<a name="taxinformation"></a>TaxInformation|For a list of valid key and value strings for this element, see [AdvertiserAccount TaxInformation](#taxinformation) in the section below.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. To remove a key and value pair, set the key and then set the value to an empty string (*""*).|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="timestamp"></a>TimeStamp|The time-stamp value that the system uses internally to reconcile updates when you call the [UpdateAccount](updateaccount.md) and [DeleteAccount](deleteaccount.md) operations.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**base64Binary**|
 |<a name="timezone"></a>TimeZone|The default time-zone value to use for campaigns in this account.<br/><br/>If you do not specify a value when the account is added, the time zone will be set to *PacificTimeUSCanadaTijuana* by default.<br/><br/>This time-zone value is used by the Microsoft Advertising web application to display the account time zone preference, and does not provide a default time-zone value for campaigns that are created by using the Bulk or Campaign Management API.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|[TimeZoneType](timezonetype.md)|
@@ -86,7 +94,7 @@ The following is the list of keys that are available for the [TaxInformation](#t
 |TaxInformation Key|Description|Countries|
 |---------|---------|---------|
 |AUGSTNumber|The tax identifier for accounts in Australia. Without a tax identifier, taxes might apply based on your [BusinessAddress](#businessaddress) location.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|Australia|
-|CCM|The municipal registration number, or Cadastro de contribuinte mobili√°rio (CCM), of the legal entity.<br/><br/>**Add:** Required for business accounts if the [BusinessAddress](#businessaddress) is within the city of Sao Paulo, Brazil. The CCM is not applicable for businesses in other locations.<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|Brazil|
+|CCM|The municipal registration number, or Cadastro de contribuinte mobili·rio (CCM), of the legal entity.<br/><br/>**Add:** Required for business accounts if the [BusinessAddress](#businessaddress) is within the city of Sao Paulo, Brazil. The CCM is not applicable for businesses in other locations.<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|Brazil|
 |CNPJ|The tax identifier for business accounts in Brazil. Without a tax identifier, taxes might apply based on your [BusinessAddress](#businessaddress) location.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|Brazil|
 |CPF|The tax identifier for personal accounts in Brazil. Without a tax identifier, taxes might apply based on your [BusinessAddress](#businessaddress) location.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|Brazil|
 |GSTINNumber|This ID starts with two numbers representing the state code in which the business is registered followed by a maximum of 13 numbers and letters.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|India|

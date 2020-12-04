@@ -2,8 +2,8 @@
 title: Minute Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the possible minute values for ad extension scheduling or day and time criterion.
 ---
 # Minute Value Set - Campaign Management

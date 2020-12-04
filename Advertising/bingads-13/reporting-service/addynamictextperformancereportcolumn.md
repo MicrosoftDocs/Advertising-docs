@@ -2,8 +2,8 @@
 title: AdDynamicTextPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AdDynamicTextPerformanceReportRequest Data Object.
 ---
 # AdDynamicTextPerformanceReportColumn Value Set - Reporting
@@ -67,16 +67,19 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ViewThroughConversions" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
+    <xs:enumeration value="TopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDescription](#addescription), [AdDescription2](#addescription2), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdLabels](#adlabels), [AdStatus](#adstatus), [AdTitle](#adtitle), [AdType](#adtype), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CurrencyCode](#currencycode), [DestinationUrl](#destinationurl), [DeviceType](#devicetype), [FinalAppUrl](#finalappurl), [FinalMobileUrl](#finalmobileurl), [FinalUrl](#finalurl), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Keyword](#keyword), [KeywordStatus](#keywordstatus), [Language](#language), [Param1](#param1), [Param2](#param2), [Param3](#param3), [Path1](#path1), [Path2](#path2), [Spend](#spend), [TimePeriod](#timeperiod), [TitlePart1](#titlepart1), [TitlePart2](#titlepart2), [TitlePart3](#titlepart3), [ViewThroughConversions](#viewthroughconversions).
+The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDescription](#addescription), [AdDescription2](#addescription2), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdLabels](#adlabels), [AdStatus](#adstatus), [AdTitle](#adtitle), [AdType](#adtype), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CurrencyCode](#currencycode), [DestinationUrl](#destinationurl), [DeviceType](#devicetype), [FinalAppUrl](#finalappurl), [FinalMobileUrl](#finalmobileurl), [FinalUrl](#finalurl), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Keyword](#keyword), [KeywordStatus](#keywordstatus), [Language](#language), [Param1](#param1), [Param2](#param2), [Param3](#param3), [Path1](#path1), [Path2](#path2), [Spend](#spend), [TimePeriod](#timeperiod), [TitlePart1](#titlepart1), [TitlePart2](#titlepart2), [TitlePart3](#titlepart3), [TopImpressionRatePercent](#topimpressionratepercent), [ViewThroughConversions](#viewthroughconversions).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|Reserved.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
@@ -124,6 +127,7 @@ The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
 |<a name="titlepart3"></a>TitlePart3|The title part 3 attribute of an ad.|
+|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|Reserved.|
 |<a name="viewthroughconversions"></a>ViewThroughConversions|View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.<br/><br/>View-through conversions don't have a click associated but do have an impression associated within the advertiser defined conversion window. If the user also clicked on an ad that was delivered via the Microsoft Audience or Search network, there won't be any view-through conversion counted. Only the click-based conversion would be counted.<br/><br/>View-through conversions are only counted for ads in the Microsoft Audience network.<br/><br/>Not everyone has view-through conversions yet. If you don't, don't worry. It's coming soon.|
 
 ## <a name="remarks"></a>Remarks

@@ -3,8 +3,8 @@ title: "Sending Microsoft Transaction Messages"
 description: Provides the details for sending transaction messages to Microsoft Advertising.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Pushing Transaction Messages to Microsoft Advertising

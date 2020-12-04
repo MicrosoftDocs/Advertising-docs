@@ -2,9 +2,9 @@
 title: CurrencyCode Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: Defines currency codes for the Ad Insight service.
+author: eric-urban
+ms.author: eur
+description: Defines a selection of currency values.
 ---
 # CurrencyCode Value Set - Ad Insight
 Defines a selection of currency values.

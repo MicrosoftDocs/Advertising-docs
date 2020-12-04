@@ -2,8 +2,8 @@
 title: "Reports"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Track finances and measure ad performance to optimize your budget or campaign settings.
 ---
 # Reports

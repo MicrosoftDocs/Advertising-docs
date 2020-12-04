@@ -2,8 +2,8 @@
 title: AdExtensionEditorialReason Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that you can use to determine the component of an ad extension that failed editorial review, and the reason for the failure.
 ---
 # AdExtensionEditorialReason Data Object - Campaign Management
@@ -14,7 +14,7 @@ Defines an object that you can use to determine the component of an ad extension
 <xs:complexType name="AdExtensionEditorialReason" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q59:ArrayOfstring" xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q64:ArrayOfstring" xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ReasonCode" type="xs:int" />
     <xs:element minOccurs="0" name="Term" nillable="true" type="xs:string" />
   </xs:sequence>

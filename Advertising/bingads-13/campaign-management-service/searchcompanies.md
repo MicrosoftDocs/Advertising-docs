@@ -2,8 +2,8 @@
 title: SearchCompanies Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Search for profile data by company name.
 dev_langs: 
   - csharp

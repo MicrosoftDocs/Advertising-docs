@@ -2,8 +2,8 @@
 title: "Entity Limits"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Learn about the Microsoft Advertising entity hierarchy to plan your campaign setup.
 ---
 # Entity Limits

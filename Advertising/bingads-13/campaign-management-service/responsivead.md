@@ -2,8 +2,8 @@
 title: ResponsiveAd Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: A responsive ad format for Audience ads in the Microsoft Audience Network.
 ---
 # ResponsiveAd Data Object - Campaign Management
@@ -29,6 +29,13 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
         <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Headlines" nillable="true" type="tns:ArrayOfAssetLink" />
         <xs:element minOccurs="0" name="Images" nillable="true" type="tns:ArrayOfAssetLink" />
+        <xs:element minOccurs="0" name="ImpressionTrackingUrls" nillable="true" type="q4:ArrayOfstring" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" name="LongHeadline" nillable="true" type="tns:AssetLink" />
         <xs:element minOccurs="0" name="LongHeadlineString" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
@@ -40,7 +47,7 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
 
 ## <a name="elements"></a>Elements
 
-The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [LongHeadline](#longheadline), [LongHeadlineString](#longheadlinestring), [Text](#text).
+The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadline](#longheadline), [LongHeadlineString](#longheadlinestring), [Text](#text).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -50,6 +57,7 @@ The [ResponsiveAd](responsivead.md) object has the following elements: [Business
 |<a name="headline"></a>Headline|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 30 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="headlines"></a>Headlines|Reserved for future use.|[AssetLink](assetlink.md) array|
 |<a name="images"></a>Images|Image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.<br/><br/>Include one or more [AssetLink](assetlink.md) objects that each contain an [ImageAsset](imageasset.md) with [SubType](imageasset.md#subtype) and crop settings that match the desired aspect ratio. For more information see the [remarks](#remarks) below.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. If you include images during update, any previously set images will be replaced.|[AssetLink](assetlink.md) array|
+|<a name="impressiontrackingurls"></a>ImpressionTrackingUrls|Reserved.|**string** array|
 |<a name="longheadline"></a>LongHeadline|Reserved for future use.|[AssetLink](assetlink.md)|
 |<a name="longheadlinestring"></a>LongHeadlineString|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="text"></a>Text|Depending on your audience ad's placement, this text will appear below or adjacent to your ad's long or short headline.<br/><br/>You have more character space to work with in the ad text than in the headline. So once the imagery and headline have a potential customer's attention, the ad text needs to convince them to click it. What sets your product or service apart?<br/><br/>The text must contain at least one word.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>The text cannot contain the newline (\n) character.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|

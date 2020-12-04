@@ -2,8 +2,8 @@
 title: Customer Billing Service Operations
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Service operations reference for the CustomerBilling service.
 ---
 # Customer Billing Service Operations

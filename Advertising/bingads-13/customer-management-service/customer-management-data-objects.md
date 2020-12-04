@@ -2,8 +2,8 @@
 title: Customer Management Data Objects
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Data objects reference for the CustomerManagement service.
 ---
 # Customer Management Data Objects
@@ -13,6 +13,7 @@ The Customer Management service defines the following data objects.
 |---|---|
 |[AccountInfo](accountinfo.md)|Defines an object that contains an account's identifier, name, and number.|
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
+|[AccountTaxCertificate](accounttaxcertificate.md)|Reserved.|
 |[AdApiError](adapierror.md)|Defines a Customer Management Ad API error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a Customer Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
 |[Address](address.md)|Defines a postal address for accounts and user contact information.|

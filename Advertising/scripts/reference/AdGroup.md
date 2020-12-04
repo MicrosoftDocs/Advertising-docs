@@ -1,8 +1,8 @@
 ---
 title: "AdGroup object"
 description: "Contains the methods used in single-account scripts to manage the ad group."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

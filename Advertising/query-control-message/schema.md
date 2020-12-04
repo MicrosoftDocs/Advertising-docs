@@ -3,8 +3,8 @@ title: QueryControl message schema
 description: Lists the QueryControl schemas.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # QueryControl message schema

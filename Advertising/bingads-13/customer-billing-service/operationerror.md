@@ -2,8 +2,8 @@
 title: OperationError Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a Customer Billing operation error object that contains the details that explain why the service operation failed.
 ---
 # OperationError Data Object - Customer Billing

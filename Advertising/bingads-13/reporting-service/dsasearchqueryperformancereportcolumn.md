@@ -2,8 +2,8 @@
 title: DSASearchQueryPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the DSASearchQueryPerformanceReportRequest.
 ---
 # DSASearchQueryPerformanceReportColumn Value Set - Reporting
@@ -73,16 +73,19 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllRevenuePerConversion" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
+    <xs:enumeration value="TopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [DSASearchQueryPerformanceReportColumn](dsasearchqueryperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdStatus](#adstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [Assists](#assists), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [CategoryList](#categorylist), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CustomerId](#customerid), [CustomerName](#customername), [DeviceOS](#deviceos), [DeviceType](#devicetype), [DynamicAdTarget](#dynamicadtarget), [DynamicAdTargetId](#dynamicadtargetid), [FeedUrl](#feedurl), [FinalUrl](#finalurl), [Goal](#goal), [GoalType](#goaltype), [Headline](#headline), [Impressions](#impressions), [LandingPageTitle](#landingpagetitle), [Language](#language), [Network](#network), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [SearchQuery](#searchquery), [Spend](#spend), [TimePeriod](#timeperiod), [TopVsOther](#topvsother).
+The [DSASearchQueryPerformanceReportColumn](dsasearchqueryperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdDistribution](#addistribution), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdStatus](#adstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [Assists](#assists), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [CategoryList](#categorylist), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CustomerId](#customerid), [CustomerName](#customername), [DeviceOS](#deviceos), [DeviceType](#devicetype), [DynamicAdTarget](#dynamicadtarget), [DynamicAdTargetId](#dynamicadtargetid), [FeedUrl](#feedurl), [FinalUrl](#finalurl), [Goal](#goal), [GoalType](#goaltype), [Headline](#headline), [Impressions](#impressions), [LandingPageTitle](#landingpagetitle), [Language](#language), [Network](#network), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [SearchQuery](#searchquery), [Spend](#spend), [TimePeriod](#timeperiod), [TopImpressionRatePercent](#topimpressionratepercent), [TopVsOther](#topvsother).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|Reserved.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
@@ -134,6 +137,7 @@ The [DSASearchQueryPerformanceReportColumn](dsasearchqueryperformancereportcolum
 |<a name="searchquery"></a>SearchQuery|The search term used by your potential audience.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|Reserved.|
 |<a name="topvsother"></a>TopVsOther|Indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 
 ## <a name="remarks"></a>Remarks

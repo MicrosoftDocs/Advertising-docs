@@ -2,8 +2,8 @@
 title: CustomerRole Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines account access rights for a person who acts on behalf of a specific customer.
 ---
 # CustomerRole Data Object - Customer Management
@@ -22,8 +22,8 @@ Taken individually, a user has the same role on the [CustomerId](customerrole.md
   <xs:sequence>
     <xs:element minOccurs="0" name="RoleId" type="xs:int" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="LinkedAccountIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LinkedAccountIds" nillable="true" type="q8:ArrayOflong" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="CustomerLinkPermission" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>

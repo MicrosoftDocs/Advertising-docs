@@ -2,8 +2,8 @@
 title: AccountThroughCampaignReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the set of accounts and campaigns to include in the report.
 ---
 # AccountThroughCampaignReportScope Data Object - Reporting

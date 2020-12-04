@@ -1,8 +1,8 @@
 ---
 title: "AdGroupIterator object"
 description: "Contains the methods for iterating through a list of ad groups."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

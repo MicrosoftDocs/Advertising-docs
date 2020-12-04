@@ -2,8 +2,8 @@
 title: BiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object of a bidding scheme for how you want to manage your bids.
 ---
 # BiddingScheme Data Object - Campaign Management
@@ -60,5 +60,6 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 
 ## Used By
 [AdGroup](adgroup.md)  
+[BidStrategy](bidstrategy.md)  
 [Campaign](campaign.md)  
 [Keyword](keyword.md)  

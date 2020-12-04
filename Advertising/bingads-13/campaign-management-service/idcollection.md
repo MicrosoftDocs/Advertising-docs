@@ -2,8 +2,8 @@
 title: IdCollection Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that contains a list of entity identifiers.
 ---
 # IdCollection Data Object - Campaign Management
@@ -13,7 +13,7 @@ Defines an object that contains a list of entity identifiers.
 ```xml
 <xs:complexType name="IdCollection" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Ids" nillable="true" type="q74:ArrayOfNullableOflong" xmlns:q74="http://schemas.datacontract.org/2004/07/System" />
+    <xs:element minOccurs="0" name="Ids" nillable="true" type="q79:ArrayOfNullableOflong" xmlns:q79="http://schemas.datacontract.org/2004/07/System" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -32,4 +32,5 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 
 ## Used By
 [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)  
+[GetCampaignIdsByBidStrategyIds](getcampaignidsbybidstrategyids.md)  
 [GetCampaignIdsByBudgetIds](getcampaignidsbybudgetids.md)  

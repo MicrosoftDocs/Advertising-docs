@@ -1,8 +1,8 @@
 ---
 title: "Label object"
 description: "Contains the methods for managing a Label."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

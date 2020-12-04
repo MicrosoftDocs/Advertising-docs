@@ -1,8 +1,8 @@
 ---
 title: "Structuring Microsoft Advertising scripts"
 description: "Describes how to structure scripts."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

@@ -2,8 +2,8 @@
 title: ProductSearchQueryPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ProductSearchQueryPerformanceReportRequest.
 ---
 # ProductSearchQueryPerformanceReportColumn Value Set - Reporting
@@ -69,16 +69,18 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AllRevenuePerConversion" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [ProductSearchQueryPerformanceReportColumn](productsearchqueryperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdId](#adid), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssistedClicks](#assistedclicks), [AssistedConversions](#assistedconversions), [AssistedImpressions](#assistedimpressions), [Assists](#assists), [AverageCpc](#averagecpc), [CampaignId](#campaignid), [CampaignName](#campaignname), [Clicks](#clicks), [ClickType](#clicktype), [ClickTypeId](#clicktypeid), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CustomerId](#customerid), [CustomerName](#customername), [DestinationUrl](#destinationurl), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [MerchantProductId](#merchantproductid), [Network](#network), [PartitionType](#partitiontype), [ProductGroup](#productgroup), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [SearchQuery](#searchquery), [Spend](#spend), [TimePeriod](#timeperiod), [Title](#title), [TotalClicksOnAdElements](#totalclicksonadelements).
+The [ProductSearchQueryPerformanceReportColumn](productsearchqueryperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdId](#adid), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssistedClicks](#assistedclicks), [AssistedConversions](#assistedconversions), [AssistedImpressions](#assistedimpressions), [Assists](#assists), [AverageCpc](#averagecpc), [CampaignId](#campaignid), [CampaignName](#campaignname), [Clicks](#clicks), [ClickType](#clicktype), [ClickTypeId](#clicktypeid), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CustomerId](#customerid), [CustomerName](#customername), [DestinationUrl](#destinationurl), [DeviceOS](#deviceos), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [MerchantProductId](#merchantproductid), [Network](#network), [PartitionType](#partitiontype), [ProductGroup](#productgroup), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [SearchQuery](#searchquery), [Spend](#spend), [TimePeriod](#timeperiod), [Title](#title), [TotalClicksOnAdElements](#totalclicksonadelements).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|Reserved.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|

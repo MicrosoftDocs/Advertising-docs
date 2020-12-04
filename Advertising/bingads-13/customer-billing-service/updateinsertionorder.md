@@ -2,8 +2,8 @@
 title: UpdateInsertionOrder Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Updates an insertion order within the specified account.
 dev_langs: 
   - csharp

@@ -2,8 +2,8 @@
 title: Ad Insight Value Sets
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Value sets reference for the AdInsight service.
 ---
 # Ad Insight Value Sets
@@ -13,6 +13,7 @@ The Ad Insight service defines the following value sets.
 |---|---|
 |[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.|
 |[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results.|
+|[AuctionInsightKpiAdditionalField](auctioninsightkpiadditionalfield.md)|Reserved.|
 |[AuctionSegment](auctionsegment.md)|Defines the possible auction segment values.|
 |[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|

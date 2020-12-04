@@ -3,8 +3,8 @@ title: "Hotel Ads Reporting"
 description: Describes how to request and download a Hotel Ads report.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Hotel Ads Reporting API

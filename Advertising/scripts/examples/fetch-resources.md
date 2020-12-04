@@ -1,8 +1,8 @@
 ---
 title: "Using UrlFetchApp to fetch resources from the web"
 description: "Use UrlFetchApp's methods to GET, POST, PUT, and DELETE web resources."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

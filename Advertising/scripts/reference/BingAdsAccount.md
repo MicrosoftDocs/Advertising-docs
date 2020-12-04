@@ -1,8 +1,8 @@
 ---
 title: "BingAdsAccount object"
 description: "Contains the methods used in multi-account scripts to get account information such as name, customer ID, and account-level performance data."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

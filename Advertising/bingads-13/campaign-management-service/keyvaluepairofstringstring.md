@@ -2,8 +2,8 @@
 title: KeyValuePairOfstringstring Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.
 ---
 # KeyValuePairOfstringstring Data Object - Campaign Management

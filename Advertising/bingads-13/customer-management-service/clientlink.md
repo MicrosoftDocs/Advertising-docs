@@ -2,8 +2,8 @@
 title: ClientLink Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a client link object.
 ---
 # ClientLink Data Object - Customer Management
@@ -40,7 +40,7 @@ A client link does not have a public system identifier. You can identify distinc
     <xs:element minOccurs="0" name="LastModifiedDateTime" type="xs:dateTime" />
     <xs:element minOccurs="0" name="LastModifiedByUserId" type="xs:long" />
     <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring" xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q10:ArrayOfKeyValuePairOfstringstring" xmlns:q10="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="CustomerLinkPermission" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>

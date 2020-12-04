@@ -1,10 +1,10 @@
 ---
 title: "Managing your Products"
 description: "Learn how to manage products using the Content API."
-author: Matt-UX
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 ---
 
 # Managing your Products
