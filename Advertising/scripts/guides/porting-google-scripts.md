@@ -2,7 +2,6 @@
 title: "Porting Google Scripts to Microsoft Advertising Scripts"
 description: "Provides information about porting Google Ads Scripts to Microsoft Advertising Scripts."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

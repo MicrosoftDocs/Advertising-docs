@@ -2,7 +2,6 @@
 title: "Microsoft Advertising Scripts Bid Strategies"
 description: "Describes how Microsoft Advertising Scripts maps bid strategy types to Bing Ads API bid strategy names."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

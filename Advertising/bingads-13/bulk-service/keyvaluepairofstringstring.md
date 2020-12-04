@@ -4,10 +4,10 @@ ms.service: bing-ads-bulk-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+description: The list of key and value strings to avoid otherwise breaking changes in the current Bulk API version.
 ---
 # KeyValuePairOfstringstring Data Object - Bulk
-The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+The list of key and value strings to avoid otherwise breaking changes in the current Bulk API version.
 
 ## Syntax
 ```xml

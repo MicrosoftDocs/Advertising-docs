@@ -2,7 +2,6 @@
 title: "Budget object"
 description: "Contains the methods for managing the budget."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

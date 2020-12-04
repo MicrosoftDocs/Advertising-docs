@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: Matt-UX
 ms.author: matrob
-description: Defines a postal address.
+description: Defines a postal address for accounts and user contact information.
 ---
 # Address Data Object - Customer Management
-Defines a postal address.
+Defines a postal address for accounts and user contact information.
 
 ## Syntax
 ```xml

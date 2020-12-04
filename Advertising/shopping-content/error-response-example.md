@@ -2,7 +2,6 @@
 title: "Error Response Example"
 description: "Shows example json representing an error response returned by the Content API."
 author: Matt-UX
-
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: matrob

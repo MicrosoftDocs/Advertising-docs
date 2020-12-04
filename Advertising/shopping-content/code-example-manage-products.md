@@ -2,7 +2,6 @@
 title: "Managing Products Code Example"
 description: "Code sample showing how to manage products with the Content API."
 author: Matt-UX
-
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: matrob

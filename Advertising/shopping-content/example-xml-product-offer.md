@@ -2,7 +2,6 @@
 title: "Example XML Product Offer"
 description: "Shows example xml representing a product offer returned by the Content API."
 author: Matt-UX
-
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
 ms.author: matrob

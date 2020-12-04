@@ -23,5 +23,5 @@ The Customer Billing service defines the following data objects.
 |[InsertionOrderPendingChanges](insertionorderpendingchanges.md)|Defines an object that can be used to manage changes for an approved insertion order.|
 |[OperationError](operationerror.md)|Defines a Customer Billing operation error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.|
-|[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
+|[Paging](paging.md)|Defines a paging object to request Customer Billing objects in batches.|
 |[Predicate](predicate.md)|Defines a predicate for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.|

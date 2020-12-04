@@ -15,7 +15,7 @@ The Customer Management service defines the following data objects.
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
 |[AdApiError](adapierror.md)|Defines a Customer Management Ad API error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a Customer Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
-|[Address](address.md)|Defines a postal address.|
+|[Address](address.md)|Defines a postal address for accounts and user contact information.|
 |[AdvertiserAccount](advertiseraccount.md)|Defines an advertiser account.|
 |[ApiFault](apifault.md)|Defines a Customer Management API fault detail object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
 |[ApplicationFault](applicationfault.md)|Defines the base object from which all Customer Management fault detail objects derive.|
@@ -25,10 +25,10 @@ The Customer Management service defines the following data objects.
 |[CustomerInfo](customerinfo.md)|Defines an object that contains a customer's identifier and name.|
 |[CustomerRole](customerrole.md)|Defines account access rights for a person who acts on behalf of a specific customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Customer Management API version.|
 |[OperationError](operationerror.md)|Defines a Customer Management operation error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
-|[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
+|[Paging](paging.md)|Defines a paging object to request Customer Management objects in batches.|
 |[PersonName](personname.md)|Defines the name of a user.|
 |[Predicate](predicate.md)|Defines a predicate for the list of entities requested using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), [SearchCustomers](searchcustomers.md), or [SearchUserInvitations](searchuserinvitations.md).|
 |[User](user.md)|Defines personal and business contact information about a Microsoft Advertising user.|

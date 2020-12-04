@@ -2,7 +2,6 @@
 title: "ExecutionInfo object"
 description: "Contains the methods for getting information about the environment in which the script is currently executing."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

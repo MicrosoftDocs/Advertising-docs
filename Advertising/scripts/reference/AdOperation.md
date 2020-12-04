@@ -2,7 +2,6 @@
 title: "AdOperation object"
 description: "Contains the methods for determining whether the ad was successfully added."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

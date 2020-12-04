@@ -3,7 +3,6 @@ title: "ProductGroupIterator"
 subtitle: "Scripts"
 description: "Contains the methods for iterating through a list of product groups."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

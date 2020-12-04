@@ -17,7 +17,7 @@ The Campaign Management service defines the following data objects.
 |[Ad](ad.md)|Defines the base object of an ad.|
 |[AdApiError](adapierror.md)|Defines a Campaign Management Ad API error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a Campaign Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
-|[Address](address.md)|Defines a postal address.|
+|[Address](address.md)|Defines a postal address for location ad extensions.|
 |[AdExtension](adextension.md)|Defines the base object of an ad extension.|
 |[AdExtensionAssociation](adextensionassociation.md)|Defines the relationship and editorial status of an ad extension with an account, campaign, or ad group.|
 |[AdExtensionAssociationCollection](adextensionassociationcollection.md)|Defines an array of objects that associate an ad extension and its editorial status to an account, campaign, or ad group.|
@@ -111,7 +111,7 @@ The Campaign Management service defines the following data objects.
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|
 |[InStoreTransactionGoal](instoretransactiongoal.md)|Defines an in-store transaction goal.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.|
 |[Keyword](keyword.md)|Defines a keyword.|
 |[Label](label.md)|Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you.|
 |[LabelAssociation](labelassociation.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
@@ -141,7 +141,7 @@ The Campaign Management service defines the following data objects.
 |[PageVisitorsRule](pagevisitorsrule.md)|Defines a page visitors remarketing rule.|
 |[PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md)|Defines a page visitors who did not visit another page remarketing rule.|
 |[PageVisitorsWhoVisitedAnotherPageRule](pagevisitorswhovisitedanotherpagerule.md)|Defines a page visitors who visited another page remarketing rule.|
-|[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
+|[Paging](paging.md)|Defines a paging object to request Campaign Management objects in batches.|
 |[PlacementExclusionList](placementexclusionlist.md)|Defines a website exclusion list in the manager account (customer) shared library.|
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|

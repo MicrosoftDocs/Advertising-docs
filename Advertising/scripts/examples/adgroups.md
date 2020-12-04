@@ -2,7 +2,6 @@
 title: "Ad group script examples"
 description: "Shows examples that perform various actions against ad groups."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"

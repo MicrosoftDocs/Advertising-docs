@@ -2,7 +2,6 @@
 title: "BudgetIterator object"
 description: "Contains the methods for iterating through a list of shared budgets."
 author: Matt-UX
-
 ms.author: matrob
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
