@@ -12,7 +12,7 @@ dev_langs:
 Defines a promotion ad extension that can be downloaded and uploaded in a bulk file.
 
 > [!NOTE]
-> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+> Promotion Extensions are available for customers in AU, CA, DE, FR, US and UK.   
 
 You can associate a promotion ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 promotion ad extensions. Use the [Account Promotion Ad Extension](account-promotion-ad-extension.md), [Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md), and [Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md) records to manage promotion ad extension associations.
 

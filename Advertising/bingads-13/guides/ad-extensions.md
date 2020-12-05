@@ -72,7 +72,7 @@ With Price Extensions, prices for your products or services are shown to potenti
 Promotion Extensions highlight special sales and offers in your text ads. By making offers stand out, potential customers are more likely to click on your ad, helping to generate more sales for you. 
 
 > [!NOTE]
-> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+> Promotion Extensions are available for customers in AU, CA, DE, FR, US and UK.  
 
 ### <a name="reviewextensions"></a>Review Extensions
 Potential customers like to know about other customers' experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.

@@ -9,6 +9,35 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="november2020"></a>November 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Prominence Metrics](#prominence-metrics-november2020)  
+
+### <a name="prominence-metrics-november2020"></a>Prominence Metrics
+With prominence metrics, you can take a more holistic view of where your ads are appearing on search results pages. These clear insights can help you better optimize your bidding strategy. 
+
+The AbsoluteTopImpressionRatePercent and TopImpressionRatePercent columns are added to the following report column value sets.
+
+- [AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md)  
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md)  
+- [AgeGenderAudienceReportColumn](../reporting-service/agegenderaudiencereportcolumn.md)  
+- [AudiencePerformanceReportColumn](../reporting-service/audienceperformancereportcolumn.md)  
+- [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md)  
+- [DSAAutoTargetPerformanceReportColumn](../reporting-service/dsaautotargetperformancereportcolumn.md)  
+- [DSACategoryPerformanceReportColumn](../reporting-service/dsacategoryperformancereportcolumn.md)  
+- [DSASearchQueryPerformanceReportColumn](../reporting-service/dsasearchqueryperformancereportcolumn.md)  
+- [GeographicPerformanceReportColumn](../reporting-service/geographicperformancereportcolumn.md)  
+- [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md)  
+- [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md)  (*AbsoluteTopImpressionRatePercent* only)  
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md)  (*AbsoluteTopImpressionRatePercent* only)  
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md)  (*AbsoluteTopImpressionRatePercent* only)  
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md)  (*AbsoluteTopImpressionRatePercent* only)  
+- [ProfessionalDemographicsAudienceReportColumn](../reporting-service/professionaldemographicsaudiencereportcolumn.md)  
+- [PublisherUsagePerformanceReportColumn](../reporting-service/publisherusageperformancereportcolumn.md)  
+- [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md)  
+- [UserLocationPerformanceReportColumn](../reporting-service/userlocationperformancereportcolumn.md)  
+
 ## <a name="august2020"></a>August 2020
 See below for Bing Ads API updates during this calendar month. 
 

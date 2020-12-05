@@ -79,7 +79,7 @@ The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|Reserved.|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|How often your ad was in the first position of all results, as a percentage of your total impressions.<br/><br/>A higher number indicates your ad is frequently showing in the best ad position.<br/><br/>The value of this column is empty if the data is not available. Neither *Hourly* or *HourOfDay* aggregation are supported. If you include this column with *Hourly* or *HourOfDay* aggregation the service will not return an error and you should ignore any performance data returned for this column.<br/><br/>If you include this column, then you may not include restricted attributes such as [TopVsOther](#topvsother) in the same report request. Likewise if you include any of the restricted attribute columns, then you must exclude this column. For more information, see [Column Restrictions](../guides/reports.md#columnrestrictions).|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
@@ -127,7 +127,7 @@ The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
 |<a name="titlepart3"></a>TitlePart3|The title part 3 attribute of an ad.|
-|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|Reserved.|
+|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|The percentage of times your ad showed in the mainline, the top placement where ads appear above the search results, out of your total impressions.<br/><br/>This indicates how changes in ad position can impact performance.<br/><br/>The value of this column is empty if the data is not available. Neither *Hourly* or *HourOfDay* aggregation are supported. If you include this column with *Hourly* or *HourOfDay* aggregation the service will not return an error and you should ignore any performance data returned for this column.<br/><br/>If you include this column, then you may not include restricted attributes such as [TopVsOther](#topvsother) in the same report request. Likewise if you include any of the restricted attribute columns, then you must exclude this column. For more information, see [Column Restrictions](../guides/reports.md#columnrestrictions).|
 |<a name="viewthroughconversions"></a>ViewThroughConversions|View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.<br/><br/>View-through conversions don't have a click associated but do have an impression associated within the advertiser defined conversion window. If the user also clicked on an ad that was delivered via the Microsoft Audience or Search network, there won't be any view-through conversion counted. Only the click-based conversion would be counted.<br/><br/>View-through conversions are only counted for ads in the Microsoft Audience network.<br/><br/>Not everyone has view-through conversions yet. If you don't, don't worry. It's coming soon.|
 
 ## <a name="remarks"></a>Remarks

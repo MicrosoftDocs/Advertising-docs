@@ -116,7 +116,7 @@ The Campaign Management service defines the following data objects.
 |[KeyValuePairOflonglong](keyvaluepairoflonglong.md)|Reserved.|
 |[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.|
 |[Keyword](keyword.md)|Defines a keyword.|
-|[Label](label.md)|Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you.|
+|[Label](label.md)|Defines a label object to organize campaigns, ad groups, ads, and keywords into groups.|
 |[LabelAssociation](labelassociation.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
 |[LocationAdExtension](locationadextension.md)|Defines an ad extension that specifies a business address and phone number to include in a text ad.|
 |[LocationCriterion](locationcriterion.md)|Defines a criterion that can be used to show ads to users in a specific location.|

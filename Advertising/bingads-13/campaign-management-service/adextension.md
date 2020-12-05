@@ -10,18 +10,19 @@ description: Defines the base object of an ad extension.
 Defines the base object of an ad extension.
 
 Do not try to instantiate an *AdExtension*. You can create one or more of the following objects that derive from it.
-- [ActionAdExtension](actionadextension.md)
-- [AppAdExtension](appadextension.md)
-- [CallAdExtension](calladextension.md)
-- [CalloutAdExtension](calloutadextension.md)
-- [FilterLinkAdExtension](filterlinkadextension.md)
-- [ImageAdExtension](imageadextension.md)
-- [LocationAdExtension](locationadextension.md)
-- [PriceAdExtension](priceadextension.md)
-- [PromotionAdExtension](promotionadextension.md)
-- [ReviewAdExtension](reviewadextension.md)
-- [SitelinkAdExtension](sitelinkadextension.md)
-- [StructuredSnippetAdExtension](structuredsnippetadextension.md)
+- [ActionAdExtension](actionadextension.md)  
+- [AppAdExtension](appadextension.md)  
+- [CallAdExtension](calladextension.md)  
+- [CalloutAdExtension](calloutadextension.md)  
+- [FilterLinkAdExtension](filterlinkadextension.md)  
+- [FlyerAdExtension](flyeradextension.md)  
+- [ImageAdExtension](imageadextension.md)  
+- [LocationAdExtension](locationadextension.md)  
+- [PriceAdExtension](priceadextension.md)  
+- [PromotionAdExtension](promotionadextension.md)  
+- [ReviewAdExtension](reviewadextension.md)  
+- [SitelinkAdExtension](sitelinkadextension.md)  
+- [StructuredSnippetAdExtension](structuredsnippetadextension.md)  
 
 ## Syntax
 ```xml
