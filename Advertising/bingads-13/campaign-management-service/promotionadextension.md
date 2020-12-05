@@ -12,7 +12,7 @@ Promotion Extensions highlight special sales and offers in your text ads. By mak
 You can associate a promotion ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 promotion ad extensions.  
 
 > [!NOTE]
-> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+> Promotion Extensions are available for customers in AU, CA, DE, FR, US and UK.  
 
 ## Syntax
 ```xml
