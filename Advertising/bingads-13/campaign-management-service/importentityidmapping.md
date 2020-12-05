@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the ImportEntityIdMapping Value Set.
 ---
 # ImportEntityIdMapping Value Set - Campaign Management
-Reserved.
+Defines the ImportEntityIdMapping Value Set.
 
 ## Syntax
 ```xml

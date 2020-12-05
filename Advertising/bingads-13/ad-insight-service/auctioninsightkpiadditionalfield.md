@@ -4,10 +4,10 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the AuctionInsightKpiAdditionalField Value Set.
 ---
 # AuctionInsightKpiAdditionalField Value Set - Ad Insight
-Reserved.
+Defines the AuctionInsightKpiAdditionalField Value Set.
 
 ## Syntax
 ```xml

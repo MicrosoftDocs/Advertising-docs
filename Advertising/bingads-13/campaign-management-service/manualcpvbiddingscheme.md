@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the ManualCpvBiddingScheme Data Object.
 ---
 # ManualCpvBiddingScheme Data Object - Campaign Management
-Reserved.
+Defines the ManualCpvBiddingScheme Data Object.
 
 ## Syntax
 ```xml

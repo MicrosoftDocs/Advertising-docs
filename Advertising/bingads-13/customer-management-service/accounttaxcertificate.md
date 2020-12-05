@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the AccountTaxCertificate Data Object.
 ---
 # AccountTaxCertificate Data Object - Customer Management
-Reserved.
+Defines the AccountTaxCertificate Data Object.
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ The [AccountTaxCertificate](accounttaxcertificate.md) object has the following e
 |-----------|---------------|-------------|
 |<a name="status"></a>Status|Reserved.|[TaxCertificateStatus](taxcertificatestatus.md)|
 |<a name="taxcertificateblobcontainername"></a>TaxCertificateBlobContainerName|Reserved.|**string**|
-|<a name="taxcertificates"></a>TaxCertificates|Reserved.|[ArrayOfKeyValueOfstringbase64Binary](arrayofkeyvalueofstringbase64binary.md)|
+|<a name="taxcertificates"></a>TaxCertificates|Reserved.|**ArrayOfKeyValueOfstringbase64Binary**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v13](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc)  

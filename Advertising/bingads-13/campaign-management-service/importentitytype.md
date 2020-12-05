@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the ImportEntityType Value Set.
 ---
 # ImportEntityType Value Set - Campaign Management
-Reserved.
+Defines the ImportEntityType Value Set.
 
 ## Syntax
 ```xml

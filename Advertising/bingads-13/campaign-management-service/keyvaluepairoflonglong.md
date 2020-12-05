@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: The key and value pair of long values.
 ---
 # KeyValuePairOflonglong Data Object - Campaign Management
-Reserved.
+The key and value pair of long values.
 
 ## Syntax
 ```xml

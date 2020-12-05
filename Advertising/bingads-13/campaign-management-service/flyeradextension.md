@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the FlyerAdExtension Data Object.
 ---
 # FlyerAdExtension Data Object - Campaign Management
-Reserved.
+Defines the FlyerAdExtension Data Object.
 
 ## Syntax
 ```xml

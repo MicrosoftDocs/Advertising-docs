@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the AdAdditionalField Value Set.
 ---
 # AdAdditionalField Value Set - Campaign Management
-Reserved.
+Defines the AdAdditionalField Value Set.
 
 ## Syntax
 ```xml

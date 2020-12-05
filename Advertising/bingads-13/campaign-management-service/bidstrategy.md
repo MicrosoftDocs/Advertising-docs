@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the BidStrategy Data Object.
 ---
 # BidStrategy Data Object - Campaign Management
-Reserved.
+Defines the BidStrategy Data Object.
 
 ## Syntax
 ```xml
