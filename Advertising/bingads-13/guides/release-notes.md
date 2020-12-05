@@ -36,6 +36,9 @@ Flyer Extensions enable advertisers to distribute product or store catalogues (f
 
 Flyer extensions are supported in the Campaign Management [FlyerAdExtension](../campaign-management-service/flyeradextension.md) object and Bulk [Flyer Ad Extension](../bulk-service/flyer-ad-extension.md) record. 
 
+> [!NOTE]
+> Flyer Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 802).  
+
 ### <a name="prominence-metrics-november2020"></a>Prominence Metrics
 With prominence metrics, you can take a more holistic view of where your ads are appearing on search results pages. These clear insights can help you better optimize your bidding strategy. 
 
