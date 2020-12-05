@@ -580,6 +580,9 @@
         - name: Account Filter Link Ad Extension
           href: ../bulk-service/account-filter-link-ad-extension.md
           displayName: BulkAccountFilterLinkAdExtension
+        - name: Account Flyer Ad Extension
+          href: ../bulk-service/account-flyer-ad-extension.md
+          displayName: BulkAccountFlyerAdExtension
         - name: Account Image Ad Extension
           href: ../bulk-service/account-image-ad-extension.md
           displayName: BulkAccountImageAdExtension
@@ -646,6 +649,9 @@
         - name: Ad Group Filter Link Ad Extension
           href: ../bulk-service/ad-group-filter-link-ad-extension.md
           displayName: BulkAdGroupFilterLinkAdExtension
+        - name: Ad Group Flyer Ad Extension
+          href: ../bulk-service/ad-group-flyer-ad-extension.md
+          displayName: BulkAdGroupFlyerAdExtension
         - name: Ad Group Image Ad Extension
           href: ../bulk-service/ad-group-image-ad-extension.md
           displayName: BulkAdGroupImageAdExtension
@@ -802,6 +808,9 @@
         - name: Campaign Filter Link Ad Extension
           href: ../bulk-service/campaign-filter-link-ad-extension.md
           displayName: BulkCampaignFilterLinkAdExtension
+        - name: Campaign Flyer Ad Extension
+          href: ../bulk-service/campaign-flyer-ad-extension.md
+          displayName: BulkCampaignFlyerAdExtension
         - name: Campaign Image Ad Extension
           href: ../bulk-service/campaign-image-ad-extension.md
           displayName: BulkCampaignImageAdExtension
@@ -934,6 +943,9 @@
         - name: Filter Link Ad Extension
           href: ../bulk-service/filter-link-ad-extension.md
           displayName: BulkFilterLinkAdExtension
+        - name: Flyer Ad Extension
+          href: ../bulk-service/flyer-ad-extension.md
+          displayName: BulkFlyerAdExtension
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image
