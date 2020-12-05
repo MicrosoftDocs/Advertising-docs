@@ -29,7 +29,7 @@ When you get ads with the Campaign Management service the [ImpressionTrackingUrl
 ### <a name="auctioninsightkpi-absolutetopofpagerate-november2020"></a>Auction Insight Absolute Top of Page Rate
 Absolute top of page rate is defined as the number of times an ad is shown as the very first ad above the organic search results, divided by the total number of impressions it actually received. Ads at the absolute top of the page tend to receive more clicks.
 
-The [AbsoluteTopOfPageRate](../ad-insight-service/adinsightkpi.md#absolutetopofpagerate) element is not returned by default. For more information see the [AdInsightKpiAdditionalField](../ad-insight-service/adinsightkpiadditionalfield.md#absolutetopofpagerate) value set. 
+The [AbsoluteTopOfPageRate](../ad-insight-service/auctioninsightkpi.md#absolutetopofpagerate) element is not returned by default. For more information see the [AuctionInsightKpiAdditionalField](../ad-insight-service/auctioninsightkpiadditionalfield.md#absolutetopofpagerate) value set. 
 
 ### <a name="prominence-metrics-november2020"></a>Prominence Metrics
 With prominence metrics, you can take a more holistic view of where your ads are appearing on search results pages. These clear insights can help you better optimize your bidding strategy. 
