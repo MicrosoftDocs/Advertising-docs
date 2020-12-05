@@ -13,7 +13,7 @@ The Ad Insight service defines the following value sets.
 |---|---|
 |[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.|
 |[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results.|
-|[AuctionInsightKpiAdditionalField](auctioninsightkpiadditionalfield.md)|Reserved.|
+|[AuctionInsightKpiAdditionalField](auctioninsightkpiadditionalfield.md)|Defines a list of optional auction insight KPI properties that you can request when calling [GetAuctionInsightData](getauctioninsightdata.md).|
 |[AuctionSegment](auctionsegment.md)|Defines the possible auction segment values.|
 |[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|

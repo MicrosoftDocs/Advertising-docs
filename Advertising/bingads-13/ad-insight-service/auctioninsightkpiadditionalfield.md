@@ -4,10 +4,10 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the AuctionInsightKpiAdditionalField Value Set.
+description: Defines a list of optional auction insight KPI properties that you can request when calling GetAuctionInsightData.
 ---
 # AuctionInsightKpiAdditionalField Value Set - Ad Insight
-Defines the AuctionInsightKpiAdditionalField Value Set.
+Defines a list of optional auction insight KPI properties that you can request when calling [GetAuctionInsightData](getauctioninsightdata.md). The additional field values enable you to get the latest features using the current version of Ad Insight API, and in the next version the corresponding properties will be included in the auction insight KPI object by default. 
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ The [AuctionInsightKpiAdditionalField](auctioninsightkpiadditionalfield.md) valu
 
 |Value|Description|
 |-----------|---------------|
-|<a name="absolutetopofpagerate"></a>AbsoluteTopOfPageRate|Reserved.|
+|<a name="absolutetopofpagerate"></a>AbsoluteTopOfPageRate|Request that the [AbsoluteTopOfPageRate](auctioninsightkpi.md#absolutetopofpagerate) element be included within each returned [AuctionInsightKpi](auctioninsightkpi.md) object.|
 
 ## Requirements
 Service: [AdInsightService.svc v13](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v13/AdInsightService.svc)  
