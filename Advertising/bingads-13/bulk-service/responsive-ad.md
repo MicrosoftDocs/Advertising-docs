@@ -141,6 +141,7 @@ For a *Responsive Ad* record, the following attribute fields are available in th
 - [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Images](#images)
+- [Impression Tracking Urls](#impressiontrackingurls)
 - [Landscape Image Media Id](#landscapeimagemediaid)
 - [Landscape Logo Media Id](#landscapelogomediaid)
 - [Long Headline](#longheadline)
@@ -457,6 +458,17 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 **Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.  
 **Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any images that were previously linked to this ad will be replaced. If you set this field, only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.   
 **Delete:** Read-only  
+
+## <a name="impressiontrackingurls"></a>Impression Tracking Urls
+The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool.
+
+You can include up to 2 impression tracking URLs for each responsive ad. Each URL is delimited by a semicolon and space ("; "). 
+
+For each Microsoft Audience Network impression, Microsoft will ping the URL to enable impression tracking in your third party ad reporting tool. Advanced-level user tracking such as conversion tracking or tracking based on cookies or IP addresses is not supported.
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.          
+**Delete:** Read-only 
 
 ## <a name="landscapeimagemediaid"></a>Landscape Image Media Id
 The identifier of the image asset used for landscape images with 1.91:1 aspect ratio that could appear in your audience ads.
