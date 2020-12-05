@@ -46,6 +46,8 @@ Record Type  |Supported Campaign Types
 [Account Action Ad Extension](account-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account App Ad Extension](account-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Callout Ad Extension](account-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Account Filter Link Ad Extension](account-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search     
+[Account Flyer Ad Extension](account-flyer-ad-extension.md)|DynamicSearchAds<br/>Search     
 [Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Location Ad Extension](account-location-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -64,7 +66,9 @@ Record Type  |Supported Campaign Types
 [Ad Group Customer List Association](ad-group-customer-list-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
 [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
-[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
+[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*       
+[Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search      
+[Ad Group Flyer Ad Extension](ad-group-flyer-ad-extension.md)|DynamicSearchAds<br/>Search        
 [Ad Group Gender Criterion](ad-group-gender-criterion.md)|All         
 [Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Industry Criterion](ad-group-industry-criterion.md)|All  
@@ -117,6 +121,8 @@ Record Type  |Supported Campaign Types
 [Campaign Customer List Association](campaign-customer-list-association.md)|All         
 [Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
 [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All         
+[Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search        
+[Campaign Flyer Ad Extension](campaign-flyer-ad-extension.md)|DynamicSearchAds<br/>Search        
 [Campaign Gender Criterion](campaign-gender-criterion.md)|All         
 [Campaign Industry Criterion](campaign-industry-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping         
 [Campaign In Market Audience Association](campaign-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
@@ -157,7 +163,9 @@ Record Type  |Supported Campaign Types
 [Expanded Text Ad Label](expanded-text-ad-label.md)|Search         
 [Experiments](experiment.md)|Search         
 [Feed](feed.md)|DynamicSearchAds<br/>Search 
-[Feed Item](feed-item.md)|DynamicSearchAds<br/>Search 
+[Feed Item](feed-item.md)|DynamicSearchAds<br/>Search  
+[Filter Link Ad Extension](filter-link-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Flyer Ad Extension](flyer-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Format Version](format-version.md)|All         
 [Image Ad Extension](image-ad-extension.md)|DynamicSearchAds<br/>Search         
 [In Market Audience](in-market-audience.md)<br/><br/>Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         

@@ -94,7 +94,7 @@ The Campaign Management service defines the following data objects.
 |[FileImportOption](fileimportoption.md)|FileImportOption is reserved for future use.|
 |[FilterLinkAdExtension](filterlinkadextension.md)|Filter Link Extensions pair one header with between 3 and 10 clickable text values that tell customers more about your business.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
-|[FlyerAdExtension](flyeradextension.md)|Reserved.|
+|[FlyerAdExtension](flyeradextension.md)|Flyer Extensions enable advertisers to distribute product or store catalogues (flyers) to potential customers.|
 |[Frequency](frequency.md)|Determines whether an import job should be run once or scheduled on a recurring basis.|
 |[GenderCriterion](gendercriterion.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
 |[GeoPoint](geopoint.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|

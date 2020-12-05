@@ -12,10 +12,15 @@ See below for information about changes to Bing Ads API Version 13 by month.
 ## <a name="november2020"></a>November 2020
 See below for Bing Ads API updates during this calendar month. 
 
-- [Impression Tracking URLs for Responsive Ads](#responsivead-impressiontrackingurls-november2020)  
 - [Auction Insight Absolute Top of Page Rate](#auctioninsightkpi-absolutetopofpagerate-november2020)  
+- [Flyer Ad Extensions](#flyeradextensions-november2020)  
+- [Impression Tracking URLs for Responsive Ads](#responsivead-impressiontrackingurls-november2020)  
 - [Prominence Metrics](#prominence-metrics-november2020)  
 
+### <a name="auctioninsightkpi-absolutetopofpagerate-november2020"></a>Auction Insight Absolute Top of Page Rate
+Absolute top of page rate is defined as the number of times an ad is shown as the very first ad above the organic search results, divided by the total number of impressions it actually received. Ads at the absolute top of the page tend to receive more clicks.
+
+The [AbsoluteTopOfPageRate](../ad-insight-service/auctioninsightkpi.md#absolutetopofpagerate) element is not returned by default. For more information see the [AuctionInsightKpiAdditionalField](../ad-insight-service/auctioninsightkpiadditionalfield.md#absolutetopofpagerate) value set.
 
 ### <a name="responsivead-impressiontrackingurls-november2020"></a>Impression Tracking URLs for Responsive Ads
 The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. You can include up to 2 impression tracking URLs for each responsive ad.
@@ -26,10 +31,10 @@ Impression tracking URLs are supported in the Campaign Management [ResponsiveAd]
 
 When you get ads with the Campaign Management service the [ImpressionTrackingUrls](../campaign-management-service/responsivead.md#impressiontrackingurls) element is not returned by default. For more information see the [AdAdditionalField](../campaign-management-service/adadditionalfield.md#impressiontrackingurls) value set. 
 
-### <a name="auctioninsightkpi-absolutetopofpagerate-november2020"></a>Auction Insight Absolute Top of Page Rate
-Absolute top of page rate is defined as the number of times an ad is shown as the very first ad above the organic search results, divided by the total number of impressions it actually received. Ads at the absolute top of the page tend to receive more clicks.
+### <a name="flyeradextensions-november2020"></a>Flyer Ad Extensions
+Flyer Extensions enable advertisers to distribute product or store catalogues (flyers) to potential customers. They can display prominently on broad queries like "weekly deals" or "weekly sales" and thus encourage shoppers to click on your ad instead of the competition’s. By their nature they help to better inform searchers, and as a result, increase user engagement e.g., click through rate.
 
-The [AbsoluteTopOfPageRate](../ad-insight-service/auctioninsightkpi.md#absolutetopofpagerate) element is not returned by default. For more information see the [AuctionInsightKpiAdditionalField](../ad-insight-service/auctioninsightkpiadditionalfield.md#absolutetopofpagerate) value set. 
+Flyer extensions are supported in the Campaign Management [FlyerAdExtension](../campaign-management-service/flyeradextension.md) object and Bulk [Flyer Ad Extension](../bulk-service/flyer-ad-extension.md) record. 
 
 ### <a name="prominence-metrics-november2020"></a>Prominence Metrics
 With prominence metrics, you can take a more holistic view of where your ads are appearing on search results pages. These clear insights can help you better optimize your bidding strategy. 
