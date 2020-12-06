@@ -25,9 +25,6 @@ The [AbsoluteTopOfPageRate](../ad-insight-service/auctioninsightkpi.md#absolutet
 ### <a name="responsivead-impressiontrackingurls-november2020"></a>Impression Tracking URLs for Responsive Ads
 The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. You can include up to 2 impression tracking URLs for each responsive ad.
 
-> [!NOTE]
-> Impression tracking URLs are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 519).
-
 For each Microsoft Audience Network impression, Microsoft will ping the URL to enable impression tracking in your third party ad reporting tool. Advanced-level user tracking such as conversion tracking or tracking based on cookies or IP addresses is not supported.
 
 Impression tracking URLs are supported in the Campaign Management [ResponsiveAd](../campaign-management-service/responsivead.md) object and Bulk [Responsive Ad](../bulk-service/responsive-ad.md) record. 

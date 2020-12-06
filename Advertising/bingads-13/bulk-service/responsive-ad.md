@@ -462,9 +462,6 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 ## <a name="impressiontrackingurls"></a>Impression Tracking Urls
 The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. 
 
-> [!NOTE]
-> Impression tracking URLs are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 519).
-
 You can include up to 2 impression tracking URLs for each responsive ad. Each URL is delimited by a semicolon and space ("; "). 
 
 Each URL must be accessible. The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
