@@ -1,5 +1,5 @@
 ---
-title: "AdGroupUrls object"
+title: "AdGroupTargeting object"
 description: "Contains the methods for managing ad group location criteria."
 author: eric-urban
 ms.author: eur
@@ -7,7 +7,7 @@ ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
 
-# AdGroupUrls
+# AdGroupTargeting
 
 Contains the methods for managing ad group location criteria.
 
