@@ -26,7 +26,7 @@ Contains the methods for managing location targets. For information about locati
 [getTargetType](#gettargettype)|string|Gets the target type of this targeted location.
 [getTargetingStatus](#gettargetingstatus)|string|Gets the targeting status of this targeted location.
 [remove](#remove)|void|Removes the targeted location.
-[setBidModifier](#setbidmodifier)|void|Sets the bid modifier for this targeted location.
+[setBidModifier](#setbidmodifier-double-modifier)|void|Sets the bid modifier for this targeted location.
 
 
 

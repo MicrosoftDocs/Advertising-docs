@@ -71,11 +71,11 @@ The following is the list of selectors.
 - [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md)
 - [BudgetSelector](../reference/BudgetSelector.md)
 - [CampaignSelector](../reference/CampaignSelector.md)
-- [ExcludedLocationSelector](reference/ExcludedLocationSelector.md)
+- [ExcludedLocationSelector](../reference/ExcludedLocationSelector.md)
 - [KeywordSelector](../reference/KeywordSelector.md)
 - [NegativeKeywordListSelector](../reference/NegativeKeywordListSelector.md)
 - [ProductGroupSelector](../reference/ProductGroupSelector.md)
-- [TargetedLocationSelector](reference/TargetedLocationSelector.md)
+- [TargetedLocationSelector](../reference/TargetedLocationSelector.md)
 
 ### Next steps
 
