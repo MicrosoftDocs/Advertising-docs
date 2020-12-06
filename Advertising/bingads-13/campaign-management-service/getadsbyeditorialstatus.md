@@ -27,7 +27,7 @@ The *GetAdsByEditorialStatusRequest* object defines the [body](#request-body) an
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to retrieve the ads from.|**long**|
 |<a name="adtypes"></a>AdTypes|One or more types of ads to return.|[AdType](adtype.md) array|
 |<a name="editorialstatus"></a>EditorialStatus|The editorial review status that the ads must have to be returned.|[AdEditorialStatus](adeditorialstatus.md)|
-ad. The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[AdAdditionalField](adadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[AdAdditionalField](adadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
