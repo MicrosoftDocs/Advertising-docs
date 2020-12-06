@@ -14,7 +14,7 @@ Defines a responsive ad that can be downloaded and uploaded in a bulk file.
 Responsive ads automatically adjust to accommodate the sizes and shapes of audience ad formats. These ads work best with informative text rather than calls to action. 
 
 > [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+> This feature is currently available in the United States, Canada, the United Kingdom, and Australia. If you advertise in the United States, Canada, the United Kingdom, or Australia and want to opt in to audience ads, [contact support](https://go.microsoft.com/fwlink?LinkId=398371). 
 
 > [!NOTE]
 > Duplicate responsive ads are allowed in the same ad group. 
@@ -460,9 +460,14 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 **Delete:** Read-only  
 
 ## <a name="impressiontrackingurls"></a>Impression Tracking Urls
-The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool.
+The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. 
+
+> [!NOTE]
+> Impression tracking URLs are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 519).
 
 You can include up to 2 impression tracking URLs for each responsive ad. Each URL is delimited by a semicolon and space ("; "). 
+
+Each URL must be accessible. The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 For each Microsoft Audience Network impression, Microsoft will ping the URL to enable impression tracking in your third party ad reporting tool. Advanced-level user tracking such as conversion tracking or tracking based on cookies or IP addresses is not supported.
 
