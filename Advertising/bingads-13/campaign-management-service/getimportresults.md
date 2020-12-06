@@ -37,7 +37,7 @@ The *GetImportResultsRequest* object defines the [body](#request-body) and [head
 |<a name="importjobids"></a>ImportJobIds|The identifiers of the import jobs to get results.<br/><br/>You can specify a maximum of 100 identifiers. If this element is not specified, the operation will return results for all import jobs in the ad account within the last 90 days.|**long** array|
 |<a name="importtype"></a>ImportType|The type of import job to get results.<br/><br/>To get [GoogleImportJob](googleimportjob.md) results, set this element to "GoogleImportJob".|**string**|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of import results per page.<br/><br/>This request element is optional. If this element is not specified, the defaut page Index is *0* and the default Size is *1,000*.|[Paging](paging.md)|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|Reserved for future use.|[ImportAdditionalField](importadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[ImportAdditionalField](importadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

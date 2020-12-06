@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: ImportAdditionalField is reserved for future use.
+description: Defines a list of optional import properties that you can request when calling GetImportJobsByIds and GetImportResults.
 ---
 # ImportAdditionalField Value Set - Campaign Management
-ImportAdditionalField is reserved for future use.
+Defines a list of optional import properties that you can request when calling [GetImportJobsByIds](getimportjobsbyids.md#returnadditionalfields) and [GetImportResults](getimportresults.md#returnadditionalfields). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the ad by default. 
 
 ## Syntax
 ```xml
@@ -48,9 +48,9 @@ The [ImportAdditionalField](importadditionalfield.md) value set has the followin
 
 |Value|Description|
 |-----------|---------------|
-|<a name="autodevicebidoptimization"></a>AutoDeviceBidOptimization|Reserved.|
+|<a name="autodevicebidoptimization"></a>AutoDeviceBidOptimization|Request that the [AutoDeviceBidOptimization](googleimportoption.md#autodevicebidoptimization) element be included within each returned [GoogleImportOption](googleimportoption.md) object.|
 |<a name="none"></a>None|Reserved for internal use.|
-|<a name="notificationemail"></a>NotificationEmail|Reserved.|
+|<a name="notificationemail"></a>NotificationEmail|Request that the [NotificationEmail](googleimportjob.md#notificationemail) element be included within each returned [GoogleImportJob](googleimportjob.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
