@@ -102,6 +102,8 @@
           href: ./reference/AdGroupOperation.md 
         - name: AdGroupSelector
           href: ./reference/AdGroupSelector.md 
+        - name: AdGroupTargeting
+          href: ./reference/AdGroupTargeting.md 
         - name: AdGroupUrls
           href: ./reference/AdGroupUrls.md 
         - name: AdIterator
@@ -140,6 +142,8 @@
           href: ./reference/CampaignIterator.md 
         - name: CampaignSelector
           href: ./reference/CampaignSelector.md 
+        - name: CampaignTargeting
+          href: ./reference/CampaignTargeting.md 
         - name: CampaignUrls
           href: ./reference/CampaignUrls.md 
         - name: ExcludedLocation
