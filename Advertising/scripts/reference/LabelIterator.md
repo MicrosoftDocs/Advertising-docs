@@ -50,10 +50,6 @@ Advances the iterator and returns the next label.
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of labels that matched the selector's selection criteria.
 
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
-
 ### Returns
 |Type|Description|
 |-|-

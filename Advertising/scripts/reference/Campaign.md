@@ -14,11 +14,14 @@ Contains the methods used to manage a [campaign](/advertising/guides/entity-hier
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[addLocation(int locationId)](#addlocation-int-locationid)|[TargetedLocationOperation](./TargetedLocationOperation.md)|Creates a location target in this campaign from a location ID.
+[addLocation(int locationId, double bidModifier)](#addlocation-int-locationid-double-bidmodifier)|[TargetedLocationOperation](./TargetedLocationOperation.md)|Creates a location target in this campaign from a location ID and bid modifier.
 [addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
 [adgroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this campaign.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this campaign.
 [applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this campaign. 
 [enable](#enable)|void|Enables this campaign.
+[excludeLocation(int locationId)](#excludelocation-int-locationid)|[ExcludedLocationOperation](./ExcludedLocationOperation.md)|Creates a location exclusion in this campaign from a location ID.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Gets this campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Gets this campaign's budget.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -36,7 +39,30 @@ Contains the methods used to manage a [campaign](/advertising/guides/entity-hier
 [remove](#remove)|void|Removes this campaign.
 [removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this campaign.
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
+[targeting](#targeting)|[CampaignTargeting](./CampaignTargeting.md)|Provides access to campaign level targeting criteria: location targeting.
 [urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Gets the methods for managing this campaign's tracking template and custom parameters.
+
+
+## <a name="addlocation-int-locationid"></a>addLocation(int locationId)
+
+Creates a location target in this campaign from a location ID. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[TargetedLocationOperation](./TargetedLocationOperation.md)|The operation object used to check whether the targeted location was successfully added.
+
+
+## <a name="addlocation-int-locationid-double-bidmodifier"></a>addLocation(int locationId, double bidModifier)
+
+Creates a location target in this campaign from a location ID and bid modifier. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[TargetedLocationOperation](./TargetedLocationOperation.md)|The operation object used to check whether the targeted location was successfully added.
 
 
 ## <a name="addnegativekeywordlist-negativekeywordlist-negativekeywordlist-"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
@@ -98,6 +124,17 @@ Enables this campaign.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a name="excludelocation-int-locationid"></a>excludeLocation(int locationId)
+
+Creates a location exclusion in this campaign from a location ID. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ExcludedLocationOperation](./ExcludedLocationOperation.md)|The operation object used to check whether the excluded location was successfully added.
 
 
 ## <a name="getbiddingstrategytype"></a>getBiddingStrategyType
@@ -269,6 +306,15 @@ name|string|The campaign's name. The name may contain a maximum of 128 character
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a name="targeting"></a>targeting
+Provides access to campaign level targeting criteria: location targeting.
+
+### Returns
+|Type|Description|
+|-|-
+[CampaignTargeting](CampaignTargeting.md)|Access to location targeting criteria in this campaign.
 
 
 ## <a name="urls"></a>urls

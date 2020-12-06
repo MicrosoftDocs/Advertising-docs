@@ -11,6 +11,22 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## December 7, 2020
+
+Added support for targeted and excluded locations. 
+
+This change added following objects:
+
+- [ExcludedLocation](reference/ExcludedLocation.md)
+- [ExcludedLocationIterator](reference/ExcludedLocationIterator.md)
+- [ExcludedLocationSelector](reference/ExcludedLocationSelector.md)
+- [TargetedLocation](reference/TargetedLocation.md)
+- [TargetedLocationIterator](reference/TargetedLocationIterator.md)
+- [TargetedLocationSelector](reference/TargetedLocationSelector.md)
+
+Added the [ExcludedLocationOperation](reference/ExcludedLocationOperation.md) object, which you use to determine whether Scripts successfully added the excluded location.
+
+Added the [TargetedLocationOperation](reference/TargetedLocationOperation.md) object, which you use to determine whether Scripts successfully added the targeted location.
 
 ## March 31, 2020
 

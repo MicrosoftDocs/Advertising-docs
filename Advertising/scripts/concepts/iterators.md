@@ -42,9 +42,11 @@ The following is the list of iterators.
 - [BingAdsAccountIterator](../reference/BingAdsAccountIterator.md)
 - [BudgetIterator](../reference/BudgetIterator.md)
 - [CampaignIterator](../reference/CampaignIterator.md)
+- [ExcludedLocationIterator](reference/ExcludedLocationIterator.md)
 - [KeywordIterator](../reference/KeywordIterator.md)
 - [NegativeKeywordListIterator](../reference/NegativeKeywordListIterator.md)
 - [ProductGroupIterator](../reference/ProductGroupIterator.md)
+- [TargetedLocationIterator](reference/TargetedLocationIterator.md)
 
 ### Next steps
 

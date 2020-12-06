@@ -14,10 +14,13 @@ Contains the methods used to manage an [ad group](/advertising/guides/entity-hie
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[addLocation(int locationId)](#addlocation-int-locationid)|[TargetedLocationOperation](./TargetedLocationOperation.md)|Creates a location target in this ad group from a location ID.
+[addLocation(int locationId, double bidModifier)](#addlocation-int-locationid-double-bidmodifier)|[TargetedLocationOperation](./TargetedLocationOperation.md)|Creates a location target in this ad group from a location ID and bid modifier.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this ad group.
 [applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad group. 
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
+[excludeLocation(int locationId)](#excludelocation-int-locationid)|[ExcludedLocationOperation](./ExcludedLocationOperation.md)|Creates a location exclusion in this ad group from a location ID.
 [getCampaign](#getcampaign)|[Campaign](Campaign.md)|Gets the campaign that this ad group belongs to.
 [getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Gets the date when ads in this ad group stop serving.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -41,7 +44,30 @@ Contains the methods used to manage an [ad group](/advertising/guides/entity-hie
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
 [setStartDate(string startDate)](#setstartdate-string-startdate-)|void|Sets the date when ads in this ad group begin serving.
 [setStartDate(Object startDate)](#setstartdate-object-startdate-)|void|Sets the date when ads in this ad group begin serving.
+[targeting](#targeting)|[AdGroupTargeting](./AdGroupTargeting.md)|Provides access to ad group level targeting criteria: location targeting.
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Contains the methods used to manage this ad group's final URLs, tracking template, and custom parameters.
+
+
+## <a name="addlocation-int-locationid"></a>addLocation(int locationId)
+
+Creates a location target in this ad group from a location ID. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[TargetedLocationOperation](./TargetedLocationOperation.md)|The operation object used to check whether the targeted location was successfully added.
+
+
+## <a name="addlocation-int-locationid-double-bidmodifier"></a>addLocation(int locationId, double bidModifier)
+
+Creates a location target in this ad group from a location ID and bid modifier. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[TargetedLocationOperation](./TargetedLocationOperation.md)|The operation object used to check whether the targeted location was successfully added.
 
 
 ## <a name="ads"></a>ads
@@ -53,7 +79,6 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of ads in th
 |Type|Description|
 |-|-
 [AdSelector](./AdSelector.md)|A selector used to filter the list of ads in this ad group.
-
 
 ## <a name="applylabel-string-name-"></a>applyLabel(string name)
 Applies the label to the ad group.
@@ -87,6 +112,17 @@ Enables this ad group.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a name="excludelocation-int-locationid"></a>excludeLocation(int locationId)
+
+Creates a location exclusion in this ad group from a location ID. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[ExcludedLocationOperation](./ExcludedLocationOperation.md)|The operation object used to check whether the excluded location was successfully added.
 
 
 ## <a name="getcampaign"></a>getCampaign
@@ -334,6 +370,15 @@ endDate|Object|The date when ads in this ad group start serving. Specify the dat
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a name="targeting"></a>targeting
+Provides access to ad group level targeting criteria: location targeting.
+
+### Returns
+|Type|Description|
+|-|-
+[AdGroupTargeting](AdGroupTargeting.md)|Access to location targeting criteria in this ad group.
 
 
 ## <a name="urls"></a>urls

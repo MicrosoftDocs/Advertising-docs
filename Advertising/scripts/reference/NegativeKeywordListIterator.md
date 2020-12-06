@@ -21,7 +21,6 @@ Example usage:
     while (iterator.hasNext()) {
         var nkwList = iterator.next();
     }
-}
 ```
 
 ## Methods
@@ -49,10 +48,6 @@ Advances the iterator and returns the next negative keyword list.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of negative keywords lists that matched the selector's selection criteria. 
-
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
 
 ### Returns
 |Type|Description|

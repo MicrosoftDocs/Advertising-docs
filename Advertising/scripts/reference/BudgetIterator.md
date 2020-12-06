@@ -49,10 +49,6 @@ Advances the iterator and returns the next shared budget.
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of shared budgets that matched the selector's selection criteria. 
 
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
-
 ### Returns
 |Type|Description|
 |-|-

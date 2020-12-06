@@ -142,6 +142,14 @@
           href: ./reference/CampaignSelector.md 
         - name: CampaignUrls
           href: ./reference/CampaignUrls.md 
+        - name: ExcludedLocation
+          href: ./reference/ExcludedLocation.md 
+        - name: ExcludedLocationIterator
+          href: ./reference/ExcludedLocationIterator.md 
+        - name: ExcludedLocationOperation
+          href: ./reference/ExcludedLocationOperation.md 
+        - name: ExcludedLocationSelector
+          href: ./reference/ExcludedLocationSelector.md 
         - name: ExecutionInfo
           href: ./reference/ExecutionInfo.md 
         - name: ExpandedTextAd
@@ -204,6 +212,14 @@
           href: ./reference/ProductType.md 
         - name: Stats
           href: ./reference/Stats.md 
+        - name: TargetedLocation
+          href: ./reference/TargetedLocation.md 
+        - name: TargetedLocationIterator
+          href: ./reference/TargetedLocationIterator.md 
+        - name: TargetedLocationOperation
+          href: ./reference/TargetedLocationOperation.md 
+        - name: TargetedLocationSelector
+          href: ./reference/TargetedLocationSelector.md 
     - name: Multi-accounts
       href: ./reference/AccountsApp.md
       items:
