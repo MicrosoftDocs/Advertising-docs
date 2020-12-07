@@ -53,7 +53,7 @@ Each account, campaign, or ad group can be associated with between 2 and 20 call
 ### <a name="filterlinkextensions"></a>Filter Link Extensions
 With Filter Link Extensions, your ads will include one header with between 3 and 10 clickable text values that tell customers more about your business. 
 
-### <a name="flyerextensions"></a>Flyer Link Extensions
+### <a name="flyerextensions"></a>Flyer Extensions
 Flyer Extensions enable advertisers to distribute product or store catalogues (flyers) to potential customers. They can display prominently on broad queries like "weekly deals" or "weekly sales" and thus encourage shoppers to click on your ad instead of the competition’s. By their nature they help to better inform searchers, and as a result, increase user engagement e.g., click through rate.
 
 ### <a name="imageextensions"></a>Image Extensions

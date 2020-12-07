@@ -1741,8 +1741,6 @@
           href: ../campaign-management-service/gendertype.md
         - name: ImportAdditionalField
           href: ../campaign-management-service/importadditionalfield.md
-        - name: ImportEntityIdMapping
-          href: ../campaign-management-service/importentityidmapping.md
         - name: ImportEntityType
           href: ../campaign-management-service/importentitytype.md
         - name: IntentOption

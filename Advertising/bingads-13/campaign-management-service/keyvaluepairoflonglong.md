@@ -34,8 +34,8 @@ The [KeyValuePairOflonglong](keyvaluepairoflonglong.md) object has the following
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="key"></a>key|Reserved.|**long**|
-|<a name="value"></a>value|Reserved.|**long**|
+|<a name="key"></a>key|The key to the value.|**long**|
+|<a name="value"></a>value|The value mapped to the key.|**long**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
