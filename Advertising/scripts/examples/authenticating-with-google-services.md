@@ -11,23 +11,16 @@ ms.topic: "article"
 
 # Authenticating with Google services
 
-If your script uses Google services, such as Google Drive, Sheets, and Mail, you'll need credentials to run them. 
+If your script uses Google services, such as Google Drive, Sheets, and Mail, you need to get credentials. There are a few of options for getting the credentials:
 
-For information about getting credentials, see the following Google documents:
+- [Option 1](#option1) &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
+- [Option 2](#option2) &mdash; A little more complicated but you only need to repeat it if the refresh token becomes invalid.
+- [Option 3](#option3) &mdash; Also a little more complicated (uses the provided PowerShell script) but you only need to repeat it if the refresh token becomes invalid.
 
-- [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2)
-- [Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en)
-
-
-## <a name="option1"></a>Getting an access token from Google OAuth playground
-
-> [!NOTE]
-> The following steps may change as Google updates their user experience (UX). In the case that the steps no longer align with the UX, read the Google docs mentioned at the beginning of the topic to determine the new flow, or simply navigate the UX looking for similar steps.
-
-If you just want to get a short-lived access token to run or test a script, follows these steps:
+## <a name="option1"></a>Option 1 - Getting an access token from Google OAuth playground
 
 1. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
-2. In **Input your own scopes**, paste https:\//www.googleapis.com/auth/drive https:\//www.googleapis.com/auth/gmail.send
+2. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
 3. Click **Authorize APIs** 
 4. After the APIs are authorized, click **Exchange authorization code for tokens**
 5. Copy the access_token's value from the response
@@ -37,100 +30,94 @@ If you just want to get a short-lived access token to run or test a script, foll
 > Because the access token expires in 1 hour, you'll need to repeat these steps every hour.
 
 
-## <a name="option2"></a>Getting a refresh token from Google OAuth playground
-
-The longer-lived solution is to get a refresh token from the playground after defining a web client in Google Cloud Platform Console. See [Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en). 
-
-Additional information:
-
-- To use the example [solutions](../solutions/index.md) in this document, you must enable APIs and services for Google Sheets API, Google Drive API, and Gmail API.  
-  
-- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. **Selecting these scopes require that you submit your app for Google verification**. If you don't submit your app for Google verification, you'll get a warning message when trying to authorize the app.  
-  
-- When asked to specify the type of application, select Web application.  
-  
-- When asked to specify a redirect URI, use https://developers.google.com/oauthplayground.  
-  
-- After setting up your credentials and defining your client, copy the client ID and client secret to use in steps 4 and 5 below.
-
-> [!NOTE]
-> If you don't submit your app for Google verification and try authorizing it in the playground, Google displays a warning dialog that says, "This app isn't verified." To run the script anyway, click **Advanced** and then **Go to [app name] (unsafe)**.
-
-> [!NOTE]
-> The following steps may change as Google updates their user experience (UX). In the case that the steps no longer align with the UX, read the Google docs mentioned at the beginning of the topic to determine the new flow, or simply navigate the UX looking for similar steps.
- 
-1. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
-2. Click the OAuth 2.0 Configuration icon (looks like a gear in upper right corner)
-3. Check the **Use your own OAuth credentials** box
-4. Paste your client ID into **OAuth Client ID**
-5. Paste your client secret into **OAuth Client secret**
-6. In **Input your own scopes**, paste https:\//www.googleapis.com/auth/drive https:\//www.googleapis.com/auth/gmail.send
-7. Click **Authorize APIs** and follow the prompts to provide consent 
-8. After the APIs are authorized, click **Exchange authorization code for tokens**
-9. Copy the token from **Refresh token** to use in step 10 
-10. In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values from 4, 5, and 9. 
-
-You only need to repeat this process if the refresh token becomes invalid.
+## <a name="option2"></a>Option 2 - Getting a refresh token from Google OAuth playground
 
 
-## <a name="option3"></a>Getting a refresh token using a PowerShell script
-
-Another longer-lived solution is to get a refresh token from the playground after defining a client in Google Cloud Platform Console. See [Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en). 
-
-Additional information:
-
-- To use the example [solutions](../solutions/index.md) in this document, you must enable APIs and services for Google Sheets API, Google Drive API, and Gmail API.  
-  
-- When asked to add scopes, select *../auth/drive* and *../auth/gmail.send*. **Selecting these scopes require that you submit your app for Google verification**. If you don't submit your app for Google verification, you'll get a warning message when trying to authorizing the app.  
-  
-- When asked to specify the type of application, select Other.  
-  
-- After setting up your credentials and defining your client, copy the client ID and client secret to use in the PowerShell script below.
+1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
+2. Click **Create a project** to create a new project or select an existing project  
+   1. If creating a new project, enter the name of your project in **Project Name**. For example, Scripts.
+   2. Click **Create**
+3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
+4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
+5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
+6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
+7. On **Dashboard**, click **Credentials** in the left navigation pane and then click **CONFIGURE CONSENT SCREEN**. If asked to select a **User Type**, select **External**
+8. Enter the name of your application in the **Application name** field (for example, *Scripts client*)
+9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
+10. Click **Save**
+11. On **Dashboard**, click **Credentials** in the left navigation pane, then click **Create credentials** and select **Oauth client ID**
+12. Select **Web application** Application type. Next, enter a name such as *Scripts web app* in the **Name** field. Then, enter https://developers.google.com/oauthplayground in the **Authorized redirect URIs** field. Finally, click **Create**
+13. Copy your client ID and client secret to use in steps 17, 18, and 23 and then click **OK**
+14. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
+15. Click the OAuth 2.0 Configuration icon (looks like a gear in upper right corner)
+16. Check the **Use your own OAuth credentials** box
+17. Paste your client ID into **OAuth Client ID**
+18. Paste your client secret into **OAuth Client secret**
+19. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
+20. Click **Authorize APIs** and follow the prompts to provide consent 
+21. After the APIs are authorized, click **Exchange authorization code for tokens**
+22. Copy the token from **Refresh token** to use in step 23 
+23. In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 22. 
 
 > [!NOTE]
-> If you don't submit your app for Google verification and try authorizing it in the playground, Google displays a warning dialog that says, "This app isn't verified." To run the script anyway, click **Advanced** and then **Go to [app name] (unsafe)**.
+> When authorizing APIs in the playground, if you see a dialog that says, "This app isn't verified", click **Advanced** and then **Go to [app name] (unsafe)**.
 
 
-### Create the following PowerShell script to get user consent and a refresh token. 
+## <a name="option3"></a>Option 3 - Getting a refresh token using a PowerShell script
 
-
-Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token. You'll only need to rerun the PowerShell script if the refresh token becomes invalid.
-
-Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app.  
-
-```powershell
-$clientId = "your-client-id"
-$clientSecret = "your-client-secret"
-
-$scopes = "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/gmail.send"
-
-Start-Process "https://accounts.google.com/o/oauth2/v2/auth?client_id=$clientId&scope=$([string]::Join("%20", $scopes))&access_type=offline&response_type=code&redirect_uri=urn:ietf:wg:oauth:2.0:oob"    
-
-$code = Read-Host "Please enter the code"
-
-$response = Invoke-WebRequest https://www.googleapis.com/oauth2/v4/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&client_secret=$clientSecret&redirect_uri=urn:ietf:wg:oauth:2.0:oob&code=$code&grant_type=authorization_code"
-
-Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
-```
-
-Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).  
-
-Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r):  
-
-```
-cmd.exe
-```  
-
-At the command prompt, navigate to the folder where you saved GetTokens.ps1 and enter the following command:  
-
-```
-powershell.exe -File .\GetTokens.ps1
-```  
-
-When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the webpage contains the grant code (see Please copy this code...).  
-
-Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Copy the refresh token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. 
-
-
-In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received performing the steps above.
+1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
+2. Click **Create a project** to create a new project or select an existing project  
+   1. If creating a new project, enter the name of your project in **Project Name**. For example, Scripts.
+   2. Click **Create**
+3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
+4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
+5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
+6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
+7. On **Dashboard**, click **Credentials** in the left navigation pane and then click the **OAuth consent screen** tab
+8. Enter the name of your application in the **Application name** field (for example, *Scripts client*)
+9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
+10. Click **Save**
+11. On the **Credentials** page, click **Create credentials** and then select **Oauth client ID**
+12. Select **Other** application type, enter a name (for example, *Scripts client creds*), and click **Create**
+13. Copy your client ID and client secret to use in steps 14 and 15 and then click **OK**
+14. Create a PowerShell script to get user consent and a refresh token.  
+   
+  Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token.  
+   
+  Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app (see step 13).  
+   
+  ```powershell
+  $clientId = "your-client-id"
+  $clientSecret = "your-client-secret"
+  
+  $scopes = "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/gmail.send"
+  
+  Start-Process "https://accounts.google.com/o/oauth2/v2/auth?client_id=$clientId&scope=$([string]::Join("%20", $scopes))&access_type=offline&response_type=code&redirect_uri=urn:ietf:wg:oauth:2.0:oob"    
+   
+  $code = Read-Host "Please enter the code"
+     
+  $response = Invoke-WebRequest https://www.googleapis.com/oauth2/v4/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&client_secret=$clientSecret&redirect_uri=urn:ietf:wg:oauth:2.0:oob&code=$code&grant_type=authorization_code"
+    
+  Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
+  ```  
+   
+  Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).  
+   
+  Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r):  
+   
+  ```
+  cmd.exe
+  ```  
+   
+  At the command prompt, navigate to the folder where you saved GetTokens.ps1 and enter the following command:  
+   
+  ```
+  powershell.exe -File .\GetTokens.ps1
+  ```  
+   
+  When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the webpage contains the grant code (see Please copy this code...).  
+     
+  Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Copy the refresh token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. 
+  
+15. In solutions like [Discovering disapproved ads](../solutions/get-disapproved-ads.md), which access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14. 
 
