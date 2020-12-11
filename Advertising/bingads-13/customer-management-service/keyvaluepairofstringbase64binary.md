@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: The key and value pair of string and base64Binary values.
+description: The key and value pair of string and base64Binary values defined by the Customer Management service.
 ---
 # KeyValuePairOfstringbase64Binary Data Object - Customer Management
-The key and value pair of string and base64Binary values.
+The key and value pair of string and base64Binary values defined by the Customer Management service.
 
 ## Syntax
 ```xml

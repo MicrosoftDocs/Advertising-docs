@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: The key and value pair of string and string values.
+description: The key and value pair of string and string values defined by the Campaign Management service.
 ---
 # KeyValuePairOfstringstring Data Object - Campaign Management
-The key and value pair of string and string values. 
+The key and value pair of string and string values defined by the Campaign Management service. 
 
 ## Syntax
 ```xml

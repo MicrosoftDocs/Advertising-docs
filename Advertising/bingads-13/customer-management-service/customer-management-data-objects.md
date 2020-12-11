@@ -26,8 +26,8 @@ The Customer Management service defines the following data objects.
 |[CustomerInfo](customerinfo.md)|Defines an object that contains a customer's identifier and name.|
 |[CustomerRole](customerrole.md)|Defines account access rights for a person who acts on behalf of a specific customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
-|[KeyValuePairOfstringbase64Binary](keyvaluepairofstringbase64binary.md)|The key and value pair of string and base64Binary values.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values.|
+|[KeyValuePairOfstringbase64Binary](keyvaluepairofstringbase64binary.md)|The key and value pair of string and base64Binary values defined by the Customer Management service.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values defined by the Customer Management service.|
 |[OperationError](operationerror.md)|Defines a Customer Management operation error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
 |[Paging](paging.md)|Defines a paging object to request Customer Management objects in batches.|

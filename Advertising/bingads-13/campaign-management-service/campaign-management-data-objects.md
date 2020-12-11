@@ -113,8 +113,8 @@ The Campaign Management service defines the following data objects.
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|
 |[InStoreTransactionGoal](instoretransactiongoal.md)|Defines an in-store transaction goal.|
-|[KeyValuePairOflonglong](keyvaluepairoflonglong.md)|The key and value pair of long and long values.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values.|
+|[KeyValuePairOflonglong](keyvaluepairoflonglong.md)|The key and value pair of long and long values defined by the Campaign Management service.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values defined by the Campaign Management service.|
 |[Keyword](keyword.md)|Defines a keyword.|
 |[Label](label.md)|Defines a label object to organize campaigns, ad groups, ads, and keywords into groups.|
 |[LabelAssociation](labelassociation.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
