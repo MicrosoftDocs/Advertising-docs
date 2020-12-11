@@ -245,7 +245,7 @@ You must add exactly one [ProductAd](../campaign-management-service/productad.md
 > [!NOTE]
 > The Microsoft Audience network does not yet support responsive ads from smart shopping campaigns. Customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 777) will be able to add exactly one [ResponsiveAd](../campaign-management-service/responsivead.md). Audience ads (responsive ads via API) are shown to users on the Microsoft Audience network. For more information about audience ads (responsive ads via API) see the API [technical guide](audience-ads.md) and Microsoft Advertising [help article](https://help.ads.microsoft.com/#apex/3/en/56674/0).
 
-You can create both ad types together or seperately via the [AddAds](../campaign-management-service/addads.md) operation.
+You can create both ad types together or separately via the [AddAds](../campaign-management-service/addads.md) operation.
 
 ```xml
 <AddAdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v13">
