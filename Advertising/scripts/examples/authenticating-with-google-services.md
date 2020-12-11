@@ -3,7 +3,7 @@ title: "Authenticating with Google services"
 description: "Shows options for getting an access token to use with Google services."
 author: eric-urban
 ms.author: eur
-ms.service: "bingads-scripts"
+ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
 
