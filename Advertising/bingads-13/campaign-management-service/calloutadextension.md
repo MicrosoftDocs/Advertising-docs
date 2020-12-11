@@ -2,8 +2,8 @@
 title: CalloutAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that specifies additional text about your business, products, or services to include in a text ad.
 ---
 # CalloutAdExtension Data Object - Campaign Management

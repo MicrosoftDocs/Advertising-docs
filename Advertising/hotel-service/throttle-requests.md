@@ -3,8 +3,8 @@ title: "Throttling Requests"
 description: Describes the experience when your app exceeds the number of requests per minute that your app may  make.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Throttling requests

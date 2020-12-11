@@ -2,8 +2,8 @@
 title: DSASearchQueryPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a DSA search query performance report request.
 ---
 # DSASearchQueryPerformanceReportRequest Data Object - Reporting

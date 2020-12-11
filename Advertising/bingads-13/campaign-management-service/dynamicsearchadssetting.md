@@ -2,8 +2,8 @@
 title: DynamicSearchAdsSetting Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the Dynamic Search Ads setting for a campaign.
 ---
 # DynamicSearchAdsSetting Data Object - Campaign Management
@@ -21,7 +21,7 @@ A dynamic search ads setting can only be created within certain campaign types.
       <xs:sequence>
         <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="PageFeedIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="PageFeedIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="Source" nillable="true" type="tns:DynamicSearchAdsSource" />
       </xs:sequence>
     </xs:extension>

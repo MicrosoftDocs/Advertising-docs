@@ -2,8 +2,8 @@
 title: SourceType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the source or seed for the keyword idea.
 ---
 # SourceType Value Set - Ad Insight

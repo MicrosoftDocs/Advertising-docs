@@ -2,8 +2,8 @@
 title: "Ad Group Image Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Describes the Ad Group Image Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp

@@ -3,8 +3,8 @@ title: "Creating a metadata Transaction Message"
 description: Shows how to create a metadata transaction message that describes room and package data used to create room bundles.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Create a metadata Transaction Message

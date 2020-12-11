@@ -2,8 +2,8 @@
 title: ProductAudience Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a product audience that you can use to remarket products from your Microsoft Merchant Center store.
 ---
 # ProductAudience Data Object - Campaign Management

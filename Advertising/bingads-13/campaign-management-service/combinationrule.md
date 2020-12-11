@@ -2,8 +2,8 @@
 title: CombinationRule Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: A combination rule includes logical conditions used to determine who to add to your combined list.
 ---
 # CombinationRule Data Object - Campaign Management
@@ -13,7 +13,7 @@ A combination rule includes logical conditions used to determine who to add to y
 ```xml
 <xs:complexType name="CombinationRule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="AudienceIds" nillable="true" type="q93:ArrayOflong" xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element name="AudienceIds" nillable="true" type="q102:ArrayOflong" xmlns:q102="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element name="Operator" type="tns:LogicalOperator" />
   </xs:sequence>
 </xs:complexType>

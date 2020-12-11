@@ -1,10 +1,10 @@
 ---
 title: "Get product statuses"
 description: "Learn how to the status of your product offers using Content API."
-author: Matt-UX
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 ---
 
 # Getting the status of your product offers

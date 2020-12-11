@@ -2,8 +2,8 @@
 title: CustomParameters Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a collection of key and value custom parameters for URL tracking.
 ---
 # CustomParameters Data Object - Campaign Management
@@ -38,6 +38,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [BiddableAdGroupCriterion](biddableadgroupcriterion.md)  
 [Campaign](campaign.md)  
 [FilterLinkAdExtension](filterlinkadextension.md)  
+[FlyerAdExtension](flyeradextension.md)  
 [ImageAdExtension](imageadextension.md)  
 [Keyword](keyword.md)  
 [PriceAdExtension](priceadextension.md)  

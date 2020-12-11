@@ -2,8 +2,8 @@
 title: UpdateUserRoles Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Updates the roles of the specified user.
 dev_langs: 
   - csharp

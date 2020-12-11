@@ -2,8 +2,8 @@
 title: Experiment Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range.
 ---
 # Experiment Data Object - Campaign Management

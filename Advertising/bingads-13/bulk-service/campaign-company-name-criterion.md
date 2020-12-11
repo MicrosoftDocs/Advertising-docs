@@ -2,8 +2,8 @@
 title: "Campaign Company Name Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Describes the Campaign Company Name Criterion fields in a Bulk file.
 dev_langs:
   - csharp

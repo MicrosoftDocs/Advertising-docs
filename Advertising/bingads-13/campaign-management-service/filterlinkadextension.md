@@ -2,8 +2,8 @@
 title: FilterLinkAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Filter Link Extensions pair one header with between 3 and 10 clickable text values that tell customers more about your business.
 ---
 # FilterLinkAdExtension Data Object - Campaign Management
@@ -21,11 +21,11 @@ You can associate a filter link ad extension with the account or with campaigns 
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
         <xs:element minOccurs="0" name="AdExtensionHeaderType" nillable="true" type="tns:AdExtensionHeaderType" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q53:ArrayOfstring" xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q54:ArrayOfstring" xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q54:ArrayOfstring" xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Texts" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="Texts" nillable="true" type="q56:ArrayOfstring" xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>

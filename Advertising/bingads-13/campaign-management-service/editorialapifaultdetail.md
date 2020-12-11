@@ -2,8 +2,8 @@
 title: EditorialApiFaultDetail Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a fault object that operations such as AddAdGroupCriterions, UpdateAdGroupCriterions, SetAdExtensionsAssociations, and UpdateAdExtensions return when one or more criterion or ad extensions in your request message fail editorial review.
 ---
 # EditorialApiFaultDetail Data Object - Campaign Management
@@ -13,7 +13,7 @@ Defines a fault object that operations such as [AddAdGroupCriterions](addadgroup
 ```xml
 <xs:complexType name="EditorialApiFaultDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q24:ApplicationFault" xmlns:q24="https://adapi.microsoft.com">
+    <xs:extension base="q25:ApplicationFault" xmlns:q25="https://adapi.microsoft.com">
       <xs:sequence>
         <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
         <xs:element minOccurs="0" name="EditorialErrors" nillable="true" type="tns:ArrayOfEditorialError" />

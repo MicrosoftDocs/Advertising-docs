@@ -2,12 +2,12 @@
 title: KeyValuePairOfstringstring Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: The list of key and value strings to avoid otherwise breaking changes in the current Customer Management API version.
+author: eric-urban
+ms.author: eur
+description: The key and value pair of string and string values.
 ---
 # KeyValuePairOfstringstring Data Object - Customer Management
-The list of key and value strings to avoid otherwise breaking changes in the current Customer Management API version.
+The key and value pair of string and string values.
 
 ## Syntax
 ```xml

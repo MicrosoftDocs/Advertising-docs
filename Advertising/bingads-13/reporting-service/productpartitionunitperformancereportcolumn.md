@@ -2,8 +2,8 @@
 title: ProductPartitionUnitPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ProductPartitionUnitPerformanceReportRequest.
 ---
 # ProductPartitionUnitPerformanceReportColumn Value Set - Reporting
@@ -73,16 +73,18 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ViewThroughConversions" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [ProductPartitionUnitPerformanceReportColumn](productpartitionunitperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdStatus](#adstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssistedClicks](#assistedclicks), [AssistedConversions](#assistedconversions), [AssistedImpressions](#assistedimpressions), [Assists](#assists), [AverageCpc](#averagecpc), [BidMatchType](#bidmatchtype), [BidStrategyType](#bidstrategytype), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CurrencyCode](#currencycode), [CurrentMaxCpc](#currentmaxcpc), [CustomParameters](#customparameters), [DeliveredMatchType](#deliveredmatchtype), [DestinationUrl](#destinationurl), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [LocalStoreCode](#localstorecode), [Network](#network), [ProductGroup](#productgroup), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TimePeriod](#timeperiod), [TopVsOther](#topvsother), [TrackingTemplate](#trackingtemplate), [ViewThroughConversions](#viewthroughconversions).
+The [ProductPartitionUnitPerformanceReportColumn](productpartitionunitperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupCriterionId](#adgroupcriterionid), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AdId](#adid), [AdStatus](#adstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssistedClicks](#assistedclicks), [AssistedConversions](#assistedconversions), [AssistedImpressions](#assistedimpressions), [Assists](#assists), [AverageCpc](#averagecpc), [BidMatchType](#bidmatchtype), [BidStrategyType](#bidstrategytype), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerAssist](#costperassist), [CostPerConversion](#costperconversion), [Ctr](#ctr), [CurrencyCode](#currencycode), [CurrentMaxCpc](#currentmaxcpc), [CustomParameters](#customparameters), [DeliveredMatchType](#deliveredmatchtype), [DestinationUrl](#destinationurl), [DeviceType](#devicetype), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [Language](#language), [LocalStoreCode](#localstorecode), [Network](#network), [ProductGroup](#productgroup), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerAssist](#revenueperassist), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TimePeriod](#timeperiod), [TopVsOther](#topvsother), [TrackingTemplate](#trackingtemplate), [ViewThroughConversions](#viewthroughconversions).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|How often your ad was in the first position of all results, as a percentage of your total impressions.<br/><br/>A higher number indicates your ad is frequently showing in the best ad position.<br/><br/>The value of this column is empty if the data is not available. Neither *Hourly* or *HourOfDay* aggregation are supported. If you include this column with *Hourly* or *HourOfDay* aggregation the service will not return an error and you should ignore any performance data returned for this column.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|

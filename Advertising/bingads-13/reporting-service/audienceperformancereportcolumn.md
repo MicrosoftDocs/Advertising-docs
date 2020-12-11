@@ -2,8 +2,8 @@
 title: AudiencePerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AudiencePerformanceReportRequest.
 ---
 # AudiencePerformanceReportColumn Value Set - Reporting
@@ -60,16 +60,19 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ViewThroughConversions" />
     <xs:enumeration value="Goal" />
     <xs:enumeration value="GoalType" />
+    <xs:enumeration value="AbsoluteTopImpressionRatePercent" />
+    <xs:enumeration value="TopImpressionRatePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [AudiencePerformanceReportColumn](audienceperformancereportcolumn.md) value set has the following values: [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssociationId](#associationid), [AssociationLevel](#associationlevel), [AssociationStatus](#associationstatus), [AudienceId](#audienceid), [AudienceName](#audiencename), [AudienceType](#audiencetype), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [BaseCampaignId](#basecampaignid), [BidAdjustment](#bidadjustment), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TargetingSetting](#targetingsetting), [TimePeriod](#timeperiod), [ViewThroughConversions](#viewthroughconversions).
+The [AudiencePerformanceReportColumn](audienceperformancereportcolumn.md) value set has the following values: [AbsoluteTopImpressionRatePercent](#absolutetopimpressionratepercent), [AccountId](#accountid), [AccountName](#accountname), [AccountNumber](#accountnumber), [AccountStatus](#accountstatus), [AdGroupId](#adgroupid), [AdGroupName](#adgroupname), [AdGroupStatus](#adgroupstatus), [AllConversionRate](#allconversionrate), [AllConversions](#allconversions), [AllCostPerConversion](#allcostperconversion), [AllReturnOnAdSpend](#allreturnonadspend), [AllRevenue](#allrevenue), [AllRevenuePerConversion](#allrevenueperconversion), [AssociationId](#associationid), [AssociationLevel](#associationlevel), [AssociationStatus](#associationstatus), [AudienceId](#audienceid), [AudienceName](#audiencename), [AudienceType](#audiencetype), [AverageCpc](#averagecpc), [AveragePosition](#averageposition), [BaseCampaignId](#basecampaignid), [BidAdjustment](#bidadjustment), [CampaignId](#campaignid), [CampaignName](#campaignname), [CampaignStatus](#campaignstatus), [Clicks](#clicks), [ConversionRate](#conversionrate), [Conversions](#conversions), [CostPerConversion](#costperconversion), [Ctr](#ctr), [Goal](#goal), [GoalType](#goaltype), [Impressions](#impressions), [ReturnOnAdSpend](#returnonadspend), [Revenue](#revenue), [RevenuePerConversion](#revenueperconversion), [Spend](#spend), [TargetingSetting](#targetingsetting), [TimePeriod](#timeperiod), [TopImpressionRatePercent](#topimpressionratepercent), [ViewThroughConversions](#viewthroughconversions).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionratepercent"></a>AbsoluteTopImpressionRatePercent|How often your ad was in the first position of all results, as a percentage of your total impressions.<br/><br/>A higher number indicates your ad is frequently showing in the best ad position.<br/><br/>The value of this column is empty if the data is not available. Neither *Hourly* or *HourOfDay* aggregation are supported. If you include this column with *Hourly* or *HourOfDay* aggregation the service will not return an error and you should ignore any performance data returned for this column.|
 |<a name="accountid"></a>AccountId|The Microsoft Advertising assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Microsoft Advertising assigned number of an account.|
@@ -110,6 +113,7 @@ The [AudiencePerformanceReportColumn](audienceperformancereportcolumn.md) value 
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="targetingsetting"></a>TargetingSetting|This attribute reflects the current value of your ad group's audience targeting setting. The possible values are "Target and bid" or "Bid only". Target and bid: Show ads only to people included in the remarketing list, with the option to change the bid amount. Bid only: Show ads to people searching for your ad, with the option to change the bid amount for people included in the remarketing list.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="topimpressionratepercent"></a>TopImpressionRatePercent|The percentage of times your ad showed in the mainline, the top placement where ads appear above the search results, out of your total impressions.<br/><br/>This indicates how changes in ad position can impact performance.<br/><br/>The value of this column is empty if the data is not available. Neither *Hourly* or *HourOfDay* aggregation are supported. If you include this column with *Hourly* or *HourOfDay* aggregation the service will not return an error and you should ignore any performance data returned for this column.|
 |<a name="viewthroughconversions"></a>ViewThroughConversions|View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.<br/><br/>View-through conversions don't have a click associated but do have an impression associated within the advertiser defined conversion window. If the user also clicked on an ad that was delivered via the Microsoft Audience or Search network, there won't be any view-through conversion counted. Only the click-based conversion would be counted.<br/><br/>View-through conversions are only counted for ads in the Microsoft Audience network.<br/><br/>Not everyone has view-through conversions yet. If you don't, don't worry. It's coming soon.|
 
 ## <a name="remarks"></a>Remarks

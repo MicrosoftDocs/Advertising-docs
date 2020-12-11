@@ -2,8 +2,8 @@
 title: BatchError Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an Ad Insight batch error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 ---
 # BatchError Data Object - Ad Insight

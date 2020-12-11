@@ -2,8 +2,8 @@
 title: TargetSettingDetail Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.
 ---
 # TargetSettingDetail Data Object - Campaign Management

@@ -2,8 +2,8 @@
 title: Ad Insight Service Operations
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Service operations reference for the AdInsight service.
 ---
 # Ad Insight Service Operations

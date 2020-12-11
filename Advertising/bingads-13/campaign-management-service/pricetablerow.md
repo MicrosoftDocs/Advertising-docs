@@ -2,8 +2,8 @@
 title: PriceTableRow Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines pricing information by currency and unit that you can use with price ad extensions.
 ---
 # PriceTableRow Data Object - Campaign Management
@@ -15,8 +15,8 @@ Defines pricing information by currency and unit that you can use with price ad 
   <xs:sequence>
     <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q49:ArrayOfstring" xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q50:ArrayOfstring" xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q50:ArrayOfstring" xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q51:ArrayOfstring" xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
     <xs:element name="Price" type="xs:double" />
     <xs:element name="PriceQualifier" type="tns:PriceQualifier" />

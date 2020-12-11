@@ -2,8 +2,8 @@
 title: ImageMediaRepresentation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an image media representation with height and width.
 ---
 # ImageMediaRepresentation Data Object - Campaign Management

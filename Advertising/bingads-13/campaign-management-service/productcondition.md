@@ -2,8 +2,8 @@
 title: ProductCondition Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a condition that determines whether a product is selected from a customer's Microsoft Merchant Center catalog file.
 ---
 # ProductCondition Data Object - Campaign Management

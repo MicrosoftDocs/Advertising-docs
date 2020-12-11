@@ -2,8 +2,8 @@
 title: Bulk Value Sets
 ms.service: bing-ads-bulk-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Value sets reference for the Bulk service.
 ---
 # Bulk Value Sets

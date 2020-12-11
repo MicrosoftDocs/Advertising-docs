@@ -2,8 +2,8 @@
 title: BatchErrorCollection Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.
 ---
 # BatchErrorCollection Data Object - Campaign Management
@@ -20,7 +20,7 @@ For example in the *NestedPartialErrors* response element for [AddNegativeKeywor
     <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q56:ArrayOfKeyValuePairOfstringstring" xmlns:q56="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q61:ArrayOfKeyValuePairOfstringstring" xmlns:q61="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Index" type="xs:int" />
     <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />

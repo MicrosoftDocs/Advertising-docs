@@ -2,12 +2,12 @@
 title: KeyValuePairOfstringstring Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: The list of key and value strings to avoid otherwise breaking changes in the current Bulk API version.
+author: eric-urban
+ms.author: eur
+description: The key and value pair of string and string values defined by the Bulk service.
 ---
 # KeyValuePairOfstringstring Data Object - Bulk
-The list of key and value strings to avoid otherwise breaking changes in the current Bulk API version.
+The key and value pair of string and string values defined by the Bulk service.
 
 ## Syntax
 ```xml

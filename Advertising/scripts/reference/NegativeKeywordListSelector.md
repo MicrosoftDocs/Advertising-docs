@@ -1,8 +1,8 @@
 ---
 title: "NegativeKeywordListSelector object"
 description: "Contains the methods for filtering the list of negative keyword lists to return."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
