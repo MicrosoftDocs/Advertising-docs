@@ -1,9 +1,8 @@
 ---
 title: "BingAdsAccountIterator object"
-description: "Contains the methods for iterating through a list of managed accounts."
-author: Matt-UX
-
-ms.author: matrob
+description: "Contains the methods used in multi-account scripts for iterating through a list of managed accounts."
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -50,10 +49,6 @@ Advances the iterator and returns the next managed account.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of managed accounts that matched the selector's selection criteria.
-
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
 
 ### Returns
 |Type|Description|

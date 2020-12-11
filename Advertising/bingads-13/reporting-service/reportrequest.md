@@ -2,8 +2,8 @@
 title: ReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object for all report requests.
 ---
 # ReportRequest Data Object - Reporting

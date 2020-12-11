@@ -2,8 +2,8 @@
 title: "Budget and Bid Strategies"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup bid and budget strategies.
 ---
 # Budget and Bid Strategies

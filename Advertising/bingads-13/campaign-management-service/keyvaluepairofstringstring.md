@@ -2,12 +2,12 @@
 title: KeyValuePairOfstringstring Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+author: eric-urban
+ms.author: eur
+description: The key and value pair of string and string values defined by the Campaign Management service.
 ---
 # KeyValuePairOfstringstring Data Object - Campaign Management
-The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
+The key and value pair of string and string values defined by the Campaign Management service. 
 
 ## Syntax
 ```xml

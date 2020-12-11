@@ -2,8 +2,8 @@
 title: AddMedia Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Adds the specified media to an account's media library.
 dev_langs: 
   - csharp

@@ -2,8 +2,8 @@
 title: GoalsAndFunnelsReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a goals and funnels report request.
 ---
 # GoalsAndFunnelsReportRequest Data Object - Reporting

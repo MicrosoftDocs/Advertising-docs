@@ -1,9 +1,8 @@
 ---
 title: "FAQ"
 description: "Get answers to commonly asked questions."
-author: Matt-UX
-
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

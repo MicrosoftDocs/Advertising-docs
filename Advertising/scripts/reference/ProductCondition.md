@@ -1,10 +1,9 @@
 ---
 title: "ProductCondition"
 subtitle: "Scripts"
-description: "Contains the methods used to manage the product group."
-author: Matt-UX
-
-ms.author: matrob
+description: "Contains the methods used to manage the condition product group."
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

@@ -2,8 +2,8 @@
 title: "Budget and Bid Opportunities"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Discover bid and budget opportunities.
 ---
 # Budget and Bid Opportunities

@@ -2,8 +2,8 @@
 title: "Keyword Main Line Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Describes the Keyword Main Line Bid fields in a Bulk file.
 ---
 # Keyword Main Line Bid Record - Bulk

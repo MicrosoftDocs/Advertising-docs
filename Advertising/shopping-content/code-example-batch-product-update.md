@@ -1,11 +1,10 @@
 ---
 title: "Updating pricing and availability for a batch of products"
 description: "Code example that shows how to update price and availability for a batch of products."
-author: Matt-UX
-
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 
 dev_langs: 
   - csharp

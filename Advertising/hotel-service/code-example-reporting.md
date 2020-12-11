@@ -3,8 +3,8 @@ title: "Hotel Ads Reporting Code Example"
 description: Shows how to request and download a hotel ads report.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 dev_langs:
   - csharp
 ---

@@ -1,9 +1,8 @@
 ---
 title: "Microsoft Ads Scripts multi-account access"
 description: "Provides an overview of how to use AccountsApp to access the accounts you can manage on behalf of others."
-author: Matt-UX
-
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

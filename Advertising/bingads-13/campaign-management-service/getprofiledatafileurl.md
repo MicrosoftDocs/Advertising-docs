@@ -2,8 +2,8 @@
 title: GetProfileDataFileUrl Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Gets a temporary URL that you can use to download industry or job function profile data.
 dev_langs: 
   - csharp

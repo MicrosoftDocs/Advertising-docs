@@ -3,8 +3,8 @@ title: "Having Microsoft Advertising pull Transaction Messages"
 description: Provides the details for having Microsoft Advertising pull transaction messages.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Having Microsoft Advertising pull Transaction Messages

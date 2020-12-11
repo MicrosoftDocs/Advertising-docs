@@ -2,8 +2,8 @@
 title: ImportJob Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object of an import job.
 ---
 # ImportJob Data Object - Campaign Management
@@ -25,6 +25,13 @@ Do not try to instantiate an *ImportJob*. You can create one or more of the foll
     <xs:element minOccurs="0" name="ImportOption" nillable="true" type="tns:ImportOption" />
     <xs:element minOccurs="0" name="LastRunTimeInUTC" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="NotificationEmail" nillable="true" type="xs:string">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
     <xs:element minOccurs="0" name="NotificationType" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
@@ -34,7 +41,7 @@ Do not try to instantiate an *ImportJob*. You can create one or more of the foll
 
 ## <a name="elements"></a>Elements
 
-The [ImportJob](importjob.md) object has the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type).
+The [ImportJob](importjob.md) object has the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationEmail](#notificationemail), [NotificationType](#notificationtype), [Status](#status), [Type](#type).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -46,6 +53,7 @@ The [ImportJob](importjob.md) object has the following elements: [CreatedByUserI
 |<a name="importoption"></a>ImportOption|The import options that are available via API.|[ImportOption](importoption.md)|
 |<a name="lastruntimeinutc"></a>LastRunTimeInUTC|The most recent import date and time for this job.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).|**dateTime**|
 |<a name="name"></a>Name|The name of the import job|**string**|
+|<a name="notificationemail"></a>NotificationEmail|Reserved.|**string**|
 |<a name="notificationtype"></a>NotificationType|Determines whether and how often you want to receive email notifications about the import job results.|**string**|
 |<a name="status"></a>Status|The status of the import job.|**string**|
 |<a name="type"></a>Type|The type of the import job.<br/><br/>For more information about import job types, see the [Remarks](importjob.md#remarks).|**string**|

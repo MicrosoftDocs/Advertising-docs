@@ -2,8 +2,8 @@
 title: "Bing Ads API Web Service Addresses"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Refer to the list of Bing Ads API Version 13 web service addresses.
 ---
 # Bing Ads API Web Service Addresses

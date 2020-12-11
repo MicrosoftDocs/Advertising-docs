@@ -2,8 +2,8 @@
 title: "Product Ads Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup Product Ads in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

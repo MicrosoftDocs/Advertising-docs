@@ -2,9 +2,9 @@
 title: "Time Zones"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
-description: Find out about currencies supported with the Bing Ads API.
+author: eric-urban
+ms.author: eur
+description: Find out about time zones supported with the Bing Ads API.
 ---
 # Time Zones
 The following table describes the possible campaign time zone values.

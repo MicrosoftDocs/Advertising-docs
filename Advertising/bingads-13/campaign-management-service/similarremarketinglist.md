@@ -2,8 +2,8 @@
 title: SimilarRemarketingList Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an audience that is similar to one of your remarketing lists.
 ---
 # SimilarRemarketingList Data Object - Campaign Management

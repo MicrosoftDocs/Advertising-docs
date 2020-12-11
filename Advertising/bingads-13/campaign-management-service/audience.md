@@ -2,8 +2,8 @@
 title: Audience Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object of an audience.
 ---
 # Audience Data Object - Campaign Management
@@ -27,14 +27,14 @@ Do not try to instantiate an *Audience*. You can create one or more of the follo
     <xs:element minOccurs="0" name="AudienceNetworkSize" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="CustomerShare" nillable="true" type="tns:CustomerShare" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q91:ArrayOfKeyValuePairOfstringstring" xmlns:q91="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q100:ArrayOfKeyValuePairOfstringstring" xmlns:q100="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
     <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q92:ArrayOfstring" xmlns:q92="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q101:ArrayOfstring" xmlns:q101="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>

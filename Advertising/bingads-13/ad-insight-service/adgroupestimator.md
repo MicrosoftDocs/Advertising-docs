@@ -2,8 +2,8 @@
 title: AdGroupEstimator Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Contains a list of keyword estimators with your keyword level filter criteria for traffic estimates.
 ---
 # AdGroupEstimator Data Object - Ad Insight

@@ -2,8 +2,8 @@
 title: "Responsive Search Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup responsive search ads with the Bing Ads API.
 ---
 # Responsive Search Ads
@@ -21,4 +21,4 @@ The [Responsive Search Ad](../bulk-service/responsive-search-ad.md) Bulk record 
 The [ResponsiveSearchAd](../campaign-management-service/responsivesearchad.md) object is derived from the [Ad](../campaign-management-service/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](../campaign-management-service/addads.md), [DeleteAds](../campaign-management-service/deleteads.md), [GetAdsByAdGroupId](../campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](../campaign-management-service/updateads.md). 
 
 ## See Also
-[Countdown Customizers](countdown-customizers.md)  
+[Expanded Text Ads](expanded-text-ads.md)  

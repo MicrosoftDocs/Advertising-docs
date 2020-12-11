@@ -1,11 +1,10 @@
 ---
 title: "Request and method limits"
 description: "Provides limits for HTTP requests and batch method calls"
-author: Matt-UX
-
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 ---
 
 # Request and method call limits

@@ -2,8 +2,8 @@
 title: BillingDocument Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a billing document.
 ---
 # BillingDocument Data Object - Customer Billing

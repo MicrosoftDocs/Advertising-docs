@@ -2,8 +2,8 @@
 title: Campaign Management Value Sets
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Value sets reference for the CampaignManagement service.
 ---
 # Campaign Management Value Sets
@@ -13,6 +13,7 @@ The Campaign Management service defines the following value sets.
 |---|---|
 |[AccountPropertyName](accountpropertyname.md)|Defines the name of account level properties.|
 |[ActionAdExtensionActionType](actionadextensionactiontype.md)|Defines the possible options for action text that can be displayed in an action ad extension.|
+|[AdAdditionalField](adadditionalfield.md)|Defines a list of optional ad properties that you can request when calling [GetAdsByAdGroupId](getadsbyadgroupid.md#returnadditionalfields), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md#returnadditionalfields), and [GetAdsByIds](getadsbyids.md#returnadditionalfields).|
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionAdditionalField](adextensionadditionalfield.md)|Defines a list of optional ad extension properties that you can request when calling [GetAdExtensionsAssociations](getadextensionsassociations.md) and [GetAdExtensionsByIds](getadextensionsbyids.md).|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
@@ -59,7 +60,8 @@ The Campaign Management service defines the following value sets.
 |[EntityType](entitytype.md)|Defines entity types for association and editorial service operations.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
-|[ImportAdditionalField](importadditionalfield.md)|ImportAdditionalField is reserved for future use.|
+|[ImportAdditionalField](importadditionalfield.md)|Defines a list of optional import properties that you can request when calling [GetImportJobsByIds](getimportjobsbyids.md#returnadditionalfields) and [GetImportResults](getimportresults.md#returnadditionalfields).|
+|[ImportEntityType](importentitytype.md)|Defines the supported import entity types.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|

@@ -2,8 +2,8 @@
 title: User Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines personal and business contact information about a Microsoft Advertising user.
 ---
 # User Data Object - Customer Management
@@ -32,7 +32,7 @@ Multiple user objects can be assigned to the same person i.e., one user per pers
     <xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
     <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
     <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q5:ArrayOfKeyValuePairOfstringstring" xmlns:q5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q6:ArrayOfKeyValuePairOfstringstring" xmlns:q6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   </xs:sequence>
 </xs:complexType>
 ```

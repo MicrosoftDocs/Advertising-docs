@@ -1,9 +1,8 @@
 ---
 title: "Microsoft Advertising Scripts Selectors"
 description: "Describes how selectors work in Microsoft Advertising Scripts."
-author: Matt-UX
-
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -72,10 +71,11 @@ The following is the list of selectors.
 - [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md)
 - [BudgetSelector](../reference/BudgetSelector.md)
 - [CampaignSelector](../reference/CampaignSelector.md)
+- [ExcludedLocationSelector](../reference/ExcludedLocationSelector.md)
 - [KeywordSelector](../reference/KeywordSelector.md)
 - [NegativeKeywordListSelector](../reference/NegativeKeywordListSelector.md)
 - [ProductGroupSelector](../reference/ProductGroupSelector.md)
-
+- [TargetedLocationSelector](../reference/TargetedLocationSelector.md)
 
 ### Next steps
 

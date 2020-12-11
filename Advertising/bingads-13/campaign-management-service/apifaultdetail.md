@@ -2,8 +2,8 @@
 title: ApiFaultDetail Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a Campaign Management API fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
 # ApiFaultDetail Data Object - Campaign Management
@@ -13,7 +13,7 @@ Defines a Campaign Management API fault object that operations return when web s
 ```xml
 <xs:complexType name="ApiFaultDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q9:ApplicationFault" xmlns:q9="https://adapi.microsoft.com">
+    <xs:extension base="q10:ApplicationFault" xmlns:q10="https://adapi.microsoft.com">
       <xs:sequence>
         <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
         <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />

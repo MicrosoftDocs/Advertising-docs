@@ -1,11 +1,10 @@
 ---
 title: "JSON and XML Examples"
 description: "Links to json and xml example responses returned by the Content API."
-author: Matt-UX
-
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 ---
 # JSON and XML Examples
 This section provides JSON and XML example responses.

@@ -2,8 +2,8 @@
 title: "Smart Shopping Campaigns"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup Smart Shopping Campaigns.
 ---
 # Smart Shopping Campaigns

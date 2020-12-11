@@ -2,8 +2,8 @@
 title: AdPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an ad performance report request.
 ---
 # AdPerformanceReportRequest Data Object - Reporting

@@ -2,8 +2,8 @@
 title: ReportRequestStatusType Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the status of a report.
 ---
 # ReportRequestStatusType Value Set - Reporting

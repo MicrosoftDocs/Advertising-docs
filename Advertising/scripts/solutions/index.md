@@ -1,9 +1,8 @@
 ---
 title: "Script solutions"
 description: "Shows complete solutions that perform specific tasks."
-author: Matt-UX
-
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

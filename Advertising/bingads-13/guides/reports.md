@@ -2,8 +2,8 @@
 title: "Reports"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Track finances and measure ad performance to optimize your budget or campaign settings.
 ---
 # Reports
@@ -148,7 +148,7 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionRatePercent<br/><br/>AbsoluteTopImpressionShareLostToBudgetPercent<br/><br/>AbsoluteTopImpressionShareLostToRankPercent<br/><br/>AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent<br/><br/>TopImpressionRatePercent<br/><br/>TopImpressionShareLostToBudgetPercent<br/><br/>TopImpressionShareLostToRankPercent<br/><br/>TopImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>ClickTypeId<br/><br/>Goal<br/><br/>GoalType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|AbsoluteTopImpressionShareLostToBudgetPercent<br/><br/>AbsoluteTopImpressionShareLostToRankPercent<br/><br/>AbsoluteTopImpressionSharePercent<br/><br/>BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ClickSharePercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent<br/><br/>TopImpressionShareLostToBudgetPercent<br/><br/>TopImpressionShareLostToRankPercent<br/><br/>TopImpressionSharePercent|
 	
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md).
 

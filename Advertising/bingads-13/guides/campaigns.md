@@ -2,8 +2,8 @@
 title: "Campaigns"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup campaigns with the Bing Ads API.
 ---
 # Campaigns

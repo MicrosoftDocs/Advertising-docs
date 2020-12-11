@@ -2,8 +2,8 @@
 title: "Responsive Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Describes the Responsive Ad fields in a Bulk file.
 dev_langs:
   - csharp
@@ -14,7 +14,7 @@ Defines a responsive ad that can be downloaded and uploaded in a bulk file.
 Responsive ads automatically adjust to accommodate the sizes and shapes of audience ad formats. These ads work best with informative text rather than calls to action. 
 
 > [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+> This feature is currently available in the United States, Canada, the United Kingdom, and Australia. If you advertise in the United States, Canada, the United Kingdom, or Australia and want to opt in to audience ads, [contact support](https://go.microsoft.com/fwlink?LinkId=398371). 
 
 > [!NOTE]
 > Duplicate responsive ads are allowed in the same ad group. 
@@ -141,6 +141,7 @@ For a *Responsive Ad* record, the following attribute fields are available in th
 - [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Images](#images)
+- [Impression Tracking Urls](#impressiontrackingurls)
 - [Landscape Image Media Id](#landscapeimagemediaid)
 - [Landscape Logo Media Id](#landscapelogomediaid)
 - [Long Headline](#longheadline)
@@ -457,6 +458,19 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 **Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.  
 **Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any images that were previously linked to this ad will be replaced. If you set this field, only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.   
 **Delete:** Read-only  
+
+## <a name="impressiontrackingurls"></a>Impression Tracking Urls
+The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. 
+
+You can include up to 2 impression tracking URLs for each responsive ad. Each URL is delimited by a semicolon and space ("; "). 
+
+Each URL must be accessible. The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+
+For each Microsoft Audience Network impression, Microsoft will ping the URL to enable impression tracking in your third party ad reporting tool. Advanced-level user tracking such as conversion tracking or tracking based on cookies or IP addresses is not supported.
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.          
+**Delete:** Read-only 
 
 ## <a name="landscapeimagemediaid"></a>Landscape Image Media Id
 The identifier of the image asset used for landscape images with 1.91:1 aspect ratio that could appear in your audience ads.

@@ -2,8 +2,8 @@
 title: FileImportJob Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: FileImportJob is reserved for future use.
 ---
 # FileImportJob Data Object - Campaign Management
@@ -37,7 +37,7 @@ The [FileImportJob](fileimportjob.md) object has [Inherited Elements](#inherited
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsimportjob"></a>Inherited Elements from ImportJob
-The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [FileImportJob](fileimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
+The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationEmail](#notificationemail), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [FileImportJob](fileimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -49,6 +49,7 @@ The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](import
 |<a name="importoption"></a>ImportOption|The import options that are available via API.|[ImportOption](importoption.md)|
 |<a name="lastruntimeinutc"></a>LastRunTimeInUTC|The most recent import date and time for this job.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).|**dateTime**|
 |<a name="name"></a>Name|The name of the import job|**string**|
+|<a name="notificationemail"></a>NotificationEmail|Reserved.|**string**|
 |<a name="notificationtype"></a>NotificationType|Determines whether and how often you want to receive email notifications about the import job results.|**string**|
 |<a name="status"></a>Status|The status of the import job.|**string**|
 |<a name="type"></a>Type|The type of the import job.<br/><br/>This value is *FileImportJob* when you retrieve a File import job.<br/><br/>For more information about import job types, see the [ImportJob Data Object Remarks](importjob.md#remarks).|**string**|

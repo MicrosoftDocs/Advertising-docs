@@ -1,11 +1,10 @@
 ---
 title: "Authenticating Microsoft Account Credentials Code Example"
 description: "Code samples showing Microsoft Account Crendential authentication."
-author: Matt-UX
-
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 
 dev_langs: 
   - csharp

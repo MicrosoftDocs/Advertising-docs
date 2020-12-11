@@ -2,8 +2,8 @@
 title: TimeInterval Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the possible time periods that determine the pool of data that the service uses to get the performance statistics of a keyword.
 ---
 # TimeInterval Value Set - Ad Insight

@@ -2,8 +2,8 @@
 title: KeywordHistoricalPerformance Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that contains the key performance index data for the specified keyword.
 ---
 # KeywordHistoricalPerformance Data Object - Ad Insight

@@ -2,12 +2,12 @@
 title: NegativeKeyword Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: Defines a negative keyword with match type.
+author: eric-urban
+ms.author: eur
+description: Defines a negative keyword with match type for traffic estimates.
 ---
 # NegativeKeyword Data Object - Ad Insight
-Defines a negative keyword with match type.
+Defines a negative keyword with match type for traffic estimates.
 
 ## Syntax
 ```xml

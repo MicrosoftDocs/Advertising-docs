@@ -1,9 +1,8 @@
 ---
 title: "KeywordIterator object"
 description: "Contains the methods for iterating through a list of keywords."
-author: Matt-UX
-
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -49,10 +48,6 @@ Advances the iterator and returns the next keyword.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of keywords that matched the selector's selection criteria.
-
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
 
 ### Returns
 |Type|Description|
