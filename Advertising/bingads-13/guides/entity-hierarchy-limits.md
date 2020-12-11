@@ -90,7 +90,7 @@ The following table defines limits for call ad extension properties.
 ### <a name="calloutadextension"></a>Callout Ad Extensions
 You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](../bulk-service/callout-ad-extension.md)) or Campaign Management service ([CalloutAdExtension](../campaign-management-service/calloutadextension.md)).
 
-The following table defines limits for call ad extension properties.
+The following table defines limits for callout ad extension properties.
 
 |Property|Limit|
 |------------|---------|
@@ -104,6 +104,15 @@ The following table defines limits for filter link ad extension properties.
 |Property|Limit|
 |------------|---------|
 |Texts|Each value can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value is limited to 12 characters.|
+
+### <a name="flyeradextension"></a>Flyer Ad Extensions
+You can manage callout ad extensions using the Bulk service ([Flyer Ad Extension Record](../bulk-service/flyer-ad-extension.md)) or Campaign Management service ([FlyerAdExtension](../campaign-management-service/flyeradextension.md)).
+
+The following table defines limits for flyer ad extension properties.
+
+|Property|Limit|
+|------------|---------|
+|Descripton|The string can contain a maximum of 1,024 characters.|
 
 ### <a name="imageadextension"></a>Image Ad Extensions
 You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](../bulk-service/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](../campaign-management-service/imageadextension.md)).
