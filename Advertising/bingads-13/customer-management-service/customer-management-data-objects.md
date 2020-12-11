@@ -13,7 +13,7 @@ The Customer Management service defines the following data objects.
 |---|---|
 |[AccountInfo](accountinfo.md)|Defines an object that contains an account's identifier, name, and number.|
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
-|[AccountTaxCertificate](accounttaxcertificate.md)|Reserved.|
+|[AccountTaxCertificate](accounttaxcertificate.md)|Defines the AccountTaxCertificate Data Object.|
 |[AdApiError](adapierror.md)|Defines a Customer Management Ad API error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a Customer Management Ad API fault detail object that operations return when generic errors occur, such as an authentication error.|
 |[Address](address.md)|Defines a postal address for accounts and user contact information.|
@@ -26,7 +26,8 @@ The Customer Management service defines the following data objects.
 |[CustomerInfo](customerinfo.md)|Defines an object that contains a customer's identifier and name.|
 |[CustomerRole](customerrole.md)|Defines account access rights for a person who acts on behalf of a specific customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Customer Management API version.|
+|[KeyValuePairOfstringbase64Binary](keyvaluepairofstringbase64binary.md)|The key and value pair of string and base64Binary values.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values.|
 |[OperationError](operationerror.md)|Defines a Customer Management operation error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
 |[Paging](paging.md)|Defines a paging object to request Customer Management objects in batches.|

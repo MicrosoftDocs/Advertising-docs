@@ -20,6 +20,7 @@ Defines a list of optional campaign properties that you can request when calling
         <xs:enumeration value="TargetImpressionShareBiddingScheme" />
         <xs:enumeration value="TargetSetting" />
         <xs:enumeration value="BidStrategyId" />
+        <xs:enumeration value="CpvCpmBiddingScheme" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -28,12 +29,13 @@ Defines a list of optional campaign properties that you can request when calling
 
 ## <a name="values"></a>Values
 
-The [CampaignAdditionalField](campaignadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [BidStrategyId](#bidstrategyid), [MaxConversionValueBiddingScheme](#maxconversionvaluebiddingscheme), [TargetImpressionShareBiddingScheme](#targetimpressionsharebiddingscheme), [TargetSetting](#targetsetting).
+The [CampaignAdditionalField](campaignadditionalfield.md) value set has the following values: [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [BidStrategyId](#bidstrategyid), [CpvCpmBiddingScheme](#cpvcpmbiddingscheme), [MaxConversionValueBiddingScheme](#maxconversionvaluebiddingscheme), [TargetImpressionShareBiddingScheme](#targetimpressionsharebiddingscheme), [TargetSetting](#targetsetting).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](campaign.md#adscheduleusesearchertimezone) element be included within each returned [Campaign](campaign.md) object.|
 |<a name="bidstrategyid"></a>BidStrategyId|Reserved.|
+|<a name="cpvcpmbiddingscheme"></a>CpvCpmBiddingScheme|Reserved.|
 |<a name="maxconversionvaluebiddingscheme"></a>MaxConversionValueBiddingScheme|Request that the [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
 |<a name="targetimpressionsharebiddingscheme"></a>TargetImpressionShareBiddingScheme|Request that the [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
 |<a name="targetsetting"></a>TargetSetting|Request that the [TargetSetting](targetsetting.md) object be returned within the [Settings](campaign.md#settings) element of each returned [Campaign](campaign.md) object.|

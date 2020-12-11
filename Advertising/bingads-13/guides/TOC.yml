@@ -1962,6 +1962,8 @@
           href: ../customer-management-service/customerrole.md
         - name: DateRange
           href: ../customer-management-service/daterange.md
+        - name: KeyValuePairOfstringbase64binary
+          href: ../customer-management-service/keyvaluepairofstringbase64binary.md
         - name: KeyValuePairOfstringstring
           href: ../customer-management-service/keyvaluepairofstringstring.md
         - name: OperationError
@@ -1985,6 +1987,8 @@
         - name: Overview
           href: ../customer-management-service/customer-management-value-sets.md    
           displayName: customer management value sets
+        - name: AccountAdditionalField
+          href: ../customer-management-service/accountadditionalfield.md
         - name: AccountFinancialStatus
           href: ../customer-management-service/accountfinancialstatus.md
         - name: AccountLifeCycleStatus

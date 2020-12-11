@@ -11,6 +11,7 @@ The Customer Management service defines the following value sets.
 
 |Value Set|Description|
 |---|---|
+|[AccountAdditionalField](accountadditionalfield.md)|Reserved.|
 |[AccountFinancialStatus](accountfinancialstatus.md)|Defines the possible financial status values of an account.|
 |[AccountLifeCycleStatus](accountlifecyclestatus.md)|Defines the possible status values of an account.|
 |[AutoTagType](autotagtype.md)|Defines possible values for an account level setting that determines whether to append or replace the supported UTM tracking codes.|

@@ -9,7 +9,7 @@ description: Flyer Extensions enable advertisers to distribute product or store 
 # FlyerAdExtension Data Object - Campaign Management
 Flyer Extensions enable advertisers to distribute product or store catalogues (flyers) to potential customers. 
 
-They can display prominently on broad queries like "weekly deals" or "weekly sales" and thus encourage shoppers to click on your ad instead of the competition’s. By their nature they help to better inform searchers, and as a result, increase user engagement e.g., click through rate.
+They can display prominently on broad queries like "weekly deals" or "weekly sales" and thus encourage shoppers to click on your ad instead of the competition's. By their nature they help to better inform searchers, and as a result, increase user engagement e.g., click through rate.
 
 > [!NOTE]
 > Flyer Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 802).  

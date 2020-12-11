@@ -48,7 +48,7 @@ The Campaign Management service defines the following data objects.
 |[BiddableCampaignCriterion](biddablecampaigncriterion.md)|Defines a biddable criterion that you want applied to the specified campaign.|
 |[BiddingScheme](biddingscheme.md)|Defines the base object of a bidding scheme for how you want to manage your bids.|
 |[BidMultiplier](bidmultiplier.md)|Defines the multiplier by which to adjust your base bid for the corresponding criterion.|
-|[BidStrategy](bidstrategy.md)|Reserved.|
+|[BidStrategy](bidstrategy.md)|Defines the BidStrategy Data Object.|
 |[BMCStore](bmcstore.md)|Defines a Microsoft Merchant Center store.|
 |[Budget](budget.md)|Represents a budget that can be shared by any campaigns in an account.|
 |[CallAdExtension](calladextension.md)|Defines an object that specifies a click-to-call phone number to include in a text ad.|
@@ -113,8 +113,8 @@ The Campaign Management service defines the following data objects.
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|
 |[InStoreTransactionGoal](instoretransactiongoal.md)|Defines an in-store transaction goal.|
-|[KeyValuePairOflonglong](keyvaluepairoflonglong.md)|Reserved.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings to avoid otherwise breaking changes in the current Campaign Management API version.|
+|[KeyValuePairOflonglong](keyvaluepairoflonglong.md)|The key and value pair of long and long values.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The key and value pair of string and string values.|
 |[Keyword](keyword.md)|Defines a keyword.|
 |[Label](label.md)|Defines a label object to organize campaigns, ad groups, ads, and keywords into groups.|
 |[LabelAssociation](labelassociation.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
@@ -122,8 +122,8 @@ The Campaign Management service defines the following data objects.
 |[LocationCriterion](locationcriterion.md)|Defines a criterion that can be used to show ads to users in a specific location.|
 |[LocationIntentCriterion](locationintentcriterion.md)|Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group.|
 |[ManualCpcBiddingScheme](manualcpcbiddingscheme.md)|Defines an object that represents the manual CPC bid strategy type.|
-|[ManualCpmBiddingScheme](manualcpmbiddingscheme.md)|Reserved.|
-|[ManualCpvBiddingScheme](manualcpvbiddingscheme.md)|Reserved.|
+|[ManualCpmBiddingScheme](manualcpmbiddingscheme.md)|Defines the ManualCpmBiddingScheme Data Object.|
+|[ManualCpvBiddingScheme](manualcpvbiddingscheme.md)|Defines the ManualCpvBiddingScheme Data Object.|
 |[MaxClicksBiddingScheme](maxclicksbiddingscheme.md)|Defines an object that represents the maximum clicks bid strategy type.|
 |[MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)|Defines an object that represents the maximum conversions bid strategy type.|
 |[MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)|Defines an object that represents the maximum conversion value bid strategy type.|

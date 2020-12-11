@@ -11,7 +11,7 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
-## December 7, 2020
+## December 10, 2020
 
 Added support for targeted and excluded locations. 
 

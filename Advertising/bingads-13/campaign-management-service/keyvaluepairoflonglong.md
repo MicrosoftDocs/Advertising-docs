@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: The key and value pair of long values.
+description: The key and value pair of long and long values.
 ---
 # KeyValuePairOflonglong Data Object - Campaign Management
-The key and value pair of long values.
+The key and value pair of long and long values.
 
 ## Syntax
 ```xml

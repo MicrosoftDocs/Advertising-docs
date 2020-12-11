@@ -11,12 +11,14 @@ dev_langs:
 # Flyer Ad Extension Record - Bulk
 Defines a flyer ad extension that can be downloaded and uploaded in a bulk file.
 
-A flyer ad extension pairs one header with between 3 and 10 clickable text values that tell customers more about your business. 
+Flyer Extensions enable advertisers to distribute product or store catalogues (flyers) to potential customers. 
+
+They can display prominently on broad queries like "weekly deals" or "weekly sales" and thus encourage shoppers to click on your ad instead of the competition's. By their nature they help to better inform searchers, and as a result, increase user engagement e.g., click through rate.
 
 > [!NOTE]
 > Flyer Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 802).  
 
-You can associate a flyer ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 flyer ad extensions. An expanded text ad will only include one flyer (one headline with 3 - 10 values) per impression. Use the [Account Flyer Ad Extension](account-flyer-ad-extension.md), [Ad Group Flyer Ad Extension](ad-group-flyer-ad-extension.md), and [Campaign Flyer Ad Extension](campaign-flyer-ad-extension.md) records to manage flyer ad extension associations.
+You can associate a flyer ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 flyer ad extensions. Use the [Account Flyer Ad Extension](account-flyer-ad-extension.md), [Ad Group Flyer Ad Extension](ad-group-flyer-ad-extension.md), and [Campaign Flyer Ad Extension](campaign-flyer-ad-extension.md) records to manage flyer ad extension associations.
 
 You can download all *Flyer Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *FlyerAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
