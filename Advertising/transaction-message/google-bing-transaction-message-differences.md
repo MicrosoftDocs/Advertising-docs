@@ -3,8 +3,8 @@ title: "Differences Between Google&#39;s and Bing&#39;s Transaction Message Usag
 description: Lists the difference in usage between Bing's and Google's transaction message.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Differences between Google's and Bing's Transaction Message

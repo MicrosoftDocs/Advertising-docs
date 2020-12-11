@@ -2,8 +2,8 @@
 title: AdGroup Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an ad group.
 ---
 # AdGroup Data Object - Campaign Management
@@ -19,7 +19,7 @@ Defines an ad group.
     <xs:element minOccurs="0" name="CpcBid" nillable="true" type="tns:Bid" />
     <xs:element minOccurs="0" name="EndDate" nillable="true" type="tns:Date" />
     <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q15:ArrayOfKeyValuePairOfstringstring" xmlns:q15="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q16:ArrayOfKeyValuePairOfstringstring" xmlns:q16="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />

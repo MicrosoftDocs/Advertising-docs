@@ -2,8 +2,8 @@
 title: TargetImpressionShareBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: TargetImpressionShareBiddingScheme is reserved for future use.
 ---
 # TargetImpressionShareBiddingScheme Data Object - Campaign Management

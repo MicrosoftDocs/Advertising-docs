@@ -1,8 +1,8 @@
 ---
 title: "AdGroupOperation object"
 description: "Contains the methods for determining whether the ad group was successfully added."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

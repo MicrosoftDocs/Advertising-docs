@@ -2,8 +2,8 @@
 title: UrlSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: The URL search parameter that you can use as a seed for new keyword ideas.
 ---
 # UrlSearchParameter Data Object - Ad Insight

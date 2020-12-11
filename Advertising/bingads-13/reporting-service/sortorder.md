@@ -2,8 +2,8 @@
 title: SortOrder Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the ascending or descending sort order of values within the specified report column.
 ---
 # SortOrder Value Set - Reporting

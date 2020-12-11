@@ -1,8 +1,8 @@
 ---
 title: "AdsApp object"
 description: "The top-level object used in single-account scripts to navigate all entities in a single account."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

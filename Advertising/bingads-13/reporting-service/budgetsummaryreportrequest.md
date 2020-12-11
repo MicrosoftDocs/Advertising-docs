@@ -2,8 +2,8 @@
 title: BudgetSummaryReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a budget summary report request.
 ---
 # BudgetSummaryReportRequest Data Object - Reporting

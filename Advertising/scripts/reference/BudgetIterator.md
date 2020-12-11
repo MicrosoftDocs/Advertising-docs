@@ -1,8 +1,8 @@
 ---
 title: "BudgetIterator object"
 description: "Contains the methods for iterating through a list of shared budgets."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -48,10 +48,6 @@ Advances the iterator and returns the next shared budget.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of shared budgets that matched the selector's selection criteria. 
-
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
 
 ### Returns
 |Type|Description|

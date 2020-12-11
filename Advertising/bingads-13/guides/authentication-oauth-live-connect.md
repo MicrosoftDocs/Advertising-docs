@@ -2,8 +2,8 @@
 title: "Authentication with the Live Connect endpoint"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Authenticate for Bing Ads API using the Live Connect endpoint.
 ---
 # Authentication with the Live Connect endpoint

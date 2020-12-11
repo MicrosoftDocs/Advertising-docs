@@ -3,8 +3,8 @@ title: "Points of Sale Reference"
 description: Describes the schema used to create a points of sale feed file.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Points of Sale reference

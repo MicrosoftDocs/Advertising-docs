@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Advertising Scripts Iterators"
 description: "Describes how iterators work in Microsoft Advertising Scripts."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -42,9 +42,11 @@ The following is the list of iterators.
 - [BingAdsAccountIterator](../reference/BingAdsAccountIterator.md)
 - [BudgetIterator](../reference/BudgetIterator.md)
 - [CampaignIterator](../reference/CampaignIterator.md)
+- [ExcludedLocationIterator](../reference/ExcludedLocationIterator.md)
 - [KeywordIterator](../reference/KeywordIterator.md)
 - [NegativeKeywordListIterator](../reference/NegativeKeywordListIterator.md)
 - [ProductGroupIterator](../reference/ProductGroupIterator.md)
+- [TargetedLocationIterator](../reference/TargetedLocationIterator.md)
 
 ### Next steps
 

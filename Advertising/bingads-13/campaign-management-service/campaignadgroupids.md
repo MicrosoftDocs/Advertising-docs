@@ -2,8 +2,8 @@
 title: CampaignAdGroupIds Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Identifies a campaign and the list of its ad groups to include within the operation scope.
 ---
 # CampaignAdGroupIds Data Object - Campaign Management
@@ -13,7 +13,7 @@ Identifies a campaign and the list of its ad groups to include within the operat
 ```xml
 <xs:complexType name="CampaignAdGroupIds" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="AdGroupIds" nillable="true" type="q110:ArrayOflong" xmlns:q110="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element name="AdGroupIds" nillable="true" type="q119:ArrayOflong" xmlns:q119="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element name="CampaignId" type="xs:long" />
   </xs:sequence>
 </xs:complexType>

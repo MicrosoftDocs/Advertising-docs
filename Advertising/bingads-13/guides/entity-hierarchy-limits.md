@@ -2,8 +2,8 @@
 title: "Entity Limits"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Learn about the Microsoft Advertising entity hierarchy to plan your campaign setup.
 ---
 # Entity Limits
@@ -48,6 +48,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 |[Call Ad Extension](#calladextension)|1|
 |[Callout Ad Extension](#calloutadextension)|20|
 |[Filter Link Ad Extension](#filterlinkadextension)|20|
+|[Flyer Ad Extension](#flyeradextension)|20|
 |[Image Ad Extension](#imageadextension)|6|
 |[Location Ad Extension](#locationadextension)|Up to the total number of location ad extensions in your account|
 |[Price Ad Extension](#priceadextension)|20|
@@ -89,7 +90,7 @@ The following table defines limits for call ad extension properties.
 ### <a name="calloutadextension"></a>Callout Ad Extensions
 You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](../bulk-service/callout-ad-extension.md)) or Campaign Management service ([CalloutAdExtension](../campaign-management-service/calloutadextension.md)).
 
-The following table defines limits for call ad extension properties.
+The following table defines limits for callout ad extension properties.
 
 |Property|Limit|
 |------------|---------|
@@ -103,6 +104,15 @@ The following table defines limits for filter link ad extension properties.
 |Property|Limit|
 |------------|---------|
 |Texts|Each value can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value is limited to 12 characters.|
+
+### <a name="flyeradextension"></a>Flyer Ad Extensions
+You can manage callout ad extensions using the Bulk service ([Flyer Ad Extension Record](../bulk-service/flyer-ad-extension.md)) or Campaign Management service ([FlyerAdExtension](../campaign-management-service/flyeradextension.md)).
+
+The following table defines limits for flyer ad extension properties.
+
+|Property|Limit|
+|------------|---------|
+|Descripton|The string can contain a maximum of 1,024 characters.|
 
 ### <a name="imageadextension"></a>Image Ad Extensions
 You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](../bulk-service/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](../campaign-management-service/imageadextension.md)).

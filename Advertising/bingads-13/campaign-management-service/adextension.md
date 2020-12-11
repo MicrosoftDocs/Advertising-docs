@@ -2,33 +2,34 @@
 title: AdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object of an ad extension.
 ---
 # AdExtension Data Object - Campaign Management
 Defines the base object of an ad extension.
 
 Do not try to instantiate an *AdExtension*. You can create one or more of the following objects that derive from it.
-- [ActionAdExtension](actionadextension.md)
-- [AppAdExtension](appadextension.md)
-- [CallAdExtension](calladextension.md)
-- [CalloutAdExtension](calloutadextension.md)
-- [FilterLinkAdExtension](filterlinkadextension.md)
-- [ImageAdExtension](imageadextension.md)
-- [LocationAdExtension](locationadextension.md)
-- [PriceAdExtension](priceadextension.md)
-- [PromotionAdExtension](promotionadextension.md)
-- [ReviewAdExtension](reviewadextension.md)
-- [SitelinkAdExtension](sitelinkadextension.md)
-- [StructuredSnippetAdExtension](structuredsnippetadextension.md)
+- [ActionAdExtension](actionadextension.md)  
+- [AppAdExtension](appadextension.md)  
+- [CallAdExtension](calladextension.md)  
+- [CalloutAdExtension](calloutadextension.md)  
+- [FilterLinkAdExtension](filterlinkadextension.md)  
+- [FlyerAdExtension](flyeradextension.md)  
+- [ImageAdExtension](imageadextension.md)  
+- [LocationAdExtension](locationadextension.md)  
+- [PriceAdExtension](priceadextension.md)  
+- [PromotionAdExtension](promotionadextension.md)  
+- [ReviewAdExtension](reviewadextension.md)  
+- [SitelinkAdExtension](sitelinkadextension.md)  
+- [StructuredSnippetAdExtension](structuredsnippetadextension.md)  
 
 ## Syntax
 ```xml
 <xs:complexType name="AdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q37:ArrayOfKeyValuePairOfstringstring" xmlns:q37="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q38:ArrayOfKeyValuePairOfstringstring" xmlns:q38="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scheduling" nillable="true" type="tns:Schedule" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdExtensionStatus" />

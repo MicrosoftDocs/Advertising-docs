@@ -1,8 +1,8 @@
 ---
 title: "CampaignIterator object"
 description: "Contains the methods for iterating through a list of campaigns."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---
@@ -48,10 +48,6 @@ Advances the iterator and returns the next campaign.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of campaigns that matched the selector's selection criteria. 
-
-<!--
-[!INCLUDE[reads-limit](../includes/reads-limit.md)]
--->
 
 ### Returns:
 |Type|Description|

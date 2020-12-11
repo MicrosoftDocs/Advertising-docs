@@ -1,10 +1,10 @@
 ---
 title: "Manage product pricing"
 description: "Learn how to manage update product pricing and availability."
-author: Matt-UX
+author: eric-urban
 ms.service: "bing-ads-shopping-content"
 ms.topic: "article"
-ms.author: matrob
+ms.author: eur
 ---
 
 # Updating product pricing and availability

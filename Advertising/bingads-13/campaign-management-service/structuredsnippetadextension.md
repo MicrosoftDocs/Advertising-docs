@@ -2,8 +2,8 @@
 title: StructuredSnippetAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 ---
 # StructuredSnippetAdExtension Data Object - Campaign Management
@@ -22,7 +22,7 @@ You can associate a structured snippet ad extension with the account or with cam
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
         <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Values" nillable="true" type="q48:ArrayOfstring" xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="Values" nillable="true" type="q49:ArrayOfstring" xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

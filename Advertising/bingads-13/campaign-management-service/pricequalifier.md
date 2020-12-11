@@ -2,8 +2,8 @@
 title: PriceQualifier Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines price qualifiers for price ad extensions.
 ---
 # PriceQualifier Value Set - Campaign Management

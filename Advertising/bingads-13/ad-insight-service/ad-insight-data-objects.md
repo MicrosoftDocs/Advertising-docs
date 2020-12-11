@@ -2,8 +2,8 @@
 title: Ad Insight Data Objects
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Data objects reference for the AdInsight service.
 ---
 # Ad Insight Data Objects
@@ -73,7 +73,7 @@ The Ad Insight service defines the following data objects.
 |[LanguageSearchParameter](languagesearchparameter.md)|The language search parameter filter that you can include when requesting keyword ideas.|
 |[LocationCriterion](locationcriterion.md)|The location criterion that you can include when requesting keyword ideas or traffic estimates.|
 |[LocationSearchParameter](locationsearchparameter.md)|The location search parameter filter that you can include when requesting keyword ideas.|
-|[NegativeKeyword](negativekeyword.md)|Defines a negative keyword with match type.|
+|[NegativeKeyword](negativekeyword.md)|Defines a negative keyword with match type for traffic estimates.|
 |[NetworkCriterion](networkcriterion.md)|The network criterion that you can include when requesting keyword ideas or traffic estimates.|
 |[NetworkSearchParameter](networksearchparameter.md)|The network search parameter filter that you can include when requesting keyword ideas.|
 |[OperationError](operationerror.md)|Defines an Ad Insight operation error object that contains the details that explain why the service operation failed.|

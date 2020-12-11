@@ -1,8 +1,8 @@
 ---
 title: "ExpandedTextAd object"
 description: "Contains the methods used to manage an expanded text ad."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

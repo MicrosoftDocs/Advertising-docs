@@ -2,8 +2,8 @@
 title: "Account Hierarchy and User Permissions"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Determine user permissions for the account hierarchy. 
 ---
 # Account Hierarchy and User Permissions

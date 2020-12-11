@@ -2,8 +2,8 @@
 title: PromotionAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Promotion Extensions highlight special sales and offers in your text ads.
 ---
 # PromotionAdExtension Data Object - Campaign Management
@@ -12,7 +12,7 @@ Promotion Extensions highlight special sales and offers in your text ads. By mak
 You can associate a promotion ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 promotion ad extensions.  
 
 > [!NOTE]
-> Promotion Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 720).  
+> Promotion Extensions are available for customers in AU, CA, DE, FR, US and UK.  
 
 ## Syntax
 ```xml
@@ -23,9 +23,9 @@ You can associate a promotion ad extension with the account or with campaigns an
         <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DiscountModifier" nillable="true" type="tns:PromotionDiscountModifier" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q51:ArrayOfstring" xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q52:ArrayOfstring" xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q52:ArrayOfstring" xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q53:ArrayOfstring" xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="MoneyAmountOff" nillable="true" type="xs:double" />
         <xs:element minOccurs="0" name="OrdersOverAmount" nillable="true" type="xs:double" />

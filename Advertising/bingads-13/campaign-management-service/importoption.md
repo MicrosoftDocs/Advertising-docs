@@ -2,8 +2,8 @@
 title: ImportOption Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base object of an import option.
 ---
 # ImportOption Data Object - Campaign Management
@@ -17,7 +17,7 @@ Do not try to instantiate an *ImportOption*. You can create one or more of the f
 ```xml
 <xs:complexType name="ImportOption" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q109:ArrayOfKeyValuePairOfstringstring" xmlns:q109="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q118:ArrayOfKeyValuePairOfstringstring" xmlns:q118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>

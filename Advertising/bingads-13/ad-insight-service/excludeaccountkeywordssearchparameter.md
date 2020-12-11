@@ -2,8 +2,8 @@
 title: ExcludeAccountKeywordsSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: The exclude account keywords search parameter filter that you can include when requesting keyword ideas.
 ---
 # ExcludeAccountKeywordsSearchParameter Data Object - Ad Insight

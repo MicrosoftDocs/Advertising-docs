@@ -2,8 +2,8 @@
 title: "Product Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Setup Product ads with the Bing Ads API.
 ---
 # Product Ads

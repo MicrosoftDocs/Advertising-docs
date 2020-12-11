@@ -472,6 +472,8 @@
           href: ../ad-insight-service/adgroupbidlandscapetype.md
         - name: AdPosition
           href: ../ad-insight-service/adposition.md
+        - name: AuctionInsightKpiAdditionalField
+          href: ../ad-insight-service/auctioninsightkpiadditionalfield.md
         - name: AuctionSegment
           href: ../ad-insight-service/auctionsegment.md
         - name: BidOpportunityType
@@ -578,6 +580,9 @@
         - name: Account Filter Link Ad Extension
           href: ../bulk-service/account-filter-link-ad-extension.md
           displayName: BulkAccountFilterLinkAdExtension
+        - name: Account Flyer Ad Extension
+          href: ../bulk-service/account-flyer-ad-extension.md
+          displayName: BulkAccountFlyerAdExtension
         - name: Account Image Ad Extension
           href: ../bulk-service/account-image-ad-extension.md
           displayName: BulkAccountImageAdExtension
@@ -644,6 +649,9 @@
         - name: Ad Group Filter Link Ad Extension
           href: ../bulk-service/ad-group-filter-link-ad-extension.md
           displayName: BulkAdGroupFilterLinkAdExtension
+        - name: Ad Group Flyer Ad Extension
+          href: ../bulk-service/ad-group-flyer-ad-extension.md
+          displayName: BulkAdGroupFlyerAdExtension
         - name: Ad Group Image Ad Extension
           href: ../bulk-service/ad-group-image-ad-extension.md
           displayName: BulkAdGroupImageAdExtension
@@ -800,6 +808,9 @@
         - name: Campaign Filter Link Ad Extension
           href: ../bulk-service/campaign-filter-link-ad-extension.md
           displayName: BulkCampaignFilterLinkAdExtension
+        - name: Campaign Flyer Ad Extension
+          href: ../bulk-service/campaign-flyer-ad-extension.md
+          displayName: BulkCampaignFlyerAdExtension
         - name: Campaign Image Ad Extension
           href: ../bulk-service/campaign-image-ad-extension.md
           displayName: BulkCampaignImageAdExtension
@@ -932,6 +943,9 @@
         - name: Filter Link Ad Extension
           href: ../bulk-service/filter-link-ad-extension.md
           displayName: BulkFilterLinkAdExtension
+        - name: Flyer Ad Extension
+          href: ../bulk-service/flyer-ad-extension.md
+          displayName: BulkFlyerAdExtension
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image
@@ -1041,6 +1055,8 @@
           href: ../campaign-management-service/addads.md
         - name: AddAudiences
           href: ../campaign-management-service/addaudiences.md
+        - name: AddBidStrategies
+          href: ../campaign-management-service/addbidstrategies.md
         - name: AddBudgets
           href: ../campaign-management-service/addbudgets.md
         - name: AddCampaignCriterions
@@ -1087,6 +1103,8 @@
           href: ../campaign-management-service/deleteads.md
         - name: DeleteAudiences
           href: ../campaign-management-service/deleteaudiences.md
+        - name: DeleteBidStrategies
+          href: ../campaign-management-service/deletebidstrategies.md
         - name: DeleteBudgets
           href: ../campaign-management-service/deletebudgets.md
         - name: DeleteCampaignCriterions
@@ -1139,6 +1157,8 @@
           href: ../campaign-management-service/getadsbyids.md
         - name: GetAudiencesByIds
           href: ../campaign-management-service/getaudiencesbyids.md
+        - name: GetBidStrategiesByIds
+          href: ../campaign-management-service/getbidstrategiesbyids.md
         - name: GetBMCStoresByCustomerId
           href: ../campaign-management-service/getbmcstoresbycustomerid.md
         - name: GetBSCCountries
@@ -1147,6 +1167,8 @@
           href: ../campaign-management-service/getbudgetsbyids.md
         - name: GetCampaignCriterionsByIds
           href: ../campaign-management-service/getcampaigncriterionsbyids.md
+        - name: GetCampaignIdsByBidStrategyIds
+          href: ../campaign-management-service/getcampaignidsbybidstrategyids.md
         - name: GetCampaignIdsByBudgetIds
           href: ../campaign-management-service/getcampaignidsbybudgetids.md
         - name: GetCampaignsByAccountId
@@ -1165,6 +1187,8 @@
           href: ../campaign-management-service/getfileimportuploadurl.md
         - name: GetGeoLocationsFileUrl
           href: ../campaign-management-service/getgeolocationsfileurl.md
+        - name: GetImportEntityIdsMapping
+          href: ../campaign-management-service/getimportentityidsmapping.md
         - name: GetImportJobsByIds
           href: ../campaign-management-service/getimportjobsbyids.md
         - name: GetImportResults
@@ -1231,6 +1255,8 @@
           href: ../campaign-management-service/updateads.md
         - name: UpdateAudiences
           href: ../campaign-management-service/updateaudiences.md
+        - name: UpdateBidStrategies
+          href: ../campaign-management-service/updatebidstrategies.md
         - name: UpdateBudgets
           href: ../campaign-management-service/updatebudgets.md
         - name: UpdateCampaignCriterions
@@ -1328,6 +1354,8 @@
           href: ../campaign-management-service/biddingscheme.md
         - name: BidMultiplier
           href: ../campaign-management-service/bidmultiplier.md
+        - name: BidStrategy
+          href: ../campaign-management-service/bidstrategy.md
         - name: BMCStore
           href: ../campaign-management-service/bmcstore.md
         - name: Budget
@@ -1418,6 +1446,8 @@
           href: ../campaign-management-service/filterlinkadextension.md
         - name: FixedBid
           href: ../campaign-management-service/fixedbid.md
+        - name: FlyerAdExtension
+          href: ../campaign-management-service/flyeradextension.md
         - name: Frequency
           href: ../campaign-management-service/frequency.md
         - name: GenderCriterion
@@ -1456,6 +1486,8 @@
           href: ../campaign-management-service/instoretransactiongoal.md
         - name: Keyword
           href: ../campaign-management-service/keyword.md
+        - name: KeyValuePairOflonglong
+          href: ../campaign-management-service/keyvaluepairoflonglong.md
         - name: KeyValuePairOfstringstring
           href: ../campaign-management-service/keyvaluepairofstringstring.md
         - name: Label
@@ -1470,6 +1502,10 @@
           href: ../campaign-management-service/locationintentcriterion.md
         - name: ManualCpcBiddingScheme
           href: ../campaign-management-service/manualcpcbiddingscheme.md
+        - name: ManualCpmBiddingScheme
+          href: ../campaign-management-service/manualcpmbiddingscheme.md
+        - name: ManualCpvBiddingScheme
+          href: ../campaign-management-service/manualcpvbiddingscheme.md
         - name: MaxClicksBiddingScheme
           href: ../campaign-management-service/maxclicksbiddingscheme.md
         - name: MaxConversionsBiddingScheme
@@ -1609,6 +1645,8 @@
           href: ../campaign-management-service/accountpropertyname.md
         - name: ActionAdExtensionActionType
           href: ../campaign-management-service/actionadextensionactiontype.md
+        - name: AdAdditionalField
+          href: ../campaign-management-service/adadditionalfield.md
         - name: AdEditorialStatus
           href: ../campaign-management-service/adeditorialstatus.md
         - name: AdExtensionAdditionalField
@@ -1703,6 +1741,8 @@
           href: ../campaign-management-service/gendertype.md
         - name: ImportAdditionalField
           href: ../campaign-management-service/importadditionalfield.md
+        - name: ImportEntityType
+          href: ../campaign-management-service/importentitytype.md
         - name: IntentOption
           href: ../campaign-management-service/intentoption.md
         - name: ItemAction
@@ -1896,6 +1936,8 @@
           href: ../customer-management-service/accountinfo.md
         - name: AccountInfoWithCustomerData
           href: ../customer-management-service/accountinfowithcustomerdata.md
+        - name: AccountTaxCertificate
+          href: ../customer-management-service/accounttaxcertificate.md
         - name: AdApiError
           href: ../customer-management-service/adapierror.md
         - name: AdApiFaultDetail
@@ -1920,6 +1962,8 @@
           href: ../customer-management-service/customerrole.md
         - name: DateRange
           href: ../customer-management-service/daterange.md
+        - name: KeyValuePairOfstringbase64binary
+          href: ../customer-management-service/keyvaluepairofstringbase64binary.md
         - name: KeyValuePairOfstringstring
           href: ../customer-management-service/keyvaluepairofstringstring.md
         - name: OperationError
@@ -1943,6 +1987,8 @@
         - name: Overview
           href: ../customer-management-service/customer-management-value-sets.md    
           displayName: customer management value sets
+        - name: AccountAdditionalField
+          href: ../customer-management-service/accountadditionalfield.md
         - name: AccountFinancialStatus
           href: ../customer-management-service/accountfinancialstatus.md
         - name: AccountLifeCycleStatus
@@ -1977,6 +2023,8 @@
           href: ../customer-management-service/servicelevel.md
         - name: SortOrder
           href: ../customer-management-service/sortorder.md
+        - name: TaxCertificateStatus
+          href: ../customer-management-service/taxcertificatestatus.md
         - name: TimeZoneType
           href: ../customer-management-service/timezonetype.md
         - name: UserLifeCycleStatus

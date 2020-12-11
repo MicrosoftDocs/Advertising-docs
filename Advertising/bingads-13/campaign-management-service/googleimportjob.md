@@ -2,8 +2,8 @@
 title: GoogleImportJob Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a Google import job that can be run once or scheduled on a recurring basis.
 ---
 # GoogleImportJob Data Object - Campaign Management
@@ -46,7 +46,7 @@ The [GoogleImportJob](googleimportjob.md) object has [Inherited Elements](#inher
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsimportjob"></a>Inherited Elements from ImportJob
-The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [GoogleImportJob](googleimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
+The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](importjob.md) object, and inherits the following elements: [CreatedByUserId](#createdbyuserid), [CreatedByUserName](#createdbyusername), [CreatedDateTimeInUTC](#createddatetimeinutc), [Frequency](#frequency), [Id](#id), [ImportOption](#importoption), [LastRunTimeInUTC](#lastruntimeinutc), [Name](#name), [NotificationEmail](#notificationemail), [NotificationType](#notificationtype), [Status](#status), [Type](#type). The descriptions below are specific to [GoogleImportJob](googleimportjob.md), and might not apply to other objects that inherit the same elements from the [ImportJob](importjob.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -58,6 +58,7 @@ The [GoogleImportJob](googleimportjob.md) object derives from the [ImportJob](im
 |<a name="importoption"></a>ImportOption|The Google import options that are available via API.<br/><br/>To customize Google import options, you can include a [GoogleImportOption](googleimportoption.md) object. Otherwise to use the default Google import options, you can leave this element nil or empty. For more information about default options, see [GoogleImportOption](googleimportoption.md).<br/><br/>**Add:** Optional|[ImportOption](importoption.md)|
 |<a name="lastruntimeinutc"></a>LastRunTimeInUTC|The most recent import date and time for this job.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).<br/><br/>**Add:** Read-only|**dateTime**|
 |<a name="name"></a>Name|The name of the import job.<br/><br/>The name can be between 1 to 255 characters in length.<br/><br/>**Add:** Required|**string**|
+|<a name="notificationemail"></a>NotificationEmail|The email address where import results should be sent.<br/><br/>This element is not returned by default. To get this element, include the NotificationEmail value in the ReturnAdditionalFields element when you call the [GetImportJobsByIds](getimportjobsbyids.md#returnadditionalfields) and [GetImportResults](getimportresults.md#returnadditionalfields) service operations.|**string**|
 |<a name="notificationtype"></a>NotificationType|Determines whether and how often you want to receive email notifications about the import job results.<br/><br/>The supported values are "None" (No emails), "Changes" (Only if there are changes or errors), "Errors" (Only if there are errors), and "EveryTime" (Every time this import runs).<br/><br/>**Add:** Optional. If not set, the service sets this element to "None" by default.|**string**|
 |<a name="status"></a>Status|The status of the import job.<br/><br/>The possible values are "Active" and "Deleted". Scheduled imports will have an "Active" status, whether the job is scheduled once or on a recurring basis in the future. The status of import jobs that only run once will be set to "Deleted" after the import.<br/><br/>**Add:** Read-only|**string**|
 |<a name="type"></a>Type|The type of the import job.<br/><br/>This value is *GoogleImportJob* when you retrieve a Google import job.<br/><br/>**Add:** Read-only<br/><br/>For more information about import job types, see the [ImportJob Data Object Remarks](importjob.md#remarks).|**string**|

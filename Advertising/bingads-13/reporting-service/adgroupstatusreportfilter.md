@@ -2,8 +2,8 @@
 title: AdGroupStatusReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the ad group status values that you can use to filter the report data.
 ---
 # AdGroupStatusReportFilter Value Set - Reporting

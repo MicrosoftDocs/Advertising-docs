@@ -1,8 +1,8 @@
 ---
 title: "AdGroupBuilder object"
 description: "Contains the methods for creating an ad group."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

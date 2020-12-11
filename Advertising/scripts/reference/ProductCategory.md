@@ -2,8 +2,8 @@
 title: "ProductCategory"
 subtitle: "Scripts"
 description: "Contains the methods used to manage the category product group."
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ms.service: "bing-ads-scripts"
 ms.topic: "article"
 ---

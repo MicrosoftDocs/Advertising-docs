@@ -2,8 +2,8 @@
 title: Ad Insight Value Sets
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Value sets reference for the AdInsight service.
 ---
 # Ad Insight Value Sets
@@ -13,12 +13,13 @@ The Ad Insight service defines the following value sets.
 |---|---|
 |[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.|
 |[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results.|
+|[AuctionInsightKpiAdditionalField](auctioninsightkpiadditionalfield.md)|Defines a list of optional auction insight KPI properties that you can request when calling [GetAuctionInsightData](getauctioninsightdata.md).|
 |[AuctionSegment](auctionsegment.md)|Defines the possible auction segment values.|
 |[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|
 |[BudgetPointType](budgetpointtype.md)|Defines the possible values of a campaign budget point.|
 |[CompetitionLevel](competitionlevel.md)|Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Microsoft Advertising.|
-|[CurrencyCode](currencycode.md)|Defines a selection of currency values.|
+|[CurrencyCode](currencycode.md)|Defines currency codes for the Ad Insight service.|
 |[EntityType](entitytype.md)|Defines the entity types for retrieving auction insights.|
 |[KeywordIdeaAttribute](keywordideaattribute.md)|Determines which properties of the [KeywordIdea](keywordidea.md) object you want returned when calling the [GetKeywordIdeas](getkeywordideas.md) operation.|
 |[KeywordOpportunityType](keywordopportunitytype.md)|Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](getkeywordopportunities.md).|

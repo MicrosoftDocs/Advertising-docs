@@ -2,8 +2,8 @@
 title: "Experiments Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Create experiment campaigns from a base campaign in C#, Java, PHP, or Python.
 dev_langs:
   - csharp

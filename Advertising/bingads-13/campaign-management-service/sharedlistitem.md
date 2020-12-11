@@ -2,8 +2,8 @@
 title: SharedListItem Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines the base class of a shared list item.
 ---
 # SharedListItem Data Object - Campaign Management
@@ -17,7 +17,7 @@ Do not try to instantiate a *SharedListItem*. You can create one or more of the 
 ```xml
 <xs:complexType name="SharedListItem" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q73:ArrayOfKeyValuePairOfstringstring" xmlns:q73="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q78:ArrayOfKeyValuePairOfstringstring" xmlns:q78="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>

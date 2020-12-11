@@ -3,8 +3,8 @@ title: "Transaction Message Schemas"
 description: Lists the schemas that define a transaction message.
 ms.service: "bing-ads-hotel-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 ---
 
 # Transaction Message schemas

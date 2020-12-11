@@ -2,8 +2,8 @@
 title: AdExtensionEditorialReasonCollection Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Defines a collection of ad extensions that failed editorial review.
 ---
 # AdExtensionEditorialReasonCollection Data Object - Campaign Management

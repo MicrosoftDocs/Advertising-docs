@@ -2,9 +2,9 @@
 title: CurrencyCode Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
-author: Matt-UX
-ms.author: matrob
-description: Defines currency codes for the Customer Billing service.
+author: eric-urban
+ms.author: eur
+description: Defines a selection of currency values.
 ---
 # CurrencyCode Value Set - Customer Management
 Defines a selection of currency values.

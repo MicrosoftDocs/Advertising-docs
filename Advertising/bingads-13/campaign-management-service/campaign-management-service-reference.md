@@ -2,8 +2,8 @@
 title: "Campaign Management Service Reference"
 ms.service: "bing-ads-campaign-management-service"
 ms.topic: "article"
-author: Matt-UX
-ms.author: matrob
+author: eric-urban
+ms.author: eur
 description: Reference documentation for the Campaign Management API.
 ---
 # Campaign Management Service Reference
