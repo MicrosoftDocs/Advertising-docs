@@ -148,7 +148,7 @@ For this example, the maximum number of results that the transaction message sho
 
 ## Expanded check-in date ranges
 
-The expanded check-in date range hint is similar to the check-in date range hint except it asks that you include all itineraries that intersect the itineraries in the date range. So your transaction message should include any itinary whose check-out date falls within the date range.
+The expanded check-in date range hint is similar to the check-in date range hint except it asks that you include all itineraries that intersect the itineraries in the date range. So your transaction message should include any itinerary whose check-out date falls within the date range.
 
 The \<StaysIncludingRange\> identifies the hint as an expanded check-in date range hint. To specify the range, set the `FirstDate` element to the starting check-in date and the `LastDate` to the last check-in date. The following example shows a hint message that uses a date range to specify six check-in dates for a single property.
 

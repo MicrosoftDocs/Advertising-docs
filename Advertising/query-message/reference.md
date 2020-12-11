@@ -85,4 +85,4 @@ Defines a list of hotels.
 
 |Element|Description|Children
 |-|-|-
-|Propety|A hotel's ID. |String
+|Property|A hotel's ID. |String

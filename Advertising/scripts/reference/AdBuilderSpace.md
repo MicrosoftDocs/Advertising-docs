@@ -26,7 +26,7 @@ Example usage:
 
 
 ## <a name="expandedTextAdBuilder"></a>expandedTextAdBuilder
-Gets a [builder](../concepts/builders.md) used to add an expaned text ad to this ad group.
+Gets a [builder](../concepts/builders.md) used to add an expanded text ad to this ad group.
 
 ### Returns
 

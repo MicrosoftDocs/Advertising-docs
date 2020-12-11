@@ -14,7 +14,7 @@ The Transaction XSD (transaction.xsd) defines the schema for Bing Hotel's transa
 The following are the XSDs that define the Transaction Message schema.
 
 - [transaction.xsd](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd)
-- [rate_types.xsd](https://bhacstatic.blob.core.windows.net/schemas/rate_types.xsd)&mdash;The transacation.xsd file includes rate_types.xsd
+- [rate_types.xsd](https://bhacstatic.blob.core.windows.net/schemas/rate_types.xsd)&mdash;The transaction.xsd file includes rate_types.xsd
 - [common_types.xsd](https://bhacstatic.blob.core.windows.net/schemas/common_types.xsd)&mdash;The rate_types.xsd file includes common_types.xsd
 
 Use this XSD to validate your transaction message document before sending it to Bing. For information, see [Validating your Transaction Message](../transaction-message/validate-transaction-message.md).

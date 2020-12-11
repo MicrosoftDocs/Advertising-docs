@@ -21,7 +21,7 @@ For information about how to request and download a report, see [Request and Dow
 For information about how the time zone affects report availability, see [Time Zones in Reporting](#reptimezones) below.
 
 ## <a name="reportschema"></a>Report File Schema
-You can request Csv, Tsv, or Xml report data. By default if you do not choose another [Format](../reporting-service/reportrequest.md#format) the downloaded data is comma seperated (Csv). 
+You can request Csv, Tsv, or Xml report data. By default if you do not choose another [Format](../reporting-service/reportrequest.md#format) the downloaded data is comma separated (Csv). 
 
 ```csv
 "Report Name: My Keyword Performance Report"
