@@ -103,6 +103,7 @@ To filter the data in the report, use the[ReportJob](reference.md#reportjob) obj
 - HotelGroupName
 - HotelId
 - HotelName
+- HotelStatus
 - PartnerHotelId
 - DeviceType
 
