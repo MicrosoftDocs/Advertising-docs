@@ -9,6 +9,7 @@ dev_langs:
   - csharp
 ---
 # Account Action Ad Extension Record - Bulk
+
 Defines an association record between an [Account](account.md) and an [Action Ad Extension](action-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or action ad extension, use the [Account](account.md) or [Action Ad Extension](action-ad-extension.md) record.
 
 You can download all *Account Action Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AccountActionAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
