@@ -245,7 +245,7 @@ You can use the following reports to get statistics about the effectiveness of t
 
 - [AdExtensionDetailReportRequest](../reporting-service/adextensiondetailreportrequest.md) - Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 
-For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
+For more information about reporting, see [Reporting API Guides](reporting-guides.md) and [Request and Download a Report](request-download-report.md).
 
 
 ## See Also

@@ -131,7 +131,7 @@ If you request a report using account level scope, then the performance reports 
     </Campaigns>
 </Scope>
 ```
-For more information about using the [Reporting Service](../reporting-service/reporting-service-reference.md), see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
+For more information about using the [Reporting Service](../reporting-service/reporting-service-reference.md), see [Reporting API Guides](reporting-guides.md) and [Request and Download a Report](request-download-report.md).
 
 > [!NOTE]
 > Performance statistics and the product partition tree structure returned by the Reporting service lags behind the performance statistics that you see in the Microsoft Advertising web application by up to an hour. 

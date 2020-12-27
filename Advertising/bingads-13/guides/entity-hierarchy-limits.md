@@ -11,7 +11,7 @@ The following figure shows the high level Microsoft Advertising entity object mo
 
 ![Entity Hierarchy](media/entity-hierarchy.png "Entity Hierarchy")  
 
-A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](reference.md) documentation. For limits on request objects per service operation, see the [Ad Insight](../ad-insight-service/ad-insight-service-operations.md), [Bulk](../bulk-service/bulk-service-operations.md), [Campaign Management](../campaign-management-service/campaign-management-service-operations.md), [Customer Billing](../customer-billing-service/customer-billing-service-operations.md), [Customer Management](../customer-management-service/customer-management-service-operations.md), and [Reporting](../reporting-service/reporting-service-operations.md) reference documentation. 
+A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the reference documentation for each service. For limits on request objects per service operation, see the [Ad Insight](../ad-insight-service/ad-insight-service-operations.md), [Bulk](../bulk-service/bulk-service-operations.md), [Campaign Management](../campaign-management-service/campaign-management-service-operations.md), [Customer Billing](../customer-billing-service/customer-billing-service-operations.md), [Customer Management](../customer-management-service/customer-management-service-operations.md), and [Reporting](../reporting-service/reporting-service-operations.md) reference documentation.
 
 > [!NOTE]
 > The following are the standard limits. Please contact your account team if you have questions on limits that apply to your accounts.
@@ -504,8 +504,8 @@ The maximum number of radius criteria that you can set per campaign or ad group 
 > [!NOTE] 
 > Each of these limits are independent of one another e.g., the radius criteria limit stands regardless of whether or not any location criteria exist for the campaign or ad group.
 
-
 ## See Also
-[Bing Ads API Overview](index.md)  
-[Bing Ads API Reference](reference.md)  
 
+[Bing Ads API Overview](index.md)  
+[Bing Ads API Concepts](concepts.md)  
+[Get Started With the Bing Ads API](get-started.md)
