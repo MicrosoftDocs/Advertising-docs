@@ -125,7 +125,7 @@ For reports that are not specific to Audience campaigns e.g., [KeywordPerformanc
 
 Performance data for audience ads will be included in existing reports by default, with a few exceptions. The [SearchQueryPerformanceReportRequest](../reporting-service/searchqueryperformancereportrequest.md) and [ShareOfVoiceReportRequest](../reporting-service/shareofvoicereportrequest.md) reports will not have Audience Ads performance metrics even when ad distribution is an included column or included filter.
 
-For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
+For more information about reporting, see [Reporting API Guides](reporting-guides.md) and [Request and Download a Report](request-download-report.md).
 
 ## See Also
 [Bing Ads API Web Service Addresses](web-service-addresses.md)  

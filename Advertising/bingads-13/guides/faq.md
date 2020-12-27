@@ -35,7 +35,7 @@ You can develop Bing Ads API applications with any programming language that sup
 We have heard requests for additional SDKs e.g. Perl and Ruby, although there is no plan to add support in the near term.
 
 ### Q. How can I view code samples in different programming languages?
-In addition to the [Code Examples](code-examples.md) and services [Reference](reference.md) sections, you'll find code snippets in many of the technical guides e.g., the [Get Started](get-started.md) guide. You can use the language selector at the top or right of those pages to view examples in CSharp, Java, Php, or Python. When you choose a language, the setting is retained as you navigate other pages. The language selector will only include languages that have samples for that specific page, and will default to C# if the language you had previously set is not available for the page that you navigated to. 
+In addition to the [Code Examples](code-examples.md) you'll find code snippets in many of the technical guides e.g., the [Get Started](get-started.md) guide. You can use the language selector at the top or right of those pages to view examples in CSharp, Java, Php, or Python. When you choose a language, the setting is retained as you navigate other pages. The language selector will only include languages that have samples for that specific page, and will default to C# if the language you had previously set is not available for the page that you navigated to. 
 
 ### Q. Which API version should I use?
 You should always use the latest version as soon as we announce support via the [blog](https://go.microsoft.com/fwlink/?linkid=2026358) or [release notes](release-notes.md). 

@@ -20,7 +20,7 @@ If you just want to get something working right away, follow these steps to get 
 ### <a name="quick-start-production"></a>Production Quick Start
 To authenticate in the production environment, you can follow either the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) guides. We'll use the Microsoft identity platform endpoint since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users.  
 
-1. Sign up for a [Microsoft Advertising](https://ads.microsoft.com/) production account and with the same credentials get a [developer token](#get-developer-token). 
+1. Sign up for a [Microsoft Advertising](https://ads.microsoft.com/) production account and use the same credentials to get a [developer token](#get-developer-token). 
 
 1. Register a native app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page. You can login using either a personal Microsoft Account or a Work or School Account. For details see [Register Your Application](authentication-oauth-identity-platform.md#registerapplication).  
 
@@ -369,6 +369,6 @@ The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.ht
 If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support). 
 
 ## See Also
-[Bing Ads API Technical Guides](technical-guides.md)  
-[Bing Ads API Reference](reference.md)  
 
+[Bing Ads API Overview](index.md)  
+[Bing Ads API Concepts](concepts.md)

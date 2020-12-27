@@ -39,6 +39,7 @@ Get started developing Bing Ads API applications in any programming language whi
 |[Target Criteria](./code-example-target-criteria.md)|How to use location criteria to show ads to your target audience.|
 
 ## See Also
-[Get Started with the Bing Ads API](get-started.md)  
-[Bing Ads API Web Service Addresses](web-service-addresses.md)  
-[Bing Ads API Reference](reference.md)  
+
+[Bing Ads API Overview](index.md)  
+[Bing Ads API Concepts](concepts.md)  
+[Get Started With the Bing Ads API](get-started.md)

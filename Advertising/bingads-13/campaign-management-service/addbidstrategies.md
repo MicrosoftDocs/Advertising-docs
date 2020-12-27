@@ -14,6 +14,11 @@ dev_langs:
 # AddBidStrategies Service Operation - Campaign Management
 Defines the AddBidStrategies Service Operation.
 
+> [!NOTE]
+> This operation is reserved for future use. 
+> 
+> You can set campaign and ad group level bid strategies using the [AddCampaigns](addcampaigns.md)], [UpdateCampaigns](updatecampaigns.md)], [AddAdGroups](addadgroups.md)], and [UpdateAdGroups](updateadgroups.md)] operations. 
+
 ## <a name="request"></a>Request Elements
 The *AddBidStrategiesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
