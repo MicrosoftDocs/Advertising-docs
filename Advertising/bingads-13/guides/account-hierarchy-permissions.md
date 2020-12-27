@@ -7,6 +7,7 @@ ms.author: eur
 description: Determine user permissions for the account hierarchy. 
 ---
 # Account Hierarchy and User Permissions
+
 Microsoft Advertising users can use the same login credentials to access multiple accounts, potentially with different permissions on each account. An agency can setup a hierarchy of accounts to manage all users and accounts from one parent account, use one central wallet to pay for everything, and share campaign resources such as [Universal Event Tracking](universal-event-tracking.md) (UET) tags and remarketing lists across customers.
 
 - [User Roles and Permissions](#user-roles-permissions) describes the actions available for each [user role](#user-roles), how [users are provisioned](#assign-user-roles) on an account, how you can [discover their current access rights](#get-user-roles), and how you can [act on behalf of an authenticated Microsoft Advertising user](#access-developer-token) with the Bing Ads API.  
