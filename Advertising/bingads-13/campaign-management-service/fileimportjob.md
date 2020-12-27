@@ -49,7 +49,7 @@ The [FileImportJob](fileimportjob.md) object derives from the [ImportJob](import
 |<a name="importoption"></a>ImportOption|The import options that are available via API.|[ImportOption](importoption.md)|
 |<a name="lastruntimeinutc"></a>LastRunTimeInUTC|The most recent import date and time for this job.<br/><br/>The date and time is expressed in Coordinated Universal Time (UTC).|**dateTime**|
 |<a name="name"></a>Name|The name of the import job|**string**|
-|<a name="notificationemail"></a>NotificationEmail|Reserved.|**string**|
+|<a name="notificationemail"></a>NotificationEmail|The email address where import results should be sent.<br/><br/>This element is not returned by default. To get this element, include the NotificationEmail value in the ReturnAdditionalFields element when you call the [GetImportJobsByIds](getimportjobsbyids.md#returnadditionalfields) and [GetImportResults](getimportresults.md#returnadditionalfields) service operations.|**string**|
 |<a name="notificationtype"></a>NotificationType|Determines whether and how often you want to receive email notifications about the import job results.|**string**|
 |<a name="status"></a>Status|The status of the import job.|**string**|
 |<a name="type"></a>Type|The type of the import job.<br/><br/>This value is *FileImportJob* when you retrieve a File import job.<br/><br/>For more information about import job types, see the [ImportJob Data Object Remarks](importjob.md#remarks).|**string**|
