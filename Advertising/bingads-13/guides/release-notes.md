@@ -9,6 +9,14 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month. 
 
+## <a name="december2020"></a>December 2020
+See below for Bing Ads API updates during this calendar month. 
+
+- [Bing Ads API SDK Updates](#sdk-december2020)  
+
+### <a name="sdk-december2020"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.7) SDK version 13.0.7. 
+
 ## <a name="november2020"></a>November 2020
 See below for Bing Ads API updates during this calendar month. 
 
@@ -16,7 +24,6 @@ See below for Bing Ads API updates during this calendar month.
 - [Flyer Ad Extensions](#flyeradextensions-november2020)  
 - [Impression Tracking URLs for Responsive Ads](#responsivead-impressiontrackingurls-november2020)  
 - [Prominence Metrics](#prominence-metrics-november2020)  
-- [Bing Ads API SDK Updates](#sdk-november2020)  
 
 ### <a name="auctioninsightkpi-absolutetopofpagerate-november2020"></a>Auction Insight Absolute Top of Page Rate
 Absolute top of page rate is defined as the number of times an ad is shown as the very first ad above the organic search results, divided by the total number of impressions it actually received. Ads at the absolute top of the page tend to receive more clicks.
@@ -63,9 +70,6 @@ The AbsoluteTopImpressionRatePercent and TopImpressionRatePercent columns are ad
 - [PublisherUsagePerformanceReportColumn](../reporting-service/publisherusageperformancereportcolumn.md)  
 - [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md)  
 - [UserLocationPerformanceReportColumn](../reporting-service/userlocationperformancereportcolumn.md)  
-
-### <a name="sdk-november2020"></a>Bing Ads API SDK Updates
-The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.7) SDK version 13.0.7. 
 
 ## <a name="october2020"></a>October 2020
 See below for Bing Ads API updates during this calendar month. 

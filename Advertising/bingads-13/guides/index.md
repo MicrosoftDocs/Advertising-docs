@@ -49,7 +49,7 @@ You can also setup your ads to display to users of a certain age group or gender
 ## <a name="optimize"></a>Optimize your campaigns
 You will want to optimize your campaign budget and keyword bids for a competitive advantage. The Bing Ads API [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service uses historical performance, web page data, and demographic data to provide data and bid suggestions that you may find helpful as you optimize your campaigns over time. For more information, see [Budget and Bid Opportunities](budget-bid-opportunities.md).
 
-Once your campaigns are up and running, you'll want to monitor their performance using the Reporting API. Microsoft Advertising can generate reports to track ad delivery, budget, and targeting. Each report type aggregates data at a different level and provides different [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md). For example, You would use the account and campaign performance reports to monitor click and spend data to ensure that you are optimizing your budget, and you would use the ad and keyword performance reports to identify ads and keywords that are performing well in terms of click-through rate and conversions. For more information, see [Reports](reports.md).
+Once your campaigns are up and running, you'll want to monitor their performance using the Reporting API. Microsoft Advertising can generate reports to track ad delivery, budget, and targeting. Each report type aggregates data at a different level and provides different [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md). For example, You would use the account and campaign performance reports to monitor click and spend data to ensure that you are optimizing your budget, and you would use the ad and keyword performance reports to identify ads and keywords that are performing well in terms of click-through rate and conversions. For more information, see [Reporting API Guides](reporting-guides.md).
 
 ## <a name="developercommunity"></a>Join the developer community
 The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. To make sure that we see your question, tag it with 'advertising-api'.  
@@ -57,17 +57,3 @@ The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.ht
 If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support). 
 
 You can sign up for the monthly newsletter via the [News](https://developers.ads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://go.microsoft.com/fwlink/?linkid=2026358) announcments are aggregated. 
-
-## <a name="navigatecontent"></a>Next steps and navigating the content
-
-|Topic|Description|
-|---------|---------------|
-|[Entity Limits](entity-hierarchy-limits.md)|Refer to this guide for a high level view of system limits for Bing Ads API entities.|
-|[FAQ](faq.md)|This article contains answers to some frequently asked questions about the Bing Ads API.|
-|[Get Started With the Bing Ads API](get-started.md)|To use the API, you will first need a Bing Ads API developer token and valid user credentials. Learn how to get developer credentials and how to write your first application for example, in C#, Java, PHP, or Python.|
-|[Sandbox](sandbox.md)|You may test your application in the sandbox environment before deploying it to the production environment.|
-|[Client Libraries](client-libraries.md)|You can develop Bing Ads API applications with any programming language that supports web services. The Bing Ads API Software Development Kits (SDK) enhance the experience of developing Bing Ads API applications with .NET, Java, and Python languages.|
-|[Code Examples](code-examples.md)|Jump start your development by viewing or using the examples provided in C#, Java, PHP, and Python.|
-|[Technical Guides](technical-guides.md)|Learn about how to integrate core advertising solutions using Bing Ads API.|
-|[API Reference](reference.md)|Get details about Bing Ads API service operations, geographical location codes, and error codes.|
-|[Release Notes](release-notes.md)|Stay informed about the changes to the Bing Ads API for each release.|

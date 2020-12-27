@@ -14,9 +14,9 @@ Microsoft Advertising users can use the same login credentials to access multipl
 - [Account Hierarchy](#account-hierarchy) describes how you can provide access to a hierarchy of accounts for one or more users in a customer. Effectively you can manage all users and accounts from one parent account, and use one central wallet to pay for everything. Also with hierarchies, you can share campaign resources such as [Universal Event Tracking](universal-event-tracking.md) (UET) tags and remarketing lists across customers. 
 
 > [!NOTE]
-> In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account". 
+> In the context of hierarchies a [Customer](../customer-management-service/customer.md) is also known as a "Manager account". An [AdvertiserAccount](../customer-management-service/advertiseraccount.md) is referred to as an "Account" or "Advertiser account".
 
-For more information about the campaign hierarchy within an account, see [Entity Limits](entity-hierarchy-limits.md), [Campaigns](campaigns.md), and [Ads](ads.md).
+See [Entity Limits](entity-hierarchy-limits.md) for more information about the campaign hierarchy within an account.
 
 ## <a name="user-roles-permissions"></a>User Roles and Permissions
 Your application might only need to support one Super Admin user on a known account. Even with such a relatively simple permission structure you'll want to understand the actions available for each [user role](#user-roles), how [users are provisioned](#assign-user-roles) on an account, how you can [discover their current access rights](#get-user-roles), and how you can [act on behalf of an authenticated Microsoft Advertising user](#access-developer-token) with the Bing Ads API.  
