@@ -14,9 +14,7 @@ And of course, now you can also import your mixed campaigns from Google Ads. onc
 You can add dynamic search ad groups to an existing search campaign, unless it is an experiment campaign or the base campaign of an experiment. Likewise you cannot create a new experiment campaign based on a mixed campaign. Experiments only support search campaigns without dynamic search ads settings. 
 
 > [!NOTE]
-> Mixed campaigns are only available for pilot accounts i.e., [GetAccountPilotFeatures](../customer-management-service/getaccountpilotfeatures.md) returns 791. 
-> 
-> Please note [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) might also return 791 for internal use; however, for account level pilots such as 791 you should ignore the results of [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md).  
+> Mixed campaigns are available wherever Dynamic search ads are supported i.e., Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
 
 Customers in the mixed campaigns pilot will no longer see the following options in the Microsoft Advertising web UI.  
  - Option to create a new Dynamic Search Ads campaign is not available. You can still manage existing Dynamic Search Ads campaigns in the UI.  

@@ -9,6 +9,11 @@ description: Defines the BidStrategy Data Object.
 # BidStrategy Data Object - Campaign Management
 Defines the BidStrategy Data Object.
 
+> [!NOTE]
+> This object is reserved for future use. 
+> 
+> You can set campaign and ad group level bid strategies using the [AddCampaigns](addcampaigns.md)], [UpdateCampaigns](updatecampaigns.md)], [AddAdGroups](addadgroups.md)], and [UpdateAdGroups](updateadgroups.md)] operations. 
+
 ## Syntax
 ```xml
 <xs:complexType name="BidStrategy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
