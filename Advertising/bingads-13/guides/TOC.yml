@@ -68,6 +68,45 @@
 - name: Sandbox
   href: ./sandbox.md
   displayName: test get started
+- name: Concepts
+  items:
+  - name: Overview
+    href: ./concepts.md
+    displayName: service concepts 
+  - name: Ad Languages
+    href: ./ad-languages.md
+  - name: Countdown Customizers
+    href: ./countdown-customizers.md
+  - name: Currencies
+    href: ./currencies.md
+  - name: Editorial Reason Codes
+    href: ./editorial-failure-reason-codes.md
+  - name: Entity Limits
+    href: ./entity-hierarchy-limits.md
+  - name: Geographical Location Codes
+    href: ./geographical-location-codes.md
+  - name: Handling Service Errors and Exceptions
+    href: ./handle-service-errors-exceptions.md
+    displayName: support help debug troubleshoot Invalid Client Data AADSTS AADSTS50011 AADSTS650052 AADSTS700016
+  - name: Operation Error Codes
+    href: ./operation-error-codes.md
+  - name: Profile Data
+    href: ./profile-data-files.md
+  - name: Services Protocol
+    href: ./services-protocol.md
+    displayName: wsdl
+  - name: Show Ads to Your Target Audience
+    href: ./show-ads-target-audience.md
+  - name: Time Zones
+    href: ./time-zones.md
+  - name: URL Tracking with Upgraded URLs
+    href: ./url-tracking-upgraded-urls.md
+  - name: Web Service Addresses
+    href: ./web-service-addresses.md
+    displayName: wsdl endpoint soap
+- name: Guides
+  href: ./technical-guides.md
+  displayName: technical guides
 - name: Client Libraries
   items:
   - name: Overview
@@ -135,45 +174,6 @@
     href: ./code-example-search-user-accounts.md
   - name: Target Criteria
     href: ./code-example-target-criteria.md
-- name: Concepts
-  items:
-  - name: Overview
-    href: ./concepts.md
-    displayName: service concepts 
-  - name: Ad Languages
-    href: ./ad-languages.md
-  - name: Countdown Customizers
-    href: ./countdown-customizers.md
-  - name: Currencies
-    href: ./currencies.md
-  - name: Editorial Reason Codes
-    href: ./editorial-failure-reason-codes.md
-  - name: Entity Limits
-    href: ./entity-hierarchy-limits.md
-  - name: Geographical Location Codes
-    href: ./geographical-location-codes.md
-  - name: Handling Service Errors and Exceptions
-    href: ./handle-service-errors-exceptions.md
-    displayName: support help debug troubleshoot Invalid Client Data AADSTS AADSTS50011 AADSTS650052 AADSTS700016
-  - name: Operation Error Codes
-    href: ./operation-error-codes.md
-  - name: Profile Data
-    href: ./profile-data-files.md
-  - name: Services Protocol
-    href: ./services-protocol.md
-    displayName: wsdl
-  - name: Show Ads to Your Target Audience
-    href: ./show-ads-target-audience.md
-  - name: Time Zones
-    href: ./time-zones.md
-  - name: URL Tracking with Upgraded URLs
-    href: ./url-tracking-upgraded-urls.md
-  - name: Web Service Addresses
-    href: ./web-service-addresses.md
-    displayName: wsdl endpoint soap
-- name: Guides
-  href: ./technical-guides.md
-  displayName: technical guides
 - name: Ad Insight API
   items: 
   - name: Overview
