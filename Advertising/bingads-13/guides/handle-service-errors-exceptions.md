@@ -468,6 +468,7 @@ If you are using the Bing Ads Python SDK you can include logging to output traff
 import logging
 logging.basicConfig(level=logging.INFO)
 logging.getLogger('suds.client').setLevel(logging.DEBUG)
+logging.getLogger('suds.transport.http').setLevel(logging.DEBUG) 
 ```
 
 ## See Also
