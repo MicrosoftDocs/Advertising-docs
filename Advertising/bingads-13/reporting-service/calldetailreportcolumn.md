@@ -56,8 +56,8 @@ The [CallDetailReportColumn](calldetailreportcolumn.md) value set has the follow
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
 |<a name="city"></a>City|The city used to deliver the ad. The location where the user was in physically when they clicked the ad.|
 |<a name="duration"></a>Duration|The duration of each forwarded call that originated from a call ad extension.|
-|<a name="endtime"></a>EndTime|The end time of the call.|
-|<a name="starttime"></a>StartTime|The start time of the call.|
+|<a name="endtime"></a>EndTime|The end time of the call expressed in Coordinated Universal Time (UTC).|
+|<a name="starttime"></a>StartTime|The start time of the call expressed in Coordinated Universal Time (UTC).|
 |<a name="state"></a>State|The state used to deliver the ad. The location where the user was in physically when they clicked the ad.|
 
 ## <a name="remarks"></a>Remarks
