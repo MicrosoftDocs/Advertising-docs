@@ -11,6 +11,36 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## January 21, 2020
+
+Added support for targeted and excluded audiences. 
+
+This change added following objects:
+
+- [AdGroupAudience](reference/AdGroupAudience.md)
+- [AdGroupAudienceBuilder](reference/AdGroupAudienceBuilder.md)
+- [AdGroupAudienceIterator](reference/AdGroupAudienceIterator.md)
+- [AdGroupAudienceOperation](reference/AdGroupAudienceOperation.md)
+- [AdGroupAudienceSelector](reference/AdGroupAudienceSelector.md)
+- [AdGroupExcludedAudience](reference/AdGroupExcludedAudience.md)
+- [AdGroupExcludedAudienceIterator](reference/AdGroupExcludedAudienceIterator.md)
+- [AdGroupExcludedAudienceOperation](reference/AdGroupExcludedAudienceOperation.md)
+- [AdGroupExcludedAudienceSelector](reference/AdGroupExcludedAudienceSelector.md)
+- [AudienceBidding](reference/AudienceBidding.md)
+- [CampaignAudience](reference/CampaignAudience.md)
+- [CampaignAudienceBuilder](reference/CampaignAudienceBuilder.md)
+- [CampaignAudienceIterator](reference/CampaignAudienceIterator.md)
+- [CampaignAudienceOperation](reference/CampaignAudienceOperation.md)
+- [CampaignAudienceSelector](reference/CampaignAudienceSelector.md)
+- [CampaignExcludedAudience](reference/CampaignExcludedAudience.md)
+- [CampaignExcludedAudienceIterator](reference/CampaignExcludedAudienceIterator.md)
+- [CampaignExcludedAudienceOperation](reference/CampaignExcludedAudienceOperation.md)
+- [CampaignExcludedAudienceSelector](reference/CampaignExcludedAudienceSelector.md)
+- [UserList](reference/UserList.md)
+- [UserListIterator](reference/UserListIterator.md)
+- [UserListSelector](reference/UserListSelector.md)
+
+
 ## December 10, 2020
 
 Added support for targeted and excluded locations. 

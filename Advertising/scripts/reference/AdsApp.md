@@ -32,7 +32,7 @@ This is the top-level object used to access and manage a single account.
 [productGroups](#productgroups)|[ProductGroupSelector](./ProductGroupSelector.md)|Gets a selector used to filter the list of product groups in this account.
 [shoppingAdGroups](#shoppingadgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a selector used to filter the list of ad groups used for shopping in this account.
 [shoppingCampaigns](#shoppingcampaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns used for shopping in this account.
-
+[userLists](#userLists)|[UserListSelector](./UserListSelector.md)|Gets a selector used to filter the list of user lists in this account.
 
 
 ## <a name="adgroups"></a>adGroups
@@ -197,6 +197,17 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 |Type|Description|
 |-|-
 [CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns used for shopping in the current account.
+
+
+## <a name="userLists"></a>userLists
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of user lists in this account.
+
+### Returns
+
+|Type|Description|
+|-|-
+[UserListSelector](./UserListSelector.md)|A selector used to filter the list of user lists in the current account.
 
 
 ## See also
