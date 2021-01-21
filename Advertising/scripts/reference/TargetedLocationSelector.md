@@ -17,7 +17,7 @@ Example usage:
 
     var iterator = shoppingCampaign.targeting().targetedLocations()
         .withLimit(10)
-        .withIds("72")
+        .withIds("123456789")
         .get();
 
     while (iterator.hasNext()) {
