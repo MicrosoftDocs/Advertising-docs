@@ -11,7 +11,7 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
-## January 21, 2020
+## January 21, 2021
 
 Added support for targeted and excluded audiences. 
 
