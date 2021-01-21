@@ -82,7 +82,7 @@
   href: reference-overview.md 
   items:    
     - name: Single account  
-      href: ./reference/BingAdsApp.md 
+      href: ./reference/AdsApp.md 
       items:
         - name: Account
           href: ./reference/Account.md 
@@ -92,10 +92,28 @@
           href: ./reference/AdBuilderSpace.md 
         - name: AdGroup
           href: ./reference/AdGroup.md 
+        - name: AdGroupAudience
+          href: ./reference/AdGroupAudience.md 
+        - name: AdGroupAudienceBuilder
+          href: ./reference/AdGroupAudienceBuilder.md 
+        - name: AdGroupAudienceIterator
+          href: ./reference/AdGroupAudienceIterator.md 
+        - name: AdGroupAudienceOperation
+          href: ./reference/AdGroupAudienceOperation.md 
+        - name: AdGroupAudienceSelector
+          href: ./reference/AdGroupAudienceSelector.md 
         - name: AdGroupBidding
           href: ./reference/AdGroupBidding.md 
         - name: AdGroupBuilder
           href: ./reference/AdGroupBuilder.md 
+        - name: AdGroupExcludedAudience
+          href: ./reference/AdGroupExcludedAudience.md 
+        - name: AdGroupExcludedAudienceIterator
+          href: ./reference/AdGroupExcludedAudienceIterator.md 
+        - name: AdGroupExcludedAudienceOperation
+          href: ./reference/AdGroupExcludedAudienceOperation.md 
+        - name: AdGroupExcludedAudienceSelector
+          href: ./reference/AdGroupExcludedAudienceSelector.md 
         - name: AdGroupIterator
           href: ./reference/AdGroupIterator.md 
         - name: AdGroupOperation
@@ -126,6 +144,8 @@
           href: ./reference/AdUrls.md 
         - name: AdViewSpace
           href: ./reference/AdViewSpace.md 
+        - name: AudienceBidding
+          href: ./reference/AudienceBidding.md 
         - name: BingAdsApp
           href: ./reference/BingAdsApp.md 
         - name: BingAdsDate
@@ -138,6 +158,24 @@
           href: ./reference/BudgetSelector.md 
         - name: Campaign
           href: ./reference/Campaign.md 
+        - name: CampaignAudience
+          href: ./reference/CampaignAudience.md 
+        - name: CampaignAudienceBuilder
+          href: ./reference/CampaignAudienceBuilder.md 
+        - name: CampaignAudienceIterator
+          href: ./reference/CampaignAudienceIterator.md 
+        - name: CampaignAudienceOperation
+          href: ./reference/CampaignAudienceOperation.md 
+        - name: CampaignAudienceSelector
+          href: ./reference/CampaignAudienceSelector.md 
+        - name: CampaignExcludedAudience
+          href: ./reference/CampaignExcludedAudience.md 
+        - name: CampaignExcludedAudienceIterator
+          href: ./reference/CampaignExcludedAudienceIterator.md 
+        - name: CampaignExcludedAudienceOperation
+          href: ./reference/CampaignExcludedAudienceOperation.md 
+        - name: CampaignExcludedAudienceSelector
+          href: ./reference/CampaignExcludedAudienceSelector.md 
         - name: CampaignIterator
           href: ./reference/CampaignIterator.md 
         - name: CampaignSelector
@@ -224,6 +262,12 @@
           href: ./reference/TargetedLocationOperation.md 
         - name: TargetedLocationSelector
           href: ./reference/TargetedLocationSelector.md 
+        - name: UserList
+          href: ./reference/UserList.md 
+        - name: UserListIterator
+          href: ./reference/UserListIterator.md 
+        - name: UserListSelector
+          href: ./reference/UserListSelector.md 
     - name: Multi-accounts
       href: ./reference/AccountsApp.md
       items:

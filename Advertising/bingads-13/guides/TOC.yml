@@ -2035,6 +2035,8 @@
     - name: Overview
       href: ./reporting-guides.md
       displayName: reporting guides
+    - name: Reporting Service Model
+      href: ./reports.md
     - name: Report Attributes and Performance Statistics
       href: ./report-attributes-performance-statistics.md
     - name: Report Types
