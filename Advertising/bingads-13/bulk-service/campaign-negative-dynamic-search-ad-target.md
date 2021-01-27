@@ -13,7 +13,7 @@ Defines a Campaign Negative Dynamic Search Ad Target that can be uploaded and do
 
 The Campaign Negative Dynamic Search Ad Target record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
 - Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](campaign.md#campaigntype) is set to "Search", and if the [Experiment Id](campaign.md#experimentid) element is not set.  
+- Search campaigns if the [Campaign Type](campaign.md#campaigntype) is set to "Search", and if the [Experiment Id](campaign.md#experimentid) element is not set.  
 
 You can download all *Campaign Negative Dynamic Search Ad Target* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

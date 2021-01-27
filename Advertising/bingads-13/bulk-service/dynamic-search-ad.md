@@ -18,7 +18,14 @@ With dynamic search ads, the ad title and display URL are generated automaticall
 
 The Dynamic Search Ad record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
 - Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+- Search campaigns if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+
+> [!IMPORTANT]
+> Beginning early Q2 calendar year 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](campaign.md#campaigntype) set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
+> 
+> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> 
+> We will announce more specific dates closer to Q2. 
 
 You can download all *Dynamic Search Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *DynamicSearchAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 

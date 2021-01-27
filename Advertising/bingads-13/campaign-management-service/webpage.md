@@ -13,7 +13,7 @@ The *Webpage* criterion can be included within [BiddableAdGroupCriterion](biddab
 
 A Webpage criterion can only be created within campaigns that have a [DynamicSearchAdsSetting](dynamicsearchadssetting.md).  
 - Dynamic search ads campaigns where [CampaignType](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [CampaignType](campaign.md#campaigntype) is set to "Search", if the [ExperimentId](campaign.md#experimentid) element is not set, and if the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchDynamic".   
+- Search campaigns if the [CampaignType](campaign.md#campaigntype) is set to "Search", if the [ExperimentId](campaign.md#experimentid) element is not set, and if the [AdGroupType](adgroup.md#adgrouptype) is set to "SearchDynamic".   
 
 ## Syntax
 ```xml

@@ -13,9 +13,6 @@ Defines a filter link ad extension that can be downloaded and uploaded in a bulk
 
 A filter link ad extension pairs one header with between 3 and 10 clickable text values that tell customers more about your business. 
 
-> [!NOTE]
-> Filter Link Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 732).  
-
 You can associate a filter link ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 filter link ad extensions. An expanded text ad will only include one filter link (one headline with 3 - 10 values) per impression. Use the [Account Filter Link Ad Extension](account-filter-link-ad-extension.md), [Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md), and [Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md) records to manage filter link ad extension associations.
 
 You can download all *Filter Link Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *FilterLinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).

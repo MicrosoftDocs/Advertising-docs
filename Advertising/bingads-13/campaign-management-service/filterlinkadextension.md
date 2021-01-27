@@ -11,9 +11,6 @@ Filter Link Extensions pair one header with between 3 and 10 clickable text valu
 
 You can associate a filter link ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 filter link ad extensions. An expanded text ad will only include one filter link extension (one headline with 3 - 10 clickable values) per impression. 
 
-> [!NOTE]
-> Filter Link Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 732).  
-
 ## Syntax
 ```xml
 <xs:complexType name="FilterLinkAdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">

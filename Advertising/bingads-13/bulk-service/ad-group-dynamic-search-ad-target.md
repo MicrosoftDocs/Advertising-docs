@@ -13,7 +13,7 @@ Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded
 
 The Ad Group Dynamic Search Ad Target record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
 - Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+- Search campaigns if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
 
 You can download all *Ad Group Dynamic Search Ad Target* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
