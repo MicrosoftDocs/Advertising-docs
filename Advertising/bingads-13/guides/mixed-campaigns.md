@@ -9,16 +9,12 @@ description: Setup Mixed Campaigns with Multiple Ad Group Types.
 # Mixed Campaigns
 A mixed campaign is a search campaign with dynamic search ads settings and multiple ad group types. Expanded text ads, responsive search ads and keywords are grouped into "SearchStandard" ad groups, while dynamic search ads and auto targets are grouped into "SearchDynamic" ad groups. Instead of creating and managing two campaigns with separate budgets, the same ad extension and audience associations, similar settings, reporting tasks and so on, you can just setup one mixed campaign. 
 
-And of course, now you can also import your mixed campaigns from Google Ads. once an account is added to the pilot the SearchAndDsaMixedCampaignAsSearchCampaign option will be ignored. Whether the option is set true or false, both "SearchStandard" and "SearchDynamic" ad groups will be imported in a mixed campaign. 
+And of course, now you can also import your mixed campaigns from Google Ads. Both "SearchStandard" and "SearchDynamic" ad groups will be imported in a mixed campaign. 
 
 You can add dynamic search ad groups to an existing search campaign, unless it is an experiment campaign or the base campaign of an experiment. Likewise you cannot create a new experiment campaign based on a mixed campaign. Experiments only support search campaigns without dynamic search ads settings. 
 
 > [!NOTE]
 > Mixed campaigns are available wherever Dynamic search ads are supported i.e., Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
-
-Customers in the mixed campaigns pilot will no longer see the following options in the Microsoft Advertising web UI.  
- - Option to create a new Dynamic Search Ads campaign is not available. You can still manage existing Dynamic Search Ads campaigns in the UI.  
- - Option to choose search or DSA ad groups when importing from Google Ads is not available. Both search and DSA ad groups will be imported and any previous setting will be ignored. 
 
 ## <a name="campaign-campaignservice"></a>Create the campaign
 You can create a mixed [campaign](../campaign-management-service/campaign.md) with the [AddCampaigns](../campaign-management-service/addcampaigns.md) operation. You can create a maximum of 100 mixed campaigns per ad account. 

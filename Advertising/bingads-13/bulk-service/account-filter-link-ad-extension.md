@@ -11,9 +11,6 @@ dev_langs:
 # Account Filter Link Ad Extension Record - Bulk
 Defines an association record between an [Account](account.md) and a [Filter Link Ad Extension](filter-link-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or filter link ad extension, use the [Account](account.md) or [Filter Link Ad Extension](filter-link-ad-extension.md) record.
 
-> [!NOTE]
-> Filter Link Extensions are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 732).  
-
 You can download all *Account Filter Link Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AccountFilterLinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a filter link ad extension to an account if the valid *Id* is provided. 

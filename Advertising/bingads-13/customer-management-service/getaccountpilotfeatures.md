@@ -45,7 +45,7 @@ The *GetAccountPilotFeaturesResponse* object defines the [body](#response-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identify the feature pilots that are enabled for the ad account.<br/><br/>For more information about pilot participation please contact your account manager.<br/><br/>For example the following values correspond to ad account level feature pilots.<br/><br/>791 - Mixed Campaigns with Multiple Ad Group Types|**int** array|
+|<a name="featurepilotflags"></a>FeaturePilotFlags|A list of integers that identify the feature pilots that are enabled for the ad account.<br/><br/>For more information about pilot participation please contact your account manager.|**int** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

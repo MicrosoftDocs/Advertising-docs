@@ -196,7 +196,7 @@ Record Type  |Supported Campaign Types
 [Text Ad](text-ad.md)|Search         
 [Text Ad Label](text-ad-label.md)|Search         
 
-\* Only supported for accounts in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) or [GetAccountPilotFeatures](../customer-management-service/getaccountpilotfeatures.md) returns 791). The [Campaign Type](campaign.md#campaigntype) must be set to "Search", the [Experiment Id](campaign.md#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
+\* The [Campaign Type](campaign.md#campaigntype) must be set to "Search", the [Experiment Id](campaign.md#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
 
 ## <a name="typehierarchy"></a>Type Hierarchy
 The download file will always include a record for the [Format Version](format-version.md) and [Account](account.md) record types. For upload, the [Format Version](format-version.md) is required and must precede all other record types in the bulk file.  

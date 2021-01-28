@@ -161,7 +161,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|Search\*<br>DynamicSearchAds|
 
-\* Only supported for accounts in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) or [GetAccountPilotFeatures](../customer-management-service/getaccountpilotfeatures.md) returns 791). 
+\* The [Campaign Type](#campaigntype) must be set to "Search", the [Experiment Id](#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
 
 ## <a name="adscheduleusesearchertimezone"></a>Ad Schedule Use Searcher Time Zone
 Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
@@ -324,7 +324,14 @@ The name of the campaign.
 ## <a name="campaigntype"></a>Campaign Type
 The type of the campaign.
 
-The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*.
+The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*. 
+
+> [!IMPORTANT]
+> Beginning early Q2 calendar year 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](#campaigntype) set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
+> 
+> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> 
+> We will announce more specific dates closer to Q2. 
 
 **Add:** Optional. If not specified, then default value of *Search* is used. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  
