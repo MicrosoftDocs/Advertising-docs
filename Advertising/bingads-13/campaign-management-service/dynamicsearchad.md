@@ -25,7 +25,6 @@ Dynamic search ads can only be created within campaigns that have a [DynamicSear
 > 
 > We will announce more specific dates closer to Q2. 
 
-
 ## Syntax
 ```xml
 <xs:complexType name="DynamicSearchAd" xmlns:xs="http://www.w3.org/2001/XMLSchema">

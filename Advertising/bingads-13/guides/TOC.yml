@@ -1071,6 +1071,8 @@
       href: ../campaign-management-service/addsharedentity.md
     - name: AddUetTags
       href: ../campaign-management-service/adduettags.md
+    - name: AddVideos
+      href: ../campaign-management-service/addvideos.md
     - name: AppealEditorialRejections
       href: ../campaign-management-service/appealeditorialrejections.md
     - name: ApplyOfflineConversionAdjustments
@@ -1119,6 +1121,8 @@
       href: ../campaign-management-service/deletesharedentities.md
     - name: DeleteSharedEntityAssociations
       href: ../campaign-management-service/deletesharedentityassociations.md
+    - name: DeleteVideos
+      href: ../campaign-management-service/deletevideos.md
     - name: GetAccountMigrationStatuses
       href: ../campaign-management-service/getaccountmigrationstatuses.md
     - name: GetAccountProperties
@@ -1219,6 +1223,8 @@
       href: ../campaign-management-service/getsharedentityassociationsbysharedentityids.md
     - name: GetUetTagsByIds
       href: ../campaign-management-service/getuettagsbyids.md
+    - name: GetVideosByIds
+      href: ../campaign-management-service/getvideosbyids.md
     - name: SearchCompanies
       href: ../campaign-management-service/searchcompanies.md
     - name: SetAccountProperties
@@ -1263,6 +1269,8 @@
       href: ../campaign-management-service/updatesharedentities.md
     - name: UpdateUetTags
       href: ../campaign-management-service/updateuettags.md
+    - name: UpdateVideos
+      href: ../campaign-management-service/updatevideos.md
   - name: Campaign Management Data Objects
     items: 
     - name: Overview
@@ -1360,6 +1368,8 @@
       href: ../campaign-management-service/campaigncriterion.md
     - name: CampaignNegativeSites
       href: ../campaign-management-service/campaignnegativesites.md
+    - name: CashbackAdjustment
+      href: ../campaign-management-service/cashbackadjustment.md
     - name: CombinedList
       href: ../campaign-management-service/combinedlist.md
     - name: CombinationRule
@@ -1376,6 +1386,8 @@
       href: ../campaign-management-service/criterion.md
     - name: CriterionBid
       href: ../campaign-management-service/criterionbid.md
+    - name: CriterionCashback
+      href: ../campaign-management-service/criterioncashback.md
     - name: CustomAudience
       href: ../campaign-management-service/customaudience.md
     - name: CustomerAccountShare
@@ -1618,6 +1630,8 @@
       href: ../campaign-management-service/uettag.md
     - name: UrlGoal
       href: ../campaign-management-service/urlgoal.md
+    - name: Video
+      href: ../campaign-management-service/video.md
     - name: Webpage
       href: ../campaign-management-service/webpage.md
     - name: WebpageCondition
@@ -1711,6 +1725,8 @@
       href: ../campaign-management-service/conversiongoaltrackingstatus.md
     - name: ConversionGoalType
       href: ../campaign-management-service/conversiongoaltype.md
+    - name: CriterionAdditionalField
+      href: ../campaign-management-service/criterionadditionalfield.md
     - name: CriterionTypeGroup
       href: ../campaign-management-service/criteriontypegroup.md
     - name: Day
