@@ -25,7 +25,7 @@ The Campaign Management service defines the following data objects.
 |[AdExtensionEditorialReasonCollection](adextensioneditorialreasoncollection.md)|Defines a collection of ad extensions that failed editorial review.|
 |[AdExtensionIdentity](adextensionidentity.md)|Defines an object that identifies an ad extension revision.|
 |[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md)|Defines an object that associates an ad extension to a supported entity, for example ad group or campaign.|
-|[AdGroup](adgroup.md)|Defines an ad group.|
+|[AdGroup](adgroup.md)|Defines an ad group in an advertising campaign.|
 |[AdGroupCriterion](adgroupcriterion.md)|Defines a criterion that you want applied to the specified ad group.|
 |[AdGroupCriterionAction](adgroupcriterionaction.md)|Defines the action to apply to a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), specifically one that contains a [ProductPartition](productpartition.md).|
 |[AdGroupNegativeSites](adgroupnegativesites.md)|Defines an object that contains the negative site URLs of an ad group.|
@@ -48,7 +48,7 @@ The Campaign Management service defines the following data objects.
 |[BiddableCampaignCriterion](biddablecampaigncriterion.md)|Defines a biddable criterion that you want applied to the specified campaign.|
 |[BiddingScheme](biddingscheme.md)|Defines the base object of a bidding scheme for how you want to manage your bids.|
 |[BidMultiplier](bidmultiplier.md)|Defines the multiplier by which to adjust your base bid for the corresponding criterion.|
-|[BidStrategy](bidstrategy.md)|Reserved.|
+|[BidStrategy](bidstrategy.md)|Defines the BidStrategy Data Object.|
 |[BMCStore](bmcstore.md)|Defines a Microsoft Merchant Center store.|
 |[Budget](budget.md)|Represents a budget that can be shared by any campaigns in an account.|
 |[CallAdExtension](calladextension.md)|Defines an object that specifies a click-to-call phone number to include in a text ad.|
@@ -57,7 +57,7 @@ The Campaign Management service defines the following data objects.
 |[CampaignAdGroupIds](campaignadgroupids.md)|Identifies a campaign and the list of its ad groups to include within the operation scope.|
 |[CampaignCriterion](campaigncriterion.md)|Defines a criterion that you want applied to the specified campaign.|
 |[CampaignNegativeSites](campaignnegativesites.md)|Defines an object that contains the negative site URLs of a campaign.|
-|[CashbackAdjustment](cashbackadjustment.md)|Reserved.|
+|[CashbackAdjustment](cashbackadjustment.md)|Defines the CashbackAdjustment Data Object.|
 |[CombinationRule](combinationrule.md)|A combination rule includes logical conditions used to determine who to add to your combined list.|
 |[CombinedList](combinedlist.md)|A combined list is an audience created from a combination of multiple existing audiences.|
 |[Company](company.md)|Defines the profile data for a company.|
@@ -66,7 +66,7 @@ The Campaign Management service defines the following data objects.
 |[CoOpSetting](coopsetting.md)|Defines the ad group level settings for feed-based Microsoft Shopping Campaigns.|
 |[Criterion](criterion.md)|Defines the base object of a criterion.|
 |[CriterionBid](criterionbid.md)|Defines a base class for criterion bids.|
-|[CriterionCashback](criterioncashback.md)|Reserved.|
+|[CriterionCashback](criterioncashback.md)|Defines the CriterionCashback Data Object.|
 |[CustomAudience](customaudience.md)|Defines a custom audience.|
 |[CustomerAccountShare](customeraccountshare.md)|Defines a customer or account that can use the shared audience or UET tag.|
 |[CustomerAccountShareAssociation](customeraccountshareassociation.md)|Contains the association count for the corresponding usage type.|
@@ -188,7 +188,7 @@ The Campaign Management service defines the following data objects.
 |[TextAsset](textasset.md)|A text asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
-|[Video](video.md)|Reserved.|
+|[Video](video.md)|Defines the Video Data Object.|
 |[Webpage](webpage.md)|Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.|
 |[WebpageCondition](webpagecondition.md)|Defines a condition or criterion that helps determine whether you want to show dynamic search ads.|
 |[WebpageParameter](webpageparameter.md)|Defines the conditions or criteria that determine whether you want to show dynamic search ads.|

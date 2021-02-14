@@ -30,7 +30,7 @@ The Campaign Management service defines the following service operations.
 |[AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)|Adds negative keywords to the specified campaign or ad group.|1 *EntityNegativeKeywords*<br/><br/>Each *EntityNegativeKeyword* element can contain up to 20,000 negative keywords.|
 |[AddSharedEntity](addsharedentity.md)|Adds a negative keyword list to the ad account library, or adds a website exclusion list to the manager account (customer) library.|1 *SharedEntity*<br/><br/>5,000 *ListItems*|
 |[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|100 *UetTags*|
-|[AddVideos](addvideos.md)|Reserved.||
+|[AddVideos](addvideos.md)|Defines the AddVideos Service Operation.|N/A.|
 |[AppealEditorialRejections](appealeditorialrejections.md)|Appeals ads or keywords that failed editorial review.|1,000 *EntityIdToParentIdAssociations*|
 |[ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md)|Applies offline conversion adjustments.|1,000 *OfflineConversionAdjustments*|
 |[ApplyOfflineConversions](applyofflineconversions.md)|Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.|1,000 *OfflineConversions*|
@@ -55,7 +55,7 @@ The Campaign Management service defines the following service operations.
 |[DeleteNegativeKeywordsFromEntities](deletenegativekeywordsfromentities.md)|Deletes negative keywords from the specified campaign or ad group.|1 *EntityNegativeKeywords*<br/><br/>Each *EntityNegativeKeyword* element can contain up to 20,000 negative keywords.|
 |[DeleteSharedEntities](deletesharedentities.md)|Deletes negative keyword lists from the ad account library, or deletes website exclusion lists from the manager account (customer) library.|20 *SharedEntities*|
 |[DeleteSharedEntityAssociations](deletesharedentityassociations.md)|Deletes the negative keyword list to campaign associations, or website exclusion list to ad account associations.|10,000 *Associations*|
-|[DeleteVideos](deletevideos.md)|Reserved.||
+|[DeleteVideos](deletevideos.md)|Defines the DeleteVideos Service Operation.|N/A.|
 |[GetAccountMigrationStatuses](getaccountmigrationstatuses.md)|Gets the migration status info for the specified accounts.|1,000 *AccountIds*|
 |[GetAccountProperties](getaccountproperties.md)|Gets account level properties by name.|Not applicable|
 |[GetAdExtensionIdsByAccountId](getadextensionidsbyaccountid.md)|Gets the ad extensions from the account's ad extension library.|1 *AccountId*|
@@ -106,7 +106,7 @@ The Campaign Management service defines the following service operations.
 |[GetSharedEntityAssociationsByEntityIds](getsharedentityassociationsbyentityids.md)|Gets the negative keyword list to campaign associations by campaign IDs, or website exclusion list to ad account associations by ad account IDs.|100 *EntityIds*|
 |[GetSharedEntityAssociationsBySharedEntityIds](getsharedentityassociationsbysharedentityids.md)|Gets the negative keyword list to campaign associations by negative keyword list IDs, or website exclusion list to ad account associations by website exclusion list IDs.|1 *SharedEntityIds*|
 |[GetUetTagsByIds](getuettagsbyids.md)|Gets the specified Universal Event Tracking (UET) tags.|100 *TagIds*|
-|[GetVideosByIds](getvideosbyids.md)|Reserved.||
+|[GetVideosByIds](getvideosbyids.md)|Defines the GetVideosByIds Service Operation.|N/A.|
 |[SearchCompanies](searchcompanies.md)|Search for profile data by company name.|1 *CompanyNameFilter*|
 |[SetAccountProperties](setaccountproperties.md)|Sets account level properties by name.|Not applicable|
 |[SetAdExtensionsAssociations](setadextensionsassociations.md)|Associates the specified ad extensions with the respective campaigns or ad groups.|1 *AccountId*<br/><br/>100 *AdExtensionIdToEntityIdAssociations*|
@@ -129,4 +129,4 @@ The Campaign Management service defines the following service operations.
 |[UpdateLabels](updatelabels.md)|Updates the labels within the account.|100 *Labels*|
 |[UpdateSharedEntities](updatesharedentities.md)|Updates the negative keyword lists or website exclusion lists.|20 *SharedEntities*|
 |[UpdateUetTags](updateuettags.md)|Updates the specified Universal Event Tracking (UET) tags.|100 *UetTags*|
-|[UpdateVideos](updatevideos.md)|Reserved.||
+|[UpdateVideos](updatevideos.md)|Defines the UpdateVideos Service Operation.|N/A.|

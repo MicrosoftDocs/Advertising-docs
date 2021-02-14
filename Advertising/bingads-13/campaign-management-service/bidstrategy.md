@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the BidStrategy Data Object.
 ---
 # BidStrategy Data Object - Campaign Management
-Reserved.
+Defines the BidStrategy Data Object.
 
 > [!NOTE]
 > This object is reserved for future use. 
