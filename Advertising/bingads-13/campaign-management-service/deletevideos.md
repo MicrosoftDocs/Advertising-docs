@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # DeleteVideos Service Operation - Campaign Management
-Reserved.
+Defines the DeleteVideos Service Operation.
 
 ## <a name="request"></a>Request Elements
 The *DeleteVideosRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

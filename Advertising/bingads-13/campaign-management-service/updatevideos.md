@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # UpdateVideos Service Operation - Campaign Management
-Reserved.
+Defines the UpdateVideos Service Operation.
 
 ## <a name="request"></a>Request Elements
 The *UpdateVideosRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

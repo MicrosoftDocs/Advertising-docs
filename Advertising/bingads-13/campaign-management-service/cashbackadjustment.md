@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the CashbackAdjustment Data Object.
 ---
 # CashbackAdjustment Data Object - Campaign Management
-Reserved.
+Defines the CashbackAdjustment Data Object.
 
 ## Syntax
 ```xml

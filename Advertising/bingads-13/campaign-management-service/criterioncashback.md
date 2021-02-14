@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the CriterionCashback Data Object.
 ---
 # CriterionCashback Data Object - Campaign Management
-Reserved.
+Defines the CriterionCashback Data Object.
 
 ## Syntax
 ```xml

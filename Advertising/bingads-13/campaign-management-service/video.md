@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the Video Data Object.
 ---
 # Video Data Object - Campaign Management
-Reserved.
+Defines the Video Data Object.
 
 ## Syntax
 ```xml
