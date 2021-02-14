@@ -22,16 +22,18 @@ For status values that a user can decide to set, for example setting the status 
     <xs:enumeration value="NoRecentConversions" />
     <xs:enumeration value="RecordingConversions" />
     <xs:enumeration value="TagInactive" />
+    <xs:enumeration value="InactiveDueToTagUnavailable" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md) value set has the following values: [NoRecentConversions](#norecentconversions), [RecordingConversions](#recordingconversions), [TagInactive](#taginactive), [TagUnverified](#tagunverified).
+The [ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md) value set has the following values: [InactiveDueToTagUnavailable](#inactiveduetotagunavailable), [NoRecentConversions](#norecentconversions), [RecordingConversions](#recordingconversions), [TagInactive](#taginactive), [TagUnverified](#tagunverified).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="inactiveduetotagunavailable"></a>InactiveDueToTagUnavailable|Reserved.|
 |<a name="norecentconversions"></a>NoRecentConversions|The [UetTagTrackingStatus](uettagtrackingstatus.md) is *Active*, but we haven't recorded any conversions in the last 7 days. This is most likely because you either have created the goal incorrectly, have not tagged your entire website i.e. the pages that have the conversion action, or you don't have any users converting on your site. |
 |<a name="recordingconversions"></a>RecordingConversions|The [UetTagTrackingStatus](uettagtrackingstatus.md) is *Active*, and we have recorded conversions within the last 7 days.|
 |<a name="taginactive"></a>TagInactive|The [UetTagTrackingStatus](uettagtrackingstatus.md) is *Inactive*, and Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website. |

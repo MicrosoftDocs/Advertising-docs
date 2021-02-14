@@ -14,8 +14,11 @@ dev_langs:
 # GetEstimatedBidByKeywordIds Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords - specified by keyword identifier - that could have resulted in an ad appearing in the targeted position in the search results in the last  7 days. In addition, the operation provides estimates of clicks, average cost per click (CPC), and impressions that the keywords could have generated with the estimated bid.
 
+The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
+
 > [!NOTE]
-> The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
+> This operation is optimized for search campaigns using the manual CPC bid strategy. 
+> With the sunset of manual CPC for search campaigns in Q2 calendar year 2021, this operation is deprecated.
 
 ## <a name="request"></a>Request Elements
 The *GetEstimatedBidByKeywordIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

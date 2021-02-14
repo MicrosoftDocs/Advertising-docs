@@ -36,3 +36,4 @@ Namespace: https\://bingads.microsoft.com/Customer/v13
 
 ## Used By
 [GetAccount](getaccount.md)  
+[SearchAccounts](searchaccounts.md)  

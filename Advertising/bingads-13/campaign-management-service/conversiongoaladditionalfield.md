@@ -18,6 +18,7 @@ Defines a list of optional conversion goal properties that you can request when 
         <xs:enumeration value="ViewThroughConversionWindowInMinutes" />
         <xs:enumeration value="IsExternallyAttributed" />
         <xs:enumeration value="GoalCategory" />
+        <xs:enumeration value="InactiveDueToTagUnavailable" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -26,11 +27,12 @@ Defines a list of optional conversion goal properties that you can request when 
 
 ## <a name="values"></a>Values
 
-The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set has the following values: [GoalCategory](#goalcategory), [IsExternallyAttributed](#isexternallyattributed), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes).
+The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set has the following values: [GoalCategory](#goalcategory), [InactiveDueToTagUnavailable](#inactiveduetotagunavailable), [IsExternallyAttributed](#isexternallyattributed), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="goalcategory"></a>GoalCategory|Request that the [GoalCategory](conversiongoal.md#goalcategory) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
+|<a name="inactiveduetotagunavailable"></a>InactiveDueToTagUnavailable|Reserved.|
 |<a name="isexternallyattributed"></a>IsExternallyAttributed|Request that the [IsExternallyAttributed](offlineconversiongoal.md#isexternallyattributed) element be included within each returned [OfflineConversionGoal](offlineconversiongoal.md) object.|
 |<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Request that the [ViewThroughConversionWindowInMinutes](conversiongoal.md#viewthroughconversionwindowinminutes) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
 
