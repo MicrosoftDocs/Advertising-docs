@@ -9,7 +9,9 @@ description: Defines a Google import job that can be run once or scheduled on a 
 # GoogleImportJob Data Object - Campaign Management
 Defines a Google import job that can be run once or scheduled on a recurring basis. 
 
-You can [add](addimportjobs.md) and [delete](deleteimportjobs.md) scheduled imports, but cannot edit or update them via the API. A scheduled import that was added via the API can be edited in the Microsoft Advertising UI. 
+You can [add](addimportjobs.md) and [delete](deleteimportjobs.md) scheduled imports, but cannot edit or update them via the API. 
+
+An account can have up to 100 scheduled Google import jobs.  
 
 > [!TIP]
 > For an implementation overview, see the [Google Ads Import](../guides/google-ads-import.md) technical guide.

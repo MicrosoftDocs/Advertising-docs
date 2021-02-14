@@ -14,8 +14,11 @@ dev_langs:
 # GetBidLandscapeByKeywordIds Service Operation - Ad Insight
 Given a list of existing keywords, this operation returns for each a list of suggested bids and estimated performance statistics from 1 to  7 days. This operation is not based on target position, rather it returns multiple bid options that yield different estimated clicks, impressions, and cost. You can use the landscape view of multiple bid points with estimated traffic for the same keyword to help make decisions about how to adjust your keyword bid to optimize for clicks, impressions, and cost. For example you might use the resulting data to visualize a clicks to cost curve or a bid to impressions curve.
 
+The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
+
 > [!NOTE]
-> The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
+> This operation is optimized for search campaigns using the manual CPC bid strategy. 
+> With the sunset of manual CPC for search campaigns in Q2 calendar year 2021, this operation is deprecated.
 
 ## <a name="request"></a>Request Elements
 The *GetBidLandscapeByKeywordIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

@@ -14,8 +14,11 @@ dev_langs:
 # GetBidOpportunities Service Operation - Ad Insight
 Gets the keyword bid opportunities of the specified ad group.
 
+The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
+
 > [!NOTE]
-> Currently bid opportunities are only available in the United States. It is not recommended to use this service operation for accounts in other markets.
+> This operation is optimized for search campaigns using the manual CPC bid strategy. 
+> With the sunset of manual CPC for search campaigns in Q2 calendar year 2021, this operation no longer returns opportunities.
 
 ## <a name="request"></a>Request Elements
 The *GetBidOpportunitiesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

@@ -14,8 +14,11 @@ dev_langs:
 # GetEstimatedBidByKeywords Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.
 
+The estimates are not a prediction or guarantee of future performance.
+
 > [!NOTE]
-> The estimates are not a prediction or guarantee of future performance.
+> This operation is optimized for search campaigns using the manual CPC bid strategy. 
+> With the sunset of manual CPC for search campaigns in Q2 calendar year 2021, this operation is deprecated.
 
 ## <a name="request"></a>Request Elements
 The *GetEstimatedBidByKeywordsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

@@ -199,7 +199,7 @@ If set to *OptimizeForClicks*, Microsoft Advertising prioritizes the ad from the
 
 If set to *RotateAdsEvenly*, Microsoft Advertising provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad quality, and therefore might display less often, or not at all.
 - The *RotateAdsEvenly* setting can allow lower-performing ads to display as often as better-performing ads. This might impact ad group performance.
-- The *RotateAdsEvenly* setting will be ignored if you use an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, *TargetCpa*, or *TargetRoas*, as these bid strategies prioritize better-performing ads.
+- The *RotateAdsEvenly* setting will be ignored if the ad group's campaign uses an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, *TargetCpa*, or *TargetRoas*, as these bid strategies prioritize better-performing ads.
 
 **Add:** Optional. The default value is *OptimizeForClicks*.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
@@ -259,13 +259,10 @@ Please take note of the following impact this setting has on biddable [Ad Group 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. 
 
-For most ad groups you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. Ad groups in [smart shopping campaigns](../guides/smart-shopping-campaigns.md) only support the *InheritFromParent* bid strategy, and do not support *ManualCpc* bid strategy. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+> [!IMPORTANT]
+> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. 
 
-> [!IMPORTANT] 
-> For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
-
-> [!NOTE]
-> For campaigns of type *Shopping* the ad group [Bid Strategy Type](#bidstrategytype) is effectively used for all product partitions.  
+For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). 
 
 **Add:** Optional. If you do not set this field, then *InheritFromParent* is used by default.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
@@ -345,7 +342,9 @@ The system-generated identifier of the ad group.
 **Delete:** Read-only and Required  
 
 ## <a name="inheritedbidstrategytype"></a>Inherited Bid Strategy Type
-The bid strategy type that is inherited from the parent campaign if the ad group's [Bid Strategy Type](#bidstrategytype) is set to *InheritFromParent*. This value is equal to the parent campaign's [Bid Strategy Type](#bidstrategytype) field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas*.
+The bid strategy type that is inherited from the parent campaign. 
+
+This value is equal to the parent campaign's [Bid Strategy Type](#bidstrategytype) field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, *TargetCpa*, and *TargetRoas*.
 
 **Add:** Read-only  
 **Update:** Read-only  

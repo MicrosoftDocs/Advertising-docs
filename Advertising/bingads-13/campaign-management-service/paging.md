@@ -38,3 +38,4 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [GetLabelAssociationsByLabelIds](getlabelassociationsbylabelids.md)  
 [GetLabelsByIds](getlabelsbyids.md)  
 [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)  
+[GetVideosByIds](getvideosbyids.md)  
