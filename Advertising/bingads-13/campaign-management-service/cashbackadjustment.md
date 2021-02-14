@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the CriterionCashback Data Object.
+description: Defines the CashbackAdjustment Data Object.
 ---
 # CashbackAdjustment Data Object - Campaign Management
 Reserved.
