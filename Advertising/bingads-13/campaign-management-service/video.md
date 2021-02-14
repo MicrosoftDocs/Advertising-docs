@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the Video Data Object.
 ---
 # Video Data Object - Campaign Management
 Reserved.

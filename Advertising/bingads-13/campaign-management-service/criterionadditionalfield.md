@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a list of optional criterion properties that you can request when calling GetAdGroupCriterionsByIds and GetCampaignCriterionsByIds.
 ---
 # CriterionAdditionalField Value Set - Campaign Management
-Defines a list of optional criterion properties that you can request when calling [GetAdGroupCriterionsByIds](getadgropucriterionsbyids.md) and [GetCampaignCriterionsByIds](getcampaigncriterionsbyids.md). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the conversion goal by default.
+Defines a list of optional criterion properties that you can request when calling [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md) and [GetCampaignCriterionsByIds](getcampaigncriterionsbyids.md). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the conversion goal by default.
 
 ## Syntax
 ```xml
