@@ -9,10 +9,15 @@ description: Authenticate for Bing Ads API using the Live Connect endpoint.
 # Authentication with the Live Connect endpoint
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
 
-How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent, or to prompt yourself for consent if you are developing an application for your own accounts. Once the user provides consent, you can then obtain an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
+How can you get an access token? Microsoft Advertising follows the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent. Once a user provides consent, you can get an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
 
 > [!IMPORTANT]
-> The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users without friction or interruption of service. Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
+> Starting in Q2 calender year 2021, Microsoft Advertising users who sign in your application must have two-factor authentication (TFA) enabled. Without two-factor authentication enabled, the Bing Ads API will not accept any access tokens that you use on their behalf. 
+
+> [!NOTE]
+> The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users. 
+> 
+> Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
 
 > [!TIP]
 > To get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start).  

@@ -167,13 +167,10 @@ If the keyword level bid is not set, the Ad Group [Cpc Bid](ad-group.md#cpcbid) 
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
-The bid strategy type for how you want to manage your bids. For keywords you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. If you do not set this field, then *InheritFromParent* is used by default.
+The bid strategy type for how you want to manage your bids. 
 
-> [!IMPORTANT] 
-> For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
-
-> [!TIP] 
-> You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
+> [!IMPORTANT]
+> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

@@ -16,6 +16,13 @@ Defines a biddable criterion that you want applied to the specified ad group.
     <xs:extension base="tns:AdGroupCriterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
+        <xs:element minOccurs="0" name="CriterionCashback" nillable="true" type="tns:CriterionCashback">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdGroupCriterionEditorialStatus" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
@@ -32,11 +39,12 @@ Defines a biddable criterion that you want applied to the specified ad group.
 
 ## <a name="elements"></a>Elements
 
-The [BiddableAdGroupCriterion](biddableadgroupcriterion.md) object has the following elements: [CriterionBid](#criterionbid), [DestinationUrl](#destinationurl), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
+The [BiddableAdGroupCriterion](biddableadgroupcriterion.md) object has the following elements: [CriterionBid](#criterionbid), [CriterionCashback](#criterioncashback), [DestinationUrl](#destinationurl), [EditorialStatus](#editorialstatus), [FinalAppUrls](#finalappurls), [FinalMobileUrls](#finalmobileurls), [FinalUrls](#finalurls), [FinalUrlSuffix](#finalurlsuffix), [TrackingUrlTemplate](#trackingurltemplate), [UrlCustomParameters](#urlcustomparameters).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="criterionbid"></a>CriterionBid|The bid to use in the auction.<br/><br/>If the inherited [Criterion](#criterion) is a [Webpage](webpage.md) criterion, then you must use a [FixedBid](fixedbid.md). If the inherited [Criterion](#criterion) is a [ProductPartition](productpartition.md), then you must use a [FixedBid](fixedbid.md) unless the Sponsored Products [BidOption](coopsetting.md#bidoption) is set to BidBoost (for details see [ProductPartition Usage](#productpartition) below). For all other biddable ad group criterions use the [BidMultiplier](bidmultiplier.md). If you do not use the correct object type, then your requested bid will be ignored: If the bid is required, the operation will fail; If the bid is optional, the default bid will be used.<br/><br/>**Add:** Requirements vary depending on the inherited [Criterion](#criterion) type. The bid is optional and will be set to the default of *0* if not included for [AgeCriterion](agecriterion.md), [DayTimeCriterion](daytimecriterion.md), [DeviceCriterion](devicecriterion.md), [GenderCriterion](gendercriterion.md), [LocationCriterion](locationcriterion.md), [ProfileCriterion](profilecriterion.md), [RadiusCriterion](radiuscriterion.md), [AudienceCriterion](audiencecriterion.md), and [Webpage](webpage.md) criterions. The bid is not applicable for [LocationIntentCriterion](locationintentcriterion.md) (The service will not return any error and the bid will be ignored even if you include it). When you add a [ProductPartition](productpartition.md) with the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation the bid is required unless the product partition type is *Subdivision*, in which case the bid is not allowed.<br/>**Update:** Requirements vary depending on the inherited [Criterion](#criterion) type. The bid is required for [AgeCriterion](agecriterion.md), [DayTimeCriterion](daytimecriterion.md), [DeviceCriterion](devicecriterion.md), [GenderCriterion](gendercriterion.md), [LocationCriterion](locationcriterion.md), [ProfileCriterion](profilecriterion.md), and [RadiusCriterion](radiuscriterion.md). The bid is not applicable for [LocationIntentCriterion](locationintentcriterion.md) (The service will not return any error and the bid will be ignored even if you include it). For [AudienceCriterion](audiencecriterion.md) and [Webpage](webpage.md) criterions the bid is optional, and If no value is set for the update, this setting is not changed. When you update a [ProductPartition](productpartition.md) with the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation the bid is optional, and If no value is set for the update, this setting is not changed.|[CriterionBid](criterionbid.md)|
+|<a name="criterioncashback"></a>CriterionCashback|Reserved.|[CriterionCashback](criterioncashback.md)|
 |<a name="destinationurl"></a>DestinationUrl|The URL of the webpage that the user is taken to when they click the ad.<br/><br/>This element is only used if the inherited [Criterion](#criterion) is a [ProductPartition](productpartition.md) criterion. For details see [ProductPartition Usage](#productpartition) below.|**string**|
 |<a name="editorialstatus"></a>EditorialStatus|Reserved for future use.|[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
