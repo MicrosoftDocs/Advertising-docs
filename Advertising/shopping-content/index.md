@@ -9,9 +9,9 @@ ms.author: eur
 
 # Content API Overview
 
-Content API is a RESTful API that lets advertisers programmatically manage their [Microsoft Merchant Center](https://help.ads.microsoft.com/#apex/3/en/51083/1) catalogs. Content API is an alternative to managing your catalog using the Microsoft Merchant Center web page or by using FTP. Content API has the following advantages:
+Content API is a RESTful API that lets advertisers programmatically manage their [Microsoft Merchant Center](https://help.ads.microsoft.com/#apex/3/en/51083/1) catalogs. Content API is an alternative to managing your catalog using the Microsoft Merchant Center web page or by using FTP/SFTP. Content API has the following advantages:
 
--   Provides the ability to update product offers incrementally rather than uploading the entire data feed. Being able to update a subset of your products is more efficient than having to upload the entire feed by using FTP.
+-   Provides the ability to update product offers incrementally rather than uploading the entire data feed. Being able to update a subset of your products is more efficient than having to upload the entire feed by using FTP/SFTP.
 
 -   Provides the ability to make changes to product pricing and availability to reflect close to real-time market conditions. For example, if your product goes out of stock, you can quickly update its Availability field using the Content API.
 

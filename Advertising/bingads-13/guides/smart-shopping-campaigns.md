@@ -36,7 +36,7 @@ First you'll need to set up your own Microsoft Merchant Center store with a prod
 
 1. In the Microsoft Advertising web application, click **Tools** &gt; **Microsoft Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.ads.microsoft.com/#apex/3/en/51084/1).
 
-1. [Create a product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.ads.microsoft.com/#apex/3/en/51086/1-500) or the [Content API](/advertising/shopping-content/index). Be sure send updated data at least every 30 days.  
+1. [Create a product catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP/SFTP](https://help.ads.microsoft.com/#apex/ads/en/56838/1) or the [Content API](/advertising/shopping-content/index). Be sure send updated data at least every 30 days.  
 
 1. You can get your Microsoft Merchant Center store identifier in the Microsoft Advertising web application via **Tools** &gt; **Microsoft Merchant Center**. Otherwise you can call the [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) operation to get the [StoreId](../campaign-management-service/bmcstore.md#id).   
 

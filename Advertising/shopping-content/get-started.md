@@ -60,7 +60,7 @@ When you create a MMC store, the process creates a default catalog for you. The 
 To add and enable catalogs, use the [Catalogs](../shopping-content/catalogs-resource.md) resource. For more information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
 
 > [!NOTE] 
-> In certain circumstances, you can use the API and FTP to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](../shopping-content/can-use-api-ftp.md) 
+> In certain circumstances, you can use the API and FTP/SFTP to update a catalog feed. For information about using the API with FTP/SFTP, see [Can I Use the API and FTP/SFTP?](../shopping-content/can-use-api-ftp.md) 
 
 
 ## Next Steps

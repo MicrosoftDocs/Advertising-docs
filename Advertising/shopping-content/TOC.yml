@@ -8,7 +8,7 @@
   href: api-best-practices.md
 - name: Request and method call limits
   href: request-method-limits.md
-- name: Can I use the API and FTP?
+- name: Can I use the API and FTP/SFTP?
   href: can-use-api-ftp.md
 - name: Managing your products
   href: manage-products.md
@@ -26,8 +26,6 @@
   href: code-examples.md
   displayName: .net c# csharp java
   items:
-  # - name: Authenticating Microsoft Account credentials
-  #   href: code-example-authentication-oauth.md
   - name: Creating a batch request
     href: code-example-create-batch-request.md
   - name: Managing products
