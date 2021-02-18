@@ -72,7 +72,9 @@ Your bid strategy setting tells Microsoft Advertising how you want to manage you
 The following campaign-level bid strategy types are available depending on the campaign type. For more information see the [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1) help article.
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. 
+> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> 
+> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
@@ -103,7 +105,9 @@ Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. 
+> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> 
+> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 ### <a name="maxclicks"></a>MaxClicks
 With the MaxClicks bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.

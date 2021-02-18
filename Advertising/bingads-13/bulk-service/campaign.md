@@ -240,6 +240,11 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 The bid strategy type for how you want to manage your bids. A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
 
 The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, MaxConversions, TargetCpa, and TargetRoas. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+
+> [!IMPORTANT]
+> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> 
+> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
  
 * EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Microsoft Advertising will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget. Differing from the MaxClicks, MaxConversions, TargetCpa, and TargetRoas bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.  
 * ManualCpc - Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Microsoft Advertising will use these bids every time.  
