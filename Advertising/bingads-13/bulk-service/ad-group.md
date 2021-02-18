@@ -210,7 +210,7 @@ Determines whether to use the account time zone or the time zone of the search u
 
 Set this property to *TRUE* if you want the ads to be shown in the search user's time zone, and otherwise set it to *FALSE*.  
 
-**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. After September 30, 2020, if you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
+**Add:** Optional. If you do not specify this field or leave it empty, the default value of *TRUE* will be set and the search user's time zone will be used. After September 30, 2020, if you do not specify this field or leave it empty, the default value of *FALSE* is set and the account time zone is used.  
 **Update:** Optional. If no value is set for the update, this setting is not changed.   
 **Delete:** Read-only  
 
@@ -260,7 +260,9 @@ Please take note of the following impact this setting has on biddable [Ad Group 
 The bid strategy type for how you want to manage your bids. 
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. 
+> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> 
+> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). 
 
