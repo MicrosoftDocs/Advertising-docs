@@ -11,7 +11,7 @@ dev_langs:
 # Dynamic Search Ad Record - Bulk
 Defines a dynamic search ad that can be downloaded and uploaded in a bulk file.
 
-With dynamic search ads, the ad title and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique. 
+With dynamic search ads, the headline and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique. Optionally you can supply a static headline using [page feeds](../guides/page-feeds.md). 
 
 > [!NOTE]
 > This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  

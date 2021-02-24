@@ -178,6 +178,10 @@ Here are example custom attributes that you could upload for a page feed.
 	{
 		"name": "Custom Label",
 		"feedAttributeType": "StringList"
+	},
+	{
+		"name": "Ad Title",
+		"feedAttributeType": "String"
 	}
 ]
 ```
@@ -240,6 +244,7 @@ There are two different `feedAttributeType` data types you can set for page feed
 
 |feedAttributeType|Use cases|Accepted feed item values|
 |-----|-----|-----|
+|String|Static headline that is shown instead of the dynamically generated headline.|Any letters, numbers, or symbols up to 63 characters. You can include one ad title per feed item.|
 |StringList|Labels that allow you to group the URLs within the feed.|You can include between one to ten custom labels per [Feed Item](feed-item.md#customattributes).<br/>Each custom label is represented as a list item in JSON notation. For example the custom label portion of the [Feed Item](feed-item.md#customattributes) could be written as *""Custom Label"":[""Label_1_3001"",""Label_2_3001""]*|
 |Url|Contains the URL of your website to include in the feed.|You must include one URL per [Feed Item](feed-item.md#customattributes).|
 
@@ -255,11 +260,15 @@ For example we can define the custom attributes of page feed.
 	{
 		"name": "Custom Label",
 		"feedAttributeType": "StringList"
+	},
+	{
+		"name": "Ad Title",
+		"feedAttributeType": "String"
 	}
 ]
 ```
 
-Then we can map each feed [name](#customattributes-name) i.e., "Page Url" and "Custom Label" in the [Feed Item](feed-item.md#customattributes) upload: 
+Then we can map each feed [name](#customattributes-name) i.e., "Page Url", "Custom Label", and "Ad Title" in the [Feed Item](feed-item.md#customattributes) upload: 
 
 ```json
 {
@@ -267,7 +276,8 @@ Then we can map each feed [name](#customattributes-name) i.e., "Page Url" and "C
 	"Custom Label": [
 		"Label_1_3001",
 		"Label_2_3001"
-	]
+	],
+    "Ad Title": "Find New Customers & Increase Sales!",
 }
 ```
 
