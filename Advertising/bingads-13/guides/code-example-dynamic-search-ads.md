@@ -14,6 +14,13 @@ dev_langs:
 # Dynamic Search Ads Code Example
 This example uses the Campaign Management API to setup a Dynamic Search Ads (DSA) campaign.
 
+> [!IMPORTANT]
+> Beginning early Q2 calendar year 2021, Bing Ads API clients will not be allowed to add new campaigns with the campaign type set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
+> 
+> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> 
+> We will announce more specific dates closer to Q2. 
+
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/DynamicSearchAds.cs)]
