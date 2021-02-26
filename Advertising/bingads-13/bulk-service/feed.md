@@ -30,9 +30,9 @@ The following Bulk CSV example would add a new page feed and ad customizer feed 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Keyword,Match Type,Target,Physical Intent,Name,Ad Schedule,Audience Id,Feed Name,Custom Attributes
 Format Version,,,,,,,,,,,,,,,,6,,,,
-Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
+Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""},{""name"":""Ad Title"",""feedAttributeType"":""String""}]"
 Feed,Active,-21,,AdCustomizerFeed,,,AdCustomizerFeedClientIdGoesHere,,,,,,,,,,,,MyAdCustomizerFeedName,"[{""name"":""DateTimeName"",""feedAttributeType"":""DateTime""},{""name"":""Int64Name"",""feedAttributeType"":""Int64""},{""name"":""PriceName"",""feedAttributeType"":""Price""},{""name"":""StringName"",""feedAttributeType"":""String"",""isPartOfKey"":true}]"
-Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
+Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""],""Ad Title"":""An ad title""}"
 Feed Item,Active,-210,-21,,,,21;210,,2020/06/22 00:00:00,2020/06/30 00:00:00,,value,Broad,,PeopleIn,,(Sunday[09:00-17:00]),,,"{""DateTimeName"":""2020/06/22 00:00:00"",""Int64Name"":237601,""PriceName"":""$601"",""StringName"":""s237601""}"
 ```
 
@@ -166,7 +166,7 @@ The custom attributes are represented in the bulk file as a JSON string. For mor
 Here are example custom attributes that you could upload for a page feed.
 
 > [!NOTE]
-> In the comma separated bulk file you'll need to surround the list of attributes, each attribute key, and each attribute value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"*.
+> In the comma separated bulk file you'll need to surround the list of attributes, each attribute key, and each attribute value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""},{""name"":""Ad Title"",""feedAttributeType"":""String""}]"*.
 
 ```json
 [
@@ -237,10 +237,7 @@ Then we can map each feed [name](#customattributes-name) i.e., "DateTimeName", "
 }
 ```
 
-There are two different `feedAttributeType` data types you can set for page feeds: 
-
-> [!NOTE]
-> The `feedAttributeType` is optional for "Page Feed" and "Custom Label" named attributes. If you do not set `feedAttributeType` the service uses the respective "Url" and "StringList" types. If you do set `feedAttributeType`, then it must be set to the supported value per custom attribute [name](#customattributes-name). 
+These are the `feedAttributeType` data types you can set for page feeds: 
 
 |feedAttributeType|Use cases|Accepted feed item values|
 |-----|-----|-----|
@@ -249,6 +246,9 @@ There are two different `feedAttributeType` data types you can set for page feed
 |Url|Contains the URL of your website to include in the feed.|You must include one URL per [Feed Item](feed-item.md#customattributes).|
 
 For example we can define the custom attributes of page feed.   
+
+> [!NOTE]
+> The `feedAttributeType` is optional for page feeds. If you set the `feedAttributeType`, then it must be set to "Url" for "Page Url", "StringList" for "Custom Label", and "String" for "Ad Title" [named](#customattributes-name) attributes. 
 
 ```json
 [
@@ -289,7 +289,7 @@ For ad customizer feeds and feed items, a String named "Custom Id" is always tre
 For page feeds and feed items the "Page Url" is always treated as a unique key i.e., the `isPartOfKey` is always "true".  
 
 ### <a name="customattributes-name"></a>name
-The `name` attribute is used to map a distinct custom attribute across both the feed and [Feed Item](feed-item.md#customattributes-name). Effectively this is how you ensure that a specific feed item rolls up to the same "column" in the feed. In the example above the "DateTimeName", "Int64Name", "PriceName", and "StringName" names are used in both the feed and feed item. 
+The `name` attribute is used to map a distinct custom attribute across both the feed and [Feed Item](feed-item.md#customattributes-name). Effectively this is how you ensure that a specific feed item rolls up to the same "column" in the feed. In the ad customizer example above, the "DateTimeName", "Int64Name", "PriceName", and "StringName" names are used in both the feed and feed item. 
 
 ## <a name="feedname"></a>Feed Name
 The name of the feed. 
