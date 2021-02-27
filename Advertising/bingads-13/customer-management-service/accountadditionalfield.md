@@ -16,6 +16,7 @@ Defines a list of optional account properties that you can request when calling 
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="TaxCertificate" />
+        <xs:enumeration value="AccountMode" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -24,10 +25,11 @@ Defines a list of optional account properties that you can request when calling 
 
 ## <a name="values"></a>Values
 
-The [AccountAdditionalField](accountadditionalfield.md) value set has the following values: [TaxCertificate](#taxcertificate).
+The [AccountAdditionalField](accountadditionalfield.md) value set has the following values: [AccountMode](#accountmode), [TaxCertificate](#taxcertificate).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="accountmode"></a>AccountMode|Request that the [AccountMode](advertiseraccount.md#accountMode) element be included within each returned [AdvertiserAccount](advertiseraccount.md) object.|
 |<a name="taxcertificate"></a>TaxCertificate|Request that the [TaxCertificate](advertiseraccount.md#taxcertificate) element be included within each returned [AdvertiserAccount](advertiseraccount.md) object.|
 
 ## Requirements

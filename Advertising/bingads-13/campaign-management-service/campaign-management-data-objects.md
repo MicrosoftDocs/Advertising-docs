@@ -79,6 +79,7 @@ The Campaign Management service defines the following data objects.
 |[DayTimeCriterion](daytimecriterion.md)|Defines a criterion that can be used to show ads to users during a specific day and time range.|
 |[DeviceCriterion](devicecriterion.md)|Defines a criterion that can be used to show ads on specific devices.|
 |[DurationGoal](durationgoal.md)|Defines a duration conversion goal.|
+|[DynamicFeedSetting](dynamicfeedsetting.md)|Reserved.|
 |[DynamicSearchAd](dynamicsearchad.md)|Defines a dynamic search ad.|
 |[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|Defines the Dynamic Search Ads setting for a campaign.|
 |[EditorialApiFaultDetail](editorialapifaultdetail.md)|Defines a fault object that operations such as [AddAdGroupCriterions](addadgroupcriterions.md), [UpdateAdGroupCriterions](updateadgroupcriterions.md), [SetAdExtensionsAssociations](setadextensionsassociations.md), and [UpdateAdExtensions](updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.|

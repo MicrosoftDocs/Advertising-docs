@@ -16,13 +16,6 @@ Defines a biddable criterion that you want applied to the specified ad group.
     <xs:extension base="tns:AdGroupCriterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
-        <xs:element minOccurs="0" name="CriterionCashback" nillable="true" type="tns:CriterionCashback">
-          <xs:annotation>
-            <xs:appinfo>
-              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdGroupCriterionEditorialStatus" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
@@ -31,6 +24,13 @@ Defines a biddable criterion that you want applied to the specified ad group.
         <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q74:ArrayOfstring" xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
+        <xs:element minOccurs="0" name="CriterionCashback" nillable="true" type="tns:CriterionCashback">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
