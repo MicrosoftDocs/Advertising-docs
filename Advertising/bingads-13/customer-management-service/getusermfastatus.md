@@ -15,7 +15,7 @@ dev_langs:
 Determines whether or not the user credentials have been obtained by passing through multi-factor authentication (MFA). 
 
 > [!IMPORTANT]
-> Starting April 1st, the Bing Ads API, Content API, and Hotel APIs will return an error (115; AuthenticationTokenNotAuthorized) for any user credentials that have not passed through MFA. All access and refresh tokens that were provisioned without passing through MFA will be invalid as soon as the MFA requirement is enforced. By this time you must have access and refresh tokens for a user who granted consent to your application via MFA.
+> Starting in Q2 calendar year 2021, the Bing Ads API, Content API, and Hotel APIs will return an error (115; AuthenticationTokenNotAuthorized) for any user credentials that have not passed through MFA. All access and refresh tokens that were provisioned without passing through MFA will be invalid as soon as the MFA requirement is enforced. By this time you must have access and refresh tokens for a user who granted consent to your application via MFA.
 > 
 > Prior to enforcement of the MFA requirement, you should request all users to [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature). Optionally you can require that the user pass through MFA immediately by including the MFA parameter when prompting them for consent via the Microsoft Identity endpoint (recommended).
 > 
