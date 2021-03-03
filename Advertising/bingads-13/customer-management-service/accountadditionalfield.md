@@ -29,7 +29,7 @@ The [AccountAdditionalField](accountadditionalfield.md) value set has the follow
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountmode"></a>AccountMode|Request that the [AccountMode](advertiseraccount.md#accountMode) element be included within each returned [AdvertiserAccount](advertiseraccount.md) object.|
+|<a name="accountmode"></a>AccountMode|Request that the [AccountMode](advertiseraccount.md#accountmode) element be included within each returned [AdvertiserAccount](advertiseraccount.md) object.|
 |<a name="taxcertificate"></a>TaxCertificate|Request that the [TaxCertificate](advertiseraccount.md#taxcertificate) element be included within each returned [AdvertiserAccount](advertiseraccount.md) object.|
 
 ## Requirements

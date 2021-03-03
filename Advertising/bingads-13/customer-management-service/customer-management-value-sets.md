@@ -29,6 +29,6 @@ The Customer Management service defines the following value sets.
 |[SecretQuestion](secretquestion.md)|Defines the possible secret questions that users can choose from to help them recall their password.|
 |[ServiceLevel](servicelevel.md)|For internal use only.|
 |[SortOrder](sortorder.md)|Defines the ascending or descending sort order of results for one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).|
-|[TaxCertificateStatus](taxcertificatestatus.md)|Reserved.|
+|[TaxCertificateStatus](taxcertificatestatus.md)|Defines the TaxCertificateStatus Value Set.|
 |[TimeZoneType](timezonetype.md)|Defines the possible time zones for the customer management service.|
 |[UserLifeCycleStatus](userlifecyclestatus.md)|Defines the possible status values of a user.|
