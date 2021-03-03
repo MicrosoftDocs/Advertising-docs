@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Identifies a campaign and the list of its ad groups to include within the operation scope.
+description: Identifies a campaign and the list of its ad groups to import.
 ---
 # CampaignAdGroupIds Data Object - Campaign Management
-Identifies a campaign and the list of its ad groups to include within the operation scope. 
+Identifies a campaign and the list of its ad groups to import. 
 
 ## Syntax
 ```xml
@@ -32,9 +32,9 @@ The [CampaignAdGroupIds](campaignadgroupids.md) object has the following element
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="activeadgroupsonly"></a>ActiveAdGroupsOnly|Reserved.|**boolean**|
-|<a name="adgroupids"></a>AdGroupIds|Identifies the list a campaign's ad groups to include within the operation scope.<br/><br/>If this element is nil or empty, include all ad groups of the campaign.|**long** array|
-|<a name="campaignid"></a>CampaignId|Identifies a campaign to include within the operation scope.|**long**|
+|<a name="activeadgroupsonly"></a>ActiveAdGroupsOnly|Determines whether to include paused ad groups or only import active ad groups.<br/><br/>If this element is *true* and if the [AdGroupIds](#adgroupids) is not set, then only active ad groups from the campaign will be imported. Paused ad groups will not be imported.<br/><br/>If this element is *false* or empty, then all of the campaign's ad groups will be imported.<br/><br/>This element is ignored if specific ad groups are selected in the [AdGroupIds](#adgroupids) element.|**boolean**|
+|<a name="adgroupids"></a>AdGroupIds|Identifies the list of specific ad groups to import within the campaign.<br/><br/>If this element is nil or empty, include all ad groups of the campaign. The [ActiveAdGroupsOnly](#activeadgroupsonly) element determines whether to include paused ad groups or only import active ad groups.|**long** array|
+|<a name="campaignid"></a>CampaignId|Identifies the campaign to import.|**long**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
