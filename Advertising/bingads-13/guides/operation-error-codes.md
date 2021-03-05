@@ -503,7 +503,7 @@ Ids passed are null or empty.
 515
 
 **Symbolic Error Code**
-CampaignServiceIdsNotPassed
+DuplicateId
 
 **Description**
 Duplicate IDs are contained in the request.

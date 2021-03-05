@@ -118,6 +118,7 @@ The following are the performance metrics columns you may specify.
 
 |Column|Type|Example|Microsoft Advertising web UI filter
 |-|-|-|-
+AbsoluteTopImpressionRate|double|`withCondition("AbsoluteTopImpressionRate > 0.25")`|Abs. Top Impr. Rate
 AverageCpc|double|`withCondition("AverageCpc < 2.75")`|Avg. CPC
 AverageCpm|double|`withCondition("AverageCpm > 0.65")`|Avg. CPM
 AveragePosition|double|`withCondition("AveragePosition > 4")`|Avg. pos.
@@ -127,6 +128,7 @@ ConvertedClicks|long|`withCondition("ConvertedClicks >= 10")`|Conv.
 Cost|double|`withCondition("Cost > 3.25")`<br /><br />The cost is in the account's currency.|Spend
 Ctr|double|`withCondition("Ctr > 0.05")`<br /><br />The CTR is in the range 0..1, so use 0.05 for a 5% CTR.|CTR
 Impressions|long|`withCondition("Impressions > 10")`|Impr.
+TopImpressionRate|double|`withCondition("TopImpressionRate > 0.25")`|Top Impr. Rate
 
 
 ### Arguments

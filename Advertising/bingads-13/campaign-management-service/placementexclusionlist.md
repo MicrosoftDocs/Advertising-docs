@@ -9,12 +9,9 @@ description: Defines a website exclusion list in the manager account (customer) 
 # PlacementExclusionList Data Object - Campaign Management
 Defines a website exclusion list in the manager account (customer) shared library. 
 
-> [!NOTE] 
-> You can only view website exclusion lists in the redesigned Microsoft Advertising UI i.e., via Tools -> Shared Library -> Website exclusion lists. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522).  
-
 A manager account can own up to three website exclusion lists. Each list can contain up to 10,000 negative sites. 
 
-A list can be associated with ad accounts owned by the manager account, or linked in the [account hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) under the manager account that owns the list. A list cannot be shared above our outside of the account hierarchy. 
+A list can be associated with ad accounts owned by the manager account, or linked in the [account hierarchy](../guides/account-hierarchy-permissions.md#account-hierarchy) under the manager account that owns the list. A list cannot be shared above or outside of the account hierarchy. 
 
 If you associate any [website exclusion lists](placementexclusionlist.md) with an ad account, the list of [negative sites](negativesite.md) are used in addition to the [campaign negative sites](campaignnegativesites.md) or [ad group negative sites](adgroupnegativesites.md). Negative site URLs specified at the ad group level are used instead of any negative site URLs specified at the campaign level.  
 

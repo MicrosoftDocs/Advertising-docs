@@ -11,6 +11,27 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## March 5, 2021
+
+Added support for absolute top impression rate and top impression rate as a percentage of your total impressions.
+
+Added the following methods to the [Stats](reference/Stats.md) object.
+
+- [getAbsoluteTopImpressionRate]reference/Stats.md#getabsolutetopimpressionrate)
+- [getTopImpressionRate](reference/Stats.md#gettopimpressionrate)
+
+Added `AbsoluteTopImpressionRate` and `TopImpressionRate` as possible columns that you may specify with the following selectors. 
+
+- [AdGroupAudienceSelector](reference/AdGroupAudienceSelector.md)
+- [AdGroupSelector](reference/AdGroupSelector.md)
+- [AdSelector](reference/AdSelector.md)
+- [BudgetSelector](reference/BudgetSelector.md)
+- [CampaignAudienceSelector](reference/CampaignAudienceSelector.md)
+- [CampaignSelector](reference/CampaignSelector.md)
+- [KeywordSelector](reference/KeywordSelector.md)
+- [ProductGroupSelector](reference/ProductGroupSelector.md)
+- [TargetedLocationSelector](reference/TargetedLocationSelector.md)
+
 ## January 21, 2021
 
 Added support for targeted and excluded audiences. 
