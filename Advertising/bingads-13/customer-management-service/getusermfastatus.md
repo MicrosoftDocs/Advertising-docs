@@ -21,6 +21,9 @@ Determines whether or not the user credentials have been obtained by passing thr
 > 
 > No action is required if the user granted consent to your application after they had set up MFA. Access and refresh tokens obtained after the user [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) will continue to be honored even after the MFA requirement is enforced. 
 
+> [!NOTE]
+> The `GetUserMFAStatus` operation will be supported soon.  
+
 If this operation returns *true*, the user credentials (current access token) had been obtained by passing through MFA. If this operation returns *false*, the user could have already [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature), but has not passed through MFA while granting consent to your application. For example, the user could have granted consent to your application before they had [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature). 
 
 Here are example scenarios for arbitrary dates prior to enforcement of the MFA requirement:
