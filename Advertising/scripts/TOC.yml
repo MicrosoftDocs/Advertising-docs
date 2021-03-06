@@ -138,6 +138,8 @@
           href: ./reference/AdsApp.md 
         - name: AdSelector
           href: ./reference/AdSelector.md 
+        - name: AdTextAsset
+          href: ./reference/AdTextAsset.md 
         - name: AdTypeSpace
           href: ./reference/AdTypeSpace.md 
         - name: AdUrls
@@ -252,6 +254,10 @@
           href: ./reference/ProductItemId.md 
         - name: ProductType
           href: ./reference/ProductType.md 
+        - name: ResponsiveSearchAd
+          href: ./reference/ResponsiveSearchAd.md 
+        - name: ResponsiveSearchAdBuilder
+          href: ./reference/ResponsiveSearchAdBuilder.md 
         - name: Stats
           href: ./reference/Stats.md 
         - name: TargetedLocation
