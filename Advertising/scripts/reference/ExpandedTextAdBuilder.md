@@ -34,10 +34,13 @@ Example usage:
 |-|-|-
 [build](#build)|[AdOperation](./AdOperation.md)|Creates the ad and returns an operation object used to check whether Scripts successfully added the ad.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's custom parameters.
-[withDescription(string description)](#withdescription-string-description-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's copy.
+[withDescription(string description)](#withdescription-string-description-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's first description. This method is deprecated in favor of [withDescription1(string description1)](#withdescription1-string-description1-).
+[withDescription1(string description1)](#withdescription1-string-description1-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's first description. This method sets the same field as [withDescription(string description)](#withdescription-string-description-).
+[withDescription2(string description2)](#withdescription2-string-description2-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's second description.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's landing page URL.
 [withHeadlinePart1(string headlinePart1)](#withheadlinepart1-string-headlinepart1-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the first part of the ad's title.
 [withHeadlinePart2(string headlinePart2)](#withheadlinepart2-string-headlinepart2-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the second part of the ad's title.
+[withHeadlinePart3(string headlinePart3)](#withheadlinepart3-string-headlinepart3-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the third part of the ad's title.
 [withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl-string-mobilefinalurl-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's final URL for mobile devices.
 [withPath1(string urlPath1)](#withpath1-string-urlpath1-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the first optional path to append to the ad's display URL.
 [withPath2(string urlPath2)](#withpath2-string-urlpath2-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the second optional path to append to the ad's display URL.
@@ -72,12 +75,39 @@ customParameters|Object|A map of up to custom parameters to apply to the ad's fi
 
 
 ## <a name="withdescription-string-description-"></a>withDescription(string description)
-Sets the ad's copy text. 
+Sets the ad's first description. This method is deprecated in favor of [withDescription1(string description1)](#withdescription1-string-description1-).
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-description|string|The ad's copy text. For information about copy limits and including dynamic text strings, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#text). 
+description|string|The ad's first description. For information about copy limits and including dynamic text strings, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#text). 
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the description applied.
+
+
+## <a name="withdescription1-string-description1-"></a>withDescription1(string description1)
+Sets the ad's first description. This method sets the same field as [withDescription(string description)](#withdescription-string-description-).
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+description1|string|The ad's first description. For information about copy limits and including dynamic text strings, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#text). 
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the description applied.
+
+## <a name="withdescription2-string-description2-"></a>withDescription2(string description2)
+Sets the ad's second description.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+description2|string|The ad's second description. For information about copy limits and including dynamic text strings, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#text). 
 
 ### Returns
 |Type|Description|
@@ -105,7 +135,7 @@ Sets the first part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart1|string|The first part of the ad's title. When Microsoft generates the ad's title using parts 1, 2, and 3 of the title, it concatenates the parts using " - ". Do not specify the dash in any title parts. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -119,13 +149,25 @@ Sets the second part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart2|string|The second part of the ad's title. When Microsoft generates the ad's title using parts 1, 2, and 3 of the title, it concatenates the parts using " - ". Do not specify the dash in any title parts. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
 |-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with part 1 of the ad's title applied.
 
+## <a name="withheadlinepart3-string-headlinepart3-"></a>withHeadlinePart3(string headlinePart3)
+Sets the third part of the ad's title.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+headlinePart3|string|The third part of the ad's title. When Microsoft generates the ad's title using parts 1, 2, and 3 of the title, it concatenates the parts using " - ". Do not specify the dash in any title parts. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/advertising/campaign-management-service/expandedtextad#titlepart1). 
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with part 1 of the ad's title applied.
 
 ## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the ad's final URL for mobile devices. 
