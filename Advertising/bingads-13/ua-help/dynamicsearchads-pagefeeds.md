@@ -1,6 +1,6 @@
 ---
 title: "About dynamic search ads page feeds"
-ms.service: "microsoft-ads"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
