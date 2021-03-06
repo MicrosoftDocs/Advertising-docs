@@ -17,15 +17,18 @@ This object derives from the [Ad](Ad.md) object. The list of methods includes al
 ## Methods
 |Method Name|Return Type|Description|Inherited
 |-|-|-
-[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad. 
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad.|No 
 [asType](#astype)|[AdViewSpace](AdViewSpace.md)|Contains the methods used to cast this ad to a specific ad type.|Yes
 [enable](#enable)|void|Enables this ad.|Yes
 [getAdGroup](#getadgroup)|[AdGroup](Adgroup.md)|Gets the ad group that this ad belongs to.|Yes
 [getCampaign](#getcampaign)|[Campaign](Campaign.md)|Gets the campaign that this ad belongs to.|Yes
-[getDescription](#getdescription)|string|Gets this ad's copy text.|Yes
+[getDescription](#getdescription)|string|Gets this ad's first description. This method is deprecated in favor of [getDescription1](#getdescription1).|Yes
+[getDescription1](#getdescription1)|string|Gets this ad's first description. This method returns the same value as [getDescription](#getdescription).|No
+[getDescription2](#getdescription2)|string|Gets this ad's second description.|No
 [getEntityType](#getentitytype)|string|Gets this entity's type.|Yes
 [getHeadlinePart1](#getheadlinepart1)|string|Gets the first part of this ad's title.|No
 [getHeadlinePart2](#getheadlinepart2)|string|Gets the second part of this ad's title.|No
+[getHeadlinePart3](#getheadlinepart3)|string|Gets the third part of this ad's title.|No
 [getId](#getid)|string|Gets the ID that uniquely identifies this ad.|Yes
 [getPath1](#getpath1)|string|Gets the optional first path that's appended to this ad's display URL.|No
 [getPath2](#getpath2)|string|Gets the optional second path that's appended to this ad's display URL.|No
@@ -35,10 +38,10 @@ This object derives from the [Ad](Ad.md) object. The list of methods includes al
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this ad is enabled.|Yes
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.|Yes
 [isType](#istype)|[AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type.|Yes
-[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.|No
 [pause](#pause)|void|Pauses this ad.|Yes
 [remove](#remove)|void|Removes this ad.|Yes
-[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad.|No
 [urls](#urls)|[AdUrls](AdUrls.md)|Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.|Yes
 
 
@@ -94,6 +97,34 @@ Gets the campaign that this ad belongs to.
 [Campaign](Campaign.md)|The campaign that this ad belongs to.
 
 
+
+## <a name="getdescription"></a>getDescription
+Gets this ad's first description. This method is deprecated in favor of [getDescription1](#getdescription1).
+
+### Returns
+|Type|Description|
+|-|-
+string|The ad's first description.
+
+
+## <a name="getdescription1"></a>getDescription1
+Gets this ad's first description. This method returns the same value as [getDescription](#getdescription).
+
+### Returns
+|Type|Description|
+|-|-
+string|The ad's first description.
+
+
+## <a name="getdescription2"></a>getDescription2
+Gets this ad's second description. 
+
+### Returns
+|Type|Description|
+|-|-
+string|The ad's second description.
+
+
 ## <a name="getentitytype"></a>getEntityType
 Gets this entity's type.
 
@@ -101,15 +132,6 @@ Gets this entity's type.
 |Type|Description|
 |-|-
 string|This entity's type, which is *Ad*.
-
-
-## <a name="getdescription"></a>getDescription
-Gets this ad's copy text.
-
-### Returns
-|Type|Description|
-|-|-
-string|The ad's copy text.
 
 
 ## <a name="getheadlinepart1"></a>getHeadlinePart1
@@ -128,6 +150,15 @@ Gets the second part of this ad's title.
 |Type|Description|
 |-|-
 string|The second part of this ad's title.
+
+
+## <a name="getheadlinepart3"></a>getHeadlinePart3
+Gets the third part of this ad's title.
+
+### Returns
+|Type|Description|
+|-|-
+string|The third part of this ad's title.
 
 
 ## <a name="getid"></a>getId
