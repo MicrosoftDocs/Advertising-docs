@@ -30,12 +30,12 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [addDescription(string description, string pinning)](#adddescription-string-string-description-pinning-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Adds the provided description to the current list of descriptions. At least 2 descriptions must be specified using either this or the addDescription() method.
-[addHeadline(string headline, string pinning)](#adheadline-string-string-headline-pinning-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Adds the provided headline to the current list of headlines. At least 3 headlines must be specified using either this or the addHeadline() method.
+[addHeadline(string headline, string pinning)](#addheadline-string-string-headline-pinning-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Adds the provided headline to the current list of headlines. At least 3 headlines must be specified using either this or the addHeadline() method.
 [build](#build)|[AdOperation](./AdOperation.md)|Creates the ad and returns an operation object used to check whether Scripts successfully added the ad.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's custom parameters.
 [withDescriptions(object[] descriptions)](#withdescriptions-object-descriptions-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's descriptions.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's landing page URL.
-[withFinalUrlSuffix(string finalUrlSuffix)](#withfinalurl-string-finalurlsuffix-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's final URL suffix.
+[withFinalUrlSuffix(string finalUrlSuffix)](#withfinalurlsuffix-string-finalurlsuffix-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's final URL suffix.
 [withHeadlines(object[] headlines)](#withheadlines-object-headlines-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's headlines.
 [withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl-string-mobilefinalurl-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the ad's final URL for mobile devices.
 [withPath1(string urlPath1)](#withpath1-string-urlpath1-)|[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Sets the first optional path to append to the ad's display URL.
@@ -121,6 +121,20 @@ Sets the ad's landing page URL.
 |Name|Type|Description|
 |-|-|-
 finalUrl|string|The ad's landing page URL. For information about URL limits, see [Bing Ads API](/advertising/campaign-management-service/responsivesearchad#finalurls). 
+
+### Returns
+|Type|Description|
+|-|-
+[ResponsiveSearchAdBuilder](./ResponsiveSearchAdBuilder.md)|Ad builder with the final URL applied.
+
+
+## <a name="withfinalurlsuffix-string-finalurlsuffix-"></a>withFinalUrlSuffix(string finalUrlSuffix)
+Sets the ad's final URL suffix. 
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+finalUrl|string|The ad's final URL suffix. For information about URL limits, see [Bing Ads API](/advertising/campaign-management-service/responsivesearchad#finalurls). 
 
 ### Returns
 |Type|Description|

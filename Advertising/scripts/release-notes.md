@@ -33,7 +33,7 @@ Added `AbsoluteTopImpressionRate` and `TopImpressionRate` as possible columns th
 - [TargetedLocationSelector](reference/TargetedLocationSelector.md)
 
 
-## February 28, 2021
+## February 23, 2021
 
 Added support for responsive search ads.
 
