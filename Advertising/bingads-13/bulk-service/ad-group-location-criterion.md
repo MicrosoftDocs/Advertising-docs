@@ -180,7 +180,10 @@ Represents the association status between the ad group and the criterion. If the
 ## <a name="subtype"></a>Sub Type
 The location sub type that you are targeting. For example the value is *City* if the record represents a city location criterion.
 
-Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and *State*. Although rare it is possible the location type will change for a given location ID.
+> [!NOTE]
+> Neighborhood locations are coming soon. The sub type will be *Neighborhood*. 
+
+New location sub types can be added anytime. Rarely will the location type change for a given location ID. 
 
 **Add:** Read-only  
 **Update:** Read-only  

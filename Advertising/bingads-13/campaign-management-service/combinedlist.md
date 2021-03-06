@@ -38,7 +38,7 @@ The [CombinedList](combinedlist.md) object has the following elements: [Combinat
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="combinationrules"></a>CombinationRules|Logical conditions used to determine who to add to your combined list.<br/><br/>Each list can include up to 100 combinatin rules or sets of logical conditions, and each [CombinationRule](combinationrule.md) can contain up to 100 audience IDs.<br/><br/>For details, please see the [CombinationRule Remarks](combinationrule.md#remarks).<br/><br/>**Add:** Required<br/>**Update:** Required. If you want to keep any of the previous rules, then you must explicitly set them again during update.|[CombinationRule](combinationrule.md) array|
+|<a name="combinationrules"></a>CombinationRules|Logical conditions used to determine who to add to your combined list.<br/><br/>Each list can include up to 100 combination rules or sets of logical conditions, and each [CombinationRule](combinationrule.md) can contain up to 100 audience IDs.<br/><br/>For details, please see the [CombinationRule Remarks](combinationrule.md#remarks).<br/><br/>**Add:** Required<br/>**Update:** Required. If you want to keep any of the previous rules, then you must explicitly set them again during update.|[CombinationRule](combinationrule.md) array|
 
 The [CombinedList](combinedlist.md) object has [Inherited Elements](#inheritedelements).
 

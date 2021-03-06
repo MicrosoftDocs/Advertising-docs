@@ -121,6 +121,7 @@ The following are the performance metrics columns you may specify.
 
 |Column|Type|Example|
 |-|-|-
+AbsoluteTopImpressionRate|double|`withCondition("AbsoluteTopImpressionRate > 0.25")`
 AverageCpc|double|`withCondition("AverageCpc < 2.75")`
 AverageCpm|double|`withCondition("AverageCpm > 0.65")`
 AveragePosition|double|`withCondition("AveragePosition > 4")`
@@ -130,6 +131,7 @@ ConvertedClicks|long|`withCondition("ConvertedClicks >= 10")`
 Cost|double|`withCondition("Cost > 3.25")`<br /><br />The cost is in the account's currency.
 Ctr|double|`withCondition("Ctr > 0.05")`<br /><br />The CTR is in the range 0..1, so use 0.05 for a 5% CTR.
 Impressions|long|`withCondition("Impressions > 10")`
+TopImpressionRate|double|`withCondition("TopImpressionRate > 0.25")`
 
 The following are the entity properties you may specify.
 

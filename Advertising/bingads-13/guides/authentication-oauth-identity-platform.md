@@ -12,7 +12,7 @@ The [Microsoft identity platform endpoint for developers](https://docs.microsoft
 The AAD credentials function much the same way as MSA credentials, but they are governed by organizations. For example, all @microsoft.com email addresses are controlled by Microsoft IT admins, so that they can set individual user permissions and can control the way users log into various platforms (e.g. require Two-Factor Authentication). 
 
 > [!IMPORTANT]
-> Starting in Q2 calender year 2021, Microsoft Advertising users who sign in your application must have two-factor authentication (TFA) enabled. Without two-factor authentication enabled, the Bing Ads API will not accept any access tokens that you use on their behalf. 
+> Starting in Q2 calendar year 2021, the Bing Ads API, Content API, and Hotel APIs will return an error (115; AuthenticationTokenNotAuthorized) for any user credentials that have not passed through multi-factor authentication (MFA). All access and refresh tokens that were provisioned without passing through MFA will be invalid as soon as the MFA requirement is enforced. By this time you must have access and refresh tokens for a user who granted consent to your application via MFA.
 
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
 

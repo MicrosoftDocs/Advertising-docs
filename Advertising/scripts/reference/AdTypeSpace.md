@@ -29,6 +29,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAd](#expandedtextad)|Boolean|Gets a Boolean value that indicates whether the ad is an expanded text ad.
+[responsiveSearchAd](#responsivesearchad)|Boolean|Gets a Boolean value that indicates whether the ad is a responsive search ad.
 
 
 ## <a name="expandedtextad"></a>expandedTextAd
@@ -38,4 +39,13 @@ Gets a Boolean value that indicates whether the ad is an expanded text ad.
 |Type|Description|
 |-|-
 Boolean|Is **true** if the ad is an expanded text ad; otherwise, **false**.
+
+
+## <a name="responsivesearchad"></a>responsiveSearchAd
+Gets a Boolean value that indicates whether the ad is a responsive search ad.
+
+### Returns
+|Type|Description|
+|-|-
+Boolean|Is **true** if the ad is a responsive search ad; otherwise, **false**.
 

@@ -1412,6 +1412,8 @@
       href: ../campaign-management-service/devicecriterion.md
     - name: DurationGoal
       href: ../campaign-management-service/durationgoal.md
+    - name: DynamicFeedSetting
+      href: ../campaign-management-service/dynamicfeedsetting.md
     - name: DynamicSearchAd
       href: ../campaign-management-service/dynamicsearchad.md
     - name: DynamicSearchAdsSetting
@@ -1913,6 +1915,8 @@
       href: ../customer-management-service/getlinkedaccountsandcustomersinfo.md
     - name: GetUser
       href: ../customer-management-service/getuser.md
+    - name: GetUserMFAStatus
+      href: ../customer-management-service/getusermfastatus.md
     - name: GetUsersInfo
       href: ../customer-management-service/getusersinfo.md
     - name: SearchAccounts

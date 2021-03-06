@@ -11,6 +11,45 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## March 5, 2021
+
+Added support for absolute top impression rate and top impression rate as a percentage of your total impressions.
+
+Added the following methods to the [Stats](reference/Stats.md) object.
+
+- [getAbsoluteTopImpressionRate](reference/Stats.md#getabsolutetopimpressionrate)
+- [getTopImpressionRate](reference/Stats.md#gettopimpressionrate)
+
+Added `AbsoluteTopImpressionRate` and `TopImpressionRate` as possible columns that you may specify with the following selectors. 
+
+- [AdGroupAudienceSelector](reference/AdGroupAudienceSelector.md)
+- [AdGroupSelector](reference/AdGroupSelector.md)
+- [AdSelector](reference/AdSelector.md)
+- [BudgetSelector](reference/BudgetSelector.md)
+- [CampaignAudienceSelector](reference/CampaignAudienceSelector.md)
+- [CampaignSelector](reference/CampaignSelector.md)
+- [KeywordSelector](reference/KeywordSelector.md)
+- [ProductGroupSelector](reference/ProductGroupSelector.md)
+- [TargetedLocationSelector](reference/TargetedLocationSelector.md)
+
+
+## February 23, 2021
+
+Added support for responsive search ads.
+
+- Added the [ResponsiveSearchAd](reference/ResponsiveSearchAd.md) object, which defines a responsive search ad.
+
+- Added the [ResponsiveSearchAdBuilder](reference/ResponsiveSearchAdBuilder.md) object, which you use to add an expanded text ad to the ad group.
+  
+- Added the `responsiveSearchAdBuilder` method to the [AdBuilderSpace](reference/AdBuilderSpace.md) object. If you want to build a responsive search ad, you'd call the `responsiveSearchAdBuilder` method to get the [ResponsiveSearchAdBuilder](reference/ResponsiveSearchAdBuilder.md) object.
+  
+- Added the [AdTextAsset](reference/AdTextAsset.md) object, which contains properties for responsive search ad descriptions and headlines.
+
+- Added the `responsiveSearchAd` method to the [AdTypeSpace](reference/AdTypeSpace.md) object, which contains the methods used to test whether an ad is of the specified type. For example, to test whether the ad is a responsive search ad.
+  
+- Added the `responsiveSearchAd` method to the [AdViewSpace](reference/AdViewSpace.md) object, which is used to cast an ad to a specific type. For example, cast the base ad object to a responsive search ad.  
+
+
 ## January 21, 2021
 
 Added support for targeted and excluded audiences. 

@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the TaxCertificateStatus Value Set.
 ---
 # TaxCertificateStatus Value Set - Customer Management
-Reserved.
+Defines the TaxCertificateStatus Value Set.
 
 ## Syntax
 ```xml

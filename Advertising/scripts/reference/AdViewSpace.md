@@ -29,6 +29,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAd](#expandedtextad)|[ExpandedTextAd](ExpandedTextAd.md)|Casts this ad to an expanded text ad.
+[responsiveSearchAd](#responsivesearchad)|[ResponsiveSearchAd](ResponsiveSearchAd.md)|Casts this ad to a responsive search ad.
 
 
 ## <a name="expandedtextad"></a>expandedTextAd
@@ -38,4 +39,12 @@ Casts this ad to an expanded text ad.
 |Type|Description|
 |-|-
 [ExpandedTextAd](ExpandedTextAd.md)|Contains the methods used to access the expanded text ad's properties.
+
+## <a name="responsivesearchad"></a>responsiveSearchAd
+Casts this ad to a responsive search ad.
+
+### Returns
+|Type|Description|
+|-|-
+[ResponsiveSearchAd](ResponsiveSearchAd.md)|Contains the methods used to access the responsive search ad's properties.
 
