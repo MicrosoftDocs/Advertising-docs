@@ -2358,4 +2358,11 @@
   href: ./release-notes.md
 - name: Migrate to Version 13
   href: ./migration-guide.md
-
+- name: UA Help
+  expanded: true
+  displayName: help
+  items:
+  - name: Overview
+    href: ../ua-help/ua-help.md
+  - name: About dynamic search ads page feeds
+    href: ../ua-help/dynamicsearchads-pagefeeds.md
