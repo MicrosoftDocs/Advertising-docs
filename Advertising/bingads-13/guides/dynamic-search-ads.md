@@ -10,7 +10,7 @@ description: Setup Dynamic Search ads with the Bing Ads API.
 Dynamic search ads provide a streamlined, low-touch way to make sure customers searching on the Microsoft Advertising Network find your products or services.
 
 > [!NOTE]
-> This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
+> This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), Denmark (DK), Finland (FI), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Norway (NO), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
 
 Dynamic search ads automatically target relevant search queries based on the content of your website, and are dynamically created to respond to these search queries. Using them will:
 

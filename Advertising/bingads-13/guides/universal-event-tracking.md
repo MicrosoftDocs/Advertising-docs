@@ -130,10 +130,10 @@ A customer list is a set of customer contact information that you have compiled 
 
 > [!IMPORTANT]
 > Before you can upload customer list data via Bulk API, you must first create one customer list audience and accept the terms and conditions in the Microsoft Advertising UI. The initial customer list doesn't need to contain any customer data, but you must click I ACCEPT. 
-> ![Customer Match Terms](media/customer-match-terms.png "Customer Match Terms")
+> 
 > By clicking "I accept" you (1) agree that you are able to lawfully disclose audience details, which is personal data, to Microsoft and (2) accept the Customer Match Terms, the Microsoft Advertising Agreement, and the Microsoft Advertising policies. Microsoft will use the data that you upload in accordance with the [Customer Match Terms](https://go.microsoft.com/fwlink/?linkid=2106709).  
 
-Each list can include multiple Email and CRMID items. 
+Each list can include multiple Email items. 
 - Include the [Customer List](../bulk-service/customer-list.md) record in the Bulk upload file and set its [Action Type](../bulk-service/customer-list.md#actiontype) field to "Add", "Remove", or "Replace". 
 - Include one or more [Customer List Item](../bulk-service/customer-list-item.md) records in the same Bulk upload file and set the [Parent Id](../bulk-service/customer-list-item.md#parentid), [Sub Type](../bulk-service/customer-list-item.md#subtype), and [Text](../bulk-service/customer-list-item.md#text) fields. 
 

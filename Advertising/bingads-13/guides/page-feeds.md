@@ -10,7 +10,7 @@ description: Add page feeds to fine-tune ad copy for Dynamic Search Ads auto-tar
 Page feeds allow you to easily upload all the relevant URLs for your dynamic search ads campaigns. This ensures maximum website coverage and enables the labeling and targeting of specific URLs via custom labels.  
 
 > [!NOTE]
-> This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States. 
+> This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
 
 Why use page feeds?
 - Improve page freshness: Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren't already in the Bing index of your website, they'll be added. This allows your dynamic search ad campaigns to display the most current version of your website.  
@@ -19,7 +19,7 @@ Why use page feeds?
 You can have 100 feeds per account (this maximum number includes all feed types) and the maximum number of feed items (rows) per account is 5 million.  
 
 > [!NOTE]
-> Feeds and feed items can only be created, retreived, updated, and deleted using the Bulk service. You can link page feed identifiers with dynamic search ads campaigns using either the Bulk or Campaign Management service. You can also manage ads and auto targets using either the Bulk or Campaign Management service. 
+> Feeds and feed items can only be created, retrieved, updated, and deleted using the Bulk service. You can link page feed identifiers with dynamic search ads campaigns using either the Bulk or Campaign Management service. You can also manage ads and auto targets using either the Bulk or Campaign Management service. 
 
 > [!TIP]
 > For code examples please see the [C#](https://github.com/BingAds/BingAds-dotNet-SDK/blob/main/examples/BingAdsExamples/BingAdsExamplesLibrary/v13/BulkDynamicSearchAds.cs), [Java](https://github.com/BingAds/BingAds-Java-SDK/blob/main/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v13/BulkDynamicSearchAds.java), and [Python](https://github.com/BingAds/BingAds-Python-SDK/blob/main/examples/v13/bulk_dynamic_search_ads.py) repositories on GitHub i.e., the Bulk Dynamic Search Ads example shows how to create and use a page feed. 
@@ -33,27 +33,28 @@ You can upload page feeds and feed items with the Bulk service.
 > [!NOTE]
 > The [Feed](../bulk-service/feed.md) and [Feed Item](../bulk-service/feed-item.md) record types are used for both ad customizer feeds and page feeds. When you download feeds and feed items, be sure to check the "Sub Type" column to find out whether the data is applicable for an ad customizer feed or page feed.  
 
-For page feeds you can use attributes named "Page Url" and "Custom Label".  
+For page feeds you can use attributes named "Page Url", "Custom Label", and "Ad Title".  
 
 |Attribute Name|Attribute Data Type|Description|
 |-----|-----|-----|
 |Page Url|Url|Contains the URLs of your website to include in the feed.<br/><br/>You must include exactly one page URL per feed item.|
 |Custom Label|StringList|Labels that allow you to group the URLs within the feed.<br/><br/>You can include between one to ten custom labels per feed item.|
+|Ad Title|String|Static headline that is shown instead of the dynamically generated headline.<br/><br/>You can include any letters, numbers, or symbols up to 63 characters. You can include one ad title per feed item.|
 
 You might visualize the feed column names and field values in a table: 
 
-|Page Url (Url)|Custom Label (StringList)|
-|-----|-----|
-|https://contoso.com/3001|Label_1_3001|
-|https://contoso.com/3001|Label_2_3001|
+|Page Url (Url)|Custom Label (StringList)|Ad Title (String)|
+|-----|-----|-----|
+|https://contoso.com/3001|Label_1_3001|"An ad title"|
+|https://contoso.com/3001|Label_2_3001|"Another ad title"|
 
 You could upload the page feed and feed items via the Bulk API as follows:
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Keyword,Match Type,Target,Physical Intent,Name,Ad Schedule,Audience Id,Feed Name,Custom Attributes
 Format Version,,,,,,,,,,,,,,,,6,,,,
-Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""}]"
-Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""]}"
+Feed,Active,-20,,PageFeed,,,PageFeedClientIdGoesHere,,,,,,,,,,,,MyPageFeedName,"[{""name"":""Page Url"",""feedAttributeType"":""Url"",""isPartOfKey"":true},{""name"":""Custom Label"",""feedAttributeType"":""StringList""},{""name"":""Ad Title"",""feedAttributeType"":""String""}]"
+Feed Item,Active,-200,-20,,,,20;200,,2020/06/22 00:00:00,2020/06/30 00:00:00,,,,,,,,,,"{""Page Url"":""https://contoso.com/3001"",""Custom Label"":[""Label_1_3001"",""Label_2_3001""],""Ad Title"":""An ad title""}"
 ```
 
 ## <a name="associate-pagefeed"></a>Associate a page feed
