@@ -9,9 +9,6 @@ description: Defines an object to retract or restate an offline conversion via t
 # OfflineConversionAdjustment Data Object - Campaign Management
 Defines an object to retract or restate an offline conversion via the [ApplyOfflineConversionAdjustments](applyofflineconversionadjustments.md) operation.  
 
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
-
 You can adjust the conversion time and value for offline conversions previously applied via the [ApplyOfflineConversions](applyofflineconversions.md) operation. 
 
 ## Syntax

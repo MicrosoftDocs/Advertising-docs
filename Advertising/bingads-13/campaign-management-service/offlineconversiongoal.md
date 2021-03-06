@@ -9,7 +9,7 @@ description: Defines an offline conversion goal.
 # OfflineConversionGoal Data Object - Campaign Management
 Defines an offline conversion goal. Use this type of goal if you have lead generation as an objective. Lead generation is when potential customers fill out a form or quote of interest, and then the sale is completed offline in person or over the phone (for example, car purchases, insurance quotes, mortgages, etc.).  
 
-To set up offine conversion tracking, create an [OfflineConversionGoal](offlineconversiongoal.md), wait two hours, and then send Microsoft Advertising the [OfflineConversion](offlineconversion.md) data via the [ApplyOfflineConversions](applyofflineconversions.md) operation.
+To set up offline conversion tracking, create an [OfflineConversionGoal](offlineconversiongoal.md), wait two hours, and then send Microsoft Advertising the [OfflineConversion](offlineconversion.md) data via the [ApplyOfflineConversions](applyofflineconversions.md) operation.
 
 > [!TIP]
 > For more information, see [Tracking offline conversions](https://help.ads.microsoft.com/#apex/3/en/56852/2).

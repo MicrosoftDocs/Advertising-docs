@@ -26,12 +26,9 @@ You can retrieve the negative sites assigned to an individual campaign or ad gro
 ## <a name="sharedplacementexclusionlists"></a>Shared Website Exclusion Lists
 Negative sites can be added and deleted from a shared website exclusion list. The website exclusion list can be shared or associated with multiple ad accounts. 
 
-> [!NOTE] 
-> You can only view website exclusion lists in the redesigned Microsoft Advertising UI i.e., via Tools -> Shared Library -> Website exclusion lists. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522).  
-
 A manager account can own up to three website exclusion lists. Each list can contain up to 10,000 negative sites. 
 
-A list can be associated with ad accounts owned by the manager account, or linked in the [account hierarchy](account-hierarchy-permissions.md#account-hierarchy) under the manager account that owns the list. A list cannot be shared above our outside of the account hierarchy. 
+A list can be associated with ad accounts owned by the manager account, or linked in the [account hierarchy](account-hierarchy-permissions.md#account-hierarchy) under the manager account that owns the list. A list cannot be shared above or outside of the account hierarchy. 
 
 Only the users of the manager account (customer) that owns a website exclusion list ([PlacementExclusionList](../campaign-management-service/placementexclusionlist.md)) can update or delete the list, add or delete list items, and associate the list with ad accounts. If your ad account is associated with a website exclusion list that you do not own, you can disassociate the list from your account, but the list and list items are read-only. The owner of the list is determined by the association's [SharedEntityCustomerId](../campaign-management-service/sharedentityassociation.md#sharedentitycustomerid) element.
 
