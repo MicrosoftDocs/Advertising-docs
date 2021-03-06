@@ -17,7 +17,7 @@ This object derives from the [Ad](Ad.md) object. The list of methods includes al
 ## Methods
 |Method Name|Return Type|Description|Inherited
 |-|-|-
-[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad. 
+[applyLabel(string name)](#applylabel-string-name-)|void|Applies the label to this ad.|No 
 [asType](#astype)|[AdViewSpace](AdViewSpace.md)|Contains the methods used to cast this ad to a specific ad type.|Yes
 [enable](#enable)|void|Enables this ad.|Yes
 [getAdGroup](#getadgroup)|[AdGroup](Adgroup.md)|Gets the ad group that this ad belongs to.|Yes
@@ -34,10 +34,10 @@ This object derives from the [Ad](Ad.md) object. The list of methods includes al
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this ad is enabled.|Yes
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.|Yes
 [isType](#istype)|[AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type.|Yes
-[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.
+[labels](#labels)|[LabelSelector](./LabelSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of labels associated with this ad.|No
 [pause](#pause)|void|Pauses this ad.|Yes
 [remove](#remove)|void|Removes this ad.|Yes
-[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad.
+[removeLabel(string name)](#removelabel-string-name-)|void|Removes the label from this ad.|No
 [urls](#urls)|[AdUrls](AdUrls.md)|Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.|Yes
 
 
