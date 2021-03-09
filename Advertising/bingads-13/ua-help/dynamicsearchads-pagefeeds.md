@@ -10,14 +10,14 @@ description: Learn how to upload relevant URLs for your dynamic search ad campai
 
 Page feeds allow you to easily upload all the relevant URLs for your dynamic search ads campaigns in a spreadsheet format. This ensures maximum website coverage and enables the labeling and targeting of specific URLs via custom labels.
 
-## Why use page feeds for dynamic search ads?
+Why use page feeds for dynamic search ads?
 
-Improve page freshness: Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren’t already in the Bing index of your website, they’ll be added. This allows your dynamic search ad campaigns to display the most current version of your website.
-Fine-tune auto-targets and ad copy: You have full control over what pages are included in an auto-target and as a result, can be more descriptive in your ad copy to drive further engagement.
+- **Improve page freshness**: Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren’t already in the Bing index of your website, they’ll be added. This allows your dynamic search ad campaigns to display the most current version of your website.
+- **Fine-tune auto-targets and ad copy**: You have full control over what pages are included in an auto-target and as a result, can be more descriptive in your ad copy to drive further engagement.
 
-## Country/region availability
-
-Dynamic search ads are available in Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Ireland, Italy, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom, and United States.
+> [!NOTE]
+>
+> Dynamic search ads are available in Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Ireland, Italy, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom, and United States.
 
 ## Create a page feed file
 
