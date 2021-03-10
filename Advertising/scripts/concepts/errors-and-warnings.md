@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Handling errors and warnings in your script
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The only time Scripts returns errors is when you add an entity with invalid values. For example, if you try to add a keyword entity with a bid amount that's not valid, the build operation fails and returns one or more errors.
 
 ```javascript

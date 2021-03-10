@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Single account access
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 If you want to access a single user account, everything starts with the [AdsApp](../reference/AdsApp.md) object.  
 
 ## How do I access the entities in my account?
