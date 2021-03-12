@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Mapping account time zone values
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The following table maps the time zone values used in Scripts to their corresponding time zone values in Bing Ads API.
 
 |Bing Ads API|Microsoft Advertising Scripts

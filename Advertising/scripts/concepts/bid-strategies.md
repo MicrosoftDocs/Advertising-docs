@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Mapping bid strategies
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The following table maps the bid strategy names in Scripts to their corresponding strategy name in Bing Ads API.
 
 Microsoft Advertising Scripts|Bing Ads API

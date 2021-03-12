@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Microsoft Advertising Scripts Reference
 
-[!INCLUDE[preview-note](./includes/preview-note.md)]
-
 Microsoft Advertising Scripts lets you access and manage your advertising data using JavaScript in a browser-based [script editor](./get-started.md).
 
 This section provides information about the JavaScript objects that you use in your scripts.

@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # What are selectors?
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 Selectors let you apply filter and sort criteria when retrieving Microsoft Advertising entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. Selectors include the following methods:
 
 - **withCondition()** &mdash; Use to specify conditions that entities must meet to be selected. This is equivalent to a SQL `WHERE` clause.  

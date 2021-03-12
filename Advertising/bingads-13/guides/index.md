@@ -56,4 +56,4 @@ The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.ht
 
 If the investigation involves sensitive account or personal details, or if you are not finding the information you need to solve your problem via [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html), please contact [Microsoft Advertising Support](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support). 
 
-You can sign up for the monthly newsletter via the [News](https://developers.ads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://go.microsoft.com/fwlink/?linkid=2026358) announcments are aggregated. 
+You can sign up for the monthly newsletter via the [News](https://developers.ads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://go.microsoft.com/fwlink/?linkid=2026358) announcements are aggregated. 

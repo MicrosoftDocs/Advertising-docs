@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Determines whether or not the user credentials have been obtained by passing through multi-factor authentication.
+description: Determines whether or not the user credentials have been obtained by passing through multi-factor authentication (MFA).
 dev_langs: 
   - csharp
   - java

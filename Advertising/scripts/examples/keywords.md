@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Script examples for managing keywords
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The following sections show examples of scripts that perform various actions against keywords.
 
 
