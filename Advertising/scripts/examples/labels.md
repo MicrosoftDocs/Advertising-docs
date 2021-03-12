@@ -9,12 +9,9 @@ ms.topic: "article"
 
 # Script examples for managing labels
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 <!--
 Labels let you organize entities such as campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You decide what your labels mean and how to apply them to your entities. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 -->
-
 
 The following sections show examples of scripts that perform various actions against labels.
 

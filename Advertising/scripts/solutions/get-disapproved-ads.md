@@ -20,6 +20,8 @@ This solution shows how to discover disapproved ads for one or more accounts. Th
 
 Before using this example, see [Authenticating with Google services](../examples/authenticating-with-google-services.md) for options on getting an access token to use in this solution.
 
+[!INCLUDE[replace-main](../includes/replace-main.md)]
+
 ```javascript
 // Update the list with email addresses of the recipients that
 // you want notifications sent to. The addresses may use any email

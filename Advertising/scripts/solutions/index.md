@@ -9,9 +9,6 @@ ms.topic: "article"
 
 # Solutions
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
-
 The following solutions demonstrate how to perform specific tasks using Microsoft Advertising Scripts. 
 
 |Solution|Description

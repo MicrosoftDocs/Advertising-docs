@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Mapping editorial approval status values
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The following table maps the editorial approval status values in Scripts to their corresponding status values in Bing Ads API.
 
 |Microsoft Advertising Scripts|Bing Ads API

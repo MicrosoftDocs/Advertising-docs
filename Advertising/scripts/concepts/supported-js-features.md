@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Supported JavaScript features
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 Microsoft Advertising Scripts’ JavaScript engine supports most of [ECMAScript® 2015 Language Specification](http://www.ecma-international.org/ecma-262/6.0/). Use the auto-complete feature in the Scripts editor to confirm support of specific features and objects. Because the script’s code runs on Microsoft Advertising's servers, browser-based features like the DOM and Window APIs are not available.
 
 

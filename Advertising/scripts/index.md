@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Microsoft Advertising Scripts Overview
 
-[!INCLUDE[preview-note](./includes/preview-note.md)]
-
 Want to quickly and easily integrate with Microsoft Advertising without the need for a significant up front financial investment? Want to automate common data workflow interactions and manage repetitive tasks more easily? Then try out Microsoft Advertising Scripts. It lets you access and manage your Microsoft Advertising data using JavaScript in Microsoft Advertising's browser-based script editor.
 
 For information about accessing Scripts in the Microsoft Advertising web application, see [How can I automate my campaigns with Microsoft Advertising Scripts?](https://help.ads.microsoft.com/#apex/3/en/56890/-1)

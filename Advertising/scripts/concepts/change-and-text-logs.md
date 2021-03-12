@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Change logs and text logs
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 Microsoft Advertising Scripts provides two types of logs: change logs and text logs.
 
 ## Change Log
