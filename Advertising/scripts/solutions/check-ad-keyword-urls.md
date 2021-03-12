@@ -21,6 +21,7 @@ This solution shows how to check for ads or keywords with broken URLs. The scrip
 
 Before using this example, see [Authenticating with Google services](../examples/authenticating-with-google-services.md) for options on getting an access token to use in this solution.
 
+[!INCLUDE[replace-main](../includes/replace-main.md)]
 
 ```javascript
 // Add a comma-delimited list of email addresses that should receive the 

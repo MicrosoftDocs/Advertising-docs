@@ -9,8 +9,6 @@ ms.topic: "article"
 
 # Script examples for product groups
 
-[!INCLUDE[preview-note](../includes/preview-note.md)]
-
 The following sections show examples of scripts that get product groups and update their bid amounts.
 
 ## Getting product groups
