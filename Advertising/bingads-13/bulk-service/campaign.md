@@ -476,7 +476,7 @@ Your [ad language](../guides/ad-languages.md#adlanguage) setting determines the 
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-The supported language strings for Search and Shopping campaigns are: All, Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon (";"), for example *English;French;German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
+The supported language strings for Search and Shopping campaigns are: All, Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Italian, Latvian, Lithuanian, Maltese, Norwegian, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon (";"), for example *English;French;German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
 
 For Audience campaigns you must include all languages i.e., set this field to "All".
 

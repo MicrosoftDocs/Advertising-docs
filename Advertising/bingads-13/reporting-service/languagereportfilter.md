@@ -83,7 +83,7 @@ The [LanguageReportFilter](languagereportfilter.md) value set has the following 
 |<a name="romanian"></a>Romanian|The report will contain data for ads that were viewed in Romanian.|
 |<a name="russian"></a>Russian|The report will contain data for ads that were viewed in Russian.|
 |<a name="slovak"></a>Slovak|The report will contain data for ads that were viewed in Slovak.|
-|<a name="slovenian"></a>Slovenian|The report will contain data for ads that were viewed in Slovakian.|
+|<a name="slovenian"></a>Slovenian|The report will contain data for ads that were viewed in Slovenian.|
 |<a name="spanish"></a>Spanish|The report will contain data for ads that were viewed in Spanish.|
 |<a name="swedish"></a>Swedish|The report will contain data for ads that were viewed in Swedish.|
 |<a name="traditionalchinese"></a>TraditionalChinese|The report will contain data for ads that were viewed in Traditional Chinese.|
