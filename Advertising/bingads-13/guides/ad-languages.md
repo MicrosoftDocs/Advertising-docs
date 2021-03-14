@@ -55,18 +55,31 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 
 |Language Code|Language|
 |------------|------------|
+|BG|Bulgarian|
+|HR|Croation|
+|CS|Czech|
 |DA|Danish|
 |NL|Dutch|
 |en-AU|English|
 |en-GB|English|
 |en-US|English|
+|ET|Estonian|
 |FI|Finnish|
 |FR|French|
 |DE|German|
+|EL|Greek|
+|HU|Hungarian|
 |IT|Italian|
+|LV|Latvian|
+|LT|Lithuanian|
+|MT|Maltese|
 |NB|Norwegian|
+|PL|Polish|
 |pt-BR|Portuguese|
 |pt-PT|Portuguese|
+|RO|Romanian|
+|SK|Slovak|
+|SL|Slovenian|
 |ES|Spanish|
 |ES-419|Spanish|
 |SV|Swedish|
@@ -120,7 +133,7 @@ Microsoft Advertising does not support all action types for all languages. If yo
 |Italian|FreeQuote|
 |Norwegian|FreeTrial|
 
-Starting January 2020, nine action types are deprecated. For example, if you set the action type to "Browse" no error will be returned, but "LearnMore" is the effective value that will be stored and returned when retrieving the action ad extension. Your application should use the replacement values instead of the deprecated values. 
+As of January 2020, nine action types are deprecated. For example, if you set the action type to "Browse" no error will be returned, but "LearnMore" is the effective value that will be stored and returned when retrieving the action ad extension. Your application should use the replacement values instead of the deprecated values. 
 
 |Deprecated Action Type|Replacement Action Type| 
 |-----|-----|
