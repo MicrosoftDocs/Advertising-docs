@@ -16,17 +16,33 @@ Your ad language in combination with your [location targeting](show-ads-target-a
 
 The following are the possible languages that you may use to write your ads and keywords.
 
+> [!NOTE]
+> The following languages are not yet available for everyone: Bulgarian, Croatian, Czech, Estonian, Greek, Hungarian, Latvian, Lithuanian, Maltese, Polish, Romanian, Slovak, Slovenian.
+
 |Language|Language Code|
 |------------|-----------------|
+|Bulgarian|BG|
+|Croation|HR|
+|Czech|CS|
 |Danish|DA|
 |Dutch|NL|
 |English|EN|
+|Estonian|ET|
 |Finnish|FI|
 |French|FR|
 |German|DE|
+|Greek|EL|
+|Hungarian|HU|
 |Italian|IT|
+|Latvian|LV|
+|Lithuanian|LT|
+|Maltese|MT|
 |Norwegian|NB|
+|Polish|PL|
 |Portuguese|PT<br/><br/>This code differs from the ISO standard for Brazilian Portuguese, PTB.|
+|Romanian|RO|
+|Slovak|SK|
+|Slovenian|SL|
 |Spanish|ES|
 |Swedish|SV|
 |TraditionalChinese|ZH|
@@ -52,6 +68,9 @@ The following country codes are supported per customer language e.g. [aggregator
 		
 ## <a name="countdownlanguage"></a>Countdown Language
 Countdown customizers let you easily add a countdown (by day, hour, and then minute) to an event in your [Dynamic Search Ads](dynamic-search-ads.md) and [Expanded Text Ads](expanded-text-ads.md). The following language codes are supported for [countdown customizers](countdown-customizers.md).
+
+> [!NOTE]
+> The following languages are not yet available for everyone: Bulgarian, Croatian, Czech, Estonian, Greek, Hungarian, Latvian, Lithuanian, Maltese, Polish, Romanian, Slovak, Slovenian.
 
 |Language Code|Language|
 |------------|------------|
@@ -90,6 +109,9 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*. If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). 
 
 The following headers are supported per language.
+
+> [!NOTE]
+> The following languages are not yet available for everyone: Bulgarian, Croatian, Czech, Estonian, Greek, Hungarian, Latvian, Lithuanian, Maltese, Polish, Romanian, Slovak, Slovenian.
 
 ```csv
 Language,Amenities,Brands,Courses,Degree programs,Destinations,Featured hotels,Goods,Insurance coverage,Items,Models,Neighborhoods,Services,Service catalog,Shows,Styles,Types
@@ -148,6 +170,9 @@ As of January 2020, nine action types are deprecated. For example, if you set th
 |VisitSite|LearnMore|
 
 When using the Bing Ads API you will always set the action type using an English pascal case enumeration value i.e., one of the language strings in the first comma separated row below. The language translations are documented for your convenience, although you will not use them directly via the Bing Ads API. 
+
+> [!NOTE]
+> The following languages are not yet available for everyone: Bulgarian, Croatian, Czech, Estonian, Greek, Hungarian, Latvian, Lithuanian, Maltese, Polish, Romanian, Slovak, Slovenian.
 
 ```csv
 Language,ActNow,ApplyNow,BetNow,BidNow,BookACar,BookHotel,BookNow,BuyNow,ChatNow,Compare,ContactUs,Coupon,Directions,Donate,Download,EmailNow,EnrollNow,FileNow,FindJob,FindStore,FreePlay,FreeQuote,FreeTrial,GetDeals,GetOffer,GetQuote,JoinNow,LearnMore,ListenNow,LogIn,OrderNow,PlayGame,PlayNow,PostJob,Register,RenewNow,RentACar,RentNow,Reorder,Reserve,Sale,SaveNow,Schedule,SeeMenu,SeeOffer,SellNow,ShopNow,Showtimes,SignIn,SignUp,StartNow,Subscribe,SwitchNow,TestDrive,TryNow,ViewCars,ViewPlans,VisitStore,VoteNow,Watch,WatchMore,WatchNow

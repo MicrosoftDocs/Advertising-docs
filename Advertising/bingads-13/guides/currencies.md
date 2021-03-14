@@ -19,6 +19,9 @@ You must first set up an [AdvertiserAccount](../customer-management-service/adve
 ### <a name="keywordcpc"></a>Keyword and Cpc
 The minimum and maximum bid and budget for each currency below are subject to change.
 
+> [!NOTE]
+> The PolishZloty, SouthAfricanRand, and TurkishLira are not yet available for everyone. 
+
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
 |-----|-----|-----|-----|-----|-------|-------|
 |ArgentinePeso|The Argentine Peso (ARS).|0.05|5,000.00|0.05|2.00|152,500,000.00|
@@ -52,6 +55,9 @@ The minimum and maximum bid and budget for each currency below are subject to ch
 
 ### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
 The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids below are subject to change. 
+
+> [!NOTE]
+> The PolishZloty, SouthAfricanRand, and TurkishLira are not yet available for everyone. 
 
 |Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Minimum Bid|
 |-----|-----|-----|-----|-----|-------|-------|

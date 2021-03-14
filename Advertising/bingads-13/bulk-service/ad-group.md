@@ -408,6 +408,9 @@ Your [ad language](../guides/ad-languages.md#adlanguage) setting determines the 
 
 The supported language strings for Search and Shopping campaigns are: Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Italian, Latvian, Lithuanian, Maltese, Norwegian, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish, and TraditionalChinese.
 
+> [!NOTE]
+> The following languages are not yet available for everyone: Bulgarian, Croatian, Czech, Estonian, Greek, Hungarian, Latvian, Lithuanian, Maltese, Polish, Romanian, Slovak, Slovenian.
+
 For Dynamic Search Ads campaigns, the campaign and ad group level language settings are ignored in favor of the website [domain language](campaign.md#domainlanguage). You should set campaign [languages](campaign.md#language) to "All" and leave the ad group level language empty.
 
 For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's campaign to "All".
