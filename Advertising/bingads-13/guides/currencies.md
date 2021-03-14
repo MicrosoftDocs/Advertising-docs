@@ -19,6 +19,9 @@ You must first set up an [AdvertiserAccount](../customer-management-service/adve
 ### <a name="keywordcpc"></a>Keyword and Cpc
 The minimum and maximum bid and budget for each currency below are subject to change.
 
+> [!NOTE]
+> The PolishZloty, SouthAfricanRand, and TurkishLira are not yet available for everyone. 
+
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
 |-----|-----|-----|-----|-----|-------|-------|
 |ArgentinePeso|The Argentine Peso (ARS).|0.05|5,000.00|0.05|2.00|152,500,000.00|
@@ -40,15 +43,21 @@ The minimum and maximum bid and budget for each currency below are subject to ch
 |NorwegianKrone|The Norwegian Krone (NOK).|0.06|6,000.00|0.06|2.00|183,000,000.00|
 |NuevoSol|The Peruvian Nuevo Sol (PEN).|0.03|3,000.00|0.03|1.00|91,500,000.00|
 |PhilippinePeso|The Philippine Peso (PHP).|0.20|42,000.00|2.00|210.00|1,259,000,000.00|
+|PolishZloty|The Polish New Zloty (PLN).|0.01|1,000.00|0.10|1.00|30,000,000.00|
 |Rupiah|The Indonesian Rupiah (IDR).|35.00|9,607,994.00|480.00|48,000.00|288,000,000,000.00|
 |SingaporeDollar|The Singapore Dollar (SGD).|0.01|1,500.00|0.11|5.00|12,360,900.00|
+|SouthAfricanRand|The South African Rand (ZAR).|0.01|1,000.00|0.10|1.00|30,000,000.00|
 |SwedishKrona|The Swedish Krona (SEK).|0.07|7,000.00|0.07|2.00|213,500,000.00|
 |SwissFranc|The Swiss Franc (CHF).|0.05|1,500.00|0.05|5.00|8,931,900.00|
+|TurkishLira|The New Turkish Lira (TRY).|1.00|100,000.00|10.00|100.00|3,000,000,000.00|
 |UKPound|The Pound Sterling (GBP).|0.05|1,000.00|0.05|5.00|3,938,700.00|
 |USDollar|The U.S. Dollar (USD).|0.05|1,000.00|0.05|5.00|30,000,000.00|
 
 ### <a name="shopping-fixedbid"></a>Microsoft Shopping Campaigns Fixed Bid
 The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids below are subject to change. 
+
+> [!NOTE]
+> The PolishZloty, SouthAfricanRand, and TurkishLira are not yet available for everyone. 
 
 |Currency Value|Campaign Country of Sale|Minimum Bid|Recommended Minimum Bid|
 |-----|-----|-----|-----|-----|-------|-------|
@@ -56,6 +65,9 @@ The Microsoft Shopping Campaigns Fixed Bid minimum and recommended bids 
 |CanadianDollar|Canada|0.01|0.05|
 |Euro|Austria, Belgium, France, Germany, Italy, Netherlands, Spain, Switzerland, and Sweden.|0.01|0.05|
 |IndianRupee|India|0.01|0.50|
+|PolishZloty|Poland|0.01|0.05|
+|SouthAfricanRand|South Africa|0.01|0.05|
+|TurkishLira|Turkey|1.00|1.00|
 |UKPound|United Kingdom|0.01|0.05|
 |USDollar|United States of America|0.01|0.05|
 
@@ -148,7 +160,7 @@ The following currency codes are supported for conversion goals by setting the *
 |THB|Thai Baht|
 |TND|Tunisian Dinar|
 |TOP|Tongan Pa'anga|
-|TRY|Turkish Lira|
+|TRL|New Turkish Lira|
 |TTD|Trinidad and Tobago Dollar|
 |TWD|New Taiwan Dollar|
 |TZS|Tanzanian Shilling|
