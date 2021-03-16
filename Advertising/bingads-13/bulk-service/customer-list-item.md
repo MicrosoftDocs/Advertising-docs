@@ -81,7 +81,7 @@ Currently the only supported value is "Email".
 ## <a name="text"></a>Text
 The hashed Email as text. 
 
-If the [Sub Type](#subtype) is "Email", this field cannot contain plain text. The string must be hashed using the SHA-256 algorithm. The hashed Email must be a hexadecimal string of length 64. For example, you must upload a hashed string such as "9180e8ed3ef35bca79a39be7ad1f392e45cc4fc12a1f747df7a35af28f7eb93f" instead of "test@contoso.com". 
+If the [Sub Type](#subtype) is "Email", this field cannot contain plain text. The string must be hashed using the SHA-256 algorithm. The hashed Email must be a hexadecimal string of length 64. For example, you must upload a hashed string such as "f25ad364d33972379a7a4f4df33db142205f5c40eb19cfdb2fc5aaf117e10101" instead of "test@contoso.com". 
 
 **Add:** Required  
 **Delete:** Required  
