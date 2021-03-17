@@ -152,32 +152,32 @@
         },
         {
             "source_path": "Advertising/query-control-message/create-query-control-message.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         },
         {
             "source_path": "Advertising/query-control-message/google-bing-query-control-message-differences.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         },
         {
             "source_path": "Advertising/query-control-message/query-control-message.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         },
         {
             "source_path": "Advertising/query-control-message/reference.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         },
         {
             "source_path": "Advertising/query-control-message/schema.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         },
         {
             "source_path": "Advertising/query-control-message/validate-query-control-message.md",
-            "redirect_url": "hotel-ads",
+            "redirect_url": "/advertising/hotel-ads",
             "redirect_document_id": false
         }
     ]
