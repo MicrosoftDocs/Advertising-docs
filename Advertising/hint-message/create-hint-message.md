@@ -86,7 +86,7 @@ Your hint message can identify a range of itineraries. To specify the range, set
 
 Each \<Item\> represents a single range of check-in dates. You may specify an \<Item\> object for each check-in date range that identifies the itineraries you want to update, and each one may specify one or more properties. 
 
-When Microsoft receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<Nights\> (this example assumes it's set to 3).
+When Microsoft receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. 
 
 ```xml
 <Query>

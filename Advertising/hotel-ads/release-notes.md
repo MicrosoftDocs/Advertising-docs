@@ -11,6 +11,10 @@ ms.author: eur
 
 For information about changes that were included with each release, see the following sections.
 
+## March 16, 2021
+
+- Removed support for the QueryControl message.
+
 
 ## June 26, 2020
 
@@ -292,7 +296,7 @@ Released the Beta version of Hotel Ads.
   If you sign up for pull with hints requests, Bing sends the endpoint that you specify a Query message that specifies the itinerary data that you should send back in a Transaction message. However, the query message specifies only the itinerary data that you said changed in your [Hint](../hint-message/hint-message.md) message. 
   
 - Added the following messages to support the two types of pull requests.  
-  - [QueryControl](../query-control-message/query-control-message.md) message  
+  - QueryControl message  
   - [Hint](../hint-message/hint-message.md) message
   - [Query](../query-message/query-message.md) message  
   
