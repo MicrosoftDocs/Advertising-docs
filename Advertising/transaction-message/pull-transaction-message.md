@@ -20,7 +20,7 @@ For both modes, you work with your TAM to specify:
 - The frequency that Microsoft sends requests
 - Default values for maximum advanced booking and night stays.
 
-Once a day Microsoft sends a request to the endpoint you specified asking for updates to your maximum advanced booking and night stays default values. You respond to the request with a [QueryControl](../query-control-message/query-control-message.md) message. In addition to specifying the default values, you can use the message to override the default values for specific properties or disable specific properties so Microsoft doesn't collect data for them. For more information, see [Creating a QueryControl Message](../query-control-message/create-query-control-message.md).
+Once a day Microsoft sends a request to the endpoint you specified asking for updates to your maximum advanced booking and night stays default values. 
 
 
 > [!NOTE]

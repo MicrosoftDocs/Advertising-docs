@@ -13,7 +13,7 @@ If you sign up for pull requests or pull with hints requests, Microsoft sends yo
 
 ## Using pull requests
 
-If you use pull requests, the query is based on the setting you specify in your [QueryControl](../query-control-message/query-control-message.md) message. If your QueryControl message specifies a `MaxAdvancePurchase` value of 10 and a `MaxLengthOfStay` value of 3, and doesn't specify overrides, Microsoft sends you a request that's similar to the following Query message. 
+If you use pull requests, Microsoft could send you a request that's similar to the following Query message. 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
