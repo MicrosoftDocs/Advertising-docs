@@ -11,9 +11,6 @@ Consider the user that you want to sign in e.g., example@contoso.com. The Bing A
 
 How can you get an access token? Microsoft Advertising follows the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent. Once a user provides consent, you can get an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
 
-> [!IMPORTANT]
-> Starting in Q2 calendar year 2021, the Bing Ads API, Content API, and Hotel APIs will return an error (115; AuthenticationTokenNotAuthorized) for any user credentials that have not passed through multi-factor authentication (MFA). All access and refresh tokens that were provisioned without passing through MFA will be invalid as soon as the MFA requirement is enforced. By this time you must have access and refresh tokens for a user who granted consent to your application via MFA.
-
 > [!NOTE]
 > The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users. 
 > 
