@@ -229,6 +229,8 @@ In a bulk file, the list of custom parameters are formatted as follows.
 ## <a name="description"></a>Description
 The list of descriptions that Bing can use to optimize the ad layout.
 
+To maximize impressions across all ad formats the descriptions might not always be shown in your ad.
+
 Unless you pin one of the descriptions to a specific position, Bing will optimize the ad layout dynamically with the best headlines and descriptions for the user's search query. 
 
 From a data model perspective the descriptions are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Microsoft Advertising account. 

@@ -55,7 +55,7 @@ The [ImportAdditionalField](importadditionalfield.md) value set has the followin
 
 |Value|Description|
 |-----------|---------------|
-|<a name="activeadgroupsonly"></a>ActiveAdGroupsOnly|Reserved.|
+|<a name="activeadgroupsonly"></a>ActiveAdGroupsOnly|Request that the [ActiveAdGroupsOnly](campaignadgroupids.md#activeadgroupsonly) element be returned within the [CampaignAdGroupIds](googleimportjob.md#campaignadgroupids) element of each returned [GoogleImportJob](googleimportjob.md) object.|
 |<a name="autodevicebidoptimization"></a>AutoDeviceBidOptimization|Request that the [AutoDeviceBidOptimization](googleimportoption.md#autodevicebidoptimization) element be included within each returned [GoogleImportOption](googleimportoption.md) object.|
 |<a name="none"></a>None|Reserved for internal use.|
 |<a name="notificationemail"></a>NotificationEmail|Request that the [NotificationEmail](googleimportjob.md#notificationemail) element be included within each returned [GoogleImportJob](googleimportjob.md) object.|

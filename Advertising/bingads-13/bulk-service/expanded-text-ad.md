@@ -409,7 +409,9 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="text"></a>Text
-The first part of the ad description.
+The first part of the ad description that can show in your ad.
+
+To maximize impressions across all ad formats the description might not always be shown in your ad.
 
 The text must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Microsoft Advertising help article [Automatically customize your ads with dynamic text parameters](https://help.ads.microsoft.com/#apex/3/en/50811/1).
 
@@ -426,7 +428,9 @@ The text cannot contain the newline (\n) character.
 **Delete:** Read-only  
 
 ## <a name="textpart2"></a>Text Part 2
-The second part of the ad description.
+The second part of the ad description that can show in your ad.
+
+To maximize impressions across all ad formats the description might not always be shown in your ad. 
 
 The text must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword.  For more information, see the Microsoft Advertising help article [Automatically customize your ads with dynamic text parameters](https://help.ads.microsoft.com/#apex/3/en/50811/1).
 
