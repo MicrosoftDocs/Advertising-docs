@@ -19,7 +19,7 @@ description: Authenticate for Bing Ads API using OAuth.
 > 
 > Upon enforcement of the MFA requirement, we will only authenticate access tokens on behalf of a user who passed through MFA via the new ```msads.manage``` scope on the Microsoft Identity endpoint.
 > 
-> The new ```msads.manage``` scope **requires renewed consent from all users of your application**. You must prompt users for consent using the new ```msads.manage``` scope after they have turned on multi-factor authentication. We recommend that you inform and guide users of your application to [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) MFA right away.
+> The new ```msads.manage``` scope **requires renewed consent from all users of your application**. You must prompt users for consent using the new ```msads.manage``` scope after they have turned on multi-factor authentication. We recommend that you inform and guide users of your application to [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) right away.
 
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
 
