@@ -10,7 +10,8 @@ description: Authenticate for Bing Ads API using the Live Connect endpoint.
 
 > [!IMPORTANT]
 > Starting August 1st, 2021 we will require multi-factor authentication for all users who sign in through a third-party application that uses the Bing Ads API, Content API, and Hotel APIs.
-> You must update your application to use the new ```msads.manage``` scope via the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). All application developers must take action to use the new scope.
+> 
+> You must update your application to use the new ```msads.manage``` scope (coming soon) via the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). All application developers must take action to use the new scope. 
 > 
 > Prior to MFA enforcement the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) supports the ```ads.manage``` scope. Access tokens that you acquire for users via the ads.manage scope will no longer be authenticated.
 > 
