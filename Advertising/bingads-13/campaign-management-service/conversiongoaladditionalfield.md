@@ -24,7 +24,7 @@ Defines a list of optional conversion goal properties that you can request when 
   </xs:list>
 </xs:simpleType>
 ```
-
+Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>If the action type that is stored in Microsoft Advertising is either [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), you must include ActionTypesPhase3 in the request.
 ## <a name="values"></a>Values
 
 The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set has the following values: [GoalCategory](#goalcategory), [InactiveDueToTagUnavailable](#inactiveduetotagunavailable), [IsExternallyAttributed](#isexternallyattributed), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes).
@@ -32,7 +32,7 @@ The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set 
 |Value|Description|
 |-----------|---------------|
 |<a name="goalcategory"></a>GoalCategory|Request that the [GoalCategory](conversiongoal.md#goalcategory) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
-|<a name="inactiveduetotagunavailable"></a>InactiveDueToTagUnavailable|Reserved.|
+|<a name="inactiveduetotagunavailable"></a>InactiveDueToTagUnavailable|Request that the [InactiveDueToTagUnavailable](conversiongoaltrackingstatus.md#inactiveduetotagunavailable) value be included within each returned [ConversionGoal](conversiongoal.md) object.<br/><br/>This status is represented as [TagInactive](conversiongoaltrackingstatus.md#taginactive) by default. To discover whether the status stored in Microsoft Advertising is [InactiveDueToTagUnavailable](conversiongoaltrackingstatus.md#inactiveduetotagunavailable), you must include InactiveDueToTagUnavailable in the request.|
 |<a name="isexternallyattributed"></a>IsExternallyAttributed|Request that the [IsExternallyAttributed](offlineconversiongoal.md#isexternallyattributed) element be included within each returned [OfflineConversionGoal](offlineconversiongoal.md) object.|
 |<a name="viewthroughconversionwindowinminutes"></a>ViewThroughConversionWindowInMinutes|Request that the [ViewThroughConversionWindowInMinutes](conversiongoal.md#viewthroughconversionwindowinminutes) element be included within each returned [ConversionGoal](conversiongoal.md) object.|
 
