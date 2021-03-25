@@ -14,8 +14,7 @@ dev_langs:
 # GetUserMFAStatus Service Operation - Customer Management
 Used to estimate adoption of multi-factor authentication (MFA) by users of your application. 
 
-> [!NOTE]
-> The `GetUserMFAStatus` operation will be supported soon.  
+The operation returns true if within the last 90 days the user passed through MFA via Microsoft Advertising online, Microsoft Advertising Editor, or Microsoft Advertising mobile. This is only directional and cannot guarantee they will pass through MFA while granting consent to your application.
 
 ## <a name="request"></a>Request Elements
 The *GetUserMFAStatusRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -36,7 +35,7 @@ The *GetUserMFAStatusResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mfastatus"></a>MFAStatus|Used to estimate adoption of multi-factor authentication (MFA) by users of your application.|**boolean**|
+|<a name="mfastatus"></a>MFAStatus|Used to estimate adoption of multi-factor authentication (MFA) by users of your application.<br/><br/>The operation returns *true* if within the last 90 days the user passed through MFA via Microsoft Advertising online, Microsoft Advertising Editor, or Microsoft Advertising mobile. Otherwise this value is *false*.|**boolean**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

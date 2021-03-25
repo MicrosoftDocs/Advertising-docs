@@ -7,13 +7,20 @@ ms.author: eur
 description: Authenticate for Bing Ads API using the Microsoft identity platform endpoint for developers.
 ---
 # Authentication with the Microsoft identity platform endpoint for developers
-The [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) allows work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. 
+Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the ```AuthenticationToken``` header element that contains a user access token. 
 
-The AAD credentials function much the same way as MSA credentials, but they are governed by organizations. For example, all @microsoft.com email addresses are controlled by Microsoft IT admins, so that they can set individual user permissions and can control the way users log into various platforms (e.g. require Two-Factor Authentication). 
+How can you get an access token? Microsoft Advertising leverages the [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent. Once a user provides consent, you can get an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
 
-Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the AuthenticationToken header element that contains a user access token. 
+The [Microsoft identity platform endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) can authenticate work or school accounts from Azure Active Directory (AAD) and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. 
 
-How can you get an access token? Microsoft Advertising leverages the Microsoft identity platform for developers and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol for Bing Ads API authentication. As an application developer you'll use a Microsoft authorization URL to prompt the Microsoft Advertising user for consent. Once a user provides consent, you can get an access token and act on behalf of the user. A developer token is also required for authentication. For more information, see the [Get Started](get-started.md) guide. 
+The Azure AD credentials function much the same way as MSA credentials, but they are governed by organizations. For example, all @microsoft.com email addresses are controlled by Microsoft IT admins, so that they can set individual user permissions and can control the way users log into various platforms (e.g. require Two-Factor Authentication). 
+
+Here are some of the reasons that either you or users of your application might sign in with Azure AD credentials: 
+
+- Additional control over whether past employees can access Microsoft Advertising accounts. If a person leaves a company their Microsoft Advertising access can be removed by the Azure AD admin. As before the user could be manually deleted from Microsoft Advertising.   
+- Auditing and agency-wide policies over who has access to customer's accounts. Some companies have corporate authentication mandates, where they discourage or even forbid their employees from accessing company information using personal accounts. External auditors sometimes rule the use of personal accounts to access company information as non-compliant.  
+- Avoid confusion and unexpected conflicts between work, school, and personal accounts. Without an explicit Azure AD option some users might create personal accounts without realizing this is what they are doing, leading to confusion between their accounts down the road.  
+- Users who have an email address in the Azure AD domain will not be able to use Microsoft Advertising with a personal identity.
 
 > [!TIP]
 > To get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
