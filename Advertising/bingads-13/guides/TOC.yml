@@ -1634,6 +1634,10 @@
       href: ../campaign-management-service/urlgoal.md
     - name: Video
       href: ../campaign-management-service/video.md
+    - name: VideoAdExtension
+      href: ../campaign-management-service/videoadextension.md
+    - name: VideoAsset
+      href: ../campaign-management-service/videoasset.md
     - name: Webpage
       href: ../campaign-management-service/webpage.md
     - name: WebpageCondition
