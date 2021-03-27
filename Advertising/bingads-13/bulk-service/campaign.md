@@ -191,15 +191,6 @@ The maximum cost per click that you want to spend with the corresponding bid str
 
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to MaxClicks, MaxConversions, TargetCpa, or TargetRoas, and otherwise this field is ignored.
 
-> [!NOTE]
-> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns.  
-> 
-> The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
-> 
-> The TargetCpa bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
-> 
-> The TargetRoas bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. All of your target locations must be within the United States. 
-
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 **Add:** Optional  
@@ -210,9 +201,6 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 The target cost per acquisition (CPA) that you want used by Microsoft Advertising to maximize conversions. 
 
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetCpa*, and otherwise this field is ignored.
-
-> [!NOTE]
-> The *TargetCpa* bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
@@ -226,9 +214,6 @@ The target return on ad spend (ROAS) that you want used by Microsoft Advertising
 The supported target ROAS values range from 0.01 (1 percent) to 1,000.00 (100,000 percent). 
 
 This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetRoas*, and otherwise this field is ignored. 
-
-> [!NOTE]
-> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns.
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
@@ -330,11 +315,9 @@ The type of the campaign.
 The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*. 
 
 > [!IMPORTANT]
-> Beginning early Q2 calendar year 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](#campaigntype) set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
+> Starting in May 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](#campaigntype) set to "DynamicSearchAds". At this point you can still edit and read dynamic search ads campaigns.  
 > 
 > Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
-> 
-> We will announce more specific dates closer to Q2. 
 
 **Add:** Optional. If not specified, then default value of *Search* is used. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  

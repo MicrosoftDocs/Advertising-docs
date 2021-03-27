@@ -79,10 +79,10 @@ The following campaign-level bid strategy types are available depending on the c
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
 |[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
-|[ManualCpc](#manualcpc)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
-|[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search|
+|[ManualCpc](#manualcpc)|Audience|
+|[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search<br/>Shopping|
 |[MaxConversions](#maxconversions)|DynamicSearchAds<br/>Search|
-|[MaxConversionValue](#maxconversionvalue)|Shopping|
+|[MaxConversionValue](#maxconversionvalue)|Shopping ([smart shopping](smart-shopping-campaigns.md))|
 |[TargetCpa](#targetcpa)|DynamicSearchAds<br/>Search|
 |[TargetRoas](#targetroas)|DynamicSearchAds<br/>Search<br/>Shopping|
 
@@ -95,11 +95,6 @@ When you use the Bing Ads API, the default value for Search and DynamicSearchAds
 With the EnhancedCpc (enhanced cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget.  
 
 Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
-
-> [!NOTE]
-> For search ad and dynamic search ad campaigns, the EnhancedCpc bid strategy is available to all advertisers worldwide. 
-> 
-> For Microsoft Shopping Campaigns, the EnhancedCpc bid strategy is available wherever Microsoft Shopping Campaigns are available.
 
 ### <a name="manualcpc"></a>ManualCpc
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
@@ -114,18 +109,12 @@ With the MaxClicks bid strategy, you don't need to set ad group or keyword bids.
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.  
 
-> [!NOTE]
-> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. 
-
 ### <a name="maxconversions"></a>MaxConversions
 With the MaxConversions bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many conversions as possible within your budget.
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
-
-> [!NOTE]
-> The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
 
 ### <a name="maxconversionvalue"></a>MaxConversionValue
 [Smart shopping campaigns](smart-shopping-campaigns.md) use the Maximize Conversion Value bid strategy (where Microsoft Advertising automatically sets your bids in real time to maximize total conversion value within your budget) and automated targeting to maximize overall revenue numbers with an option to define return on ad spend (ROAS) targets.
@@ -140,18 +129,12 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
-> [!NOTE]
-> The TargetCpa bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
-
 ### <a name="targetroas"></a>TargetRoas
 With the TargetRoas (return on ad spend) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average ROAS, and Microsoft Advertising automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Microsoft Advertising will try to make sure your return on ad spend is in line with your target.
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target ROAS, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
-
-> [!NOTE]
-> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.
