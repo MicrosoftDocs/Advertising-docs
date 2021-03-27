@@ -18,7 +18,7 @@ The estimates are based on the last 7 days of performance data, and not a predic
 
 > [!NOTE]
 > This operation is optimized for search campaigns using the manual CPC bid strategy. 
-> With the sunset of manual CPC for search campaigns in Q2 calendar year 2021, this operation is deprecated.
+> With the sunset of manual CPC for search campaigns in April 2021, this operation is deprecated.
 
 ## <a name="request"></a>Request Elements
 The *GetBidLandscapeByAdGroupIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

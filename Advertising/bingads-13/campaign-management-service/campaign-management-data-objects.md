@@ -190,8 +190,8 @@ The Campaign Management service defines the following data objects.
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
 |[Video](video.md)|Defines the Video Data Object.|
-|[VideoAdExtension](videoadextension.md)|Reserved.|
-|[VideoAsset](videoasset.md)|Reserved.|
+|[VideoAdExtension](videoadextension.md)|Defines the VideoAdExtension Data Object.|
+|[VideoAsset](videoasset.md)|Defines the VideoAsset Data Object.|
 |[Webpage](webpage.md)|Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.|
 |[WebpageCondition](webpagecondition.md)|Defines a condition or criterion that helps determine whether you want to show dynamic search ads.|
 |[WebpageParameter](webpageparameter.md)|Defines the conditions or criteria that determine whether you want to show dynamic search ads.|

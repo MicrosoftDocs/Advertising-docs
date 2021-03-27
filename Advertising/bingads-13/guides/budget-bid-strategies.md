@@ -41,13 +41,6 @@ Show your ads evenly every day throughout the month so you don't run out of budg
 
 This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
-### <a name="deprecating-accelerated-budget"></a>Deprecating Accelerated Budget Delivery 
-Prior to November 1st, 2019 the budget types for shared and unshared budgets were configurable by advertisers for all campaign types. Please note the following changes in effect as of November 1st, 2019 and additional changes in effect as of January 2020.  
-
-As of November 1st, 2019 the budget type for shared and unshared budgets is no longer configurable by advertisers for DynamicSearchAds, Shopping, and Search campaigns. Between November 1st, 2019 and January 2020 you could continue to get and set DailyBudgetAccelerated for these campaign types, although it will not have an effect on budget delivery. For DynamicSearchAds, Shopping, and Search campaigns regardless of the budget type that you set (whether DailyBudgetAccelerated or DailyBudgetStandard), Microsoft Advertising will deliver as DailyBudgetStandard. This will help advertisers spend for optimized performance based on products/services targeted by the campaign and the availability of corresponding user searches during the day. There are no budget delivery changes planned at this time for Audience campaigns, including no changes to the original definition of DailyBudgetStandard. For Audience campaigns, DailyBudgetStandard will continue to distribute ad impressions for your campaign across the entire month, and optimizes your budget to show your ads evenly throughout each day. If a budget is shared with different campaign types, its usage and delivery will vary for each campaign type. For example, if an accelerated budget is shared with both Audience and Search campaigns, the DailyBudgetAccelerated budget type setting will remain in effect for the Audience campaign while the Search campaign budget delivery will be optimized by Microsoft Advertising as described above.
-
-As of January 2020 the budget type for shared and unshared budgets are read-only for all DynamicSearchAds, Shopping, and Search campaigns, and any budget type value that you attempt to set will be ignored without returning an error. Previous budget settings will be migrated from accelerated to standard, and the API will only return "DailyBudgetStandard" for DynamicSearchAds, Shopping, and Search campaigns, as well as for all shared budgets. You can still use accelerated budgets with Audience campaigns. The budget type data is not migrated for Audience campaign level unshared budgets. However, the budget delivery might change as described above if the Audience campaign uses a shared budget.
-
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](https://help.ads.microsoft.com/#apex/3/en/51006/1) 
 
@@ -72,9 +65,9 @@ Your bid strategy setting tells Microsoft Advertising how you want to manage you
 The following campaign-level bid strategy types are available depending on the campaign type. For more information see the [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1) help article.
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
-> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
@@ -100,9 +93,9 @@ Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
-> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 ### <a name="maxclicks"></a>MaxClicks
 With the MaxClicks bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.

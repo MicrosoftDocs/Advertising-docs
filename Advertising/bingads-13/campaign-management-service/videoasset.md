@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the VideoAsset Data Object.
 ---
 # VideoAsset Data Object - Campaign Management
-Reserved.
+Defines the VideoAsset Data Object.
 
 ## Syntax
 ```xml

@@ -11,9 +11,6 @@ dev_langs:
 # Budget Record - Bulk
 Defines a budget that can be uploaded and downloaded in a bulk file. 
 
-> [!IMPORTANT]
-> The accelerated budget type is deprecated. Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information.  
-
 You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Microsoft Advertising account.
 
 Say you have a budget of $20 to be used uniformly between two campaigns every day. On a given day Campaign A spends only $8 (of its $10 budget) because it got a smaller amount of impressions and clicks than usual. Using a Shared Budget, if Campaign B is performing well then Microsoft Advertising will automatically take the remaining $2 and allocate it to Campaign B. This will increase the chances that the remaining budget will be used to send you more traffic.
@@ -103,10 +100,7 @@ The service performs a case-insensitive comparison when it compares the name to 
 ## <a name="budgettype"></a>Budget Type
 The budget type determines the pace at which the budget is spent throughout the day.  
 
-The only valid budget type that you can set is DailyBudgetStandard.  
-
-> [!IMPORTANT]
-> The accelerated budget type has been sunset for shared budgets. As of January 2020 the only valid budget type that you can set is DailyBudgetStandard, and any other budget type value that you attempt to set will be ignored without returning an error. If you had set the budget type to accelerated prior to January 2020, the data has been migrated and the API will only return "DailyBudgetStandard". Please see [Deprecating Accelerated Budget Delivery](../guides/budget-bid-strategies.md#deprecating-accelerated-budget) for more information. 
+The only valid budget type that you can set is DailyBudgetStandard. 
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
