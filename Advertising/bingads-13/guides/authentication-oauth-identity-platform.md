@@ -8,7 +8,7 @@ description: Authenticate for Bing Ads API using the Microsoft identity platform
 ---
 # Authentication with the Microsoft identity platform endpoint for developers
 
-[!INCLUDE[mfa-required](./includes/mfa-required.md)]
+[!INCLUDE [mfa-required](./includes/mfa-required.md)]
 
 Consider the user that you want to sign in e.g., example@contoso.com. The Bing Ads API will not accept the email address and password as plain text, rather when you call the Bing Ads API you need to set the ```AuthenticationToken``` header element that contains a user access token. 
 
