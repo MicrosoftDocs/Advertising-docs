@@ -30,12 +30,6 @@ With shared budgets you can set a single daily budget that can be used by any ca
 
 The Bing Ads API supports the *DailyBudgetAccelerated*  and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.  
 
-### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
-Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
-
-> [!IMPORTANT]
-> The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](#deprecating-accelerated-budget) for more information. 
-
 ### <a name="dailystandard"></a>DailyBudgetStandard
 Show your ads evenly every day throughout the month so you don't run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won't exceed the estimated monthly budget.
 

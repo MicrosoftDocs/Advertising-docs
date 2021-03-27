@@ -37,7 +37,7 @@ The Campaign Management service defines the following value sets.
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
 |[BMCStoreAdditionalField](bmcstoreadditionalfield.md)|Defines a list of optional store properties that you can request when calling [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md).|
 |[BMCStoreSubType](bmcstoresubtype.md)|Defines the possible values for Microsoft Merchant Center store sub types.|
-|[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
+|[BudgetLimitType](budgetlimittype.md)|Defines the possible budget limit types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
 |[CampaignAdditionalField](campaignadditionalfield.md)|Defines a list of optional campaign properties that you can request when calling [GetCampaignsByAccountId](getcampaignsbyaccountid.md) and [GetCampaignsByIds](getcampaignsbyids.md).|
