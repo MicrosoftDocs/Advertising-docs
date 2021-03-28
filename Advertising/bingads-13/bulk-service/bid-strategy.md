@@ -202,6 +202,23 @@ If you use the "TargetRoas" bid strategy type, then you must include the [Bid St
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc), [Bid Strategy TargetCpa](#bidstrategytargetcpa), [Bid Strategy TargetAdPosition](#bidstrategytargetadposition), [Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare), and [Bid Strategy TargetRoas](#bidstrategytargetroas) fields will be deleted.  
 **Delete:** Read-only  
 
+## <a name="campaigntype"></a>Campaign Type
+The type of ad campaign that can use this bid strategy.  
+
+|Bid strategy type|Campaign types supported|
+|-----|-----|
+|Maximize clicks|Search, Shopping|
+|Maximize conversions|Search|
+|Target CPA|Search|
+|Target impression share|Search
+|Target ROAS|Search, Shopping|
+
+Once you choose a campaign type, the portfolio can only include campaigns of that type.  
+
+**Add:** Required  
+**Update:** Read-only  
+**Delete:** Read-only  
+
 ## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 

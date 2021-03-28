@@ -20,7 +20,7 @@ A portfolio bid strategy is an automated bidding feature that manages bidding ac
 > Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
 
 > [!NOTE]
-> As an alternative, you can set individual campaign level bid strategies using the [AddCampaigns](addcampaigns.md)] and [UpdateCampaigns](updatecampaigns.md)] operations.  
+> As an alternative, you can set individual campaign level bid strategies using the [AddCampaigns](addcampaigns.md) and [UpdateCampaigns](updatecampaigns.md) operations.  
 
 ## <a name="request"></a>Request Elements
 The *AddBidStrategiesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
