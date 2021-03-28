@@ -710,6 +710,9 @@
     - name: App Install Ad Label
       href: ../bulk-service/app-install-ad-label.md
       displayName: BulkAppInstallAdLabel
+    - name: Bid Strategy
+      href: ../bulk-service/bid-strategy.md
+      displayName: BulkBidStrategy
     - name: Budget
       href: ../bulk-service/budget.md
       displayName: BulkBudget

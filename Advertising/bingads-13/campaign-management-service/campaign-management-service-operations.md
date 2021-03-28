@@ -16,7 +16,7 @@ The Campaign Management service defines the following service operations.
 |[AddAdGroups](addadgroups.md)|Adds new ad groups to a specified campaign.|1,000 *AdGroups*<br/><br/>1 *CampaignId*|
 |[AddAds](addads.md)|Adds one or more ads to an ad group.|1 *AdGroupId*<br/><br/>50 *Ads*|
 |[AddAudiences](addaudiences.md)|Adds one or more audiences.|100 *Audiences*|
-|[AddBidStrategies](addbidstrategies.md)|Defines the AddBidStrategies Service Operation.|Reserved.|
+|[AddBidStrategies](addbidstrategies.md)|Adds bid strategies to an account's portfolio bid strategy library.|Reserved.|
 |[AddBudgets](addbudgets.md)|Adds new budgets to the account's shared budget library.|100 *Budgets*|
 |[AddCampaignCriterions](addcampaigncriterions.md)|Adds one or more campaign criterions that help determine whether ads in each campaign get served.|100 *CampaignCriterions*|
 |[AddCampaigns](addcampaigns.md)|Adds one or more campaigns to the specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
@@ -41,7 +41,7 @@ The Campaign Management service defines the following service operations.
 |[DeleteAdGroups](deleteadgroups.md)|Deletes one or more ad groups from the specified campaign.|1,000 *AdGroupIds*<br/><br/>1 *CampaignId*|
 |[DeleteAds](deleteads.md)|Deletes one or more ads from the specified ad group.|1 *AdGroupId*<br/><br/>50 *AdIds*|
 |[DeleteAudiences](deleteaudiences.md)|Deletes the specified audiences.|100 *AudienceIds*|
-|[DeleteBidStrategies](deletebidstrategies.md)|Defines the DeleteBidStrategies Service Operation.|Reserved.|
+|[DeleteBidStrategies](deletebidstrategies.md)|Deletes bid strategies from an account's portfolio bid strategy library.|Reserved.|
 |[DeleteBudgets](deletebudgets.md)|Deletes budgets from the account's shared budget library.|100 *BudgetIds*|
 |[DeleteCampaignCriterions](deletecampaigncriterions.md)|Deletes one or more campaign criterions.|100 *CampaignCriterionIds*|
 |[DeleteCampaigns](deletecampaigns.md)|Deletes one or more campaigns in a specified account.|1 *AccountId*<br/><br/>100 *CampaignIds*|
@@ -69,12 +69,12 @@ The Campaign Management service defines the following service operations.
 |[GetAdsByEditorialStatus](getadsbyeditorialstatus.md)|Retrieves the ads that belong to the specified ad group and have the specified editorial review status.|1 *AdGroupId*|
 |[GetAdsByIds](getadsbyids.md)|Retrieves the specified ads from the specified ad group.|1 *AdGroupId*<br/><br/>20 *AdIds*|
 |[GetAudiencesByIds](getaudiencesbyids.md)|Retrieves the specified audiences from the specified account.|100 *AudienceIds*|
-|[GetBidStrategiesByIds](getbidstrategiesbyids.md)|Defines the GetBidStrategiesByIds Service Operation.|Reserved.|
+|[GetBidStrategiesByIds](getbidstrategiesbyids.md)|Gets bid strategies in an account's portfolio bid strategy library.|Reserved.|
 |[GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md)|Gets the Microsoft Merchant Center stores for the specified customer.|Not applicable.|
 |[GetBSCCountries](getbsccountries.md)|Gets the list of supported sales country codes for Microsoft Shopping Campaigns.|Not applicable.|
 |[GetBudgetsByIds](getbudgetsbyids.md)|Gets the specified budgets from the account's shared budget library.|100 *BudgetIds*|
 |[GetCampaignCriterionsByIds](getcampaigncriterionsbyids.md)|Gets the specified campaign criterions.|100 *CampaignCriterionIds*<br/><br/>1 *CampaignId*|
-|[GetCampaignIdsByBidStrategyIds](getcampaignidsbybidstrategyids.md)|Defines the GetCampaignIdsByBidStrategyIds Service Operation.|Reserved.|
+|[GetCampaignIdsByBidStrategyIds](getcampaignidsbybidstrategyids.md)|Gets the campaign identifiers that are associated with the specified portfolio bid strategies.|Reserved.|
 |[GetCampaignIdsByBudgetIds](getcampaignidsbybudgetids.md)|Gets the campaign identifiers that share each specified budget.|100 *BudgetIds*|
 |[GetCampaignsByAccountId](getcampaignsbyaccountid.md)|Gets the campaigns within an account.|1 *AccountId*|
 |[GetCampaignsByIds](getcampaignsbyids.md)|Gets the specified campaigns within an account.|1 *AccountId*<br/><br/>100 *CampaignIds*|
@@ -119,7 +119,7 @@ The Campaign Management service defines the following service operations.
 |[UpdateAdGroups](updateadgroups.md)|Updates the specified ad groups in a campaign.|1,000 *AdGroups*<br/><br/>1 *CampaignId*|
 |[UpdateAds](updateads.md)|Updates the specified ads within an ad group.|1 *AdGroupId*<br/><br/>50 *Ads*|
 |[UpdateAudiences](updateaudiences.md)|Updates the specified audiences.|100 *Audiences*|
-|[UpdateBidStrategies](updatebidstrategies.md)|Defines the UpdateBidStrategies Service Operation.|Reserved.|
+|[UpdateBidStrategies](updatebidstrategies.md)|Updates bid strategies in an account's portfolio bid strategy library.|Reserved.|
 |[UpdateBudgets](updatebudgets.md)|Updates the specified budgets in the account's shared budget library.|100 *Budgets*|
 |[UpdateCampaignCriterions](updatecampaigncriterions.md)|Updates one or more campaign criterions.|100 *CampaignCriterions*|
 |[UpdateCampaigns](updatecampaigns.md)|Updates specified campaigns in a specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
