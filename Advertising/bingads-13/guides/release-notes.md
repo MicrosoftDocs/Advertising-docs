@@ -7,10 +7,50 @@ ms.author: eur
 description: Get information about changes to Bing Ads API Version 13 by month. 
 ---
 # Bing Ads API Release Notes
-See below for information about changes to Bing Ads API Version 13 by month. 
+See below for information about changes to Bing Ads API Version 13 by month.  
+
+## <a name="breaking-changes"></a>Breaking changes (upcoming)
+
+The following planned changes may require client updates to avoid disruption of service.  
+
+### <a name="mfa-required"></a>Breaking changes (upcoming)
+
+[!INCLUDE[request-header](./includes/mfa-required.md)]
+
+## <a name="april2021"></a>April 2021
+
+See below for Bing Ads API updates during this calendar month.  
+
+- [Portfolio bid strategy](#portfolio-bid-strategy-april2021)  
+- [Target impression share](#target-impression-share-april2021)  
+
+### <a name="portfolio-bid-strategy-april2021"></a>Portfolio bid strategy
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+
+A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal.  
+
+We automatically adjust your bids to balance under- and over-performing campaigns that share the same strategy, whether to maximize conversions, clicks, target impression share, or other performance goals. Portfolio bid strategies could be a great option for advertisers who want to make sure their entire budgets are spent efficiently.
+
+All you have to do is choose a bid strategy type and associate campaigns with complementary budget limits. Microsoft Advertising will adjust your bids based on the performance of the entire portfolio. If your portfolio includes campaigns with a shared budget, then you should only include other campaigns that share the same budget.  
+
+Portfolio bid strategies work best with one goal in mind, using complementary campaign and bid strategy types. You cannot change a portfolio's bid strategy type. If you want a campaign in the portfolio to use a different bid strategy you can move it to another portfolio. Once you choose a campaign type, the portfolio can only include campaigns of that type.  
+
+Portfolio bid strategies are supported in the Campaign Management [BidStrategy](../campaign-management-service/bidstrategy.md) object and Bulk [Bid Strategy](../bulk-service/bid-strategy.md) record.  
+
+### <a name="target-impression-share-april2021"></a>Target impression share
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+
+Target impression share is an automated bidding strategy that you can use to get the target impression share for the ad position where you want your ads to appear.  
+
+Target impression share is supported via the Campaign Management [BidStrategy](../campaign-management-service/bidstrategy.md), [Campaign](../campaign-management-service/campaign.md), and [TargetImpressionShareBiddingScheme](../campaign-management-service/targetimpressionsharebiddingscheme.md) objects and the Bulk [Bid Strategy](../bulk-service/bid-strategy.md) and [Campaign](../bulk-service/campaign.md) records.  
 
 ## <a name="march2021"></a>March 2021
-See below for Bing Ads API updates during this calendar month. 
+
+See below for Bing Ads API updates during this calendar month.  
 
 - [Bing Ads API SDK Updates](#sdk-march2021)  
 

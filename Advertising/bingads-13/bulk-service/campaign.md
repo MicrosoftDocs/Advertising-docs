@@ -123,8 +123,12 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |-----------------|---------------|
 |[Ad Schedule Use Searcher Time Zone](#adscheduleusesearchertimezone)|All|
 |[Bid Adjustment](#bidadjustment)|All|
+|[Bid Strategy Id](#bidstrategyid)|Search<br>Shopping|
 |[Bid Strategy MaxCpc](#bidstrategymaxcpc)|Search<br>DynamicSearchAds<br/>Shopping|
+|[Bid Strategy Name](#bidstrategyname)|Search<br>Shopping|
+|[Bid Strategy TargetAdPosition](#bidstrategytargetadposition)|Search|
 |[Bid Strategy TargetCpa](#bidstrategytargetcpa)|Search<br>DynamicSearchAds|
+|[Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare)|Search|
 |[Bid Strategy TargetRoas](#bidstrategytargetroas)|Search<br>DynamicSearchAds<br/>Shopping|
 |[Bid Strategy Type](#bidstrategytype)|All|
 |[Budget](#budget)|All|
@@ -135,7 +139,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Campaign Type](#campaigntype)|All|
 |[Client Id](#clientid)|All|
 |[Country Code](#countrycode)|Shopping|
-|[Domain Language](#domainlanguage)|Search\*<br>DynamicSearchAds|
+|[Domain Language](#domainlanguage)|Search<br>DynamicSearchAds|
 |[Experiment Id](#experimentid)|Search|
 |[Final Url Suffix](#finalurlsuffix)|All|
 |[Id](#id)|All|
@@ -145,20 +149,18 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Language](#language)|All|
 |[LocalInventoryAdsEnabled](#language)|Shopping|
 |[Modified Time](#modifiedtime)|All|
-|[Page Feed Ids](#pagefeedids)|Search\*<br>DynamicSearchAds|
+|[Page Feed Ids](#pagefeedids)|Search<br>DynamicSearchAds|
 |[Parent Id](#parentid)|All|
 |[Priority](#priority)|Shopping|
 |[Quality Score](#qualityscore)|All|
-|[Source](#source)|Search\*<br>DynamicSearchAds|
+|[Source](#source)|Search<br>DynamicSearchAds|
 |[Status](#status)|All|
 |[Store Id](#storeid)|Audience<br>Shopping|
 |[Sub Type](#subtype)|Shopping|
 |[Target Setting](#targetsetting)|All|
 |[Time Zone](#timezone)|All|
 |[Tracking Template](#trackingtemplate)|All|
-|[Website](#website)|Search\*<br>DynamicSearchAds|
-
-\* The [Campaign Type](#campaigntype) must be set to "Search", the [Experiment Id](#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](#domainlanguage), [Page Feed Ids](#pagefeedids), [Source](#source), and [Website](#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
+|[Website](#website)|Search<br>DynamicSearchAds|
 
 ## <a name="adscheduleusesearchertimezone"></a>Ad Schedule Use Searcher Time Zone
 Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
@@ -183,15 +185,47 @@ Set this field to zero (0) if you do not want any bid adjustment for audience ad
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value* then effectively the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.     
 **Delete:** Read-only  
 
+## <a name="bidstrategyid"></a>Bid Strategy Id
+The system-generated identifier of the [Bid Strategy](bid-strategy.md) that this campaign shares with other campaigns in the account.
+
+If the field is empty, then the campaign is not using a portfolio bid strategy. If the field is not empty and the value is greater than zero, then the campaign is using a portfolio bid strategy. If the campaign is using a portfolio bid strategy, and you prefer that it use its own bid strategy, set this field to '0' (zero).  
+
+> [!NOTE]
+> Portfolio bid strategies are not supported with [smart shopping campaigns](../guides/smart-shopping-campaigns.md).   
+	
+**Add:** Optional. You can either specify an existing bid strategy identifier, or specify a negative identifier that is equal to the [Id](bid-strategy.md#id) field of a [Bid Strategy](bid-strategy.md) record. This is recommended if you are applying a new portfolio bid strategy to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Update:** Optional. If no value is set for the update, this setting is not changed.  
+**Delete:** Read-only  
+
 ## <a name="bidstrategymaxcpc"></a>Bid Strategy MaxCpc
 The maximum cost per click that you want to spend with the corresponding bid strategy type. 
 
-This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to MaxClicks, MaxConversions, TargetCpa, or TargetRoas, and otherwise this field is ignored.
+This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to MaxClicks, MaxConversions, TargetCpa, TargetImpressionShare, or TargetRoas, and otherwise this field is ignored.
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
+**Delete:** Read-only  
+
+## <a name="bidstrategyname"></a>Bid Strategy Name
+The name of the bid strategy.  
+
+If the field is empty, then the campaign is not using a portfolio bid strategy.  
+
+**Add:** Read-only  
+**Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="bidstrategytargetadposition"></a>Bid Strategy TargetAdPosition
+The target ad position where you want your ads to appear. 
+
+This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetImpressionShare*, and otherwise this field is ignored.
+
+For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+
+**Add:** Required if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetImpressionShare*, and otherwise this field is ignored.   
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="bidstrategytargetcpa"></a>Bid Strategy TargetCpa
@@ -205,41 +239,55 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
+## <a name="bidstrategytargetimpressionshare"></a>Bid Strategy TargetImpressionShare
+The target impression share for the ad position where you want your ads to appear. 
+
+This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetImpressionShare*, and otherwise this field is ignored.
+
+For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+
+**Add:** Required if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetImpressionShare*, and otherwise this field is ignored.   
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
 ## <a name="bidstrategytargetroas"></a>Bid Strategy TargetRoas
-The target return on ad spend (ROAS) that you want used by Microsoft Advertising to maximize conversions. 
+The target return on ad spend (ROAS) that you want used by Microsoft Advertising to maximize conversions.  
 
-The supported target ROAS values range from 0.01 (1 percent) to 1,000.00 (100,000 percent). 
+The supported target ROAS values range from 0.01 (1 percent) to 1,000.00 (100,000 percent).  
 
-This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetRoas*, and otherwise this field is ignored. 
+This field is only used if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetRoas*, and otherwise this field is ignored.  
 
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 **Add:** Required if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetRoas*, and otherwise this field is ignored.   
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.  
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
-The bid strategy type for how you want to manage your bids. A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
+The bid strategy type for how you want to manage your bids.  
 
-The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, MaxConversions, TargetCpa, and TargetRoas. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, MaxConversions, TargetCpa, TargetImpressionShare, and TargetRoas. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 > [!IMPORTANT]
 > Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
 > Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
- 
-* EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Microsoft Advertising will automatically adjust your bids in real time to increase your chances for a conversion. Your bid will go higher on searches that are more likely to convert and lower on searches less likely to convert (up or down, this change will be made after we apply any bid adjustments you have set). Over the long haul, though, we will try to make sure that your average CPC is not higher than your bid. If you haven't optimized your campaign yet, Enhanced CPC should reduce your cost per conversion and increase your total conversion count while respecting your current budget. Differing from the MaxClicks, MaxConversions, TargetCpa, and TargetRoas bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.  
-* ManualCpc - Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Microsoft Advertising will use these bids every time.  
-* MaxClicks - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget. If you use this strategy type then you can also optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.  
-* MaxConversions - Defines an automated bidding strategy to maximize conversions given your maximum allowed budget. If you use this strategy type then you can also optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.  
-* TargetCpa - Defines an automated bidding strategy to maximize conversions at the target cost per acquisition (CPA). If you use this strategy type then you must also include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.    
-* TargetRoas - Defines an automated bidding strategy to maximize conversions at the target return on ad spend (ROAS). If you use this strategy type then you must also include the [Bid Strategy TargetRoas](#bidstrategytargetroas) field. You can also optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field. 
+  
+If you use the "MaxClicks" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
+
+If you use the "MaxConversions" bid strategy type, then you can optionally include the [Bid Strategy MaxConversions](#bidstrategymaxcpc) field.
+
+If you use the "TargetCpa" bid strategy type, then you must include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.
+
+If you use the "TargetImpressionShare" bid strategy type, then you must include the [Bid Strategy TargetAdPosition](#bidstrategytargetadposition) and [Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare) fields. You can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
+
+If you use the "TargetRoas" bid strategy type, then you must include the [Bid Strategy TargetRoas](#bidstrategytargetroas) field. You can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
 
 **Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default bid strategy type for most Shopping campaigns is EnhancedCpc; however, the only supported bid strategy type for [smart shopping campaigns](../guides/smart-shopping-campaigns.md) is MaxConversionValue. The only supported value for Audience campaigns is ManualCpc.    
-**Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc), [Bid Strategy TargetCpa](#bidstrategytargetcpa), and [Bid Strategy TargetRoas](#bidstrategytargetroas) fields will be deleted.       
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc), [Bid Strategy TargetCpa](#bidstrategytargetcpa), [Bid Strategy TargetAdPosition](#bidstrategytargetadposition), [Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare), and [Bid Strategy TargetRoas](#bidstrategytargetroas) fields will be deleted.       
 **Delete:** Read-only  
 
 ## <a name="budget"></a>Budget
@@ -267,9 +315,9 @@ If the field is empty, then the campaign is not using a shared budget. If the fi
 > This value corresponds to the *Id* field of the [Budget](budget.md) record. 
 
 > [!NOTE]
-> Shared budgets are not supported with [smart shopping campaigns](../guides/smart-shopping-campaigns.md) i.e., campaigns with [Campaign Type](#campaigntype) set to *Shopping* and [Sub Type](#subtype) set to *ShoppingSmartAds*. With [smart shopping campaigns](../guides/smart-shopping-campaigns.md), you must set the daily [Budget](#budget) amount.  
+> Shared budgets are not supported with [smart shopping campaigns](../guides/smart-shopping-campaigns.md). With [smart shopping campaigns](../guides/smart-shopping-campaigns.md), you must set the daily [Budget](#budget) amount.  
 	
-**Add:** Optional. You can either specify an existing campaign identifier, or specify a negative identifier that is equal to the [Id](budget.md#id) field of a [Budget](budget.md) record. This is recommended if you are applying a new shared budget to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You can either specify an existing budget identifier, or specify a negative identifier that is equal to the [Id](budget.md#id) field of a [Budget](budget.md) record. This is recommended if you are applying a new shared budget to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Optional. If no value is set for the update, this setting is not changed.  
 **Delete:** Read-only  
 

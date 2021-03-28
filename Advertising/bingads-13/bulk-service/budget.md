@@ -70,7 +70,7 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-For an *Budget* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For a *Budget* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Budget](#budget)
 - [Budget Name](#budgetname)
