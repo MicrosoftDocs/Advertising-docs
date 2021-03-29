@@ -20,6 +20,8 @@ We automatically adjust your bids to balance under- and over-performing campaign
 
 All you have to do is choose a bid strategy type and associate campaigns with complementary budget limits. Microsoft Advertising will adjust your bids based on the performance of the entire portfolio. If your portfolio includes campaigns with a shared budget, then you should only include other campaigns that share the same budget.  
 
+You can have up to 11,000 portfolio bid strategies in an account, and each portfolio can include 10,000 campaigns. 
+
 Portfolio bid strategies work best with one goal in mind, using complementary campaign and bid strategy types. You cannot change a portfolio's bid strategy type. If you want a campaign in the portfolio to use a different bid strategy you can move it to another portfolio. Once you choose a campaign type, the portfolio can only include campaigns of that type.  
 
 |Bid strategy type|Campaign types supported|
