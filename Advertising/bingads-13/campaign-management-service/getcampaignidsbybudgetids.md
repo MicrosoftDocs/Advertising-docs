@@ -24,7 +24,7 @@ The *GetCampaignIdsByBudgetIdsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the campaign identifiers to get. You can specify a maximum of 1,000 IDs budget IDs, and each budget could be shared by up to 10,000 campaign identifiers. For each budget ID that you specify in the request, an [IdCollection](idcollection.md) that contains between 1 and 10,000 campaign identifers will be returned. <br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.|**long** array|
+|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the campaign identifiers to get.<br/><br/>You can specify a maximum of 1,000 IDs budget IDs, and each budget could be shared by up to 10,000 campaign identifiers. For each budget ID that you specify in the request, an [IdCollection](idcollection.md) that contains between 1 and 10,000 campaign identifers will be returned.<br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

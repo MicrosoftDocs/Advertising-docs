@@ -27,7 +27,7 @@ The *DeleteBidStrategiesRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="bidstrategyids"></a>BidStrategyIds|The identifiers of bid strategies to delete from the account's portfolio bid strategy library.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|**long** array|
+|<a name="bidstrategyids"></a>BidStrategyIds|The identifiers of bid strategies to delete from the account's portfolio bid strategy library.<br/><br/>You can include a maximum of 100 IDs in a single call.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

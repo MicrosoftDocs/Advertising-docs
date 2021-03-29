@@ -32,7 +32,7 @@ The *AddBidStrategiesRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="bidstrategies"></a>BidStrategies|An array of [BidStrategy](bidstrategy.md) objects to add to the account's portfolio bid strategy library.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[BidStrategy](bidstrategy.md) array|
+|<a name="bidstrategies"></a>BidStrategies|An array of [BidStrategy](bidstrategy.md) objects to add to the account's portfolio bid strategy library.<br/><br/>You can include a maximum of 100 bid strategies in a single call. Each account can have up to 11,000 portfolio bid strategies.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[BidStrategy](bidstrategy.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

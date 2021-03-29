@@ -24,7 +24,7 @@ The *AddBudgetsRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgets"></a>Budgets|An array of [Budget](budget.md) objects to add to the account's shared budget library.<br/><br/>You can add a maximum of 100 budgets in a single call. Each account's shared budget library can have up to 11,000 shared budgets.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Budget](budget.md) array|
+|<a name="budgets"></a>Budgets|An array of [Budget](budget.md) objects to add to the account's shared budget library.<br/><br/>You can add a maximum of 100 budgets in a single call. Each account can have up to 11,000 shared budgets.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Budget](budget.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
