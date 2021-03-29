@@ -8,7 +8,7 @@ description: Describes the Bid Strategy fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# BidStrategy Record - Bulk
+# Bid Strategy Record - Bulk
 Defines a bid strategy that can be uploaded and downloaded in a bulk file.  
 
 > [!NOTE]
