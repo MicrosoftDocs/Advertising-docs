@@ -1,12 +1,12 @@
 ---
-title: "About dynamic search ads page feeds"
+title: "Automotive ads"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
-description: Learn how to upload relevant URLs for your dynamic search ad campaigns with page feeds.
+description: Learn about automotive ads.
 ---
-# About dynamic search ads page feeds
+# Automotive ads
 
 > [!NOTE]
 > This feature is currently available in an open beta for the US and UK.
