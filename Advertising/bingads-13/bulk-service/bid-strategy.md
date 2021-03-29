@@ -102,6 +102,7 @@ For a *Bid Strategy* record, the following attribute fields are available in the
 - [Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare)
 - [Bid Strategy TargetRoas](#bidstrategytargetroas)
 - [Bid Strategy Type](#bidstrategytype)
+- [Campaign Type](#campaigntype)
 - [Client Id](#clientid)
 - [Id](#id)
 - [Modified Time](#modifiedtime)
@@ -203,7 +204,7 @@ If you use the "TargetRoas" bid strategy type, then you must include the [Bid St
 **Delete:** Read-only  
 
 ## <a name="campaigntype"></a>Campaign Type
-The type of ad campaign that can use this bid strategy.  
+The type of ad campaign that can be included the portfolio bid strategy.  
 
 |Bid strategy type|Campaign types supported|
 |-----|-----|

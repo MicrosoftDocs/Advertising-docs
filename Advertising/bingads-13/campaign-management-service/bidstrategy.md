@@ -48,7 +48,7 @@ The [BidStrategy](bidstrategy.md) object has the following elements: [Associated
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="associatedcampaigntype"></a>AssociatedCampaignType|The type of ad campaign that can use this bid strategy.<br/><br/>Once you choose a campaign type, the portfolio can only include campaigns of that type.<br/><br/>**Add:** Required<br/>**Update:** Read-only|[CampaignType](campaigntype.md)|
+|<a name="associatedcampaigntype"></a>AssociatedCampaignType|The type of ad campaign that can be included the portfolio bid strategy.<br/><br/>Once you choose a campaign type, the portfolio can only include campaigns of that type.<br/><br/>**Add:** Required<br/>**Update:** Read-only|[CampaignType](campaigntype.md)|
 |<a name="associationcount"></a>AssociationCount|The number of [Campaign](campaign.md) objects that currently share this bid strategy.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 |<a name="biddingscheme"></a>BiddingScheme|The portfolio bid strategy type and settings.<br/><br/>Once you choose a bid strategy type it cannot be updated.<br/><br/>**Add:** Required<br/>**Update:** Optional. You can update properties of a bidding scheme, but you cannot change the type.|[BiddingScheme](biddingscheme.md)|
 |<a name="id"></a>Id|The unique Microsoft Advertising identifier of the bid strategy.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
