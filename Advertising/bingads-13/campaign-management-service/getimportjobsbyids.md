@@ -14,11 +14,6 @@ dev_langs:
 # GetImportJobsByIds Service Operation - Campaign Management
 Gets import jobs by their type and identifiers.
 
-> [!NOTE]
-> This closed beta is available to select participants only. 
-> 
-> The Import As A Service documentation is subject to change during the beta.
-
 > [!TIP]
 > For an implementation overview, see the [Google Ads Import](../guides/google-ads-import.md) technical guide.
 

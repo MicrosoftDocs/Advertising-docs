@@ -9,11 +9,6 @@ description: Import Google Ads campaigns.
 # Google Ads Import
 If you already are using Google Ads to advertise on Google, you can import these campaigns into Microsoft Advertising and run the same ads on Bing. This is an easy way to expand your online advertising reach. 
 
-> [!NOTE]
-> This closed beta release of Google Import As A Service is available to select participants only ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 734). 
-> 
-> The Import API documentation is subject to change during the beta. 
-
 To import campaigns from Google Ads, [get a credential ID](#get-credentialid) to represent your Google Ads credentials, [choose the Google Ads account and campaigns](#choose-google-campaigns) that you want to import, [choose import options](#import-options) e.g., the entities that you want to import, and then [schedule the import](#import-schedule). 
 
 You can add and delete scheduled imports, but cannot edit or update via API. A scheduled import that you added via API can be edited in the Microsoft Advertising UI. 
