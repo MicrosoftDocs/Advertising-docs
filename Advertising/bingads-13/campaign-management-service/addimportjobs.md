@@ -14,11 +14,6 @@ dev_langs:
 # AddImportJobs Service Operation - Campaign Management
 Creates a new import job. 
 
-> [!NOTE]
-> This closed beta is available to select participants only. 
-> 
-> The Import As A Service documentation is subject to change during the beta. 
-
 A [GoogleImportJob](googleimportjob.md) can be run once or scheduled on a recurring basis. 
 
 > [!TIP]
