@@ -14,11 +14,6 @@ dev_langs:
 # GetImportResults Service Operation - Campaign Management
 Gets results for import jobs completed within the last 90 days. 
 
-> [!NOTE]
-> This closed beta is available to select participants only. 
-> 
-> The Import As A Service documentation is subject to change during the beta.
-
 Multiple results can be returned for the same import job e.g., results for a scheduled [GoogleImportJob](googleimportjob.md) that has run more than once. 
 
 > [!TIP]
