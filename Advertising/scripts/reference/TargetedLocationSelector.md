@@ -121,7 +121,6 @@ The following are the performance metrics columns you may specify.
 AbsoluteTopImpressionRate|double|`withCondition("AbsoluteTopImpressionRate > 0.25")`|Abs. Top Impr. Rate
 AverageCpc|double|`withCondition("AverageCpc < 2.75")`|Avg. CPC
 AverageCpm|double|`withCondition("AverageCpm > 0.65")`|Avg. CPM
-AveragePosition|double|`withCondition("AveragePosition > 4")`|Avg. pos.
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.25")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 33")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks >= 10")`|Conv.

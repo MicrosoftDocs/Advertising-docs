@@ -40,7 +40,7 @@ The [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) object has the
 |<a name="averagecpc"></a>AverageCPC|The estimated average CPC.<br/><br/>The formula used to calculate the average CPC is (maximum total cost / maximum number of clicks).|**double**|
 |<a name="ctr"></a>CTR|The estimated CTR.<br/><br/>The formula used to calculate the CTR is (maximum number of clicks / maximum number of impressions) &#42; 100.|**double**|
 |<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit of the cost values such as AverageCPC.|[CurrencyCode](currencycode.md)|
-|<a name="estimatedadposition"></a>EstimatedAdPosition|The position in the search results given the specified bid.|**double**|
+|<a name="estimatedadposition"></a>EstimatedAdPosition|The position in the search results given the specified bid.<br/><br/>This element is deprecated as of March 31st, 2021 and '0' (zero) is returned going forward.|**double**|
 |<a name="matchtype"></a>MatchType|The keyword match type used to determine the estimates.|[MatchType](matchtype.md)|
 |<a name="maxclicksperweek"></a>MaxClicksPerWeek|The estimated maximum number of clicks per week.|**double**|
 |<a name="maximpressionsperweek"></a>MaxImpressionsPerWeek|The estimated maximum number of impressions per week.|**long**|
