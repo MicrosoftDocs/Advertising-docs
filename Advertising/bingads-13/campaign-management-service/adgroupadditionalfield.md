@@ -17,6 +17,8 @@ Defines a list of optional ad group properties that you can request when calling
       <xs:restriction base="xs:string">
         <xs:enumeration value="AdScheduleUseSearcherTimeZone" />
         <xs:enumeration value="AdGroupType" />
+        <xs:enumeration value="CpvBid" />
+        <xs:enumeration value="CpmBid" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -25,12 +27,14 @@ Defines a list of optional ad group properties that you can request when calling
 
 ## <a name="values"></a>Values
 
-The [AdGroupAdditionalField](adgroupadditionalfield.md) value set has the following values: [AdGroupType](#adgrouptype), [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone).
+The [AdGroupAdditionalField](adgroupadditionalfield.md) value set has the following values: [AdGroupType](#adgrouptype), [AdScheduleUseSearcherTimeZone](#adscheduleusesearchertimezone), [CpmBid](#cpmbid), [CpvBid](#cpvbid).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="adgrouptype"></a>AdGroupType|Request that the [AdGroupType](adgroup.md#adgrouptype) element be included within each returned [AdGroup](adgroup.md) object.|
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](adgroup.md#adscheduleusesearchertimezone) element be included within each returned [AdGroup](adgroup.md) object.|
+|<a name="cpmbid"></a>CpmBid|Reserved.|
+|<a name="cpvbid"></a>CpvBid|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

@@ -28,6 +28,7 @@ Defines the possible ad extension types.
         <xs:enumeration value="PromotionAdExtension" />
         <xs:enumeration value="FilterLinkAdExtension" />
         <xs:enumeration value="FlyerAdExtension" />
+        <xs:enumeration value="VideoAdExtension" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -36,7 +37,7 @@ Defines the possible ad extension types.
 
 ## <a name="values"></a>Values
 
-The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [FilterLinkAdExtension](#filterlinkadextension), [FlyerAdExtension](#flyeradextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension).
+The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [FilterLinkAdExtension](#filterlinkadextension), [FlyerAdExtension](#flyeradextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension), [VideoAdExtension](#videoadextension).
 
 |Value|Description|
 |-----------|---------------|
@@ -53,6 +54,7 @@ The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the follow
 |<a name="reviewadextension"></a>ReviewAdExtension|An ad extension that contains third-party reviews (exact or paraphrased) about your business, products, or services.<br/><br/>For more information, see [ReviewAdExtension](reviewadextension.md).|
 |<a name="sitelinkadextension"></a>SitelinkAdExtension|An ad extension that contains one site link.<br/><br/>For more information, see [SitelinkAdExtension](sitelinkadextension.md).|
 |<a name="structuredsnippetadextension"></a>StructuredSnippetAdExtension|An ad extension that contains a header and values that tell customers more about your business.<br/><br/>For more information, see [StructuredSnippetAdExtension](structuredsnippetadextension.md).|
+|<a name="videoadextension"></a>VideoAdExtension|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

@@ -34,7 +34,7 @@ Example usage:
 [getAbsoluteTopImpressionRate](#getabsolutetopimpressionrate)|double|Gets the absolute top impression rate percent.
 [getAverageCpc](#getaveragecpc)|double|Gets the average cost per click.
 [getAverageCpm](#getaveragecpm)|double|Gets the average cost per thousand impressions.
-[getAveragePosition](#getaverageposition)|double|Gets the average position.
+[getAveragePosition](#getaverageposition)|double|This method is no longer available as of March 31, 2021.
 [getClickConversionRate](#getclickconversionrate)|double|(Use the **getConversionRate**() method instead.)
 [getClicks](#getclicks)|long|Gets the number of clicks.
 [getConversionRate](#getconversionrate)|double|Gets the conversion rate for clicks.
@@ -79,7 +79,7 @@ double|The average cost per one-thousand impressions.
 Gets the average position where ads were placed.
 
 > [!NOTE]
-> Average position is deprecated from performance reports. From March 31, 2021 onwards, this method will return "0" (zero).
+> This method is no longer available as of March 31, 2021.
 
 ### Returns
 |Type|Description|

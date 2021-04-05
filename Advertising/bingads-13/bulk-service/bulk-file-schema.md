@@ -42,159 +42,160 @@ Records available for upload and download using [Format Version](#formatversions
 
 Record Type  |Supported Campaign Types  
 ---------|---------
-[Account](account.md)|All         
-[Account Action Ad Extension](account-action-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account App Ad Extension](account-app-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Callout Ad Extension](account-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Filter Link Ad Extension](account-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search     
-[Account Flyer Ad Extension](account-flyer-ad-extension.md)|DynamicSearchAds<br/>Search     
-[Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Location Ad Extension](account-location-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Promotion Ad Extension](account-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Action Ad Extension](action-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group](ad-group.md)|All         
-[Ad Group Age Criterion](ad-group-age-criterion.md)|All         
-[Ad Group Action Ad Extension](ad-group-action-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group App Ad Extension](ad-group-app-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Combined List Association](ad-group-combined-list-association.md)|All         
+[Account](account.md)|All  
+[Account Action Ad Extension](account-action-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account App Ad Extension](account-app-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Callout Ad Extension](account-callout-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Filter Link Ad Extension](account-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Flyer Ad Extension](account-flyer-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Location Ad Extension](account-location-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Promotion Ad Extension](account-promotion-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Action Ad Extension](action-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group](ad-group.md)|All  
+[Ad Group Age Criterion](ad-group-age-criterion.md)|All  
+[Ad Group Action Ad Extension](ad-group-action-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group App Ad Extension](ad-group-app-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Combined List Association](ad-group-combined-list-association.md)|All  
 [Ad Group Company Name Criterion](ad-group-company-name-criterion.md)|All  
-[Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All         
-[Ad Group Customer List Association](ad-group-customer-list-association.md)|All         
-[Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
-[Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
-[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*       
-[Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search      
-[Ad Group Flyer Ad Extension](ad-group-flyer-ad-extension.md)|DynamicSearchAds<br/>Search        
-[Ad Group Gender Criterion](ad-group-gender-criterion.md)|All         
-[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All  
+[Ad Group Customer List Association](ad-group-customer-list-association.md)|All  
+[Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All  
+[Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All  
+[Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*  
+[Ad Group Filter Link Ad Extension](ad-group-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Flyer Ad Extension](ad-group-flyer-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Gender Criterion](ad-group-gender-criterion.md)|All  
+[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|DynamicSearchAds<br/>Search  
 [Ad Group Industry Criterion](ad-group-industry-criterion.md)|All  
-[Ad Group In Market Audience Association](ad-group-in-market-audience-association.md)|All         
+[Ad Group In Market Audience Association](ad-group-in-market-audience-association.md)|All  
 [Ad Group Job Function Criterion](ad-group-job-function-criterion.md)|All  
-[Ad Group Label](ad-group-label.md)|All         
-[Ad Group Location Criterion](ad-group-location-criterion.md)|All         
-[Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md)|All         
-[Ad Group Negative Age Criterion](ad-group-negative-age-criterion.md)|Audience    
-[Ad Group Negative Combined List Association](ad-group-negative-combined-list-association.md)|All         
+[Ad Group Label](ad-group-label.md)|All  
+[Ad Group Location Criterion](ad-group-location-criterion.md)|All  
+[Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md)|All  
+[Ad Group Negative Age Criterion](ad-group-negative-age-criterion.md)|Audience  
+[Ad Group Negative Combined List Association](ad-group-negative-combined-list-association.md)|All  
 [Ad Group Negative Company Name Criterion](ad-group-negative-company-name-criterion.md)|Audience  
-[Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All         
-[Ad Group Negative Customer List Association](ad-group-negative-combined-list-association.md)|All         
+[Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All  
+[Ad Group Negative Customer List Association](ad-group-negative-combined-list-association.md)|All  
 [Ad Group Negative Gender Criterion](ad-group-negative-gender-criterion.md)|Audience  
-[Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
+[Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*  
 [Ad Group Negative Industry Criterion](ad-group-negative-industry-criterion.md)|Audience  
-[Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md)|All         
+[Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md)|All  
 [Ad Group Negative Job Function Criterion](ad-group-negative-job-function-criterion.md)|Audience  
-[Ad Group Negative Keyword](ad-group-negative-keyword.md)|All         
-[Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All         
-[Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|All         
-[Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All         
-[Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md)|All         
-[Ad Group Negative Site](ad-group-negative-site.md)|All         
-[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Product Audience Association](ad-group-product-audience-association.md)|All         
-[Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
-[Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
-[Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
-[Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Similar Remarketing List Association](ad-group-similar-remarketing-list-association.md)|All         
-[Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
-[App Ad Extension](app-ad-extension.md)|DynamicSearchAds<br/>Search         
-[App Install Ad](app-install-ad.md)|Search         
-[App Install Ad Label](app-install-ad-label.md)|Search         
-[Budget](budget.md)|All         
-[Call Ad Extension](call-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Callout Ad Extension](callout-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign](campaign.md)|All         
-[Campaign Age Criterion](campaign-age-criterion.md)|All         
-[Campaign Action Ad Extension](campaign-action-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search        
-[Campaign Combined List Association](campaign-combined-list-association.md)|All           
-[Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping            
-[Campaign Custom Audience Association](campaign-custom-audience-association.md)|All         
-[Campaign Customer List Association](campaign-customer-list-association.md)|All         
-[Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
-[Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All         
-[Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search        
-[Campaign Flyer Ad Extension](campaign-flyer-ad-extension.md)|DynamicSearchAds<br/>Search        
-[Campaign Gender Criterion](campaign-gender-criterion.md)|All         
-[Campaign Industry Criterion](campaign-industry-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign In Market Audience Association](campaign-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Job Function Criterion](campaign-deviceos-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Label](campaign-label.md)|All         
-[Campaign Location Ad Extension](campaign-location-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Location Criterion](campaign-location-criterion.md)|All         
-[Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All         
-[Campaign Negative Combined List Association](campaign-negative-combined-list-association.md)|All         
-[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|All         
-[Campaign Negative Customer List Association](campaign-negative-customer-list-association.md)|All         
-[Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*         
-[Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Negative Keyword](campaign-negative-keyword.md)|All         
-[Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Negative Location Criterion](campaign-negative-location-criterion.md)|All         
-[Campaign Negative Product Audience Association](campaign-negative-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Negative Remarketing List Association](campaign-negative-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Negative Similar Remarketing List Association](campaign-negative-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Negative Site](campaign-negative-site.md)|All         
-[Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Product Audience Association](campaign-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping         
-[Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Radius Criterion](campaign-radius-criterion.md)|All         
-[Campaign Remarketing List Association](campaign-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping               
-[Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Similar Remarketing List Association](campaign-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping         
-[Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Combined List](combined-list.md)|All         
-[Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
-[Customer List](customer-list.md)|All         
-[Customer List Item](customer-list-item.md)<br/><br/>Bulk download of customer list items is not supported.|All         
-[Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds<br/>Search\*         
-[Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds<br/>Search\*         
-[Expanded Text Ad](expanded-text-ad.md)|Search         
-[Expanded Text Ad Label](expanded-text-ad-label.md)|Search         
-[Experiments](experiment.md)|Search         
+[Ad Group Negative Keyword](ad-group-negative-keyword.md)|All  
+[Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All  
+[Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|All  
+[Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All  
+[Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md)|All  
+[Ad Group Negative Site](ad-group-negative-site.md)|All  
+[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Product Audience Association](ad-group-product-audience-association.md)|All  
+[Ad Group Product Partition](ad-group-product-partition.md)|Shopping  
+[Ad Group Promotion Ad Extension](ad-group-promotion-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Radius Criterion](ad-group-radius-criterion.md)|All  
+[Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All  
+[Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Similar Remarketing List Association](ad-group-similar-remarketing-list-association.md)|All  
+[Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search  
+[App Ad Extension](app-ad-extension.md)|DynamicSearchAds<br/>Search  
+[App Install Ad](app-install-ad.md)|Search  
+[App Install Ad Label](app-install-ad-label.md)|Search  
+[Bid Strategy](bid-strategy.md)|Search<br/>Shopping  
+[Budget](budget.md)|All  
+[Call Ad Extension](call-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Callout Ad Extension](callout-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign](campaign.md)|All  
+[Campaign Age Criterion](campaign-age-criterion.md)|All  
+[Campaign Action Ad Extension](campaign-action-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Combined List Association](campaign-combined-list-association.md)|All  
+[Campaign Company Name Criterion](campaign-company-name-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Custom Audience Association](campaign-custom-audience-association.md)|All  
+[Campaign Customer List Association](campaign-customer-list-association.md)|All  
+[Campaign DayTime Criterion](campaign-daytime-criterion.md)|All  
+[Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All  
+[Campaign Filter Link Ad Extension](campaign-filter-link-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Flyer Ad Extension](campaign-flyer-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Gender Criterion](campaign-gender-criterion.md)|All  
+[Campaign Industry Criterion](campaign-industry-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign In Market Audience Association](campaign-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Job Function Criterion](campaign-deviceos-criterion.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Label](campaign-label.md)|All  
+[Campaign Location Ad Extension](campaign-location-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Location Criterion](campaign-location-criterion.md)|All  
+[Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All  
+[Campaign Negative Combined List Association](campaign-negative-combined-list-association.md)|All  
+[Campaign Negative Custom Audience Association](campaign-negative-custom-audience-association.md)|All  
+[Campaign Negative Customer List Association](campaign-negative-customer-list-association.md)|All  
+[Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds<br/>Search\*  
+[Campaign Negative In Market Audience Association](campaign-negative-in-market-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Negative Keyword](campaign-negative-keyword.md)|All  
+[Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Negative Location Criterion](campaign-negative-location-criterion.md)|All  
+[Campaign Negative Product Audience Association](campaign-negative-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Negative Remarketing List Association](campaign-negative-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Negative Similar Remarketing List Association](campaign-negative-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Negative Site](campaign-negative-site.md)|All  
+[Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Product Audience Association](campaign-product-audience-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping  
+[Campaign Promotion Ad Extension](campaign-promotion-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Radius Criterion](campaign-radius-criterion.md)|All  
+[Campaign Remarketing List Association](campaign-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Similar Remarketing List Association](campaign-similar-remarketing-list-association.md)|DynamicSearchAds<br/>Search<br/>Shopping  
+[Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Combined List](combined-list.md)|All  
+[Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All  
+[Customer List](customer-list.md)|All  
+[Customer List Item](customer-list-item.md)<br/><br/>Bulk download of customer list items is not supported.|All  
+[Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds<br/>Search\*  
+[Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds<br/>Search\*  
+[Expanded Text Ad](expanded-text-ad.md)|Search  
+[Expanded Text Ad Label](expanded-text-ad-label.md)|Search  
+[Experiments](experiment.md)|Search  
 [Feed](feed.md)|DynamicSearchAds<br/>Search 
 [Feed Item](feed-item.md)|DynamicSearchAds<br/>Search  
-[Filter Link Ad Extension](filter-link-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Flyer Ad Extension](flyer-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Format Version](format-version.md)|All         
-[Image Ad Extension](image-ad-extension.md)|DynamicSearchAds<br/>Search         
-[In Market Audience](in-market-audience.md)<br/><br/>Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         
-[Keyword](keyword.md)|Search         
-[Keyword Label](keyword-label.md)|Search         
-[Keyword Best Position Bid](keyword-best-position-bid.md)|Search         
-[Keyword First Page Bid](keyword-first-page-bid.md)|Search         
-[Keyword Main Line Bid](keyword-main-line-bid.md)|Search         
-[Label](label.md)|All         
-[Location Ad Extension](location-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Negative Keyword List](negative-keyword-list.md)|All         
-[Offline Conversion](offline-conversion.md)<br/><br/>Bulk download is not supported. You cannot get, update, or delete an offline conversion.|All         
-[Price Ad Extension](price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Product Ad](product-ad.md)|Shopping         
-[Product Ad Label](product-ad-label.md)|Shopping         
-[Product Audience](product-audience.md)|All       
-[Promotion Ad Extension](promotion-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Remarketing List](remarketing-list.md)|All         
-[Responsive Ad](responsive-ad.md)|Audience         
-[Responsive Ad Label](responsive-ad-label.md)|Audience        
-[Responsive Search Ad](responsive-search-ad.md)|Search         
-[Responsive Search Ad Label](responsive-search-ad-label.md)|Search        
-[Review Ad Extension](review-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Shared Negative Keyword](shared-negative-keyword.md)|All         
-[Similar Remarketing List](similar-remarketing-list.md)|All         
-[Sitelink Ad Extension](sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Text Ad](text-ad.md)|Search         
-[Text Ad Label](text-ad-label.md)|Search         
+[Filter Link Ad Extension](filter-link-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Flyer Ad Extension](flyer-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Format Version](format-version.md)|All  
+[Image Ad Extension](image-ad-extension.md)|DynamicSearchAds<br/>Search  
+[In Market Audience](in-market-audience.md)<br/><br/>Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All  
+[Keyword](keyword.md)|Search  
+[Keyword Label](keyword-label.md)|Search  
+[Keyword Best Position Bid](keyword-best-position-bid.md)|Search  
+[Keyword First Page Bid](keyword-first-page-bid.md)|Search  
+[Keyword Main Line Bid](keyword-main-line-bid.md)|Search  
+[Label](label.md)|All  
+[Location Ad Extension](location-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Negative Keyword List](negative-keyword-list.md)|All  
+[Offline Conversion](offline-conversion.md)<br/><br/>Bulk download is not supported. You cannot get, update, or delete an offline conversion.|All  
+[Price Ad Extension](price-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Product Ad](product-ad.md)|Shopping  
+[Product Ad Label](product-ad-label.md)|Shopping  
+[Product Audience](product-audience.md)|All  
+[Promotion Ad Extension](promotion-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Remarketing List](remarketing-list.md)|All  
+[Responsive Ad](responsive-ad.md)|Audience  
+[Responsive Ad Label](responsive-ad-label.md)|Audience  
+[Responsive Search Ad](responsive-search-ad.md)|Search  
+[Responsive Search Ad Label](responsive-search-ad-label.md)|Search  
+[Review Ad Extension](review-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Shared Negative Keyword](shared-negative-keyword.md)|All  
+[Similar Remarketing List](similar-remarketing-list.md)|All  
+[Sitelink Ad Extension](sitelink-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search  
+[Text Ad](text-ad.md)|Search  
+[Text Ad Label](text-ad-label.md)|Search  
 
 \* The [Campaign Type](campaign.md#campaigntype) must be set to "Search", the [Experiment Id](campaign.md#experimentid) cannot be set, and the campaign must already have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). For records that depend on a parent ad group, the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic". 
 
@@ -203,7 +204,7 @@ The download file will always include a record for the [Format Version](format-v
 
 - If a parent entity is created in the same file, it should precede any dependent child records in the bulk file. For example as shown in the diagram below, when associating a site link ad extension with a campaign, the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record must be included in the file after both the [Campaign](campaign.md) and [Sitelink Ad Extension](sitelink-ad-extension.md) records. The *Id* and *Parent Id* fields of the [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) record should be set to the identifier of the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records respectively. If the [Sitelink Ad Extension](sitelink-ad-extension.md) and [Campaign](campaign.md) records are also new and do not yet have assigned Microsoft Advertising identifiers, then you should use [Reference Keys](#referencekeys).  
 
-    ![Record Type Hierarchy](media/bulkrecordhierarchy.gif)
+  ![Record Type Hierarchy](media/bulkrecordhierarchy.gif)
 
 - It is not required to include the record for a parent entity that already has been assigned a valid Microsoft Advertising identifier.
 

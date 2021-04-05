@@ -48,4 +48,5 @@ Service: [CustomerBillingService.svc v13](https://clientcenter.api.bingads.micro
 Namespace: https\://bingads.microsoft.com/Customer/v13/Entities  
 
 ## Used By
+[SearchCoupons](searchcoupons.md)  
 [SearchInsertionOrders](searchinsertionorders.md)  

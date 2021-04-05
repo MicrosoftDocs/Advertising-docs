@@ -48,7 +48,7 @@ The Campaign Management service defines the following data objects.
 |[BiddableCampaignCriterion](biddablecampaigncriterion.md)|Defines a biddable criterion that you want applied to the specified campaign.|
 |[BiddingScheme](biddingscheme.md)|Defines the base object of a bidding scheme for how you want to manage your bids.|
 |[BidMultiplier](bidmultiplier.md)|Defines the multiplier by which to adjust your base bid for the corresponding criterion.|
-|[BidStrategy](bidstrategy.md)|Defines the BidStrategy Data Object.|
+|[BidStrategy](bidstrategy.md)|A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal.|
 |[BMCStore](bmcstore.md)|Defines a Microsoft Merchant Center store.|
 |[Budget](budget.md)|Represents a budget that can be shared by any campaigns in an account.|
 |[CallAdExtension](calladextension.md)|Defines an object that specifies a click-to-call phone number to include in a text ad.|
@@ -181,7 +181,7 @@ The Campaign Management service defines the following data objects.
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|
-|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|TargetImpressionShareBiddingScheme is reserved for future use.|
+|[TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)|An automated bidding strategy to get the target impression share for the ad position where you want your ads to appear.|
 |[TargetRoasBiddingScheme](targetroasbiddingscheme.md)|Defines an object that represents the target ROAS bid strategy type.|
 |[TargetSetting](targetsetting.md)|The target settings that determines whether the Age, Audience, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.|
 |[TargetSettingDetail](targetsettingdetail.md)|Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.|
@@ -190,6 +190,8 @@ The Campaign Management service defines the following data objects.
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
 |[Video](video.md)|Defines the Video Data Object.|
+|[VideoAdExtension](videoadextension.md)|Defines the VideoAdExtension Data Object.|
+|[VideoAsset](videoasset.md)|Defines the VideoAsset Data Object.|
 |[Webpage](webpage.md)|Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.|
 |[WebpageCondition](webpagecondition.md)|Defines a condition or criterion that helps determine whether you want to show dynamic search ads.|
 |[WebpageParameter](webpageparameter.md)|Defines the conditions or criteria that determine whether you want to show dynamic search ads.|

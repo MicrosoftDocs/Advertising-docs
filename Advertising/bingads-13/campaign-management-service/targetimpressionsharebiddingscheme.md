@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: TargetImpressionShareBiddingScheme is reserved for future use.
+description: An automated bidding strategy to get the target impression share for the ad position where you want your ads to appear.
 ---
 # TargetImpressionShareBiddingScheme Data Object - Campaign Management
-TargetImpressionShareBiddingScheme is reserved for future use.
+An automated bidding strategy to get the target impression share for the ad position where you want your ads to appear.
 
 ## Syntax
 ```xml
@@ -30,9 +30,9 @@ The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="maxcpc"></a>MaxCpc|Reserved.|[Bid](bid.md)|
-|<a name="targetadposition"></a>TargetAdPosition|Reserved.|**string**|
-|<a name="targetimpressionshare"></a>TargetImpressionShare|Reserved.|**double**|
+|<a name="maxcpc"></a>MaxCpc|This is the maximum amount that you're willing to pay for a click on your ad.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[Bid](bid.md)|
+|<a name="targetadposition"></a>TargetAdPosition|This is where on search results pages you want your ads to appear for the target impression share you set.<br/><br/>Possible values include FirstPage, MainLine, and MainLine1.<br/><br/>- FirstPage: In any position on the first search results page.<br/>- MainLine: In the first set of ads that appear on the first search results page.<br/>- MainLine1: The very first ad that appears on the first search results page.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
+|<a name="targetimpressionshare"></a>TargetImpressionShare|The target impression share for the ad position where you want your ads to appear.<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
 
 The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object has [Inherited Elements](#inheritedelements).
 
@@ -43,7 +43,7 @@ The [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|Reserved.|**string**|
+|<a name="type"></a>Type|The type of the bidding scheme.<br/><br/>This value is *TargetImpressionShareBiddingScheme* when you retrieve a target impression share bidding scheme. For more information about bidding scheme types, see the [BiddingScheme Data Object Remarks](biddingscheme.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

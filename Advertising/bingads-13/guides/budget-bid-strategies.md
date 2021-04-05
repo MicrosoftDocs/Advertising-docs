@@ -30,23 +30,10 @@ With shared budgets you can set a single daily budget that can be used by any ca
 
 The Bing Ads API supports the *DailyBudgetAccelerated*  and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.  
 
-### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
-Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
-
-> [!IMPORTANT]
-> The accelerated budget type is deprecated for DynamicSearchAds, Shopping, and Search campaigns. There are no budget delivery changes planned at this time for Audience campaigns. Please see [Deprecating Accelerated Budget Delivery](#deprecating-accelerated-budget) for more information. 
-
 ### <a name="dailystandard"></a>DailyBudgetStandard
 Show your ads evenly every day throughout the month so you don't run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won't exceed the estimated monthly budget.
 
 This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
-
-### <a name="deprecating-accelerated-budget"></a>Deprecating Accelerated Budget Delivery 
-Prior to November 1st, 2019 the budget types for shared and unshared budgets were configurable by advertisers for all campaign types. Please note the following changes in effect as of November 1st, 2019 and additional changes in effect as of January 2020.  
-
-As of November 1st, 2019 the budget type for shared and unshared budgets is no longer configurable by advertisers for DynamicSearchAds, Shopping, and Search campaigns. Between November 1st, 2019 and January 2020 you could continue to get and set DailyBudgetAccelerated for these campaign types, although it will not have an effect on budget delivery. For DynamicSearchAds, Shopping, and Search campaigns regardless of the budget type that you set (whether DailyBudgetAccelerated or DailyBudgetStandard), Microsoft Advertising will deliver as DailyBudgetStandard. This will help advertisers spend for optimized performance based on products/services targeted by the campaign and the availability of corresponding user searches during the day. There are no budget delivery changes planned at this time for Audience campaigns, including no changes to the original definition of DailyBudgetStandard. For Audience campaigns, DailyBudgetStandard will continue to distribute ad impressions for your campaign across the entire month, and optimizes your budget to show your ads evenly throughout each day. If a budget is shared with different campaign types, its usage and delivery will vary for each campaign type. For example, if an accelerated budget is shared with both Audience and Search campaigns, the DailyBudgetAccelerated budget type setting will remain in effect for the Audience campaign while the Search campaign budget delivery will be optimized by Microsoft Advertising as described above.
-
-As of January 2020 the budget type for shared and unshared budgets are read-only for all DynamicSearchAds, Shopping, and Search campaigns, and any budget type value that you attempt to set will be ignored without returning an error. Previous budget settings will be migrated from accelerated to standard, and the API will only return "DailyBudgetStandard" for DynamicSearchAds, Shopping, and Search campaigns, as well as for all shared budgets. You can still use accelerated budgets with Audience campaigns. The budget type data is not migrated for Audience campaign level unshared budgets. However, the budget delivery might change as described above if the Audience campaign uses a shared budget.
 
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](https://help.ads.microsoft.com/#apex/3/en/51006/1) 
@@ -72,17 +59,17 @@ Your bid strategy setting tells Microsoft Advertising how you want to manage you
 The following campaign-level bid strategy types are available depending on the campaign type. For more information see the [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1) help article.
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
-> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
 |[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
-|[ManualCpc](#manualcpc)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
-|[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search|
+|[ManualCpc](#manualcpc)|Audience|
+|[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search<br/>Shopping|
 |[MaxConversions](#maxconversions)|DynamicSearchAds<br/>Search|
-|[MaxConversionValue](#maxconversionvalue)|Shopping|
+|[MaxConversionValue](#maxconversionvalue)|Shopping ([smart shopping](smart-shopping-campaigns.md))|
 |[TargetCpa](#targetcpa)|DynamicSearchAds<br/>Search|
 |[TargetRoas](#targetroas)|DynamicSearchAds<br/>Search<br/>Shopping|
 
@@ -96,26 +83,18 @@ With the EnhancedCpc (enhanced cost per click) bid strategy, you set your ad gro
 
 Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with the EnhancedCpc bid strategy, Microsoft Advertising will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
 
-> [!NOTE]
-> For search ad and dynamic search ad campaigns, the EnhancedCpc bid strategy is available to all advertisers worldwide. 
-> 
-> For Microsoft Shopping Campaigns, the EnhancedCpc bid strategy is available wherever Microsoft Shopping Campaigns are available.
-
 ### <a name="manualcpc"></a>ManualCpc
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
-> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
 
 ### <a name="maxclicks"></a>MaxClicks
 With the MaxClicks bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.  
-
-> [!NOTE]
-> The MaxClicks bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns. 
 
 ### <a name="maxconversions"></a>MaxConversions
 With the MaxConversions bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many conversions as possible within your budget.
@@ -123,9 +102,6 @@ With the MaxConversions bid strategy, you don't need to set ad group or keyword 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
-
-> [!NOTE]
-> The MaxConversions bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
 
 ### <a name="maxconversionvalue"></a>MaxConversionValue
 [Smart shopping campaigns](smart-shopping-campaigns.md) use the Maximize Conversion Value bid strategy (where Microsoft Advertising automatically sets your bids in real time to maximize total conversion value within your budget) and automated targeting to maximize overall revenue numbers with an option to define return on ad spend (ROAS) targets.
@@ -140,18 +116,12 @@ Microsoft Advertising will always respect your overall budget limit, but if you 
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
-> [!NOTE]
-> The TargetCpa bid strategy is available for Dynamic Search Ads and Search campaigns. All of your target locations must be within Australia, Canada, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and/or United States. 
-
 ### <a name="targetroas"></a>TargetRoas
 With the TargetRoas (return on ad spend) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average ROAS, and Microsoft Advertising automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Microsoft Advertising will try to make sure your return on ad spend is in line with your target.
 
 Microsoft Advertising will always respect your overall budget limit, but if you want greater control over your bids while using Target ROAS, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Microsoft Advertising never pays more than a certain amount for each individual click.
 
 You need to have conversion tracking (a UET tag and a conversion goal) set up (offline conversions are supported too) in order to use the Target ROAS bid strategy. Also you must be tracking revenue and have non-zero revenue over the last 30 days. If your campaign falls below 15 conversions or has zero revenue over any 30-day period, Target ROAS will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
-
-> [!NOTE]
-> The target ROAS bid strategy is available for Dynamic Search Ads, Search, and Shopping campaigns for customers.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Microsoft Advertising determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.

@@ -169,8 +169,10 @@ If the keyword level bid is not set, the Ad Group [Cpc Bid](ad-group.md#cpcbid) 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. 
 
+The bid strategy type for ad groups and keywords is "InheritFromParent".
+
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords.
+> Starting in April 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    

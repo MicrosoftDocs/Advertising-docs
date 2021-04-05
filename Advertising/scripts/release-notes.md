@@ -11,6 +11,24 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## March 31, 2021
+
+Average position is no longer available in Microsoft Advertising.
+
+The [getAveragePosition](reference/Stats.md#getaverageposition) method is removed from the [Stats](reference/Stats.md) object.  
+
+The AveragePosition column is removed as a condition with the following selectors.
+
+- [AdGroupAudienceSelector](reference/adgroupaudienceselector.md)
+- [AdGroupSelector](reference/adgroupselector.md)
+- [AdSelector](reference/adselector.md)
+- [BudgetSelector](reference/budgetselector.md)
+- [CampaignAudienceSelector](reference/campaignaudienceselector.md)
+- [CampaignSelector](reference/campaignselector.md)
+- [KeywordSelector](reference/keywordselector.md)
+- [ProductGroupSelector](reference/productgroupselector.md)
+- [TargetedLocationSelector](reference/targetedlocationselector.md)
+
 ## March 5, 2021
 
 Added support for absolute top impression rate and top impression rate as a percentage of your total impressions.

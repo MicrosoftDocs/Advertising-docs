@@ -77,3 +77,4 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [AddImportJobs](addimportjobs.md)  
 [GetImportJobsByIds](getimportjobsbyids.md)  
 [ImportResult](importresult.md)  
+[UpdateImportJobs](updateimportjobs.md)  

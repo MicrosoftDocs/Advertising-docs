@@ -7,11 +7,12 @@ ms.author: eur
 description: Determines whether an import job should be run once or scheduled on a recurring basis.
 ---
 # Frequency Data Object - Campaign Management
-Determines whether an import job should be run once or scheduled on a recurring basis. 
+Determines whether an import job should be run once or scheduled on a recurring basis.  
 
-You can schedule a recurring import e.g., "Every Sunday at 4:00 PM" or you can run the import once. 
+You can schedule a recurring import e.g., "Every Sunday at 4:00 PM" or you can run the import once.  
 
-- Now: Import once as soon as you call the [AddImportJobs](addimportjobs.md) operation. 
+- Auto: Microsoft Advertising will run imports on a varying schedule that will best optimize your campaigns.  
+- Now: Import once as soon as you call the [AddImportJobs](addimportjobs.md) operation.  
 - Once: Import once at the time you specify.
 - Daily: Import once per day at the time you specify.
 - Weekly: Import once per week at the time you specify.
