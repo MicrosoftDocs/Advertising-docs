@@ -710,6 +710,9 @@
     - name: App Install Ad Label
       href: ../bulk-service/app-install-ad-label.md
       displayName: BulkAppInstallAdLabel
+    - name: Bid Strategy
+      href: ../bulk-service/bid-strategy.md
+      displayName: BulkBidStrategy
     - name: Budget
       href: ../bulk-service/budget.md
       displayName: BulkBudget
@@ -1261,6 +1264,8 @@
       href: ../campaign-management-service/updateconversiongoals.md
     - name: UpdateExperiments
       href: ../campaign-management-service/updateexperiments.md
+    - name: UpdateImportJobs
+      href: ../campaign-management-service/updateimportjobs.md
     - name: UpdateKeywords
       href: ../campaign-management-service/updatekeywords.md
     - name: UpdateLabels
@@ -1634,6 +1639,10 @@
       href: ../campaign-management-service/urlgoal.md
     - name: Video
       href: ../campaign-management-service/video.md
+    - name: VideoAdExtension
+      href: ../campaign-management-service/videoadextension.md
+    - name: VideoAsset
+      href: ../campaign-management-service/videoasset.md
     - name: Webpage
       href: ../campaign-management-service/webpage.md
     - name: WebpageCondition
@@ -1807,12 +1816,18 @@
       displayName: customer billing service operations
     - name: AddInsertionOrder
       href: ../customer-billing-service/addinsertionorder.md
+    - name: DispatchCoupons
+      href: ../customer-billing-service/dispatchcoupons.md
     - name: GetAccountMonthlySpend
       href: ../customer-billing-service/getaccountmonthlyspend.md
     - name: GetBillingDocuments
       href: ../customer-billing-service/getbillingdocuments.md
     - name: GetBillingDocumentsInfo
       href: ../customer-billing-service/getbillingdocumentsinfo.md
+    - name: RedeemCoupon
+      href: ../customer-billing-service/redeemcoupon.md
+    - name: SearchCoupons
+      href: ../customer-billing-service/searchcoupons.md
     - name: SearchInsertionOrders
       href: ../customer-billing-service/searchinsertionorders.md
     - name: UpdateInsertionOrder
@@ -1838,6 +1853,10 @@
       href: ../customer-billing-service/billingdocument.md
     - name: BillingDocumentInfo
       href: ../customer-billing-service/billingdocumentinfo.md
+    - name: Coupon
+      href: ../customer-billing-service/coupon.md
+    - name: CouponRedemption
+      href: ../customer-billing-service/couponredemption.md
     - name: InsertionOrder
       href: ../customer-billing-service/insertionorder.md
     - name: InsertionOrderPendingChanges

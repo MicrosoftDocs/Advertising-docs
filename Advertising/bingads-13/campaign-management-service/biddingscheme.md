@@ -9,22 +9,22 @@ description: Defines the base object of a bidding scheme for how you want to man
 # BiddingScheme Data Object - Campaign Management
 Defines the base object of a bidding scheme for how you want to manage your bids. A bidding scheme is known as a *bid strategy type* in the Microsoft Advertising web application.
 
-Do not try to instantiate a *BiddingScheme*. You can create one or more of the following objects that derive from it.
-- [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md)
-- [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)
-- [ManualCpcBiddingScheme](manualcpcbiddingscheme.md) 
-- [MaxClicksBiddingScheme](maxclicksbiddingscheme.md)
+Do not try to instantiate a *BiddingScheme*. You can create one or more of the following objects that derive from it.  
+
+- [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md)  
+- [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)  
+- [ManualCpcBiddingScheme](manualcpcbiddingscheme.md)  
+- [ManualCpmBiddingScheme](manualcpmbiddingscheme.md)  
+- [ManualCpvBiddingScheme](manualcpvbiddingscheme.md)  
+- [MaxClicksBiddingScheme](maxclicksbiddingscheme.md)  
 - [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)  
 - [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)  
-- [TargetCpaBiddingScheme](targetcpabiddingscheme.md) 
-- [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) 
-- [TargetRoasBiddingScheme](targetroasbiddingscheme.md) 
+- [TargetCpaBiddingScheme](targetcpabiddingscheme.md)  
+- [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md)  
+- [TargetRoasBiddingScheme](targetroasbiddingscheme.md)  
 
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
-
-> [!TIP] 
-> You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, TargetCpa, or TargetRoas and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.  
 
 ## Syntax
 ```xml

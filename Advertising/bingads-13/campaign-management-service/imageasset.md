@@ -60,3 +60,5 @@ The [ImageAsset](imageasset.md) object derives from the [Asset](asset.md) object
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v13  
 
+## Used By
+[VideoAsset](videoasset.md)  

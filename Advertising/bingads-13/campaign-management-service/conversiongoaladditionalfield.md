@@ -24,7 +24,7 @@ Defines a list of optional conversion goal properties that you can request when 
   </xs:list>
 </xs:simpleType>
 ```
-Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>If the action type that is stored in Microsoft Advertising is either [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), you must include ActionTypesPhase3 in the request.
+
 ## <a name="values"></a>Values
 
 The [ConversionGoalAdditionalField](conversiongoaladditionalfield.md) value set has the following values: [GoalCategory](#goalcategory), [InactiveDueToTagUnavailable](#inactiveduetotagunavailable), [IsExternallyAttributed](#isexternallyattributed), [ViewThroughConversionWindowInMinutes](#viewthroughconversionwindowinminutes).

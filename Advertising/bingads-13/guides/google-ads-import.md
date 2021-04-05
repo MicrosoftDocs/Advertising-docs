@@ -78,6 +78,8 @@ For more details about what does and doesn't get imported from Google Ads, see [
 You can schedule a recurring import e.g., "Every Sunday at 4:00 PM" or you can run the import now. 
 
 The scheduling options are:
+
+- Auto: Microsoft Advertising will run imports on a varying schedule that will best optimize your campaigns.  
 - Now: Import once as soon as you call the [AddImportJobs](../campaign-management-service/addimportjobs.md) operation. 
 - Once: Import once at the date and time you specify.
 - Daily: Import once per day at the time you specify.
