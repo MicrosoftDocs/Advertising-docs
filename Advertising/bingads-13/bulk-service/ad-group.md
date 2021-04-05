@@ -218,7 +218,7 @@ Set this property to *TRUE* if you want the ads to be shown in the search user's
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network. This property is not available with [smart shopping campaigns](../guides/smart-shopping-campaigns.md). 
+> This property is not available with [smart shopping campaigns](../guides/smart-shopping-campaigns.md). 
 
 Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this ad group.
 
@@ -234,7 +234,7 @@ The default bid boost percentage that you'll see in the Microsoft Advertising we
 This ad group level target setting is not used directly in the auction. The product group [Bid Adjustment](ad-group-product-partition.md#bidadjustment) is used to boost your partner's [Bid](ad-group-product-partition.md#bid).
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
+> This setting is only applicable for ad groups in [Shopping Campaigns for Brands](../guides/product-ads.md#setup-cooperative).
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
@@ -244,7 +244,7 @@ This ad group level target setting is not used directly in the auction. The prod
 Determines whether or not to amplify your partner's bid.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
+> This setting is only applicable for ad groups in [Shopping Campaigns for Brands](../guides/product-ads.md#setup-cooperative).
 
 Supported values are BidBoost and BidValue. A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid via the product group's [Bid Adjustment](ad-group-product-partition.md#bidadjustment) field (please also see ad group [Bid Boost Value](#bidboostvalue)) and the ad group's [Maximum Bid](#maximumbid) fields. You should only use BidBoost if your partner uses BidValue. 
 
@@ -252,17 +252,17 @@ Please take note of the following impact this setting has on biddable [Ad Group 
 - If this element is set to BidValue, the auction will use use the [Bid](ad-group-product-partition.md#bid) field of the [Ad Group Product Partition](ad-group-product-partition.md).
 - If this element is set to BidBoost, the auction will use use the [Bid Adjustment](ad-group-product-partition.md#bidadjustment) field of the [Ad Group Product Partition](ad-group-product-partition.md).  
 
-**Add:** Optional. If this field is not set, the default Sponsored Products bidding option for the ad group is BidValue.    
+**Add:** Optional. If this field is not set, the default [Shopping Campaigns for Brands](../guides/product-ads.md#setup-cooperative) bidding option for the ad group is BidValue.    
 **Update:** Read-only. If you attempt to change the previous bid option an error will be returned.     
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. 
 
+The bid strategy type for ad groups and keywords is "InheritFromParent".
+
 > [!IMPORTANT]
-> Starting in Q2 calendar year 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
-> 
-> Also starting in Q2 calendar year 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> Starting in April 2021, you cannot set the manual CPC bid strategy for search campaigns. In addition, you cannot set any bid strategies for ad groups or keywords. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy.
 
 For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). 
 
@@ -420,10 +420,10 @@ For ad groups in Audience campaigns, ad group level language is not supported, a
 **Delete:** Read-only  
 
 ## <a name="maximumbid"></a>Maximum Bid
-The flat amount of your Sponsored Products bid.
+The flat amount of your bid for [Shopping Campaigns for Brands](../guides/product-ads.md#setup-cooperative).
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Microsoft Shopping Campaigns that are setup for Sponsored Products. Sponsored Products are only available in the United States and are currently under open beta.
+> This setting is only applicable for ad groups in [Shopping Campaigns for Brands](../guides/product-ads.md#setup-cooperative).
 
 **Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
 **Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       

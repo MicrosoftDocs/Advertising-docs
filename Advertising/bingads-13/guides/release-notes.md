@@ -7,10 +7,51 @@ ms.author: eur
 description: Get information about changes to Bing Ads API Version 13 by month. 
 ---
 # Bing Ads API Release Notes
-See below for information about changes to Bing Ads API Version 13 by month. 
+See below for information about changes to Bing Ads API Version 13 by month.  
+
+## <a name="breaking-changes"></a>Breaking changes (upcoming)
+
+> [!IMPORTANT]
+> The following planned changes may require client updates to avoid disruption of service.  
+
+### <a name="mfa-required"></a>Multi-factor authentication will be required
+
+[!INCLUDE[request-header](./includes/mfa-required.md)]
+
+## <a name="april2021"></a>April 2021
+
+See below for Bing Ads API updates during this calendar month.  
+
+- [Portfolio bid strategy](#portfolio-bid-strategy-april2021)  
+- [Target impression share](#target-impression-share-april2021)  
+
+### <a name="portfolio-bid-strategy-april2021"></a>Portfolio bid strategy
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+
+A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal.  
+
+We automatically adjust your bids to balance under- and over-performing campaigns that share the same strategy, whether to maximize conversions, clicks, target impression share, or other performance goals. Portfolio bid strategies could be a great option for advertisers who want to make sure their entire budgets are spent efficiently.
+
+All you have to do is choose a bid strategy type and include campaigns with complementary budgets in the portfolio. Microsoft Advertising will adjust your bids based on the performance of the entire portfolio. If your portfolio includes any campaigns with a shared budget, then you should include all of the campaigns that share the same budget.  
+
+Portfolio bid strategies work best with one goal in mind, using complementary campaign and bid strategy types. You cannot change a portfolio's bid strategy type. If you want a campaign in the portfolio to use a different bid strategy you can move it to another portfolio. Once you choose a campaign type, the portfolio can only include campaigns of that type.  
+
+Portfolio bid strategies are supported in the Campaign Management [BidStrategy](../campaign-management-service/bidstrategy.md) object and Bulk [Bid Strategy](../bulk-service/bid-strategy.md) record.  
+
+### <a name="target-impression-share-april2021"></a>Target impression share
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+
+Target impression share is an automated bidding strategy that you can use to get the target impression share for the ad position where you want your ads to appear.  
+
+Target impression share is supported via the Campaign Management [BidStrategy](../campaign-management-service/bidstrategy.md), [Campaign](../campaign-management-service/campaign.md), and [TargetImpressionShareBiddingScheme](../campaign-management-service/targetimpressionsharebiddingscheme.md) objects and the Bulk [Bid Strategy](../bulk-service/bid-strategy.md) and [Campaign](../bulk-service/campaign.md) records.  
 
 ## <a name="march2021"></a>March 2021
-See below for Bing Ads API updates during this calendar month. 
+
+See below for Bing Ads API updates during this calendar month.  
 
 - [Bing Ads API SDK Updates](#sdk-march2021)  
 
@@ -268,8 +309,6 @@ See below for Bing Ads API updates during this calendar month.
 
 ### <a name="accelerated-budget-january2020"></a>Deprecating Accelerated Budget Delivery 
 As of January 2020 the budget type for shared and unshared budgets are read-only for all DynamicSearchAds, Shopping, and Search campaigns, and any budget type value that you attempt to set will be ignored without returning an error. Previous budget settings will be migrated from accelerated to standard, and the API will only return "DailyBudgetStandard" for DynamicSearchAds, Shopping, and Search campaigns, as well as for all shared budgets. You can still use accelerated budgets with Audience campaigns. The budget type data is not migrated for Audience campaign level unshared budgets. However, the budget delivery might change as described above if the Audience campaign uses a shared budget. 
-
-The accelerated budget deprecation phases started in November 2019. For more information, please see [Deprecating Accelerated Budget Delivery](budget-bid-strategies.md#deprecating-accelerated-budget). 
 
 ### <a name="actiontypes-january2020"></a>Action Ad Extension Types
 Starting January 2020, nine action types are deprecated. For example, if you set the action type to "Browse" no error will be returned, but "LearnMore" is the effective value that will be stored and returned when retrieving the action ad extension. Your application should use the replacement values instead of the deprecated values. 

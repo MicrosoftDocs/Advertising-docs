@@ -132,6 +132,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [UpdateCampaigns](updatecampaigns.md)  
 [UpdateConversionGoals](updateconversiongoals.md)  
 [UpdateExperiments](updateexperiments.md)  
+[UpdateImportJobs](updateimportjobs.md)  
 [UpdateKeywords](updatekeywords.md)  
 [UpdateLabels](updatelabels.md)  
 [UpdateSharedEntities](updatesharedentities.md)  

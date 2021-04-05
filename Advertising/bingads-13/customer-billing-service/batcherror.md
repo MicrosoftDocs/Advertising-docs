@@ -38,3 +38,4 @@ Namespace: https\://bingads.microsoft.com/Customer/v13/Exception
 
 ## Used By
 [ApiBatchFault](apibatchfault.md)  
+[DispatchCoupons](dispatchcoupons.md)  
