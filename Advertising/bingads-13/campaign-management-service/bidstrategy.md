@@ -31,8 +31,6 @@ Portfolio bid strategies work best with one goal in mind, using complementary ca
 |Target impression share|Search|
 |Target ROAS|Search, Shopping|
 
-
-
 ## Syntax
 ```xml
 <xs:complexType name="BidStrategy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
