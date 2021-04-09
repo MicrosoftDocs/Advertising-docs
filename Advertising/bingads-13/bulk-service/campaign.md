@@ -275,7 +275,7 @@ The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, Max
   
 If you use the "MaxClicks" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
-If you use the "MaxConversions" bid strategy type, then you can optionally include the [Bid Strategy MaxConversions](#bidstrategymaxcpc) field.
+If you use the "MaxConversions" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
 If you use the "TargetCpa" bid strategy type, then you must include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.
 

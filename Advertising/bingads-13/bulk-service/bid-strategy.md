@@ -29,7 +29,7 @@ Portfolio bid strategies work best with one goal in mind, using complementary ca
 |Maximize clicks|Search, Shopping|
 |Maximize conversions|Search|
 |Target CPA|Search|
-|Target impression share|Search
+|Target impression share|Search|
 |Target ROAS|Search, Shopping|
 
 You can download all *Bid Strategy* records in the account by including the [DownloadEntity](downloadentity.md) value of *BidStrategies* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
@@ -186,11 +186,21 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 ## <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. 
 
-The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, MaxConversions, TargetCpa, TargetImpressionShare, and TargetRoas. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+Portfolio bid strategies work best with one goal in mind, using complementary campaign and bid strategy types. You cannot change a portfolio's bid strategy type. If you want a campaign in the portfolio to use a different bid strategy you can move it to another portfolio. Once you choose a campaign type, the portfolio can only include campaigns of that type.  
+
+|Bid strategy type|Campaign types supported|
+|-----|-----|
+|Maximize clicks|Search, Shopping|
+|Maximize conversions|Search|
+|Target CPA|Search|
+|Target impression share|Search|
+|Target ROAS|Search, Shopping|
+
+For details about bid strategies, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
   
 If you use the "MaxClicks" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
-If you use the "MaxConversions" bid strategy type, then you can optionally include the [Bid Strategy MaxConversions](#bidstrategymaxcpc) field.
+If you use the "MaxConversions" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
 If you use the "TargetCpa" bid strategy type, then you must include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.
 
@@ -201,7 +211,7 @@ If you use the "TargetRoas" bid strategy type, then you must include the [Bid St
 > [!IMPORTANT] 
 > For some bid strategy types your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](../guides/universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
 
-**Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default bid strategy type for most Shopping campaigns is EnhancedCpc; however, the only supported bid strategy type for [smart shopping campaigns](../guides/smart-shopping-campaigns.md) is MaxConversionValue. The only supported value for Audience campaigns is ManualCpc.    
+**Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc), [Bid Strategy TargetCpa](#bidstrategytargetcpa), [Bid Strategy TargetAdPosition](#bidstrategytargetadposition), [Bid Strategy TargetImpressionShare](#bidstrategytargetimpressionshare), and [Bid Strategy TargetRoas](#bidstrategytargetroas) fields will be deleted.  
 **Delete:** Read-only  
 
@@ -213,12 +223,12 @@ The type of ad campaign that can be included the portfolio bid strategy.
 |Maximize clicks|Search, Shopping|
 |Maximize conversions|Search|
 |Target CPA|Search|
-|Target impression share|Search
+|Target impression share|Search|
 |Target ROAS|Search, Shopping|
 
 Once you choose a campaign type, the portfolio can only include campaigns of that type.  
 
-**Add:** Required  
+**Add:** Optional. The default campaign type is *Search*.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
