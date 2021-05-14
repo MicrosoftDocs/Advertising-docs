@@ -1,7 +1,7 @@
 ---
 title: Estimate bids for keywords
 description: Estimate how much you should bid for a keyword in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

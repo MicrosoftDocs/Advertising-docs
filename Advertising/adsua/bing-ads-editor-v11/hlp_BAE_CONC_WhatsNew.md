@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Advertising Editor?
 description: Check out the new and enhanced features in Microsoft Advertising Editor designed to help you connect with your target customers, boost campaign performance, and improve your ROI.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

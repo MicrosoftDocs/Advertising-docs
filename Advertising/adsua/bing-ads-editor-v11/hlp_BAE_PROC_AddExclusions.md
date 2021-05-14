@@ -1,7 +1,7 @@
 ---
 title: How to prevent your ads from showing to certain people
 description: In Microsoft Advertising Editor , prevent your ad from appearing in specific locations, on specific web sites within the search network, or from displaying to certain IP addresses. You can set exclusions on a each ad or across multiple ads at the same time.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

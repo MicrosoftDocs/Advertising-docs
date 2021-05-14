@@ -1,7 +1,7 @@
 ---
 title: Create an ad campaign
 description: Learn how to create an ad campaign to advertise across different search and social ad platforms.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: How does location targeting and ad language affect who can see my ads?
 description: When determining if your ads are eligible to be displayed, Microsoft Advertising Editor uses both your ad language and location target settings. Both criteria must be met in order for an ad to display.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

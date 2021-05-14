@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Advertising Apps?
 description: Check out the new and enhanced features in Microsoft Advertising Apps designed to help you connect with your target customers, boost campaign performance, and improve your ROI.
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

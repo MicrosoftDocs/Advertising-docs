@@ -1,7 +1,7 @@
 ---
 title: What will my ad look like?
 description: See the different ways your ad can display in the browser and find out how to change your ad title in Microsoft Advertising Editor .
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

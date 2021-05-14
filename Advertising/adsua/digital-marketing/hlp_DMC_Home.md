@@ -1,7 +1,7 @@
 ---
 title: Welcome to Digital Marketing Center Help
 description: Welcome to Digital Marketing Center Help
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

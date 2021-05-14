@@ -1,7 +1,7 @@
 ---
 title: Digital Marketing Center promotional offers (coupons)
 description: Everything you need to know about using promotional offers in Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Productivity tips
 description: To accomplish tasks quickly when working in Microsoft Advertising Editor use these tips.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

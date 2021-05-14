@@ -1,7 +1,7 @@
 ---
 title: Where can I find information about the Bing Ads API?
 description: Learn about resources for the Bing Ads API.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

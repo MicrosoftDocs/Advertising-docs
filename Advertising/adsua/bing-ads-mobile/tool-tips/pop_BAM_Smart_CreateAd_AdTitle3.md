@@ -1,7 +1,7 @@
 ---
 title: Title 3
 description: Title 3
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

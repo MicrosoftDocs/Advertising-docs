@@ -1,7 +1,7 @@
 ---
 title: Excluded URLs - query level
 description: Excluded URLs - query level
-ms.service: "PubCenter-v4"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

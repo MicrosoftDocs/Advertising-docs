@@ -1,7 +1,7 @@
 ---
 title: Top search phrases
 description: Top search phrases
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

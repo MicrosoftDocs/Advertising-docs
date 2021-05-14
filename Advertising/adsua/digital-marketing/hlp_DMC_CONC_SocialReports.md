@@ -1,7 +1,7 @@
 ---
 title: Social reports
 description: Monitor your social profiles to see how your audience is responding.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

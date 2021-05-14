@@ -1,7 +1,7 @@
 ---
 title: How do I disable ad-blocking extensions?
 description: Learn how to disable ad-blocking extensions to ensure Digital Marketing Center tools work correctly.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

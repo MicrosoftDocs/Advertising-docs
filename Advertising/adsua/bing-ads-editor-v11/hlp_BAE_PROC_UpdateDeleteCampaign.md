@@ -1,7 +1,7 @@
 ---
 title: Delete campaigns
 description: Learn how to delete ad groups using Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

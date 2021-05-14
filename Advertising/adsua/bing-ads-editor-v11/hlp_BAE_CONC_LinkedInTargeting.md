@@ -1,7 +1,7 @@
 ---
 title: LinkedIn profile targeting
 description: Learn how to target customers based on their LinkedIn profile information.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

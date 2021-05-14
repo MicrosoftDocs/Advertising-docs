@@ -1,7 +1,7 @@
 ---
 title: Payment method and billing
 description: Payment method and billing
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

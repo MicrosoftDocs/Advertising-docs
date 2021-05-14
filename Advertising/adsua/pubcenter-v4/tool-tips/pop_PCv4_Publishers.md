@@ -1,7 +1,7 @@
 ---
 title: Publishers
 description: Publishers
-ms.service: "PubCenter-v4"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

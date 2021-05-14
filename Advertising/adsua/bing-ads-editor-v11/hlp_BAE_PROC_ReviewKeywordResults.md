@@ -1,7 +1,7 @@
 ---
 title: Review keyword results by month, age, or gender
 description: Use monthly, age, and gender data to improve your keyword bidding strategy in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

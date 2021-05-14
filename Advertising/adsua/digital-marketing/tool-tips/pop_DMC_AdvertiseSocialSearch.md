@@ -1,7 +1,7 @@
 ---
 title: Social and search advertising
 description: Social and search advertising
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

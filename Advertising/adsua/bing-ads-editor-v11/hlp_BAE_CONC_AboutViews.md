@@ -1,7 +1,7 @@
 ---
 title: Viewing your campaign data the way you want
 description: Learn how the data view in Microsoft Advertising Editor provides several predefined views that can help you more easily find specific data related to your campaigns.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

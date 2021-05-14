@@ -1,7 +1,7 @@
 ---
 title: Don't have permission to access content
 description: Don't have permission to access content
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

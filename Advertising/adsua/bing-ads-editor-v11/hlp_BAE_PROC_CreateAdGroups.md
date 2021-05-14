@@ -1,7 +1,7 @@
 ---
 title: Create ad groups
 description: Learn how to create new ad groups within any existing campaign in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

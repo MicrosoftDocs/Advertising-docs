@@ -1,7 +1,7 @@
 ---
 title: Website URL
 description: Website URL
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

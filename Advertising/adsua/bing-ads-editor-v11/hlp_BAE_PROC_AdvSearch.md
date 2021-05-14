@@ -1,7 +1,7 @@
 ---
 title: Search your campaigns
 description: Learn about everything Microsoft Advertising Editor's Advanced Search feature can do for you.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: What are keyword match types, and how do I use them?
 description: Broad, phrase, exact.... Get help figuring out which ones are available in Microsoft Advertising Editor and which ones are right for your campaigns and ad groups.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

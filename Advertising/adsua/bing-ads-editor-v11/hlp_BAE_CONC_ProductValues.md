@@ -1,7 +1,7 @@
 ---
 title: Product ads filter limits
 description: Learn about product filter limits for your shopping campaigns
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

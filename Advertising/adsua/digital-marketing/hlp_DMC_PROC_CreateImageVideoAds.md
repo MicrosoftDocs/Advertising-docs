@@ -1,7 +1,7 @@
 ---
 title: Create and edit image or video ads (social ads)
 description: Learn how to create image or video ads to run on Facebook and Instagram. When people view their social media feeds, image and video ads display in them.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

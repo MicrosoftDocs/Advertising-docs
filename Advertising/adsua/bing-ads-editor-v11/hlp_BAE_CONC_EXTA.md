@@ -1,7 +1,7 @@
 ---
 title: About Expanded Text Ads
 description: Learn about Expanded Text Ads and how they can optimize your ads.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

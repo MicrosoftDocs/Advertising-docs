@@ -1,7 +1,7 @@
 ---
 title: Ad text 2
 description: Ad text 2
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

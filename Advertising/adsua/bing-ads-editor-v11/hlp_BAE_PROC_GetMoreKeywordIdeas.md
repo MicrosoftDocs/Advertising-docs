@@ -1,7 +1,7 @@
 ---
 title: Get more keyword ideas
 description: Need help getting keyword ideas? Use the Keyword research tool in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

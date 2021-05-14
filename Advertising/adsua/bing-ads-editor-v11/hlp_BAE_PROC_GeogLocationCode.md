@@ -1,7 +1,7 @@
 ---
 title: How can I get location target codes?
 description: Learn how to manage location targets in bulk in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

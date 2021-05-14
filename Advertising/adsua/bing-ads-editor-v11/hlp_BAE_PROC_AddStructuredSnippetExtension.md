@@ -1,7 +1,7 @@
 ---
 title: Add Structured Snippets to your ad
 description: Add extra snippets of text that highlights your store's products or offers.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: About ad distribution
 description: Use ad distribution to select where you want your ads to show. You can choose to have your ads shown on the entire Microsoft Search Network or subsets of it.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

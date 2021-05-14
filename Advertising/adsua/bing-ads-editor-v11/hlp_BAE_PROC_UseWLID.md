@@ -1,7 +1,7 @@
 ---
 title: Sign in to Microsoft Advertising Editor with your Microsoft account
 description: Starting in October 2013, new Microsoft Advertising and Microsoft Advertising Editor customers will sign up using a Microsoft account  and existing customers will be asked to transition to a Microsoft account if they haven't already.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

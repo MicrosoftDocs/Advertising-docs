@@ -1,7 +1,7 @@
 ---
 title: About the expected click-through rate score
 description: Learn about what the expected click-through rate and how you can use Microsoft Advertising Editor to improve it.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

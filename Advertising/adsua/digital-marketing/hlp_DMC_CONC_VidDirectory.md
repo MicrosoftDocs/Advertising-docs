@@ -1,7 +1,7 @@
 ---
 title: Digital Marketing Center video tutorials
 description: Check out Digital Marketing Center videos.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

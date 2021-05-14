@@ -1,7 +1,7 @@
 ---
 title: Daily budget range for similar businesses
 description: Daily budget range for similar businesses
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

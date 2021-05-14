@@ -1,7 +1,7 @@
 ---
 title: FAQ: Microsoft Advertising for iOS
 description: Stay up to date on your Microsoft Advertising campaigns using Microsoft Advertising for iOS.
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

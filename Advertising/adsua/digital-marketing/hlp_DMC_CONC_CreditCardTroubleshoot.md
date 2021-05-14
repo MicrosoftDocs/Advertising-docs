@@ -1,7 +1,7 @@
 ---
 title: I'm having trouble adding a credit card or debit card
 description: Adding credit cards and debit cards to Digital Marketing Center is easy and safe, but if you run into problems, take a look at this article for troubleshooting tips.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

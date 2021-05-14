@@ -1,7 +1,7 @@
 ---
 title: Resolving conflicts
 description: The conflict resolution feature in Microsoft Advertising Editor helps you quickly resolve inconsistencies that result from someone else uploading or making online changes to the same campaign that you are working on.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

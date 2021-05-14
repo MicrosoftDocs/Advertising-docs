@@ -1,7 +1,7 @@
 ---
 title: Improvements to Sitelink Extensions
 description: Learn more about the improvements we've made to Sitelink Extensions.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

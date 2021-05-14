@@ -1,7 +1,7 @@
 ---
 title: Synchronize campaign data between Microsoft Advertising and Microsoft Advertising Editor
 description: To ensure that you're always working with the latest data, begin each work session by getting changes from Microsoft Advertising to Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

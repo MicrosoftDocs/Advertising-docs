@@ -1,7 +1,7 @@
 ---
 title: Learn about using negative keywords to get to the right customers
 description: You can add negative keywords to a campaign or ad group in Microsoft Advertising Editor to help prevent paying for clicks from people who aren’t interested in your product.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

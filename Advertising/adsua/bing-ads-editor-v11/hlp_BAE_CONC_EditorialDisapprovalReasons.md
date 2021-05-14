@@ -1,7 +1,7 @@
 ---
 title: My ad or keyword was disapproved. What should I do?
 description: In Microsoft Advertising Editor , learn how to find out why your ad or keyword is **Disapproved**, verify that you're following Microsoft Advertising policies, and fix the issue.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

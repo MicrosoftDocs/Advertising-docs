@@ -1,7 +1,7 @@
 ---
 title: Understand and use product groups
 description: Product groups are used to specify which products from your Microsoft Merchant Center feed should be included in a particular ad group. In this article will explain more and give a detailed example.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Choose accounts to download to Microsoft Advertising Editor
 description: Speed up account management by selecting a specific set of accounts to update in Microsoft Advertising Editor. These are the accounts that are updated when you post or get changes.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

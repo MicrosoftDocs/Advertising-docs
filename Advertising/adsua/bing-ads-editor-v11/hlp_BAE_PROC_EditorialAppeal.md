@@ -1,7 +1,7 @@
 ---
 title: Request an exception to an editorial disapproval
 description: In Microsoft Advertising Editor, learn about requesting an exception to a disapproval when you believe your ad or keyword was mistakenly disapproved.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

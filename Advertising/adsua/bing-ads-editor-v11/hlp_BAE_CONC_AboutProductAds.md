@@ -1,7 +1,7 @@
 ---
 title: What are Product Ads?
 description: Products Ads include custom images from your own product catalogs (created in the Microsoft Merchant Center), plus specific promotional text, pricing, and seller details.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

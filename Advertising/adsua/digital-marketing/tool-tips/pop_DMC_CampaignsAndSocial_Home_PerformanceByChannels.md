@@ -1,7 +1,7 @@
 ---
 title: Performance by channels
 description: Performance by channels
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

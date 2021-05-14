@@ -1,7 +1,7 @@
 ---
 title: Campaign performance
 description: Campaign performance
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

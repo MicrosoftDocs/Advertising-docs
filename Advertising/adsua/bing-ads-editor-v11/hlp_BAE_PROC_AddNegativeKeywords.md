@@ -1,7 +1,7 @@
 ---
 title: Add negative keywords
 description: Help prevent your ads from being displayed with negative keywords in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Using broad match and broad match modifier
 description: Learn about the broad match modifier in Microsoft Advertising Editor , how to use it with the broad match type, and how it will impact the eligibility of ads to serve.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: How budgets work
 description: Your budget is how much you want to spend per day on your ads. The right choice depends on your goals and how you want to monitor your spending.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Best practices for optimizing your website in Digital Marketing Center
 description: Use these best practices to help attract customers to your website and encourage them to buy your products or services.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

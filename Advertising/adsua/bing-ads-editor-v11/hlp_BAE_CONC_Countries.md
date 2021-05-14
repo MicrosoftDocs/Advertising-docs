@@ -1,7 +1,7 @@
 ---
 title: Where does Microsoft Advertising show your ads?
 description: Find out which countries and regions Microsoft Advertising is currently available in.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

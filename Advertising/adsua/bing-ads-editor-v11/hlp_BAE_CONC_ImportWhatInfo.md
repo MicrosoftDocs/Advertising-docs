@@ -1,7 +1,7 @@
 ---
 title: What gets imported from Google Ads?
 description: Most of the information in your campaigns is included when you import it from Google Ads. Here's a list of what gets imported, as well as some exceptions.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

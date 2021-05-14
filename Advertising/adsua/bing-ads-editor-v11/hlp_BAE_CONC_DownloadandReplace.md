@@ -1,7 +1,7 @@
 ---
 title: When to use Full Account
 description: The Full Account command overwrites all of the data in Microsoft Advertising Editor , including any unsaved changes, with the latest account information from Microsoft Advertising, so use it only when necessary.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

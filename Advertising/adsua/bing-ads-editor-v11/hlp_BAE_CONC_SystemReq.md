@@ -1,7 +1,7 @@
 ---
 title: System requirements
 description: Microsoft Advertising Editor is a program that can be used on any PC or Mac computer that meets certain requirements.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

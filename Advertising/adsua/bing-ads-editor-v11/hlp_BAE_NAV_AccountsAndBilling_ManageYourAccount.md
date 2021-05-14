@@ -1,7 +1,7 @@
 ---
 title: Manage your account
 description: Manage your account
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

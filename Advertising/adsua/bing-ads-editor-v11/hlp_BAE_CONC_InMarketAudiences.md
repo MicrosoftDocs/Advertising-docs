@@ -1,7 +1,7 @@
 ---
 title: About in-market audiences
 description: Learn how to use in-market audiences to increase conversions and improve bids and targeting.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

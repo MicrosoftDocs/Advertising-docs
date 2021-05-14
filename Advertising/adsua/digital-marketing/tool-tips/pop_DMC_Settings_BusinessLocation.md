@@ -1,7 +1,7 @@
 ---
 title: Business location
 description: Business location
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

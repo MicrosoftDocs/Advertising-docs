@@ -1,7 +1,7 @@
 ---
 title: How do I set up ad extension scheduling?
 description: Learn how to set your ad extensions to show during times you specify.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
