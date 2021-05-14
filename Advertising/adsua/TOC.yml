@@ -1,7 +1,7 @@
 - name: Bing_Ads
-  items - 
+  items: 
   - name: content
-    items - 
+    items: 
     - name: Signing in with a work account
       href: ./bing-ads/hlp_BA_CONC_AAD.md
     - name: How should I organize my accounts and campaigns?
@@ -1011,7 +1011,7 @@
     - name: Oops...
       href: ./bing-ads/hlp_ERR_NoTopicsFound.md
   - name: tooltip
-    items - 
+    items: 
     - name: Sharing
       href: ./bing-ads/tool-tips/pop_BA_AccountLevel.md
     - name: Sharing
@@ -4839,7 +4839,7 @@
     - name: Language
       href: ./bing-ads/tool-tips/pop_UP_Settings_Language.md
   - name: includes
-    items - 
+    items: 
     - name: Signing in with a work account
       href: ./bing-ads/hlp_BA_CONC_AAD.md
     - name: How should I organize my accounts and campaigns?
@@ -5849,9 +5849,9 @@
     - name: Oops...
       href: ./bing-ads/hlp_ERR_NoTopicsFound.md
 - name: Bing_Ads_Editor_v11
-  items - 
+  items: 
   - name: content
-    items - 
+    items: 
     - name: What will my ad look like?
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutAdAppearance.md
     - name: About ad distribution
@@ -6101,9 +6101,9 @@
     - name: Oops...
       href: ./bing-ads-editor-v11/hlp_ERR_NoTopicsFound.md
   - name: tooltip
-    items - 
+    items: 
   - name: includes
-    items - 
+    items: 
     - name: What will my ad look like?
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutAdAppearance.md
     - name: About ad distribution
@@ -6353,9 +6353,9 @@
     - name: Oops...
       href: ./bing-ads-editor-v11/hlp_ERR_NoTopicsFound.md
 - name: Bing_Ads_Mobile
-  items - 
+  items: 
   - name: content
-    items - 
+    items: 
     - name: FAQ - Microsoft Advertising for iOS
       href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ1.md
     - name: FAQ - Microsoft Advertising for Android
@@ -6367,7 +6367,7 @@
     - name: Your search did not find any results in Microsoft Advertising Help
       href: ./bing-ads-mobile/hlp_ERR_NoTopicsFound.md
   - name: tooltip
-    items - 
+    items: 
     - name: Billing threshold
       href: ./bing-ads-mobile/tool-tips/pop_BAM_Smart_Camp_Billing_Threshold.md
     - name: Daily budget
@@ -6405,7 +6405,7 @@
     - name: Title 3
       href: ./bing-ads-mobile/tool-tips/pop_BAM_Smart_CreateAd_AdTitle3.md
   - name: includes
-    items - 
+    items: 
     - name: FAQ - Microsoft Advertising for iOS
       href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ1.md
     - name: FAQ - Microsoft Advertising for Android
@@ -6417,9 +6417,9 @@
     - name: Your search did not find any results in Microsoft Advertising Help
       href: ./bing-ads-mobile/hlp_ERR_NoTopicsFound.md
 - name: Digital_Marketing
-  items - 
+  items: 
   - name: content
-    items - 
+    items: 
     - name: Setting up a Business Manager Facebook Ads account to use with your Digital Marketing Center account
       href: ./digital-marketing/hlp_BA_CONC_VideoDMC_FbBusiness.md
     - name: Setting up a personal Facebook Ads account to use with your Digital Marketing Center account
@@ -6525,7 +6525,7 @@
     - name: Oops...
       href: ./digital-marketing/hlp_ERR_NoTopicsFound.md
   - name: tooltip
-    items - 
+    items: 
     - name: Search advertising
       href: ./digital-marketing/tool-tips/pop_DMC_AdvertiseSearchOnly.md
     - name: Social media management
@@ -6751,7 +6751,7 @@
     - name: Video requirements
       href: ./digital-marketing/tool-tips/pop_DMC_VideoRequirements.md
   - name: includes
-    items - 
+    items: 
     - name: Setting up a Business Manager Facebook Ads account to use with your Digital Marketing Center account
       href: ./digital-marketing/hlp_BA_CONC_VideoDMC_FbBusiness.md
     - name: Setting up a personal Facebook Ads account to use with your Digital Marketing Center account
@@ -6857,9 +6857,9 @@
     - name: Oops...
       href: ./digital-marketing/hlp_ERR_NoTopicsFound.md
 - name: PubCenter_v4
-  items - 
+  items: 
   - name: content
-    items - 
+    items: 
     - name: Oops!
       href: ./pubcenter-v4/hlp_ERR_NoTopicsFound.md
     - name: Welcome to pubCenter!
@@ -6867,7 +6867,7 @@
     - name: pubCenter release notes
       href: ./pubcenter-v4/hlp_PCv3_CONC_WhatsNew.md
   - name: tooltip
-    items - 
+    items: 
     - name: Create account
       href: ./pubcenter-v4/tool-tips/pop_PCv4_AccountCreate.md
     - name: Create an account
@@ -6919,7 +6919,7 @@
     - name: Users
       href: ./pubcenter-v4/tool-tips/pop_PCv4_Users.md
   - name: includes
-    items - 
+    items: 
     - name: Oops!
       href: ./pubcenter-v4/hlp_ERR_NoTopicsFound.md
     - name: Welcome to pubCenter!
