@@ -1,0 +1,2 @@
+Because of changes in German banking requirements, we have transitioned the lastchriftverfahren payment method to the SEPA direct debit payment method.  Customers with  existing lastchriftverfahren accounts will be automatically transitioned to SEPA direct debit. Customers who have German accounts that are billed in euro can now use the SEPA  direct debit payment method to prepay their advertising costs.
+
