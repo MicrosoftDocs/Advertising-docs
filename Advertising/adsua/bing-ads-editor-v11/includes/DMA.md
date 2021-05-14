@@ -1,0 +1,2 @@
+In Microsoft Advertising, regional targeting borders are not set up by DMA. Borders are currently based on the closest of the targetable metro areas, which could potentially cross state or provincial borders. If a customer resides in an area that is not the major city of a metro area, Microsoft Advertising looks for the closest major city. For example, Los Angeles is a major city, but Pasadena, one of its suburbs, is not. Because Pasadena is closer to Los Angeles than to San Diego, Pasadena is included in the  Los Angeles target area.
+

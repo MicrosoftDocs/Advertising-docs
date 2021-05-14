@@ -1,0 +1,2 @@
+We charge your primary payment method when you reach your billing threshold or your monthly billing date, whichever comes first. Billing thresholds start out low and will automatically increase when make successful payments. The amount of increase depends on your currency and other factors. Alternatively, Microsoft Advertising automatically decreases your billing threshold if you run into problems paying your charges.
+
