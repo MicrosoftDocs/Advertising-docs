@@ -12,7 +12,7 @@ ms.author: eur
 <table type="type2">
   <tr>
     <td style="text-align:center">
-        ![](../images/BA_Conc_Oops.svg)
+        ![Oops no access](../images/BA_Conc_Oops.svg)
       </td>
   </tr>
   <tr>

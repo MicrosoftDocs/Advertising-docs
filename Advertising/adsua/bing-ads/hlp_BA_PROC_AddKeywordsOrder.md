@@ -28,24 +28,6 @@ Before creating new keywords, if you have existing keywords in another online ad
 > All keywords must adhere to [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md).
 > [!INCLUDE [KeywordCharLimit](./includes/KeywordCharLimit.md)]
 > Some common variations of keywords, such as adding punctuation ("'," "!") to a keyword,  count as duplicates in your list. Microsoft Advertising automatically removes all duplicates from the list, but these variations are still valid keywords for your ad.
-> <table>
-  <tr>
-    <th style="width:140px" scope="col">Correct</th>
-    <th scope="col">Incorrect</th>
-  </tr>
-  <tr>
-    <td>Hawaii +Hotels</td>
-    <td>Hawaii + Hotels</td>
-  </tr>
-  <tr>
-    <td>+Hawaii +Hotels</td>
-    <td style="text-align:left">+ Hawaii + Hotels</td>
-  </tr>
-  <tr>
-    <td>+Hawaii Hotels</td>
-    <td style="text-align:left">+Hawaii+Hotels</td>
-  </tr>
-</table>
 
 ## To edit the status, match type or bid of an existing keyword
 1. From the main menu on the far left, click **All campaigns**.
