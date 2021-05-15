@@ -9,6 +9,8 @@ ms.author: eur
 
 # Oops...
 
+[Oops outside table](../images/BA_Conc_Oops.svg)
+
 <table type="type2">
   <tr>
     <td style="text-align:center">![](../images/BA_Conc_Oops.svg)
