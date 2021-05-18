@@ -9,8 +9,8 @@ ms.author: eur
 
 # Status
 
-**What it is:**    This indicates whether your ad is eligible to display.
+**What it is:**     This indicates whether your ad is eligible to display.
 
-**Why it’s important:**   Easy way to check if you ad is live or not.
+**Why it’s important:**    Easy way to check if you ad is live or not.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Mobile app
 
-**What it is:** Search for your mobile app by name, app ID, or package name.
+**What it is:**  Search for your mobile app by name, app ID, or package name.
 
-**What you need to know:** If you can't find your app by name, try doing a manual search by entering your app ID or package name. For brand new apps, it can take up to 96 hours to sync.
+**What you need to know:**  If you can't find your app by name, try doing a manual search by entering your app ID or package name. For brand new apps, it can take up to 96 hours to sync.
 
 

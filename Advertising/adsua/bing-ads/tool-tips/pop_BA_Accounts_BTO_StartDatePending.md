@@ -9,6 +9,6 @@ ms.author: eur
 
 # Start date
 
-**What it is: **This is the date in which a new bill-to-customer will be responsible for billing and payment responsibilities.
+**What it is:** This is the date in which a new bill-to-customer will be responsible for billing and payment responsibilities.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Brand Loyalty asset ID
 
-**What it is:** The ID for your extension.
+**What it is:**  The ID for your extension.
 
-**What you need to know:** You can create an alphanumeric extension ID with a maximum of 60 characters.
+**What you need to know:**  You can create an alphanumeric extension ID with a maximum of 60 characters.
 
 

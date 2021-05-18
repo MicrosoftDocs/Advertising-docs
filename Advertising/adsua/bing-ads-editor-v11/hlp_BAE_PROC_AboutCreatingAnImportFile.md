@@ -1,7 +1,7 @@
 ---
 title: Import data using a file
 description: You can import your campaigns from other advertising programs using a file.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -30,27 +30,15 @@ First, you need to download the template and then you need to add your data.
 ## Import the file into Microsoft Advertising Editor
 1. In Microsoft Advertising, click **Import Campaigns**, and then click **Import from file**.
 1. If you have imported from a file in the past 90 days, you will see a table that tells you the **Date/Time** and     **Uploaded file** that was imported along with:
-<table>
-  <tr>
-    <th scope="col">Column Name</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Summary</th>
-    <td>
-        Shows how many entities were imported successfully and how many had errors. Click the ellipsis ![ellipse](../images/BA_ScreenCap_DeliveryDetails.png) to see details.
-       </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Actions</th>
-    <td>If you had errors, you will see a link to download the error file which you can review.</td>
-  </tr>
-</table>
+|Column Name|Description|
+|---|---|
+|Summary|Shows how many entities were imported successfully and how many had errors. Click the ellipsis ![ellipse](../images/BA_ScreenCap_DeliveryDetails.png) to see details.|
+|Actions|If you had errors, you will see a link to download the error file which you can review.|
 
 1. Click **Browse** and select the import file you've created, then click **Continue**.
 1. Use the drop-down lists to adjust any Microsoft Advertising column headings to match those in your import file, then click **Continue**.
 1. Under **Choose Import Options**, do the following:
-  - Choose the appropriate options for **What to import**, **Bids and budgets**, **Landing page URL**, **Tracking template**, **Ad extensions**, and **Microsoft Advertising**.
+   - Choose the appropriate options for **What to import**, **Bids and budgets**, **Landing page URL**, **Tracking template**, **Ad extensions**, and **Microsoft Advertising**.
 
 1. Click **Import**.
 1. Review the **Import summary** to see what entities were newly added, updated or couldn't be imported (skipped).

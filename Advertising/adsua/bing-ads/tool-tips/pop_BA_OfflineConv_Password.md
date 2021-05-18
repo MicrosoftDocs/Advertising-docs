@@ -9,6 +9,6 @@ ms.author: eur
 
 # Password (optional)
 
-**What it is**: If we'll need credentials to access your file URL, provide the password here.
+**What it is** : If we'll need credentials to access your file URL, provide the password here.
 
 

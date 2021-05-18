@@ -9,10 +9,10 @@ ms.author: eur
 
 # Time zone
 
-**What it is**: The time zone you want to set for your conversions schedule.
+**What it is** : The time zone you want to set for your conversions schedule.
 
-**What you need to know**: This setting does not affect your billing.
+**What you need to know** : This setting does not affect your billing.
 
-**Tip**: Most people select the time zone of their business location.
+**Tip** : Most people select the time zone of their business location.
 
 

@@ -9,15 +9,16 @@ ms.author: eur
 
 # Unified Smart campaigns: Special pages most important to your business
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Some pages on your website are more important than others. By identifying these as **Special pages** when you set up customer action tracking, Unified Smart campaigns can give you more detailed information about how customers interact with them. This is the insight you need to ensure that you’re social presence and ad campaigns are yielding results.
 
 ## Special page types depend on your business goals.
 
 Start with your business goal:
 
-- If you're trying to **sell products**, then your special pages might be product description pages and order confirmation pages.
-- If you're trying to **generate leads**, then your special pages might be sign-up pages.
-- If you're trying to **raise brand awareness**, then your special pages might be blog posts about your brand.
+- If you're trying to **sell products** , then your special pages might be product description pages and order confirmation pages.
+- If you're trying to **generate leads** , then your special pages might be sign-up pages.
+- If you're trying to **raise brand awareness** , then your special pages might be blog posts about your brand.
 
 > [!NOTE]
 > If you have multiple business goals for the same website we recommend creating a separate ad campaign for each goal. The ads, budget, and performance metrics will be separate and distinct.
@@ -26,48 +27,15 @@ Start with your business goal:
 
 We provide the following suggested page types to help you identify your special pages. Choose your own if our suggestions are not applicable for your website.
 
-<table>
-  <tr>
-    <th scope="col">Suggested page type</th>
-    <th scope="col">Example page content</th>
-    <th scope="col">Business goal it could be applicable to</th>
-  </tr>
-  <tr>
-    <td>About</td>
-    <td>Discussion of your brand and its history, philosophy, mission, etc.</td>
-    <td>Brand awareness, engagement, maintaining loyalty, subscription</td>
-  </tr>
-  <tr>
-    <td>Contact us</td>
-    <td>Contact information for your business, such as the street address, phone number, and email addresses</td>
-    <td>Phone orders, visits to your physical location, service commitment, lead generation</td>
-  </tr>
-  <tr>
-    <td>Lead created</td>
-    <td>Confirmation after customer entered an email address</td>
-    <td>Lead generation, engagement, product purchase, service commitment, subscription</td>
-  </tr>
-  <tr>
-    <td>Order confirmation</td>
-    <td>Thank you, details about shipping</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <td>Product</td>
-    <td>Product page with "Add to cart" button</td>
-    <td>Product purchase, level of interest in product, engagement</td>
-  </tr>
-  <tr>
-    <td>Schedule appointment</td>
-    <td>Confirmation of appointment timing, online appointment scheduling</td>
-    <td>Service commitment, lead generation, engagement</td>
-  </tr>
-  <tr>
-    <td>Other</td>
-    <td>Specialty content</td>
-    <td>Any</td>
-  </tr>
-</table>
+|Suggested page type|Example page content|Business goal it could be applicable to|
+|---|---|---|
+|About|Discussion of your brand and its history, philosophy, mission, etc.|Brand awareness, engagement, maintaining loyalty, subscription|
+|Contact us|Contact information for your business, such as the street address, phone number, and email addresses|Phone orders, visits to your physical location, service commitment, lead generation|
+|Lead created|Confirmation after customer entered an email address|Lead generation, engagement, product purchase, service commitment, subscription|
+|Order confirmation|Thank you, details about shipping|Product purchase, engagement|
+|Product|Product page with "Add to cart" button|Product purchase, level of interest in product, engagement|
+|Schedule appointment|Confirmation of appointment timing, online appointment scheduling|Service commitment, lead generation, engagement|
+|Other|Specialty content|Any|
 
 ## URLs for special pages
 

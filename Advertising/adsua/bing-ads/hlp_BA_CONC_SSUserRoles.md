@@ -9,6 +9,7 @@ ms.author: eur
 
 # How do I give someone access to my Microsoft Advertising account?
 
+![Give someone access to your account](../images/BA_Conc_ShareAccount.svg)
 Everyone who uses Microsoft Advertising is assigned a user role, which gives permissions to perform specific account functions. The person who signs up for    the account is given the role of Super Admin, which gives them full permissions, including inviting and deleting other users. If you have more than one    person accessing a Microsoft Advertising account, you'll want to know how to invite users and what role to give them.
 
 ## About user roles
@@ -17,266 +18,40 @@ Microsoft Advertising user roles are Super Admin, Standard User, Advertiser Camp
 
 Here are the roles in a nutshell:
 
-- **Super Admin**. This role has full permissions for all accounts. A Super Admin can manage everything related to billing and payments, account details, and other users (including other Super Admins). The Super Admin can specify which accounts other users have access to. When signing up as a new customer, the first user is the Super Admin. Super Admins can also be set as the Primary Contact to an account.
-- **Standard User**. This role has permissions to manage campaigns and perform some billing activities on selected accounts. This role cannot add, edit, or delete payment methods; create or delete accounts; or link to or unlink from clients. Standard Users can also be set as the Primary Contact to an account.
+- **Super Admin** . This role has full permissions for all accounts. A Super Admin can manage everything related to billing and payments, account details, and other users (including other Super Admins). The Super Admin can specify which accounts other users have access to. When signing up as a new customer, the first user is the Super Admin. Super Admins can also be set as the Primary Contact to an account.
+- **Standard User** . This role has permissions to manage campaigns and perform some billing activities on selected accounts. This role cannot add, edit, or delete payment methods; create or delete accounts; or link to or unlink from clients. Standard Users can also be set as the Primary Contact to an account.
 
 > [!NOTE]
-> **Standard Users** can now manage some users in the accounts they have access to. A Standard User can add or remove other Standard Users, Advertiser Campaign Managers, and Viewers. This new capability allows Standard Users to also view all the users in the **Users** tab. However, Standard Users cannot add or delete a Super Admin, nor can they edit a Super Admin's role.
+> **Standard Users**  can now manage some users in the accounts they have access to. A Standard User can add or remove other Standard Users, Advertiser Campaign Managers, and Viewers. This new capability allows Standard Users to also view all the users in the **Users** tab. However, Standard Users cannot add or delete a Super Admin, nor can they edit a Super Admin's role.
 
-- **Advertiser Campaign Manager**. This role has permissions to view selected accounts and add, edit, or delete campaigns within the selected accounts. The Super Admin can specify which accounts the Advertiser Campaign Manager has access to.  The Advertiser Campaign Manager can view payment methods, but cannot manage any billing or payment tasks.
-- **Viewer**. This role has read-only permissions.
+- **Advertiser Campaign Manager** . This role has permissions to view selected accounts and add, edit, or delete campaigns within the selected accounts. The Super Admin can specify which accounts the Advertiser Campaign Manager has access to.  The Advertiser Campaign Manager can view payment methods, but cannot manage any billing or payment tasks.
+- **Viewer** . This role has read-only permissions.
 
 ## View the roles in more detail
 ## Creating and managing campaigns
 
-<table>
-  <tr>
-    <th style="width:220px"></th>
-    <th style="width:120px">
-              Super Admin
-            </th>
-    <th style="width:120px">
-              Standard User
-            </th>
-    <th style="width:120px">
-              Advertiser Campaign Manager
-            </th>
-    <th style="width:120px">
-              Viewer
-            </th>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              View campaigns
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Run reports
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Manage campaigns
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-  </tr>
-</table>
+||Super Admin|Standard User|Advertiser Campaign Manager|Viewer|
+|---|---|---|---|---|
+|View campaigns|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Run reports|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Manage campaigns|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)||
 
 ## Billing and payments
 
-<table>
-  <tr>
-    <th style="width:220px"></th>
-    <th style="width:120px">
-              Super Admin
-            </th>
-    <th style="width:120px">
-              Standard User
-            </th>
-    <th style="width:120px">
-              Advertiser Campaign Manager
-            </th>
-    <th style="width:120px">
-              Viewer
-            </th>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              View Payment Methods
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              View Billing page****
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Adjust billing threshold*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Create, edit, approve, or cancel insertion orders***
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Redeem a promotional offer*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Pay account balance*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Add funds to a prepay account*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Set a payment method as primary*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Set up auto-recharge*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Remove account hold due to payment issue*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Switch payment setting (prepay to postpay or vice versa)*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)**
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Add, edit, or delete payment methods*
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-</table>
+||Super Admin|Standard User|Advertiser Campaign Manager|Viewer|
+|---|---|---|---|---|
+|View Payment Methods|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|View Billing page\*\*\*\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Adjust billing threshold\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|||
+|Create, edit, approve, or cancel insertion orders\*\*\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|||
+|Redeem a promotional offer\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Pay account balance\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Add funds to a prepay account\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Set a payment method as primary\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Set up auto-recharge\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Remove account hold due to payment issue\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Switch payment setting (prepay to postpay or vice versa)\*|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*\*|||
+|Add, edit, or delete payment methods\*|![green check mark](../images/Global_Icon_CheckMark.png)||||
 
 > [!NOTE]
 > \*Managing payment methods (including the redemption of promotional offers) can only be performed by the bill-to customer.
@@ -289,156 +64,22 @@ Here are the roles in a nutshell:
 
 ## Managing accounts, including hierarchies
 
-<table>
-  <tr>
-    <th style="width:220px"></th>
-    <th style="width:120px">
-              Super Admin
-            </th>
-    <th style="width:120px">
-              Standard User
-            </th>
-    <th style="width:120px">
-              Advertiser Campaign Manager
-            </th>
-    <th style="width:120px">
-              Viewer
-            </th>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              View Accounts page
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Manage account details
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Approve and reject requests to link a manager account to an account
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Approve and reject requests to link a manager account to another manager account
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Send, approve, and reject requests to link to manager accounts and to link to accounts (including billing takeover)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Send, approve, and reject requests to unlink manager accounts and to unlink accounts (including billing takeover)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Manage addresses
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-</table>
+||Super Admin|Standard User|Advertiser Campaign Manager|Viewer|
+|---|---|---|---|---|
+|View Accounts page|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Manage account details|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|||
+|Approve and reject requests to link a manager account to an account|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|||
+|Approve and reject requests to link a manager account to another manager account|![green check mark](../images/Global_Icon_CheckMark.png)||||
+|Send, approve, and reject requests to link to manager accounts and to link to accounts (including billing takeover)|![green check mark](../images/Global_Icon_CheckMark.png)||||
+|Send, approve, and reject requests to unlink manager accounts and to unlink accounts (including billing takeover)|![green check mark](../images/Global_Icon_CheckMark.png)||||
+|Manage addresses|![green check mark](../images/Global_Icon_CheckMark.png)||||
 
 ## User and access management
 
-<table>
-  <tr>
-    <th style="width:220px"></th>
-    <th style="width:120px">
-              Super Admin
-            </th>
-    <th style="width:120px">
-              Standard User
-            </th>
-    <th style="width:120px">
-              Advertiser Campaign Manager
-            </th>
-    <th style="width:120px">
-              Viewer
-            </th>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Serve as Primary Contact
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-  <tr>
-    <td style="width:220px">
-              Give access to, edit, and delete users
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="width:120px">
-              ![green check mark](../images/Global_Icon_CheckMark.png)*
-            </td>
-    <td style="width:120px"></td>
-    <td style="width:120px"></td>
-  </tr>
-</table>
+||Super Admin|Standard User|Advertiser Campaign Manager|Viewer|
+|---|---|---|---|---|
+|Serve as Primary Contact|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|||
+|Give access to, edit, and delete users|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)\*|||
 
 > [!NOTE]
 > \*A Standard User can only add or remove Standard Users, Advertiser Campaign Managers, and Viewers to the accounts they have access to. A Standard User cannot add or remove a Super Admin.
@@ -449,6 +90,7 @@ Only Super Admins can manage users in a Microsoft Advertising account. If you do
 
 A best practice for user management is to ensure that each person signs in to Microsoft Advertising with their own user name and password.    Having separate user accounts is more secure and also has the benefit of letting you use    [change history](./hlp_BA_CONC_ChangeHistoryGraph.md) to review changes made by each user. For more information, see [Best practices to help protect your Microsoft Advertising account](./hlp_BA_CONC_SecurityBestPractices.md).
 
+ 
 ## Invite a new user
 Shortly after you invite a new user, they will receive an account activation email with [            instructions on signing in to Microsoft Advertising          ](./hlp_BA_PROC_InviteNewUser.md). Only those with Super Admin and Standard User roles can invite new users.
 

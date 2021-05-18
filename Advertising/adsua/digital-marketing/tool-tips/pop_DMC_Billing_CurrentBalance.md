@@ -1,7 +1,7 @@
 ---
 title: Current balance
 description: Current balance
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Current balance
 
-**What it is: ** This is the amount you still owe on this invoice.
+**What it is:**  This is the amount you still owe on this invoice.
 
 **What you need to know:**
 - There can be a delay of up to 4 hours between the time someone clicks your ad and the time the charge appears in this column.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Goal ID
 
-**What it is: **The unique number that Microsoft Advertising uses to identify this conversion goal.
+**What it is:** The unique number that Microsoft Advertising uses to identify this conversion goal.
 
 

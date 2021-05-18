@@ -11,6 +11,6 @@ ms.author: eur
 
 **What it is:** The option to include mobile app installs as part of your conversion tracking in Microsoft Advertising reports.
 
-**Get more info:** &nbsp; [Track mobile app installs as conversions](../hlp_BA_PROC_UETv2MobileApp.md)
+**Get more info:**  &nbsp; [Track mobile app installs as conversions](../hlp_BA_PROC_UETv2MobileApp.md)
 
 

@@ -14,142 +14,37 @@ With Microsoft Merchant Center, you can create a feed that includes images and o
 When creating a Microsoft Merchant Center store and trying to upload feed file, what do you do when you get an error message? Before you contact support, take a look at some of the most common errors you may see below – this may help save you some time and a phone call!
 
 ## Product issues
-<table>
-  <tr>
-    <th scope="col">What happened?</th>
-    <th scope="col">
-              What does it mean  and how do I fix it?
-            </th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The offer expiration date is in the past.</th>
-    <td>Make sure the expiration date hasn’t passed yet and update the offer expiration to a valid date.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The image is still being processed due to a crawler congestion problem.</th>
-    <td>In order for us to be able to access your images, we need to crawl your site. When there is a large volume of images that need to be crawled, this can cause a delay.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Offer is currently under review.</th>
-    <td>The  review process can take up to 3 business days. If the offer still appears as being under review after 3 business days, contact support.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The product URL field should use a URL that begins with HTTP or HTTPS. No IP addresses.</th>
-    <td>Check to make sure that the product URL begins with an HTTP or HTTPS and is not an IP address.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The product URL shouldn't redirect to another URL. It should be a direct link to the product offer webpage.</th>
-    <td>The product URL is redirecting to a different domain. Please update the product URL to be a direct link to the product webpage.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The offer is a duplicate based on the merchant product ID field.</th>
-    <td>Duplicate offers within the same account are not allowed and this offer contains the same merchant product ID as another existing offer. Update the product ID for your new offer.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The product URL should be a sub-path of the store’s domain.</th>
-    <td>The product URL should include the sub-path of your store’s domain (e.g., http://contoso.com/mystore). </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">We couldn’t download the image because we couldn’t find the HTTP page.</th>
-    <td>Make sure your image URL is correct and working.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The price field accepts a minimum value of 0.00 and maximum value of 10,000,000.</th>
-    <td>Make sure your price is within the range of 0.00 and 10,000,000. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The offer can’t have adult content.</th>
-    <td>We do not allow adult content. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">We couldn’t download the image because the URL timed out.</th>
-    <td>The  server took too long returning the page. You can update the default time-out setting of your server or provide another URL for the image.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The condition field only accepts new, used, and refurbished as values.</th>
-    <td>Make sure the product condition is set to new, used, or refurbished. Any other value is not allowed. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Too many words in brand.</th>
-    <td>There can only be a maximum of 10 words in the brand field. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">HTTP 4xx, HTTP 5xx errors</th>
-    <td>Check the product URL begins with an HTTP or HTTPS only and that the domain of the product URL matches the domain of your landing page URL.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Product crawl issues: Cannot access because the server’s robots.txt doesn’t allow access</th>
-    <td>You’ve added a robots.txt file to your server, not allowing for crawl access. Configure the robots.txt file to allow Bing to crawl your site.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Product crawl issues: Invalid URL</th>
-    <td>The URL is invalid and we couldn't access it. Update the URL accordingly.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Product crawl issues: Page requires authentication.</th>
-    <td>Bing is unable to access your site due to an authentication protocol. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Product crawl issues: Redirect URL too long</th>
-    <td>The redirect URL was invalid and we couldn’t access it. </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren't displaying: Items were recently submitted.</th>
-    <td>
-              The review process can take up to three business days. Check again after a few days.
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren't displaying: Images are not in the required format.</th>
-    <td>Images must be bmp, gif, exif, jpg, png, or tiff.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren't displaying: Image URLs are not working</th>
-    <td>Check the URL and update accordingly. The URL must be HTTP or HTTPS only.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren't displaying: Image doesn't meet the size requirements.</th>
-    <td>The minimum image size is 220px by 220px and cannot exceed 3.9MB.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren’t displaying: The URL is missing an image.</th>
-    <td>Update the URL for the offer so it can be reviewed in the next crawl.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Images aren’t displaying: The image size is too large or small.</th>
-    <td>Update the URL for the offer so it can be reviewed in the next crawl.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The item with zero price is missing required information in the title or contains an invalid product_category. </th>
-    <td>
-              For mobile devices or tablets, the price can be 0, as the subsidized price with a contract is allowed. For additional details, check out the price field in the [feed file help article.](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md)
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The product price submitted in the feed does not match the price on the landing page of the product found via microdata.</th>
-    <td>
-              Check your feed and your site to determine the source of the price mismatch, and update accordingly.
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The product availability submitted in the feed does not match the availability on the landing page of the product found via microdata.</th>
-    <td>
-              Check your feed and your site to determine the source of the availability mismatch, and update accordingly.
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The image URL is invalid. The provided URL could not be found or encountered an internal server error.</th>
-    <td>
-              Check the URL and update accordingly. You can also check out the [list of crawl error alerts](https://go.microsoft.com/fwlink?LinkId=2086911) for common crawl errors.
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">The image cannot be downloaded because the server's robots.txt doesn't allow access. Configure the robots.txt to allow adixbot to crawl your site.</th>
-    <td>
-              Configure the robots.txt to allow adixbot to crawl your site. Learn how to [create a robots.txt file](https://go.microsoft.com/fwlink?LinkId=2086741).
-            </td>
-  </tr>
-</table>
+|What happened?|What does it mean  and how do I fix it?|
+|---|---|
+|The offer expiration date is in the past.|Make sure the expiration date hasn’t passed yet and update the offer expiration to a valid date.|
+|The image is still being processed due to a crawler congestion problem.|In order for us to be able to access your images, we need to crawl your site. When there is a large volume of images that need to be crawled, this can cause a delay.|
+|Offer is currently under review.|The  review process can take up to 3 business days. If the offer still appears as being under review after 3 business days, contact support.|
+|The product URL field should use a URL that begins with HTTP or HTTPS. No IP addresses.|Check to make sure that the product URL begins with an HTTP or HTTPS and is not an IP address.|
+|The product URL shouldn't redirect to another URL. It should be a direct link to the product offer webpage.|The product URL is redirecting to a different domain. Please update the product URL to be a direct link to the product webpage.|
+|The offer is a duplicate based on the merchant product ID field.|Duplicate offers within the same account are not allowed and this offer contains the same merchant product ID as another existing offer. Update the product ID for your new offer.|
+|The product URL should be a sub-path of the store’s domain.|The product URL should include the sub-path of your store’s domain (e.g., http://contoso.com/mystore).|
+|We couldn’t download the image because we couldn’t find the HTTP page.|Make sure your image URL is correct and working.|
+|The price field accepts a minimum value of 0.00 and maximum value of 10,000,000.|Make sure your price is within the range of 0.00 and 10,000,000.|
+|The offer can’t have adult content.|We do not allow adult content.|
+|We couldn’t download the image because the URL timed out.|The  server took too long returning the page. You can update the default time-out setting of your server or provide another URL for the image.|
+|The condition field only accepts new, used, and refurbished as values.|Make sure the product condition is set to new, used, or refurbished. Any other value is not allowed.|
+|Too many words in brand.|There can only be a maximum of 10 words in the brand field.|
+|HTTP 4xx, HTTP 5xx errors|Check the product URL begins with an HTTP or HTTPS only and that the domain of the product URL matches the domain of your landing page URL.|
+|Product crawl issues: Cannot access because the server’s robots.txt doesn’t allow access|You’ve added a robots.txt file to your server, not allowing for crawl access. Configure the robots.txt file to allow Bing to crawl your site.|
+|Product crawl issues: Invalid URL|The URL is invalid and we couldn't access it. Update the URL accordingly.|
+|Product crawl issues: Page requires authentication.|Bing is unable to access your site due to an authentication protocol.|
+|Product crawl issues: Redirect URL too long|The redirect URL was invalid and we couldn’t access it.|
+|Images aren't displaying: Items were recently submitted.|The review process can take up to three business days. Check again after a few days.|
+|Images aren't displaying: Images are not in the required format.|Images must be bmp, gif, exif, jpg, png, or tiff.|
+|Images aren't displaying: Image URLs are not working|Check the URL and update accordingly. The URL must be HTTP or HTTPS only.|
+|Images aren't displaying: Image doesn't meet the size requirements.|The minimum image size is 220px by 220px and cannot exceed 3.9MB.|
+|Images aren’t displaying: The URL is missing an image.|Update the URL for the offer so it can be reviewed in the next crawl.|
+|Images aren’t displaying: The image size is too large or small.|Update the URL for the offer so it can be reviewed in the next crawl.|
+|The item with zero price is missing required information in the title or contains an invalid product_category.|For mobile devices or tablets, the price can be 0, as the subsidized price with a contract is allowed. For additional details, check out the price field in the [feed file help article.](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md)|
+|The product price submitted in the feed does not match the price on the landing page of the product found via microdata.|Check your feed and your site to determine the source of the price mismatch, and update accordingly.|
+|The product availability submitted in the feed does not match the availability on the landing page of the product found via microdata.|Check your feed and your site to determine the source of the availability mismatch, and update accordingly.|
+|The image URL is invalid. The provided URL could not be found or encountered an internal server error.|Check the URL and update accordingly. You can also check out the [list of crawl error alerts](https://go.microsoft.com/fwlink?LinkId=2086911) for common crawl errors.|
+|The image cannot be downloaded because the server's robots.txt doesn't allow access. Configure the robots.txt to allow adixbot to crawl your site.|Configure the robots.txt to allow adixbot to crawl your site. Learn how to [create a robots.txt file](https://go.microsoft.com/fwlink?LinkId=2086741).|
 
 ## Feed issues
 <table>
@@ -172,25 +67,10 @@ When creating a Microsoft Merchant Center store and trying to upload feed file, 
 </table>
 
 ## Store issues
-<table>
-  <tr>
-    <th scope="col">What happened?</th>
-    <th scope="col">
-              What does it mean  and how do I fix it?
-            </th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">{X} offers from {Aggregator} were blocked</th>
-    <td>You have selected to prevent aggregators from including your product offers in their feed. As a result, Microsoft Advertising will attempt to prevent aggregators from including your product offers. Aggregators consolidate product offers from multiple, often unrelated, businesses. By not selecting this feature, aggregators can include your feed in their ads.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">{X} % offers are untargeted</th>
-    <td>Certain offers aren't targeted to a specific audience, which reduces your return on investment. Download the diagnostic report to see which offers need to be targeted in an existing or new campaign.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Can't match file to a feed</th>
-    <td>The feed file name doesn't match the file name registered with the feed. Correct the file name, and try again.</td>
-  </tr>
-</table>
+|What happened?|What does it mean  and how do I fix it?|
+|---|---|
+|{X} offers from {Aggregator} were blocked|You have selected to prevent aggregators from including your product offers in their feed. As a result, Microsoft Advertising will attempt to prevent aggregators from including your product offers. Aggregators consolidate product offers from multiple, often unrelated, businesses. By not selecting this feature, aggregators can include your feed in their ads.|
+|{X} % offers are untargeted|Certain offers aren't targeted to a specific audience, which reduces your return on investment. Download the diagnostic report to see which offers need to be targeted in an existing or new campaign.|
+|Can't match file to a feed|The feed file name doesn't match the file name registered with the feed. Correct the file name, and try again.|
 
 

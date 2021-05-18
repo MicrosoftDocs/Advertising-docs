@@ -9,7 +9,7 @@ ms.author: eur
 
 # Get more visits to my website
 
-**Choose this goal if**:
+**Choose this goal if** :
 
 - Most of your sales occur on your website.
 - You want to drive traffic to your website.

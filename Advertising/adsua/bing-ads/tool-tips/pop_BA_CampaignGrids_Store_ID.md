@@ -9,6 +9,6 @@ ms.author: eur
 
 # Store ID
 
-**What it is:** The identifier of your partner's Microsoft Merchant Center store that contains offers for campaigns.
+**What it is:**  The identifier of your partner's Microsoft Merchant Center store that contains offers for campaigns.
 
 

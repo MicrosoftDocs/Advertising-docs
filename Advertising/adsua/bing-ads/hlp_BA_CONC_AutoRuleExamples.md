@@ -19,9 +19,9 @@ Before creating the rules, you need to create your special-event campaign, compl
 1. From the page menu, click **Campaigns**.
 1. Click **Automate** and select **Enable campaign when...**.
 1. Set the following:
-  - **Apply to: Selected campaigns**
-  - **Do this: Enable campaign**
-  - **How often: Once, January 1, 12 AM**
+   - **Apply to: Selected campaigns**
+   - **Do this: Enable campaign**
+   - **How often: Once, January 1, 12 AM**
 
 1. To create a second automated rule for your campaign, from the main menu on the far left, click **All campaigns**.
 1. From the page menu, click **Campaigns**.
@@ -32,12 +32,12 @@ Sometimes certain ads or keywords just don't work out. Maybe your ad is getting 
 1. From the page menu, click **Ads and extensions**.
 1. Click **Automate** and select **Pause ads when...**.
 1. Set the following:
-  - **Apply to: All enabled ads in all campaigns**
-  - **Do this: Pause ad**
-  - **                  When: CTR &gt; 2%                **
-  - **                  (Add another) When: Conversions &lt; 2%                **
-  - **How often: Daily, 7 AM, using data from Previous day**
-  - **Email results: Only if there are changes or errors**
+   - **Apply to: All enabled ads in all campaigns**
+   - **Do this: Pause ad**
+   - **                  When: CTR &gt; 2%                **
+   - **                  (Add another) When: Conversions &lt; 2%                **
+   - **How often: Daily, 7 AM, using data from Previous day**
+   - **Email results: Only if there are changes or errors**
 
 ## Keep your ads on the first page
 If you've got some keywords and ads that are performing well and want to make sure they are consistently seen by as many searchers as possible, try this:
@@ -45,12 +45,12 @@ If you've got some keywords and ads that are performing well and want to make su
 1. From the page menu, click **Keywords**.
 1. Click **Automate** and select **Increase to estimated top of page bid when...**.
 1. Set the following:
-  - **Apply to: All enabled ads in all campaigns**
-  - **Do this: Increase to estimated top of page bid**
-  - Optional: Check **max bid** and enter a maximum bid you are comfortable with.
-  - **                  When: Avg. pos. &gt; 4                **
-  - **How often: Daily, 7 AM, using data from Previous day**
-  - **Email results: Only if there are changes or errors**
+   - **Apply to: All enabled ads in all campaigns**
+   - **Do this: Increase to estimated top of page bid**
+   - Optional: Check **max bid** and enter a maximum bid you are comfortable with.
+   - **                  When: Avg. pos. &gt; 4                **
+   - **How often: Daily, 7 AM, using data from Previous day**
+   - **Email results: Only if there are changes or errors**
 
 ## Avoid letting your budget stop your best performing campaigns
 It's your best-performing campaign: Clicks are high and so are conversions.  Then suddenly all the clicks stop. What happened? It might be as simple as running out of budget. Now you're losing customers because your ads have stopped displaying. You can automatically increase your budget for that star campaign.
@@ -58,13 +58,13 @@ It's your best-performing campaign: Clicks are high and so are conversions.  The
 1. From the page menu, click **Campaigns**.
 1. Click **Automate** and select **Change budget when...**.
 1. Set the following:
-  - **Apply to: All campaigns**
-  - **Do this: Increase daily budget by 10%**
-  - Optional: Check **max budget** and enter a maximum budget you are comfortable with.
-  - **                  When: CTR &gt; 2%                **
-  - **                  (Add another) When: Conversions &gt; 3%                **
-  - **How often: Daily, 7 AM, using data from Previous week**
-  - **Email results: Only if there are changes or errors**
+   - **Apply to: All campaigns**
+   - **Do this: Increase daily budget by 10%**
+   - Optional: Check **max budget** and enter a maximum budget you are comfortable with.
+   - **                  When: CTR &gt; 2%                **
+   - **                  (Add another) When: Conversions &gt; 3%                **
+   - **How often: Daily, 7 AM, using data from Previous week**
+   - **Email results: Only if there are changes or errors**
 
 > [!NOTE]
 > Keyword bid automated rules and [bid adjustments](./hlp_BA_CONC_AboutAdvancedBidding.md) work independently of each other. If the criteria for both are met on a keyword bid, then both will be applied.

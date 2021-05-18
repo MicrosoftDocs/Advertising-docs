@@ -13,14 +13,14 @@ If you want to prevent your ad from appearing in specific locations, on specific
 
 ## To prevent your ads from showing in specific locations
 1. To exclude specific locations at the campaign level:
-  - From the main menu on the left, click **All campaigns** and then **Campaigns**.
-  - Click the name of the campaign (in the **Campaign** column) that you want to edit.
-  - Click **Settings**.
+   - From the main menu on the left, click **All campaigns** and then **Campaigns**.
+   - Click the name of the campaign (in the **Campaign** column) that you want to edit.
+   - Click **Settings**.
 
 1. To exclude specific locations at the ad group level:
-  - From the main menu on the left, click **All campaigns** and then **Ad groups**.
-  - Click on the ad group title (in the **Ad group** column) that you want to edit.
-  - Click **Settings**.
+   - From the main menu on the left, click **All campaigns** and then **Ad groups**.
+   - Click on the ad group title (in the **Ad group** column) that you want to edit.
+   - Click **Settings**.
 
 1. Click **Edit location targets** below **Location** and then select **Let me choose specific locations**.
 1. Select locations you want to exclude — cities and metro areas within the United States, Canada, United Kingdom, France, and Australia; states/provinces; countries/regions; or postal codes — by searching for your specific location and clicking **Exclude** from the search results.  (Note: You cannot exclude using radius targeting.)
@@ -28,12 +28,12 @@ If you want to prevent your ad from appearing in specific locations, on specific
 
 ## To prevent specific websites from showing your ads
 1. To exclude specific websites at the campaign level:
-  - From the main menu on the left, click **All campaigns** and then **Campaigns**.
-  - Select the checkbox next to the name of the campaign that you want to edit.
+   - From the main menu on the left, click **All campaigns** and then **Campaigns**.
+   - Select the checkbox next to the name of the campaign that you want to edit.
 
 1. To exclude specific websites at the ad group level:
-  - From the main menu on the left, click **All campaigns** and then **Ad groups**.
-  - Select the checkbox next to the name of the ad group that you want to edit.
+   - From the main menu on the left, click **All campaigns** and then **Ad groups**.
+   - Select the checkbox next to the name of the ad group that you want to edit.
 
 1. Click **Edit**&nbsp;&gt;&nbsp;**Other changes**.
 1. For **Select a setting**, select **Website exclusions**, and then enter the URLs of websites you want to exclude in the box.
@@ -58,4 +58,5 @@ If you want to prevent your ad from appearing in specific locations, on specific
 > You can exclude a maximum of 100 IP addresses (or IP address ranges) per campaign.
 > You can only exclude IPv4 addresses. These addresses must include all four octets, each with an integer that ranges from 0 - 255. Only the last octet can be a wildcard character (\*).  For example,*127.0.0.\**. This would include all IP addresses from 127.0.0.0 to 127.0.0.255.
 
+ 
 

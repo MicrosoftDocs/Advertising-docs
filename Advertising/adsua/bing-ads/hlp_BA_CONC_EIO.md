@@ -53,9 +53,9 @@ A recurring insertion order is a series of insertion orders that automatically r
 1. Enter a **Series name** that will help identify a grouping of orders. A series name can have a maximum of 60 characters.
 1. Select a **Frequency**, which defines how an order recurs in the series. You can choose: **Monthly**, **Every 2 months**, **Quarterly**, or **Yearly**.
 1. Then you'll need to determine whether the series has an end date or if it ends after a number of occurrences. Your options are:
-  - **Have an end date for the series**, which allows you to add a end date under **Series end date** if it's chosen
-  - **Have no end date**, which will allow orders to recur indefinitely until the series is manually cancelled
-  - **End after a number of occurrences**. You can enter a number from 1 to 60.
+   - **Have an end date for the series**, which allows you to add a end date under **Series end date** if it's chosen
+   - **Have no end date**, which will allow orders to recur indefinitely until the series is manually cancelled
+   - **End after a number of occurrences**. You can enter a number from 1 to 60.
 
 1. Select the account.
 1. Enter the **Start date** (if you don't want to use the default of today's date) and the **End date** (if you've chosen to have an end date for the series).
@@ -143,8 +143,8 @@ At the top of the Insertion Orders grid, you'll find the **Filters** menu that a
 1. [!INCLUDE [ClickBilling](./includes/ClickBilling.md)]
 1. Select **Insertion Orders** from the main menu.
 1. In the **Action** column, select **cancel**.
-  - **For a standalone insertion order:** Select **Cancel Order**.
-  - **For a recurring insertion order:** You'll be asked whether you want to cancel just one order or the entire series. Choose either **Just this order** or **The entire series**.
+   - **For a standalone insertion order:**  Select **Cancel Order**.
+   - **For a recurring insertion order:**  You'll be asked whether you want to cancel just one order or the entire series. Choose either **Just this order** or **The entire series**.
 
 ## Bulk tasks via file
 
@@ -169,12 +169,12 @@ Six categories are optional (Order name, Purchase Order, Notes, DealPoint ID, Re
 - **End date **is the date when the order becomes expires. It must be entered in the MM/DD/YYYY format.
 - **Budget **is the amount of the order.
 - **Status **represents the action that you want to take on the order. Each row can have only one of the following statuses:
-  - **active**, which means that you are adding a new order, modifying an existing order, or approving an existing order.
-  - **canceled**, which means that you are canceling an active order.
-  - **declined**, which means that you are declining a new order as part of the approval process.
-  - **changecanceled**, which means that you are canceling submitted changes for an existing order as part of the approval process.
-  - **changedeclined**, which means that you are declining submitted changes for an existing order as part of the approval process.
-  - **changeapproved**, which means that you are approving submitted changes for an existing order as part of the approval process.
+   - **active**, which means that you are adding a new order, modifying an existing order, or approving an existing order.
+   - **canceled**, which means that you are canceling an active order.
+   - **declined**, which means that you are declining a new order as part of the approval process.
+   - **changecanceled**, which means that you are canceling submitted changes for an existing order as part of the approval process.
+   - **changedeclined**, which means that you are declining submitted changes for an existing order as part of the approval process.
+   - **changeapproved**, which means that you are approving submitted changes for an existing order as part of the approval process.
 
 > [!NOTE]
 > If you omit a mandatory item in your file, it will not upload during the import process, and you'll receive an error.
@@ -217,4 +217,5 @@ The status column is the second to last column.
 
 Here's a list of insertion order statuses:
 
+[!INCLUDE [IOStatus](./includes/IOStatus.md)]
 

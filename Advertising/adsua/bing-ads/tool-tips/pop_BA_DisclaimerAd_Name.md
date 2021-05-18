@@ -9,8 +9,8 @@ ms.author: eur
 
 # Disclaimer name
 
-**What it is:** A unique name for the disclaimer.
+**What it is:**  A unique name for the disclaimer.
 
-**Why it's important:** You use the disclaimer name to identify existing disclaimers to use in different campaigns.
+**Why it's important:**  You use the disclaimer name to identify existing disclaimers to use in different campaigns.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Ad customizer syntax
 
-**What it is**: This shows you how the ad customizer tag will appear in your title or ad text field.
+**What it is** : This shows you how the ad customizer tag will appear in your title or ad text field.
 
-**What you need to know**: When your ad appears on a search results page, the tag will be replaced by the word, phrase, or number defined by your feed.
+**What you need to know** : When your ad appears on a search results page, the tag will be replaced by the word, phrase, or number defined by your feed.
 
 

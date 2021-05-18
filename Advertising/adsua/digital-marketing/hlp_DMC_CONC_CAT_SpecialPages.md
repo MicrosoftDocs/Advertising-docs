@@ -1,7 +1,7 @@
 ---
 title: Special pages: Which pages are most important to your business?
 description: Tell us which pages are most important to your business, and we can give you specific data on customer actions on those pages.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -18,9 +18,9 @@ Some pages on your website are more important than others, depending on your bus
 
 Start with your business goal:
 
-- If you're trying to **sell products**, then your special pages might be product description pages and order confirmation pages.
-- If you're trying to **generate leads**, then your special pages might be sign-up pages.
-- If you're trying to **raise brand awareness**, then your special pages might be blog posts about your brand.
+- If you're trying to **sell products** , then your special pages might be product description pages and order confirmation pages.
+- If you're trying to **generate leads** , then your special pages might be sign-up pages.
+- If you're trying to **raise brand awareness** , then your special pages might be blog posts about your brand.
 
 > [!NOTE]
 > Do you have multiple business goals for the same website? For example, maybe you want to sell products, but also drive service-plan adoption. We strongly recommend creating a separate ad campaign for each goal. That way, you can have separate ads, performance metrics, and budgets for each.
@@ -29,68 +29,19 @@ Start with your business goal:
 
 We provide some suggested page types to help you identify your special pages. Depending on your business goals, only some of our suggestions will be applicable to your website. Our suggested page types are:
 
-<table>
-  <tr>
-    <th scope="col">Suggested page type</th>
-    <th scope="col">Example page content</th>
-    <th scope="col">Business goal it could be applicable to</th>
-  </tr>
-  <tr>
-    <td>About</td>
-    <td>Discussion of your brand and its history, philosophy, mission, etc.</td>
-    <td>Brand awareness, engagement, maintaining loyalty, subscription</td>
-  </tr>
-  <tr>
-    <td>Contact us</td>
-    <td>Contact information for your business, such as the street address, phone number, and email addresses</td>
-    <td>Phone orders, visits to your physical location, service commitment, lead generation</td>
-  </tr>
-  <tr>
-    <td>Initiate checkout</td>
-    <td>Shopping cart</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <td>Lead created</td>
-    <td>Confirmation after customer entered an email address</td>
-    <td>Lead generation, engagement, product purchase, service commitment, subscription</td>
-  </tr>
-  <tr>
-    <td>Order confirmation</td>
-    <td>Thank you, details about shipping</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <td>Product</td>
-    <td>Product page with "Add to cart" button</td>
-    <td>Product purchase, level of interest in product, engagement</td>
-  </tr>
-  <tr>
-    <td>Register</td>
-    <td>Confirmation after customer has signed up for alerts, class or event registration</td>
-    <td>Lead generation, engagement, product purchase, class or event popularity, service commitment, subscription</td>
-  </tr>
-  <tr>
-    <td>Schedule appointment</td>
-    <td>Confirmation of appointment timing, online appointment scheduling</td>
-    <td>Service commitment, lead generation, engagement</td>
-  </tr>
-  <tr>
-    <td>Start trial</td>
-    <td>Sign up details for a trial version of your product or service, confirmation of the duration and details of a trial</td>
-    <td>Product purchase, subscription, engagement, lead generation</td>
-  </tr>
-  <tr>
-    <td>Subscribe</td>
-    <td>Sign up details to subscribe to a service, such as software or a newsletter; confirmation of subscription details</td>
-    <td>Subscription, lead generation, engagement</td>
-  </tr>
-  <tr>
-    <td>Other</td>
-    <td>Specialty content</td>
-    <td>Any</td>
-  </tr>
-</table>
+|Suggested page type|Example page content|Business goal it could be applicable to|
+|---|---|---|
+|About|Discussion of your brand and its history, philosophy, mission, etc.|Brand awareness, engagement, maintaining loyalty, subscription|
+|Contact us|Contact information for your business, such as the street address, phone number, and email addresses|Phone orders, visits to your physical location, service commitment, lead generation|
+|Initiate checkout|Shopping cart|Product purchase, engagement|
+|Lead created|Confirmation after customer entered an email address|Lead generation, engagement, product purchase, service commitment, subscription|
+|Order confirmation|Thank you, details about shipping|Product purchase, engagement|
+|Product|Product page with "Add to cart" button|Product purchase, level of interest in product, engagement|
+|Register|Confirmation after customer has signed up for alerts, class or event registration|Lead generation, engagement, product purchase, class or event popularity, service commitment, subscription|
+|Schedule appointment|Confirmation of appointment timing, online appointment scheduling|Service commitment, lead generation, engagement|
+|Start trial|Sign up details for a trial version of your product or service, confirmation of the duration and details of a trial|Product purchase, subscription, engagement, lead generation|
+|Subscribe|Sign up details to subscribe to a service, such as software or a newsletter; confirmation of subscription details|Subscription, lead generation, engagement|
+|Other|Specialty content|Any|
 
 ## URLs for special pages
 

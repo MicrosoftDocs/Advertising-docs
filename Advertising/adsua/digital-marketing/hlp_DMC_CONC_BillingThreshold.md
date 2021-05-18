@@ -1,7 +1,7 @@
 ---
 title: What is the billing threshold and how does it work?
 description: Learn about the billing threshold and monthly billing date to understand when we charge your payment method.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -9,6 +9,7 @@ ms.author: eur
 
 # How to target my customers by adjusting my bids
 
+![Target](../images/BA_Conc_Target.svg)
 Bid adjustments increase or decrease your bid for specifically targeted customers.
 
 For example, let's say you want to improve the odds of showing your ads to customers who are 25-34 years old. Your bid on the keyword "shoes" is $1.00. You add a 20% bid adjustment for the age group 25-34. Now, when a search user of the targeted age searches for "shoes", your bid is $1.20 and you're more likely to have a winning bid that gets your ads displayed. To learn how to apply targets and add bid adjustments, see [How to target customers](./hlp_BA_PROC_TargetingAgeGender.md).

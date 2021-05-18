@@ -9,6 +9,6 @@ ms.author: eur
 
 # Age group
 
-**What it is: **    The age range of the search users to whom the ad was delivered.
+**What it is:**     The age range of the search users to whom the ad was delivered.
 
 

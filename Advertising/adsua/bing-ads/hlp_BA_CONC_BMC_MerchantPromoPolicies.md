@@ -72,4 +72,5 @@ Every Merchant Promotion submitted to Microsoft Advertising must be accurate, tr
 
 - Titles cannot exceed 60 characters.
 
+ 
 

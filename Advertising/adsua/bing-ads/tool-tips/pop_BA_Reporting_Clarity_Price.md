@@ -9,6 +9,6 @@ ms.author: eur
 
 # Price
 
-**What it is:**    The different price for products in your catalog.
+**What it is:**     The different price for products in your catalog.
 
 

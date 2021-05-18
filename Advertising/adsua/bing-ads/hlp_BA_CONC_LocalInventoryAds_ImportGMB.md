@@ -16,9 +16,9 @@ Location Extensions in Microsoft Advertising are managed manually, so many use t
 
 ## At a glance
 
-- **Automate Location Extension management**. Stop manually managing Location Extensions.
-- **Leverage additional data** from Google My Business or Bing Places for more products.
-- **Get accurate location data** already verified via Google My Business or Bing Places.
+- **Automate Location Extension management** . Stop manually managing Location Extensions.
+- **Leverage additional data**  from Google My Business or Bing Places for more products.
+- **Get accurate location data**  already verified via Google My Business or Bing Places.
 
 ## How do I set up the automated business data feed?
 Before you get started, here are a few things to keep in mind:

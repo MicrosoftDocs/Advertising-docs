@@ -9,8 +9,8 @@ ms.author: eur
 
 # Terms &amp; Conditions
 
-**What it is:** Any terms, offer details, or conditions information you want to share with your customers.
+**What it is:**  Any terms, offer details, or conditions information you want to share with your customers.
 
-**What you need to know**: The maximum character limit is 80 characters.
+**What you need to know** : The maximum character limit is 80 characters.
 
 

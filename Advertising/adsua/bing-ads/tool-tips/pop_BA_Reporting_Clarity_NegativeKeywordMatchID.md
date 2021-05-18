@@ -9,6 +9,6 @@ ms.author: eur
 
 # Negative keyword match type
 
-**What it is: **The match type for the negative keyword.
+**What it is:** The match type for the negative keyword.
 
 

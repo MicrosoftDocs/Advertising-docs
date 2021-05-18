@@ -9,6 +9,6 @@ ms.author: eur
 
 # Competitor budget range
 
-**What it is: ** This is the range of daily budgets that businesses like yours have set for their campaigns.
+**What it is:**  This is the range of daily budgets that businesses like yours have set for their campaigns.
 
 

@@ -19,4 +19,5 @@ Save time and improve the performance of your search marketing campaigns. When y
 - **Multiple-account management**: Download multiple accounts at the same time, copy and paste from one account to another, and perform multiple Google Imports simultaneously.
 - **Research new keywords and bids**: Discover new keywords and bids using the keyword research tools, then easily add them to your campaigns.
 
+New to Microsoft Advertising Editor? [Start here.](https://go.microsoft.com/fwlink?LinkId=2100416)
 

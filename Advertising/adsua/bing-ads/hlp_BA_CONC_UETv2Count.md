@@ -13,9 +13,9 @@ A conversion happens when someone clicks your ad and then takes an action that y
 
 These counting choices can give you a better sense of your campaign performance and help you refine your bids.
 
-- **All conversions: **      All conversions that happen after an ad click will be counted. (Common choice for sales.)
-- **Unique conversions:  **      Only one conversion that happens after an ad click will be counted. (Common choice for leads.)
+- **All conversions:**       All conversions that happen after an ad click will be counted. (Common choice for sales.)
+- **Unique conversions:**       Only one conversion that happens after an ad click will be counted. (Common choice for leads.)
 
-**Example:  **    You track two conversions: leads and sales. You pick "Unique” for leads and “All” for sales. When one ad click turns into two leads and two sales, it's counted as three conversions: one for the unique lead, and two for all the sales.
+**Example:**     You track two conversions: leads and sales. You pick "Unique” for leads and “All” for sales. When one ad click turns into two leads and two sales, it's counted as three conversions: one for the unique lead, and two for all the sales.
 
 

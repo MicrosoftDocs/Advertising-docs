@@ -48,11 +48,11 @@
       href: ./bing-ads/hlp_BA_CONC_AboutNegativeKeywords.md
     - name: Automatically customize your ads with dynamic text parameters
       href: ./bing-ads/hlp_BA_CONC_AboutParameters.md
-    - name: Dynamic text - Capitalization of the keyword placeholder
+    - name: Dynamic text- Capitalization of the keyword placeholder
       href: ./bing-ads/hlp_BA_CONC_AboutParametersKeyWord.md
     - name: Offer details
       href: ./bing-ads/hlp_BA_CONC_AboutPBCDetails.md
-    - name: Monitoring clicks - Telling the good from the bad
+    - name: Monitoring clicks- Telling the good from the bad
       href: ./bing-ads/hlp_BA_CONC_AboutPreventingInvalidClicks.md
     - name: What are product ads?
       href: ./bing-ads/hlp_BA_CONC_AboutProductAds.md
@@ -88,15 +88,15 @@
       href: ./bing-ads/hlp_BA_CONC_AcctDeletion.md
     - name: Getting ad campaigns up and running in Microsoft Advertising
       href: ./bing-ads/hlp_BA_CONC_adcenter_flow.md
-    - name: App extensions - Promote and link to your apps
+    - name: App extensions- Promote and link to your apps
       href: ./bing-ads/hlp_BA_CONC_AdExtensionAppExtension.md
     - name: Ad types that you can create with Microsoft Advertising
       href: ./bing-ads/hlp_BA_CONC_AdOptions.md
     - name: Ad suggestions can help boost performance
       href: ./bing-ads/hlp_BA_CONC_AdsByBing.md
-    - name: Ads not showing - What can I do?
+    - name: Ads not showing- What can I do?
       href: ./bing-ads/hlp_BA_CONC_AdsNotShowing.md
-    - name: App install ads - Drive app downloads
+    - name: App install ads- Drive app downloads
       href: ./bing-ads/hlp_BA_CONC_AppInstallAds.md
     - name: What does Approved Limited status mean?
       href: ./bing-ads/hlp_BA_CONC_ApprovedLimited.md
@@ -110,13 +110,13 @@
       href: ./bing-ads/hlp_BA_CONC_Audiences_BidBoost.md
     - name: Create an audience
       href: ./bing-ads/hlp_BA_CONC_Audiences_CreateAudience.md
-    - name: Custom audiences - Create richer user segments with your own data
+    - name: Custom audiences- Create richer user segments with your own data
       href: ./bing-ads/hlp_BA_CONC_Audiences_CustomAudience.md
-    - name: Combined lists - Mix and match audiences to reach just the right customers
+    - name: Combined lists- Mix and match audiences to reach just the right customers
       href: ./bing-ads/hlp_BA_CONC_Audiences_CustomCombo.md
-    - name: Customer match - Use your own data to find customers
+    - name: Customer match- Use your own data to find customers
       href: ./bing-ads/hlp_BA_CONC_Audiences_CustomerMatch.md
-    - name: In-market audiences - Reach people who are ready to buy
+    - name: In-market audiences- Reach people who are ready to buy
       href: ./bing-ads/hlp_BA_CONC_Audiences_InMarketAudience.md
     - name: Research audience segments with the Audience Network Planner
       href: ./bing-ads/hlp_BA_CONC_Audiences_NetworkPlanner.md
@@ -124,11 +124,11 @@
       href: ./bing-ads/hlp_BA_CONC_Audiences_Optimize.md
     - name: What are my options for audiences?
       href: ./bing-ads/hlp_BA_CONC_Audiences_Options.md
-    - name: Dynamic remarketing lists - Remarketing for products
+    - name: Dynamic remarketing lists- Remarketing for products
       href: ./bing-ads/hlp_BA_CONC_Audiences_ProductAudience.md
-    - name: Remarketing - Target people who have visited your site before
+    - name: Remarketing- Target people who have visited your site before
       href: ./bing-ads/hlp_BA_CONC_Audiences_Remarketing.md
-    - name: Similar audiences - Reach a wider qualified set of customers
+    - name: Similar audiences- Reach a wider qualified set of customers
       href: ./bing-ads/hlp_BA_CONC_Audiences_SimilarAudience.md
     - name: Pause, enable, and delete audience associations
       href: ./bing-ads/hlp_BA_CONC_Audiences_Status.md
@@ -140,7 +140,7 @@
       href: ./bing-ads/hlp_BA_CONC_Audiences_WhatIs.md
     - name: Enhance ads with Automated Extensions
       href: ./bing-ads/hlp_BA_CONC_AutomatedExtensions.md
-    - name: Automotive ads - Showcase your models and inventory
+    - name: Automotive ads- Showcase your models and inventory
       href: ./bing-ads/hlp_BA_CONC_AutomotiveAds.md
     - name: Ways to use automated rules
       href: ./bing-ads/hlp_BA_CONC_AutoRuleExamples.md
@@ -152,11 +152,11 @@
       href: ./bing-ads/hlp_BA_CONC_AvailablePaymentMethods.md
     - name: Did I bid high enough?
       href: ./bing-ads/hlp_BA_CONC_BiddingStrategy.md
-    - name: Bid landscape - View impression and cost simulations before changing your bid
+    - name: Bid landscape- View impression and cost simulations before changing your bid
       href: ./bing-ads/hlp_BA_CONC_bidLandscape.md
     - name: Let Microsoft Advertising manage your bids with bid strategies
       href: ./bing-ads/hlp_BA_CONC_BidStrategy.md
-    - name: Portfolio bid strategies - Auto-bidding for performance goals
+    - name: Portfolio bid strategies- Auto-bidding for performance goals
       href: ./bing-ads/hlp_BA_CONC_BidStrategy_Portfolio.md
     - name: Billing settings for monthly invoice accounts
       href: ./bing-ads/hlp_BA_CONC_BillingSettings.md
@@ -166,9 +166,9 @@
       href: ./bing-ads/hlp_BA_CONC_BillingThreshold.md
     - name: Microsoft Advertising App for iOS and Android
       href: ./bing-ads/hlp_BA_CONC_BingAdsMobileIntro.md
-    - name: FAQ - Microsoft Advertising for Android
+    - name: FAQ- Microsoft Advertising for Android
       href: ./bing-ads/hlp_BA_CONC_BingAdsMobile_Android.md
-    - name: FAQ - Microsoft Advertising for iOS
+    - name: FAQ- Microsoft Advertising for iOS
       href: ./bing-ads/hlp_BA_CONC_BingAdsMobile_iOS.md
     - name: Troubleshoot Microsoft Merchant Center errors
       href: ./bing-ads/hlp_BA_CONC_BMCErrorMessages.md
@@ -218,8 +218,6 @@
       href: ./bing-ads/hlp_BA_CONC_BroadMatchModifier.md
     - name: Understand and use product groups
       href: ./bing-ads/hlp_BA_CONC_BSC_AboutProductGroups.md
-    - name: About Brand Loyalty Extensions
-      href: ./bing-ads/hlp_BA_CONC_BSC_BrandLoyaltyExtension.md
     - name: Get started with Microsoft Shopping Campaigns
       href: ./bing-ads/hlp_BA_CONC_BSC_GetStarted.md
     - name: What are the benefits of shopping campaigns?
@@ -254,7 +252,7 @@
       href: ./bing-ads/hlp_BA_CONC_ChangeTimeZone.md
     - name: About the Competition tab
       href: ./bing-ads/hlp_BA_CONC_CompetitionTab.md
-    - name: Conversion goals - "Conversions" versus "All conversions"
+    - name: Conversion goals- "Conversions" versus "All conversions"
       href: ./bing-ads/hlp_BA_CONC_ConvsVsAllConvs.md
     - name: Show a countdown to an event in your ad
       href: ./bing-ads/hlp_BA_CONC_Countdown.md
@@ -272,9 +270,9 @@
       href: ./bing-ads/hlp_BA_CONC_CustomizeData.md
     - name: Is my data updated in real time?
       href: ./bing-ads/hlp_BA_CONC_DataFreshness.md
-    - name: Microsoft Advertising click measurement - Description of methodology (DOM)
+    - name: Microsoft Advertising click measurement- Description of methodology (DOM)
       href: ./bing-ads/hlp_BA_CONC_DOM2.md
-    - name: Instant reports - Download your Campaigns performance data
+    - name: Instant reports- Download your Campaigns performance data
       href: ./bing-ads/hlp_BA_CONC_DownloadTableAsReport.md
     - name: About dynamic search ads
       href: ./bing-ads/hlp_BA_CONC_DynamicSearchAds.md
@@ -296,7 +294,7 @@
       href: ./bing-ads/hlp_BA_CONC_Experiments_About.md
     - name: Examples and tips for working with experiments
       href: ./bing-ads/hlp_BA_CONC_Experiments_BestPractices.md
-    - name: FAQ - Expanded Text Ads
+    - name: FAQ- Expanded Text Ads
       href: ./bing-ads/hlp_BA_CONC_EXTA_FAQ.md
     - name: Update your standard text ads to Expanded Text Ads
       href: ./bing-ads/hlp_BA_CONC_EXTA_TextAdsDeprecate.md
@@ -406,7 +404,7 @@
       href: ./bing-ads/hlp_BA_CONC_NewAd_AddYourKeywords.md
     - name: Microsoft Advertising features
       href: ./bing-ads/hlp_BA_CONC_NewAd_BingAdsFeatures.md
-    - name: Build your campaign - Improve keywords
+    - name: Build your campaign- Improve keywords
       href: ./bing-ads/hlp_BA_CONC_NewAd_BuildCampaign_Keywords.md
     - name: Sign up for a Microsoft Advertising account
       href: ./bing-ads/hlp_BA_CONC_NewAd_CreateABingAdsAcct.md
@@ -474,7 +472,7 @@
       href: ./bing-ads/hlp_BA_CONC_ProductAds_MinBid.md
     - name: Use Microsoft Advertising recommendations to enhance your campaigns
       href: ./bing-ads/hlp_BA_CONC_Recommendations.md
-    - name: FAQ - Remarketing
+    - name: FAQ- Remarketing
       href: ./bing-ads/hlp_BA_CONC_Remarketing_FAQ.md
     - name: What do the report columns mean?
       href: ./bing-ads/hlp_BA_CONC_ReportFields.md
@@ -502,43 +500,43 @@
       href: ./bing-ads/hlp_BA_CONC_SharedBudgets.md
     - name: Share website exclusion lists across accounts
       href: ./bing-ads/hlp_BA_CONC_SharedWebsiteExclusions.md
-    - name: Signing up - Create your first Microsoft Advertising account
+    - name: Signing up- Create your first Microsoft Advertising account
       href: ./bing-ads/hlp_BA_CONC_SignUp_CreateAcct.md
-    - name: Smart campaigns - Where and when will my ads appear?
+    - name: Smart campaigns- Where and when will my ads appear?
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_AdNetwork.md
-    - name: Smart campaigns - Microsoft Advertising for Android
+    - name: Smart campaigns- Microsoft Advertising for Android
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_App_Android.md
-    - name: Smart campaigns - Microsoft Advertising for iOS
+    - name: Smart campaigns- Microsoft Advertising for iOS
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_App_iOS.md
-    - name: Smart campaigns - Budgets and what you pay for
+    - name: Smart campaigns- Budgets and what you pay for
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_Budget.md
-    - name: Smart campaigns - Creating effective ads
+    - name: Smart campaigns- Creating effective ads
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_EffectiveAds.md
     - name: All about smart campaigns
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_Intro.md
-    - name: Smart campaigns - Monitor your campaign's performance
+    - name: Smart campaigns- Monitor your campaign's performance
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_Monitor.md
-    - name: Smart campaigns - Microsoft Advertising policies
+    - name: Smart campaigns- Microsoft Advertising policies
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_Policies.md
-    - name: Smart campaigns - How your settings for locations, products, and services affect who sees your ads
+    - name: Smart campaigns- How your settings for locations, products, and services affect who sees your ads
       href: ./bing-ads/hlp_BA_CONC_SmartCamps_Targeting.md
-    - name: Smart campaigns - Add the tracking tag to your website
+    - name: Smart campaigns- Add the tracking tag to your website
       href: ./bing-ads/hlp_BA_CONC_SmartCT_AddTag.md
-    - name: Smart campaigns - Track what customers do after they click your ad
+    - name: Smart campaigns- Track what customers do after they click your ad
       href: ./bing-ads/hlp_BA_CONC_SmartCT_Intro.md
-    - name: Smart campaigns - Define special pages of your website
+    - name: Smart campaigns- Define special pages of your website
       href: ./bing-ads/hlp_BA_CONC_SmartCT_SpecialPages.md
-    - name: Smart campaigns - Add tracking tags using BigCommerce
+    - name: Smart campaigns- Add tracking tags using BigCommerce
       href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_BigComm.md
-    - name: Smart campaigns - Set up tracking tags using Shopify
+    - name: Smart campaigns- Set up tracking tags using Shopify
       href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_Shopify.md
-    - name: Smart campaigns - Set up tracking tags using Wix
+    - name: Smart campaigns- Set up tracking tags using Wix
       href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_Wix.md
-    - name: Smart campaigns - Set up tracking tags using WordPress.com
+    - name: Smart campaigns- Set up tracking tags using WordPress.com
       href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_WordPress.md
     - name: Smart goals
       href: ./bing-ads/hlp_BA_CONC_SmartGoals.md
-    - name: Smart campaigns - Is switching to Expert Mode right for you?
+    - name: Smart campaigns- Is switching to Expert Mode right for you?
       href: ./bing-ads/hlp_BA_CONC_SmartVsExpert.md
     - name: How do I give someone access to my Microsoft Advertising account?
       href: ./bing-ads/hlp_BA_CONC_SSUserRoles.md
@@ -554,7 +552,7 @@
       href: ./bing-ads/hlp_BA_CONC_TermsandConditions.md
     - name: How does the account time zone impact data?
       href: ./bing-ads/hlp_BA_CONC_TimeZone.md
-    - name: Tours and Activities ads - Highlight specific tours and activities
+    - name: Tours and Activities ads- Highlight specific tours and activities
       href: ./bing-ads/hlp_BA_CONC_ToursAndActivitiesAds.md
     - name: I'm having trouble adding a credit card or debit card
       href: ./bing-ads/hlp_BA_CONC_TshootCreditCards.md
@@ -594,9 +592,9 @@
       href: ./bing-ads/hlp_BA_CONC_UETv2WhatIsTag_2.md
     - name: Why do I see discrepancy between Microsoft Advertising conversion counts and those from Google Analytics and Google Ads (or my own logs)?
       href: ./bing-ads/hlp_BA_CONC_UET_BAAWDiscrepancy.md
-    - name: FAQ - Universal Event Tracking
+    - name: FAQ- Universal Event Tracking
       href: ./bing-ads/hlp_BA_CONC_UET_FAQ.md
-    - name: FAQ - Universal Event Tracking
+    - name: FAQ- Universal Event Tracking
       href: ./bing-ads/hlp_BA_CONC_UET_FAQ_2.md
     - name: Use goal categories to segment your conversion goals
       href: ./bing-ads/hlp_BA_CONC_UET_GoalCategory.md
@@ -612,7 +610,7 @@
       href: ./bing-ads/hlp_BA_CONC_UnderstandingPerfEsts.md
     - name: Understanding the Ad extension report
       href: ./bing-ads/hlp_BA_CONC_UnderstandingTheAdExtensionsReport.md
-    - name: FAQ - Upgraded URLs
+    - name: FAQ- Upgraded URLs
       href: ./bing-ads/hlp_BA_CONC_UpgradeURL_FAQ.md
     - name: Using a final URL suffix
       href: ./bing-ads/hlp_BA_CONC_UpgradeURL_FinalURLSuffix.md
@@ -668,7 +666,7 @@
       href: ./bing-ads/hlp_BA_CONC_VideoCFA05Next.md
     - name: Stay ahead of the pack with the Competition Tab
       href: ./bing-ads/hlp_BA_CONC_VideoCompetitionTab.md
-    - name: Conversion Tracking - Are your campaigns achieving your goals?
+    - name: Conversion Tracking- Are your campaigns achieving your goals?
       href: ./bing-ads/hlp_BA_CONC_VideoConversionTracking.md
     - name: Stand out with Expanded Text Ads
       href: ./bing-ads/hlp_BA_CONC_VideoEXTA.md
@@ -696,7 +694,7 @@
       href: ./bing-ads/hlp_BA_CONC_VideoImportGoogle.md
     - name: Know your audience — with In-market Audiences
       href: ./bing-ads/hlp_BA_CONC_VideoInMarketAudiences.md
-    - name: Keyword Planner - Find new keywords and estimate their impact
+    - name: Keyword Planner- Find new keywords and estimate their impact
       href: ./bing-ads/hlp_BA_CONC_VideoKeywordPlanner.md
     - name: Build better keyword lists with Microsoft Advertising Intelligence
       href: ./bing-ads/hlp_BA_CONC_VideoMAI.md
@@ -710,7 +708,7 @@
       href: ./bing-ads/hlp_BA_CONC_VideoQualityScore.md
     - name: Take a tour of Microsoft Advertising
       href: ./bing-ads/hlp_BA_CONC_VideoQuickTour.md
-    - name: Remarketing - Targeting people who have visited your site before
+    - name: Remarketing- Targeting people who have visited your site before
       href: ./bing-ads/hlp_BA_CONC_VideoRemarketing.md
     - name: Track what users do on your site
       href: ./bing-ads/hlp_BA_CONC_VideoUnifiedEventTracking.md
@@ -772,41 +770,41 @@
       href: ./bing-ads/hlp_BA_PROC_AboutCreatingAnImportFile.md
     - name: How to change payment methods
       href: ./bing-ads/hlp_BA_PROC_Account_AssociateCCard.md
-    - name: Action Extensions - Add a call-to-action button with Action Extensions
+    - name: Action Extensions- Add a call-to-action button with Action Extensions
       href: ./bing-ads/hlp_BA_PROC_AddActionExtension.md
     - name: Add a backup payment method
       href: ./bing-ads/hlp_BA_PROC_AddBackupPM.md
     - name: Paying by credit and debit card
       href: ./bing-ads/hlp_BA_PROC_AddBilling.md
-    - name: Call Extensions - Add a phone number
+    - name: Call Extensions- Add a phone number
       href: ./bing-ads/hlp_BA_PROC_AddCallExtension.md
-    - name: Callout Extensions - Highlight your store's products or offers
+    - name: Callout Extensions- Highlight your store's products or offers
       href: ./bing-ads/hlp_BA_PROC_AddCalloutExtension.md
     - name: How to prevent your ads from showing to certain people
       href: ./bing-ads/hlp_BA_PROC_AddExclusions.md
-    - name: Filter Link Extensions - Add clickable product or feature categories
+    - name: Filter Link Extensions- Add clickable product or feature categories
       href: ./bing-ads/hlp_BA_PROC_AddFilterLinkExtension.md
     - name: Add funds to a prepay account
       href: ./bing-ads/hlp_BA_PROC_AddFunds.md
-    - name: Image extensions - Add images to your ad
+    - name: Image extensions- Add images to your ad
       href: ./bing-ads/hlp_BA_PROC_AddImageExtension.md
     - name: How to add, edit or delete keywords
       href: ./bing-ads/hlp_BA_PROC_AddKeywordsOrder.md
-    - name: Location Extensions - Show your business address
+    - name: Location Extensions- Show your business address
       href: ./bing-ads/hlp_BA_PROC_AddLocationExtension.md
     - name: How to add keywords that won't trigger my ads (Negative keywords)
       href: ./bing-ads/hlp_BA_PROC_AddNegativeKeywords.md
-    - name: Price Extensions - Add prices of your products or services
+    - name: Price Extensions- Add prices of your products or services
       href: ./bing-ads/hlp_BA_PROC_AddPriceExtension.md
-    - name: Promotion Extensions - Highlight special offers for different occasions
+    - name: Promotion Extensions- Highlight special offers for different occasions
       href: ./bing-ads/hlp_BA_PROC_AddPromotionExtension.md
-    - name: Review Extensions - Share positive reviews
+    - name: Review Extensions- Share positive reviews
       href: ./bing-ads/hlp_BA_PROC_AddReviewExtension.md
-    - name: Sitelink Extensions - Take people to specific pages on your website
+    - name: Sitelink Extensions- Take people to specific pages on your website
       href: ./bing-ads/hlp_BA_PROC_AddSitelinkExtension.md
-    - name: Structured Snippet Extensions - Add snippets that highlight your store's products or offers
+    - name: Structured Snippet Extensions- Add snippets that highlight your store's products or offers
       href: ./bing-ads/hlp_BA_PROC_AddStructuredSnippetExtension.md
-    - name: Video Extensions - Express your brand identity
+    - name: Video Extensions- Express your brand identity
       href: ./bing-ads/hlp_BA_PROC_AddVideoExtension.md
     - name: Managing your clients as an agency with Microsoft Advertising
       href: ./bing-ads/hlp_BA_PROC_AgencyEnable.md
@@ -816,7 +814,7 @@
       href: ./bing-ads/hlp_BA_PROC_AlertBudgetDepleted.md
     - name: Update your credit card expiration date
       href: ./bing-ads/hlp_BA_PROC_AlertCardExpire.md
-    - name: Critical alert - No payment method has been added
+    - name: Critical alert- No payment method has been added
       href: ./bing-ads/hlp_BA_PROC_AlertNoPI.md
     - name: Opting out of Automated Extensions
       href: ./bing-ads/hlp_BA_PROC_AutomatedExtensionsOptOut.md
@@ -984,29 +982,29 @@
       href: ./bing-ads/hlp_BA_PROC_UsingAdPreviewTool.md
     - name: Download and print a billing statement or invoice
       href: ./bing-ads/hlp_BA_PROC_ViewBillingPg.md
-    - name: Unified Smart campaigns - Social profiles and account settings
+    - name: Unified Smart campaigns- Social profiles and account settings
       href: ./bing-ads/hlp_DMC_CONC_AccountSettings.md
-    - name: Unified Smart campaigns - How budgets work
+    - name: Unified Smart campaigns- How budgets work
       href: ./bing-ads/hlp_DMC_CONC_Budgets.md
-    - name: Unified Smart campaigns - Ad Campaign and social profile performance
+    - name: Unified Smart campaigns- Ad Campaign and social profile performance
       href: ./bing-ads/hlp_DMC_CONC_CampaignPerformance.md
-    - name: Unified Smart campaigns - Set up customer action tracking
+    - name: Unified Smart campaigns- Set up customer action tracking
       href: ./bing-ads/hlp_DMC_CONC_CAT_Intro.md
-    - name: Unified Smart campaigns - Special pages most important to your business
+    - name: Unified Smart campaigns- Special pages most important to your business
       href: ./bing-ads/hlp_DMC_CONC_CAT_SpecialPages.md
-    - name: Unified Smart campaigns - Credit cards and billing
+    - name: Unified Smart campaigns- Credit cards and billing
       href: ./bing-ads/hlp_DMC_CONC_CreditCardTroubleshoot.md
-    - name: Unified Smart campaigns - FAQ
+    - name: Unified Smart campaigns- FAQ
       href: ./bing-ads/hlp_DMC_CONC_FAQ.md
-    - name: Unified Smart campaigns - Image and video requirements for ads and posts
+    - name: Unified Smart campaigns- Image and video requirements for ads and posts
       href: ./bing-ads/hlp_DMC_CONC_ImageVideoRequirements.md
     - name: All about Unified Smart campaigns
       href: ./bing-ads/hlp_DMC_CONC_Intro.md
-    - name: Unified Smart campaigns - Editorial reviews and ad approval
+    - name: Unified Smart campaigns- Editorial reviews and ad approval
       href: ./bing-ads/hlp_DMC_CONC_UnderstandDisapprovedAds.md
-    - name: Unified Smart campaigns - Create an ad campaign
+    - name: Unified Smart campaigns- Create an ad campaign
       href: ./bing-ads/hlp_DMC_PROC_CampaignCreation.md
-    - name: Unified Smart campaigns - Social network engagement
+    - name: Unified Smart campaigns- Social network engagement
       href: ./bing-ads/hlp_DMC_PROC_CreatePublishPosts.md
     - name: Oops...
       href: ./bing-ads/hlp_ERR_NoTopicsFound.md
@@ -1562,9 +1560,9 @@
       href: ./bing-ads/tool-tips/pop_BA_AudienceAds_BidStrategy.md
     - name: Associations
       href: ./bing-ads/tool-tips/pop_BA_AudienceAssociation.md
-    - name: List size - Audience
+    - name: List size- Audience
       href: ./bing-ads/tool-tips/pop_BA_AudienceAssoc_Audience.md
-    - name: List size - Search
+    - name: List size- Search
       href: ./bing-ads/tool-tips/pop_BA_AudienceAssoc_Search.md
     - name: Bid only
       href: ./bing-ads/tool-tips/pop_BA_AudienceBid.md
@@ -2944,9 +2942,9 @@
       href: ./bing-ads/tool-tips/pop_BA_KeywordPlanner_Target.md
     - name: About negative keywords
       href: ./bing-ads/tool-tips/pop_BA_Keywords_NegKWs.md
-    - name: Size - Audience network
+    - name: Size- Audience network
       href: ./bing-ads/tool-tips/pop_BA_ListSize_Audience.md
-    - name: Size - Search network
+    - name: Size- Search network
       href: ./bing-ads/tool-tips/pop_BA_ListSize_Search.md
     - name: Ad extensions
       href: ./bing-ads/tool-tips/pop_BA_LocalAttributes_Overall.md
@@ -3306,7 +3304,7 @@
       href: ./bing-ads/tool-tips/pop_BA_PFPOrderKeyword_MatchTypeAdult.md
     - name: Average position
       href: ./bing-ads/tool-tips/pop_BA_Planner_AvgPos.md
-    - name: percent change
+    - name: Percent change
       href: ./bing-ads/tool-tips/pop_BA_Planner_Change.md
     - name: Clicks
       href: ./bing-ads/tool-tips/pop_BA_Planner_Clicks.md
@@ -4840,1014 +4838,594 @@
       href: ./bing-ads/tool-tips/pop_UP_Settings_Language.md
   - name: includes
     items: 
-    - name: Signing in with a work account
-      href: ./bing-ads/hlp_BA_CONC_AAD.md
-    - name: How should I organize my accounts and campaigns?
-      href: ./bing-ads/hlp_BA_CONC_AboutAccts.md
-    - name: Account status and financial status
-      href: ./bing-ads/hlp_BA_CONC_AboutAcctStatus.md
-    - name: About ad distribution
-      href: ./bing-ads/hlp_BA_CONC_AboutAdDistribution.md
-    - name: About ad extensions
-      href: ./bing-ads/hlp_BA_CONC_AboutAdExtensions.md
-    - name: Set up ad extensions scheduling
-      href: ./bing-ads/hlp_BA_CONC_AboutAdExtensionScheduling.md
-    - name: Ad rotation explained
-      href: ./bing-ads/hlp_BA_CONC_AboutAdRotation.md
-    - name: How to target my customers by adjusting my bids
-      href: ./bing-ads/hlp_BA_CONC_AboutAdvancedBidding.md
-    - name: How to have an agency manage your Microsoft Advertising account
-      href: ./bing-ads/hlp_BA_CONC_AboutAgencyClientProcess.md
-    - name: What is Microsoft Merchant Center?
-      href: ./bing-ads/hlp_BA_CONC_AboutBingMerchantCenter.md
-    - name: How is the feed file organized?
-      href: ./bing-ads/hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md
-    - name: What are my budget options?
-      href: ./bing-ads/hlp_BA_CONC_AboutBudgetType.md
-    - name: Make updates across accounts with bulk upload
-      href: ./bing-ads/hlp_BA_CONC_AboutBulk.md
-    - name: About Microsoft Advertising Editor
-      href: ./bing-ads/hlp_BA_CONC_AboutDesktop.md
-    - name: Review your campaign data by a specific pivot or dimension
-      href: ./bing-ads/hlp_BA_CONC_AboutDimensionsTab.md
-    - name: How do I improve my ad campaign performance?
-      href: ./bing-ads/hlp_BA_CONC_AboutImprovingCampaignPerformance.md
-    - name: About improving ad relevance
-      href: ./bing-ads/hlp_BA_CONC_AboutIncreasingAdRelevance.md
-    - name: What are keywords and how should I build my keyword list?
-      href: ./bing-ads/hlp_BA_CONC_AboutKW.md
-    - name: Find relevant keywords using  Microsoft Advertising tools
-      href: ./bing-ads/hlp_BA_CONC_AboutKWResearch.md
-    - name: About language options in Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_AboutLanguageOptions.md
-    - name: About audience marketing and the Microsoft Audience Network
-      href: ./bing-ads/hlp_BA_CONC_AboutMSAN.md
-    - name: Learn about using negative keywords to get to the right customers
-      href: ./bing-ads/hlp_BA_CONC_AboutNegativeKeywords.md
-    - name: Automatically customize your ads with dynamic text parameters
-      href: ./bing-ads/hlp_BA_CONC_AboutParameters.md
-    - name: Dynamic text - Capitalization of the keyword placeholder
-      href: ./bing-ads/hlp_BA_CONC_AboutParametersKeyWord.md
-    - name: Offer details
-      href: ./bing-ads/hlp_BA_CONC_AboutPBCDetails.md
-    - name: Monitoring clicks - Telling the good from the bad
-      href: ./bing-ads/hlp_BA_CONC_AboutPreventingInvalidClicks.md
-    - name: What are product ads?
-      href: ./bing-ads/hlp_BA_CONC_AboutProductAds.md
-    - name: Troubleshooting promotional offers (coupons)
-      href: ./bing-ads/hlp_BA_CONC_AboutPromoCodeErrors.md
-    - name: Microsoft Advertising promotional offers (coupons)
-      href: ./bing-ads/hlp_BA_CONC_AboutPromoOffers.md
-    - name: Quality score in depth
-      href: ./bing-ads/hlp_BA_CONC_AboutQualityScore.md
-    - name: Free coaching to help you get started
-      href: ./bing-ads/hlp_BA_CONC_AboutQuickLaunch.md
-    - name: How can I automate my campaigns with Microsoft Advertising Scripts?
-      href: ./bing-ads/hlp_BA_CONC_AboutScripts.md
-    - name: Microsoft Advertising in Bing Smart Search
-      href: ./bing-ads/hlp_BA_CONC_AboutSearchCharmAds.md
-    - name: Run a search term report
-      href: ./bing-ads/hlp_BA_CONC_AboutSearchQueryReport.md
-    - name: Improve campaign performance with Microsoft Advertising Suggestions
-      href: ./bing-ads/hlp_BA_CONC_AboutSuggestionsOpportunities.md
-    - name: Where can I find information about the Bing Ads API?
-      href: ./bing-ads/hlp_BA_CONC_AboutTheAPI.md
-    - name: What makes an effective ad?
-      href: ./bing-ads/hlp_BA_CONC_AboutWritingEffectiveAds.md
-    - name: Account errors
-      href: ./bing-ads/hlp_BA_CONC_AccountErrors.md
-    - name: About Account map
-      href: ./bing-ads/hlp_BA_CONC_AccountMap.md
-    - name: Get the big picture from the Accounts summary page
-      href: ./bing-ads/hlp_BA_CONC_AccountsSummary.md
-    - name: Transferring accounts to a new owner
-      href: ./bing-ads/hlp_BA_CONC_Accounts_Reparenting.md
-    - name: How do I delete my account?
-      href: ./bing-ads/hlp_BA_CONC_AcctDeletion.md
-    - name: Getting ad campaigns up and running in Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_adcenter_flow.md
-    - name: App extensions - Promote and link to your apps
-      href: ./bing-ads/hlp_BA_CONC_AdExtensionAppExtension.md
-    - name: Ad types that you can create with Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_AdOptions.md
-    - name: Ad suggestions can help boost performance
-      href: ./bing-ads/hlp_BA_CONC_AdsByBing.md
-    - name: Ads not showing - What can I do?
-      href: ./bing-ads/hlp_BA_CONC_AdsNotShowing.md
-    - name: App install ads - Drive app downloads
-      href: ./bing-ads/hlp_BA_CONC_AppInstallAds.md
-    - name: What does Approved Limited status mean?
-      href: ./bing-ads/hlp_BA_CONC_ApprovedLimited.md
-    - name: See how you compete with the auction insights report
-      href: ./bing-ads/hlp_BA_CONC_AuctionInsighs.md
-    - name: Associate audiences with ad groups or campaigns
-      href: ./bing-ads/hlp_BA_CONC_Audiences_AssociateAdGroup.md
-    - name: What's my audience targeting status?
-      href: ./bing-ads/hlp_BA_CONC_Audiences_AudienceStatus.md
-    - name: Set up bid boost
-      href: ./bing-ads/hlp_BA_CONC_Audiences_BidBoost.md
-    - name: Create an audience
-      href: ./bing-ads/hlp_BA_CONC_Audiences_CreateAudience.md
-    - name: Custom audiences - Create richer user segments with your own data
-      href: ./bing-ads/hlp_BA_CONC_Audiences_CustomAudience.md
-    - name: Combined lists - Mix and match audiences to reach just the right customers
-      href: ./bing-ads/hlp_BA_CONC_Audiences_CustomCombo.md
-    - name: Customer match - Use your own data to find customers
-      href: ./bing-ads/hlp_BA_CONC_Audiences_CustomerMatch.md
-    - name: In-market audiences - Reach people who are ready to buy
-      href: ./bing-ads/hlp_BA_CONC_Audiences_InMarketAudience.md
-    - name: Research audience segments with the Audience Network Planner
-      href: ./bing-ads/hlp_BA_CONC_Audiences_NetworkPlanner.md
-    - name: Optimize for audience targeting
-      href: ./bing-ads/hlp_BA_CONC_Audiences_Optimize.md
-    - name: What are my options for audiences?
-      href: ./bing-ads/hlp_BA_CONC_Audiences_Options.md
-    - name: Dynamic remarketing lists - Remarketing for products
-      href: ./bing-ads/hlp_BA_CONC_Audiences_ProductAudience.md
-    - name: Remarketing - Target people who have visited your site before
-      href: ./bing-ads/hlp_BA_CONC_Audiences_Remarketing.md
-    - name: Similar audiences - Reach a wider qualified set of customers
-      href: ./bing-ads/hlp_BA_CONC_Audiences_SimilarAudience.md
-    - name: Pause, enable, and delete audience associations
-      href: ./bing-ads/hlp_BA_CONC_Audiences_Status.md
-    - name: How do I edit the targeting setting for an association?
-      href: ./bing-ads/hlp_BA_CONC_Audiences_TargetSettings.md
-    - name: Where do I view audience performance data?
-      href: ./bing-ads/hlp_BA_CONC_Audiences_ViewData.md
-    - name: What is audience targeting?
-      href: ./bing-ads/hlp_BA_CONC_Audiences_WhatIs.md
-    - name: Enhance ads with Automated Extensions
-      href: ./bing-ads/hlp_BA_CONC_AutomatedExtensions.md
-    - name: Automotive ads - Showcase your models and inventory
-      href: ./bing-ads/hlp_BA_CONC_AutomotiveAds.md
-    - name: Ways to use automated rules
-      href: ./bing-ads/hlp_BA_CONC_AutoRuleExamples.md
-    - name: Save time by automating your campaign
-      href: ./bing-ads/hlp_BA_CONC_AutoRuleIntro.md
-    - name: How do I add UTM tags to my landing page URL?
-      href: ./bing-ads/hlp_BA_CONC_AutoTag.md
-    - name: The Payment Methods page
-      href: ./bing-ads/hlp_BA_CONC_AvailablePaymentMethods.md
-    - name: Did I bid high enough?
-      href: ./bing-ads/hlp_BA_CONC_BiddingStrategy.md
-    - name: Bid landscape - View impression and cost simulations before changing your bid
-      href: ./bing-ads/hlp_BA_CONC_bidLandscape.md
-    - name: Let Microsoft Advertising manage your bids with bid strategies
-      href: ./bing-ads/hlp_BA_CONC_BidStrategy.md
-    - name: Portfolio bid strategies - Auto-bidding for performance goals
-      href: ./bing-ads/hlp_BA_CONC_BidStrategy_Portfolio.md
-    - name: Billing settings for monthly invoice accounts
-      href: ./bing-ads/hlp_BA_CONC_BillingSettings.md
-    - name: Billing Summary in depth
-      href: ./bing-ads/hlp_BA_CONC_BillingTab.md
-    - name: What is billing threshold and how does it work?
-      href: ./bing-ads/hlp_BA_CONC_BillingThreshold.md
-    - name: Microsoft Advertising App for iOS and Android
-      href: ./bing-ads/hlp_BA_CONC_BingAdsMobileIntro.md
-    - name: FAQ - Microsoft Advertising for Android
-      href: ./bing-ads/hlp_BA_CONC_BingAdsMobile_Android.md
-    - name: FAQ - Microsoft Advertising for iOS
-      href: ./bing-ads/hlp_BA_CONC_BingAdsMobile_iOS.md
-    - name: Troubleshoot Microsoft Merchant Center errors
-      href: ./bing-ads/hlp_BA_CONC_BMCErrorMessages.md
-    - name: What are the FTP/SFTP server requirements?
-      href: ./bing-ads/hlp_BA_CONC_BMCFTPRequirements.md
-    - name: What Google feed file attributes can I use?
-      href: ./bing-ads/hlp_BA_CONC_BMCGoogleAttributes.md
-    - name: Can I use the Google feed file?
-      href: ./bing-ads/hlp_BA_CONC_BMCGoogleFeedAttribute.md
-    - name: What are product categories?
-      href: ./bing-ads/hlp_BA_CONC_BMCProductCategores.md
-    - name: Microsoft Merchant Center feed tax policy
-      href: ./bing-ads/hlp_BA_CONC_BMCTax.md
-    - name: About Microsoft Shopping Campaigns feed files
-      href: ./bing-ads/hlp_BA_CONC_BMCWhatIsCatalog.md
-    - name: Using the API and FTP/SFTP in Microsoft Merchant Center
-      href: ./bing-ads/hlp_BA_CONC_BMC_APIandFTP.md
-    - name: Diagnostic report for untargeted offers in Microsoft Shopping Campaigns
-      href: ./bing-ads/hlp_BA_CONC_BMC_DiagnosticReport.md
-    - name: About Microsoft Merchant Center feed files
-      href: ./bing-ads/hlp_BA_CONC_BMC_FeedFiles.md
-    - name: Free shipping settings
-      href: ./bing-ads/hlp_BA_CONC_BMC_FreeShipping.md
-    - name: Google Merchant Center import errors
-      href: ./bing-ads/hlp_BA_CONC_BMC_GMCImportErrors.md
-    - name: Import your Google Merchant Center product offers to Microsoft Merchant Center
-      href: ./bing-ads/hlp_BA_CONC_BMC_GMCImportIntro.md
-    - name: What gets imported from Google Merchant Center?
-      href: ./bing-ads/hlp_BA_CONC_BMC_GMCImportOffers.md
-    - name: Microsoft Merchant Center
-      href: ./bing-ads/hlp_BA_CONC_BMC_Intro.md
-    - name: Getting started with Merchant Promotions
-      href: ./bing-ads/hlp_BA_CONC_BMC_MerchantPromo.md
-    - name: What can I include in my Merchant Promotion feed file?
-      href: ./bing-ads/hlp_BA_CONC_BMC_MerchantPromoFeedFile.md
-    - name: What are Merchant Promotions policies and editorial guidelines?
-      href: ./bing-ads/hlp_BA_CONC_BMC_MerchantPromoPolicies.md
-    - name: About Microsoft Advertising and Shopify
-      href: ./bing-ads/hlp_BA_CONC_BMC_Shopify.md
-    - name: Using structured data markup
-      href: ./bing-ads/hlp_BA_CONC_BMC_StructuredDataMarkup.md
-    - name: Unique identifiers for your product ads
-      href: ./bing-ads/hlp_BA_CONC_BMC_UniqueIdentifiers.md
-    - name: About broad match
-      href: ./bing-ads/hlp_BA_CONC_BroadMatch.md
-    - name: Using the broad match modifier
-      href: ./bing-ads/hlp_BA_CONC_BroadMatchModifier.md
-    - name: Understand and use product groups
-      href: ./bing-ads/hlp_BA_CONC_BSC_AboutProductGroups.md
-    - name: About Brand Loyalty Extensions
-      href: ./bing-ads/hlp_BA_CONC_BSC_BrandLoyaltyExtension.md
-    - name: Get started with Microsoft Shopping Campaigns
-      href: ./bing-ads/hlp_BA_CONC_BSC_GetStarted.md
-    - name: What are the benefits of shopping campaigns?
-      href: ./bing-ads/hlp_BA_CONC_BSC_Overview.md
-    - name: About Product Listings
-      href: ./bing-ads/hlp_BA_CONC_BSC_ProductListings.md
-    - name: What are Product Ratings?
-      href: ./bing-ads/hlp_BA_CONC_BSC_ProductRatings.md
-    - name: Advertise software subscriptions with Microsoft Shopping Campaigns
-      href: ./bing-ads/hlp_BA_CONC_BSC_ShoppingSubscriptions.md
-    - name: About the Shopping Tab
-      href: ./bing-ads/hlp_BA_CONC_BSC_ShoppingTab.md
-    - name: About smart shopping campaigns
-      href: ./bing-ads/hlp_BA_CONC_BSC_SmartShopping.md
-    - name: What if I reach my daily budget limit?
-      href: ./bing-ads/hlp_BA_CONC_BudgetLimit.md
-    - name: Download a spreadsheet for bulk upload
-      href: ./bing-ads/hlp_BA_CONC_BulkDownload.md
-    - name: How do I edit my downloaded spreadsheet for bulk upload?
-      href: ./bing-ads/hlp_BA_CONC_BulkEditing.md
-    - name: Upload an edited spreadsheet
-      href: ./bing-ads/hlp_BA_CONC_BulkUpload.md
-    - name: What does this bulk upload error mean?
-      href: ./bing-ads/hlp_BA_CONC_BulkUploadErrors.md
-    - name: How Call and Location Extensions work together
-      href: ./bing-ads/hlp_BA_CONC_CallNLocExtensions.md
-    - name: Use graphs to see data for every level of your campaign
-      href: ./bing-ads/hlp_BA_CONC_CampaignPageGraphs.md
-    - name: What changes were made to my campaigns and can I undo them?
-      href: ./bing-ads/hlp_BA_CONC_ChangeHistoryGraph.md
-    - name: Changing your account time zone
-      href: ./bing-ads/hlp_BA_CONC_ChangeTimeZone.md
-    - name: About the Competition tab
-      href: ./bing-ads/hlp_BA_CONC_CompetitionTab.md
-    - name: Conversion goals - "Conversions" versus "All conversions"
-      href: ./bing-ads/hlp_BA_CONC_ConvsVsAllConvs.md
-    - name: Show a countdown to an event in your ad
-      href: ./bing-ads/hlp_BA_CONC_Countdown.md
-    - name: Where does Microsoft Advertising show your ads?
-      href: ./bing-ads/hlp_BA_CONC_Countries.md
-    - name: Managing your advertising during the COVID-19 crisis
-      href: ./bing-ads/hlp_BA_CONC_COVID.md
-    - name: About credits, refunds, and adjustments
-      href: ./bing-ads/hlp_BA_CONC_CreditsRefunds.md
-    - name: Choosing your account currency
-      href: ./bing-ads/hlp_BA_CONC_Currency.md
-    - name: Create custom columns to show data you want
-      href: ./bing-ads/hlp_BA_CONC_CustomColumns.md
-    - name: Customize what data shows in the table
-      href: ./bing-ads/hlp_BA_CONC_CustomizeData.md
-    - name: Is my data updated in real time?
-      href: ./bing-ads/hlp_BA_CONC_DataFreshness.md
-    - name: Microsoft Advertising click measurement - Description of methodology (DOM)
-      href: ./bing-ads/hlp_BA_CONC_DOM2.md
-    - name: Instant reports - Download your Campaigns performance data
-      href: ./bing-ads/hlp_BA_CONC_DownloadTableAsReport.md
-    - name: About dynamic search ads
-      href: ./bing-ads/hlp_BA_CONC_DynamicSearchAds.md
-    - name: About dynamic search ads page feeds
-      href: ./bing-ads/hlp_BA_CONC_DynamicSearchAds_PageFeeds.md
-    - name: How do I fix a Disapproved or Approved Limited status?
-      href: ./bing-ads/hlp_BA_CONC_EditorialDisapprovalReasons.md
-    - name: Microsoft Advertising policies
-      href: ./bing-ads/hlp_BA_CONC_EditorialGuidelines.md
-    - name: Delivery status
-      href: ./bing-ads/hlp_BA_CONC_EditorialStatus.md
-    - name: The editorial review
-      href: ./bing-ads/hlp_BA_CONC_EditProcess.md
-    - name: How do I create and edit an insertion order?
-      href: ./bing-ads/hlp_BA_CONC_EIO.md
-    - name: Why we need your business location (and maybe VAT information)
-      href: ./bing-ads/hlp_BA_CONC_EuropaFAQ.md
-    - name: Discover the possibilities with experiments
-      href: ./bing-ads/hlp_BA_CONC_Experiments_About.md
-    - name: Examples and tips for working with experiments
-      href: ./bing-ads/hlp_BA_CONC_Experiments_BestPractices.md
-    - name: FAQ - Expanded Text Ads
-      href: ./bing-ads/hlp_BA_CONC_EXTA_FAQ.md
-    - name: Update your standard text ads to Expanded Text Ads
-      href: ./bing-ads/hlp_BA_CONC_EXTA_TextAdsDeprecate.md
-    - name: Truncation of Expanded Text Ads
-      href: ./bing-ads/hlp_BA_CONC_EXTA_Truncation.md
-    - name: Why should I update standard text ads to Expanded Text Ads?
-      href: ./bing-ads/hlp_BA_CONC_EXTA_UpgradeTextAds.md
-    - name: About ad customizer feeds
-      href: ./bing-ads/hlp_BA_CONC_Feeds_AdCustomizers.md
-    - name: Credit cards feeds
-      href: ./bing-ads/hlp_BA_CONC_Feeds_CreditCards.md
-    - name: Events feeds
-      href: ./bing-ads/hlp_BA_CONC_Feeds_Events.md
-    - name: Hotels and vacation rentals feeds
-      href: ./bing-ads/hlp_BA_CONC_Feeds_Hotels_VacationRentals.md
-    - name: See where ad traffic comes from with the Geographic report
-      href: ./bing-ads/hlp_BA_CONC_GeoLocationReport.md
-    - name: Add a Get a Ride icon to your ad
-      href: ./bing-ads/hlp_BA_CONC_GetARideExtension.md
-    - name: Get Started with Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_GetStarted2017.md
-    - name: How do I set up final URL tracking?
-      href: ./bing-ads/hlp_BA_CONC_GoogleAnalytics.md
-    - name: Hierarchies in Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_Hierarchies.md
-    - name: Choosing between a hierarchy or multi-user access
-      href: ./bing-ads/hlp_BA_CONC_HierarchiesVersusMU.md
-    - name: Welcome to Microsoft Advertising Help
-      href: ./bing-ads/hlp_BA_CONC_Home.md
-    - name: Welcome to Microsoft Advertising Help
-      href: ./bing-ads/hlp_BA_CONC_Home2020.md
-    - name: Introducing Hotel Ads
-      href: ./bing-ads/hlp_BA_CONC_HotelAds_Intro.md
-    - name: Navigating Microsoft Hotel Center
-      href: ./bing-ads/hlp_BA_CONC_HotelAds_Navigate.md
-    - name: What are my billing options? Pay now or pay later
-      href: ./bing-ads/hlp_BA_CONC_HowBillingWorks.md
-    - name: About IF functions
-      href: ./bing-ads/hlp_BA_CONC_IFfunction.md
-    - name: Image guidelines and policies
-      href: ./bing-ads/hlp_BA_CONC_ImageGuidelines.md
-    - name: Best practices for audience ad images
-      href: ./bing-ads/hlp_BA_CONC_ImagesForAudienceAds.md
-    - name: Edit your scheduled imports and review import history and results
-      href: ./bing-ads/hlp_BA_CONC_ImportScheduleHistory.md
-    - name: What gets imported from Google Ads
-      href: ./bing-ads/hlp_BA_CONC_ImportWhatInfo.md
-    - name: What gets imported from Facebook Ads
-      href: ./bing-ads/hlp_BA_CONC_Import_FB_WhatInfo.md
-    - name: Get my ad to the top of the search results page
-      href: ./bing-ads/hlp_BA_CONC_ImproveAdPosition.md
-    - name: The share of voice report shows how well you're competing
-      href: ./bing-ads/hlp_BA_CONC_ImprShareReports.md
-    - name: Managing your India tax ID
-      href: ./bing-ads/hlp_BA_CONC_IndiaPANFAQ.md
-    - name: Understanding negative keyword conflicts and their reports
-      href: ./bing-ads/hlp_BA_CONC_IntentionalNKWConflicts.md
-    - name: Imposto sobre Serviços
-      href: ./bing-ads/hlp_BA_CONC_ISS.md
-    - name: How to use Keyword Planner
-      href: ./bing-ads/hlp_BA_CONC_KeywordPlannerIntro.md
-    - name: Understanding your Keyword Planner statistics and traffic estimates
-      href: ./bing-ads/hlp_BA_CONC_KeywordPlanner_StatisticsTrafficEstimates.md
-    - name: What can I do with labels?
-      href: ./bing-ads/hlp_BA_CONC_Labels.md
-    - name: What can I do to change Limited or Out of Budget delivery status?
-      href: ./bing-ads/hlp_BA_CONC_LimitedOrOutBudget.md
-    - name: LinkedIn profile targeting
-      href: ./bing-ads/hlp_BA_CONC_LinkedInTargeting.md
-    - name: Import business location data
-      href: ./bing-ads/hlp_BA_CONC_LocalInventoryAds_ImportGMB.md
-    - name: What are Local Inventory Ads?
-      href: ./bing-ads/hlp_BA_CONC_LocalInventoryAds_Intro.md
-    - name: Setting up Local Inventory Ads
-      href: ./bing-ads/hlp_BA_CONC_LocalInventoryAds_Master.md
-    - name: Using Local Inventory Ad reports
-      href: ./bing-ads/hlp_BA_CONC_LocalInventoryAds_Reporting.md
-    - name: About storefront hosting for Local Inventory Ads
-      href: ./bing-ads/hlp_BA_CONC_LocalInventoryAds_Storefront.md
-    - name: How does ad language and location targeting affect who can see my ads?
-      href: ./bing-ads/hlp_BA_CONC_LocTargetAndLang.md
-    - name: Manage bulk download emails
-      href: ./bing-ads/hlp_BA_CONC_ManageDownloadEmails.md
-    - name: Import merchant center stores from Google Ads
-      href: ./bing-ads/hlp_BA_CONC_MapMMCStoreToGoogleMCStore.md
-    - name: What are keyword match types, and how do I use them?
-      href: ./bing-ads/hlp_BA_CONC_MatchOptions.md
-    - name: What are merchant ratings?
-      href: ./bing-ads/hlp_BA_CONC_MerchantRatings.md
-    - name: Monitor all accounts from the Manager Account Overview
-      href: ./bing-ads/hlp_BA_CONC_MgrAcctOverview.md
-    - name: Multimedia ads
-      href: ./bing-ads/hlp_BA_CONC_MMA_Search.md
-    - name: Microsoft Merchant Center Training
-      href: ./bing-ads/hlp_BA_CONC_MMCTraining.md
-    - name: What you need to know about monthly invoice billing
-      href: ./bing-ads/hlp_BA_CONC_MonthlyInvoiceBilling.md
-    - name: We're changing the way you sign in
-      href: ./bing-ads/hlp_BA_CONC_MSAFAQ.md
-    - name: Linking to an existing account
-      href: ./bing-ads/hlp_BA_CONC_MultiAccount.md
-    - name: Malaysia Service Tax
-      href: ./bing-ads/hlp_BA_CONC_MYSToDS.md
-    - name: About Microsoft Audience Ads
-      href: ./bing-ads/hlp_BA_CONC_NativeAds.md
-    - name: Add your keywords
-      href: ./bing-ads/hlp_BA_CONC_NewAd_AddYourKeywords.md
-    - name: Microsoft Advertising features
-      href: ./bing-ads/hlp_BA_CONC_NewAd_BingAdsFeatures.md
-    - name: Build your campaign - Improve keywords
-      href: ./bing-ads/hlp_BA_CONC_NewAd_BuildCampaign_Keywords.md
-    - name: Sign up for a Microsoft Advertising account
-      href: ./bing-ads/hlp_BA_CONC_NewAd_CreateABingAdsAcct.md
-    - name: Create a new ad group
-      href: ./bing-ads/hlp_BA_CONC_NewAd_CreateANewAdGroup.md
-    - name: Understand your billing options
-      href: ./bing-ads/hlp_BA_CONC_NewAd_HowBillingWorks.md
-    - name: Learn how Microsoft Advertising works
-      href: ./bing-ads/hlp_BA_CONC_NewAd_HowBingAdsWorks.md
-    - name: Refine your bids
-      href: ./bing-ads/hlp_BA_CONC_NewAd_RefineBids.md
-    - name: Set your campaign budget and bid amounts
-      href: ./bing-ads/hlp_BA_CONC_NewAd_SetCampaignBudgetAndBidAmounts.md
-    - name: Setting up your billing
-      href: ./bing-ads/hlp_BA_CONC_NewAd_SetUpBilling.md
-    - name: Understand your ad group status
-      href: ./bing-ads/hlp_BA_CONC_NewAd_UnderstandingAdGroupStatus.md
-    - name: Where your ads will appear with Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_NewAd_WhereWillMyAdsAppear.md
-    - name: Welcome to the redesigned Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_NewVersion.md
-    - name: Non-retail product ads
-      href: ./bing-ads/hlp_BA_CONC_NonRetailProductAds.md
-    - name: About duplicate keywords
-      href: ./bing-ads/hlp_BA_CONC_Normalization.md
-    - name: Stay on top of your notifications
-      href: ./bing-ads/hlp_BA_CONC_Notifications.md
-    - name: New Zealand Goods and Services Tax
-      href: ./bing-ads/hlp_BA_CONC_NZGST.md
-    - name: Use Microsoft Advertising Opportunities for ideas to improve your campaign
-      href: ./bing-ads/hlp_BA_CONC_OpportunitiesV2.md
-    - name: About your optimization score
-      href: ./bing-ads/hlp_BA_CONC_OptScore.md
-    - name: What does “Other Payment Methods” mean?
-      href: ./bing-ads/hlp_BA_CONC_OtherPaymentMethods.md
-    - name: Monitor your account with the Overview tab
-      href: ./bing-ads/hlp_BA_CONC_Overview_Tab.md
-    - name: Parallel tracking gets customers to your landing page more quickly
-      href: ./bing-ads/hlp_BA_CONC_ParallelTracking.md
-    - name: How do I fix a declined payment?
-      href: ./bing-ads/hlp_BA_CONC_PaymentDeclined.md
-    - name: Choosing a payment method for Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_PaymentMethodsV2.md
-    - name: Using PayPal to pay your charges
-      href: ./bing-ads/hlp_BA_CONC_PayPal.md
-    - name: Why is my account pending?
-      href: ./bing-ads/hlp_BA_CONC_PendingAccount.md
-    - name: About Performance Insights
-      href: ./bing-ads/hlp_BA_CONC_PerformanceInsights.md
-    - name: Understanding and setting performance targets
-      href: ./bing-ads/hlp_BA_CONC_PerformanceTargets.md
-    - name: Are my ads live?
-      href: ./bing-ads/hlp_BA_CONC_pitfalls.md
-    - name: How can I compare performance by date ranges?
-      href: ./bing-ads/hlp_BA_CONC_POP.md
-    - name: Best practices for Microsoft Shopping Campaigns and product ads
-      href: ./bing-ads/hlp_BA_CONC_productAdBestPractices.md
-    - name: About aggregators
-      href: ./bing-ads/hlp_BA_CONC_ProductAds_Aggregator.md
-    - name: Enhance product ads with Automated Extensions
-      href: ./bing-ads/hlp_BA_CONC_ProductAds_AutomatedExtensions.md
-    - name: About the installment attribute for product ads
-      href: ./bing-ads/hlp_BA_CONC_ProductAds_Installment.md
-    - name: Minimum bid for Microsoft Shopping Campaigns
-      href: ./bing-ads/hlp_BA_CONC_ProductAds_MinBid.md
-    - name: Use Microsoft Advertising recommendations to enhance your campaigns
-      href: ./bing-ads/hlp_BA_CONC_Recommendations.md
-    - name: FAQ - Remarketing
-      href: ./bing-ads/hlp_BA_CONC_Remarketing_FAQ.md
-    - name: What do the report columns mean?
-      href: ./bing-ads/hlp_BA_CONC_ReportFields.md
-    - name: What the numbers mean in performance reports
-      href: ./bing-ads/hlp_BA_CONC_ReportsWhatResultsMean.md
-    - name: More ways to track and improve campaign performance
-      href: ./bing-ads/hlp_BA_CONC_ReportsWhatsNext.md
-    - name: Location insertion for responsive search ads
-      href: ./bing-ads/hlp_BA_CONC_ResponsiveLocation.md
-    - name: About responsive search ads
-      href: ./bing-ads/hlp_BA_CONC_ResponsiveSearchAds.md
-    - name: What is the search network?
-      href: ./bing-ads/hlp_BA_CONC_SearchNetContentNet.md
-    - name: Best practices to help protect your Microsoft Advertising account
-      href: ./bing-ads/hlp_BA_CONC_SecurityBestPractices.md
-    - name: Segment your performance data
-      href: ./bing-ads/hlp_BA_CONC_Segmentation.md
-    - name: Managing bid adjustments in bulk
-      href: ./bing-ads/hlp_BA_CONC_SettingsGrid_BulkBidAdjustment.md
-    - name: Inline location targeting recommendations
-      href: ./bing-ads/hlp_BA_CONC_SettingsGrid_LocationTargetingRecommendations.md
-    - name: Singapore Goods and Services Tax
-      href: ./bing-ads/hlp_BA_CONC_SGGST.md
-    - name: How do I share a budget across multiple campaigns?
-      href: ./bing-ads/hlp_BA_CONC_SharedBudgets.md
-    - name: Share website exclusion lists across accounts
-      href: ./bing-ads/hlp_BA_CONC_SharedWebsiteExclusions.md
-    - name: Signing up - Create your first Microsoft Advertising account
-      href: ./bing-ads/hlp_BA_CONC_SignUp_CreateAcct.md
-    - name: Smart campaigns - Where and when will my ads appear?
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_AdNetwork.md
-    - name: Smart campaigns - Microsoft Advertising for Android
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_App_Android.md
-    - name: Smart campaigns - Microsoft Advertising for iOS
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_App_iOS.md
-    - name: Smart campaigns - Budgets and what you pay for
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_Budget.md
-    - name: Smart campaigns - Creating effective ads
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_EffectiveAds.md
-    - name: All about smart campaigns
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_Intro.md
-    - name: Smart campaigns - Monitor your campaign's performance
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_Monitor.md
-    - name: Smart campaigns - Microsoft Advertising policies
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_Policies.md
-    - name: Smart campaigns - How your settings for locations, products, and services affect who sees your ads
-      href: ./bing-ads/hlp_BA_CONC_SmartCamps_Targeting.md
-    - name: Smart campaigns - Add the tracking tag to your website
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_AddTag.md
-    - name: Smart campaigns - Track what customers do after they click your ad
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_Intro.md
-    - name: Smart campaigns - Define special pages of your website
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_SpecialPages.md
-    - name: Smart campaigns - Add tracking tags using BigCommerce
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_BigComm.md
-    - name: Smart campaigns - Set up tracking tags using Shopify
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_Shopify.md
-    - name: Smart campaigns - Set up tracking tags using Wix
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_Wix.md
-    - name: Smart campaigns - Set up tracking tags using WordPress.com
-      href: ./bing-ads/hlp_BA_CONC_SmartCT_WebPlat_WordPress.md
-    - name: Smart goals
-      href: ./bing-ads/hlp_BA_CONC_SmartGoals.md
-    - name: Smart campaigns - Is switching to Expert Mode right for you?
-      href: ./bing-ads/hlp_BA_CONC_SmartVsExpert.md
-    - name: How do I give someone access to my Microsoft Advertising account?
-      href: ./bing-ads/hlp_BA_CONC_SSUserRoles.md
-    - name: About stock images
-      href: ./bing-ads/hlp_BA_CONC_StockImages.md
-    - name: Microsoft Advertising system requirements
-      href: ./bing-ads/hlp_BA_CONC_SystemReqs.md
-    - name: How can I get my ads in front of my customers?
-      href: ./bing-ads/hlp_BA_CONC_Targeting.md
-    - name: Tax or VAT information
-      href: ./bing-ads/hlp_BA_CONC_TaxVATInfo.md
-    - name: Microsoft Advertising Agreement
-      href: ./bing-ads/hlp_BA_CONC_TermsandConditions.md
-    - name: How does the account time zone impact data?
-      href: ./bing-ads/hlp_BA_CONC_TimeZone.md
-    - name: Tours and Activities ads - Highlight specific tours and activities
-      href: ./bing-ads/hlp_BA_CONC_ToursAndActivitiesAds.md
-    - name: I'm having trouble adding a credit card or debit card
-      href: ./bing-ads/hlp_BA_CONC_TshootCreditCards.md
-    - name: Where are my Campaign Analytics goals?
-      href: ./bing-ads/hlp_BA_CONC_UETDepCA.md
-    - name: Change how you count conversions
-      href: ./bing-ads/hlp_BA_CONC_UETv2Count.md
-    - name: What are conversion goals and goal types?
-      href: ./bing-ads/hlp_BA_CONC_UETv2CTGoalType.md
-    - name: How to track custom events with UET
-      href: ./bing-ads/hlp_BA_CONC_UETv2CustomEvent.md
-    - name: Where do I view conversion goal metric data?
-      href: ./bing-ads/hlp_BA_CONC_UETv2HowCTWhereViewData.md
-    - name: How does conversion tracking work?
-      href: ./bing-ads/hlp_BA_CONC_UETv2HowCTWorks.md
-    - name: Reasons for creating more than one UET tag
-      href: ./bing-ads/hlp_BA_CONC_UETv2MutliTags.md
-    - name: Using the JavaScript UET tag tracking code
-      href: ./bing-ads/hlp_BA_CONC_UETv2NonJS.md
-    - name: Tracking offline conversions
-      href: ./bing-ads/hlp_BA_CONC_UETv2OfflineConversion.md
-    - name: Overriding UET tag tracking code
-      href: ./bing-ads/hlp_BA_CONC_UETv2OverrideUetTag.md
-    - name: Using the product conversion goal
-      href: ./bing-ads/hlp_BA_CONC_UETv2ProductGoal.md
-    - name: How to report variable revenue with UET
-      href: ./bing-ads/hlp_BA_CONC_UETv2RevenueVariables.md
-    - name: Update your UET tags to the new syntax
-      href: ./bing-ads/hlp_BA_CONC_UETv2SyntaxUpdate.md
-    - name: Update your UET tags to the new syntax
-      href: ./bing-ads/hlp_BA_CONC_UETv2SyntaxUpdate_2.md
-    - name: What is conversion tracking?
-      href: ./bing-ads/hlp_BA_CONC_UETv2WhatIsCT.md
-    - name: What is UET and how can it help me?
-      href: ./bing-ads/hlp_BA_CONC_UETv2WhatIsTag.md
-    - name: What is UET and how can it help me?
-      href: ./bing-ads/hlp_BA_CONC_UETv2WhatIsTag_2.md
-    - name: Why do I see discrepancy between Microsoft Advertising conversion counts and those from Google Analytics and Google Ads (or my own logs)?
-      href: ./bing-ads/hlp_BA_CONC_UET_BAAWDiscrepancy.md
-    - name: FAQ - Universal Event Tracking
-      href: ./bing-ads/hlp_BA_CONC_UET_FAQ.md
-    - name: FAQ - Universal Event Tracking
-      href: ./bing-ads/hlp_BA_CONC_UET_FAQ_2.md
-    - name: Use goal categories to segment your conversion goals
-      href: ./bing-ads/hlp_BA_CONC_UET_GoalCategory.md
-    - name: Everything you need to know about setting up UET
-      href: ./bing-ads/hlp_BA_CONC_UET_Setup_Master.md
-    - name: Everything you need to know about setting up UET
-      href: ./bing-ads/hlp_BA_CONC_UET_Setup_Master_2.md
-    - name: Test conversion goals and audiences with UET Tag Helper
-      href: ./bing-ads/hlp_BA_CONC_UET_TagHelper.md
-    - name: Why am I not recording conversions or tracked revenue?
-      href: ./bing-ads/hlp_BA_CONC_UET_TroubleshootCT.md
-    - name: Understanding performance estimates and keyword suggestions
-      href: ./bing-ads/hlp_BA_CONC_UnderstandingPerfEsts.md
-    - name: Understanding the Ad extension report
-      href: ./bing-ads/hlp_BA_CONC_UnderstandingTheAdExtensionsReport.md
-    - name: FAQ - Upgraded URLs
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_FAQ.md
-    - name: Using a final URL suffix
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_FinalURLSuffix.md
-    - name: What are Upgraded URLs and how do I upgrade?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_MigrateFAQ.md
-    - name: Can I set a separate URL for my mobile website?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_Mobile.md
-    - name: Why isn’t my tracking template working?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_NotWorking.md
-    - name: Can I use {param1}, {param2}, and {param3} for keyword level tracking with Upgraded URLs and final URLs?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_Param.md
-    - name: How is my Upgraded URL created?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_ServingRules.md
-    - name: Test your tracking templates
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_TestButton.md
-    - name: Add additional tracking templates to my campaigns
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_TrackTemplateCampaignLevel.md
-    - name: Can I use custom parameters?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md
-    - name: How do I create an account tracking template?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md
-    - name: What tracking or URL parameters can I use?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_URLParameters.md
-    - name: What is URL tracking in Microsoft Advertising?
-      href: ./bing-ads/hlp_BA_CONC_UpgradeURL_WhatIsTracking.md
-    - name: Managing your user name to access multiple accounts
-      href: ./bing-ads/hlp_BA_CONC_UserNamePermissions.md
-    - name: Microsoft Advertising video tutorials
-      href: ./bing-ads/hlp_BA_CONC_VidDirectory.md
-    - name: Get more clicks by accessorizing your ads with ad extensions!
-      href: ./bing-ads/hlp_BA_CONC_VideoAdExtensions.md
-    - name: Gain a competitive edge with the Auction Insights report
-      href: ./bing-ads/hlp_BA_CONC_VideoAuctionInsights.md
-    - name: Automate your Microsoft Advertising campaigns
-      href: ./bing-ads/hlp_BA_CONC_VideoAutoRules.md
-    - name: Welcome to Microsoft Advertising Editor
-      href: ./bing-ads/hlp_BA_CONC_VideoBAE.md
-    - name: Let Microsoft Advertising take care of your bids... with bid strategies
-      href: ./bing-ads/hlp_BA_CONC_VideoBidStrategies.md
-    - name: About broad match modifiers
-      href: ./bing-ads/hlp_BA_CONC_VideoBroadMatchModifier_About.md
-    - name: Hit the ground running with an all new campaign creation workflow
-      href: ./bing-ads/hlp_BA_CONC_VideoCampaignCreation.md
-    - name: Key differences between Google Ads and Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_VideoCFA01Differences.md
-    - name: How to import campaigns from Google Ads into Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_VideoCFA02Import.md
-    - name: What to check after importing from Google Ads into Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_VideoCFA03Check.md
-    - name: Don’t forget to set a payment method!
-      href: ./bing-ads/hlp_BA_CONC_VideoCFA04Pay.md
-    - name: Next steps on the path to success
-      href: ./bing-ads/hlp_BA_CONC_VideoCFA05Next.md
-    - name: Stay ahead of the pack with the Competition Tab
-      href: ./bing-ads/hlp_BA_CONC_VideoCompetitionTab.md
-    - name: Conversion Tracking - Are your campaigns achieving your goals?
-      href: ./bing-ads/hlp_BA_CONC_VideoConversionTracking.md
-    - name: Stand out with Expanded Text Ads
-      href: ./bing-ads/hlp_BA_CONC_VideoEXTA.md
-    - name: Create ads that get results
-      href: ./bing-ads/hlp_BA_CONC_VideoGetResults_Create.md
-    - name: Invest in what works
-      href: ./bing-ads/hlp_BA_CONC_VideoGetResults_Invest.md
-    - name: Plan a successful campaign
-      href: ./bing-ads/hlp_BA_CONC_VideoGetResults_Plan.md
-    - name: Reach your customers
-      href: ./bing-ads/hlp_BA_CONC_VideoGetResults_Reach.md
-    - name: Set your budget and control your costs
-      href: ./bing-ads/hlp_BA_CONC_VideoGetResults_Set.md
-    - name: Verify your campaign is active
-      href: ./bing-ads/hlp_BA_CONC_VideoGGActivateCampaign.md
-    - name: Campaign basics
-      href: ./bing-ads/hlp_BA_CONC_VideoGGCampaignBasics.md
-    - name: Expand your campaign
-      href: ./bing-ads/hlp_BA_CONC_VideoGGCompleteCampaignSetup.md
-    - name: Create your campaign
-      href: ./bing-ads/hlp_BA_CONC_VideoGGCreateCampaign.md
-    - name: Optimize your campaign
-      href: ./bing-ads/hlp_BA_CONC_VideoGGOptimization.md
-    - name: Import your campaigns from Google Ads
-      href: ./bing-ads/hlp_BA_CONC_VideoImportGoogle.md
-    - name: Know your audience — with In-market Audiences
-      href: ./bing-ads/hlp_BA_CONC_VideoInMarketAudiences.md
-    - name: Keyword Planner - Find new keywords and estimate their impact
-      href: ./bing-ads/hlp_BA_CONC_VideoKeywordPlanner.md
-    - name: Build better keyword lists with Microsoft Advertising Intelligence
-      href: ./bing-ads/hlp_BA_CONC_VideoMAI.md
-    - name: How to set up Microsoft Audience Ads (formerly known as Bing Native Ads)
-      href: ./bing-ads/hlp_BA_CONC_VideoNativeAds.md
-    - name: Get the whole picture with Offline Conversion tracking
-      href: ./bing-ads/hlp_BA_CONC_VideoOfflineConversions.md
-    - name: Understanding the structure of a Microsoft Advertising account
-      href: ./bing-ads/hlp_BA_CONC_VideoPlanning.md
-    - name: Understanding quality scores and their impact
-      href: ./bing-ads/hlp_BA_CONC_VideoQualityScore.md
-    - name: Take a tour of Microsoft Advertising
-      href: ./bing-ads/hlp_BA_CONC_VideoQuickTour.md
-    - name: Remarketing - Targeting people who have visited your site before
-      href: ./bing-ads/hlp_BA_CONC_VideoRemarketing.md
-    - name: Track what users do on your site
-      href: ./bing-ads/hlp_BA_CONC_VideoUnifiedEventTracking.md
-    - name: Upgraded URLs makes it easier to manage tracking URLs
-      href: ./bing-ads/hlp_BA_CONC_VideoUURLs.md
-    - name: What are view-through conversions?
-      href: ./bing-ads/hlp_BA_CONC_ViewThroughConv.md
-    - name: What is "ad position"?
-      href: ./bing-ads/hlp_BA_CONC_WhatIsAdPosition.md
-    - name: What's new in Microsoft Advertising?
-      href: ./bing-ads/hlp_BA_CONC_WhatsNew.md
-    - name: What's new in Microsoft Advertising?
-      href: ./bing-ads/hlp_BA_CONC_WhatsNew_Alert.md
-    - name: Why can't I find my ad?
-      href: ./bing-ads/hlp_BA_CONC_WhereIsAd.md
-    - name: Ad extension - Definition
-      href: ./bing-ads/hlp_BA_DEFN_AdExtensions.md
-    - name: Billing threshold - Definition
-      href: ./bing-ads/hlp_BA_DEFN_BillingThreshold.md
-    - name: Budget - Definition
-      href: ./bing-ads/hlp_BA_DEFN_Budget.md
-    - name: Budget paused - Definition
-      href: ./bing-ads/hlp_BA_DEFN_BudgetPaused.md
-    - name: Conversion tracking - Definition
-      href: ./bing-ads/hlp_BA_DEFN_Conversions.md
-    - name: Microsoft Advertising promotional offer - Definition
-      href: ./bing-ads/hlp_BA_DEFN_Coupon.md
-    - name: Destination URL - Definition
-      href: ./bing-ads/hlp_BA_DEFN_DestinationURL.md
-    - name: Display URL - Definition
-      href: ./bing-ads/hlp_BA_DEFN_DisplayURL.md
-    - name: Dynamic text - Definition
-      href: ./bing-ads/hlp_BA_DEFN_DynamicText.md
-    - name: End date - Definition
-      href: ./bing-ads/hlp_BA_DEFN_EndDate.md
-    - name: Bid adjustment - Definition
-      href: ./bing-ads/hlp_BA_DEFN_IncBid.md
-    - name: Insertion order - Definition
-      href: ./bing-ads/hlp_BA_DEFN_InsertionOrder.md
-    - name: Landing page - Definition
-      href: ./bing-ads/hlp_BA_DEFN_LandingPage.md
-    - name: Ad relevance  - Definition
-      href: ./bing-ads/hlp_BA_DEFN_LandingPageRelevance.md
-    - name: Negative keyword - Definition
-      href: ./bing-ads/hlp_BA_DEFN_NegKeyword.md
-    - name: Quality Score - Definition
-      href: ./bing-ads/hlp_BA_DEFN_QualityScore.md
-    - name: Rebill - Definition
-      href: ./bing-ads/hlp_BA_DEFN_Rebill.md
-    - name: Similar keywords - Definition
-      href: ./bing-ads/hlp_BA_DEFN_SimilarKWs.md
-    - name: Start date - Definition
-      href: ./bing-ads/hlp_BA_DEFN_StartDate.md
-    - name: Status  - Definition
-      href: ./bing-ads/hlp_BA_DEFN_Status.md
-    - name: Guided Tour Images
-      href: ./bing-ads/hlp_BA_GUIDEDTOUR_Images.md
-    - name: Import data using a file
-      href: ./bing-ads/hlp_BA_PROC_AboutCreatingAnImportFile.md
-    - name: How to change payment methods
-      href: ./bing-ads/hlp_BA_PROC_Account_AssociateCCard.md
-    - name: Action Extensions - Add a call-to-action button with Action Extensions
-      href: ./bing-ads/hlp_BA_PROC_AddActionExtension.md
-    - name: Add a backup payment method
-      href: ./bing-ads/hlp_BA_PROC_AddBackupPM.md
-    - name: Paying by credit and debit card
-      href: ./bing-ads/hlp_BA_PROC_AddBilling.md
-    - name: Call Extensions - Add a phone number
-      href: ./bing-ads/hlp_BA_PROC_AddCallExtension.md
-    - name: Callout Extensions - Highlight your store's products or offers
-      href: ./bing-ads/hlp_BA_PROC_AddCalloutExtension.md
-    - name: How to prevent your ads from showing to certain people
-      href: ./bing-ads/hlp_BA_PROC_AddExclusions.md
-    - name: Filter Link Extensions - Add clickable product or feature categories
-      href: ./bing-ads/hlp_BA_PROC_AddFilterLinkExtension.md
-    - name: Add funds to a prepay account
-      href: ./bing-ads/hlp_BA_PROC_AddFunds.md
-    - name: Image extensions - Add images to your ad
-      href: ./bing-ads/hlp_BA_PROC_AddImageExtension.md
-    - name: How to add, edit or delete keywords
-      href: ./bing-ads/hlp_BA_PROC_AddKeywordsOrder.md
-    - name: Location Extensions - Show your business address
-      href: ./bing-ads/hlp_BA_PROC_AddLocationExtension.md
-    - name: How to add keywords that won't trigger my ads (Negative keywords)
-      href: ./bing-ads/hlp_BA_PROC_AddNegativeKeywords.md
-    - name: Price Extensions - Add prices of your products or services
-      href: ./bing-ads/hlp_BA_PROC_AddPriceExtension.md
-    - name: Promotion Extensions - Highlight special offers for different occasions
-      href: ./bing-ads/hlp_BA_PROC_AddPromotionExtension.md
-    - name: Review Extensions - Share positive reviews
-      href: ./bing-ads/hlp_BA_PROC_AddReviewExtension.md
-    - name: Sitelink Extensions - Take people to specific pages on your website
-      href: ./bing-ads/hlp_BA_PROC_AddSitelinkExtension.md
-    - name: Structured Snippet Extensions - Add snippets that highlight your store's products or offers
-      href: ./bing-ads/hlp_BA_PROC_AddStructuredSnippetExtension.md
-    - name: Video Extensions - Express your brand identity
-      href: ./bing-ads/hlp_BA_PROC_AddVideoExtension.md
-    - name: Managing your clients as an agency with Microsoft Advertising
-      href: ./bing-ads/hlp_BA_PROC_AgencyEnable.md
-    - name: Why is my account on hold?
-      href: ./bing-ads/hlp_BA_PROC_AlertAcctHold.md
-    - name: Fix the Campaign out of budget/Budget pause status
-      href: ./bing-ads/hlp_BA_PROC_AlertBudgetDepleted.md
-    - name: Update your credit card expiration date
-      href: ./bing-ads/hlp_BA_PROC_AlertCardExpire.md
-    - name: Critical alert - No payment method has been added
-      href: ./bing-ads/hlp_BA_PROC_AlertNoPI.md
-    - name: Opting out of Automated Extensions
-      href: ./bing-ads/hlp_BA_PROC_AutomatedExtensionsOptOut.md
-    - name: What is auto-recharge and how does it work?
-      href: ./bing-ads/hlp_BA_PROC_AutoRecharge.md
-    - name: Edit, pause, or delete automated rules
-      href: ./bing-ads/hlp_BA_PROC_AutoRuleManage.md
-    - name: Get billing alerts
-      href: ./bing-ads/hlp_BA_PROC_BillingEmails.md
-    - name: How do I create a feed file?
-      href: ./bing-ads/hlp_BA_PROC_BMCCreateFeedFile.md
-    - name: Get email notifications for Microsoft Merchant Center
-      href: ./bing-ads/hlp_BA_PROC_BMC_AddEmail.md
-    - name: Automatic Item Update
-      href: ./bing-ads/hlp_BA_PROC_BMC_AutoItem.md
-    - name: About Shopping Campaigns for Brands
-      href: ./bing-ads/hlp_BA_PROC_BMC_CoopBid.md
-    - name: Submit online product inventory update feeds
-      href: ./bing-ads/hlp_BA_PROC_BMC_ProductInventoryFeed.md
-    - name: Schedule downloading of feed files in Microsoft Merchant Center
-      href: ./bing-ads/hlp_BA_PROC_BMC_ScheduleDownloadFeed.md
-    - name: Paying with Boleto Bancário
-      href: ./bing-ads/hlp_BA_PROC_Boleto.md
-    - name: Send your customers to a specific landing page
-      href: ./bing-ads/hlp_BA_PROC_ChangeLandingPage.md
-    - name: How do I change my password or user name?
-      href: ./bing-ads/hlp_BA_PROC_ChangePassword.md
-    - name: Change your status, bid, and other settings
-      href: ./bing-ads/hlp_BA_PROC_ChgSettings.md
-    - name: Verify and claim your website's URL
-      href: ./bing-ads/hlp_BA_PROC_ClaimYourDomain.md
-    - name: Combine similar bills into a single invoice (consolidated billing)
-      href: ./bing-ads/hlp_BA_PROC_ConsolidatedBilling.md
-    - name: Copy and paste campaigns, ad groups, ads, and keywords
-      href: ./bing-ads/hlp_BA_PROC_CopyPaste.md
-    - name: How do I create a search ad campaign?
-      href: ./bing-ads/hlp_BA_PROC_Create1stAd.md
-    - name: Create additional accounts
-      href: ./bing-ads/hlp_BA_PROC_CreateAcctSelfServe.md
-    - name: How do I create an audience campaign?
-      href: ./bing-ads/hlp_BA_PROC_CreateAudienceCampaign.md
-    - name: Create a Microsoft Merchant Center store
-      href: ./bing-ads/hlp_BA_PROC_CreateBingMerchantCenterStore.md
-    - name: How do I add a clickable phone number to my ad?
-      href: ./bing-ads/hlp_BA_PROC_CreateCallExtensionForwardNumber.md
-    - name: How to create or edit Expanded Text Ads
-      href: ./bing-ads/hlp_BA_PROC_CreateEXTA.md
-    - name: Create product ads in a shopping campaign
-      href: ./bing-ads/hlp_BA_PROC_CreateProductTargetAndAd.md
-    - name: Create a report
-      href: ./bing-ads/hlp_BA_PROC_CreateReport.md
-    - name: If an account is deactivated or deleted
-      href: ./bing-ads/hlp_BA_PROC_DeleteAcct.md
-    - name: Deleting a payment method
-      href: ./bing-ads/hlp_BA_PROC_DeleteCard.md
-    - name: How do I disable ad-blocking extensions?
-      href: ./bing-ads/hlp_BA_PROC_DisableAdBlock.md
-    - name: Change contact information
-      href: ./bing-ads/hlp_BA_PROC_EditMySettings.md
-    - name: Setting email preferences
-      href: ./bing-ads/hlp_BA_PROC_EmailNotifications.md
-    - name: Setting up and managing feeds
-      href: ./bing-ads/hlp_BA_PROC_Feeds_WorkingWith.md
-    - name: I forgot my user name or password
-      href: ./bing-ads/hlp_BA_PROC_ForgotPassword.md
-    - name: Making bulk changes in Hotel Ads
-      href: ./bing-ads/hlp_BA_PROC_HotelAds_BulkEdit.md
-    - name: Import campaigns directly from Google Ads
-      href: ./bing-ads/hlp_BA_PROC_ImportCampaign.md
-    - name: Import campaigns directly from Facebook Ads
-      href: ./bing-ads/hlp_BA_PROC_Import_FB_Campaign.md
-    - name: How do I access Microsoft Advertising as an invited user?
-      href: ./bing-ads/hlp_BA_PROC_InviteNewUser.md
-    - name: Using keyboard shortcuts
-      href: ./bing-ads/hlp_BA_PROC_KeyboardShortcuts.md
-    - name: How do I create local product inventory feeds?
-      href: ./bing-ads/hlp_BA_PROC_LocalInventoryAds_CreateLocalProdInvenFeed.md
-    - name: How do I create and submit local product inventory update feeds?
-      href: ./bing-ads/hlp_BA_PROC_LocalInventoryAds_CreateLocalProdInvenUpdateFeed.md
-    - name: How do I create and submit local product feeds?
-      href: ./bing-ads/hlp_BA_PROC_LocalInventoryAds_CreateLocalProductFeed.md
-    - name: How do I enable Local Inventory Ads?
-      href: ./bing-ads/hlp_BA_PROC_LocalInventoryAds_EnableLIA.md
-    - name: How to get my ads on the first page using estimated bids?
-      href: ./bing-ads/hlp_BA_PROC_Location_Opportunity.md
-    - name: Pay your account balance
-      href: ./bing-ads/hlp_BA_PROC_MakePayment.md
-    - name: Managing your addresses
-      href: ./bing-ads/hlp_BA_PROC_ManagingAddresses.md
-    - name: Auto-tagging of Microsoft Click ID
-      href: ./bing-ads/hlp_BA_PROC_MicrosoftClickID.md
-    - name: Apply for monthly invoice billing
-      href: ./bing-ads/hlp_BA_PROC_MonthlyInvoiceApply.md
-    - name: Pause or enable your campaigns
-      href: ./bing-ads/hlp_BA_PROC_PauseEnableCampaign.md
-    - name: Paying by check or bank transfer
-      href: ./bing-ads/hlp_BA_PROC_PayByCheck.md
-    - name: How do I challenge a disapproval?
-      href: ./bing-ads/hlp_BA_PROC_RequestException.md
-    - name: Add the words people are searching for as keywords
-      href: ./bing-ads/hlp_BA_PROC_SearchTerm.md
-    - name: Paying with SEPA Direct Debit
-      href: ./bing-ads/hlp_BA_PROC_SEPA.md
-    - name: How do I switch my payment settings?
-      href: ./bing-ads/hlp_BA_PROC_SwitchPaymentSettingV2.md
-    - name: How to target customers
-      href: ./bing-ads/hlp_BA_PROC_TargetingAgeGender.md
-    - name: How do I add a UET tag to my website?
-      href: ./bing-ads/hlp_BA_PROC_UETv2AddTag.md
-    - name: How do I create a conversion goal?
-      href: ./bing-ads/hlp_BA_PROC_UETv2CreateGoal.md
-    - name: How do I create a UET tag?
-      href: ./bing-ads/hlp_BA_PROC_UETv2CreateTag.md
-    - name: Where do I find the UET tag tracking code in Microsoft Advertising?
-      href: ./bing-ads/hlp_BA_PROC_UETv2FindTag.md
-    - name: Track mobile app installs as conversions
-      href: ./bing-ads/hlp_BA_PROC_UETv2MobileApp.md
-    - name: How to use regular expressions when building destination URLs or custom event type goals
-      href: ./bing-ads/hlp_BA_PROC_UETv2RegExpression.md
-    - name: Troubleshoot UET tag
-      href: ./bing-ads/hlp_BA_PROC_UETv2TBTag.md
-    - name: Why track custom events
-      href: ./bing-ads/hlp_BA_PROC_UETv2TrackCustomEvent.md
-    - name: Why track variable revenue
-      href: ./bing-ads/hlp_BA_PROC_UETv2TrackRev.md
-    - name: How do I manage my conversion goals?
-      href: ./bing-ads/hlp_BA_PROC_UETv2ViewGoals.md
-    - name: Is my UET tag working?
-      href: ./bing-ads/hlp_BA_PROC_UETv2ViewTag.md
-    - name: Set up UET tags using Google Tag Manager, Tealium, and other tag management systems
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS.md
-    - name: Set up UET tags using Google Tag Manager, Tealium, and other tag management systems
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_2.md
-    - name: Set up UET tags using Adobe Dynamic Tag Management
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_AdobeDTM.md
-    - name: Set up UET tags using Adobe Launch
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_AdobeLaunch.md
-    - name: Set up UET tags using Ensighten
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_Ensighten.md
-    - name: Set up UET tags using Google Tag Manager
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_GTM.md
-    - name: Set up UET tags using Qubit Opentag
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_Qubit.md
-    - name: Set up UET tags using Signal
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_Signal.md
-    - name: Set up UET tags using Tealium
-      href: ./bing-ads/hlp_BA_PROC_UET_TMS_Tealium.md
-    - name: Set up UET tags using Shopify, WordPress.com, and other website platforms
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform.md
-    - name: Set up UET tags using Shopify, WordPress.com, and other website platforms
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform_2.md
-    - name: Set up UET tags using BigCommerce
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform_BigCommerce.md
-    - name: Set up UET tags using Shopify
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform_Shopify.md
-    - name: Set up UET tags using Wix
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform_Wix.md
-    - name: Set up UET tags using WordPress.com
-      href: ./bing-ads/hlp_BA_PROC_UET_WebPlatform_WordPress.md
-    - name: Use inline recommendations to update keyword and bids
-      href: ./bing-ads/hlp_BA_PROC_UseSuggestionsOpportunities.md
-    - name: Sign in to Microsoft Advertising
-      href: ./bing-ads/hlp_BA_PROC_UseWLIDv2.md
-    - name: How do I preview my ad in Bing search results?
-      href: ./bing-ads/hlp_BA_PROC_UsingAdPreviewTool.md
-    - name: Download and print a billing statement or invoice
-      href: ./bing-ads/hlp_BA_PROC_ViewBillingPg.md
-    - name: Unified Smart campaigns - Social profiles and account settings
-      href: ./bing-ads/hlp_DMC_CONC_AccountSettings.md
-    - name: Unified Smart campaigns - How budgets work
-      href: ./bing-ads/hlp_DMC_CONC_Budgets.md
-    - name: Unified Smart campaigns - Ad Campaign and social profile performance
-      href: ./bing-ads/hlp_DMC_CONC_CampaignPerformance.md
-    - name: Unified Smart campaigns - Set up customer action tracking
-      href: ./bing-ads/hlp_DMC_CONC_CAT_Intro.md
-    - name: Unified Smart campaigns - Special pages most important to your business
-      href: ./bing-ads/hlp_DMC_CONC_CAT_SpecialPages.md
-    - name: Unified Smart campaigns - Credit cards and billing
-      href: ./bing-ads/hlp_DMC_CONC_CreditCardTroubleshoot.md
-    - name: Unified Smart campaigns - FAQ
-      href: ./bing-ads/hlp_DMC_CONC_FAQ.md
-    - name: Unified Smart campaigns - Image and video requirements for ads and posts
-      href: ./bing-ads/hlp_DMC_CONC_ImageVideoRequirements.md
-    - name: All about Unified Smart campaigns
-      href: ./bing-ads/hlp_DMC_CONC_Intro.md
-    - name: Unified Smart campaigns - Editorial reviews and ad approval
-      href: ./bing-ads/hlp_DMC_CONC_UnderstandDisapprovedAds.md
-    - name: Unified Smart campaigns - Create an ad campaign
-      href: ./bing-ads/hlp_DMC_PROC_CampaignCreation.md
-    - name: Unified Smart campaigns - Social network engagement
-      href: ./bing-ads/hlp_DMC_PROC_CreatePublishPosts.md
-    - name: Oops...
-      href: ./bing-ads/hlp_ERR_NoTopicsFound.md
+    - name: WordPressPluginInstructions
+      href: ./bing-ads/includes/WordPressPluginInstructions.md
+    - name: SelectSave
+      href: ./bing-ads/includes/SelectSave.md
+    - name: SelectManagerAccount
+      href: ./bing-ads/includes/SelectManagerAccount.md
+    - name: AllCampaigns
+      href: ./bing-ads/includes/AllCampaigns.md
+    - name: AllCampaignsOverview
+      href: ./bing-ads/includes/AllCampaignsOverview.md
+    - name: AllCampaignsRecommendations
+      href: ./bing-ads/includes/AllCampaignsRecommendations.md
+    - name: CampaignsCampaigns
+      href: ./bing-ads/includes/CampaignsCampaigns.md
+    - name: CampaignsCampaignsorAdGroups
+      href: ./bing-ads/includes/CampaignsCampaignsorAdGroups.md
+    - name: CampaignsAuctionInsights
+      href: ./bing-ads/includes/CampaignsAuctionInsights.md
+    - name: AdGroupsCampaigns
+      href: ./bing-ads/includes/AdGroupsCampaigns.md
+    - name: AdGroupsAuctionInsights
+      href: ./bing-ads/includes/AdGroupsAuctionInsights.md
+    - name: AdsExtensionsAds
+      href: ./bing-ads/includes/AdsExtensionsAds.md
+    - name: AdsExtensionsAssets
+      href: ./bing-ads/includes/AdsExtensionsAssets.md
+    - name: AdsExtensionsExtensions
+      href: ./bing-ads/includes/AdsExtensionsExtensions.md
+    - name: AdsExtensionsAutomatedExtensions
+      href: ./bing-ads/includes/AdsExtensionsAutomatedExtensions.md
+    - name: CampaignsLandingPages
+      href: ./bing-ads/includes/CampaignsLandingPages.md
+    - name: KeywordsKeywords
+      href: ./bing-ads/includes/KeywordsKeywords.md
+    - name: KeywordsNegativeKeywords
+      href: ./bing-ads/includes/KeywordsNegativeKeywords.md
+    - name: KeywordsNegativeKeywordsLists
+      href: ./bing-ads/includes/KeywordsNegativeKeywordsLists.md
+    - name: KeywordsSearchTerms
+      href: ./bing-ads/includes/KeywordsSearchTerms.md
+    - name: KeywordsAuctionInsights
+      href: ./bing-ads/includes/KeywordsAuctionInsights.md
+    - name: DynamicAdTargetsDynamicAdTargets
+      href: ./bing-ads/includes/DynamicAdTargetsDynamicAdTargets.md
+    - name: DynamicAdTargetsNegativeDynamicAdTargets
+      href: ./bing-ads/includes/DynamicAdTargetsNegativeDynamicAdTargets.md
+    - name: DynamicAdTargetsSearchTerms
+      href: ./bing-ads/includes/DynamicAdTargetsSearchTerms.md
+    - name: CampaignsProductGroups
+      href: ./bing-ads/includes/CampaignsProductGroups.md
+    - name: CampaignsAudiences
+      href: ./bing-ads/includes/CampaignsAudiences.md
+    - name: DemographicsAge
+      href: ./bing-ads/includes/DemographicsAge.md
+    - name: DemographicsGender
+      href: ./bing-ads/includes/DemographicsGender.md
+    - name: DemographicsCompany
+      href: ./bing-ads/includes/DemographicsCompany.md
+    - name: DemographicsIndustry
+      href: ./bing-ads/includes/DemographicsIndustry.md
+    - name: DemographicsJobFunction
+      href: ./bing-ads/includes/DemographicsJobFunction.md
+    - name: SettingsSettings
+      href: ./bing-ads/includes/SettingsSettings.md
+    - name: SettingsAccountSettings
+      href: ./bing-ads/includes/SettingsAccountSettings.md
+    - name: LocationsTargeted
+      href: ./bing-ads/includes/LocationsTargeted.md
+    - name: LocationsExcluded
+      href: ./bing-ads/includes/LocationsExcluded.md
+    - name: LocationsGeographicReport
+      href: ./bing-ads/includes/LocationsGeographicReport.md
+    - name: LocationsUserLocationReport
+      href: ./bing-ads/includes/LocationsUserLocationReport.md
+    - name: AdScheduleAdSchedule
+      href: ./bing-ads/includes/AdScheduleAdSchedule.md
+    - name: AdScheduleDay
+      href: ./bing-ads/includes/AdScheduleDay.md
+    - name: AdScheduleHour
+      href: ./bing-ads/includes/AdScheduleHour.md
+    - name: CampaignsDevices
+      href: ./bing-ads/includes/CampaignsDevices.md
+    - name: CampaignsChangeHistory
+      href: ./bing-ads/includes/CampaignsChangeHistory.md
+    - name: CompetitionAuctionInsights
+      href: ./bing-ads/includes/CompetitionAuctionInsights.md
+    - name: CompetitionDeeperInsightsActions
+      href: ./bing-ads/includes/CompetitionDeeperInsightsActions.md
+    - name: CampaignsExperiments
+      href: ./bing-ads/includes/CampaignsExperiments.md
+    - name: ImportGoogleAds
+      href: ./bing-ads/includes/ImportGoogleAds.md
+    - name: ImportFacebookAds
+      href: ./bing-ads/includes/ImportFacebookAds.md
+    - name: ImportFile
+      href: ./bing-ads/includes/ImportFile.md
+    - name: ImportScheduleHistory
+      href: ./bing-ads/includes/ImportScheduleHistory.md
+    - name: ImportCredentialID
+      href: ./bing-ads/includes/ImportCredentialID.md
+    - name: ReportsDimensions
+      href: ./bing-ads/includes/ReportsDimensions.md
+    - name: ReportsReports
+      href: ./bing-ads/includes/ReportsReports.md
+    - name: ReportsSavedCustomReports
+      href: ./bing-ads/includes/ReportsSavedCustomReports.md
+    - name: AccountsOverview
+      href: ./bing-ads/includes/AccountsOverview.md
+    - name: AccountsRecommendations
+      href: ./bing-ads/includes/AccountsRecommendations.md
+    - name: AccountsAccountsSummary
+      href: ./bing-ads/includes/AccountsAccountsSummary.md
+    - name: AccountsSharedLibraryPortfolioBidStrategy
+      href: ./bing-ads/includes/AccountsSharedLibraryPortfolioBidStrategy.md
+    - name: BusinessDataAdCustomizerFeeds
+      href: ./bing-ads/includes/BusinessDataAdCustomizerFeeds.md
+    - name: BusinessDataDynamicDataFeeds
+      href: ./bing-ads/includes/BusinessDataDynamicDataFeeds.md
+    - name: BusinessDataPageFeeds
+      href: ./bing-ads/includes/BusinessDataPageFeeds.md
+    - name: BillingPaymentsBillingSummary
+      href: ./bing-ads/includes/BillingPaymentsBillingSummary.md
+    - name: BillingPaymentsPaymentMethods
+      href: ./bing-ads/includes/BillingPaymentsPaymentMethods.md
+    - name: BillingPaymentsInsertionOrders
+      href: ./bing-ads/includes/BillingPaymentsInsertionOrders.md
+    - name: BillingPaymentsBillingSettings
+      href: ./bing-ads/includes/BillingPaymentsBillingSettings.md
+    - name: AccountAccessUserManagement
+      href: ./bing-ads/includes/AccountAccessUserManagement.md
+    - name: AccountAccessDirectManagers
+      href: ./bing-ads/includes/AccountAccessDirectManagers.md
+    - name: AccountMap
+      href: ./bing-ads/includes/AccountMap.md
+    - name: PreferencesEmailPreferences
+      href: ./bing-ads/includes/PreferencesEmailPreferences.md
+    - name: PreferencesManagerAccountSettings
+      href: ./bing-ads/includes/PreferencesManagerAccountSettings.md
+    - name: PreferencesAccountSettings
+      href: ./bing-ads/includes/PreferencesAccountSettings.md
+    - name: PreferencesMySettings
+      href: ./bing-ads/includes/PreferencesMySettings.md
+    - name: MerchantCenterSummary
+      href: ./bing-ads/includes/MerchantCenterSummary.md
+    - name: MerchantCenterFeeds
+      href: ./bing-ads/includes/MerchantCenterFeeds.md
+    - name: MerchantCenterPromotions
+      href: ./bing-ads/includes/MerchantCenterPromotions.md
+    - name: MerchantCenterImport
+      href: ./bing-ads/includes/MerchantCenterImport.md
+    - name: MerchantCenterSettings
+      href: ./bing-ads/includes/MerchantCenterSettings.md
+    - name: HotelCenterOverview
+      href: ./bing-ads/includes/HotelCenterOverview.md
+    - name: HotelCenterAssignment
+      href: ./bing-ads/includes/HotelCenterAssignment.md
+    - name: HotelCenterFeeds
+      href: ./bing-ads/includes/HotelCenterFeeds.md
+    - name: HotelCenterReports
+      href: ./bing-ads/includes/HotelCenterReports.md
+    - name: HotelCenterAdExtensions
+      href: ./bing-ads/includes/HotelCenterAdExtensions.md
+    - name: CashbackApproval
+      href: ./bing-ads/includes/CashbackApproval.md
+    - name: Audiences
+      href: ./bing-ads/includes/Audiences.md
+    - name: Labels
+      href: ./bing-ads/includes/Labels.md
+    - name: ConversionGoals
+      href: ./bing-ads/includes/ConversionGoals.md
+    - name: AutoBidOverride
+      href: ./bing-ads/includes/AutoBidOverride.md
+    - name: SharedBudgetException
+      href: ./bing-ads/includes/SharedBudgetException.md
+    - name: CampaignSettingsBidStrat
+      href: ./bing-ads/includes/CampaignSettingsBidStrat.md
+    - name: AboutAdExtensions
+      href: ./bing-ads/includes/AboutAdExtensions.md
+    - name: CompareAppInstall
+      href: ./bing-ads/includes/CompareAppInstall.md
+    - name: ClickSettingsTools
+      href: ./bing-ads/includes/ClickSettingsTools.md
+    - name: AvailableAdLanguages
+      href: ./bing-ads/includes/AvailableAdLanguages.md
+    - name: Ref1
+      href: ./bing-ads/includes/Ref1.md
+    - name: Ref2
+      href: ./bing-ads/includes/Ref2.md
+    - name: LEARN_MORE
+      href: ./bing-ads/includes/LEARN_MORE.md
+    - name: RelatedArticles
+      href: ./bing-ads/includes/RelatedArticles.md
+    - name: NextSteps
+      href: ./bing-ads/includes/NextSteps.md
+    - name: Redesign
+      href: ./bing-ads/includes/Redesign.md
+    - name: ComingSoon
+      href: ./bing-ads/includes/ComingSoon.md
+    - name: AutomatedTextAds
+      href: ./bing-ads/includes/AutomatedTextAds.md
+    - name: MSCampaignsandProductAdsAvailableinCountries
+      href: ./bing-ads/includes/MSCampaignsandProductAdsAvailableinCountries.md
+    - name: ClickAccountsBillingTab
+      href: ./bing-ads/includes/ClickAccountsBillingTab.md
+    - name: ClickBillingPaymentsTab
+      href: ./bing-ads/includes/ClickBillingPaymentsTab.md
+    - name: ClickBillingPaymentsTools
+      href: ./bing-ads/includes/ClickBillingPaymentsTools.md
+    - name: ClickGearBilling
+      href: ./bing-ads/includes/ClickGearBilling.md
+    - name: ClickBilling
+      href: ./bing-ads/includes/ClickBilling.md
+    - name: ClickBilling_Tab1
+      href: ./bing-ads/includes/ClickBilling_Tab1.md
+    - name: ClickBilling_Tab2
+      href: ./bing-ads/includes/ClickBilling_Tab2.md
+    - name: ClickAccountaccessTab
+      href: ./bing-ads/includes/ClickAccountaccessTab.md
+    - name: ClickAccountaccessTab2
+      href: ./bing-ads/includes/ClickAccountaccessTab2.md
+    - name: ClickSettings
+      href: ./bing-ads/includes/ClickSettings.md
+    - name: ClickAccounts
+      href: ./bing-ads/includes/ClickAccounts.md
+    - name: ClickRequests
+      href: ./bing-ads/includes/ClickRequests.md
+    - name: SelectAccount
+      href: ./bing-ads/includes/SelectAccount.md
+    - name: SelectAccount_VR
+      href: ./bing-ads/includes/SelectAccount_VR.md
+    - name: CouponRequirements
+      href: ./bing-ads/includes/CouponRequirements.md
+    - name: OfferStatus
+      href: ./bing-ads/includes/OfferStatus.md
+    - name: PrepayMarketsBanner
+      href: ./bing-ads/includes/PrepayMarketsBanner.md
+    - name: IndiaNoDebit
+      href: ./bing-ads/includes/IndiaNoDebit.md
+    - name: AccountsPayable
+      href: ./bing-ads/includes/AccountsPayable.md
+    - name: AccountsPayable_VR
+      href: ./bing-ads/includes/AccountsPayable_VR.md
+    - name: AccountsPayable_VR2
+      href: ./bing-ads/includes/AccountsPayable_VR2.md
+    - name: AccountsSummary_IO_Note1
+      href: ./bing-ads/includes/AccountsSummary_IO_Note1.md
+    - name: AccountsSummary_IO_Note2
+      href: ./bing-ads/includes/AccountsSummary_IO_Note2.md
+    - name: AccountsSummary_IO_Note3
+      href: ./bing-ads/includes/AccountsSummary_IO_Note3.md
+    - name: ConsolidatedBilling
+      href: ./bing-ads/includes/ConsolidatedBilling.md
+    - name: ConsolidatedBilling_VR
+      href: ./bing-ads/includes/ConsolidatedBilling_VR.md
+    - name: ConsolidatedBilling_VR2
+      href: ./bing-ads/includes/ConsolidatedBilling_VR2.md
+    - name: BillingThresholdDef
+      href: ./bing-ads/includes/BillingThresholdDef.md
+    - name: BillingThresholdProcess
+      href: ./bing-ads/includes/BillingThresholdProcess.md
+    - name: SetLimitBillingThreshold
+      href: ./bing-ads/includes/SetLimitBillingThreshold.md
+    - name: SetLimitBillingThreshold_VR
+      href: ./bing-ads/includes/SetLimitBillingThreshold_VR.md
+    - name: SetLimitBillingThreshold_VR2
+      href: ./bing-ads/includes/SetLimitBillingThreshold_VR2.md
+    - name: BillingEmailNotification
+      href: ./bing-ads/includes/BillingEmailNotification.md
+    - name: BillingEmailNotification_VR2
+      href: ./bing-ads/includes/BillingEmailNotification_VR2.md
+    - name: AddFunds
+      href: ./bing-ads/includes/AddFunds.md
+    - name: AddFunds_VR
+      href: ./bing-ads/includes/AddFunds_VR.md
+    - name: AddFunds_VR2
+      href: ./bing-ads/includes/AddFunds_VR2.md
+    - name: ViewBillingStatement
+      href: ./bing-ads/includes/ViewBillingStatement.md
+    - name: ViewBillingStatement_VR
+      href: ./bing-ads/includes/ViewBillingStatement_VR.md
+    - name: CampaignDetails
+      href: ./bing-ads/includes/CampaignDetails.md
+    - name: CampaignDetails_VR
+      href: ./bing-ads/includes/CampaignDetails_VR.md
+    - name: CampaignDetails_VR2
+      href: ./bing-ads/includes/CampaignDetails_VR2.md
+    - name: InvoiceAddress
+      href: ./bing-ads/includes/InvoiceAddress.md
+    - name: InvoiceAddress_VR
+      href: ./bing-ads/includes/InvoiceAddress_VR.md
+    - name: InvoiceAddress_VR2
+      href: ./bing-ads/includes/InvoiceAddress_VR2.md
+    - name: InvoiceAttention
+      href: ./bing-ads/includes/InvoiceAttention.md
+    - name: InvoiceAttention_VR
+      href: ./bing-ads/includes/InvoiceAttention_VR.md
+    - name: InvoiceAttention_VR2
+      href: ./bing-ads/includes/InvoiceAttention_VR2.md
+    - name: Paperless
+      href: ./bing-ads/includes/Paperless.md
+    - name: Paperless_VR
+      href: ./bing-ads/includes/Paperless_VR.md
+    - name: Paperless_VR2
+      href: ./bing-ads/includes/Paperless_VR2.md
+    - name: PaperInvoices
+      href: ./bing-ads/includes/PaperInvoices.md
+    - name: PaperInvoices_VR
+      href: ./bing-ads/includes/PaperInvoices_VR.md
+    - name: PaperInvoices_VR2
+      href: ./bing-ads/includes/PaperInvoices_VR2.md
+    - name: PrepayRefund
+      href: ./bing-ads/includes/PrepayRefund.md
+    - name: SEPARefund
+      href: ./bing-ads/includes/SEPARefund.md
+    - name: PostpayToPrepay
+      href: ./bing-ads/includes/PostpayToPrepay.md
+    - name: PostpayToPrepaySwitching
+      href: ./bing-ads/includes/PostpayToPrepaySwitching.md
+    - name: PostpayToPrepaySwitching_VR
+      href: ./bing-ads/includes/PostpayToPrepaySwitching_VR.md
+    - name: SwitchPaymentSettings
+      href: ./bing-ads/includes/SwitchPaymentSettings.md
+    - name: SwitchPaymentSettings_VR
+      href: ./bing-ads/includes/SwitchPaymentSettings_VR.md
+    - name: SwitchPaymentSettings_VR2
+      href: ./bing-ads/includes/SwitchPaymentSettings_VR2.md
+    - name: SendAgencyRequest
+      href: ./bing-ads/includes/SendAgencyRequest.md
+    - name: SendAgencyRequest_VR
+      href: ./bing-ads/includes/SendAgencyRequest_VR.md
+    - name: UnlinkManagingCustomer
+      href: ./bing-ads/includes/UnlinkManagingCustomer.md
+    - name: UnlinkManagingCustomer_VR
+      href: ./bing-ads/includes/UnlinkManagingCustomer_VR.md
+    - name: ManagingCustomerRemoval
+      href: ./bing-ads/includes/ManagingCustomerRemoval.md
+    - name: ManagingCustomerRemoval_VR
+      href: ./bing-ads/includes/ManagingCustomerRemoval_VR.md
+    - name: IOStatus
+      href: ./bing-ads/includes/IOStatus.md
+    - name: MultiUser
+      href: ./bing-ads/includes/MultiUser.md
+    - name: ManageMultiUser
+      href: ./bing-ads/includes/ManageMultiUser.md
+    - name: FormsofPaymentV2
+      href: ./bing-ads/includes/FormsofPaymentV2.md
+    - name: CheckWirePayments
+      href: ./bing-ads/includes/CheckWirePayments.md
+    - name: DeletePI
+      href: ./bing-ads/includes/DeletePI.md
+    - name: CardNoInvoice
+      href: ./bing-ads/includes/CardNoInvoice.md
+    - name: CardNoInvoicewPP
+      href: ./bing-ads/includes/CardNoInvoicewPP.md
+    - name: CardWireInvoice
+      href: ./bing-ads/includes/CardWireInvoice.md
+    - name: CardWireInvoicewPP
+      href: ./bing-ads/includes/CardWireInvoicewPP.md
+    - name: WireInvoicewPP
+      href: ./bing-ads/includes/WireInvoicewPP.md
+    - name: WireInvoiceOnly
+      href: ./bing-ads/includes/WireInvoiceOnly.md
+    - name: WirePrepayInvoiceOnly
+      href: ./bing-ads/includes/WirePrepayInvoiceOnly.md
+    - name: CardInvoice
+      href: ./bing-ads/includes/CardInvoice.md
+    - name: CardWireSEPAInvoice
+      href: ./bing-ads/includes/CardWireSEPAInvoice.md
+    - name: CardWireSEPAInvoicewPP
+      href: ./bing-ads/includes/CardWireSEPAInvoicewPP.md
+    - name: USDwithPayPal
+      href: ./bing-ads/includes/USDwithPayPal.md
+    - name: USDnoPayPal
+      href: ./bing-ads/includes/USDnoPayPal.md
+    - name: PrepayOfflineOnly
+      href: ./bing-ads/includes/PrepayOfflineOnly.md
+    - name: PrepayOfflineOnly_NoCheck
+      href: ./bing-ads/includes/PrepayOfflineOnly_NoCheck.md
+    - name: WireOnly
+      href: ./bing-ads/includes/WireOnly.md
+    - name: InvoiceOnly
+      href: ./bing-ads/includes/InvoiceOnly.md
+    - name: NoCheckWire
+      href: ./bing-ads/includes/NoCheckWire.md
+    - name: CheckWire
+      href: ./bing-ads/includes/CheckWire.md
+    - name: CreditCardType1
+      href: ./bing-ads/includes/CreditCardType1.md
+    - name: CreditCardType2
+      href: ./bing-ads/includes/CreditCardType2.md
+    - name: CreditCardType3
+      href: ./bing-ads/includes/CreditCardType3.md
+    - name: CreditCardType4
+      href: ./bing-ads/includes/CreditCardType4.md
+    - name: RemittanceAUD
+      href: ./bing-ads/includes/RemittanceAUD.md
+    - name: RemittanceAUDMIOL
+      href: ./bing-ads/includes/RemittanceAUDMIOL.md
+    - name: RemittanceCAD
+      href: ./bing-ads/includes/RemittanceCAD.md
+    - name: RemittanceDKK
+      href: ./bing-ads/includes/RemittanceDKK.md
+    - name: RemittanceEURMIOL
+      href: ./bing-ads/includes/RemittanceEURMIOL.md
+    - name: RemittanceEURMOI
+      href: ./bing-ads/includes/RemittanceEURMOI.md
+    - name: RemittanceHKD
+      href: ./bing-ads/includes/RemittanceHKD.md
+    - name: RemittanceHKDMIOL
+      href: ./bing-ads/includes/RemittanceHKDMIOL.md
+    - name: RemittanceHKDMOI
+      href: ./bing-ads/includes/RemittanceHKDMOI.md
+    - name: RemittanceNOK
+      href: ./bing-ads/includes/RemittanceNOK.md
+    - name: RemittanceNZD
+      href: ./bing-ads/includes/RemittanceNZD.md
+    - name: RemittanceNZDMIOL
+      href: ./bing-ads/includes/RemittanceNZDMIOL.md
+    - name: RemittanceSEK
+      href: ./bing-ads/includes/RemittanceSEK.md
+    - name: RemittanceCHF
+      href: ./bing-ads/includes/RemittanceCHF.md
+    - name: RemittanceGBPMOI
+      href: ./bing-ads/includes/RemittanceGBPMOI.md
+    - name: RemittanceGBPMIOL
+      href: ./bing-ads/includes/RemittanceGBPMIOL.md
+    - name: RemittanceSGD
+      href: ./bing-ads/includes/RemittanceSGD.md
+    - name: RemittanceSGDMIOL
+      href: ./bing-ads/includes/RemittanceSGDMIOL.md
+    - name: RemittanceUSDMOI
+      href: ./bing-ads/includes/RemittanceUSDMOI.md
+    - name: RemittanceUSDMIOL
+      href: ./bing-ads/includes/RemittanceUSDMIOL.md
+    - name: RemittanceARS
+      href: ./bing-ads/includes/RemittanceARS.md
+    - name: RemittanceMXN
+      href: ./bing-ads/includes/RemittanceMXN.md
+    - name: Warning_SR
+      href: ./bing-ads/includes/Warning_SR.md
+    - name: Transition_SR
+      href: ./bing-ads/includes/Transition_SR.md
+    - name: Remit_SR
+      href: ./bing-ads/includes/Remit_SR.md
+    - name: TaxDisclaimer
+      href: ./bing-ads/includes/TaxDisclaimer.md
+    - name: MIOLVAT1
+      href: ./bing-ads/includes/MIOLVAT1.md
+    - name: MIOLVAT2
+      href: ./bing-ads/includes/MIOLVAT2.md
+    - name: MIOLVAT3
+      href: ./bing-ads/includes/MIOLVAT3.md
+    - name: MIOLVAT4
+      href: ./bing-ads/includes/MIOLVAT4.md
+    - name: MIOLNoVAT
+      href: ./bing-ads/includes/MIOLNoVAT.md
+    - name: MOINoVAT
+      href: ./bing-ads/includes/MOINoVAT.md
+    - name: ExemptRegions
+      href: ./bing-ads/includes/ExemptRegions.md
+    - name: EditVATNumber
+      href: ./bing-ads/includes/EditVATNumber.md
+    - name: EditVATNumber_VR
+      href: ./bing-ads/includes/EditVATNumber_VR.md
+    - name: EditVATNumber_VR2
+      href: ./bing-ads/includes/EditVATNumber_VR2.md
+    - name: EditVATNumber_VR3
+      href: ./bing-ads/includes/EditVATNumber_VR3.md
+    - name: EditBRTaxID
+      href: ./bing-ads/includes/EditBRTaxID.md
+    - name: EditBRTaxID_VR
+      href: ./bing-ads/includes/EditBRTaxID_VR.md
+    - name: EditBRTaxID_VR3
+      href: ./bing-ads/includes/EditBRTaxID_VR3.md
+    - name: EditSGTaxID
+      href: ./bing-ads/includes/EditSGTaxID.md
+    - name: EditSGTaxID_VR
+      href: ./bing-ads/includes/EditSGTaxID_VR.md
+    - name: EditSGTaxID_VR3
+      href: ./bing-ads/includes/EditSGTaxID_VR3.md
+    - name: EditPIBNumber
+      href: ./bing-ads/includes/EditPIBNumber.md
+    - name: EditPIBNumber_VR
+      href: ./bing-ads/includes/EditPIBNumber_VR.md
+    - name: EditPIBNumber_VR3
+      href: ./bing-ads/includes/EditPIBNumber_VR3.md
+    - name: AddVATCert
+      href: ./bing-ads/includes/AddVATCert.md
+    - name: VATInvoice
+      href: ./bing-ads/includes/VATInvoice.md
+    - name: BusinessLocationDef
+      href: ./bing-ads/includes/BusinessLocationDef.md
+    - name: BusinessLocationWhy
+      href: ./bing-ads/includes/BusinessLocationWhy.md
+    - name: BusinessLocationExclusion
+      href: ./bing-ads/includes/BusinessLocationExclusion.md
+    - name: BusinessAddressDef
+      href: ./bing-ads/includes/BusinessAddressDef.md
+    - name: BusinessAddressWhy
+      href: ./bing-ads/includes/BusinessAddressWhy.md
+    - name: VATRegNumberDef
+      href: ./bing-ads/includes/VATRegNumberDef.md
+    - name: VATRegNumberWhy
+      href: ./bing-ads/includes/VATRegNumberWhy.md
+    - name: VATRegNumberWhat
+      href: ./bing-ads/includes/VATRegNumberWhat.md
+    - name: Boleto
+      href: ./bing-ads/includes/Boleto.md
+    - name: UserRole
+      href: ./bing-ads/includes/UserRole.md
+    - name: MSApubCenter
+      href: ./bing-ads/includes/MSApubCenter.md
+    - name: EntityLimits
+      href: ./bing-ads/includes/EntityLimits.md
+    - name: BillingOptions
+      href: ./bing-ads/includes/BillingOptions.md
+    - name: PaymentSettingNew
+      href: ./bing-ads/includes/PaymentSettingNew.md
+    - name: PaymentSetting
+      href: ./bing-ads/includes/PaymentSetting.md
+    - name: PaymentSettings
+      href: ./bing-ads/includes/PaymentSettings.md
+    - name: CountryRegion
+      href: ./bing-ads/includes/CountryRegion.md
+    - name: MSAChart
+      href: ./bing-ads/includes/MSAChart.md
+    - name: MSAChartv2
+      href: ./bing-ads/includes/MSAChartv2.md
+    - name: EnableAutoRecharge
+      href: ./bing-ads/includes/EnableAutoRecharge.md
+    - name: EnableAutoRecharge_VR
+      href: ./bing-ads/includes/EnableAutoRecharge_VR.md
+    - name: EnableAutoRecharge_VR2
+      href: ./bing-ads/includes/EnableAutoRecharge_VR2.md
+    - name: AutoRechargeWhen
+      href: ./bing-ads/includes/AutoRechargeWhen.md
+    - name: India_E_Mandate
+      href: ./bing-ads/includes/India_E_Mandate.md
+    - name: DynTextParamXDesc
+      href: ./bing-ads/includes/DynTextParamXDesc.md
+    - name: NegKWExample
+      href: ./bing-ads/includes/NegKWExample.md
+    - name: ExcKW1
+      href: ./bing-ads/includes/ExcKW1.md
+    - name: NegKW1
+      href: ./bing-ads/includes/NegKW1.md
+    - name: NKWnormalization
+      href: ./bing-ads/includes/NKWnormalization.md
+    - name: BidFactors
+      href: ./bing-ads/includes/BidFactors.md
+    - name: KeywordCharLimit
+      href: ./bing-ads/includes/KeywordCharLimit.md
+    - name: AutoTagging
+      href: ./bing-ads/includes/AutoTagging.md
+    - name: KeywordPlannerJavascript
+      href: ./bing-ads/includes/KeywordPlannerJavascript.md
+    - name: Refresh
+      href: ./bing-ads/includes/Refresh.md
+    - name: VideosUnderConstruction
+      href: ./bing-ads/includes/VideosUnderConstruction.md
+    - name: orderTerm
+      href: ./bing-ads/includes/orderTerm.md
+    - name: ordersTerm
+      href: ./bing-ads/includes/ordersTerm.md
+    - name: OrderTerm
+      href: ./bing-ads/includes/OrderTerm.md
+    - name: OrdersTerm
+      href: ./bing-ads/includes/OrdersTerm.md
+    - name: CampaignEndDate
+      href: ./bing-ads/includes/CampaignEndDate.md
+    - name: ClickImportCampaigns
+      href: ./bing-ads/includes/ClickImportCampaigns.md
+    - name: CONC_KeywordlessAdGroupReporting
+      href: ./bing-ads/includes/CONC_KeywordlessAdGroupReporting.md
+    - name: CONC_UETv2WhatIsTag
+      href: ./bing-ads/includes/CONC_UETv2WhatIsTag.md
+    - name: CONC_UET_Setup_Master
+      href: ./bing-ads/includes/CONC_UET_Setup_Master.md
+    - name: PROC_UET_TMS
+      href: ./bing-ads/includes/PROC_UET_TMS.md
+    - name: PROC_UET_WebPlatform
+      href: ./bing-ads/includes/PROC_UET_WebPlatform.md
+    - name: CONC_UETv2SyntaxUpdate
+      href: ./bing-ads/includes/CONC_UETv2SyntaxUpdate.md
+    - name: CONC_UET_FAQ
+      href: ./bing-ads/includes/CONC_UET_FAQ.md
+    - name: CompareCallFilterSnippets
+      href: ./bing-ads/includes/CompareCallFilterSnippets.md
 - name: Bing_Ads_Editor_v11
   items: 
   - name: content
@@ -5874,10 +5452,8 @@
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutTheAPI.md
     - name: Viewing your campaign data the way you want
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutViews.md
-    - name: Ad format preference - Microsoft Audience Ads
+    - name: Ad format preference- Microsoft Audience Ads
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_AdFormatPreference.md
-    - name: Using broad match and broad match modifier
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_BroadMatchModifier.md
     - name: Understand and use product groups
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_BSC_AboutProductGroups.md
     - name: Get started with shopping campaigns
@@ -5890,7 +5466,7 @@
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_Countries.md
     - name: About device targeting
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_DeviceTargeting.md
-    - name: Microsoft Advertising click measurement - Description of methodology (DOM)
+    - name: Microsoft Advertising click measurement- Description of methodology (DOM)
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_DOM2.md
     - name: When to use Full Account
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_DownloadandReplace.md
@@ -5902,7 +5478,7 @@
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_EditorialGuidelines.md
     - name: About Expanded Text Ads
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_EXTA.md
-    - name: FAQ - Expanded Text Ads
+    - name: FAQ- Expanded Text Ads
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_EXTA_FAQ.md
     - name: Frequently Asked Questions for Microsoft Advertising Editor
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_FAQ.md
@@ -5910,8 +5486,6 @@
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_Filtering.md
     - name: Welcome to Microsoft Advertising Editor Help!
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_Home.md
-    - name: What gets imported from Google Ads?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ImportWhatInfo.md
     - name: About in-market audiences
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_InMarketAudiences.md
     - name: What can I do with labels?
@@ -5920,8 +5494,6 @@
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_LinkedInTargeting.md
     - name: How does location targeting and ad language affect who can see my ads?
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_LocTargetAndLang.md
-    - name: What are keyword match types, and how do I use them?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_MatchOptions.md
     - name: About duplicate keywords
       href: ./bing-ads-editor-v11/hlp_BAE_CONC_Normalization.md
     - name: Quality score and campaign optimization FAQ
@@ -6104,261 +5676,107 @@
     items: 
   - name: includes
     items: 
-    - name: What will my ad look like?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutAdAppearance.md
-    - name: About ad distribution
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutAdDistribution.md
-    - name: How do I set up ad extension scheduling?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutAdExtensionScheduling.md
-    - name: Welcome to the new Microsoft Advertising Editor!
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutBAEv11.md
-    - name: What is Microsoft Merchant Center?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutBingMerchantCenter.md
-    - name: Understand the Microsoft Advertising Editor user interface
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutDesktopInterface.md
-    - name: About language options in Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutLanguageOptions.md
-    - name: Learn about using negative keywords to get to the right customers
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutNegativeKeywords.md
-    - name: What are Product Ads?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutProductAds.md
-    - name: Where can I find information about the Bing Ads API?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutTheAPI.md
-    - name: Viewing your campaign data the way you want
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AboutViews.md
-    - name: Ad format preference - Microsoft Audience Ads
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_AdFormatPreference.md
-    - name: Using broad match and broad match modifier
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_BroadMatchModifier.md
-    - name: Understand and use product groups
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_BSC_AboutProductGroups.md
-    - name: Get started with shopping campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_BSC_GetStarted.md
-    - name: Tips for adding and updating campaign data
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_BulkCreateEdit.md
-    - name: About conflict resolution
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ConflictResolution.md
-    - name: Where does Microsoft Advertising show your ads?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Countries.md
-    - name: About device targeting
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_DeviceTargeting.md
-    - name: Microsoft Advertising click measurement - Description of methodology (DOM)
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_DOM2.md
-    - name: When to use Full Account
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_DownloadandReplace.md
-    - name: Target searches automatically with dynamic search ads
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_DynamicSearchAds.md
-    - name: My ad or keyword was disapproved. What should I do?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_EditorialDisapprovalReasons.md
-    - name: Microsoft Advertising policies
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_EditorialGuidelines.md
-    - name: About Expanded Text Ads
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_EXTA.md
-    - name: FAQ - Expanded Text Ads
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_EXTA_FAQ.md
-    - name: Frequently Asked Questions for Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_FAQ.md
-    - name: About advanced search and filtering
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Filtering.md
-    - name: Welcome to Microsoft Advertising Editor Help!
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Home.md
-    - name: What gets imported from Google Ads?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ImportWhatInfo.md
-    - name: About in-market audiences
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_InMarketAudiences.md
-    - name: What can I do with labels?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Labels.md
-    - name: LinkedIn profile targeting
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_LinkedInTargeting.md
-    - name: How does location targeting and ad language affect who can see my ads?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_LocTargetAndLang.md
-    - name: What are keyword match types, and how do I use them?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_MatchOptions.md
-    - name: About duplicate keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Normalization.md
-    - name: Quality score and campaign optimization FAQ
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_OptimizingCampaigns.md
-    - name: Protecting data when sharing computers or accounts
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_PasswordStorage.md
-    - name: Learn about product filters for Microsoft Shopping Campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ProductFilters.md
-    - name: Productivity tips
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Productivity.md
-    - name: Product ads filter limits
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ProductValues.md
-    - name: About the expected click-through rate score
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_QualityKeywordGuidelines.md
-    - name: Use Microsoft Advertising recommendations to enhance your campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Recommendations.md
-    - name: Associate an audience with an ad group or campaign
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Remarketingv2AssociateAdGroup.md
-    - name: What is remarketing?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Remarketingv2WhatIs.md
-    - name: About responsive search ads
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_ResponsiveSearchAds.md
-    - name: Contact Support
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_Support.md
-    - name: System requirements
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_SystemReq.md
-    - name: What are Upgraded URLs and how do I upgrade?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_UpgradeURL_MigrateFAQ.md
-    - name: Get started with Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_VideoGetStarted.md
-    - name: What is "ad position"?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_WhatIsAdPosition.md
-    - name: What's new in Microsoft Advertising Editor?
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_WhatsNew.md
-    - name: Working offline
-      href: ./bing-ads-editor-v11/hlp_BAE_CONC_WorkOffline.md
-    - name: Manage your account
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_AccountsAndBilling_ManageYourAccount.md
-    - name: Ads and approvals
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_ManageAds_AdsAndApprovals.md
-    - name: Budgets and bids
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_ManageAds_BudgetsAndBids.md
-    - name: Keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_ManageAds_Keywords.md
-    - name: Find and run reports
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_MeasureResults_FindAndRunReports.md
-    - name: Understanding your data
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_MeasureResults_UnderstandingYourData.md
-    - name: Microsoft Advertising Editor Basics
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_SetupAndBasics_BingAdsEditorBasics.md
-    - name: Choose where and when your ads appear
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_SetupAndBasics_ChooseWhereAndWhenAdsAppear.md
-    - name: Create ads and campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_SetupAndBasics_CreateAdsAndCampaigns.md
-    - name: New advertiser? Start here.
-      href: ./bing-ads-editor-v11/hlp_BAE_NAV_SetupAndBasics_NewAdvertiserStartHere.md
-    - name: Import data using a file
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AboutCreatingAnImportFile.md
-    - name: What are Call Extensions and how do I add them to my ad?
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddCallExtension.md
-    - name: What are Callout Extensions and how do I add them to my ad?
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddCalloutExtension.md
-    - name: How to prevent your ads from showing to certain people
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddExclusions.md
-    - name: Show your business address in your ad
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddLocationExtension.md
-    - name: How do I add a location target?
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddLocationTarget.md
-    - name: Add negative keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddNegativeKeywords.md
-    - name: Add Price Extensions to your ad
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddPriceExtension.md
-    - name: Share reviews on your ad
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddReviewExtension.md
-    - name: Improvements to Sitelink Extensions
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddSitelinkExtension.md
-    - name: Add Structured Snippets to your ad
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AddStructuredSnippetExtension.md
-    - name: Search your campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_AdvSearch.md
-    - name: Making bulk changes in Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_BulkEdit.md
-    - name: Edit campaign budgets
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_BulkEditCampaignBudgets.md
-    - name: Edit destination URLs
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_BulkEditDestinationURLs.md
-    - name: Edit keyword bids
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_BulkEditKWBids.md
-    - name: Copy ad groups
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CopyAdgroup.md
-    - name: Copy ads to another ad group
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CopyAdToAnotherAdGroup.md
-    - name: Copy campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CopyCampaign.md
-    - name: Copy targeting settings between campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CopyCampaignTargeting.md
-    - name: Copy targeting settings
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CopyTargeting.md
-    - name: Create ad groups
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateAdGroups.md
-    - name: Create Call Extensions
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateCallExt.md
-    - name: Create a custom view
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateCustomView.md
-    - name: Create keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateKeywords.md
-    - name: Create campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateNewCampaign.md
-    - name: Create Sitelink Extensions
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateSitelinks.md
-    - name: Create text ads
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CreateTextAds.md
-    - name: Customize the data view
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_CustomizeManagerPane.md
-    - name: Synchronize campaign data between Microsoft Advertising and Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_Download.md
-    - name: Request an exception to an editorial disapproval
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_EditorialAppeal.md
-    - name: Estimate bids for keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_EstimateBidsforKeywords.md
-    - name: Prevent ads from appearing on specific websites
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ExcludeWebsites.md
-    - name: Export campaigns from Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ExportCampaigns.md
-    - name: Edit all your ad extensions in a spreadsheet
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ExtensionsManagementCSV.md
-    - name: How can I get location target codes?
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_GeogLocationCode.md
-    - name: Get more keyword ideas
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_GetMoreKeywordIdeas.md
-    - name: Getting started with Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_GettingStarted.md
-    - name: Importing and exporting with Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_Import.md
-    - name: Increase bids based on customer age, gender, location, time of day, or day of the week
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_IncrementalBid.md
-    - name: Target customers by location, day of the week, time of day, device, or by network distribution
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_LocationTargeting.md
-    - name: Eliminate unwanted traffic across campaigns (Negative keyword lists)
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_NKWSharedLibrary.md
-    - name: I forgot my user name or password
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_PasswordReset.md
-    - name: Pause and resume text ads
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_PauseAds.md
-    - name: Pause keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_PauseKWs.md
-    - name: Resolving conflicts
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ResolvingConflicts.md
-    - name: Resume keywords
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ResumeKWs.md
-    - name: Revert, undo, and redo changes to items in Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_RevertChanges.md
-    - name: Review keyword results by month, age, or gender
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ReviewKeywordResults.md
-    - name: Set default values for new and imported campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_SetDefaultsForNewCampaigns.md
-    - name: Stop uploads or downloads in progress
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_StopUploadDownload.md
-    - name: Choose accounts to download to Microsoft Advertising Editor
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_SwitchAccounts.md
-    - name: Target customers by location, day of the week, time of day, device, or by network distribution
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_Targeting.md
-    - name: Delete ad groups
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_UpdateDeleteAdGroup.md
-    - name: Delete campaigns
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_UpdateDeleteCampaign.md
-    - name: How do I post changes to Microsoft Advertising?
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_Upload.md
-    - name: Sign in to Microsoft Advertising Editor with your Microsoft account
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_UseWLID.md
-    - name: View ad group properties and statistics
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ViewAdGroupPropStats.md
-    - name: View campaign properties and statistics
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ViewCampaignPropStats.md
-    - name: View quality scores
-      href: ./bing-ads-editor-v11/hlp_BAE_PROC_ViewQualityScore.md
-    - name: Oops...
-      href: ./bing-ads-editor-v11/hlp_ERR_NoTopicsFound.md
+    - name: ClickOK
+      href: ./bing-ads-editor-v11/includes/ClickOK.md
+    - name: ClickNext
+      href: ./bing-ads-editor-v11/includes/ClickNext.md
+    - name: LEARN_MORE
+      href: ./bing-ads-editor-v11/includes/LEARN_MORE.md
+    - name: COVID
+      href: ./bing-ads-editor-v11/includes/COVID.md
+    - name: RightClickMenu
+      href: ./bing-ads-editor-v11/includes/RightClickMenu.md
+    - name: UploadReminder
+      href: ./bing-ads-editor-v11/includes/UploadReminder.md
+    - name: CautionOverwrite
+      href: ./bing-ads-editor-v11/includes/CautionOverwrite.md
+    - name: AdGroupTargeting
+      href: ./bing-ads-editor-v11/includes/AdGroupTargeting.md
+    - name: CampaignTimeZone
+      href: ./bing-ads-editor-v11/includes/CampaignTimeZone.md
+    - name: SEPA
+      href: ./bing-ads-editor-v11/includes/SEPA.md
+    - name: SelectAccountForNewCampaign
+      href: ./bing-ads-editor-v11/includes/SelectAccountForNewCampaign.md
+    - name: SelectAccountWithCampaign
+      href: ./bing-ads-editor-v11/includes/SelectAccountWithCampaign.md
+    - name: SelectCampaignWithAd
+      href: ./bing-ads-editor-v11/includes/SelectCampaignWithAd.md
+    - name: AdGroupTargetingTimeZone
+      href: ./bing-ads-editor-v11/includes/AdGroupTargetingTimeZone.md
+    - name: FollowEditorialGuidelines
+      href: ./bing-ads-editor-v11/includes/FollowEditorialGuidelines.md
+    - name: SelectAds
+      href: ./bing-ads-editor-v11/includes/SelectAds.md
+    - name: TypeRequiredAdInfo
+      href: ./bing-ads-editor-v11/includes/TypeRequiredAdInfo.md
+    - name: TextAdCharLimits
+      href: ./bing-ads-editor-v11/includes/TextAdCharLimits.md
+    - name: MobileAdContentLimits
+      href: ./bing-ads-editor-v11/includes/MobileAdContentLimits.md
+    - name: NoMinusSign
+      href: ./bing-ads-editor-v11/includes/NoMinusSign.md
+    - name: AddWebsiteExclusion
+      href: ./bing-ads-editor-v11/includes/AddWebsiteExclusion.md
+    - name: SelectCampaignOrAdGroupToTarget
+      href: ./bing-ads-editor-v11/includes/SelectCampaignOrAdGroupToTarget.md
+    - name: InPropertiesClickLocations
+      href: ./bing-ads-editor-v11/includes/InPropertiesClickLocations.md
+    - name: InPropertiesClickTimeofDay
+      href: ./bing-ads-editor-v11/includes/InPropertiesClickTimeofDay.md
+    - name: SelectTimeofDay
+      href: ./bing-ads-editor-v11/includes/SelectTimeofDay.md
+    - name: InPropertiesClickDayofWeek
+      href: ./bing-ads-editor-v11/includes/InPropertiesClickDayofWeek.md
+    - name: SelectDaysoftheWeek
+      href: ./bing-ads-editor-v11/includes/SelectDaysoftheWeek.md
+    - name: InPropertiesClickDemographics
+      href: ./bing-ads-editor-v11/includes/InPropertiesClickDemographics.md
+    - name: ClickTargeting
+      href: ./bing-ads-editor-v11/includes/ClickTargeting.md
+    - name: ResearchKeywords
+      href: ./bing-ads-editor-v11/includes/ResearchKeywords.md
+    - name: BrowseToAdGroupSingleAd
+      href: ./bing-ads-editor-v11/includes/BrowseToAdGroupSingleAd.md
+    - name: BrowserSelectAccountUpdate
+      href: ./bing-ads-editor-v11/includes/BrowserSelectAccountUpdate.md
+    - name: SelectDataView_Campaigns
+      href: ./bing-ads-editor-v11/includes/SelectDataView_Campaigns.md
+    - name: SelectDataView_AdGroups
+      href: ./bing-ads-editor-v11/includes/SelectDataView_AdGroups.md
+    - name: SelectDataView_AllAds
+      href: ./bing-ads-editor-v11/includes/SelectDataView_AllAds.md
+    - name: SelectDataView_Keywords
+      href: ./bing-ads-editor-v11/includes/SelectDataView_Keywords.md
+    - name: PauseItems
+      href: ./bing-ads-editor-v11/includes/PauseItems.md
+    - name: ResumeItems
+      href: ./bing-ads-editor-v11/includes/ResumeItems.md
+    - name: ClickExclusions
+      href: ./bing-ads-editor-v11/includes/ClickExclusions.md
+    - name: MCWEnterData_Ads
+      href: ./bing-ads-editor-v11/includes/MCWEnterData_Ads.md
+    - name: MCWPasteWithSuggestedHeaders
+      href: ./bing-ads-editor-v11/includes/MCWPasteWithSuggestedHeaders.md
+    - name: MCWPasteWithoutSuggestedHeaders
+      href: ./bing-ads-editor-v11/includes/MCWPasteWithoutSuggestedHeaders.md
+    - name: MCWImportCompleted
+      href: ./bing-ads-editor-v11/includes/MCWImportCompleted.md
+    - name: DMA
+      href: ./bing-ads-editor-v11/includes/DMA.md
+    - name: Ref1
+      href: ./bing-ads-editor-v11/includes/Ref1.md
+    - name: Ref2
+      href: ./bing-ads-editor-v11/includes/Ref2.md
+    - name: LEARN_MORE
+      href: ./bing-ads-editor-v11/includes/LEARN_MORE.md
 - name: Bing_Ads_Mobile
   items: 
   - name: content
     items: 
-    - name: FAQ - Microsoft Advertising for iOS
+    - name: FAQ- Microsoft Advertising for iOS
       href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ1.md
-    - name: FAQ - Microsoft Advertising for Android
+    - name: FAQ- Microsoft Advertising for Android
       href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ_Android.md
     - name: Microsoft Advertising apps for iOS and Android
       href: ./bing-ads-mobile/hlp_BAM_CONC_MobileIntro.md
@@ -6406,16 +5824,14 @@
       href: ./bing-ads-mobile/tool-tips/pop_BAM_Smart_CreateAd_AdTitle3.md
   - name: includes
     items: 
-    - name: FAQ - Microsoft Advertising for iOS
-      href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ1.md
-    - name: FAQ - Microsoft Advertising for Android
-      href: ./bing-ads-mobile/hlp_BAM_CONC_FAQ_Android.md
-    - name: Microsoft Advertising apps for iOS and Android
-      href: ./bing-ads-mobile/hlp_BAM_CONC_MobileIntro.md
-    - name: What's new in Microsoft Advertising Apps?
-      href: ./bing-ads-mobile/hlp_BAM_CONC_WhatsNew_BingApp.md
-    - name: Your search did not find any results in Microsoft Advertising Help
-      href: ./bing-ads-mobile/hlp_ERR_NoTopicsFound.md
+    - name: Ref1
+      href: ./bing-ads-mobile/includes/Ref1.md
+    - name: Ref2
+      href: ./bing-ads-mobile/includes/Ref2.md
+    - name: LEARN_MORE
+      href: ./bing-ads-mobile/includes/LEARN_MORE.md
+    - name: COVID
+      href: ./bing-ads-mobile/includes/COVID.md
 - name: Digital_Marketing
   items: 
   - name: content
@@ -6434,7 +5850,7 @@
       href: ./digital-marketing/hlp_DMC_CONC_AboutPromoOffers.md
     - name: Account settings
       href: ./digital-marketing/hlp_DMC_CONC_AccountSettings.md
-    - name: FAQ - Digital Marketing Center Billing
+    - name: FAQ- Digital Marketing Center Billing
       href: ./digital-marketing/hlp_DMC_CONC_Billing.md
     - name: What is the billing threshold and how does it work?
       href: ./digital-marketing/hlp_DMC_CONC_BillingThreshold.md
@@ -6446,11 +5862,11 @@
       href: ./digital-marketing/hlp_DMC_CONC_CAT_AddTag.md
     - name: Set up customer action tracking
       href: ./digital-marketing/hlp_DMC_CONC_CAT_Intro.md
-    - name: Special pages - Which pages are most important to your business?
+    - name: Special pages- Which pages are most important to your business?
       href: ./digital-marketing/hlp_DMC_CONC_CAT_SpecialPages.md
     - name: I'm having trouble adding a credit card or debit card
       href: ./digital-marketing/hlp_DMC_CONC_CreditCardTroubleshoot.md
-    - name: FAQ - Digital Marketing Center
+    - name: FAQ- Digital Marketing Center
       href: ./digital-marketing/hlp_DMC_CONC_FAQ.md
     - name: Getting started on Digital Marketing Center
       href: ./digital-marketing/hlp_DMC_CONC_GettingStarted.md
@@ -6488,7 +5904,7 @@
       href: ./digital-marketing/hlp_DMC_NAV_Publishing_TrackingAndConversions.md
     - name: Reporting
       href: ./digital-marketing/hlp_DMC_NAV_Reporting_SearchAdvertising.md
-    - name: Reporting - Social Profiles
+    - name: Reporting- Social Profiles
       href: ./digital-marketing/hlp_DMC_NAV_Reporting_SocialNetworks.md
     - name: Setup and Basics
       href: ./digital-marketing/hlp_DMC_NAV_SetupAndBasics_GettingStarted.md
@@ -6752,110 +6168,12 @@
       href: ./digital-marketing/tool-tips/pop_DMC_VideoRequirements.md
   - name: includes
     items: 
-    - name: Setting up a Business Manager Facebook Ads account to use with your Digital Marketing Center account
-      href: ./digital-marketing/hlp_BA_CONC_VideoDMC_FbBusiness.md
-    - name: Setting up a personal Facebook Ads account to use with your Digital Marketing Center account
-      href: ./digital-marketing/hlp_BA_CONC_VideoDMC_FbPersonal.md
-    - name: Granting Digital Marketing Center access to your Facebook Ads account
-      href: ./digital-marketing/hlp_BA_CONC_VideoDMC_GrantFB.md
-    - name: About search and social ads
-      href: ./digital-marketing/hlp_DMC_CONC_AboutAds.md
-    - name: About automated text ads
-      href: ./digital-marketing/hlp_DMC_CONC_AboutAutomatedAds.md
-    - name: Digital Marketing Center promotional offers (coupons)
-      href: ./digital-marketing/hlp_DMC_CONC_AboutPromoOffers.md
-    - name: Account settings
-      href: ./digital-marketing/hlp_DMC_CONC_AccountSettings.md
-    - name: FAQ - Digital Marketing Center Billing
-      href: ./digital-marketing/hlp_DMC_CONC_Billing.md
-    - name: What is the billing threshold and how does it work?
-      href: ./digital-marketing/hlp_DMC_CONC_BillingThreshold.md
-    - name: How budgets work
-      href: ./digital-marketing/hlp_DMC_CONC_Budgets.md
-    - name: Campaign performance
-      href: ./digital-marketing/hlp_DMC_CONC_CampaignPerformance.md
-    - name: Add tracking tags to your website
-      href: ./digital-marketing/hlp_DMC_CONC_CAT_AddTag.md
-    - name: Set up customer action tracking
-      href: ./digital-marketing/hlp_DMC_CONC_CAT_Intro.md
-    - name: Special pages - Which pages are most important to your business?
-      href: ./digital-marketing/hlp_DMC_CONC_CAT_SpecialPages.md
-    - name: I'm having trouble adding a credit card or debit card
-      href: ./digital-marketing/hlp_DMC_CONC_CreditCardTroubleshoot.md
-    - name: FAQ - Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_CONC_FAQ.md
-    - name: Getting started on Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_CONC_GettingStarted.md
-    - name: Welcome to Digital Marketing Center Help
-      href: ./digital-marketing/hlp_DMC_CONC_Home.md
-    - name: Image and video requirements
-      href: ./digital-marketing/hlp_DMC_CONC_ImageVideoRequirements.md
-    - name: Inbox management
-      href: ./digital-marketing/hlp_DMC_CONC_InboxManagement.md
-    - name: About Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_CONC_Intro.md
-    - name: Social reports
-      href: ./digital-marketing/hlp_DMC_CONC_SocialReports.md
-    - name: Time zone and currency
-      href: ./digital-marketing/hlp_DMC_CONC_TimeZone.md
-    - name: Editorial reviews and disapproved ads
-      href: ./digital-marketing/hlp_DMC_CONC_UnderstandDisapprovedAds.md
-    - name: Digital Marketing Center video tutorials
-      href: ./digital-marketing/hlp_DMC_CONC_VidDirectory.md
-    - name: Build a free business website with Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_CONC_Website_GettingStarted.md
-    - name: Best practices for optimizing your website in Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_CONC_Website_Optimize.md
-    - name: Welcome to Digital Marketing Center Help
-      href: ./digital-marketing/hlp_DMC_Home.md
-    - name: Billing
-      href: ./digital-marketing/hlp_DMC_NAV_AccountsAndBilling_Billing.md
-    - name: Accounts and Billing
-      href: ./digital-marketing/hlp_DMC_NAV_AccountsAndBilling_Settings.md
-    - name: Engagement
-      href: ./digital-marketing/hlp_DMC_NAV_Engagement_InboxManagement.md
-    - name: Publishing
-      href: ./digital-marketing/hlp_DMC_NAV_Publishing_CreatingAndPublishingPosts.md
-    - name: Publishing
-      href: ./digital-marketing/hlp_DMC_NAV_Publishing_TrackingAndConversions.md
-    - name: Reporting
-      href: ./digital-marketing/hlp_DMC_NAV_Reporting_SearchAdvertising.md
-    - name: Reporting - Social Profiles
-      href: ./digital-marketing/hlp_DMC_NAV_Reporting_SocialNetworks.md
-    - name: Setup and Basics
-      href: ./digital-marketing/hlp_DMC_NAV_SetupAndBasics_GettingStarted.md
-    - name: Manage Ads
-      href: ./digital-marketing/hlp_DMC_NAV_SetupAndBasics_ManageAds.md
-    - name: Create an ad campaign
-      href: ./digital-marketing/hlp_DMC_PROC_CampaignCreation.md
-    - name: Add tracking tag using BigCommerce
-      href: ./digital-marketing/hlp_DMC_PROC_CAT_WebPlatform_BigCommerce.md
-    - name: Add tracking tag using Shopify
-      href: ./digital-marketing/hlp_DMC_PROC_CAT_WebPlatform_Shopify.md
-    - name: Add tracking tag using Wix
-      href: ./digital-marketing/hlp_DMC_PROC_CAT_WebPlatform_Wix.md
-    - name: Add tracking tag using WordPress.com
-      href: ./digital-marketing/hlp_DMC_PROC_CAT_WebPlatform_WordPress.md
-    - name: Create and edit image or video ads (social ads)
-      href: ./digital-marketing/hlp_DMC_PROC_CreateImageVideoAds.md
-    - name: Create, publish, and edit posts
-      href: ./digital-marketing/hlp_DMC_PROC_CreatePublishPosts.md
-    - name: Create and edit text ads (search ads)
-      href: ./digital-marketing/hlp_DMC_PROC_CreateTextAds.md
-    - name: How do I disable ad-blocking extensions?
-      href: ./digital-marketing/hlp_DMC_PROC_DisableAdBlock.md
-    - name: Connecting social profiles
-      href: ./digital-marketing/hlp_DMC_PROC_LinkingSocialProfiles.md
-    - name: Edit your website in Digital Marketing Center
-      href: ./digital-marketing/hlp_DMC_PROC_Website_Edit.md
-    - name: Contact us
-      href: ./digital-marketing/hlp_DMC_Support.md
-    - name: Don't have permission to access content
-      href: ./digital-marketing/hlp_ERR_NoAccess.md
-    - name: Oops...
-      href: ./digital-marketing/hlp_ERR_NoHelpConnection.md
-    - name: Oops...
-      href: ./digital-marketing/hlp_ERR_NoTopicsFound.md
+    - name: Ref1
+      href: ./digital-marketing/includes/Ref1.md
+    - name: Ref2
+      href: ./digital-marketing/includes/Ref2.md
+    - name: LEARN_MORE
+      href: ./digital-marketing/includes/LEARN_MORE.md
 - name: PubCenter_v4
   items: 
   - name: content
@@ -6920,9 +6238,9 @@
       href: ./pubcenter-v4/tool-tips/pop_PCv4_Users.md
   - name: includes
     items: 
-    - name: Oops!
-      href: ./pubcenter-v4/hlp_ERR_NoTopicsFound.md
-    - name: Welcome to pubCenter!
-      href: ./pubcenter-v4/hlp_PCv3_CONC_Dashboard.md
-    - name: pubCenter release notes
-      href: ./pubcenter-v4/hlp_PCv3_CONC_WhatsNew.md
+    - name: Ref1
+      href: ./pubcenter-v4/includes/Ref1.md
+    - name: Ref2
+      href: ./pubcenter-v4/includes/Ref2.md
+    - name: LEARN_MORE
+      href: ./pubcenter-v4/includes/LEARN_MORE.md

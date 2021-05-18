@@ -36,6 +36,7 @@ Ads with countdowns only run while the countdown is relevant — they won't star
 1. [!INCLUDE [SelectSave](./includes/SelectSave.md)]
 
 > [!NOTE]
+> When considering character length, keep in mind that your text will be determined to be too long if any possible countdown makes it go over the maximum character length for that piece of text. For example, the maximum character length for ad text is 80 characters. Watch what happens here:
 > - The ad text "```Take a big first step towards a brighter future. **30 days** to Application Deadline```" is 80 characters long — the maximum length.
 > - But the ad text "```Take a big first step towards a brighter future. **17 hours** to Application Deadline```" is 81 characters long — more than the maximum.
 
@@ -46,50 +47,14 @@ To make sure you enter it correctly, let's look at the components of a countdown
 
 **{=COUNTDOWN("2018/02/17 00:00:00","en-us",3)}**
 
-<table type="type1">
-  <tr>
-    <th scope="col">Component</th>
-    <th scope="col">What you need to know</th>
-  </tr>
-  <tr>
-    <td>{ ... }</td>
-    <td>
-											<strong>Mandatory</strong>. The entire countdown syntax must be within a pair of braces (also called curly brackets).
-										</td>
-  </tr>
-  <tr>
-    <td>=COUNTDOWN</td>
-    <td>
-											<strong>Mandatory</strong>. This component determines whether the countdown is based on the ad viewer's local time zone or on your account's time zone. The possible values are "=COUNTDOWN" (the ad viewer's local time zone) or "=GLOBAL_COUNTDOWN" (your account's time zone). 
-										</td>
-  </tr>
-  <tr>
-    <td>( ... )</td>
-    <td>
-      <para><strong>Mandatory</strong>. The other components of the syntax must be within a pair of parentheses.</para>
-      <para><strong>Note</strong>: Individual components within the parentheses must be separated by commas.</para>
-    </td>
-  </tr>
-  <tr>
-    <td>"2018/02/17 00:00:00"</td>
-    <td>
-											This is the countdown end date and time (must be within a pair of double quotation marks). <strong>The date is mandatory, but the time is optional</strong>. If you do not specify the time, it will default to midnight (00:00:00) at the very beginning of the date you specified.
-										</td>
-  </tr>
-  <tr>
-    <td>"en-us"</td>
-    <td>
-      <para>This is the language the countdown will appear in (must be within a pair of double quotation marks). For example, "```3 days```", "```3 jours```", or "```3 Tage```"). <strong>This component is only mandatory if you define how many days before the countdown end date/time you want the ad to start running</strong> (see next component). If you do not specify the language, it will default to English.</para>
-      <para><strong>Note</strong>: The maximum character length of the countdown will vary depending on the language you select. This will affect how long the rest of your title part, path, or ad text can be. Take a look at [this table](https://go.microsoft.com/fwlink?LinkId=855971) to see the supported languages and the countdown character length for each.</para>
-    </td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>
-											<strong>Optional</strong>. This is how many days before the countdown end date/time you want the ad to start running (the maximum is 999). If you do not specify the number of days, it will default to 5.
-										</td>
-  </tr>
-</table>
+|Component|What you need to know|
+|---|---|
+|{ ... }|**Mandatory** . The entire countdown syntax must be within a pair of braces (also called curly brackets).|
+|=COUNTDOWN|**Mandatory** . This component determines whether the countdown is based on the ad viewer's local time zone or on your account's time zone. The possible values are "=COUNTDOWN" (the ad viewer's local time zone) or "=GLOBAL_COUNTDOWN" (your account's time zone).|
+|( ... )|**Mandatory** . The other components of the syntax must be within a pair of parentheses.**Note** : Individual components within the parentheses must be separated by commas.|
+|"2018/02/17 00:00:00"|This is the countdown end date and time (must be within a pair of double quotation marks). **The date is mandatory, but the time is optional** . If you do not specify the time, it will default to midnight (00:00:00) at the very beginning of the date you specified.|
+|"en-us"|This is the language the countdown will appear in (must be within a pair of double quotation marks). For example, "```3 days```", "```3 jours```", or "```3 Tage```"). **This component is only mandatory if you define how many days before the countdown end date/time you want the ad to start running**  (see next component). If you do not specify the language, it will default to English.**Note** : The maximum character length of the countdown will vary depending on the language you select. This will affect how long the rest of your title part, path, or ad text can be. Take a look at [this table](https://go.microsoft.com/fwlink?LinkId=855971) to see the supported languages and the countdown character length for each.|
+|3|**Optional** . This is how many days before the countdown end date/time you want the ad to start running (the maximum is 999). If you do not specify the number of days, it will default to 5.|
 
 ## Example of a countdown in action
 Let's say you're going to have a big online sale. You pick 12:00 AM on February 17 as your **Countdown ends** date/time, enter 3 for **Countdown starts**, and base the date/time on the ad viewer's time zone. Here's when your ad would run and examples of how it would look:
@@ -98,6 +63,7 @@ Let's say you're going to have a big online sale. You pick 12:00 AM on February 
 With the countdown syntax, this ad's **Title Part 2** would look like this when you create it: "Sale ends in {=COUNTDOWN("2018/02/17 00:00:00","en-us",3)}!".
 
 > [!NOTE]
+> After an ad's countdown ends, the ad will stop running but will retain the status **Enabled**. You can make the ad start running again by either:
 > - Updating the ad's **Countdown ends** date to a point in the future, or
 > - Removing the ad's countdown syntax entirely.
 

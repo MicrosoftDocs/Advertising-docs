@@ -9,7 +9,7 @@ ms.author: eur
 
 # Update bids
 
-**What you need to know:** When enabled, this option allows you to update the following existing bid types to match those currently in Google Ads.
+**What you need to know:**  When enabled, this option allows you to update the following existing bid types to match those currently in Google Ads.
 
 - Keywords
 - Auto-targets

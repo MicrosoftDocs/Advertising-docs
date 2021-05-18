@@ -9,6 +9,6 @@ ms.author: eur
 
 # Custom label (#)
 
-**What it is:**    The different custom labels in your catalog - 0 through 4.
+**What it is:**     The different custom labels in your catalog - 0 through 4.
 
 

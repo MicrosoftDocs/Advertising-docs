@@ -9,6 +9,6 @@ ms.author: eur
 
 # Decrease bid adjustment
 
-**What it is**: Decrease bids when you’re not performing as well as you are during other time periods.
+**What it is** : Decrease bids when you’re not performing as well as you are during other time periods.
 
 

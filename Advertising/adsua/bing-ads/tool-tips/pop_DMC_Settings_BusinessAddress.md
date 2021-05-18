@@ -9,8 +9,8 @@ ms.author: eur
 
 # Business address
 
-**What it is: ** This is your company's legally registered business address.
+**What it is:**  This is your company's legally registered business address.
 
-**Why it's important:** Business address determines your tax accounting obligations.
+**Why it's important:**  Business address determines your tax accounting obligations.
 
 

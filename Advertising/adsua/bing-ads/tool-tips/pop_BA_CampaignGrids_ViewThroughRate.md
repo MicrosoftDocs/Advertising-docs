@@ -9,8 +9,8 @@ ms.author: eur
 
 # View through rate
 
-**What it is**: The number of video views divided by the number of times your ad was shown (impressions) during this period.
+**What it is** : The number of video views divided by the number of times your ad was shown (impressions) during this period.
 
-**What you need to know**: This is a good way to measure user engagement with the brand message and judge the effectiveness of your video messaging.
+**What you need to know** : This is a good way to measure user engagement with the brand message and judge the effectiveness of your video messaging.
 
 

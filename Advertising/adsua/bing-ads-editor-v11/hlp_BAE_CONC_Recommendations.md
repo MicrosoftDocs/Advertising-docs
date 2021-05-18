@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Advertising recommendations to enhance your campaigns
 description: Recommendations are AI-driven suggestions with one goal in mind: Help improve your campaign performance.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

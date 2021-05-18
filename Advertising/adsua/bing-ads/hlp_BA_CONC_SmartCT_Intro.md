@@ -25,12 +25,12 @@ The last point is critical, because your website is designed around your busines
 
 ## Setting up customer action tracking
 
-1. **Get started**: On your smart campaign's home page, find the **Customer action tracking** pane, and click **Set up tracking**.
-1. **Add special pages to track**: Depending on your business goal, you'll want your ad to drive customers to specific pages—for example, an order confirmation or "Contact us" page. Add these pages and then click **Next**. For more information on this step, take a look at [Define special pages of your website](./hlp_BA_CONC_SmartCT_SpecialPages.md).
-1. **Edit your website**: For customer action tracking to work, someone will need to add a tracking tag to each page of your website's code. You have three options here:
-  1. If you built your website using WordPress.com, Wix, Shopify, or BigCommerce (and want to use it to edit your website's code), select **Let me add the tracking tag through a website editing platform** and then click **Next**.
-  1. If you're comfortable making updates directly to your website's code, select **Let me edit my website's code myself** and then click **Next**.
-  1. If someone else usually updates your website's code for you, select **Let me send the tracking tag to someone else** and then click **Next**. In the next step, enter the appropriate email address or addresses, click **Send**, and then **Next**.
+1. **Get started** : On your smart campaign's home page, find the **Customer action tracking** pane, and click **Set up tracking**.
+1. **Add special pages to track** : Depending on your business goal, you'll want your ad to drive customers to specific pages—for example, an order confirmation or "Contact us" page. Add these pages and then click **Next**. For more information on this step, take a look at [Define special pages of your website](./hlp_BA_CONC_SmartCT_SpecialPages.md).
+1. **Edit your website** : For customer action tracking to work, someone will need to add a tracking tag to each page of your website's code. You have three options here:
+   1. If you built your website using WordPress.com, Wix, Shopify, or BigCommerce (and want to use it to edit your website's code), select **Let me add the tracking tag through a website editing platform** and then click **Next**.
+   1. If you're comfortable making updates directly to your website's code, select **Let me edit my website's code myself** and then click **Next**.
+   1. If someone else usually updates your website's code for you, select **Let me send the tracking tag to someone else** and then click **Next**. In the next step, enter the appropriate email address or addresses, click **Send**, and then **Next**.
 
 For more information on this step, take a look at [Add the tracking tag to your website](./hlp_BA_CONC_SmartCT_AddTag.md).
 

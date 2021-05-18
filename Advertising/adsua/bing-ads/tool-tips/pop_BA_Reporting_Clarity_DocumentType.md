@@ -9,6 +9,6 @@ ms.author: eur
 
 # Document type
 
-**What it is:**    The type of billing document, such as an invoice, statement, or credit memo.
+**What it is:**     The type of billing document, such as an invoice, statement, or credit memo.
 
 

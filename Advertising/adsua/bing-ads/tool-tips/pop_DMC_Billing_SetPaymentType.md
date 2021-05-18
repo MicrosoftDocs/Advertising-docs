@@ -9,7 +9,7 @@ ms.author: eur
 
 # Set as
 
-**What it is: **Set your payment method type.
+**What it is:** Set your payment method type.
 - **Primary payment method**Payment method charged for search advertising.
 - **Backup payment method**Payment method that will be used if the primary payment method didn’t cover all charges.
 - **Additional payment method**Payment method that is only charged if you make a one-time payment, or if you later set it as the primary or backup payment method.

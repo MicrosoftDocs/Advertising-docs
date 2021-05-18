@@ -9,7 +9,7 @@ ms.author: eur
 
 # Direction inquiries
 
-**What it is:** The number of times customers inquired for directions to the physical location of your business during the selected date range.
+**What it is:**  The number of times customers inquired for directions to the physical location of your business during the selected date range.
 
 **What you need to know:**
 - Only applicable when the campaign goal is **Get more visits to my business’ physical location**.

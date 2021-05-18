@@ -1,7 +1,7 @@
 ---
 title: Edit destination URLs
 description: Learn how to update destintation URL in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

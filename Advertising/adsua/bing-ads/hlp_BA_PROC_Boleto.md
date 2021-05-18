@@ -11,7 +11,7 @@ ms.author: eur
 
 You can add a Boleto Bancário payment method at any time, but you can only use a Boleto Bancário if your billing address is in Brazil and the account currency is the Brazilian real. Boleto Bancário payments can be made at a bank, post office, lottery agent, and some supermarkets.
 
-**Please note: ** Only users with full permissions (Super Admins) can add, edit, or delete a payment method. Learn more [about user roles.](./hlp_BA_CONC_SSUserRoles.md)
+**Please note:**  Only users with full permissions (Super Admins) can add, edit, or delete a payment method. Learn more [about user roles.](./hlp_BA_CONC_SSUserRoles.md)
 
 ## How to pay using Boleto Bancário
 

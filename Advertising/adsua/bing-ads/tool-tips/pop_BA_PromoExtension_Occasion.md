@@ -9,6 +9,6 @@ ms.author: eur
 
 # Occasion (optional)
 
-**What it is:** The preset list of occasions available for Promotion Extensions.
+**What it is:**  The preset list of occasions available for Promotion Extensions.
 
 

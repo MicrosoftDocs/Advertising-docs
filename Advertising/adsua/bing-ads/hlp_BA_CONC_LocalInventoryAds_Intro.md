@@ -16,13 +16,13 @@ Local Inventory Ads are an advertising format for your Microsoft Shopping Campai
 
 ## Why use Local Inventory Ads?
 
-- **More volume**. By using Local Inventory Ads, you can use both retail stores and online stores to provide a better shopping experience for your customers and boost your click-through rates (CTR) and click volumes.
-- **Increase sales at brick-and-mortar locations**. Local Inventory Ads provide an opportunity for you to increase foot traffic and sales in your retail stores.
-- **Promote products available locally**. You can promote products that are available only in your retail stores.
+- **More volume** . By using Local Inventory Ads, you can use both retail stores and online stores to provide a better shopping experience for your customers and boost your click-through rates (CTR) and click volumes.
+- **Increase sales at brick-and-mortar locations** . Local Inventory Ads provide an opportunity for you to increase foot traffic and sales in your retail stores.
+- **Promote products available locally** . You can promote products that are available only in your retail stores.
 
 ## Enhance your Local Inventory Ads with curbside pick-up
 
-You can enhance your Local Inventory Ads by adding a **Curbside pick-up** badge. This feature lets potential customers know they can take advantage of curbside or contactless pick-up from your retail store.
+You can enhance your Local Inventory Ads by adding a **Curbside pick-up**  badge. This feature lets potential customers know they can take advantage of curbside or contactless pick-up from your retail store.
 
 To be eligible for curbside pick-up, you must:
 - Be fully onboarded and have live Local Inventory Ads running.
@@ -32,12 +32,7 @@ Contact your Microsoft Advertising account manager to learn more about curbside 
 
 ## Sounds good! How do I get started?
 
-<table type="type2" style="border:0;padding:0">
-  <tr>
-    <td>
-        [Setting up Local Inventory ads](./hlp_BA_CONC_LocalInventoryAds_Master.md)
-      </td>
-  </tr>
-</table>
+|[Setting up Local Inventory ads](./hlp_BA_CONC_LocalInventoryAds_Master.md)|
+|---|
 
 

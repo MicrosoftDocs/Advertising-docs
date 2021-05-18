@@ -9,6 +9,6 @@ ms.author: eur
 
 # Conflict level
 
-**What it is: **    Identification of the level where the keyword conflict arises (account, campaign, ad group).
+**What it is:**     Identification of the level where the keyword conflict arises (account, campaign, ad group).
 
 

@@ -1,7 +1,7 @@
 ---
 title: pubCenter release notes
 description: Check out the new features and known issues in pubCenter!
-ms.service: "bing-ads"
+ms.service: "PubCenter-v4"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -110,7 +110,7 @@ Here you'll find information about updates and known issues in each pubCenter re
   <tr>
     <td style="padding-bottom:0px">![spacer](../images/spacer.gif)</td>
     <td style="padding: 10px 15px;background-color:#ECEBEA">
-      <para style="padding-bottom:2px"><strong>Version 2.0 Beta</strong></para>
+      <para style="padding-bottom:2px"><strong>Version 2.0 Beta</strong> </para>
       <para style="padding-bottom:6px">This beta provides Microsoft and its partners with an early preview of pubCenter, which you can use to generate and download reports. Please take this opportunity to evaluate the functionality and share your feedback on the user interface. Some of the known issues with this release are listed below. </para>
     </td>
   </tr>
@@ -121,7 +121,7 @@ Here you'll find information about updates and known issues in each pubCenter re
   <tr>
     <td style="padding-bottom:0px">![spacer](../images/spacer.gif)</td>
     <td style="padding-bottom:0px">
-      <para style="padding-bottom:2px"><strong>New features</strong></para>
+      <para style="padding-bottom:2px"><strong>New features</strong> </para>
       <para style="padding-bottom:6px">The following updates to the pubCenter user interface are included in this release:</para>
       <ul>
         <li>Column picker: Select columns to be displayed in the data table.
@@ -147,7 +147,7 @@ Here you'll find information about updates and known issues in each pubCenter re
   <tr>
     <td style="padding-bottom:0px">![spacer](../images/spacer.gif)</td>
     <td style="padding-bottom:0px">
-      <para style="padding-bottom:2px"><strong>Known issues</strong></para>
+      <para style="padding-bottom:2px"><strong>Known issues</strong> </para>
       <para style="padding-bottom:6px">Here are the current known issues in this release:</para>
       <ul type="ORDERED">
         <li>The following browser versions are currently supported (Note: Safari on Mac is currently in test):

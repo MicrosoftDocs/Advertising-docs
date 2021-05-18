@@ -9,6 +9,6 @@ ms.author: eur
 
 # CPM bid
 
-**What it is**: The cost per impression (CPM) of your video ad.
+**What it is** : The cost per impression (CPM) of your video ad.
 
 

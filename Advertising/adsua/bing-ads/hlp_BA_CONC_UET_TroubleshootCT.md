@@ -13,10 +13,10 @@ If you have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) set up, but yo
 
 ## Before anything else, check these two things
 
-- **Has it been more than 24 hours since you set up this UET tag or this conversion goal?**  			It can take up to 24 hours for Microsoft Advertising to receive data from a new UET tag or conversion goal. Wait until 24 hours have passed and check again.
-- **What is your conversion goal's tracking status?**  			From the global menu at the top of the page, click **Tools**&nbsp;&gt;&nbsp;**Conversion goals** and check the **Tracking status** column for this conversion goal.
-  - Tracking status is **"Unverified"** or **"Tag inactive"**: Follow the steps in next section of this article.
-  - Tracking status is **"No recent conversions"**: Follow the steps in [this section](#NoRecentConvs) of the article.
+- **Has it been more than 24 hours since you set up this UET tag or this conversion goal?**   			It can take up to 24 hours for Microsoft Advertising to receive data from a new UET tag or conversion goal. Wait until 24 hours have passed and check again.
+- **What is your conversion goal's tracking status?**   			From the global menu at the top of the page, click **Tools**&nbsp;&gt;&nbsp;**Conversion goals** and check the **Tracking status** column for this conversion goal.
+   - Tracking status is **"Unverified"** or **"Tag inactive"**: Follow the steps in next section of this article.
+   - Tracking status is **"No recent conversions"**: Follow the steps in [this section](#NoRecentConvs) of the article.
 
 ## Tracking status is "Unverified" or "Tag inactive"
 
@@ -25,11 +25,11 @@ If you have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) set up, but yo
     <th colspan="2">Have you added the UET tag to your website's code?</th>
   </tr>
   <tr>
-    <td><strong>No</strong></td>
+    <td><strong>No</strong> </td>
     <td>Your UET tag must be inserted into the code of each page of your website for conversion tracking to work. For instructions, refer to the "Add the tag to your website" section of [this article](./hlp_BA_CONC_UET_Setup_Master.md).</td>
   </tr>
   <tr>
-    <td><strong>Yes</strong></td>
+    <td><strong>Yes</strong> </td>
     <td>There are three likely scenarios:
 					<ul><li>You didn't add the UET tag to every page of your website.</li><li>You didn't add the UET tag correctly.</li><li>You added the wrong UET tag.</li></ul><para>To investigate, use the UET Tag Helper browser extension:
 						<ol><li>Install the browser extension following the instructions in [this article](./hlp_BA_CONC_UET_TagHelper.md).</li><li>In Microsoft Edge or Google Chrome, go to a webpage that features a conversion event for your goal, and then click the UET Tag Helper icon.</li><li>In UET Tag Helper, flip the switch to <strong>On</strong>, refresh the browser page, and then click the UET Tag Helper icon again.</li><li>Review the UET Tag Helper icon status. The number shows how many times there was a UET tag request from the webpage and the number's surrounding color shows the status.
@@ -41,6 +41,8 @@ If you have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) set up, but yo
 												</td><td style="vertical-align:middle">If you see a yellow or red number, there are issues with the UET tag. Click the browser extension, verify that the <strong>Tag ID</strong> matches the UET tag ID you're expecting to be used, and then follow the instructions in the helper. </td></tr></table></li></ol></para></td>
   </tr>
 </table>
+
+<anchor id="NoRecentConvs" />
 
 ## Tracking status is "No recent conversions"
 
@@ -67,11 +69,11 @@ If you have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) set up, but yo
           </expando>
         </expando_list>
         <ul>
-          <li><strong>Is the goal scoped to the correct account?</strong> 
+          <li><strong>Is the goal scoped to the correct account?</strong>  
 				For <strong>Scope</strong>, verify that this conversion goal is scoped to the account in which you're expecting to see conversions.</li>
-          <li><strong>Is the goal's conversion window constraining you?</strong> 
+          <li><strong>Is the goal's conversion window constraining you?</strong>  
 				For <strong>Conversion window</strong>, verify that your window is wide enough to reasonably expect conversions. (Keep your conversion window setting in mind as you go on to the next step.)</li>
-          <li><strong>Is your conversion goal enabled?</strong>  
+          <li><strong>Is your conversion goal enabled?</strong>   
 				From the global menu at the top of the page, click <strong>Tools</strong>&nbsp;&gt;&nbsp;<strong>Conversion goals</strong> and check the <strong>Status</strong> column for this conversion goal. If its status is <strong>Removed</strong>, change it to <strong>Enabled</strong>.</li>
         </ul>
       </para>

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Ad Extension Type ID
 
-**What it is:**    The ID for the ad extension type. The ad extension types are: Call Extensions, Location Extensions, Product Extensions, and Sitelink Extensions.
+**What it is:**     The ID for the ad extension type. The ad extension types are: Call Extensions, Location Extensions, Product Extensions, and Sitelink Extensions.
 
 

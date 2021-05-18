@@ -44,13 +44,13 @@ Microsoft Audience Ads are unique because they’re targeted to users based on o
 1. Select one or more campaign or dynamic ad group, and then select **Edit** > **Change budgets**.
 1. Use the drop down menu to choose **Set**, **Increase**, or **Decrease**.
 1. Adjust the bid:
-  1. Select **Set** to choose a specific daily budget.
-  1. Select **Increase** if you want to invest more heavily in Microsoft Audience Ads for this campaign or ad group. You can adjust the bid up to 900% for maximum participation.
-  1. Select **Decrease** if you want to invest less. To opt out of Microsoft Audience Ads completely, decrease your bid by 100%.
+   1. Select **Set** to choose a specific daily budget.
+   1. Select **Increase** if you want to invest more heavily in Microsoft Audience Ads for this campaign or ad group. You can adjust the bid up to 900% for maximum participation.
+   1. Select **Decrease** if you want to invest less. To opt out of Microsoft Audience Ads completely, decrease your bid by 100%.
 
 ## Add Image Extensions
 
-Images play a key role in getting people's attention and driving clicks. You can define the imagery to use in your ads by associating Image Extensions to your campaign or ad group. **This is important**: If you don't have Image Extensions, our system may automatically use stock images to increase the number of placements for your Microsoft Audience Ad. Stock images are licensed images that are editorially reviewed for quality and relevance and then matched with appropriate ads (to opt out of using stock images, use bid modifiers set to -100% at the campaign or ad group level).
+Images play a key role in getting people's attention and driving clicks. You can define the imagery to use in your ads by associating Image Extensions to your campaign or ad group. **This is important** : If you don't have Image Extensions, our system may automatically use stock images to increase the number of placements for your Microsoft Audience Ad. Stock images are licensed images that are editorially reviewed for quality and relevance and then matched with appropriate ads (to opt out of using stock images, use bid modifiers set to -100% at the campaign or ad group level).
 
 Learn more at [Image extensions: Add images to your ad](./hlp_BA_PROC_AddImageExtension.md).
 
@@ -58,4 +58,5 @@ Learn more at [Image extensions: Add images to your ad](./hlp_BA_PROC_AddImageEx
 
 You can improve Microsoft Advertising's understanding of users' interests by having Universal Event Tracking (UET) tags on your website and setting up remarketing lists. This will allow us to target your ads to people who have previously visited or interacted with your website. For more information on UET tags and remarketing lists, see [Remarketing: Target people who have visited your site before](./hlp_BA_CONC_Audiences_Remarketing.md)
 
+ 
 

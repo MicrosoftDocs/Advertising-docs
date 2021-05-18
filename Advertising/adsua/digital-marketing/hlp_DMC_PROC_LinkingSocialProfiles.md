@@ -1,7 +1,7 @@
 ---
 title: Connecting social profiles
 description: Manage your Facebook page and Instagram Business account from Digital Marketing Center.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -18,7 +18,7 @@ Rather than managing all your social profiles separately, you can manage the fol
 
 ## Connect a Facebook Ads account
 
-Before you can connect a Facebook page to Digital Marketing Center, you must first connect to your Facebook Ads account. We’ll use this account to create all Facebook ad campaigns from Digital Marketing Center. **Note**: You can only use one Facebook Ads account.
+Before you can connect a Facebook page to Digital Marketing Center, you must first connect to your Facebook Ads account. We’ll use this account to create all Facebook ad campaigns from Digital Marketing Center. **Note** : You can only use one Facebook Ads account.
 
 1. From the **Social** page, click **Link new profile** in the left menu.
 1. In the **Facebook Ads account** section of the page, click **Connect to Facebook Ads account**.

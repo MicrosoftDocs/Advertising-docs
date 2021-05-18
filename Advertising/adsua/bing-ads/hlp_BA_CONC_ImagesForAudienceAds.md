@@ -39,69 +39,19 @@ Here are some things to keep in mind when considering images for your audience a
 
 ## Image dimensions
 
-<table>
-  <tr>
-    <th style="text-align:center" scope="col">Aspect ratio</th>
-    <th style="text-align:center" scope="col">Required or optional?</th>
-    <th style="text-align:center" scope="col">Recommended dimensions (pixels)</th>
-    <th style="text-align:center" scope="col">Minimum dimensions (pixels)</th>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.91 : 1</th>
-    <td style="text-align:center"><strong>Required</strong></td>
-    <td style="text-align:center">1200 x 628 or higher</td>
-    <td style="text-align:center">703 x 368</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.78 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 674 or higher</td>
-    <td style="text-align:center">624 x 350</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.72 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 698 or higher</td>
-    <td style="text-align:center">300 x 174</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.69 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 710 or higher</td>
-    <td style="text-align:center">622 x 368</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.55 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 774 or higher</td>
-    <td style="text-align:center">300 x 194</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.5 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 800 or higher</td>
-    <td style="text-align:center">300 x 200</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.33 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 902 or higher</td>
-    <td style="text-align:center">100 x 75</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1200 x 1200 or higher</td>
-    <td style="text-align:center">300 x 300</td>
-  </tr>
-  <tr>
-    <th style="text-align:center;font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">0.93 : 1</th>
-    <td style="text-align:center">Optional</td>
-    <td style="text-align:center">1116 x 1200 or higher</td>
-    <td style="text-align:center">311 x 333</td>
-  </tr>
-</table>
+|Aspect ratio|Required or optional?|Recommended dimensions (pixels)|Minimum dimensions (pixels)|
+|---|---|---|---|
+|1.91 : 1|**Required**|1200 x 628 or higher|703 x 368|
+|1.78 : 1|Optional|1200 x 674 or higher|624 x 350|
+|1.72 : 1|Optional|1200 x 698 or higher|300 x 174|
+|1.69 : 1|Optional|1200 x 710 or higher|622 x 368|
+|1.55 : 1|Optional|1200 x 774 or higher|300 x 194|
+|1.5 : 1|Optional|1200 x 800 or higher|300 x 200|
+|1.33 : 1|Optional|1200 x 902 or higher|100 x 75|
+|1 : 1|Optional|1200 x 1200 or higher|300 x 300|
+|0.93 : 1|Optional|1116 x 1200 or higher|311 x 333|
 
+ 
 > [!NOTE]
 > [Learn more about audience marketing and the Microsoft Audience Network](./hlp_BA_CONC_AboutMSAN.md).
 

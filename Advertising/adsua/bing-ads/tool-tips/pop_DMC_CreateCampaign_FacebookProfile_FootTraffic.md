@@ -9,6 +9,6 @@ ms.author: eur
 
 # Facebook profile - Foot traffic
 
-**What it is:** Select the Facebook profile you want to use so you can advertise on Facebook and promote visits your physical store, office, or event.
+**What it is:**  Select the Facebook profile you want to use so you can advertise on Facebook and promote visits your physical store, office, or event.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Set budgets for multiple campaigns
 
-**What it is: **       Change the current budgets for selected campaigns to a specific amount.
+**What it is:**        Change the current budgets for selected campaigns to a specific amount.
 
 

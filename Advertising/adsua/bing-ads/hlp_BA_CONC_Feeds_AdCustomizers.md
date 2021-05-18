@@ -13,13 +13,13 @@ With ad customizers, your ads can dynamically update themselves to appeal to spe
 
 ## Why use ad customizer feeds?
 
-**Save time**. Transform a single text ad into hundreds of variations without having to manually update the ad.
+**Save time** . Transform a single text ad into hundreds of variations without having to manually update the ad.
 
-**More relevant ads**. Customize ads based on what customers are searching for, when they're searching for it, where they are, what device they're using, and more.
+**More relevant ads** . Customize ads based on what customers are searching for, when they're searching for it, where they are, what device they're using, and more.
 
-**Better results**. See higher click-through and conversion rates.
+**Better results** . See higher click-through and conversion rates.
 
-**Tip**: Leverage other dynamic text, number, price, and date/time fields in the ad copy with [dynamic text parameters](./hlp_BA_CONC_AboutParameters.md).
+**Tip** : Leverage other dynamic text, number, price, and date/time fields in the ad copy with [dynamic text parameters](./hlp_BA_CONC_AboutParameters.md).
 
 ## How ad customizer feeds work
 
@@ -48,38 +48,12 @@ You can define custom attributes to insert any kind of information you like into
 
 There are four different types of custom attributes you can use:
 
-<table>
-  <tr>
-    <th scope="col">Custom attribute type</th>
-    <th scope="col">For example</th>
-    <th scope="col">Column header must appear like this</th>
-    <th scope="col">Accepted values</th>
-  </tr>
-  <tr>
-    <td>Text</td>
-    <td>Product names, product categories, descriptions</td>
-    <td>Name ```(text)``` (for example, "Shoes ```(text)```")</td>
-    <td>Any letters, numbers, or symbols</td>
-  </tr>
-  <tr>
-    <td>Number</td>
-    <td>Inventory count, number of colors available</td>
-    <td>Name ```(number)``` (for example, "Colors ```(number)```")</td>
-    <td>Any whole number</td>
-  </tr>
-  <tr>
-    <td>Price</td>
-    <td>Product cost, sale discount</td>
-    <td>Name ```(price)``` (for example, "Base_Price ```(price)```")</td>
-    <td>Any number (including decimals) and valid currency characters</td>
-  </tr>
-  <tr>
-    <td>Date</td>
-    <td>Event start time, last day of a sale</td>
-    <td>Name ```(date)``` (for example, "Sale_Date ```(date)```")</td>
-    <td>yyyy/mm/dd hh:mm:ss (24-hour time; the hh:mm:ss is optional)</td>
-  </tr>
-</table>
+|Custom attribute type|For example|Column header must appear like this|Accepted values|
+|---|---|---|---|
+|Text|Product names, product categories, descriptions|Name ```(text)``` (for example, "Shoes ```(text)```")|Any letters, numbers, or symbols|
+|Number|Inventory count, number of colors available|Name ```(number)``` (for example, "Colors ```(number)```")|Any whole number|
+|Price|Product cost, sale discount|Name ```(price)``` (for example, "Base_Price ```(price)```")|Any number (including decimals) and valid currency characters|
+|Date|Event start time, last day of a sale|Name ```(date)``` (for example, "Sale_Date ```(date)```")|yyyy/mm/dd hh:mm:ss (24-hour time; the hh:mm:ss is optional)|
 
 > [!NOTE]
 > You cannot give a custom attribute the same name as any standard attribute: ```Device preference```, ```Scheduling```, ```Start date```, ```End date```, or ```Custom ID```.
@@ -98,7 +72,7 @@ Whereas custom attributes tell us what to insert into your ads, targeting attrib
     <td>Target keyword</td>
     <td>```Target keyword```</td>
     <td>Enter the keyword with your desired match-type syntax:
-						<ul><li><strong>Broad match</strong>: <strong>keyword</strong></li><li><strong>Broad match modifier</strong>: <strong>+keyword</strong></li><li><strong>Phrase match</strong>: <strong>"keyword"</strong></li><li><strong>Exact match</strong>: <strong>[keyword]</strong></li></ul></td>
+						<ul><li><strong>Broad match</strong> : <strong>keyword</strong></li><li><strong>Broad match modifier</strong> : <strong>+keyword</strong></li><li><strong>Phrase match</strong> : <strong>"keyword"</strong></li><li><strong>Exact match</strong> : <strong>[keyword]</strong></li></ul></td>
     <td>You can target keywords either with this attribute or with the <strong>Target keyword text</strong> and <strong>Target keyword match type</strong> attributes in conjunction.</td>
   </tr>
   <tr>
@@ -171,52 +145,13 @@ Whereas custom attributes tell us what to insert into your ads, targeting attrib
 ## About standard attributes
 Standard attributes are advanced targeting configurations:
 
-<table>
-  <tr>
-    <th scope="col">Standard attribute type</th>
-    <th scope="col">Column header must appear like this</th>
-    <th scope="col">Accepted values</th>
-    <th scope="col">Note</th>
-  </tr>
-  <tr>
-    <td>Device preference</td>
-    <td>```Device preference```</td>
-    <td>"```mobile```" or "```all```"				
-				  </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Scheduling</td>
-    <td>```Scheduling```</td>
-    <td>
-					"[day of the week] - [day of the week]" or "[day of the week], [start time] - [end time]"   
-					Day of the week = "```Monday```", "```Tuesday```", "```Wednesday```", "```Thursday```", "```Friday```", "```Saturday```", or "```Sunday```"   
-					Start/end time = yyyy/mm/dd hh:mm:ss (24-hour time)				  
-				  </td>
-    <td>If you wanted to schedule from 9:00 AM to 5:00 PM on Mondays, for example, you would enter "```Monday, 09:00:00 - 17:00:00```".   
-				  If you want to schedule for multiple days, separate your days with a semicolon. For example, you could schedule for both Monday and Tuesday using "```Monday, 09:00:00 - 17:00:00; Tuesday, 09:00:00 - 17:00:00```".  
-				  For start/end times, you can omit the hh:mm:ss part to set the time as midnight at the beginning of the day. 
-				  </td>
-  </tr>
-  <tr>
-    <td>Start date</td>
-    <td>```Start date```</td>
-    <td>yyyy/mm/dd hh:mm:ss (24-hour time)</td>
-    <td>You can omit the hh:mm:ss part to set the start time as midnight at the beginning of the day.</td>
-  </tr>
-  <tr>
-    <td>End date</td>
-    <td>```End date```</td>
-    <td>yyyy/mm/dd hh:mm:ss (24-hour time)</td>
-    <td>You can omit the hh:mm:ss part to set the end time as midnight at the beginning of the day.</td>
-  </tr>
-  <tr>
-    <td>Custom ID</td>
-    <td>```Custom ID```</td>
-    <td>Any combination of letters and numerals</td>
-    <td>Use this attribute to create your own identifying IDs for feed items. If used, a feed item will have two IDs: a Custom ID and an Item ID (which is automatically assigned by Microsoft Advertising). </td>
-  </tr>
-</table>
+|Standard attribute type|Column header must appear like this|Accepted values|Note|
+|---|---|---|---|
+|Device preference|```Device preference```|"```mobile```" or "```all```"||
+|Scheduling|```Scheduling```|"[day of the week] - [day of the week]" or "[day of the week], [start time] - [end time]"   					Day of the week = "```Monday```", "```Tuesday```", "```Wednesday```", "```Thursday```", "```Friday```", "```Saturday```", or "```Sunday```"   					Start/end time = yyyy/mm/dd hh:mm:ss (24-hour time)|If you wanted to schedule from 9:00 AM to 5:00 PM on Mondays, for example, you would enter "```Monday, 09:00:00 - 17:00:00```".   				  If you want to schedule for multiple days, separate your days with a semicolon. For example, you could schedule for both Monday and Tuesday using "```Monday, 09:00:00 - 17:00:00; Tuesday, 09:00:00 - 17:00:00```".  				  For start/end times, you can omit the hh:mm:ss part to set the time as midnight at the beginning of the day.|
+|Start date|```Start date```|yyyy/mm/dd hh:mm:ss (24-hour time)|You can omit the hh:mm:ss part to set the start time as midnight at the beginning of the day.|
+|End date|```End date```|yyyy/mm/dd hh:mm:ss (24-hour time)|You can omit the hh:mm:ss part to set the end time as midnight at the beginning of the day.|
+|Custom ID|```Custom ID```|Any combination of letters and numerals|Use this attribute to create your own identifying IDs for feed items. If used, a feed item will have two IDs: a Custom ID and an Item ID (which is automatically assigned by Microsoft Advertising).|
 
 ## Examples of ad customizers in action
 
@@ -227,195 +162,67 @@ Ad customizers appear in Microsoft Advertising in the following syntax: ```{=Fee
 ## Target by keyword
 Let's say you you want to highlight specific sunglasses features, depending on what a customer searches for. You might have a row of your ad customizer feed look like this:
 
-<table>
-  <tr>
-    <th scope="col">```Target keyword```</th>
-    <th scope="col">```Product (text)```</th>
-    <th scope="col">```Materials_Lightweight (text)```</th>
-    <th scope="col">```Description_Lightweight (text)```</th>
-    <th scope="col">```Finishes (number)```</th>
-    <th scope="col">```StartPrice (price)```</th>
-  </tr>
-  <tr>
-    <td>```lightweight sunglasses```</td>
-    <td>```Contoso 900```</td>
-    <td>```titanium or acetate```</td>
-    <td>```Stylish, lightweight shades```</td>
-    <td>```8```</td>
-    <td>```$24.99```</td>
-  </tr>
-</table>
+|```Target keyword```|```Product (text)```|```Materials_Lightweight (text)```|```Description_Lightweight (text)```|```Finishes (number)```|```StartPrice (price)```|
+|---|---|---|---|---|---|
+|```lightweight sunglasses```|```Contoso 900```|```titanium or acetate```|```Stylish, lightweight shades```|```8```|```$24.99```|
 
 Then...
 
-<table>
-  <tr>
-    <th>If you set up your ad like this in Microsoft Advertising...</th>
-    <th>...it could look like this for customers who searched for "```lightweight sunglasses```"</th>
-  </tr>
-  <tr>
-    <td>```
-					The latest {=Sunglasses.Product}s  
-					In {=Sunglasses.Materials_Lightweight}  
-					www.contoso.com/deals  
-					{=Sunglasses.Description_Lightweight} in {=Sunglasses.Finishes} finishes. Starting at only {=Sunglasses.StartPrice}!
-				  ```
-				  </td>
-    <td style="vertical-align:middle">![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx1.png)</td>
-  </tr>
-</table>
+|If you set up your ad like this in Microsoft Advertising...|...it could look like this for customers who searched for "```lightweight sunglasses```"|
+|---|---|
+|```					The latest {=Sunglasses.Product}s  					In {=Sunglasses.Materials_Lightweight}  					www.contoso.com/deals  					{=Sunglasses.Description_Lightweight} in {=Sunglasses.Finishes} finishes. Starting at only {=Sunglasses.StartPrice}!				  ```|![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx1.png)|
 
 ## Target by campaign or ad group
 OK, now let's say your ad campaign has a different ad group for each brand of sunglasses you sell. You've found that customers who search for a specific series of a brand of sunglasses often end up purchasing a different series. So you want to highlight your series options within your brand's ad group. You might have a row of your ad customizer feed look like this:
 
-<table>
-  <tr>
-    <th scope="col">```Target campaign```</th>
-    <th scope="col">```Target ad group```</th>
-    <th scope="col">```Brand (text)```</th>
-    <th scope="col">```Series (number)```</th>
-    <th scope="col">```StartPrice (price)```</th>
-  </tr>
-  <tr>
-    <td>```Sunglasses```</td>
-    <td>```Contoso 900```</td>
-    <td>```Contoso```</td>
-    <td>```9```</td>
-    <td>```$24.99```</td>
-  </tr>
-</table>
+|```Target campaign```|```Target ad group```|```Brand (text)```|```Series (number)```|```StartPrice (price)```|
+|---|---|---|---|---|
+|```Sunglasses```|```Contoso 900```|```Contoso```|```9```|```$24.99```|
 
 Then...
 
-<table>
-  <tr>
-    <th>If you set up your ad like this in Microsoft Advertising...</th>
-    <th>...it could look like this for customers who searched for "```contoso 900```"</th>
-  </tr>
-  <tr>
-    <td>```
-					{=Sunglasses.Brand} brand sunglasses  
-					{=Sunglasses.Series} series to choose from  
-					www.contoso.com  
-					Browse our wide selection! Prices as low as {=Sunglasses.StartPrice}
-				  ```
-				  </td>
-    <td style="vertical-align:middle">![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx3.png)</td>
-  </tr>
-</table>
+|If you set up your ad like this in Microsoft Advertising...|...it could look like this for customers who searched for "```contoso 900```"|
+|---|---|
+|```					{=Sunglasses.Brand} brand sunglasses  					{=Sunglasses.Series} series to choose from  					www.contoso.com  					Browse our wide selection! Prices as low as {=Sunglasses.StartPrice}				  ```|![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx3.png)|
 
 ## Target by location
 Uh-oh! It was a cloudy summer in Portland, and now your Portland store has way too many Contoso brand sunglasses. Time for a big sale to move that particular store's inventory. You might have a row of your ad customizer feed look like this:
 
-<table>
-  <tr>
-    <th scope="col">```Target location```</th>
-    <th scope="col">```Brand (text)```</th>
-    <th scope="col">```BlowoutSale_1 (text)```</th>
-    <th scope="col">```BlowoutSale_2 (text)```</th>
-  </tr>
-  <tr>
-    <td>```Portland, Oregon```</td>
-    <td>```Contoso```</td>
-    <td>```Up to 70% off at our Pearl District store.```</td>
-    <td>```40% off Contoso 800s!```</td>
-  </tr>
-</table>
+|```Target location```|```Brand (text)```|```BlowoutSale_1 (text)```|```BlowoutSale_2 (text)```|
+|---|---|---|---|
+|```Portland, Oregon```|```Contoso```|```Up to 70% off at our Pearl District store.```|```40% off Contoso 800s!```|
 
 Then...
 
-<table>
-  <tr>
-    <th>If you set up your ad like this in Microsoft Advertising...</th>
-    <th>...it could look like this for customers who searched for "```contoso portland```"</th>
-  </tr>
-  <tr>
-    <td>```
-					{=Sunglasses.Brand} sunglasses  
-					Blowout Sale!  
-					www.contoso.com/BlowoutSale  
-					{=Sunglasses.BlowoutSale_1} {=Sunglasses.BlowoutSale_2}
-				  ```
-				  </td>
-    <td style="vertical-align:middle">![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx4.png)</td>
-  </tr>
-</table>
+|If you set up your ad like this in Microsoft Advertising...|...it could look like this for customers who searched for "```contoso portland```"|
+|---|---|
+|```					{=Sunglasses.Brand} sunglasses  					Blowout Sale!  					www.contoso.com/BlowoutSale  					{=Sunglasses.BlowoutSale_1} {=Sunglasses.BlowoutSale_2}				  ```|![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx4.png)|
 
 ## Target by audience
 Now let's say you have a remarketing list of customers who looked at a specific type of sunglasses on your website. You might have a row of your ad customizer feed look like this:
 
-<table>
-  <tr>
-    <th scope="col">```Type (text)```</th>
-    <th scope="col">```Product (text)```</th>
-    <th scope="col">```Discount (text)```</th>
-    <th scope="col">```Colors (number)```</th>
-    <th scope="col">```Target audience ID```</th>
-  </tr>
-  <tr>
-    <td>```Polarized```</td>
-    <td>```Contoso 800```</td>
-    <td>```25% off```</td>
-    <td>```12```</td>
-    <td>```12345678```</td>
-  </tr>
-</table>
+|```Type (text)```|```Product (text)```|```Discount (text)```|```Colors (number)```|```Target audience ID```|
+|---|---|---|---|---|
+|```Polarized```|```Contoso 800```|```25% off```|```12```|```12345678```|
 
 Then...
 
-<table>
-  <tr>
-    <th>If you set up your ad like this in Microsoft Advertising...</th>
-    <th>...it could look like this for customers who were in this remarketing list</th>
-  </tr>
-  <tr>
-    <td>```
-					{=Sunglasses.Type} sunglasses on sale  
-					{=Sunglasses.Product} series  
-					www.contoso.com/{=Sunglasses.Type}/OnSale  
-					{=Sunglasses.Discount} if you order today! Lenses come in {=Sunglasses.Colors} different colors.
-				  ```
-				  </td>
-    <td style="vertical-align:middle">![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx2.png)</td>
-  </tr>
-</table>
+|If you set up your ad like this in Microsoft Advertising...|...it could look like this for customers who were in this remarketing list|
+|---|---|
+|```					{=Sunglasses.Type} sunglasses on sale  					{=Sunglasses.Product} series  					www.contoso.com/{=Sunglasses.Type}/OnSale  					{=Sunglasses.Discount} if you order today! Lenses come in {=Sunglasses.Colors} different colors.				  ```|![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx2.png)|
 
 ## Use ad customizers within countdowns
 If you were having a sunglasses sale for a limited time, you could combine the power of ad customizers and [countdowns](./hlp_BA_CONC_Countdown.md). You might have a row of your ad customizer feed look like this:
 
-<table>
-  <tr>
-    <th scope="col">```Product (text)```</th>
-    <th scope="col">```Promo (text)```</th>
-    <th scope="col">```End_by (date)```</th>
-    <th scope="col">```StartPrice (price)```</th>
-  </tr>
-  <tr>
-    <td>```Contoso 700```</td>
-    <td>```30% off with free shipping```</td>
-    <td>```2019/08/14 23:59:59 ```</td>
-    <td>```$30```</td>
-  </tr>
-</table>
+|```Product (text)```|```Promo (text)```|```End_by (date)```|```StartPrice (price)```|
+|---|---|---|---|
+|```Contoso 700```|```30% off with free shipping```|```2019/08/14 23:59:59 ```|```$30```|
 
 Then...
 
-<table>
-  <tr>
-    <th>If you set up your ad like this in Microsoft Advertising...</th>
-    <th>...it could look like this for customers who searched for "```contoso sunglasses```" on August 12, 2019</th>
-  </tr>
-  <tr>
-    <td>```
-					{=Sunglasses.Product}s  
-					Get {=Sunglasses.Promo}  
-					www.contoso.com/SummerSale  
-					Offer ends in {=COUNTDOWN(Sunglasses.End_by)}. Buy now as low as {=Sunglasses.StartPrice} 
-				  ```
-				  </td>
-    <td style="vertical-align:middle">![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx5.png)</td>
-  </tr>
-</table>
+|If you set up your ad like this in Microsoft Advertising...|...it could look like this for customers who searched for "```contoso sunglasses```" on August 12, 2019|
+|---|---|
+|```					{=Sunglasses.Product}s  					Get {=Sunglasses.Promo}  					www.contoso.com/SummerSale  					Offer ends in {=COUNTDOWN(Sunglasses.End_by)}. Buy now as low as {=Sunglasses.StartPrice} 				  ```|![Bing Ad matching this setup](../images/BA_ScreenCap_AdCustomizerEx5.png)|
 
 ## Layout of an ad customizer feed
 
@@ -447,6 +254,7 @@ An ad customizer feed is a spreadsheet. The columns of the spreadsheet are feed 
 > [!NOTE]
 > For details on uploading and managing ad customizer feeds, take a look at [Setting up and managing feeds](./hlp_BA_PROC_Feeds_WorkingWith.md).
 
+ 
 ## Adding ad customizers to Expanded Text Ads
 
 You can add ad customizers to any Expanded Text Ad field except the final URL.
@@ -468,35 +276,11 @@ To make sure you enter it correctly, let's look at the components of an ad custo
 
 **{=FeedName.Attribute:DefaultText}**
 
-<table type="type1">
-  <tr>
-    <th scope="col">Component</th>
-    <th scope="col">What you need to know</th>
-  </tr>
-  <tr>
-    <td>{ ... }</td>
-    <td>
-											<strong>Mandatory</strong>. The entire ad customizer syntax must be within a pair of braces (also called curly brackets).
-										</td>
-  </tr>
-  <tr>
-    <td>=FeedName</td>
-    <td>
-											<strong>Mandatory</strong>. An equals symbol immediately followed by the name you gave your ad customizer feed. 
-										</td>
-  </tr>
-  <tr>
-    <td>.Attribute</td>
-    <td>
-											<strong>Mandatory</strong>. A period immediately followed by the name you gave your custom attribute.
-										</td>
-  </tr>
-  <tr>
-    <td>:DefaultText</td>
-    <td>
-											<strong>Optional</strong>. If you want your ad to appear <strong>even if the circumstances defined by the feed's targeting and/or standard attributes are not met</strong>, enter a colon immediately followed by a word, phrase, or number to appear instead of the custom attribute value. Note: If a single ad customizer in an ad has default text defined, every other ad customizer in the same ad must also have default text defined.
-										</td>
-  </tr>
-</table>
+|Component|What you need to know|
+|---|---|
+|{ ... }|**Mandatory** . The entire ad customizer syntax must be within a pair of braces (also called curly brackets).|
+|=FeedName|**Mandatory** . An equals symbol immediately followed by the name you gave your ad customizer feed.|
+|.Attribute|**Mandatory** . A period immediately followed by the name you gave your custom attribute.|
+|:DefaultText|**Optional** . If you want your ad to appear **even if the circumstances defined by the feed's targeting and/or standard attributes are not met**, enter a colon immediately followed by a word, phrase, or number to appear instead of the custom attribute value. Note: If a single ad customizer in an ad has default text defined, every other ad customizer in the same ad must also have default text defined.|
 
 

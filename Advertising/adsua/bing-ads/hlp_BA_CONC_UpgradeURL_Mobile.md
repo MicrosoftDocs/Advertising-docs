@@ -16,13 +16,8 @@ The benefits of a separate mobile URL:
 - Easier to read
 - Intent is clear and distinct. You can take customers to a webpage that is optimized for smaller devices
 
-<table fullBrowserOnly="true" hideExternalLink="true" type="type2" style="border:0;padding:10px">
-  <tr>
-    <th scope="col">Here is an example of what a final and mobile URL can look like for a Contact Us page:</th>
-  </tr>
-  <tr>
-    <td> ![Final and mobile URL example](../images/BA_ScreenCap_FinalMobile.png)</td>
-  </tr>
-</table>
+|Here is an example of what a final and mobile URL can look like for a Contact Us page:|
+|---|
+|![Final and mobile URL example](../images/BA_ScreenCap_FinalMobile.png)|
 
 

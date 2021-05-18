@@ -9,11 +9,11 @@ ms.author: eur
 
 # Billing threshold
 
-**What it is: **[!INCLUDE [BillingThresholdDef](../includes/BillingThresholdDef.md)]
+**What it is:** [!INCLUDE [BillingThresholdDef](../includes/BillingThresholdDef.md)]
 
-**How it works: **[!INCLUDE [BillingThresholdProcess](../includes/BillingThresholdProcess.md)]
+**How it works:** [!INCLUDE [BillingThresholdProcess](../includes/BillingThresholdProcess.md)]
 
-**What you need to know: **
+**What you need to know:**
 
 - [!INCLUDE [BillingThresholdLimit](BillingThresholdLimit)]
 - Charges can exceed the billing threshold or your limit by a small amount. If you are setting the limit because of a maximum amount you can charge on your credit card or PayPal account, you should set your limit slightly below that amount.

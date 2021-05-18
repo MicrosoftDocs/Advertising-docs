@@ -9,6 +9,6 @@ ms.author: eur
 
 # Accounts payable contact
 
-**What it is: **Designate an accounts payable contact to route your billing documents to the correct person. In case there’s ever an issue with your payment, we’ll reach out to this contact.
+**What it is:** Designate an accounts payable contact to route your billing documents to the correct person. In case there’s ever an issue with your payment, we’ll reach out to this contact.
 
 

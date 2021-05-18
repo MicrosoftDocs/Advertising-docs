@@ -9,12 +9,13 @@ ms.author: eur
 
 # Billing settings for monthly invoice accounts
 
+[!INCLUDE [Redesign](./includes/Redesign.md)]
 As a monthly invoice customer, you can control several aspects of your billing documents, from how they're created to how they're distributed. First, you can enable two global settings that apply to all invoices. Then, you can specify additional settings for invoices grouped by SAP ID, the unique billing number that is assigned to you when you set up monthly invoice billing.
 
 ## Global settings
 
-- **Consolidated billing**. If you have multiple monthly invoice accounts, you can combine invoices that share the same Microsoft Advertising manager account number, currency, language, and SAP ID. You'll get a single invoice with a high-level, account-by-account breakdown of costs rather than a separate invoice for each account. (All billing details will remain accessible in Microsoft Advertising.)  At this time, you only have the options to consolidate all monthly invoice bills or none.
-- **Campaign details**. You receive a breakdown of costs per campaign with your monthly invoice.
+- **Consolidated billing** . If you have multiple monthly invoice accounts, you can combine invoices that share the same Microsoft Advertising manager account number, currency, language, and SAP ID. You'll get a single invoice with a high-level, account-by-account breakdown of costs rather than a separate invoice for each account. (All billing details will remain accessible in Microsoft Advertising.)  At this time, you only have the options to consolidate all monthly invoice bills or none.
+- **Campaign details** . You receive a breakdown of costs per campaign with your monthly invoice.
 
 ## Consolidate your monthly invoice bills
 If you choose to consolidate your invoices, it's all or none. At this time, you can't pick and choose which invoices you can consolidate into one document.

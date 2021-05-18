@@ -9,8 +9,8 @@ ms.author: eur
 
 # Estimated Change in Clicks
 
-**What it is:**    The potential increase in clicks each week when you add sitelink extensions to the suggested campaign.
+**What it is:**     The potential increase in clicks each week when you add sitelink extensions to the suggested campaign.
 
-**What you need to know: **    These estimations are based on performance data from the last 7 days and are not a guarantee of future performances.
+**What you need to know:**     These estimations are based on performance data from the last 7 days and are not a guarantee of future performances.
 
 

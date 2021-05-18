@@ -19,8 +19,8 @@ Before you sign in, there are a couple of things that are good to know:
 1. Find the email that was sent to you from Microsoft Advertising with the subject line "Invitation to Microsoft Advertising."
 1. In the email, under **To get started**, click the link.
 1. Choose the option that's best for you:
-  - If the invitation is addressed to the email address you want to sign in with, then you'll just need to confirm your contact information (such as the email address that you'd like to use to receive critical alerts, which can be different from your user name), agree to the Microsoft Advertising Terms and Conditions, and click **Save**.           -or-
-  - If you want to sign in with a different email address or create a new one, select **sign in using a different email address**, and then select **Sign in with a different Microsoft account** in the new window. You'll be prompted to enter a different email address or to create a new one. Once your email address is set up, you can create an account so that you can access Microsoft Advertising.
+   - If the invitation is addressed to the email address you want to sign in with, then you'll just need to confirm your contact information (such as the email address that you'd like to use to receive critical alerts, which can be different from your user name), agree to the Microsoft Advertising Terms and Conditions, and click **Save**.           -or-
+   - If you want to sign in with a different email address or create a new one, select **sign in using a different email address**, and then select **Sign in with a different Microsoft account** in the new window. You'll be prompted to enter a different email address or to create a new one. Once your email address is set up, you can create an account so that you can access Microsoft Advertising.
 
 Once you've completed setup, you'll be taken back to Microsoft Advertising.
 

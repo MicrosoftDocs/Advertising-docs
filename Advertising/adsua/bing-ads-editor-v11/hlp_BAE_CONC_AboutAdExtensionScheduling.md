@@ -1,7 +1,7 @@
 ---
 title: How do I set up ad extension scheduling?
 description: Learn how to set your ad extensions to show during times you specify.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -13,10 +13,10 @@ Control when your ad extensions will show to customers with ad extension schedul
 
 ## What's in it for me?
 
-- **Reduced wasted clicks**. Schedule ad extensions to display during the most ideal time for your business.
-- **Improve customer experience**. Catering to targeted customers helps to increase your click-through rate potential.
-- **Enhance your ad with time-sensitive offers**. Highlight time-sensitive deals, promotions, and offers.
-- **Achieve campaign consistency**. Enjoy consistency across platforms.
+- **Reduced wasted clicks** . Schedule ad extensions to display during the most ideal time for your business.
+- **Improve customer experience** . Catering to targeted customers helps to increase your click-through rate potential.
+- **Enhance your ad with time-sensitive offers** . Highlight time-sensitive deals, promotions, and offers.
+- **Achieve campaign consistency** . Enjoy consistency across platforms.
 
 ## What I need to know
 

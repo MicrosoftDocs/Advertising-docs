@@ -9,6 +9,6 @@ ms.author: eur
 
 # Action
 
-**What it is**: Click **View** to see the details of this opportunity.
+**What it is** : Click **View** to see the details of this opportunity.
 
 

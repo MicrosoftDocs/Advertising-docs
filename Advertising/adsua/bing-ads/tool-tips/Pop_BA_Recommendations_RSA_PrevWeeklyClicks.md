@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous weekly clicks
 
-**What it is:** The number of times people clicked your ads over the last 7 days with the current ad group.
+**What it is:**  The number of times people clicked your ads over the last 7 days with the current ad group.
 
 

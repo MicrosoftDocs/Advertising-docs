@@ -9,6 +9,6 @@ ms.author: eur
 
 # Pages per visit
 
-**What it is:**  Specify the minimum number of pages the user must visit.
+**What it is:**   Specify the minimum number of pages the user must visit.
 
 

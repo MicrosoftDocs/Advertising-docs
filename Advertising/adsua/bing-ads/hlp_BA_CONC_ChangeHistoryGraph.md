@@ -17,15 +17,15 @@ Changes to campaigns, ad groups, ads and keywords that are eligible to be undone
 
 The changes that can be undone are:
 
-- **Campaigns: **  Bidding scheme, Budget amount, Budget type, Name, Status (Note: Undoing the deletion of a campaign will set your campaign back to its original status – active or paused), Tracking template.
-- **Ad groups: **  Bid (Search/Content), Bidding scheme, Name, Status, and Tracking template.
-- **Ads: **  Ad title, Ad text, Display URL, Final URL, and Status.
-- **Keywords: **  Bid, Bidding scheme, Final URL, Match type, Mobile final URL, Param1, Param2, Param3, and Status.
-- **Standard text ads: **      Status
-- **Expanded Text ads: **  Bidding scheme, Description, Final URL, Mobile final URL, Path 1, Path 2, Status, Title part 1, Title part 2, and Tracking template.
-- **Dynamic Search Ads: **  Description, Path 1, Path 2, Status and Tracking template.
-- **Audience Ads: **  Business name, Description, Final URL, Landscape Image, Landscape logo, Long headline, Mobile final URL, Short headline, Status, Square image, Square logo, Title, and Tracking template.
-- **App Install Ads: **  Description, Final URL, Status, Tracking template, and Title.
+- **Campaigns:**   Bidding scheme, Budget amount, Budget type, Name, Status (Note: Undoing the deletion of a campaign will set your campaign back to its original status – active or paused), Tracking template.
+- **Ad groups:**   Bid (Search/Content), Bidding scheme, Name, Status, and Tracking template.
+- **Ads:**   Ad title, Ad text, Display URL, Final URL, and Status.
+- **Keywords:**   Bid, Bidding scheme, Final URL, Match type, Mobile final URL, Param1, Param2, Param3, and Status.
+- **Standard text ads:**       Status
+- **Expanded Text ads:**   Bidding scheme, Description, Final URL, Mobile final URL, Path 1, Path 2, Status, Title part 1, Title part 2, and Tracking template.
+- **Dynamic Search Ads:**   Description, Path 1, Path 2, Status and Tracking template.
+- **Audience Ads:**   Business name, Description, Final URL, Landscape Image, Landscape logo, Long headline, Mobile final URL, Short headline, Status, Square image, Square logo, Title, and Tracking template.
+- **App Install Ads:**   Description, Final URL, Status, Tracking template, and Title.
 
 ## Find and undo changes
 The change history tab lists every change made in the last six months, including system-generated changes. Use the date range, left panel, and filtering to narrow down the table.
@@ -57,8 +57,8 @@ The change history tab lists every change made in the last six months, including
 1. To filter what changes you see in the table, select a change history marker in the graph.
 
 ## Don't see any changes?
-- **Check your date range.** If you have **Today** as your date range, there is a good chance that no changes have happened yet.
-- **Give it some time.** Changes you have just made take a few minutes before they show on the Change History tab. Wait a few minutes and select the Change History tab again.
-- **Check your filters.** Make sure that the **Change types** and **Changed by** filters are set to what you are looking for.
+- **Check your date range.**  If you have **Today** as your date range, there is a good chance that no changes have happened yet.
+- **Give it some time.**  Changes you have just made take a few minutes before they show on the Change History tab. Wait a few minutes and select the Change History tab again.
+- **Check your filters.**  Make sure that the **Change types** and **Changed by** filters are set to what you are looking for.
 
 

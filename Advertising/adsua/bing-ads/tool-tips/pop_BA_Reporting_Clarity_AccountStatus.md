@@ -9,8 +9,8 @@ ms.author: eur
 
 # Account status
 
-**What it is: **    The status of the account—active, paused, inactive—when the report was run.
+**What it is:**     The status of the account—active, paused, inactive—when the report was run.
 
-**Why it’s important: **    It helps you troubleshoot why your ads aren’t running.
+**Why it’s important:**     It helps you troubleshoot why your ads aren’t running.
 
 

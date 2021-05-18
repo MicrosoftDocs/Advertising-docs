@@ -17,10 +17,12 @@ App install ads are an ideal solution if you want to manage and drive downloads 
 
 You only pay for app installs, and you can track conversions when you set up a measurement URL with a conversion tracking partner such as AppsFlyer, Kochava, Tune, Singular, Adjust, or Branch.
 
+ 
 ## Compare app install ads and app extensions
 
 An app install ad is similar to an ad with an associated [app extension](./hlp_BA_CONC_AdExtensionAppExtension.md). They both use third-party measurement URLs to track conversion goals. Both include app icons and send users to the app store as appropriate for the device they are using. Here are some key differences:
 
+[!INCLUDE [CompareAppInstall](./includes/CompareAppInstall.md)] 
 ## What you’ll need before you create an app install ad
 
 When you create an app install ad, you’ll want basic information on hand: **mobile operating system**, **app ID/package name**, **link text**, and **link URL**.

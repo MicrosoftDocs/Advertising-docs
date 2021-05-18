@@ -51,8 +51,8 @@ To help you select a budget and bid, we’ll show a ** Suggested daily budget** 
 If you like the look of the audience you defined, turn it into an actual campaign.
 1. Click **Apply to my account**.
 1. Choose whether you want to **Create a new audience campaign** with these targeting settings or **Create a new ad group in an existing audience campaign**.
-  - If it's a new campaign, enter a **Campaign name** and set its **Daily budget**.
-  - If it's an ad group in an existing campaign, **Select a campaign** and confirm its **Daily budget**.
+   - If it's a new campaign, enter a **Campaign name** and set its **Daily budget**.
+   - If it's an ad group in an existing campaign, **Select a campaign** and confirm its **Daily budget**.
 
 1. Enter an **Ad group name**.
 1. Enter a **Bid** value.

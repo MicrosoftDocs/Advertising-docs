@@ -9,6 +9,6 @@ ms.author: eur
 
 # Sales house
 
-**What it is:**    The sales house involved in facilitating the deal.
+**What it is:**     The sales house involved in facilitating the deal.
 
 

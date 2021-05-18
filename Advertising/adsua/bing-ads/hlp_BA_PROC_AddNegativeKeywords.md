@@ -53,4 +53,5 @@ First you must create a negative keyword list and add your negative keywords. Af
 1. Select the checkbox next to the campaign you want to disassociate with this list.
 1. Click **Remove**.
 
+ 
 

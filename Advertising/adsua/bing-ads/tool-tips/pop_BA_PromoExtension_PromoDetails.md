@@ -9,6 +9,6 @@ ms.author: eur
 
 # Promotion details (optional)
 
-**What it is:** This shows additional conditions that need to be met for the customer to receive the promotion. You can select from the following: None, On orders over, or Promo code.
+**What it is:**  This shows additional conditions that need to be met for the customer to receive the promotion. You can select from the following: None, On orders over, or Promo code.
 
 

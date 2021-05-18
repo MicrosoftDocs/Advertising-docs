@@ -1,7 +1,7 @@
 ---
 title: Edit keyword bids
 description: Change keyword bids for a single keyword or multiple keywords easily in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

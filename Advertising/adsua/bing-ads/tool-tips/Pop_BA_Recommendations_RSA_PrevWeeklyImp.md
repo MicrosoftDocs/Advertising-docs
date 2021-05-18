@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous weekly impressions
 
-**What it is:** The number of times your ads were displayed over the last 7 days with your current ad group.
+**What it is:**  The number of times your ads were displayed over the last 7 days with your current ad group.
 
 

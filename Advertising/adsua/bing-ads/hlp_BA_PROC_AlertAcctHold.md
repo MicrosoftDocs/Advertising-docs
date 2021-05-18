@@ -15,8 +15,8 @@ We've all been there: A payment slips through the cracks or is declined by your 
 
 An account is placed on hold in two situations:
 
-- **Postpay threshold account. **We tried to process a payment and the charges were declined by credit/debit card company. There are a number of reasons that this can happen. For example, your card has been blocked, you've reached your authorized credit limit, or your card has expired. Any Microsoft Advertising account that uses that card is now on hold.
-- **Monthly invoice account. **We haven't received one or more of your invoiced payments. Accounts that have overdue payments are placed on hold.
+- **Postpay threshold account.** We tried to process a payment and the charges were declined by credit/debit card company. There are a number of reasons that this can happen. For example, your card has been blocked, you've reached your authorized credit limit, or your card has expired. Any Microsoft Advertising account that uses that card is now on hold.
+- **Monthly invoice account.** We haven't received one or more of your invoiced payments. Accounts that have overdue payments are placed on hold.
 
 Remember, when an account is on hold none of your campaigns are running and the ads in those accounts are not eligible for display. So, you'll want to get the hold removed as quickly as possible. If you don't remove the hold, we might need to put all of your accounts on hold, regardless of whether they have declined or overdue payments.
 
@@ -27,26 +27,11 @@ Remember, when an account is on hold none of your campaigns are running and the 
 
 If your account is on hold, you'll see a message at the top of Microsoft Advertising alerting you to the problem. The message varies depending on whether a single account is on hold or multiple accounts are on hold and whether you can fix the hold yourself or you need to contact a Super Admin or support. We'll provide you with the appropriate link for the next steps. If you go to a page titled **Remove the hold** take a look at the column **How do I remove the hold?**
 
-<table>
-  <tr>
-    <th scope="col">If the column tells you to...</th>
-    <th scope="col">Then you'll need to ...</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Fix declined payments</th>
-    <td>Click the button and we'll step you through the process of using a different payment method or adding a new one and then paying your account balance. After you complete these steps, the account error will disappear.  What if I want to continue using my existing payment method?</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Contact support</th>
-    <td>Call support and pay off any overdue account balance.
-      </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Contact the agency that pays your advertising charges (the bill-to customer)</th>
-    <td>If someone else manages your account and pays the account charges on your behalf, you should contact them to make sure that they are aware of the hold on your account.
-      </td>
-  </tr>
-</table>
+|If the column tells you to...|Then you'll need to ...|
+|---|---|
+|Fix declined payments|Click the button and we'll step you through the process of using a different payment method or adding a new one and then paying your account balance. After you complete these steps, the account error will disappear.  What if I want to continue using my existing payment method?|
+|Contact support|Call support and pay off any overdue account balance.|
+|Contact the agency that pays your advertising charges (the bill-to customer)|If someone else manages your account and pays the account charges on your behalf, you should contact them to make sure that they are aware of the hold on your account.|
 
 ## Consider adding a backup payment method
 

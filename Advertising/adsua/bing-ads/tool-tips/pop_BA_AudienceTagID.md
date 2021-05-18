@@ -9,6 +9,6 @@ ms.author: eur
 
 # Tag ID
 
-**What it is:** The ID associated with the tag.
+**What it is:**  The ID associated with the tag.
 
 

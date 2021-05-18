@@ -9,6 +9,6 @@ ms.author: eur
 
 # Price qualifier (optional)
 
-**What it is:** Indicate prices for a given product or service, starting from a specific price and up to a maximum price.
+**What it is:**  Indicate prices for a given product or service, starting from a specific price and up to a maximum price.
 
 

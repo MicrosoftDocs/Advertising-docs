@@ -44,4 +44,5 @@ Including ad extensions also increases the likelihood of your ad being displayed
 ## Reporting
 Data for Bing Smart Search ads are included in Microsoft Advertising reports for all supported metrics. Conversion tracking is available for these ads as well.
 
+ 
 

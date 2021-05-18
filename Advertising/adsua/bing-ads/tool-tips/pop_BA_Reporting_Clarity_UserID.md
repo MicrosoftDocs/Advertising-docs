@@ -9,6 +9,6 @@ ms.author: eur
 
 # User ID
 
-**What it is:**    The ID Microsoft Advertising associates with the different users that can view or edit the campaign.
+**What it is:**     The ID Microsoft Advertising associates with the different users that can view or edit the campaign.
 
 

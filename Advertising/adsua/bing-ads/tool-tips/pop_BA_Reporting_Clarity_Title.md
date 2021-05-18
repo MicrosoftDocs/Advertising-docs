@@ -9,6 +9,6 @@ ms.author: eur
 
 # Title
 
-**What it is:**    The title for the products in your catalog.
+**What it is:**     The title for the products in your catalog.
 
 

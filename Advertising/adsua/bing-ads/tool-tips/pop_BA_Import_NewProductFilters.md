@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product filters
 
-**What you need to know: **    When enabled, this option will import new product filters from your shopping campaigns.
+**What you need to know:**     When enabled, this option will import new product filters from your shopping campaigns.
 
 

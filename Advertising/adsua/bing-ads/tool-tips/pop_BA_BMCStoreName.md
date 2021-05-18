@@ -9,8 +9,8 @@ ms.author: eur
 
 # Store Name
 
-**What it is:** The name of your store.
+**What it is:**  The name of your store.
 
-**What you need to know:** The store name will be displayed in the product ad below the price. Be sure to use a name that accurately represents your website.
+**What you need to know:**  The store name will be displayed in the product ad below the price. Be sure to use a name that accurately represents your website.
 
 

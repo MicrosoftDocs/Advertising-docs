@@ -9,6 +9,6 @@ ms.author: eur
 
 # Filter Link Extensions
 
-**What it is: ** Filter Link Extensions are made up of a header and a list of 3-10 values that correspond to the header, showing more context on your products and services.
+**What it is:**  Filter Link Extensions are made up of a header and a list of 3-10 values that correspond to the header, showing more context on your products and services.
 
 

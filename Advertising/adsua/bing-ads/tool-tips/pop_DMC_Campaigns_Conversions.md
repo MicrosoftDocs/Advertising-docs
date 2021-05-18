@@ -9,6 +9,6 @@ ms.author: eur
 
 # Conversions
 
-**What it is:** Data collected from customer action tracking that shows the total visits to your special pages during the selected date range.
+**What it is:**  Data collected from customer action tracking that shows the total visits to your special pages during the selected date range.
 
 

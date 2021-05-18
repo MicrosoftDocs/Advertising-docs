@@ -9,7 +9,7 @@ ms.author: eur
 
 # Generated from
 
-**What it is**: To reach a wider set of customers, Microsoft Advertising generates new keyword suggestions from the following sources:
+**What it is** : To reach a wider set of customers, Microsoft Advertising generates new keyword suggestions from the following sources:
 
 - **Converting keywords**: Keyword suggestions based on your accounts’ existing high-converting keywords.
 - **Existing keywords**: Keyword suggestions based on your account’s existing keywords.

@@ -1,7 +1,7 @@
 ---
 title: How can I get location target codes?
 description: Learn how to manage location targets in bulk in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -18,26 +18,9 @@ Microsoft Advertising Editor makes it easy to manage location targets in bulk, u
 1. Find the correct corresponding code for the selected location from the **Location ID** column.
 Let's say you're using the multiple changes tool to target the city of Seattle with a 10% bid adjustment. You'd enter the following in the tool (the value from the **Location ID** column in the file should be assigned to the **Target** column):
 
-<table>
-  <tr>
-    <th scope="col">
-				 Target
-				</th>
-    <th scope="col">
-				 Bid Adjustment
-				</th>
-    <th scope="col">ID</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-				 67560
-				</th>
-    <td>
-				 10
-				</td>
-    <td>71287</td>
-  </tr>
-</table>
+|Target|Bid Adjustment|ID|
+|---|---|---|
+|67560|10|71287|
 
 Or if you were doing a file import using the Microsoft Advertising file format, the value from the **Location ID** column in the file should be assigned to the **Target** column in your import file.
 

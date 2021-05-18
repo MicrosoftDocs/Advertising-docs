@@ -1,7 +1,7 @@
 ---
 title: Prevent ads from appearing on specific websites
 description: You can prevent your ads from appearing on specific websites with Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

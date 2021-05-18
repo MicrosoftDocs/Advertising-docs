@@ -9,7 +9,7 @@ ms.author: eur
 
 # Notification settings
 
-**What it is:** For scheduled imports, you can opt to receive:
+**What it is:**  For scheduled imports, you can opt to receive:
 - No emails
 - An email when if there are failures
 - An email every time there is an import

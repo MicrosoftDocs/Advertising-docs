@@ -31,37 +31,10 @@ The above example shows your keyword being inserted into an ad. Here’s how to 
 In addition to dynamically inserting the keyword (the first example), you can also add some custom text for each keyword.
 
 Say you have different discounts for different products:
-<table>
-  <tr>
-    <th scope="col">Product</th>
-    <th scope="col">
-                Discount
-              </th>
-    <th scope="col">Desired ad</th>
-  </tr>
-  <tr>
-    <td>
-                Kona
-              </td>
-    <td>
-                50%
-              </td>
-    <td>
-                Our Kona coffee is 50% off!
-              </td>
-  </tr>
-  <tr>
-    <td>
-                Sumatra
-              </td>
-    <td>
-                25%
-              </td>
-    <td>
-                Our Sumatra coffee is 25% off!
-              </td>
-  </tr>
-</table>
+|Product|Discount|Desired ad|
+|---|---|---|
+|Kona|50%|Our Kona coffee is 50% off!|
+|Sumatra|25%|Our Sumatra coffee is 25% off!|
 
 You can display the desired text with just a single ad. To do this, you use the parameters: {param1}, {param2} or {param3}. Values for these parameters get assigned to specific keywords.
 
@@ -83,6 +56,9 @@ Here is how to do this:
 1. Click the pen icon and enter the text for that parameter. Repeat for each keyword and each parameter as appropriate.
 1. Click **Save**.
 
+ 
+<anchor id="DefaultText" />
+
 ## One more thing: The importance of using default text
 
 When implementing dynamic text in your ad copy you should provide a default string —for example, {Param1:default} — that the system will use if Param1 for a keyword is null or empty, or if including the Param1 substitution value will cause the expanded string to exceed the element’s limit; otherwise the ad will not serve. In some cases, if your default text is deemed more relevant than your substituted text the system can use that instead.
@@ -102,60 +78,26 @@ If **any** default value appears in your ads in this way, then default values fo
 
 Let's say you create an ad that includes dynamic text in the ad title and ad text:
 
-<table style="width:100%" type="type2">
-  <tr>
-    <td style="width:45%">
-      <para>
-        <c_data><![CDATA[<u><font color="0000FF" size="2">All the Best {keyword:Coffee}</font></u>]]></c_data>
-                 We have the very best selection! Buy {keyword:coffee} starting at {param1:$7} per pound.
-                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data></para>
-    </td>
-  </tr>
-</table>
+|<c_data><![CDATA[<u><font color="0000FF" size="2">All the Best {keyword:Coffee}</font></u>]]></c_data> We have the very best selection! Buy {keyword:coffee} starting at {param1:$7} per pound.                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data>|
+|---|
 
 On the **Keywords** tab, you enter the following variables for these keywords:
 
-<table type="type2">
-  <tr>
-    <th scope="col" style="text-align:left">Keyword</th>
-    <th scope="col">{param1}</th>
-  </tr>
-  <tr>
-    <td>Sumatra</td>
-    <td style="text-align:right">$9</td>
-  </tr>
-  <tr>
-    <td>Decaffeinated Arabica</td>
-    <td style="text-align:right">$15</td>
-  </tr>
-</table>
+|Keyword|{param1}|
+|---|---|
+|Sumatra|$9|
+|Decaffeinated Arabica|$15|
 
+ 
 If someone searches for "sumatra" and your keyword bid is high enough, your ads are displayed like this:
 
-<table style="width:100%" type="type2">
-  <tr>
-    <td style="width:45%">
-      <para>
-        <c_data><![CDATA[<u><font color="0000FF" size="2">All the Best Sumatra</font></u>]]></c_data>
-                 
-                We have the very best selection! Buy Sumatra starting at $9 per pound.
-                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data></para>
-    </td>
-  </tr>
-</table>
+|<c_data><![CDATA[<u><font color="0000FF" size="2">All the Best Sumatra</font></u>]]></c_data>                 We have the very best selection! Buy Sumatra starting at $9 per pound.                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data>|
+|---|
 
 However, for a search on "decaffeinated arabica," your ad title part would exceed 30 characters, and your ad text would exceed 71 characters. But if you have set up default text, it would display as:
 
-<table style="width:100%" type="type2">
-  <tr>
-    <td style="width:45%">
-      <para>
-        <c_data><![CDATA[<u><font color="0000FF" size="2">All the Best Coffee</font></u>]]></c_data>
-                 We have the very best selection! Buy coffee starting at $7 per pound.
-                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data></para>
-    </td>
-  </tr>
-</table>
+|<c_data><![CDATA[<u><font color="0000FF" size="2">All the Best Coffee</font></u>]]></c_data> We have the very best selection! Buy coffee starting at $7 per pound.                 <c_data><![CDATA[<font color="008000" face="arial">www.fourthcoffee.com</font>]]></c_data>|
+|---|
 
 Note that the {param1} default value was used also. Remember, if default text is used anywhere in the ad (here it was used for {keyword}), it will be used for all parameters in the ad. Thus it was used for {param1} also.
 

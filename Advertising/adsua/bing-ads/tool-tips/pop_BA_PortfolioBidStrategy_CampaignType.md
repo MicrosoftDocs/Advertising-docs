@@ -9,8 +9,8 @@ ms.author: eur
 
 # Campaign type
 
-**What it is**: The type of ad campaign that can use this bid strategy type.
+**What it is** : The type of ad campaign that can use this bid strategy type.
 
-**What you need to know**: Once you choose a campaign type, the portfolio can only include campaigns of that type.
+**What you need to know** : Once you choose a campaign type, the portfolio can only include campaigns of that type.
 
 

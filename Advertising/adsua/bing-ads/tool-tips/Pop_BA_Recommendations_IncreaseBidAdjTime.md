@@ -9,6 +9,6 @@ ms.author: eur
 
 # Increase bid adjustment
 
-**What it is**: Increase bids to be more competitive during a period of time you’re getting the most business.
+**What it is** : Increase bids to be more competitive during a period of time you’re getting the most business.
 
 

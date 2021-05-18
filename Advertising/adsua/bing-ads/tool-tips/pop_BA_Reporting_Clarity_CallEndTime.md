@@ -9,6 +9,6 @@ ms.author: eur
 
 # End time
 
-**What it is:**    The end time of the phone call that originated from a call extension.
+**What it is:**     The end time of the phone call that originated from a call extension.
 
 

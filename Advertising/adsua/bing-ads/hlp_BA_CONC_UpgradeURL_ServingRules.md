@@ -21,9 +21,9 @@ Now that you know the structure, here are the rules that define how the URLs are
 
 You can add URLs at three different levels (from highest to lowest):
 
-- **Ad:** Use the final URL or mobile URL defined in the ad.
-- **Keyword:** Use the final URL or mobile URL defined at the keyword level or default to the ad final or mobile URL.
-- **Sitelink Extension:** Use the final URL or mobile URL defined at the Sitelink Extension.
+- **Ad:**  Use the final URL or mobile URL defined in the ad.
+- **Keyword:**  Use the final URL or mobile URL defined at the keyword level or default to the ad final or mobile URL.
+- **Sitelink Extension:**  Use the final URL or mobile URL defined at the Sitelink Extension.
 
 > [!NOTE]
 > Mobile URLs are only used if the ad is being served on a mobile device.
@@ -64,92 +64,19 @@ Account - Campaign A
 
 Sitelink Extension A
 
-<table>
-  <tr>
-    <th scope="col">Entity</th>
-    <th scope="col">Tracking template</th>
-    <th scope="col">Final URL and Mobile URL</th>
-    <th scope="col">Custom parameters</th>
-  </tr>
-  <tr>
-    <th scope="row">Account</th>
-    <td>
-        http://account-tracking.com/?{_id}&amp;url={lpurl}
-      </td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th scope="row">Campaign A</th>
-    <td></td>
-    <td></td>
-    <td>{_campaign}=CampaignA</td>
-  </tr>
-  <tr>
-    <th scope="row">Ad Group A</th>
-    <td>
-        http://adgroup-a-tracking.com/?{_campaign}&amp;url={lpurl}&amp;{_id}
-      </td>
-    <td></td>
-    <td>{_id}=AdGroupA</td>
-  </tr>
-  <tr>
-    <th scope="row">Ad Group B</th>
-    <td></td>
-    <td></td>
-    <td>{_id}=AdGroupB</td>
-  </tr>
-  <tr>
-    <th scope="row">Ad A</th>
-    <td></td>
-    <td>
-       Final URL: http://contoso.com/Ad-A?{keyword}{ignore}&amp;{_id}&amp;{_campaign}
-      </td>
-    <td></td>
-  </tr>
-  <tr>
-    <th scope="row">Ad B</th>
-    <td></td>
-    <td>
-       Final URL: http://contoso.com/Ad-B?{keyword}{ignore}&amp;{_id}
-      </td>
-    <td>{_id}=AdB</td>
-  </tr>
-  <tr>
-    <th scope="row">Ad C</th>
-    <td>http://ad-c-tracking.com/?{_campaign}</td>
-    <td>Final URL: Ad URLs always need a Final URL</td>
-    <td></td>
-  </tr>
-  <tr>
-    <th scope="row">Keyword A - flowers</th>
-    <td></td>
-    <td>
-      Final URL:  http://contoso.com/Keyword-A?{keyword}{ignore}&amp;{_campaign} Mobile URL: http://m.contoso.com/Keyword-A?{keyword}{ignore}&amp;{_id}
-      </td>
-    <td>{_id}=KeywordA</td>
-  </tr>
-  <tr>
-    <th scope="row">Keyword B - shoes</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th scope="row">Keyword C - laptops</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th scope="row">Sitelink Extension A</th>
-    <td></td>
-    <td>
-      Final URL: http://contoso.com/Sitelink-A?{keyword}{ignore}&amp;{_campaign} Mobile URL: http://m.contoso.com/Sitelink-A?{keyword}{ignore}&amp;{_id}
-      </td>
-    <td></td>
-  </tr>
-</table>
+|Entity|Tracking template|Final URL and Mobile URL|Custom parameters|
+|---|---|---|---|
+|Account|http://account-tracking.com/?{_id}&amp;url={lpurl}|||
+|Campaign A|||{_campaign}=CampaignA|
+|Ad Group A|http://adgroup-a-tracking.com/?{_campaign}&amp;url={lpurl}&amp;{_id}||{_id}=AdGroupA|
+|Ad Group B|||{_id}=AdGroupB|
+|Ad A||Final URL: http://contoso.com/Ad-A?{keyword}{ignore}&amp;{_id}&amp;{_campaign}||
+|Ad B||Final URL: http://contoso.com/Ad-B?{keyword}{ignore}&amp;{_id}|{_id}=AdB|
+|Ad C|http://ad-c-tracking.com/?{_campaign}|Final URL: Ad URLs always need a Final URL||
+|Keyword A - flowers||Final URL:  http://contoso.com/Keyword-A?{keyword}{ignore}&amp;{_campaign} Mobile URL: http://m.contoso.com/Keyword-A?{keyword}{ignore}&amp;{_id}|{_id}=KeywordA|
+|Keyword B - shoes||||
+|Keyword C - laptops||||
+|Sitelink Extension A||Final URL: http://contoso.com/Sitelink-A?{keyword}{ignore}&amp;{_campaign} Mobile URL: http://m.contoso.com/Sitelink-A?{keyword}{ignore}&amp;{_id}||
 
 ## Example #1 - Ad A is triggered by Keyword A
 

@@ -47,39 +47,14 @@ You can update your bids, bid multipliers, and hotel group associations in bulk 
 > [!NOTE]
 > When preparing your spreadsheet, the **FormatVersion** row and **Name** column should not be altered.
 
-<table type="type1">
-  <tr>
-    <th scope="col">I want to bulk edit...</th>
-    <th scope="col">Columns required</th>
-  </tr>
-  <tr>
-    <td>
-              Hotel bids 
-            </td>
-    <td>
-              Type, Account Id, Id, Bid, Bid type
-            </td>
-  </tr>
-  <tr>
-    <td>
-              Hotel bid multipliers
+ 
+|I want to bulk edit...|Columns required|
+|---|---|
+|Hotel bids|Type, Account Id, Id, Bid, Bid type|
+|Hotel bid multipliers|Type, Account Id, Id, Parent IdAlso required are one or more bid multiplier columns which are documented below.|
+|Hotel group associations|Type, Account Id, Id, Parent Id|
 
-            </td>
-    <td>
-      <para>Type, Account Id, Id, Parent Id</para>
-      <para>Also required are one or more bid multiplier columns which are documented below.</para>
-    </td>
-  </tr>
-  <tr>
-    <td>
-              Hotel group associations
-            </td>
-    <td>
-              Type, Account Id, Id, Parent Id
-            </td>
-  </tr>
-</table>
-
+ 
 <table type="type1">
   <tr>
     <th scope="col">Column(s)</th>

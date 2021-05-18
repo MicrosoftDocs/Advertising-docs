@@ -9,8 +9,8 @@ ms.author: eur
 
 # Impression share lost to expected click-through rate
 
-**What it is:** The percentage of impression share lost due to low expected click-through rate.
+**What it is:**  The percentage of impression share lost due to low expected click-through rate.
 
-**Why it’s important:** If this is high, figure out what you can do to increase your CTR.
+**Why it’s important:**  If this is high, figure out what you can do to increase your CTR.
 
 

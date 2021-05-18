@@ -15,9 +15,9 @@ If you're an established customer who has previously run ads and now have your a
 
 If you're a new Microsoft Advertising customer, your account will remain in pending status until you've completed the following setup items:
 
-  - Chosen whether you [pay now or pay later](./hlp_BA_CONC_HowBillingWorks.md).
-  - [Added a payment method](./hlp_BA_PROC_AddBilling.md).
-  - [Created your first campaign and ad](./hlp_BA_PROC_Create1stAd.md).
+   - Chosen whether you [pay now or pay later](./hlp_BA_CONC_HowBillingWorks.md).
+   - [Added a payment method](./hlp_BA_PROC_AddBilling.md).
+   - [Created your first campaign and ad](./hlp_BA_PROC_Create1stAd.md).
 
 You'll be up and running within 10 minutes of completing setup. If not, please contact [Microsoft Advertising support](https://go.microsoft.com/fwlink?LinkId=398371) for further assistance.
 

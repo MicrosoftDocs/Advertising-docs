@@ -9,6 +9,6 @@ ms.author: eur
 
 # Slot type
 
-**What it is:** Slot type indicates whether your hotel ad was visible on initial page load (Slot type A) or hidden beneath "show more rates" (Slot type M).
+**What it is:**  Slot type indicates whether your hotel ad was visible on initial page load (Slot type A) or hidden beneath "show more rates" (Slot type M).
 
 

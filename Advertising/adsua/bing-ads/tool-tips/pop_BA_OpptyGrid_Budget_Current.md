@@ -9,8 +9,8 @@ ms.author: eur
 
 # Current budget
 
-**What it is:**       The maximum amount you will spend per day.
+**What it is:**        The maximum amount you will spend per day.
 
-**Get more info: **    [What are my budget options?](../hlp_BA_CONC_AboutBudgetType.md)
+**Get more info:**     [What are my budget options?](../hlp_BA_CONC_AboutBudgetType.md)
 
 

@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: How budgets work
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Tell us how much you want to spend per day on your ad campaign across Microsoft Advertising, Google Ads, and Facebook Ads. Once your daily budgeted amount has been spent, your ads will stop showing until the next day. This way, you only spend as much as you're comfortable with.
 
 The budget amount includes ad spend across Microsoft Advertising, Google Ads, and Facebook Ads. However, the spend on Facebook will be directly billed to you by Facebook. [Learn more about billing options](./hlp_BA_PROC_AddBilling.md).

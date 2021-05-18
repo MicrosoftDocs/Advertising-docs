@@ -9,6 +9,6 @@ ms.author: eur
 
 # Business category
 
-**What it is: **   The category of your business for your product ad or shopping campaign.
+**What it is:**    The category of your business for your product ad or shopping campaign.
 
 

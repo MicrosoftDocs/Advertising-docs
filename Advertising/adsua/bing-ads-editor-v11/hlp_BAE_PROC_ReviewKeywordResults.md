@@ -1,7 +1,7 @@
 ---
 title: Review keyword results by month, age, or gender
 description: Use monthly, age, and gender data to improve your keyword bidding strategy in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -41,6 +41,7 @@ The **Manager** pane displays three columns which show the percentage of the tot
 
 > [!NOTE]
 > If some or all of the keyword results columns are not visible, in the **Manager** pane, scroll to the right.
+> If you want to change which columns are displayed in the **Manager** pane, do the following:
 > - Click columns icon.
 > - In the **Select Columns** dialog box:			 Select the check boxes for columns you want displayed.  Clear the check boxes for columns you want removed.
 > - [!INCLUDE [ClickOK](./includes/ClickOK.md)]

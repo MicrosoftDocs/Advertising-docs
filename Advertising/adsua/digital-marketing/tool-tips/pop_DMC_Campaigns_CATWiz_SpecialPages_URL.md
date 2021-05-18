@@ -1,7 +1,7 @@
 ---
 title: URL or phrase
 description: URL or phrase
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # URL or phrase
 
-**What it is:** The URL or phrase identifies which special pages to track.
+**What it is:**  The URL or phrase identifies which special pages to track.
 
 **What you need to know:**
 - **Equals** tracks details about visits to the URL in this column.

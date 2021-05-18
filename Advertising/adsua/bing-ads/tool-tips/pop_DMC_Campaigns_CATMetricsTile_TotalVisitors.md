@@ -9,7 +9,7 @@ ms.author: eur
 
 # Total website visitors from your ads
 
-**What it is:** The total number of visitors to your website after clicking your ads in this campaign, during the selected date range.
+**What it is:**  The total number of visitors to your website after clicking your ads in this campaign, during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

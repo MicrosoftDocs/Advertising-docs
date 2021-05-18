@@ -9,36 +9,36 @@ ms.author: eur
 
 # How to use regular expressions when building destination URLs or custom event type goals
 
-**What are regular expressions**: Regular expressions, often abbreviated as regex, is broadly understood as a technology to do string matching. Systems that support regular expressions allow users to use a special string, called the pattern, built using the rules of regular expressions, to perform complex string searches. This technology is meant for advanced technical users and is extremely effective. [Learn more](https://go.microsoft.com/fwlink?LinkId=864620)
+**What are regular expressions** : Regular expressions, often abbreviated as regex, is broadly understood as a technology to do string matching. Systems that support regular expressions allow users to use a special string, called the pattern, built using the rules of regular expressions, to perform complex string searches. This technology is meant for advanced technical users and is extremely effective. [Learn more](https://go.microsoft.com/fwlink?LinkId=864620)
 
-**When to use regular expressions in destination URL type goal**: Microsoft Advertising recommends that advertisers put one tag across their website and create multiple goals. In most cases, advertisers want to track user visits to certain pages as conversions (such as the order confirmation page or thank you page). These advertisers create destination URL type goals in order to meet their needs. Destination URL type goal supports four types of conditions that advertisers can specify on the URL.
+**When to use regular expressions in destination URL type goal** : Microsoft Advertising recommends that advertisers put one tag across their website and create multiple goals. In most cases, advertisers want to track user visits to certain pages as conversions (such as the order confirmation page or thank you page). These advertisers create destination URL type goals in order to meet their needs. Destination URL type goal supports four types of conditions that advertisers can specify on the URL.
 
-- **Equals To**: In this case, the input string must exactly match with the URL on which the UET event fired. However, http(s) and www are ignored, as the rest of the string must match. For example, if the advertisers provide an input string of contoso.com, and the URL is http://www.contoso.com or https://www.contoso.com, Microsoft Advertising will consider it as a match and vice versa will also be true.
-- **Begins With**: This matches identical characters starting from the beginning of the string up to and including the last character in the input string. However, http(s) and www are ignored (rest of the string must match). Use this option when your page URLs are generally unvarying but when they include additional parameters at the end that you want to exclude. For example, if you provide an input string of contoso, and the URL is http://www.contoso.com or https://www.contoso.com, Microsoft Advertising will consider it as a match and vice versa will also be true.
-- **Contains**: When this operator is used, Microsoft Advertising verifies if the input string is present anywhere in the URL reported by the UET tag.
-- **Regular Expressions**: This option is used when none of the options above are able to express the necessary conditions to match the conversion URLs.
+- **Equals To** : In this case, the input string must exactly match with the URL on which the UET event fired. However, http(s) and www are ignored, as the rest of the string must match. For example, if the advertisers provide an input string of contoso.com, and the URL is http://www.contoso.com or https://www.contoso.com, Microsoft Advertising will consider it as a match and vice versa will also be true.
+- **Begins With** : This matches identical characters starting from the beginning of the string up to and including the last character in the input string. However, http(s) and www are ignored (rest of the string must match). Use this option when your page URLs are generally unvarying but when they include additional parameters at the end that you want to exclude. For example, if you provide an input string of contoso, and the URL is http://www.contoso.com or https://www.contoso.com, Microsoft Advertising will consider it as a match and vice versa will also be true.
+- **Contains** : When this operator is used, Microsoft Advertising verifies if the input string is present anywhere in the URL reported by the UET tag.
+- **Regular Expressions** : This option is used when none of the options above are able to express the necessary conditions to match the conversion URLs.
 
 Here are some examples and regexes for those examples:
 
 - Look for a specific string in the URL. Such as OrderId. This is basically       equivalent to the Contains option.
-  - **Destination URL**:   			www.contoso.com/checkout"&amp;orderid=5467
-  - **Regular expression**:   			orderid=
+   - **Destination URL** :   			www.contoso.com/checkout"&amp;orderid=5467
+   - **Regular expression** :   			orderid=
 
 - Suppose that instead of counting every product order as a conversion,       you specifically want to track those in which a user purchases your       expensive items: fancyjewelry or fancycar
-  - **Destination URL**:   			http://contoso.com/products/fancyjewelry/checkout.html  			http://contoso.com/products/fancycar/checkout.html
-  - **Regular expression**:   			http:\/\/contoso\.com\/products\/((fancyjewelry)|(fancycar))\/checkout\.html
-    - \ is the escape character to be used with / and .
-    - | is used for expressing OR conditions
-    - Use parentheses for grouping
+   - **Destination URL** :   			http://contoso.com/products/fancyjewelry/checkout.html  			http://contoso.com/products/fancycar/checkout.html
+   - **Regular expression** :   			http:\/\/contoso\.com\/products\/((fancyjewelry)|(fancycar))\/checkout\.html
+      - \ is the escape character to be used with / and .
+      - | is used for expressing OR conditions
+      - Use parentheses for grouping
 
 - Suppose that the conversion URLs have different subdomains.
-  - **Destination URL**:  			http://domain1.contoso.com/products/fancyjewelry/checkout.html  			http://domain2.contoso.com/products/fancycar/checkout.html
-  - **Regular expression**:   			http:\/\/[a-z]\*[0-9]\*\.contoso\.com\/products\/((fancyjewelry)|(fancycar))\/checkout\.html​
-    - \* is a wildcard character
-    - [a-z] implies any text string
-    - [0-9] implies any digit
+   - **Destination URL** :  			http://domain1.contoso.com/products/fancyjewelry/checkout.html  			http://domain2.contoso.com/products/fancycar/checkout.html
+   - **Regular expression** :   			http:\/\/[a-z]\*[0-9]\*\.contoso\.com\/products\/((fancyjewelry)|(fancycar))\/checkout\.html​
+      - \* is a wildcard character
+      - [a-z] implies any text string
+      - [0-9] implies any digit
 
-**When to use regular expressions in custom event type goal**: In short, Microsoft Advertising requires that advertisers report values for one or more of the following parameters when custom events happen and create custom event type goal(s) specifying which values for these parameters would qualify a custom event as a conversion. To learn more, see [How to track custom events with UET](./hlp_BA_CONC_UETv2CustomEvent.md)
+**When to use regular expressions in custom event type goal** : In short, Microsoft Advertising requires that advertisers report values for one or more of the following parameters when custom events happen and create custom event type goal(s) specifying which values for these parameters would qualify a custom event as a conversion. To learn more, see [How to track custom events with UET](./hlp_BA_CONC_UETv2CustomEvent.md)
 
 - Event category - The category of event you want to track. For example, 'video'
 - Event action -  The type of user interaction you want to track. For example, 'play' or 'pause'

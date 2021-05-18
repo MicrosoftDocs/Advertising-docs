@@ -9,8 +9,8 @@ ms.author: eur
 
 # Account number
 
-**What it is: **The account identifier associated with this report. Account numbers have eight characters, starting with a letter.
+**What it is:** The account identifier associated with this report. Account numbers have eight characters, starting with a letter.
 
-**Why it’s important: **If you have more than one account, you can use this column to sort the data by account.
+**Why it’s important:** If you have more than one account, you can use this column to sort the data by account.
 
 

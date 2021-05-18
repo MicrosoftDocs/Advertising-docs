@@ -9,8 +9,8 @@ ms.author: eur
 
 # Keyword match type ID
 
-**What it is: **It is a unique number that Microsoft Advertising uses to identify this keyword match type.
+**What it is:** It is a unique number that Microsoft Advertising uses to identify this keyword match type.
 
-**Why it’s important: **If you have more than one keyword match type, you will need to have this ID handy when you contact Microsoft Advertising customer support.
+**Why it’s important:** If you have more than one keyword match type, you will need to have this ID handy when you contact Microsoft Advertising customer support.
 
 

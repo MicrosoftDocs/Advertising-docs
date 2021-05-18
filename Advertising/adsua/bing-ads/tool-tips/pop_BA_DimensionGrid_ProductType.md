@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product type
 
-**What it is:**    The different types of products in your catalog.
+**What it is:**     The different types of products in your catalog.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Order name
 
-**What it is: **The order name is a name that you can create to help you track this order.
+**What it is:** The order name is a name that you can create to help you track this order.
 
-**What you need to know: **An order name is optional, and it cannot be more than 100 characters.
+**What you need to know:** An order name is optional, and it cannot be more than 100 characters.
 
 

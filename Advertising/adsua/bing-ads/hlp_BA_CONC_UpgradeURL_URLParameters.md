@@ -20,6 +20,7 @@ Putting it all together, it looks like this:
 
 *www.yourLandingPageURL.com*?*variable*={*parameter*}
 
+If you are adding more than one *variable*={*parameter*}, you separate the variable/parameter pair with an ampersand (&amp;).
 ## Available parameters for:
 
 ## Destination URL, final URLs, tracking templates and custom parameters
@@ -284,15 +285,15 @@ Putting it all together, it looks like this:
       <more_info type="ICON_NOTE">
         <more_info_item>If you have upgraded your keyword destination URLs to final URL but haven't upgraded your Sitelink Extension URLs yet, the {copy} parameter will still work for the Sitelink Extension. For example:
                 <para>
-                  <strong>Keyword Final URL (upgraded):</strong>
+                  <strong>Keyword Final URL (upgraded):</strong> 
                 </para><para style="font-family:courier">
                     http://www.example.com?a=1&amp;b=desk
                   </para><para>
-                    <strong>Keyword Mobile URL (upgraded): </strong>
+                    <strong>Keyword Mobile URL (upgraded):</strong> 
                   </para><para style="font-family:courier">
                     http://www.example.com?a=1&amp;b=mob
                   </para><para>
-                    <strong>Sitelink Extension URL (not upgraded):</strong>
+                    <strong>Sitelink Extension URL (not upgraded):</strong> 
                   </para><para style="font-family:courier">
                     http://www.example.com?a=1&amp;{copy:b}
                   </para></more_info_item>
@@ -334,93 +335,15 @@ Putting it all together, it looks like this:
 ## Tracking templates only
 Tracking templates should include a parameter that inserts your landing page URL using either the {lpurl} or other advanced parameters. Once your ad is clicked, these parameters will insert your final URL. If you don’t include a URL insertion parameter in your tracking template, your landing page URL will break.
 
-<table>
-  <tr>
-    <th scope="col">
-              *{lpurl} Basic setup*
-            </th>
-  </tr>
-  <tr>
-    <td>
-              <strong>When to use:</strong>
-              <para>You track your tags on the actual landing page. </para>
-                
-              <strong>Tracking template structure:</strong>
-              <para>
-               {lpurl}, a question mark, and then any parameters 
-              </para>
-                 
-              <strong>Example:</strong>
-              <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com</para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">{lpurl}?matchtype={matchtype}</para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">http://example.com?matchtype={matchtype}</para></td></tr></table></td>
-  </tr>
-  <tr>
-    <th scope="col">
-              *{lpurl} 1 redirect and parameters*
-            </th>
-  </tr>
-  <tr>
-    <td>
-              <strong>When to use:</strong>
-              <para>You have 1 redirect to a tracking website and want to send parameters to it.</para>
-              
-              <strong>Tracking template structure:</strong>
-              <para>
-                Redirect URL, a question mark, url={lpurl}, an ampersand, and then any parameters 
-              </para>
-              
-              <strong>Example:</strong>
-              <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com</para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">http://tracker.com?url={lpurl}&amp;matchtype={matchtype}</para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">http://tracker.com?url=http%3A%2F%2Fexample.com&amp;matchtype={matchtype}</para></td></tr></table></td>
-  </tr>
-  <tr>
-    <th scope="col">
-              *{lpurl} 1 redirect and landing page parameters (tracking template)*
-            </th>
-  </tr>
-  <tr>
-    <td>
-              <strong>When to use:</strong>
-              <para>You have 1 redirect to a tracking website and want to send parameters to your landing page using a tracking template.</para>
-
-              <strong>Tracking template structure:</strong>
-              <para>
-                Redirect URL, a question mark, url={lpurl}, %3F, %26, and then any parameters
-              </para><para>Since {lpurl} is not at the beginning of the tracking template, you need to add %3F after {lpurl} instead of a question mark. You also need to replace the ampersand (&amp;) with %26.
-            </para>
-              
-
-              <strong>Example:</strong>
-              <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com</para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">
-                      http://tracker.com?url={lpurl}%3F%26matchtype={matchtype}
-                    </para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">
-                      http://tracker.com?url=http%3A%2F%2Fexample.com%3F%26matchtype={matchtype}
-                    </para></td></tr></table></td>
-  </tr>
-  <tr>
-    <th scope="col">
-              *{lpurl} 1 redirect and landing page parameters (no tracking template)*
-            </th>
-  </tr>
-  <tr>
-    <td>
-              <strong>When to use:</strong>
-              <para>You have 1 redirect to a tracking website and want to send parameters to your landing page without using a tracking template.</para>
-
-              <strong>Tracking template structure:</strong>
-              <para>
-                Redirect URL, a question mark, url={lpurl}
-              </para><para>
-                Best to store landing page parameters in the final URL when using a redirect URL so that Bing does all the encoding inside {lpurl} when evaluating the tracking template.
-              </para>
-              
-
-              <strong>Example:</strong>
-              <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com?matchtype={matchtype}</para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">
-                      http://tracker.com?url={lpurl}
-                    </para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">
-                      http://tracker.com?url=http%3A%2F%2Fexample.com%3F%26matchtype={matchtype}
-                    </para></td></tr></table></td>
-  </tr>
-</table>
+|*{lpurl} Basic setup*|
+|---|
+|**When to use:**You track your tags on the actual landing page.**Tracking template structure:**{lpurl}, a question mark, and then any parameters**Example:**|Final URL:|http://example.com||---|---||Tracking template:|{lpurl}?matchtype={matchtype}||Landing page URL:|http://example.com?matchtype={matchtype}||
+|*{lpurl} 1 redirect and parameters*|
+|**When to use:**You have 1 redirect to a tracking website and want to send parameters to it.**Tracking template structure:**Redirect URL, a question mark, url={lpurl}, an ampersand, and then any parameters**Example:**|Final URL:|http://example.com||---|---||Tracking template:|http://tracker.com?url={lpurl}&amp;matchtype={matchtype}||Landing page URL:|http://tracker.com?url=http%3A%2F%2Fexample.com&amp;matchtype={matchtype}||
+|*{lpurl} 1 redirect and landing page parameters (tracking template)*|
+|**When to use:**You have 1 redirect to a tracking website and want to send parameters to your landing page using a tracking template.**Tracking template structure:**Redirect URL, a question mark, url={lpurl}, %3F, %26, and then any parametersSince {lpurl} is not at the beginning of the tracking template, you need to add %3F after {lpurl} instead of a question mark. You also need to replace the ampersand (&amp;) with %26.**Example:**|Final URL:|http://example.com||---|---||Tracking template:|http://tracker.com?url={lpurl}%3F%26matchtype={matchtype}||Landing page URL:|http://tracker.com?url=http%3A%2F%2Fexample.com%3F%26matchtype={matchtype}||
+|*{lpurl} 1 redirect and landing page parameters (no tracking template)*|
+|**When to use:**You have 1 redirect to a tracking website and want to send parameters to your landing page without using a tracking template.**Tracking template structure:**Redirect URL, a question mark, url={lpurl}Best to store landing page parameters in the final URL when using a redirect URL so that Bing does all the encoding inside {lpurl} when evaluating the tracking template.**Example:**|Final URL:|http://example.com?matchtype={matchtype}||---|---||Tracking template:|http://tracker.com?url={lpurl}||Landing page URL:|http://tracker.com?url=http%3A%2F%2Fexample.com%3F%26matchtype={matchtype}||
 
 > [!NOTE]
 > We recommend that you put the {lpurl} at the beginning of the tracking template. If you don't, the final URL will be escaped. All characters that are not letters, numbers, or the following punctuation characters will be escaped: -, _, ., !, \*, (, and ).
@@ -428,131 +351,35 @@ Tracking templates should include a parameter that inserts your landing page URL
 ## Advanced parameters
 
 There are also advanced parameters that you can use if you have more than 1 redirect or want to use escaped or unescaped URLs. Here is a quick summary:
-<table>
-  <tr>
-    <th scope="col">Parameter</th>
-    <th scope="col">What it returns</th>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl+2}</th>
-    <td>
-            The Final URL escaped twice. Also known as double encoding. You use this when you have 2 redirects before reaching the landing page.
-            <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com </para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">
-                    http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furl%3D{lpurl+2}
-                  </para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">
-                    http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furl%3Dhttp%253A%252F%252Fexample.com
-                  </para></td></tr></table></td>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl+3}</th>
-    <td>
-            The Final URL, escaped three times. Also known as triple encoding. You use this when you have 3 redirects before reaching the landing page.
-            <table style="type2"><tr><th scope="row">Final URL:</th><td><para style="font-family:courier">http://example.com </para></td></tr><tr><th scope="row">Tracking template:</th><td><para style="font-family:courier">
-                    http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furlc%3Dhttp%253A%252F%252Fc-tracker.com%253Furl%253D{lpurl+3}
-                  </para></td></tr><tr><th scope="row">Landing page URL:</th><td><para style="font-family:courier">
-                    http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furlc%3Dhttp%253A%252F%252Fc-tracker.com%253Furl%253Dhttp%25253A%25252F%25252Fexample.com
-                  </para></td></tr></table></td>
-  </tr>
-  <tr>
-    <th scope="row">{unescapedlpurl}</th>
-    <td>The Final URL, unescaped.</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl}</th>
-    <td>The Final URL, escaped. Escapes all characters that are not letters, numbers, or the following punctuation characters: -, _, ., !, *, (, and ).</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl+2}</th>
-    <td>The Final URL, escaped twice. Useful when you have a chain of redirects.</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl+3}</th>
-    <td>The Final URL, escaped three times. Useful when you have a chain of redirects.</td>
-  </tr>
-</table>
+|Parameter|What it returns|
+|---|---|
+|{lpurl+2}|The Final URL escaped twice. Also known as double encoding. You use this when you have 2 redirects before reaching the landing page.|Final URL:|http://example.com||---|---||Tracking template:|http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furl%3D{lpurl+2}||Landing page URL:|http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furl%3Dhttp%253A%252F%252Fexample.com||
+|{lpurl+3}|The Final URL, escaped three times. Also known as triple encoding. You use this when you have 3 redirects before reaching the landing page.|Final URL:|http://example.com||---|---||Tracking template:|http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furlc%3Dhttp%253A%252F%252Fc-tracker.com%253Furl%253D{lpurl+3}||Landing page URL:|http://a-tracker.com?urlb=http%3A%2F%2Fb-tracker.com%3Furlc%3Dhttp%253A%252F%252Fc-tracker.com%253Furl%253Dhttp%25253A%25252F%25252Fexample.com||
+|{unescapedlpurl}|The Final URL, unescaped.|
+|{escapedlpurl}|The Final URL, escaped. Escapes all characters that are not letters, numbers, or the following punctuation characters: -, _, ., !, \*, (, and ).|
+|{escapedlpurl+2}|The Final URL, escaped twice. Useful when you have a chain of redirects.|
+|{escapedlpurl+3}|The Final URL, escaped three times. Useful when you have a chain of redirects.|
 
 ## What characters to add after the URL insertion parameter?
 As seen in the examples above, what you add after the URL insertion parameter is dependent on where in the tracking template you place it. You will want to adhere to the following rules or your website/third-party system may not properly save the information from your URL parameters.
 
-<table>
-  <tr>
-    <th scope="col">Parameter</th>
-    <th scope="col">Tracking template location</th>
-    <th scope="col">Followed by</th>
-    <th scope="col">Example</th>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl}</th>
-    <td>Beginning</td>
-    <td>?</td>
-    <td>{lpurl}?</td>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl}</th>
-    <td>Not at the beginning</td>
-    <td>%3F</td>
-    <td>{lpurl}%3F</td>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl+2}</th>
-    <td>Not at the beginning</td>
-    <td>%253F</td>
-    <td>{lpurl+2}%253F</td>
-  </tr>
-  <tr>
-    <th scope="row">{lpurl+3}</th>
-    <td>Not at the beginning</td>
-    <td>%25253F</td>
-    <td>{lpurl+3}%25253F</td>
-  </tr>
-  <tr>
-    <th scope="row">{unescapedlpurl}</th>
-    <td>Anywhere</td>
-    <td>?</td>
-    <td>{unescapedlpurl}?</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl}</th>
-    <td>Anywhere</td>
-    <td>%3F</td>
-    <td>{escapedlpurl}%3F</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl+2}</th>
-    <td>Anywhere</td>
-    <td>%253F</td>
-    <td>{escapedlpurl+2}%253F</td>
-  </tr>
-  <tr>
-    <th scope="row">{escapedlpurl+3}</th>
-    <td>Anywhere</td>
-    <td>%25253F</td>
-    <td>{escapedlpurl+2}%253F</td>
-  </tr>
-</table>
+|Parameter|Tracking template location|Followed by|Example|
+|---|---|---|---|
+|{lpurl}|Beginning|?|{lpurl}?|
+|{lpurl}|Not at the beginning|%3F|{lpurl}%3F|
+|{lpurl+2}|Not at the beginning|%253F|{lpurl+2}%253F|
+|{lpurl+3}|Not at the beginning|%25253F|{lpurl+3}%25253F|
+|{unescapedlpurl}|Anywhere|?|{unescapedlpurl}?|
+|{escapedlpurl}|Anywhere|%3F|{escapedlpurl}%3F|
+|{escapedlpurl+2}|Anywhere|%253F|{escapedlpurl+2}%253F|
+|{escapedlpurl+3}|Anywhere|%25253F|{escapedlpurl+2}%253F|
 
 Microsoft Advertising will replace the question mark in your tracking template with an ampersand or a correctly escaped version of an ampersand if your final URL already contains a question mark.
 
 ## Final URL only
-<table>
-  <tr>
-    <th scope="col">
-                Parameter
-              </th>
-    <th scope="col">
-                What it returns
-              </th>
-  </tr>
-  <tr>
-    <th scope="row">
-                *{ignore}*
-              </th>
-    <td>
-                Ignores the tracking elements of your Final URL to help to reduce the crawl load on your website. It can only be used in your Final or Final mobile URL.  
-                For example, if your Final URL is http://www.example.com/product?p1=a&amp;/p2=b&amp;p3=c&amp;p4=d, and the tracking info following the question mark in the URL doesn’t change the landing page, you can insert {ignore} before your tracking info to indicate that everything after it is merely tracking info. Here’s an example of how to do this: http://www.example.com/product?{ignore}p1=a&amp;p2=b&amp;p3=c&amp;p4=d
-              </td>
-  </tr>
-</table>
+|Parameter|What it returns|
+|---|---|
+|*{ignore}*|Ignores the tracking elements of your Final URL to help to reduce the crawl load on your website. It can only be used in your Final or Final mobile URL.                  For example, if your Final URL is http://www.example.com/product?p1=a&amp;/p2=b&amp;p3=c&amp;p4=d, and the tracking info following the question mark in the URL doesn’t change the landing page, you can insert {ignore} before your tracking info to indicate that everything after it is merely tracking info. Here’s an example of how to do this: http://www.example.com/product?{ignore}p1=a&amp;p2=b&amp;p3=c&amp;p4=d|
 
 Here are some things to bear in mind when using {ignore}
 
@@ -562,64 +389,14 @@ Here are some things to bear in mind when using {ignore}
 ## Microsoft Shopping Campaigns only
 If you advertise with product ads in your Microsoft Shopping Campaigns, the DestinationUrl of a BiddableAdGroupCriterion can include the following dynamic text strings. The strings are case-insensitive and must include the opening and closing braces.
 
-<table>
-  <tr>
-    <th scope="col">
-              Parameter
-            </th>
-    <th scope="col">
-              What it returns
-            </th>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{CriterionId}*
-            </th>
-    <td>
-              The identifier of the Microsoft Shopping product group used with product ads.
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{product_channel}*
-            </th>
-    <td>
-              The type of shopping channel (online or local)  that the product in the clicked ad is sold. 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{product_country}*
-            </th>
-    <td>
-              The country of sale for the product in the clicked ad. For example, US, UK, etc.
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{ProductId}*
-            </th>
-    <td>
-              The numeric ID of the product that triggered your ad. This comes from your Microsoft Merchant Center  catalog and is used with product ads.
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{product_language}*
-            </th>
-    <td>
-              The language of your product information, as indicated in your Merchant Center data feed. For example, EN, FR.
+|Parameter|What it returns|
+|---|---|
+|*{CriterionId}*|The identifier of the Microsoft Shopping product group used with product ads.|
+|*{product_channel}*|The type of shopping channel (online or local)  that the product in the clicked ad is sold.|
+|*{product_country}*|The country of sale for the product in the clicked ad. For example, US, UK, etc.|
+|*{ProductId}*|The numeric ID of the product that triggered your ad. This comes from your Microsoft Merchant Center  catalog and is used with product ads.|
+|*{product_language}*|The language of your product information, as indicated in your Merchant Center data feed. For example, EN, FR.|
+|*{seller_name}*|The value associated with the seller for that product, which can be the seller name from the feed or the store name based on if the advertiser is an aggregator or not.|
 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              *{seller_name}*
-            </th>
-    <td>
-              The value associated with the seller for that product, which can be the seller name from the feed or the store name based on if the advertiser is an aggregator or not.
-            </td>
-  </tr>
-</table>
-
+ 
 

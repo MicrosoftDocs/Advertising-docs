@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video actions
 
-**What it is:**Number of times the action button within the video player is selected.
+**What it is:** Number of times the action button within the video player is selected.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Absolute top impression rate (%)
 
-**What it is: **  The percentage of times your ad was in the first position of all returned ads, out of the total impressions available in your target market.
+**What it is:**   The percentage of times your ad was in the first position of all returned ads, out of the total impressions available in your target market.
 
-**Why it’s important: ** A higher number indicates your ad is frequently showing in the best ad position.
+**Why it’s important:**  A higher number indicates your ad is frequently showing in the best ad position.
 
 

@@ -1,7 +1,7 @@
 ---
 title: What is remarketing?
 description: Target audiences, which are the people who have visited your website before, using remarketing lists with Universal Event Tracking.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

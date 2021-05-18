@@ -18,12 +18,12 @@ With Microsoft Advertising's suite of audience targeting features, you can set u
 
 ## General tips for using audience targeting
 
-- **Combine to refine**: Use combinations of multiple audiences and multiple audience types to reach the most qualified customers. Remember that you can associate audiences at both the ad-group and the campaign level.
-- **Try different campaign types**: Audience targeting works across all campaign types, including [Microsoft Shopping Campaigns](./hlp_BA_CONC_BSC_GetStarted.md), [audience campaigns](./hlp_BA_CONC_AboutMSAN.md), and [dynamic search ad campaigns](./hlp_BA_CONC_DynamicSearchAds.md).
-- **Bid on broader search terms**: These tend to be highly competitive and expensive keywords, but targeting a finely-tuned audience will help you make sure you’re getting a good return on investment.
-- **Expand your match types**: Running your audience targeting campaigns with broad match may help you achieve better results compared to using exact match and no audience targeting.
-- **Capture mobile traffic**: Capture more volume by extending campaigns across device types or running mobile-only campaigns.
-- **Use ad customizers**: With ad customizers, your ads can dynamically update themselves to appeal to the specific audience you're targeting. [Learn more about ad customizers](./hlp_BA_CONC_Feeds_AdCustomizers.md).
+- **Combine to refine** : Use combinations of multiple audiences and multiple audience types to reach the most qualified customers. Remember that you can associate audiences at both the ad-group and the campaign level.
+- **Try different campaign types** : Audience targeting works across all campaign types, including [Microsoft Shopping Campaigns](./hlp_BA_CONC_BSC_GetStarted.md), [audience campaigns](./hlp_BA_CONC_AboutMSAN.md), and [dynamic search ad campaigns](./hlp_BA_CONC_DynamicSearchAds.md).
+- **Bid on broader search terms** : These tend to be highly competitive and expensive keywords, but targeting a finely-tuned audience will help you make sure you’re getting a good return on investment.
+- **Expand your match types** : Running your audience targeting campaigns with broad match may help you achieve better results compared to using exact match and no audience targeting.
+- **Capture mobile traffic** : Capture more volume by extending campaigns across device types or running mobile-only campaigns.
+- **Use ad customizers** : With ad customizers, your ads can dynamically update themselves to appeal to the specific audience you're targeting. [Learn more about ad customizers](./hlp_BA_CONC_Feeds_AdCustomizers.md).
 
 ## Next steps
 

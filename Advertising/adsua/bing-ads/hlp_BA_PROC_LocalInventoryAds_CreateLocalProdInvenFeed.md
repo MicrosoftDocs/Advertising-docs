@@ -20,8 +20,8 @@ Because your inventory price and quantity change frequently by store, you can us
 
 When submitting via FTP:
 
-- **Local product inventory feeds ** include all of your inventory for all of your stores. You submit the feed on a daily basis.
-- **Local product inventory update feeds** are used only for frequently changing details like the price and quantity of your items in specific stores.
+- **Local product inventory feeds**  include all of your inventory for all of your stores. You submit the feed on a daily basis.
+- **Local product inventory update feeds**  are used only for frequently changing details like the price and quantity of your items in specific stores.
 
 ## Availability
 
@@ -46,10 +46,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               A unique code for the item.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  1234
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
               </para></td>
@@ -68,10 +68,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               A unique identifier for the item.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  ISI1
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 50-character limit
               </para></td>
@@ -92,10 +92,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               The number of items available in stock.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  20
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric value
               </para></td>
@@ -121,10 +121,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               Base price, excluding tax and shipping, submitted in local currency.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  23.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                 <para>0.00 to 10000000.00 (10 million)</para><para>Use two decimal places and no symbols (e.g. $).</para></para></td>
@@ -148,10 +148,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               Item’s sale price, excluding tax and shipping
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  20.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric; Range is 0.00 to 10000000.00 (10 million); No symbols ($)
               </para></td>
@@ -174,10 +174,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               Sale’s start and end date and time
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  2013-11-05T08:15-05:00/2013-11-10T09:30-05:00
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric; Start date must be earlier than end date.  
                 Date and time format: YYYY-MM-DD followed by the letter 'T', the time of day followed by an expression for the time zone as defined by the ISO 8601 standard.
@@ -197,12 +197,12 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               Availability of item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                   in stock
                   out of stock
                   preorder
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Valid options: in stock, out of stock, preorder. <para>Default is "in stock."</para></para></td>
     <td>
@@ -226,7 +226,7 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               The estimate of how many weeks of inventory you have.
                
-              <strong>Example</strong>:
+              <strong>Example</strong> :
                3.5
             </td>
     <td>
@@ -240,10 +240,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               Pick-up options available for the store.
                
-              <strong>Example</strong>:
+              <strong>Example</strong> :
                reserve
                
-              <strong>Requirements</strong>:
+              <strong>Requirements</strong> :
                
               buy, reserve, and not supported
             </td>
@@ -262,10 +262,10 @@ We are working with retailers who have physical stores in the United Kingdom and
     <td>
               The expected date that an item is available for pick-up.
                
-              <strong>Example</strong>:
+              <strong>Example</strong> :
                same day
                
-              <strong>Requirements</strong>:
+              <strong>Requirements</strong> :
                
               same day, next day
             </td>

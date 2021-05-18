@@ -15,10 +15,10 @@ Having an active and high-performing campaign takes more than just clicking the 
 
 The first thing to do is to create a campaign. Microsoft Advertising has a number of campaign types to meet your advertising needs.
 
-- **Search ad campaigns**: The cornerstone of online advertising, search ads appear on search results pages when potential customers search for your keywords. [How do I create a search ad campaign?](./hlp_BA_PROC_Create1stAd.md)
-- **Dynamic search ad campaigns**: Dynamic search ads are search ads that we create for you automatically. [About dynamic search ads](./hlp_BA_CONC_DynamicSearchAds.md).
-- **Audience campaigns**: A native advertising solution, Microsoft Audience Ads appear on Microsoft properties and other premium platforms to people based on our proprietary AI and our understanding of customers. [How do I create an audience campaign?](./hlp_BA_PROC_CreateAudienceCampaign.md)
-- **Microsoft Shopping Campaigns**: Product ads use the imagery and data in your Microsoft Merchant Center Store's product feed, and appear on search results pages. [Get started with Microsoft Shopping Campaigns](./hlp_BA_CONC_BSC_GetStarted.md).
+- **Search ad campaigns** : The cornerstone of online advertising, search ads appear on search results pages when potential customers search for your keywords. [How do I create a search ad campaign?](./hlp_BA_PROC_Create1stAd.md)
+- **Dynamic search ad campaigns** : Dynamic search ads are search ads that we create for you automatically. [About dynamic search ads](./hlp_BA_CONC_DynamicSearchAds.md).
+- **Audience campaigns** : A native advertising solution, Microsoft Audience Ads appear on Microsoft properties and other premium platforms to people based on our proprietary AI and our understanding of customers. [How do I create an audience campaign?](./hlp_BA_PROC_CreateAudienceCampaign.md)
+- **Microsoft Shopping Campaigns** : Product ads use the imagery and data in your Microsoft Merchant Center Store's product feed, and appear on search results pages. [Get started with Microsoft Shopping Campaigns](./hlp_BA_CONC_BSC_GetStarted.md).
 
 ## Did you create enough ad groups?
 
@@ -26,7 +26,7 @@ Ad groups, comprising tightly related ads, are the core component in organizing 
 
 ## Confirm that you're enabled
 
-Now that your campaign is all set up, you need to make sure everything else in your account is in working order so your ads will start to display. Have you [entered a payment method](./hlp_BA_PROC_AddBilling.md)? Also, make sure to check that the status of your campaigns, ad groups, ads, and keywords is **Enabled** and that delivery is listed as **Eligible**. Here are a few articles to help you with this step:
+Now that your campaign is all set up, you need to make sure everything else in your account is in working order so your ads will start to display. Have you [entered a payment method](./hlp_BA_PROC_AddBilling.md)? Also, make sure to check that the status of your campaigns, ad groups, ads, and keywords is **Enabled** and that delivery is listed as **Eligible** . Here are a few articles to help you with this step:
 
 - [Are my ads live?](./hlp_BA_CONC_pitfalls.md)
 - [Change your status, bid, and other settings](./hlp_BA_PROC_ChgSettings.md)

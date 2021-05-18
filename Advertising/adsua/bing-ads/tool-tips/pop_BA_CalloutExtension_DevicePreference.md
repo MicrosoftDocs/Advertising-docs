@@ -9,8 +9,8 @@ ms.author: eur
 
 # Device preference
 
-**What it is:** By selecting mobile as your device preference, you can create Callout Extensions specifically for customers using mobile devices.
+**What it is:**  By selecting mobile as your device preference, you can create Callout Extensions specifically for customers using mobile devices.
 
-**What you need to know:** Standard extensions will be given preference on computers or tablets. However, if your ad group contains mobile-optimized extensions only, those ads may appear on computers and tablets.
+**What you need to know:**  Standard extensions will be given preference on computers or tablets. However, if your ad group contains mobile-optimized extensions only, those ads may appear on computers and tablets.
 
 

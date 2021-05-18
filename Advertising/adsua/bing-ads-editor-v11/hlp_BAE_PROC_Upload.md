@@ -1,7 +1,7 @@
 ---
 title: How do I post changes to Microsoft Advertising?
 description: When you finish working in Microsoft Advertising Editor, post your changes to Microsoft Advertising.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

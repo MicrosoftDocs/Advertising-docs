@@ -79,6 +79,7 @@ You need to activate JavaScript on your browser. Check your web browser Help for
 
 Download the Microsoft Advertising App by clicking the links below or by searching "Microsoft Advertising" in your smartphone's app store.    [Learn more](./hlp_BA_CONC_BingAdsMobileIntro.md) about the Microsoft Advertising App for iOS and Android.
 
+[    ![Microsoft Advertising for iOS](../images/BAM_CONC_Apple.png)  ](https://go.microsoft.com/fwlink?LinkId=536519)  [    ![Microsoft Advertising for Android](../images/BAM_CONC_Android.png)  ](https://go.microsoft.com/fwlink?LinkId=624094)
 ## Troubleshooting
 
 If you encounter issues signing in or using Microsoft Advertising, try these troubleshooting steps. Consult your browser's Help for step-by-step instructions.

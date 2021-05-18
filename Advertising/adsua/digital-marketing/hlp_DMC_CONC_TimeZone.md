@@ -1,7 +1,7 @@
 ---
 title: Time zone and currency
 description: Find details on your Digital Marketing Center account settings.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

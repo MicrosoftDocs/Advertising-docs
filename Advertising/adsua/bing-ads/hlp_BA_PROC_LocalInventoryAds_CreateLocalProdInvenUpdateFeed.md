@@ -61,10 +61,10 @@ The feed contains the following attributes, as detailed below:
     <td>
         A unique code for the item.
         <para>
-          <strong>Example:</strong>
+          <strong>Example:</strong> 
            1234
         </para><para>
-          <strong>Requirements:</strong>
+          <strong>Requirements:</strong> 
            
           Alphanumeric
         </para></td>
@@ -83,10 +83,10 @@ The feed contains the following attributes, as detailed below:
     <td>
         A unique identifier for the item.
         <para>
-          <strong>Example:</strong>
+          <strong>Example:</strong> 
            ISI1
         </para><para>
-          <strong>Requirements:</strong>
+          <strong>Requirements:</strong> 
            
           50-character limit
         </para></td>
@@ -105,10 +105,10 @@ The feed contains the following attributes, as detailed below:
     <td>
         The number of items available in stock.
         <para>
-          <strong>Example:</strong>
+          <strong>Example:</strong> 
            20
         </para><para>
-          <strong>Requirements:</strong>
+          <strong>Requirements:</strong> 
            
           Numeric value
         </para></td>
@@ -125,10 +125,10 @@ The feed contains the following attributes, as detailed below:
     <td>
         Base price, excluding tax and shipping, submitted in local currency.
         <para>
-          <strong>Example:</strong>
+          <strong>Example:</strong> 
            23.99
         </para><para>
-          <strong>Requirements:</strong>
+          <strong>Requirements:</strong> 
            
           Numeric
           <para>0.00 to 10000000.00 (10 million)</para><para>Use two decimal places and no symbols (e.g. $).</para></para></td>
@@ -171,44 +171,12 @@ You can use this option if the feed file is smaller than 4MB.
 ## Accepted symbols in feed files
 Here are the symbols/special characters and what attribute they are accepted in.
 
-<table>
-  <tr>
-    <th scope="col">Symbols</th>
-    <th scope="col">Where you can use</th>
-  </tr>
-  <tr>
-    <td>Period [.]</td>
-    <td>Prices, URLs</td>
-  </tr>
-  <tr>
-    <td>
-            Colon [:]  
-            Question [?]  
-            Forward-slash [/]  
-            Equal [=]
-          </td>
-    <td>URLs</td>
-  </tr>
-  <tr>
-    <td>
-            Hyphen [-]
-          </td>
-    <td>Offer Identifiers where this is valid (eg: ISBN, MPN)</td>
-  </tr>
-  <tr>
-    <td>
-            Pipe [|]  
-            Comma [,]   
-            Greater [&gt;]
-          </td>
-    <td>Multi-value fields (MerchantCategory, B_Category, ads_label)</td>
-  </tr>
-  <tr>
-    <td>
-            Any Unicode symbol
-          </td>
-    <td>Brand, Title, Description</td>
-  </tr>
-</table>
+|Symbols|Where you can use|
+|---|---|
+|Period [.]|Prices, URLs|
+|Colon [:]              Question [?]              Forward-slash [/]              Equal [=]|URLs|
+|Hyphen [-]|Offer Identifiers where this is valid (eg: ISBN, MPN)|
+|Pipe [|]              Comma [,]               Greater [>]|Multi-value fields (MerchantCategory, B_Category, ads_label)|
+|Any Unicode symbol|Brand, Title, Description|
 
 

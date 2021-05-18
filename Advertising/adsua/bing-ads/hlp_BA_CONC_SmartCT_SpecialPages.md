@@ -18,9 +18,9 @@ Some pages on your website are more important than others, depending on your bus
 
 Well, what's your business goal?
 
-- If you're trying to **sell products**, then your special pages might be pages like product descriptions and order confirmations.
-- If you're trying to **generate leads**, then your special pages might be sign-up pages.
-- If you're trying to **raise brand awareness**, then your special pages might be blog posts about your brand.
+- If you're trying to **sell products** , then your special pages might be pages like product descriptions and order confirmations.
+- If you're trying to **generate leads** , then your special pages might be sign-up pages.
+- If you're trying to **raise brand awareness** , then your special pages might be blog posts about your brand.
 
 > [!NOTE]
 > Do you have multiple business goals for the same website? For example, maybe you want to sell products, but also drive service-plan adoption. We strongly recommend creating a separate ad campaign for each goal. That way, each goal can have separate ads, performance metrics, and budget.
@@ -29,68 +29,19 @@ Well, what's your business goal?
 
 We provide some suggested page types to help you classify your special pages. Depending on your business goals, only some of our suggestions will be applicable to your website. Our suggested page types are:
 
-<table>
-  <tr>
-    <th scope="col">Suggested page type</th>
-    <th scope="col">Example page content</th>
-    <th scope="col">Business goals</th>
-  </tr>
-  <tr>
-    <th scope="row">About</th>
-    <td>Discussion of your brand and its history, philosophy, etc.</td>
-    <td>Brand awareness, engagement, maintaining loyalty, subscription</td>
-  </tr>
-  <tr>
-    <th scope="row">Contact us</th>
-    <td>Phone number, street address/map, email addresses</td>
-    <td>Phone orders, visits to your physical location, service commitment, lead generation</td>
-  </tr>
-  <tr>
-    <th scope="row">Initiate checkout</th>
-    <td>Shopping cart</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <th scope="row">Lead created</th>
-    <td>Confirmation after customer entered an email address</td>
-    <td>Lead generation, engagement, product purchase, service commitment, subscription</td>
-  </tr>
-  <tr>
-    <th scope="row">Order confirmation</th>
-    <td>Thank you, details about shipping</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <th scope="row">Product</th>
-    <td>Product page with "Add to cart" button</td>
-    <td>Product purchase, engagement</td>
-  </tr>
-  <tr>
-    <th scope="row">Register</th>
-    <td>Confirmation after customer has signed up for alerts</td>
-    <td>Lead generation, engagement, product purchase, service commitment, subscription</td>
-  </tr>
-  <tr>
-    <th scope="row">Schedule appointment</th>
-    <td>Confirmation of appointment timing</td>
-    <td>Service commitment, lead generation, engagement</td>
-  </tr>
-  <tr>
-    <th scope="row">Start trial</th>
-    <td>Confirmation of duration and details of trial</td>
-    <td>Product purchase, subscription, engagement, lead generation</td>
-  </tr>
-  <tr>
-    <th scope="row">Subscribe</th>
-    <td>Confirmation of subscription details</td>
-    <td>Subscription, engagement</td>
-  </tr>
-  <tr>
-    <th scope="row">Other</th>
-    <td>Specialty content</td>
-    <td>Any</td>
-  </tr>
-</table>
+|Suggested page type|Example page content|Business goals|
+|---|---|---|
+|About|Discussion of your brand and its history, philosophy, etc.|Brand awareness, engagement, maintaining loyalty, subscription|
+|Contact us|Phone number, street address/map, email addresses|Phone orders, visits to your physical location, service commitment, lead generation|
+|Initiate checkout|Shopping cart|Product purchase, engagement|
+|Lead created|Confirmation after customer entered an email address|Lead generation, engagement, product purchase, service commitment, subscription|
+|Order confirmation|Thank you, details about shipping|Product purchase, engagement|
+|Product|Product page with "Add to cart" button|Product purchase, engagement|
+|Register|Confirmation after customer has signed up for alerts|Lead generation, engagement, product purchase, service commitment, subscription|
+|Schedule appointment|Confirmation of appointment timing|Service commitment, lead generation, engagement|
+|Start trial|Confirmation of duration and details of trial|Product purchase, subscription, engagement, lead generation|
+|Subscribe|Confirmation of subscription details|Subscription, engagement|
+|Other|Specialty content|Any|
 
 ## URLs for special pages
 

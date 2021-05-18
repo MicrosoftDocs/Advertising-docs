@@ -9,10 +9,10 @@ ms.author: eur
 
 # Show ads to people in your targeted location
 
-**What it is: **     By selecting this option, your ads will show only to people who are physically in your targeted location.
+**What it is:**      By selecting this option, your ads will show only to people who are physically in your targeted location.
 
-**Example:**     You are a plumber in Toronto and only want to advertise to people who might use your service.
+**Example:**      You are a plumber in Toronto and only want to advertise to people who might use your service.
 
-**Get more info: **    [How can I get my ads in front of my customers?](../hlp_BA_CONC_Targeting.md)
+**Get more info:**     [How can I get my ads in front of my customers?](../hlp_BA_CONC_Targeting.md)
 
 

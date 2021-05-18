@@ -1,7 +1,7 @@
 ---
 title: Quality score and campaign optimization FAQ
 description: Learn the answers to advertisers' commonly asked questions about improving campaign ROI with Microsoft Advertising Editor, including information about quality score and targeting specific customers.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -81,20 +81,22 @@ Check to see which of the three performance indicators—expected click-through 
 
 It can take some experimentation with ad copy to determine what achieves a good click-through rate.
 
+ 
 ## Campaign optimization
 
 ## How can I improve my campaign performance?
 There are several actions you can take to improve the performance of your campaigns.
 
-- **Write effective ads. **Make sure you write multiple ads that address your customers and emphasize what sets your product apart from competing products.
-- **Optimize your landing pages. **Landing pages should be straightforward and directly relevant to the search keywords that lead to them.
-- **Choose relevant keywords. **Use keywords that are appropriate for your campaign and match your customers' interests. For more information, see [About the expected click-through rate score](./hlp_BAE_CONC_QualityKeywordGuidelines.md).
+- **Write effective ads.** Make sure you write multiple ads that address your customers and emphasize what sets your product apart from competing products.
+- **Optimize your landing pages.** Landing pages should be straightforward and directly relevant to the search keywords that lead to them.
+- **Choose relevant keywords.** Use keywords that are appropriate for your campaign and match your customers' interests. For more information, see [About the expected click-through rate score](./hlp_BAE_CONC_QualityKeywordGuidelines.md).
 
 ## How is ad position determined?
 The position of your ad on a webpage is determined by the amount you bid for keywords, your ad's relevance, and the ad's click-through-rate.
 ## How do I increase impressions, click-through rate, and conversions?
 To improve these performance measurements, improve your ad's position, relevance, and landing page.
 
+ 
 ## Targeting customers
 
 ## What is targeting?

@@ -22,19 +22,19 @@ There are multiple models used when attributing conversions to ad clicks. These 
 
 Microsoft Advertising allows advertisers to configure the conversion attribution process using the following settings:
 
-- **Conversion window**: A conversion window is the period of time after the user completed the action that Microsoft Advertising uses to record conversion data. You can set a conversion window, for each goal you define, to be any value ranging from 1 minute to 90 days. The default is 30 days. You can also change the conversion window as often as you like.
-- **Counting option**: You have the flexibility to count conversions according to your business needs. When creating a goal, you can choose to count the following:
-**All conversions**: Microsoft Advertising counts all conversions (per tracked goal) that happen after an ad click. This the default option and a good choice if the advertiser wants to track sales. If a user makes 3 purchases, Microsoft Advertising would count 3 conversions and attribute them to the ad click.
+- **Conversion window** : A conversion window is the period of time after the user completed the action that Microsoft Advertising uses to record conversion data. You can set a conversion window, for each goal you define, to be any value ranging from 1 minute to 90 days. The default is 30 days. You can also change the conversion window as often as you like.
+- **Counting option** : You have the flexibility to count conversions according to your business needs. When creating a goal, you can choose to count the following:
+**All conversions** : Microsoft Advertising counts all conversions (per tracked goal) that happen after an ad click. This the default option and a good choice if the advertiser wants to track sales. If a user makes 3 purchases, Microsoft Advertising would count 3 conversions and attribute them to the ad click.
 
-**Unique conversions**: Microsoft Advertising counts only unique conversions that happen after an ad click. This is a good choice if the advertiser is not interested in the number of sales, but instead whether or not a certain kind of lead was generated.
+**Unique conversions** : Microsoft Advertising counts only unique conversions that happen after an ad click. This is a good choice if the advertiser is not interested in the number of sales, but instead whether or not a certain kind of lead was generated.
 
 Note: If you change the counting option or conversion window setting, the change only applies to the conversion goal going forward and doesn't impact the conversion goal data before the change.
 
-**Sharing**: You set if the goal applies to all accounts or a specific account. If you select all accounts, you won't be able to set the currency of the revenue value. The currency of the revenue value shown in reporting will be determined based on the account currency to which the conversion was attributed.
+**Sharing** : You set if the goal applies to all accounts or a specific account. If you select all accounts, you won't be able to set the currency of the revenue value. The currency of the revenue value shown in reporting will be determined based on the account currency to which the conversion was attributed.
 
 When attributing conversions to clicks for all accounts, Microsoft Advertising looks at user`s ad clicks across all the accounts under the manager account in order to find the ad click that is closest to the conversion. In most cases, this approach yields correct results because your ads lead the user to the same website. However, there are also instances where you set up multiple accounts with ads that lead users to different websites. In those cases, looking at ad clicks across accounts leads to incorrect attribution. As an example, if you had two accounts – A1 managing Website1 and A2 managing Website2, it is possible that conversions that happen on Website2 can be attributed to clicks coming from A1. Because of this, Microsoft Advertising allow you to optionally associate a goal to a specific account. When a goal is configured as account level, all conversions of its type will be attributed to clicks from that account only. Note that once selected, this property can't be changed.
 
-**Revenue**: Not all conversions are equal. Some are worth more to your business than others. You can assign numeric values to their conversions, thereby see the total value driven by their advertising across different conversions, rather than simply the number of conversions that have happened. Revenue can be any value from 0 to 9999999 with 3 decimal fields and you can set the currency if sharing is set to a specific account. You have three revenue options when creating a goal:
+**Revenue** : Not all conversions are equal. Some are worth more to your business than others. You can assign numeric values to their conversions, thereby see the total value driven by their advertising across different conversions, rather than simply the number of conversions that have happened. Revenue can be any value from 0 to 9999999 with 3 decimal fields and you can set the currency if sharing is set to a specific account. You have three revenue options when creating a goal:
 1. Each time it happens, the conversion has the same revenue. This setting assigns a constant revenue value for every conversion for that goal.
 1. The revenue of this conversion action may vary. You can customize their UET tag to report a different revenue value per conversion (for example, based on the product purchased). When choosing this option, you will need to specify a default value for the conversion if the variable revenue value is not defined at the time of the conversion.
 1. Don't assign a revenue.
@@ -94,12 +94,14 @@ Why Microsoft Advertising may be undercounting
 - Note that if your users are converting directly or via other channels, Microsoft Advertising will not count conversions. They are reported in Google Analytics and Google Ads (if Google Ads determines conversion was caused by their ad click).
 
 > [!NOTE]
+> If you still have questions about the discrepancy, here is a checklist of things you need to verify:
 > - [UTM auto-tagging](./hlp_BA_CONC_AutoTag.md) for [URL tracking](./hlp_BA_CONC_UpgradeURL_WhatIsTracking.md) is working properly
 > - Same number of conversion goals are created and goal criteria are the exact same in both Microsoft Advertising and Google Ads/Google Analytics
 > - Conversion goal criteria are the exact same in both Microsoft Advertising and Google Ads
 > - Microsoft Advertising and Google Ads/Google Analytics tag associated with the conversion goal is added to the same pages of your website
 > - Conversion window and counting (Unique vs. All) settings are exactly the same
 > - Time zone for reporting is the same
+> If you still want to contact support, you need to have the following information:
 > - Tag name and the website pages you put the tags on for the conversion goals you are comparing
 > - Goal name and criteria for the conversions goals you are comparing
 > - Column names for the data you are comparing and where this information is located in the product

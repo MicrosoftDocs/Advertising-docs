@@ -9,6 +9,6 @@ ms.author: eur
 
 # How changed
 
-**What it is:**   The description of a change to your campaign.
+**What it is:**    The description of a change to your campaign.
 
 

@@ -26,9 +26,9 @@ Tag managers replace static tags with dynamic tags that are easier to implement 
 1. Give your rule a name and select a category for it.
 1. Expand the **JavaScript / Third Party Tags** section.
 1. Click **Add New Script** and then:
-  1. For **Type**, select **Non-Sequential JavaScript**.
-  1. In the script section, paste your Microsoft Advertising UET code. You can find the tag in Microsoft Advertising by selecting **Conversion Tracking**&nbsp;&gt;&nbsp;**UET tags**.
-  1. When you're done, click **Save Code**.
+   1. For **Type**, select **Non-Sequential JavaScript**.
+   1. In the script section, paste your Microsoft Advertising UET code. You can find the tag in Microsoft Advertising by selecting **Conversion Tracking**&nbsp;&gt;&nbsp;**UET tags**.
+   1. When you're done, click **Save Code**.
 
 1. Click the **Approvals** tab and approve these changes.
 1. From your website's Adobe DTM dashboard, click **Publish Queue** and follow the steps to publish the changes.

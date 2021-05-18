@@ -1,7 +1,7 @@
 ---
 title: Show your business address in your ad
 description: Learn how to show the address of your business location that's closest to the customer with Location Extensions.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,7 @@ ms.author: eur
 
 **What it is**:   When you enable a Location Extension, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call.
 
+![Location Extensions](../images/BA_CONC_Extension_Location.svg)
 A particularly powerful feature of Location Extensions is that the address shown to the customer is typically the business location that is closest to them. If you have multiple business locations set up for your campaign, Microsoft Advertising will display the address and phone number for the location that is closest to the customer. The radius for the location display is about 50 miles. If you don't have a business location entered that is within 50 miles of the customer, no location will be shown in your ad.
 
 Locations that you create apply to all your campaigns within a particular Customer ID. Also, note that you enable Location Extensions at the campaign level and they get applied to all ad groups and ads in the campaign.
@@ -30,16 +31,16 @@ Locations that you create apply to all your campaigns within a particular Custom
 1. Select **Location Extensions** under **Ads and extensions** from the type list in the left panel.
 1. Click **Make multiple changes** in the data view and select **Add/update multiple Location Extensions**.
 1. In the **Make multiple Changes** dialog box, do one of the following:
-  - If the data you are going to add includes campaign names, select **My Location Extensions data includes campaign names**.
-  - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Location Extensions to.
+   - If the data you are going to add includes campaign names, select **My Location Extensions data includes campaign names**.
+   - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Location Extensions to.
 
 1. Do one of the following:
-  - If you want to use the suggested headings, click **Insert headings**.
-  - If you want to use your own headings, in the first row of the text box, type the heading of each column.
+   - If you want to use the suggested headings, click **Insert headings**.
+   - If you want to use your own headings, in the first row of the text box, type the heading of each column.
 
 1. In the text box, do one of the following:
-  - Paste your Location Extensions data into the box using tabs as delimiters.
-  - Type the data for one link per line, using tabs to move to the next column.
+   - Paste your Location Extensions data into the box using tabs as delimiters.
+   - Type the data for one link per line, using tabs to move to the next column.
 
 1. If you want to change the headings, click **Edit headings...** and select the desired headings in the drop down boxes.
 1. Click **Next**.

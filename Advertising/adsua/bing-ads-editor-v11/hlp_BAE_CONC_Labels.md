@@ -1,7 +1,7 @@
 ---
 title: What can I do with labels?
 description: Learn how to use labels to organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

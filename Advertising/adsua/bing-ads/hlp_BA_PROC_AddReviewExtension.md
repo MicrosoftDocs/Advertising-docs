@@ -31,4 +31,5 @@ Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page 
 - Add, edit, and delete ad extensions
 - Associate ad extensions to campaigns and ad groups
 
+ 
 

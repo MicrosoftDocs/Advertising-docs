@@ -11,6 +11,7 @@ ms.author: eur
 
 Microsoft Advertising accepts PayPal in select markets for prepay accounts funded in Canadian dollar, euro, Mexican peso, Norwegian krone, UK pound, or US dollar. To find out whether PayPal is an option for you (based on your country, currency, and type of account), see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
 
+[!INCLUDE [Redesign](./includes/Redesign.md)]
 ## Adding a PayPal account as a payment method
 1. [!INCLUDE [ClickBilling](./includes/ClickBilling.md)]
 1. Click **Payment Methods** from the main menu.
@@ -23,7 +24,7 @@ You will be redirected back to Microsoft Advertising.
 1. In **Payment Methods**, click **Add funds** and follow the instructions to add a prepay amount.
 
 ## Updating your PayPal account's friendly name or address
-**Please note:** These instructions only apply to PayPal accounts that were added to Microsoft Advertising before November 2017. Now, Microsoft Advertising no longer requires a friendly name or an address to add a PayPal account as a payment method.
+**Please note:**  These instructions only apply to PayPal accounts that were added to Microsoft Advertising before November 2017. Now, Microsoft Advertising no longer requires a friendly name or an address to add a PayPal account as a payment method.
 
 1. [!INCLUDE [ClickBilling](./includes/ClickBilling.md)]
 1. Click **Payment Methods** from the main menu.

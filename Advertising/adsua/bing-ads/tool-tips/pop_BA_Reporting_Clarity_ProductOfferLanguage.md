@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product offer language
 
-**What it is:**    The language used for the offer.
+**What it is:**     The language used for the offer.
 
 

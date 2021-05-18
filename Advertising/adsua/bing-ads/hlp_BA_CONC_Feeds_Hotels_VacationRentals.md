@@ -9,4 +9,5 @@ ms.author: eur
 
 # Hotels and vacation rentals feeds
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 

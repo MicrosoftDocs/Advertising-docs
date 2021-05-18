@@ -9,6 +9,6 @@ ms.author: eur
 
 # Business listing ID
 
-**What it is: **   The ID associated with your business listing, which is information about your business that is shown when people search online.
+**What it is:**    The ID associated with your business listing, which is information about your business that is shown when people search online.
 
 

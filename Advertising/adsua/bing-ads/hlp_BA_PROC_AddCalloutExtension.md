@@ -24,6 +24,7 @@ Each campaign and ad group can have 20 Callout Extensions associated with it and
 
 Callout Extensions can be created or edited at the account, campaign, or ad group level. To select the level you want to make the changes in, select  **Account**, **Campaign**, or **Ad group** below the **Ad Extensions** tab.
 
+[!INCLUDE [CompareCallFilterSnippets](./includes/CompareCallFilterSnippets.md)]
 ## Get started with Callout Extensions
 
 Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page for instructions to:
@@ -31,4 +32,5 @@ Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page 
 - Add, edit, and delete ad extensions
 - Associate ad extensions to campaigns and ad groups
 
+ 
 

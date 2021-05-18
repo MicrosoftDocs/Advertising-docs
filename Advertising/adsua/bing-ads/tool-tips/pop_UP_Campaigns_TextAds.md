@@ -9,7 +9,7 @@ ms.author: eur
 
 # Text ads
 
-**What it is:** Text ads, also known as search ads, display on search results pages when people search for words or phrases related to the products or services you’re advertising. They run on search platforms (Google and Bing).
+**What it is:**  Text ads, also known as search ads, display on search results pages when people search for words or phrases related to the products or services you’re advertising. They run on search platforms (Google and Bing).
 
 **What you need to know:**
 - Text ads include an ad title, ad text, and the webpage URL that potential customers go to when they click your ad.

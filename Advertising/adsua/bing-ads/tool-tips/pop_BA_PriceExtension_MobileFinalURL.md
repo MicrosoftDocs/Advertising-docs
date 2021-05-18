@@ -9,8 +9,8 @@ ms.author: eur
 
 # Mobile final URL
 
-**What it is:** An optional landing page link that is only displayed on mobile devices.
+**What it is:**  An optional landing page link that is only displayed on mobile devices.
 
-**What you need to know:** If no mobile final URL is provided, the default final URL will be used.
+**What you need to know:**  If no mobile final URL is provided, the default final URL will be used.
 
 

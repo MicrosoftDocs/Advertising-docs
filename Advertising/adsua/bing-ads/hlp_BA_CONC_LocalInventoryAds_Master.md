@@ -36,13 +36,13 @@ Before you get started, here are a few things to keep in mind:
 - Postal code
 - StoreCode
 - Store hours
-  - SundayHours
-  - MondayHours
-  - TuesdayHours
-  - WednesdayHours
-  - ThurdsayHours
-  - FridayHours
-  - SaturdayHours
+   - SundayHours
+   - MondayHours
+   - TuesdayHours
+   - WednesdayHours
+   - ThurdsayHours
+   - FridayHours
+   - SaturdayHours
 
 ## 2. Upload online products information
 [Upload online products information](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md): Upload online products feed through Microsoft Merchant Center. If you are already using Microsoft Shopping Campaigns, this step may not be required.
@@ -69,10 +69,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               A unique identifier for the item.
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 ISI1
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
                 50-character limit
 										</para></td>
@@ -94,10 +94,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Title of the item
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 Women's shoes
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
                 Alphanumeric
 											<para>150 character limit.</para><para>Don't enclose in quotes.</para></para></td>
@@ -131,10 +131,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
 									Item description
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 Bright yellow 100% cotton dress shirt
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
 										Alphanumeric
 											<para>10000 character limit.</para><para>No HTML code. Do not enclose in quotes. </para></para></td>
@@ -156,10 +156,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
 									URL of an image of the item
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 http://www.bingshop.com/ images/ISI1.jpg
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
 										Alphanumeric
 											<para>1000 character limit</para><para>
@@ -184,10 +184,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
 									Condition of item
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 new
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
 											Valid options: new; used; refurbished Default is "new."
 										</para></td>
@@ -207,10 +207,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
 									Predefined product category (equivalent to google_product_category)
 										<para>
-											<strong>Example:</strong>
+											<strong>Example:</strong> 
 											 Software | Computer Software
 										</para><para>
-											<strong>Requirements:</strong>
+											<strong>Requirements:</strong> 
 											 
 											Alphanumeric, 255 character limit
 											 
@@ -254,10 +254,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Global Trade Item Number. The GTIN field has a limit of 50 characters, with each GTIN value having up to 14 digits. For multiple GTIN values, separate by a comma and space.
 						<para>
-							<strong>Example:</strong>
+							<strong>Example:</strong> 
 							 00012345600012s
 						</para><para>
-							<strong>Requirements:</strong>
+							<strong>Requirements:</strong> 
 							 
                 Numeric, 14 digits max per value, multi-value, 50 character limit
 						</para></td>
@@ -271,10 +271,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Item’s manufacturer, brand or publisher
 						<para>
-							<strong>Example:</strong>
+							<strong>Example:</strong> 
 							 Contoso
 						</para><para>
-							<strong>Requirements:</strong>
+							<strong>Requirements:</strong> 
 							 
                 Alphanumeric
 							<para>70 character limit</para></para></td>
@@ -294,10 +294,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Manufacturer Part Number
 						<para>
-							<strong>Example:</strong>
+							<strong>Example:</strong> 
 							 ADNK-5020
 						</para><para>
-							<strong>Requirements:</strong>
+							<strong>Requirements:</strong> 
 							 
                 Alphanumeric, 70 character limit
 						</para></td>
@@ -313,10 +313,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Used to indicate that unique product identifiers (gtin, brand, and mpn) aren't available for a product.
 						<para>
-							<strong>Example</strong>: 
+							<strong>Example</strong> : 
                 FALSE 
 							 
-							<strong>Requirements</strong>: 
+							<strong>Requirements</strong> : 
                 Boolean: TRUE or FALSE
 						</para></td>
     <td>Products that may not have an identifier_exists attribute include custom goods, like homemade products, or products that were made before gtins were created, like antiques.</td>
@@ -328,10 +328,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Base price, excluding tax and shipping, submitted in local currency.
 						<para>
-							<strong>Example:</strong>
+							<strong>Example:</strong> 
 							 23.99
 						</para><para>
-							<strong>Requirements:</strong>
+							<strong>Requirements:</strong> 
 							 
                 Numeric
 							<para>0.00 to 10000000.00 (10 million)</para><para>Use two decimal places and no symbols (e.g. $).</para></para></td>
@@ -355,10 +355,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Items’s sale price, excluding tax and shipping
 		<para>
-			<strong>Example:</strong>
+			<strong>Example:</strong> 
 			 20.99
 		</para><para>
-			<strong>Requirements:</strong>
+			<strong>Requirements:</strong> 
 			 
                 Numeric; Range is 0.00 to 10000000.00 (10 million); No symbols ($)
 		</para></td>
@@ -381,10 +381,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Sale’s start and end date and time
 		<para>
-			<strong>Example:</strong>
+			<strong>Example:</strong> 
 			 2013-11-05T08:15-05:00/2013-11-10T09:30-05:00
 		</para><para>
-			<strong>Requirements:</strong>
+			<strong>Requirements:</strong> 
 			 
                 Alphanumeric; Start date must be earlier than end date.  
                 Date and time format: YYYY-MM-DD followed by the letter 'T', the time of day followed by an expression for the time zone as defined by the ISO 8601 standard.
@@ -402,10 +402,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               Pick-up options available for the store.
 		 
-		<strong>Example</strong>:
+		<strong>Example</strong> :
 		 reserve
 		 
-		<strong>Requirements</strong>:
+		<strong>Requirements</strong> :
 		 
               buy, reserve, and not supported
 	</td>
@@ -424,10 +424,10 @@ For Local Inventory Ads, you must create and submit a local products feed. A loc
     <td>
               The expected date that an item is available for pick-up.
 		 
-		<strong>Example</strong>:
+		<strong>Example</strong> :
 		 same day
 		 
-		<strong>Requirements</strong>:
+		<strong>Requirements</strong> :
 		 
               same day, next day
 	</td>
@@ -458,10 +458,10 @@ For apparel items, be sure to include the additional attributes if they are not 
     <td>
               Gender targeted by the item
 					<para>
-						<strong>Example:</strong>
+						<strong>Example:</strong> 
 						 male
 					</para><para>
-						<strong>Requirements:</strong>
+						<strong>Requirements:</strong> 
 						 
                 Valid options: male, female, unisex. No other option will be accepted.
 					</para></td>
@@ -474,10 +474,10 @@ For apparel items, be sure to include the additional attributes if they are not 
     <td>
               Age group targeted by the item
 					<para>
-						<strong>Example:</strong>
+						<strong>Example:</strong> 
 						 newborn
 					</para><para>
-						<strong>Requirements:</strong>
+						<strong>Requirements:</strong> 
 						 
                 Valid Options: newborn, infant, toddler, kid, adult
 					</para></td>
@@ -490,10 +490,10 @@ For apparel items, be sure to include the additional attributes if they are not 
     <td>
               The dominant color of the item
 					<para>
-						<strong>Example:</strong>
+						<strong>Example:</strong> 
 						 red/black/white
 					</para><para>
-						<strong>Requirements:</strong>
+						<strong>Requirements:</strong> 
 						 
                 Text: Character limit 100
 						<para>Supports up to 3 values separated by a slash [/] with most dominant color first.</para><para>Color attributes, like "stainless steel" or "mahogany" are also accepted.</para></para></td>
@@ -506,10 +506,10 @@ For apparel items, be sure to include the additional attributes if they are not 
     <td>
               Size of the item
 					<para>
-						<strong>Example:</strong>
+						<strong>Example:</strong> 
 						 small, medium, large
 					</para><para>
-						<strong>Requirements:</strong>
+						<strong>Requirements:</strong> 
 						 
                 Alphanumeric, Max 100 characters
 					</para></td>
@@ -535,8 +535,8 @@ Because your inventory price and quantity change frequently by store, you can us
 
 When submitting via FTP:
 
-- **Local product inventory feeds ** include all of your inventory for all of your stores. You can submit the feed on a daily basis.
-- **Local product inventory update feeds** are used only for frequently changing details like the price and quantity of your items in specific stores.
+- **Local product inventory feeds**  include all of your inventory for all of your stores. You can submit the feed on a daily basis.
+- **Local product inventory update feeds**  are used only for frequently changing details like the price and quantity of your items in specific stores.
 
 ## How do I create a local products inventory feed?
 
@@ -557,10 +557,10 @@ When submitting via FTP:
     <td>
               A unique code for the item.
 								<para>
-									<strong>Example:</strong>
+									<strong>Example:</strong> 
 									 1234
 								</para><para>
-									<strong>Requirements:</strong>
+									<strong>Requirements:</strong> 
 									 
                 Alphanumeric
 								</para></td>
@@ -579,10 +579,10 @@ When submitting via FTP:
     <td>
               A unique identifier for the item.
 								<para>
-									<strong>Example:</strong>
+									<strong>Example:</strong> 
 									 ISI1
 								</para><para>
-									<strong>Requirements:</strong>
+									<strong>Requirements:</strong> 
 									 
                 50-character limit
 								</para></td>
@@ -603,10 +603,10 @@ When submitting via FTP:
     <td>
               The number of items available in stock.
 								<para>
-									<strong>Example:</strong>
+									<strong>Example:</strong> 
 									 20
 								</para><para>
-									<strong>Requirements:</strong>
+									<strong>Requirements:</strong> 
 									 
                 Numeric value
 								</para></td>
@@ -632,10 +632,10 @@ When submitting via FTP:
     <td>
               Base price, excluding tax and shipping, submitted in local currency.
 								<para>
-									<strong>Example:</strong>
+									<strong>Example:</strong> 
 									 23.99
 								</para><para>
-									<strong>Requirements:</strong>
+									<strong>Requirements:</strong> 
 									 
                 Numeric
 									<para>0.00 to 10000000.00 (10 million)</para><para>Use two decimal places and no symbols (e.g. $).</para></para></td>
@@ -659,10 +659,10 @@ When submitting via FTP:
     <td>
               Item’s sale price, excluding tax and shipping
 				<para>
-					<strong>Example:</strong>
+					<strong>Example:</strong> 
 					 20.99
 				</para><para>
-					<strong>Requirements:</strong>
+					<strong>Requirements:</strong> 
 					 
                 Numeric; Range is 0.00 to 10000000.00 (10 million); No symbols ($)
 				</para></td>
@@ -685,10 +685,10 @@ When submitting via FTP:
     <td>
               Sale’s start and end date and time
 		<para>
-			<strong>Example:</strong>
+			<strong>Example:</strong> 
 			 2013-11-05T08:15-05:00/2013-11-10T09:30-05:00
 		</para><para>
-			<strong>Requirements:</strong>
+			<strong>Requirements:</strong> 
 			 
                 Alphanumeric; Start date must be earlier than end date.  
                 Date and time format: YYYY-MM-DD followed by the letter 'T', the time of day followed by an expression for the time zone as defined by the ISO 8601 standard.
@@ -708,12 +708,12 @@ When submitting via FTP:
     <td>
               Availability of item
 		<para>
-			<strong>Example:</strong>
+			<strong>Example:</strong> 
 			  in stock
 			  out of stock
 			  preorder
 		</para><para>
-			<strong>Requirements:</strong>
+			<strong>Requirements:</strong> 
 			 
                 Valid options: in stock, out of stock, preorder. <para>Default is "in stock."</para></para></td>
     <td>
@@ -737,7 +737,7 @@ When submitting via FTP:
     <td>
               The estimate of how many weeks of inventory you have.
 		 
-		<strong>Example</strong>:
+		<strong>Example</strong> :
 		 3.5
 	</td>
     <td>
@@ -751,10 +751,10 @@ When submitting via FTP:
     <td>
               Pick-up options available for the store.
 		 
-		<strong>Example</strong>:
+		<strong>Example</strong> :
 		 reserve
 		 
-		<strong>Requirements</strong>:
+		<strong>Requirements</strong> :
 		 
               buy, reserve, and not supported
 	</td>
@@ -773,10 +773,10 @@ When submitting via FTP:
     <td>
               The expected date that an item is available for pick-up.
 		 
-		<strong>Example</strong>:
+		<strong>Example</strong> :
 		 same day
 		 
-		<strong>Requirements</strong>:
+		<strong>Requirements</strong> :
 		 
               same day, next day
 	</td>
@@ -808,8 +808,8 @@ After you sign in to your Microsoft Advertising account:
 
 Now that local inventory ads are enabled for your shopping campaign, you can set filters by channel and channel exclusivity.
 
-- **Channel**: 				 				**Local store**: Automatically filter to products that are sold in local stores, including products that may also be sold online.				 				**Online**: Filter products that are only sold on your website.
-- **Channel exclusivity**: 				 				**Multi-channel**: Filter products that are sold both online and in store.				 				**Single channel**: Filter products that are sold only in store or online.
+- **Channel** : 				 				**Local store**: Automatically filter to products that are sold in local stores, including products that may also be sold online.				 				**Online**: Filter products that are only sold on your website.
+- **Channel exclusivity** : 				 				**Multi-channel**: Filter products that are sold both online and in store.				 				**Single channel**: Filter products that are sold only in store or online.
 
 You can show products sold only in local stores but not online by setting the filters to “Channel”: “Local stores” and “Channel exclusivity”: “Single-channel”.
 

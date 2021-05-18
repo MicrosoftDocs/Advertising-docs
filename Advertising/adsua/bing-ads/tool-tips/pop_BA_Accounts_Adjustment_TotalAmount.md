@@ -9,6 +9,6 @@ ms.author: eur
 
 # Total document amount
 
-**What it is: **This figure represents the billing document’s total amount, which includes advertising costs and any applicable taxes.
+**What it is:** This figure represents the billing document’s total amount, which includes advertising costs and any applicable taxes.
 
 

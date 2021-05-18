@@ -9,10 +9,10 @@ ms.author: eur
 
 # Business address
 
-**What it is: ** [!INCLUDE [BusinessAddressDef](../includes/BusinessAddressDef.md)]
+**What it is:**  [!INCLUDE [BusinessAddressDef](../includes/BusinessAddressDef.md)]
 
-**Why is it important: ** [!INCLUDE [BusinessAddressWhy](../includes/BusinessAddressWhy.md)]
+**Why is it important:**  [!INCLUDE [BusinessAddressWhy](../includes/BusinessAddressWhy.md)]
 
-**Get more info: ** [Tax or VAT information](../hlp_BA_CONC_TaxVATInfo.md)
+**Get more info:**  [Tax or VAT information](../hlp_BA_CONC_TaxVATInfo.md)
 
 

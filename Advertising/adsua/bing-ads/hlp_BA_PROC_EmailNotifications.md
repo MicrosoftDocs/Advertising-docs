@@ -19,12 +19,12 @@ As the name implies, accounts alerts are set at the account level. This means th
 
 You can manage settings for the following notification categories.
 
-- **Billing alerts:** Statements and billing information for monthly invoice, prepay, or postpay threshold accounts
-- **Account management:** Alerts when your account can't serve ads
-- **Disapproved ads and keywords:** Editorial rejections and policy violations
-- **Ad performance optimization:** Campaign optimization suggestions, performance diagnosis, the Microsoft Advertising Dash newsletter, and competitive insights
-- **Payments and account balance:** Card issues, payment failures, low-balance warnings, and account pause warnings
-- **Insertion Orders:** Insertion order approval requests, rejections, low balance, and expiring orders (available only for monthly invoice accounts)
+- **Billing alerts:**  Statements and billing information for monthly invoice, prepay, or postpay threshold accounts
+- **Account management:**  Alerts when your account can't serve ads
+- **Disapproved ads and keywords:**  Editorial rejections and policy violations
+- **Ad performance optimization:**  Campaign optimization suggestions, performance diagnosis, the Microsoft Advertising Dash newsletter, and competitive insights
+- **Payments and account balance:**  Card issues, payment failures, low-balance warnings, and account pause warnings
+- **Insertion Orders:**  Insertion order approval requests, rejections, low balance, and expiring orders (available only for monthly invoice accounts)
 
 ## How to set email preferences
 

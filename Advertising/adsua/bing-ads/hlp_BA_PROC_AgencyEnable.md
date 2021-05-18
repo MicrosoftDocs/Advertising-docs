@@ -87,9 +87,9 @@ Before you send the request to your client, there are a few things you should kn
 
 - You will need the client's account number. For instructions on helping your client find their account number, see [How to have an agency manage your Microsoft Advertising account](./hlp_BA_CONC_AboutAgencyClientProcess.md).
 - If you elect to pay the bills:
-  - You assume responsibility for all of the account's advertising charges, including any charges that are in progress when the client approves your linking request.
-  - You will need to have a valid payment method on file before you send the request.
-  - If you are trying to fund a prepay account and your client is in a country/region with tax requirements, we might be required to deduct tax from the prepay amount. Here are [tax requirements for each country/region](./hlp_BA_CONC_TaxVATInfo.md).
+   - You assume responsibility for all of the account's advertising charges, including any charges that are in progress when the client approves your linking request.
+   - You will need to have a valid payment method on file before you send the request.
+   - If you are trying to fund a prepay account and your client is in a country/region with tax requirements, we might be required to deduct tax from the prepay amount. Here are [tax requirements for each country/region](./hlp_BA_CONC_TaxVATInfo.md).
 
 - If your client has a monthly invoice account: You can create and manage insertion orders on your client's behalf even if you are not the bill-to customer. You will need to be a [Super Admin or Standard User to do so](./hlp_BA_CONC_SSUserRoles.md).
 

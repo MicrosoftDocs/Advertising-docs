@@ -9,6 +9,6 @@ ms.author: eur
 
 # Payment amount
 
-**What it is:** The amount you are paying, excluding taxes.
+**What it is:**  The amount you are paying, excluding taxes.
 
 

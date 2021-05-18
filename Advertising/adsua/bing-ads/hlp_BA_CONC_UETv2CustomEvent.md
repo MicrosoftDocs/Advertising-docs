@@ -15,10 +15,10 @@ Microsoft Advertising allows you to track custom events on your website, such as
 
 Before you start setting up custom events, make sure you have:
 
-- **A JavaScript UET tag**: [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md).
-  - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
+- **A JavaScript UET tag** : [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md).
+   - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
 
-- **The ability to edit website code**: Make sure that either you or your webmaster can edit your website code.
+- **The ability to edit website code** : Make sure that either you or your webmaster can edit your website code.
 
 ## How to set up custom events
 
@@ -44,46 +44,46 @@ Before you start setting up custom events, make sure you have:
 
 ## Step 2: Create a conversion goal or remarketing list
 - Creating a conversion goal for a custom event:
-  1. In the left navigation pane of Microsoft Advertising, click **Conversion Tracking** and then **Conversion goals** (or from the global menu at the top of the page, click **Tools** and then **Conversion goals**).
-  1. Click **Create conversion goal**.
-  1. Give your conversion goal a name, select **Event** for **Type**, and then click **Next**.
-  1. Choose the parameters to report when logging custom events by assigning each one you want to use a text string or numeric value. The possible parameters are:
-    - **Category**: The category of the event you want to track. Let's say you want to track downloads of a document on a page of your site. For this example, the category could be "```downloads```".
-    - **Action**: The type of user interaction you want to track. For our example, "```downloadbuttonclick```".
-    - **Label**: The name of the element that caused the action. For our example, "```document05```".
-    - **Value**: A numerical value associated with that event. For our example, the number of pages in the document: "4".  						  The event value can be any value from 0 to 9999999 to 3 decimal places.
+   1. In the left navigation pane of Microsoft Advertising, click **Conversion Tracking** and then **Conversion goals** (or from the global menu at the top of the page, click **Tools** and then **Conversion goals**).
+   1. Click **Create conversion goal**.
+   1. Give your conversion goal a name, select **Event** for **Type**, and then click **Next**.
+   1. Choose the parameters to report when logging custom events by assigning each one you want to use a text string or numeric value. The possible parameters are:
+      - **Category** : The category of the event you want to track. Let's say you want to track downloads of a document on a page of your site. For this example, the category could be "```downloads```".
+      - **Action** : The type of user interaction you want to track. For our example, "```downloadbuttonclick```".
+      - **Label** : The name of the element that caused the action. For our example, "```document05```".
+      - **Value** : A numerical value associated with that event. For our example, the number of pages in the document: "4".  						  The event value can be any value from 0 to 9999999 to 3 decimal places.
 
 > [!NOTE]
 > You'll customize your UET tag tracking code to match the values defined here (this is discussed in Step 3). This will allow Microsoft Advertising to match these values with the custom events being logged via UET to count them as conversions.
 
-  1. Select the **Revenue value**, **Count**, and **Conversion window** for this custom event goal.
-  1. For **UET tag**, select the UET tag that you added to your website in Step 1.
-  1. Click **Save**.
+   1. Select the **Revenue value**, **Count**, and **Conversion window** for this custom event goal.
+   1. For **UET tag**, select the UET tag that you added to your website in Step 1.
+   1. Click **Save**.
 
 > [!NOTE]
 > Every action that we detect that matches your conversion goal will be counted as one conversion.
 
 - Creating a remarketing list for a custom event:
-  1. In the left navigation pane of Microsoft Advertising, click **Shared Library** and then **Audiences** (or from the global menu at the top of the page, click **Tools** and then **Audiences**).
-  1. Click **Create audience**.
-  1. Name your remarketing list, select **Remarketing list**, and then click **Next**.
-  1. For **Whom to add to your audience**, select **Custom events**.
-  1. Choose the parameters to report when logging custom events by assigning each one you want to use a text string or numeric value. The possible parameters are:
-    - **Category**: The category of the event you want to track. Let's say you want to track downloads of a document on a page of your site. For this example, the category could be "```downloads```".
-    - **Action**: The type of user interaction you want to track. For our example, "```downloadbuttonclick```".
-    - **Label**: The name of the element that caused the action. For our example, "```document05```".
-    - **Value**: A numerical value associated with that event. For our example, the number of pages in the document: "4".  						  The event value can be any value from 0 to 9999999 to 3 decimal places.
+   1. In the left navigation pane of Microsoft Advertising, click **Shared Library** and then **Audiences** (or from the global menu at the top of the page, click **Tools** and then **Audiences**).
+   1. Click **Create audience**.
+   1. Name your remarketing list, select **Remarketing list**, and then click **Next**.
+   1. For **Whom to add to your audience**, select **Custom events**.
+   1. Choose the parameters to report when logging custom events by assigning each one you want to use a text string or numeric value. The possible parameters are:
+      - **Category** : The category of the event you want to track. Let's say you want to track downloads of a document on a page of your site. For this example, the category could be "```downloads```".
+      - **Action** : The type of user interaction you want to track. For our example, "```downloadbuttonclick```".
+      - **Label** : The name of the element that caused the action. For our example, "```document05```".
+      - **Value** : A numerical value associated with that event. For our example, the number of pages in the document: "4".  						  The event value can be any value from 0 to 9999999 to 3 decimal places.
 
 > [!IMPORTANT]
 > You'll customize your UET tag tracking code to match the values defined here (this is discussed in Step 3). This will allow Microsoft Advertising to match these values with the custom events being logged via UET to count them as conversions.
 
-  1. Set the **Membership duration** to tell Microsoft Advertising how far back in time to look for actions that match your remarketing list definition in order to add people to your list.
-  1. For **Tag name**, select the UET tag that you added to your website in Step 1.
-  1. Click **Save**.
-  1. [Associate this remarketing list with an ad group](./hlp_BA_CONC_Audiences_AssociateAdGroup.md)
+   1. Set the **Membership duration** to tell Microsoft Advertising how far back in time to look for actions that match your remarketing list definition in order to add people to your list.
+   1. For **Tag name**, select the UET tag that you added to your website in Step 1.
+   1. Click **Save**.
+   1. [Associate this remarketing list with an ad group](./hlp_BA_CONC_Audiences_AssociateAdGroup.md)
 
 ## Step 3: Modify the UET tag tracking code in your website
-Following on our example in Step 2, let's say that the custom event you want to track on your webpage is **people clicking the "Download now" button** (this would be an **Action** event, as discussed above).
+Following on our example in Step 2, let's say that the custom event you want to track on your webpage is **people clicking the "Download now" button**  (this would be an **Action** event, as discussed above).
 1. Add the following custom event JavaScript below the UET tag that you added to your webpage's code in Step 1:
 ```
 ```<head>```Your page title  ```</head>```	  					```<body>``` 
@@ -139,12 +139,12 @@ Following on our example in Step 2, let's say that the custom event you want to 
 - uetq is a JavaScript object instantiated by the UET tracking code when the page is loaded.
 - The code inside the &lt;script&gt;&lt;/script&gt; tag should be instantiated when the user action (for example, a button click) is complete.  It could be wired up directly to an onclick event or wrapped inside a JavaScript function that is wired to the onclick event.
 - The command 'event' is always required, even if you're not reporting any Event action. If that's the case, you can set Event action either as:
-  - Empty. For example:  
+   - Empty. For example:  
 ```
 <script>   window.uetq = window.uetq || [];    window.uetq.push('event', '', {'event_category': 'Replace_with_Event_Category', 'event_label': 'Replace_with_Event_Label', 'event_value': 'Replace_with_Event_Value'});  </script>
 ```
 
-  - One of the following actions that might help you identify the event action in the future: 				add_payment_info, add_to_cart, add_to_wishlist, begin_checkout, checkout_progress, exception, generate_lead, login, page_view, purchase, refund, remove_from_cart, screen_view, search, select_content, set_checkout_option, share, sign_up, timing_complete, view_item, view_item_list, view_promotion, view_search_results  				For example:  
+   - One of the following actions that might help you identify the event action in the future: 				add_payment_info, add_to_cart, add_to_wishlist, begin_checkout, checkout_progress, exception, generate_lead, login, page_view, purchase, refund, remove_from_cart, screen_view, search, select_content, set_checkout_option, share, sign_up, timing_complete, view_item, view_item_list, view_promotion, view_search_results  				For example:  
 ```
 <script>   window.uetq = window.uetq || [];    window.uetq.push('event', 'add_payment_info', {'event_category': 'Replace_with_Event_Category', 'event_label': 'Replace_with_Event_Label', 'event_value': 'Replace_with_Event_Value'});  </script>
 ```

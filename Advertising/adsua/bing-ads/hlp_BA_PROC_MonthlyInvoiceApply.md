@@ -28,8 +28,8 @@ The financial standing of businesses are thoroughly reviewed, and applicants may
 1. Click **Payment Methods** from the main menu.
 1. Click **Apply for monthly invoicing**.
 1. Select the option that's best for you:
-  - **I'm applying for credit** if you're applying for monthly invoice billing for the first time.
-  - **I want to use an existing credit line for this manager account** if you want to use an existing SAP ID for another account.
+   - **I'm applying for credit**  if you're applying for monthly invoice billing for the first time.
+   - **I want to use an existing credit line for this manager account**  if you want to use an existing SAP ID for another account.
 
 1. Complete the form and submit your application.
 

@@ -1,7 +1,7 @@
 ---
 title: Build a free business website with Digital Marketing Center
 description: If you don’t already have a business website, you can build a free one with Digital Marketing Center.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -37,40 +37,40 @@ You can use Digital Marketing Center to build your website when you set up your 
     <th style="width:75%" scope="col">Description</th>
   </tr>
   <tr>
-    <td><strong>Headline and description (required)</strong></td>
+    <td><strong>Headline and description (required)</strong> </td>
     <td>Introduce your business to your customers with a headline for your website and a brief description of what your business offers. In the description, it’s best to include keywords customers might use to find your products or services.</td>
   </tr>
   <tr>
-    <td><strong>Customer action button (required)</strong></td>
+    <td><strong>Customer action button (required)</strong> </td>
     <td>Choose the primary action you want customers to take on your website, also known as the call-to-action. You can preview what a button does by clicking the button in the website preview:
-			<ul><li><strong>Call now</strong>: When a customer clicks this button on your website, it initiates a phone call to your business on their device.</li><li><strong>Send email</strong>: When a customer clicks this button on your website, it initiates an email to your business on their device.</li><li><strong>Get quote</strong>: When a customer clicks this button on your website, it opens a form the customer can use to inquire about your services. You'll be notified by email when a customer reaches out to you.</li><li><strong>Contact us</strong>: When a customer clicks this button on your website, it opens a form for customers to inquire about your services. You'll be notified by email when a customer reaches out to you.</li><li><strong>Book appointment</strong>: When a customer clicks this button on your website, it opens a link of your choice.</li><li><strong>Create your own</strong>: This allows you to customize the button text and choose a link of your choice that the button will open.</li></ul></td>
+			<ul><li><strong>Call now</strong> : When a customer clicks this button on your website, it initiates a phone call to your business on their device.</li><li><strong>Send email</strong> : When a customer clicks this button on your website, it initiates an email to your business on their device.</li><li><strong>Get quote</strong> : When a customer clicks this button on your website, it opens a form the customer can use to inquire about your services. You'll be notified by email when a customer reaches out to you.</li><li><strong>Contact us</strong> : When a customer clicks this button on your website, it opens a form for customers to inquire about your services. You'll be notified by email when a customer reaches out to you.</li><li><strong>Book appointment</strong> : When a customer clicks this button on your website, it opens a link of your choice.</li><li><strong>Create your own</strong> : This allows you to customize the button text and choose a link of your choice that the button will open.</li></ul></td>
   </tr>
   <tr>
-    <td><strong>Cover image (required)</strong></td>
+    <td><strong>Cover image (required)</strong> </td>
     <td>Choose a cover image that represents your business.</td>
   </tr>
   <tr>
-    <td><strong>Business contact information (required)</strong></td>
+    <td><strong>Business contact information (required)</strong> </td>
     <td>Include information like your business's phone number, address, email address, and/or hours to allow your customers to contact you. Make sure to verify your contact information for accuracy before you publish your website.</td>
   </tr>
   <tr>
-    <td><strong>Business summary</strong></td>
+    <td><strong>Business summary</strong> </td>
     <td>Share highlights about your business with customers, such as who you are, what matters to you, what you do, or how your business started (what you might read on an “About Us” page).</td>
   </tr>
   <tr>
-    <td><strong>Social posts</strong></td>
+    <td><strong>Social posts</strong> </td>
     <td>Showcase posts from your Facebook page on your website (requires Facebook import).</td>
   </tr>
   <tr>
-    <td><strong>Reviews</strong></td>
+    <td><strong>Reviews</strong> </td>
     <td>Showcase reviews from your Facebook page on your website (requires Facebook import).</td>
   </tr>
   <tr>
-    <td><strong>Gallery</strong></td>
+    <td><strong>Gallery</strong> </td>
     <td>Add an image gallery to your website.</td>
   </tr>
   <tr>
-    <td><strong>Social links</strong></td>
+    <td><strong>Social links</strong> </td>
     <td>Add social media links to your website, so customers can find and follow your business on social media.</td>
   </tr>
 </table>

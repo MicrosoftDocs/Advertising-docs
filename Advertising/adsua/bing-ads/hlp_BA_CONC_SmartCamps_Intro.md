@@ -21,53 +21,20 @@ Here's all you have to do:
 After you have set up your payment method (or, subsequently, from the **All campaigns** page), click **Create new smart campaign** and follow the step-by-step instructions. The steps are:
 
 ## Tell us about your business
-<table type="type1">
-  <tr>
-    <th scope="col">What's your campaign goal?</th>
-  </tr>
-  <tr>
-    <td>
-				Setting your goal at the very start gives us the context to craft effective ads for you and makes sure we're optimizing your campaign settings for success.		
-			  </td>
-  </tr>
-  <tr>
-    <th scope="col">What's your business's name and website?</th>
-  </tr>
-  <tr>
-    <td>
-				Note: After you've created your first ad campaign, at this step, you'll have the option to select the business you previously set up.
-			</td>
-  </tr>
-  <tr>
-    <th scope="col">Where do you want to advertise? and What is your product or service?</th>
-  </tr>
-  <tr>
-    <td>
-      <para>As you define locations and add products or services, pay attention to the <strong>Estimated number of potential customers</strong> window on the right. This shows you how many people we estimate will search for these products or services within these locations on the Microsoft Search Network each month. [Learn more about how locations, products, and services affect who sees your ads](./hlp_BA_CONC_SmartCamps_Targeting.md).</para>
-    </td>
-  </tr>
-</table>
+|What's your campaign goal?|
+|---|
+|Setting your goal at the very start gives us the context to craft effective ads for you and makes sure we're optimizing your campaign settings for success.|
+|What's your business's name and website?|
+|Note: After you've created your first ad campaign, at this step, you'll have the option to select the business you previously set up.|
+|Where do you want to advertise? and What is your product or service?|
+|As you define locations and add keyword themes, pay attention to the **Estimated number of potential customers** window on the right. This shows you how many people we estimate will search for these keyword themes within these locations on the Microsoft Search Network each month. [Learn more about how locations, products, and services affect who sees your ads](./hlp_BA_CONC_SmartCamps_Targeting.md).|
 
 ## Create ads
-<table type="type1">
-  <tr>
-    <th scope="col">What should your ad say?</th>
-  </tr>
-  <tr>
-    <td>
-      <para>Based on the business information you've provided, our AI will write an ad for you, consisting of four pieces of text: two parts of an ad title, a description, and a website URL.</para>
-      <para>Feel free to make changes to the text we have provided however you see fit. [Learn more about crafting effective ads](./hlp_BA_CONC_SmartCamps_EffectiveAds.md).</para>
-    </td>
-  </tr>
-  <tr>
-    <th scope="col">What is your business phone number?</th>
-  </tr>
-  <tr>
-    <td>
-				If the goal you selected at the start was <strong>Get more phone calls to my business</strong>, customers will be able to click your phone number to call your business right from your ad.
-			</td>
-  </tr>
-</table>
+|What should your ad say?|
+|---|
+|Based on the business information you've provided, our AI will write an ad for you, consisting of four pieces of text: two parts of an ad title, a description, and a website URL.Feel free to make changes to the text we have provided however you see fit. [Learn more about crafting effective ads](./hlp_BA_CONC_SmartCamps_EffectiveAds.md).|
+|What is your business phone number?|
+|If the goal you selected at the start was **Get more phone calls to my business**, customers will be able to click your phone number to call your business right from your ad.|
 
 ## Set your budget
 Your budget tells us the limit you want to spend per day on your ad campaign. When you reach your budget, Microsoft Advertising will stop displaying your ads until the next day. This makes sure you spend only as much as you're comfortable spending. [Learn more about budgets and what you pay for](./hlp_BA_CONC_SmartCamps_Budget.md).

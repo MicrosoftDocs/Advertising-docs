@@ -9,6 +9,6 @@ ms.author: eur
 
 # Consumer Ratings
 
-**What you need to know:** Share positive reviews from a reputable third-party source about your website in your ads.
+**What you need to know:**  Share positive reviews from a reputable third-party source about your website in your ads.
 
 

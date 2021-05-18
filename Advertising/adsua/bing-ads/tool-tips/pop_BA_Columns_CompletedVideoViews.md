@@ -9,6 +9,6 @@ ms.author: eur
 
 # Completed video views
 
-**What it is:** The number of times a user completed the full video (measured directly).
+**What it is:**  The number of times a user completed the full video (measured directly).
 
 

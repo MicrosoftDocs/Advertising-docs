@@ -9,8 +9,8 @@ ms.author: eur
 
 # Import settings
 
-**What it is:** The settings you selected for this import.
+**What it is:**  The settings you selected for this import.
 
-**What you need to know:** If you click the ellipsis icon ![PLACEHOLDER_TEXT](../../images/BA_ScreenCap_DeliveryDetails.png), you will see the exact settings you selected before this import took place.
+**What you need to know:**  If you click the ellipsis icon ![PLACEHOLDER_TEXT](../../images/BA_ScreenCap_DeliveryDetails.png), you will see the exact settings you selected before this import took place.
 
 

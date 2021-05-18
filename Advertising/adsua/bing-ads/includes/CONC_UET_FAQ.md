@@ -205,31 +205,12 @@ Here is what this opt-out code looks like within your UET tracking code:
 ## What cookies does UET use?
 The following table lists the cookies that UET stores or accesses in your browser. Microsoft Advertising doesn't resell this data to third parties or share it with other advertisers.
 
-<table>
-  <tr>
-    <th scope="col">Cookie ID</th>
-    <th scope="col">Cookie Description</th>
-  </tr>
-  <tr>
-    <th scope="row">MUID</th>
-    <td>This is a Microsoft cookie that contains a GUID assigned to your browser. It gets set when you interact with a Microsoft property, including a UET beacon call or a visit to a Microsoft property through the browser.
-</td>
-  </tr>
-  <tr>
-    <th scope="row">_uetmsclkid</th>
-    <td>This is the Microsoft Click ID, which is used to improve the accuracy of conversion tracking.
-		   
-		  <strong>Note:</strong> UET sets a first-party cookie on your site’s domain for this parameter. When auto-tagging of the Microsoft Click ID is enabled, the ad click information is generated at ad click time and appended to the landing page URL.</td>
-  </tr>
-  <tr>
-    <th scope="row">_uetsid</th>
-    <td>This contains the session ID for a unique session on the site.</td>
-  </tr>
-  <tr>
-    <th scope="row">_uetvid</th>
-    <td>UET assigns this unique, anonymized visitor ID, representing a unique visitor. UET stores this data in a first-party cookie.</td>
-  </tr>
-</table>
+|Cookie ID|Cookie Description|
+|---|---|
+|MUID|This is a Microsoft cookie that contains a GUID assigned to your browser. It gets set when you interact with a Microsoft property, including a UET beacon call or a visit to a Microsoft property through the browser.|
+|_uetmsclkid|This is the Microsoft Click ID, which is used to improve the accuracy of conversion tracking.		   		  **Note:**  UET sets a first-party cookie on your site’s domain for this parameter. When auto-tagging of the Microsoft Click ID is enabled, the ad click information is generated at ad click time and appended to the landing page URL.|
+|_uetsid|This contains the session ID for a unique session on the site.|
+|_uetvid|UET assigns this unique, anonymized visitor ID, representing a unique visitor. UET stores this data in a first-party cookie.|
 
 ## How can I mark first-party cookies set by UET as secure?
 If your website enforces the https protocol for all pages, you can modify your UET tag to mark first-party cookies as secure. Just add the highlighted code to the base UET tag on each page of your website:

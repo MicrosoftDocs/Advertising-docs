@@ -9,8 +9,8 @@ ms.author: eur
 
 # Estimated change in spend
 
-**What it is:**       The potential change in spend each week when you add the suggested broad match keywords.
+**What it is:**        The potential change in spend each week when you add the suggested broad match keywords.
 
-**What you need to know: **       These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
+**What you need to know:**        These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
 
 

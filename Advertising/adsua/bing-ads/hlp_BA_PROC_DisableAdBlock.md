@@ -35,4 +35,5 @@ Ad-blocking extensions keep the [Ad Preview and Diagnostics Tool](./hlp_BA_PROC_
 1. In the list of extensions, navigate to your ad-blocking extension and toggle the **On** button to **Off**.
 1. [!INCLUDE [Refresh](./includes/Refresh.md)]
 
+ 
 

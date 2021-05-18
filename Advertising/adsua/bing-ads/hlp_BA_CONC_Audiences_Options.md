@@ -147,6 +147,7 @@ Audiences are groups of potential customers that you can target. Microsoft Adver
 > [!NOTE]
 > For more information on UET, take a look at [What is UET and how can it help me?](./hlp_BA_CONC_UETv2WhatIsTag.md)
 
+ 
 ## What are the limits on audiences?
 
 <table>
@@ -157,8 +158,8 @@ Audiences are groups of potential customers that you can target. Microsoft Adver
   <tr>
     <td>Total number of audiences</td>
     <td>
-					<strong>Manager account level</strong>: 5000 per audience type.   
-					<strong>Account level</strong>: 1000 per audience type, with two caveats:
+					<strong>Manager account level</strong> : 5000 per audience type.   
+					<strong>Account level</strong> : 1000 per audience type, with two caveats:
 							<ul><li>This includes audiences created within an account <strong>and</strong> audiences that were created in another account with Sharing set to <strong>Across all accounts</strong>. So, for example, if your account already has 1000 remarketing lists shared with it, you won't be able to create another remarketing list in this account.</li><li>There is no account-level limit on custom audiences, only the 5000 audiences limit at the manager account level.</li></ul></td>
   </tr>
   <tr>

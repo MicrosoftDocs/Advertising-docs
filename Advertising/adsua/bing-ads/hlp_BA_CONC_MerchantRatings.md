@@ -37,9 +37,9 @@ Merchant ratings are based on several sources, including:
 
 While you cannot modify your merchant ratings directly, you can take steps to help increase your ratings. Here are some tips:
 
-- **Provide great customer service**. When your customers are happy, they will be willing to provide ratings for you and share their positive experiences with others.
-- **Be proactive**. Pay attention to reviews about your business and other ways you measure customer satisfaction. If you have an unhappy customer, be proactive and quickly try to resolve any issues with that customer.
-- **Keep your business name and website consistent**. Customers can leave reviews about your business on aspects that you don’t have control over, such as delayed shipping by the shipping company. Generally speaking, a few ratings like this shouldn’t impact your overall rating, as merchant ratings come from several sources. To make sure that your customers are leaving correct reviews for your business, make sure your business name and website information is consistent throughout different review sites and your [Microsoft Merchant Center](./hlp_BA_CONC_AboutBingMerchantCenter.md) account, if you have one.
+- **Provide great customer service** . When your customers are happy, they will be willing to provide ratings for you and share their positive experiences with others.
+- **Be proactive** . Pay attention to reviews about your business and other ways you measure customer satisfaction. If you have an unhappy customer, be proactive and quickly try to resolve any issues with that customer.
+- **Keep your business name and website consistent** . Customers can leave reviews about your business on aspects that you don’t have control over, such as delayed shipping by the shipping company. Generally speaking, a few ratings like this shouldn’t impact your overall rating, as merchant ratings come from several sources. To make sure that your customers are leaving correct reviews for your business, make sure your business name and website information is consistent throughout different review sites and your [Microsoft Merchant Center](./hlp_BA_CONC_AboutBingMerchantCenter.md) account, if you have one.
 
 ## Get qualified for merchant ratings
 
@@ -58,4 +58,5 @@ If you want to opt out of this feature, contact your Account Manager or [contact
 
 Just like merchant ratings, automated extensions for ads require no action from you. Learn how [automated extensions](./hlp_BA_CONC_AutomatedExtensions.md) can enhance your ads.
 
+ 
 

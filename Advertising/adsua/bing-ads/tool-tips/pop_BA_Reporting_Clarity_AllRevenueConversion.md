@@ -9,6 +9,6 @@ ms.author: eur
 
 # All revenue per conversion
 
-**What it is:**    Revenue divided by the number of conversions, regardless of whether or not **Include in "Conversions"** is selected for this conversion goal.
+**What it is:**     Revenue divided by the number of conversions, regardless of whether or not **Include in "Conversions"** is selected for this conversion goal.
 
 

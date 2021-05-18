@@ -13,8 +13,8 @@ A best practice for UET tags is - One tag per website. So if all your ads point 
 
 In Microsoft Advertising, UET tags are stored at the customer level so if you have multiple accounts under the same customer the UET tag is shared across all accounts. We recommend that if each account has a different website that you create a separate UET tag because:
 
-- **Incorrect status:**      In Microsoft Advertising, we show the tracking status for each tag that tells you whether or not Microsoft Advertising is able to see the UET tag on your website.       If the same tag is used for multiple websites, it is possible that only one of the websites has been properly installed with a UET tag but you would not be able to tell       since Microsoft Advertising will mark the status of the UET tag as active.
-- **Incorrect data:** Websites pages can have the same file name, for example thankyou.html. So when you define a conversion goal, there is a higher chance that a goal set with "destination URL contains thankyou" will match both websites and then lead to incorrect conversion counting.
+- **Incorrect status:**       In Microsoft Advertising, we show the tracking status for each tag that tells you whether or not Microsoft Advertising is able to see the UET tag on your website.       If the same tag is used for multiple websites, it is possible that only one of the websites has been properly installed with a UET tag but you would not be able to tell       since Microsoft Advertising will mark the status of the UET tag as active.
+- **Incorrect data:**  Websites pages can have the same file name, for example thankyou.html. So when you define a conversion goal, there is a higher chance that a goal set with "destination URL contains thankyou" will match both websites and then lead to incorrect conversion counting.
 
 If you have a separate UET tag for each website, you avoid these issues.
 

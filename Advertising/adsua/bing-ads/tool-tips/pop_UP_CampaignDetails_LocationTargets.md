@@ -11,6 +11,6 @@ ms.author: eur
 
 **What it is:**
 
-**What you need to know:**   This is the part of the world you are targeting.
+**What you need to know:**    This is the part of the world you are targeting.
 
 

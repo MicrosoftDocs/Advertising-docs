@@ -9,9 +9,9 @@ ms.author: eur
 
 # Average monthly searches
 
-**What it is: **The number of times this keyword was used as a search term based on the date range and targeting settings you’ve selected.
+**What it is:** The number of times this keyword was used as a search term based on the date range and targeting settings you’ve selected.
 
-**What you should know: **Date range and targeting settings are used when calculating this number, but the language setting is not.
+**What you should know:** Date range and targeting settings are used when calculating this number, but the language setting is not.
 
 If we don’t have enough data for this keyword, you will see a dash (-).
 

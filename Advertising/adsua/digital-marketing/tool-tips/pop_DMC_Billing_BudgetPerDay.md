@@ -1,7 +1,7 @@
 ---
 title: Budget per day
 description: Budget per day
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Budget per day
 
-**What it is:** How much you want to spend on this advertising campaign per day.
+**What it is:**  How much you want to spend on this advertising campaign per day.
 
 **What you need to know:**
 - You can change your budget at any time.

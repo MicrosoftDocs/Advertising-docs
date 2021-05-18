@@ -18,8 +18,8 @@ Before creating new keywords, if you have existing keywords in another online ad
 1. From the page menu, click **Keywords**.
 1. Click **Add keywords**.
 1. Do one or both of the following:
-  - Search for keywords to add by clicking **Research** and using one of the options in the dropdown list (**Find keywords containing a word or phrase**, **Find keywords on a website**, or **Find keywords on the destination websites for your ads**). From the results, choose the keyword you want to add and which match types you want to associate with that keyword (Broad, Phrase, Exact). Now click **Add** to get them added to your list.
-  - Enter keywords directly by clicking **Enter keywords**. Type your keywords in the text box, then click **Add**. (Before adding, make sure to select the match types you want to associate with each new keyword by selecting the appropriate options in the **Type** column.)
+   - Search for keywords to add by clicking **Research** and using one of the options in the dropdown list (**Find keywords containing a word or phrase**, **Find keywords on a website**, or **Find keywords on the destination websites for your ads**). From the results, choose the keyword you want to add and which match types you want to associate with that keyword (Broad, Phrase, Exact). Now click **Add** to get them added to your list.
+   - Enter keywords directly by clicking **Enter keywords**. Type your keywords in the text box, then click **Add**. (Before adding, make sure to select the match types you want to associate with each new keyword by selecting the appropriate options in the **Type** column.)
 
 1. Select the bid you want for each keyword and each match type.
 1. When you have added the keywords you want to use, click **Apply**.
@@ -28,6 +28,12 @@ Before creating new keywords, if you have existing keywords in another online ad
 > All keywords must adhere to [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md).
 > [!INCLUDE [KeywordCharLimit](./includes/KeywordCharLimit.md)]
 > Some common variations of keywords, such as adding punctuation ("'," "!") to a keyword,  count as duplicates in your list. Microsoft Advertising automatically removes all duplicates from the list, but these variations are still valid keywords for your ad.
+> If using the broad match modifier, ensure that the "+" immediately precedes the keyword it modifies, with no spaces. For example:             
+|Correct|Incorrect|
+|---|---|
+|Hawaii +Hotels|Hawaii + Hotels|
+|+Hawaii +Hotels|+ Hawaii + Hotels|
+|+Hawaii Hotels|+Hawaii+Hotels|
 
 ## To edit the status, match type or bid of an existing keyword
 1. From the main menu on the far left, click **All campaigns**.
@@ -40,24 +46,12 @@ Before creating new keywords, if you have existing keywords in another online ad
 > All keywords must adhere to [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md).
 > [!INCLUDE [KeywordCharLimit](./includes/KeywordCharLimit.md)]
 > Some common variations of keywords, such as adding punctuation ("'," "!") to a keyword,  count as duplicates in your list. Microsoft Advertising automatically removes all duplicates from the list, but these variations are still valid keywords for your ad.
-> <table>
-  <tr>
-    <th style="width:140px" scope="col">Correct</th>
-    <th scope="col">Incorrect</th>
-  </tr>
-  <tr>
-    <td>Hawaii +Hotels</td>
-    <td>Hawaii + Hotels</td>
-  </tr>
-  <tr>
-    <td>+Hawaii +Hotels</td>
-    <td style="text-align:left">+ Hawaii + Hotels</td>
-  </tr>
-  <tr>
-    <td>+Hawaii Hotels</td>
-    <td style="text-align:left">+Hawaii+Hotels</td>
-  </tr>
-</table>
+> If using the broad match modifier, ensure that the "+" immediately precedes the keyword it modifies, with no spaces. For example:
+|Correct|Incorrect|
+|---|---|
+|Hawaii +Hotels|Hawaii + Hotels|
+|+Hawaii +Hotels|+ Hawaii + Hotels|
+|+Hawaii Hotels|+Hawaii+Hotels|
 
 ## To delete an existing keyword
 1. From the main menu on the far left, click **All campaigns**.

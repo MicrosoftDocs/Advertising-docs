@@ -9,6 +9,6 @@ ms.author: eur
 
 # Landing page
 
-**What it is:** The URL of the page your dynamic search ads sends customers to.
+**What it is:**  The URL of the page your dynamic search ads sends customers to.
 
 

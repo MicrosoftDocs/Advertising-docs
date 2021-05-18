@@ -9,6 +9,6 @@ ms.author: eur
 
 # Historic quality score
 
-**What it is: **    Historic average of quality scores back as far as 18 months from the current date.
+**What it is:**     Historic average of quality scores back as far as 18 months from the current date.
 
 

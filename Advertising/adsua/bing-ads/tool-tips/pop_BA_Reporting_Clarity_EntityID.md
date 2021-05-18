@@ -9,6 +9,6 @@ ms.author: eur
 
 # Entity ID
 
-**What it is:**    The ID for the change made.
+**What it is:**     The ID for the change made.
 
 

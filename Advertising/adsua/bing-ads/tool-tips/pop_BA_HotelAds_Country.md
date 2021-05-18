@@ -9,6 +9,6 @@ ms.author: eur
 
 # Country
 
-**What it is:** The country your hotel is located in.
+**What it is:**  The country your hotel is located in.
 
 

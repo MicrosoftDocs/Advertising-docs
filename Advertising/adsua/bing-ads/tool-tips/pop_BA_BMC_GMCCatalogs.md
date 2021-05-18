@@ -9,6 +9,6 @@ ms.author: eur
 
 # Catalogs
 
-**What it is:** These are the imported catalogs that contain product offers for use in your Microsoft Merchant Center store.
+**What it is:**  These are the imported catalogs that contain product offers for use in your Microsoft Merchant Center store.
 
 

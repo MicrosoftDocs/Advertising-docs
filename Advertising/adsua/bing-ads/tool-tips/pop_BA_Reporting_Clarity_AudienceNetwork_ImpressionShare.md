@@ -9,8 +9,8 @@ ms.author: eur
 
 # Audience network impression share (%)
 
-**What it is: **    The estimated percentage of impressions, out of the total available impressions you could have received on the Microsoft Audience Network.
+**What it is:**     The estimated percentage of impressions, out of the total available impressions you could have received on the Microsoft Audience Network.
 
-**Why it’s important: **    Use this to compare your share of impressions to the impression share of advertisers competing against you.
+**Why it’s important:**     Use this to compare your share of impressions to the impression share of advertisers competing against you.
 
 

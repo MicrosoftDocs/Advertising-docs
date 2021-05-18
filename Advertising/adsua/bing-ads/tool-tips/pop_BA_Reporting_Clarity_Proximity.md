@@ -9,6 +9,6 @@ ms.author: eur
 
 # Proximity target locations
 
-**What it is:**    Proximity to business or other locations.
+**What it is:**     Proximity to business or other locations.
 
 

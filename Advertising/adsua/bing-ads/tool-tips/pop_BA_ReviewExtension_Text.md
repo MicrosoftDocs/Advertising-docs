@@ -9,8 +9,8 @@ ms.author: eur
 
 # Text
 
-**What it is:** Text that appears below your ad that is either paraphrased or an exact quote from a reputable third-party source.
+**What it is:**  Text that appears below your ad that is either paraphrased or an exact quote from a reputable third-party source.
 
-**What you need to know:** The combined character limit for the review text and review source is 67 characters.
+**What you need to know:**  The combined character limit for the review text and review source is 67 characters.
 
 

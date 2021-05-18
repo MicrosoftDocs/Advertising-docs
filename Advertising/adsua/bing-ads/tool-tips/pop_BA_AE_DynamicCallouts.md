@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic Callouts
 
-**What you need to know:** Add key business details such as highlighted services and product offers that are taken directly from your website’s landing page.
+**What you need to know:**  Add key business details such as highlighted services and product offers that are taken directly from your website’s landing page.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Column format
 
-**What it is**: How you want this column's information to be formatted.
+**What it is** : How you want this column's information to be formatted.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Expiration date
 
-**What it is: **The date your offer expires.
+**What it is:** The date your offer expires.
 
-**What you need to know: **Once an offer expires, it cannot be used, and any remaining balance will be lost.
+**What you need to know:** Once an offer expires, it cannot be used, and any remaining balance will be lost.
 
 

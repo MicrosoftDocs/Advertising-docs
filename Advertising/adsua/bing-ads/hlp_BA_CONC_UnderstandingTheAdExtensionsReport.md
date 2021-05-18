@@ -11,10 +11,10 @@ ms.author: eur
 
 There are four types of ad extension reports:
 
-- **Ad extension by keyword:**  This report shows performance metrics for all ad extension types and click types, which are ad components that can be clicked (for example, the ad title or driving directions).      You can see how many ad extension impressions you’re receiving for each keyword, and which click type is getting the most clicks and impressions.      When you include the click type column, this report shows you how your ad is performing relative to different ad extensions.
-- **Ad extension by ad:**  This report contains the same information as Ad extension by keyword reports, sorted by ads rather than keywords.
-- **Ad extension details:**  This report shows performance metrics measured when different ad extensions appear in the ad. That helps you analyze which ad extension gets better impressions and clicks results.
-- **Call forwarding details:**  Shows the time and duration of each phone call that originated from a Call Extension that uses the Microsoft Advertising forwarding number. The report helps you understand how the accounts, campaigns, or ad groups are performing with Call Extensions.
+- **Ad extension by keyword:**   This report shows performance metrics for all ad extension types and click types, which are ad components that can be clicked (for example, the ad title or driving directions).      You can see how many ad extension impressions you’re receiving for each keyword, and which click type is getting the most clicks and impressions.      When you include the click type column, this report shows you how your ad is performing relative to different ad extensions.
+- **Ad extension by ad:**   This report contains the same information as Ad extension by keyword reports, sorted by ads rather than keywords.
+- **Ad extension details:**   This report shows performance metrics measured when different ad extensions appear in the ad. That helps you analyze which ad extension gets better impressions and clicks results.
+- **Call forwarding details:**   Shows the time and duration of each phone call that originated from a Call Extension that uses the Microsoft Advertising forwarding number. The report helps you understand how the accounts, campaigns, or ad groups are performing with Call Extensions.
 
 ## How to create an Ad extension report
 
@@ -200,87 +200,13 @@ Here's an example of some of the data provided in these reports (grouped by exte
 
 Call Extension data can show differently in different reports, depending on [how you set up Call Extensions in your ads](./hlp_BA_PROC_AddCallExtension.md).
 
-<table>
-  <tr>
-    <th scope="col">Option selected</th>
-    <th scope="col">Report</th>
-    <th scope="col">Data shown</th>
-    <th scope="col">What it costs</th>
-    <th scope="col">Where available</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Bing forwarding number and Show a toll-free number</th>
-    <td>Ad extension by Ad/Keyword report</td>
-    <td>Ad extension type name =  Metered Extension</td>
-    <td>
-        Click calls: Charge CPC bid  
-        Manual calls: No Charge
-      </td>
-    <td>US and UK only 
-        All devices
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Bing forwarding number and Show a toll-free number</th>
-    <td>Call forwarding details report</td>
-    <td>Call details information</td>
-    <td>
-        Click calls: Charge CPC bid  
-        Manual calls: No Charge
-      </td>
-    <td>US and UK only 
-        All devices
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Bing forwarding number and Show a local number</th>
-    <td>Ad Extension by Ad/Keyword report</td>
-    <td>Ad Extension type name =  Metered Extension</td>
-    <td>
-        Click calls: Charge CPC bid  
-        Manual calls: No Charge
-      </td>
-    <td>
-        US and UK only 
-        All devices
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Bing forwarding number and Show a local number</th>
-    <td>Call forwarding details report</td>
-    <td>Call details information</td>
-    <td>
-        Click calls: Charge CPC bid  
-        Manual calls: No Charge
-      </td>
-    <td>
-        US and UK only 
-        All devices
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">On smartphones using my own phone number</th>
-    <td>Ad Extension by Ad/Keyword report</td>
-    <td>Ad Extension type name =  Call Extension </td>
-    <td>
-        Click calls only: Charge CPC bid 
-      </td>
-    <td>
-        Global 
-        Smartphones only
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">On smartphones using my own phone number</th>
-    <td>Call forwarding details report</td>
-    <td>Call details are not available for this selection</td>
-    <td>
-        N/A
-      </td>
-    <td>
-        N/A
-      </td>
-  </tr>
-</table>
+|Option selected|Report|Data shown|What it costs|Where available|
+|---|---|---|---|---|
+|Bing forwarding number and Show a toll-free number|Ad extension by Ad/Keyword report|Ad extension type name =  Metered Extension|Click calls: Charge CPC bid          Manual calls: No Charge|US and UK only         All devices|
+|Bing forwarding number and Show a toll-free number|Call forwarding details report|Call details information|Click calls: Charge CPC bid          Manual calls: No Charge|US and UK only         All devices|
+|Bing forwarding number and Show a local number|Ad Extension by Ad/Keyword report|Ad Extension type name =  Metered Extension|Click calls: Charge CPC bid          Manual calls: No Charge|US and UK only         All devices|
+|Bing forwarding number and Show a local number|Call forwarding details report|Call details information|Click calls: Charge CPC bid          Manual calls: No Charge|US and UK only         All devices|
+|On smartphones using my own phone number|Ad Extension by Ad/Keyword report|Ad Extension type name =  Call Extension|Click calls only: Charge CPC bid|Global         Smartphones only|
+|On smartphones using my own phone number|Call forwarding details report|Call details are not available for this selection|N/A|N/A|
 
 

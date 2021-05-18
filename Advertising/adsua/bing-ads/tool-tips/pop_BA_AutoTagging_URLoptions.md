@@ -9,6 +9,6 @@ ms.author: eur
 
 # Auto-tagging
 
-**What it is: **    Microsoft Advertising automatically adds Microsoft Click ID (MSCLKID) to your landing page URLs to allow conversion tracking.
+**What it is:**     Microsoft Advertising automatically adds Microsoft Click ID (MSCLKID) to your landing page URLs to allow conversion tracking.
 
 

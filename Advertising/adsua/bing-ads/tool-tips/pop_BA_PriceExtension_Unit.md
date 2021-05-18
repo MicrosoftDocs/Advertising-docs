@@ -9,6 +9,6 @@ ms.author: eur
 
 # Unit (optional)
 
-**What it is:** Allows you to specify the service cost in terms of hour, day, week, etc.
+**What it is:**  Allows you to specify the service cost in terms of hour, day, week, etc.
 
 

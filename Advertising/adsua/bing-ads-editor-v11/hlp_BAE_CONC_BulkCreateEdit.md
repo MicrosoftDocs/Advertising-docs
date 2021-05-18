@@ -1,7 +1,7 @@
 ---
 title: Tips for adding and updating campaign data
 description: Learn the many ways you can add or udpdate data using Microsoft Advertising Editor .
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

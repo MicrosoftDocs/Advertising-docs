@@ -9,8 +9,8 @@ ms.author: eur
 
 # Search queries that could trigger your ad
 
-**      What it is:    **    This a list of search queries that could trigger your ad when you apply this recommendation.
+**      What it is:**     This a list of search queries that could trigger your ad when you apply this recommendation.
 
-**      What you need to know:    **    These search queries are based on your website content.
+**      What you need to know:**     These search queries are based on your website content.
 
 

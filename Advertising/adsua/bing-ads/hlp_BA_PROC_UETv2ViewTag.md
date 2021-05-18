@@ -52,12 +52,12 @@ The UET tag page shows the status, associations, and tracking code.
             <strong>What it is:</strong>  This is the status of the UET tag. It can be unverified, tag active, or tag inactive.</td>
     <td>
             <strong>Why important:</strong>   Lets you know if your UET tag is working or not. 
-
-                <strong>Unverified</strong>: Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix. 
-             
-                <strong>Tag active</strong>: Your UET tag is working and sending user activity data to Microsoft Advertising. 
-            
-                <strong>Tag inactive</strong>: Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
+> 
+                <strong>Unverified</strong> : Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix. 
+>              
+                <strong>Tag active</strong> : Your UET tag is working and sending user activity data to Microsoft Advertising. 
+>             
+                <strong>Tag inactive</strong> : Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
               
           </td>
   </tr>

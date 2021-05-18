@@ -20,6 +20,7 @@ Every time someone performs a search on the Microsoft Search Network,     Micros
 1. Select **Download** and then select the **Format** and **Segment** of the report.
 1. Select **Download**.
 
+ 
 ## Read the report
 
 The auction insights report reveals data on key performance statistics for you and your competitors.

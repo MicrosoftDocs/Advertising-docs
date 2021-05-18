@@ -9,8 +9,8 @@ ms.author: eur
 
 # Sold-to name
 
-**What it is: **    The name of the customer to whom the order was sold.
+**What it is:**     The name of the customer to whom the order was sold.
 
-**Why it’s important: **    The customer who finally receives the advertising for this account.
+**Why it’s important:**     The customer who finally receives the advertising for this account.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous week’s conversions
 
-**What it is**: Last week’s number of conversions with your current accelerated budget.
+**What it is** : Last week’s number of conversions with your current accelerated budget.
 
 

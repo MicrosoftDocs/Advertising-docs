@@ -1,7 +1,7 @@
 ---
 title: Contact Support
 description: If you need personal assistance and can't find your answer in Help, we invite you to contact Microsoft Advertising Editor Support.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

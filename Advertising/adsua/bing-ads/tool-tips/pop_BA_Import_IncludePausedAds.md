@@ -9,6 +9,6 @@ ms.author: eur
 
 # Include paused ads when importing new ads
 
-**      What it is:    **    By default, Microsoft Advertising imports new active ads. When enabled, this option will allow you to include paused ads with your active ones during an import.
+**      What it is:**     By default, Microsoft Advertising imports new active ads. When enabled, this option will allow you to include paused ads with your active ones during an import.
 
 

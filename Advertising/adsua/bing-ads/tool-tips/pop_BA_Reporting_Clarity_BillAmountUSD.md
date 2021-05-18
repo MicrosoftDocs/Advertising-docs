@@ -9,6 +9,6 @@ ms.author: eur
 
 # Billed amount (USD)
 
-**What it is: **   The amount of your bill in US dollars (USD).
+**What it is:**    The amount of your bill in US dollars (USD).
 
 

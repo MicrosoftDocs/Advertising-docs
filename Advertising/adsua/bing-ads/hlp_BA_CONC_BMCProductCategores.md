@@ -21,6 +21,7 @@ Here are some rules on using the BingCategory attribute.
 - You must use the category’s full path.        “Baby and Nursery &gt; Baby Activities &gt; Swings” is valid        “Swings” or “Baby and Nursery” alone is invalid
 - IDs, instead of string values, are supported.
 
+**Full list of taxonomy values** :
 - [All languages](https://go.microsoft.com/fwlink?LinkId=2118268)
 - [Example feed file](https://go.microsoft.com/fwlink?LinkId=506749)
 

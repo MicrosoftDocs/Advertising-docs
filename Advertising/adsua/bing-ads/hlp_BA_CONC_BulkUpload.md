@@ -29,9 +29,9 @@ Make your changes in the downloaded spreadsheet.  See [this article](./hlp_BA_CO
 - Do not modify or remove the row that contains the column names.
 - Do not modify or remove the ```**Format Version**``` row. The number in the Name column must be 5 or 6.
 - Required columns: 
-**For every spreadsheet: ** ```**Type**``` (i.e., ```Campaign```, ```Text Ad```, etc.), ```**ID**```, ```**Parent ID**```, ```**Account ID**```, and ```**Name**``` (the value in the ```**Name**``` column refers to the format version). If you are uploading a spreadsheet that you got from Bulk Upload API, you will need to add an ```**Account ID**``` column.
+**For every spreadsheet:**  ```**Type**``` (i.e., ```Campaign```, ```Text Ad```, etc.), ```**ID**```, ```**Parent ID**```, ```**Account ID**```, and ```**Name**``` (the value in the ```**Name**``` column refers to the format version). If you are uploading a spreadsheet that you got from Bulk Upload API, you will need to add an ```**Account ID**``` column.
 
-**Different operations require different columns:** For example, if you want to pause keywords, you must include the ```**Status**``` column. If you want to create a new campaign, you will need to include all campaign columns. If you are not sure which columns are campaign columns and which columns are keyword columns, we recommend downloading some campaigns or keywords from your account to serve as a template.
+**Different operations require different columns:**  For example, if you want to pause keywords, you must include the ```**Status**``` column. If you want to create a new campaign, you will need to include all campaign columns. If you are not sure which columns are campaign columns and which columns are keyword columns, we recommend downloading some campaigns or keywords from your account to serve as a template.
 
 - Image extensions cannot be uploaded at this time.
 - Keep the data in the same order as in the original downloaded spreadsheet.

@@ -9,14 +9,16 @@ ms.author: eur
 
 # Create a Microsoft Merchant Center store
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2130007)    </content_tile>
+
 If you want to list your feed on Bing, you first need to create Microsoft Merchant Center store. Once you create a store it will either be auto-approved, auto-rejected or queued for a manual review. The review can take up to 5 days, but you will receive an email when an approval decision has been made.
 
 1. On the top menu, click **Tools** and then click ** Microsoft Merchant Center**  (or from the global menu at the top of the page, click **Tools** and then **Microsoft Merchant Center**).
 1. Click **Create store**.
 1. Enter your store info, including your Store description and SSL Checkout selection. You also have the option to block aggregators here.
 1. You'll also be asked to verify your site through **Domain validation**. You have two choices:
-  - Validated via Bing Webmaster Tools. [Learn more](./hlp_BA_PROC_ClaimYourDomain.md)
-  - Validated via [Universal Event Tracking (UET) tag](./hlp_BA_CONC_UETv2WhatIsTag.md)
+   - Validated via Bing Webmaster Tools. [Learn more](./hlp_BA_PROC_ClaimYourDomain.md)
+   - Validated via [Universal Event Tracking (UET) tag](./hlp_BA_CONC_UETv2WhatIsTag.md)
 
 **Note: **If you validate your domain using a UET tag, the tag has to register at least 50 events before the domain appears as an option when you create a Microsoft Merchant Center store.
 

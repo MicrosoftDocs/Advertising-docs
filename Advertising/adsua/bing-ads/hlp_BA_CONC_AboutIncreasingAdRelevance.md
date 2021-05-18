@@ -37,4 +37,5 @@ If your landing page isn't what users expect (and what your ad implies) you risk
 
 It's best to use image alt tags and header tags to make sure the Microsoft Advertising quality score checker has access to the information regardless of whether or not your image or video links are crawled.
 
+ 
 

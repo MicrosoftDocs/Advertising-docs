@@ -9,7 +9,7 @@ ms.author: eur
 
 # Condition
 
-**What it is:** The condition of your item, as listed in your catalog. Valid options are:
+**What it is:**  The condition of your item, as listed in your catalog. Valid options are:
 - New
 - Used
 - Collectable
@@ -17,6 +17,6 @@ ms.author: eur
 - Refurbished
 - Remanufactured
 
-**What you need to know:** Only **New** items are eligible to be displayed in your product ads.
+**What you need to know:**  Only **New**  items are eligible to be displayed in your product ads.
 
 

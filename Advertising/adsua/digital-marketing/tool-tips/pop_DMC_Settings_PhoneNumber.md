@@ -1,7 +1,7 @@
 ---
 title: Phone number
 description: Phone number
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,6 +9,6 @@ ms.author: eur
 
 # Phone number
 
-**What it is: ** The phone number registered to your business.
+**What it is:**  The phone number registered to your business.
 
 

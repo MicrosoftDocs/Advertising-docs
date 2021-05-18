@@ -9,6 +9,6 @@ ms.author: eur
 
 # Weekly search volume change
 
-**What it is:**     The percentage of change in popularity for the search query in the last week. The percentage is updated daily.
+**What it is:**      The percentage of change in popularity for the search query in the last week. The percentage is updated daily.
 
 

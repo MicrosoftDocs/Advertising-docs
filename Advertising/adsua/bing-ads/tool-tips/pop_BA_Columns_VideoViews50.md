@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video views at 50%
 
-**What it is:** The number of times a user completed at least 50% of the video (measured directly).
+**What it is:**  The number of times a user completed at least 50% of the video (measured directly).
 
 

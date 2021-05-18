@@ -1,7 +1,7 @@
 ---
 title: Set default values for new and imported campaigns
 description: Set default values Microsoft Advertising Editor to be used whenever you create a new campaign, ad group, or keyword.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -9,6 +9,8 @@ ms.author: eur
 
 # About Microsoft Shopping Campaigns feed files
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2129851)    </content_tile>
+
 To run a Microsoft Shopping Campaigns, you must upload a feed file. A feed file contains a list of your products and attributes that define how they will display on Bing.    Whenever you want to update your feed, you upload the updated feed file. Each store can have more than one feed but the products in each file must be unique per market.
 
 ## How do I create a feed?
@@ -50,6 +52,8 @@ Your feed expires after 30 days, which causes the products to stop publishing, s
 
 ## How do I submit my feed file?
 After you have created and (optionally) tested a corresponding feed file, it can be submitted to the associated feed. There are four different ways to submit:
+
+<anchor id="SubmitFeedFile" />
 
 ## Upload feed file manually (Files under 4MB)
 You can use this option if the feed file is smaller than 4MB.
@@ -111,7 +115,7 @@ You can use the Google Merchant Center import tool, if you already have product 
 ## What are the file format requirements and accepted symbols?
 ## File format requirements
 
-**Note**: If the following file format requirements are not met, your feed file will not be processed.
+**Note** : If the following file format requirements are not met, your feed file will not be processed.
 
 - File must be tab delimited plain text with extensions: .txt, .zip, .gz, .gzip.              -	.xml files are also accepted (if Google-formatted).
 - If uploading via FTP/SFTP, the file name of .txt or .xml files have to match the file name specified for a feed’s settings.              In the case of compressed text format, the compressed .txt file inside the archive (.zip, .gz, .gzip) must have the matching file name. Any feed file that is archived needs to have a single compressed file inside.
@@ -126,51 +130,13 @@ You can use the Google Merchant Center import tool, if you already have product 
 
 Here are the symbols/special characters and what attribute they are accepted in.
 
-<table>
-  <tr>
-    <th scope="col">Symbols</th>
-    <th scope="col">Where you can use</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Period [.]</th>
-    <td>Prices, URLs</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Colon [:]  
-              Question [?]  
-              Forward-slash [/]  
-              Equal [=]
-            </th>
-    <td>URLs</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Hyphen [-]
-            </th>
-    <td>Offer Identifiers where this is valid (eg: ISBN, MPN)</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Pipe [|]  
-              Comma [,]   
-              Greater [&gt;]
-            </th>
-    <td>Multi-value fields (MerchantCategory, B_Category)</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Percent [%]  
-              Special ASCII characters
-            </th>
-    <td>Redirect URL (ads_redirect)</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Any Unicode symbol
-            </th>
-    <td>Brand, Title, Description</td>
-  </tr>
-</table>
+|Symbols|Where you can use|
+|---|---|
+|Period [.]|Prices, URLs|
+|Colon [:]                Question [?]                Forward-slash [/]                Equal [=]|URLs|
+|Hyphen [-]|Offer Identifiers where this is valid (eg: ISBN, MPN)|
+|Pipe [|]                Comma [,]                 Greater [>]|Multi-value fields (MerchantCategory, B_Category)|
+|Percent [%]                Special ASCII characters|Redirect URL (ads_redirect)|
+|Any Unicode symbol|Brand, Title, Description|
 
 

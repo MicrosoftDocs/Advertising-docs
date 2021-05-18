@@ -9,6 +9,6 @@ ms.author: eur
 
 # Billed amount
 
-**What it is: **    The amount of your bill.
+**What it is:**     The amount of your bill.
 
 

@@ -54,19 +54,19 @@ You're now signed in to Microsoft Advertising!
 
 Here are some things you might find useful when creating your first account:
 
-- **Email. **This is the email address where you want to receive emails from Microsoft Advertising. You can use the same email address that you are using to sign in to Microsoft Advertising, or you can use a different one.
-- **Country or region. **The country or region determines the language options available to you in sign up. It is typically the country or region where you manage your business. The country or region you select in sign up will not affect where your ads will run, what language the ads can be written in, the currency you pay in, or the time zone of your reports.
-- **Language. **The language you select will affect the language that you see when you sign in to Microsoft Advertising and the emails that you receive from us. It does not affect the language of your ads.
-- **Currency. ****Once you create an account, you cannot change the currency.** Choose your currency carefully because currency can affect your billing options. For a full list of payment methods you can use based on your country-currency combination, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md).
-- **Time zone. **This is the default time zone for your campaigns, and so we recommend that you use your local time zone. Time zone does not affect billing. All bills are based on Pacific Time.
+- **Email.** This is the email address where you want to receive emails from Microsoft Advertising. You can use the same email address that you are using to sign in to Microsoft Advertising, or you can use a different one.
+- **Country or region.** The country or region determines the language options available to you in sign up. It is typically the country or region where you manage your business. The country or region you select in sign up will not affect where your ads will run, what language the ads can be written in, the currency you pay in, or the time zone of your reports.
+- **Language.** The language you select will affect the language that you see when you sign in to Microsoft Advertising and the emails that you receive from us. It does not affect the language of your ads.
+- **Currency.** **Once you create an account, you cannot change the currency.** Choose your currency carefully because currency can affect your billing options. For a full list of payment methods you can use based on your country-currency combination, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md).
+- **Time zone.** This is the default time zone for your campaigns, and so we recommend that you use your local time zone. Time zone does not affect billing. All bills are based on Pacific Time.
 
 ## FAQ
 
 ## Why does Microsoft Advertising require customers to use an email address (Microsoft account) to sign in?
 Using an email address (Microsoft account) to sign in offers two advantages:
 
-- **Security. ** Microsoft account offers a two-step verification process that helps ensure the safety and integrity            of your Microsoft Advertising account. If you choose to use [Two-step verification](https://go.microsoft.com/fwlink?LinkId=398313), you will be required to provide a security code, in addition to your email address and password,            when accessing your account from any device that hasn’t been previously authorized as a [trusted device](https://go.microsoft.com/fwlink?LinkId=398339).
-- **Simplified sign in.** Using one account to sign in to all your Microsoft products means you can get and stay           connected more easily.
+- **Security.**  Microsoft account offers a two-step verification process that helps ensure the safety and integrity            of your Microsoft Advertising account. If you choose to use [Two-step verification](https://go.microsoft.com/fwlink?LinkId=398313), you will be required to provide a security code, in addition to your email address and password,            when accessing your account from any device that hasn’t been previously authorized as a [trusted device](https://go.microsoft.com/fwlink?LinkId=398339).
+- **Simplified sign in.**  Using one account to sign in to all your Microsoft products means you can get and stay           connected more easily.
 
 ## What is a Microsoft account?
 "Microsoft account" is the new name for what used to be called "Windows Live ID." Your Microsoft account is the          combination of an email address and a password that you use to sign in to services or devices, such as Office365, Skype, Hotmail, Messenger,          OneDrive, Windows Phone, Xbox LIVE, or Outlook.com. If you use an email address and password to sign in to these or other          services, you already have a Microsoft account. Or if you prefer, you can create a new Microsoft account using any of your email addresses (for example, Gmail or Yahoo).

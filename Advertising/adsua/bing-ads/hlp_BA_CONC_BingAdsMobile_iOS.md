@@ -14,18 +14,18 @@ The Microsoft Advertising App for iOS is a collection of simple tools that make 
 ## What are the key features of the Microsoft Advertising App for iOS?
 Here's what you can do in theMicrosoft Advertising App for iOS:
 
-- **Search for** accounts, campaigns, ad groups, ads, keywords
-- **Change the status of** campaigns, ad groups, ads, keywords
-- **Change the budget of** campaigns
-- **Change the bid of** ad groups, keywords
-- **View multiple performance metrics visually** using graphs
-- **Visualize your account's Share of Voice** report to see the impressions you're losing out on and possibly losing to your competitors.
-- **Edit the title, description, display, final URL, and device preference** of an existing ad
-- **View editorial disapproval reasons** and links to Microsoft Advertising policies
-- **Perform inline editorial appeals** for existing ads
-- **Edit Expanded Text Ads** on the go
-- **Add new keywords** based on Keyword Opportunities
-- **Edit Keyword Opportunities** before accepting them and receive new Keyword Opportunity notifications
+- **Search for**  accounts, campaigns, ad groups, ads, keywords
+- **Change the status of**  campaigns, ad groups, ads, keywords
+- **Change the budget of**  campaigns
+- **Change the bid of**  ad groups, keywords
+- **View multiple performance metrics visually**  using graphs
+- **Visualize your account's Share of Voice**  report to see the impressions you're losing out on and possibly losing to your competitors.
+- **Edit the title, description, display, final URL, and device preference**  of an existing ad
+- **View editorial disapproval reasons**  and links to Microsoft Advertising policies
+- **Perform inline editorial appeals**  for existing ads
+- **Edit Expanded Text Ads**  on the go
+- **Add new keywords**  based on Keyword Opportunities
+- **Edit Keyword Opportunities**  before accepting them and receive new Keyword Opportunity notifications
 - **Add funds for prepay account**
 
 ## What do I need to use the Microsoft Advertising App for iOS?
@@ -44,11 +44,11 @@ If you already sign in to an existing Microsoft Advertising account with an emai
 
 Having trouble signing in? Here are solutions to some of the reasons why you might be having issues:
 
-- **Problem #1**: You're trying to sign in to the app with a Microsoft account email address, but it hasn't been associated to a Microsoft Advertising user yet. You're likely seeing the following error message: "We don't recognize this Microsoft account."
-- **Solution #1**: To resolve this issue, you'll need to transition to using a Microsoft account to sign in. This enables you to sign into Microsoft Advertising using your email address and password.
+- **Problem #1** : You're trying to sign in to the app with a Microsoft account email address, but it hasn't been associated to a Microsoft Advertising user yet. You're likely seeing the following error message: "We don't recognize this Microsoft account."
+- **Solution #1** : To resolve this issue, you'll need to transition to using a Microsoft account to sign in. This enables you to sign into Microsoft Advertising using your email address and password.
 
-- **Problem #2**: When you try to sign in to the app, you see the following message: "There is no Microsoft Advertising account associated with this email address."
-- **Solution #2**: If your company is already using Microsoft Advertising, reach out to the person who manages the account and ask them to invite you as a new user. Once they do, you’ll be able to set yourself up as a user on the account and will then be able to sign in to the app successfully.
+- **Problem #2** : When you try to sign in to the app, you see the following message: "There is no Microsoft Advertising account associated with this email address."
+- **Solution #2** : If your company is already using Microsoft Advertising, reach out to the person who manages the account and ask them to invite you as a new user. Once they do, you’ll be able to set yourself up as a user on the account and will then be able to sign in to the app successfully.
 
 ## To sign out
 
@@ -69,11 +69,11 @@ Having trouble signing in? Here are solutions to some of the reasons why you mig
 1. Confirm the payment and tap **Yes**.
 
 ## How do I view and set my existing payment methods as primary?
- **View payment methods** 
+ **View payment methods**  
 1. Tap the **Billings** tab at the bottom of the page.
 1. Under **Payment Methods**, tap **Set up a primary card**.
 
- **Set up primary payment method** 
+ **Set up primary payment method**  
 1. Tap the **Billings** tab at the bottom of the page.
 1. Under **Payment Methods**, tap **Set up a primary card**.
 1. Tap the three dots on the credit card you want to use as a primary card.
@@ -235,64 +235,14 @@ They use the same settings as your existing automated rule email settings.
 ## What statistics can I view from the Share of Voice report in the app?
 The Share of Voice report available from the app provides a much more simplistic rollup at the account level. You can swipe through the carousel to see how each statistic contributed to your lost impression or tap an individual stat to focus more on. Take a look at the Share of Voice statistics provided in the app below:
 
-<table>
-  <tr>
-    <th scope="col">
-            Performance statistic
-          </th>
-    <th scope="col">
-            What it is
-          </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Impression share
-          </th>
-    <td>
-            The estimated percentage of impressions, out of the total available impressions in the market you were targeting. For example, out of the estimated 59,000 impressions that occurred on this day in your targeted market, you got only about 2,300, or 3%.
-          </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Lost due to rank
-          </th>
-    <td>
-            The estimated percentage of impressions your ads did not receive due to issues with your ad ranking.
-          </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Lost due to expected click-through rate (CTR)
-          </th>
-    <td>
-            The estimated percentage of impressions your ads did not receive due to issues with expected click-through rate.
-          </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Lost due to budget
-          </th>
-    <td>
-            The estimated percentage of impressions your ads did not receive due to issues with your campaign's daily budget.
-          </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Lost due to bids
-          </th>
-    <td>
-            The estimated percentage of impressions your ads did not receive due to issues with your keyword bids. For example, your keyword bids are low and not competing will in the auction marketplace.
-          </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-            Lost to ad relevance
-          </th>
-    <td>
-            The estimated percentage of impressions your ads did not receive due to issues with ad relevance scores.
-          </td>
-  </tr>
-</table>
+|Performance statistic|What it is|
+|---|---|
+|Impression share|The estimated percentage of impressions, out of the total available impressions in the market you were targeting. For example, out of the estimated 59,000 impressions that occurred on this day in your targeted market, you got only about 2,300, or 3%.|
+|Lost due to rank|The estimated percentage of impressions your ads did not receive due to issues with your ad ranking.|
+|Lost due to expected click-through rate (CTR)|The estimated percentage of impressions your ads did not receive due to issues with expected click-through rate.|
+|Lost due to budget|The estimated percentage of impressions your ads did not receive due to issues with your campaign's daily budget.|
+|Lost due to bids|The estimated percentage of impressions your ads did not receive due to issues with your keyword bids. For example, your keyword bids are low and not competing will in the auction marketplace.|
+|Lost to ad relevance|The estimated percentage of impressions your ads did not receive due to issues with ad relevance scores.|
 
 ## What does my Quality Score tell me?
 Your Quality Score can be viewed from the campaigns, ad groups, and ads grids. Microsoft Advertising calculates how competitive your ads are in the search marketplace by measuring the relevance of your keywords, ads, and landing pages to your audience with its Quality Score metric. Quality Score is a weighted value between 1 (underperforming) and 10 (outperforming) used by advertisers to track the performance of changes they make to their ad copy and landing page to make them more relevant to their target audience

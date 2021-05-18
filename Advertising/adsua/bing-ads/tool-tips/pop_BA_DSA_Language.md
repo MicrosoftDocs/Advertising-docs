@@ -9,6 +9,6 @@ ms.author: eur
 
 # Language
 
-**What it is:** These are the languages of the websites you want your ads to appear in.
+**What it is:**  These are the languages of the websites you want your ads to appear in.
 
 

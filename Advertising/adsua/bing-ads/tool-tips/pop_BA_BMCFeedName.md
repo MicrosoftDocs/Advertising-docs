@@ -9,8 +9,8 @@ ms.author: eur
 
 # Feed name
 
-**What it is:** The name of your feed file.
+**What it is:**  The name of your feed file.
 
-**What you need to know:** Name the feed file based on the products listed in the catalog. This is not displayed in your ad.
+**What you need to know:**  Name the feed file based on the products listed in the catalog. This is not displayed in your ad.
 
 

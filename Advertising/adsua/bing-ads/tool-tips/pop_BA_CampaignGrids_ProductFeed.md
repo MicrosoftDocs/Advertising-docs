@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product feed
 
-**What it is:** A product feed contains a list of product attributes, like GTIN, MPN, and brand.
+**What it is:**  A product feed contains a list of product attributes, like GTIN, MPN, and brand.
 
 

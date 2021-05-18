@@ -9,6 +9,6 @@ ms.author: eur
 
 # Microsoft Advertising account
 
-**      What you need to know:    **  This is the Microsoft Advertising account that your Google Ads account will be imported to.
+**      What you need to know:**   This is the Microsoft Advertising account that your Google Ads account will be imported to.
 
 

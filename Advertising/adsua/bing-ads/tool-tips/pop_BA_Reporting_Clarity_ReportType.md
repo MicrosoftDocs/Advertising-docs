@@ -9,8 +9,8 @@ ms.author: eur
 
 # Report type
 
-**What it is:**The report template associated with the report. For example, Share of voice or Search term.
+**What it is:** The report template associated with the report. For example, Share of voice or Search term.
 
-**Why it’s important:**Each report type has specific columns associated with it to help you analyze the pertinent data.
+**Why it’s important:** Each report type has specific columns associated with it to help you analyze the pertinent data.
 
 

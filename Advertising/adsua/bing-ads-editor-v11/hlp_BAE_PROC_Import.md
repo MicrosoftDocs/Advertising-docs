@@ -1,7 +1,7 @@
 ---
 title: Importing and exporting with Microsoft Advertising Editor
 description: Importing and exporting with Microsoft Advertising Editor
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,9 +11,9 @@ ms.author: eur
 
 Use Microsoft Advertising Editor to quickly:
 
-- **Import data from other online advertising programs.** Get Microsoft Advertising campaigns up and running quickly by exporting accounts, campaigns, and ads from Google, Yahoo, or other programs, and then importing them into Microsoft Advertising Editor.
-- **Bulk-edit Microsoft Advertising data in a spreadsheet. ** If you prefer to edit data in a Microsoft Excel spreadsheet, export it as a comma-separated values (.csv) file, edit it in Excel, and then import the data into Microsoft Advertising Editor.
-- **Base a new campaign on an existing one. ** To create a new campaign from an existing campaign, export the campaign, change the campaign name and edit the data, and then import the new campaign into Microsoft Advertising Editor. You can also do this with ad groups but be sure to change the ad group name.
+- **Import data from other online advertising programs.**  Get Microsoft Advertising campaigns up and running quickly by exporting accounts, campaigns, and ads from Google, Yahoo, or other programs, and then importing them into Microsoft Advertising Editor.
+- **Bulk-edit Microsoft Advertising data in a spreadsheet.**  If you prefer to edit data in a Microsoft Excel spreadsheet, export it as a comma-separated values (.csv) file, edit it in Excel, and then import the data into Microsoft Advertising Editor.
+- **Base a new campaign on an existing one.**  To create a new campaign from an existing campaign, export the campaign, change the campaign name and edit the data, and then import the new campaign into Microsoft Advertising Editor. You can also do this with ad groups but be sure to change the ad group name.
 
 > [!NOTE]
 > The file must be an Excel or .csv (comma-separated values) file and must be closed before you try to import it.
@@ -30,7 +30,7 @@ Using your Google Ads account credentials and the Google API, Microsoft Advertis
 1. Copy the provided code and paste it into Microsoft Advertising Editor.
 1. You can import all campaigns within an account, or, if your account is very large, only selected campaigns. Click **Next**.
 1. Review the steps to import from Google Ads and post directly to the server, then click **Next**.
-1. Set your import options. **Note**: What you import here will get posted directly to the server, so be sure to check the import options you want.
+1. Set your import options. **Note** : What you import here will get posted directly to the server, so be sure to check the import options you want.
 1. Click **Next**.
 1. Schedule your import to run now, once at a later date and time, or on a recurring basis.
 1. Click **Import and post to server**.
@@ -61,7 +61,7 @@ Campaign data can be imported in .csv, .txt, .tsv, .xls, or .xlsx files.
 1. Review the Import summary to see what entities were newly added, updated or couldn't be imported (skipped).
 1. If you want to review the details of the campaigns and make changes, click the link next to **Download the details**.
 
-**Things to note**:
+**Things to note** :
 - Unmatched columns will not be imported.
 - You can optionally edit destination URLs and choose to share identical sets of ad extensions between campaigns.
 - For details on how to add location targets, see [How do I add a location target?](./hlp_BAE_PROC_AddLocationTarget.md)
@@ -79,7 +79,7 @@ Campaign data can be imported in .csv, .txt, .tsv, .xls, or .xlsx files.
 1. Review the **Import summary** to see what entities were newly added, updated or couldn't be imported (skipped).
 1. If you want to review the details of the campaigns and make changes, click the link next to **Download the details**.
 
-**Things to note**:
+**Things to note** :
 - Unmatched columns will not be imported.
 - You can optionally edit destination URLs and choose to share identical sets of ad extensions between campaigns.
 
@@ -95,7 +95,7 @@ Campaign data can be imported in .csv, .txt, .tsv, .xls, or .xlsx files.
 1. Review the **Import summary** to see what entities were newly added, updated or couldn't be imported (skipped).
 1. If you want to review the details of the campaigns and make changes, click the link next to **Download the details**.
 
-**Things to note**:
+**Things to note** :
 - Unmatched columns will not be imported.
 - You can optionally edit destination URLs and choose to share identical sets of ad extensions between campaigns.
 

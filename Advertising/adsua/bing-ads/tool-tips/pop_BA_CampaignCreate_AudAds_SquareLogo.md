@@ -9,9 +9,9 @@ ms.author: eur
 
 # Square logo
 
-**What it is**: This is one of two possible aspect ratios for logos that could appear in your audience ads.
+**What it is** : This is one of two possible aspect ratios for logos that could appear in your audience ads.
 
-**What you need to know**: Square logos have an aspect ratio of 1:1. You can crop a logo to this aspect ratio when you add it. Click **Add** to add a new or existing logo or **Edit** to make changes to a logo you've previously selected.
+**What you need to know** : Square logos have an aspect ratio of 1:1. You can crop a logo to this aspect ratio when you add it. Click **Add** to add a new or existing logo or **Edit** to make changes to a logo you've previously selected.
 
 The requirements for adding a logo are:
 - **Accepted file types for logos:** JPEG, PNG, and GIF (without animation)

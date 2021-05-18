@@ -13,8 +13,8 @@ Once you set a campaign to [target by geographic location](./hlp_BA_PROC_Targeti
 
 Two columns in this report give you details about the geographic location:
 
-- **Location type:** Shows the location used to serve your ad, either the customers' physical location or where they were looking (their location of interest).
-- **Most specific location:** Shows the most specific location that was used for targeting, giving you a more detailed view of where your ads are being displayed.       Based on system and data limitations, Microsoft Advertising can't always receive the most granular location. For example, this column could list a city, a state or an entire country.
+- **Location type:**  Shows the location used to serve your ad, either the customers' physical location or where they were looking (their location of interest).
+- **Most specific location:**  Shows the most specific location that was used for targeting, giving you a more detailed view of where your ads are being displayed.       Based on system and data limitations, Microsoft Advertising can't always receive the most granular location. For example, this column could list a city, a state or an entire country.
 
 ## How to read the report
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account name
 
-**What it is: **This is the name of the linked account in which changes are pending for billing and payment responsibilities.
+**What it is:** This is the name of the linked account in which changes are pending for billing and payment responsibilities.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Format
 
-**What it is:**The type of file your report is saved as.
+**What it is:** The type of file your report is saved as.
 
-**Why it’s important:**    You can download to a .csv, .tsv, or .xlsx (Microsoft Excel) file.
+**Why it’s important:**     You can download to a .csv, .tsv, or .xlsx (Microsoft Excel) file.
 
 

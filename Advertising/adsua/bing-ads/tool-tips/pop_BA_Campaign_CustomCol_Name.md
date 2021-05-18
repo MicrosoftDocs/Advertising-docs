@@ -9,6 +9,6 @@ ms.author: eur
 
 # Column name
 
-**What it is**: How this column will be named in the Campaigns table.
+**What it is** : How this column will be named in the Campaigns table.
 
 

@@ -9,6 +9,7 @@ ms.author: eur
 
 # Location insertion for responsive search ads
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Calling out locations within ad copy can be a powerful way to improve relevancy by capturing the attention of your consumers in a highly tailored manner. This can lead to more qualified traffic to your website to drive more conversions and a better return on investment. You can now customize your ads to specific locations using the power and simplicity of [responsive search ads](./hlp_BA_CONC_ResponsiveSearchAds.md). They can be inserted within different headers and descriptions of your RSAs based on local areas, states, or even countries.
 
 ## How it works

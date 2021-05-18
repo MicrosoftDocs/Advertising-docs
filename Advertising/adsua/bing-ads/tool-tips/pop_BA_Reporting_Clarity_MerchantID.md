@@ -9,6 +9,6 @@ ms.author: eur
 
 # Item ID
 
-**What it is:**    The ID of the product as it appears in the your Microsoft Merchent Center catalog.
+**What it is:**     The ID of the product as it appears in the your Microsoft Merchent Center catalog.
 
 

@@ -9,8 +9,10 @@ ms.author: eur
 
 # I'm having trouble adding a credit card or debit card
 
+[!INCLUDE [UserRole](./includes/UserRole.md)]
 Adding credit cards to Microsoft Advertising is easy and safe, but if you run into problems, take a look at the tips below.
 
+ 
 ## The credit card was added but has not been set as your primary payment method for this account.
 [!INCLUDE [Redesign](./includes/Redesign.md)]
 To make sure that your credit card is set (assigned to your account):
@@ -68,6 +70,7 @@ In any of these situations, you'll need to contact your credit card company.
 ## Multi-factor authentication was required, but has failed.
 Your bank might require multi-factor authentication to help prevent online fraud and unauthorized access to your account. If the one-time passcode didn't work, try resending the code or adding the card again. If this doesn't resolve the issue, please contact your bank to validate your information. Learn more about [Payment Services Directive 2 and Strong Customer Authentication](https://go.microsoft.com/fwlink?LinkId=2104266).
 
+ 
 If after you've reviewed these tips and addressed any problems and your account still has errors, please [contact support](https://go.microsoft.com/fwlink?LinkId=398371).
 
 

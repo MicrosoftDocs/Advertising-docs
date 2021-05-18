@@ -9,10 +9,10 @@ ms.author: eur
 
 # Payment setting
 
-**What it is:** [!INCLUDE [PaymentSettingNew](../includes/PaymentSettingNew.md)]
+**What it is:**  [!INCLUDE [PaymentSettingNew](../includes/PaymentSettingNew.md)]
 
-**What you need to know:** If you want to set up your account for monthly invoice billing, you can [learn how to apply here](../hlp_BA_PROC_MonthlyInvoiceApply.md).
+**What you need to know:**  If you want to set up your account for monthly invoice billing, you can [learn how to apply here](../hlp_BA_PROC_MonthlyInvoiceApply.md).
 
-**Get more info:**   [What are my billing options? Pay now or pay later](../hlp_BA_CONC_HowBillingWorks.md) 
+**Get more info:**    [What are my billing options? Pay now or pay later](../hlp_BA_CONC_HowBillingWorks.md) 
 
 

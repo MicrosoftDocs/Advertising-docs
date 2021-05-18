@@ -1,7 +1,7 @@
 ---
 title: Payment amount
 description: Payment amount
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,6 +9,6 @@ ms.author: eur
 
 # Payment amount
 
-**What it is:** The amount you are paying, excluding taxes.
+**What it is:**  The amount you are paying, excluding taxes.
 
 

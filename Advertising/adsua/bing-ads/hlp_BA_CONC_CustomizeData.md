@@ -25,9 +25,9 @@ You can customize the performance data you see in the table by adjusting columns
 1. To close the filter editing panel, click the **X**.
 1. (Optional) To save the filter you’ve created for later use, click **Save**, enter your filter name, and click **Save**.
 1. (Optional) To apply a saved filter:
-  - From the main menu on the far left, click **All Campaigns**.
-  - From the page menu, click the page you want to apply saved filters to. For example, **Campaigns**, **Ad groups**, or **Keywords**.
-  - Click **Add filter** and under **Saved filters** choose the saved filter you would like to apply.
+   - From the main menu on the far left, click **All Campaigns**.
+   - From the page menu, click the page you want to apply saved filters to. For example, **Campaigns**, **Ad groups**, or **Keywords**.
+   - Click **Add filter** and under **Saved filters** choose the saved filter you would like to apply.
 
 ## Add and remove columns
 1. From the main menu on the far left, select **All Campaigns**.

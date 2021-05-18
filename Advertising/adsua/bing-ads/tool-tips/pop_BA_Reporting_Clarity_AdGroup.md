@@ -9,8 +9,8 @@ ms.author: eur
 
 # Ad group
 
-**What it is:**    The name of the ad group.
+**What it is:**     The name of the ad group.
 
-**Why it’s important:**    If you have more than one ad group, use this column to sort ad group specific information together in your report.
+**Why it’s important:**     If you have more than one ad group, use this column to sort ad group specific information together in your report.
 
 

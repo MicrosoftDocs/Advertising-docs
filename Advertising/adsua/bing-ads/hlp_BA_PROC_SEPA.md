@@ -11,7 +11,7 @@ ms.author: eur
 
 When you add a SEPA Direct Debit payment method, we validate your bank account by making a small deposit to your account and then you enter that amount in Microsoft Advertising. This process takes some time but helps ensure the security of your account.
 
-**Please note: ** Payments via SEPA Direct Debit are only accepted for prepay accounts based in Germany and billed in euro. Also, only users with full permissions (Super Admins) can add, edit, or delete a payment method. Learn more [about user roles.](./hlp_BA_CONC_SSUserRoles.md)
+**Please note:**  Payments via SEPA Direct Debit are only accepted for prepay accounts based in Germany and billed in euro. Also, only users with full permissions (Super Admins) can add, edit, or delete a payment method. Learn more [about user roles.](./hlp_BA_CONC_SSUserRoles.md)
 
 ## How to pay using SEPA Direct Debit
 

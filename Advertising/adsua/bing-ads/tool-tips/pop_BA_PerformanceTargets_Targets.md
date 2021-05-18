@@ -9,6 +9,6 @@ ms.author: eur
 
 # Target metrics
 
-**What it is:**   The metrics (spend, clicks, avg. CPC) you set for your performance targets.
+**What it is:**    The metrics (spend, clicks, avg. CPC) you set for your performance targets.
 
 

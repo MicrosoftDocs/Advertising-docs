@@ -1,7 +1,7 @@
 ---
 title: Setup and Basics
 description: Setup and Basics
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -15,6 +15,7 @@ With bid strategies, you can have Microsoft Advertising manage your bids using o
 
 ## Enhanced CPC
 > [!IMPORTANT]
+> Enhanced CPC is available:
 > - For search ad and dynamic search ad campaigns worldwide.
 > - For Microsoft Shopping Campaigns wherever Microsoft Shopping Campaigns are available.
 
@@ -87,109 +88,20 @@ You cannot change bids for keywords that are using Target ROAS. This means that 
 > [!INCLUDE [AutoBidOverride](./includes/AutoBidOverride.md)]
 > [!INCLUDE [SharedBudgetException](./includes/SharedBudgetException.md)]
 
+ 
 ## Comparing bid strategies
 
-<table>
-  <tr>
-    <th scope="col">Bid strategy</th>
-    <th scope="col" style="text-align:center">Do I set bids myself?</th>
-    <th scope="col" style="text-align:center">Can I use a third-party bid management tool?</th>
-    <th scope="col" style="text-align:center">Do I need conversion tracking?</th>
-    <th scope="col" style="text-align:center">Campaign type supported</th>
-  </tr>
-  <tr>
-    <th scope="row">Enhanced CPC</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td>Search, dynamic search ad, shopping</td>
-  </tr>
-  <tr>
-    <th scope="row">Manual</th>
-    <td style="text-align:center">
-		  ![Yes](../images/Global_Icon_CheckMark.png)
-		</td>
-    <td style="text-align:center">
-		  ![Yes](../images/Global_Icon_CheckMark.png)
-		</td>
-    <td style="text-align:center">
-		  ![No](../images/Global_Icon_Xmark.png)
-		</td>
-    <td>Audience</td>
-  </tr>
-  <tr>
-    <th scope="row">Maximize Clicks</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td>Search, dynamic search ad, shopping</td>
-  </tr>
-  <tr>
-    <th scope="row">Maximize Conversions</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td>Search, dynamic search ad</td>
-  </tr>
-  <tr>
-    <th scope="row">Target CPA</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td>Search, dynamic search ad</td>
-  </tr>
-  <tr>
-    <th scope="row">Target impression share</th>
-    <td style="text-align:center">
-		  ![No](../images/Global_Icon_Xmark.png)
-		</td>
-    <td style="text-align:center">
-		  ![No](../images/Global_Icon_Xmark.png)
-		</td>
-    <td style="text-align:center">
-		  ![No](../images/Global_Icon_Xmark.png)
-		</td>
-    <td>Search, dynamic search ad</td>
-  </tr>
-  <tr>
-    <th scope="row">Target ROAS</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td>Search, dynamic search ad, shopping</td>
-  </tr>
-</table>
+|Bid strategy|Do I set bids myself?|Can I use a third-party bid management tool?|Do I need conversion tracking?|Campaign type supported|
+|---|---|---|---|---|
+|Enhanced CPC|![Yes](../images/Global_Icon_CheckMark.png)|![Yes](../images/Global_Icon_CheckMark.png)|![No](../images/Global_Icon_Xmark.png)|Search, dynamic search ad, shopping|
+|Manual|![Yes](../images/Global_Icon_CheckMark.png)|![Yes](../images/Global_Icon_CheckMark.png)|![No](../images/Global_Icon_Xmark.png)|Audience|
+|Maximize Clicks|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|Search, dynamic search ad, shopping|
+|Maximize Conversions|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|![Yes](../images/Global_Icon_CheckMark.png)|Search, dynamic search ad|
+|Target CPA|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|![Yes](../images/Global_Icon_CheckMark.png)|Search, dynamic search ad|
+|Target impression share|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|Search, dynamic search ad|
+|Target ROAS|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|![Yes](../images/Global_Icon_CheckMark.png)|Search, dynamic search ad, shopping|
 
+ 
 ## Share a portfolio bid strategy with other campaigns
 
 Portfolio bid strategy manages bidding across multiple campaigns that are all working toward the same goal. A campaign can either have its own bid strategy or it can share a portfolio bid strategy with other campaigns.
@@ -217,20 +129,21 @@ You can set the bid strategy at the campaign level. To change a campaign's bid s
 - Avoid creating overlapping product offers in multiple shopping campaigns that use Maximize Clicks.
 
 ## Best practices for Maximize Conversions and Target CPA
-- **Requirements**: In order to turn on Maximize Conversions or Target CPA, your campaign:
-  - Must have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) (either a UET tag + an active conversion goal, or offline conversions) set up. We recommend giving the bid strategy enough time to accumulate at least 30 conversions before evaluating its performance.
-  - Cannot use a shared budget, except within a [portfolio bid strategy](./hlp_BA_CONC_BidStrategy_Portfolio.md).
+- **Requirements** : In order to turn on Maximize Conversions or Target CPA, your campaign:
+   - Must have [conversion tracking](./hlp_BA_CONC_UETv2WhatIsCT.md) (either a UET tag + an active conversion goal, or offline conversions) set up. We recommend giving the bid strategy enough time to accumulate at least 30 conversions before evaluating its performance.
+   - Cannot use a shared budget, except within a [portfolio bid strategy](./hlp_BA_CONC_BidStrategy_Portfolio.md).
 
-- **How to make sure Maximize Conversions and Target CPA work optimally**: Maximize Conversions and Target CPA need time to work. For best results, keep this timeline in mind:
-1. **Getting set up: 30 days**&nbsp;— We recommend having at least 30 conversions in the previous 30 days. When setting up Target CPA, we suggest basing your target on your actual CPA from the previous 30 days. For new campaigns, we suggest basing your target on your account's performance.
-1. **Learning period: 1-2 weeks**&nbsp;—  Our platform usually needs two weeks to acquaint itself with your campaign. Avoid changing budgets or conversion goals during this period, as this may cause the learning period to start over. We recommend **not** evaluating the bid strategy's performance based on these two weeks.
-1. **Run campaign: 2-4 weeks**&nbsp;— Let your campaign run for two to four weeks after the learning period (avoiding changing budgets or conversion goals, as this may cause the learning period to start over) and then start evaluating the bid strategy's performance. Keep your conversion goal window in mind while evaluating performance.
-1. **Evaluate and adjust: Going forward**&nbsp;— Review the campaign's performance since the learning period in aggregate and make adjustments as needed. For Target CPA, we recommend keeping adjustments within 20%, up or down.
+- **How to make sure Maximize Conversions and Target CPA work optimally** : Maximize Conversions and Target CPA need time to work. For best results, keep this timeline in mind:
+1. **Getting set up: 30 days** &nbsp;— We recommend having at least 30 conversions in the previous 30 days. When setting up Target CPA, we suggest basing your target on your actual CPA from the previous 30 days. For new campaigns, we suggest basing your target on your account's performance.
+1. **Learning period: 1-2 weeks** &nbsp;—  Our platform usually needs two weeks to acquaint itself with your campaign. Avoid changing budgets or conversion goals during this period, as this may cause the learning period to start over. We recommend **not** evaluating the bid strategy's performance based on these two weeks.
+1. **Run campaign: 2-4 weeks** &nbsp;— Let your campaign run for two to four weeks after the learning period (avoiding changing budgets or conversion goals, as this may cause the learning period to start over) and then start evaluating the bid strategy's performance. Keep your conversion goal window in mind while evaluating performance.
+1. **Evaluate and adjust: Going forward** &nbsp;— Review the campaign's performance since the learning period in aggregate and make adjustments as needed. For Target CPA, we recommend keeping adjustments within 20%, up or down.
 
-- **Timing of conversions**:	When conversions occur more than seven days after the associated clicks, it's harder for Maximize Conversions and Target CPA to make effective bids. If most of your conversions occur more than seven days after the associated clicks, we recommend not using Maximize Conversions or Target CPA.
-- **Offline conversions**: If you don't or can't upload offline conversions on a daily basis, we recommend not using Maximize Conversions or Target CPA.	For best results, upload offline conversions within two days of the conversion.
-- **Audience Ads**: Turning on any conversion-based bid strategy, such as Maximize Conversions, Target CPA, or Target ROAS, will make your search ads ineligible to be turned into [Microsoft Audience Ads](./hlp_BA_CONC_NativeAds.md).
+- **Timing of conversions** :	When conversions occur more than seven days after the associated clicks, it's harder for Maximize Conversions and Target CPA to make effective bids. If most of your conversions occur more than seven days after the associated clicks, we recommend not using Maximize Conversions or Target CPA.
+- **Offline conversions** : If you don't or can't upload offline conversions on a daily basis, we recommend not using Maximize Conversions or Target CPA.	For best results, upload offline conversions within two days of the conversion.
+- **Audience Ads** : Turning on any conversion-based bid strategy, such as Maximize Conversions, Target CPA, or Target ROAS, will make your search ads ineligible to be turned into [Microsoft Audience Ads](./hlp_BA_CONC_NativeAds.md).
 
+ 
 > [!NOTE]
 > Want expert advice on your ads? [Schedule a no-cost session with a personal Microsoft Advertising consultant](https://go.microsoft.com/fwlink?LinkId=837456)
 

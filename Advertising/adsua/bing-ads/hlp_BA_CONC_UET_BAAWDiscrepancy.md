@@ -41,12 +41,14 @@ Here are some things to consider:
 - Note that if your users are converting directly or via other channels, Microsoft Advertising will not count conversions. They are reported in Google Analytics and Google Ads (if Google Ads determines conversion was caused by their ad click).
 
 > [!NOTE]
+> If you still have questions about the discrepancy, here is a checklist of things you need to verify:
 > - [UTM auto-tagging](./hlp_BA_CONC_AutoTag.md) for [URL tracking](./hlp_BA_CONC_UpgradeURL_WhatIsTracking.md) is working properly
 > - Same number of conversion goals are created and goal criteria are the exact same in both Microsoft Advertising and Google Ads/Google Analytics
 > - Conversion goal criteria are the exact same in both Microsoft Advertising and Google Ads
 > - Microsoft Advertising and Google Ads/Google Analytics tag associated with the conversion goal is added to the same pages of your website
 > - Conversion window and counting (Unique vs. All) settings are exactly the same
 > - Time zone for reporting is the same
+> If you still want to contact support, you need to have the following information:
 > - Tag name and the website pages you put the tags on for the conversion goals you are comparing
 > - Goal name and criteria for the conversions goals you are comparing
 > - Column names for the data you are comparing and where this information is located in the product

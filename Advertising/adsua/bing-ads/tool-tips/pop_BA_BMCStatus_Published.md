@@ -9,6 +9,6 @@ ms.author: eur
 
 # Status - Published
 
-**What it is:** Your catalog feed file was successfully uploaded.
+**What it is:**  Your catalog feed file was successfully uploaded.
 
 

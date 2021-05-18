@@ -1,7 +1,7 @@
 ---
 title: Microsoft Advertising policies
 description: Learn about Microsoft Advertising policies for all countries/regions, including policies for ads, style, disallowed content, privacy, and more.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -13,6 +13,7 @@ The key to success in online advertising is creating ads that are relevant, clea
 
 Every ad and keyword submitted to Microsoft Advertising goes through an editorial review against these policies, so familiarizing yourself with them before you submit can make your approval process much quicker. Think of them as the playbook that'll lead you to victory!
 
+ 
 Microsoft Advertising policies cover the following areas:
 
 ## Ad content and style

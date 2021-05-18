@@ -9,7 +9,7 @@ ms.author: eur
 
 # Social and search advertising
 
-**What it is: ** This allows you to advertise on Facebook, Instagram, Microsoft Advertising, and Google Ads. Microsoft Advertising will automatically generate ads for you based on your advertising options.
+**What it is:**  This allows you to advertise on Facebook, Instagram, Microsoft Advertising, and Google Ads. Microsoft Advertising will automatically generate ads for you based on your advertising options.
 
 **What you need to know:**
 - Any changes made outside of Microsoft Advertising to ad campaigns created by Microsoft Advertising will be automatically overridden. Use Microsoft Advertising to make any changes to the ad campaigns created by Microsoft Advertising.

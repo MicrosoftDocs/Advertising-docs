@@ -9,6 +9,6 @@ ms.author: eur
 
 # Language
 
-**What it is:** The language that the extension will serve in.
+**What it is:**  The language that the extension will serve in.
 
 

@@ -9,7 +9,7 @@ ms.author: eur
 
 # Total assists from this campaign
 
-**What it is:** The number of times this campaign contributed to a customer action associated with a different campaign during the selected date range.
+**What it is:**  The number of times this campaign contributed to a customer action associated with a different campaign during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

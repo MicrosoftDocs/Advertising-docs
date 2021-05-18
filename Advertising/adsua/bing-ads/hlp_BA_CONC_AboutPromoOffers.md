@@ -9,6 +9,7 @@ ms.author: eur
 
 # Microsoft Advertising promotional offers (coupons)
 
+![Coupon](../images/BA_Conc_Coupon.svg)
 Microsoft Advertising occasionally runs promotional offers, sometimes called **coupons**. Typically geared for new customers, promotional offers require you to spend money on your advertising campaigns first, and then we give you a credit toward advertising at no additional cost to you. Although you can't request a promotional offer, you can find them through Microsoft Advertising promotional events, online marketing drives, or other special offers.
 
 ## Requirements for a promotional offer
@@ -48,5 +49,7 @@ If you are not able to successfully redeem your promotional offer, see [Troubles
 
 > [!NOTE]
 > An offer can have one of the following of statuses:
+> 
+> [!INCLUDE [OfferStatus](./includes/OfferStatus.md)]
 
 

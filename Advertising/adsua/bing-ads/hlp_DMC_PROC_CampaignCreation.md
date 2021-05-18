@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Create an ad campaign
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Unified Smart campaigns are a simple and easy way for you to advertise across different search and social ad platforms. We use Microsoft AI to create text ads to help optimize your search advertising campaigns for you.
 
 ## Create an ad campaign
@@ -45,12 +46,13 @@ Create or edit text ads (also called search ads) to run on Google and Bing. When
 
 On the **Create text ads** page, we provide suggested text ads, based on your website and business category. You should verify and edit the elements of your ad, if needed, to ensure the best message reaches potential customers.
 
-**Final URL**: This is the webpage URL that potential customers go to when they click your ad. If you send a potential customer to a webpage that is tailored to what your ad highlights, such as a product page, sign-up page, or contact page, they're more likely to take action.
+**Final URL** : This is the webpage URL that potential customers go to when they click your ad. If you send a potential customer to a webpage that is tailored to what your ad highlights, such as a product page, sign-up page, or contact page, they're more likely to take action.
 
-**Ad title (parts 1-3)**: The ad title is the most prominent part of your ad and serves as a link to your website. The best way to encourage customers to find and click your ad is to include keywords in your ad title that relate to the product or service you're advertising.
+**Ad title (parts 1-3)** : The ad title is the most prominent part of your ad and serves as a link to your website. The best way to encourage customers to find and click your ad is to include keywords in your ad title that relate to the product or service you're advertising.
 
-**Ad text (parts 1-2)**: The ad text appears below your ad title. Use the ad text to convince people to click your ad. What sets your product or service apart? Is it the price? Does it solve a problem or provide a benefit? Include a call to action for customers to click **right now**.
+**Ad text (parts 1-2)** : The ad text appears below your ad title. Use the ad text to convince people to click your ad. What sets your product or service apart? Is it the price? Does it solve a problem or provide a benefit? Include a call to action for customers to click **right now**.
 
+[!INCLUDE [AutomatedTextAds](./includes/AutomatedTextAds.md)]
 > [!NOTE]
 > In Unified Smart campaigns you can only edit the top performing automated text ads. To view the top performance social and search ads, go to the **Top ads** tab in the **Ads** tile on the **Ads** page. The top text ads are shown whether they were created by you or automated by Microsoft AI.
 

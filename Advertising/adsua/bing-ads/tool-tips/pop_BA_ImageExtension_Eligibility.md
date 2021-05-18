@@ -9,6 +9,6 @@ ms.author: eur
 
 # Image layout
 
-**What it is:** Single Image Extension enables this extension to deliver on the single-image desktop ad preview, while Multi-Image Extension enables this extension to deliver on the multi-image desktop and mobile ad previews.
+**What it is:**  Single Image Extension enables this extension to deliver on the single-image desktop ad preview, while Multi-Image Extension enables this extension to deliver on the multi-image desktop and mobile ad previews.
 
 

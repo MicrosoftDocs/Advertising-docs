@@ -32,8 +32,8 @@ If you want to opt out of Product Listings, click the **Show free Product Listin
 - Products must comply with [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md).
 - Products must meet the [product specification requirements](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md).
 - The “link” attribute must point to the direct URL of the product’s page on the retailer’s website.
-  - The URL must be a direct link to the product’s landing page.
-  - The URL cannot contain any campaign tracking parameters.
+   - The URL must be a direct link to the product’s landing page.
+   - The URL cannot contain any campaign tracking parameters.
 
 - The “ads_redirect” attribute will not be used and if it is included in the feed file, will be ignored.
 
@@ -43,18 +43,18 @@ Take a look at the details you need to know about URLs and tracking for Product 
 
 - If you want to track Product Listings and Product Ads traffic, be sure to include the "link" and "ads_redirect" attributes in the feed file, with different tracking parameters.
 - Use the "link" attribute to track free clicks. This URL must point to the product page and you can add tracking parameters to track the free clicks.
-  - Free Product Listings will use this URL to drive clicks to the products on the retailers' site. The "ads_redirect" attribute will not be used for Product Listings.
-  - Example URL: http://www.contoso.com/product.asp?pn=ISI1&amp;utm_source=Bing&amp;utm_medium=freeproductlistings​
-  - Note: Do not add campaign tracking parameters to the "link" attribute. The tracking template values will not be replaced with campaign values, as there are no campaigns associated with Product Listings.
+   - Free Product Listings will use this URL to drive clicks to the products on the retailers' site. The "ads_redirect" attribute will not be used for Product Listings.
+   - Example URL: http://www.contoso.com/product.asp?pn=ISI1&amp;utm_source=Bing&amp;utm_medium=freeproductlistings​
+   - Note: Do not add campaign tracking parameters to the "link" attribute. The tracking template values will not be replaced with campaign values, as there are no campaigns associated with Product Listings.
 
 - Use the "ads_redirect" attribute to track clicks from Product Ads. This URL must point to the product page and you can add tracking parameters to track paid Product Ads clicks.
-  - For Product Ads, when both "link" and "ads_redirect" attributes are present, the URL from the "ads_redirect" attribute will be used to drive clicks.
-  - Ensure that tracking parameters used to track Product Listings are not in the "ads_redirect" attribute.
+   - For Product Ads, when both "link" and "ads_redirect" attributes are present, the URL from the "ads_redirect" attribute will be used to drive clicks.
+   - Ensure that tracking parameters used to track Product Listings are not in the "ads_redirect" attribute.
 
 ## Frequently asked questions
 
-- **Are products associated with bids from MSC eligible to show in the unpaid section?** Yes, if the products are relevant to users’ searches, they are eligible to show in the unpaid section.
-- **Will I be charged for clicks from the unpaid section?** No, all clicks from the unpaid section is free with no charges to clicks for you!
-- **What reporting data will be available for Product Listings?** Impressions and clicks will be reported for your Product Listings, available in your Microsoft Merchant Center.
+- **Are products associated with bids from MSC eligible to show in the unpaid section?**  Yes, if the products are relevant to users’ searches, they are eligible to show in the unpaid section.
+- **Will I be charged for clicks from the unpaid section?**  No, all clicks from the unpaid section is free with no charges to clicks for you!
+- **What reporting data will be available for Product Listings?**  Impressions and clicks will be reported for your Product Listings, available in your Microsoft Merchant Center.
 
 

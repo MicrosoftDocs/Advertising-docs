@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video ads
 
-**Choose this goal if:**    You want to show ads with videos
+**Choose this goal if:**     You want to show ads with videos
 
 

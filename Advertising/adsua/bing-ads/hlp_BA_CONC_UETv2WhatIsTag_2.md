@@ -9,4 +9,5 @@ ms.author: eur
 
 # What is UET and how can it help me?
 
+[!INCLUDE [CONC_UETv2WhatIsTag](./includes/CONC_UETv2WhatIsTag.md)]
 

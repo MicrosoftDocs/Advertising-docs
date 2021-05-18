@@ -9,8 +9,8 @@ ms.author: eur
 
 # Bid type
 
-**What it is:**       Bid type will indicate whether the suggested bid is at the keyword level or ad group level.
+**What it is:**        Bid type will indicate whether the suggested bid is at the keyword level or ad group level.
 
-**What you need to know: **       Currently, only keyword-level bid suggestions are available.
+**What you need to know:**        Currently, only keyword-level bid suggestions are available.
 
 

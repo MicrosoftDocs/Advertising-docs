@@ -21,7 +21,7 @@ Here is how you create a feed file using a spreadsheet program. If you want to u
 
 ## File format requirements
 
-**Note**: If the following file format requirements are not met, your feed file will not be processed.
+**Note** : If the following file format requirements are not met, your feed file will not be processed.
 
 - File must be tab delimited plain text with extensions: .txt, .zip, .gz, .gzip, .tar.gz, .tgz.        -	.xml files are also accepted (if Google-formatted).
 - File name cannot contain any spaces.
@@ -38,51 +38,13 @@ Here is how you create a feed file using a spreadsheet program. If you want to u
 
 Here are the symbols/special characters and what attribute they are accepted in.
 
-<table>
-  <tr>
-    <th scope="col">Symbols</th>
-    <th scope="col">Where you can use</th>
-  </tr>
-  <tr>
-    <td>Period [.]</td>
-    <td>Prices, URLs</td>
-  </tr>
-  <tr>
-    <td>
-        Colon [:]  
-        Question [?]  
-        Forward-slash [/]  
-        Equal [=] 
-      </td>
-    <td>URLs</td>
-  </tr>
-  <tr>
-    <td>
-        Hyphen [-]
-      </td>
-    <td>Offer Identifiers where this is valid (eg: ISBN, MPN)</td>
-  </tr>
-  <tr>
-    <td>
-        Pipe [|]  
-        Comma [,]   
-        Greater [&gt;] 
-      </td>
-    <td>Multi-value fields (MerchantCategory, B_Category)</td>
-  </tr>
-  <tr>
-    <td>
-        Percent [%]  
-        Special ASCII characters
-      </td>
-    <td>Redirect URL (ads_redirect)</td>
-  </tr>
-  <tr>
-    <td>
-        Any Unicode symbol
-      </td>
-    <td>Brand, Title, Description</td>
-  </tr>
-</table>
+|Symbols|Where you can use|
+|---|---|
+|Period [.]|Prices, URLs|
+|Colon [:]          Question [?]          Forward-slash [/]          Equal [=]|URLs|
+|Hyphen [-]|Offer Identifiers where this is valid (eg: ISBN, MPN)|
+|Pipe [|]          Comma [,]           Greater [>]|Multi-value fields (MerchantCategory, B_Category)|
+|Percent [%]          Special ASCII characters|Redirect URL (ads_redirect)|
+|Any Unicode symbol|Brand, Title, Description|
 
 

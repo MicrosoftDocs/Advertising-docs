@@ -9,6 +9,6 @@ ms.author: eur
 
 # Placement name
 
-**What it is:**    The name of the publisher ad placement.
+**What it is:**     The name of the publisher ad placement.
 
 

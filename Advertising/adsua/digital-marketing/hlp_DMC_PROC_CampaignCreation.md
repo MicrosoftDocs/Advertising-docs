@@ -1,7 +1,7 @@
 ---
 title: Create an ad campaign
 description: Learn how to create an ad campaign to advertise across different search and social ad platforms.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -26,41 +26,41 @@ To advertise on Facebook and Instagram through Digital Marketing Center, you nee
 - A published Facebook page
 - A Facebook Ads account
 - Currency and time zone settings in your Facebook Ads account that match the currency and time zone you want to use in Digital Marketing Center
-- A payment method set up in Facebook **Note**: While using Digital Marketing Center is free, you’ll need to enter credit card information in Facebook to pay for advertising on Facebook and Instagram.
+- A payment method set up in Facebook **Note** : While using Digital Marketing Center is free, you’ll need to enter credit card information in Facebook to pay for advertising on Facebook and Instagram.
 - Your Instagram Business account associated with your Facebook page
 
 ## Create an ad campaign
 
 From the **Ads** page, click **Create new campaign** from the left menu and simply follow the step-by-step instructions. The steps are:
 
-1. **Choose your campaign options**.
-  - **What's your campaign goal?** Setting your goal gives us the context to help you create the most effective campaigns.
-    - Get more visits to my website
-    - Get more phone calls to my business
-    - Get more visits to my business' physical location
+1. **Choose your campaign options** .
+   - **What's your campaign goal?**  Setting your goal gives us the context to help you create the most effective campaigns.
+      - Get more visits to my website
+      - Get more phone calls to my business
+      - Get more visits to my business' physical location
 
-  - **Where do you want to advertise?** Select if you want to advertise on social and search (Facebook, Instagram, Microsoft Advertising, and Google Ads) or if you want to advertise on search only (Microsoft Advertising and Google Ads).
-  - **Business details.** Here, you'll enter your business information.
-  - **Where do you want to target?** Select where you want to target your ad campaigns. This will determine where your ads will display.
+   - **Where do you want to advertise?**  Select if you want to advertise on social and search (Facebook, Instagram, Microsoft Advertising, and Google Ads) or if you want to advertise on search only (Microsoft Advertising and Google Ads).
+   - **Business details.**  Here, you'll enter your business information.
+   - **Where do you want to target?**  Select where you want to target your ad campaigns. This will determine where your ads will display.
 
-1. **Create ads**.
-  - **Text ads**. To get your campaign up and running, you need to create text ads that will appear in Bing and Google. As you enter the details for your text ad, you’ll be able to see a preview of how it could appear.
-  - **Image ads**. Create an image ad to be shown in Facebook or Instagram.
-  - **Video ads** (optional). You can also create a video ad, but if you’re pressed for time, skip this step and come back later.
+1. **Create ads** .
+   - **Text ads** . To get your campaign up and running, you need to create text ads that will appear in Bing and Google. As you enter the details for your text ad, you’ll be able to see a preview of how it could appear.
+   - **Image ads** . Create an image ad to be shown in Facebook or Instagram.
+   - **Video ads**  (optional). You can also create a video ad, but if you’re pressed for time, skip this step and come back later.
 
 Learn more about this step in [About search and social ads](./hlp_DMC_CONC_AboutAds.md).
 
-1. **Set your budget**.
+1. **Set your budget** .
 Set how much you want to spend per day on your ad campaign.
 
-**This is important**:
+**This is important** :
 - Any changes, including budget changes, made outside of Digital Marketing Center to ad campaigns created by Digital Marketing Center will be automatically overridden. Use Digital Marketing Center to make any changes to the ad campaigns created by Digital Marketing Center.
 - The budget covers ads on Microsoft Advertising, Google Ads, and Facebook Ads. However, any spend on Facebook will be directly billed to you by Facebook.
 - To have your Facebook Ads serve, you must have your payment method set up for your Facebook Ads account.
 - Your daily limit is a target, which means that your actual spend might be higher or lower. This is because a monthly budget is calculated and then actual budget limit is calculated for an entire month.
 - You can change your budget at any time.
 
-1. **Last step**!
+1. **Last step** !
 Review your campaign details and make any adjustments in this last step. Once you’ve verified that everything looks good, submit your campaign!
 
 > [!IMPORTANT]

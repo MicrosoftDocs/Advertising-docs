@@ -16,6 +16,7 @@ Your ad group status tells you if your ad group, including all ads and keywords 
 1. Check the statuses of individual items in the **Delivery** column.
 1. Click the **Delivery** header to sort the ad groups by status.
 
+ 
 ## What your ad group status means
 
 <table>

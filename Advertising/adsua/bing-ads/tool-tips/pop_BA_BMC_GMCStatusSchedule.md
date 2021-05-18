@@ -9,6 +9,6 @@ ms.author: eur
 
 # Scheduled for
 
-**What it is:** This is the regularly scheduled date and time for this import.
+**What it is:**  This is the regularly scheduled date and time for this import.
 
 

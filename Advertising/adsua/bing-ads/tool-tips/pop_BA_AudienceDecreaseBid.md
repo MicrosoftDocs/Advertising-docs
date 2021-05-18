@@ -9,6 +9,6 @@ ms.author: eur
 
 # Decrease bid adjustment
 
-**What it is:**  Decrease the current bid for the selected audience association by a percentage.
+**What it is:**   Decrease the current bid for the selected audience association by a percentage.
 
 

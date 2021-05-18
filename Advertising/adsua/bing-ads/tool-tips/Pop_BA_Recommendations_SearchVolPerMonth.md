@@ -9,6 +9,6 @@ ms.author: eur
 
 # Search volume per month
 
-**What it is:**     The last 30 days’ search volume for the suggested search query, updated daily.
+**What it is:**      The last 30 days’ search volume for the suggested search query, updated daily.
 
 

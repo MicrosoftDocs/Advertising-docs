@@ -35,11 +35,11 @@ While we are always trying to help improve your campaign’s performance, someti
 
 1. On the **Campaigns** page, click the **Recommendations** tab (or from the main menu on the left, click **All campaigns** and then click **Recommendations**).
 1. Choose from one of the following categories:
-  - All recommendations
-  - Ads and Extensions
-  - Bids and Budgets
-  - Keywords and Targeting
-  - Repairs
+   - All recommendations
+   - Ads and Extensions
+   - Bids and Budgets
+   - Keywords and Targeting
+   - Repairs
 
 1. Click the ellipsis icon ![More information icon](../images/BA_ScreenCap_DeliveryDetails.png) on the recommendation type you wish to stop seeing.
 1. Select **Stop showing this type of recommendation**.

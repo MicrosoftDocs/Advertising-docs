@@ -9,6 +9,6 @@ ms.author: eur
 
 # Bid
 
-**What it is:** The corresponding value to your bid strategy.
+**What it is:**  The corresponding value to your bid strategy.
 
 

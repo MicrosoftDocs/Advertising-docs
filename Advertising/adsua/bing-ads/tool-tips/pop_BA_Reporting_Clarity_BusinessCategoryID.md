@@ -9,6 +9,6 @@ ms.author: eur
 
 # Business category ID
 
-**What it is: **    The category ID of your business for your product ad or shopping campaign.
+**What it is:**     The category ID of your business for your product ad or shopping campaign.
 
 

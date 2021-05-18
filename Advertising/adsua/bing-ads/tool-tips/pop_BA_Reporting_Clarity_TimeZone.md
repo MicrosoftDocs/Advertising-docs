@@ -9,8 +9,8 @@ ms.author: eur
 
 # Time zone
 
-**What it is:**The time zone that you want to use for the selected date range.
+**What it is:** The time zone that you want to use for the selected date range.
 
-**Why it’s important:**    It helps you accurately scope data for the selected date range.
+**Why it’s important:**     It helps you accurately scope data for the selected date range.
 
 

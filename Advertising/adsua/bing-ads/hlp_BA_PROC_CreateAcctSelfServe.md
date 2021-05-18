@@ -11,10 +11,10 @@ ms.author: eur
 
 When you sign up for Microsoft Advertising, you will create your first account. However, you might want to create additional accounts to more efficiently manage and monitor your campaigns. Consider setting up multiple accounts, if you want to use different:
 
-- **Forms of payments.**  Each account can only have one primary payment method at a time, but you can change your payment method at any time.
-- **Billing options.**  Each account can only have one payment setting (prepay or postpay), but you can change your payment setting at any time.
-- **Currencies to pay your advertising charges. **Each account can only have one currency, and you can't change the currency after you set up the account.
-- **Primary Contacts.** Each account can only have one Primary Contact, which can be changed at any time. A Primary Contact must be a Super Admin or Standard User who has access to the account.
+- **Forms of payments.**   Each account can only have one primary payment method at a time, but you can change your payment method at any time.
+- **Billing options.**   Each account can only have one payment setting (prepay or postpay), but you can change your payment setting at any time.
+- **Currencies to pay your advertising charges.** Each account can only have one currency, and you can't change the currency after you set up the account.
+- **Primary Contacts.**  Each account can only have one Primary Contact, which can be changed at any time. A Primary Contact must be a Super Admin or Standard User who has access to the account.
 
 ## To create an account
 

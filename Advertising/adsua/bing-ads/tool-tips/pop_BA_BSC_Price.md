@@ -9,6 +9,6 @@ ms.author: eur
 
 # Price
 
-**What it is:** The product’s base price, excluding tax and shipping.
+**What it is:**  The product’s base price, excluding tax and shipping.
 
 

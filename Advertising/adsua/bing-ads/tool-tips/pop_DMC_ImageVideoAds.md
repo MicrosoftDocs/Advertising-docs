@@ -9,6 +9,6 @@ ms.author: eur
 
 # Image and video ads
 
-**What it is: ** You can select up to a maximum of 3 image or video ads to use for your carousel ads.
+**What it is:**  You can select up to a maximum of 3 image or video ads to use for your carousel ads.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # File URL protocol
 
-**What it is**: This is the type of URL at which your conversion file is located.
+**What it is** : This is the type of URL at which your conversion file is located.
 
-**What you need to know**: The options are: HTTPS, HTTP, SFTP, and FTP.
+**What you need to know** : The options are: HTTPS, HTTP, SFTP, and FTP.
 
 

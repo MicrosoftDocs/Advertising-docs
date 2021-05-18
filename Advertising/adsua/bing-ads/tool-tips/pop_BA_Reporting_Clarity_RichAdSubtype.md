@@ -9,6 +9,6 @@ ms.author: eur
 
 # Rich ad subtype
 
-**What it is: **    The type of rich ad: images and links, images, links and form, video and links, video, or pharma.
+**What it is:**     The type of rich ad: images and links, images, links and form, video and links, video, or pharma.
 
 

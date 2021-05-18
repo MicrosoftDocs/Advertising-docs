@@ -9,6 +9,6 @@ ms.author: eur
 
 # Support ticket
 
-**What it is: **Add the UCM ticket so that the adjustment can be tracked.
+**What it is:** Add the UCM ticket so that the adjustment can be tracked.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Content bid
 
-**What it is: **       The default bid for all keywords (or dynamic ad targets) in this ad group. These bids apply to ads delivered on the content network. Note: The content network is available only in the United States.
+**What it is:**        The default bid for all keywords (or dynamic ad targets) in this ad group. These bids apply to ads delivered on the content network. Note: The content network is available only in the United States.
 
 

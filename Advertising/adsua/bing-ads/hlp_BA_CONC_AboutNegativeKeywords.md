@@ -42,53 +42,16 @@ The following diagram is an example of what happens in step 2. On the left are s
 
 ## Example
 
-**Bidded keyword (broad match)**: wide shoes
+**Bidded keyword (broad match)** : wide shoes
 
-**Negative keyword**: womens shoes
+**Negative keyword** : womens shoes
 
-<table>
-  <tr>
-    <th scope="col">Search query</th>
-    <th style="text-align:center" scope="col">Negative EXACT</th>
-    <th style="text-align:center" scope="col">Negative PHRASE</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">mens wide shoes</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">womens wide shoes</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">womens shoes</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">wide womens shoes</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-  </tr>
-</table>
+|Search query|Negative EXACT|Negative PHRASE|
+|---|---|---|
+|mens wide shoes|![Yes](../images/Global_Icon_CheckMark.png)|![Yes](../images/Global_Icon_CheckMark.png)|
+|womens wide shoes|![Yes](../images/Global_Icon_CheckMark.png)|![Yes](../images/Global_Icon_CheckMark.png)|
+|womens shoes|![No](../images/Global_Icon_Xmark.png)|![No](../images/Global_Icon_Xmark.png)|
+|wide womens shoes|![Yes](../images/Global_Icon_CheckMark.png)|![No](../images/Global_Icon_Xmark.png)|
 
 ![Yes](../images/Global_Icon_CheckMark.png) = Ad eligible to display
 

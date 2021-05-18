@@ -9,9 +9,9 @@ ms.author: eur
 
 # Supporting documentation
 
-**What it is:** Official records that verify the details of your business.
+**What it is:**  Official records that verify the details of your business.
 
-**What you need to know:** Depending on your country, the following can be considered supporting documentation:
+**What you need to know:**  Depending on your country, the following can be considered supporting documentation:
 - Standby letter of credit
 - Parent company guarantee
 - Two fiscal years of audited financial statements (For example: Statements of Financial Position)

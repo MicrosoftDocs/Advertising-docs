@@ -16,6 +16,6 @@ To understand how changes affect your campaign, use the change history graph.
 
 Change history data is only available for the previous six months.
 
-**Get more info: **    [What changes were made to my campaigns and can I undo them?](../hlp_BA_CONC_ChangeHistoryGraph.md)
+**Get more info:**     [What changes were made to my campaigns and can I undo them?](../hlp_BA_CONC_ChangeHistoryGraph.md)
 
 

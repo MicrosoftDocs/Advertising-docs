@@ -9,6 +9,6 @@ ms.author: eur
 
 # Original campaign name
 
-**What it is:** This is the original name of the campaign before converting it.
+**What it is:**  This is the original name of the campaign before converting it.
 
 

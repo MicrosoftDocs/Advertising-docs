@@ -9,6 +9,6 @@ ms.author: eur
 
 # Partner hotel ID
 
-**What it is:** The ID of your hotel as it appears in your hotel list feed.
+**What it is:**  The ID of your hotel as it appears in your hotel list feed.
 
 

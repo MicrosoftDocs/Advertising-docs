@@ -1,7 +1,7 @@
 ---
 title: Total assists from this campaign
 description: Total assists from this campaign
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Total assists from this campaign
 
-**What it is:** The number of times this campaign contributed to a customer action associated with a different campaign during the selected date range.
+**What it is:**  The number of times this campaign contributed to a customer action associated with a different campaign during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

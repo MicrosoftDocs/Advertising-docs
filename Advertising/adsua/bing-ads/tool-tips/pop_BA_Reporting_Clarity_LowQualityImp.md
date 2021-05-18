@@ -9,6 +9,6 @@ ms.author: eur
 
 # Low-quality impressions
 
-**What it is:**    Impressions that result from low-quality keyword searches.
+**What it is:**     Impressions that result from low-quality keyword searches.
 
 

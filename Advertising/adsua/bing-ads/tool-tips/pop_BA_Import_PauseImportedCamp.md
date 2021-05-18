@@ -9,6 +9,6 @@ ms.author: eur
 
 # Pause newly imported campaigns
 
-**        What it is:      **    This option will pause newly imported campaigns, allowing you to review your campaigns before you get your campaigns up and running.
+**        What it is:**     This option will pause newly imported campaigns, allowing you to review your campaigns before you get your campaigns up and running.
 
 

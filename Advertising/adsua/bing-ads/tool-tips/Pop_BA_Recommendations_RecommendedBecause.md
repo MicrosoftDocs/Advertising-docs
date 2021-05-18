@@ -9,6 +9,6 @@ ms.author: eur
 
 # Recommended because
 
-**What it is**: Why we suggest adding broad match versions of your existing keywords.
+**What it is** : Why we suggest adding broad match versions of your existing keywords.
 
 

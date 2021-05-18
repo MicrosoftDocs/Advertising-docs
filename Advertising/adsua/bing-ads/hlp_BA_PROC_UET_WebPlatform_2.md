@@ -9,4 +9,5 @@ ms.author: eur
 
 # Set up UET tags using Shopify, WordPress.com, and other website platforms
 
+[!INCLUDE [PROC_UET_WebPlatform](./includes/PROC_UET_WebPlatform.md)]
 

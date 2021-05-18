@@ -18,11 +18,11 @@ Setting your business goals and targets provides context to automatically adjust
 
 ## Why use smart shopping campaigns
 
-**Reach customers who will likely covert at higher revenue values** Smart shopping campaigns use Maximize Conversion Value (where Microsoft Advertising automatically sets your bids in real time to maximize total conversion value within your budget) and automated targeting to maximize overall revenue numbers with an option to define ROAS targets.
+**Reach customers who will likely covert at higher revenue values**  Smart shopping campaigns use Maximize Conversion Value (where Microsoft Advertising automatically sets your bids in real time to maximize total conversion value within your budget) and automated targeting to maximize overall revenue numbers with an option to define ROAS targets.
 
-**Optimize with automated campaigns** Smart shopping campaigns automate bids and ads delivery based on customer signals to help create a more personalized shopping experience.
+**Optimize with automated campaigns**  Smart shopping campaigns automate bids and ads delivery based on customer signals to help create a more personalized shopping experience.
 
-**Simplify campaign creation and management** To get started with a shopping campaign, you just need your product feed, a UET tag, and your business goals. Once you have that, you only need to set your budget and targeting options to start optimizing your shopping campaigns.
+**Simplify campaign creation and management**  To get started with a shopping campaign, you just need your product feed, a UET tag, and your business goals. Once you have that, you only need to set your budget and targeting options to start optimizing your shopping campaigns.
 
 ## Before getting started...
 
@@ -42,20 +42,20 @@ Setting your business goals and targets provides context to automatically adjust
 
 ## Frequently asked questions
 
-**What are the requirements for smart shopping campaigns?**	 	Variable revenue tracking is required for smart shopping campaigns. [Learn more about UET](./hlp_BA_CONC_UET_Setup_Master.md).
+**What are the requirements for smart shopping campaigns?** 	 	Variable revenue tracking is required for smart shopping campaigns. [Learn more about UET](./hlp_BA_CONC_UET_Setup_Master.md).
 
-**What is the Maximize Conversion Value bid strategy?**	 	With Maximize Conversions, Microsoft Advertising automatically sets your bids in real time to maximize overall conversion revenue within your budget. [Learn more about bid strategies](./hlp_BA_CONC_BidStrategy.md).
+**What is the Maximize Conversion Value bid strategy?** 	 	With Maximize Conversions, Microsoft Advertising automatically sets your bids in real time to maximize overall conversion revenue within your budget. [Learn more about bid strategies](./hlp_BA_CONC_BidStrategy.md).
 
-**Can I target the same set of products in smart shopping and standard shopping campaigns?**	 	No – smart shopping campaigns override standard shopping campaigns for the same set of products.
+**Can I target the same set of products in smart shopping and standard shopping campaigns?** 	 	No – smart shopping campaigns override standard shopping campaigns for the same set of products.
 
-**How long does the editorial review for smart shopping campaigns take?**	 	The editorial review process is the same for both smart shopping and standard shopping campaigns. [Learn more about the editorial review](./hlp_BA_CONC_EditorialGuidelines.md).
+**How long does the editorial review for smart shopping campaigns take?** 	 	The editorial review process is the same for both smart shopping and standard shopping campaigns. [Learn more about the editorial review](./hlp_BA_CONC_EditorialGuidelines.md).
 
-**Is Google import available for smart shopping campaigns?**	 	Yes, you can import your product feed and existing campaigns Google import. Note that responsive ads cannot be imported through Google Import.
+**Is Google import available for smart shopping campaigns?** 	 	Yes, you can import your product feed and existing campaigns Google import. Note that responsive ads cannot be imported through Google Import.
 
-**Are there bulk upload options available?**	 	Yes, you can use the bulk upload spreadsheet to bulk upload smart shopping assets.
+**Are there bulk upload options available?** 	 	Yes, you can use the bulk upload spreadsheet to bulk upload smart shopping assets.
 
-**Is smart shopping available for local inventory ad campaigns?**	 	You can opt smart shopping campaigns into local inventory ads but cannot convert an existing local inventory ad campaign to a smart shopping campaign.
+**Is smart shopping available for local inventory ad campaigns?** 	 	You can opt smart shopping campaigns into local inventory ads but cannot convert an existing local inventory ad campaign to a smart shopping campaign.
 
-**How does reporting for smart shopping campaigns work?**	 	Smart shopping campaigns reports are a subset of existing product ads reporting within Microsoft Advertising but the reports do not include search terms, network, or audience data.
+**How does reporting for smart shopping campaigns work?** 	 	Smart shopping campaigns reports are a subset of existing product ads reporting within Microsoft Advertising but the reports do not include search terms, network, or audience data.
 
 

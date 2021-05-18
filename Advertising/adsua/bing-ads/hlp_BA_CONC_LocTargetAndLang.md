@@ -15,25 +15,25 @@ Here are the steps you'd take to determine where your ads are shown:
 
 1. **Set ad language**: The language you set for your ads also determines where those ads can be shown. You can create different ad groups with different languages.
 1. **Select location target settings**: When selecting your location targets, you can choose from:
-  - United States and Canada
-  - All available countries/regions
-  - Selected countries/regions and states/provinces
-  - Selected counties within the United States
-  - Selected cities, metro areas, and postal codes\* within Australia, Canada, France, Germany, United Kingdom, and United States
+   - United States and Canada
+   - All available countries/regions
+   - Selected countries/regions and states/provinces
+   - Selected counties within the United States
+   - Selected cities, metro areas, and postal codes\* within Australia, Canada, France, Germany, United Kingdom, and United States
 **\*Note:	**
 - **	Not all postal codes are supported for targeting exactly within their boundaries. If you target an unsupported postal code, it will be converted into a radius target (see below).**
 - **	For Canadian and UK postal codes, only the first segment (for Canada, the first 3 characters; for UK, the first 2-to-4-character segment) is recognized. If you enter the second segment, you will only be able to use radius targeting.**
 - **	The boundaries of some postal codes in Australia, Canada, France, Germany, and United Kingdom do not appear accurately on the map you see in Microsoft Advertising, but targeting within them will still function accurately.**
 
-  - A specified radius around a postal code, coordinates\*, landmark, or area
+   - A specified radius around a postal code, coordinates\*, landmark, or area
 **\*Coordinates can be searched for in the format "[latitude], [longitude]" with the degrees in decimal form — for example, "44.590,-104.716". **
 
 > [!IMPORTANT]
 > Microsoft Advertising will honor your location targeting settings and exclude locations you don’t want to target. However, location targeting and exclusions may not always work because of factors beyond the control of Microsoft Advertising, such as a customer’s device settings or the inherent limits of geolocation via GPS, IP addresses, Wi-Fi networks, and Bluetooth.
 
 1. **Select advanced location targeting options**: In addition to selecting your location target settings, you can:
-  - Show ads to people in your targeted location.
-  - Show ads to people in, searching for, or viewing pages about your targeted location.
+   - Show ads to people in your targeted location.
+   - Show ads to people in, searching for, or viewing pages about your targeted location.
 
 1. **Multiple language targeting**: If you are targeting countries/regions that speak different languages, you can also target different languages. In your campaign settings, below location targeting, you will see the option to target multiple languages. This allows you to have different ad groups in the same campaign show ads on websites in different languages. Remember that Microsoft Advertising doesn’t translate your ads. It's a good idea to write your ads in the language you are targeting.
 > [!NOTE]
@@ -50,112 +50,20 @@ This is true even if you have set location targeting to show your ads in “all 
 
 Here are the list of available languages and corresponding countries/regions where that language is supported:
 
-<table>
-  <tr>
-    <th scope="col">
-              Ad language settings
-            </th>
-    <th scope="col">
-              Countries/regions where ads in this language can display
-            </th>
-  </tr>
-  <tr>
-    <th scope="row">
-              Danish
-            </th>
-    <td>
-              Denmark
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Dutch
-            </th>
-    <td>
-              Belgium, Netherlands 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              English
-            </th>
-    <td>
-              Australia, Canada, France, Germany, India, Indonesia, Ireland, Italy, Malaysia, Netherlands, New Zealand, Philippines, Singapore, Spain, Sweden, Switzerland, Thailand, Vietnam, United Kingdom, United States 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Finnish
-            </th>
-    <td>
-              Finland
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              French
-            </th>
-    <td>
-              Belgium, Canada, France, Switzerland 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              German
-            </th>
-    <td>
-              Austria, Germany, Switzerland
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Italian
-            </th>
-    <td>
-              Italy
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Norwegian
-            </th>
-    <td>
-              Norway
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Portuguese
-            </th>
-    <td>
-              Brazil
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Spanish
-            </th>
-    <td>
-              Argentina, Chile, Colombia, Mexico, Peru, Spain, Venezuela
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Swedish
-            </th>
-    <td>
-              Sweden
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Traditional Chinese
-            </th>
-    <td>
-              Hong Kong S.A.R., Taiwan 
-            </td>
-  </tr>
-</table>
+|Ad language settings|Countries/regions where ads in this language can display|
+|---|---|
+|Danish|Denmark|
+|Dutch|Belgium, Netherlands|
+|English|Australia, Canada, France, Germany, India, Indonesia, Ireland, Italy, Malaysia, Netherlands, New Zealand, Philippines, Singapore, Spain, Sweden, Switzerland, Thailand, Vietnam, United Kingdom, United States|
+|Finnish|Finland|
+|French|Belgium, Canada, France, Switzerland|
+|German|Austria, Germany, Switzerland|
+|Italian|Italy|
+|Norwegian|Norway|
+|Portuguese|Brazil|
+|Spanish|Argentina, Chile, Colombia, Mexico, Peru, Spain, Venezuela|
+|Swedish|Sweden|
+|Traditional Chinese|Hong Kong S.A.R., Taiwan|
 
 Don’t see your country or region listed? Check back, because we are expanding to new markets on a regular basis.
 

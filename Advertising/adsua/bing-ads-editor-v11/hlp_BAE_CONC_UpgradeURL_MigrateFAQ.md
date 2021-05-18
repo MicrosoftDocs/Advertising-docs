@@ -1,7 +1,7 @@
 ---
 title: What are Upgraded URLs and how do I upgrade?
 description: Upgraded URLs separate your tracking information from the landing page URL making it easy to update and manage URL tracking. Find out the benefits of Upgraded URLs and how you can upgrade.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -19,9 +19,9 @@ The 4 new fields added with Upgraded URLs are **final URL**, **mobile URL**, **t
 
 ## Benefits of Upgraded URLs
 
-- **More efficient tracking management:** Manage and update tracking information of multiple URLs with a single shared tracking template. Turn hundreds or thousands of URL edits into one quick change.
-- **Less down time; more conversions and clicks:** Updates to tracking templates don't require an editorial review. This means your ads keep on running, so you don’t lose out on potential conversions.
-- **Additional tracking insights:** Ability to add both URL parameters and custom parameters to your tracking template   to gain additional insights about the source of your ad clicks.
+- **More efficient tracking management:**  Manage and update tracking information of multiple URLs with a single shared tracking template. Turn hundreds or thousands of URL edits into one quick change.
+- **Less down time; more conversions and clicks:**  Updates to tracking templates don't require an editorial review. This means your ads keep on running, so you don’t lose out on potential conversions.
+- **Additional tracking insights:**  Ability to add both URL parameters and custom parameters to your tracking template   to gain additional insights about the source of your ad clicks.
 
 ## How to upgrade
 

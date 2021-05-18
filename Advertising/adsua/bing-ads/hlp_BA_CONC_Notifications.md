@@ -15,63 +15,12 @@ Review your notifications, including critical alerts, standard alerts, and new f
 
 If you've been using Microsoft Advertising for a while, you'll remember three icons on the top of each page that split alerts into separate categories. The notifications bell unifies these icons and prioritizes the messages for you. Notifications are sorted by their urgency level, which is indicated by colored icons.
 
-<table style="width:95%">
-  <tr>
-    <th>
-        Notification type
-      </th>
-    <th>
-        What it means
-      </th>
-  </tr>
-  <tr>
-    <td>Critical (red circle icon)</td>
-    <td>
-      <para>
-          Urgent or important issues at the account level—for example, account management, billing, or payment problems that might keep your ads from appearing.
-        </para>
-      <para>
-          Critical notifications include links to the page where you can take action to address the problem.
-        </para>
-      <para>
-          <strong>Note: </strong>Critical alerts appear both in the notifications list in the bell and as a red bar across the top of your browser window (see below).
-        </para>
-    </td>
-  </tr>
-  <tr>
-    <td>Warning (yellow triangle icon)</td>
-    <td>
-      <para>
-          Important account or campaign level issues—for example, account link requests, low funds or budgets, or performance problems.
-        </para>
-      <para>
-        Warning notifications include links to help you address or review the problem, or to open a help article related to the alert. 
-        </para>
-    </td>
-  </tr>
-  <tr>
-    <td>Recommendation (teal light bulb icon)</td>
-    <td>
-      <para>
-          Opportunities or suggestions to improve campaign performance—for example, ways to better manage budgets or add more keywords.
-        </para>
-      <para>
-          Recommendation notifications include links to pages where you can implement suggested actions or learn more.
-        </para>
-    </td>
-  </tr>
-  <tr>
-    <td>Informational (blue information icon)</td>
-    <td>
-      <para>
-        Items of note that don't require immediate attention—for example, new feature alerts, received payments notices, or link request results.
-        </para>
-      <para>
-        Informational notifications may include links to related pages where you can learn more.
-        </para>
-    </td>
-  </tr>
-</table>
+|Notification type|What it means|
+|---|---|
+|Critical (red circle icon)|Urgent or important issues at the account level—for example, account management, billing, or payment problems that might keep your ads from appearing.Critical notifications include links to the page where you can take action to address the problem.**Note:** Critical alerts appear both in the notifications list in the bell and as a red bar across the top of your browser window (see below).|
+|Warning (yellow triangle icon)|Important account or campaign level issues—for example, account link requests, low funds or budgets, or performance problems.Warning notifications include links to help you address or review the problem, or to open a help article related to the alert.|
+|Recommendation (teal light bulb icon)|Opportunities or suggestions to improve campaign performance—for example, ways to better manage budgets or add more keywords.Recommendation notifications include links to pages where you can implement suggested actions or learn more.|
+|Informational (blue information icon)|Items of note that don't require immediate attention—for example, new feature alerts, received payments notices, or link request results.Informational notifications may include links to related pages where you can learn more.|
 
 ## Understanding red bar alerts
 

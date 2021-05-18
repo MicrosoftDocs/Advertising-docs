@@ -9,8 +9,8 @@ ms.author: eur
 
 # Dynamic ad target status
 
-**What it is**: The status of the dynamic ad target.
+**What it is** : The status of the dynamic ad target.
 
-**What you need to know**: The possible statuses are Active, Paused, and Deleted.
+**What you need to know** : The possible statuses are Active, Paused, and Deleted.
 
 

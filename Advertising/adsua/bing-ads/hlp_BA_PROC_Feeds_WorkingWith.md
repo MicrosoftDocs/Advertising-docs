@@ -32,17 +32,17 @@ You can then make changes to one of these feeds by re-uploading an edited versio
 ## Update: Add, change, or remove **some** of your feed's items
 1. Click on the name of a feed.
 1. For your updates to match up correctly, make sure the **Item ID** column is present in the feed's table. If it is not shown by default, you will need to add it:
-  1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
-  1. Click **Attributes**.
-  1. Next to **Item ID**, click **Add**.
-  1. Click **Apply**.
+   1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
+   1. Click **Attributes**.
+   1. Next to **Item ID**, click **Add**.
+   1. Click **Apply**.
 
 1. Click **Download** to get the feed in spreadsheet form.
 1. Remove any feed item rows from the spreadsheet that you don't want to update. Feed items that aren't listed in your edited feed will not be affected by the upload.
 1. Add an **Action** column to the spreadsheet. This column tells us what to do:
-  - Enter ```**Add**``` in a blank row to add a new feed item. The **Item ID** column should be empty for added feed items.
-  - Enter ```**Set**``` in the row of a feed item you want to change and then edit the information in any column except the **Item ID** column.
-  - Enter ```**Remove**``` in the row of a feed item you want to remove. For feed items to be removed, the only required columns are the **Action** and **Item ID** columns.
+   - Enter ```**Add**``` in a blank row to add a new feed item. The **Item ID** column should be empty for added feed items.
+   - Enter ```**Set**``` in the row of a feed item you want to change and then edit the information in any column except the **Item ID** column.
+   - Enter ```**Remove**``` in the row of a feed item you want to remove. For feed items to be removed, the only required columns are the **Action** and **Item ID** columns.
 
 > [!IMPORTANT]
 > Your edited feed file must not contain any columns that aren't present in your previous feed.
@@ -55,7 +55,7 @@ You can then make changes to one of these feeds by re-uploading an edited versio
 ## Replace: Replace **all** of your feed's items
 1. Click on the name of a feed.
 1. Click **Upload spreadsheet**.
-1. Select **Replace**.
+1. Select **Replace** .
 1. Click **Browse** to find your new feed file. Note: This file must be saved as one of the following formats: .csv, .tsv, or .xlsx.
 > [!IMPORTANT]
 > Your new feed file must not contain any columns that aren't present in your previous feed.
@@ -73,26 +73,26 @@ You can schedule feed uploads to keep your feed data up to date.
 **Create a feed schedule**
 1. Click on the name of a feed.
 1. Click on the **Schedules** tab and then **Schedule feed uploads**.
-1. Select the **Frequency** and **URL**.
-1. **Optional**: Enter **Username** and **Password**.
+1. Select the **Frequency**  and **URL** .
+1. **Optional** : Enter **Username** and **Password**.
 1. Click **Save**.
 
 **Edit a feed schedule**
 1. Click on the name of a feed.
 1. Click on the **Schedules** tab and then select one of the following options:
-  - **Edit** to change schedule fields.
-  - **Pause** current schedule.
-  - **Remove** current schedule.
-  - **Update now** to manually update feed immediately.
+   - **Edit**  to change schedule fields.
+   - **Pause**  current schedule.
+   - **Remove**  current schedule.
+   - **Update now**  to manually update feed immediately.
 
 **View upload history**
 1. Select the feed type.
 1. Click on the **Upload history** tab.
 1. Click **Download all results** or **Download errors only** to view upload details.
 
-**View schedule settings**					 					Select the feed type and from the table, you can see the **Schedule** and **Last run time** for each feed.
+**View schedule settings** 					 					Select the feed type and from the table, you can see the **Schedule** and **Last run time** for each feed.
 
-**Use Google Sheets feed**				   				  You can also download your feed file from Google Docs. Keep in mind that we only accept .csv or .tsv formats for feed files from Google.
+**Use Google Sheets feed** 				   				  You can also download your feed file from Google Docs. Keep in mind that we only accept .csv or .tsv formats for feed files from Google.
 1. Open your feed file in Google Docs.
 1. Click File and select Publish to the web.
 1. Select either Comma-separated values (.csv) or Tab-separated values (.tsv).

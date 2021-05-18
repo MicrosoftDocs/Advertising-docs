@@ -9,8 +9,8 @@ ms.author: eur
 
 # Language
 
-**What it is:** The language you'll write your Price Extension text.
+**What it is:**  The language you'll write your Price Extension text.
 
-**What you need to know:** The Price Qualifier (optional) and Unit (optional) will be automatically translated into this language.
+**What you need to know:**  The Price Qualifier (optional) and Unit (optional) will be automatically translated into this language.
 
 

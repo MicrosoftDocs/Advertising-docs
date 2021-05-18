@@ -12,10 +12,12 @@ ms.author: eur
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
 
+![Clipboard](../images/BA_Conc_Clipboard.svg)
 The key to success in online advertising is creating ads that are relevant, clear, and accurate. To help you do just that, we have a detailed [Microsoft Advertising  policies website](https://go.microsoft.com/fwlink?LinkId=398341) laying out what makes a great ad and what is and isn't allowed in an ad.
 
 When you [create a smart campaign](./hlp_BA_CONC_SmartCamps_Intro.md), edit an ad, or add an ad, all of your ad text goes through a review against these policies. So familiarizing yourself with the policies before you submit can make your approval process much quicker. Think of them as the playbook that'll lead you to victory!
 
+ 
 Microsoft Advertising policies cover the following areas (Note: Some of these policies are not relevant to smart campaigns):
 
 ## Ad content and style

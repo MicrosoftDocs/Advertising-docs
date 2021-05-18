@@ -9,8 +9,8 @@ ms.author: eur
 
 # Store Description
 
-**What it is:** A short description that explains the contents of your catalogs.
+**What it is:**  A short description that explains the contents of your catalogs.
 
-**What you need to know:** This description is for your information only. It is not displayed in your ad.
+**What you need to know:**  This description is for your information only. It is not displayed in your ad.
 
 

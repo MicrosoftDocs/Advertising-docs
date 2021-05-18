@@ -9,7 +9,7 @@ ms.author: eur
 
 # Disclaimer ad
 
-**What it is:** Show disclaimers in your ads for new campaigns with products that require additional caveats for legal or other reasons.
+**What it is:**  Show disclaimers in your ads for new campaigns with products that require additional caveats for legal or other reasons.
 
 **What you need to know:**
 - This is your only opportunity to add a disclaimer to ads in this campaign. You can subsequently edit, remove, or delete the disclaimer.

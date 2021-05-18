@@ -9,7 +9,7 @@ ms.author: eur
 
 # Total visits to special pages
 
-**What it is:** The total number of visits to your special pages from customers who clicked your ad during the selected date range.
+**What it is:**  The total number of visits to your special pages from customers who clicked your ad during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

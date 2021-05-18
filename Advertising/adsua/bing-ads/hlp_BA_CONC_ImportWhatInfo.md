@@ -30,99 +30,20 @@ To learn more, see [About ad distribution](./hlp_BA_CONC_AboutAdDistribution.md)
 ## Age and gender targeting
 By importing your age and gender targeting, you can reach customers who’re likely to be within the demographic range you choose. Microsoft Advertising matches most of your Google Ads age and gender targets, however, there are a few differences that you can review in the tables below.
 
-<table>
-  <tr>
-    <th style="width:300px" scope="col">
-            Google Ads age groups
-          </th>
-    <th style="width:450px" scope="col">
-            Microsoft Advertising age groups
-          </th>
-  </tr>
-  <tr>
-    <td>
-            18-24
-          </td>
-    <td style="text-align:left">
-            18-24
-          </td>
-  </tr>
-  <tr>
-    <td>
-           25-34
-          </td>
-    <td style="text-align:left">
-           25-34
-          </td>
-  </tr>
-  <tr>
-    <td>
-            35-44
-          </td>
-    <td style="text-align:left">
-           35-49
-          </td>
-  </tr>
-  <tr>
-    <td>
-           55-64
-          </td>
-    <td style="text-align:left">
-           50-64
-          </td>
-  </tr>
-  <tr>
-    <td>
-            65+
-          </td>
-    <td style="text-align:left">
-           65+
-          </td>
-  </tr>
-  <tr>
-    <td>
-            Unknown
-          </td>
-    <td style="text-align:left">
-            Not imported
-          </td>
-  </tr>
-</table>
+|Google Ads age groups|Microsoft Advertising age groups|
+|---|---|
+|18-24|18-24|
+|25-34|25-34|
+|35-44|35-49|
+|55-64|50-64|
+|65+|65+|
+|Unknown|Not imported|
 
-<table>
-  <tr>
-    <th style="width:300px" scope="col">
-            Google Ads gender groups
-          </th>
-    <th style="width:450px" scope="col">
-            Microsoft Advertising gender groups
-          </th>
-  </tr>
-  <tr>
-    <td>
-            Male
-          </td>
-    <td style="text-align:left">
-            Male
-          </td>
-  </tr>
-  <tr>
-    <td>
-            Female
-          </td>
-    <td style="text-align:left">
-            Female
-          </td>
-  </tr>
-  <tr>
-    <td>
-            Unknown
-          </td>
-    <td style="text-align:left">
-            Not imported
-          </td>
-  </tr>
-</table>
+|Google Ads gender groups|Microsoft Advertising gender groups|
+|---|---|
+|Male|Male|
+|Female|Female|
+|Unknown|Not imported|
 
 > [!IMPORTANT]
 > The Google Ads age group of 45-54 will not be imported into Microsoft Advertising.
@@ -134,6 +55,7 @@ Audiences are groups of potential customers that you can target. By importing yo
 
 ## Which audience types can I import from Google Ads?
 > [!NOTE]
+> Please note that any audience list that has the following attributes, will not be imported from Google Ads:
 > - Audience lists created at the MCC level. List types must belong to the account you’re importing from.
 > - Automatically created lists
 > - Lists set to match every rule group
@@ -324,406 +246,35 @@ Microsoft Advertising has different minimum bid and budget requirements than Goo
 
 ## Minimum bids and budgets
 
-<table>
-  <tr>
-    <th style="width:450px" scope="col">
-              Currency
-            </th>
-    <th style="width:300px" scope="col">
-              Search campaign
-              <para>
-                minimum bid
-              </para></th>
-    <th style="width:300px" scope="col">
-              Shopping campaign
-              <para>
-                minimum bid
-              </para></th>
-    <th style="width:300px" scope="col">
-              Search and shopping campaigns
-              <para>
-                minimum daily budget
-              </para></th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Argentine Peso (ARS)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Australian Dollar (AUD)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Thai Baht (THB)
-            </th>
-    <td style="text-align:left">
-              0.14
-            </td>
-    <td style="text-align:left">
-              0.14
-            </td>
-    <td style="text-align:left">
-              2.00
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Brazilian real (BRL)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.10
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Canadian dollar (CAD)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Chilean peso (CLP)
-            </th>
-    <td style="text-align:left">
-              5.10
-            </td>
-    <td style="text-align:left">
-              5.10
-            </td>
-    <td style="text-align:left">
-              5.10
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Colombian peso (COP)
-            </th>
-    <td style="text-align:left">
-              18.05
-            </td>
-    <td style="text-align:left">
-              18.05
-            </td>
-    <td style="text-align:left">
-              18.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Danish krone (DKK)
-            </th>
-    <td style="text-align:left">
-              0.06
-            </td>
-    <td style="text-align:left">
-              0.06
-            </td>
-    <td style="text-align:left">
-              0.06
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Euro (EUR)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.01 (France, Germany, Spain, Switzerland, Austria, Belgium, Netherlands, Italy, and Sweden only)
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Hong Kong dollar (HKD)
-            </th>
-    <td style="text-align:left">
-              1.00
-            </td>
-    <td style="text-align:left">
-              1.00
-            </td>
-    <td style="text-align:left">
-              1.00
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Indian rupee (INR)
-            </th>
-    <td style="text-align:left">
-              0.50
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.82
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Indonesian rupiah (IDR)
-            </th>
-    <td style="text-align:left">
-              35.00
-            </td>
-    <td style="text-align:left">
-              35.00
-            </td>
-    <td style="text-align:left">
-              480.00
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Malaysian ringgit (MYR)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.15
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Mexican peso (MXN)
-            </th>
-    <td style="text-align:left">
-              0.14
-            </td>
-    <td style="text-align:left">
-              0.14
-            </td>
-    <td style="text-align:left">
-              0.14
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              New Taiwan dollar (TWD)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              100.00
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              New Zealand dollar (NZD)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Norwegian krone (NOK)
-            </th>
-    <td style="text-align:left">
-              0.06
-            </td>
-    <td style="text-align:left">
-              0.06
-            </td>
-    <td style="text-align:left">
-              0.06
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Peruvian nuevo sol (PEN)
-            </th>
-    <td style="text-align:left">
-              0.03
-            </td>
-    <td style="text-align:left">
-              0.03
-            </td>
-    <td style="text-align:left">
-              0.03
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Philippine peso (PHP)
-            </th>
-    <td style="text-align:left">
-              0.20
-            </td>
-    <td style="text-align:left">
-              0.20
-            </td>
-    <td style="text-align:left">
-              2.00
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Polish Zloty (PLN)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.10
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Pound sterling (GBP)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Singapore dollar (SGD)
-            </th>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-              0.11
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Swedish krona (SEK)
-            </th>
-    <td style="text-align:left">
-              0.07
-            </td>
-    <td style="text-align:left">
-              0.07
-            </td>
-    <td style="text-align:left">
-              0.07
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Swiss franc (CHF)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.05
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-               South African Rand (ZAR)
-             </th>
-    <td style="text-align:left">
-               0.01
-             </td>
-    <td style="text-align:left">
-               0.01
-             </td>
-    <td style="text-align:left">
-               0.10
-             </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              Turkish Lira (TRY)
-            </th>
-    <td style="text-align:left">
-              1
-            </td>
-    <td style="text-align:left">
-            1
-            </td>
-    <td style="text-align:left">
-              10
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-              U.S. dollar (USD)
-            </th>
-    <td style="text-align:left">
-              0.05
-            </td>
-    <td style="text-align:left">
-              0.01
-            </td>
-    <td style="text-align:left">
-            0.05
-          </td>
-  </tr>
-</table>
+|Currency|Search campaignminimum bid|Shopping campaignminimum bid|Search and shopping campaignsminimum daily budget|
+|---|---|---|---|
+|Argentine Peso (ARS)|0.05|0.05|0.05|
+|Australian Dollar (AUD)|0.01|0.01|0.05|
+|Thai Baht (THB)|0.14|0.14|2.00|
+|Brazilian real (BRL)|0.01|0.01|0.10|
+|Canadian dollar (CAD)|0.05|0.01|0.05|
+|Chilean peso (CLP)|5.10|5.10|5.10|
+|Colombian peso (COP)|18.05|18.05|18.05|
+|Danish krone (DKK)|0.06|0.06|0.06|
+|Euro (EUR)|0.05|0.01 (France, Germany, Spain, Switzerland, Austria, Belgium, Netherlands, Italy, and Sweden only)|0.05|
+|Hong Kong dollar (HKD)|1.00|1.00|1.00|
+|Indian rupee (INR)|0.50|0.01|0.82|
+|Indonesian rupiah (IDR)|35.00|35.00|480.00|
+|Malaysian ringgit (MYR)|0.01|0.01|0.15|
+|Mexican peso (MXN)|0.14|0.14|0.14|
+|New Taiwan dollar (TWD)|0.01|0.01|100.00|
+|New Zealand dollar (NZD)|0.01|0.01|0.05|
+|Norwegian krone (NOK)|0.06|0.06|0.06|
+|Peruvian nuevo sol (PEN)|0.03|0.03|0.03|
+|Philippine peso (PHP)|0.20|0.20|2.00|
+|Polish Zloty (PLN)|0.01|0.01|0.10|
+|Pound sterling (GBP)|0.05|0.01|0.05|
+|Singapore dollar (SGD)|0.01|0.01|0.11|
+|Swedish krona (SEK)|0.07|0.07|0.07|
+|Swiss franc (CHF)|0.05|0.05|0.05|
+|South African Rand (ZAR)|0.01|0.01|0.10|
+|Turkish Lira (TRY)|1|1|10|
+|U.S. dollar (USD)|0.05|0.01|0.05|
 
 ## Currency mismatch
 
@@ -831,6 +382,7 @@ If your Google Ads campaign uses the utm_source parameter, the value for that pa
 - IP exclusions
 
 > [!NOTE]
+> You can now import from Google Ads:
 > - 20 thousand campaigns
 > - 10 million ad groups
 > - 20 million keywords
@@ -850,151 +402,20 @@ Whether this is your first time or you’re re-importing an existing campaign, i
 ## Main entities imported and updated for search campaigns
 
 ## Campaigns
-<table>
-  <tr>
-    <th style="width:220px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads 
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Campaign name: Campaign names in Microsoft Advertising are not case-sensitive. If you import or re-import campaigns named “Coffee Sales” and “coffee sales” from Google Ads, you will see an error for a duplicate campaign name. However, if you import a campaign named “Coffee Sales” under an account that already contains a campaign named “coffee sales”, we recognize them as the same, and will update accordingly.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Campaign labels
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Budget amount
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Budget type
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Bid strategy:
-              Some bid strategies are not supported in Microsoft Advertising. For unsupported bid strategies, your campaign bid strategy will be set to Enhanced CPC and bids will be set to an amount we recommend. Please note that you can update these bids after you import them to Microsoft Advertising.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Start/End date: Please note that Google Ads supports start and end dates at the campaign-level, while Microsoft Advertising supports them only at the ad group-level.  That means that the imported campaign level date range will override the existing ad group date range in Microsoft Advertising. Also note that if the end date has passed for a campaign that you import, the end date for ad groups in the campaign will be set to January 1, 2050.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Status
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Tracking template
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Custom parameters
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Time zone:
-              When you import a campaign for the first time, the time zone at account-level is used. After that, the time zone doesn’t change.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Campaign type
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Sales country
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Campaign name: Campaign names in Microsoft Advertising are not case-sensitive. If you import or re-import campaigns named “Coffee Sales” and “coffee sales” from Google Ads, you will see an error for a duplicate campaign name. However, if you import a campaign named “Coffee Sales” under an account that already contains a campaign named “coffee sales”, we recognize them as the same, and will update accordingly.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Campaign labels|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Budget amount|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Budget type|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Bid strategy:              Some bid strategies are not supported in Microsoft Advertising. For unsupported bid strategies, your campaign bid strategy will be set to Enhanced CPC and bids will be set to an amount we recommend. Please note that you can update these bids after you import them to Microsoft Advertising.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Start/End date: Please note that Google Ads supports start and end dates at the campaign-level, while Microsoft Advertising supports them only at the ad group-level.  That means that the imported campaign level date range will override the existing ad group date range in Microsoft Advertising. Also note that if the end date has passed for a campaign that you import, the end date for ad groups in the campaign will be set to January 1, 2050.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Status|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Tracking template|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Custom parameters|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Time zone:              When you import a campaign for the first time, the time zone at account-level is used. After that, the time zone doesn’t change.|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Campaign type|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Sales country|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 > [!NOTE]
 > Ad group and campaign updates are fetched from previous imports to match those currently in Google Ads. If these items were created by a Microsoft Advertising online import after March 21, 2016, their updates will be fetched. Ad groups and campaigns imported previous to that date will not be updated. Instead, new or duplicative items may be created.
@@ -1166,529 +587,83 @@ Whether this is your first time or you’re re-importing an existing campaign, i
 > If a Google Ads campaign name matches an existing Microsoft Advertising campaign name, the two will be merged during an import.
 
 ## Keywords
-<table>
-  <tr>
-    <th style="width:220px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Keyword text
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Match type: When you import a campaign for the first time, the match type is imported. After that, the match type is not updated.
-            </th>
-    <td style="text-align:left">
-               ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Bid
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-               ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Bid strategy: Keywords will use the ad group’s bid strategy. If the keyword is explicitly set to Manual CPC, then it will be imported with Manual CPC.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Status
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Param1
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Param2
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Param3
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Final URL
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Final mobile URL
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Tracking template
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Custom parameters
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Keyword text|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Match type: When you import a campaign for the first time, the match type is imported. After that, the match type is not updated.|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Bid|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Bid strategy: Keywords will use the ad group’s bid strategy. If the keyword is explicitly set to Manual CPC, then it will be imported with Manual CPC.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Status|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Param1|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Param2|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Param3|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Final URL|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Final mobile URL|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Tracking template|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Custom parameters|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 ## Standard text ads
 > [!NOTE]
 > Microsoft Advertising no longer supports importing standard text ads from Google Ads. However, if you imported standard text ads before August 3rd, 2017 and choose to re-import them, we will import status changes (Pause/Unpause) from Google Ads.
 
 ## Expanded Text Ads
-<table>
-  <tr>
-    <th style="width:220px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads 
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Title part 1: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 1.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Title part 2: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 2.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Title part 3: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 3.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Description: Microsoft Advertising and Google Ads allow 90 characters.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Description 2: Microsoft Advertising and Google Ads allow 90 characters.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Path 1: Microsoft Advertising and Google Ads allow 15 characters.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Path 2: Microsoft Advertising and Google Ads allow 15 characters.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              URL custom parameters
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Tracking template
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Final URL: Microsoft Advertising has a 35-character maximum limit for the host in URL. For example, if the URL is http://www.edu.bing.co.uk/pages/one, then the host is www.edu.bing.co.uk and it can’t be more than 35 characters. Google Ads allows more than 35 characters for the host in URL.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Ad labels
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Title part 1: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 1.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Title part 2: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 2.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Title part 3: Microsoft Advertising and Google Ads allow 30 characters. Google Ads calls this headline 3.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Description: Microsoft Advertising and Google Ads allow 90 characters.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Description 2: Microsoft Advertising and Google Ads allow 90 characters.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Path 1: Microsoft Advertising and Google Ads allow 15 characters.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Path 2: Microsoft Advertising and Google Ads allow 15 characters.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|URL custom parameters|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Tracking template|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Final URL: Microsoft Advertising has a 35-character maximum limit for the host in URL. For example, if the URL is http://www.edu.bing.co.uk/pages/one, then the host is www.edu.bing.co.uk and it can’t be more than 35 characters. Google Ads allows more than 35 characters for the host in URL.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Ad labels|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 > [!NOTE]
 > If Expanded Text Ads missing from your import, be sure to select **Ad customizer feeds** under the **Feeds** section of your import options. Then try your import again.
 
 ## Product ads
-<table>
-  <tr>
-    <th style="width:260px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Status
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Promotion
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left"></td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Ad labels
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Status|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Promotion|![green check mark](../images/Global_Icon_CheckMark.png)||
+|Ad labels|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 ## Responsive search ads
-<table>
-  <tr>
-    <th style="width:260px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Final URL: Microsoft Advertising has a 35-character maximum limit for the host in URL. For example, if the URL is http://www.edu.bing.co.uk/pages/one, then the host is www.edu.bing.co.uk and it can’t be more than 35 characters. Google Ads allows more than 35 characters for the host in URL.
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Headlines
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Path: Microsoft Advertising and Google Ads allow 15 characters.
-          </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Descriptions
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-               Mobile URL 
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Tracking template
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Final URL suffix
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Custom parameters
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Final URL: Microsoft Advertising has a 35-character maximum limit for the host in URL. For example, if the URL is http://www.edu.bing.co.uk/pages/one, then the host is www.edu.bing.co.uk and it can’t be more than 35 characters. Google Ads allows more than 35 characters for the host in URL.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Headlines|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Path: Microsoft Advertising and Google Ads allow 15 characters.|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Descriptions|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Mobile URL|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Tracking template|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Final URL suffix|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Custom parameters|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 > [!NOTE]
+> Please note there is a limit of three enabled responsive search ads per ad group. If you’re having trouble importing responsive search ads from Google Ads:
 > - Manually pause or delete old responsive search ads to make room for other enabled ones.
 > - Choose **Delete items that have been removed from your Google Ads** account in your [import options](./hlp_BA_PROC_ImportCampaign.md).
 
 [Learn more about responsive search ads](./hlp_BA_CONC_ResponsiveSearchAds.md).
 ## Labels
-<table>
-  <tr>
-    <th style="width:260px" scope="col">
-              Items
-            </th>
-    <th style="width:220px" scope="col">
-              Imported from Google Ads
-            </th>
-    <th style="width:220px" scope="col">
-              Updated during re-import
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Label name
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Label color
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent;font-weight: normal">
-              Label description
-            </th>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:left">
-              ![green check mark](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Items|Imported from Google Ads|Updated during re-import|
+|---|---|---|
+|Label name|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Label color|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
+|Label description|![green check mark](../images/Global_Icon_CheckMark.png)|![green check mark](../images/Global_Icon_CheckMark.png)|
 
 Choosing the appropriate import options can determine which items get imported to Microsoft Advertising for the first time, updated from a previous import, or left untouched. Below, you can review both your import goals and the options you must choose to achieve them.
 
-<table>
-  <tr>
-    <th style="width:300px" scope="col">
-        What is your import goal?
-      </th>
-    <th style="width:300x" scope="col">
-        What import options should I choose?
-      </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new labels and update existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Labels</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new labels and ignore updating existing ones.
-      </th>
-    <td style="text-align:left">
-       Check <strong>Labels</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>. Uncheck <strong>Labels</strong> under <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore new labels and import updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Labels</strong> under <strong>Updates to existing items</strong>. Uncheck <strong>Labels</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore both new labels and updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Uncheck <strong>Labels</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-</table>
+|What is your import goal?|What import options should I choose?|
+|---|---|
+|Import new labels and update existing ones.|Check **Labels** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
+|Import new labels and ignore updating existing ones.|Check **Labels** under **Items not previously imported into Microsoft Advertising**. Uncheck **Labels** under **Updates to existing items**.|
+|Ignore new labels and import updates to existing ones.|Check **Labels** under **Updates to existing items**. Uncheck **Labels** under **Items not previously imported into Microsoft Advertising**.|
+|Ignore both new labels and updates to existing ones.|Uncheck **Labels** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
 
 > [!NOTE]
 > Please note that if you’ve removed labels in Google Ads and then select **Labels** under **Updates to existing items**, those labels will be deleted during the import.
@@ -1803,48 +778,12 @@ Choosing the appropriate import options can determine which items get imported t
 
 Choosing the appropriate import options can determine which items get imported to Microsoft Advertising for the first time, updated from a previous import, or left untouched. Below, you can review both your import goals and the options you must choose to achieve them.
 
-<table>
-  <tr>
-    <th style="width:300px" scope="col">
-        What is your import goal?
-      </th>
-    <th style="width:300x" scope="col">
-        What import options should I choose?
-      </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new ad extensions and update existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Ad extensions</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new ad extensions and ignore updating existing ones.
-      </th>
-    <td style="text-align:left">
-       Check <strong>Ad extensions</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>. Uncheck <strong>Ad extensions</strong> under <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore new ad extensions and import updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Ad extensions</strong> under <strong>Updates to existing items</strong>. Uncheck <strong>Ad extensions</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore both ad extensions and updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Uncheck <strong>Ad extensions</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-</table>
+|What is your import goal?|What import options should I choose?|
+|---|---|
+|Import new ad extensions and update existing ones.|Check **Ad extensions** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
+|Import new ad extensions and ignore updating existing ones.|Check **Ad extensions** under **Items not previously imported into Microsoft Advertising**. Uncheck **Ad extensions** under **Updates to existing items**.|
+|Ignore new ad extensions and import updates to existing ones.|Check **Ad extensions** under **Updates to existing items**. Uncheck **Ad extensions** under **Items not previously imported into Microsoft Advertising**.|
+|Ignore both ad extensions and updates to existing ones.|Uncheck **Ad extensions** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
 
 > [!NOTE]
 > Please note that a schedule update in Google Ads is treated the same as deleting the previous schedule and adding a new schedule. If you select ad extensions under **Updates to existing items**, and if any schedules were updated or removed in Google Ads, then those schedules will be deleted from Microsoft Advertising during the import.
@@ -1882,48 +821,12 @@ Mobile and tablet
 
 Choosing the appropriate import options can determine which items get imported to Microsoft Advertising for the first time, updated from a previous import, or left untouched. Below, you can review both your import goals and the options you must choose to achieve them.
 
-<table>
-  <tr>
-    <th style="width:300px" scope="col">
-        What is your import goal?
-      </th>
-    <th style="width:300x" scope="col">
-        What import options should I choose?
-      </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new campaign and ad group targets and update existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Targeting</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Import new campaign and ad group targets and ignore updating existing ones.
-      </th>
-    <td style="text-align:left">
-       Check <strong>Targeting</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>. Uncheck <strong>Targeting</strong> under <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore new campaign and ad group targets and import updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Check <strong>Targeting</strong> under <strong>Updates to existing items</strong>. Uncheck   <strong>Targeting</strong> under <strong>Items not previously imported into Microsoft Advertising</strong>.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-        Ignore both new campaign and ad group targets and updates to existing ones.
-      </th>
-    <td style="text-align:left">
-        Uncheck <strong>Targeting</strong> under both <strong>Items not previously imported into Microsoft Advertising</strong> and <strong>Updates to existing items</strong>.
-      </td>
-  </tr>
-</table>
+|What is your import goal?|What import options should I choose?|
+|---|---|
+|Import new campaign and ad group targets and update existing ones.|Check **Targeting** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
+|Import new campaign and ad group targets and ignore updating existing ones.|Check **Targeting** under **Items not previously imported into Microsoft Advertising**. Uncheck **Targeting** under **Updates to existing items**.|
+|Ignore new campaign and ad group targets and import updates to existing ones.|Check **Targeting** under **Updates to existing items**. Uncheck   **Targeting** under **Items not previously imported into Microsoft Advertising**.|
+|Ignore both new campaign and ad group targets and updates to existing ones.|Uncheck **Targeting** under both **Items not previously imported into Microsoft Advertising** and **Updates to existing items**.|
 
 > [!NOTE]
 > Please note that an update in Google Ads is treated as deleting the previous target and adding a new target. If you select **Targeting** under **Updates to existing items**, and if the targets were updated or removed in Google Ads, then those targets will be deleted from Microsoft Advertising during the import.

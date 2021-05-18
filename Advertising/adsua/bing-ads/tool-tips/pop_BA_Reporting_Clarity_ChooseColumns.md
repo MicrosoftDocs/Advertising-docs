@@ -9,8 +9,8 @@ ms.author: eur
 
 # Choose your columns
 
-**What it is:**A list of all the columns that can be included in the report.
+**What it is:** A list of all the columns that can be included in the report.
 
-**Why it’s important:**    You can add or remove columns in the report to only show data you want.
+**Why it’s important:**     You can add or remove columns in the report to only show data you want.
 
 

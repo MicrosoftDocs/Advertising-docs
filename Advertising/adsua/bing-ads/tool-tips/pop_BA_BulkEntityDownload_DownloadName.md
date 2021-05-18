@@ -9,6 +9,6 @@ ms.author: eur
 
 # Download name
 
-**What it is**: Here you enter a descriptive name for your download. This name will appear on your Downloads page.
+**What it is** : Here you enter a descriptive name for your download. This name will appear on your Downloads page.
 
 

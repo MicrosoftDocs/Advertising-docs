@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous Visits
 
-**What you need to know:** Add additional information such as ad descriptions, display URL, search queries, or landing page phrases to the title line of your ad.
+**What you need to know:**  Add additional information such as ad descriptions, display URL, search queries, or landing page phrases to the title line of your ad.
 
 

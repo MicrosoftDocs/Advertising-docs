@@ -9,6 +9,6 @@ ms.author: eur
 
 # Date
 
-**What it is:**    The date that your data was logged.
+**What it is:**     The date that your data was logged.
 
 

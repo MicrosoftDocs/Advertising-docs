@@ -27,8 +27,8 @@ If you don’t receive the email, check your junk mail folder.
 
 The steps to reset a forgotten password depend on how you are signing in to Microsoft Advertising:
 
-- **Using a Microsoft Advertising user name and password.** Only customers who signed up before October 2013 and haven’t transitioned to using an email address are still signing in with a Microsoft Advertising user name and password.
-- **Using an email address and password (a Microsoft account).**This is [the new way to sign in to Microsoft Advertising](./hlp_BA_CONC_MSAFAQ.md). Keep in mind that when you reset your password for your Microsoft account, you reset it for all Microsoft services and devices that you sign in to using that email address (for example, Office365, Skype, OneDrive, Xbox LIVE, Outlook.com).
+- **Using a Microsoft Advertising user name and password.**  Only customers who signed up before October 2013 and haven’t transitioned to using an email address are still signing in with a Microsoft Advertising user name and password.
+- **Using an email address and password (a Microsoft account).** This is [the new way to sign in to Microsoft Advertising](./hlp_BA_CONC_MSAFAQ.md). Keep in mind that when you reset your password for your Microsoft account, you reset it for all Microsoft services and devices that you sign in to using that email address (for example, Office365, Skype, OneDrive, Xbox LIVE, Outlook.com).
 
 <table>
   <tr>

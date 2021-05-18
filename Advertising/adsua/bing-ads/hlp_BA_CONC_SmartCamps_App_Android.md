@@ -17,6 +17,7 @@ All you need to get started is a device running Android 4.1 or later and an emai
 
 Download the Microsoft Advertising App by selecting the image link below or by searching for "Microsoft Advertising" in your smartphone's app store.
 
+[![Microsoft Advertising for Android](../images/BAM_CONC_Android.png)](https://go.microsoft.com/fwlink?LinkId=624094)
 ## Signing in
 
 1. Enter your email address and select **Next**.

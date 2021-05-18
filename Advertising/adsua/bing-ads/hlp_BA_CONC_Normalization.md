@@ -15,79 +15,26 @@ For example, let's say you type **bike-repair** as one of your keywords, and the
 
 Below is the list of extra characters that Microsoft Advertising looks for and will ignore. If you use any of the characters below, and have a similar keyword without those characters, you can safely remove either the duplicate or original keyword. Doing so can simplify your keyword management without ever negatively impacting performance. [How to add, edit or delete keywords](./hlp_BA_PROC_AddKeywordsOrder.md)
 
-<table type="type2" style="width:100%">
-  <tr>
-    <td>quotation mark (")</td>
-    <td>ampersand (&amp;)</td>
-    <td>hyphen (-)</td>
-  </tr>
-  <tr>
-    <td>asterisk (*)</td>
-    <td>percentage sign (%)</td>
-    <td>parentheses (( ))</td>
-  </tr>
-  <tr>
-    <td>brackets ([ ])</td>
-    <td>curly brackets ({ })</td>
-    <td>period (.)</td>
-  </tr>
-  <tr>
-    <td>comma (,)</td>
-    <td>question mark (?)</td>
-    <td>slash mark (/)</td>
-  </tr>
-  <tr>
-    <td>backslash (\)</td>
-    <td>colon (:)</td>
-    <td>semicolon (;)</td>
-  </tr>
-  <tr>
-    <td>exclamation point (!)</td>
-    <td>apostrophe ('), except for 's and 't</td>
-    <td>angle brackets (&lt; &nbsp;&gt;)</td>
-  </tr>
-  <tr>
-    <td>plus sign (+)</td>
-    <td>number sign (#)</td>
-    <td>equal sign (=)</td>
-  </tr>
-  <tr>
-    <td>vertical bar (|)</td>
-    <td>underline (_)</td>
-    <td>tilde (~)</td>
-  </tr>
-  <tr>
-    <td>at sign (@)</td>
-    <td>dollar sign ($)</td>
-    <td>caret (^)</td>
-  </tr>
-  <tr>
-    <td>grave accent (`)</td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+|quotation mark (")|ampersand (&amp;)|hyphen (-)|
+|---|---|---|
+|asterisk (\*)|percentage sign (%)|parentheses (( ))|
+|brackets ([ ])|curly brackets ({ })|period (.)|
+|comma (,)|question mark (?)|slash mark (/)|
+|backslash (\)|colon (:)|semicolon (;)|
+|exclamation point (!)|apostrophe ('), except for 's and 't|angle brackets (&lt; &nbsp;&gt;)|
+|plus sign (+)|number sign (#)|equal sign (=)|
+|vertical bar (|)|underline (_)|tilde (~)|
+|at sign (@)|dollar sign ($)|caret (^)|
+|grave accent (`)|||
 
+&nbsp;
 While normalizing keywords helps save you time in managing your keyword lists, this approach can limit certain highly specific keywords’ performances. As such, enhanced normalization logic is incorporated into our auction process. Here are our normalization categories:
 
-<table>
-  <tr>
-    <th scope="col">Normalization category</th>
-    <th scope="col">Normalization process</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Stop words</th>
-    <td>The following words will not be removed: is, a, what, the, and, at, to, of, in, or, about, for, with, on, from, by, 've (e.g. should've), an</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Special characters</th>
-    <td>Accents (é) will not be removed.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Apostrophes</th>
-    <td>Apostrophes 's at the end of words will not be removed. Note, 't is already retained.</td>
-  </tr>
-</table>
+|Normalization category|Normalization process|
+|---|---|
+|Stop words|The following words will not be removed: is, a, what, the, and, at, to, of, in, or, about, for, with, on, from, by, 've (e.g. should've), an|
+|Special characters|Accents (é) will not be removed.|
+|Apostrophes|Apostrophes 's at the end of words will not be removed. Note, 't is already retained.|
 
 &nbsp;
 

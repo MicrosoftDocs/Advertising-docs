@@ -15,11 +15,11 @@ ms.author: eur
 
 Before you start setting up variable revenue, make sure you have:
 
-- **A JavaScript UET tag**: [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md).
-  - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
+- **A JavaScript UET tag** : [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md).
+   - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
 
-- **A conversion goal**: Create a destination URL or event conversion goal. To learn more, see [How do I create a conversion goal?](./hlp_BA_PROC_UETv2CreateGoal.md)
-- **The ability to edit website code**: Make sure that either you or your webmaster can edit your website code.
+- **A conversion goal** : Create a destination URL or event conversion goal. To learn more, see [How do I create a conversion goal?](./hlp_BA_PROC_UETv2CreateGoal.md)
+- **The ability to edit website code** : Make sure that either you or your webmaster can edit your website code.
 
 ## How to set up variable revenue reporting
 
@@ -46,7 +46,7 @@ Let's look at how to pass variable revenue for a destination URL type goal in PH
 
 1. Open the code file for your conversion confirmation page (the page the customer sees after they complete the action you want to track). If multiple pages are generated from the same file, find the section in the file that generates your conversion page.
 1. First, you'll need to add one of the following variable revenue JavaScripts:
-  1. **For destination URL conversion goals**: Add the following JavaScript below the UET tag that you have already added to your webpage's code:
+   1. **For destination URL conversion goals** : Add the following JavaScript below the UET tag that you have already added to your webpage's code:
 ```
 ```<head>```Your page title  ```</head>```	  					```<body>``` 
  // Let's say this is where you pasted the UET tag.
@@ -60,7 +60,7 @@ Let's look at how to pass variable revenue for a destination URL type goal in PH
 > [!NOTE]
 > Even though this isn't a custom event conversion goal (see next section), you still must include the command 'event'. For a destination URL goal, just leave the event action empty (as in, 'event', '').
 
-  1. **For custom event conversion goals**: Add the following JavaScript below the UET tag that you have already added to your webpage's code:
+   1. **For custom event conversion goals** : Add the following JavaScript below the UET tag that you have already added to your webpage's code:
 ```
 ```<head>```Your page title  ```</head>```	  					```<body>``` 
  // Let's say this is where you pasted the UET tag.

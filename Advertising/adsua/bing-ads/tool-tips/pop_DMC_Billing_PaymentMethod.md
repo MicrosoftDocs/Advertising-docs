@@ -9,7 +9,7 @@ ms.author: eur
 
 # Payment for search advertising
 
-**What it is: **
+**What it is:**
 - To pay for search advertising in Microsoft Advertising, you must have a credit or debit card as your **Primary payment method**.
 - You can add a **Backup payment method** that will be charged if a payment charged to your primary payment method is unsuccessful.
 - If you’d like to add another card, you can add it as an **Additional payment method**. Please note, unlike a backup payment method, an additional payment method will not be charged if a payment using your primary payment method is unsuccessful.

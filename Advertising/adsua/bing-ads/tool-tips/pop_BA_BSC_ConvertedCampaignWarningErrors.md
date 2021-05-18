@@ -9,6 +9,6 @@ ms.author: eur
 
 # Converted campaign warning errors
 
-**What it is:** Any errors that occur while converting the campaigns will be indicated here.
+**What it is:**  Any errors that occur while converting the campaigns will be indicated here.
 
 

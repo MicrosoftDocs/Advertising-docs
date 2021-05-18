@@ -9,7 +9,7 @@ ms.author: eur
 
 # Automated text ads
 
-**What it is:**    Our artificial intelligence (AI) builds text ads, also called search ads, to optimize your search advertising campaigns and target the customers you want.
+**What it is:**     Our artificial intelligence (AI) builds text ads, also called search ads, to optimize your search advertising campaigns and target the customers you want.
 
 **What you need to know:**
 - Microsoft AI will build text ads using your business info, your website, and text ads that you create.

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Matched products
 
-**What it is:** The number of products found from linked stores.
+**What it is:**  The number of products found from linked stores.
 
-**What you need to know:** While the matching process is in progress, you will see "Pending" for the number of matched products.
+**What you need to know:**  While the matching process is in progress, you will see "Pending" for the number of matched products.
 
 

@@ -31,8 +31,8 @@ If we've identified a similar audience that's large enough, then it's available 
 1. In the left navigation pane, click **Shared Library** and then **Audiences** (or from the main menu on the left, click **Tools** and then **Audiences**).
 1. Any similar audiences we've identified will appear in the table, named "Similar to [name of remarketing list]".
 1. Check the **Audience status** column for the similar audience:
-  - "Ready" means it's available to be associated to an ad group or campaign.
-  - "Audience too small" means we haven't identified enough similar customers yet. Check back later to see if we've found enough additional customers.
+   - "Ready" means it's available to be associated to an ad group or campaign.
+   - "Audience too small" means we haven't identified enough similar customers yet. Check back later to see if we've found enough additional customers.
 
 ## How do I target a similar audience?
 1. From the **Campaigns** page, click the **Audiences** tab (or from the main menu on the left, click **All campaigns** and then **Audiences**).
@@ -40,8 +40,8 @@ If we've identified a similar audience that's large enough, then it's available 
 1. Select the ad group or campaign you want to associate with a similar audience.
 1. Under **Ad group targeting** or **Campaign targeting**, select **Similar audience** from the drop-down list of audience options.
 1. Select your **Targeting setting**:
-  - **Bid only**: Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
-  - **Target and bid**: Shows ads only to the selected audience, with the option to make bid adjustments.
+   - **Bid only** : Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
+   - **Target and bid** : Shows ads only to the selected audience, with the option to make bid adjustments.
 
 1. Adjust the **Default bid adjustment**. By default, new targeting associations are set to 15%, however, the bid adjustment can range from -90% to +900%.
 1. Click **Save**.
@@ -51,6 +51,7 @@ If we've identified a similar audience that's large enough, then it's available 
 1. Select the existing audience associations you want to edit from the table.
 1. Click **Edit** to pause or exclude the audience or to change its bid adjustment.
 
+ 
 > [!NOTE]
 > Similar audiences are just one of our [audience targeting options](./hlp_BA_CONC_Audiences_Options.md).
 

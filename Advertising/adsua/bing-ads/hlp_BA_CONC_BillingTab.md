@@ -55,8 +55,8 @@ There are a few things that you should know when reviewing and using Billing Sum
 > [!NOTE]
 > Account owners always have access to billing documents, even if they're not the bill-to customer. Direct managers who are linked to a Microsoft Advertising account may or may not have access to billing documents. It all depends on who is responsible for payments.
 > 
-> - **If the account owner is the bill-to customer: **The account owner and **all direct managers** can see billing documents.
-> - **If a direct manager is the bill-to customer: **Only the account owner and the direct manager responsible for payments can see billing documents. Any other direct managers on the account won't be able to see billing documents
+> - **If the account owner is the bill-to customer:** The account owner and **all direct managers** can see billing documents.
+> - **If a direct manager is the bill-to customer:** Only the account owner and the direct manager responsible for payments can see billing documents. Any other direct managers on the account won't be able to see billing documents
 > In the second scenario, this restriction is by design. Although rare, this can happen when multiple ad agencies are linked to a client's Microsoft Advertising account, and one ad agency is responsible for payments.
 
 ## Billing tasks

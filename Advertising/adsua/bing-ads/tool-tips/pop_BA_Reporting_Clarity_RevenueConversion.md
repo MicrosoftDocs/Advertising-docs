@@ -9,6 +9,6 @@ ms.author: eur
 
 # Revenue per conversion
 
-**What it is:**    Revenue divided by the number of conversions.
+**What it is:**     Revenue divided by the number of conversions.
 
 

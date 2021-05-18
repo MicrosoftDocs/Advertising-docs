@@ -1,7 +1,7 @@
 ---
 title: About ad distribution
 description: Use ad distribution to select where you want your ads to show. You can choose to have your ads shown on the entire Microsoft Search Network or subsets of it.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -15,8 +15,8 @@ Use ad distribution to select where you want your ads to show. You can choose to
 
 Within the search network, you have additional options. You can choose to have your ads shown on the following:
 
-- **        Only Bing, AOL, and Yahoo owned and operated sites      **
-- **        Only Bing, AOL, and Yahoo syndicated search partner sites      ** (these are sites that partner with us to use Bing and Yahoo search results -- see [this article](https://go.microsoft.com/fwlink?LinkId=398369) for more information)
+- **        Only Bing, AOL, and Yahoo owned and operated sites**
+- **        Only Bing, AOL, and Yahoo syndicated search partner sites**  (these are sites that partner with us to use Bing and Yahoo search results -- see [this article](https://go.microsoft.com/fwlink?LinkId=398369) for more information)
 - **Both**
 
 Ads on the search network may also be displayed in the Bing Smart Search results.

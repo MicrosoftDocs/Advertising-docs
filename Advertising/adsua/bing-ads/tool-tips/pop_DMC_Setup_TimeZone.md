@@ -9,8 +9,8 @@ ms.author: eur
 
 # Time zone
 
-**What it is:** This is the time zone this campaign will operate in.
+**What it is:**  This is the time zone this campaign will operate in.
 
-**What you need to know:** This setting does not affect your billing.
+**What you need to know:**  This setting does not affect your billing.
 
 

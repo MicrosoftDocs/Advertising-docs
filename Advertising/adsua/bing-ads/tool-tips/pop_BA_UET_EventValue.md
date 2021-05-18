@@ -11,7 +11,7 @@ ms.author: eur
 
 Event values are different from goal values. The event value is used in tracking and identifying a conversion, while the goal value is used to assign a monetary value to the conversion.
 
-**Get more info: **
+**Get more info:**
 
 [What is conversion tracking?](../hlp_BA_CONC_UETv2WhatIsCT.md)
 

@@ -29,7 +29,7 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Category</th>
     <td>Predefined product category
 							 
-							<strong>Example</strong>: Software &gt; Computer Software
+							<strong>Example</strong> : Software &gt; Computer Software
 						</td>
     <td>
       <ul>
@@ -43,9 +43,9 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Brand</th>
     <td>Item’s manufacturer, brand, or publisher
 							 
-							<strong>Example</strong>: Contoso
-							 
-							<strong>Requirements</strong>:
+							<strong>Example</strong> : Contoso
+> 							 
+							<strong>Requirements</strong> :
 							 Alphanumeric
 							 70-character limit
 							 10-word limit
@@ -61,9 +61,9 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Condition</th>
     <td>Condition of item
 							 
-							<strong>Example</strong>: new
-							 
-							<strong>Requirements</strong>: Valid options: new; used; refurbished
+							<strong>Example</strong> : new
+> 							 
+							<strong>Requirements</strong> : Valid options: new; used; refurbished
 						</td>
     <td>
       <ul>
@@ -78,11 +78,11 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Item ID</th>
     <td>A unique identifier for the item.
 						 
-						<strong>Example</strong>: ISI1
-						 
-						<strong>Requirements</strong>: 50 Unicode character limit
-						 
-						<strong>Recommended</strong>: ASCII only: alphanumeric, underscores (_) and dashes (-)
+						<strong>Example</strong> : ISI1
+> 						 
+						<strong>Requirements</strong> : 50 Unicode character limit
+> 						 
+						<strong>Recommended</strong> : ASCII only: alphanumeric, underscores (_) and dashes (-)
 						</td>
     <td>
       <ul>
@@ -97,9 +97,9 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Product type</th>
     <td>Your category of the item
 							 
-							<strong>Example</strong>: Home &gt; Electronics &gt; DVD Player
-							 
-							<strong>Requirements</strong>: 
+							<strong>Example</strong> : Home &gt; Electronics &gt; DVD Player
+> 							 
+							<strong>Requirements</strong> : 
 							 Alphanumeric
 							 750-character limit
 							 Delimiters: greater than [&gt;]
@@ -110,9 +110,9 @@ We recommend that you break down the single product group into smaller product g
     <th scope="row" style="border-bottom:solid 1px #ccc">Custom label</th>
     <td>Use to identify products for ad campaign filters
 							 
-							<strong>Example</strong>: Best sellers, High ROAS, Winter
-							 
-							<strong>Requirements</strong>: 
+							<strong>Example</strong> : Best sellers, High ROAS, Winter
+> 							 
+							<strong>Requirements</strong> : 
 							 Alphanumeric
 							 Max 200 characters
 							 Single-value

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Language
 
-**What it is:**      The language your ads are being served in.
+**What it is:**       The language your ads are being served in.
 
-**      What you need to know:    **    Languages are based on the location and browser settings of whoever is viewing your ad.
+**      What you need to know:**     Languages are based on the location and browser settings of whoever is viewing your ad.
 
 

@@ -17,45 +17,12 @@ Performance estimates and keyword suggestions are currently supported for Englis
 
 A number of factors may lead to low estimated performance, but here are some common cases:
 
-<table type="type1">
-  <tr>
-    <th scope="col">Issue</th>
-    <th scope="col">Fix</th>
-  </tr>
-  <tr>
-    <th scope="row">
-        Your budget is too low
-      </th>
-    <td>
-        Increase your campaign's budget.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-        Your bids are too low
-      </th>
-    <td>
-        Increase your bids.  You bid against other advertisers using the same keyword, so in general, higher bids help get your ad to display in more desirable locations on the search results page.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-        You are targeting too narrowly
-      </th>
-    <td>
-        Check your targeting settings (where and to whom you want to show your ads). You may be excluding too many searches. Try removing or widening one or more targeting settings.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-        Your keywords have very little or no search history on the Microsoft Search Network
-        
-      </th>
-    <td>
-        You may be using a long keyword with exact match or phrase match — try changing the match type to broad. Note: If you’re advertising a brand name or product, you can choose to do nothing and wait for traffic to increase.
-      </td>
-  </tr>
-</table>
+|Issue|Fix|
+|---|---|
+|Your budget is too low|Increase your campaign's budget.|
+|Your bids are too low|Increase your bids.  You bid against other advertisers using the same keyword, so in general, higher bids help get your ad to display in more desirable locations on the search results page.|
+|You are targeting too narrowly|Check your targeting settings (where and to whom you want to show your ads). You may be excluding too many searches. Try removing or widening one or more targeting settings.|
+|Your keywords have very little or no search history on the Microsoft Search Network|You may be using a long keyword with exact match or phrase match — try changing the match type to broad. Note: If you’re advertising a brand name or product, you can choose to do nothing and wait for traffic to increase.|
 
 > [!NOTE]
 > Experiment with the fixes: Try one or more of the above fixes and see what happens to your estimated performance.

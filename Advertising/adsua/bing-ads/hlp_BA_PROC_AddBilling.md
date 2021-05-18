@@ -9,9 +9,10 @@ ms.author: eur
 
 # Paying by credit and debit card
 
+![Credit Card](../images/BA_Conc_CreditCard.svg)
 A credit card is the most widely accepted form of payment in Microsoft Advertising. We also accept debit cards and prepaid cards with some restrictions. For the complete list of payment methods available in your country/region, please see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
 
-**Don't forget:** Adding a payment method is just one step to getting your ads up and running. For postpay threshold accounts, you'll need to designate a primary payment method as described below. For prepay accounts, you'll need to [add funds](./hlp_BA_PROC_AddFunds.md).
+**Don't forget:**  Adding a payment method is just one step to getting your ads up and running. For postpay threshold accounts, you'll need to designate a primary payment method as described below. For prepay accounts, you'll need to [add funds](./hlp_BA_PROC_AddFunds.md).
 
 ## Adding a credit/debit card for the first time
 When you first sign up for Microsoft Advertising, we guide you through account setup, where you're asked to [choose a payment setting](./hlp_BA_CONC_HowBillingWorks.md) and to add a payment method. If you skipped these steps, you can add a credit card in the Payment Methods page, which is essentially your wallet in Microsoft Advertising.

@@ -25,7 +25,7 @@ The clickable Elite Merchant Badge provides consumers with an easy way to identi
 The badge is based on merchant rating scores, which are aggregated from third-party rating sources. Websites with a high merchant rating score are eligible for the Elite Merchant Badge. Keep in mind that a high merchant rating score does not guarantee that the badge will be shown in your ad.
 
 ![Elite Merchant Badge](../images/BA_CONC_AutoExt_EliteMerchantBadge.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -42,12 +42,12 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop and tablet devices
+**Devices** : Desktop and tablet devices
 
 ## Price Drop
 Price reductions in your product feed are automatically detected by Bing and triggers the Price Drop Extension for your ad.
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 ![Price Drop](../images/BA_CONC_AutoExt_PriceDropAlert.png)
 Microsoft Search Network:
@@ -60,13 +60,13 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop and tablet devices
+**Devices** : Desktop and tablet devices
 
 ## Product Ratings
 Display ratings from customers' sites and trusted third parties on your ads. [Learn more](./hlp_BA_CONC_BSC_ProductRatings.md)
 
 ![Product Ratings](../images/BA_CONC_AutoExt_ProductRatings.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -83,23 +83,23 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop and tablet devices
+**Devices** : Desktop and tablet devices
 
 ## Top Viewed
 Display the popularity of a product by showing the number of times the item was viewed to help potential customers make decisions to purchase.
 
 ![Top Viewed](../images/BA_CONC_AutoExt_TopView.png)
-**Eligible to serve on ads in the following markets**: United States
+**Eligible to serve on ads in the following markets** : United States
 
-**Devices**: Desktop
+**Devices** : Desktop
 
 ## Items Sold
 Share how many items have sold or how many people are watching an item to help entice customers to purchase before the items are no longer available.
 
 ![Items Sold](../images/BA_CONC_AutoExt_ItemsSold.png)
-**Eligible to serve on ads in the following markets**: United States
+**Eligible to serve on ads in the following markets** : United States
 
-**Devices**: Desktop
+**Devices** : Desktop
 
 ## How do I opt out of Automated Extensions for product ads?
 

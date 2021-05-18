@@ -21,9 +21,9 @@ By partnering with retailers that sell your products, Shopping Campaigns for Bra
 
 ## Benefits of using Shopping Campaigns for Brands
 
-- **Get started right away**: As a brand, you just need to provide your brands' names. Retailers who sell your products are automatically identified and invited to partner with you.
-- **Drive sales across retailers seamlessly**: A single campaign can target all your retailer partners - there's no need to create individual campaigns for each retailer.
-- **Product-level insights for each retailer**: You can view and analyze product-level reporting on conversions and revenues, broken down by each retailer. Note: This requires a given retailer to share product-level conversion data.
+- **Get started right away** : As a brand, you just need to provide your brands' names. Retailers who sell your products are automatically identified and invited to partner with you.
+- **Drive sales across retailers seamlessly** : A single campaign can target all your retailer partners - there's no need to create individual campaigns for each retailer.
+- **Product-level insights for each retailer** : You can view and analyze product-level reporting on conversions and revenues, broken down by each retailer. Note: This requires a given retailer to share product-level conversion data.
 
 ## Onboarding for brands
 
@@ -32,16 +32,16 @@ To get started as a brand, check out the following steps:
 ## Step 1: Enter your brands
 1. From the top of the page, click **Tools**, then **Shopping for Brands** under **Shared Library**.
 1. Click **Brands**, then click **Add brand**.
-1. Enter all your brands and its websites. A website URL would look like: **http://contoso.com** with no slashes ( / ). You can also add the sub-brands to help us identify all of your products.
+1. Enter all your brands and its websites. A website URL would look like: **http://contoso.com** with no slashes ( / ). You can also add the sub-brands (optional) to help us identify all of your products.
 1. Click **Save**.
 
 ## Step 2: View matched retailers and products
-After you entered your brands, retailers who sell your products can be automatically identified and linked (which is what we recommend) or you can manage retailer link requests individually. The **Summary** page provides information about your linked retailers and matched products.
+After you entered your brands, retailers who sell your products can be automatically identified and linked (which is what we recommend) or you can manage retailer link requests individually. The **Overview** page provides information about your linked retailers and matched products.
 
 1. From the global menu, click **Tools** and then **Shopping for Brands** under **Shared Library**.
-1. Click **Linked Stores**.
-1. Click **Link to store** or switch the **Link stores for me ** toggle on (recommended) to allow Microsoft to automatically match you with retailers who sell your products.
-1. If you are manually linking a retailer's store, enter the **Store ID**. This is the Microsoft Merchant Center store identifier that you'll need to obtain from your partner.
+1. Click **Retail partners**.
+1. Click **Add retail partner** or switch the **Link to all retail partners ** toggle on (recommended) to allow Microsoft to automatically match you with retailers who sell your products.
+1. If you are manually linking a retailer's store, enter the **Retailer store ID**. This is the Microsoft Merchant Center store identifier that you'll need to obtain from your partner.
 1. Click **Send request**.
 
 **How are my brands matched to retailers?**
@@ -53,7 +53,7 @@ Brands are matched to retailers via the Microsoft Brand Product Graph that:
 ## Step 3: Create a campaign
 With Shopping Campaigns for Brands, you only need to [create a single campaign](./hlp_BA_CONC_BSC_GetStarted.md)  that reaches across all shopping surfaces (search, e-commerce, and physical stores).
 
-Go to the **Campaigns** page, then click **Create campaign** > **Boost retailer product sales** to get started. Follow the steps of the wizard and when it’s time to select a **Store**, select **All linked stores**.
+Go to the **Campaigns** page, then click **Create campaign** > **Boost product sales** to get started. Follow the steps of the wizard and when it’s time to select a **Store**, select **All retail partners**.
 
 ## Onboarding for retailers
 
@@ -84,14 +84,14 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   A unique identifier for the item.
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                      ISI1
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     50 Unicode character limit.
                      
-                    <strong>Recommended:</strong> ASCII only: alphanumeric, underscores (_), and dashes (-)
+                    <strong>Recommended:</strong>  ASCII only: alphanumeric, underscores (_), and dashes (-)
                   </para></td>
     <td>
       <ul type="unordered">
@@ -113,16 +113,16 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   Item’s manufacturer, brand, or publisher
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                      Contoso
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     Alphanumeric
                     <para>70 character limit</para></para></td>
     <td>
       <ul type="unordered">
-        <li>Do not add your store name as the brand unless you manufacture the product.</li>
+        <li>Do not add your retailer name as the brand unless you manufacture the product.</li>
         <li>We recommend to keep the brand character limit to 70, but it can be up to 1000 characters.</li>
         <li>Uploading an item for the first time will be pending review until the brand has been successfully crawled. Updating the brand of an existing item will be reverted to the pending review status until it has been successfully re-crawled. The review process can take up to 3 business days. </li>
         <li>
@@ -140,10 +140,10 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                         Manufacturer Part Number
                         <para>
-                          <strong>Example:</strong>
+                          <strong>Example:</strong> 
                            ADNK-5020
                         </para><para>
-                          <strong>Requirements:</strong>
+                          <strong>Requirements:</strong> 
                            
                           Alphanumeric, 70 character limit
                         </para></td>
@@ -166,10 +166,10 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                         Global Trade Item Number. The GTIN field has a limit of 50 characters, with each GTIN value having up to 14 digits. For multiple GTIN values, separate by a comma and space.
                         <para>
-                          <strong>Example:</strong>
+                          <strong>Example:</strong> 
                            00012345600012
                         </para><para>
-                          <strong>Requirements:</strong>
+                          <strong>Requirements:</strong> 
                            
                           Numeric, 14 digits max per value, multi-value, 50 character limit
                         </para></td>
@@ -184,10 +184,10 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   Title of the item
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                      Women's shoes
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     Alphanumeric
                     <para>150 character limit.</para><para>Don't enclose in quotes.</para></para></td>
@@ -211,10 +211,10 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   Item description
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                      Bright yellow 100% cotton dress shirt
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     Alphanumeric
                     <para>10000 character limit.</para><para>No HTML code. Do not enclose in quotes. </para></para></td>
@@ -235,11 +235,11 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   Direct URL of the item's page on your website
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                       http://www.contoso.com/ 
                     product.asp?pn=ISI1
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     <para>0-2000 characters</para><para>HTTP or HTTPs only and no redirects. For redirect URLs, use the ads_redirect field.</para></para></td>
     <td>
@@ -260,10 +260,10 @@ Use the product feed import template to create a list, which you'll need to uplo
     <td>
                   URL of an image of the item
                   <para>
-                    <strong>Example:</strong>
+                    <strong>Example:</strong> 
                      http://www.contoso.com/ images/ISI1.jpg
                   </para><para>
-                    <strong>Requirements:</strong>
+                    <strong>Requirements:</strong> 
                      
                     Alphanumeric
                     <para>1000 character limit</para><para>
@@ -283,28 +283,28 @@ Use the product feed import template to create a list, which you'll need to uplo
   </tr>
 </table>
 
-## Step 2: Approve linked store request
+## Step 2: Approve retail partner request
 We recommend that you enable automatic approval for store linking requests. This ensures that any new brands who sell your products onboard, they're automatically linked to your Microsoft Merchant Center account. Without automatic linking, you'll need to check for and approve requests manually.
 
-**To automatically approved linked store requests:**
+**To automatically approved retail partner requests:**
 
 1. From the global menu, click **Tools** and then **Microsoft Merchant Center**.
 1. Select the Microsoft Merchant Center store.
 1. Click **Settings**, and then **Linked manager accounts**.
 1. Switch the **Auto-approve link requests** toggle on.
 
-**To approve a linked store request:**
+**To approve a retail partner request:**
 
 1. On the top menu, click **Tools** and then click ** Microsoft Merchant Center**  (or from the global menu at the top of the page, click **Tools** and then **Microsoft Merchant Center**).
 1. Select the Microsoft Merchant Center store you want to edit.
-1. Click **Settings**, and then click **Linked stores**.
+1. Click **Settings**, and then click **Retail partners**.
 1. You'll see a grid that contains the **Customer ID**, **Customer name**, and **Product** your partner associated to your store, plus **Actions** you can take on the request. From the **Actions** column, you can **Accept** or **Decline** a linking request.
 
 **To remove a partner's access from your store:**
 
 1. On the top menu, click **Tools** and then click ** Microsoft Merchant Center**  (or from the global menu at the top of the page, click **Tools** and then **Microsoft Merchant Center**).
 1. Select the Microsoft Merchant Center store you want to edit.
-1. Click **Settings**, and then click **Linked stores**.
+1. Select **Settings**, and then select **Retail partners**.
 1. Find your partner in the grid, and then click **Unlink**.
 
 ## Keep an eye on your campaign

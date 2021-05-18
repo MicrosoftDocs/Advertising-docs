@@ -1,7 +1,7 @@
 ---
 title: Create and edit text ads (search ads)
 description: Learn how to create text ads to run on Google and Bing. When people search for words or phrases related to your products or services, text ads display on their search results pages.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -21,10 +21,10 @@ First, [create an advertising campaign](./hlp_DMC_PROC_CampaignCreation.md). Set
 
 We provide suggested text for your ads, based on your website and business category. It's important to check the text and edit it, if needed, to create your ad with the best message to reach your customers.
 
-1. **Final URL**: This is the webpage URL that potential customers go to when they click your ad. If you send a potential customer to a webpage that is tailored to what your ad highlights, such as a product page, sign-up page, or contact page, they're more likely to take action.
-1. **Ad title (parts 1-3)**: The ad title is the most prominent part of your ad and serves as a link to your website. The best way to encourage customers to find and click your ad is to include keywords in your ad title that relate to the product or service you're advertising.
-1. **Ad text (parts 1-2)**: The ad text appears below your ad title. Use the ad text to convince people to click your ad. What sets your product or service apart? Is it the price? Does it solve a problem or provide a benefit? Include a reason for customers to click **right now** (a call to action).
-1. **Text ad preview**: The preview shows a sample ad, based on your ad elements. Use the preview to verify that the message is what you want your ad to say.
+1. **Final URL** : This is the webpage URL that potential customers go to when they click your ad. If you send a potential customer to a webpage that is tailored to what your ad highlights, such as a product page, sign-up page, or contact page, they're more likely to take action.
+1. **Ad title (parts 1-3)** : The ad title is the most prominent part of your ad and serves as a link to your website. The best way to encourage customers to find and click your ad is to include keywords in your ad title that relate to the product or service you're advertising.
+1. **Ad text (parts 1-2)** : The ad text appears below your ad title. Use the ad text to convince people to click your ad. What sets your product or service apart? Is it the price? Does it solve a problem or provide a benefit? Include a reason for customers to click **right now** (a call to action).
+1. **Text ad preview** : The preview shows a sample ad, based on your ad elements. Use the preview to verify that the message is what you want your ad to say.
 1. Click **Next** to set your advertising budget. Learn more about [how budgets work](./hlp_DMC_CONC_Budgets.md).
 
 ## Create text ads in an existing advertising campaign

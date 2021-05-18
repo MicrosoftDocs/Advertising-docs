@@ -1,7 +1,7 @@
 ---
 title: Add tracking tags to your website
 description: Learn how to add tracking tags to your website for customer action tracking in Digital Marketing Center.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -32,6 +32,7 @@ A critical part of [setting up customer action tracking](./hlp_DMC_CONC_CAT_Intr
 > [!IMPORTANT]
 > Make sure the tag is on every page of your website.
 
+ 
 ## Add the tracking tag using a website platform
 
 If you created and manage your website with one of the following website platforms, you can use it to add and manage your tracking tag.

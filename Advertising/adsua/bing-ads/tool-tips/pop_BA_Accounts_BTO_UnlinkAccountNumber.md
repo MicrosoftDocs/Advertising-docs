@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account number
 
-**What it is: **A mix of 8-digit numbers and letters, this account number identifies the linked account you no longer need access to.
+**What it is:** A mix of 8-digit numbers and letters, this account number identifies the linked account you no longer need access to.
 
 

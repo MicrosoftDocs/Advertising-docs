@@ -24,6 +24,7 @@ The maximum amount of Structured Snippets that can be associated to a single cam
 
 **Serves in**: All Bing markets.
 
+[!INCLUDE [CompareCallFilterSnippets](./includes/CompareCallFilterSnippets.md)]
 ## Get started with Structured Snippet Extensions
 
 Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page for instructions to:

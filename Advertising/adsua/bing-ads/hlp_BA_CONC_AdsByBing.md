@@ -30,6 +30,7 @@ To take this piece of performance management off your plate, set Microsoft Adver
 
 We'll email you and notify you when you log into Microsoft Advertising each time more ads are created. Ensure **Ad performance optimization** is selected in your [email preferences](./hlp_BA_PROC_EmailNotifications.md) to receive email notifications.
 
+Opt in or out of auto-apply recommendations:
 1. [!INCLUDE [SettingsAccountSettings](./includes/SettingsAccountSettings.md)]
 1. Under **Auto-apply recommendations**, select the check box next to each of the ad types you would like to be automatically applied to your account.
 

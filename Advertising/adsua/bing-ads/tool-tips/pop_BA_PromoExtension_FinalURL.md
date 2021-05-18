@@ -9,6 +9,6 @@ ms.author: eur
 
 # Final URL
 
-**What it is:** The landing page where customers will be taken after clicking your header.
+**What it is:**  The landing page where customers will be taken after clicking your header.
 
 

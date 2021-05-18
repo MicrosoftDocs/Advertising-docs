@@ -47,6 +47,7 @@ Track when your ad leads to a conversion outside of your website. To learn more,
 
 Example: A search ad leads to an over-the-phone purchase.
 
+ 
 ## Next steps
 
 - [Create a conversion goal](./hlp_BA_PROC_UETv2CreateGoal.md)

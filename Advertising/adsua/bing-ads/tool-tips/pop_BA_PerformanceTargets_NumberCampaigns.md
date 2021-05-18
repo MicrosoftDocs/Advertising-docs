@@ -9,6 +9,6 @@ ms.author: eur
 
 # Number of campaigns
 
-**What it is:**    The number of campaigns associated with each performance target.
+**What it is:**     The number of campaigns associated with each performance target.
 
 

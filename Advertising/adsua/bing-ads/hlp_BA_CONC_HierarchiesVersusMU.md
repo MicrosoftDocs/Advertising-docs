@@ -29,16 +29,16 @@ Now, it's possible to consolidate separate manager accounts by linking them and 
 As a reminder, multi-user access only pertains to a user name and the accounts you have access to using a single set of credentials. When multi-user access is created, separate accounts stay separate even as you're able to access both with one user name. But when you establish a hierarchy, you're fundamentally changing the account structure, which impacts what you're able to do.
 
 **Access scope**
-- With **hierarchies**, you grant **management rights to a group of users** from another account.
-- With **multi-user access**, you grant **limited access for one user**.
+- With **hierarchies** , you grant **management rights to a group of users**  from another account.
+- With **multi-user access** , you grant **limited access for one user** .
 
 **Sharing scope**
-- With **hierarchies**, you can share campaign resources such as Universal Event Tracking (UET) tags and remarketing lists across manager accounts.
-- With **multi-user access**, no resource sharing is allowed.
+- With **hierarchies** , you can share campaign resources such as Universal Event Tracking (UET) tags and remarketing lists across manager accounts.
+- With **multi-user access** , no resource sharing is allowed.
 
 **Rolling back access**
-- With **hierarchies**, you remove access for an entire **group of users** from a linked manager account when you unlink a hierarchy.
-- With **multi-user access**, you remove access **one by one** for individuals.
+- With **hierarchies** , you remove access for an entire **group of users** from a linked manager account when you unlink a hierarchy.
+- With **multi-user access** , you remove access **one by one** for individuals.
 
 Depending on your needs, it's possible to have both a hierarchy and multi-user access. The two features won't conflict. If you do have both, you'll be prompted upon sign in to select the account you want to see: your hierarchy or your partner's account.
 

@@ -21,6 +21,7 @@ If you intentionally created this conflict to block certain match types from tri
 
 ## Running a negative keyword conflict report
 
+This report shows negative keywords that are conflicting with some of your keywords, therefore blocking your ads from showing. It can tell you which ones are in conflict, whether the conflict is at the campaign or ad group level, and help you to determine which negative keywords to delete.
 1. From the global menu at the top of the page, click **Reports** > **Reports** > **Performance** > **Negative keyword conflicts**.
 1. Select from each list the settings you want for **Show (unit of time)**, **Date range**, and download **Format**. At **What to report on**, if you select **Specific accounts and campaigns**, a box appears for you to select the campaign or account to report on.
 1. For **What to report on**, you can choose to see how ad extensions are working on **All accounts and campaigns**, or, if you select **Specific accounts and campaigns**, pick the account you want in the **Available items** box that appears.
@@ -30,6 +31,7 @@ If you intentionally created this conflict to block certain match types from tri
 
 ## Running a product negative keyword conflict report
 
+This report shows negative keywords and the corresponding product ads that are being prevented from showing in your shopping campaigns. It can help you assess whether the negative keywords applied to your Shopping campaigns are excessively restricting your campaign performance.
 1. On the **Reports** page, in the left pane, click **Standard Reports > Product ads > Product negative keyword conflicts report**.
 1. Select the **Show (unit of time)**, **Date range**, and download **Format**.
 1. Under **Choose your columns**, add or remove the columns you’d like to see in your report.

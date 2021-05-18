@@ -9,6 +9,6 @@ ms.author: eur
 
 # Category (Level #)
 
-**What it is:**    The different category levels in your catalog - Level 1 through 5.
+**What it is:**     The different category levels in your catalog - Level 1 through 5.
 
 

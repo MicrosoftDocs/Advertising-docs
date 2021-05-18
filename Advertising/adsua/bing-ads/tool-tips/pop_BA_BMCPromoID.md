@@ -9,8 +9,8 @@ ms.author: eur
 
 # Promo ID
 
-**What it is:** The promo ID for your promotion.
+**What it is:**  The promo ID for your promotion.
 
-**What you need to know:** You can create an alphanumeric promo ID with a maximum of 60 characters.
+**What you need to know:**  You can create an alphanumeric promo ID with a maximum of 60 characters.
 
 

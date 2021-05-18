@@ -9,8 +9,8 @@ ms.author: eur
 
 # Budget association
 
-**What it is:**  The status of the campaign's budget.
+**What it is:**   The status of the campaign's budget.
 
-**What you need to know:**    If a budget status changes, two rows appear in the report. The budget association column tells you which budget is **Current** and which is **Ended**.
+**What you need to know:**     If a budget status changes, two rows appear in the report. The budget association column tells you which budget is **Current** and which is **Ended**.
 
 

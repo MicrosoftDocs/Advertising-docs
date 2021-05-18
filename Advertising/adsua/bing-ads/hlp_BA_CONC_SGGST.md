@@ -15,6 +15,7 @@ Microsoft Advertising cannot provide guidance on tax. Please contact your tax ad
 
 ## How to change your GST registration number
 
+[!INCLUDE [EditSGTaxID_VR](./includes/EditSGTaxID_VR.md)]
 ## How is GST applied to my account?
 
 - If you have a postpay threshold or monthly invoice account, GST is added onto your billing threshold amount. For example, if your billing threshold is S$100 SGD, your card will be charged S$107 SGD (S$100 SGD + 7% GST). [Learn about billing thresholds.](./hlp_BA_CONC_BillingThreshold.md)

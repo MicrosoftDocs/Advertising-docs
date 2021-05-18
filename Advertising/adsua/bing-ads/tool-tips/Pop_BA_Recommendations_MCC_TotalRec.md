@@ -9,6 +9,6 @@ ms.author: eur
 
 # Total recommendations
 
-**What it is:** The total recommendations applied per recommendation type.
+**What it is:**  The total recommendations applied per recommendation type.
 
 

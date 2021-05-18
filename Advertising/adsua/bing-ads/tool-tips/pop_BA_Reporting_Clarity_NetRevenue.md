@@ -9,6 +9,6 @@ ms.author: eur
 
 # Net revenue
 
-**What it is:**    Total revenue from Microsoft Advertising minus any deductions.
+**What it is:**     Total revenue from Microsoft Advertising minus any deductions.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Tracking
 description: Tracking
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Tracking
 
-**What it is:** The pages listed here are the special pages you added for customer action tracking. When tracking is turned on, you can view detailed metrics for these pages on the **Customer action tracking** tile.
+**What it is:**  The pages listed here are the special pages you added for customer action tracking. When tracking is turned on, you can view detailed metrics for these pages on the **Customer action tracking** tile.
 
 **What you need to know:**
 - Digital Marketing Center tracks these pages for all your campaigns when tracking is turned on.

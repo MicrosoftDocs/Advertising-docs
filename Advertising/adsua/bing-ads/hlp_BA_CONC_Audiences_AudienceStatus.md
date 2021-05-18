@@ -26,18 +26,18 @@ You can check the status of your audience targeting in the **Audiences** table:
 - **Ready for audience campaigns, but too small for search campaigns**: This audience is eligible to serve on the Microsoft Audience Network but not on the search network.
 - **Recalculating audience size**: You have edited your audience, and Microsoft Advertising is in the process of determining its size. This process can take 24 hours.
 - **Possible UET tag issue**: There are zero people in your dynamic remarketing list, so it's likely that there is a problem with your UET tag. We recommend you make sure that:
-  - You have modified your UET tag on all pages of your website for this dynamic remarketing list.
-  - Your modified UET tag refers to the correct page type and product ID.
-  - The product ID referred to in your UET tag matches an ID in your Microsoft Merchant Center store.
+   - You have modified your UET tag on all pages of your website for this dynamic remarketing list.
+   - Your modified UET tag refers to the correct page type and product ID.
+   - The product ID referred to in your UET tag matches an ID in your Microsoft Merchant Center store.
 
 - [Learn more about dynamic remarketing lists and modifying your UET tag](./hlp_BA_CONC_Audiences_ProductAudience.md).
 - **The tag is no longer available**: The account no longer has access to the UET tag.
-  - Permissions to a UET tag in another manager account may have been removed.
-  - This account may have had access to a UET tag under a previous manager account before it was transferred to its current manager account.
+   - Permissions to a UET tag in another manager account may have been removed.
+   - This account may have had access to a UET tag under a previous manager account before it was transferred to its current manager account.
 
 - **Missing component audience**: The account no longer has access to an audience that had been used in the combined list.
-  - Permissions to an audience in another manager account may have been removed.
-  - This account may have had access to an audience under a previous manager account before it was transferred to its current manager account.
+   - Permissions to an audience in another manager account may have been removed.
+   - This account may have had access to an audience under a previous manager account before it was transferred to its current manager account.
 
 > [!NOTE]
 > [Learn more about your audience targeting options](./hlp_BA_CONC_Audiences_Options.md).

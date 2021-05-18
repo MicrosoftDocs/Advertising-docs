@@ -9,8 +9,8 @@ ms.author: eur
 
 # Associations
 
-**What it is:** The total number of associations for both targeting and exclusion for the audience.
+**What it is:**  The total number of associations for both targeting and exclusion for the audience.
 
-**What you need to know:** Use “None” for 0 associations.
+**What you need to know:**  Use “None” for 0 associations.
 
 

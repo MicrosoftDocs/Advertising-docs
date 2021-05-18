@@ -27,8 +27,8 @@ Here are some examples of how your ad might show:
   </tr>
   <tr>
     <td></td>
-    <td><strong>Broad Match Keyword</strong>: <para><strong>Used 4x4 Truck</strong></para></td>
-    <td><strong>Broad Match Modifier Keyword</strong>: <para><strong>Used 4x4 +Truck</strong></para></td>
+    <td><strong>Broad Match Keyword</strong> : <para><strong>Used 4x4 Truck</strong></para></td>
+    <td><strong>Broad Match Modifier Keyword</strong> : <para><strong>Used 4x4 +Truck</strong></para></td>
   </tr>
   <tr>
     <th style="background: transparent" scope="row">
@@ -122,18 +122,18 @@ Here are some examples of how your ad might show:
 
 For English, French, and German ads in the United States, United Kingdom, Australia, Canada, France, Germany, and India, close variations of words with the broad match modifier can also trigger your ad. Examples of the types of close variations that are considered include:
 
-- **Plurals**: The keyword **luxury +resorts** will match the query **luxury resort**.
-- **Stemming**: The keyword **+swim team** will match the query **swimming team**.
-- **Misspellings**: The keyword **Hawaii +vacation** will match the query **Hawaii vacaton**.
-- **Abbreviations and acronyms**: The keyword **Redmond +Washington** will match the query **Redmond WA**.
-- **Word blending and splitting**: The keyword **+super +market** will match the query **supermarket**.
-- **Common spelling variations**: The keyword **community theatre** will match the query **community theater**.
-- **Punctuation**: The keyword **real estate** will match the query **real-estate**.
-- **Accents**: The keyword **+café** will match the query **cafe**. Accents are not considered for close variations for English ads in the United States and Canada.
-- **Reordering**: The keyword **chicken teriyaki** will match **teriyaki chicken**. Reordering occurs only if it doesn't change the meaning of the query.
-- **Stop/function words**: The keyword **tv schedule tonight** will match **tv schedule for tonight**. Stop/function words (for example: is, a, the, on, for, in) may be ignored if they don’t impact the intent behind a query.
-- **Synonyms and paraphrases**: The keyword **glucose levels normal range** will match **normal range for blood sugar**.
-- **Implied words and same search intent**: The keyword **Contoso airlines** will match **Contoso flights airlines**.
+- **Plurals** : The keyword **luxury +resorts** will match the query **luxury resort**.
+- **Stemming** : The keyword **+swim team** will match the query **swimming team**.
+- **Misspellings** : The keyword **Hawaii +vacation** will match the query **Hawaii vacaton**.
+- **Abbreviations and acronyms** : The keyword **Redmond +Washington** will match the query **Redmond WA**.
+- **Word blending and splitting** : The keyword **+super +market** will match the query **supermarket**.
+- **Common spelling variations** : The keyword **community theatre** will match the query **community theater**.
+- **Punctuation** : The keyword **real estate** will match the query **real-estate**.
+- **Accents** : The keyword **+café** will match the query **cafe**. Accents are not considered for close variations for English ads in the United States and Canada.
+- **Reordering** : The keyword **chicken teriyaki** will match **teriyaki chicken**. Reordering occurs only if it doesn't change the meaning of the query.
+- **Stop/function words** : The keyword **tv schedule tonight** will match **tv schedule for tonight**. Stop/function words (for example: is, a, the, on, for, in) may be ignored if they don’t impact the intent behind a query.
+- **Synonyms and paraphrases** : The keyword **glucose levels normal range** will match **normal range for blood sugar**.
+- **Implied words and same search intent** : The keyword **Contoso airlines** will match **Contoso flights airlines**.
 
 If you find that close variations to your broad match modifier are triggering your ad incorrectly, add those close variations to your [negative keywords](./hlp_BA_CONC_AboutNegativeKeywords.md).
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Import destination
 
-**What it is:** This summary shows the Google Merchant Center account that will be used to import catalogs to a Microsoft Merchant Center store.
+**What it is:**  This summary shows the Google Merchant Center account that will be used to import catalogs to a Microsoft Merchant Center store.
 
 

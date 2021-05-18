@@ -27,7 +27,7 @@ You should also monitor your ad click traffic for any unexplained changes in cli
   </tr>
   <tr>
     <td>
-        <strong>Why</strong>: Understanding your average daily, weekly, and monthly click volume can help you spot sudden, significant changes in click volume, which might be an indication of invalid clicks. For more information, see [Create a report](./hlp_BA_PROC_CreateReport.md).
+        <strong>Why</strong> : Understanding your average daily, weekly, and monthly click volume can help you spot sudden, significant changes in click volume, which might be an indication of invalid clicks. For more information, see [Create a report](./hlp_BA_PROC_CreateReport.md).
       </td>
   </tr>
   <tr>
@@ -37,7 +37,7 @@ You should also monitor your ad click traffic for any unexplained changes in cli
   </tr>
   <tr>
     <td>
-        <strong>Why</strong>: Understand where your business’s high performing traffic comes from and exclude websites that you don’t want.  You can find the <strong>Traffic sources</strong> report on the <strong>Reports</strong> page, in the <strong>Campaign analytics</strong> group. For more information, see [Create a report](./hlp_BA_PROC_CreateReport.md).
+        <strong>Why</strong> : Understand where your business’s high performing traffic comes from and exclude websites that you don’t want.  You can find the <strong>Traffic sources</strong> report on the <strong>Reports</strong> page, in the <strong>Campaign analytics</strong> group. For more information, see [Create a report](./hlp_BA_PROC_CreateReport.md).
       </td>
   </tr>
   <tr>
@@ -47,7 +47,7 @@ You should also monitor your ad click traffic for any unexplained changes in cli
   </tr>
   <tr>
     <td>
-        <strong>Why</strong>: A sudden change in your conversion rate could mean an increase in low-quality and invalid clicks. Using conversion tracking and Microsoft Advertising Universal Event Tracking makes it possible to analyze the number of clicks your ads are getting and the number of conversions being generated. To learn more, see [What is UET and how can it help me?](./hlp_BA_CONC_UETv2WhatIsTag.md)
+        <strong>Why</strong> : A sudden change in your conversion rate could mean an increase in low-quality and invalid clicks. Using conversion tracking and Microsoft Advertising Universal Event Tracking makes it possible to analyze the number of clicks your ads are getting and the number of conversions being generated. To learn more, see [What is UET and how can it help me?](./hlp_BA_CONC_UETv2WhatIsTag.md)
       </td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ You should also monitor your ad click traffic for any unexplained changes in cli
   </tr>
   <tr>
     <td>
-        <strong>Why</strong>: Sudden increases in click volume can be the result of many factors, and can often be good for you and your business. Before you become concerned, check if the following may be causing increased click volume:
+        <strong>Why</strong> : Sudden increases in click volume can be the result of many factors, and can often be good for you and your business. Before you become concerned, check if the following may be causing increased click volume:
         <ul type="UNORDERED"><li>Seasonal changes, such as an increase in online shopping during the holidays.</li><li>Sales, discounts, or promotions that increase visibility and bring extra traffic to your site.</li><li>Recent news events that stimulate online consumer interest and web traffic.</li><li>Changes to your ad headings or text, or changes to your website.</li><li>New links to your website from other sites.</li></ul></td>
   </tr>
 </table>
@@ -73,6 +73,7 @@ If your account is deactivated and you have a balance which is refund eligible d
 If you believe you have been charged for invalid clicks or are concerned about suspicious click activity, please [contact support](https://go.microsoft.com/fwlink?LinkId=398371).
 
 > [!NOTE]
+> Microsoft Advertising continues to improve and extend methods of identifying invalid clicks, including:
 > - Analyzing search patterns to improve the identification of invalid clicks.
 - Recognizing different types of click activity and helping distinguish among malicious, accidental, and valid clicks.
 - Using campaign performance data to assist in identifying invalid click activity.

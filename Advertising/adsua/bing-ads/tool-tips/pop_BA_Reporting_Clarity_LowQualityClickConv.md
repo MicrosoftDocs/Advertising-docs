@@ -9,6 +9,6 @@ ms.author: eur
 
 # Low-quality click conversion
 
-**What it is:**    Conversions that originate from low-quality clicks.
+**What it is:**     Conversions that originate from low-quality clicks.
 
 

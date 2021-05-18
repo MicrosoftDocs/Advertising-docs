@@ -11,8 +11,10 @@ ms.author: eur
 
 If you created and manage your website with WordPress.com, you can add and manage your UET tag there.
 
+[!INCLUDE [CONC_WordPressHelpReference](CONC_WordPressHelpReference)]
 ## Implementing UET using WordPress.com
 
 Before completing the following steps at WordPress.com copy your Microsoft Advertising  Universal Event Tracking (UET) tag ID. Select **Conversion Tracking** > **UET tags** and copy the tag ID.
 
+[!INCLUDE [WordPressPluginInstructions](./includes/WordPressPluginInstructions.md)]
 

@@ -20,4 +20,5 @@ If you have more than one invoiced account, consolidated billing allows you to c
 
 ## How to turn on consolidated billing
 
+[!INCLUDE [ConsolidatedBilling_VR2](./includes/ConsolidatedBilling_VR2.md)]
 

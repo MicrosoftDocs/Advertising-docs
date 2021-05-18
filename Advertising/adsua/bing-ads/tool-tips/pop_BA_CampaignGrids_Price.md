@@ -9,6 +9,6 @@ ms.author: eur
 
 # Price
 
-**What it is:** Base price, excluding tax and shipping, submitted in local currency.
+**What it is:**  Base price, excluding tax and shipping, submitted in local currency.
 
 

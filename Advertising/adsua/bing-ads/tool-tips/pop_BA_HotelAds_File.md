@@ -9,6 +9,6 @@ ms.author: eur
 
 # File
 
-**What it is:** The name of your hotel ads feed file.
+**What it is:**  The name of your hotel ads feed file.
 
 

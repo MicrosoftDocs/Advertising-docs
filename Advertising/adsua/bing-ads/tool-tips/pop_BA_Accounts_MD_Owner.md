@@ -9,8 +9,8 @@ ms.author: eur
 
 # Owner
 
-**What it is: **This is the manager account that is the parent owner of an ad account. It identifies the child-parent relationship between a manager account and an ad account.
+**What it is:** This is the manager account that is the parent owner of an ad account. It identifies the child-parent relationship between a manager account and an ad account.
 
-**What you need to know: **An ad account can't be unlinked from its owner.
+**What you need to know:** An ad account can't be unlinked from its owner.
 
 

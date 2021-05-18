@@ -1,7 +1,7 @@
 ---
 title: Campaign budget
 description: Campaign budget
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Campaign budget
 
-**What it is:** Your budget tells us how much you want to spend on this campaign per day.
+**What it is:**  Your budget tells us how much you want to spend on this campaign per day.
 
 **What you need to know:**
 - Any changes, including budget changes, made outside of Digital Marketing Center to ad campaigns created by Digital Marketing Center will be automatically overridden. Use Digital Marketing Center to make any changes to the ad campaigns created by Digital Marketing Center.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Start time
 
-**What it is:**    The start time of the phone call that originated from a call extension.
+**What it is:**     The start time of the phone call that originated from a call extension.
 
 

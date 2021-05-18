@@ -9,9 +9,9 @@ ms.author: eur
 
 # Average cost-per-click (CPC)
 
-**What it is: **    The total cost divided by total clicks for all campaigns in an account.
+**What it is:**     The total cost divided by total clicks for all campaigns in an account.
 
-**What you need to know: **
+**What you need to know:**
 
 - The overall total, at the bottom of this page, includes average CPC for all accounts, even those that might appear on other pages.
 - Filtering affects the overall total average CPC.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account-level URL options
 
-**What it is**: Import tracking template and final URL suffix associated with the account.
+**What it is** : Import tracking template and final URL suffix associated with the account.
 
 

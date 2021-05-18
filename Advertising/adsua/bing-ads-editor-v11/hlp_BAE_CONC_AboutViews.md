@@ -1,7 +1,7 @@
 ---
 title: Viewing your campaign data the way you want
 description: Learn how the data view in Microsoft Advertising Editor provides several predefined views that can help you more easily find specific data related to your campaigns.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -22,85 +22,28 @@ You can customize the data view to show the specific columns you care the most a
 
 ## Apply a preset view to your campaign data
 1. In the data view, click **View**, and then choose one of the following views:
-<table>
-  <tr>
-    <th scope="col">View</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Active</th>
-    <td>
-         All items with <strong>Active</strong> status.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">All</th>
-    <td>
-         All items, such as campaigns or keywords, no matter what their status, as well as all active error, warning, and conflict messages, and items most recently imported into Microsoft Advertising Editor.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Conflicts</th>
-    <td>All current conflict messages that apply to items.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Deleted</th>
-    <td>
-         All items that have been deleted since the last post with Microsoft Advertising.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Duplicate keywords</th>
-    <td>Open <strong>Find duplicate keywords</strong> dialog box where you search for duplicate keywords.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Editorial Disapprovals</th>
-    <td>All current editorial disapproval reasons that apply to items.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Errors</th>
-    <td>All current error messages that apply to items.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Information</th>
-    <td>All current informational messages that apply to items.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Last Import</th>
-    <td>
-         All items that were most recently imported into Microsoft Advertising Editor (please note that negative keywords do not currently appear in Last Import view).
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Paused</th>
-    <td>
-         All items with <strong>Paused</strong> status.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Pending post</th>
-    <td>
-         All items with <strong>Pending</strong> status.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Suspended</th>
-    <td>
-         All items with <strong>Suspended</strong> status.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Warnings</th>
-    <td>All current warning messages that apply to items.</td>
-  </tr>
-</table>
+|View|Description|
+|---|---|
+|Active|All items with **Active** status.|
+|All|All items, such as campaigns or keywords, no matter what their status, as well as all active error, warning, and conflict messages, and items most recently imported into Microsoft Advertising Editor.|
+|Conflicts|All current conflict messages that apply to items.|
+|Deleted|All items that have been deleted since the last post with Microsoft Advertising.|
+|Duplicate keywords|Open **Find duplicate keywords** dialog box where you search for duplicate keywords.|
+|Editorial Disapprovals|All current editorial disapproval reasons that apply to items.|
+|Errors|All current error messages that apply to items.|
+|Information|All current informational messages that apply to items.|
+|Last Import|All items that were most recently imported into Microsoft Advertising Editor (please note that negative keywords do not currently appear in Last Import view).|
+|Paused|All items with **Paused** status.|
+|Pending post|All items with **Pending** status.|
+|Suspended|All items with **Suspended** status.|
+|Warnings|All current warning messages that apply to items.|
 
 ## Create a custom view for your campaign data
 1. In the data view, click **View**, and then select **Save custom search as**.
 1. Under **Status**, choose at least one status that you want the view to apply to.
 1. Under **Add search criterion**, do the following:
-  - Choose the criteria you want to use for populating campaign data in your custom view.
-  - To select additional criteria, click **Add another search criterion**.
+   - Choose the criteria you want to use for populating campaign data in your custom view.
+   - To select additional criteria, click **Add another search criterion**.
 
 1. To save your view, select the **Save current search to the View as** checkbox and then type a name for your view.
 1. Click **Apply**.

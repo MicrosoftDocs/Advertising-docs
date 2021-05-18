@@ -58,7 +58,7 @@ Invoices are calculated by adding up all of the billing activity (charges and cr
 
 Depending on your business location, you can pay for your invoice by wire transfer, ACH, or check. You can find the remittance instructions on your invoice for the specific ways you can pay, the due date (net terms), and the specific customer service contact if you have questions.
 
-**Important:** To speed up payment processing, you must include your invoice number and account number with your payment. Without this information, payment processing time can be greatly increased beyond our typical 5 days.
+**Important:**  To speed up payment processing, you must include your invoice number and account number with your payment. Without this information, payment processing time can be greatly increased beyond our typical 5 days.
 
 ## What if I'm an agency managing a monthly invoice account?
 

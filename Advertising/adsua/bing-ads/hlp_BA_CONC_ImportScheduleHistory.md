@@ -35,12 +35,12 @@ You can review any past imports. If there were any issues with the import, the *
 
 You can schedule when you want your Google Ads or Facebook Ads accounts to sync automatically with Microsoft Advertising. You cannot schedule file imports. The options are:
 
-- **Auto: **Allows Microsoft Advertising to set an import schedule to best optimize your campaigns.
-- **Now:** Import happens as soon as you select the **Import**  button and only runs once.
-- **Once:** Import happens at the time you specify and only runs once.
-- **Daily:** Import happens once a day at the time you specify until you delete or pause the schedule on the Import schedule and history page.
-- **Weekly:** Import happens once a week at the time you specify until you delete or pause the schedule on the Import schedule and history page.
-- **Monthly:** Import happens once a month at the time you specify until you delete or pause the schedule on the Import schedule and history page.
+- **Auto:** Allows Microsoft Advertising to set an import schedule to best optimize your campaigns.
+- **Now:**  Import happens as soon as you select the **Import**  button and only runs once.
+- **Once:**  Import happens at the time you specify and only runs once.
+- **Daily:**  Import happens once a day at the time you specify until you delete or pause the schedule on the Import schedule and history page.
+- **Weekly:**  Import happens once a week at the time you specify until you delete or pause the schedule on the Import schedule and history page.
+- **Monthly:**  Import happens once a month at the time you specify until you delete or pause the schedule on the Import schedule and history page.
 
 > [!NOTE]
 > Scheduling multiple imports at once may affect their overall start time and import speed.

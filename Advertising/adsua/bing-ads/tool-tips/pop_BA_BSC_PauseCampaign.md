@@ -9,6 +9,6 @@ ms.author: eur
 
 # Pause campaigns
 
-**What it is:** You can choose to pause the campaigns after converting them to Microsoft Shopping Campaigns.
+**What it is:**  You can choose to pause the campaigns after converting them to Microsoft Shopping Campaigns.
 
 

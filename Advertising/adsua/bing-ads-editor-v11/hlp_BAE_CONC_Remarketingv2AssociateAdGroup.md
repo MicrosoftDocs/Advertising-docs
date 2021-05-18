@@ -1,7 +1,7 @@
 ---
 title: Associate an audience with an ad group or campaign
 description: Once you create a remarketing list in Microsoft Advertising, you can associate it with an ad group/campaign.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -13,30 +13,11 @@ A remarketing list is one type of audience and once you create the list in Micro
 
 ## Should I associate audiences to my ad groups or my campaigns?
 
-<table>
-  <tr>
-    <th scope="col">Scenario</th>
-    <th scope="col">You should associate audiences to</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">You're using different audiences and bids for different ad groups in the same campaign.</th>
-    <td>
-        <strong>Ad groups</strong>: That way, you can manage and optimize each audience individually.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">Your account is segmented at the ad group level, or you otherwise want to keep precise control over each ad group.</th>
-    <td>
-        <strong>Ad groups</strong>: For example, you could test a particular audience in one ad group  before applying it to other ad groups.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">You're using the same audience and bid for each ad group in your campaign.</th>
-    <td>
-        <strong>Campaigns</strong>: You just need to set them up once, and don't have to create a new association each time you create a new ad group.
-      </td>
-  </tr>
-</table>
+|Scenario|You should associate audiences to|
+|---|---|
+|You're using different audiences and bids for different ad groups in the same campaign.|**Ad groups** : That way, you can manage and optimize each audience individually.|
+|Your account is segmented at the ad group level, or you otherwise want to keep precise control over each ad group.|**Ad groups** : For example, you could test a particular audience in one ad group  before applying it to other ad groups.|
+|You're using the same audience and bid for each ad group in your campaign.|**Campaigns** : You just need to set them up once, and don't have to create a new association each time you create a new ad group.|
 
 ## Create an association between an ad group/campaign and audience
 1. Select **Audiences** under **Keywords and targeting** from the type list in the left panel.

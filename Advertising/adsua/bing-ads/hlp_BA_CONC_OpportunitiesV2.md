@@ -11,6 +11,7 @@ ms.author: eur
 
 On the Opportunities page, you will see several suggestions for improving the performance of your campaign. Here's an example of what your Opportunities page might look like:
 
+![Opportunities Home](../images/BA_ScreenCap_Opportunities.png)
 You can select any of the View Opportunities buttons to see suggestions in either a Simple View, which is the default view, or an Advanced View, which gives you a more detailed, tabular way to review, apply, and dismiss opportunities. You can toggle between Simple View and Advanced View, and we'll remember your last setting.
 
 ![Opportunites Home](../images/BA_ScreenCap_OpportunitiesView.png)
@@ -184,6 +185,8 @@ If you already are using Google Ads to advertise on Google, you can import these
 1. If you want to accept the suggestion, review the estimated improvement and then select **Apply**.
 1. If you want to delete the suggestion, select **Dismiss**.
 
+<anchor id="BMD" />
+
 ## Know where your keywords are sourced
 
 One of the first and most important tasks of running a search marketing campaign is to choose your keywords. To help you reach a wider set of customers, Microsoft Advertising generates new keyword suggestions from multiple sources. This opportunity helps you clearly identify these keywords and where they came from.        [Learn more](./hlp_BA_CONC_AboutKW.md)
@@ -194,4 +197,5 @@ One of the first and most important tasks of running a search marketing campaign
 1. If you want to accept the suggestion, review the estimated improvement and then select **Apply**.
 1. If you want to delete the suggestion,  select **Dismiss**.
 
+ 
 

@@ -17,11 +17,11 @@ Periodically, when you sign in to Microsoft Advertising, you'll be redirected to
 
 You can choose from the following options:
 
-- **Use an existing email address.** You'll enter your email address and check its availability.
-  - If this is an email address that you already use to sign in to Microsoft products, then you'll sign in and the transition will be complete.
-  - If you've never used this email to sign in to a Microsoft product, then you'll go to Microsoft account and sign up for a new account.
+- **Use an existing email address.**  You'll enter your email address and check its availability.
+   - If this is an email address that you already use to sign in to Microsoft products, then you'll sign in and the transition will be complete.
+   - If you've never used this email to sign in to a Microsoft product, then you'll go to Microsoft account and sign up for a new account.
 
-- **Create a new email address.** We'll take you to the Microsoft account sign-up page where you will sign up for a new email address.
+- **Create a new email address.**  We'll take you to the Microsoft account sign-up page where you will sign up for a new email address.
 
 After you complete the transition, you will no longer be able to sign in using your Microsoft Advertising user name and password.
 
@@ -29,13 +29,14 @@ After you complete the transition, you will no longer be able to sign in using y
 
 If you aren't sure whether to use an existing or new email address, take a look at this table for more information.
 
-**Still have questions? ** Take a look at frequently asked questions.
+[!INCLUDE [MSAChartv2](./includes/MSAChartv2.md)]
+**Still have questions?**  Take a look at frequently asked questions.
 
 ## Why is Microsoft Advertising requiring customers to use an email address to sign in?
 Using an email address (Microsoft account) to sign in offers two advantages:
 
-- **Security.** Microsoft account offers a two-step verification process that helps ensure the safety and integrity of your Microsoft Advertising account. If you choose to use [Two-step verification](https://go.microsoft.com/fwlink?LinkId=398313), you will be required to provide a security code, in addition to your email address and password, when accessing your account from any device that hasn't been previously authorized as a [trusted device](https://go.microsoft.com/fwlink?LinkId=398339).
-- **Simplified sign in.** Using one account to sign in to all your Microsoft products means you can get and stay           connected more easily.
+- **Security.**  Microsoft account offers a two-step verification process that helps ensure the safety and integrity of your Microsoft Advertising account. If you choose to use [Two-step verification](https://go.microsoft.com/fwlink?LinkId=398313), you will be required to provide a security code, in addition to your email address and password, when accessing your account from any device that hasn't been previously authorized as a [trusted device](https://go.microsoft.com/fwlink?LinkId=398339).
+- **Simplified sign in.**  Using one account to sign in to all your Microsoft products means you can get and stay           connected more easily.
 
 ## What is Microsoft account?
 "Microsoft account" is the new name for what used to be called "Windows Live ID." Your Microsoft account is the          combination of an email address and a password that you use to sign in to services or devices, such as Office365, Skype, Hotmail, Messenger,          OneDrive, Windows Phone, Xbox LIVE, or Outlook.com. If you use an email address and password to sign in to these or other          services, you already have a Microsoft account. Or if you prefer, you can create a new Microsoft account using a personal email address (for example, Gmail or Yahoo).

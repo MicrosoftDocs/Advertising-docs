@@ -25,9 +25,9 @@ Clicking the message link takes you to the Recommendations tab.
 1. If Microsoft Advertising has keyword suggestions, the **Increase traffic ** message appears at the top of the page. Click the **view** link.
 1. In the **Keyword suggestions** list, select the keywords you want to accept, modify, or reject.
 1. For the selections, do one or more of the following:
-  - To use the suggested keywords in your campaigns, click **Apply**.
-  - To first enter a different bid for a keyword, in the **First page bid** column, click the current bid and type a new amount. Then click **Apply**.
-  - To reject the selected keywords, click **Reject** and select a reason.
+   - To use the suggested keywords in your campaigns, click **Apply**.
+   - To first enter a different bid for a keyword, in the **First page bid** column, click the current bid and type a new amount. Then click **Apply**.
+   - To reject the selected keywords, click **Reject** and select a reason.
 
 > [!NOTE]
 > If you change the suggested bid to a lower amount your ads may not run as frequently.
@@ -69,9 +69,10 @@ Clicking the message link displays budget suggestions on the Campaigns tab. Micr
 1. From the page menu, click **Campaigns**.
 1. If Microsoft Advertising has budget suggestions, the  **Your ads aren't receiving as many impressions as possible ** message appears at the top of the page. Click the **review** link.
 1. Click the arrow to the right of **Limited by budget** for the campaign you select, then do one of the following:
-  - Click **Accept** to apply the budget amount suggested by Microsoft Advertising.
-  - Enter your own updated budget amount, and then click **Accept** to apply it to the campaign.
-  - Click **Close** to keep the existing budget amount.
-  - Click **See more suggestions** to view the budget suggestions feature on the Recommendations tab of the Campaigns page.
+   - Click **Accept** to apply the budget amount suggested by Microsoft Advertising.
+   - Enter your own updated budget amount, and then click **Accept** to apply it to the campaign.
+   - Click **Close** to keep the existing budget amount.
+   - Click **See more suggestions** to view the budget suggestions feature on the Recommendations tab of the Campaigns page.
 
+ 
 

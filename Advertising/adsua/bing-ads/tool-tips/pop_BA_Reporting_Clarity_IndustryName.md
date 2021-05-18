@@ -9,6 +9,6 @@ ms.author: eur
 
 # Industry name
 
-**What it is:** With industry targeting, you can show your ads only to people who work in specific industries (according to LinkedIn). You can also exclude people who work in specific industries from seeing your ads.
+**What it is:**  With industry targeting, you can show your ads only to people who work in specific industries (according to LinkedIn). You can also exclude people who work in specific industries from seeing your ads.
 
 

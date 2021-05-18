@@ -9,6 +9,6 @@ ms.author: eur
 
 # Microsoft Search Network
 
-**What it is:** Microsoft Search Network includes Bing, Yahoo, and AOL.
+**What it is:**  Microsoft Search Network includes Bing, Yahoo, and AOL.
 
 

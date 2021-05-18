@@ -9,6 +9,6 @@ ms.author: eur
 
 # Total watch time in milliseconds
 
-**What it is**: The total duration in milliseconds that your video was viewed.
+**What it is** : The total duration in milliseconds that your video was viewed.
 
 

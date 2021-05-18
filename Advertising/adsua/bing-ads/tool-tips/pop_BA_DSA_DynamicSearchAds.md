@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic search ads
 
-**What it is:** Dynamic search ads automatically target relevant search queries based on the content of your website, and are dynamically created to respond to these search queries.
+**What it is:**  Dynamic search ads automatically target relevant search queries based on the content of your website, and are dynamically created to respond to these search queries.
 
 

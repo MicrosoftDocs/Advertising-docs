@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Social network engagement
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 After connecting social profiles, you can publish social media posts and interact with your audience in the **Social** tab. From the **Publisher** page on the left menu, you can create, schedule, edit, and publish posts.
 
 > [!NOTE]

@@ -21,55 +21,18 @@ Let's say you have customers in 3 different locations and you want to report on 
 
 First you define a custom parameter for each market:
 
-<table>
-  <tr>
-    <th scope="col">Targeting market</th>
-    <th scope="col">Custom parameters</th>
-  </tr>
-  <tr>
-    <td>New York, USA</td>
-    <td>
-        {_market}=ny-usa
-      </td>
-  </tr>
-  <tr>
-    <td>Seattle, USA</td>
-    <td>
-        {_market}=sea-usa
-      </td>
-  </tr>
-  <tr>
-    <td>Miami, USA</td>
-    <td>
-        {_market}=mia-usa
-      </td>
-  </tr>
-</table>
+|Targeting market|Custom parameters|
+|---|---|
+|New York, USA|{_market}=ny-usa|
+|Seattle, USA|{_market}=sea-usa|
+|Miami, USA|{_market}=mia-usa|
 
-<table>
-  <tr>
-    <th scope="col">Targeting market</th>
-    <th scope="col">Sample landing page URL</th>
-  </tr>
-  <tr>
-    <td>New York, USA</td>
-    <td>
-      http://contoso.com/?mkt=ny-usa&amp;keyword={Keyword}
-    </td>
-  </tr>
-  <tr>
-    <td>Seattle, USA</td>
-    <td>
-      http://contoso.com?mkt=sea-usa&amp;keyword={Keyword}
-    </td>
-  </tr>
-  <tr>
-    <td>Miami, USA</td>
-    <td>
-      http://contoso.com?mkt=mia-usa&amp;keyword={Keyword}
-    </td>
-  </tr>
-</table>
+Then, you add the custom parameter to the tracking template:   {lpurl}?mkt={_market}&amp;keyword={Keyword}      That's it. Now when your ads are served, the landing pages will look like this:
+|Targeting market|Sample landing page URL|
+|---|---|
+|New York, USA|http://contoso.com/?mkt=ny-usa&amp;keyword={Keyword}|
+|Seattle, USA|http://contoso.com?mkt=sea-usa&amp;keyword={Keyword}|
+|Miami, USA|http://contoso.com?mkt=mia-usa&amp;keyword={Keyword}|
 
 ## Add or override custom parameters
 
@@ -118,7 +81,7 @@ Custom parameters can be set at the campaign, ad group, text ad, keyword and Sit
 
 To learn how set up custom parameters at each level, see [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md).
 
-**Example:** Overriding a campaign-level custom parameter at the keyword level
+**Example:**  Overriding a campaign-level custom parameter at the keyword level
 
 Campaign: Sales has the following custom parameters:
 

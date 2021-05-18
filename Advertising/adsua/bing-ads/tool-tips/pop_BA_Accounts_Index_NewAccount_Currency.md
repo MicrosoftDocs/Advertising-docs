@@ -9,7 +9,7 @@ ms.author: eur
 
 # Currency
 
-**You can only choose your currency when you create an account.** If you want to use a different currency later on, you will need to create another account.
+**You can only choose your currency when you create an account.**  If you want to use a different currency later on, you will need to create another account.
 
 The currency for your account is what we use when we bill you and when we show you bid and budget amounts across Microsoft Advertising.
 

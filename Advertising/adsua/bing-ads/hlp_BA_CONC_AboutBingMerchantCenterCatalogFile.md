@@ -9,6 +9,8 @@ ms.author: eur
 
 # How is the feed file organized?
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2129851)    </content_tile>
+
 Your feed file is a text delimited file that has a different product item on each line. You create the text delimited file and then [      submit it to Microsoft Merchant Center    ](./hlp_BA_CONC_BMCWhatIsCatalog.md).
 
 You can find the rules for creating the feed file at [How do I create a feed file?](./hlp_BA_PROC_BMCCreateFeedFile.md) If you're using Google feed files, make it even easier to import by using the Google Merchant Center import tool. [Learn more](./hlp_BA_CONC_BMC_GMCImportIntro.md)
@@ -27,14 +29,14 @@ Here are the required and optional fields you can include in the feed:
     <td>
               A unique identifier for the item.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  ISI1
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 50 Unicode character limit
                  
-                <strong>Recommended:</strong> ASCII only: alphanumeric, underscores (_), and dashes (-)
+                <strong>Recommended:</strong>  ASCII only: alphanumeric, underscores (_), and dashes (-)
 
               </para></td>
     <td>
@@ -55,10 +57,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Title of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Women's shoes
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  150 character limit
@@ -83,11 +85,11 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Direct URL of the item's page on your website
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                   http://www.contoso.com/ 
                 product.asp?pn=ISI1
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 0-2000 characters
                  HTTP or HTTPs only and no redirects. For redirect URLs, use the ads_redirect field.
@@ -112,10 +114,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Base price, excluding tax and shipping, submitted in local currency.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  23.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                 0.00 to 10000000.00 (10 million)
@@ -141,10 +143,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Item description
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Bright yellow 100% cotton dress shirt
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  10000 character limit
@@ -168,10 +170,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               URL of an image of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  http://www.contoso.com/ images/ISI1.jpg
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  1000 character limit
@@ -200,11 +202,11 @@ Here are the required and optional fields you can include in the feed:
     <th scope="row" style="font-weight: normal">shipping</th>
     <td>
               Cost of shipping, submitted in local currency. This is a required field for Austria and Germany only.<para><para>Shipping has multiple subfields and can have the following headers:</para><ul><li>shipping(price)</li><li>shipping(country:price)</li><li>shipping(country:service:price)</li><li>shipping</li></ul>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  
                 12.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  Numeric
                  0.01 to 10000000.00 (10 million)
                  Use two decimal places and no symbols (e.g., €)
@@ -237,10 +239,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Manufacturer Part Number
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  ADNK-5020
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                   
@@ -264,10 +266,10 @@ Here are the required and optional fields you can include in the feed:
               Global Trade Item Number. 
                 Up to 10 GTIN values can be provided, with a maximum of 14 digits per value. For multiple GTIN values, separate by a comma and space.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  00012345600012
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                  14 digits max per value  
@@ -284,10 +286,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Item’s manufacturer, brand or publisher
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Contoso
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  70-character limit
@@ -310,9 +312,9 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Used to indicate that unique product identifiers (gtin, brand, and mpn) aren't available for a product.
               <para>
-                <strong>Example</strong>: 
+                <strong>Example</strong> : 
                 FALSE  
-                <strong>Requirements</strong>: 
+                <strong>Requirements</strong> : 
                 Boolean: TRUE or FALSE
               </para></td>
     <td>
@@ -340,10 +342,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Gender targeted by the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  male
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Valid options: male, female, unisex. No other option will be accepted.
               </para></td>
@@ -362,10 +364,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Age group targeted by the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  newborn
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Valid Options: newborn, infant, toddler, kids, adult
               </para></td>
@@ -387,10 +389,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The dominant color of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  red/black/white
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Text: Character limit 100
                  Supports up to 3 values separated by a slash [/] with most dominant color first
@@ -410,10 +412,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Size of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  small, medium, large
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  Max 100 characters
@@ -436,10 +438,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Size type of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  regular, petite
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Supported values: regular, petite, plus, big and tall, or maternity
               </para></td>
@@ -452,7 +454,7 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Size system of the item
               <para>
-                <strong>Requirements:</strong> Single value
+                <strong>Requirements:</strong>  Single value
                  
                 Supported values: DE, FR, AU, US, and UK
               </para></td>
@@ -479,15 +481,15 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Used to group items that may vary by color, material, pattern, size, age_group, or gender
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  XYZ123
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  Max 50 Unicode characters
                  
-                <strong>Recommended:</strong>
+                <strong>Recommended:</strong> 
                  
                 ASCII only: alphanumeric, underscores (_), and dashes (-)
               </para></td>
@@ -506,10 +508,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The material of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  leather/suede/silk
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric: Max 200 characters
                  Supports up to 3 values separated by a slash [/] with most dominant material first
@@ -523,10 +525,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The pattern or graphic print of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  checkered
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric: Max 100 characters
               </para></td>
@@ -539,10 +541,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The URLs of additional images
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  http://www.contoso.com/ images/ISI1.jpg
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  2000 character limit
@@ -576,10 +578,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Microsoft Advertising does not support adult products.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                   FALSE
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Boolean:TRUE or FALSE
               </para></td>
@@ -592,12 +594,12 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Availability of item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  in stock
                  out of stock
                  preorder
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Valid options: in stock, out of stock, preorder. 
                  Default is "in stock."
@@ -625,10 +627,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Predefined product category (equivalent to google_product_category)
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Software &gt; Computer Software
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric 
                  255 character limit
@@ -636,7 +638,7 @@ Here are the required and optional fields you can include in the feed:
                  
                 Only the greater than symbol &gt; is a valid delimiter. Any other value is treated as invalid.
                  
-                <strong>Full list of taxonomy values</strong>:
+                <strong>Full list of taxonomy values</strong> :
                 
                  <ul><li>
                     [All languages](https://go.microsoft.com/fwlink?LinkId=2118268)
@@ -657,10 +659,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Condition of item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  new
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  Valid options: new; used; refurbished
                  Default is "new."
               </para></td>
@@ -680,10 +682,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The date the item will expire
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  2015-01-25
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 ISO 8601 standard format: YYYY-MM-DD
                  Maximum supported is 30 days from date of upload. 
@@ -698,15 +700,15 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Used when bundling multiple identical items into a single unit
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  10
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Integer, greater than 1
               </para></td>
     <td>
-              When setting the price, it must be the <strong>total</strong> price of the multipack.
+              When setting the price, it must be the <strong>total</strong>  price of the multipack.
             </td>
   </tr>
   <tr>
@@ -716,10 +718,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Your category of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Home &gt; Electronics &gt; DVD Player
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  750 character limit
@@ -736,10 +738,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Mobile landing page URL
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  http://www.contosomobile.com/ product.asp
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  Max 2000 character limit
@@ -756,14 +758,14 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The measure and dimension of product as it is sold.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  1.5 kg
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric, plus unit
                  
-                <strong>Supported units:</strong>
+                <strong>Supported units:</strong> 
                 <ul><li>Weight: oz, lb, mg, g, kg</li><li>Volume (US imperial): floz, pt, qt, gal</li><li>Volume: ml, cl, l, cbm</li><li>Length: in, ft, yd, cm, m</li><li>Area: sqft, sqm</li><li>Per unit: ct</li></ul></para></td>
     <td>
       <ul>
@@ -779,14 +781,14 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The product’s base measure for pricing (e.g., 100ml means the price is calculated based on a 100ml unit).
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  100 g
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric, plus unit
                  
-                <strong>Supported units:</strong>
+                <strong>Supported units:</strong> 
                 <ul><li>Weight: oz, lb, mg, g, kg</li><li>Volume (US imperial): floz, pt, qt, gal</li><li>Volume: ml, cl, l, cbm</li><li>Length: in, ft, yd, cm, m</li><li>Area: sqft, sqm</li><li>Per unit: ct</li></ul></para></td>
     <td>
       <ul>
@@ -803,10 +805,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The monthly installment plan for a product, displayed by the number of months 
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  12:15 USD
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                months: The number of installments, displayed as an integer with a range from 1 to 1000.
 			    
@@ -833,10 +835,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               The product's energy label
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  A+
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Only the values below are supported:
                 <ul><li>G</li><li>F</li><li>E</li><li>D</li><li>C</li><li>B</li><li>A</li><li>A+</li><li>A++</li><li>A+++</li></ul></para></td>
@@ -872,10 +874,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Merchant/Store that provides this item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Contoso Shoes
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  255 character limit
@@ -895,10 +897,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Redirect URL that overrides the URL given in the "link" attribute. Ensure that this URL will redirect to the same URL as given in the "link" or "mobile_link" attribute.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  http://www.contoso.com/shoe/
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Max 2000 characters  
                 HTTP, HTTPs, or Google-formatted XML only  
@@ -927,10 +929,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Use to identify products for ad campaign filters
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                   Best sellers, High ROAS, Winter
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  Alphanumeric
                  Max 200 characters
                  Single-value
@@ -954,10 +956,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Items’s sale price, excluding tax and shipping
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  20.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                  Range is 0.00 to 10000000.00 (10 million)
@@ -980,10 +982,10 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Sale’s start and end date and time
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  2013-11-05T08:15-05:00/2013-11-10T09:30-05:00
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  
@@ -1005,7 +1007,7 @@ Here are the required and optional fields you can include in the feed:
     <td>
               Used to group items by promotion
               <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric 
                  
@@ -1025,4 +1027,5 @@ Here are the required and optional fields you can include in the feed:
   </tr>
 </table>
 
+ 
 

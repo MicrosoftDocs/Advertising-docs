@@ -1,7 +1,7 @@
 ---
 title: Increase bids based on customer age, gender, location, time of day, or day of the week
 description: Use incremental bidding in Microsoft Advertising Editor to pay the extra bid amount only for clicks that come from your targeted customers.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Target average cost-per-click (CPC)
 
-**What it is:**    The value you assign to average CPC when you set your performance target.
+**What it is:**     The value you assign to average CPC when you set your performance target.
 
 

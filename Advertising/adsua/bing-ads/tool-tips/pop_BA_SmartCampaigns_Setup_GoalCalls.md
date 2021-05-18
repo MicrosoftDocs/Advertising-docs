@@ -9,7 +9,7 @@ ms.author: eur
 
 # Get more phone calls to my business
 
-**Choose this goal if**:
+**Choose this goal if** :
 
 - You get most of your new customers over the phone.
 - You want to drive new phone calls.

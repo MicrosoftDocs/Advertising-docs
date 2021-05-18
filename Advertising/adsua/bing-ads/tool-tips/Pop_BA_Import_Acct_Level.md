@@ -9,6 +9,6 @@ ms.author: eur
 
 # Level
 
-**      What it is:    **    This lets you know which level you imported from—account, campaign, or ad group.
+**      What it is:**     This lets you know which level you imported from—account, campaign, or ad group.
 
 

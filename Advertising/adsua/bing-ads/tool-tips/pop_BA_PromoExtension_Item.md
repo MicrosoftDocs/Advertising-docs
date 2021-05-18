@@ -9,6 +9,6 @@ ms.author: eur
 
 # Item
 
-**What it is:** The name of the product or service being offered.
+**What it is:**  The name of the product or service being offered.
 
 

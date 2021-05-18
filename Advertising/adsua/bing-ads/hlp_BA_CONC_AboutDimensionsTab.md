@@ -15,105 +15,19 @@ Dimensions give you customized details about certain aspects (or dimensions) of 
 
 There are several dimensions to choose from. **Search terms** is the default selection. Clicking a dimension quickly displays a summary table and performance graph. They include:
 
-<table>
-  <tr>
-    <th style="width:220px" scope="col"> 
-      Dimension name
-    </th>
-    <th scope="col">
-      Description
-    </th>
-  </tr>
-  <tr>
-    <th scope="row">
-        Time
-      </th>
-    <td> 
-      This table displays performance data based on the date option you select (Date, Day of week, Hour of day, Week, Month, Year, Quarter). The graph has the same performance trend format that's used with the <strong>Campaigns</strong>, <strong>Ad groups</strong>, and <strong>Ads</strong> tabs.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row"> 
-      Search terms
-    </th>
-    <td>
-        This table displays what people are searching for when your ads are shown. Use this to find new keywords to add, or negative keywords to remove from your campaigns.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row"> 
-      Shopping
-    </th>
-    <td> 
-        This table displays performance data for shopping campaigns by all available dimensions and product attributes, such as category, brand, store and item ID. Item ID is the most granular level possible.
-        </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Geographical location
-    </th>
-    <td> 
-        This table displays performance data by targeted locations.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Publisher website
-    </th>
-    <td> 
-        This table lists performance data for both search results pages and Windows apps where your ads appear.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Call forwarding detail
-    </th>
-    <td> 
-        This table lists  details for each of the calls made to your call forwarding number.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Top movers
-    </th>
-    <td> 
-        This table identifies the campaigns and ad groups responsible for the biggest changes (both increases and decreases) in clicks and spend during a specified time period,
-        and suggests possible causes and actions for each change.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      User location
-    </th>
-    <td> 
-        This table displays performance data, organized by country, state, metro area, city, county, postal code, and radius for each campaign and ad group.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Landing page
-    </th>
-    <td> 
-        This table displays performance data organized by landing page for each campaign and ad group.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Age and gender
-    </th>
-    <td>
-        This table displays the estimated performance data, organized by gender and age group for each campaign and ad group.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Labels
-    </th>
-    <td>
-      This table displays performance data based on the label you select (keyword, ad, ad group, campaign). 
-      </td>
-  </tr>
-</table>
+|Dimension name|Description|
+|---|---|
+|Time|This table displays performance data based on the date option you select (Date, Day of week, Hour of day, Week, Month, Year, Quarter). The graph has the same performance trend format that's used with the **Campaigns**, **Ad groups**, and **Ads** tabs.|
+|Search terms|This table displays what people are searching for when your ads are shown. Use this to find new keywords to add, or negative keywords to remove from your campaigns.|
+|Shopping|This table displays performance data for shopping campaigns by all available dimensions and product attributes, such as category, brand, store and item ID. Item ID is the most granular level possible.|
+|Geographical location|This table displays performance data by targeted locations.|
+|Publisher website|This table lists performance data for both search results pages and Windows apps where your ads appear.|
+|Call forwarding detail|This table lists  details for each of the calls made to your call forwarding number.|
+|Top movers|This table identifies the campaigns and ad groups responsible for the biggest changes (both increases and decreases) in clicks and spend during a specified time period,        and suggests possible causes and actions for each change.|
+|User location|This table displays performance data, organized by country, state, metro area, city, county, postal code, and radius for each campaign and ad group.|
+|Landing page|This table displays performance data organized by landing page for each campaign and ad group.|
+|Age and gender|This table displays the estimated performance data, organized by gender and age group for each campaign and ad group.|
+|Labels|This table displays performance data based on the label you select (keyword, ad, ad group, campaign).|
 
 ## Get started with dimension graphs
 

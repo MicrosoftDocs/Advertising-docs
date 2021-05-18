@@ -9,8 +9,8 @@ ms.author: eur
 
 # Target ID
 
-**What it is:** We assign an ID to each dynamic ad target.
+**What it is:**  We assign an ID to each dynamic ad target.
 
-**Why it's important:** You will need to use this ID to refer to a dynamic ad target if you manage campaigns in bulk or use the API.
+**Why it's important:**  You will need to use this ID to refer to a dynamic ad target if you manage campaigns in bulk or use the API.
 
 

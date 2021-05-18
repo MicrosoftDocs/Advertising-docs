@@ -9,6 +9,6 @@ ms.author: eur
 
 # Agency
 
-**What it is: **    The name of the agency working on the account.
+**What it is:**     The name of the agency working on the account.
 
 

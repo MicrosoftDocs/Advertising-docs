@@ -9,8 +9,8 @@ ms.author: eur
 
 # Weekly estimated average cost per click (CPC)
 
-**What it is:**    This is the potential average weekly CPC when you apply this recommendation.
+**What it is:**     This is the potential average weekly CPC when you apply this recommendation.
 
-**      What you need to know:    **    These estimates are based on performance data from the last 7 days and are not a guaruantee of future performance.
+**      What you need to know:**     These estimates are based on performance data from the last 7 days and are not a guaruantee of future performance.
 
 

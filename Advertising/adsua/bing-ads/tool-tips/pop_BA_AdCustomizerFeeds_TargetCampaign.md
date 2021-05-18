@@ -9,6 +9,6 @@ ms.author: eur
 
 # Target campaign
 
-**What it is**: This makes the other attributes in this feed item only apply to ads in a certain campaign.
+**What it is** : This makes the other attributes in this feed item only apply to ads in a certain campaign.
 
 

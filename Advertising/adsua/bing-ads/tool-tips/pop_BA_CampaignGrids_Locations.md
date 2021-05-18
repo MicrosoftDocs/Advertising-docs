@@ -9,10 +9,10 @@ ms.author: eur
 
 # Locations
 
-**What it is: **       The geographical locations that you have targeted.
+**What it is:**        The geographical locations that you have targeted.
 
-**What you need to know: **       In the table, click the location for a specific campaign, and then view and edit your location targets, bid adjustments, and excluded locations.
+**What you need to know:**        In the table, click the location for a specific campaign, and then view and edit your location targets, bid adjustments, and excluded locations.
 
-**Get more info: **    [How does ad language and location targeting affect who can see my ads?](../hlp_BA_CONC_LocTargetAndLang.md)
+**Get more info:**     [How does ad language and location targeting affect who can see my ads?](../hlp_BA_CONC_LocTargetAndLang.md)
 
 

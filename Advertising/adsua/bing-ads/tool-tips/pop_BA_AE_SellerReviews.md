@@ -9,6 +9,6 @@ ms.author: eur
 
 # Seller Ratings
 
-**What you need to know:** Enhance your ads by adding icons and links to high-rated reviews within the ad.
+**What you need to know:**  Enhance your ads by adding icons and links to high-rated reviews within the ad.
 
 

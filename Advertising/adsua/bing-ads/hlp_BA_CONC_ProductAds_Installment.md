@@ -9,23 +9,25 @@ ms.author: eur
 
 # About the installment attribute for product ads
 
+<content_tile class="training">	[	New to Microsoft Shopping Campaigns? Learn how to get started in this training course.	](https://go.microsoft.com/fwlink?LinkId=2129851)	</content_tile>
+
 The installment attribute for product ads is the monthly installment plan for a product, displayed by the number of months. You can include the installment pricing with or without a down payment for relevant offers, to display the most accurate pricing options for your products.
 
 ## Why use installment pricing?
 
-- **Increased traffic volume**. Displaying your most accurate pricing in your ads help to grow ad engagement boost your potential click-through rate.
-- **More informed shoppers**. Providing installment pricing and any down payment costs to potential customers provides them with more information before purchasing.
-- **Improved market share**. Displaying a more accurate pricing option can encourage customers to click your ad instead of your competitors’ ads.
+- **Increased traffic volume** . Displaying your most accurate pricing in your ads help to grow ad engagement boost your potential click-through rate.
+- **More informed shoppers** . Providing installment pricing and any down payment costs to potential customers provides them with more information before purchasing.
+- **Improved market share** . Displaying a more accurate pricing option can encourage customers to click your ad instead of your competitors’ ads.
 
 ## Installment attribute requirements
 - This attribute can only be applied to mobile and tablet product categories. The installment field will be ignored for all other categories.
 - The price attribute will be treated as the down payment and the installment amount will account for the remaining monthly installments.
 - For mobile devices or tablets, the price can be 0 when payment options with multiple installments are provided. For such items, you must include the product_category values:
-  - 4745 - Electronics > Computers > Tablet Computers
-  - 267 - Electronics > Communications > Telephony > Mobile Phones
-  - Electronics > Communications > Telephony > Mobile Phones > Feature Phones
-  - Electronics > Communications > Telephony > Mobile Phones > Smartphones
-  - Electronics > Communications > Telephony > Mobile Phones > Watch Phones
+   - 4745 - Electronics > Computers > Tablet Computers
+   - 267 - Electronics > Communications > Telephony > Mobile Phones
+   - Electronics > Communications > Telephony > Mobile Phones > Feature Phones
+   - Electronics > Communications > Telephony > Mobile Phones > Smartphones
+   - Electronics > Communications > Telephony > Mobile Phones > Watch Phones
 
 ## Installment attribute format
 - **Months**: The number of installments, displayed as an integer with a range from 1 to 1000.

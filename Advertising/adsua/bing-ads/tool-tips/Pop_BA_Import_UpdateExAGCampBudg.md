@@ -9,6 +9,6 @@ ms.author: eur
 
 # Update existing campaign budgets
 
-**What you need to know:** When enabled, this option fetches updates for existing campaign budgets that are now in Microsoft Advertising.
+**What you need to know:**  When enabled, this option fetches updates for existing campaign budgets that are now in Microsoft Advertising.
 
 

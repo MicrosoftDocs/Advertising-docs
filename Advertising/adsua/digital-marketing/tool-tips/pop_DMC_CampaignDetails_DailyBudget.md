@@ -1,7 +1,7 @@
 ---
 title: Daily budget
 description: Daily budget
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Daily budget
 
-**What it is:**    Your budget tells us how much you want to spend on this campaign per day.
+**What it is:**     Your budget tells us how much you want to spend on this campaign per day.
 
 **What you need to know:**
 - You can change your budget at any time.

@@ -1,7 +1,7 @@
 ---
 title: About automated text ads
 description: Learn about automated text ads in Digital Marketing Center for your search advertising campaigns.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

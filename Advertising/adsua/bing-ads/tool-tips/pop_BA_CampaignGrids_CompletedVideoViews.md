@@ -9,6 +9,6 @@ ms.author: eur
 
 # Completed video views
 
-**What it is**: The number of times a user watched the entire video.
+**What it is** : The number of times a user watched the entire video.
 
 

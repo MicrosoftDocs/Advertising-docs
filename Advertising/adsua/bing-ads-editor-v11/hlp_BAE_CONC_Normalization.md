@@ -1,7 +1,7 @@
 ---
 title: About duplicate keywords
 description: How punctuation can result in duplicate keywords in Microsoft Advertising Editor .
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -18,43 +18,14 @@ For example, let's say you type **bike-repair** as one of your keywords, and the
 
 Below is the list of extra characters that Microsoft Advertising Editor looks for and will ignore. If you use any of the characters below, and have a similar keyword without those characters, you can safely delete one of the keywords without impacting your campaign.
 
-<table>
-  <tr>
-    <td>quotation mark (")</td>
-    <td>ampersand (&amp;)</td>
-    <td>hyphen (-)</td>
-  </tr>
-  <tr>
-    <td>asterisk (*)</td>
-    <td>percentage sign (%)</td>
-    <td>parentheses (( ))</td>
-  </tr>
-  <tr>
-    <td>brackets ([ ])</td>
-    <td>curly brackets ({ })</td>
-    <td>period (.)</td>
-  </tr>
-  <tr>
-    <td>comma (,)</td>
-    <td>question mark (?)</td>
-    <td>slash mark (/)</td>
-  </tr>
-  <tr>
-    <td>backslash (\)</td>
-    <td>colon (:)</td>
-    <td>semicolon (;)</td>
-  </tr>
-  <tr>
-    <td>exclamation point (!)</td>
-    <td>apostrophe (')</td>
-    <td>angle brackets (&lt; &gt;)</td>
-  </tr>
-  <tr>
-    <td>plus sign (+)</td>
-    <td>number sign (#)</td>
-    <td></td>
-  </tr>
-</table>
+|quotation mark (")|ampersand (&)|hyphen (-)|
+|---|---|---|
+|asterisk (\*)|percentage sign (%)|parentheses (( ))|
+|brackets ([ ])|curly brackets ({ })|period (.)|
+|comma (,)|question mark (?)|slash mark (/)|
+|backslash (\)|colon (:)|semicolon (;)|
+|exclamation point (!)|apostrophe (')|angle brackets (< >)|
+|plus sign (+)|number sign (#)||
 
 > [!NOTE]
 > Normalization is not case sensitive; **bike repair** and **Bike Repair** are treated as the same phrase.

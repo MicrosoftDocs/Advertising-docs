@@ -9,6 +9,6 @@ ms.author: eur
 
 # Time zone
 
-**What it is:** The time zone you want to set for your App Install ads.
+**What it is:**  The time zone you want to set for your App Install ads.
 
 

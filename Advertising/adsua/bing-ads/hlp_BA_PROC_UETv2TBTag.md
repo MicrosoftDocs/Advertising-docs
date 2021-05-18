@@ -31,7 +31,7 @@ What it is: Microsoft Advertising has not received any user activity data from t
 
 What to do: Validate with UET Tag Helper
 
-**Limitations of tracking status column**: While we believe the tracking status will help you validate your setup, we do want to call out that the following cannot be verified from the tracking status column:
+**Limitations of tracking status column** : While we believe the tracking status will help you validate your setup, we do want to call out that the following cannot be verified from the tracking status column:
 
 - Whether or not the UET tag has been installed across the site: Microsoft Advertising reports status of the UET tag as **Tag active** as long as at least one UET event was logged (from any part of your website).
 - Whether or not custom events/variable revenue values are being reported: As explained above Microsoft Advertising does not distinguish between page load events (logged by default) or custom events reported when the tracking status column.

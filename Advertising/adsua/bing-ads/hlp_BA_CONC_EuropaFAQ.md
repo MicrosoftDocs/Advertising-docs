@@ -15,6 +15,44 @@ Microsoft Advertising is required to collect value-added tax (VAT) in certain co
 
 All Microsoft Advertising customers need to have a business location listed for each of their accounts. Business location is the country/region where the advertiser's business is legally registered. Whether you will be charged VAT on your advertising costs will depend on your business location and your tax registration status. For example, if you are in a business location that has VAT accounting obligations, you will need to enter your VAT registration number. If you do not provide your VAT registration number, Microsoft Advertising will charge VAT, in most cases. VAT will be charged based on your local rate.
 
+<content_tile style="text-align:center; font-size:.9em; padding:15px; width:150px; margin:0 0 0 150px; background-color:#008272; color:#fff;border:1px solid #ccc;">Add your business location</content_tile>
+
+<content_tile style="clear:both;border-right:2px solid #ccc; padding:0; float:none; width:2px; margin:0 0 0 222px; height:30px"></content_tile>
+
+<content_tile style="border:2px solid #ccc; font-size:.9em; text-align:center; float:none; clear:both; padding:15px; width:150px; margin:0 0 0 150px; background-color:#fff; color:#333;">Are there requirements to pay VAT?</content_tile>
+
+<content_tile style="float:left; margin-left:120px; width:50px; height:20px; padding-top:10px;">NO</content_tile>
+
+<content_tile style="float:left; margin-left:52px; border-left:2px solid #ccc; width:2px; height:30px;"></content_tile>
+
+<content_tile style="float:left; width:50px; margin-left:60px;padding-top:10px; height:20px;">YES</content_tile>
+
+<content_tile style="margin:0 0 0 103px; height:2px; padding:0; clear:left; float:left; border-bottom:2px solid #ccc; width:220px;"></content_tile>
+
+<content_tile style="float:left; clear:left;border-right:2px solid #ccc; padding:0; width:2px; margin:0 0 0 103px; height:30px"></content_tile>
+
+<content_tile style="float:left; border-right:2px solid #ccc; padding:0; width:2px; margin:0 0 0 216px; height:30px"></content_tile>
+
+<content_tile style="text-align:center; font-size:.9em; color:#fff; clear:left;float:left; background-color:#008272; padding:15px; width:100px; margin:0 95px 0 50px;border:1px solid #ccc;">All done!</content_tile>
+
+<content_tile style="text-align:center; font-size:.9em; border:2px solid #ccc; color:#333;float:left; background-color:#fff; padding:15px; width:150px; margin:0;">Did you enter a VAT registration number?</content_tile>
+
+<content_tile style="clear:left; float:left; margin-left:225px; width:50px; height:20px; padding-top:10px;">NO</content_tile>
+
+<content_tile style="float:left; margin-left:45px; border-left:2px solid #ccc; width:2px; height:30px;"></content_tile>
+
+<content_tile style="float:left; width:50px; margin-left:80px;padding-top:10px; height:20px;">YES</content_tile>
+
+<content_tile style="margin:0 0 0 210px; height:2px; padding:0; clear:left; float:left; border-bottom:2px solid #ccc; width:234px;"></content_tile>
+
+<content_tile style="float:left; clear:left;border-right:2px solid #ccc; padding:0; width:2px; margin:0 0 0 210px; height:30px"></content_tile>
+
+<content_tile style="float:left; border-right:2px solid #ccc; padding:0; width:2px; margin:0 0 0 230px; height:30px"></content_tile>
+
+<content_tile style="text-align:center; font-size:.9em; color:#fff; clear:left;float:left; background-color:#008272; padding:15px; width:150px; margin:0 80px 0 135px;border:1px solid #ccc;">VAT will be charged.</content_tile>
+
+<content_tile style="text-align:center; font-size:.9em; color:#fff;float:left; background-color:#008272; padding:15px; width:150px; margin:0;border:1px solid #ccc;">VAT will not be charged. (A 0% reverse charge will be applied.)</content_tile>
+
 > [!NOTE]
 > Most of our monthly invoice customers will have a business location and, if applicable, VAT information in our system. If you need to make changes, please contact your account manager or [contact support](https://go.microsoft.com/fwlink?LinkId=398371).
 > If you are an agency managing client accounts, the business location is based on your client (the sold-to customer).
@@ -135,11 +173,11 @@ Business location is based on your client (the sold-to customer). If applicable,
 Note: If you’re an agency based in India that advertises and pays the bill on behalf of a client, please make sure you enter your agency’s business information so that it is reflected correctly on the billing documents.
 
 ## I'm from a country/region that has VAT requirements. What changes will I see in my billing invoices and statements?
-**If you have provided a VAT registration number,** you will see your VAT registration number listed and a VAT 0% reverse charge in the subtotal section of your monthly invoice, statement, or credit memo.
+**If you have provided a VAT registration number,**  you will see your VAT registration number listed and a VAT 0% reverse charge in the subtotal section of your monthly invoice, statement, or credit memo.
 
-**If you have not provided a VAT registration number,** you will see the VAT rate in the subtotal section and the charge to your account. The VAT rate is based on your local rate.
+**If you have not provided a VAT registration number,**  you will see the VAT rate in the subtotal section and the charge to your account. The VAT rate is based on your local rate.
 
-**If you have provided a VAT exemption certificate,** you will see on your invoice or statement that the  certificate is **on file** and the VAT rate will be 0%.
+**If you have provided a VAT exemption certificate,**  you will see on your invoice or statement that the  certificate is **on file** and the VAT rate will be 0%.
 
 ## I'm a customer in Europe, the Middle East, or Africa. What changes will I see in my billing invoices and statements?
 After the transition from Microsoft Online, Inc., to Microsoft Ireland Operations Ltd., monthly invoices and statements will come from Microsoft Ireland Operations Ltd. The new payment instructions will be shown on the invoice.

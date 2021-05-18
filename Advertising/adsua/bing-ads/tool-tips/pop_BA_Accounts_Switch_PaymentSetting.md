@@ -9,6 +9,6 @@ ms.author: eur
 
 # Payment setting
 
-**What it is:** [!INCLUDE [PaymentSettings](../includes/PaymentSettings.md)]
+**What it is:**  [!INCLUDE [PaymentSettings](../includes/PaymentSettings.md)]
 
 

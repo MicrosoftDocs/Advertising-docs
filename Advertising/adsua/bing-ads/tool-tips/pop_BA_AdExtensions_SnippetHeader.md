@@ -9,8 +9,8 @@ ms.author: eur
 
 # Snippet header
 
-**What it is: **    The category of products or services you would like to highlight in your ads.
+**What it is:**     The category of products or services you would like to highlight in your ads.
 
-**What you need to know: **    You can choose from 13 unique headers.
+**What you need to know:**     You can choose from 13 unique headers.
 
 

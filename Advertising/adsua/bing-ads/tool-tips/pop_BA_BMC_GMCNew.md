@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product offer - New
 
-**What it is:** The number of new offers uploaded or imported  that were identified by the system.
+**What it is:**  The number of new offers uploaded or imported  that were identified by the system.
 
 

@@ -9,6 +9,7 @@ ms.author: eur
 
 # Image guidelines and policies
 
+[!INCLUDE [Redesign](./includes/Redesign.md)]
 When adding images to your ads, whether they’re images you upload or stock images provided by Shutterstock, you want to make sure that the images you use meet Microsoft Advertising&nbsp;[Image, audio, and video policies](https://go.microsoft.com/fwlink?LinkId=534455).
 
 Take a look at the Microsoft Advertising image policies and guidelines below:
@@ -52,32 +53,11 @@ Image dimensions for upload are limited to:
 - **Maximum image dimensions:** 1900 x 1000 pixels
 - **Recommended image dimensions:** 1200 x 628 pixels
 
-<table>
-  <tr>
-    <th scope="col">Aspect ratio</th>
-    <th scope="col">Min. dimensions (pixels)</th>
-    <th scope="col">Max. dimensions (pixels)</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.2 : 1</th>
-    <td>300 x 250</td>
-    <td>1200 x 1000</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">4 : 3</th>
-    <td>100 x 75</td>
-    <td>1333 x 1000</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">1.5 : 1</th>
-    <td>300 x 200</td>
-    <td>1500 x 1000</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">16 : 9</th>
-    <td>640 x 360</td>
-    <td>1778 x 1000</td>
-  </tr>
-</table>
+|Aspect ratio|Min. dimensions (pixels)|Max. dimensions (pixels)|
+|---|---|---|
+|1.2 : 1|300 x 250|1200 x 1000|
+|4 : 3|100 x 75|1333 x 1000|
+|1.5 : 1|300 x 200|1500 x 1000|
+|16 : 9|640 x 360|1778 x 1000|
 
 

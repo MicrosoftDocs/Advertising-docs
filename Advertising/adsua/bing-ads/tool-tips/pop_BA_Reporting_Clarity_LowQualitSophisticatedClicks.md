@@ -9,10 +9,10 @@ ms.author: eur
 
 # Low-quality clicks - Sophisticated
 
-**What it is:**    Invalid clicks that use sophisticated means to appear valid.
+**What it is:**     Invalid clicks that use sophisticated means to appear valid.
 
-**What you need to know:** You are not billed for these clicks.
+**What you need to know:**  You are not billed for these clicks.
 
-**Get more info:**    [Description of Methodology](https://go.microsoft.com/fwlink?LinkId=550982)
+**Get more info:**     [Description of Methodology](https://go.microsoft.com/fwlink?LinkId=550982)
 
 

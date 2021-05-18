@@ -1,7 +1,7 @@
 ---
 title: Microsoft Advertising apps for iOS and Android
 description: Learn more about Microsoft Advertising apps for iOS and Android.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Mobile"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -18,7 +18,7 @@ Manage your ads from your smartphone with Microsoft Advertising for iOS and Andr
 - Compare two metrics on performance graph and view full screen graph by changing phone's orientation
 - Change campaign budget, change ad group, or keyword bids
 - Pause or enable campaigns, ad groups, ads, and keywords
-- Visualize your account's **Share of Voice** report to see the impressions you're losing out on and possibily losing to your competitors.
+- Visualize your account's **Share of Voice**  report to see the impressions you're losing out on and possibily losing to your competitors.
 - Receive notifications when your credit card is about to expire
 - Get in touch with Microsoft Advertising support whenever you need help
 - Edit existing ads' title, description, display, destination URL, and device preference
@@ -29,6 +29,8 @@ Manage your ads from your smartphone with Microsoft Advertising for iOS and Andr
 ## Where can I download Microsoft Advertising for iOS and Microsoft Advertising for Android?
 
 Download the Microsoft Advertising apps by clicking the links below or by searching "Microsoft Advertising" in your smartphone's app store.
+
+[![Bing Ads for iOS](../images/BAM_CONC_Apple.png)](https://go.microsoft.com/fwlink?LinkId=536519)[![Bing Ads for Android](../images/BAM_CONC_Android.png)](https://go.microsoft.com/fwlink?LinkId=624094)
 
 ## Where can I learn more about Microsoft Advertising for iOS and Microsoft Advertising for Android?
 

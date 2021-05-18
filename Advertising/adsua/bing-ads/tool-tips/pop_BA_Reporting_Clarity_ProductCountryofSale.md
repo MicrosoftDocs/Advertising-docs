@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product country/region of sale
 
-**What it is:**    This is the country or region where the products in this campaign are sold.
+**What it is:**     This is the country or region where the products in this campaign are sold.
 
 

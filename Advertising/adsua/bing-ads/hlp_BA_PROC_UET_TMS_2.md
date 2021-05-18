@@ -9,4 +9,5 @@ ms.author: eur
 
 # Set up UET tags using Google Tag Manager, Tealium, and other tag management systems
 
+[!INCLUDE [PROC_UET_TMS](./includes/PROC_UET_TMS.md)]
 

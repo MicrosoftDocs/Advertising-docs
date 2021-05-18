@@ -36,8 +36,8 @@ Here's a look at the four steps you need to take to get started with Shopify.
 If you’re new to Microsoft Advertising, all you need is your Microsoft account and a few details about your business to sign up through the app. You'll be taken to the Microsoft Advertising sign up page, where you'll create your Microsoft Advertising account and set up your billing and payment information. Once that’s complete, you’ll need to come back to Shopify and connect your accounts. Then, you’ll need to enter a few details to set up your Microsoft Merchant Center account within the app.
 
 1.  						**Get more info**
-  - [What are my billing options? Pay now or pay later](./hlp_BA_CONC_HowBillingWorks.md)
-  - [About app permissions in Shopify](https://go.microsoft.com/fwlink?LinkId=2099640)
+   - [What are my billing options? Pay now or pay later](./hlp_BA_CONC_HowBillingWorks.md)
+   - [About app permissions in Shopify](https://go.microsoft.com/fwlink?LinkId=2099640)
 
 1. **Select the Microsoft Advertising account**
 After you've connected your Microsoft account in Shopify, select the Microsoft Advertising account you want to use.
@@ -52,9 +52,9 @@ Enter the target country and contact details to get started with your Microsoft 
 1. **Create a Microsoft Smart Shopping Activity**
 From the **Marketing** page in Shopify, select **Create a campaign** >  **Build your campaign by adding a marketing activity** > **Microsoft Advertising Shopping Campaign (recommended)**. Enter the activity details with daily budget (minimum recommended: $30 USD) and then select **Publish activity**.
 
-  - A marketing activity is equivalent to a campaign within Microsoft Advertising and in many cases the terms are used interchangeably.
-  - [Smart shopping campaigns](./hlp_BA_CONC_BSC_SmartShopping.md) automate bids and ad delivery to personalize the shopping experience for customers who are more likely to convert at higher revenue values.
-  - Do not select the **Microsoft Bid Strategy Campaign (Sunsetting)** activity option. This bid strategy option will soon be removed.
+   - A marketing activity is equivalent to a campaign within Microsoft Advertising and in many cases the terms are used interchangeably.
+   - [Smart shopping campaigns](./hlp_BA_CONC_BSC_SmartShopping.md) automate bids and ad delivery to personalize the shopping experience for customers who are more likely to convert at higher revenue values.
+   - Do not select the **Microsoft Bid Strategy Campaign (Sunsetting)** activity option. This bid strategy option will soon be removed.
 
 ## Coupon redemption
 Spend $25 USD and receive $100 USD credit for qualifying new Microsoft Advertising account sign-ups with new registered domains.

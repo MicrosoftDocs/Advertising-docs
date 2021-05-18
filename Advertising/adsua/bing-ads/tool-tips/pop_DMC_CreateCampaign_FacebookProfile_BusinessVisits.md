@@ -9,6 +9,6 @@ ms.author: eur
 
 # Facebook profile - Business visits
 
-**What it is:** Select the Facebook profile you want to use so you can advertise on Facebook and promote your website.
+**What it is:**  Select the Facebook profile you want to use so you can advertise on Facebook and promote your website.
 
 

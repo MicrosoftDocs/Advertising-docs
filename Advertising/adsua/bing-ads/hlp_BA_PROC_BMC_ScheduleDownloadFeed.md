@@ -9,11 +9,13 @@ ms.author: eur
 
 # Schedule downloading of feed files in Microsoft Merchant Center
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2129851)    </content_tile>
+
 You have different ways of [uploading your feed file](./hlp_BA_CONC_BMCWhatIsCatalog.md) for your Microsoft Merchant Center. One of the methods is to automatically download your feed file from a URL, where it is downloaded once every 24 hours. Now, you can set a schedule to download the feed file when you need it. The options you have are:
 
-- **Daily**: Download your feed file once a day at your specified time until you pause or delete the schedule.
-- **Weekly**: Download your feed file once a week at the time and day you specify until you pause or delete the schedule.
-- **Monthly**: Download your feed file once a month at the time and day you specify until you pause or delete the schedule.
+- **Daily** : Download your feed file once a day at your specified time until you pause or delete the schedule.
+- **Weekly** : Download your feed file once a week at the time and day you specify until you pause or delete the schedule.
+- **Monthly** : Download your feed file once a month at the time and day you specify until you pause or delete the schedule.
 
 ## Set a download schedule
 

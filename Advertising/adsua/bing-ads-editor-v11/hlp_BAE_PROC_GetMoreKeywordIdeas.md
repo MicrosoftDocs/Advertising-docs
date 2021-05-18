@@ -1,7 +1,7 @@
 ---
 title: Get more keyword ideas
 description: Need help getting keyword ideas? Use the Keyword research tool in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -25,11 +25,11 @@ You can potentially increase your impressions and click-through rates by bidding
 1. Click **Tools** in menu bar and then select **Keyword research**, and click **Get keywords from a website**.
 1. In the **Keyword Research** dialog box, enter the URL you want to extract keywords from, and click the search icon.
 1. (Optional) If you want to add keywords to an ad group, do the following:
-  - From the list of generated keywords, select the keywords that you want to add to an ad group.
-  - In the **Add selected keywords to** list, click **Ad group keywords**, and then click **Add**.
+   - From the list of generated keywords, select the keywords that you want to add to an ad group.
+   - In the **Add selected keywords to** list, click **Ad group keywords**, and then click **Add**.
 
 1. (Optional) If you want to add negative keywords to an ad group or campaign, do the following:
-  - From the list of generated keywords, select the negative keywords that you want to add to an ad group or campaign.
-  - In the **Add selected keywords to** list, click either **Ad group negative keywords** or **Campaign negative keywords**, and then click **Add**.
+   - From the list of generated keywords, select the negative keywords that you want to add to an ad group or campaign.
+   - In the **Add selected keywords to** list, click either **Ad group negative keywords** or **Campaign negative keywords**, and then click **Add**.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Then insert
 
-**What it is**: This is the text that will appear in your title or ad text field if the IF function is met.
+**What it is** : This is the text that will appear in your title or ad text field if the IF function is met.
 
 

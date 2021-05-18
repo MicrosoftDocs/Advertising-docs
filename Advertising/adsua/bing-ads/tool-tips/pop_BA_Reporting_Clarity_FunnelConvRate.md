@@ -9,6 +9,6 @@ ms.author: eur
 
 # Funnel conversion rate
 
-**What it is:**    The number of conversions, divided by the number of times potential customers reached step 1 in the funnel, expressed as a percentage.
+**What it is:**     The number of conversions, divided by the number of times potential customers reached step 1 in the funnel, expressed as a percentage.
 
 

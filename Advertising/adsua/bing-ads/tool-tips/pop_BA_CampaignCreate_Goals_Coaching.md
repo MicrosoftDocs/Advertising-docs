@@ -9,7 +9,7 @@ ms.author: eur
 
 # Free coaching on creating a campaign
 
-**What it is**: Our expert coaches are standing by to help plan, create, and improve your ads. Your coach can help you:
+**What it is** : Our expert coaches are standing by to help plan, create, and improve your ads. Your coach can help you:
 
 - Create your Microsoft Advertising campaign.
 - Import your ads from your current Google Ads account.

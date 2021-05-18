@@ -9,8 +9,8 @@ ms.author: eur
 
 # Purchase order
 
-**What it is: **The purchase order is a number that you can enter to help you track this insertion order.
+**What it is:** The purchase order is a number that you can enter to help you track this insertion order.
 
-**What you need to know: **Entering a purchase order is optional. The number cannot be more than 50 characters.
+**What you need to know:** Entering a purchase order is optional. The number cannot be more than 50 characters.
 
 

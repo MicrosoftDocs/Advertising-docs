@@ -23,7 +23,7 @@ You can further enhance your Expanded Text Ad with [ad extensions](./hlp_BA_CONC
 1. From the page menu, click **Ads &amp; extensions**.
 1. Click **Create ad**.
 1. For **Ad type**, select **Expanded Text Ad**.
-1. Enter your landing page URL in the **Final URL** box. **Note**: Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any [tracking templates](./hlp_BA_CONC_GoogleAnalytics.md)&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
+1. Enter your landing page URL in the **Final URL** box. **Note** : Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any [tracking templates](./hlp_BA_CONC_GoogleAnalytics.md)&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
 1. You can then enter three parts of your ad title, each up to 30 characters long. The third title is optional.
 1. Similarly, you can also enter two parts of the URL path customers will see in your ad, each up to 15 characters long.
 1. Fill in the ad text to appear below the path, up to 180 characters long (up to two 90-character descriptions). The second description is optional.
@@ -50,28 +50,28 @@ You can further enhance your Expanded Text Ad with [ad extensions](./hlp_BA_CONC
 1. From the page menu, click **Ads &amp; extensions**.
 1. In the table, select the ad you want to edit and click **Edit**.
 1. To replace text in multiple ads:
-  1. In the **Action** list, choose **Find and replace text**.
-  1. In the **Find** box, enter the text you want to replace.
-  1. In the **Replace with** box, enter the new text you want to use.
-  1. Click **Save**.
+   1. In the **Action** list, choose **Find and replace text**.
+   1. In the **Find** box, enter the text you want to replace.
+   1. In the **Replace with** box, enter the new text you want to use.
+   1. Click **Save**.
 
 1. To append text to existing ad text:
-  1. In the **Action** list, choose **Append text**.
-  1. Choose where you want to append the text.
-  1. In the **Append text** box, enter the text you want to add.
-  1. Choose whether to add the text before or after existing text.
-  1. Click **Save**.
+   1. In the **Action** list, choose **Append text**.
+   1. Choose where you want to append the text.
+   1. In the **Append text** box, enter the text you want to add.
+   1. Choose whether to add the text before or after existing text.
+   1. Click **Save**.
 
 1. To change the case of ad text:
-  1. In the **Action** list, choose **Change case**.
-  1. Choose which text you want to change the case of.
-  1. Choose whether you want the text to be title case, sentence case, or lowercase.
-  1. Click **Save**.
+   1. In the **Action** list, choose **Change case**.
+   1. Choose which text you want to change the case of.
+   1. Choose whether you want the text to be title case, sentence case, or lowercase.
+   1. Click **Save**.
 
 1. To change current ad text to entirely new ad text:
-  1. In the **Action** list, choose **Set text**.
-  1. Enter the new text you want to use for your ads.
-  1. Click **Save**.
+   1. In the **Action** list, choose **Set text**.
+   1. Enter the new text you want to use for your ads.
+   1. Click **Save**.
 
 ## How to request exceptions to editorial rejections
 1. From the main menu on the left, click **All campaigns**.

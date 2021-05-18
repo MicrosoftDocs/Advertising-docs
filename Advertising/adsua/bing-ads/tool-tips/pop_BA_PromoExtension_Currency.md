@@ -9,6 +9,6 @@ ms.author: eur
 
 # Currency
 
-**What it is:** The currency symbol that will be displayed in the ad (for example, $ for USD).
+**What it is:**  The currency symbol that will be displayed in the ad (for example, $ for USD).
 
 

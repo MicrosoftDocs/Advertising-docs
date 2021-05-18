@@ -9,6 +9,6 @@ ms.author: eur
 
 # Subbrand
 
-**What it is:** The main brand's secondary brand.
+**What it is:**  The main brand's secondary brand.
 
 

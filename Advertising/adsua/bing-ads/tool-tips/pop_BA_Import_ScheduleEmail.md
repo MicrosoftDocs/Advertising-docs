@@ -9,9 +9,9 @@ ms.author: eur
 
 # Email notification
 
-**What it is:** This column tells you whether an email will be sent to you when the import happens.
+**What it is:**  This column tells you whether an email will be sent to you when the import happens.
 
-**What you need to know:** You set this option when you create the schedule and the choices are:
+**What you need to know:**  You set this option when you create the schedule and the choices are:
 
 - No emails
 - Send an email only if there are changes or errors

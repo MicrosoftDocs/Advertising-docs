@@ -9,7 +9,7 @@ ms.author: eur
 
 # Redemption code
 
-**What it is:** The code a customer enters for the promotion.
+**What it is:**  The code a customer enters for the promotion.
 
 **What you need to know:**
 - Redemption codes typically reflect the promotion, for example: EXTRA15OFF, BUY1GET2

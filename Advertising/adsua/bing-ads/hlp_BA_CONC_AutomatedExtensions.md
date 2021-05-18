@@ -31,7 +31,7 @@ We base ratings from the following sources:
 - Bizrate
 - MrRebates
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -42,14 +42,14 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Consumer Sentiment
 
 Show relevant reviews with positive comments about your business. Adding Consumer Sentiments can increase customers’ trust in your website, as well as your click-through rates.
 
 ![Consumer Sentiment](../images/BA_CONC_AutoExt_ConsumerSentiment.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -61,7 +61,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Mobile, Desktop
+**Devices** : Mobile, Desktop
 
 ## Dynamic Ad Enhancements
 ## Dynamic Descriptions
@@ -69,7 +69,7 @@ Microsoft Search Network:
 Dynamic Description enriches your ads with Bing-generated descriptions that are relevant to customers' search queries, based on content from your ad's landing page. This can build consumer confidence in the relevance of your ad, which can help to increase clicks.
 
 ![Dynamic Descriptions](../images/BA_CONC_AutoExt_DynamicDescriptions.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -89,7 +89,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Events
 
@@ -98,21 +98,21 @@ Events are automatically included as a single line of text from current or timel
 This non-clickable line of text encourages clicks by providing a quick glimpse of an event-related offer found on your website. Events may appear on the mainline or sidebar. Also, specific event date parameters are applied. For example, Bing will crawl for Valentine’s Day-related content from January 31 to February 14.
 
 ![Events](../images/BA_CONC_AutoExt_Events.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop
+**Devices** : Desktop
 
 ## Smart Landing Page Title
 
 Smart Landing Page Title highlights specific products and brands that are featured on your website. This informs users of the variety of products and services your website has to offer. Bing scans the landing page of your website to see if it contains product categories, features, or brand names that match the content of the search terms. It can also leverage the landing page title.
 
 ![Smart Landing Page Title](../images/BA_CONC_AutoExt_SmartLandingPageTitle.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -123,7 +123,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Dynamic Callouts
 ## Dynamic Callouts
@@ -133,7 +133,7 @@ Dynamic Callouts provide an extra snippet of text that highlights your website�
 The non-clickable callout text is generated from copy highlighted on your website’s landing page, including key business details, highlighted services, and products offered. If you’re already using Callout Extensions, Dynamic Callouts will not show.
 
 ![Dynamic Callouts](../images/BA_CONC_AutoExt_DynamicCallouts.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -142,7 +142,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop
+**Devices** : Desktop
 
 ## Automated Promotions (text ads only)
 
@@ -151,14 +151,14 @@ The Automated Promotion Extension is available for text ads only. Automated Prom
 This extension is only available if you are enrolled in Merchant Promotions. It’s also important to know that only site-wide online promotions will be displayed and that product-level or local promotions will be included.
 
 ![Promotions](../images/BA_CONC_AutoExt_AutomatedPromoExt.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Dynamic Partner Data Enhancements
 ## Country of Origin Badge
@@ -166,34 +166,34 @@ Microsoft Search Network:
 Highlight your products' country of origin to potential customers to help differentiate your products from your competitors'.
 
 ![Country of Origin Badge](../images/BA_CONC_AutoExt_CountryOfOrigin.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Deal Badge
 
 Highlight promotional aspects of your ad to increase customer engagement and drive more clicks. The Deal Badge will only be eligible to serve during specified date ranges for various holidays or events.
 
 ![Deal Badge](../images/BA_CONC_AutoExt_DealBadge.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Free Shipping for text ads
 
 The Free Shipping for text ads badge is enabled when you offer free shipping for products or orders. This can help to increase traffic to your ads, as it encourages shoppers to click your ad.
 
 ![Free Shipping](../images/BA_CONC_AutoExt_TAFreeShipping.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -203,7 +203,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Facebook Badge
 
@@ -215,28 +215,28 @@ Uses your brand's Facebook presence to build trust and encourage ad engagement.
 
 ![Facebook Badge engagement](../images/BA_CONC_AutoExt_FacebookBadgeEngagement.png)
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Official Site Badge
 
 Build user confidence by affirming that your ad is for a brand's official website.
 
 ![Official Site Badge](../images/BA_CONC_AutoExt_OfficialSiteBadge.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Store Pickup Badge
 
@@ -246,14 +246,14 @@ Highlight store pickup options to your shoppers.
 
 ![Curbside pickup](../images/BA_Conc_AutoExt_Curbside2.png)
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Dynamic Sitelinks
 ## Dynamic ESL Descriptions
@@ -261,7 +261,7 @@ Microsoft Search Network:
 Dynamic ESL Description Extensions automatically turn your Sitelink Extensions (links that take people to specific pages on your website) to enhanced Sitelink Extensions (descriptive text under each sitelink). Descriptions are generated from relevant text pulled from your sitelink’s landing page. Learn more about [Sitelink Extensions](./hlp_BA_PROC_AddSitelinkExtension.md).
 
 ![Dynamic ESL](../images/BA_CONC_AutoExt_DynamicESL.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -274,14 +274,14 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Dynamic Sitelinks
 
 Display Dynamic Sitelink Extensions, which are links to other pages of your website, at the bottom of your ad. This gives customers another way to evaluate what your site has to offer. Learn more about [Sitelink Extensions](./hlp_BA_PROC_AddSitelinkExtension.md).
 
 ![Dynamic Sitelinks](../images/BA_CONC_AutoExt_DynamicSitelinks.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -301,21 +301,21 @@ Microsoft Search Network:
 - Switzerland
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Automated Dynamic Product
 
 Automated Dynamic Product Extensions match the keyword of your text ad with your product ads catalog data, automatically showing relevant product offers with text ads. You must have an active Microsoft Shopping Campaign Network product feed for Automated Dynamic Product Extensions to display and must not have Dynamic Product Extensions enabled.
 
 ![Automated Dynamic Product Extensions](../images/BA_CONC_AutoExt_AutomatedDynamicProductExt.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
 - Canada
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Dynamic Structured Snippets
 ## Dynamic Structured Snippets
@@ -323,7 +323,7 @@ Microsoft Search Network:
 Enrich your ads by automatically adding relevant text based on your website’s landing pages with Dynamic Structured Snippets. This gives customers a look into what they’ll find on your website, while increasing confidence in the relevancy of your ad. Please note that Dynamic Structured Snippets may be clickable. Learn more about [Structured Snippet Extensions](./hlp_BA_PROC_AddStructuredSnippetExtension.md).
 
 ![Dynamic Structured Snippet](../images/BA_Conc_AutoExt_DynamicStructuredSnippet.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -336,12 +336,12 @@ Microsoft Search Network:
 - Switzerland
 - United States
 
-**Devices**: Desktop
+**Devices** : Desktop
 
 ## Longer Ad Headlines
 Longer Ad Headlines add additional information like your ad description, display URL, or search keywords to the ad title. The additional information can be added before or after your existing ad title with a separator like a hyphen. This longer title provides extra information about your ad and increases visibility and click-through rates. Please note that in some cases, Longer Ad Headlines could replace the ad's title content.
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 - Argentina
 - Australia\*
@@ -378,7 +378,7 @@ Longer Ad Headlines add additional information like your ad description, display
 
 Query Long Ad Title Extensions are only available in the countries indicated with \*.
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Long Ad Title Callout
 
@@ -411,7 +411,7 @@ Long Ad Title URL adds your display URL before or after the ad title.
 Previous Visits adds a line of text to your ad that shows customers how many times they have clicked through to your website over the last few months. This makes it easy for customers to recall their experience and encourage them to return to sites they know and trust.
 
 ![Previous visits](../images/BA_CONC_AutoExt_PreviousVisit.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -423,14 +423,14 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Visited links
 
 Visited link can change the color of your ad title to show that customers recently visited your site.
 
 ![Visted links preview screenshot](../images/BA_CONC_AutoExt_VisitedLink.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -441,7 +441,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Tablet
+**Devices** : Desktop, Tablet
 
 ## Top Ads
 
@@ -450,7 +450,7 @@ Top Ads calls out if your website has consistently received high engagement to i
 To be eligible for Top Ads, your ad must receive a high click-through rate with a low occurrence of back-button clicks from customers. Because of constant changes in customer engagement, the thresholds for when your ad will show a Top Ad annotation is will vary.
 
 ![Top Ads](../images/BA_CONC_AutoExt_TopAds.png)
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -472,7 +472,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 ## Seller Ratings
 ## Merchant Ratings
@@ -501,7 +501,7 @@ We base ratings on a number of sources including:
 - Reevoo
 - Trusted Shop
 
-**Eligible to serve on ads in the following markets**:
+**Eligible to serve on ads in the following markets** :
 
 Microsoft Search Network:
 
@@ -526,7 +526,7 @@ Microsoft Search Network:
 - United Kingdom
 - United States
 
-**Devices**: Desktop, Mobile, Tablet
+**Devices** : Desktop, Mobile, Tablet
 
 > [!NOTE]
 > All clickable Automated Extensions will be charged for clicks, similar to ad headline clicks.

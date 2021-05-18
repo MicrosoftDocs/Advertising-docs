@@ -1,7 +1,7 @@
 ---
 title: Set up customer action tracking
 description: We can tell you what potential customers do after they click your ad, including the pages they visit on your website, how long they spend there, and more!
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -25,15 +25,15 @@ The last point is critical, because your website is designed around your busines
 
 ## Set up customer action tracking
 
-1. **Get started**:
-  1. In Digital Marketing Center, on the **Ads** page, click a campaign.
-  1. Find the **Customer action tracking** tile, and click **Set up tracking**.
+1. **Get started** :
+   1. In Digital Marketing Center, on the **Ads** page, click a campaign.
+   1. Find the **Customer action tracking** tile, and click **Set up tracking**.
 
-1. **Add special pages to track**: Depending on your business goal, you'll want your ad to drive customers to specific pages—for example, an order confirmation or "Contact us" page. Add these pages and then click **Next**. For more information on this step, view [Special pages: Which pages are most important to your business?](./hlp_DMC_CONC_CAT_SpecialPages.md)
-1. **Edit your website**: For customer action tracking to work, someone will need to add a tracking tag to each page of your website's code. You have three options here:
-  1. If you built your website using WordPress.com, Wix, Shopify, or BigCommerce (and want to use it to edit your website's code), select **Let me add the tracking tag through a website editing platform** and then click **Next**.
-  1. If you're comfortable updating your website's code directly, select **Let me edit my website's code myself** and then click **Next**.
-  1. If someone else usually updates your website's code for you, select **Let me send the tracking tag to someone else** and then click **Next**. In the next step, enter the appropriate email address or addresses, click **Send**, and then **Done**.
+1. **Add special pages to track** : Depending on your business goal, you'll want your ad to drive customers to specific pages—for example, an order confirmation or "Contact us" page. Add these pages and then click **Next**. For more information on this step, view [Special pages: Which pages are most important to your business?](./hlp_DMC_CONC_CAT_SpecialPages.md)
+1. **Edit your website** : For customer action tracking to work, someone will need to add a tracking tag to each page of your website's code. You have three options here:
+   1. If you built your website using WordPress.com, Wix, Shopify, or BigCommerce (and want to use it to edit your website's code), select **Let me add the tracking tag through a website editing platform** and then click **Next**.
+   1. If you're comfortable updating your website's code directly, select **Let me edit my website's code myself** and then click **Next**.
+   1. If someone else usually updates your website's code for you, select **Let me send the tracking tag to someone else** and then click **Next**. In the next step, enter the appropriate email address or addresses, click **Send**, and then **Done**.
 
 View [Add tracking tags to your website](./hlp_DMC_CONC_CAT_AddTag.md) for more information on this step.
 

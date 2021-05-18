@@ -9,7 +9,7 @@ ms.author: eur
 
 # Status - Processed
 
-**What it is:** Your uploaded product offers that passed the initial feed processing and is now completing data validation.
+**What it is:**  Your uploaded product offers that passed the initial feed processing and is now completing data validation.
 
 **What you need to know:**
 - To see which offers are serving, you can go to the chart to see the Active products.

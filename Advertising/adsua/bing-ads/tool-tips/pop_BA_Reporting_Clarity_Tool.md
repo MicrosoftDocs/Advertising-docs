@@ -9,6 +9,6 @@ ms.author: eur
 
 # Tool
 
-**What it is: **    The Microsoft Advertising tool used to make changes to account, campaign or ad attributes.
+**What it is:**     The Microsoft Advertising tool used to make changes to account, campaign or ad attributes.
 
 

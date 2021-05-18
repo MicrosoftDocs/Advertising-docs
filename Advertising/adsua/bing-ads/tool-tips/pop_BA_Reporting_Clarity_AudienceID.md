@@ -9,6 +9,6 @@ ms.author: eur
 
 # Audience ID
 
-**What it is:** The number Microsoft Advertising uses to identify the audience.
+**What it is:**  The number Microsoft Advertising uses to identify the audience.
 
 

@@ -9,4 +9,5 @@ ms.author: eur
 
 # Order status
 
+[!INCLUDE [IOStatus](../includes/IOStatus.md)]
 

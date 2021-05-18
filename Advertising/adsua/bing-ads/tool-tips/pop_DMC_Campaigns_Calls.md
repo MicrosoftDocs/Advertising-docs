@@ -9,7 +9,7 @@ ms.author: eur
 
 # Calls
 
-**What it is:** The number of times customers have called your business as a result of your ads during the selected date range.
+**What it is:**  The number of times customers have called your business as a result of your ads during the selected date range.
 
 **What you need to know:**
 - Only applicable when the campaign goal is **Get more phone calls to my business**.

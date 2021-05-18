@@ -9,6 +9,6 @@ ms.author: eur
 
 # Description
 
-**What it is**: The information you want to associate with this column, for your reference.
+**What it is** : The information you want to associate with this column, for your reference.
 
 

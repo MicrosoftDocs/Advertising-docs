@@ -9,8 +9,8 @@ ms.author: eur
 
 # Overlap rate
 
-**What it is:** The frequency competitors’ ads showed on the search results page when your ad was shown.
+**What it is:**  The frequency competitors’ ads showed on the search results page when your ad was shown.
 
-**Why it's important:** You can use this rate to gauge how competitive other advertisers are.
+**Why it's important:**  You can use this rate to gauge how competitive other advertisers are.
 
 

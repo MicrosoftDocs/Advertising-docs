@@ -9,6 +9,6 @@ ms.author: eur
 
 # Average watch time per impression
 
-**What it is:** Total watch time divided by impressions (calculated).
+**What it is:**  Total watch time divided by impressions (calculated).
 
 

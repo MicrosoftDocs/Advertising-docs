@@ -9,6 +9,7 @@ ms.author: eur
 
 # Guided Tour Images
 
+![Edit budget](../images/BA_ScreenCap_EditBudget.png)
 ![Delivery details](../images/BA_ScreenCap_DeliveryDetails.PNG)
 
 ![Ad position](../images/BA_Conc_WalkMe_AdPosition.png)

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product name
 
-**What it is:**    The name of the advertising program, such as Microsoft Advertising.
+**What it is:**     The name of the advertising program, such as Microsoft Advertising.
 
 

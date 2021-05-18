@@ -1,7 +1,7 @@
 ---
 title: Understand the Microsoft Advertising Editor user interface
 description: This topic describes the main parts of the Microsoft Advertising Editor user interface.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,7 @@ ms.author: eur
 
 We’ve updated Microsoft Advertising Editor's visual experience to help you stay organized and on top of your accounts. Aside from looks, we updated the names of some sections on our interface. Be sure to reacquaint yourself with their placement and descriptions below:
 
+![Microsoft Advertising Editor desktop](../images/BAE_ScreenCap_MapUpdated.gif)
 ## 1. Application menu
 In Windows, the application menu is at the top of the Microsoft Advertising Editor interface. In Mac OS, the application menu is at the very top of your screen.
 ## 2. Toolbar

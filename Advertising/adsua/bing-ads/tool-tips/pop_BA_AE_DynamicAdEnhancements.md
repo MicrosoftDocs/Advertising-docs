@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic Ad Enhancements
 
-**What you need to know:** Decorate your ads with engaging “at-a-glance” information to encourage more clicks.
+**What you need to know:**  Decorate your ads with engaging “at-a-glance” information to encourage more clicks.
 
 

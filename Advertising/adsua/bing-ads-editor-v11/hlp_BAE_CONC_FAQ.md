@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions for Microsoft Advertising Editor
 description: Find answers to common questions like how to contact support and what are the system requirements in Microsoft Advertising Editor .
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

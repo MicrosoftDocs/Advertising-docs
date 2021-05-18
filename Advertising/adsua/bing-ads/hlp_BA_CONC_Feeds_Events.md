@@ -9,4 +9,5 @@ ms.author: eur
 
 # Events feeds
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 

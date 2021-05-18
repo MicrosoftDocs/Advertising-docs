@@ -9,8 +9,8 @@ ms.author: eur
 
 # Selected audience
 
-**What it is**: These figures show the composition of the audience you are targeting, based on your settings in the left panel.
+**What it is** : These figures show the composition of the audience you are targeting, based on your settings in the left panel.
 
-**Why it's important**: This demonstrates how your selected audience compares with all of the audiences that make up the Microsoft Audience Network.
+**Why it's important** : This demonstrates how your selected audience compares with all of the audiences that make up the Microsoft Audience Network.
 
 

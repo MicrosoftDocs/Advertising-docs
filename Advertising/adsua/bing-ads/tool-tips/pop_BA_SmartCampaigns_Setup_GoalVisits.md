@@ -9,7 +9,7 @@ ms.author: eur
 
 # Get more visits to my business location
 
-**Choose this goal if**:
+**Choose this goal if** :
 
 - Most of your sales occur offline, in your physical location.
 - You want to get more people to visit your store, office, or event.

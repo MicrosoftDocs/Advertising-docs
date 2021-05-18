@@ -9,13 +9,14 @@ ms.author: eur
 
 # Import your Google Merchant Center product offers to Microsoft Merchant Center
 
+[!INCLUDE [MSCampaignsandProductAdsAvailableinCountries](./includes/MSCampaignsandProductAdsAvailableinCountries.md)]
 If you have product ads in your Google Merchant Center, you can easily import them into your Microsoft Merchant Center with the Google Import tool. See the item details that will determine [ which product offers get imported from Google Merchant Center.](./hlp_BA_CONC_BMC_GMCImportOffers.md)
 
 ## Why use the Google Merchant Center import tool?
 
-- **Save time**. Spend less time maintaining two separate feed files for Google Ads and Microsoft Advertising.
-- **Import products easily**. The Google Merchant Center import tool makes it easy to import product offers into Microsoft Merchant Center.
-- **Keep your product feeds fresh**. Sync your Google Merchant Center product offers with Microsoft Merchant Center to keep them up-to-date. You can do this manually or automatically through scheduled imports.
+- **Save time** . Spend less time maintaining two separate feed files for Google Ads and Microsoft Advertising.
+- **Import products easily** . The Google Merchant Center import tool makes it easy to import product offers into Microsoft Merchant Center.
+- **Keep your product feeds fresh** . Sync your Google Merchant Center product offers with Microsoft Merchant Center to keep them up-to-date. You can do this manually or automatically through scheduled imports.
 
 Check out the item details that will determine which product offers get imported from Google Merchant Center.
 

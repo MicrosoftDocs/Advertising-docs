@@ -1,7 +1,7 @@
 ---
 title: How budgets work
 description: Your budget is how much you want to spend per day on your ads. The right choice depends on your goals and how you want to monitor your spending.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -33,7 +33,7 @@ Your budget is set when you initially create your ad campaign, but you can subse
 1. Update your daily budget. You can use the slider to see what the estimated monthly budget would be, based on what you input for the daily budget.
 1. Click **Save**.
 
-**This is important**: Your actual spend per day might be more or less than the target budget you’ve set. But each month, you won’t spend more than the budget entered multiplied by 30.1.
+**This is important** : Your actual spend per day might be more or less than the target budget you’ve set. But each month, you won’t spend more than the budget entered multiplied by 30.1.
 
 ## What you need to know about budgets
 

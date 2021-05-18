@@ -9,6 +9,6 @@ ms.author: eur
 
 # Condition
 
-**What it is:**    The different conditions in your catalog.
+**What it is:**     The different conditions in your catalog.
 
 

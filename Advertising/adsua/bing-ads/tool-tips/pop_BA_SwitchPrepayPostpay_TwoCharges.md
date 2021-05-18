@@ -11,6 +11,6 @@ ms.author: eur
 
 [!INCLUDE [PostpayToPrepay](../includes/PostpayToPrepay.md)]
 
-**Get more info: **[How do I switch my payment settings?](../hlp_BA_PROC_SwitchPaymentSettingV2.md)
+**Get more info:** [How do I switch my payment settings?](../hlp_BA_PROC_SwitchPaymentSettingV2.md)
 
 

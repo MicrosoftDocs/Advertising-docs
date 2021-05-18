@@ -9,6 +9,6 @@ ms.author: eur
 
 # Choose manager accounts
 
-**What it is**: Here you enter the manager account IDs you want to query in this field, one per line.
+**What it is** : Here you enter the manager account IDs you want to query in this field, one per line.
 
 

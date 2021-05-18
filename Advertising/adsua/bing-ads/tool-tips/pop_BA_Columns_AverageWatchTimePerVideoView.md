@@ -9,6 +9,6 @@ ms.author: eur
 
 # Average watch time per video view
 
-**What it is:** Total watch time divided by video views (calculated).
+**What it is:**  Total watch time divided by video views (calculated).
 
 

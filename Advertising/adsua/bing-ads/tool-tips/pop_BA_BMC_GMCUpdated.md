@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product offer - Updated
 
-**What it is:** The number of updated offers that were identified by the system.
+**What it is:**  The number of updated offers that were identified by the system.
 
 

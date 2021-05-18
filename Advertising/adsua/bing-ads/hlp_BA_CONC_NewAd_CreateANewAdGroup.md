@@ -13,6 +13,7 @@ Ad groups are the best way to organize your campaigns by specific products or se
 
 For example, Sarah owns a toy store and wants to create ads to highlight specials she will be offering. She could create different ad groups for “electronics for kids” and “riding toys,” which will each contain different sets of keywords and ads.  When she wants to make adjustments to these ads, she can easily make changes to all the ads in a given ad group simultaneously.
 
+![Ad group structure](../images/BA_Conc_NewAdv_AdGroupsKws.png)
 ## Create an ad group
 1. From the **Campaigns** page, click the **Ad Groups** tab (or from the main menu on the left, click **All campaigns** and then **Ad groups**).
 1. Click **Create ad group** and select which campaign you want to create the ad group in.

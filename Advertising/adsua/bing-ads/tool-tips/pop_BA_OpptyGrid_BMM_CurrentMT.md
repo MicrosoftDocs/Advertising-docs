@@ -9,8 +9,8 @@ ms.author: eur
 
 # Current match type or new
 
-**What it is:**       This column indicates whether this suggested keyword is based on a current keyword that uses exact or phrase match type or is based on a new keyword.
+**What it is:**        This column indicates whether this suggested keyword is based on a current keyword that uses exact or phrase match type or is based on a new keyword.
 
-**What you need to know: **       If the suggested keyword is based on a currently used keyword, you will see "Exact" or "Phrase" to indicate the match type. Otherwise, you will see "New."
+**What you need to know:**        If the suggested keyword is based on a currently used keyword, you will see "Exact" or "Phrase" to indicate the match type. Otherwise, you will see "New."
 
 

@@ -1,7 +1,7 @@
 ---
 title: Target customers by location, day of the week, time of day, device, or by network distribution
 description: Add targeting at the campaign or ad group level with Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -16,8 +16,8 @@ You can also increase your bids to target customers. For more information, see [
 1. Select the campaigns or ad groups from the tree view in the left panel that you want to add targeting to.
 1. Click **Locations** under **Keywords and targeting** from the type list in the left panel.
 1. In the **Edit the selected location target** section:
-  - Specify the location for this entry. Click **Edit/find location** and you can specify the location by **Area targeting** (narrow your location target by country/region, city, or U.S. counties) or by **Radius targeting** (narrow your location to a single mile or kilometer, or expand it to a larger circle).
-  - Enter bid adjustment.
+   - Specify the location for this entry. Click **Edit/find location** and you can specify the location by **Area targeting** (narrow your location target by country/region, city, or U.S. counties) or by **Radius targeting** (narrow your location to a single mile or kilometer, or expand it to a larger circle).
+   - Enter bid adjustment.
 
 1. The details you input will automatically populate the new row in the main grid.
 

@@ -13,13 +13,13 @@ Event goals let you measure how visitors interact with your website. While other
 
 To record an event goal, you must write a snippet of JavaScript to add to your website in addition to the Universal Event Tracking tag.   The code for events consists of four values. You must define **at least one** value:
 
-**Category: **  The object you want to track (e.g., "button").
+**Category:**   The object you want to track (e.g., "button").
 
-**Action: **  The type of interaction the user takes with the object (e.g. "click").
+**Action:**   The type of interaction the user takes with the object (e.g. "click").
 
-**Label: **  Your comments about the event (e.g. "purchase button").
+**Label:**   Your comments about the event (e.g. "purchase button").
 
-**Value: **  A monetary value, or other numerical data, associated with the goal (e.g. "5", representing $5).
+**Value:**   A monetary value, or other numerical data, associated with the goal (e.g. "5", representing $5).
 
 > [!NOTE]
 > Commas are accepted in value fields, but decimals are not.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Level
 
-**      What it is:    **    The level of the audience's association: either **Ad group** or **Campaign**.
+**      What it is:**     The level of the audience's association: either **Ad group** or **Campaign**.
 
 

@@ -1,7 +1,7 @@
 ---
 title: How does location targeting and ad language affect who can see my ads?
 description: When determining if your ads are eligible to be displayed, Microsoft Advertising Editor uses both your ad language and location target settings. Both criteria must be met in order for an ad to display.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -54,13 +54,13 @@ Let’s look at this in a bit more detail. Here are the steps you'd take to dete
   </tr>
   <tr>
     <td style="vertical-align:text-top;text-align:left">
-     <strong>Result:</strong> Ads available to show in:
+     <strong>Result:</strong>  Ads available to show in:
      <ul><li>Germany</li><li>Austria</li><li>Switzerland</li></ul></td>
     <td style="vertical-align:text-top;text-align:left">
-     <strong>Result:</strong> Ads available to show in Berlin.
+     <strong>Result:</strong>  Ads available to show in Berlin.
      <para><strong>Berlin meets both the language setting and location target.</strong></para></td>
     <td style="vertical-align:text-top;text-align:left">
-     <strong>Result:</strong> Ads available to searchers physically located in Berlin.
+     <strong>Result:</strong>  Ads available to searchers physically located in Berlin.
     </td>
   </tr>
   <tr></tr>
@@ -73,112 +73,20 @@ This is true even if you have set location targeting to show your ads in “all 
 
 Here are the list of available languages and corresponding countries where that language is supported:
 
-<table>
-  <tr>
-    <th scope="col">
-              Ad language settings
-            </th>
-    <th scope="col">
-              Countries/regions where ads in this language can display
-            </th>
-  </tr>
-  <tr>
-    <th scope="row">
-              Danish
-            </th>
-    <td>
-              Denmark
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Dutch
-            </th>
-    <td>
-              Belgium, Netherlands 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              English
-            </th>
-    <td>
-              Australia, Canada, France, Germany, India, Indonesia, Ireland, Italy, Malaysia, Netherlands, New Zealand, Philippines, Singapore, Spain, Sweden, Switzerland, Thailand, Vietnam, United Kingdom, United States 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Finnish
-            </th>
-    <td>
-              Finland
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              French
-            </th>
-    <td>
-              Belgium, Canada, France, Switzerland 
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              German
-            </th>
-    <td>
-              Austria, Germany, Switzerland
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Italian
-            </th>
-    <td>
-              Italy
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Norwegian
-            </th>
-    <td>
-              Norway
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Portuguese
-            </th>
-    <td>
-              Brazil
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Spanish
-            </th>
-    <td>
-              Argentina, Chile, Colombia, Mexico, Peru, Spain, Venezuela
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Swedish
-            </th>
-    <td>
-              Sweden
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">
-              Traditional Chinese
-            </th>
-    <td>
-              Hong Kong S.A.R., Taiwan 
-            </td>
-  </tr>
-</table>
+|Ad language settings|Countries/regions where ads in this language can display|
+|---|---|
+|Danish|Denmark|
+|Dutch|Belgium, Netherlands|
+|English|Australia, Canada, France, Germany, India, Indonesia, Ireland, Italy, Malaysia, Netherlands, New Zealand, Philippines, Singapore, Spain, Sweden, Switzerland, Thailand, Vietnam, United Kingdom, United States|
+|Finnish|Finland|
+|French|Belgium, Canada, France, Switzerland|
+|German|Austria, Germany, Switzerland|
+|Italian|Italy|
+|Norwegian|Norway|
+|Portuguese|Brazil|
+|Spanish|Argentina, Chile, Colombia, Mexico, Peru, Spain, Venezuela|
+|Swedish|Sweden|
+|Traditional Chinese|Hong Kong S.A.R., Taiwan|
 
 Don’t see your country listed? Check back, because we are expanding to new markets on a regular basis.
 

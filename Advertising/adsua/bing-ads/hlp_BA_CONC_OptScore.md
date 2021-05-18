@@ -26,4 +26,5 @@ The score uplift highlights the estimated impact a recommendation or a group of 
 
 Your optimization score is a real-time calculation based on the settings, performance, and status of your account and campaigns. The relevant impact of available recommendations and recent recommendations history also contribute to this calculation. Your optimization score and the available recommendations below it may change based on many factors, ranging from your settings to trends in the ads ecosystem. You may see a different score and a new set of recommendations when these changes happen.
 
+[Learn more about recommendations and how to apply them](./hlp_BA_CONC_Recommendations.md).
 

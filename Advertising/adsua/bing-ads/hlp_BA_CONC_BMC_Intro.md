@@ -79,8 +79,8 @@ To list your feed on Bing, you first need to create a Microsoft Merchant Center 
 1. Click **Create store**.
 1. Enter your store info, including your Store description and SSL Checkout selection. You also have the option to block aggregators here.
 1. You'll also be asked to verify your site through **Domain validation**. You have two choices:
-  - Validated via Bing Webmaster Tools
-  - Validated via [Universal Event Tracking (UET) tag](./hlp_BA_CONC_UETv2WhatIsTag.md)
+   - Validated via Bing Webmaster Tools
+   - Validated via [Universal Event Tracking (UET) tag](./hlp_BA_CONC_UETv2WhatIsTag.md)
 
 **Note: **If you validate your domain using a UET tag, the tag has to register at least 50 events before the domain appears as an option when you create a Microsoft Merchant Center store.
 
@@ -149,6 +149,8 @@ Your feed expires after 30 days, which causes the products to stop publishing, s
 ## How do I submit my feed file?
 After you have created and (optionally) tested a corresponding feed file, it can be submitted to the associated feed. There are four different ways to submit:
 
+<anchor id="SubmitFeedFile" />
+
 ## Upload feed file manually (Files under 4MB)
 You can use this option if the feed file is smaller than 4MB.
 
@@ -209,7 +211,7 @@ You can use the Google Merchant Center import tool, if you already have product 
 ## What are the file format requirements and accepted symbols?
 ## File format requirements
 
-**Note**: If the following file format requirements are not met, your feed file will not be processed.
+**Note** : If the following file format requirements are not met, your feed file will not be processed.
 
 - File must be tab delimited plain text with extensions: .txt, .zip, .gz, .gzip, .tar.gz, .tgz.  						-	.xml files are also accepted (if Google-formatted).
 - If uploading via FTP, the file name of .txt or .xml files have to match the file name specified for a feed’s settings.  						In the case of compressed text format, the compressed .txt file inside the archive (.zip, .gz, .gzip, .tar.gz, .tgz) must have the matching file name. Any feed file that is archived needs to have a single compressed file inside.
@@ -224,52 +226,14 @@ You can use the Google Merchant Center import tool, if you already have product 
 
 Here are the symbols/special characters and what attribute they are accepted in.
 
-<table>
-  <tr>
-    <th>Symbols</th>
-    <th>Where you can use</th>
-  </tr>
-  <tr>
-    <td>Period [.]</td>
-    <td>Prices, URLs</td>
-  </tr>
-  <tr>
-    <td>
-						  Colon [:]  
-						  Question [?]  
-						  Forward-slash [/]  
-						  Equal [=]
-						</td>
-    <td>URLs</td>
-  </tr>
-  <tr>
-    <td>
-						  Hyphen [-]
-						</td>
-    <td>Offer Identifiers where this is valid (eg: ISBN, MPN)</td>
-  </tr>
-  <tr>
-    <td>
-						  Pipe [|]  
-						  Comma [,]   
-						  Greater [&gt;]
-						</td>
-    <td>Multi-value fields (MerchantCategory, B_Category)</td>
-  </tr>
-  <tr>
-    <td>
-						  Percent [%]  
-						  Special ASCII characters
-						</td>
-    <td>Redirect URL (ads_redirect)</td>
-  </tr>
-  <tr>
-    <td>
-						  Any Unicode symbol
-						</td>
-    <td>Brand, Title, Description</td>
-  </tr>
-</table>
+|Symbols|Where you can use|
+|---|---|
+|Period [.]|Prices, URLs|
+|Colon [:]  						  Question [?]  						  Forward-slash [/]  						  Equal [=]|URLs|
+|Hyphen [-]|Offer Identifiers where this is valid (eg: ISBN, MPN)|
+|Pipe [|]  						  Comma [,]   						  Greater [>]|Multi-value fields (MerchantCategory, B_Category)|
+|Percent [%]  						  Special ASCII characters|Redirect URL (ads_redirect)|
+|Any Unicode symbol|Brand, Title, Description|
 
 > [!NOTE]
 > Next up - take a closer look at all you need to know about [feed files](./hlp_BA_CONC_BMC_FeedFiles.md).

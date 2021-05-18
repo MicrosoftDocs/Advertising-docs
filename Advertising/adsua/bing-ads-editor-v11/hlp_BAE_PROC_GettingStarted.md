@@ -1,7 +1,7 @@
 ---
 title: Getting started with Microsoft Advertising Editor
 description: Learn the three basic steps that you will do in Microsoft Advertising Editor every time to sign in - download, update and then post campaign data.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -17,21 +17,21 @@ Your first step is to get campaign data from Microsoft Advertising web. When you
 Whenever you want to get your current campaign data from Microsoft Advertising, you must use the **Get Changes** button in the toolbar. You can then make your changes and then **Post** back up to Microsoft Advertising. This is a cycle that you’ll go through every time you sign in to Microsoft Advertising Editor: get your accounts, make changes to your campaigns, and then post them when you’re done.
 
 ## Manage your campaigns
-**Get campaign data.** You can either create new campaigns, or import existing campaigns from Yahoo or Google AdWords with minimal overhead.
+**Get campaign data.**  You can either create new campaigns, or import existing campaigns from Yahoo or Google AdWords with minimal overhead.
 
-- To create new campaigns, on the data view, click **Add campaign** or **Make multiple changes**. For each campaign, you’ll need to go to the Manage tab and do the same thing for ad groups, ads, and keywords.
-- To import a campaign, first get campaign data into a .CSV file. If you’re using Google AdWords, for example, export your AdWords campaigns into a spreadsheet and save the file on your computer. On the toolbar, click **Import**, and then choose the type of data you want to import. Microsoft Advertising Editor will walk you through a wizard to finish importing the data.
+- To create new campaigns, on the data view, click **Add campaign**  or **Make multiple changes** . For each campaign, you’ll need to go to the Manage tab and do the same thing for ad groups, ads, and keywords.
+- To import a campaign, first get campaign data into a .CSV file. If you’re using Google AdWords, for example, export your AdWords campaigns into a spreadsheet and save the file on your computer. On the toolbar, click **Import** , and then choose the type of data you want to import. Microsoft Advertising Editor will walk you through a wizard to finish importing the data.
 
-**Make changes to one item, or many.** Do you have campaigns that only run seasonally? Do you need to add new keywords to keep up with the latest viral video? Microsoft Advertising Editor has lots of tools to make managing your campaigns a snap. You can:
+**Make changes to one item, or many.**  Do you have campaigns that only run seasonally? Do you need to add new keywords to keep up with the latest viral video? Microsoft Advertising Editor has lots of tools to make managing your campaigns a snap. You can:
 
 - Use the left panel to navigate through your campaigns or drill down to ad groups.
 - Select multiple items to update them all at once, or each one individually. Make changes to selected items by updating the fields in the edit panel.
 - Use filtering to quickly find what you want to update. Just type what you’re looking for in the search box in the upper right of the Microsoft Advertising Editor window, and we’ll narrow the list of items to show just the ones that include your search terms.
 
-**Update your bids.** To keep your ads relevant and showing on the first page of search results, you’ll need to update your bids. Use the Bid Estimation tool to research first page bids for thousands of keywords at a time. Review bids individually, or opt to apply them all with the click of a button.
+**Update your bids.**  To keep your ads relevant and showing on the first page of search results, you’ll need to update your bids. Use the Bid Estimation tool to research first page bids for thousands of keywords at a time. Review bids individually, or opt to apply them all with the click of a button.
 
-- In list view from the left panel, select **Keywords and targeting** and then **Keywords**. Select the keywords you want to get bids for. Click **Estimate bid **to research best position, main line, and first page bids for your keywords.
-- Click **Apply est. bid for first page** to choose the type of bid to apply to your keywords.  **Note:** Based on Microsoft research, we recommend a bid of at least $0.30 USD for all keywords. Even though the minimum bid is only $0.05, keywords with bids this low usually can’t compete with bids from other advertisers on the same keywords, and as a result, your ads won’t show.
+- In list view from the left panel, select **Keywords and targeting** and then **Keywords**. Select the keywords you want to get bids for. Click **Estimate bid** to research best position, main line, and first page bids for your keywords.
+- Click **Apply est. bid for first page**  to choose the type of bid to apply to your keywords.  **Note:**  Based on Microsoft research, we recommend a bid of at least $0.30 USD for all keywords. Even though the minimum bid is only $0.05, keywords with bids this low usually can’t compete with bids from other advertisers on the same keywords, and as a result, your ads won’t show.
 
 ## Post your account changes
 Once you’re done updating your campaigns, it is important to post your account changes to apply them. Your new campaigns, keywords, and bids, will start running immediately. Don’t forget to double-check your language and location settings, as these can affect where we show your ads. You should post your changes at the end of every session in Microsoft Advertising Editor.

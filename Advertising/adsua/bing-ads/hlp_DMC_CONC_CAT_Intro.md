@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Set up customer action tracking
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Once you have a campaign up and running, what does your audience do when they get to your website? Set up customer action tracking to learn:
 
 - How many people visit your website.
@@ -88,8 +89,10 @@ If you built your website on Wix, follow the steps below to set up your Microsof
 
 If you built your website on WordPress, follow the steps below to set up your Microsoft Advertising customer action tracking tag.
 
+[!INCLUDE [CONC_WordPressHelpReference](CONC_WordPressHelpReference)]
 Before completing the following steps at WordPress.com copy your Microsoft Advertising  Universal Event Tracking (UET) tag ID. Select **Customer action tracking** > **View tracking tag** and copy the tag ID.
 
+[!INCLUDE [WordPressPluginInstructions](./includes/WordPressPluginInstructions.md)]
 ## Monitor customer action tracking in Microsoft Advertising
 
 After customer action tracking is set up, the **Customer action tracking **metrics tile on the **Ads** page will show how the selected campaign is performing. Metrics include how many visits your ads are driving to your special pages and the average time spent on your website.

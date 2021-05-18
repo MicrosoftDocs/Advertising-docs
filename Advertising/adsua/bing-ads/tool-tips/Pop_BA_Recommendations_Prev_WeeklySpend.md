@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous week’s spend
 
-**What it is**: Last week’s spend amount with your current accelerated budget.
+**What it is** : Last week’s spend amount with your current accelerated budget.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Billing address
 
-**What it is: **    This is the legal business address that Microsoft Advertising verified when setting up monthly invoice billing.
+**What it is:**     This is the legal business address that Microsoft Advertising verified when setting up monthly invoice billing.
 
 

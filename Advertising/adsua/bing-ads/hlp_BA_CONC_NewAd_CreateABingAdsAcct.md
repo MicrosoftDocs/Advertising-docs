@@ -9,6 +9,7 @@ ms.author: eur
 
 # Sign up for a Microsoft Advertising account
 
+![Sign Up](../images/BA_Conc_SignUp.svg)
 Signing up with Microsoft Advertising is free and you can do it at any time by visiting [Microsoft Advertising sign up](https://ads.microsoft.com/signup?s_cid=signup_help). All you need is an existing email address or you can create a new email address (a Microsoft account), along with a few details about your business to get your account up and running.
 
 ## Use an existing email address to create an account

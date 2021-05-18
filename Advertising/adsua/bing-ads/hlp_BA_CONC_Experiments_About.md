@@ -26,16 +26,16 @@ With Microsoft Advertising experiments, you create a duplicate of a search campa
 1. If you only want the experiment to run for a certain period, select an **End date**. Otherwise, select **None**.
 1. Set your **Experiment split**. This is the percentage of the original campaign's budget and ad traffic that you want to allocate for this experiment. To make sure the experiment gets enough traffic to make a fair comparison, we recommend setting your experiment split at 50/50.  			**Note: You cannot change the split while an experiment is running.**
 1. Optional: Click **Advanced options** and choose whether your experiment's ad traffic should be **Search-based** or **Cookie-based**.
-  - **Search-based**: Every time customers search, they are randomly shown either ads from your experiment or ads from your original campaign. This means that individual customers could see ads from both sources if they search multiple times.
-  - **Cookie-based**: When individual customers search, we show ads from either your experiment or your original campaign, and use a cookie to ensure that, going forward, they will only see ads from this source.
+   - **Search-based** : Every time customers search, they are randomly shown either ads from your experiment or ads from your original campaign. This means that individual customers could see ads from both sources if they search multiple times.
+   - **Cookie-based** : When individual customers search, we show ads from either your experiment or your original campaign, and use a cookie to ensure that, going forward, they will only see ads from this source.
 
 > [!NOTE]
 > You cannot change this setting while an experiment is running. For the pros and cons of each option, take a look at [Examples and tips for working with experiments](./hlp_BA_CONC_Experiments_BestPractices.md).
 
 1. Click **Save**.
 1. After a few minutes, check to make sure there were no errors in experiment creation:
-  1. Go back to the **Experiments** page and find the experiment you just created.
-  1. If errors were encountered in experiment creation, there will be a **Download errors** link in this experiment's **Actions** column. Click this link, fix the errors, and try creating the experiment again.
+   1. Go back to the **Experiments** page and find the experiment you just created.
+   1. If errors were encountered in experiment creation, there will be a **Download errors** link in this experiment's **Actions** column. Click this link, fix the errors, and try creating the experiment again.
 
 ## Experimenting!
 If you didn't make any changes to your experiment's settings, it wouldn't be much of an experiment, would it?
@@ -65,8 +65,8 @@ If your experiment is performing better than its original campaign and you're pl
 
 1. On the experiment's page, click **Apply experiment to...**
 1. Choose whether to apply the experiment to the original campaign or to a new campaign:
-  1. If you apply it to the original campaign, all of the experiment's settings will take effect in the original campaign and the experiment will end. The original campaign will once again have 100% of its original budget and traffic.
-  1. If you apply it to a new campaign, your original campaign will be paused and a new campaign will be created with all of the current settings of this experiment. The new campaign will have the same budget as the original campaign.
+   1. If you apply it to the original campaign, all of the experiment's settings will take effect in the original campaign and the experiment will end. The original campaign will once again have 100% of its original budget and traffic.
+   1. If you apply it to a new campaign, your original campaign will be paused and a new campaign will be created with all of the current settings of this experiment. The new campaign will have the same budget as the original campaign.
 
 1. Click **Save**.
 
@@ -77,43 +77,15 @@ If, on the other hand, you're not pleased with your experiment's results and you
 
 ## What experiment statuses mean
 The **Experiment status** column on the **Experiments** table tells you what is happening with your experiments.
-<table type="type1">
-  <tr>
-    <th scope="col">Experiment status</th>
-    <th scope="col">What it means</th>
-  </tr>
-  <tr>
-    <th scope="row">Active</th>
-    <td>The experiment is running as expected.</td>
-  </tr>
-  <tr>
-    <th scope="row">Creating experiment</th>
-    <td>Microsoft Advertising is in the process of creating the experiment based on your settings. Check back in a few minutes.</td>
-  </tr>
-  <tr>
-    <th scope="row">Experiment creation failed</th>
-    <td>Something went wrong with the creation of the experiment. Click <strong>Download errors</strong> in the <strong>Actions</strong> column, fix the errors, and try creating the experiment again.</td>
-  </tr>
-  <tr>
-    <th scope="row">Scheduled</th>
-    <td>The experiment has been created successfully, but it is not yet running because its start date is still in the future.</td>
-  </tr>
-  <tr>
-    <th scope="row">Completed</th>
-    <td>The experiment was created successfully and ran until it reached its end date.</td>
-  </tr>
-  <tr>
-    <th scope="row">Applying experiment</th>
-    <td>Microsoft Advertising is in the process of applying the experiment to either the original campaign or a new campaign, based on your selection. Check back in a few minutes.</td>
-  </tr>
-  <tr>
-    <th scope="row">Experiment applied</th>
-    <td>The experiment has been applied to either the original campaign or a new campaign, based on your selection.</td>
-  </tr>
-  <tr>
-    <th scope="row">Applying experiment failed</th>
-    <td>Something went wrong with applying the experiment to either the original campaign or a new campaign. Click <strong>Download errors</strong> in the <strong>Actions</strong> column, fix the errors, and try applying the experiment again.</td>
-  </tr>
-</table>
+|Experiment status|What it means|
+|---|---|
+|Active|The experiment is running as expected.|
+|Creating experiment|Microsoft Advertising is in the process of creating the experiment based on your settings. Check back in a few minutes.|
+|Experiment creation failed|Something went wrong with the creation of the experiment. Click **Download errors** in the **Actions** column, fix the errors, and try creating the experiment again.|
+|Scheduled|The experiment has been created successfully, but it is not yet running because its start date is still in the future.|
+|Completed|The experiment was created successfully and ran until it reached its end date.|
+|Applying experiment|Microsoft Advertising is in the process of applying the experiment to either the original campaign or a new campaign, based on your selection. Check back in a few minutes.|
+|Experiment applied|The experiment has been applied to either the original campaign or a new campaign, based on your selection.|
+|Applying experiment failed|Something went wrong with applying the experiment to either the original campaign or a new campaign. Click **Download errors** in the **Actions** column, fix the errors, and try applying the experiment again.|
 
 

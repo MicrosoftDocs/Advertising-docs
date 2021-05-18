@@ -13,8 +13,8 @@ UET Tag Helper is a browser extension that validates the implementation of the M
 
 UET Tag Helper allows you to:
 
-- **Validate and troubleshoot UET tags.** You can validate UET tags right in the browser instead of checking the tag status in Microsoft Advertising after a few hours. The UET Tag Helper icon tells you how many UET tags you have on a webpage and if they are working or not. If your tags are not working, the helper tells you what the issue is and what you can do to fix it.
-- **Test your conversion goals.** Show UET Tag Helper which conversion you want to test and then navigate your website, and it will tell you what conversion events it records, what problems it encounters, and how to fix them.
+- **Validate and troubleshoot UET tags.**  You can validate UET tags right in the browser instead of checking the tag status in Microsoft Advertising after a few hours. The UET Tag Helper icon tells you how many UET tags you have on a webpage and if they are working or not. If your tags are not working, the helper tells you what the issue is and what you can do to fix it.
+- **Test your conversion goals.**  Show UET Tag Helper which conversion you want to test and then navigate your website, and it will tell you what conversion events it records, what problems it encounters, and how to fix them.
 
 ## Set up UET Tag Helper
 1. Download the [UET Tag Helper](https://go.microsoft.com/fwlink?LinkId=2134986) in Edge.
@@ -155,8 +155,8 @@ After you have installed the UET tag on your webpage, waited 24 hours, and recei
 **What to do:**  Validate with UET Tag Helper
 
 1. If the status is **Tag inactive**, go the destination URL associated with the conversion goals in your browser, turn UET Tag Helper **ON**, and then validate if the tag is working or not.
-  - If the UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and the **P** parameter matches the URL define in the conversion goal.
-  - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
+   - If the UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and the **P** parameter matches the URL define in the conversion goal.
+   - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
 
 > [!NOTE]
 > If the conversion goal uses a Begins, Contains or Regx operator to define the destination URL, you will need the specific URL for the conversion page (for example, the purchase confirmation page) or navigate to the conversion page with the UET Tag Helper turn on.
@@ -187,8 +187,8 @@ After you have installed the UET tag on your website, waited 24 hours and receiv
 **What to do:**  Validate with UET Tag Helper
 
 1. If the status is **Tag inactive**, in your browser, turn UET Tag Helper **ON**, complete the steps needed to trigger the custom event, and then validate if the tag is working or not.
-  - If the UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and a **Custom event** and that the custom event matches what is defined in the custom event conversion goal.
-  - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
+   - If the UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and a **Custom event** and that the custom event matches what is defined in the custom event conversion goal.
+   - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
 
 ## How to validate a conversion goal with variable revenue?
 After you have installed the UET tag on your website, waited 24 hours and received select on your ads, you can validate your conversion goal. First in Microsoft Advertising, you want to find out the conversion goal status, and then if the status is **Tag inactive**, you can use UET Tag Helper to validate if the issue is caused by the UET tag.
@@ -216,8 +216,8 @@ After you have installed the UET tag on your website, waited 24 hours and receiv
 **What to do:**  Validate with UET Tag Helper
 
 1. If the status is **Tag inactive**, in your browser, turn UET Tag Helper **ON**, complete the steps needed to trigger the conversion goal, and then validate if the tag is working or not.
-  - If UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and a **Custom event**,  revenue isn't missing, and **gv and gc** are not blank. If the revenue is missing, you need to add the revenue code to your website. If the gv or gc value is blank, there is something wrong with your revenue function. For more information, see [How to track custom events with UET](./hlp_BA_CONC_UETv2CustomEvent.md)
-  - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
+   - If UET tag is working, check the **Events** tab to make sure there is a **Page Load event** and a **Custom event**,  revenue isn't missing, and **gv and gc** are not blank. If the revenue is missing, you need to add the revenue code to your website. If the gv or gc value is blank, there is something wrong with your revenue function. For more information, see [How to track custom events with UET](./hlp_BA_CONC_UETv2CustomEvent.md)
+   - If the UET tag is not working, use UET Tag Helper to troubleshoot the issue.
 
 ## How to validate a remarketing list?
 For remarketing lists, you  need to verify that the UET tag on the webpage defined in the remarketing list is working.

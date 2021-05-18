@@ -9,6 +9,6 @@ ms.author: eur
 
 # Low-quality click rate
 
-**What it is:**    The number of low-quality clicks, divided by the total number of clicks.
+**What it is:**     The number of low-quality clicks, divided by the total number of clicks.
 
 

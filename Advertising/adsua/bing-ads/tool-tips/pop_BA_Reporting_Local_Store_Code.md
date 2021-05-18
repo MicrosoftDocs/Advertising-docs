@@ -9,6 +9,6 @@ ms.author: eur
 
 # Local Store Code
 
-**What it is:**    This is an alphanumeric identifier to uniquely identify each local store by the merchant.
+**What it is:**     This is an alphanumeric identifier to uniquely identify each local store by the merchant.
 
 

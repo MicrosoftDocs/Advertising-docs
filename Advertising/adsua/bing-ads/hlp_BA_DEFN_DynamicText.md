@@ -21,8 +21,8 @@ Using dynamic text helps create more relevant ad copy and tailors ads to a user'
 
 There are different types of dynamic text:
 
-- **Keyword:** Customize your ad title or text based on search queries
-- **Display URL:** Change the display URL based on search queries
+- **Keyword:**  Customize your ad title or text based on search queries
+- **Display URL:**  Change the display URL based on search queries
 
 You can also use dynamic text to update multiple ads ad once. Details are in the links below.
 
@@ -36,6 +36,7 @@ And here's the result:
 
 ![Keywords in ads](../images/BA_SCREENCAP_DynamicText_1.png)
 
+ 
 {KeyWord} is an example of dynamic text. When you use {KeyWord} in your ad title and text, Microsoft Advertising automatically inserts your keyword, or the term the customer searched on that matches your keyword, into the ad when that ad is displayed.
 
 ## Get more information

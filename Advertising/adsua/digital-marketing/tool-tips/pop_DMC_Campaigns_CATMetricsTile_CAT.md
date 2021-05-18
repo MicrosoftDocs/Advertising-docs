@@ -1,7 +1,7 @@
 ---
 title: Customer action tracking metrics
 description: Customer action tracking metrics
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Customer action tracking metrics
 
-**What it is:** Data collected from customer action tracking that shows what customers did on your website after clicking your ad, during the selected date range.
+**What it is:**  Data collected from customer action tracking that shows what customers did on your website after clicking your ad, during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

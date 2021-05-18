@@ -9,7 +9,7 @@ ms.author: eur
 
 # Website URL
 
-**What it is:** The URL or website address you want for your business website.
+**What it is:**  The URL or website address you want for your business website.
 
 **What you need to know:**
 - Your website URL must be unique.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Import history
 
-**What it is:** The time when a particular Google Merchant Center account was selected to initiate an import.
+**What it is:**  The time when a particular Google Merchant Center account was selected to initiate an import.
 
 

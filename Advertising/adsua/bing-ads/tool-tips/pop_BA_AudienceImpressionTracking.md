@@ -9,7 +9,7 @@ ms.author: eur
 
 # Impression tracking URL
 
-**What it is:**     The URL for the 1x1 impression tracking pixel. The pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. You can enter up to 2 impression tracking URLs, 1 per line.
+**What it is:**      The URL for the 1x1 impression tracking pixel. The pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool. You can enter up to 2 impression tracking URLs, 1 per line.
 
 **What you need to know:**
 - For each Microsoft Audience Network impression, Microsoft will ping this URL to enable impression reporting in your third party ad reporting tool.

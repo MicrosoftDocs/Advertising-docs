@@ -1,7 +1,7 @@
 ---
 title: Create text ads
 description: Learn how to create one or more new text ads in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,7 @@ ms.author: eur
 
 A text ad includes an ad title, ad text, display URL, and destination URL.
 
+[!INCLUDE [TextAdCharLimits](./includes/TextAdCharLimits.md)]
 ## Optimizing for long ad titles
 
 It is important to take advantage of longer ad titles, as ads with the combined titles typically generate better results. You can take specific actions to influence how your longer titles are displayed: If you want the first sentence of your description appended to the title, that sentence must end with an exclamation mark (!), question mark (?), or period (.) and then be followed by a space. When this sentence is combined with the title, is must be relatively short; around 63 characters or so, in order to fit in the space available. However, if you prefer to append your display URL instead, make your ad title or your description first sentence a bit longer.

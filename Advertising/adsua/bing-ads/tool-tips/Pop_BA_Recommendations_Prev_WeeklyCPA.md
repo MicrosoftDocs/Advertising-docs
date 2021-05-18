@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous week's cost per acquisition (CPA)
 
-**What it is**: Last week’s CPA with your current accelerated budget.
+**What it is** : Last week’s CPA with your current accelerated budget.
 
 

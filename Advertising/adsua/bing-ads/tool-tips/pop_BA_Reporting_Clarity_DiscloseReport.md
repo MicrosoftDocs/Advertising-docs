@@ -9,6 +9,6 @@ ms.author: eur
 
 # Disclose this report
 
-**What you need to know:** Enabling this option makes it so that anyone with access to this account can review, save, and edit this report.
+**What you need to know:**  Enabling this option makes it so that anyone with access to this account can review, save, and edit this report.
 
 

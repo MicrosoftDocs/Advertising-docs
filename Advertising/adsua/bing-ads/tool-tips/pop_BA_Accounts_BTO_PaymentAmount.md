@@ -9,6 +9,6 @@ ms.author: eur
 
 # Payment amount
 
-**What it is: ** This is the amount that will be added to the prepay account upon billing take over. We'll deduct from the payment amount as advertising costs accrue.
+**What it is:**  This is the amount that will be added to the prepay account upon billing take over. We'll deduct from the payment amount as advertising costs accrue.
 
 

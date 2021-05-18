@@ -9,8 +9,8 @@ ms.author: eur
 
 # Estimated impressions
 
-**What it is:**    The estimated number of times an ad could be served to a particular age group or gender.
+**What it is:**     The estimated number of times an ad could be served to a particular age group or gender.
 
-**What you need to know: **    This value is an estimate because age and gender are not known for the entire audience.
+**What you need to know:**     This value is an estimate because age and gender are not known for the entire audience.
 
 

@@ -9,4 +9,5 @@ ms.author: eur
 
 # FAQ: Universal Event Tracking
 
+[!INCLUDE [CONC_UET_FAQ](./includes/CONC_UET_FAQ.md)]
 

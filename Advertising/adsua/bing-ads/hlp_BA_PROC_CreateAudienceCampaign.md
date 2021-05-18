@@ -91,9 +91,9 @@ In the third step, you give us the imagery, text, and URLs to use in the ads in 
 > The ad previews are examples of how your audience ads could appear. Depending on placement, the actual ad shown may appear differently — for example, some text may be shortened.
 
 1. Click **Add image**.
-  1. Choose whether to use an image from your **Existing images**, pick one of our available **Stock images**, or **Upload** an image. Note: You cannot upload more than 5,000 images to a Microsoft Advertising account.
-  1. When you've found the right image, select it.
-  1. You'll see how we have cropped the image for the possible aspect ratios for audience ads. If you want to change the imagery for any specific aspect ratio, click its pencil icon and select either **Re-crop** or **Replace**.
+   1. Choose whether to use an image from your **Existing images**, pick one of our available **Stock images**, or **Upload** an image. Note: You cannot upload more than 5,000 images to a Microsoft Advertising account.
+   1. When you've found the right image, select it.
+   1. You'll see how we have cropped the image for the possible aspect ratios for audience ads. If you want to change the imagery for any specific aspect ratio, click its pencil icon and select either **Re-crop** or **Replace**.
 
 1. Enter a **Short headline** and a **Long headline**. Both are required for display flexibility. Short headlines must be 30 characters or fewer; long headlines must be 90 characters or fewer.
 1. Enter 90 characters or fewer of **Ad text**. Depending on your audience ad's placement, this text will appear below or adjacent to your ad's long or short headline.

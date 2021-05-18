@@ -27,39 +27,13 @@ The first option will remove any UTM tags you already have and add the tags desc
 
 Microsoft Advertising automatically attaches the following UTM tags (parameters) to your landing page URL when it loads.    The tags are added in the order shown below from top to bottom until the maximum length of the URL is reached.
 
-<table fullBrowserOnly="true">
-  <tr>
-    <th scope="col">Tag</th>
-    <th scope="col">Tells you</th>
-  </tr>
-  <tr>
-    <th scope="row">utm_source</th>
-    <td>
-        The site that sent traffic to your page. Microsoft Advertising sets this to Bing.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">utm_medium</th>
-    <td>
-        Which channel was used. Microsoft Advertising sets this to cpc.
-      </td>
-  </tr>
-  <tr>
-    <th scope="row">utm_campaign</th>
-    <td>Which campaign the keyword came from.</td>
-  </tr>
-  <tr>
-    <th scope="row">utm_content</th>
-    <td>Which ad group the keyword came from.</td>
-  </tr>
-  <tr>
-    <th scope="row">utm_term</th>
-    <td>
-        Which keyword brought people to your website.  
-        For product ads, what Microsoft Shopping product group (Criterion ID) brought people to your ad.
-      </td>
-  </tr>
-</table>
+|Tag|Tells you|
+|---|---|
+|utm_source|The site that sent traffic to your page. Microsoft Advertising sets this to Bing.|
+|utm_medium|Which channel was used. Microsoft Advertising sets this to cpc.|
+|utm_campaign|Which campaign the keyword came from.|
+|utm_content|Which ad group the keyword came from.|
+|utm_term|Which keyword brought people to your website.          For product ads, what Microsoft Shopping product group (Criterion ID) brought people to your ad.|
 
 ## An example
 

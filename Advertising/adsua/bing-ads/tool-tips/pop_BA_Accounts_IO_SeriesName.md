@@ -9,8 +9,8 @@ ms.author: eur
 
 # Series name
 
-**What it is: **The series name identifies a grouping of recurring orders.
+**What it is:** The series name identifies a grouping of recurring orders.
 
-**What you need to know: **The series name is required, and it cannot be more than 60 characters.
+**What you need to know:** The series name is required, and it cannot be more than 60 characters.
 
 

@@ -53,44 +53,12 @@ Learn more about [FTP/SFTP upload](./hlp_BA_CONC_BMCFTPRequirements.md).
 
 The feed contains five attributes, as detailed below.
 
-<table>
-  <tr>
-    <th scope="col">Attribute</th>
-    <th scope="col">What it is</th>
-    <th scope="col">Required in txt header row?</th>
-    <th scope="col">Can value be blank?</th>
-  </tr>
-  <tr>
-    <td>'id'</td>
-    <td>The ID of the product that will be updated. The ID must match the ID provided in the full product feed file.</td>
-    <td>Yes</td>
-    <td>No</td>
-  </tr>
-  <tr>
-    <td>'price'</td>
-    <td>
-              The price submitted here overrides the price from the last submission of the product feed file. If price is submitted, the value cannot be blank. No changes will be made if the value is blank and you’ll receive the following error message:  
-              <strong>Offer cannot be updated as price cannot be blank. Please add a valid price value.</strong>
-            </td>
-    <td>No</td>
-    <td>No</td>
-  </tr>
-  <tr>
-    <td>'availability'</td>
-    <td>
-              The availability submitted here overrides the availability from the last submission of the product feed file. If availability is submitted, the value cannot be blank. No changes will be made if the value is blank and you’ll receive the following error message:  
-              <strong>Offer cannot be updated as availability cannot be blank. Please add a valid availability value.</strong>
-            </td>
-    <td>No</td>
-    <td>No</td>
-  </tr>
-  <tr>
-    <td>'sale price' and 'sale price effective date'</td>
-    <td>The sale price and sale price effective date submitted here overrides what was last submitted from the product feed file. If blank values are submitted, it will void the previous sale details submitted from the last product feed file. </td>
-    <td>No</td>
-    <td>Yes</td>
-  </tr>
-</table>
+|Attribute|What it is|Required in txt header row?|Can value be blank?|
+|---|---|---|---|
+|'id'|The ID of the product that will be updated. The ID must match the ID provided in the full product feed file.|Yes|No|
+|'price'|The price submitted here overrides the price from the last submission of the product feed file. If price is submitted, the value cannot be blank. No changes will be made if the value is blank and you’ll receive the following error message:                **Offer cannot be updated as price cannot be blank. Please add a valid price value.**|No|No|
+|'availability'|The availability submitted here overrides the availability from the last submission of the product feed file. If availability is submitted, the value cannot be blank. No changes will be made if the value is blank and you’ll receive the following error message:                **Offer cannot be updated as availability cannot be blank. Please add a valid availability value.**|No|No|
+|'sale price' and 'sale price effective date'|The sale price and sale price effective date submitted here overrides what was last submitted from the product feed file. If blank values are submitted, it will void the previous sale details submitted from the last product feed file.|No|Yes|
 
 ## Upload feed file manually (Files under 4MB)
 You can use this option if the feed file is smaller than 4MB.
@@ -112,59 +80,27 @@ Once the feed has been processed, the report will be available in the update fee
 ## Example submissions of the online product inventory update feed
 ## Update price
 
-<table>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">price</th>
-  </tr>
-  <tr>
-    <td>Offer1</td>
-    <td>20</td>
-  </tr>
-</table>
+|id|price|
+|---|---|
+|Offer1|20|
 
 ## Update availability
 
-<table>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">availability</th>
-  </tr>
-  <tr>
-    <td>Offer2</td>
-    <td>Out of stock</td>
-  </tr>
-</table>
+|id|availability|
+|---|---|
+|Offer2|Out of stock|
 
 ## Update sale price and sale price effective date
 
-<table>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">sale_price</th>
-    <th scope="col">sale_price_effective_date</th>
-  </tr>
-  <tr>
-    <td>Offer3</td>
-    <td>30</td>
-    <td>2017-01-01T00:00/2017-04-30T00:00</td>
-  </tr>
-</table>
+|id|sale_price|sale_price_effective_date|
+|---|---|---|
+|Offer3|30|2017-01-01T00:00/2017-04-30T00:00|
 
 ## Void sale price
 
-<table>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">sale_price</th>
-    <th scope="col">sale_price_effective_date</th>
-  </tr>
-  <tr>
-    <td>Offer4</td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+|id|sale_price|sale_price_effective_date|
+|---|---|---|
+|Offer4|||
 
 ## File format requirements
 - File must be tab delimited plain text with extensions: .txt, .zip, .gz, .gzip, .tar.gz, .tgz.              -	.xml files are also accepted (if Google-formatted).
@@ -180,44 +116,12 @@ Once the feed has been processed, the report will be available in the update fee
 ## Accepted symbols in feed files
 Here are the symbols/special characters and what attribute they are accepted in.
 
-<table>
-  <tr>
-    <th scope="col">Symbols</th>
-    <th scope="col">Where you can use</th>
-  </tr>
-  <tr>
-    <td>Period [.]</td>
-    <td>Prices, URLs</td>
-  </tr>
-  <tr>
-    <td>
-              Colon [:]  
-              Question [?]  
-              Forward-slash [/]  
-              Equal [=]
-            </td>
-    <td>URLs</td>
-  </tr>
-  <tr>
-    <td>
-              Hyphen [-]
-            </td>
-    <td>Offer Identifiers where this is valid (eg: ISBN, MPN)</td>
-  </tr>
-  <tr>
-    <td>
-              Pipe [|]  
-              Comma [,]   
-              Greater [&gt;]
-            </td>
-    <td>Multi-value fields (MerchantCategory, B_Category, ads_label)</td>
-  </tr>
-  <tr>
-    <td>
-              Any Unicode symbol
-            </td>
-    <td>Brand, Title, Description</td>
-  </tr>
-</table>
+|Symbols|Where you can use|
+|---|---|
+|Period [.]|Prices, URLs|
+|Colon [:]                Question [?]                Forward-slash [/]                Equal [=]|URLs|
+|Hyphen [-]|Offer Identifiers where this is valid (eg: ISBN, MPN)|
+|Pipe [|]                Comma [,]                 Greater [>]|Multi-value fields (MerchantCategory, B_Category, ads_label)|
+|Any Unicode symbol|Brand, Title, Description|
 
 

@@ -9,4 +9,5 @@ ms.author: eur
 
 # Country/region of billing address
 
+[!INCLUDE [CountryRegion](../includes/CountryRegion.md)]
 

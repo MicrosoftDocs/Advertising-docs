@@ -26,9 +26,9 @@ Keyword Planner is a valuable tool for new advertisers and PPC veterans alike. U
 1. On the top menu, click **Tools** and then click **Keyword Planner**.
 1. Click **Search for new keywords using a phrase, website, or category**.
 1. Enter one or more of the following in the boxes that appear:
-  - Up to 200 words or phrases that describe what you're advertising
-  - The URL of your website or a page on your website (see note below)
-  - A category relevant to your product or service
+   - Up to 200 words or phrases that describe what you're advertising
+   - The URL of your website or a page on your website (see note below)
+   - A category relevant to your product or service
 
 1. Optional: Enter targeting information.             This will impact keyword suggestions, historical statistics, and traffic estimates. For more information, click the question mark (**?**) next to **Targeting** in Keyword Planner.
 1. Optional: Enter negative keywords, separated by commas. Words you enter here will not be included in keywords that are suggested to you.

@@ -9,7 +9,7 @@ ms.author: eur
 
 # Top ads
 
-**What they are:** Your top performing ads in this campaign in the last 14 days.
+**What they are:**  Your top performing ads in this campaign in the last 14 days.
 
 **What you need to know:**
 - Top performing ads are determined by many factors, including the number of clicks and impressions.

@@ -1,7 +1,7 @@
 ---
 title: Working offline
 description: You can work on campaigns, ad groups, ads, and keywords without being connected to the Internet with Microsoft Advertising Editor . But you must be connected when you want to upload your changes to your Microsoft Advertising accounts.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

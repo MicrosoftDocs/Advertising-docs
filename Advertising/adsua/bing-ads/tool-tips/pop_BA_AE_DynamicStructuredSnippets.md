@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic Structured Snippets
 
-**What you need to know:** Give potential customers more context on a specific aspect of your products and services.
+**What you need to know:**  Give potential customers more context on a specific aspect of your products and services.
 
 

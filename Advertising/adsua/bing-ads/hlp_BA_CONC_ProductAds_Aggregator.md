@@ -25,10 +25,10 @@ Your feed file is a text delimited file that contains all the information needed
 
 The following product identifiers are required for aggregators:
 
-- **Seller name** must be the name of the final retailer.
-- **Link** (product URL and destination URL) must be a direct link to the seller's product page.
+- **Seller name**  must be the name of the final retailer.
+- **Link**  (product URL and destination URL) must be a direct link to the seller's product page.
 
-You can optionally use **bingads_redirect** to track leads to the final seller’s page. The redirect must be immediate with no additional pages from when the customer clicks your ad and the final seller’s landing page.
+You can optionally use **bingads_redirect**  to track leads to the final seller’s page. The redirect must be immediate with no additional pages from when the customer clicks your ad and the final seller’s landing page.
 
 ## What you need to know
 

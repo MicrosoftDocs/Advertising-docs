@@ -13,11 +13,11 @@ URL tracking allows you to find out how people got to your website by adding tra
 
 There are 5 ways to set up URL tracking in Microsoft Advertising:
 
-1. **Auto-tagging of UTM tags:** When you select the auto-tagging checkbox, 5 UTM tags will be added to the landing page URLs of your text ads, keywords, Microsoft Shopping Campaigns, Image Extensions, and Sitelink Extensions. Learn more: [How to set up auto-tagging?](./hlp_BA_CONC_AutoTag.md)
-1. **Auto-tagging of Microsoft Click ID:** You can also enable auto-tagging of the Microsoft Click ID separately for conversion tracking. Learn more: [How do I create a conversion goal? ](./hlp_BA_PROC_UETv2CreateGoal.md)
-1. **Final URL tracking:** You manually add URL parameters to your final URLs. With this option, your ad needs to go through editorial review each time you update a parameter. Learn more: [How do I set up final URL tracking?](./hlp_BA_CONC_GoogleAnalytics.md)
-1. **Tracking template:** You select final URL as your landing page and then add URL parameters to the tracking template. We recommend that you add the tracking template at the account level and then it will be applied to all URLs (ads, keywords, Sitelink Extensions). Learn more: [How do I create an account tracking template?](./hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md).
-1. **Custom parameters:**  You select Final URL as your landing page, define custom parameters to track a specific data point, and then add the custom parameter to the tracking template. Learn more: [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
+1. **Auto-tagging of UTM tags:**  When you select the auto-tagging checkbox, 5 UTM tags will be added to the landing page URLs of your text ads, keywords, Microsoft Shopping Campaigns, Image Extensions, and Sitelink Extensions. Learn more: [How to set up auto-tagging?](./hlp_BA_CONC_AutoTag.md)
+1. **Auto-tagging of Microsoft Click ID:**  You can also enable auto-tagging of the Microsoft Click ID separately for conversion tracking. Learn more: [How do I create a conversion goal? ](./hlp_BA_PROC_UETv2CreateGoal.md)
+1. **Final URL tracking:**  You manually add URL parameters to your final URLs. With this option, your ad needs to go through editorial review each time you update a parameter. Learn more: [How do I set up final URL tracking?](./hlp_BA_CONC_GoogleAnalytics.md)
+1. **Tracking template:**  You select final URL as your landing page and then add URL parameters to the tracking template. We recommend that you add the tracking template at the account level and then it will be applied to all URLs (ads, keywords, Sitelink Extensions). Learn more: [How do I create an account tracking template?](./hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md).
+1. **Custom parameters:**   You select Final URL as your landing page, define custom parameters to track a specific data point, and then add the custom parameter to the tracking template. Learn more: [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
 
 > [!NOTE]
 > Auto-tagging of UTM tags and Microsoft Click ID are two separate features. In order to use these features together, both must be enabled at the same time.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Total watch time
 
-**What it is**: The total duration (in seconds) that your video was viewed.
+**What it is** : The total duration (in seconds) that your video was viewed.
 
 

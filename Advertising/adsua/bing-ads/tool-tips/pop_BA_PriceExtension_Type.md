@@ -9,6 +9,6 @@ ms.author: eur
 
 # Type
 
-**What it is:** The category that best defines your Price Extension items and specifies the corresponding editorial checks which will be applied to them.
+**What it is:**  The category that best defines your Price Extension items and specifies the corresponding editorial checks which will be applied to them.
 
 

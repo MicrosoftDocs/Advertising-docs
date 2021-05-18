@@ -9,6 +9,6 @@ ms.author: eur
 
 # Last activity
 
-**What it is:** This line captures the date and the time of the most recent activity for a scheduled import.
+**What it is:**  This line captures the date and the time of the most recent activity for a scheduled import.
 
 

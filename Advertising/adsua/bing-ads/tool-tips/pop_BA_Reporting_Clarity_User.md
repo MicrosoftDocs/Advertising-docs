@@ -9,6 +9,6 @@ ms.author: eur
 
 # User
 
-**What it is:**    The name of users who can view or edit the campaign.
+**What it is:**     The name of users who can view or edit the campaign.
 
 

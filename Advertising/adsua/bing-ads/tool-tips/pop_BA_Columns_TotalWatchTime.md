@@ -9,6 +9,6 @@ ms.author: eur
 
 # Total watch time
 
-**What it is:** Total amount of time users have spent watching the video (measured directly).
+**What it is:**  Total amount of time users have spent watching the video (measured directly).
 
 

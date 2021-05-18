@@ -1,7 +1,7 @@
 ---
 title: Share reviews on your ad
 description: Add reputable third-party reviews to your ad with a Review Extension.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

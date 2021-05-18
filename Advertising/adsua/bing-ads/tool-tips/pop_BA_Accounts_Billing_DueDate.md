@@ -9,8 +9,8 @@ ms.author: eur
 
 # Due date
 
-**What it is: **    This is the date that your monthly invoice is due.
+**What it is:**     This is the date that your monthly invoice is due.
 
-**What you need to know: **This only applies to monthly invoice customers.
+**What you need to know:** This only applies to monthly invoice customers.
 
 

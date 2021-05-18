@@ -9,8 +9,8 @@ ms.author: eur
 
 # Ad coverage
 
-**What it is:** The percentage of time this competitor's (Display URL domain) ad showed up compared to the total ads displays for this product or keyword.
+**What it is:**  The percentage of time this competitor's (Display URL domain) ad showed up compared to the total ads displays for this product or keyword.
 
-**Why it’s important:** See what competitors are getting the most ad coverage for this product or keyword.
+**Why it’s important:**  See what competitors are getting the most ad coverage for this product or keyword.
 
 

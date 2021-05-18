@@ -1,7 +1,7 @@
 ---
 title: Social and search advertising
 description: Social and search advertising
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Social and search advertising
 
-**What it is: ** This allows you to advertise on Facebook, Instagram, Microsoft Advertising, and Google Ads. Digital Marketing Center will automatically generate ads for you based on your advertising options.
+**What it is:**  This allows you to advertise on Facebook, Instagram, Microsoft Advertising, and Google Ads. Digital Marketing Center will automatically generate ads for you based on your advertising options.
 
 **What you need to know:**
 - Any changes made outside of Digital Marketing Center to ad campaigns created by Digital Marketing Center will be automatically overridden. Use Digital Marketing Center to make any changes to the ad campaigns created by Digital Marketing Center.

@@ -1,7 +1,7 @@
 ---
 title: Spend
 description: Spend
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Mobile"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,8 +9,8 @@ ms.author: eur
 
 # Spend
 
-**What it is**: The amount of money you're paying for ad clicks.
+**What it is** : The amount of money you're paying for ad clicks.
 
-**What you need to know**: Spend is determined by your budget. This ensures you spend only as much as you're comfortable with.
+**What you need to know** : Spend is determined by your budget. This ensures you spend only as much as you're comfortable with.
 
 

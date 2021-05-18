@@ -1,7 +1,7 @@
 ---
 title: FAQ: Expanded Text Ads
 description: Expanded Text Ads give you additional content to make your ads more eye-catching and helpful.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -14,103 +14,28 @@ Expanded Text Ads are a new, mobile-optimized ad format that enables you to craf
 
 Here's how Expanded Text Ads compare to standard text ads:
 
-<table type="type1">
-  <tr>
-    <th>Ad part</th>
-    <th>Standard text ads</th>
-    <th>Expanded Text Ads</th>
-  </tr>
-  <tr>
-    <td>
-       Ad title
-      </td>
-    <td>
-       25 characters
-      </td>
-    <td>
-       90 characters (supports three headlines, up to 30 characters each, separated by a vertical bar (|).)
-      </td>
-  </tr>
-  <tr>
-    <td>
-       Ad text
-
-      </td>
-    <td>
-       71 characters
-      </td>
-    <td>
-       180 characters (supports two descriptions, up to two 90 characters each.)
-      </td>
-  </tr>
-  <tr>
-    <td>
-       Display URL
-      </td>
-    <td>
-       35 characters, manually entered and error-prone
-      </td>
-    <td>
-       Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths. 
-      </td>
-  </tr>
-</table>
+|Ad part|Standard text ads|Expanded Text Ads|
+|---|---|---|
+|Ad title|25 characters|90 characters (supports three headlines, up to 30 characters each, separated by a vertical bar (|).)|
+|Ad text|71 characters|180 characters (supports two descriptions, up to two 90 characters each.)|
+|Display URL|35 characters, manually entered and error-prone|Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths.|
 
 ## How do I set up Expanded Text Ads?
 1. From the **Ads** tab, click **Create ad** and then select an ad group.
 1. For **Ad type**, select **Expanded Text Ad**.
-1. Enter your landing page URL in the **Final URL** box. **Note**: Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any tracking templates&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
+1. Enter your landing page URL in the **Final URL** box. **Note** : Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any tracking templates&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
 1. Unlike standard text ads, you can then enter three parts of your ad title, each up to 30 characters long.
 1. Similarly, you can also enter two parts of the URL path customers will see in your ad.
 1. Fill in the ad text to appear below the path.
 1. Click **Save**.
 
 ## What are the character limits for Expanded Text Ads?
-<table type="type1">
-  <tr>
-    <th>
-       Text field
-      </th>
-    <th>
-       Character limit
-      </th>
-  </tr>
-  <tr>
-    <td>
-       Final URL 
-      </td>
-    <td>
-       2048 characters, including prefix (e.g., "www."), suffix (e.g., ".com"), and tracking templates 
-
-      </td>
-  </tr>
-  <tr>
-    <td>
-       Titles
-      </td>
-    <td>
-       30 characters each, up to three ad titles
-
-      </td>
-  </tr>
-  <tr>
-    <td>
-       Ad text
-      </td>
-    <td>
-       90 characters each, up to two ad descriptions
-
-      </td>
-  </tr>
-  <tr>
-    <td>
-       Paths
-      </td>
-    <td>
-       15 characters each
-       <para><strong>Note</strong>: All together, the final URL domain (everything in your final URL before the first slash or tracking template) and paths cannot exceed 67 characters.</para></td>
-  </tr>
-</table>
+|Text field|Character limit|
+|---|---|
+|Final URL|2048 characters, including prefix (e.g., "www."), suffix (e.g., ".com"), and tracking templates|
+|Titles|30 characters each, up to three ad titles|
+|Ad text|90 characters each, up to two ad descriptions|
+|Paths|15 characters each**Note** : All together, the final URL domain (everything in your final URL before the first slash or tracking template) and paths cannot exceed 67 characters.|
 
 > [!IMPORTANT]
 > Keep in mind that double-width characters — such as Chinese characters — count as two characters each.
@@ -165,7 +90,7 @@ Or:
 ## Can I use {param1}, {param2}, and {param3} for keyword tracking in Expanded Text Ads?
 Yes, you can add a {param} to a domain in the Final URL box, but you cannot have your Final URL be only a {param}. In other words, in the Final URL box, “contoso.com/{param1}” is allowed, but just “{param1}” is not. {param1}, {param2}, and {param3} are also still allowed in ad titles and descriptions.
 
-**Note**: Keep in mind the length of the potential dynamic text a {param} might cause. It is possible to create ad titles, ad text, and URLs that fit within our character limits when you create them, but that become too long when the dynamic text is applied. In this case, the ad will not be considered for auction.
+**Note** : Keep in mind the length of the potential dynamic text a {param} might cause. It is possible to create ad titles, ad text, and URLs that fit within our character limits when you create them, but that become too long when the dynamic text is applied. In this case, the ad will not be considered for auction.
 
 ## Will Expanded Text Ads work with all my existing ad extensions?
 Yes, all ad extensions and annotations will continue to work as expected. We recommend setting up Expanded Text Ads in the same campaigns and ad groups as your existing standard text ads so you can use your existing ad extensions.
@@ -176,54 +101,13 @@ Our engine will choose the ad that is the most relevant to the search results pa
 ## Which part of my domain is auto-generated from the final URL?
 Microsoft Advertising will automatically use the domain of the URL that is entered, including its subdomains. See the table below for examples.
 
-<table type="type1">
-  <tr>
-    <th>Advertiser-entered final URL</th>
-    <th>Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <td>
-       http://contoso.com/contact.html
-      </td>
-    <td>
-       contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.contoso.com/contact.html
-
-      </td>
-    <td>
-       www.contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://ContosoStore.com/contact.html
-      </td>
-    <td>
-       ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.ContosoStore.com/contact.html
-
-      </td>
-    <td>
-       www.ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://Store.Contoso.com/contact.html
-      </td>
-    <td>
-       Store.Contoso.com
-      </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
@@ -231,107 +115,25 @@ Microsoft Advertising will automatically use the domain of the URL that is enter
 ## How does Microsoft Advertising handle capitalization for display URLs?
 Microsoft Advertising will preserve the capitalization you enter in the final URL. See the table below for examples.
 
-<table type="type1">
-  <tr>
-    <th>Advertiser-entered final URL</th>
-    <th>Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <td>
-       http://contoso.com/contact.html
-      </td>
-    <td>
-       contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.contoso.com/contact.html
-
-      </td>
-    <td>
-       www.contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://ContosoStore.com/contact.html
-      </td>
-    <td>
-       ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.ContosoStore.com/contact.html
-
-      </td>
-    <td>
-       www.ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://Store.Contoso.com/contact.html
-      </td>
-    <td>
-       Store.Contoso.com
-      </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
 
 ## How will Microsoft Advertising auto-generate display URL domains with Expanded Text Ads?
-<table type="type1">
-  <tr>
-    <th>Advertiser-entered final URL</th>
-    <th>Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <td>
-       http://contoso.com/contact.html
-      </td>
-    <td>
-       contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.contoso.com/contact.html
-
-      </td>
-    <td>
-       www.contoso.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://ContosoStore.com/contact.html
-      </td>
-    <td>
-       ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://www.ContosoStore.com/contact.html
-
-      </td>
-    <td>
-       www.ContosoStore.com
-      </td>
-  </tr>
-  <tr>
-    <td>
-       http://Store.Contoso.com/contact.html
-      </td>
-    <td>
-       Store.Contoso.com
-      </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
@@ -339,4 +141,5 @@ Microsoft Advertising will preserve the capitalization you enter in the final UR
 ## Which reports have columns for Ad Title 1, Ad Title 2, and Ad Title 3 for Expanded Text Ads?
 The Ad performance report shows these columns by default. They are also available in the Ad dynamic text and Ad extension by ad report.
 
+ 
 

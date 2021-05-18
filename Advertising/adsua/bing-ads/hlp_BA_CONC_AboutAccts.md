@@ -15,10 +15,10 @@ Getting the most out of your advertising campaign means understanding how Micros
 
 Microsoft Advertising has four levels of organization: manager account, accounts, campaigns, and ad groups. These four levels and their related components need to be in place to run your online advertising campaign.
 
-- A **Manager account** contains one or more accounts. A manager account has a manager account number, which is associated with your business name and your address. At the manager account level, at least one person is designated as the Super Admin. Super Admins have administrative access to all accounts.
-- **Accounts** contain one or more campaigns and include information about currency, time zone, whether you want to pay in advance (prepay) or pay later (postpay), your form of payment (primary payment method), and the people who have access to each account (users).
-- **Campaigns** contain one or more ad groups, which share a campaign budget.
-- **Ad groups** contain one or more closely related ads and the keywords associated with those ads.
+- A **Manager account**  contains one or more accounts. A manager account has a manager account number, which is associated with your business name and your address. At the manager account level, at least one person is designated as the Super Admin. Super Admins have administrative access to all accounts.
+- **Accounts**  contain one or more campaigns and include information about currency, time zone, whether you want to pay in advance (prepay) or pay later (postpay), your form of payment (primary payment method), and the people who have access to each account (users).
+- **Campaigns**  contain one or more ad groups, which share a campaign budget.
+- **Ad groups**  contain one or more closely related ads and the keywords associated with those ads.
 
 ## Organizing your accounts and campaigns
 
@@ -39,8 +39,12 @@ Creating online advertising campaigns is a lot like creating traditional adverti
 
 ![Example organization](../images/BA_Conc_AcctExample.png)
 
+ 
+<anchor id="Limits" />
+
 ## Limits for accounts, campaigns, and ad groups
 
 Here are the limits on the number of items you can have at each level. This information is useful in organizing your advertising campaigns, particularly if you plan on  [importing from Google Ads](./hlp_BA_PROC_ImportCampaign.md).
 
+ 		    [!INCLUDE [EntityLimits](./includes/EntityLimits.md)]
 

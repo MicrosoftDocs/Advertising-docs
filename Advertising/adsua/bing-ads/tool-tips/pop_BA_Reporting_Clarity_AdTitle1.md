@@ -9,6 +9,6 @@ ms.author: eur
 
 # Ad title 1
 
-**What it is:**	In Expanded Text ads, Ad title 1 is the first line of the most prominent part of your ad that links to your website. 	It can be up to 30 characters long and is separated from ad title 2 by a vertical bar (|).
+**What it is:** 	In Expanded Text ads, Ad title 1 is the first line of the most prominent part of your ad that links to your website. 	It can be up to 30 characters long and is separated from ad title 2 by a vertical bar (|).
 
 

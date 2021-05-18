@@ -9,6 +9,7 @@ ms.author: eur
 
 # Portfolio bid strategies: Auto-bidding for performance goals
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal.
 
 We automatically adjust your bids to balance under- and over-performing campaigns that share the same strategy, whether to maximize conversions, clicks, target impression share, or other performance goals. Portfolio bid strategies could be a great option for advertisers who want to make sure their entire budgets are spent efficiently.
@@ -22,35 +23,17 @@ Portfolio bid strategies work best with one goal in mind, using complementary ca
 > [!NOTE]
 > Smart shopping campaigns are not supported.
 
-<table>
-  <tr>
-    <th scope="col">Bid strategy type</th>
-    <th scope="col" style="text-align:center">Campaign type supported</th>
-  </tr>
-  <tr>
-    <th scope="row">Maximize clicks</th>
-    <td>Search, shopping</td>
-  </tr>
-  <tr>
-    <th scope="row">Maximize conversions</th>
-    <td>Search</td>
-  </tr>
-  <tr>
-    <th scope="row">Target CPA</th>
-    <td>Search</td>
-  </tr>
-  <tr>
-    <th scope="row">Target impression share</th>
-    <td>Search</td>
-  </tr>
-  <tr>
-    <th scope="row">Target ROAS</th>
-    <td>Search, shopping</td>
-  </tr>
-</table>
+|Bid strategy type|Campaign type supported|
+|---|---|
+|Maximize clicks|Search, shopping|
+|Maximize conversions|Search|
+|Target CPA|Search|
+|Target impression share|Search|
+|Target ROAS|Search, shopping|
 
 Learn more: [Let Microsoft Advertising manage your bids with bid strategies](./hlp_BA_CONC_BidStrategy.md).
 
+ 
 ## Create a portfolio bid strategy
 
 1. [!INCLUDE [AccountsSharedLibraryPortfolioBidStrategy](./includes/AccountsSharedLibraryPortfolioBidStrategy.md)]
@@ -58,6 +41,7 @@ Learn more: [Let Microsoft Advertising manage your bids with bid strategies](./h
 1. Enter the details of your strategy.
 1. [!INCLUDE [SelectSave](./includes/SelectSave.md)]
 
+ 
 ## Optimize your portfolio bid strategy
 
 We highly recommend you either create separate budgets for each campaign you include in a portfolio bid strategy or ensure none of them share a budget with a campaign that’s not included.
@@ -77,10 +61,10 @@ If you decide to include a campaign within a portfolio bid strategy that [shares
 
 It will take a few weeks for a portfolio bid strategy to learn how your ads and bids are performing. It’s important to understand that the more data becomes available, the more we can fine tune your bids and make the most impact. Here’s how we will let you know how your portfolio bid strategy is performing:
 
-- **Active**: The bid strategy is active and optimized for your goals.
-- **Learning**: If you’ve recently added one or more campaigns to this strategy, we need a few weeks to gather performance data and learn how to make the most effective bids.
-- **Limited**: At least one of your campaigns is constrained by a low budget.
-- **Inactive**: The portfolio bid strategy has no active campaigns.
-- **Misconfigured**: At least one campaign using this bid strategy has a shared budget that could be limiting the performance.
+- **Active** : The bid strategy is active and optimized for your goals.
+- **Learning** : If you’ve recently added one or more campaigns to this strategy, we need a few weeks to gather performance data and learn how to make the most effective bids.
+- **Limited** : At least one of your campaigns is constrained by a low budget.
+- **Inactive** : The portfolio bid strategy has no active campaigns.
+- **Misconfigured** : At least one campaign using this bid strategy has a shared budget that could be limiting the performance.
 
 

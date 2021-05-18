@@ -9,7 +9,7 @@ ms.author: eur
 
 # Choosing your account currency
 
-Each time you [create a Microsoft Advertising account](./hlp_BA_PROC_CreateAcctSelfServe.md), you need to select the currency you will use to pay your advertising costs. Choose your currency carefully because currency can affect your billing options. Also, **after an account is set up, the currency setting cannot be changed**. For more information, see [What can I do if I selected the wrong currency?](#WrongCurrency)
+Each time you [create a Microsoft Advertising account](./hlp_BA_PROC_CreateAcctSelfServe.md), you need to select the currency you will use to pay your advertising costs. Choose your currency carefully because currency can affect your billing options. Also, **after an account is set up, the currency setting cannot be changed** . For more information, see [What can I do if I selected the wrong currency?](#WrongCurrency)
 
 If you run multiple advertising campaigns and need to pay in different currencies, that’s no problem. You just need to set up one account per currency. Currency is one of a few reasons you might need or want to set up separate accounts in Microsoft Advertising. For more information, see [How should I organize my accounts and campaigns?](./hlp_BA_CONC_AboutAccts.md)
 
@@ -36,51 +36,29 @@ You can pay for your advertising costs using the following currencies in all mar
 
 The following currencies are accepted only in certain markets. To see the complete list of currencies available in your country/region, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
 
-<table type="type1">
-  <tr>
-    <th scope="col">Currency</th>
-    <th scope="col">Currency</th>
-  </tr>
-  <tr>
-    <td>Argentine peso (ARS)</td>
-    <td>Indonesian rupiah (IDR)</td>
-  </tr>
-  <tr>
-    <td>Australian dollar (AUD)</td>
-    <td>Malaysian ringgit (MYR)</td>
-  </tr>
-  <tr>
-    <td>Brazilian real (BRL)*</td>
-    <td>New Zealand dollar (NZD)</td>
-  </tr>
-  <tr>
-    <td>Canadian dollar (CAD)</td>
-    <td>Peruvian nuevo sol (PEN)</td>
-  </tr>
-  <tr>
-    <td>Chilean peso (CLP)</td>
-    <td>Philippine peso (PHP)</td>
-  </tr>
-  <tr>
-    <td>Colombian peso (COP)</td>
-    <td>Singapore dollar (SGD)</td>
-  </tr>
-  <tr>
-    <td>Indian rupee (INR)*</td>
-    <td>Thai baht (THB)</td>
-  </tr>
-</table>
+|Currency|Currency|
+|---|---|
+|Argentine peso (ARS)|Indonesian rupiah (IDR)|
+|Australian dollar (AUD)|Malaysian ringgit (MYR)|
+|Brazilian real (BRL)\*|New Zealand dollar (NZD)|
+|Canadian dollar (CAD)|Peruvian nuevo sol (PEN)|
+|Chilean peso (CLP)|Philippine peso (PHP)|
+|Colombian peso (COP)|Singapore dollar (SGD)|
+|Indian rupee (INR)\*|Thai baht (THB)|
 
+ 
 > [!NOTE]
 > \* Brazilian real is only available in Brazil. Indian rupee is only available in India. No other currencies are accepted in those countries.
 
-**Don’t see your currency in the list above?** You might still be able to advertise with Microsoft Advertising. Check with the financial institution that issues your card to make sure that they allow international transactions. If they do, you can select any currency that your financial institution can convert into your local currency.
+**Don’t see your currency in the list above?**  You might still be able to advertise with Microsoft Advertising. Check with the financial institution that issues your card to make sure that they allow international transactions. If they do, you can select any currency that your financial institution can convert into your local currency.
 
 ## How currency (and country) affect your billing options
 
 Depending on your **country-currency** combination, you have different options for paying and some restrictions. For example, only **German-Euro** accounts can use SEPA direct debit, and **India-Indian rupee** accounts cannot use debit cards. Also, if you want to pay in Brazilian real or Indian rupee, then your billing address must be in Brazil or India, respectively.
 
 For a full list of payment methods you can use based on your country-currency combination, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
+
+<anchor id="WrongCurrency" />
 
 ## What can I do if I selected the wrong currency?
 

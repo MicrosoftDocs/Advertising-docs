@@ -9,6 +9,6 @@ ms.author: eur
 
 # Hotel ID
 
-**What it is:** Microsoft Advertising' unique ID for your hotel.
+**What it is:**  Microsoft Advertising' unique ID for your hotel.
 
 

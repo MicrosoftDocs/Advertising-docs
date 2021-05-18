@@ -9,8 +9,8 @@ ms.author: eur
 
 # Format
 
-**What it is:** How the review text appears within its source.
+**What it is:**  How the review text appears within its source.
 
-**What you need to know:** Be sure any paraphrased text is based on information that is available on the review source’s page.
+**What you need to know:**  Be sure any paraphrased text is based on information that is available on the review source’s page.
 
 

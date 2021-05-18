@@ -62,6 +62,7 @@ The data from these tools can help you select and bid on keywords, but it does n
   </tr>
 </table>
 
+[!INCLUDE [KeywordPlannerJavascript](./includes/KeywordPlannerJavascript.md)]
 Want expert advice on your ads? [Schedule a no-cost session with a personal Microsoft Advertising consultant](https://go.microsoft.com/fwlink?LinkId=837456)
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Final URL
 
-**What it is: **       This is the link to your specific web page or form that corresponds to the Action Text.
+**What it is:**        This is the link to your specific web page or form that corresponds to the Action Text.
 
 

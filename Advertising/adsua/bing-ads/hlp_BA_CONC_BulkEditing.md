@@ -49,6 +49,7 @@ To remove an ad, keyword, extension, or any other entity:
 > [!IMPORTANT]
 > Deleted entities cannot be restored after you upload the edited spreadsheet.
 
+ 
 ## Understanding your spreadsheet
 
 ## What do the rows represent?
@@ -64,53 +65,11 @@ Types have parent-child relationships with one another. For example, in the foll
 
 In your downloaded spreadsheet, child types are always listed below their parent types. The relationship is made clear by the entities' ```**ID**``` and ```**Parent ID**``` column values. For linear cases such as Account-Campaign-Ad group, each entity's ID is unique and its Parent ID is the ID of its parent:
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Parent ID```
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Account``` 
-        [X]
-      </th>
-    <td>
-        [Account X's ID number]
-      </td>
-    <td>
-        [Manager account W's ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign``` [Y]
-      </th>
-    <td>
-        [Campaign Y's ID number]
-      </td>
-    <td>
-        [Account X's ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group``` [Z]
-      </th>
-    <td>
-        [Ad group Z's ID number]
-      </td>
-    <td>
-        [Campaign Y's ID number]
-      </td>
-  </tr>
-</table>
+|```Type```|```ID```|```Parent ID```|
+|---|---|---|
+|```Account```         [X]|[Account X's ID number]|[Manager account W's ID number]|
+|```Campaign``` [Y]|[Campaign Y's ID number]|[Account X's ID number]|
+|```Ad Group``` [Z]|[Ad group Z's ID number]|[Campaign Y's ID number]|
 
 In cases such as [ad extensions](./hlp_BA_CONC_AboutAdExtensions.md), entities further down the parent-child chain can have multiple parents. For example, a campaign Sitelink Extension does not have a unique ID, but instead inherits the ID of the overall Sitelink Ad Extension, and its Parent ID is the campaign's ID. Take a look at the "Adding Sitelink Extensions through bulk upload" section below for more information.
 
@@ -121,125 +80,31 @@ In cases such as [ad extensions](./hlp_BA_CONC_AboutAdExtensions.md), entities f
 ## Adding a parent and a child at the same time through bulk upload
 
 If you want to add, say, a new campaign and new ad groups all at once through bulk upload, how do you associate the child ad groups to the parent campaign without having an ID for the new campaign? You'd use either a logical reference key or a negative reference key:
-**Logical reference key**:
+**Logical reference key** :
 
 1. For the new parent campaign, enter a unique name in the ```**Campaign**``` column.
 1. For the new child ad groups, enter the same name in the ```**Campaign**``` column.
 
 Here's what it would look like in your spreadsheet:
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Parent ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ...
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Campaign```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Ad Group```
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign```
-      </th>
-    <td></td>
-    <td></td>
-    <td>...</td>
-    <td>
-        Fresh Flowers
-      </td>
-    <td></td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group```
-      </th>
-    <td></td>
-    <td></td>
-    <td>...</td>
-    <td>
-        Fresh Flowers
-      </td>
-    <td>
-        Tulip season
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group```
-      </th>
-    <td></td>
-    <td></td>
-    <td>...</td>
-    <td>
-        Fresh Flowers
-      </td>
-    <td>
-        Lily season
-      </td>
-  </tr>
-</table>
+|```Type```|```ID```|```Parent ID```|...|```Campaign```|```Ad Group```|
+|---|---|---|---|---|---|
+|```Campaign```|||...|Fresh Flowers||
+|```Ad Group```|||...|Fresh Flowers|Tulip season|
+|```Ad Group```|||...|Fresh Flowers|Lily season|
 
-**Negative reference key**:
+**Negative reference key** :
 
 1. For the ID of the new parent campaign, enter any negative number.
 1. For the IDs of the new child ad groups, enter the same negative number.
 
 Here's what this would look like in your spreadsheet:
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Parent ID```
-    </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign```
-        </th>
-    <td>
-        [-1]
-      </td>
-    <td>
-        [existing account ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group```
-      </th>
-    <td></td>
-    <td>
-        [-1]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group```
-      </th>
-    <td></td>
-    <td>
-        [-1]
-      </td>
-  </tr>
-</table>
+|```Type```|```ID```|```Parent ID```|
+|---|---|---|
+|```Campaign```|[-1]|[existing account ID number]|
+|```Ad Group```||[-1]|
+|```Ad Group```||[-1]|
 
 ## What do the columns represent?
 Each downloaded spreadsheet comes with columns for all Microsoft Advertising data points. Most columns will be irrelevant — and therefore blank — for any given entity's row. Feel free to delete columns that are blank or unnecessary to your edits, but remember that you must retain the following columns: ```**Type**``` (for example, ```Campaign```, ```Ad Group```, or ```Keyword```), ```**ID**```, ```**Parent ID**```, ```**Account ID**```, and ```**Name**```.
@@ -249,57 +114,17 @@ Each downloaded spreadsheet comes with columns for all Microsoft Advertising dat
 > You can't make changes to metrics through bulk upload. For example, you can't raise your CTR just by changing the number in that column!
 > For detailed information about which columns are relevant to each entity, take a look at [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=733248) (note: this doc refers to types as "```Record types```").
 
+ 
 ## Some specific scenarios
 
 ## Adding Sitelink Extensions through bulk upload
 Sitelink Extensions are a type of [ad extension](./hlp_BA_CONC_AboutAdExtensions.md). In Microsoft Advertising, you create a Sitelink Extension and associate it to a campaign or an ad group. Microsoft Advertising considers the overall Sitelink Extension (called here "```Sitelink Ad Extension```") the parent of either a ```Campaign Sitelink Ad Extension``` or an ```Ad Group Sitelink Ad Extension```, depending on whether it's associated with a campaign or an ad group. The ```Sitelink Ad Extension``` is considered the child of the account. This relationship looks like this in a downloaded spreadsheet:
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Parent ID```
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign``` [B]
-      </th>
-    <td>
-        [Campaign B's ID number]
-      </td>
-    <td>
-        [Account A's ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Sitelink Ad Extension``` [C]
-      </th>
-    <td>
-        [Sitelink Ad Extension C's ID number]
-      </td>
-    <td>
-        [Account A's ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Sitelink Ad Extension``` [D]
-      </th>
-    <td>
-        [Sitelink Ad Extension C's ID number]
-      </td>
-    <td>
-        [Campaign B's ID number]
-      </td>
-  </tr>
-</table>
+|```Type```|```ID```|```Parent ID```|
+|---|---|---|
+|```Campaign``` [B]|[Campaign B's ID number]|[Account A's ID number]|
+|```Sitelink Ad Extension``` [C]|[Sitelink Ad Extension C's ID number]|[Account A's ID number]|
+|```Campaign Sitelink Ad Extension``` [D]|[Sitelink Ad Extension C's ID number]|[Campaign B's ID number]|
 
 If you want to create a new Sitelink Extension through bulk upload, you need to add a row for both a ```Sitelink Ad Extension``` and either a ```Campaign Sitelink Ad Extension``` or an ```Ad Group Sitelink Ad Extension```. What's more, you need to associate the child to the parent ```Sitelink Ad Extension``` even though the ```Sitelink Ad Extension``` does not yet have an ID. To do this, you'd use a negative reference key:
 
@@ -308,63 +133,12 @@ If you want to create a new Sitelink Extension through bulk upload, you need to 
 
 For example, here's what it would look like to add two new ```Sitelink Ad Extensions``` &nbsp; — one associated to an existing campaign, and one to an existing ad group:
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```ID```
-      </th>
-    <th style="text-align:left" scope="col">
-        ```Parent ID```
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Sitelink Ad Extension```
-      </th>
-    <td>
-        [-123]
-      </td>
-    <td>
-        [Existing account ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Sitelink Ad Extension```
-      </th>
-    <td>
-        [-456]
-      </td>
-    <td>
-        [Existing account ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Sitelink Ad Extension```
-      </th>
-    <td>
-        [-123]
-      </td>
-    <td>
-        [Existing campaign ID number]
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Ad Group Sitelink Ad Extension```
-      </th>
-    <td>
-        [-456]
-      </td>
-    <td>
-        [Existing ad group ID number]
-      </td>
-  </tr>
-</table>
+|```Type```|```ID```|```Parent ID```|
+|---|---|---|
+|```Sitelink Ad Extension```|[-123]|[Existing account ID number]|
+|```Sitelink Ad Extension```|[-456]|[Existing account ID number]|
+|```Campaign Sitelink Ad Extension```|[-123]|[Existing campaign ID number]|
+|```Ad Group Sitelink Ad Extension```|[-456]|[Existing ad group ID number]|
 
 ## Adding Call Extensions through bulk upload
 Call Extensions are a type of ad extension. In Microsoft Advertising, you create a Call Extension and associate it to a campaign or an ad group.
@@ -419,149 +193,15 @@ Structured Snippet Extensions are a type of [ad extension](./hlp_BA_CONC_AboutAd
 1. In the ```**Bid Adjustment**``` column, enter the percentage value (positive or negative) you want to adjust the bid for this target. See the table below for the possible range of bid adjustments for each target type. Note: The ```**Bid Adjustment**``` column is several dozen columns to the right of the ```**Parent ID**``` column.
 1. If necessary, enter further information in other targeting columns relevant to this target type (see the table below).
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Type```
-      </th>
-    <th style="text-align:left" scope="col">
-        Targeting method
-      </th>
-    <th style="text-align:left" scope="col">
-        What goes in the ```<strong>Target</strong>``` column
-      </th>
-    <th style="text-align:left" scope="col">
-        Bid adj. range
-      </th>
-    <th style="text-align:left" scope="col">
-        Other relevant columns
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Location Criterion```
-      </th>
-    <td>
-        Area targeting 
-      </td>
-    <td>
-        Postal code or name of city, DMA, state, or country/region
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Sub Type</strong>```: ```City```, ```Metro Area```, ```Country```, ```State```, or ```Postal Code```
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Radius Criterion```
-      </th>
-    <td>
-        Radius targeting
-      </td>
-    <td>
-        Leave ```<strong>Target</strong>``` blank for radius targeting
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-		```<strong>Name</strong>```: The postal code, city, etc. you are pinpointing  
-		```<strong>Radius</strong>```: The number of units around the point to include  
-		```<strong>Unit</strong>```: ```Miles``` or ```Kilometers```
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Location Intent Criterion```
-      </th>
-    <td>
-        Physical location targeting
-      </td>
-    <td>
-        ```PeopleInOrSearchingForOrViewingPages```, ```PeopleSearchingForOrViewingPages```, or ```PeopleIn```
-      </td>
-    <td>
-        Not applicable
-      </td>
-    <td>
-		None
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Age Criterion```
-      </th>
-    <td>
-        Age targeting
-      </td>
-    <td>
-        ```EighteenToTwentyFour```, ```TwentyFiveToThirtyFour```, ```ThirtyFiveToFortyNine```, ```FiftyToSixtyFour```, or ```SixtyFiveAndAbove```
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        None
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign DayTime Criterion```
-      </th>
-    <td>
-        Ad scheduling
-      </td>
-    <td>
-        ```Monday```, ```Tuesday```, ```Wednesday```, ```Thursday```, ```Friday```, ```Saturday```, or ```Sunday```
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-		```<strong>From Hour</strong>```: The hour of the day (in 24-hour time) for the start time 
-		```<strong>From Minute</strong>```: The minute of the ```From Hour``` for the start time  
-		```<strong>To Hour</strong>```: The hour of the day (in 24-hour time) for the end time  
-		```<strong>To Minute</strong>```: The minute of the ```To Hour``` for the end time  
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign Gender Criterion```
-      </th>
-    <td>
-        Gender targeting
-      </td>
-    <td>
-        ```Male``` or ```Female```
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        None
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        ```Campaign DeviceOS Criterion```
-      </th>
-    <td>
-        Device targeting
-      </td>
-    <td>
-        ```Computers```, ```Smartphones```, or ```Tablets```
-      </td>
-    <td>
-        -100 to +900
-      </td>
-    <td>
-        None
-      </td>
-  </tr>
-</table>
+|```Type```|Targeting method|What goes in the ```**Target**``` column|Bid adj. range|Other relevant columns|
+|---|---|---|---|---|
+|```Campaign Location Criterion```|Area targeting|Postal code or name of city, DMA, state, or country/region|-90 to +900|```**Sub Type**```: ```City```, ```Metro Area```, ```Country```, ```State```, or ```Postal Code```|
+|```Campaign Radius Criterion```|Radius targeting|Leave ```**Target**``` blank for radius targeting|-90 to +900|```**Name**```: The postal code, city, etc. you are pinpointing  		```**Radius**```: The number of units around the point to include  		```**Unit**```: ```Miles``` or ```Kilometers```|
+|```Campaign Location Intent Criterion```|Physical location targeting|```PeopleInOrSearchingForOrViewingPages```, ```PeopleSearchingForOrViewingPages```, or ```PeopleIn```|Not applicable|None|
+|```Campaign Age Criterion```|Age targeting|```EighteenToTwentyFour```, ```TwentyFiveToThirtyFour```, ```ThirtyFiveToFortyNine```, ```FiftyToSixtyFour```, or ```SixtyFiveAndAbove```|-90 to +900|None|
+|```Campaign DayTime Criterion```|Ad scheduling|```Monday```, ```Tuesday```, ```Wednesday```, ```Thursday```, ```Friday```, ```Saturday```, or ```Sunday```|-90 to +900|```**From Hour**```: The hour of the day (in 24-hour time) for the start time 		```**From Minute**```: The minute of the ```From Hour``` for the start time  		```**To Hour**```: The hour of the day (in 24-hour time) for the end time  		```**To Minute**```: The minute of the ```To Hour``` for the end time  |
+|```Campaign Gender Criterion```|Gender targeting|```Male``` or ```Female```|-90 to +900|None|
+|```Campaign DeviceOS Criterion```|Device targeting|```Computers```, ```Smartphones```, or ```Tablets```|-100 to +900|None|
 
 > [!IMPORTANT]
 > Leaving a new target's ```**ID**``` column blank (or entering a unique number) will overwrite any existing targeting you have set up for this campaign. To avoid this, use the same ID number as your existing targets.
@@ -580,195 +220,18 @@ Audience targeting allows you show ads only to relevant users. Here is how you c
 > [!IMPORTANT]
 > Not everyone has the ability to associate audiences at the campaign level yet.
 
-<table>
-  <tr>
-    <th style="text-align:left" scope="col">
-        ```Association type```
-      </th>
-    <th style="text-align:left" scope="col">
-        Audience category
-      </th>
-    <th style="text-align:left" scope="col">
-        What goes in the ```<strong>Audience ID</strong>``` column
-      </th>
-    <th style="text-align:left" scope="col">
-        Bid adjustment range
-      </th>
-    <th style="text-align:left" scope="col">
-        Other relevant columns
-      </th>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Remarketing List Association
-      </th>
-    <td>
-        Remarketing list
-      </td>
-    <td>
-        ID of the remarketing list  
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the remarketing list
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Custom Audience Association
-      </th>
-    <td>
-        Custom audience
-      </td>
-    <td>
-        ID of the custom audience  
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the custom audience
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Dynamic Remarketing List Association
-      </th>
-    <td>
-        Dynamic remarketing list
-      </td>
-    <td>
-        ID of the dynamic remarketing list  
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the dynamic remarketing list
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign In Market Audience Association
-      </th>
-    <td>
-        In-market audience
-      </td>
-    <td>
-        ID of the in-market audience  
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the in-market audience
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Similar Remarketing List Association
-      </th>
-    <td>
-        Similar to remarketing list
-      </td>
-    <td>
-        ID of the similar to remarketing list  
-      </td>
-    <td>
-        -90 to +900
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the similar to remarketing list
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Negative Remarketing List Association
-      </th>
-    <td>
-        Remarketing list
-      </td>
-    <td>
-        ID of the remarketing list  
-      </td>
-    <td>
-        Not applicable (this an exclusion) 
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the remarketing list
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Negative Custom Audience Association
-      </th>
-    <td>
-        Custom audience
-      </td>
-    <td>
-        ID of the custom audience  
-      </td>
-    <td>
-        Not applicable (this an exclusion) 
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the custom audience
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Negative Dynamic Remarketing List Association
-      </th>
-    <td>
-        Dynamic remarketing list
-      </td>
-    <td>
-        ID of the dynamic remarketing list  
-      </td>
-    <td>
-        Not applicable (this an exclusion) 
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the dynamic remarketing list
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Negative In Market Audience Association
-      </th>
-    <td>
-        In-market audience
-      </td>
-    <td>
-        ID of the in-market audience  
-      </td>
-    <td>
-        Not applicable (this an exclusion) 
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the in-market audience
-      </td>
-  </tr>
-  <tr>
-    <th style="background: transparent" scope="row">
-        Ad Group/Campaign Negative Similar Remarketing List Association
-      </th>
-    <td>
-        Similar to remarketing list
-      </td>
-    <td>
-        ID of the similar to remarketing list  
-      </td>
-    <td>
-        Not applicable (this an exclusion) 
-      </td>
-    <td>
-        ```<strong>Audience</strong>```: name of the similar to remarketing list
-      </td>
-  </tr>
-</table>
+|```Association type```|Audience category|What goes in the ```**Audience ID**``` column|Bid adjustment range|Other relevant columns|
+|---|---|---|---|---|
+|Ad Group/Campaign Remarketing List Association|Remarketing list|ID of the remarketing list|-90 to +900|```**Audience**```: name of the remarketing list|
+|Ad Group/Campaign Custom Audience Association|Custom audience|ID of the custom audience|-90 to +900|```**Audience**```: name of the custom audience|
+|Ad Group/Campaign Dynamic Remarketing List Association|Dynamic remarketing list|ID of the dynamic remarketing list|-90 to +900|```**Audience**```: name of the dynamic remarketing list|
+|Ad Group/Campaign In Market Audience Association|In-market audience|ID of the in-market audience|-90 to +900|```**Audience**```: name of the in-market audience|
+|Ad Group/Campaign Similar Remarketing List Association|Similar to remarketing list|ID of the similar to remarketing list|-90 to +900|```**Audience**```: name of the similar to remarketing list|
+|Ad Group/Campaign Negative Remarketing List Association|Remarketing list|ID of the remarketing list|Not applicable (this an exclusion)|```**Audience**```: name of the remarketing list|
+|Ad Group/Campaign Negative Custom Audience Association|Custom audience|ID of the custom audience|Not applicable (this an exclusion)|```**Audience**```: name of the custom audience|
+|Ad Group/Campaign Negative Dynamic Remarketing List Association|Dynamic remarketing list|ID of the dynamic remarketing list|Not applicable (this an exclusion)|```**Audience**```: name of the dynamic remarketing list|
+|Ad Group/Campaign Negative In Market Audience Association|In-market audience|ID of the in-market audience|Not applicable (this an exclusion)|```**Audience**```: name of the in-market audience|
+|Ad Group/Campaign Negative Similar Remarketing List Association|Similar to remarketing list|ID of the similar to remarketing list|Not applicable (this an exclusion)|```**Audience**```: name of the similar to remarketing list|
 
 ## Adjusting bids for Microsoft Audience Ads through bulk upload
 Participation level in [Microsoft Audience Ads](./hlp_BA_CONC_NativeAds.md) is set by a bid adjustment at the campaign or ad group level. To adjust your audience ad bid through bulk upload:
@@ -785,51 +248,51 @@ Microsoft Shopping Campaigns make it easier for you to advertise your products f
 To create a Microsoft Shopping Campaign through bulk upload, you'll need to add a row for:
 
 - A new campaign, making sure to:
-  1. In the ```**Type**``` column, enter *```Campaign```*.
-  1. In the ```**Parent ID**``` column, enter the ID of this campaign's account.
-  1. In the ```**Campaign**``` column, enter a unique name for this shopping campaign.
-  1. In the ```**Time Zone**``` column, enter the time zone of your business or campaign target. See [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=760641) for a list of possible time zone values.
-  1. In the ```**Budget**``` column, enter the amount you want to spend per day on this campaign.
-  1. In the ```**Budget Type**``` column, enter ```*DailyBudget*```.
-  1. In the ```**Campaign Type**``` column, enter *```Shopping```*.
-  1. In the ```**Priority**``` column, enter 0, 1, or 2. This setting helps determine which Microsoft Shopping Campaign serves ads in the event that two or more campaigns use the catalog feed from the same Microsoft Merchant Center store. The higher numbers are given higher priority.
-  1. In the ```**COUNTRY_CODE**``` column, enter the country code that corresponds to the country/region you selected when setting up your Microsoft Merchant Center store. The following country codes are currently supported: ```AU``` (Australia), ```GB``` (United Kingdom), ```DE``` (Germany), ```FR``` (France), and ```US``` (United States).
-  1. In the ```**Store ID**``` column, enter your Microsoft Merchant Center store's ID.
+   1. In the ```**Type**``` column, enter *```Campaign```*.
+   1. In the ```**Parent ID**``` column, enter the ID of this campaign's account.
+   1. In the ```**Campaign**``` column, enter a unique name for this shopping campaign.
+   1. In the ```**Time Zone**``` column, enter the time zone of your business or campaign target. See [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=760641) for a list of possible time zone values.
+   1. In the ```**Budget**``` column, enter the amount you want to spend per day on this campaign.
+   1. In the ```**Budget Type**``` column, enter ```*DailyBudget*```.
+   1. In the ```**Campaign Type**``` column, enter *```Shopping```*.
+   1. In the ```**Priority**``` column, enter 0, 1, or 2. This setting helps determine which Microsoft Shopping Campaign serves ads in the event that two or more campaigns use the catalog feed from the same Microsoft Merchant Center store. The higher numbers are given higher priority.
+   1. In the ```**COUNTRY_CODE**``` column, enter the country code that corresponds to the country/region you selected when setting up your Microsoft Merchant Center store. The following country codes are currently supported: ```AU``` (Australia), ```GB``` (United Kingdom), ```DE``` (Germany), ```FR``` (France), and ```US``` (United States).
+   1. In the ```**Store ID**``` column, enter your Microsoft Merchant Center store's ID.
 
 - A new ad group, making sure to:
-  1. In the ```**Type**``` column, enter *```Ad Group```*.
-  1. In the ```**Parent ID**``` column, enter the ID of this ad group's campaign.
-  1. In the ```**Campaign**``` column, enter the name of your shopping campaign.
-  1. In the ```**Ad Group**``` column, enter a unique name for this ad group.
-  1. In the ```**Pricing Model**``` column, enter either *```CPC```* (cost per click) or *```CPM```* (cost per thousand impressions).
-  1. In the ```**Search Network**``` column, enter *```On```*.
-  1. In the ```**Content Network**``` column, enter *```Off```*.
-  1. In the ```**Language**``` column, enter a language code that corresponds to the country/region of your Microsoft Merchant Center store and your campaign's ```COUNTRY_CODE``` setting. See [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=760642) for a list of possible language codes.
+   1. In the ```**Type**``` column, enter *```Ad Group```*.
+   1. In the ```**Parent ID**``` column, enter the ID of this ad group's campaign.
+   1. In the ```**Campaign**``` column, enter the name of your shopping campaign.
+   1. In the ```**Ad Group**``` column, enter a unique name for this ad group.
+   1. In the ```**Pricing Model**``` column, enter either *```CPC```* (cost per click) or *```CPM```* (cost per thousand impressions).
+   1. In the ```**Search Network**``` column, enter *```On```*.
+   1. In the ```**Content Network**``` column, enter *```Off```*.
+   1. In the ```**Language**``` column, enter a language code that corresponds to the country/region of your Microsoft Merchant Center store and your campaign's ```COUNTRY_CODE``` setting. See [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=760642) for a list of possible language codes.
 
 - One or more ```Ad Group Product Partitions```.
 > [!NOTE]
 > An ```Ad Group Product Partition``` is part of what is referred to elsewhere in Microsoft Advertising as a "product group." There is a one-to-one relationship between ad groups and product groups. If you were creating a product group in Microsoft Advertising, you would divide it into different levels based on attributes (see [Understand and use product groups](./hlp_BA_CONC_BSC_AboutProductGroups.md) for more information). These divisions are referred to as ```Ad Group Product Partitions``` in bulk upload.
 
-  - In the ```**Type**``` column, enter *```Ad Group Product Partition```*.
-  - For the root ```Ad Group Product Partition``` of your product partition group tree structure:
-    1. In the ```**ID**``` column, enter a unique negative number (this is a negative reference key, as discussed above).
-    1. Assuming you are creating sub-partitions for this ```Ad Group Product Partition```, in the ```**Sub Type**``` column, enter *```Subdivision```* (if you are not subdividing this ```Ad Group Product Partition```, enter *```Unit```*). Note: A ```Subdivision``` must contain at least two ```Units```.
-    1. In the ```**Ad Group**``` column, enter the name of your ad group.
-    1. For a ```Subdivision```:
-      1. In the ```**Product Condition 1**``` column, enter *```All```*.
-      1. Make sure the ```**Product Value 1**``` column is blank.
-      1. Make sure the ```**Parent Criterion ID**``` column is blank.
+   - In the ```**Type**``` column, enter *```Ad Group Product Partition```*.
+   - For the root ```Ad Group Product Partition``` of your product partition group tree structure:
+      1. In the ```**ID**``` column, enter a unique negative number (this is a negative reference key, as discussed above).
+      1. Assuming you are creating sub-partitions for this ```Ad Group Product Partition```, in the ```**Sub Type**``` column, enter *```Subdivision```* (if you are not subdividing this ```Ad Group Product Partition```, enter *```Unit```*). Note: A ```Subdivision``` must contain at least two ```Units```.
+      1. In the ```**Ad Group**``` column, enter the name of your ad group.
+      1. For a ```Subdivision```:
+         1. In the ```**Product Condition 1**``` column, enter *```All```*.
+         1. Make sure the ```**Product Value 1**``` column is blank.
+         1. Make sure the ```**Parent Criterion ID**``` column is blank.
 
-    1. For a ```Unit```:
-      1. Use the product condition and product value columns to identify how to branch your shopping campaign. These columns refer to the optional fields you [set up in your catalog feed file](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md), such as brand, condition, product category, product type, and custom label. See the "Product Categories" list in [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=733672) for more information. Note: Always start with ```Product Condition 1``` and ```Product Value 1``` and go deeper (to 2, 3, 4, etc.) as necessary.
-      1. In the ```**Parent Criterion ID**``` column, enter the same negative number as the ```Subdivision``` of this ```Unit```.
+      1. For a ```Unit```:
+         1. Use the product condition and product value columns to identify how to branch your shopping campaign. These columns refer to the optional fields you [set up in your catalog feed file](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md), such as brand, condition, product category, product type, and custom label. See the "Product Categories" list in [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=733672) for more information. Note: Always start with ```Product Condition 1``` and ```Product Value 1``` and go deeper (to 2, 3, 4, etc.) as necessary.
+         1. In the ```**Parent Criterion ID**``` column, enter the same negative number as the ```Subdivision``` of this ```Unit```.
 
-  - You can subdivide an ```Ad Group Product Partition``` up to seven levels deep.
-    - For each sub-partition row, enter the root partition's ID number in the ```**Parent Criterion ID**``` column.
-    - Each branch of the structure must end with an ```Ad Group Product Partition``` with "```Unit```" in the ```**Sub Type**``` column
-    - Every "```Unit```" ```Ad Group Product Partition``` must have a bid (a value in the ```**Bid**``` column), unless it has "```TRUE```" in its ```**Is Excluded**``` column.
+   - You can subdivide an ```Ad Group Product Partition``` up to seven levels deep.
+      - For each sub-partition row, enter the root partition's ID number in the ```**Parent Criterion ID**``` column.
+      - Each branch of the structure must end with an ```Ad Group Product Partition``` with "```Unit```" in the ```**Sub Type**``` column
+      - Every "```Unit```" ```Ad Group Product Partition``` must have a bid (a value in the ```**Bid**``` column), unless it has "```TRUE```" in its ```**Is Excluded**``` column.
 
-  - For more technical information on setting up ```Ad Group Product Partitions``` (and Microsoft Shopping Campaigns"> in general), see [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=733672).
+   - For more technical information on setting up ```Ad Group Product Partitions``` (and Microsoft Shopping Campaigns"> in general), see [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=733672).
 > 
 > [!IMPORTANT]
 > You can't add product ads themselves using bulk upload. After you upload your new Microsoft Shopping Campaign, you will need to edit it in Microsoft Advertising to add product ads.
@@ -843,13 +306,14 @@ You can get more accurate conversion tracking data by adding the Microsoft Click
 > [!NOTE]
 > This setting is not supported through download. In a downloaded spreadsheet, you will see an empty cell in the ```**MSCLKID Auto Tagging Enabled**``` column even if this setting has been enabled.
 
+ 
 ## Preparing your spreadsheet for uploading
 
 Once you have made all your changes, you are ready to upload your spreadsheet. Keep in mind a few things:
 
 - When you save your spreadsheet, make sure you:
-  - Select **Unicode Text** for **Save as type**.
-  - Use quotation marks around the name you give your file, and include ".csv" at the end (as in, "YourFileName.csv"). The quotation marks will not appear in your final file name — they are there to prevent Excel from adding ".txt" to the file name.
+   - Select **Unicode Text** for **Save as type**.
+   - Use quotation marks around the name you give your file, and include ".csv" at the end (as in, "YourFileName.csv"). The quotation marks will not appear in your final file name — they are there to prevent Excel from adding ".txt" to the file name.
 
 - The file size cannot be greater than 100 MB or have more than 4 million rows.
 - The data must not exceed the limits defined in [this article](./hlp_BA_CONC_ImportWhatInfo.md).

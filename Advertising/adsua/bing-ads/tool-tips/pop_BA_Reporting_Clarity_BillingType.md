@@ -9,6 +9,6 @@ ms.author: eur
 
 # Billing type
 
-**What it is: **    The billing method for the account, such as invoice or credit card.
+**What it is:**     The billing method for the account, such as invoice or credit card.
 
 

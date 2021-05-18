@@ -192,4 +192,5 @@ More videos to help you get started
                   Understanding quality scores and their impact
                 </bing_video>
 
+![New to?](../images/BA_VideosHeroPhoto.jpg)  ![New to?](../images/BA_VideoHero.gif)  ![New to?](../images/BA_VideoHero.png)  ![New to?](../images/BA_icon_edit_white.png)  ![New to?](../images/BA_VideoHero2020.png)  ![New to?](../images/BA_VideoHero.gif)
 

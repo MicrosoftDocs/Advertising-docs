@@ -11,6 +11,7 @@ ms.author: eur
 
 You can use a different credit card, debit card, or other payment method to pay your account charges at any time.
 
+[!INCLUDE [Redesign](./includes/Redesign.md)]
 1. [!INCLUDE [ClickBilling](./includes/ClickBilling.md)]
 1. Click **Payment Methods** from the main menu.
 1. [!INCLUDE [SelectAccount_VR](./includes/SelectAccount_VR.md)]

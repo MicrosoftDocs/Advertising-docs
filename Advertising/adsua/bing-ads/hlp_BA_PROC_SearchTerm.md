@@ -19,53 +19,16 @@ A search term is the word or phrase that customers enter when searching on Bing,
 
 You can get a list of search terms in three places in Microsoft Advertising. Each place shows the data a bit differently.
 
-<table>
-  <tr>
-    <th scope="col">
-        Where: Keywords tab (or from the main menu on the far left, click All campaigns, and then click &gt;Keywords).
-      </th>
-  </tr>
-  <tr>
-    <td><strong>How</strong>: Select one or more keywords, click <strong>Details</strong> and then click <strong>Search Terms</strong>.</td>
-  </tr>
-  <tr>
-    <td>
-      <strong>What you see</strong>: A list of search terms that have had a significant number of clicks in the last 30 days and the <strong>Other search terms</strong> row, which shows metrics for all search terms that had impressions but didn't have significant clicks in the last 30 days.
-    </td>
-  </tr>
-  <tr>
-    <th scope="col">
-        Where: Dimensions tab (or from the global menu at the top of the page, click Reports &gt; Dimensions&gt; Basic &gt; Search Terms).
-      </th>
-  </tr>
-  <tr>
-    <td>
-        <strong>How</strong>: On the <strong>Show</strong> menu, select <strong>Search terms</strong>.
-      </td>
-  </tr>
-  <tr>
-    <td>
-        <strong>What you see</strong>: A list of search terms that have had a significant number of clicks in the last 30 days. This list is different than the Keywords tab because it doesn't have the <strong>Other search terms</strong> row.
-      </td>
-  </tr>
-  <tr>
-    <th scope="col">
-        Where: Search term report (or from the global menu at the top of the page, click Reports &gt; Reports &gt; Performance &gt; Search terms).
-      </th>
-  </tr>
-  <tr>
-    <td>
-        <strong>How</strong>: On the <strong>Reports</strong> page in the left panel, select <strong>Search terms</strong> and then run the report.
-      </td>
-  </tr>
-  <tr>
-    <td>
-        <strong>What you see</strong>: A list of search terms that have had a significant number of clicks in the last 30 days. This list is different than the Keywords tab because it doesn't have the <strong>Other search terms</strong> row.
->         
-		<para>Be aware that the search term report will have fewer impressions than the keywords report and the keywords tab because the search term report doesn't include the <strong>Other search terms</strong> data. The keyword tab and keywords report include all impressions.
-    </para></td>
-  </tr>
-</table>
+|Where: Keywords tab (or from the main menu on the far left, click All campaigns, and then click >Keywords).|
+|---|
+|**How** : Select one or more keywords, click **Details** and then click **Search Terms**.|
+|**What you see** : A list of search terms that have had a significant number of clicks in the last 30 days and the **Other search terms** row, which shows metrics for all search terms that had impressions but didn't have significant clicks in the last 30 days.|
+|Where: Dimensions tab (or from the global menu at the top of the page, click Reports > Dimensions> Basic > Search Terms).|
+|**How** : On the **Show** menu, select **Search terms**.|
+|**What you see** : A list of search terms that have had a significant number of clicks in the last 30 days. This list is different than the Keywords tab because it doesn't have the **Other search terms** row.|
+|Where: Search term report (or from the global menu at the top of the page, click Reports > Reports > Performance > Search terms).|
+|**How** : On the **Reports** page in the left panel, select **Search terms** and then run the report.|
+|**What you see** : A list of search terms that have had a significant number of clicks in the last 30 days. This list is different than the Keywords tab because it doesn't have the **Other search terms** row.Be aware that the search term report will have fewer impressions than the keywords report and the keywords tab because the search term report doesn't include the **Other search terms** data. The keyword tab and keywords report include all impressions.|
 
 ## Add search terms to your keyword or negative keyword list
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Display URL
 
-**What it is**: The URL customers will see in your ad.
+**What it is** : The URL customers will see in your ad.
 
 

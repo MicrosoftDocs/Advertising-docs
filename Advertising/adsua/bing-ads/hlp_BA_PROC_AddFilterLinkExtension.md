@@ -21,16 +21,16 @@ Filter Link Extensions operate nearly the same as Structured Snippet Extensions.
 
 Clicks on each link within the Filter Link Extension will be charged the same cost-per-click (CPC) as on the ad headline.
 
-**Ability to set up in:** All Bing markets
+**Ability to set up in:**  All Bing markets
 
-**Serves in**: All Bing markets, except China.
+**Serves in** : All Bing markets, except China.
 
 ## Get to know Filter Link Extensions
 
 Here are some things to consider before you build your Filter Link Extension:
 
-- **Header**: The category that describes the filters for your products and services that you would like to highlight. You can choose from 36 predefined header options. Here you can [download](https://go.microsoft.com/fwlink?LinkId=2153937) a list of the headers.
-- **Value**: Between 3 and 10 specific products or services that relate to the chosen header. Each value has a maximum character limit of 25. A minimum of 3 values must be entered, with a maximum of 10 supported. For each value you need to set the Final URL or landing page where customers will be taken after clicking your header.
+- **Header** : The category that describes the filters for your products and services that you would like to highlight. You can choose from 36 predefined header options. Here you can [download](https://go.microsoft.com/fwlink?LinkId=2153937) a list of the headers.
+- **Value** : Between 3 and 10 specific products or services that relate to the chosen header. Each value has a maximum character limit of 25. A minimum of 3 values must be entered, with a maximum of 10 supported. For each value you need to set the Final URL or landing page where customers will be taken after clicking your header.
 
 > [!NOTE]
 > The number of values appearing after a header is dependent on ad space limits (PC vs mobile). Therefore, we recommend you use succinct header and value text to accommodate as many values as possible.
@@ -40,6 +40,7 @@ Filter Link Extensions can serve with other ad extensions and they can be create
 
 Standard ad extension reports are available. Filter Link Extensions are reported at the header level, not at the individual value level.
 
+[!INCLUDE [CompareCallFilterSnippets](./includes/CompareCallFilterSnippets.md)]
 ## Get started with Filter Link Extensions
 
 Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page for instructions to:

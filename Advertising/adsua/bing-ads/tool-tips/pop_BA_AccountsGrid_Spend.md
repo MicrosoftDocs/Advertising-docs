@@ -9,9 +9,9 @@ ms.author: eur
 
 # Spend
 
-**What it is: **    The total spend for all campaigns in an account.
+**What it is:**     The total spend for all campaigns in an account.
 
-**What you need to know: **
+**What you need to know:**
 
 - The overall total, at the bottom of this page, includes spend for all accounts, even those that might appear on other pages.
 - Filtering affects the overall total spend.

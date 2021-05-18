@@ -9,8 +9,8 @@ ms.author: eur
 
 # Location targets
 
-**What it is:**    This is the part of the world you are targeting.
+**What it is:**     This is the part of the world you are targeting.
 
-**What you need to know:**   At least one location target is required. Adding location targets increases the estimated number of people your ads are shown to. You cannot exclude specific locations.
+**What you need to know:**    At least one location target is required. Adding location targets increases the estimated number of people your ads are shown to. You cannot exclude specific locations.
 
 

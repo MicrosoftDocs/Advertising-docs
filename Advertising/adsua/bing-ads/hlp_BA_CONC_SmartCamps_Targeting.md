@@ -15,7 +15,7 @@ ms.author: eur
 When you [create a smart campaign](./hlp_BA_CONC_SmartCamps_Intro.md), you give us several important pieces of information about your business:
 
 - Your business category
-- The products or services you want to advertise
+- The keyword themes you want to advertise
 - The language you want to advertise in
 - The geographic locations you want your ads to run in
 
@@ -29,20 +29,20 @@ These are critical factors in the success of an ad campaign! As you [monitor you
 
 ## Editing your business category, products, services, or language
 1. From the **All Campaigns** page, click **Campaign details** for the campaign you want to edit.
-1. Click **Edit products or services**.
+1. Click **Edit keyword themes**.
 1. Update your settings.
-As you add products or services, pay attention to the **Estimated number of potential customers** window on the right. This shows you how many people we estimate will search on the Microsoft Search Network for these products or services (within the locations you are targeting) each month.
+As you add keyword themes, pay attention to the **Estimated number of potential customers** window on the right. This shows you how many people we estimate will search on the Microsoft Search Network for these keyword themes (within the locations you are targeting) each month.
 
 1. Click **Save**.
 
 > [!NOTE]
-> We will suggest some products or services based on your website and the business category you've selected. We recommend adding any variation that is relevant to what you're advertising to maximize your campaign's reach.
+> We will suggest some keyword themes based on your website and the business category you've selected. We recommend adding any variation that is relevant to what you're advertising to maximize your campaign's reach.
 
 ## Editing the geographic location you want to advertise in
 1. From the **All Campaigns** page, click **Campaign details** for the campaign you want to edit.
 1. Click **Edit locations**.
 1. Update your settings.
-As you adjust the radius or add locations, pay attention to the **Estimated number of potential customers** window on the right. This shows you how many people we estimate will search for your products or services within these locations on the Microsoft Search Network each month.
+As you adjust the radius or add locations, pay attention to the **Estimated number of potential customers** window on the right. This shows you how many people we estimate will search for your keyword themes within these locations on the Microsoft Search Network each month.
 
 1. Click **Save**.
 

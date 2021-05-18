@@ -9,6 +9,6 @@ ms.author: eur
 
 # Maximum value
 
-**What it is:** The maximum amount of the cost per click you’re willing to pay.
+**What it is:**  The maximum amount of the cost per click you’re willing to pay.
 
 

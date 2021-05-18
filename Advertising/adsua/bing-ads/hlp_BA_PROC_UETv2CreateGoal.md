@@ -63,16 +63,16 @@ You create a conversion goal to track actions people take on your website after 
             Microsoft Advertising allows you to report custom events (such as downloading white papers, subscribing to newsletters etc) from UET and then choose a subset of those custom events to count as conversions. To learn more, see [How to track custom events with UET](./hlp_BA_CONC_UETv2CustomEvent.md) In short, Microsoft Advertising requires that you report values for one or more of the following custom parameters when custom events happen and create custom event type goals specifying which values for these custom parameters would qualify the custom event as a conversion:
           </para>
       <para>
-            <strong>Event category:</strong> The category of event you want to track. For example, 'video
+            <strong>Event category:</strong>  The category of event you want to track. For example, 'video
           </para>
       <para>
-            <strong>Event action:</strong> The type of user interaction you want to track. For example, 'play' or 'pause' etc
+            <strong>Event action:</strong>  The type of user interaction you want to track. For example, 'play' or 'pause' etc
           </para>
       <para>
-            <strong>Event label:</strong> The name of the element that caused the action. For example, 'trailer' or  'behindthescenes' etc
+            <strong>Event label:</strong>  The name of the element that caused the action. For example, 'trailer' or  'behindthescenes' etc
           </para>
       <para>
-            <strong>Event value:</strong> A numerical value associated with that event. Could be length of the video played etc.
+            <strong>Event value:</strong>  A numerical value associated with that event. Could be length of the video played etc.
           </para>
     </td>
   </tr>
@@ -130,6 +130,7 @@ You create a conversion goal to track actions people take on your website after 
 > To see the complete list of currencies available for conversion goals, see [Conversion Goal Revenue Currencies](https://go.microsoft.com/fwlink?LinkId=834524).
 > Microsoft Advertising matches UET logs with strings defined in destination URL and custom event goals in a case insensitive way. For example, you can create a Destination URL goal type to track visits to your Thankyou.html page as conversions using the condition URL contains tHANKYOU.HTML
 
+ 
 ## Next steps
 
 - [Set up UET if you haven't already](./hlp_BA_CONC_UET_Setup_Master.md)

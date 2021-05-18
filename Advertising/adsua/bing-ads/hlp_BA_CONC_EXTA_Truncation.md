@@ -16,20 +16,10 @@ Below are the possible ways Microsoft Advertising may truncate ad titles, URLs, 
 ## Ad titles
 In these examples, the ad title is constructed like this:
 
-<table>
-  <tr>
-    <td>Ad title part 1:</td>
-    <td>All the Sports data you want</td>
-  </tr>
-  <tr>
-    <td>Ad title part 2:</td>
-    <td>Baseball, football, hoops, etc</td>
-  </tr>
-  <tr>
-    <td>Complete title:</td>
-    <td>All the Sports data you want - Baseball, football, hoops, etc</td>
-  </tr>
-</table>
+|Ad title part 1:|All the Sports data you want|
+|---|---|
+|Ad title part 2:|Baseball, football, hoops, etc|
+|Complete title:|All the Sports data you want - Baseball, football, hoops, etc|
 
 ## Possible ways of truncating an ad title:
 
@@ -39,24 +29,11 @@ In these examples, the ad title is constructed like this:
 ## URLs
 In these examples, the URL is constructed like this:
 
-<table>
-  <tr>
-    <td>Final URL:</td>
-    <td>www.ConsolidatedMessenger.com</td>
-  </tr>
-  <tr>
-    <td>Path 1:</td>
-    <td>Top4MajorSports</td>
-  </tr>
-  <tr>
-    <td>Path 2:</td>
-    <td>PerformanceData</td>
-  </tr>
-  <tr>
-    <td>Complete URL:</td>
-    <td>www.ConsolidatedMessenger.com/Top4MajorSports/PerformanceData</td>
-  </tr>
-</table>
+|Final URL:|www.ConsolidatedMessenger.com|
+|---|---|
+|Path 1:|Top4MajorSports|
+|Path 2:|PerformanceData|
+|Complete URL:|www.ConsolidatedMessenger.com/Top4MajorSports/PerformanceData|
 
 ## Possible ways of truncating a URL:
 
@@ -71,12 +48,8 @@ In these examples, the URL is constructed like this:
 
 In this example, the complete ad text is:
 
-<table>
-  <tr>
-    <td>Ad text:</td>
-    <td>Up-to-the-minute sports data at your fingertips! We crunch the numbers, you win!</td>
-  </tr>
-</table>
+|Ad text:|Up-to-the-minute sports data at your fingertips! We crunch the numbers, you win!|
+|---|---|
 
 ## Possible ways of truncating ad text:
 

@@ -14,9 +14,9 @@ ms.author: eur
 
 There are three places in Microsoft Advertising where conversion data can be viewed:
 
-**Conversion goals page**: You can see the conversions, revenue, and repeat rate metrics. You can change the date range in the upper right corner of the page to control the time period for the metrics. Click **Campaigns** at the top of the page, and then on the left pane, click **Conversion Tracking** and then **Conversion goals** (or from the global menu at the top of the page, click **Tools** and then **Conversion goals**).
+**Conversion goals page** : You can see the conversions, revenue, and repeat rate metrics. You can change the date range in the upper right corner of the page to control the time period for the metrics. Click **Campaigns** at the top of the page, and then on the left pane, click **Conversion Tracking** and then **Conversion goals** (or from the global menu at the top of the page, click **Tools** and then **Conversion goals**).
 
-**Campaigns**: The following conversion metrics can be added to the Campaigns, Ad groups, Ads, Keywords, and Ad extensions tables by clicking **Columns** and then **Modify columns**.
+**Campaigns** : The following conversion metrics can be added to the Campaigns, Ad groups, Ads, Keywords, and Ad extensions tables by clicking **Columns** and then **Modify columns**.
 
 - Conversions
 - Conversion rate\*
@@ -26,7 +26,7 @@ There are three places in Microsoft Advertising where conversion data can be vie
 
 **\*Conversion rate and CPA are calculated based on clicks that could lead to conversions. For example, clicks that happened after a conversion goal was enabled.**
 
-**Reports**. The following reports include conversion data:
+**Reports** . The following reports include conversion data:
 
 ## Conversions report
 Conversion related metrics you will see are Conversions, Conversion rate, CPA, Assists, Cost per assist, Revenue, Revenue per conversion, and Revenue per assist.

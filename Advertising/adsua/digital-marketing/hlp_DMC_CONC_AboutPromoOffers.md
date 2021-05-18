@@ -1,7 +1,7 @@
 ---
 title: Digital Marketing Center promotional offers (coupons)
 description: Everything you need to know about using promotional offers in Digital Marketing Center.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,6 +9,7 @@ ms.author: eur
 
 # Digital Marketing Center promotional offers (coupons)
 
+![Coupon](../images/BA_Conc_Coupon.svg)
 Digital Marketing Center occasionally runs promotional offers, sometimes called **coupons**. Typically geared for new customers, promotional offers can require you to spend money on your advertising campaigns first to get a credit toward advertising. Although you can't request a promotional offer, you can find them through Digital Marketing Center promotional events, online marketing drives, or other special offers.
 
 ## Requirements for a promotional offer
@@ -37,16 +38,16 @@ Digital Marketing Center occasionally runs promotional offers, sometimes called 
 > [!NOTE]
 > An offer can have one of the following of statuses:
 > 
-> **Active:** You successfully redeemed your promotional offer. It will be used for your ad spend up to the offer amount or until it reaches the expiration date, whichever comes first. Note: You can't have two active offers at the same time.
+> **Active:**  You successfully redeemed your promotional offer. It will be used for your ad spend up to the offer amount or until it reaches the expiration date, whichever comes first. Note: You can't have two active offers at the same time.
 > 
-> **Depleted:** You have used all your offer balance for ad spend.
+> **Depleted:**  You have used all your offer balance for ad spend.
 > 
-> **Expired:** The offer reached its expiration date, so it is no longer valid.
+> **Expired:**  The offer reached its expiration date, so it is no longer valid.
 > 
-> **Needs payment method:** To redeem your promotional offer, you must add a payment method. The status will switch to "Active" after you add a valid payment method, unless the offer has expired.
+> **Needs payment method:**  To redeem your promotional offer, you must add a payment method. The status will switch to "Active" after you add a valid payment method, unless the offer has expired.
 > 
-> **Pending:** If you have two valid offers, one offer will be pending (on hold), while the other is active. When the active offer is expired or depleted, the pending offer will become active unless it has expired.
+> **Pending:**  If you have two valid offers, one offer will be pending (on hold), while the other is active. When the active offer is expired or depleted, the pending offer will become active unless it has expired.
 > 
-> **Pending redemption:** If you were unable to redeem your promotional offer, it will show this status. To redeem your offer, click **Redeem now**.
+> **Pending redemption:**  If you were unable to redeem your promotional offer, it will show this status. To redeem your offer, click **Redeem now**.
 
 

@@ -9,9 +9,9 @@ ms.author: eur
 
 # Automatic item update
 
-**What it is:** When enabled, automatic item update automatically syncs your Microsoft Merchant Center feed with the microdata on your site. This setting helps reduce price and availability mismatches in your offers.
+**What it is:**  When enabled, automatic item update automatically syncs your Microsoft Merchant Center feed with the microdata on your site. This setting helps reduce price and availability mismatches in your offers.
 
-**What you need to know:** To keep your Microsoft Merchant Center offers current, automatic item update can automatically update your feed using your site microdata when your site has run out of stock. You can opt to automatically update:
+**What you need to know:**  To keep your Microsoft Merchant Center offers current, automatic item update can automatically update your feed using your site microdata when your site has run out of stock. You can opt to automatically update:
 - **Price only**
 - **Availability only**
 - **Price and availability**

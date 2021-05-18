@@ -9,6 +9,6 @@ ms.author: eur
 
 # Old value
 
-**What it is:**    This shows the previous value of a changed attribute.
+**What it is:**     This shows the previous value of a changed attribute.
 
 

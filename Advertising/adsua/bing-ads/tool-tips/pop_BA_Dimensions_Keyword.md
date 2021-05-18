@@ -9,8 +9,8 @@ ms.author: eur
 
 # Keyword
 
-**What it is:**    The words or phrases that customers searched on that triggered your ad.
+**What it is:**     The words or phrases that customers searched on that triggered your ad.
 
-**Why it’s important:**    Use this column to sort keyword specific information together in your report.
+**Why it’s important:**     Use this column to sort keyword specific information together in your report.
 
 

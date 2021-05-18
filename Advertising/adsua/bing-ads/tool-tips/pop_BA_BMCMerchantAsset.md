@@ -9,6 +9,6 @@ ms.author: eur
 
 # Merchant asset
 
-**What it is:** The merchant asset is an icon, badge, or symbol that clearly identifies the offering.
+**What it is:**  The merchant asset is an icon, badge, or symbol that clearly identifies the offering.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product group ID
 
-**What it is:**    The unique ID for each product group in your catalog.
+**What it is:**     The unique ID for each product group in your catalog.
 
 

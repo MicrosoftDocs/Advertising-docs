@@ -1,7 +1,7 @@
 ---
 title: I'm having trouble adding a credit card or debit card
 description: Adding credit cards and debit cards to Digital Marketing Center is easy and safe, but if you run into problems, take a look at this article for troubleshooting tips.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,7 @@ ms.author: eur
 
 Adding credit cards and debit cards to Digital Marketing Center is easy and safe, but if you run into problems, take a look at the tips below.
 
+ 
 ## The credit card was added but was not set as your primary payment method for this account.
 Follow these steps to set a credit or debit card as your primary payment method:
 
@@ -51,6 +52,7 @@ In any of these situations, you'll need to contact your credit card company.
 ## Multi-factor authentication was required, but has failed.
 Your bank might require multi-factor authentication to help prevent online fraud and unauthorized access to your account. If the one-time passcode didn't work, try resending the code or adding the card again. If this doesn't resolve the issue, please contact your bank to validate your information. Learn more about [Payment Services Directive 2 and Strong Customer Authentication](https://go.microsoft.com/fwlink?LinkId=2104266).
 
+ 
 If after you've reviewed these tips, addressed any problems, and your account still has errors, please [contact support](./hlp_DMC_Support.md).
 
 

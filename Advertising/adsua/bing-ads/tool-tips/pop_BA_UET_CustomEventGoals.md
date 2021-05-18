@@ -17,13 +17,13 @@ To record an event goal, you must write a snippet of JavaScript code (separate f
 
 **At least one** of the four values below must be defined for event goals to work:
 
-**Category: **  The object you want to track (e.g., a button).
+**Category:**   The object you want to track (e.g., a button).
 
-**Action: **  The type of interaction the user takes with the object (e.g., clicks).
+**Action:**   The type of interaction the user takes with the object (e.g., clicks).
 
-**Label: **  Your comments about the event (e.g., "This is the purchase button").
+**Label:**   Your comments about the event (e.g., "This is the purchase button").
 
-**Value: **  Values must be non-negative and are useful for tracking counts(e.g., A video is paused four times).
+**Value:**   Values must be non-negative and are useful for tracking counts(e.g., A video is paused four times).
 
 **Get more info: **    [Why track custom events](../hlp_BA_PROC_UETv2TrackCustomEvent.md)
 

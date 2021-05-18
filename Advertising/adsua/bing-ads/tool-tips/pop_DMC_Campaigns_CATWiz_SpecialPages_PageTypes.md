@@ -9,7 +9,7 @@ ms.author: eur
 
 # Suggested page types
 
-**What it is:** Page types you may have on your website to help you identify your special pages.
+**What it is:**  Page types you may have on your website to help you identify your special pages.
 
 **What you need to know:**
 - In the next step, you can add a single page with a specific URL, or a group of pages that either contain a phrase in the URL or begin with a URL on your domain.

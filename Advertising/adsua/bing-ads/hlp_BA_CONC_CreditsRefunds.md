@@ -45,68 +45,13 @@ If your account is deactivated and we determine a transaction is refund eligible
 
 If you paid using SEPA Direct Debit, check, or wire transfer, please see "Refunds via SEPA Direct Debit, check, or wire transfer" for special instructions.​
 
-<table>
-  <tr>
-    <th scope="col" style="width:160px">Your payment method</th>
-    <th scope="col" style="width:160px">How you will receive your refund</th>
-    <th scope="col" style="width:160px">Estimated time to receive your refund after processing*</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-							Credit or debit card
-						</th>
-    <td>
-							Credit or debit card
-						</td>
-    <td>
-							1-2 business days
-						</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-							PayPal
-						</th>
-    <td>
-							PayPal
-						</td>
-    <td>
-							1-2 business days
-						</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-							Check
-						</th>
-    <td>
-							Check
-						</td>
-    <td>
-							4-6 weeks
-						</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-							Bank/wire transfer
-						</th>
-    <td>
-							Bank/wire transfer
-						</td>
-    <td>
-							10 business days
-						</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-							Boleto Bancario (Brazilian real only)
-						</th>
-    <td>
-							Wire transfer
-						</td>
-    <td>
-							10 business days
-						</td>
-  </tr>
-</table>
+|Your payment method|How you will receive your refund|Estimated time to receive your refund after processing\*|
+|---|---|---|
+|Credit or debit card|Credit or debit card|1-2 business days|
+|PayPal|PayPal|1-2 business days|
+|Check|Check|4-6 weeks|
+|Bank/wire transfer|Bank/wire transfer|10 business days|
+|Boleto Bancario (Brazilian real only)|Wire transfer|10 business days|
 
 Once initiated, refund requests can take up to 10 days to process.
 
@@ -120,8 +65,8 @@ If you funded your account using SEPA direct debit, check, or wire transfer, you
 ## Billing adjustments
 
 Sometimes, we goof, and you end up being overcharged or undercharged. Microsoft Advertising will do what's right to make sure you're paying your fair share. To fix incorrect billing, you may see one of the following:
-- **Credit memo**, a standalone billing document in the Billing tab that identifies a credit you've received from an overpayment.
-- **Debit memo**, a standalone billing document in the Billing tab that identifies an amount owed due to an underpayment.
-- **Reconciled charge**, a line item within a billing document that restates past charges, either as a debit or a credit. For postpay threshold and monthly invoice accounts, a reconciled charge is a debit that collects for an underpayment. For prepay accounts, a reconciled charge can be a credit that returns an overpayment or a debit that collects for an underpayment.
+- **Credit memo** , a standalone billing document in the Billing tab that identifies a credit you've received from an overpayment.
+- **Debit memo** , a standalone billing document in the Billing tab that identifies an amount owed due to an underpayment.
+- **Reconciled charge** , a line item within a billing document that restates past charges, either as a debit or a credit. For postpay threshold and monthly invoice accounts, a reconciled charge is a debit that collects for an underpayment. For prepay accounts, a reconciled charge can be a credit that returns an overpayment or a debit that collects for an underpayment.
 
 

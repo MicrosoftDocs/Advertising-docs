@@ -21,12 +21,12 @@ As shown above, a keyword can be just a single word, several words, or even a ph
 
 One of the first and most important tasks of running a search marketing campaign is to choose your keywords. Here are some ideas to help you build a quality keyword list:
 
-- **Choose words and phrases that describe your business.** How would you describe your business using a short list of key ideas?
-- **Use keyword research tools.** After you've described your business in your own words, use the Microsoft Advertising&nbsp;[keyword research tools](./hlp_BA_CONC_AboutKWResearch.md) to get suggestions for more keywords you might not have thought of.
-- **Use common variations.** If your keywords have common variations (**travel agent**, **travel agency**) or spelling (**web site**, **website**), add all of those variations to your keyword list.
-- **Avoid duplicate keywords.**            However, variations you don't want to include are those formed simply by adding punctuation (For example: quotation marks (" ") and exclamation points (!) ). These simply count as duplicates in your list and Microsoft Advertising will automatically remove them. Here's more information [about duplicate keywords](./hlp_BA_CONC_Normalization.md).
-- **Group related keywords into ad groups**. If you organize your keywords into groups of highly related keywords, you will be able to better optimize your campaigns for a higher ROI. On a related note, make sure you don't duplicate keywords across ad groups. If you use the same keyword in more than one ad group, you will be competing against yourself for getting ads shown on search results pages for that keyword.
-- **Use negative keywords.** You can use negative keywords or keyword phrases to help prevent your ad from being displayed when a search query or other input contains your keywords but is irrelevant to your landing page content. [Learn more about negative keywords](./hlp_BA_CONC_AboutNegativeKeywords.md)
+- **Choose words and phrases that describe your business.**  How would you describe your business using a short list of key ideas?
+- **Use keyword research tools.**  After you've described your business in your own words, use the Microsoft Advertising&nbsp;[keyword research tools](./hlp_BA_CONC_AboutKWResearch.md) to get suggestions for more keywords you might not have thought of.
+- **Use common variations.**  If your keywords have common variations (**travel agent**, **travel agency**) or spelling (**web site**, **website**), add all of those variations to your keyword list.
+- **Avoid duplicate keywords.**             However, variations you don't want to include are those formed simply by adding punctuation (For example: quotation marks (" ") and exclamation points (!) ). These simply count as duplicates in your list and Microsoft Advertising will automatically remove them. Here's more information [about duplicate keywords](./hlp_BA_CONC_Normalization.md).
+- **Group related keywords into ad groups** . If you organize your keywords into groups of highly related keywords, you will be able to better optimize your campaigns for a higher ROI. On a related note, make sure you don't duplicate keywords across ad groups. If you use the same keyword in more than one ad group, you will be competing against yourself for getting ads shown on search results pages for that keyword.
+- **Use negative keywords.**  You can use negative keywords or keyword phrases to help prevent your ad from being displayed when a search query or other input contains your keywords but is irrelevant to your landing page content. [Learn more about negative keywords](./hlp_BA_CONC_AboutNegativeKeywords.md)
 
 ## Keyword rules
 

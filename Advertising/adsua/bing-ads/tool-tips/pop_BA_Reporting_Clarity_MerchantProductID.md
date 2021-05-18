@@ -9,6 +9,6 @@ ms.author: eur
 
 # Merchant product ID
 
-**What it is:**    A unique identifier for each item in your Microsoft Merchant Center catalog.
+**What it is:**     A unique identifier for each item in your Microsoft Merchant Center catalog.
 
 

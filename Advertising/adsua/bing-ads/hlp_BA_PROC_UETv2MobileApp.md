@@ -21,6 +21,7 @@ With mobile app install goals, you'll use the app-specific URL that is provided 
 
 All you have to do is create an [app extension](./hlp_BA_CONC_AdExtensionAppExtension.md) or an [app install ad](./hlp_BA_CONC_AppInstallAds.md), and then create a mobile app install conversion goal.
 
+ 
 ## Create a measurement URL
 
 Microsoft Advertising partners with third-party companies to help you create tracking/measurement URLs. Each partner has a template of exactly what Microsoft Advertising expects the tracking/measurement URL to look like, and the only mandatory parameter required is the **MSCLKID**.
@@ -34,6 +35,7 @@ You’ll need one measurement URL for each respective app in the app store. Visi
 - [Adjust](https://go.microsoft.com/fwlink?LinkId=836812)
 - [Branch](https://go.microsoft.com/fwlink?LinkId=2074143)
 
+ 
 ## Create a conversion goal for mobile app installs
 
 Now that you have your measurement URL and other tracking details prepared, you can create a mobile app install goal.
@@ -45,6 +47,7 @@ Now that you have your measurement URL and other tracking details prepared, you 
 1. Optional: You can enter a **Conversion period** to track up to 90 days in the past.
 1. [!INCLUDE [SelectSave](./includes/SelectSave.md)]
 
+ 
 ## How a mobile app install is tracked
 
 - Once you enter a measurement URL from the partner, Microsoft Advertising appends a parameter called **MSCLKID** to that URL during ad delivery. When someone taps on your ad to install the app, the call goes to the partner which logs the **MSCLKID** and redirects to the app store.
@@ -52,6 +55,7 @@ Now that you have your measurement URL and other tracking details prepared, you 
 - The partner uploads conversion goal data back to Microsoft Advertising using the **clickID** and **appID** as the keys.
 - Microsoft Advertising identifies the goals associated with the **app ID**, checks if the clicks are in the conversion window, and associates the conversion with the app extension.
 
+ 
 ## Remove an app install conversion goal
 
 When you include app installs as conversions, it will create a goal for you. If you decide to not include app installs as conversions later, keep in mind the goal must be disabled through **Tools** > **Conversions** > ** Edit conversion goal**, and then uncheck **Include in Conversions**. If you decide not to report app installs, enter the app URL from the Windows Store, the Windows Phone Store, the Apple App Store, or Google Play.

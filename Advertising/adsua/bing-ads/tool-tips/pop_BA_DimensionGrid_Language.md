@@ -9,6 +9,6 @@ ms.author: eur
 
 # Language
 
-**What it is:**  This is the language of the country the ad is served in.
+**What it is:**   This is the language of the country the ad is served in.
 
 

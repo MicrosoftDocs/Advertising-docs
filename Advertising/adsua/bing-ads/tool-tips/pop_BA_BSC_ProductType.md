@@ -9,8 +9,8 @@ ms.author: eur
 
 # Product Type
 
-**What it is:** Your category for the product.
+**What it is:**  Your category for the product.
 
-**Example:** Home &gt; Electronics &gt; DVD Player
+**Example:**  Home &gt; Electronics &gt; DVD Player
 
 

@@ -15,36 +15,13 @@ The maximum amount of money you can add to your account depends on the country o
 
 Funding a prepay account can be immediate or can take up to 3 weeks, depending on your payment method. (For the complete list of payment methods available to you, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md).)
 
-<table>
-  <tr>
-    <th scope="col" style="width:220px">
-        Payment method
-      </th>
-    <th scope="col" style="width:440px">
-        Processing time
-      </th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Credit/debit card</th>
-    <td>Typically instant, but can take up to 24 hours if there are system delays with card processing</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">PayPal</th>
-    <td>Typically instant</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Bank transfer</th>
-    <td>Up to 5 days</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">SEPA Direct Debit</th>
-    <td>Up to 5 business days for a first payment, and up to 2 business days for subsequent payments</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Check</th>
-    <td>1-3 weeks, including mailing time</td>
-  </tr>
-</table>
+|Payment method|Processing time|
+|---|---|
+|Credit/debit card|Typically instant, but can take up to 24 hours if there are system delays with card processing|
+|PayPal|Typically instant|
+|Bank transfer|Up to 5 days|
+|SEPA Direct Debit|Up to 5 business days for a first payment, and up to 2 business days for subsequent payments|
+|Check|1-3 weeks, including mailing time|
 
 ## Manually add funds to a prepay account
 [!INCLUDE [AddFunds_VR2](./includes/AddFunds_VR2.md)]

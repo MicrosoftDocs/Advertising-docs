@@ -9,6 +9,6 @@ ms.author: eur
 
 # Keyword ID
 
-**What it is: **The unique number that Microsoft Advertising uses to identify this keyword.
+**What it is:** The unique number that Microsoft Advertising uses to identify this keyword.
 
 

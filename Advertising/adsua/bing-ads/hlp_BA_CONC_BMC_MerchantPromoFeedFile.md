@@ -9,9 +9,11 @@ ms.author: eur
 
 # What can I include in my Merchant Promotion feed file?
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2129851)    </content_tile>
+
 Your feed file is a text delimited file that contains all the information needed to submit a promotion. For manual uploads, .tsv or .xml file formats are accepted. For FTP uploads (available in the United States only), .tsv, .txt, or .xml file formats are accepted. After you create a feed file, [      submit it to Microsoft Merchant Center    ](./hlp_BA_CONC_BMCWhatIsCatalog.md).
 
-**Availability**: United States, Canada, United Kingdom, Australia, India, France, and Germany on PC and mobile devices.
+**Availability** : United States, Canada, United Kingdom, Australia, India, France, and Germany on PC and mobile devices.
 
 Here are the required and optional fields you can include in the catalog feed:
 
@@ -27,11 +29,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>The unique ID for the promotion.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  50off
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  
@@ -56,7 +58,7 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>Indicates if the promotion is applicable to all products or specific products.</para>
       <para>
-                <strong>Valid values:</strong>
+                <strong>Valid values:</strong> 
                  
                 ALL_PRODUCTS
                  
@@ -77,7 +79,7 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>Indicates if there is a code or not.</para>
       <para>
-                <strong>Valid values:</strong>
+                <strong>Valid values:</strong> 
                   NO_CODE
                   GENERIC_CODE
               </para>
@@ -96,11 +98,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>The full title of the promotion.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Extra 50% off shoes
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 60-character limit
               </para>
@@ -120,11 +122,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>Date and time that the promotion will be live on Bing.com.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  2016-07-07T01:00:00-08:00/2016-08-07T01:00:00-08:00
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Format is Start-Date-Time/End-Date-Time
               </para>
@@ -147,7 +149,7 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>Indicates if the promotion is online.</para>
       <para>
-                <strong>Valid value:</strong>
+                <strong>Valid value:</strong> 
                  ONLINE
               </para>
     </td>
@@ -169,11 +171,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>The text code that customers use online.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  EXTRA50
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  
@@ -193,11 +195,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>Date and time that the promotion will be live on Bing.com that falls within the promotion_effective_dates.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  2016-07-07T01:00:00-08:00/2016-08-07T01:00:00-08:00
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Format is Start-Date-Time/End-Date-Time
               </para>
@@ -222,11 +224,11 @@ Here are the required and optional fields you can include in the catalog feed:
     <td>
       <para>The minimum amount of purchase for the promotion to be applicable.</para>
       <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  15 USD
               </para>
       <para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numerical
                  No symbols (for example, $)
@@ -240,4 +242,5 @@ Here are the required and optional fields you can include in the catalog feed:
   </tr>
 </table>
 
+ 
 

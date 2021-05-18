@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic ad target
 
-**What it is:** The pages or categories of pages on your website to which dynamic search ads are directing customers.
+**What it is:**  The pages or categories of pages on your website to which dynamic search ads are directing customers.
 
 

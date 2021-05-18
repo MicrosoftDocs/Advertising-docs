@@ -9,6 +9,6 @@ ms.author: eur
 
 # Increase bid adjustment
 
-**What it is:**  Increase the current bid for the selected audience association by a percentage.
+**What it is:**   Increase the current bid for the selected audience association by a percentage.
 
 

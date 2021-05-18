@@ -9,6 +9,6 @@ ms.author: eur
 
 # Minimum purchase
 
-**What it is:** The minimum purchase amount required for the promotion to be applicable.
+**What it is:**  The minimum purchase amount required for the promotion to be applicable.
 
 

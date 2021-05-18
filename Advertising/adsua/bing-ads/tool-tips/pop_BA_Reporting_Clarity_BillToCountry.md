@@ -9,6 +9,6 @@ ms.author: eur
 
 # Bill-to country/region
 
-**What it is: **    The country/region of the organization paying the bills for your ads.
+**What it is:**     The country/region of the organization paying the bills for your ads.
 
 

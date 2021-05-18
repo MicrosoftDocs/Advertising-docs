@@ -9,7 +9,7 @@ ms.author: eur
 
 # Choose Microsoft Merchant Center store
 
-**What it is: **: The Microsoft Merchant Center store that matches your Google Merchant Center store.
+**What it is:** : The Microsoft Merchant Center store that matches your Google Merchant Center store.
 
 **What you need to know:**
 - Sign in to Google Merchant Center, so we can help set up your Microsoft Merchant Center stores and campaigns with matching information.

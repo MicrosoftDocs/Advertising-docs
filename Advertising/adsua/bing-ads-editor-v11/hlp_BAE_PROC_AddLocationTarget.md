@@ -1,7 +1,7 @@
 ---
 title: How do I add a location target?
 description: When determining if your ads are eligible to be displayed, Microsoft Advertising Editor uses both your ad language and location target settings. Both criteria must be met in order for an ad to display.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -27,108 +27,39 @@ Not only does Microsoft Advertising let you target customers in a specific locat
 
 ## Example 1
 
-- **Who should see your ads?**   **People in your targeted locations**
-- **Target location defined in your campaign:** London
-- **Keyword:** Hotels
+- **Who should see your ads?**    **People in your targeted locations**
+- **Target location defined in your campaign:**  London
+- **Keyword:**  Hotels
 
-<table>
-  <tr>
-    <th scope="col">Searcher’s physical location</th>
-    <th scope="col">Search term</th>
-    <th scope="col">Ad eligible for display?</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Florida</th>
-    <td>London hotels</td>
-    <td>
-    <strong>No</strong>, <strong>not</strong> located in target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>Hotels</td>
-    <td>
-    <strong>Yes</strong>, located <strong>in</strong> target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>New York hotels</td>
-    <td>
-    <strong>Yes</strong>, located <strong>in</strong> target location
-   </td>
-  </tr>
-</table>
+|Searcher’s physical location|Search term|Ad eligible for display?|
+|---|---|---|
+|Florida|London hotels|**No** , **not** located in target location|
+|London|Hotels|**Yes** , located **in** target location|
+|London|New York hotels|**Yes** , located **in** target location|
 
 ## Example 2
 
-- **Who should see your ads?**   **People searching for or viewing pages about your targeted locations**
-- **Target location defined in your campaign:** London
-- **Keyword:** Hotels
+- **Who should see your ads?**    **People searching for or viewing pages about your targeted locations**
+- **Target location defined in your campaign:**  London
+- **Keyword:**  Hotels
 
-<table>
-  <tr>
-    <th scope="col">Searcher’s physical location</th>
-    <th scope="col">Search term</th>
-    <th scope="col">Ad eligible for display?</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Florida</th>
-    <td>London hotels</td>
-    <td>
-    <strong>Yes</strong>, searching <strong>about</strong> target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>Hotels</td>
-    <td>
-    <strong>No</strong>, not searching for pages <strong>about</strong> target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>New York hotels</td>
-    <td>
-    <strong>No</strong>, not searching for pages <strong>about</strong> target location
-   </td>
-  </tr>
-</table>
+|Searcher’s physical location|Search term|Ad eligible for display?|
+|---|---|---|
+|Florida|London hotels|**Yes** , searching **about** target location|
+|London|Hotels|**No** , not searching for pages **about** target location|
+|London|New York hotels|**No** , not searching for pages **about** target location|
 
 ## Example 3
 
-- **Who should see your ads?**   Both **People in your targeted locations** and **People searching for or viewing pages about your targeted locations**
-- **Target location defined in your campaign:** London
-- **Keyword:** Hotels
+- **Who should see your ads?**    Both **People in your targeted locations** and **People searching for or viewing pages about your targeted locations**
+- **Target location defined in your campaign:**  London
+- **Keyword:**  Hotels
 
-<table>
-  <tr>
-    <th scope="col">Searcher’s physical location</th>
-    <th scope="col">Search term</th>
-    <th scope="col">Ad eligible for display?</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Florida</th>
-    <td>London hotels</td>
-    <td>
-    <strong>Yes</strong>, searching <strong>about</strong> target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>Hotels</td>
-    <td>
-    <strong>Yes</strong>, located <strong>in</strong> target location
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">London</th>
-    <td>New York hotels</td>
-    <td>
-    <strong>Yes</strong>, located <strong>in</strong> target location
-   </td>
-  </tr>
-</table>
+|Searcher’s physical location|Search term|Ad eligible for display?|
+|---|---|---|
+|Florida|London hotels|**Yes** , searching **about** target location|
+|London|Hotels|**Yes** , located **in** target location|
+|London|New York hotels|**Yes** , located **in** target location|
 
 ## How do I add a new location target?
 1. Select the campaigns or ad groups from the tree view in the left panel that you want to add targeting to.
@@ -136,8 +67,8 @@ Not only does Microsoft Advertising let you target customers in a specific locat
 1. In the data view, click **Add location target** and select **Add campaign location target** or **Add ad group location target**.
 1. Choose the campaign or ad group you want to add a location target to and click **OK**.
 1. In the **Edit the selected locations** pane:
-  - Specify the location for this entry. Click **Edit/find location** and you can specify the location by **Area targeting** (narrow your location target by country/region or city) or by **Radius targeting** (narrow your location to a single mile or kilometer, or expand it to a larger circle).
-  - Enter bid adjustment.
+   - Specify the location for this entry. Click **Edit/find location** and you can specify the location by **Area targeting** (narrow your location target by country/region or city) or by **Radius targeting** (narrow your location to a single mile or kilometer, or expand it to a larger circle).
+   - Enter bid adjustment.
 
 The details you input will automatically populate the new row in the main grid.
 

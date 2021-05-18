@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video view through rate
 
-**What it is:** Your video views divided by impressions (calculated).
+**What it is:**  Your video views divided by impressions (calculated).
 
 

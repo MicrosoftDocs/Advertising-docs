@@ -15,8 +15,8 @@ This article covers how to change your password and what to do if you need to ch
 
 The steps to change your password depend on how you are signing in to Microsoft Advertising:
 
-- **Using a Microsoft Advertising user name**. Only customers who signed up before October 2013 and haven’t transitioned to using an email address are still signing in with a Microsoft Advertising user name.
-- **Using an email address **(a Microsoft account). This is the new way to sign in to Microsoft Advertising and will be required for all Microsoft Advertising customers in the future.
+- **Using a Microsoft Advertising user name** . Only customers who signed up before October 2013 and haven’t transitioned to using an email address are still signing in with a Microsoft Advertising user name.
+- **Using an email address** (a Microsoft account). This is the new way to sign in to Microsoft Advertising and will be required for all Microsoft Advertising customers in the future.
 
 1. Sign in to Microsoft Advertising.
 1. [!INCLUDE [PreferencesMySettings](./includes/PreferencesMySettings.md)]
@@ -88,8 +88,8 @@ Only Super Admins and Standard Users can invite or delete a new user.
 1. Select a product language, select an account role, and then choose which accounts you will have access to.
 1. Click **Send**.       You will receive an email that provides instructions on signing up for Microsoft Advertising using your preferred email address.
 1. Click the link in the email and do one of the following:
-  - If you've sent the invitation to the email address you want to sign in with, confirm your contact information (such as the email address that you'd like to use to receive critical alerts, which can be different from your user name), agree to the Microsoft Advertising Terms and Conditions, and click **Save**.           -or-
-  - If you want to sign in with a different email address or create a new one, select **sign in using a different email address**, and then select **Sign in with a different Microsoft account** in the new window. You'll be prompted to enter a different email address or to create a new one.
+   - If you've sent the invitation to the email address you want to sign in with, confirm your contact information (such as the email address that you'd like to use to receive critical alerts, which can be different from your user name), agree to the Microsoft Advertising Terms and Conditions, and click **Save**.           -or-
+   - If you want to sign in with a different email address or create a new one, select **sign in using a different email address**, and then select **Sign in with a different Microsoft account** in the new window. You'll be prompted to enter a different email address or to create a new one.
 
 After you enter or create an email address, you'll be taken back to Microsoft Advertising.
 

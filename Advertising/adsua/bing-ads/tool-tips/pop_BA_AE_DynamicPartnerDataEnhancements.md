@@ -9,6 +9,6 @@ ms.author: eur
 
 # Dynamic Partner Data Enhancements
 
-**What you need to know:** Enhance your ads with information derived from third-party partner sources.
+**What you need to know:**  Enhance your ads with information derived from third-party partner sources.
 
 

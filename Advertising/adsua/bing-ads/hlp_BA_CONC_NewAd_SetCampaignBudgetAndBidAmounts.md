@@ -16,14 +16,14 @@ Before your ads can run, you need to set your campaign’s budget and keyword bi
 Microsoft Advertising has two different budget types you can choose from.
 
 - **Daily - Standard**
-**What it is**: Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaign and availability of corresponding user searches during the day.
+**What it is** : Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaign and availability of corresponding user searches during the day.
 
-**Why use it:** This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won’t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
+**Why use it:**  This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won’t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 - **Shared - Standard**
-**What it is:** Same as the Daily - Standard budget, but it is shared among two or more campaigns in the Shared Library.
+**What it is:**  Same as the Daily - Standard budget, but it is shared among two or more campaigns in the Shared Library.
 
-**Why use it:** With a shared budget, Microsoft Advertising automatically adjusts how your budget is spent across its campaigns to help you improve your ROI.
+**Why use it:**  With a shared budget, Microsoft Advertising automatically adjusts how your budget is spent across its campaigns to help you improve your ROI.
 
 Your daily budget setting is only a target, so your actual spend might be higher or lower. This is because Microsoft Advertising always calculates a monthly budget and then the actual budget limit is calculated for an entire month. Daily budget types simply help you make sure that your budget is spread out over an entire month and not used up in the first day.
 
@@ -73,11 +73,12 @@ Custom bids for keywords override the ad group default bid for those specific ke
 
 1. From the **Campaigns** page, click the **Keywords** tab (or from the main menu on the left, click **All campaigns** and then **Keywords**).
 1. There are two ways to change your bid from the keywords table:
-  1. Hover over an individual keyword's bid in the **Bid** column and select the pencil icon that pops up. Change the bid value and **Save** your changes.
-  1. Select the checkbox next to one or more keywords and then select **Edit**&nbsp;&gt;&nbsp;**Change current bids**. You can then set the bid(s) to a specific value, increase or decrease the bid(s) by a percentage, or increase them to either the estimated top of page bid or estimated first page bid. When you're done, **Save** your changes.
+   1. Hover over an individual keyword's bid in the **Bid** column and select the pencil icon that pops up. Change the bid value and **Save** your changes.
+   1. Select the checkbox next to one or more keywords and then select **Edit**&nbsp;&gt;&nbsp;**Change current bids**. You can then set the bid(s) to a specific value, increase or decrease the bid(s) by a percentage, or increase them to either the estimated top of page bid or estimated first page bid. When you're done, **Save** your changes.
 
 ## Bid adjustments
 
 You have even more control over when and where your ads can appear by setting bid adjustments. A bid adjustment increases or decreases your bid, depending on what (or who) you want to target. You can make bid adjustments for specific demographics, locations, days, or time of day, targeting the customers who are most important to you. Doing so can lead to higher conversion rates and a better overall return on investment (ROI) for your campaign. For more information on how to set your bid adjustment, see [How to target my customers by adjusting my bids](./hlp_BA_CONC_AboutAdvancedBidding.md).
 
+ 
 

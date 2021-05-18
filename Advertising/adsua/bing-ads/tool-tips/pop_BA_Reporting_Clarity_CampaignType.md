@@ -9,8 +9,8 @@ ms.author: eur
 
 # Campaign type
 
-**What it is:**    The type of campaign, which can be either **Search campaign** or **Shopping campaign**.
+**What it is:**     The type of campaign, which can be either **Search campaign** or **Shopping campaign**.
 
-**Why it’s important:**    It helps you identify the type of campaign so you know what type of data is in the report.
+**Why it’s important:**     It helps you identify the type of campaign so you know what type of data is in the report.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video views
 
-**What it is:** Number of times the video was played for a user (measured directly).
+**What it is:**  Number of times the video was played for a user (measured directly).
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account name
 
-**What it is: **This is the name of the linked account you no longer need access to.
+**What it is:** This is the name of the linked account you no longer need access to.
 
 

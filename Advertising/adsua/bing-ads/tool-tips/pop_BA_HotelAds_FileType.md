@@ -9,6 +9,6 @@ ms.author: eur
 
 # File type
 
-**What it is:** The type of hotel ads feed being reported on. Currently only pricing and availability transactions are listed.
+**What it is:**  The type of hotel ads feed being reported on. Currently only pricing and availability transactions are listed.
 
 

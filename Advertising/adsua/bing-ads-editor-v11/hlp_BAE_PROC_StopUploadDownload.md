@@ -1,7 +1,7 @@
 ---
 title: Stop uploads or downloads in progress
 description: If a large upload (post) or download (get) is taking too long in Microsoft Advertising Editor, you can stop it and then perform the operation in smaller sections.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

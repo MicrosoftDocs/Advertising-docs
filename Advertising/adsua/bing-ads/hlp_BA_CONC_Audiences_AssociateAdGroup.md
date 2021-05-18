@@ -16,26 +16,11 @@ Once you have created or selected an [audience](./hlp_BA_CONC_Audiences_Options.
 
 ## Should I associate audiences to my ad groups or my campaigns?
 
-<table>
-  <tr>
-    <th scope="col">Scenario</th>
-    <th scope="col">You should associate audiences to</th>
-  </tr>
-  <tr>
-    <td>You're using different audiences and bids for different ad groups in the same campaign.</td>
-    <td><strong>Ad groups</strong>: That way, you can manage and optimize each audience individually.</td>
-  </tr>
-  <tr>
-    <td>Your account is segmented at the ad group level, or you otherwise want to keep precise control over each ad group.</td>
-    <td><strong>Ad groups</strong>: For example, you could test a particular audience in one ad group  before applying it to other ad groups.
-</td>
-  </tr>
-  <tr>
-    <td>You're using the same audience and bid for each ad group in your campaign.</td>
-    <td><strong>Campaigns</strong>: You just need to set them up once, and don't have to create a new association each time you create a new ad group. 
-</td>
-  </tr>
-</table>
+|Scenario|You should associate audiences to|
+|---|---|
+|You're using different audiences and bids for different ad groups in the same campaign.|**Ad groups** : That way, you can manage and optimize each audience individually.|
+|Your account is segmented at the ad group level, or you otherwise want to keep precise control over each ad group.|**Ad groups** : For example, you could test a particular audience in one ad group  before applying it to other ad groups.|
+|You're using the same audience and bid for each ad group in your campaign.|**Campaigns** : You just need to set them up once, and don't have to create a new association each time you create a new ad group.|
 
 ## Create associations
 
@@ -48,20 +33,10 @@ Once you have created or selected an [audience](./hlp_BA_CONC_Audiences_Options.
 1. In the **Select audience** drop-down menu, select the appropriate audience type.
 1. Select the appropriate audience.
 1. Choose your **Ad group targeting setting** or **Campaign targeting setting**:
-<table>
-  <tr>
-    <th scope="col">Targeting setting</th>
-    <th scope="col">What it means</th>
-  </tr>
-  <tr>
-    <td>Bid only</td>
-    <td>Ads in this ad group or campaign can show to everyone but the bid adjustment will apply to people included in the audience.</td>
-  </tr>
-  <tr>
-    <td>Target and bid</td>
-    <td>Ads in this ad group or campaign will only show to people included in the audience.</td>
-  </tr>
-</table>
+|Targeting setting|What it means|
+|---|---|
+|Bid only|Ads in this ad group or campaign can show to everyone but the bid adjustment will apply to people included in the audience.|
+|Target and bid|Ads in this ad group or campaign will only show to people included in the audience.|
 
 1. Set a **Default bid adjustment** for new targeting associations. By default, your bid adjustment is set to 15%, however, the bid adjustment can range from -90% to +900%.
 1. [!INCLUDE [SelectSave](./includes/SelectSave.md)]
@@ -90,6 +65,7 @@ Once you have created or selected an [audience](./hlp_BA_CONC_Audiences_Options.
 > You will need to remove any ad group-level audience targeting associations within a campaign before you can create a campaign-level targeting association for that campaign.
 > Similarly, you will need to remove any campaign-level audience targeting associations before you can create an ad group-level targeting association within that campaign.
 
+ 
 ## Audience targeting and exclusion rules
 
 - A campaign can't have targeting associations at both the campaign and ad-group level. Exclusions are allowed at both levels regardless of whether any targeting associations are set.

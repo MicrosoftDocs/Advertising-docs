@@ -9,6 +9,6 @@ ms.author: eur
 
 # Sold-to country/region
 
-**What it is: **    The country/region of the sold-to party.
+**What it is:**     The country/region of the sold-to party.
 
 

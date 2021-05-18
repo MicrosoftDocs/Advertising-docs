@@ -9,7 +9,7 @@ ms.author: eur
 
 # Social ads
 
-**What it is:** Ads you run on social media platforms.
+**What it is:**  Ads you run on social media platforms.
 
 **What you need to know:**
 - If you ran ads on social media platforms during the selected date range, the chart will show metrics for those social ad campaigns.

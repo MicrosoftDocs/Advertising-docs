@@ -18,11 +18,11 @@ Through your DMP, you can segment your customer data however you see fit. For ex
 
 ## Why use custom audiences?
 
-**No extra data management needed**. Custom audiences allow you to use the audience data you already have.
+**No extra data management needed** . Custom audiences allow you to use the audience data you already have.
 
-**Just the right audience**. Create richer audience segments using your insights and customer data.
+**Just the right audience** . Create richer audience segments using your insights and customer data.
 
-**Similar to remarketing**. Custom audiences can be associated to ad groups or campaigns as target and bid, bid only, or as an exclusion.
+**Similar to remarketing** . Custom audiences can be associated to ad groups or campaigns as target and bid, bid only, or as an exclusion.
 
 ## Using custom audiences
 
@@ -42,8 +42,8 @@ Once the integration has been completed, your custom audiences will appear in th
 1. Select the ad group or campaign you want to associate with one or more audiences.
 1. Under **Ad group targeting** or **Campaign targeting**, select the audience categories you want to target.
 1. Select your **Targeting setting**:
-  - **Bid only**: Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
-  - **Target and bid**: Shows ads only to the selected audience, with the option to make bid adjustments.
+   - **Bid only** : Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
+   - **Target and bid** : Shows ads only to the selected audience, with the option to make bid adjustments.
 
 1. Adjust the **Default bid adjustment**. By default, new targeting associations are set to 15%, however, the bid adjustment can range from -90% to +900%.
 1. Under **Ad group exclusions** or **Campaign exclusions**, select the audience you want to exclude.
@@ -59,8 +59,8 @@ Once the integration has been completed, your custom audiences will appear in th
 1. Click **Edit** and then **Associate with audiences**.
 1. Under **Ad group targeting** or **Campaign targeting**, select the audience categories you want to target.
 1. Select your **Targeting setting**:
-  - **Bid only**: Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
-  - **Target and bid**: Shows ads only to the selected audience, with the option to make bid adjustments.
+   - **Bid only** : Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
+   - **Target and bid** : Shows ads only to the selected audience, with the option to make bid adjustments.
 
 1. Adjust the **Default bid adjustment**. By default, new targeting associations are set to 15%, however, the bid adjustment can range from -90% to +900%.
 1. Under **Ad group exclusions** or **Campaign exclusions**, select the audience you want to exclude.
@@ -71,23 +71,24 @@ Once the integration has been completed, your custom audiences will appear in th
 > Custom audiences will not be applied until they have at least 300 users.
 
 ## FAQs
-- **What Microsoft Advertising information do I need to provide to set up data management providers (DMPs)?**             
-  - **Adobe Audience Manager**: A Microsoft Advertising manager account ID
-  - **Oracle Blukai**: A Microsoft Advertising manager account ID
-  - **LiveRamp**: A Microsoft Advertising manager account ID plus Microsoft Advertising credentials (a username that is linked to this Microsoft Advertising manager account ID and is user type Super Admin or Standard User)
+- **What Microsoft Advertising information do I need to provide to set up data management providers (DMPs)?**              
+   - **Adobe Audience Manager** : A Microsoft Advertising manager account ID
+   - **Oracle Blukai** : A Microsoft Advertising manager account ID
+   - **LiveRamp** : A Microsoft Advertising manager account ID plus Microsoft Advertising credentials (a username that is linked to this Microsoft Advertising manager account ID and is user type Super Admin or Standard User)
 
-- **Can I use custom audiences with any Microsoft Advertising campaign type?**                         Yes, custom audiences can be associated to search campaigns, Microsoft Audience Network campaigns, and Microsoft Shopping Campaigns.
-- **Can I use custom audiences in my campaigns that run across all device types?**                       Yes, custom audiences can be associated to ad groups or campaigns that run across desktop, tablet, and mobile devices.
-- **Can I use custom audiences in my campaigns that run across the entire Microsoft Search Network, including syndicated partners?**                         No, custom audiences are only supported on sites owned and operated by Bing, AOL, and Yahoo.
-- **What countries/regions are supported?**			 			Custom audiences are available in all Microsoft Advertising markets except within the European Union, Norway, Switzerland, and the United Kingdom.
-- **Are exclusions allowed with custom audiences?**                         Yes, exclusions are allowed with custom audiences, allowing you to exclude a custom audience from a campaign. For example, an advertiser can exclude their list of "Platinum Customers" from their ads targeting new customers.
-- **How do I edit the targeting setting for an association?**                         The targeting setting can be edited one ad group or campaign at a time from the **Audiences** page by clicking on **Create association** and then selecting the relevant ad group or campaign. The updated targeting setting is applied to all the associations of that ad group or campaign. [Learn more about editing the targeting setting for an association](./hlp_BA_CONC_Audiences_TargetSettings.md).
-- **Can I use a "Target and bid" setting for one audience list and a "Bid only" setting for another audience list in the same ad group or campaign? **             			No, you can only select one targeting setting per ad group or campaign that will apply to all your audience lists in that ad group or campaign (either "Target and bid" or "Bid only"). It isn't possible to use different targeting settings in the same ad group or campaign for remarketing lists, in-market audiences, and custom audiences. Whichever setting you've selected most recently ("Target and bid" or "Bid only") overrides any previous settings.
-- **Does Enhanced CPC (auto-bidding) work with custom audiences?**             			Yes, Enhanced CPC works with custom audiences.
-- **How long does it take for my custom audiences to show up in Microsoft Advertising?**                         It takes up to 48 hours for a new custom audience to be available in Microsoft Advertising.
-- **How frequently are custom audience list sizes updated?**                         Once every 24 hours.
-- **Why do I see the same list size for a custom audience in both search campaigns and Microsoft Audience Network campaigns?**                         List sizes reflect the information passed to Microsoft Advertising from your DMP and are not tied to search campaigns or Microsoft Audience Network campaigns.
+- **Can I use custom audiences with any Microsoft Advertising campaign type?**                          Yes, custom audiences can be associated to search campaigns, Microsoft Audience Network campaigns, and Microsoft Shopping Campaigns.
+- **Can I use custom audiences in my campaigns that run across all device types?**                        Yes, custom audiences can be associated to ad groups or campaigns that run across desktop, tablet, and mobile devices.
+- **Can I use custom audiences in my campaigns that run across the entire Microsoft Search Network, including syndicated partners?**                          No, custom audiences are only supported on sites owned and operated by Bing, AOL, and Yahoo.
+- **What countries/regions are supported?** 			 			Custom audiences are available in all Microsoft Advertising markets except within the European Union, Norway, Switzerland, and the United Kingdom.
+- **Are exclusions allowed with custom audiences?**                          Yes, exclusions are allowed with custom audiences, allowing you to exclude a custom audience from a campaign. For example, an advertiser can exclude their list of "Platinum Customers" from their ads targeting new customers.
+- **How do I edit the targeting setting for an association?**                          The targeting setting can be edited one ad group or campaign at a time from the **Audiences** page by clicking on **Create association** and then selecting the relevant ad group or campaign. The updated targeting setting is applied to all the associations of that ad group or campaign. [Learn more about editing the targeting setting for an association](./hlp_BA_CONC_Audiences_TargetSettings.md).
+- **Can I use a "Target and bid" setting for one audience list and a "Bid only" setting for another audience list in the same ad group or campaign?**              			No, you can only select one targeting setting per ad group or campaign that will apply to all your audience lists in that ad group or campaign (either "Target and bid" or "Bid only"). It isn't possible to use different targeting settings in the same ad group or campaign for remarketing lists, in-market audiences, and custom audiences. Whichever setting you've selected most recently ("Target and bid" or "Bid only") overrides any previous settings.
+- **Does Enhanced CPC (auto-bidding) work with custom audiences?**              			Yes, Enhanced CPC works with custom audiences.
+- **How long does it take for my custom audiences to show up in Microsoft Advertising?**                          It takes up to 48 hours for a new custom audience to be available in Microsoft Advertising.
+- **How frequently are custom audience list sizes updated?**                          Once every 24 hours.
+- **Why do I see the same list size for a custom audience in both search campaigns and Microsoft Audience Network campaigns?**                          List sizes reflect the information passed to Microsoft Advertising from your DMP and are not tied to search campaigns or Microsoft Audience Network campaigns.
 
+ 
 > [!NOTE]
 > Custom audiences are just one of our [audience targeting options](./hlp_BA_CONC_Audiences_Options.md).
 

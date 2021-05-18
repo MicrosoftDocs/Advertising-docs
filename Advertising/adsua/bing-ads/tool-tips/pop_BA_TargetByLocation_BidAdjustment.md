@@ -15,6 +15,6 @@ For example,        let's say you are targeting New York state, but you know tha
 
 Bid adjustments are a percentage increase on top of your keyword bid. You can increase bid adjustments        up to 900% and decrease them by as much as 90%.
 
-**Get more info: **    [Target customers with bid adjustments](../hlp_BA_CONC_AboutAdvancedBidding.md).
+**Get more info:**     [Target customers with bid adjustments](../hlp_BA_CONC_AboutAdvancedBidding.md).
 
 

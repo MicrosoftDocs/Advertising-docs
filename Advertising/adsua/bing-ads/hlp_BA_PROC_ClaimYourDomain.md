@@ -9,6 +9,8 @@ ms.author: eur
 
 # Verify and claim your website's URL
 
+<content_tile class="training">      [        New to Microsoft Shopping Campaigns? Learn how to get started in this training course.      ](https://go.microsoft.com/fwlink?LinkId=2130007)    </content_tile>
+
 If you want to create a Microsoft Merchant Center Store, you need to verify and claim your website through Bing Webmaster Tools or an existing Universal Event Tracking (UET) tag.
 
 The website destination URL associated with your Microsoft Merchant Center store is used to verify that you indeed own your uploaded product offers. For this reason the Links specified in your catalog feed file must be a sub-path of either this website destination URL or subdomain of this destination URL. Product offers with URLs that are not sub-paths of this website destination URL will be rejected.

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Final URL
 
-**What it is:** The final URL is the link to the page on your website that customers will reach when they click on your ad.
+**What it is:**  The final URL is the link to the page on your website that customers will reach when they click on your ad.
 
 

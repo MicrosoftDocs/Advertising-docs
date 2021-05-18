@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video completion rate
 
-**What it is**: The number of completed video views divided by the total number of video views.
+**What it is** : The number of completed video views divided by the total number of video views.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Copy targeting settings
 description: Quickly add targeting to a campaign or ad group by copying from another campaign or ad group in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

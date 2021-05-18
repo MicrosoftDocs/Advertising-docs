@@ -9,6 +9,6 @@ ms.author: eur
 
 # Brand
 
-**What it is:** The product’s manufacturer, brand or publisher.
+**What it is:**  The product’s manufacturer, brand or publisher.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Custom label
 
-**What it is**: Custom labels let you group related page feed URLs or organize them any way you want.
+**What it is** : Custom labels let you group related page feed URLs or organize them any way you want.
 
-**Why it's important**: You can target these labels in your dynamic search ads settings and apply specific bids to them.
+**Why it's important** : You can target these labels in your dynamic search ads settings and apply specific bids to them.
 
 

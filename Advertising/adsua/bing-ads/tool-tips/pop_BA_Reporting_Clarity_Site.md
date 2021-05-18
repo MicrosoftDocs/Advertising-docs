@@ -9,6 +9,6 @@ ms.author: eur
 
 # Website
 
-**What it is:**    The URL for your website.
+**What it is:**     The URL for your website.
 
 

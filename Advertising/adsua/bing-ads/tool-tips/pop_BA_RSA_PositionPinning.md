@@ -9,6 +9,6 @@ ms.author: eur
 
 # Position pinning
 
-**What it is:** The ability to lock headlines and descriptions to a specific position, allowing you to always show the pinned header or description.
+**What it is:**  The ability to lock headlines and descriptions to a specific position, allowing you to always show the pinned header or description.
 
 

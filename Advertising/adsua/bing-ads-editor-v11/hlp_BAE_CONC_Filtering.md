@@ -1,7 +1,7 @@
 ---
 title: About advanced search and filtering
 description: With advanced search and filtering you can search an account for items that match the criteria that you specify.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,7 @@ ms.author: eur
 
 Microsoft Advertising Editor has combined both simple and advanced search into a unified search box directly under the toolbar. Here, you can search an account for items that match the criteria that you specify. Filter suggestions will automatically appear in a drop-down menu, based on what you’re typing.
 
+![Microsoft Advertising Editor advanced search](../images/MAE_ScreenCap_Search.png)
 ## Apply filters to narrow your search
 
 Click the search box and select the filter from the drop-down menu that you’d like to apply. You can filter by: Campaign type, bid strategy, ad group status, items with errors, warning type, recommendation type, and many more. Up to 20 filters types can be used at one time.

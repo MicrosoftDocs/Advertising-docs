@@ -9,6 +9,6 @@ ms.author: eur
 
 # Document number
 
-**What it is:**    The unique billing document identification number.
+**What it is:**     The unique billing document identification number.
 
 

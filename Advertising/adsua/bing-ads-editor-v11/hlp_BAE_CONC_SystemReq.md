@@ -1,7 +1,7 @@
 ---
 title: System requirements
 description: Microsoft Advertising Editor is a program that can be used on any PC or Mac computer that meets certain requirements.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -68,44 +68,19 @@ Microsoft Advertising Editor is a program that can be used on any PC or Mac comp
 
 ## Microsoft Advertising Editor on Mac systems
 
-<table>
-  <tr>
-    <th scope="col">Component</th>
-    <th scope="col">Requirement</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Operating system</th>
-    <td>
-    OS X El Capitan (minimum) [Learn more](https://go.microsoft.com/fwlink?LinkId=821970)
-  </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Operating system version</th>
-    <td style="valign:top">10.13</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Memory</th>
-    <td style="valign:top">2 GB (minimum), at least 4 GB (recommended)</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Storage space</th>
-    <td style="valign:top">8.8 GB (minimum), at least 20 GB (recommended)</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Internet connection</th>
-    <td style="valign:top">An Internet connection is required to get or post changes from your online account</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent; valign:top">Software</th>
-    <td style="valign:top">Microsoft Excel (recommended)
-   </td>
-  </tr>
-</table>
+|Component|Requirement|
+|---|---|
+|Operating system|OS X El Capitan (minimum) [Learn more](https://go.microsoft.com/fwlink?LinkId=821970)|
+|Operating system version|10.13|
+|Memory|2 GB (minimum), at least 4 GB (recommended)|
+|Storage space|8.8 GB (minimum), at least 20 GB (recommended)|
+|Internet connection|An Internet connection is required to get or post changes from your online account|
+|Software|Microsoft Excel (recommended)|
 
 ## Other requirements
 
 - This program is not compatible with Microsoft Excel 2007 (.xlsx files). A future upgrade will enable compatibility with this file type. Meanwhile, you can import data from Excel 2007 files by first saving the data in one of the following formats:
-  - Comma-separated values (CSV) file (.csv file extension)
-  - Excel 97-2003 Workbook file (.xls file extension)
+   - Comma-separated values (CSV) file (.csv file extension)
+   - Excel 97-2003 Workbook file (.xls file extension)
 
 

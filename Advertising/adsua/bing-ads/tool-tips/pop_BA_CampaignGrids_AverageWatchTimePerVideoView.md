@@ -9,6 +9,6 @@ ms.author: eur
 
 # Average watch time per video view
 
-**What it is**: The average number of seconds someone watched your video ad divided by the number of views of your ad.
+**What it is** : The average number of seconds someone watched your video ad divided by the number of views of your ad.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Audience name
 
-**What it is:** The name of the audience.
+**What it is:**  The name of the audience.
 
 

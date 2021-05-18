@@ -20,7 +20,7 @@ For search campaigns, you can add tracking templates to:
 - Keyword
 - Sitelink Extension
 
-**New!** For Microsoft Shopping Campaigns, you can now add tracking templates at the account, campaign, and ad group level along with the product group level.
+**New!**  For Microsoft Shopping Campaigns, you can now add tracking templates at the account, campaign, and ad group level along with the product group level.
 
 We recommend that you add a [tracking template at the account level](./hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md), but you can also add them at other levels. If you have more than one tracking template, when your ad is served the lowest level tracking template will be appended to your landing page URL.
 
@@ -29,8 +29,8 @@ We recommend that you add a [tracking template at the account level](./hlp_BA_CO
 1. Click the name of the item you want to add a tracking template to and then click **Settings**.
 1. Under **Campaign URL options** or **Ad group URL options**, click **Tracking template**.
 1. Enter one of these items:
-  - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
-  - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
+   - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
+   - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
 
 1. Click **Save**.
 
@@ -44,8 +44,8 @@ We recommend that you add a [tracking template at the account level](./hlp_BA_CO
 1. Under **Landing page URL**, click **Final URL** and enter the URL of your website.
 1. Click **Ad URL options** or **Sitelink Extension URL options**.
 1. In **Tracking template**, enter one of these items:
-  - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
-  - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
+   - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
+   - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
 
 1. Click **Save**.
 
@@ -60,8 +60,8 @@ We recommend that you add a [tracking template at the account level](./hlp_BA_CO
 1. Click **Save**.
 1. Make sure the keywords are still selected and then click **Edit** and **Change URL options**.
 1. In **Tracking template**, enter one of these items:
-  - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
-  - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
+   - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
+   - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
 
 1. Click **Save**.
 

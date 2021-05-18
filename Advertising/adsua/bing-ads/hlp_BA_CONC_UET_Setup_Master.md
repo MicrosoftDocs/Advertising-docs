@@ -9,4 +9,5 @@ ms.author: eur
 
 # Everything you need to know about setting up UET
 
+[!INCLUDE [CONC_UET_Setup_Master](./includes/CONC_UET_Setup_Master.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: Properties
 description: Properties
-ms.service: "bing-ads"
+ms.service: "PubCenter-v4"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Properties
 
-**What it is:** A property is a website with a distinct domain and subdomain. For example, contoso.com, sports.contoso.com and news.contoso.com are separate properties.
+**What it is:**  A property is a website with a distinct domain and subdomain. For example, contoso.com, sports.contoso.com and news.contoso.com are separate properties.
 
 All domain paths are considered part of the same property. For example, contoso.com/sports is considered part of contoso.com.
 

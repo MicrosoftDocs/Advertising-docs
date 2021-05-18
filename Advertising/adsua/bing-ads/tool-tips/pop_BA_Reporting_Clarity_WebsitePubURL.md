@@ -9,6 +9,6 @@ ms.author: eur
 
 # Website URL
 
-**What it is:**    The URL of the publishers website.
+**What it is:**     The URL of the publishers website.
 
 

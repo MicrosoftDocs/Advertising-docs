@@ -1,7 +1,7 @@
 ---
 title: Location targets
 description: Location targets
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -11,6 +11,6 @@ ms.author: eur
 
 **What it is:**
 
-**What you need to know:**   This is the part of the world you are targeting.
+**What you need to know:**    This is the part of the world you are targeting.
 
 

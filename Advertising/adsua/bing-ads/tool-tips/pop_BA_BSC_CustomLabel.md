@@ -9,6 +9,6 @@ ms.author: eur
 
 # Custom Label
 
-**What it is:** Used to identify products for ad campaign filters, such as "Best sellers," "Winter," or "Spring."
+**What it is:**  Used to identify products for ad campaign filters, such as "Best sellers," "Winter," or "Spring."
 
 

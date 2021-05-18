@@ -9,6 +9,6 @@ ms.author: eur
 
 # Define spreadsheet scope
 
-**What it is**: Here you choose which kind of account you want to query data from.
+**What it is** : Here you choose which kind of account you want to query data from.
 
 

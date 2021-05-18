@@ -9,7 +9,7 @@ ms.author: eur
 
 # Image link
 
-**What it is:** The URL of an image of the item.
+**What it is:**  The URL of an image of the item.
 
 **What you need to know:**
 - 1000 character limit

@@ -33,10 +33,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               Title of the subscription
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Contoso 1-year subscription
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  Include the word "subscription"
 				 Alphanumeric
                  150 character limit
@@ -53,10 +53,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               Base price, excluding tax and shipping, submitted in local currency.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  23.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                 0.00 to 10000000.00 (10 million)
@@ -80,10 +80,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               Predefined product category (equivalent to google_product_category)
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Software | Computer Software
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric 
                  255 character limit
@@ -91,7 +91,7 @@ Here’s a closer look at the requirements for your product feed and landing pag
                  
                 Only the greater than symbol &gt; is a valid delimiter. Any other value is treated as invalid.
                  
-                <strong>Full list of taxonomy values</strong>:
+                <strong>Full list of taxonomy values</strong> :
                 <ul><li>
                     [English](https://go.microsoft.com/fwlink?LinkId=507666)
                   </li><li>
@@ -112,10 +112,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               Manufacturer Part Number
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  ADNK-5020
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                   
@@ -139,10 +139,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
               Global Trade Item Number. 
                 Up to 10 GTIN values can be provided, with a maximum of 14 digits per value. For multiple GTIN values, separate by a comma and space.
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  00012345600012
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Numeric
                  14 digits max per value  
@@ -159,10 +159,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               Item’s manufacturer, brand or publisher
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  Contoso
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  70 character limit
@@ -182,11 +182,11 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <th scope="row" style="font-weight:normal;border-bottom:solid 1px #ccc">shipping</th>
     <td>
               Cost of shipping, submitted in local currency. This is a required field for Germany only.<para><para>Shipping has multiple subfields and can have the following headers:</para><ul><li>shipping(price)</li><li>shipping(country:price)</li><li>shipping(country:service:price)</li><li>shipping</li></ul>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  
                 12.99
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  Numeric
                  0.01 to 10000000.00 (10 million)
                  Use two decimal places and no symbols (e.g., €)
@@ -203,10 +203,10 @@ Here’s a closer look at the requirements for your product feed and landing pag
     <td>
               URL of an image of the item
               <para>
-                <strong>Example:</strong>
+                <strong>Example:</strong> 
                  http://www.bingshop.com/ images/ISI1.jpg
               </para><para>
-                <strong>Requirements:</strong>
+                <strong>Requirements:</strong> 
                  
                 Alphanumeric
                  1000 character limit
@@ -233,9 +233,9 @@ Here’s a closer look at the requirements for your product feed and landing pag
 ## Landing page requirements
 For software subscriptions, you need to send your customers to specific landing pages that outlines the details of the subscriptions. Take a look at the requirements for the software subscription landing pages:
 
-- **Create different landing pages for each product variant**. For example, if your software subscription has different versions, each version needs a separate landing page.
-- **Show the total price of the full software subscription** and make sure that it is preselected. The total price must be preselected and be for the full subscription, with a minimum of 1 year. Any subsidized periods for the prepaid 12-month subscriptions must be included in the total price.
-- **Disclose renewal and cancellation terms**. Be sure to include all renewal information (is the subscription automatically renewed or a fixed term?) and any cancellation details (what happens if a customer wants to cancel a prepaid subscription before the 1-year period is up?).
+- **Create different landing pages for each product variant** . For example, if your software subscription has different versions, each version needs a separate landing page.
+- **Show the total price of the full software subscription**  and make sure that it is preselected. The total price must be preselected and be for the full subscription, with a minimum of 1 year. Any subsidized periods for the prepaid 12-month subscriptions must be included in the total price.
+- **Disclose renewal and cancellation terms** . Be sure to include all renewal information (is the subscription automatically renewed or a fixed term?) and any cancellation details (what happens if a customer wants to cancel a prepaid subscription before the 1-year period is up?).
 
 For more information, see our article on  [setting up landing pages](./hlp_BA_PROC_ChangeLandingPage.md).
 

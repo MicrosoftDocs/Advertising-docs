@@ -1,7 +1,7 @@
 ---
 title: I forgot my user name or password
 description: Forgot your user name or password? It happens. Here are the steps to get you up and running again in Microsoft Advertising Editor.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

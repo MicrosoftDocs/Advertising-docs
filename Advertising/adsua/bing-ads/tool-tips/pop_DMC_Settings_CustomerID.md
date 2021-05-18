@@ -9,6 +9,6 @@ ms.author: eur
 
 # Manager account number
 
-**What it is: ** We use your manager account number to identify you when you call support.
+**What it is:**  We use your manager account number to identify you when you call support.
 
 

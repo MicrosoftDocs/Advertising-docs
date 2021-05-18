@@ -15,6 +15,8 @@ Before your campaigns can go live and your ads run, you need to make some choice
 
 With postpay threshold accounts, Microsoft Advertising automatically bills you on your monthly billing date (the date of the month you signed up) or when your charges reach a specific amount, whichever comes first. This predetermined amount, called your billing threshold, is the credit limit of your account. As you make payments, your billing threshold will increase. Read more [about billing threshold](./hlp_BA_CONC_BillingThreshold.md).
 
+![Billing threshold chart](../images/BA_Conc_NewAdv_HowBilled.png)
+
 ## Set up your billing
 
 When you’re ready to go live with your Microsoft Advertising campaigns, you’ll need to set up your billing information. Remember, with Microsoft Advertising pay-per-click advertising, you’re not charged until someone clicks your ad.
@@ -29,4 +31,5 @@ When you’re ready to go live with your Microsoft Advertising campaigns, you’
 
 For instructions on adding each of the different payment methods, see [Paying by credit and debit card](./hlp_BA_PROC_AddBilling.md) To find out which payment methods you can use based on the country of your billing address, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
 
+ 
 

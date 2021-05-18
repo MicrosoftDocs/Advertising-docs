@@ -9,9 +9,9 @@ ms.author: eur
 
 # Thumbnail source
 
-**What it is**:     This is where you choose the thumbnail that you want to appear in your search ads.
+**What it is** :     This is where you choose the thumbnail that you want to appear in your search ads.
 
-**What you need to know**:     The thumbnail appears in the ad copy and should be engaging to encourage clicks on the video.
+**What you need to know** :     The thumbnail appears in the ad copy and should be engaging to encourage clicks on the video.
 
 The technical requirements for a thumbnail are:
 - Format: JPG, JPEG, PNG, GIF (without animation)

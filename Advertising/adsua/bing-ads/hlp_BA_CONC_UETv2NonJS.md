@@ -28,6 +28,7 @@ Here is an example of the JavaScript UET tag tracking code:
 
 If your website is built as single-page application (SPA), additional changes are required to ensure UET is working on pages where the content is loaded dynamically without a traditional full-page load. Please refer to [this site](https://go.microsoft.com/fwlink?LinkId=2007421) for detailed instructions and to view code samples in action.
 
+ 
 > [!NOTE]
 > Don't know what UET is? See [What is UET and how can it help me?](./hlp_BA_CONC_UETv2WhatIsTag.md)
 

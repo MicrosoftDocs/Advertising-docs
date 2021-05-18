@@ -1,7 +1,7 @@
 ---
 title: Create Sitelink Extensions
 description: Learn how to add Sitelink Extensions in Microsoft Advertising Editor, where are additional links you can add to your ad.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -33,8 +33,8 @@ You can now also add up to two lines of descriptive text under each Sitelink Ext
 1. Select **Sitelink Extensions** under **Ads and extensions** from the type list in the left panel.
 1. Click **Make multiple changes** in the data view and select **Add/update multiple ad group Sitelink Extensions** or **Add/update multiple campaign Sitelink Extensions**.
 1. In the **Add/update multiple changes** dialog box, do one of the following:
-  - If the data you are going to add includes campaign names, select **My ad group/campaign Sitelink Extensions data includes campaign names**.
-  - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Sitelink Extensions to.
+   - If the data you are going to add includes campaign names, select **My ad group/campaign Sitelink Extensions data includes campaign names**.
+   - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Sitelink Extensions to.
 
 1. If you want to use the suggested headings, click **Insert headings**. If you want to use your own headings, in the first row of the text box, type the heading of each column, such as *Sitelink Extension Order* or *Sitelink Extension Destination URL*.
 1. In the text box, either paste your Sitelink Extensions data into the box using tabs as delimiters or type the data for one link per line, using tabs to move to the next column.

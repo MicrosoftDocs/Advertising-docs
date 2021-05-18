@@ -9,8 +9,8 @@ ms.author: eur
 
 # Target and bid
 
-**What it is**: If you choose this option, we will only deliver ads to people who meet at least one of your industry criteria, while letting you make bid adjustments for specific industries.
+**What it is** : If you choose this option, we will only deliver ads to people who meet at least one of your industry criteria, while letting you make bid adjustments for specific industries.
 
-**Why it's important**: This setting ensures that the people seeing your ads meet your industry criteria.
+**Why it's important** : This setting ensures that the people seeing your ads meet your industry criteria.
 
 

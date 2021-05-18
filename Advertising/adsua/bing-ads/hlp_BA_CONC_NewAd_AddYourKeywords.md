@@ -17,13 +17,14 @@ If you’re a new Microsoft Advertising user, we recommend **broad match** for y
 1. From the **Campaigns** page, click the **Keywords** tab (or from the main menu on the left, click **All campaigns** and then **Keywords**).
 1. Click **Add keywords**.
 1. Under **Enter keywords**, either:
-  1. Type your keywords in the text box.
-  1. Use **Get keyword suggestions** for additional keyword ideas.
+   1. Type your keywords in the text box.
+   1. Use **Get keyword suggestions** for additional keyword ideas.
 
 Note: A keyword cannot contain scripts, HTML, or other markup language.
 
 1. When you've added the keywords you want to use, click **Save**.
 
+ 
 ## What are negative keywords?
 
 Negative keywords prevent your ads from showing for searches that won’t likely lead to sales. For example, Sarah owns a toy store and wants to run a sale for electronics for kids. To avoid paying for clicks for customers searching other types of toys like "dolls", "board games", or "puzzles", she could create a negative keywords list to include these keywords. Learn more about negative keywords [here](./hlp_BA_PROC_AddNegativeKeywords.md).
@@ -35,4 +36,5 @@ Negative keywords prevent your ads from showing for searches that won’t likely
 1. Select the campaign or ad group that you'd like to edit, then enter your negative keywords.
 1. Click **Save**.
 
+ 
 

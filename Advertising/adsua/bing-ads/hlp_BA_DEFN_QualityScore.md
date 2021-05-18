@@ -27,67 +27,19 @@ A low quality score means that your competitors' campaigns are performing better
 
 While reviewing the quality scores for keywords in two different ad groups, you find the following:
 
-<table>
-  <tr>
-    <th scope="col">Ad group 1</th>
-    <th scope="col">Quality score</th>
-  </tr>
-  <tr>
-    <td>Keyword 1</td>
-    <td>
-              9
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 2</td>
-    <td>
-              10
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 3</td>
-    <td>
-              9
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 4</td>
-    <td>
-              9
-            </td>
-  </tr>
-</table>
+|Ad group 1|Quality score|
+|---|---|
+|Keyword 1|9|
+|Keyword 2|10|
+|Keyword 3|9|
+|Keyword 4|9|
 
-<table>
-  <tr>
-    <th scope="col">Ad group 2</th>
-    <th scope="col">Quality score</th>
-  </tr>
-  <tr>
-    <td>Keyword 5</td>
-    <td>
-              10
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 6</td>
-    <td>
-              10
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 7</td>
-    <td>
-              10
-            </td>
-  </tr>
-  <tr>
-    <td>Keyword 8</td>
-    <td>
-              4
-            </td>
-  </tr>
-</table>
+|Ad group 2|Quality score|
+|---|---|
+|Keyword 5|10|
+|Keyword 6|10|
+|Keyword 7|10|
+|Keyword 8|4|
 
 Ad group 1 looks pretty good. Probably no changes needed there. But that last keyword in ad group 2 needs some investigation. This poor performer can impact the quality score for your overall ad group.
 

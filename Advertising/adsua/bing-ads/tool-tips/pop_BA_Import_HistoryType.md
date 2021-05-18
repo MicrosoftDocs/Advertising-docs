@@ -9,6 +9,6 @@ ms.author: eur
 
 # Type
 
-**What it is:** This tells you if the import was run from a file or from an outside service provider.
+**What it is:**  This tells you if the import was run from a file or from an outside service provider.
 
 

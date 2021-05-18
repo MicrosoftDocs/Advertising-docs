@@ -19,14 +19,14 @@ ms.author: eur
 1. Select the audience type you want to use.
 1. Click **Next**.
 1. Follow the instructions in the appropriate audience type's article:
-  1. [Custom audiences: Create richer user segments with your own data](./hlp_BA_CONC_Audiences_CustomAudience.md) (available in all Microsoft Advertising markets except within the European Union, Norway, Switzerland, and the United Kingdom)
-  1. [Combined lists: Mix and match audiences to reach just the right customers](./hlp_BA_CONC_Audiences_CustomCombo.md) (not everyone has this feature yet)
-  1. [Customer match: Use your own data to find customers](./hlp_BA_CONC_Audiences_CustomerMatch.md) (available in all Microsoft Advertising markets except within the European Union, United Kingdom, and China)
-  1. [Dynamic remarketing lists: Remarketing for products](./hlp_BA_CONC_Audiences_ProductAudience.md) (not everyone has this feature yet)
-  1. [In-market audiences: Reach people who are ready to buy](./hlp_BA_CONC_Audiences_InMarketAudience.md) (available in Australia, Austria, Canada, Denmark, Finland, France, Germany, India, Ireland, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, and United States)
-  1. [LinkedIn profile targeting](./hlp_BA_CONC_LinkedInTargeting.md)
-  1. [Remarketing: Target people who have visited your site before](./hlp_BA_CONC_Audiences_Remarketing.md)
-  1. [Similar audiences: Reach a wider qualified set of customers](./hlp_BA_CONC_Audiences_SimilarAudience.md) (not everyone has this feature yet)
+   1. [Custom audiences: Create richer user segments with your own data](./hlp_BA_CONC_Audiences_CustomAudience.md) (available in all Microsoft Advertising markets except within the European Union, Norway, Switzerland, and the United Kingdom)
+   1. [Combined lists: Mix and match audiences to reach just the right customers](./hlp_BA_CONC_Audiences_CustomCombo.md) (not everyone has this feature yet)
+   1. [Customer match: Use your own data to find customers](./hlp_BA_CONC_Audiences_CustomerMatch.md) (available in all Microsoft Advertising markets except within the European Union, United Kingdom, and China)
+   1. [Dynamic remarketing lists: Remarketing for products](./hlp_BA_CONC_Audiences_ProductAudience.md) (not everyone has this feature yet)
+   1. [In-market audiences: Reach people who are ready to buy](./hlp_BA_CONC_Audiences_InMarketAudience.md) (available in Australia, Austria, Canada, Denmark, Finland, France, Germany, India, Ireland, Italy, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, and United States)
+   1. [LinkedIn profile targeting](./hlp_BA_CONC_LinkedInTargeting.md)
+   1. [Remarketing: Target people who have visited your site before](./hlp_BA_CONC_Audiences_Remarketing.md)
+   1. [Similar audiences: Reach a wider qualified set of customers](./hlp_BA_CONC_Audiences_SimilarAudience.md) (not everyone has this feature yet)
 
 > [!IMPORTANT]
 > An audience takes up to 24 hours to build, and targeting for it won't take effect until that point.

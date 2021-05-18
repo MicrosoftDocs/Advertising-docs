@@ -9,6 +9,6 @@ ms.author: eur
 
 # Month
 
-**What it is:**    The month of the invoice bill.
+**What it is:**     The month of the invoice bill.
 
 

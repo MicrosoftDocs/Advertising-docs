@@ -14,47 +14,15 @@ Upgraded URLs separate your tracking information from the landing page URL, maki
 ## What are the new terms with Upgraded URLs?
 With upgraded URLs, we have several new terms that are important:
 
-<table>
-  <tr>
-    <th scope="col">Name</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th scope="row">Landing page URL</th>
-    <td>The webpage where people end up after they click your ad. You have two choices: final URL or destination URL. The URL of this page is usually the same as your ad's final URL.</td>
-  </tr>
-  <tr>
-    <th scope="row">Final URL</th>
-    <td>The upgraded version of the URL address of the page on your website that people reach when they click your ad from a desktop or laptop.</td>
-  </tr>
-  <tr>
-    <th scope="row">Destination URL</th>
-    <td>The URL address of the page in your website that people reach when they click your ad.</td>
-  </tr>
-  <tr>
-    <th scope="row">Mobile URL</th>
-    <td>The upgraded version of the URL address of the page in your website that people reach when they click your ad from a mobile device.</td>
-  </tr>
-  <tr>
-    <th scope="row">Tracking template</th>
-    <td>
-            The field where you will put tracking information. When an ad is clicked, this information will be added to your final URL to create your landing page URL.
-            When you define this at the account, campaign or ad group level, it is called a shared tracking template because all ads, keywords and Sitelink Extensions will inherit the tracking parameters
-          </td>
-  </tr>
-  <tr>
-    <th scope="row">URL parameters</th>
-    <td>
-            URL parameters that are defined by Microsoft Advertising that you can add to your tracking templates. To learn how add to tracking template, see [How do I create an account tracking template?](./hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md)
-          </td>
-  </tr>
-  <tr>
-    <th scope="row">Custom parameters</th>
-    <td>
-            URL parameters that you can create yourself and add to your tracking templates. To learn how add to tracking template, see [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
-          </td>
-  </tr>
-</table>
+|Name|Description|
+|---|---|
+|Landing page URL|The webpage where people end up after they click your ad. You have two choices: final URL or destination URL. The URL of this page is usually the same as your ad's final URL.|
+|Final URL|The upgraded version of the URL address of the page on your website that people reach when they click your ad from a desktop or laptop.|
+|Destination URL|The URL address of the page in your website that people reach when they click your ad.|
+|Mobile URL|The upgraded version of the URL address of the page in your website that people reach when they click your ad from a mobile device.|
+|Tracking template|The field where you will put tracking information. When an ad is clicked, this information will be added to your final URL to create your landing page URL.            When you define this at the account, campaign or ad group level, it is called a shared tracking template because all ads, keywords and Sitelink Extensions will inherit the tracking parameters|
+|URL parameters|URL parameters that are defined by Microsoft Advertising that you can add to your tracking templates. To learn how add to tracking template, see [How do I create an account tracking template?](./hlp_BA_CONC_UpgradeURL_TrackTemplateGlobalParam.md)|
+|Custom parameters|URL parameters that you can create yourself and add to your tracking templates. To learn how add to tracking template, see [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)|
 
 ## What Microsoft Advertising entities use tracking templates and custom parameters?
 While we recommend creating a shared tracking template at the account level, you can define tracking templates at the account, campaign, ad group, ad, keyword and Sitelink Extension levels.
@@ -63,105 +31,14 @@ When applying the tracking template or custom parameters, Microsoft Advertising 
 
 The following table summarizes the support for individual fields of Upgraded URLs in various Microsoft Advertising entities.
 
-<table>
-  <tr>
-    <th scope="col">Microsoft Advertising entity</th>
-    <th scope="col">Tracking template</th>
-    <th scope="col">Custom parameters</th>
-    <th scope="col">Final URL</th>
-    <th scope="col">Mobile URL</th>
-  </tr>
-  <tr>
-    <th scope="row">Account</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-  </tr>
-  <tr>
-    <th scope="row">Campaign</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-  </tr>
-  <tr>
-    <th scope="row">Ad group</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-    <td style="text-align:center">
-			![Not included](../images/Global_Icon_Xmark.png)
-		  </td>
-  </tr>
-  <tr>
-    <th scope="row">Ad</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Keyword</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Sitelink Extension</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Microsoft Advertising entity|Tracking template|Custom parameters|Final URL|Mobile URL|
+|---|---|---|---|---|
+|Account|![Included](../images/Global_Icon_CheckMark.png)|![Not included](../images/Global_Icon_Xmark.png)|![Not included](../images/Global_Icon_Xmark.png)|![Not included](../images/Global_Icon_Xmark.png)|
+|Campaign|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Not included](../images/Global_Icon_Xmark.png)|![Not included](../images/Global_Icon_Xmark.png)|
+|Ad group|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Not included](../images/Global_Icon_Xmark.png)|![Not included](../images/Global_Icon_Xmark.png)|
+|Ad|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|
+|Keyword|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|
+|Sitelink Extension|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|
 
 ## Will my ad statistics be reset if I upgrade my URLs?
 When you make updates to Microsoft Advertising campaigns, we do not reset any performance stats. Microsoft Advertising reuses the existing identifier ID for all entities.
@@ -174,38 +51,14 @@ Destination URLs today have a character limit of 1024. By upgrading your URLs, y
 
 Below are the following limits for URLs, custom parameters, tracking templates:
 
-<table>
-  <tr>
-    <th scope="col">Field</th>
-    <th scope="col">Character limit</th>
-  </tr>
-  <tr>
-    <td>Destination URL</td>
-    <td>1024</td>
-  </tr>
-  <tr>
-    <td>Final URL</td>
-    <td>2048</td>
-  </tr>
-  <tr>
-    <td>Mobile URL</td>
-    <td>2048</td>
-  </tr>
-  <tr>
-    <td>Tracking template</td>
-    <td>2048</td>
-  </tr>
-  <tr>
-    <td>Custom parameter name</td>
-    <td>16, for example: {_coupon} is 6 chars long "coupon"
-</td>
-  </tr>
-  <tr>
-    <td>Custom parameter value</td>
-    <td>200
-</td>
-  </tr>
-</table>
+|Field|Character limit|
+|---|---|
+|Destination URL|1024|
+|Final URL|2048|
+|Mobile URL|2048|
+|Tracking template|2048|
+|Custom parameter name|16, for example: {_coupon} is 6 chars long "coupon"|
+|Custom parameter value|200|
 
 ## What happens if I do not upgrade?
 Microsoft Advertising does not currently have a requirement to move to upgraded URLs. If this were to change, we will notify our customers and partners.
@@ -222,8 +75,8 @@ To learn how use tracking parameters, see [How do I create an account tracking t
 ## How do I use a landing page URL?
 Landing page URL is the webpage a user goes to when they click your ad. With Upgraded URLs, you now have two options for landing page URL:
 
-- **Destination URL:** The older way to define URLs where you can add the URL and URL parameters.
-- **Final URL:** The new way to define URLs, which allows you the define a separate mobile URL, tracking template and custom parameters.
+- **Destination URL:**  The older way to define URLs where you can add the URL and URL parameters.
+- **Final URL:**  The new way to define URLs, which allows you the define a separate mobile URL, tracking template and custom parameters.
 
 ## How do I upgrade if I use a tool provider or agency?
 If you are using a third party tool provider or agency to aid in your campaign and URL management, check with them first to find out their plans for          upgrading before planning your URL upgrades.
@@ -244,7 +97,7 @@ Custom parameters can be set at the campaign, ad group, text ad, keyword and Sit
 
 To learn how set up custom parameters at each level, see [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md).
 
-**Example:** Overriding a campaign-level custom parameter at the keyword level
+**Example:**  Overriding a campaign-level custom parameter at the keyword level
 
 Campaign: Sales has the following custom parameters:
 
@@ -263,31 +116,10 @@ No. You need to make sure that you select **Final URL** as your landing page if 
 ## How does Upgraded URLs impact standard text ads and Expanded Text Ads?
 You can use Upgraded URLs (final URL + tracking template) with both standard text ads and Expanded Text Ads.
 
-<table>
-  <tr>
-    <th scope="col">Type</th>
-    <th scope="col">Destination URL tracking</th>
-    <th scope="col">Upgraded URLs (final URL + tracking template)</th>
-  </tr>
-  <tr>
-    <th scope="row">Standard text ad</th>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Expanded Text Ad</th>
-    <td style="text-align:center">
-				![Not included](../images/Global_Icon_Xmark.png)
-			  </td>
-    <td style="text-align:center">
-              ![Included](../images/Global_Icon_CheckMark.png)
-            </td>
-  </tr>
-</table>
+|Type|Destination URL tracking|Upgraded URLs (final URL + tracking template)|
+|---|---|---|
+|Standard text ad|![Included](../images/Global_Icon_CheckMark.png)|![Included](../images/Global_Icon_CheckMark.png)|
+|Expanded Text Ad|![Not included](../images/Global_Icon_Xmark.png)|![Included](../images/Global_Icon_CheckMark.png)|
 
 To learn more, see [FAQ: Expanded Text Ads](./hlp_BA_CONC_EXTA_FAQ.md).
 

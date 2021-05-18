@@ -9,8 +9,8 @@ ms.author: eur
 
 # Top level category
 
-**What it is:**    Microsoft Advertising analyzes your website and categorizes its content. The top level category is the highest, broadest level—for example, "shoes".
+**What it is:**     Microsoft Advertising analyzes your website and categorizes its content. The top level category is the highest, broadest level—for example, "shoes".
 
-**Why it’s important:**  Find out what gets customers to the parts of your website you want them to visit.
+**Why it’s important:**   Find out what gets customers to the parts of your website you want them to visit.
 
 

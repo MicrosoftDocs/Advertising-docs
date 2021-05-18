@@ -9,6 +9,6 @@ ms.author: eur
 
 # Action
 
-**What it is: **This is the pending request to change who will pay the advertising charges to this account.
+**What it is:** This is the pending request to change who will pay the advertising charges to this account.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video views at 25%
 
-**What it is:** The number of times a user completed at least 25% of the video (measured directly).
+**What it is:**  The number of times a user completed at least 25% of the video (measured directly).
 
 

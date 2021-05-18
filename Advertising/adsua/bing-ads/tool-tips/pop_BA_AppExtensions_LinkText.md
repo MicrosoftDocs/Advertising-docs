@@ -9,6 +9,6 @@ ms.author: eur
 
 # Link text
 
-**What it is:** Link text is what potential customers click when they view your ad to go to your mobile app.
+**What it is:**  Link text is what potential customers click when they view your ad to go to your mobile app.
 
 

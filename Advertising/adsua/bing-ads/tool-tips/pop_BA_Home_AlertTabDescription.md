@@ -13,9 +13,9 @@ Microsoft Advertising sends you alerts to let you know about important events re
 
 Alerts provide information about four aspects of your account:
 
-- **Account**: Account status changes and other account events.
-- **Billing**: Budget changes, credit card status, declined charges, and other billing events.
-- **Campaign**: Campaign changes, editorial rejections, and other campaign-related events.
-- **General**: Service alerts, server maintenance updates, and other events.
+- **Account** : Account status changes and other account events.
+- **Billing** : Budget changes, credit card status, declined charges, and other billing events.
+- **Campaign** : Campaign changes, editorial rejections, and other campaign-related events.
+- **General** : Service alerts, server maintenance updates, and other events.
 
 

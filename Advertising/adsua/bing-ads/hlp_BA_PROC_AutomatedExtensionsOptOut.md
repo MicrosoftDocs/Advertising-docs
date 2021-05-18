@@ -13,7 +13,7 @@ Like regular ad extensions, Automated Extensions add a little spice to your ads,
 
 ## Opt out of Automated Extensions
 
-**Note**: You can only opt out of Automated Extensions at the account level.
+**Note** : You can only opt out of Automated Extensions at the account level.
 
 1. From the main menu on the left, click **All campaigns**.
 1. From the page menu, click **Campaigns** or **Ad groups**.

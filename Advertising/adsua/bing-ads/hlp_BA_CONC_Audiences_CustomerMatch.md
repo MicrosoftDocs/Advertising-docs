@@ -9,14 +9,11 @@ ms.author: eur
 
 # Customer match: Use your own data to find customers
 
-> [!IMPORTANT]
-> Customer match is currently in open beta and is available in all Microsoft Advertising markets except within the European Union, United Kingdom, and China.
-
 With customer match, use the email addresses your customers have shared with you to reengage with them across the Microsoft Search Network and Microsoft Audience Network.
 
-- **Boosted performance**. Use your complete user understanding, including offline data, to retarget customers who are more likely to convert.
-- **Full control and flexibility over the customer data that’s uploaded**. You decide how to use your own first-party data – build and modify any number of lists to help you reach your business goals.
-- **Streamlined management**. Use your existing segmentation and Customer match lists by uploading them to your Microsoft Advertising account.
+- **Boosted performance** . Use your complete user understanding, including offline data, to retarget customers who are more likely to convert.
+- **Full control and flexibility over the customer data that’s uploaded** . You decide how to use your own first-party data – build and modify any number of lists to help you reach your business goals.
+- **Streamlined management** . Use your existing segmentation and Customer match lists by uploading them to your Microsoft Advertising account.
 
 Use your customer match lists to grow brand awareness, increase conversions by reengaging with them, or tailor messaging to upsell or cross-sell other products and services. You can also use your lists as exclusions to ensure you’re only engaging with potential new customers. Some example Customer match list use cases include:
 
@@ -58,6 +55,7 @@ Once you have your customer list in a file, you can create a new audience for ta
 1. Choose the membership duration and description (optional), and then select **Next**.
 1. Preview the changes and then select **Apply changes** to start the upload.
 
+Customer match lists are ready to be associated with campaigns and ad groups 48 hours after upload.
 ## Associate the audience with campaigns and ad groups
 
 Customer lists are just one of our [audience targeting options](./hlp_BA_CONC_Audiences_Options.md). Once you have created or selected an audience, you need to associate it with an ad group or campaign, or with multiple ad groups or campaigns. The association can increase bids for, target, or exclude the people included in your audience.

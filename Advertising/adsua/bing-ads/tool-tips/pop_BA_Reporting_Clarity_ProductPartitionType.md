@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product partition type
 
-**What it is:**    It defines the possible types of product partition, either unit or subdivision.
+**What it is:**     It defines the possible types of product partition, either unit or subdivision.
 
 

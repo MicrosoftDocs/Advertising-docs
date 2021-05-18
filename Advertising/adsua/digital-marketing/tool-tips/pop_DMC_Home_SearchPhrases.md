@@ -1,7 +1,7 @@
 ---
 title: Search phrases
 description: Search phrases
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Search phrases
 
-**What it is:** The words or phrases people searched for that triggered your ads on Bing or Google, during the selected date range.
+**What it is:**  The words or phrases people searched for that triggered your ads on Bing or Google, during the selected date range.
 
 **What you need to know:**
 - You can pause search phrases that aren't relevant to your business. Once you do, your ads won't display for these search phrases in the future.

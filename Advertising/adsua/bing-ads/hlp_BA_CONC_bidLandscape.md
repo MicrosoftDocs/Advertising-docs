@@ -25,8 +25,8 @@ At the ad group level, you can choose to change all of your keyword bids or you 
 Bid landscape is only available if there is sufficient impression and click data for your keywords. If there is data available, a small graph will appear next to each of your bids on the **Campaigns** table. To view the bid landscape simulation:
 1. On the **Campaigns** table, click on the graph icon in the **Budget** column of the campaign you want to review.
 1. Choose which kind of simulation you want: **Bid scaling** (increase or decrease all your bids by a percentage) or **Campaign-wide bid** (set all of your bids to the same, specific value).
-  1. **Bid scaling**: To simulate increasing or decreasing bids by a percentage, select an option in the **Keyword bid** column or enter a percentage in **Other bid adjustment**.
-  1. **Campaign-wide bid**: To simulate a different bid, select an option from the **Keyword bid** column or enter an amount in **Other bid**.
+   1. **Bid scaling** : To simulate increasing or decreasing bids by a percentage, select an option in the **Keyword bid** column or enter a percentage in **Other bid adjustment**.
+   1. **Campaign-wide bid** : To simulate a different bid, select an option from the **Keyword bid** column or enter an amount in **Other bid**.
 
 1. If you are happy with the simulation and want to make it your new keyword bid, click **Save**.
 

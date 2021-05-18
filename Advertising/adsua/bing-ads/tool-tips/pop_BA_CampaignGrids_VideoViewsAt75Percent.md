@@ -9,6 +9,6 @@ ms.author: eur
 
 # Video views at 75%
 
-**What it is**: The number of times a user completed watching at least 75% of the video.
+**What it is** : The number of times a user completed watching at least 75% of the video.
 
 

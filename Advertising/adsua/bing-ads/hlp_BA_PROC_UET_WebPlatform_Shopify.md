@@ -27,12 +27,12 @@ If you created and manage your website with Shopify, you can add and manage your
 1. Go to **Settings**&nbsp;&gt;&nbsp;**Checkout** to add your UET tag to your site's checkout page.
 1. Paste the UET tracking code in the **Order Processing**&nbsp;&gt;&nbsp;**Additional scripts** text box and click **Save**.
 1. If you want to report variable revenue, add one of the following code snippets below the UET tracking code you pasted in the previous step:
-  1. Use this code if you want to exclude taxes and shipping:
+   1. Use this code if you want to exclude taxes and shipping:
 ```
 <script>   window.uetq = window.uetq || [];    window.uetq.push('event', '', { 'revenue_value': {{ subtotal_price | money_without_currency }}, 'currency': '{{ shop.currency }}' }); </script>
 ```
 
-  1. Use this code if you want to include taxes and shipping:
+   1. Use this code if you want to include taxes and shipping:
 ```
 <script>   window.uetq = window.uetq || [];    window.uetq.push('event', '', { 'revenue_value': {{ total_price | money_without_currency }}, 'currency': '{{ shop.currency }}' }); </script>
 ```

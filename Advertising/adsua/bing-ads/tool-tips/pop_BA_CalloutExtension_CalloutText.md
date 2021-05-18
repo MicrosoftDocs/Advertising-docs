@@ -9,8 +9,8 @@ ms.author: eur
 
 # Callout text
 
-**What it is:** Descriptive text that show under your ad, providing additional details about products or services your website offers.
+**What it is:**  Descriptive text that show under your ad, providing additional details about products or services your website offers.
 
-**What you need to know:** The maximum number of characters is 25 characters.
+**What you need to know:**  The maximum number of characters is 25 characters.
 
 

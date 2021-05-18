@@ -9,8 +9,8 @@ ms.author: eur
 
 # Target all webpages
 
-**What it is:** If you select this option, Microsoft Advertising will look at content from all pages of your website in order to generate keywords and ads.
+**What it is:**  If you select this option, Microsoft Advertising will look at content from all pages of your website in order to generate keywords and ads.
 
-**What you need to know:** This will include all indexed pages, including subdirectories.
+**What you need to know:**  This will include all indexed pages, including subdirectories.
 
 

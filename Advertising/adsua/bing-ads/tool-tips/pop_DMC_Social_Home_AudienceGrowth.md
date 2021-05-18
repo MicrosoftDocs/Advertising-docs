@@ -9,6 +9,6 @@ ms.author: eur
 
 # Audience growth
 
-**What it is:** Number of followers you’ve gained for all your social profiles (that are connected to Microsoft Advertising) during the selected date range.
+**What it is:**  Number of followers you’ve gained for all your social profiles (that are connected to Microsoft Advertising) during the selected date range.
 
 

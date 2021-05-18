@@ -9,6 +9,6 @@ ms.author: eur
 
 # Missed calls
 
-**What it is:**    The number of calls not answered that orginated from a call extension.
+**What it is:**     The number of calls not answered that orginated from a call extension.
 
 

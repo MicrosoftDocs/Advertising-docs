@@ -20,14 +20,14 @@ For search campaigns, you can add tracking templates at these levels:
 - Keyword
 - Sitelink Extension
 
-**New!** For Bing Shopping Campaigns, you can now add tracking templates at the account, campaign, and ad group level along with the product group level.
+**New!**  For Bing Shopping Campaigns, you can now add tracking templates at the account, campaign, and ad group level along with the product group level.
 
 We recommend adding the tracking template to your account. Then when you want to update a parameter or add a new one, you only need to make the change in one place and it applies to everything in that account.
 
 1. From the main menu on the left, click **All campaigns**, then **Settings**, and then **Account settings**.
 1. For **Tracking template**, enter one of these items:
-  - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
-  - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
+   - {lpurl} followed by URL parameters and custom parameters which are separated by an ampersand (&amp;). For example, {lpurl}?matchtype={matchtype}&amp;device={device}. To learn more, see [What tracking or URL parameters can I use?](./hlp_BA_CONC_UpgradeURL_URLParameters.md) and [Can I use custom parameters?](./hlp_BA_CONC_UpgradeURL_TrackTemplateCustomParam.md)
+   - The URL you received from a third-party tracking tool or service. For example, http://www.trackingc.com/?url={lpurl}&amp;id=5
 
 1. Click **Save**.
 

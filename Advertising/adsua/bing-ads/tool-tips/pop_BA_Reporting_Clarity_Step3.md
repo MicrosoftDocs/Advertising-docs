@@ -9,6 +9,6 @@ ms.author: eur
 
 # Step 3
 
-**What it is:**    The number of times this step was reached by potential customers.
+**What it is:**     The number of times this step was reached by potential customers.
 
 

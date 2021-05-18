@@ -9,6 +9,6 @@ ms.author: eur
 
 # Target spend
 
-**What it is:**    The amount you said you wanted to spend when you set your performance target.
+**What it is:**     The amount you said you wanted to spend when you set your performance target.
 
 

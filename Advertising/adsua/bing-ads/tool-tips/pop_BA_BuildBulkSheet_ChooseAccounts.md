@@ -9,6 +9,6 @@ ms.author: eur
 
 # Choose accounts
 
-**What it is**: Here you enter the account numbers you want to query in this field, one per line.
+**What it is** : Here you enter the account numbers you want to query in this field, one per line.
 
 

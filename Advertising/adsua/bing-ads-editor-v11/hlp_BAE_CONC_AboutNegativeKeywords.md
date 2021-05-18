@@ -1,7 +1,7 @@
 ---
 title: Learn about using negative keywords to get to the right customers
 description: You can add negative keywords to a campaign or ad group in Microsoft Advertising Editor to help prevent paying for clicks from people who aren’t interested in your product.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -39,53 +39,16 @@ The following diagram is an example of what happens in step 2. On the left are s
 
 ## Example
 
-**Bidded keyword (broad match)**: wide shoes
+**Bidded keyword (broad match)** : wide shoes
 
-**Negative keyword**: womens shoes
+**Negative keyword** : womens shoes
 
-<table>
-  <tr>
-    <th scope="col">Search query</th>
-    <th style="text-align:center" scope="col">Negative EXACT</th>
-    <th style="text-align:center" scope="col">Negative PHRASE</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">mens wide shoes</th>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_CheckMark.png)
-   </td>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_CheckMark.png)
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">womens wide shoes</th>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_CheckMark.png)
-   </td>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_CheckMark.png)
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">womens shoes</th>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_Xmark.png)
-   </td>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_Xmark.png)
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">wide womens shoes</th>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_CheckMark.png)
-   </td>
-    <td style="text-align:center">
-    ![image alt text](../images/Global_Icon_Xmark.png)
-   </td>
-  </tr>
-</table>
+|Search query|Negative EXACT|Negative PHRASE|
+|---|---|---|
+|mens wide shoes|![image alt text](../images/Global_Icon_CheckMark.png)|![image alt text](../images/Global_Icon_CheckMark.png)|
+|womens wide shoes|![image alt text](../images/Global_Icon_CheckMark.png)|![image alt text](../images/Global_Icon_CheckMark.png)|
+|womens shoes|![image alt text](../images/Global_Icon_Xmark.png)|![image alt text](../images/Global_Icon_Xmark.png)|
+|wide womens shoes|![image alt text](../images/Global_Icon_CheckMark.png)|![image alt text](../images/Global_Icon_Xmark.png)|
 
 ![image alt text](../images/Global_Icon_CheckMark.png) = Ad eligible to display
 

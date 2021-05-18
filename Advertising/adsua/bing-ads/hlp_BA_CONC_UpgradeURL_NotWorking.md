@@ -30,8 +30,8 @@ Tracking templates at the account, campaign, and ad group level must include a p
           </td>
     <td>
             The Final URL. It will be escaped unless you put {lpurl} at the beginning of your tracking template. If {lpurl} isn't at the beginning of your tracking template, all characters that are not letters, numbers, or the following punctuation characters will be escaped: -, _, ., !, *, (, and ).  
-            <strong>Example:</strong>
-				<ul><li><strong>Final URL:</strong> http://example.com</li><li><strong>Tracking template:</strong> {lpurl}?matchtype={matchtype}</li><li><strong>Landing page URL: </strong> http://example.com?matchtype={matchtype}</li></ul></td>
+            <strong>Example:</strong> 
+				<ul><li><strong>Final URL:</strong>  http://example.com</li><li><strong>Tracking template:</strong>  {lpurl}?matchtype={matchtype}</li><li><strong>Landing page URL:</strong>  http://example.com?matchtype={matchtype}</li></ul></td>
   </tr>
   <tr>
     <td>*{lpurl+2}*</td>

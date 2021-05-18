@@ -1,7 +1,7 @@
 ---
 title: What are Callout Extensions and how do I add them to my ad?
 description: In Microsoft Advertising Editor , bulk manage Callout Extensions and created shared Callout Extensions to associate with multiple campaigns.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -27,8 +27,8 @@ It's important to keep in mind that Microsoft Advertising Scripts can make wide-
 1. On the left navigation pane, click **Bulk Operations** and then **Scripts** (or from the global menu at the top of the page, click **Bulk actions** and then click **Scripts**). This is the main **Scripts** page where you will see any scripts you have already created.
 1. Click **Create script**.
 1. In the script editor, write or paste in your script.
-  1. To see example scripts that you can copy, click **Show examples**.
-  1. For instructions on scripting, take a look at our [Scripts documentation](https://go.microsoft.com/fwlink?LinkId=871630), and for more script snippets you can copy, check out our [scripts code examples](https://go.microsoft.com/fwlink?LinkId=871631).
+   1. To see example scripts that you can copy, click **Show examples**.
+   1. For instructions on scripting, take a look at our [Scripts documentation](https://go.microsoft.com/fwlink?LinkId=871630), and for more script snippets you can copy, check out our [scripts code examples](https://go.microsoft.com/fwlink?LinkId=871631).
 
 1. Click **Save**.
 1. Click **Preview** to see a list of all the changes this script will make. Previewing a script is optional, but is **strongly** recommended.
@@ -59,22 +59,12 @@ Yes, just paste them right in. When you click **Save**, we will automatically ma
 > [!NOTE]
 > If the script adds negative keywords with broad match type, Microsoft Advertising converts them to phrase match type when adding them to the account. Microsoft Advertising doesn't support broad match type for negative keywords.
 
+ 
 ## For more information
 
 Visit our documentation site for details on scripting:
 
-<table type="type2" style="border:0;padding:0">
-  <tr>
-    <td style="width:225px;text-align:center;valign:top;padding:10px; border: 1px solid #ff8b00">
-        [Get Started with Microsoft Advertising Scripts](https://go.microsoft.com/fwlink?LinkId=871630)
-      </td>
-    <td style="width:30px">
-        &nbsp;
-      </td>
-    <td style="width:225px;valign:top;padding:10px; text-align:center; border: 1px solid #ff8b00">
-        [Microsoft Advertising Scripts Code Examples](https://go.microsoft.com/fwlink?LinkId=871631) 
-      </td>
-  </tr>
-</table>
+|[Get Started with Microsoft Advertising Scripts](https://go.microsoft.com/fwlink?LinkId=871630)|&nbsp;|[Microsoft Advertising Scripts Code Examples](https://go.microsoft.com/fwlink?LinkId=871631)|
+|---|---|---|
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Insertion order type
 
-**What it is: ** This tells you if an insertion was uploaded via file import.
+**What it is:**  This tells you if an insertion was uploaded via file import.
 
 

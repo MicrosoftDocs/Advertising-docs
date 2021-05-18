@@ -9,6 +9,6 @@ ms.author: eur
 
 # Company name
 
-**What it is: **    The name of the customer who is associated with the account, regardless of who manages the account.
+**What it is:**     The name of the customer who is associated with the account, regardless of who manages the account.
 
 

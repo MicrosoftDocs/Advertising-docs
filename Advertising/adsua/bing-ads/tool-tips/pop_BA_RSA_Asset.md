@@ -9,6 +9,6 @@ ms.author: eur
 
 # Asset
 
-**What it is:** The asset is a headline or description text string.
+**What it is:**  The asset is a headline or description text string.
 
 

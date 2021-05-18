@@ -19,6 +19,8 @@ Microsoft Advertising provides several types of reports to help you monitor, man
 > Reports will not include campaigns, ad groups, keywords, or other entities with zero impressions.
 > Reporting data is kept for limited periods of time. If you want to learn how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report type, see [this Bing Ads API doc](https://go.microsoft.com/fwlink?LinkId=734729).
 
+<anchor id="standard_report" />
+
 ## Choose the report you want
 Each report type breaks out your data in different ways, to help you see deeper into your campaigns' performance. Choose the report type that shows the data most interesting to you:
 

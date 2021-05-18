@@ -9,8 +9,8 @@ ms.author: eur
 
 # Click share percent
 
-**What it is:** The percentage of clicks that went to your ads. It's the share of the prospective customer's mindshare and buying intent you captured.
+**What it is:**  The percentage of clicks that went to your ads. It's the share of the prospective customer's mindshare and buying intent you captured.
 
-**Why it's important:** This allows you to see where your growth opportunities are.
+**Why it's important:**  This allows you to see where your growth opportunities are.
 
 

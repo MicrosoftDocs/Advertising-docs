@@ -1,7 +1,7 @@
 ---
 title: Understand and use product groups
 description: Product groups are used to specify which products from your Microsoft Merchant Center feed should be included in a particular ad group. In this article will explain more and give a detailed example.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -35,203 +35,16 @@ The best way to understand product groups is to see an example.
 
 Let's say Matt is the owner of a small toy store and his feed includes the following items:
 
-<table>
-  <tr>
-    <th style="text-align:center" scope="col">
-    Merchant Product Identifier
-   </th>
-    <th style="text-align:center" scope="col">Title</th>
-    <th style="text-align:center" scope="col">Brand</th>
-    <th style="text-align:center" scope="col">Category 1</th>
-    <th style="text-align:center" scope="col">Category 2</th>
-    <th style="text-align:center" scope="col">Product Type</th>
-    <th style="text-align:center" scope="col">Custom Label 0</th>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    1111
-   </th>
-    <td style="text-align:center">
-    Toy 1
-   </td>
-    <td style="text-align:center">
-    Tailspin Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    Paint
-   </td>
-    <td style="text-align:center">
-    Ages 1-5
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    2222
-   </th>
-    <td style="text-align:center">
-    Toy 2
-   </td>
-    <td style="text-align:center">
-    Wingtip Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    Stickers
-   </td>
-    <td style="text-align:center">
-    Ages 1-5
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    3333
-   </th>
-    <td style="text-align:center">
-    Toy 3
-   </td>
-    <td style="text-align:center">
-    Tailspin Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Outdoor
-   </td>
-    <td style="text-align:center">
-    Chalk
-   </td>
-    <td style="text-align:center">
-    Ages 6-12
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    4444
-   </th>
-    <td style="text-align:center">
-    Toy 4
-   </td>
-    <td style="text-align:center">
-    Wingtip Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    Glitter
-   </td>
-    <td style="text-align:center">
-    Ages 6-12
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    5555
-   </th>
-    <td style="text-align:center">
-    Toy 5
-   </td>
-    <td style="text-align:center">
-    Tailspin Toys
-   </td>
-    <td style="text-align:center">
-    Media
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    DVD
-   </td>
-    <td style="text-align:center">
-    Teens
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    6666
-   </th>
-    <td style="text-align:center">
-    Toy 6
-   </td>
-    <td style="text-align:center">
-    Wingtip Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Outdoors
-   </td>
-    <td style="text-align:center">
-    Sports
-   </td>
-    <td style="text-align:center">
-    Teens
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    7777
-   </th>
-    <td style="text-align:center">
-    Toy 7
-   </td>
-    <td style="text-align:center">
-    Tailspin Toys
-   </td>
-    <td style="text-align:center">
-    Media
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    Books
-   </td>
-    <td style="text-align:center">
-    Ages 1-5
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="text-align:center; background: transparent">
-    8888
-   </th>
-    <td style="text-align:center">
-    Toy 8
-   </td>
-    <td style="text-align:center">
-    Wingtip Toys
-   </td>
-    <td style="text-align:center">
-    Toys &amp; Games
-   </td>
-    <td style="text-align:center">
-    Indoor
-   </td>
-    <td style="text-align:center">
-    Paint
-   </td>
-    <td style="text-align:center">
-    Ages 6-12
-   </td>
-  </tr>
-</table>
+|Merchant Product Identifier|Title|Brand|Category 1|Category 2|Product Type|Custom Label 0|
+|---|---|---|---|---|---|---|
+|1111|Toy 1|Tailspin Toys|Toys &amp; Games|Indoor|Paint|Ages 1-5|
+|2222|Toy 2|Wingtip Toys|Toys &amp; Games|Indoor|Stickers|Ages 1-5|
+|3333|Toy 3|Tailspin Toys|Toys &amp; Games|Outdoor|Chalk|Ages 6-12|
+|4444|Toy 4|Wingtip Toys|Toys &amp; Games|Indoor|Glitter|Ages 6-12|
+|5555|Toy 5|Tailspin Toys|Media|Indoor|DVD|Teens|
+|6666|Toy 6|Wingtip Toys|Toys &amp; Games|Outdoors|Sports|Teens|
+|7777|Toy 7|Tailspin Toys|Media|Indoor|Books|Ages 1-5|
+|8888|Toy 8|Wingtip Toys|Toys &amp; Games|Indoor|Paint|Ages 6-12|
 
 He wants his ad group to contain only toys for ages 1-5. To do that he would simply narrow the default product group down to a product group where Custom label = Ages 1 -5.
 

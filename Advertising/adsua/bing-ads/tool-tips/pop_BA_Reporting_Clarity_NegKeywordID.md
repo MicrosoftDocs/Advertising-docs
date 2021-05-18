@@ -9,6 +9,6 @@ ms.author: eur
 
 # Negative keyword ID
 
-**What it is: **The unique number that Microsoft Advertising uses to identify this negative keyword.
+**What it is:** The unique number that Microsoft Advertising uses to identify this negative keyword.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Brand
 
-**What it is:**    The brand names that are featured on your website to help people decide if you have what they are looking for.
+**What it is:**     The brand names that are featured on your website to help people decide if you have what they are looking for.
 
 

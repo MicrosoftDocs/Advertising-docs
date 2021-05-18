@@ -1,7 +1,7 @@
 ---
 title: Business location
 description: Business location
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,8 +9,8 @@ ms.author: eur
 
 # Business location
 
-**What it is: ** This is the country/region where your business is legally registered.
+**What it is:**  This is the country/region where your business is legally registered.
 
-**Why it's important:** Business location determines your tax accounting obligations.
+**Why it's important:**  Business location determines your tax accounting obligations.
 
 

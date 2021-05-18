@@ -9,8 +9,8 @@ ms.author: eur
 
 # Performance graph
 
-**What it shows:** The graph allows you compare two different metrics across different date ranges.
+**What it shows:**  The graph allows you compare two different metrics across different date ranges.
 
-**Why review it:** It helps you quickly identify changes in performance.
+**Why review it:**  It helps you quickly identify changes in performance.
 
 

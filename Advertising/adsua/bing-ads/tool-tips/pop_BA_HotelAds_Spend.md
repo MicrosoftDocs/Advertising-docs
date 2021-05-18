@@ -9,6 +9,6 @@ ms.author: eur
 
 # Spend
 
-**What it is:** The sum of your cost-per-click (CPC) charges for your hotel ads.
+**What it is:**  The sum of your cost-per-click (CPC) charges for your hotel ads.
 
 

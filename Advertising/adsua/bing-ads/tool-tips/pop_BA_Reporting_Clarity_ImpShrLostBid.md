@@ -9,8 +9,8 @@ ms.author: eur
 
 # Impression share lost to bid
 
-**What it is:**    The percentage of impression share lost due to low bid.
+**What it is:**     The percentage of impression share lost due to low bid.
 
-**Why it’s important:**    If this number is high, you may want to increase your bids.
+**Why it’s important:**     If this number is high, you may want to increase your bids.
 
 

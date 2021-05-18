@@ -9,7 +9,7 @@ ms.author: eur
 
 # Paid ads
 
-**What it is:** Metrics for your paid advertising during the selected date range.
+**What it is:**  Metrics for your paid advertising during the selected date range.
 
 **What you need to know:**
 - A dash (--) displays if there’s no data available for a metric during the selected date range or if a metric doesn’t apply.

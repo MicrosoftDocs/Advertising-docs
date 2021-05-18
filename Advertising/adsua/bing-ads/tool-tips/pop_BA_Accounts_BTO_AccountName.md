@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account name
 
-**What it is: **This is the name of the linked account you'd like to take over for billing responsibilities.
+**What it is:** This is the name of the linked account you'd like to take over for billing responsibilities.
 
 

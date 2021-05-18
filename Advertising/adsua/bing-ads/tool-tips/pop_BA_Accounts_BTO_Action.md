@@ -9,6 +9,6 @@ ms.author: eur
 
 # Action
 
-**What it is: **This is your request for the linked account.
+**What it is:** This is your request for the linked account.
 
 

@@ -15,6 +15,6 @@ You can compare performance between the selected time range and a comparison ran
 
 If your accounts are in different currencies, you won’t see overall totals for performance metrics and budget data that provide financial information (for example, average CPC, spend, IO budget). If you do not see your performance metrics and budget data on the Accounts Summary page, please filter to one currency at a time.
 
-**Get more info:  **    [Performance trend graphs](../hlp_BA_CONC_CampaignPageGraphs.md).
+**Get more info:**     [Performance trend graphs](../hlp_BA_CONC_CampaignPageGraphs.md).
 
 

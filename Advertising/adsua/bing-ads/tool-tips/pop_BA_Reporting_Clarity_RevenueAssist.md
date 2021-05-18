@@ -9,6 +9,6 @@ ms.author: eur
 
 # Revenue per assist
 
-**What it is:**    Revenue divided by the number of assists.
+**What it is:**     Revenue divided by the number of assists.
 
 

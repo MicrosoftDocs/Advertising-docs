@@ -9,6 +9,6 @@ ms.author: eur
 
 # Phone number
 
-**What it is: ** The phone number registered to your business.
+**What it is:**  The phone number registered to your business.
 
 

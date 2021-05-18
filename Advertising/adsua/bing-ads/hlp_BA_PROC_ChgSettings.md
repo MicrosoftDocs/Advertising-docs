@@ -29,22 +29,22 @@ To change your budget type, take a look at [your different budget options](./hlp
 1. Select the checkbox next to the campaigns that you want to update.
 1. Select **Edit**, and then select **Change budgets**.
 1. To set the budget to a specific amount:
-  1. In the **Action** list, choose **Set**.
-  1. Choose a budget type: Daily - Standard or a Shared - Standard budget from the Shared Library.
-  1. Enter the amount you want to set the budgets to.
-  1. Select **Save**.
+   1. In the **Action** list, choose **Set**.
+   1. Choose a budget type: Daily - Standard or a Shared - Standard budget from the Shared Library.
+   1. Enter the amount you want to set the budgets to.
+   1. Select **Save**.
 
 1. To increase the budgets by a specific percentage or amount:
-  1. In the **Action** list, choose **Increase**.
-  1. Choose which budgets you want to set.
-  1. Enter the percentage or amount you want to increase your budgets by.
-  1. Select **Save**.
+   1. In the **Action** list, choose **Increase**.
+   1. Choose which budgets you want to set.
+   1. Enter the percentage or amount you want to increase your budgets by.
+   1. Select **Save**.
 
 1. To decrease the budgets by a specific percentage or amount:
-  1. In the **Action** list, choose **Decrease**.
-  1. Choose which budgets you want to set.
-  1. Enter the percentage or amount you want to decrease your budgets by.
-  1. Select **Save**.
+   1. In the **Action** list, choose **Decrease**.
+   1. Choose which budgets you want to set.
+   1. Enter the percentage or amount you want to decrease your budgets by.
+   1. Select **Save**.
 
 ## To change ad group status, bids or end dates
 
@@ -68,4 +68,5 @@ To change your budget type, take a look at [your different budget options](./hlp
 > [!NOTE]
 > To have the Keywords table show only specific rows, select the **Filters** (or **Add filter**) and specify what you want to see.
 
+ 
 

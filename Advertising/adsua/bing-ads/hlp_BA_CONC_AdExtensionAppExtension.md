@@ -19,14 +19,15 @@ With app extensions, a customer’s device and operating system is automatically
 
 ![App Extension](../images/BA_Conc_Extension_App.svg)
 
-**Ability to set up in**: Australia, Brazil, Canada, France, Germany, India, the United Kingdom, and the United States
+**Ability to set up in** : Australia, Brazil, Canada, France, Germany, India, the United Kingdom, and the United States
 
-**Serves in**: Bing Mobile and Bing tablet traffic in all markets. On Yahoo tablet traffic in the U.S. Supports iOS, Android, Windows and Windows Phone. App stores include iTunes, Google Play, Windows Phone Store, and Windows Store.
+**Serves in** : Bing Mobile and Bing tablet traffic in all markets. On Yahoo tablet traffic in the U.S. Supports iOS, Android, Windows and Windows Phone. App stores include iTunes, Google Play, Windows Phone Store, and Windows Store.
 
 ## Compare app extensions and app install ads
 
 An app extension is similar to an [app install ad](./hlp_BA_CONC_AppInstallAds.md). They both use third-party measurement URLs to track conversion goals. Both include app icons and send users to the app store as appropriate for the device they are using. Here are some key differences:
 
+[!INCLUDE [CompareAppInstall](./includes/CompareAppInstall.md)]
 ## Get to know app extensions
 
 When you create an app extension, you’ll want basic information on hand: **mobile operating system**, **app ID/package name**, **link text**, and **link URL**.
@@ -44,4 +45,5 @@ Your **app ID** can be found in the URL of the app from the respective app store
 
 ## Get started with app extensions
 
+[!INCLUDE [AboutAdExtensions](./includes/AboutAdExtensions.md)]			 
 

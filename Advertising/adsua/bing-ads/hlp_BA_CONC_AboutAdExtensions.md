@@ -23,25 +23,25 @@ Even if an ad extension is eligible to serve, it's not guaranteed to always serv
 - Availability of extension data for competing ads
 
 > [!NOTE]
-> **Best practice**: Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the chances of additional space being allocated and increasing clicks for your ad.
+> **Best practice** : Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the chances of additional space being allocated and increasing clicks for your ad.
 
 ## Ad extension types
 
-Microsoft Advertising supports the ad extension types as summarized below. See the **Learn more** links for details about each extension and availability per market.
+Microsoft Advertising supports the ad extension types as summarized below. See the **Learn more**  links for details about each extension and availability per market.
 
-- **Action Extension**: An Action Extension is a call-to-action button in your text ad. You can select from a preset list of action types, which will then add a button to your ad to allow customers to interact with the ad to place an order, send a message, and more. [Learn more](./hlp_BA_PROC_AddActionExtension.md)
-- **App Extension**: Add an App Extension to your ad to promote your apps across PCs, tablets, and smartphones from your ad. Promoting app installs in your ad increases downloads and usage of your apps, in addition to website visits. Unlike Sitelink Extensions, an App Extension will automatically detect a customer's device and operating system and take them directly to the correct app store. [Learn more](./hlp_BA_CONC_AdExtensionAppExtension.md)
-- **Call Extension**: Using a Call Extension, you can provide a phone number that is not associated with a particular location, but is appropriate for all locations where your ads display. [Learn more](./hlp_BA_PROC_AddCallExtension.md)
-- **Callout Extension**: Callout Extensions provide an extra snippet of text that highlights your website’s products or offers. This extension is not clickable and can appear in addition to your ad’s description. Providing additional details about your website can make your ad more relevant to potential customers. [Learn more](./hlp_BA_PROC_AddCalloutExtension.md)
-- **Filter Link Extension**: Use Filter Link Extensions to list multiple categories of products or features with unique links to each of these offerings. Easily combined with other extensions, Filter Link Extensions can enlarge your ad format even further and present multiple avenues to different parts of your site, in addition to your final URL. [Learn more](./hlp_BA_PROC_AddFilterLinkExtension.md)
-- **Image Extension**: Add visual elements to your ad with Image Extensions. Providing visual elements to your ads helps them stand out and also gives customers a better idea of what to expect when they click your ad. [Learn more](./hlp_BA_PROC_AddImageExtension.md)
-- **Location Extension**: When you enable a Location Extension, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call. [Learn more](./hlp_BA_PROC_AddLocationExtension.md)
-- **Price Extension**: Pay-per-click extension that displays your products or services with their corresponding prices to potential customers on PC and mobile devices. [Learn more](./hlp_BA_PROC_AddPriceExtension.md)
-- **Promotion Extension**: Use Promotion Extensions to highlight deals for holidays and other special occasions. Let’s say you want to highlight a Summer Sale — using Promotion Extensions, you can include a promotion code, along with the offer and expiration date. [Learn more](./hlp_BA_PROC_AddPromotionExtension.md)
-- **Review Extension**: Potential customers like to know about other customers’ experiences when searching for products or services. Share positive reviews from a reputable third-party source about your website in your ads with a Review Extension. You can paraphrase or use an exact quote from the source. [Learn more](./hlp_BA_PROC_AddReviewExtension.md)
-- **Sitelink Extension**: Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions. [Learn more](./hlp_BA_PROC_AddSitelinkExtension.md)
-- **Structured Snippet Extension**: Give potential customers more context on a specific aspect of your products and services. [Learn more](./hlp_BA_PROC_AddStructuredSnippetExtension.md)
-- **Video Extension**: Enrich your text ad with a video that plays before the user visits your site. They’ll experience an interactive ad that can showcase your brand identity, emotions, ambiance, culture, and more. [Learn more](./hlp_BA_PROC_AddVideoExtension.md)
+- **Action Extension** : An Action Extension is a call-to-action button in your text ad. You can select from a preset list of action types, which will then add a button to your ad to allow customers to interact with the ad to place an order, send a message, and more. [Learn more](./hlp_BA_PROC_AddActionExtension.md)
+- **App Extension** : Add an App Extension to your ad to promote your apps across PCs, tablets, and smartphones from your ad. Promoting app installs in your ad increases downloads and usage of your apps, in addition to website visits. Unlike Sitelink Extensions, an App Extension will automatically detect a customer's device and operating system and take them directly to the correct app store. [Learn more](./hlp_BA_CONC_AdExtensionAppExtension.md)
+- **Call Extension** : Using a Call Extension, you can provide a phone number that is not associated with a particular location, but is appropriate for all locations where your ads display. [Learn more](./hlp_BA_PROC_AddCallExtension.md)
+- **Callout Extension** : Callout Extensions provide an extra snippet of text that highlights your website’s products or offers. This extension is not clickable and can appear in addition to your ad’s description. Providing additional details about your website can make your ad more relevant to potential customers. [Learn more](./hlp_BA_PROC_AddCalloutExtension.md)
+- **Filter Link Extension** : Use Filter Link Extensions to list multiple categories of products or features with unique links to each of these offerings. Easily combined with other extensions, Filter Link Extensions can enlarge your ad format even further and present multiple avenues to different parts of your site, in addition to your final URL. [Learn more](./hlp_BA_PROC_AddFilterLinkExtension.md)
+- **Image Extension** : Add visual elements to your ad with Image Extensions. Providing visual elements to your ads helps them stand out and also gives customers a better idea of what to expect when they click your ad. [Learn more](./hlp_BA_PROC_AddImageExtension.md)
+- **Location Extension** : When you enable a Location Extension, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call. [Learn more](./hlp_BA_PROC_AddLocationExtension.md)
+- **Price Extension** : Pay-per-click extension that displays your products or services with their corresponding prices to potential customers on PC and mobile devices. [Learn more](./hlp_BA_PROC_AddPriceExtension.md)
+- **Promotion Extension** : Use Promotion Extensions to highlight deals for holidays and other special occasions. Let’s say you want to highlight a Summer Sale — using Promotion Extensions, you can include a promotion code, along with the offer and expiration date. [Learn more](./hlp_BA_PROC_AddPromotionExtension.md)
+- **Review Extension** : Potential customers like to know about other customers’ experiences when searching for products or services. Share positive reviews from a reputable third-party source about your website in your ads with a Review Extension. You can paraphrase or use an exact quote from the source. [Learn more](./hlp_BA_PROC_AddReviewExtension.md)
+- **Sitelink Extension** : Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions. [Learn more](./hlp_BA_PROC_AddSitelinkExtension.md)
+- **Structured Snippet Extension** : Give potential customers more context on a specific aspect of your products and services. [Learn more](./hlp_BA_PROC_AddStructuredSnippetExtension.md)
+- **Video Extension** : Enrich your text ad with a video that plays before the user visits your site. They’ll experience an interactive ad that can showcase your brand identity, emotions, ambiance, culture, and more. [Learn more](./hlp_BA_PROC_AddVideoExtension.md)
 
 See the sections below for the steps to create and associate ad extensions with accounts, campaigns, and ad groups.
 
@@ -84,64 +84,21 @@ As described in the steps below, choose the **Campaign** or **Ad Group** level t
 
 An account can contain up to 200,000 Sitelink Extensions and can contain up to 150,000 ad extensions of all other types combined. The entity (account, campaign, or ad group) to ad extension association limit varies by the extension type.
 
-<table>
-  <tr>
-    <th scope="col">Ad extension type</th>
-    <th scope="col">Association limit per entity</th>
-  </tr>
-  <tr>
-    <th scope="row">Action Extensions</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">App Extension</th>
-    <td>Up to the total number of App Extensions in your account</td>
-  </tr>
-  <tr>
-    <th scope="row">Call Extension</th>
-    <td>1</td>
-  </tr>
-  <tr>
-    <th scope="row">Callout Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Filter Link Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Image Extension</th>
-    <td>6</td>
-  </tr>
-  <tr>
-    <th scope="row">Location Extension</th>
-    <td>Up to the total number of Location Extensions in your account</td>
-  </tr>
-  <tr>
-    <th scope="row">Price Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Promotion Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Review Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Sitelink Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Structured Snippet Extension</th>
-    <td>20</td>
-  </tr>
-  <tr>
-    <th scope="row">Video Extension</th>
-    <td>6</td>
-  </tr>
-</table>
+|Ad extension type|Association limit per entity|
+|---|---|
+|Action Extensions|20|
+|App Extension|Up to the total number of App Extensions in your account|
+|Call Extension|1|
+|Callout Extension|20|
+|Filter Link Extension|20|
+|Image Extension|6|
+|Location Extension|Up to the total number of Location Extensions in your account|
+|Price Extension|20|
+|Promotion Extension|20|
+|Review Extension|20|
+|Sitelink Extension|20|
+|Structured Snippet Extension|20|
+|Video Extension|6|
 
 > [!NOTE]
 > Want expert advice on your ads? [Schedule a no-cost session with a personal Microsoft Advertising consultant](https://go.microsoft.com/fwlink?LinkId=837456)

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Microsoft Advertising account name and currency
 
-**What it is:** This is your Microsoft Advertising account and the currency you set for it. Your Google Ads account will be imported here.
+**What it is:**  This is your Microsoft Advertising account and the currency you set for it. Your Google Ads account will be imported here.
 
 

@@ -9,7 +9,7 @@ ms.author: eur
 
 # Generated from
 
-**What it is:** To reach a wider set of customers, Microsoft Advertising generates new keyword suggestions from multiple sources.
+**What it is:**  To reach a wider set of customers, Microsoft Advertising generates new keyword suggestions from multiple sources.
 
 **What you need to know:**
 - **Search term queries**: Search terms that customers enter when searching on Bing, AOL, and Yahoo sites, as well as syndicated search partner sites over the last 30 days.

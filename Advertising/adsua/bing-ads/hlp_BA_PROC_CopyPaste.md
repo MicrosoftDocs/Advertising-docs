@@ -52,14 +52,14 @@ The copied campaign will be a duplicate of the original, with the same ad group 
 1. Click **Paste**.
 
 ## Frequently asked questions about copying and pasting
-**Can I copy and paste campaigns and ad groups across accounts?** 		No, currently you can only copy and paste entities across one account.
+**Can I copy and paste campaigns and ad groups across accounts?**  		No, currently you can only copy and paste entities across one account.
 
-**How many ad groups or campaigns can I copy at once?** 		The maximum is 200 ad groups or campaigns at a time.
+**How many ad groups or campaigns can I copy at once?**  		The maximum is 200 ad groups or campaigns at a time.
 
-**What happens if I don't make any changes to my ads and keywords after pasting campaigns or ad groups?** 		Identical ads and keywords are likely to compete with each other. We recommend altering your ads and keywords after pasting to keep them from competing with the original ads and keywords in your existing campaigns and ad groups.
+**What happens if I don't make any changes to my ads and keywords after pasting campaigns or ad groups?**  		Identical ads and keywords are likely to compete with each other. We recommend altering your ads and keywords after pasting to keep them from competing with the original ads and keywords in your existing campaigns and ad groups.
 
-**Is copying and pasting supported for all campaign types?** 		Copying and pasting is supported for all campaign types except smart campaigns (not everyone has this feature yet).
+**Is copying and pasting supported for all campaign types?**  		Copying and pasting is supported for all campaign types except smart campaigns (not everyone has this feature yet).
 
-**What happens if I copy an ad group from one campaign type and paste it into a different campaign type?** 		The ad group will be pasted without any ads or keywords, but will retain the settings of the copied ad group.
+**What happens if I copy an ad group from one campaign type and paste it into a different campaign type?**  		The ad group will be pasted without any ads or keywords, but will retain the settings of the copied ad group.
 
 

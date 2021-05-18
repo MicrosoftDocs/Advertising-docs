@@ -9,9 +9,9 @@ ms.author: eur
 
 # Time period
 
-**What it is:**    When your performance target runs.
+**What it is:**     When your performance target runs.
 
-**What you need to know:**Performance targets can run for one of three time periods:
+**What you need to know:** Performance targets can run for one of three time periods:
 - Weekly starting Sunday
 - Weekly starting Monday
 - Monthly

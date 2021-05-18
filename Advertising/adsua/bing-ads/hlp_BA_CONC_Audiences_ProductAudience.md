@@ -16,21 +16,21 @@ Dynamic remarketing lists pair customers with specific products based on what th
 
 ## Why use dynamic remarketing lists?
 
-**Targeted audience reach**. Show tailored ads for specific products to people who have already shown purchase intent signals for those very products.
+**Targeted audience reach** . Show tailored ads for specific products to people who have already shown purchase intent signals for those very products.
 
-**Boosted performance**. Dynamic remarketing lists can increase the likelihood of clicks and conversions, and can provide a better return on ad spend than standard remarketing lists.
+**Boosted performance** . Dynamic remarketing lists can increase the likelihood of clicks and conversions, and can provide a better return on ad spend than standard remarketing lists.
 
-**Easy to use**. You can create five types of dynamic remarketing lists — general visitors, product searchers, product viewers, shopping cart abandoners, and past buyers — so you don't need to create a remarketing list for each individual product.
+**Easy to use** . You can create five types of dynamic remarketing lists — general visitors, product searchers, product viewers, shopping cart abandoners, and past buyers — so you don't need to create a remarketing list for each individual product.
 
 ## Testing Audiences
 
 Before you start setting up dynamic remarketing, make sure you have:
 
-- **A Microsoft Merchant Center catalog feed**. [What is Microsoft Merchant Center?](./hlp_BA_CONC_AboutBingMerchantCenter.md)
-- **A JavaScript UET tag**: [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md). You will need to add two new parameters to the UET tag: Page Type and Product ID (this product ID must match the ID in your Microsoft Merchant Center catalog feed). See the below "How do I modify my UET tag for dynamic remarketing?" section for more information.
-  - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
+- **A Microsoft Merchant Center catalog feed** . [What is Microsoft Merchant Center?](./hlp_BA_CONC_AboutBingMerchantCenter.md)
+- **A JavaScript UET tag** : [Create a Microsoft Advertising UET tag](./hlp_BA_PROC_UETv2CreateTag.md) and [add the UET tag tracking code to every page of your website](./hlp_BA_PROC_UETv2AddTag.md). You will need to add two new parameters to the UET tag: Page Type and Product ID (this product ID must match the ID in your Microsoft Merchant Center catalog feed). See the below "How do I modify my UET tag for dynamic remarketing?" section for more information.
+   - JavaScript is required to ensure you have access to the full functionalities of conversion tracking and remarketing.  If you are using a non-JavaScript tag, please switch over to a JavaScript tag.
 
-- **The ability to edit website code**: Either you or your webmaster will need to edit your website code.
+- **The ability to edit website code** : Either you or your webmaster will need to edit your website code.
 
 ## Using dynamic remarketing
 
@@ -42,32 +42,13 @@ Before you start setting up dynamic remarketing, make sure you have:
 1. Select **Next**.
 1. Select the UET tag you want to use.
 1. For **Whom to add to your audience**, select which type of dynamic remarketing list you want to target and set the time frame for eligible customers.
-<table>
-  <tr>
-    <th scope="col">Dynamic remarketing lists</th>
-    <th scope="col">When to use this list</th>
-  </tr>
-  <tr>
-    <th scope="row">General visitors</th>
-    <td><strong>Reach a broader base of your potential customers.</strong> These people have visited your website, showing interest in your brand or offerings.</td>
-  </tr>
-  <tr>
-    <th scope="row">Product searchers</th>
-    <td><strong>Reach users who've shown intent.</strong> These people have visited your website <strong>and</strong> searched for products on your site, showing even more interest in your offerings. </td>
-  </tr>
-  <tr>
-    <th scope="row">Product viewers</th>
-    <td><strong>Reach users who've shown clear intent.</strong> These people have visited your website and <strong>viewed</strong> your products, showing a clear interest in your offerings. </td>
-  </tr>
-  <tr>
-    <th scope="row">Shopping cart abandoners</th>
-    <td><strong>Reach users who've shown very strong intent.</strong> These people added items to their cart, and, while they didn't make a purchase, this shows a very strong interest in your offerings. </td>
-  </tr>
-  <tr>
-    <th scope="row">Past buyers</th>
-    <td><strong>Reach users who've purchased from you in the past.</strong> These people could purchase again, be it the same product or a related product (via a cross-sell or upsell).</td>
-  </tr>
-</table>
+|Dynamic remarketing lists|When to use this list|
+|---|---|
+|General visitors|**Reach a broader base of your potential customers.**  These people have visited your website, showing interest in your brand or offerings.|
+|Product searchers|**Reach users who've shown intent.**  These people have visited your website **and** searched for products on your site, showing even more interest in your offerings.|
+|Product viewers|**Reach users who've shown clear intent.**  These people have visited your website and **viewed** your products, showing a clear interest in your offerings.|
+|Shopping cart abandoners|**Reach users who've shown very strong intent.**  These people added items to their cart, and, while they didn't make a purchase, this shows a very strong interest in your offerings.|
+|Past buyers|**Reach users who've purchased from you in the past.**  These people could purchase again, be it the same product or a related product (via a cross-sell or upsell).|
 
 1. Copy the code you see on the page, modify it with the appropriate product ID and page type **(see "How do I modify my UET tag for dynamic remarketing?" below for more information on this step)**, and then paste it into your UET tag on your website.
 1. For **Tag name**, select the UET tag you want to use with this dynamic remarketing list.
@@ -92,59 +73,28 @@ Add the following JavaScript to the end of the UET tag tracking code in each pag
 > [!IMPORTANT]
 > Both product ID and pagetype must be included on every page you want to update a dynamic remarketing list for. Missing either value would keep your dynamic remarketing list from updating for that page. For example, if you pass product IDs on all of your product pages, but not on your home page, then the "Product viewers" dynamic remarketing list will be updated with visitors to your product pages, but the "General visitors" audience will not record people who visited your home page. To target visitors to pages that cannot pass product IDs for any reason, you can use regular [remarketing lists](./hlp_BA_CONC_Audiences_Remarketing.md).
 > In the *'event', '',* part of the tag, make sure the two single-quotation marks after *'event',* remain empty.
+> You can track multiple products in the same UET tag by including an array of product IDs like this:
 > ```
 ```'ecomm_prodid': ['Replace_with_Product_ID_1','Replace_with_Product_ID_2','Replace_with_Product_ID_3']```
 ```
 
 In the above JavaScript, change the following parameters:
 
-- ```**Replace_with_Product_ID**```: Replace this with one of the following product IDs:
-  - The exact SKU ID that uniquely identifies a product.  This is sometimes called a UPC (universal product code).
-  - An item group ID representing a set of variants for the same product. At least one of the variant attributes (size, color, material, pattern, age_group, or gender) must be provided as part of the product feed, and the same variant attribute must be provided for all items within the group.
+- ```**Replace_with_Product_ID** ```: Replace this with one of the following product IDs:
+   - The exact SKU ID that uniquely identifies a product.  This is sometimes called a UPC (universal product code).
+   - An item group ID representing a set of variants for the same product. At least one of the variant attributes (size, color, material, pattern, age_group, or gender) must be provided as part of the product feed, and the same variant attribute must be provided for all items within the group.
 
 > [!IMPORTANT]
 > The product ID in your JavaScript code must match an ID in your [Microsoft Merchant Center product feed](./hlp_BA_CONC_AboutBingMerchantCenterCatalogFile.md).
 
-- ```**Replace_with_Page_Type**```: Replace this with the one of the following values in the right-hand column of this table, depending on the page you will be using this JavaScript in:
-<table>
-  <tr>
-    <th scope="col">Dynamic remarketing list you're tracking</th>
-    <th scope="col">Required page type</th>
-  </tr>
-  <tr>
-    <th scope="row">General visitors</th>
-    <td>```'ecomm_pagetype': 'home'```  
-										```'ecomm_pagetype': 'category'```  
-										```'ecomm_pagetype': 'other'```  
-						  
-										Note: Any user not included in the page type for searchresults, product, cart, or purchase will be included in the general visitors audience.
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Product searchers</th>
-    <td>
-										```'ecomm_pagetype': 'searchresults'```  
-					  
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Product viewers</th>
-    <td>
-										```'ecomm_pagetype': 'product'```  
-							  </td>
-  </tr>
-  <tr>
-    <th scope="row">Shopping cart abandoners</th>
-    <td>
-										```'ecomm_pagetype': 'cart'```  
-						  
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Past buyers</th>
-    <td>```'ecomm_pagetype': 'purchase'```</td>
-  </tr>
-</table>
+- ```**Replace_with_Page_Type** ```: Replace this with the one of the following values in the right-hand column of this table, depending on the page you will be using this JavaScript in:
+|Dynamic remarketing list you're tracking|Required page type|
+|---|---|
+|General visitors|```'ecomm_pagetype': 'home'```  										```'ecomm_pagetype': 'category'```  										```'ecomm_pagetype': 'other'```  						  										Note: Any user not included in the page type for searchresults, product, cart, or purchase will be included in the general visitors audience.|
+|Product searchers|```'ecomm_pagetype': 'searchresults'```  |
+|Product viewers|```'ecomm_pagetype': 'product'```  |
+|Shopping cart abandoners|```'ecomm_pagetype': 'cart'```  |
+|Past buyers|```'ecomm_pagetype': 'purchase'```|
 
 **Note: Customers who buy a product are added to the "past buyers" list and are removed from other lists (for that particular product). For this to work, the UET tag on your purchase confirmation page must send both product ID (ecomm_prodid) and pagetype (ecomm_pagetype).**
 
@@ -166,8 +116,8 @@ To see an example of a dynamic remarketing UET tag tracking code installed in th
 1. Select the ad group or campaign you want to associate with one or more audiences.
 1. Under **Ad group targeting** or **Campaign targeting**, select the audience categories you want to target.
 1. Select your **Targeting setting**:
-  - **Bid only**: Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
-  - **Target and bid**: Shows ads only to the selected audience, with the option to make bid adjustments.
+   - **Bid only** : Shows ads to people searching for your ad, with the option to make bid adjustments for the selected audience.
+   - **Target and bid** : Shows ads only to the selected audience, with the option to make bid adjustments.
 
 1. Adjust the **Default bid adjustment** if necessary. By default, new targeting associations are set to 15%, but the bid adjustment can range from -90% to +900%.
 1. Under **Ad group exclusions** or **Campaign exclusions**, select an audience to exclude, if needed.
@@ -188,6 +138,7 @@ No, you can only select one targeting setting per ad group or campaign that will
 ## How do I test Dynamic remarketing that I setup on my website?
 Go to [Test conversion goals and audiences with UET Tag Helper](./hlp_BA_CONC_UET_TagHelper.md) for complete instructions on Dynamic remarketing.
 
+ 
 > [!NOTE]
 > Dynamic remarketing lists are just one of our [audience targeting options](./hlp_BA_CONC_Audiences_Options.md).
 

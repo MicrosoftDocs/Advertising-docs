@@ -21,9 +21,9 @@ Dynamic search ads provide a streamlined, low-touch way to make sure customers s
 
 Dynamic search ads automatically target relevant search queries based on the content of your website, and are dynamically created to respond to these search queries. Using them will:
 
-- **Create targeted and relevant ads automatically**: New, dynamically-created ads for every search query based on your website content, or specific pages or categories of your website.
-- **Reduce your workload**: No need to maintain keyword lists, manage bids, or update and customize ad titles.
-- **Find missed opportunities**: Automatically adapt to new queries to drive additional conversions.
+- **Create targeted and relevant ads automatically** : New, dynamically-created ads for every search query based on your website content, or specific pages or categories of your website.
+- **Reduce your workload** : No need to maintain keyword lists, manage bids, or update and customize ad titles.
+- **Find missed opportunities** : Automatically adapt to new queries to drive additional conversions.
 
 Dynamic search ads are most appropriate for two types of advertisers:
 - Advertisers who have a large catalog of webpages and a changing mix of products, making it difficult to manage search ads for each product.
@@ -45,9 +45,10 @@ You can follow the steps below to enable dynamic search ads within a new search 
 > [!IMPORTANT]
 > Once you create your search campaign with dynamic search ads, it can take up to one week before your ads start to serve.
 
-- **Target recommended categories**: Microsoft Advertising will analyze your website and then categorize its content. You can then select which categories you want to target and we will automatically generate keywords and ads from them. This is a good idea if you want to keep the dynamic search ads focused on a particular theme or you want to set different bids for different parts of your website.
-- **Target all webpages**: Microsoft Advertising will look at content from all pages of your website in order to generate keywords and ads.
-- **Target specific webpages**: You choose specific pages of your website to target based on their URL, category, page title, or page content. This is a good idea if you want to set different bids for different parts of your website or to make sure you’re not targeting parts of your website that are not relevant to your campaign goal.
+**What you need to know about dynamic ad targets:**
+- **Target recommended categories** : Microsoft Advertising will analyze your website and then categorize its content. You can then select which categories you want to target and we will automatically generate keywords and ads from them. This is a good idea if you want to keep the dynamic search ads focused on a particular theme or you want to set different bids for different parts of your website.
+- **Target all webpages** : Microsoft Advertising will look at content from all pages of your website in order to generate keywords and ads.
+- **Target specific webpages** : You choose specific pages of your website to target based on their URL, category, page title, or page content. This is a good idea if you want to set different bids for different parts of your website or to make sure you’re not targeting parts of your website that are not relevant to your campaign goal.
 - A "page title" is the text that appears at the top of a webpage — in your website's code, it's the text in this area:
 ```
 <head>                     <title>This is the page title</title>                   </head>
@@ -61,6 +62,7 @@ You can follow the steps below to enable dynamic search ads within a new search 
 > [!IMPORTANT]
 > Once an auto target has been created, its conditions cannot be changed.
 
+**What you need to know about ad content:**
 - You do not need to write your ad title. Microsoft Advertising will dynamically generate this for you based on the appropriate keyword and your website content. Optionally you can supply an ad title using [page feeds](./hlp_BA_CONC_DynamicSearchAds_PageFeeds.md).
 - You will need to write your ad description. You can have two ad descriptions that supports up to 90 characters each.
 - You have the option to have one or two paths appear after your website's domain. The path is distinct from the final URL. The final URL is the actual webpage URL that customers are taken to after they click your ad. The path can be a shorter or "friendlier" version of your URL showing one or two subdirectories. If you sell men’s clothes, and you’re advertising shirts that are on sale for spring, your final URL might be http://www.contoso.com/content/en/clothesaccessories/spr2017/shirts, but your path could simply be contoso.com/SpringSale/Shirts.
@@ -163,6 +165,7 @@ You can follow the steps below to enable dynamic search ads within a new search 
   </tr>
 </table>
 
+ 
 ## Common questions about dynamic search ads
 
 ## How do you determine what content is on my website? And what if you're not finding certain parts of my website?

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Catalog ID
 
-**What it is:** The ID of your catalog.
+**What it is:**  The ID of your catalog.
 
-**What you need to know:** This is a unique number used to identify your catalog.
+**What you need to know:**  This is a unique number used to identify your catalog.
 
 

@@ -59,238 +59,52 @@ With Microsoft Advertising, you have different tools you can use manage your cam
 
 Here are lists of features and which tool allows you to do each one:
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Ad types</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Text</th>
-    <td style="text-align:center;width:165px">[Yes](./hlp_BA_PROC_CreateEXTA.md)</td>
-    <td style="text-align:center;width:165px">[Yes](https://go.microsoft.com/fwlink/?linkid=834321)</td>
-    <td style="text-align:center;width:165px">[Yes](https://go.microsoft.com/fwlink/?linkid=829956)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Dynamic search ads</th>
-    <td style="text-align:center;width:165px">[Yes](./hlp_BA_CONC_DynamicSearchAds.md)</td>
-    <td style="text-align:center;width:165px">No</td>
-    <td style="text-align:center;width:165px">[Yes](https://go.microsoft.com/fwlink/?linkid=829958)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Product ads</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AboutProductAds.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834322)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829957)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">App install ads</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AdOptions.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829959)</td>
-  </tr>
-</table>
+|Ad types|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Text|[Yes](./hlp_BA_PROC_CreateEXTA.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834321)|[Yes](https://go.microsoft.com/fwlink/?linkid=829956)|
+|Dynamic search ads|[Yes](./hlp_BA_CONC_DynamicSearchAds.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829958)|
+|Product ads|[Yes](./hlp_BA_CONC_AboutProductAds.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834322)|[Yes](https://go.microsoft.com/fwlink/?linkid=829957)|
+|App install ads|[Yes](./hlp_BA_CONC_AdOptions.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829959)|
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Campaign settings</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Campaign types</th>
-    <td style="text-align:center;width:165px"> [Ad](./hlp_BA_PROC_Create1stAd.md), [Shopping](./hlp_BA_PROC_CreateProductTargetAndAd.md)</td>
-    <td style="text-align:center;width:165px"> [Ad](https://go.microsoft.com/fwlink/?linkid=834323), [Shopping](https://go.microsoft.com/fwlink/?linkid=834324)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829956)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Shared budgets</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_SharedBudgets.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829960)</td>
-  </tr>
-</table>
+|Campaign settings|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Campaign types|[Ad](./hlp_BA_PROC_Create1stAd.md), [Shopping](./hlp_BA_PROC_CreateProductTargetAndAd.md)|[Ad](https://go.microsoft.com/fwlink/?linkid=834323), [Shopping](https://go.microsoft.com/fwlink/?linkid=834324)|[Yes](https://go.microsoft.com/fwlink/?linkid=829956)|
+|Shared budgets|[Yes](./hlp_BA_CONC_SharedBudgets.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829960)|
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Bid settings</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Flexible bid strategies</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_BidStrategy.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834321)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829961)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Enhanced CPC</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_BidStrategy.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=844488)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829961)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Automatic CPC</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_BidStrategy.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829961)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Keyword bidding</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_BidStrategy.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834326)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829961)</td>
-  </tr>
-</table>
+|Bid settings|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Flexible bid strategies|[Yes](./hlp_BA_CONC_BidStrategy.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834321)|[Yes](https://go.microsoft.com/fwlink/?linkid=829961)|
+|Enhanced CPC|[Yes](./hlp_BA_CONC_BidStrategy.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=844488)|[Yes](https://go.microsoft.com/fwlink/?linkid=829961)|
+|Automatic CPC|[Yes](./hlp_BA_CONC_BidStrategy.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829961)|
+|Keyword bidding|[Yes](./hlp_BA_CONC_BidStrategy.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834326)|[Yes](https://go.microsoft.com/fwlink/?linkid=829961)|
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Targeting</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Location and advanced location</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_Targeting.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834327)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829962)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Day of the week/time of day</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_Targeting.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834328)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829962)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Age and gender</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_Targeting.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834328)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829962)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Device</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_Targeting.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834328)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829962)</td>
-  </tr>
-</table>
+|Targeting|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Location and advanced location|[Yes](./hlp_BA_CONC_Targeting.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834327)|[Yes](https://go.microsoft.com/fwlink/?linkid=829962)|
+|Day of the week/time of day|[Yes](./hlp_BA_CONC_Targeting.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834328)|[Yes](https://go.microsoft.com/fwlink/?linkid=829962)|
+|Age and gender|[Yes](./hlp_BA_CONC_Targeting.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834328)|[Yes](https://go.microsoft.com/fwlink/?linkid=829962)|
+|Device|[Yes](./hlp_BA_CONC_Targeting.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834328)|[Yes](https://go.microsoft.com/fwlink/?linkid=829962)|
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Ad extensions</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Location Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AboutAdExtensions.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834329)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Call Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddCallExtension.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834330)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Sitelink Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddSitelinkExtension.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834331)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Image Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddImageExtension.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">App Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AdExtensionAppExtension.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834329)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Callout Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddCalloutExtension.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834329)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Review Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddReviewExtension.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=846347)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Structured Snippet Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddStructuredSnippetExtension.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829963)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Automated Extension</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AutomatedExtensions.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> No</td>
-  </tr>
-</table>
+|Ad extensions|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Location Extension|[Yes](./hlp_BA_CONC_AboutAdExtensions.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834329)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Call Extension|[Yes](./hlp_BA_PROC_AddCallExtension.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834330)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Sitelink Extension|[Yes](./hlp_BA_PROC_AddSitelinkExtension.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834331)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Image Extension|[Yes](./hlp_BA_PROC_AddImageExtension.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|App Extension|[Yes](./hlp_BA_CONC_AdExtensionAppExtension.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834329)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Callout Extension|[Yes](./hlp_BA_PROC_AddCalloutExtension.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834329)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Review Extension|[Yes](./hlp_BA_PROC_AddReviewExtension.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=846347)|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Structured Snippet Extension|[Yes](./hlp_BA_PROC_AddStructuredSnippetExtension.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829963)|
+|Automated Extension|[Yes](./hlp_BA_CONC_AutomatedExtensions.md)|No|No|
 
-<table>
-  <tr>
-    <th style="width:165px" scope="col">Other</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising</th>
-    <th style="text-align:center;width:165px" scope="col">Microsoft Advertising Editor</th>
-    <th style="text-align:center;width:165px" scope="col">Bing Ads API</th>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Upgraded URLs</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_UpgradeURL_FAQ.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834332)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829964)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Universal Event Tracking</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_UETv2WhatIsTag.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829965)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Microsoft Merchant Center</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AboutBingMerchantCenter.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829966)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Remarketing / Audiences</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_Audiences_Options.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=837484)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829965)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Shared negative keywords</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_AboutNegativeKeywords.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834335)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829967)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Website exclusion</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_PROC_AddExclusions.md)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=834336)</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829969)</td>
-  </tr>
-  <tr>
-    <th style="width:165px" scope="row">Change history</th>
-    <td style="text-align:center;width:165px"> [Yes](./hlp_BA_CONC_ChangeHistoryGraph.md)</td>
-    <td style="text-align:center;width:165px"> No</td>
-    <td style="text-align:center;width:165px"> [Yes](https://go.microsoft.com/fwlink/?linkid=829968)</td>
-  </tr>
-</table>
+|Other|Microsoft Advertising|Microsoft Advertising Editor|Bing Ads API|
+|---|---|---|---|
+|Upgraded URLs|[Yes](./hlp_BA_CONC_UpgradeURL_FAQ.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834332)|[Yes](https://go.microsoft.com/fwlink/?linkid=829964)|
+|Universal Event Tracking|[Yes](./hlp_BA_CONC_UETv2WhatIsTag.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829965)|
+|Microsoft Merchant Center|[Yes](./hlp_BA_CONC_AboutBingMerchantCenter.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829966)|
+|Remarketing / Audiences|[Yes](./hlp_BA_CONC_Audiences_Options.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=837484)|[Yes](https://go.microsoft.com/fwlink/?linkid=829965)|
+|Shared negative keywords|[Yes](./hlp_BA_CONC_AboutNegativeKeywords.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834335)|[Yes](https://go.microsoft.com/fwlink/?linkid=829967)|
+|Website exclusion|[Yes](./hlp_BA_PROC_AddExclusions.md)|[Yes](https://go.microsoft.com/fwlink/?linkid=834336)|[Yes](https://go.microsoft.com/fwlink/?linkid=829969)|
+|Change history|[Yes](./hlp_BA_CONC_ChangeHistoryGraph.md)|No|[Yes](https://go.microsoft.com/fwlink/?linkid=829968)|
 
 

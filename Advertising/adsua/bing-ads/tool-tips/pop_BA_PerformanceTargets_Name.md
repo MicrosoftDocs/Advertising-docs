@@ -9,6 +9,6 @@ ms.author: eur
 
 # Name
 
-**What it is:**    The unique name you choose for your performance target.
+**What it is:**     The unique name you choose for your performance target.
 
 

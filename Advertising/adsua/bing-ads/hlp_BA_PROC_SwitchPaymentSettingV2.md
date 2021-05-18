@@ -19,42 +19,13 @@ Pay now or pay later: You can change [your payment setting for Microsoft Adverti
 
 ## Things to keep in mind when you switch payment settings
 
-<table>
-  <tr>
-    <th scope="col" style="width:220px">Switching from</th>
-    <th scope="col" style="width:220px">Switching to</th>
-    <th scope="col" style="width:220px">Notes</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Prepay</th>
-    <td>Postpay threshold</td>
-    <td>Any prepaid balance remaining on your account will be carried forward as a credit. We'll deduct advertising costs from that credit. Once the balance is exhausted, we'll charge your primary payment method when you hit your payment amount threshold or your monthly billing date, whichever comes first.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Prepay</th>
-    <td>Monthly invoice</td>
-    <td>Any prepaid balance remaining on your account will be carried forward as a credit. We'll apply that credit towards the charges in your next monthly invoice. You should also create an insertion order so that your ads can serve once you switch payment settings.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Postpay threshold</th>
-    <td>Prepay</td>
-    <td>Any amount due must be paid. You should also add prepay funds and enable auto-recharge to help ensure that your account is funded.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Postpay threshold</th>
-    <td>Monthly invoice</td>
-    <td>You can choose to pay any amount due immediately or you can carry it over to your next monthly invoice, so long as the amount is within your credit limit. If the amount due is larger than your credit limit, then you'll need to first settle what you owe in order to switch payment settings.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Monthly invoice</th>
-    <td>Prepay</td>
-    <td>You'll need to pay your final monthly invoice, which will be sent separately once it's ready on the 1st of the following month. You should also add prepay funds and enable auto-recharge to help ensure that your account is funded.</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Monthly invoice</th>
-    <td>Postpay threshold</td>
-    <td>You'll need to pay your final monthly invoice, which will be sent separately once it's ready on the 1st of the following month. You'll also need to make sure you have a primary payment method on file (such as a card) to cover postpay charges.</td>
-  </tr>
-</table>
+|Switching from|Switching to|Notes|
+|---|---|---|
+|Prepay|Postpay threshold|Any prepaid balance remaining on your account will be carried forward as a credit. We'll deduct advertising costs from that credit. Once the balance is exhausted, we'll charge your primary payment method when you hit your payment amount threshold or your monthly billing date, whichever comes first.|
+|Prepay|Monthly invoice|Any prepaid balance remaining on your account will be carried forward as a credit. We'll apply that credit towards the charges in your next monthly invoice. You should also create an insertion order so that your ads can serve once you switch payment settings.|
+|Postpay threshold|Prepay|Any amount due must be paid. You should also add prepay funds and enable auto-recharge to help ensure that your account is funded.|
+|Postpay threshold|Monthly invoice|You can choose to pay any amount due immediately or you can carry it over to your next monthly invoice, so long as the amount is within your credit limit. If the amount due is larger than your credit limit, then you'll need to first settle what you owe in order to switch payment settings.|
+|Monthly invoice|Prepay|You'll need to pay your final monthly invoice, which will be sent separately once it's ready on the 1st of the following month. You should also add prepay funds and enable auto-recharge to help ensure that your account is funded.|
+|Monthly invoice|Postpay threshold|You'll need to pay your final monthly invoice, which will be sent separately once it's ready on the 1st of the following month. You'll also need to make sure you have a primary payment method on file (such as a card) to cover postpay charges.|
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Param3
 
-**What it is:**    The text that replaces {param3} in an ad when a keyword match occurs.
+**What it is:**     The text that replaces {param3} in an ad when a keyword match occurs.
 
 

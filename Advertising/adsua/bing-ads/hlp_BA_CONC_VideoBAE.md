@@ -12,4 +12,5 @@ ms.author: eur
 <bing_video id="video_bae">
     ![Play video](../images/BA_VideoThumb_BAE.png)
   </bing_video>
+![ignore](../images/logo_MSA.svg)  ![ignore](../images/logo_MsaIntelligence.svg)  ![ignore](../images/logo_MsaEditor.svg)
 

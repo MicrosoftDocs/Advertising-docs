@@ -9,6 +9,6 @@ ms.author: eur
 
 # Business name
 
-**What it is:** Depending on your audience ad's placement, your business's name may appear in your ad.
+**What it is:**  Depending on your audience ad's placement, your business's name may appear in your ad.
 
 

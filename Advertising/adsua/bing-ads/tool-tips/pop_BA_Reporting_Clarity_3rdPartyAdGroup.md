@@ -9,6 +9,6 @@ ms.author: eur
 
 # Third-party ad group
 
-**What it is:**    The name of the ad group that you defined on a paid search provider other than Microsoft Advertising.
+**What it is:**     The name of the ad group that you defined on a paid search provider other than Microsoft Advertising.
 
 

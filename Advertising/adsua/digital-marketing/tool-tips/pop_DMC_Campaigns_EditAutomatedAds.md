@@ -1,7 +1,7 @@
 ---
 title: Editing automated text ads
 description: Editing automated text ads
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Editing automated text ads
 
-**What it is:** You’re editing an ad that our AI built for your campaign based on your business info, your website, and text ads you created.
+**What it is:**  You’re editing an ad that our AI built for your campaign based on your business info, your website, and text ads you created.
 
 **What you need to know:**
 - If you save changes, our AI will no longer optimize this ad. You’re the only one who will be able to change this ad in the future.

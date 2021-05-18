@@ -9,6 +9,6 @@ ms.author: eur
 
 # Action final URL
 
-**What it is**:     The landing page URL of the **Action** button — in other words, the URL of the page that displays after a customer clicks the **Action** button.
+**What it is** :     The landing page URL of the **Action** button — in other words, the URL of the page that displays after a customer clicks the **Action** button.
 
 

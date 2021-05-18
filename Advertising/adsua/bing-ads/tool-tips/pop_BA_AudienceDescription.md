@@ -9,6 +9,6 @@ ms.author: eur
 
 # Description
 
-**What it is:** This shows the description that you added when creating the remarketing list. If you did not add one, this will be blank.
+**What it is:**  This shows the description that you added when creating the remarketing list. If you did not add one, this will be blank.
 
 

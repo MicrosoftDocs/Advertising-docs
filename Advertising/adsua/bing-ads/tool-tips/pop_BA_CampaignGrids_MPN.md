@@ -9,6 +9,6 @@ ms.author: eur
 
 # MPN
 
-**What it is:** The Manufacturer Part Number (MPN) is a unique alphanumeric number that identifies the product to its manufacturer.
+**What it is:**  The Manufacturer Part Number (MPN) is a unique alphanumeric number that identifies the product to its manufacturer.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Ad extension version
 
-**What it is: ** When you update an ad extension, a new version number is created.
+**What it is:**  When you update an ad extension, a new version number is created.
 
-**Why it’s important: **You can see what version of the ad extension is being used.
+**Why it’s important:** You can see what version of the ad extension is being used.
 
 

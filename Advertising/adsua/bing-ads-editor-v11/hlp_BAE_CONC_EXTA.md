@@ -1,7 +1,7 @@
 ---
 title: About Expanded Text Ads
 description: Learn about Expanded Text Ads and how they can optimize your ads.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -13,47 +13,11 @@ Expanded Text Ads are a new, mobile-optimized ad format that enables you to craf
 
 Here's how Expanded Text Ads compare to standard text ads:
 
-<table type="type1">
-  <tr>
-    <th scope="col">Ad part</th>
-    <th scope="col">Standard text ads</th>
-    <th scope="col">Expanded Text Ads</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-    Ad title
-   </th>
-    <td>
-    25 characters
-   </td>
-    <td>
-    90 characters (supports three headlines, up to 30 characters each, separated by a vertical bar (|).)
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-    Ad text
-
-   </th>
-    <td>
-    71 characters
-   </td>
-    <td>
-    180 characters (supports two descriptions, up to two 90 characters each.)
-   </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent">
-    Display URL
-   </th>
-    <td>
-    35 characters, manually entered and error-prone
-   </td>
-    <td>
-    Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths.
-   </td>
-  </tr>
-</table>
+|Ad part|Standard text ads|Expanded Text Ads|
+|---|---|---|
+|Ad title|25 characters|90 characters (supports three headlines, up to 30 characters each, separated by a vertical bar (|).)|
+|Ad text|71 characters|180 characters (supports two descriptions, up to two 90 characters each.)|
+|Display URL|35 characters, manually entered and error-prone|Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths.|
 
 ## How do I export text ads as Expanded Text Ads?
 1. From the tree view, select the account with the campaign you want to edit.
@@ -72,69 +36,18 @@ Here's how Expanded Text Ads compare to standard text ads:
 1. Make the necessary changes in the **Edit the selected expanded text ads** pane.
 
 ## Column mapping between standard text ads and Expanded Text Ads
-<table type="type1">
-  <tr>
-    <th scope="col">Standard text ads</th>
-    <th scope="col">Expanded Text Ads</th>
-  </tr>
-  <tr>
-    <td>
-    Title
-   </td>
-    <td>
-    Title Part 1 
-    Title Part 2 
-    Title Part 3
-   </td>
-  </tr>
-  <tr>
-    <td>
-    Display URL
-
-   </td>
-    <td>
-    Path 1  
-    Path 2
-   </td>
-  </tr>
-  <tr>
-    <td>
-    Ad text
-   </td>
-    <td>
-    Text part 1
-		Text part 2
-   </td>
-  </tr>
-  <tr>
-    <td>Destination URL</td>
-    <td>Final URL</td>
-  </tr>
-  <tr>
-    <td>Mobile URL</td>
-    <td>Mobile URL</td>
-  </tr>
-  <tr>
-    <td>Mobile Device Preference</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td>Native Ads</td>
-    <td>Native Ads</td>
-  </tr>
-  <tr>
-    <td>Tracking template</td>
-    <td>Tracking template</td>
-  </tr>
-  <tr>
-    <td>Custom parameter</td>
-    <td>Custom parameter</td>
-  </tr>
-  <tr>
-    <td>Status</td>
-    <td>Status</td>
-  </tr>
-</table>
+|Standard text ads|Expanded Text Ads|
+|---|---|
+|Title|Title Part 1     Title Part 2     Title Part 3|
+|Display URL|Path 1      Path 2|
+|Ad text|Text part 1		Text part 2|
+|Destination URL|Final URL|
+|Mobile URL|Mobile URL|
+|Mobile Device Preference|N/A|
+|Native Ads|Native Ads|
+|Tracking template|Tracking template|
+|Custom parameter|Custom parameter|
+|Status|Status|
 
 ## What you need to know
 Expanded Text Ads do not run on the content network, so you cannot have an Expanded Text Ad in a content-only ad group.

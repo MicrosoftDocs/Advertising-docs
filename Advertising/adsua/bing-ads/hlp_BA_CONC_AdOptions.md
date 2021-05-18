@@ -25,34 +25,12 @@ To learn more, see [App install ads: Drive app downloads](./hlp_BA_CONC_AppInsta
 
 ## Expanded Text Ads
 The expanded text ad consists of several parts:
-<table>
-  <tr>
-    <th scope="col">Ad part and character limit</th>
-    <th scope="col">Example (see above)</th>
-  </tr>
-  <tr>
-    <td>Ad title (supports three headlines, up to 30 characters each, separated by a space, vertical bar, and space (" | ")).</td>
-    <td>Flowers for any occasion | Delivered right to your door!</td>
-  </tr>
-  <tr>
-    <td>Ad text (supports two descriptions, up to two 90 characters each).
-       
-       To maximize impressions across all ad formats, the descriptions might not always be shown in your ad.</td>
-    <td>Sustainably grown flowers on sale and ready to ship within 4 hours.</td>
-  </tr>
-  <tr>
-    <td>
-        Display URL (Domain and subdomain automatically generated from your final URL, plus two customizable URL paths).
-      </td>
-    <td>www.contoso.com/Seattle/Flowers</td>
-  </tr>
-  <tr>
-    <td>
-        Final URL (2,048 characters).
-      </td>
-    <td>www.contoso.com/Floral/SeaWa/default.aspx </td>
-  </tr>
-</table>
+|Ad part and character limit|Example (see above)|
+|---|---|
+|Ad title (supports three headlines, up to 30 characters each, separated by a space, vertical bar, and space (" | ")).|Flowers for any occasion | Delivered right to your door!|
+|Ad text (supports two descriptions, up to two 90 characters each).              To maximize impressions across all ad formats, the descriptions might not always be shown in your ad.|Sustainably grown flowers on sale and ready to ship within 4 hours.|
+|Display URL (Domain and subdomain automatically generated from your final URL, plus two customizable URL paths).|www.contoso.com/Seattle/Flowers|
+|Final URL (2,048 characters).|www.contoso.com/Floral/SeaWa/default.aspx|
 
 ![An example of an Expanded Text Ad.](../images/BA_Misc_ExpandedTextAd.jpg)
 
@@ -63,9 +41,9 @@ When you create your ad, Microsoft Advertising  shows you a preview of what your
 ## Dynamic search ads
 Dynamic search ads look just like Expanded Text Ads, but they're automatically targeted to relevant search queries based on the content of your website, and are dynamically created to respond to these search queries. Using them will:
 
-- **Create targeted and relevant ads automatically**: New, dynamically-created ads for every search query based on your entire website, or on specific pages or categories of your site.
-- **Reduce your workload**: No need to maintain keyword lists, manage bids, or update and customize ad titles.
-- **Find missed opportunities**: Automatically adapt to new queries to drive additional conversions.
+- **Create targeted and relevant ads automatically** : New, dynamically-created ads for every search query based on your entire website, or on specific pages or categories of your site.
+- **Reduce your workload** : No need to maintain keyword lists, manage bids, or update and customize ad titles.
+- **Find missed opportunities** : Automatically adapt to new queries to drive additional conversions.
 
 To learn more, see [About dynamic search ads](./hlp_BA_CONC_DynamicSearchAds.md).
 

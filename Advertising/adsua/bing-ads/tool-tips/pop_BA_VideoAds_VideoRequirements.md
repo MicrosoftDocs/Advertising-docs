@@ -9,7 +9,7 @@ ms.author: eur
 
 # Video file requirements
 
-**What it is**:     When you choose videos that you want to appear in your audience ads, they must meet the following criteria:
+**What it is** :     When you choose videos that you want to appear in your audience ads, they must meet the following criteria:
 
 - Duration: Must range from 6 to 120 seconds
 - Recommended file formats: MPEG-2, MP4, or MOV are recommended

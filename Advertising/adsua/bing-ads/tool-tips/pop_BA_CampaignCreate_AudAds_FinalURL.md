@@ -9,6 +9,6 @@ ms.author: eur
 
 # Final URL
 
-**What it is**: This is your landing page URL — in other words, the URL of the page that displays after a customer clicks on your ad.
+**What it is** : This is your landing page URL — in other words, the URL of the page that displays after a customer clicks on your ad.
 
 

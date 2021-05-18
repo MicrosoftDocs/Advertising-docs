@@ -9,4 +9,5 @@ ms.author: eur
 
 # Country/region
 
+[!INCLUDE [CountryRegion](../includes/CountryRegion.md)]
 

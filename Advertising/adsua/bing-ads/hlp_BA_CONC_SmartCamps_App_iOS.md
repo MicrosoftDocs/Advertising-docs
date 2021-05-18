@@ -17,6 +17,7 @@ All you need to get started is iOS 9.3 or later and an email address associated 
 
 Download the Microsoft Advertising App by selecting the image link below or by searching for "Microsoft Advertising" in your smartphone's app store.
 
+[![Microsoft Advertising for iOS](../images/BAM_CONC_Apple.png)](https://go.microsoft.com/fwlink?LinkId=536519)
 ## Signing in
 
 1. Enter your email address and select **Next**.

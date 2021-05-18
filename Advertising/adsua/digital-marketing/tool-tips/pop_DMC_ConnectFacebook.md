@@ -1,7 +1,7 @@
 ---
 title: Connect to Facebook Ads account
 description: Connect to Facebook Ads account
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Connect to Facebook Ads account
 
-**What it is: ** Select the Facebook Ads account you want to use.
+**What it is:**  Select the Facebook Ads account you want to use.
 
 **What you need to know:**
 - You must have a valid Facebook Ads account before you can connect with Digital Marketing Center.

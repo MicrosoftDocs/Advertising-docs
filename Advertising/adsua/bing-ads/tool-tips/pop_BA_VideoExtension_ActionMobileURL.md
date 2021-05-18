@@ -9,6 +9,6 @@ ms.author: eur
 
 # Action mobile URL
 
-**What it is**:     Your mobile URL is the webpage where people go to after tapping the ad on a mobile device.
+**What it is** :     Your mobile URL is the webpage where people go to after tapping the ad on a mobile device.
 
 

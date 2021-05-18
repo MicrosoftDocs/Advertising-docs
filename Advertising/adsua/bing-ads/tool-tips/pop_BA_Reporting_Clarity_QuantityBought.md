@@ -9,6 +9,6 @@ ms.author: eur
 
 # Quantity bought
 
-**What it is:** The quantity of the product purchased (ProductBought) from your catalog or via your retail partner.
+**What it is:**  The quantity of the product purchased (ProductBought) from your catalog or via your retail partner.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Bid multiplier
 
-**What it is:**    The suggested percentage that will be multiplied to all bids under this campaign.
+**What it is:**     The suggested percentage that will be multiplied to all bids under this campaign.
 
-**Example:**    If the bid multiplier is 90% and your current bid is $3.00, the suggested lower bid amount is 90% x $3.00 = $2.70.
+**Example:**     If the bid multiplier is 90% and your current bid is $3.00, the suggested lower bid amount is 90% x $3.00 = $2.70.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Select campaign
 
-**What it is:**    Choose which campaigns you want to participate in your performance targets.
+**What it is:**     Choose which campaigns you want to participate in your performance targets.
 
-**What you need to know:**   You can find campaigns using the search bar or filter them by spend, clicks, average CPC, and labels.
+**What you need to know:**    You can find campaigns using the search bar or filter them by spend, clicks, average CPC, and labels.
 
 

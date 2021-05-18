@@ -9,6 +9,6 @@ ms.author: eur
 
 # Description
 
-**What it is:** Additional information about your products or services.
+**What it is:**  Additional information about your products or services.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Third-party campaign
 
-**What it is:**    The name of the campaign that you defined on a paid search provider other than Microsoft Advertising.
+**What it is:**     The name of the campaign that you defined on a paid search provider other than Microsoft Advertising.
 
 

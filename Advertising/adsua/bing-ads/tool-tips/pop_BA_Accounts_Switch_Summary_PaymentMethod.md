@@ -9,6 +9,6 @@ ms.author: eur
 
 # Payment method
 
-**What it is:** Once you switch payment settings, this is the payment method you'll use to pay for your advertising charges on Microsoft Advertising.
+**What it is:**  Once you switch payment settings, this is the payment method you'll use to pay for your advertising charges on Microsoft Advertising.
 
 

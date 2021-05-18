@@ -9,6 +9,6 @@ ms.author: eur
 
 # Ad extension display name
 
-**What it is: **  The name of an individual ad extension item.
+**What it is:**   The name of an individual ad extension item.
 
 

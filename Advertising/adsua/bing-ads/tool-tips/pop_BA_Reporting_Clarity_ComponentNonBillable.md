@@ -9,6 +9,6 @@ ms.author: eur
 
 # Component non-billable clicks
 
-**What it is: **    The number of clicks on a rich ad component that are non-billable.
+**What it is:**     The number of clicks on a rich ad component that are non-billable.
 
 

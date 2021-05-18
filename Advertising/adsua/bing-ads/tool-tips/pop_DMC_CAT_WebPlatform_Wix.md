@@ -11,6 +11,6 @@ ms.author: eur
 
 If you built your website on Wix, copy and paste your customer action tracking tag from Microsoft Advertising to Wix.
 
-**Get more info**: [Unified Smart campaigns: Set up customer action tracking](../hlp_DMC_CONC_CAT_Intro.md)
+**Get more info** : [Unified Smart campaigns: Set up customer action tracking](../hlp_DMC_CONC_CAT_Intro.md)
 
 

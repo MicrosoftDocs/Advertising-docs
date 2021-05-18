@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Social profiles and account settings
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 ## Connecting social profiles
 
 Rather than managing all your social profiles separately, you can manage the following social profiles in one place, right here through Microsoft Advertising:

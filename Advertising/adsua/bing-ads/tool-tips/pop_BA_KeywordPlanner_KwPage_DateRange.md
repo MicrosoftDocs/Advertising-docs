@@ -9,6 +9,6 @@ ms.author: eur
 
 # Date range
 
-**What it is: **Keyword Planner will show the average monthly searches for the previous 12 months.
+**What it is:** Keyword Planner will show the average monthly searches for the previous 12 months.
 
 

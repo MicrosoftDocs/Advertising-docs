@@ -9,6 +9,6 @@ ms.author: eur
 
 # Click Type
 
-**What it is:**    The number of clicks received from a specific promotional element of your ad.
+**What it is:**     The number of clicks received from a specific promotional element of your ad.
 
 

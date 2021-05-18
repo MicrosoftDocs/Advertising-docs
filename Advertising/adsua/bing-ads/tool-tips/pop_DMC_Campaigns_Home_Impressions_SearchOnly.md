@@ -9,7 +9,7 @@ ms.author: eur
 
 # Impressions
 
-**What it is:** The number of times your paid search ads were displayed during the selected date range.
+**What it is:**  The number of times your paid search ads were displayed during the selected date range.
 
 **What you need to know:**
 - Impressions are a measure of how visible your ads are, given your budget and location targeting.

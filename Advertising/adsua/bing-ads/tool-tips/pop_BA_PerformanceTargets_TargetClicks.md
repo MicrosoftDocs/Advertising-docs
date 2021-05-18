@@ -9,6 +9,6 @@ ms.author: eur
 
 # Target clicks
 
-**What it is:**    The number of clicks you said you wanted to get when you set your performance target.
+**What it is:**     The number of clicks you said you wanted to get when you set your performance target.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous week’s clicks
 
-**What it is**: Last week’s number of clicks with your current accelerated budget.
+**What it is** : Last week’s number of clicks with your current accelerated budget.
 
 

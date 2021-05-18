@@ -9,6 +9,6 @@ ms.author: eur
 
 # Status
 
-**What it is:** This shows whether page feed is **Active** or **Removed**.
+**What it is:**  This shows whether page feed is **Active** or **Removed**.
 
 

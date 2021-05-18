@@ -9,6 +9,6 @@ ms.author: eur
 
 # Include paused campaigns when importing new items
 
-**    What it is:  **  This option allows you to import paused campaigns, along with your active campaigns.
+**    What it is:**   This option allows you to import paused campaigns, along with your active campaigns.
 
 

@@ -9,7 +9,7 @@ ms.author: eur
 
 # Business website
 
-**What it is:** The website for your business that includes your products, services, and business contact information.
+**What it is:**  The website for your business that includes your products, services, and business contact information.
 
 **What you need to know:**
 - To help you set up your account and advertising campaigns more quickly and easily, we’ll get your business information for you from your website.

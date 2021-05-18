@@ -18,59 +18,14 @@ Broad match is a [keyword match type](./hlp_BA_CONC_MatchOptions.md). It makes y
 
 ## Examples of broad match at work
 
-<table>
-  <tr>
-    <th scope="col">Broad match keyword</th>
-    <th scope="col">Ads may show on searches for</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Hawaii hotels</strong></th>
-    <td><strong>Hawaii rentals </strong> 
-      <strong>Honolulu Hawaii hotels</strong>  
-    <strong>Hawaii Maui hotels </strong> 
-    </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Best SUV</strong></th>
-    <td>
-        <strong>SUV comparison </strong> 
-        <strong>Best cars</strong> 
-        <strong>truck lease offers </strong> 
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Purple high heels</strong></th>
-    <td>
-        <strong>Women's high heels purple </strong> 
-        <strong>Lavender stilettos</strong>  
-        <strong>Heels on sale </strong> 
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Online tax filing</strong></th>
-    <td>
-        <strong>Taxes efile </strong> 
-        <strong>Tax filing software</strong>  
-        <strong>Pay taxes online </strong> 
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Ultrabook laptop</strong></th>
-    <td>
-        <strong>best ultrabooks</strong> 
-        <strong>thin and light notebooks</strong>  
-        <strong>laptop deals </strong> 
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background: transparent"><strong>Red flowers</strong></th>
-    <td>
-        <strong>Red floral arrangements</strong>  
-        <strong>Crimson flowers</strong>  
-        <strong>poinsettias gift </strong> 
-      </td>
-  </tr>
-</table>
+|Broad match keyword|Ads may show on searches for|
+|---|---|
+|**Hawaii hotels**|**Hawaii rentals **       **Honolulu Hawaii hotels**      **Hawaii Maui hotels ** |
+|**Best SUV**|**SUV comparison **         **Best cars**         **truck lease offers ** |
+|**Purple high heels**|**Women's high heels purple **         **Lavender stilettos**          **Heels on sale ** |
+|**Online tax filing**|**Taxes efile **         **Tax filing software**          **Pay taxes online ** |
+|**Ultrabook laptop**|**best ultrabooks**         **thin and light notebooks**          **laptop deals ** |
+|**Red flowers**|**Red floral arrangements**          **Crimson flowers**          **poinsettias gift ** |
 
 Keep in mind that there will be times when different options might be more helpful. For example:
 

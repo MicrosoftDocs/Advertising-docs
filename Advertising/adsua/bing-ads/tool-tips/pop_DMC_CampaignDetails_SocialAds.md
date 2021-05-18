@@ -9,8 +9,8 @@ ms.author: eur
 
 # Social ads
 
-**What it is:**    Image or video ads that we run on social media platforms such as Facebook and Instagram.
+**What it is:**     Image or video ads that we run on social media platforms such as Facebook and Instagram.
 
-**What you need to know:**   We provide suggested image ads to help you create them more easily.
+**What you need to know:**    We provide suggested image ads to help you create them more easily.
 
 

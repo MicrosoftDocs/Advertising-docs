@@ -9,4 +9,5 @@ ms.author: eur
 
 # Offer status
 
+[!INCLUDE [OfferStatus](../includes/OfferStatus.md)]
 

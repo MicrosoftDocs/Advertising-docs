@@ -1,7 +1,7 @@
 ---
 title: Pause keywords
 description: You can pause keywords instead of deleting them in Microsoft Advertising Editor. This way, you can easily resume them when you want to use them again.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

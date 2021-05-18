@@ -37,10 +37,10 @@ Keep in mind:
 ## Set a final URL suffix at the ad group, keyword level, or dynamic ad target level
 1. From the **Campaigns** page, click the **Ad Groups**, **Keywords**, or **Auto Targets** tab (or from the main menu on the left, click **All campaigns** and then **Ad groups**, **Keywords**, or **Auto Targets**).
 1. Make sure that the **Final URL suffix** column is visible. If it isn't:
-  1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
-  1. Click **Attributes**.
-  1. Next to **Final URL suffix**, click **Add**.
-  1. Click **Apply**.
+   1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
+   1. Click **Attributes**.
+   1. Next to **Final URL suffix**, click **Add**.
+   1. Click **Apply**.
 
 1. For the appropriate ad group or keyword, hover over the **Final URL suffix** column and click the pencil icon.
 1. Enter your parameter or parameters.
@@ -58,10 +58,10 @@ Keep in mind:
 1. Click the name of the appropriate ad group.
 1. Click the **Product Groups** tab.
 1. Make sure that the **Final URL suffix** column is visible. If it isn't:
-  1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
-  1. Click **Attributes**.
-  1. Next to **Final URL suffix**, click **Add**.
-  1. Click **Apply**.
+   1. Click **Columns**&nbsp; &gt; &nbsp;**Modify columns**.
+   1. Click **Attributes**.
+   1. Next to **Final URL suffix**, click **Add**.
+   1. Click **Apply**.
 
 1. Click **All products**.
 1. For the appropriate product group, hover over the **Final URL suffix** column and click the pencil icon.

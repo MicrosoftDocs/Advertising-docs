@@ -9,6 +9,7 @@ ms.author: eur
 
 # What gets imported from Facebook Ads
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Before proceeding to [Import campaigns directly from Facebook Ads](./hlp_BA_PROC_Import_FB_Campaign.md), make sure to review the details below.
 
 Not all information will be imported from Facebook Ads, and that doesn’t mean it’s not supported within Microsoft Advertising. Some specific situations require special attention during import.
@@ -19,6 +20,7 @@ After you’ve imported your campaigns from Facebook Ads, you can check the stat
 
 Facebook Ads campaigns will be imported to Microsoft Advertising as audience campaigns.
 
+We will import Active, Paused, Deleted, and Archived Facebook Ads campaigns. If the Facebook Ads campaign status is Archived, we will pause the imported campaign.
 ## Campaign name
 
 Each Microsoft Advertising campaign can contain up to 128 characters while Facebook Ads campaign names can be longer.

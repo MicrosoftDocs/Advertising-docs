@@ -9,6 +9,6 @@ ms.author: eur
 
 # Duration
 
-**What it is:**    The total time, in seconds, that a customer spends on a call.
+**What it is:**     The total time, in seconds, that a customer spends on a call.
 
 

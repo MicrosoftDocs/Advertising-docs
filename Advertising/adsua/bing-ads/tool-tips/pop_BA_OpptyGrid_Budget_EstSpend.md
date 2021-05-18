@@ -9,8 +9,8 @@ ms.author: eur
 
 # Estimated change in spend
 
-**What it is:**       The potential change in spend each week when you adjust the budget by the suggested amount.
+**What it is:**        The potential change in spend each week when you adjust the budget by the suggested amount.
 
-**What you need to know: **       These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
+**What you need to know:**        These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
 
 

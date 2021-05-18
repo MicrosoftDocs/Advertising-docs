@@ -9,7 +9,7 @@ ms.author: eur
 
 # Performance target status
 
-**What it is:**   An estimate of whether your campaigns are on track to successfully meet your performance target.
+**What it is:**    An estimate of whether your campaigns are on track to successfully meet your performance target.
 
 **Possible statuses:**
 - **         On track:       **     Based on recent performance, your campaigns are on track to meet your target.

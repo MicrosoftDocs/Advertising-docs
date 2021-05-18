@@ -13,12 +13,12 @@ The Get a Ride feature for Location Extensions offers iPhone users an easy way t
 
 ![Get a Ride Extension](../images/BA_Conc_GetRideExtension.png)
 
-**Benefits of Get a Ride Extensions**:
+**Benefits of Get a Ride Extensions** :
 - Increases user value and engagement.
 - Simplifies user efforts to reach your business location.
 - Increases the chance that users will visit your business.
 
-**What you need to know**: 
+**What you need to know** : 
 - If a customer is logged in to an Uber app, clicking on the Get a Ride icon will open the Uber app with the locations pre-populated.
 - If a customer has an Uber account but isn't logged in to the Uber app, clicking on the Get a Ride icon takes the customer to the Uber sign in/register page. After signing in to Uber, the customer will need to enter the destination location.
 - Clicks on the Get a Ride icon is charged like any other clicks to your ads.

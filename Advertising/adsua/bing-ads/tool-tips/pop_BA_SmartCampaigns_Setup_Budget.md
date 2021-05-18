@@ -9,10 +9,10 @@ ms.author: eur
 
 # Budget
 
-**What it is**: This is the amount of money you want to spend per day.
+**What it is** : This is the amount of money you want to spend per day.
 
-**What you need to know**: Your actual spend per day might be more or less than this number. However, each month, you won’t spend more than this number multiplied by the number of days in the month.
+**What you need to know** : Your actual spend per day might be more or less than this number. However, each month, you won’t spend more than this number multiplied by the number of days in the month.
 
-**Tip**: You can change your budget at any time.
+**Tip** : You can change your budget at any time.
 
 

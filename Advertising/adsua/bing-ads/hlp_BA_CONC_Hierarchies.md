@@ -18,18 +18,18 @@ This feature is geared towards agencies and large businesses to allow for easier
 ## How it works: A manager account vs. an account
 
 When you sign up for a Microsoft Advertising account for the first time, you're technically getting two accounts in one:
-- A **manager account**, which is a container for one account or for multiple accounts in a hierarchy. Additionally, a manager account can link to other manager accounts. Visually, think of a manager account as a file folder. A manager account is the parent account that allows you to share important items across several child accounts. Items that can be shared include:
-  - Users and user roles
-  - Payment methods
-  - Universal Event Tracking (UET) tags
-  - Remarketing lists
+- A **manager account** , which is a container for one account or for multiple accounts in a hierarchy. Additionally, a manager account can link to other manager accounts. Visually, think of a manager account as a file folder. A manager account is the parent account that allows you to share important items across several child accounts. Items that can be shared include:
+   - Users and user roles
+   - Payment methods
+   - Universal Event Tracking (UET) tags
+   - Remarketing lists
 
-- An **account**, which is the account that directly serves ads. Continuing with the folder analogy with the manager account, think of an account as a file within the folder. An account contains:
-  - Campaigns
-  - Ad groups
-  - Keywords
-  - Budgets
-  - Account settings, which can specify such things as currency and time zone
+- An **account** , which is the account that directly serves ads. Continuing with the folder analogy with the manager account, think of an account as a file within the folder. An account contains:
+   - Campaigns
+   - Ad groups
+   - Keywords
+   - Budgets
+   - Account settings, which can specify such things as currency and time zone
 
 These two account types are complementary, meaning that you can't have a manager account without at least one account, and you can't have an account without a manager account. Both work in harmony to provide the flexibility you need to build a hierarchy, from the simple to the complex. So, whether you're a mom-and-pop shop or a global ad agency, we've got you covered.
 

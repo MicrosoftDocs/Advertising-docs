@@ -36,35 +36,14 @@ Use the search field to find accounts or manager accounts by the account name or
 
 Use the legend at the top of your view to understand what's being shown to you on the account cards. Although what is displayed and how it's displayed is dynamic, the following will help you understand the items that may appear on the cards.
 
-<table>
-  <tr>
-    <th scope="col">Item</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th scope="row">Manager account name and number</th>
-    <td>The manager account details.</td>
-  </tr>
-  <tr>
-    <th scope="row">12-month rolling spend</th>
-    <td>Shows rolling billed advertising spend in your selected currency.</td>
-  </tr>
-  <tr>
-    <th scope="row">Direct children</th>
-    <td>Indicates how many child entities there are directly under the manager account.</td>
-  </tr>
-  <tr>
-    <th scope="row">Multi-parents</th>
-    <td>Indicates there are multiple parties managing this account. </td>
-  </tr>
-  <tr>
-    <th scope="row">Owned (red line)</th>
-    <td>Indicates owners of the accounts.</td>
-  </tr>
-  <tr>
-    <th scope="row">Linked (blue dotted line)</th>
-    <td>Indicates accounts that are linked to this account.</td>
-  </tr>
-</table>
+**The account card information may include:**
+|Item|Description|
+|---|---|
+|Manager account name and number|The manager account details.|
+|12-month rolling spend|Shows rolling billed advertising spend in your selected currency.|
+|Direct children|Indicates how many child entities there are directly under the manager account.|
+|Multi-parents|Indicates there are multiple parties managing this account.|
+|Owned (red line)|Indicates owners of the accounts.|
+|Linked (blue dotted line)|Indicates accounts that are linked to this account.|
 
 

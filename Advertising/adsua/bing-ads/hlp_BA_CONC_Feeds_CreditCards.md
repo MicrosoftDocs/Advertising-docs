@@ -9,4 +9,5 @@ ms.author: eur
 
 # Credit cards feeds
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 

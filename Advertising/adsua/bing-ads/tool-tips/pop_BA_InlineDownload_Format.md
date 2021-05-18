@@ -9,8 +9,8 @@ ms.author: eur
 
 # Format
 
-**What it is:**The format you want to save the report.
+**What it is:** The format you want to save the report.
 
-**Why it’s important:**    You can download to a CSV, TSV, XLSX (Microsoft Excel), or ZIP (CSV) file.
+**Why it’s important:**     You can download to a CSV, TSV, XLSX (Microsoft Excel), or ZIP (CSV) file.
 
 

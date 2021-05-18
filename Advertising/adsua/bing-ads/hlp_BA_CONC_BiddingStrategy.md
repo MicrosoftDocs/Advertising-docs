@@ -15,4 +15,5 @@ When creating your keywords, Microsoft Advertising provides you suggested bids f
 
 The bid amount is deducted from your campaign budget each time your ad is clicked. The actual cost for each keyword or placement varies depending on the following:
 
+[!INCLUDE [BidFactors](./includes/BidFactors.md)]
 

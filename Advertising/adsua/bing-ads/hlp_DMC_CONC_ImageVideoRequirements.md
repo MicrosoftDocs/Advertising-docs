@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Image and video requirements for ads and posts
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Adding images or videos is a great way to engage with your audience and drive clicks. Below are the image and video requirements for social posts, image, and video ads.
 
 ## Facebook

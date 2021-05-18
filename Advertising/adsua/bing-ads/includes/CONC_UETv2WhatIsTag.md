@@ -1,5 +1,19 @@
 Universal Event Tracking (UET) is the key that unlocks powerful Microsoft Advertising features such as [conversion tracking](../hlp_BA_CONC_UETv2WhatIsCT.md), [audience targeting](../hlp_BA_CONC_Audiences_Options.md), and automated bidding [bid strategies](../hlp_BA_CONC_BidStrategy.md). The key comes in the form of the UET tag, which records what customers do on your website and sends that information to Microsoft Advertising.  UET is a prerequisite for conversion tracking, remarketing in paid search, and automated bidding bid strategies.
 
+<content_tile style="background:#008272; color:#fff; text-align:center; padding:30px;width:80%;font-size:14px;font-weight:bold;margin:0 auto;">Universal Event Tracking (UET) enables or enhances many key Microsoft Advertising features</content_tile>
+
+<content_tile style="width: 2px;background: #008272;height: 50px;position: absolute;left: 50%;float: left;display: block;"></content_tile>
+
+<content_tile style=" margin-top: 50px;height: 2px;background: #008272;width: 75%;margin-left: 11.25%;"></content_tile>
+
+<content_tile style="width: 2px;background: #008272;height: 50px;left: 50%;position: absolute;"></content_tile>
+
+<content_tile style="width: 2px;background: #008272;height: 50px;left: 50%;position: absolute;"></content_tile>
+
+<content_tile style="width: 2px;background: #008272;height: 50px;left: 50%;position: absolute;"></content_tile>
+
+<content_tile style="width: 2px;background: #008272;height: 50px;left: 50%;position: absolute;"></content_tile>
+
 [Conversion tracking](../hlp_BA_CONC_UETv2WhatIsCT.md)
 
 - Online goals
@@ -27,7 +41,7 @@ Enhanced performance
 <table>
   <tr>
     <td style="font-weight:500;">
-			<strong>Universal Event Tracking (UET) enables or enhances many key Microsoft Advertising features</strong>
+			<strong>Universal Event Tracking (UET) enables or enhances many key Microsoft Advertising features</strong> 
 		</td>
   </tr>
   <tr>
@@ -50,11 +64,8 @@ Enhanced performance
 
 Here you go:
 
-<table type="type2" style="border:0;padding:0">
-  <tr>
-    <td style="width:300px">[Everything you need to know about setting up UET](../hlp_BA_CONC_UET_Setup_Master.md)</td>
-  </tr>
-</table>
+|[Everything you need to know about setting up UET](../hlp_BA_CONC_UET_Setup_Master.md)|
+|---|
 
 > [!NOTE]
 > Get more info: [FAQ: Universal Event Tracking](../hlp_BA_CONC_UET_FAQ.md)

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Sold-to customer number
 
-**What it is: **    The customer number to whom the order was sold.
+**What it is:**     The customer number to whom the order was sold.
 
 

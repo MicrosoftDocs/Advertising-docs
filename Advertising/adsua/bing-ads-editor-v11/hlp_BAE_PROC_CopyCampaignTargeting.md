@@ -1,7 +1,7 @@
 ---
 title: Copy targeting settings between campaigns
 description: Copy targeting settings between campaigns
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

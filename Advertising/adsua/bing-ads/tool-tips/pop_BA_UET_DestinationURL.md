@@ -9,6 +9,6 @@ ms.author: eur
 
 # Destination URL
 
-**What it is:**  Specify which pages the user has to visit to track as conversion.
+**What it is:**   Specify which pages the user has to visit to track as conversion.
 
 

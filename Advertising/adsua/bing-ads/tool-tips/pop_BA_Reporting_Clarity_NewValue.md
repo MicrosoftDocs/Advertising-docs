@@ -9,6 +9,6 @@ ms.author: eur
 
 # New value
 
-**What it is:**    After a change is made to your campaign, this shows the current value of the changed attribute.
+**What it is:**     After a change is made to your campaign, this shows the current value of the changed attribute.
 
 

@@ -9,8 +9,8 @@ ms.author: eur
 
 # Estimated change in clicks
 
-**What it is:**       The potential increase in clicks each week when you add the suggested broad match modifier keyword.
+**What it is:**        The potential increase in clicks each week when you add the suggested broad match modifier keyword.
 
-**What you need to know: **       These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
+**What you need to know:**        These estimates are based on performance data from the last 7 days and are not a guarantee of future performance.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Add Price Extensions to your ad
 description: Add prices of your products or services on your ads for potential customers.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -23,51 +23,17 @@ An account, campaign, or ad group can have up to 20 Price Extensions. Like any e
 
 Here are the definitions for the different fields you need to fill in for your Price Extensions.
 
-<table>
-  <tr>
-    <th scope="col">Field</th>
-    <th scope="col">Definition</th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Language</th>
-    <td>The language you'll write your Price Extension text. The Price Qualifier (optional) and Unit (optional) will be automatically translated into this language.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Type</th>
-    <td>The category that best defines your Price Extension items and specifies the corresponding editorial checks which will be applied to them.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Currency</th>
-    <td>The currency symbol that will be displayed in the ad (for example, $ for USD).</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Header</th>
-    <td>Similar to ad headline, the header introduces your products or services and appears as a clickable link that directs customers to your final URL. Your header can have up to 25 characters.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Description</th>
-    <td>Additional information about your products or services. Your description can have up to 25 characters. Please note, that you can include 3rd party retailers in your price extension by using the following text pattern: Product name. Product type. – 3rd party retailer name. Price.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Price Qualifier (optional)</th>
-    <td>
-      Indicate prices for a given product or service, starting from a specific price and up to a maximum price. Please note, that you can choose any price value starting at zero. Negative values, however, are restricted.
-
-     </td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Unit (optional)</th>
-    <td>Allows you to specify the service cost in terms of hour, day, week, etc.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Final URL</th>
-    <td>The landing page where customers will be taken after clicking your header. Prices on this page should accurately reflect the prices specified in the extension.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">Mobile final URL</th>
-    <td>An optional landing page link that is only displayed on mobile devices. If no mobile final URL is provided, the default final URL will be used.</td>
-  </tr>
-</table>
+|Field|Definition|
+|---|---|
+|Language|The language you'll write your Price Extension text. The Price Qualifier (optional) and Unit (optional) will be automatically translated into this language.|
+|Type|The category that best defines your Price Extension items and specifies the corresponding editorial checks which will be applied to them.|
+|Currency|The currency symbol that will be displayed in the ad (for example, $ for USD).|
+|Header|Similar to ad headline, the header introduces your products or services and appears as a clickable link that directs customers to your final URL. Your header can have up to 25 characters.|
+|Description|Additional information about your products or services. Your description can have up to 25 characters. Please note, that you can include 3rd party retailers in your price extension by using the following text pattern: Product name. Product type. – 3rd party retailer name. Price.|
+|Price Qualifier (optional)|Indicate prices for a given product or service, starting from a specific price and up to a maximum price. Please note, that you can choose any price value starting at zero. Negative values, however, are restricted.|
+|Unit (optional)|Allows you to specify the service cost in terms of hour, day, week, etc.|
+|Final URL|The landing page where customers will be taken after clicking your header. Prices on this page should accurately reflect the prices specified in the extension.|
+|Mobile final URL|An optional landing page link that is only displayed on mobile devices. If no mobile final URL is provided, the default final URL will be used.|
 
 **Availability**: All Bing markets, except China, Taiwan, and Hong Kong.
 
@@ -109,8 +75,8 @@ Here are the definitions for the different fields you need to fill in for your P
 1. Select **Price Extensions** under **Ads and extensions** from the type list in the left panel.
 1. Click **Make multiple changes** in the data view and select **Add/update multiple ad group Price Extensions** or **Add/update multiple campaign Price Extensions**.
 1. In the **Add.update multiple changes dialog box, do one of the following:**
-  - If the data you are going to add includes campaign names, select **My ad group/campaign Price Extensions data includes campaign names**.
-  - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Price Extensions to.
+   - If the data you are going to add includes campaign names, select **My ad group/campaign Price Extensions data includes campaign names**.
+   - If the data you are going to add does not include campaign names, in the **Select location** box, select the campaigns that you want to add the Price Extensions to.
 
 1. If you want to use the suggested headings, click **Insert headings**. f you want to use your own headings, in the first row of the text box, type the heading of each column.
 1. In the text box, either paste your Price Extensions data into the box using tabs as delimiters or type the data for one link per line, using tabs to move to the next column.
@@ -118,4 +84,5 @@ Here are the definitions for the different fields you need to fill in for your P
 1. Click **Next**.
 1. On the **Import completed** dialog box, after you review your changes, click **Close**.
 
+ 
 

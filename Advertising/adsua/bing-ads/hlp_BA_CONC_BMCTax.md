@@ -17,42 +17,13 @@ Microsoft Merchant Center requires that complete and accurate tax information is
 
 Here are the taxes and value added tax (VAT) requirements for specific countries.
 
-<table>
-  <tr>
-    <th scope="col">Country</th>
-    <th scope="col">Tax or VAT required in total price?</th>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">Australia</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">Germany</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">France</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">United Kingdom</th>
-    <td style="text-align:center">
-        ![Yes](../images/Global_Icon_CheckMark.png)
-      </td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">United States</th>
-    <td style="text-align:center">
-        ![No](../images/Global_Icon_Xmark.png)
-      </td>
-  </tr>
-</table>
+|Country|Tax or VAT required in total price?|
+|---|---|
+|Australia|![Yes](../images/Global_Icon_CheckMark.png)|
+|Germany|![Yes](../images/Global_Icon_CheckMark.png)|
+|France|![Yes](../images/Global_Icon_CheckMark.png)|
+|United Kingdom|![Yes](../images/Global_Icon_CheckMark.png)|
+|United States|![No](../images/Global_Icon_Xmark.png)|
 
 For additional questions on taxes, [contact support](https://go.microsoft.com/fwlink?LinkId=398371).
 

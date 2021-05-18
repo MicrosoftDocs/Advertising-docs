@@ -9,7 +9,7 @@ ms.author: eur
 
 # Status - Rejected
 
-**What it is:** The items that were rejected when uploading the catalog feed file, as they didn't meet the guidelines.
+**What it is:**  The items that were rejected when uploading the catalog feed file, as they didn't meet the guidelines.
 
 **What you need to know:**
 - To see which offers were rejected, you can go to the chart to see the Rejected products.

@@ -9,11 +9,11 @@ ms.author: eur
 
 # Wide image
 
-**What it is**: This is one of two possible aspect ratios for images that could appear in your audience ads.
+**What it is** : This is one of two possible aspect ratios for images that could appear in your audience ads.
 
-**Why it's important**: Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.
+**Why it's important** : Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.
 
-**What you need to know**: Wide images have an  aspect ratio of 1.91:1. You can crop an image to this aspect ratio when you add it.
+**What you need to know** : Wide images have an  aspect ratio of 1.91:1. You can crop an image to this aspect ratio when you add it.
 
 Click **Add** to add a new or existing image or **Edit** to make changes to an image you've previously selected.
 

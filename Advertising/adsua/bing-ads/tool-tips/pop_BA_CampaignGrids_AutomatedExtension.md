@@ -9,8 +9,8 @@ ms.author: eur
 
 # Automated Extension
 
-**What it is:** If an Automated Extension can improve your ad performance, Microsoft Advertising will automatically display extra details about your business below your ad.
+**What it is:**  If an Automated Extension can improve your ad performance, Microsoft Advertising will automatically display extra details about your business below your ad.
 
-**Get more info: **    [About ad extensions](../hlp_BA_CONC_AboutAdExtensions.md)
+**Get more info:**     [About ad extensions](../hlp_BA_CONC_AboutAdExtensions.md)
 
 

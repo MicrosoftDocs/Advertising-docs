@@ -9,6 +9,6 @@ ms.author: eur
 
 # Goal type
 
-**What it is:**   The type of conversion goal. These can be destination URL, duration, pages viewed per visit, custom events, mobile app installs, or offline conversions.
+**What it is:**    The type of conversion goal. These can be destination URL, duration, pages viewed per visit, custom events, mobile app installs, or offline conversions.
 
 

@@ -14,52 +14,16 @@ Expanded Text Ads are a new, mobile-optimized ad format that enables you to craf
 
 Here's how Expanded Text Ads compare to standard text ads:
 
-<table type="type1">
-  <tr>
-    <th scope="col">Ad part</th>
-    <th scope="col">Standard text ads</th>
-    <th scope="col">Expanded Text Ads</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Ad title
-            </th>
-    <td>
-              25 characters
-            </td>
-    <td>
-              90 characters: Supports three headlines, up to 30 characters each, separated by a space, vertical bar, and space (" | ")
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Ad text
-
-            </th>
-    <td>
-              71 characters
-            </td>
-    <td>
-              180 characters: Supports two descriptions, up to two 90 characters each
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Display URL
-            </th>
-    <td>
-              35 characters, manually entered and error-prone
-            </td>
-    <td>
-              Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths 
-            </td>
-  </tr>
-</table>
+|Ad part|Standard text ads|Expanded Text Ads|
+|---|---|---|
+|Ad title|25 characters|90 characters: Supports three headlines, up to 30 characters each, separated by a space, vertical bar, and space (" | ")|
+|Ad text|71 characters|180 characters: Supports two descriptions, up to two 90 characters each|
+|Display URL|35 characters, manually entered and error-prone|Domain and subdomain automatically generated from your final URL (preserving capitalization) plus two customizable URL paths|
 
 ## How do I set up Expanded Text Ads?
 1. From the **Ads** tab, click **Create ad** and then select an ad group (or from the main menu on the left, click **All campaigns** > **Ad groups**. Then, click **Ads &amp; extensions**).
 1. For **Ad type**, select **Expanded Text Ad**.
-1. Enter your landing page URL in the **Final URL** box. **Note**: Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any [tracking templates](./hlp_BA_CONC_GoogleAnalytics.md)&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
+1. Enter your landing page URL in the **Final URL** box. **Note** : Your final URL — including prefix (e.g., "www."), suffix (e.g., ".com"), and any [tracking templates](./hlp_BA_CONC_GoogleAnalytics.md)&nbsp;— must be no longer than 2048 characters. However, your final URL **domain** (everything in your final URL before the first slash or tracking template) must be no longer than 67 characters.
 1. Unlike standard text ads, you can then enter three parts of your ad title, each up to 30 characters long. The third title is optional.
 1. Unlike standard text ads, you can have two parts of your description, each up to 90 characters long. The second description is optional.
 1. Similarly, you can also enter two parts of the URL path customers will see in your ad.
@@ -67,53 +31,14 @@ Here's how Expanded Text Ads compare to standard text ads:
 1. Click **Save**.
 
 ## What are the character limits for Expanded Text Ads?
-<table type="type1">
-  <tr>
-    <th scope="col">
-              Text field
-            </th>
-    <th scope="col">
-              Character limit
-            </th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Final URL 
-            </th>
-    <td>
-              2048 characters, including prefix (e.g., "www."), suffix (e.g., ".com"), and tracking templates 
+|Text field|Character limit|
+|---|---|
+|Final URL|2048 characters, including prefix (e.g., "www."), suffix (e.g., ".com"), and tracking templates|
+|Titles|30 characters each, up to three ad titles|
+|Ad text|90 characters each, up to two ad descriptions|
+|Paths|15 characters each**Note** : All together, the final URL domain (everything in your final URL before the first slash or tracking template) and paths cannot exceed 67 characters.|
 
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Titles
-            </th>
-    <td>
-              30 characters each, up to three ad titles
-
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Ad text
-            </th>
-    <td>
-              90 characters each, up to two ad descriptions
-
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              Paths
-            </th>
-    <td>
-              15 characters each
-              <para><strong>Note</strong>: All together, the final URL domain (everything in your final URL before the first slash or tracking template) and paths cannot exceed 67 characters.</para></td>
-  </tr>
-</table>
-
-**Note**: Keep in mind the total length of the potential dynamic text, including Param1, Param2, Param3, and DKIs. It is possible to create ad titles, ad text, and URLs that fit within our character limits when you create them, but that become too long when the dynamic text is applied. In such cases, the system may consider a total length check of 90 characters for the Title, 67 characters for the display URL, and 180 characters for the Description text (excluding separators), or use the default text as what is deemed fit based on predicted responses, device length limits, and more.
+**Note** : Keep in mind the total length of the potential dynamic text, including Param1, Param2, Param3, and DKIs. It is possible to create ad titles, ad text, and URLs that fit within our character limits when you create them, but that become too long when the dynamic text is applied. In such cases, the system may consider a total length check of 90 characters for the Title, 67 characters for the display URL, and 180 characters for the Description text (excluding separators), or use the default text as what is deemed fit based on predicted responses, device length limits, and more.
 
 > [!IMPORTANT]
 > Double-width characters — such as Chinese characters — count as two characters each.
@@ -171,54 +96,13 @@ Our engine will choose the ad that is the most relevant to the search results pa
 ## Which part of my domain is auto-generated from the final URL?
 Microsoft Advertising will automatically use the domain of the URL that is entered, including its subdomains. See the table below for examples.
 
-<table type="type1">
-  <tr>
-    <th scope="col">Advertiser-entered final URL</th>
-    <th scope="col">Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://contoso.com/contact.html
-            </th>
-    <td>
-              contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.contoso.com/contact.html
-
-            </th>
-    <td>
-              www.contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://ContosoStore.com/contact.html
-            </th>
-    <td>
-              ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.ContosoStore.com/contact.html
-
-            </th>
-    <td>
-              www.ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://Store.Contoso.com/contact.html
-            </th>
-    <td>
-              Store.Contoso.com
-            </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
@@ -226,107 +110,25 @@ Microsoft Advertising will automatically use the domain of the URL that is enter
 ## How does Microsoft Advertising handle capitalization for display URLs?
 Microsoft Advertising will preserve the capitalization you enter in the final URL. See the table below for examples.
 
-<table type="type1">
-  <tr>
-    <th scope="col">Advertiser-entered final URL</th>
-    <th scope="col">Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://contoso.com/contact.html
-            </th>
-    <td>
-              contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.contoso.com/contact.html
-
-            </th>
-    <td>
-              www.contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://ContosoStore.com/contact.html
-            </th>
-    <td>
-              ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.ContosoStore.com/contact.html
-
-            </th>
-    <td>
-              www.ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://Store.Contoso.com/contact.html
-            </th>
-    <td>
-              Store.Contoso.com
-            </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
 
 ## How will Microsoft Advertising auto-generate display URL domains with Expanded Text Ads?
-<table type="type1">
-  <tr>
-    <th scope="col">Advertiser-entered final URL</th>
-    <th scope="col">Microsoft Advertising will display</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://contoso.com/contact.html
-            </th>
-    <td>
-              contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.contoso.com/contact.html
-
-            </th>
-    <td>
-              www.contoso.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://ContosoStore.com/contact.html
-            </th>
-    <td>
-              ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://www.ContosoStore.com/contact.html
-
-            </th>
-    <td>
-              www.ContosoStore.com
-            </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">
-              http://Store.Contoso.com/contact.html
-            </th>
-    <td>
-              Store.Contoso.com
-            </td>
-  </tr>
-</table>
+|Advertiser-entered final URL|Microsoft Advertising will display|
+|---|---|
+|http://contoso.com/contact.html|contoso.com|
+|http://www.contoso.com/contact.html|www.contoso.com|
+|http://ContosoStore.com/contact.html|ContosoStore.com|
+|http://www.ContosoStore.com/contact.html|www.ContosoStore.com|
+|http://Store.Contoso.com/contact.html|Store.Contoso.com|
 
 > [!NOTE]
 > Your final URL’s domain — including prefix (e.g., "www.") and suffix (e.g., ".com") — must be no longer than 67 characters.
@@ -337,22 +139,10 @@ The Ad performance report shows these columns by default. They are also availabl
 ## How do I import Expanded Text Ads with ad customizer feeds?
 1. At the top of the page, click **Import Campaigns** and then click **              Import from Google Ads            ** (or from the global menu at the top of the page, click **Import** and then click **              Import from Google Ads            **).
 1. If you have imported from Google Ads in the past 90 days, you will see a table that shows you the **Date/Time** and            **              Google Ads account            ** that was imported along with:
-<table>
-  <tr>
-    <th scope="col">Column Name</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Summary</th>
-    <td>
-                  Shows how many entities were imported successfully and how many had errors. Click the ellipsis ![ellipse](../images/BA_ScreenCap_DeliveryDetails.png) to see details.
-                </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Actions</th>
-    <td>If you had errors, you will see a link to download the error file which you can review.</td>
-  </tr>
-</table>
+|Column Name|Description|
+|---|---|
+|Summary|Shows how many entities were imported successfully and how many had errors. Click the ellipsis ![ellipse](../images/BA_ScreenCap_DeliveryDetails.png) to see details.|
+|Actions|If you had errors, you will see a link to download the error file which you can review.|
 
 1. Click **Sign in to Google**.
 1. Enter your Google Ads sign-in information, click **Sign in**. If you’re having trouble signing in to Google Ads:

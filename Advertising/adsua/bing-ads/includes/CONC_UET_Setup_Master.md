@@ -64,14 +64,14 @@ window.uetq = window.uetq || [];  window.uetq.push('event', 'page_view', { 'page
 ```
 
 Here are three different ways of triggering SPA events. Note that we recommend using the first way. For each option, we have a sample webpage that you can visit to see the appropriate code in action.
-- **Content change**: Trigger an SPA event any time your application loads dynamic content. In this case, the real URL is automatically sent in a standard pageLoad event on the first load. You can use this URL in your destination goals, and any custom events triggered on that first page will be associated with it. Each SPA event will generate a pageLoad event with the SPA URL, which is not required to be a loadable path. You can reference these URLs in your goals as well. Any custom events triggered after an SPA event will only be associated with the SPA pageLoad (in other words, not the original URL).
-  - Visit our [sample "Content change" webpage](https://go.microsoft.com/fwlink?LinkId=2010184) to see this code in action.
+- **Content change** : Trigger an SPA event any time your application loads dynamic content. In this case, the real URL is automatically sent in a standard pageLoad event on the first load. You can use this URL in your destination goals, and any custom events triggered on that first page will be associated with it. Each SPA event will generate a pageLoad event with the SPA URL, which is not required to be a loadable path. You can reference these URLs in your goals as well. Any custom events triggered after an SPA event will only be associated with the SPA pageLoad (in other words, not the original URL).
+   - Visit our [sample "Content change" webpage](https://go.microsoft.com/fwlink?LinkId=2010184) to see this code in action.
 
-- **All pages**: Trigger an SPA event on all pages, including the initial load. This scenario is the same as the preceding one, except the auto pageLoad event is not used. Because it still triggers, it is important to order your events so that the SPA event triggers before any other custom events. If they trigger out of order, some or all may be associated with the auto pageLoad event (and original URL), instead of the SPA pageLoad event (and SPA URL including page_path).
-  - Visit our [sample "All pages" webpage](https://go.microsoft.com/fwlink?LinkId=2010188) to see this code in action.
+- **All pages** : Trigger an SPA event on all pages, including the initial load. This scenario is the same as the preceding one, except the auto pageLoad event is not used. Because it still triggers, it is important to order your events so that the SPA event triggers before any other custom events. If they trigger out of order, some or all may be associated with the auto pageLoad event (and original URL), instead of the SPA pageLoad event (and SPA URL including page_path).
+   - Visit our [sample "All pages" webpage](https://go.microsoft.com/fwlink?LinkId=2010188) to see this code in action.
 
-- **All pages, auto-disabled**: Trigger an SPA event on all pages and additionally disable the auto page load. This is accomplished by adding 'disableAutoPageView: true' to the initialization parameters (Note: Do not modify the snippet code directly to disable). This is the same as the previous scenario but removes the requirement that the SPA event must be triggered first on the initial page load. However, subsequent SPA events are still required to be triggered before any custom events that are associated with them (or they will be attributed to the previous SPA event).
-  - Visit our [sample "All pages, auto-disabled" webpage](https://go.microsoft.com/fwlink?LinkId=2010192) to see this code in action.
+- **All pages, auto-disabled** : Trigger an SPA event on all pages and additionally disable the auto page load. This is accomplished by adding 'disableAutoPageView: true' to the initialization parameters (Note: Do not modify the snippet code directly to disable). This is the same as the previous scenario but removes the requirement that the SPA event must be triggered first on the initial page load. However, subsequent SPA events are still required to be triggered before any custom events that are associated with them (or they will be attributed to the previous SPA event).
+   - Visit our [sample "All pages, auto-disabled" webpage](https://go.microsoft.com/fwlink?LinkId=2010192) to see this code in action.
 
 ## 3. Modify your tag to enable additional features
 Some targeting and tracking features require you to modify your UET tag. The instructions below assume that you have already created a UET tag and added it to your website.
@@ -79,7 +79,7 @@ Some targeting and tracking features require you to modify your UET tag. The ins
 ## Modifying your UET tag...
 
 ## To track custom events
-Once you've created a custom event conversion goal or remarketing list using custom events (see [How to track custom events with UET](../hlp_BA_CONC_UETv2CustomEvent.md)), you need to add the custom event JavaScript to your UET tag tracking code. Let's say that the custom event you want to track on your webpage is **people selecting a "Download now" button** on one of your webpages.
+Once you've created a custom event conversion goal or remarketing list using custom events (see [How to track custom events with UET](../hlp_BA_CONC_UETv2CustomEvent.md)), you need to add the custom event JavaScript to your UET tag tracking code. Let's say that the custom event you want to track on your webpage is **people selecting a "Download now" button**  on one of your webpages.
 
 1. Add the following custom event JavaScript below the UET tag that you added to your webpage's code in Step 1:
 ```
@@ -211,53 +211,21 @@ Add the following JavaScript in each page of your website:
 
 In the above JavaScript, change the following parameters:
 
-- ```**Replace_with_Product_ID**```: Replace this with one of the following product IDs:
-  - The exact SKU ID that uniquely identifies a product.  This is sometimes called a UPC (universal product code).
-  - An item group ID representing a set of variants for the same product (such as color or size options).
+- ```**Replace_with_Product_ID** ```: Replace this with one of the following product IDs:
+   - The exact SKU ID that uniquely identifies a product.  This is sometimes called a UPC (universal product code).
+   - An item group ID representing a set of variants for the same product (such as color or size options).
 
 > [!IMPORTANT]
 > The product ID in your JavaScript code must match an ID in your Microsoft Merchant Centerrr					product feed.
 
-- ```**Replace_with_Page_Type**```: Replace this with the one of the following values in the right-hand column of this table, depending on the page you will be using this JavaScript in:
-<table>
-  <tr>
-    <th scope="col">Dynamic remarketing list you're tracking</th>
-    <th scope="col">Required page type</th>
-  </tr>
-  <tr>
-    <th scope="row">General visitors</th>
-    <td>```'ecomm_pagetype': 'home'```  
-										```'ecomm_pagetype': 'category'```  
-										```'ecomm_pagetype': 'other'```  
-						  
-										Note: Any user not included in the page type for searchresults, product, cart, or purchase will be included in the general visitors audience.
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Product searchers</th>
-    <td>
-										```'ecomm_pagetype': 'searchresults'```  
-						  
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Product viewers</th>
-    <td>
-										```'ecomm_pagetype': 'product'```  
-							  </td>
-  </tr>
-  <tr>
-    <th scope="row">Shopping cart abandoners</th>
-    <td>
-										```'ecomm_pagetype': 'cart'```  
-								  
-						  </td>
-  </tr>
-  <tr>
-    <th scope="row">Past buyers</th>
-    <td>```'ecomm_pagetype': 'purchase'```</td>
-  </tr>
-</table>
+- ```**Replace_with_Page_Type** ```: Replace this with the one of the following values in the right-hand column of this table, depending on the page you will be using this JavaScript in:
+|Dynamic remarketing list you're tracking|Required page type|
+|---|---|
+|General visitors|```'ecomm_pagetype': 'home'```  										```'ecomm_pagetype': 'category'```  										```'ecomm_pagetype': 'other'```  						  										Note: Any user not included in the page type for searchresults, product, cart, or purchase will be included in the general visitors audience.|
+|Product searchers|```'ecomm_pagetype': 'searchresults'```  |
+|Product viewers|```'ecomm_pagetype': 'product'```  |
+|Shopping cart abandoners|```'ecomm_pagetype': 'cart'```  |
+|Past buyers|```'ecomm_pagetype': 'purchase'```|
 
 **Note: Customers who buy a product are added to the "past buyers" list and are removed from other lists (for that particular product). For this to work, the UET tag on your purchase confirmation page must send both product ID (ecomm_prodid) and pagetype (ecomm_pagetype).**
 
@@ -271,7 +239,7 @@ To see an example of a dynamic remarketing UET tag tracking code installed in th
 ## When implementing multiple features
 As discussed in the above sections, certain Microsoft Advertising features require you to add and modify a JavaScript snippet to your existing UET tag:
 
-- **Custom events**: For conversion goals or remarketing lists based on custom events, you need to modify the following snippet to return the **event action**, **event category**, **event label**, and/or **event value**:
+- **Custom events** : For conversion goals or remarketing lists based on custom events, you need to modify the following snippet to return the **event action**, **event category**, **event label**, and/or **event value**:
 ```
 ```<script>		```  							```   window.uetq = window.uetq || [];      window.uetq.push ('event', '
 <c_data><![CDATA[<font color="ff0027" size="2">Replace_with_Event_Action</font>]]></c_data>
@@ -284,7 +252,7 @@ As discussed in the above sections, certain Microsoft Advertising features requi
 '});  ```  							```</script>```
 ```
 
-- **Variable revenue**: For conversion goals tracking variable revenue, you need to modify the following snippet to return the **revenue value** and **currency code**:
+- **Variable revenue** : For conversion goals tracking variable revenue, you need to modify the following snippet to return the **revenue value** and **currency code**:
 ```
 ```<script>		```   	  ```   window.uetq = window.uetq || [];      window.uetq.push ('event', '', {'revenue_value': '
 <c_data><![CDATA[<font color="ff0027" size="2">Replace_with_Revenue_Value</font>]]></c_data>
@@ -293,7 +261,7 @@ As discussed in the above sections, certain Microsoft Advertising features requi
 '});  ```  ```</script>```
 ```
 
-- **Dynamic remarketing**: To target a dynamic remarketing list, you need to modify the following snippet to return the **product ID** and **page type**:
+- **Dynamic remarketing** : To target a dynamic remarketing list, you need to modify the following snippet to return the **product ID** and **page type**:
 ```
 ```<script>		```   	  ```   window.uetq = window.uetq || [];      window.uetq.push ('event', '', {'ecomm_prodid': '
 <c_data><![CDATA[<font color="ff0027" size="2">Replace_with_Product_ID</font>]]></c_data>
@@ -305,14 +273,14 @@ As discussed in the above sections, certain Microsoft Advertising features requi
  
 If you are implementing more than one of these features, there are a couple things to keep in mind:
 
-- **We recommend keeping each feature's JavaScript snippet separate in your webpage's code** (in other words, in separate ```&lt;script&gt;	&lt;/script&gt;``` sections) because each snippet sends out one event.
+- **We recommend keeping each feature's JavaScript snippet separate in your webpage's code**  (in other words, in separate ```&lt;script&gt;	&lt;/script&gt;``` sections) because each snippet sends out one event.
 - In specific, you **can't** use one JavaScript snippet to track both of the following on the same webpage:
-  - Variable revenue for the **Destination URL** conversion goal
-  - Custom events based on a conversion goal or remarketing list
+   - Variable revenue for the **Destination URL** conversion goal
+   - Custom events based on a conversion goal or remarketing list
 
 In this case, you will need to have two separate snippets in your webpage's code:
 
-  - Snippet 1 — for variable revenue for the Destination URL conversion goal:
+   - Snippet 1 — for variable revenue for the Destination URL conversion goal:
 ```
 ```<script>		```   	  ```   window.uetq = window.uetq || [];      window.uetq.push ('event', '', {'revenue_value': '
 <c_data><![CDATA[<font color="ff0027" size="2">Replace_with_Revenue_Value</font>]]></c_data>
@@ -321,7 +289,7 @@ In this case, you will need to have two separate snippets in your webpage's code
 '});  ```  ```</script>```
 ```
 
-  - Snippet 2 — for custom events based on a conversion goal or remarketing list. However, note that, if you are tracking variable revenue for a custom event conversion goal (**not** a Destination URL conversion goal), you would include this in the custom event code snippet:
+   - Snippet 2 — for custom events based on a conversion goal or remarketing list. However, note that, if you are tracking variable revenue for a custom event conversion goal (**not** a Destination URL conversion goal), you would include this in the custom event code snippet:
 ```
 ```<script>		```  							```   window.uetq = window.uetq || [];      window.uetq.push ('event', '
 <c_data><![CDATA[<font color="ff0027" size="2">Replace_with_Event_Action</font>]]></c_data>
@@ -343,13 +311,8 @@ In this case, you will need to have two separate snippets in your webpage's code
 
 The easiest way to validate that your UET tag is working properly on any given webpage is to use UET Tag Helper (a browser extension):
 
-<table type="type2" style="border:0;padding:0">
-  <tr>
-    <td style="width:225px;text-align:center;">
-                [How to install and use UET Tag Helper](../hlp_BA_CONC_UET_TagHelper.md)
-              </td>
-  </tr>
-</table>
+|[How to install and use UET Tag Helper](../hlp_BA_CONC_UET_TagHelper.md)|
+|---|
 
  
 ## Review the UET tracking status column in Microsoft Advertising
@@ -394,12 +357,12 @@ You can also use Microsoft Advertising to validate:
 						<strong>What it is:</strong>  This is the status of the UET tag. It can be unverified, tag active, or tag inactive.</td>
     <td>
 						<strong>Why it's important:</strong>   Lets you know if your UET tag is working or not. 
-
-							<strong>Unverified</strong>: Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix. 
-						 
-							<strong>Tag active</strong>: Your UET tag is working and sending user activity data to Microsoft Advertising. 
-						
-							<strong>Tag inactive</strong>: Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
+> 
+							<strong>Unverified</strong> : Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix. 
+> 						 
+							<strong>Tag active</strong> : Your UET tag is working and sending user activity data to Microsoft Advertising. 
+> 						
+							<strong>Tag inactive</strong> : Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
 								<ul><li><strong>What to do if the UET tag is inactive:</strong> If the <strong>Tracking status</strong> column lists <strong>Tag inactive</strong>, then Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website and, if it is not, add it again. You can also use [UET Tag Helper](../hlp_BA_CONC_UET_TagHelper.md) to validate your tag.</li></ul></td>
   </tr>
   <tr>
@@ -431,7 +394,7 @@ You can also use Microsoft Advertising to validate:
   </tr>
 </table>
 
-**Limitations of the tracking status column**: While we believe the tracking status will help you validate your setup, we do want to call out that the following cannot be verified from the tracking status column:
+**Limitations of the tracking status column** : While we believe the tracking status will help you validate your setup, we do want to call out that the following cannot be verified from the tracking status column:
 
 - Whether or not the UET tag has been installed across the site: Microsoft Advertising reports status of the UET tag as **Tag active** as long as at least one UET event was logged (from any part of your website).
 - Whether or not custom events/variable revenue values are being reported: As explained above Microsoft Advertising does not distinguish between page load events (logged by default) or custom events reported when the tracking status column.

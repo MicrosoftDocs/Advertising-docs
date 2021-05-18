@@ -9,6 +9,6 @@ ms.author: eur
 
 # Name/Display text
 
-**What it is:** The text you enter here will be the name of your Image Extension.
+**What it is:**  The text you enter here will be the name of your Image Extension.
 
 

@@ -9,6 +9,7 @@ ms.author: eur
 
 # Unified Smart campaigns: Credit cards and billing
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Your search ads will be eligible to run once you have added a primary payment method. We charge your primary payment method when you reach your billing threshold or your monthly billing date, whichever comes first. Your monthly billing date is the date that you signed up for Unified Smart campaigns.
 
 ## Billing Threshold
@@ -35,9 +36,9 @@ Follow these steps to add a credit or debit card as your payment method:
 1. In the upper-right corner of any Unified Smart campaigns page, select the profile picture, and then select **Billing and payments**.
 1. In the **Payment for search advertising** tile, select **Add new card**.
 1. In the drop-down list, choose payment method type.
-  - **Primary payment method**: Payment method charged for search advertising.
-  - **Backup payment method**: Payment method that will be used if the primary payment method didn’t cover all charges.
-  - **Additional payment method**: Payment method that is only charged if you make a one-time payment, or if you later set it as the primary or backup payment method.
+   - **Primary payment method**: Payment method charged for search advertising.
+   - **Backup payment method**: Payment method that will be used if the primary payment method didn’t cover all charges.
+   - **Additional payment method**: Payment method that is only charged if you make a one-time payment, or if you later set it as the primary or backup payment method.
 
 1. Enter your credit or debit card number without spaces or punctuation.
 1. Enter the rest of the billing details and then select **Save**.

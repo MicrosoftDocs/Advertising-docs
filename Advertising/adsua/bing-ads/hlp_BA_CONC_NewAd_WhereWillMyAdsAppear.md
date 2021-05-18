@@ -17,6 +17,7 @@ Your ads can appear on search results page when a customer does a search on Bing
 
 Learn more about [ad position](./hlp_BA_CONC_WhatIsAdPosition.md) and [getting to the top of the search results page](./hlp_BA_CONC_ImproveAdPosition.md).
 
+![Sample Bing ad on a Bing search results page](../images/BA_Conc_NewAdv_SERP.png)
 ## Show your ads on smartphones and tablets
 
 Your ads can appear specifically for customers on the go, who use their smartphones and tablets to search and browse the Internet. Or you can create ads that appear on both desktops and smartphones but prioritize where you want the ads to appear more often.

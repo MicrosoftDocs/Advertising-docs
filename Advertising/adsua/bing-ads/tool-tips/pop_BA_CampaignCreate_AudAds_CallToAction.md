@@ -9,8 +9,8 @@ ms.author: eur
 
 # Call-to-action text
 
-**What it is**: A brief, punchy reason for customers to click your ad **right now**.
+**What it is** : A brief, punchy reason for customers to click your ad **right now**.
 
-**For example**: "Buy now!", "Limited edition", "Sure to sell out quickly!"
+**For example** : "Buy now!", "Limited edition", "Sure to sell out quickly!"
 
 

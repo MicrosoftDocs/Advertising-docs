@@ -9,6 +9,6 @@ ms.author: eur
 
 # Association ID
 
-**What it is:**    The number Microsoft Advertising uses to identify the association between an ad group/campaign and an audience.
+**What it is:**     The number Microsoft Advertising uses to identify the association between an ad group/campaign and an audience.
 
 

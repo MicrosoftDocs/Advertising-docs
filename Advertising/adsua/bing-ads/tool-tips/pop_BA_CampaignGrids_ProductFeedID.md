@@ -9,6 +9,6 @@ ms.author: eur
 
 # ID
 
-**What it is:** The unique ID created for your product feed.
+**What it is:**  The unique ID created for your product feed.
 
 

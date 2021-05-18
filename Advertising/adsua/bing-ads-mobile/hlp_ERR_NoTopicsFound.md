@@ -1,7 +1,7 @@
 ---
 title: Your search did not find any results in Microsoft Advertising Help
 description: Your search did not find any results in Microsoft Advertising Help
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Mobile"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Average number of pages visited
 description: Average number of pages visited
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Average number of pages visited
 
-**What it is:** The average number of pages customers visited on your website after clicking your ad, during the selected date range.
+**What it is:**  The average number of pages customers visited on your website after clicking your ad, during the selected date range.
 
 **What you need to know:**
 - Data collection begins after you add your tracking tag to your website’s code.

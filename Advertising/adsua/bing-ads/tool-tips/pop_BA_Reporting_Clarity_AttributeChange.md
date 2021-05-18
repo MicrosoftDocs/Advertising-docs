@@ -9,6 +9,6 @@ ms.author: eur
 
 # Attribute changed
 
-**What it is: **    The attribute that was modified by a user.
+**What it is:**     The attribute that was modified by a user.
 
 

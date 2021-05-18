@@ -9,6 +9,6 @@ ms.author: eur
 
 # Displayed start and end dates
 
-**What it is:** The display start and end dates for when the actual promotion runs.
+**What it is:**  The display start and end dates for when the actual promotion runs.
 
 

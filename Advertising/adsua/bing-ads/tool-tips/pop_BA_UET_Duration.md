@@ -9,6 +9,6 @@ ms.author: eur
 
 # Duration
 
-**What it is:**  Specify the minimum amount of time that the user must spend on your website to track as a conversion.
+**What it is:**   Specify the minimum amount of time that the user must spend on your website to track as a conversion.
 
 

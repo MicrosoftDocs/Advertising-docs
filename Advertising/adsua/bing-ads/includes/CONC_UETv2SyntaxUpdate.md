@@ -17,40 +17,18 @@ The new syntax:
 1. The event action parameter is now required in both custom event and variable revenue UET tags, and this parameter appears first in both cases.
 1. The JavaScript parameter names for custom events and variable revenue are now easier to understand:
 
-<table type="type1">
-  <tr>
-    <th scope="col">Old syntax</th>
-    <th scope="col">New syntax</th>
-  </tr>
-  <tr>
-    <td>ea</td>
-    <td>event</td>
-  </tr>
-  <tr>
-    <td>ec</td>
-    <td>event_category</td>
-  </tr>
-  <tr>
-    <td>el</td>
-    <td>event_label</td>
-  </tr>
-  <tr>
-    <td>ev</td>
-    <td>event_value</td>
-  </tr>
-  <tr>
-    <td>gv</td>
-    <td>revenue_value</td>
-  </tr>
-  <tr>
-    <td>gc</td>
-    <td>currency</td>
-  </tr>
-</table>
+|Old syntax|New syntax|
+|---|---|
+|ea|event|
+|ec|event_category|
+|el|event_label|
+|ev|event_value|
+|gv|revenue_value|
+|gc|currency|
 
 ## Comparing the syntaxes
 
-**Old syntax (custom event)**:
+**Old syntax (custom event)** :
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ({'
@@ -64,7 +42,7 @@ The new syntax:
 ': 'Replace_with_Event_Value'});   </script>```
 ```
 
-**New syntax (custom event)**:
+**New syntax (custom event)** :
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ('
@@ -78,7 +56,7 @@ The new syntax:
 ': 'Replace_with_Event_Value'});   </script> ```
 ```
 
-**Old syntax (variable revenue)**:
+**Old syntax (variable revenue)** :
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ({'
@@ -88,7 +66,7 @@ The new syntax:
 ': 'Replace_with_Currency_Code'});   </script>```
 ```
 
-**New syntax (variable revenue)**:
+**New syntax (variable revenue)** :
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ('
@@ -102,13 +80,13 @@ The new syntax:
 
 ## Examples
 
-**Tracking all four custom event types**:
+**Tracking all four custom event types** :
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ('event', 'Contoso_Event_Action', {'event_category': 'Contoso_Event_Category', 'event_label': 'Contoso_Event_Label', 'event_value': 'Contoso_Event_Value'});   </script> ```
 ```
 
-**Not tracking event action, but tracking the other three event types** (note that 'event' remains with its value empty):
+**Not tracking event action, but tracking the other three event types**  (note that 'event' remains with its value empty):
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push (
@@ -116,7 +94,7 @@ The new syntax:
 {'event_category': 'Contoso_Event_Category', 'event_label': 'Contoso_Event_Label', 'event_value': 'Contoso_Event_Value'});   </script> ```
 ```
 
-**Only tracking event action** (note that the other, unnecessary event types have been removed):
+**Only tracking event action**  (note that the other, unnecessary event types have been removed):
 
 ```
 ```<script>   								   window.uetq = window.uetq || [];      window.uetq.push ('event', 'Contoso_Event_Action',

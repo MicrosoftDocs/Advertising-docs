@@ -29,40 +29,15 @@ Here’s what you can do about it:
 Review the [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md) related to the **Disapproved reasons** for your ad components (see above). Note that the policies may vary depending on the country/region in which the ad is displayed.
 
 ## Fix the issue
-<table type="type1">
-  <tr>
-    <th scope="col">Disapproved ads</th>
-  </tr>
-  <tr>
-    <td>
-                  From the <strong>Ads</strong> table, hover over the ad in the <strong>Ad</strong> column and click the pencil icon. Make any necessary edits and click <strong>Save</strong>. We will perform a new editorial review on the updated ad.
-                </td>
-  </tr>
-  <tr>
-    <th scope="col">Disapproved keywords</th>
-  </tr>
-  <tr>
-    <td>
-                  You cannot edit a keyword. However, you can add a new keyword and then delete the disapproved keyword. If you add a new keyword, it will be submitted for editorial review when you click <strong>Save</strong>.
-                </td>
-  </tr>
-  <tr>
-    <th scope="col">Disapproved ad extensions</th>
-  </tr>
-  <tr>
-    <td>
-                  From the <strong>Ad Extensions</strong> table, select the ad extension and then click <strong>Edit</strong> &nbsp; &gt; &nbsp; <strong>Edit an extension</strong>. Make any necessary edits and click <strong>Save</strong>. We will perform a new editorial review on the updated content.
-                </td>
-  </tr>
-  <tr>
-    <th scope="col">Disapproved feed items</th>
-  </tr>
-  <tr>
-    <td>
-                  Fix the issue in your feed and re-upload it, as described in [Setting up and managing feeds](./hlp_BA_PROC_Feeds_WorkingWith.md).
-                </td>
-  </tr>
-</table>
+|Disapproved ads|
+|---|
+|From the **Ads** table, hover over the ad in the **Ad** column and click the pencil icon. Make any necessary edits and click **Save**. We will perform a new editorial review on the updated ad.|
+|Disapproved keywords|
+|You cannot edit a keyword. However, you can add a new keyword and then delete the disapproved keyword. If you add a new keyword, it will be submitted for editorial review when you click **Save**.|
+|Disapproved ad extensions|
+|From the **Ad Extensions** table, select the ad extension and then click **Edit** &nbsp; &gt; &nbsp; **Edit an extension**. Make any necessary edits and click **Save**. We will perform a new editorial review on the updated content.|
+|Disapproved feed items|
+|Fix the issue in your feed and re-upload it, as described in [Setting up and managing feeds](./hlp_BA_PROC_Feeds_WorkingWith.md).|
 
 ## Request an exception
 If, after reviewing the [Microsoft Advertising policies](./hlp_BA_CONC_EditorialGuidelines.md), you believe you were disapproved in error, you can request an exception. With the request, you tell us the reason you want an exception and we will review the ad component again.
@@ -108,4 +83,5 @@ We have many checks in place to identify and remove content that violates Micros
 
 If you find content on our network that you believe is in violation of Microsoft Advertising policies, please report it to us through our [Report Low Quality Ad form](https://go.microsoft.com/fwlink?LinkId=398370). We will review the ad and take action if it violates our policies.
 
+ 
 

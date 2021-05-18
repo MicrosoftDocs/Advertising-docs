@@ -11,6 +11,8 @@ ms.author: eur
 
 ## Get on the path to Microsoft Advertising success!
 
+<content_tile class="GetStartedLogo">      ![logo](../images/BA_GetStartedLogo.png)    </content_tile>
+
 ## Getting started with Microsoft Advertising
 
 Whether you’re coming from Google Ads or new to search engine marketing, it’s quick and easy to start advertising your business on Microsoft Advertising. Take a look at one of these video series to learn how Microsoft Advertising works and how to get started.
@@ -84,4 +86,5 @@ Set your budget and control your costs
 Invest in what works
           </bing_video>
 
+![Plan  Successful Campaign](../images/BA_GetStarted_Hero.png)  ![Plan  Successful Campaign](../images/Global_Icon_ComingFromAdwords.png)  ![Plan  Successful Campaign](../images/Global_Icon_CreateScratch.png)  ![Plan  Successful Campaign](../images/Global_Icon_NewToSEM.png)  ![Plan  Successful Campaign](../images/Global_Icon_ComingFromAdwords_hover.png)  ![Plan  Successful Campaign](../images/Global_Icon_CreateScratch_hover.png)  ![Plan  Successful Campaign](../images/Global_Icon_NewToSEM_hover.png)  ![Plan  Successful Campaign](../images/BA_GetStarted_PathBg.png)      ![Plan  Successful Campaign](../images/GS_SEM_Video5_sm.png)    ![Plan  Successful Campaign](../images/GS_SEM_Video4_sm.png)    ![Plan  Successful Campaign](../images/GS_SEM_Video3_sm.png)    ![Plan  Successful Campaign](../images/GS_SEM_Video2_sm.png)    ![Plan  Successful Campaign](../images/GS_SEM_Video1_sm.png)    ![Plan  Successful Campaign](../images/GS_Scratch_Sprite_sm.png)    ![Plan  Successful Campaign](../images/GS_Adwords_Video5_sm.png)    ![Plan  Successful Campaign](../images/GS_Adwords_Video4_sm.png)    ![Plan  Successful Campaign](../images/GS_Adwords_Video3_sm.png)    ![Plan  Successful Campaign](../images/GS_Adwords_Video2_sm.png)      ![Plan  Successful Campaign](../images/GS_Adwords_Video1_sm.png)      ![Plan  Successful Campaign](../images/GS_Adwords_Video2.png)      ![Plan  Successful Campaign](../images/BA_GetStarted_hero_small.png)
 

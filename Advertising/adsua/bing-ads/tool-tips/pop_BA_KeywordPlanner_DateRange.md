@@ -9,7 +9,7 @@ ms.author: eur
 
 # Date range
 
-**What it is: **Specifies the date range for your click and cost estimates.
+**What it is:** Specifies the date range for your click and cost estimates.
 
 This range defaults to the next seven days and currently cannot be changed.
 

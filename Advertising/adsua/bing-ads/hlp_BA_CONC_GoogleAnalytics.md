@@ -55,49 +55,23 @@ The **parameter** comes from the [list of parameters](./hlp_BA_CONC_UpgradeURL_U
 ## Examples
 
 ## Identify which match type triggered your ad
-<table>
-  <tr>
-    <th scope="col">{MatchType}</th>
-  </tr>
-  <tr>
-    <td>URL example:  www.contoso.com?myMatchVariable={MatchType}  
-            Let's say your ad is triggered by an exact match. The variable *myMatchVariable* gets set to the letter '*e*' and the resulting URL is *www.contoso.com?myMatchVariable=e*. When the search user clicks on that ad, they go to *www.contoso.com?myMatchVariable=e*.
-              <para>Scripts on your site can then use that information to record that this was an exact match. Tracking this information might lead you to increasing or decreasing bids on a particular match type or removing that match type altogether, freeing up budget to spend in a more efficient or cost-effective manner.</para></td>
-  </tr>
-</table>
+|{MatchType}|
+|---|
+|URL example:  www.contoso.com?myMatchVariable={MatchType}              Let's say your ad is triggered by an exact match. The variable *myMatchVariable* gets set to the letter '*e*' and the resulting URL is *www.contoso.com?myMatchVariable=e*. When the search user clicks on that ad, they go to *www.contoso.com?myMatchVariable=e*.Scripts on your site can then use that information to record that this was an exact match. Tracking this information might lead you to increasing or decreasing bids on a particular match type or removing that match type altogether, freeing up budget to spend in a more efficient or cost-effective manner.|
 
 ## Track the number of times your ads are clicked on from various devices (mobile, tablet and desktop)
-<table>
-  <tr>
-    <th scope="col">{Device}</th>
-  </tr>
-  <tr>
-    <td>
-              URL example:  www.contoso.com?myDeviceIndicator={Device} 
-                For example, your ad is displayed on and clicked from a mobile device. The variable *myDeviceIndicator* is therefore set to "m". The user is taken to <strong>www.contoso.com?myDeviceIndicator=m</strong>. Your website analytics tools capture the *myDeviceIndicator* value and adds that to your tally for mobile clicks. You find that certain keywords are triggering a lot of clicks from mobile devices and you choose to optimize both your ad and landing page accordingly.
-            </td>
-  </tr>
-</table>
+|{Device}|
+|---|
+|URL example:  www.contoso.com?myDeviceIndicator={Device}                 For example, your ad is displayed on and clicked from a mobile device. The variable *myDeviceIndicator* is therefore set to "m". The user is taken to **www.contoso.com?myDeviceIndicator=m**. Your website analytics tools capture the *myDeviceIndicator* value and adds that to your tally for mobile clicks. You find that certain keywords are triggering a lot of clicks from mobile devices and you choose to optimize both your ad and landing page accordingly.|
 
 ## Record both the search query and match type that triggered an ad
 A final URL with two tracking parameters would look like:
 
 **            http://www.DestinationURL.com?TrackingParameter1&amp;TrackingParameter2          **
 
-<table>
-  <tr>
-    <th scope="col">{QueryString} and {MatchType}</th>
-  </tr>
-  <tr>
-    <td>
-              This example demonstrates how you can use multiple query parameters. To track more than one value returned, simply separate the parameters by an ampersand (&amp;). Here, the variable "queryText" is set to the search query the user entered that triggered your ad <strong>and</strong> the variable "match" is set to "e", "p", "b", or "c" to indicate the match type that triggered your ad.
+|{QueryString} and {MatchType}|
+|---|
+|This example demonstrates how you can use multiple query parameters. To track more than one value returned, simply separate the parameters by an ampersand (&amp;). Here, the variable "queryText" is set to the search query the user entered that triggered your ad **and** the variable "match" is set to "e", "p", "b", or "c" to indicate the match type that triggered your ad.Let's say the search user searches for "books about green tea" and you have a phrase-match keyword "green tea." The user is taken to **                  www.contoso.com?queryText=books about green tea&amp;match=p                **. Your website scripts record that the variable *queryText* is set to "books about green tea" and *match* is set to "p." From this joint information, you identify a problem: You don't sell books about green tea (you just sell the beverage itself). So you consider if you should perhaps change your match type to exact or include a negative keyword "books."|
 
-              <para>
-                Let's say the search user searches for "books about green tea" and you have a phrase-match keyword "green tea." The user is taken to <strong>
-                  www.contoso.com?queryText=books about green tea&amp;match=p
-                </strong>. Your website scripts record that the variable *queryText* is set to "books about green tea" and *match* is set to "p." From this joint information, you identify a problem: You don't sell books about green tea (you just sell the beverage itself). So you consider if you should perhaps change your match type to exact or include a negative keyword "books."
-              </para></td>
-  </tr>
-</table>
-
+ 
 

@@ -19,6 +19,7 @@ Since webpages have a limited number of spaces to show ads, we auction those spa
 
 This data shows which keywords cause your ads to appear in the mainline (top) or sidebar or bottom of the page (other) position on search result pages. For example, to appear at the top of the ad results on Bing.com in position 1,2,3, or 4, (also called the **mainline**), your ad must meet a minimum level of performance. If the ad doesn’t meet that minimum level, it can appear on the right side of the page (also called the **sidebar**) or at the bottom of the page. There’s nothing wrong with appearing on the sidebar or at the bottom of the page, but most advertisers strive to get one of those coveted mainline spots. (In some markets, the top ads are repeated at the bottom of the web page at no additional cost). For suggestions on how to improve your ad position, see [Get my ad to the top of the search results page](./hlp_BA_CONC_ImproveAdPosition.md).
 
+![Ad position on a Bing search results page](../images/BA_Conc_AdPosition.gif)
 > [!NOTE]
 > Text ads no longer serve in the sidebar on Bing owned and operated sites in the United States, United Kingdom, Germany, France, Canada, or Australia.
 > Microsoft Advertising will not show multiple ads from the same domain or with similar landing pages on the same page at the same time. If more than one ad with the same domain or landing page is eligible for a given query, the ad rank will determine which ad is shown.

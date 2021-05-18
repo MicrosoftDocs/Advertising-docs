@@ -9,4 +9,5 @@ ms.author: eur
 
 # Billing options
 
+[!INCLUDE [BillingOptions](../includes/BillingOptions.md)]
 

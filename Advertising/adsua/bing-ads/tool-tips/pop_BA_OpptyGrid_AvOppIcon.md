@@ -9,8 +9,8 @@ ms.author: eur
 
 # pop_BA_OpptyGrid_AvOppIcon
 
-**What it is:**    The **Available Recommendations** icon lets you know when there are ad extension recommendations available in your campaigns.
+**What it is:**     The **Available Recommendations** icon lets you know when there are ad extension recommendations available in your campaigns.
 
-**Get more info:**    [What are ad extensions?](../hlp_BA_CONC_AboutAdExtensions.md)
+**Get more info:**     [What are ad extensions?](../hlp_BA_CONC_AboutAdExtensions.md)
 
 

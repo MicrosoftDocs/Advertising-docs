@@ -9,6 +9,6 @@ ms.author: eur
 
 # Change date
 
-**What it is:** This is the effective date for your new payment setting.
+**What it is:**  This is the effective date for your new payment setting.
 
 

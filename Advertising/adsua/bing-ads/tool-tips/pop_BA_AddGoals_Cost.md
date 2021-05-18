@@ -11,8 +11,8 @@ ms.author: eur
 
 You can also track the following costs per conversion:
 
-- **Non-advertising related costs**. Expenses that are related to transactions, such as credit card processing fees.
-- **Tax**. Sales taxes that you collect on transactions, for reporting and payment to taxing authorities.
-- **Shipping**. Costs that are related to delivery of items to customers.
+- **Non-advertising related costs** . Expenses that are related to transactions, such as credit card processing fees.
+- **Tax** . Sales taxes that you collect on transactions, for reporting and payment to taxing authorities.
+- **Shipping** . Costs that are related to delivery of items to customers.
 
 

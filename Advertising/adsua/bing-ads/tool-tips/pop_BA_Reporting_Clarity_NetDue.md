@@ -9,6 +9,6 @@ ms.author: eur
 
 # Net due
 
-**What it is:**    The total amount due.
+**What it is:**     The total amount due.
 
 

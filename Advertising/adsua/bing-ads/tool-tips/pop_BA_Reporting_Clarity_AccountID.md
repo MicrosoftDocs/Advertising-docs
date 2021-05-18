@@ -9,6 +9,6 @@ ms.author: eur
 
 # Account ID
 
-**What it is: **The unique number that Microsoft Advertising uses to identify this account.
+**What it is:** The unique number that Microsoft Advertising uses to identify this account.
 
 

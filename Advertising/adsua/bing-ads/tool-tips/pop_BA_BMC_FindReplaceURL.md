@@ -9,6 +9,6 @@ ms.author: eur
 
 # Find and replace string in URL
 
-**What it is:** Use **Find and replace string in URL** to replace tracking metadata that you use in Google Merchant Center with metadata that is specific to Microsoft Merchant Center. This practice will help you track performance and correctly attribute clicks to the corresponding platform.
+**What it is:**  Use **Find and replace string in URL** to replace tracking metadata that you use in Google Merchant Center with metadata that is specific to Microsoft Merchant Center. This practice will help you track performance and correctly attribute clicks to the corresponding platform.
 
 

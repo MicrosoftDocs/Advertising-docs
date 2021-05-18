@@ -9,6 +9,6 @@ ms.author: eur
 
 # Campaign performance
 
-**What it is:** How your advertising campaigns performed during the selected date range.
+**What it is:**  How your advertising campaigns performed during the selected date range.
 
 

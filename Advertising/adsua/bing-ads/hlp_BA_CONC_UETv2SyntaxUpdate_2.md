@@ -9,4 +9,5 @@ ms.author: eur
 
 # Update your UET tags to the new syntax
 
+[!INCLUDE [CONC_UETv2SyntaxUpdate](./includes/CONC_UETv2SyntaxUpdate.md)]
 

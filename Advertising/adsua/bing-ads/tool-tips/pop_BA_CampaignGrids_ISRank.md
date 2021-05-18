@@ -9,6 +9,6 @@ ms.author: eur
 
 # Impression share lost to rank
 
-**What it is:** The percentage of impression share lost due to low rank.
+**What it is:**  The percentage of impression share lost due to low rank.
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Product target ID
 
-**What it is:**  The ID Microsoft Advertising uses to identify the product target.
+**What it is:**   The ID Microsoft Advertising uses to identify the product target.
 
 

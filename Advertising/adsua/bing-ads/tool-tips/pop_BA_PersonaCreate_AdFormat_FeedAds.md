@@ -9,6 +9,6 @@ ms.author: eur
 
 # Feed ads
 
-**Choose this goal if:**    You want to show ads created dynamically from your business data feeds.
+**Choose this goal if:**     You want to show ads created dynamically from your business data feeds.
 
 

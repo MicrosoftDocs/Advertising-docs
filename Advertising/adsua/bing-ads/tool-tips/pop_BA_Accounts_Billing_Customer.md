@@ -9,8 +9,8 @@ ms.author: eur
 
 # Customer
 
-**What it is: **    This is the customer name associated with the billing document.
+**What it is:**     This is the customer name associated with the billing document.
 
-**What you need to know: **If this billing document is part of a consolidated bill, “multiple” will be listed in this column.
+**What you need to know:** If this billing document is part of a consolidated bill, “multiple” will be listed in this column.
 
 

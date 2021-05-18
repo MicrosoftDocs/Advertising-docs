@@ -28,10 +28,10 @@ The Conversion goals page allows you to review each goal and track the goal type
 
 ## Tracking status
 **What it is:** This is the status to tell you if your conversion goal is working. It can be:
-- **Unverified**: Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.
-- **No recent conversions**: Microsoft Advertising has seen your UET tag, but haven't recorded any conversions in the last 7 days. This is most likely because you either have created the goal incorrectly, have not tagged your entire website, especially the pages that have the conversion action or you don't have any users converting on your site.
-- **Recording conversions**: Microsoft Advertising has seen your UET tag and has recorded conversions within the last 7 days. If your conversion window is greater than 7 days and you are filtering on the last 7 days, you may see this status even if no conversions are shown in the **Conversions** column, as conversions are reported at the time of the click.
-- **Tag inactive**: Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
+- **Unverified** : Microsoft Advertising hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Microsoft Advertising to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.
+- **No recent conversions** : Microsoft Advertising has seen your UET tag, but haven't recorded any conversions in the last 7 days. This is most likely because you either have created the goal incorrectly, have not tagged your entire website, especially the pages that have the conversion action or you don't have any users converting on your site.
+- **Recording conversions** : Microsoft Advertising has seen your UET tag and has recorded conversions within the last 7 days. If your conversion window is greater than 7 days and you are filtering on the last 7 days, you may see this status even if no conversions are shown in the **Conversions** column, as conversions are reported at the time of the click.
+- **Tag inactive** : Microsoft Advertising has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.
 
 Note that the Unverified and Tag inactive statuses do not apply to [Mobile App Install](./hlp_BA_PROC_UETv2MobileApp.md) type goals.
 
@@ -42,7 +42,7 @@ Note that the Unverified and Tag inactive statuses do not apply to [Mobile App I
 > If your tracking status is **Unverified**, **Tag inactive**, or **No recent conversions**, troubleshoot your issues by following the steps in [Why am I not recording conversions or tracked revenue?](./hlp_BA_CONC_UET_TroubleshootCT.md)
 
 ## Include in "Conversions"
-**What it is:** ****: This determines whether or not actions that meet the criteria of your conversion goal should appear in the "Conversions" column in your data table.
+**What it is:** **** : This determines whether or not actions that meet the criteria of your conversion goal should appear in the "Conversions" column in your data table.
 
 **Can I edit it:** Yes. Click the conversion goal's name, click **Next**, and then select or unselect **Include in "Conversions"**.
 

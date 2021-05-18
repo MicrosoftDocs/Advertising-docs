@@ -9,6 +9,6 @@ ms.author: eur
 
 # Pricing method
 
-**What it is:**  The way you want to be charged for you ads - either Cost per click (CPC) or Cost per thousand impressions (CPM).
+**What it is:**   The way you want to be charged for you ads - either Cost per click (CPC) or Cost per thousand impressions (CPM).
 
 

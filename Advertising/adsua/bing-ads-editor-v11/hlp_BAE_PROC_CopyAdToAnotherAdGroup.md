@@ -1,7 +1,7 @@
 ---
 title: Copy ads to another ad group
 description: In Microsoft Advertising Editor, a fast way to create new ads is to copy and then edit existing ads that have text, keywords, or settings that you want to reuse.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

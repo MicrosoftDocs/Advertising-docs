@@ -9,6 +9,6 @@ ms.author: eur
 
 # Average video CPV
 
-**What it is:** Your total spend divided by video views (calculated).
+**What it is:**  Your total spend divided by video views (calculated).
 
 

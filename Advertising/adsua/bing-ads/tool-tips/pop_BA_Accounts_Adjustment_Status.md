@@ -9,7 +9,7 @@ ms.author: eur
 
 # Status
 
-**What it is: **This describes the status of your adjustment, which can be:
+**What it is:** This describes the status of your adjustment, which can be:
 - **In progress**
 - **Rebilled**, which means that a document is no longer available for an adjustment because it was previously adjusted.
 - **Invalid**, which happens when an offline payment is submitted for adjustment

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Tag name
 
-**What it is:** The name of the tag that is associated with the audience.
+**What it is:**  The name of the tag that is associated with the audience.
 
 

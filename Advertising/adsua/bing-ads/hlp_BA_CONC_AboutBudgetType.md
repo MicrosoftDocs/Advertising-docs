@@ -17,32 +17,15 @@ Let's say that you want the ads in your campaign to get 50 clicks a day, and you
 
 Two budget types are available:
 
-<table>
-  <tr>
-    <th scope="col">Budget Type</th>
-    <th scope="col">Details</th>
-  </tr>
-  <tr>
-    <th scope="row">Daily - Standard</th>
-    <td>
-      <para>
-          Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaign and availability of corresponding user searches during the day.
-        </para>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">Shared - Standard</th>
-    <td>
-      <para>
-          Multiple campaigns use a shared budget. Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaigns and availability of corresponding user searches during the day. Learn more at [How do I share a budget across multiple campaigns?](./hlp_BA_CONC_SharedBudgets.md)
-        </para>
-    </td>
-  </tr>
-</table>
+|Budget Type|Details|
+|---|---|
+|Daily - Standard|Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaign and availability of corresponding user searches during the day.|
+|Shared - Standard|Multiple campaigns use a shared budget. Microsoft Advertising will help you spend for optimized performance based on the products or services targeted by your campaigns and availability of corresponding user searches during the day. Learn more at [How do I share a budget across multiple campaigns?](./hlp_BA_CONC_SharedBudgets.md)|
 
 > [!IMPORTANT]
 > Your daily limit is a **target**; your actual spend might be higher or lower. Variations are caused by several factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Microsoft Advertising anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
 
+ 
 ## What budget types mean for multiple campaigns
 
 The right budget type for you depends on what's important to you. Both budget types offer similar benefits, yet the Shared Budget is more flexible because Microsoft Advertising automatically adjusts how your money is spent across multiple campaigns. Check out the benefits of both. You can:
@@ -57,6 +40,7 @@ If you still can’t decide which budget type is right for you, try each one and
 
 To learn more about shared budgets, see [How do I share a budget across multiple campaigns?](./hlp_BA_CONC_SharedBudgets.md)
 
+ 
 ## How your budget is calculated and spent
 
 Your daily budget setting is only a target, so your actual spend might be higher or lower. This is because, regardless of the budget type you choose, Microsoft Advertising always calculates a monthly budget and then the actual budget limit is calculated for an entire month. Daily budget types simply help you make sure that your budget is spread out over an entire month, and not used up in the first day.
@@ -71,52 +55,22 @@ If you happen to change your daily budget mid-month, then your current monthly l
 
 In the unlikely event that your campaign’s spend goes over your monthly limit, Microsoft Advertising will refund the overspend at the end of the month.
 
+ 
 ## Understand performance estimates
 
 When you set your budget while creating a campaign, you'll see estimated performance metrics, based on your keywords and settings:
 
-<table>
-  <tr>
-    <th scope="col">Estimated monthly clicks</th>
-  </tr>
-  <tr>
-    <td>
-      <para><strong>What it is</strong>: This is the number of times customers are expected to click your ads every month, given your keywords and your targeting and budget settings.</para>
-      <para><strong>Why it's important</strong>: Clicks are what you pay for. They typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources, such as spiders, robots, and test servers. </para>
-      <para><strong>Tip</strong>: You pay for clicks on standard-quality clicks, not on low-quality or invalid clicks. </para>
-      <para><strong>Get more info</strong>: [Monitoring clicks: Telling the good from the bad](./hlp_BA_CONC_AboutPreventingInvalidClicks.md) </para>
-    </td>
-  </tr>
-  <tr>
-    <th scope="col">Estimated monthly impressions</th>
-  </tr>
-  <tr>
-    <td>
-      <para><strong>What it is</strong>: This is the number of times customers are expected to see your ads every month, given your keywords and your targeting and budget settings.</para>
-      <para><strong>Why it's important</strong>: Regardless of whether you are driving customers to your website, tracking conversions, or just trying to get your message out, you'll want to track the number of times your ad is shown.  </para>
-    </td>
-  </tr>
-  <tr>
-    <th scope="col">Estimated monthly spend</th>
-  </tr>
-  <tr>
-    <td>
-      <para><strong>What it is</strong>: This is the estimated total amount you will spend on this ad group every month, given your keywords and your targeting and budget settings.</para>
-      <para><strong>Get more info</strong>: [What if I reach my budget limit?](./hlp_BA_CONC_BudgetLimit.md) </para>
-    </td>
-  </tr>
-  <tr>
-    <th scope="col">Estimated average position</th>
-  </tr>
-  <tr>
-    <td>
-      <para><strong>What it is</strong>: Estimated average position is the location that ads are likely to appear on the search results page. Although it varies, positions 1-4 appear at the top of the search results page and positions 5-10 appear in other locations (for example, the bottom or the sidebar). </para>
-      <para><strong>Why it's important</strong>: Ads that are on the first search results page tend to receive more clicks. </para>
-      <para><strong>Get more info</strong>: [Get my ad to the top of the search results page](./hlp_BA_CONC_ImproveAdPosition.md) </para>
-    </td>
-  </tr>
-</table>
+|Estimated monthly clicks|
+|---|
+|**What it is** : This is the number of times customers are expected to click your ads every month, given your keywords and your targeting and budget settings.**Why it's important** : Clicks are what you pay for. They typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources, such as spiders, robots, and test servers.**Tip** : You pay for clicks on standard-quality clicks, not on low-quality or invalid clicks.**Get more info** : [Monitoring clicks: Telling the good from the bad](./hlp_BA_CONC_AboutPreventingInvalidClicks.md)|
+|Estimated monthly impressions|
+|**What it is** : This is the number of times customers are expected to see your ads every month, given your keywords and your targeting and budget settings.**Why it's important** : Regardless of whether you are driving customers to your website, tracking conversions, or just trying to get your message out, you'll want to track the number of times your ad is shown.|
+|Estimated monthly spend|
+|**What it is** : This is the estimated total amount you will spend on this ad group every month, given your keywords and your targeting and budget settings.**Get more info** : [What if I reach my budget limit?](./hlp_BA_CONC_BudgetLimit.md)|
+|Estimated average position|
+|**What it is** : Estimated average position is the location that ads are likely to appear on the search results page. Although it varies, positions 1-4 appear at the top of the search results page and positions 5-10 appear in other locations (for example, the bottom or the sidebar).**Why it's important** : Ads that are on the first search results page tend to receive more clicks.**Get more info** : [Get my ad to the top of the search results page](./hlp_BA_CONC_ImproveAdPosition.md)|
 
+ 
 ## Change your budget type
 
 1. From the main menu on the left, select **All campaigns**.

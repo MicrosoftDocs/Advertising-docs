@@ -9,6 +9,6 @@ ms.author: eur
 
 # Daily spend
 
-**What it is:**    The average amount of campaign budget spent per day.
+**What it is:**     The average amount of campaign budget spent per day.
 
 

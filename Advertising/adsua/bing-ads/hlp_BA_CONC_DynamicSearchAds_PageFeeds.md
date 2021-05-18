@@ -16,8 +16,8 @@ Page feeds allow you to easily upload all the relevant URLs for your dynamic sea
 
 ## Why use page feeds for dynamic search ads?
 
-- **Improve page freshness**: Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren’t already in the Bing index of your website, they’ll be added. This allows your dynamic search ad campaigns to display the most current version of your website.
-- **Fine-tune auto-targets and ad copy**: You have full control over what pages are included in an auto-target and as a result, can be more descriptive in your ad copy to drive further engagement.
+- **Improve page freshness** : Each time a feed is uploaded, the pages in the feed automatically recrawled, so if the pages aren’t already in the Bing index of your website, they’ll be added. This allows your dynamic search ad campaigns to display the most current version of your website.
+- **Fine-tune auto-targets and ad copy** : You have full control over what pages are included in an auto-target and as a result, can be more descriptive in your ad copy to drive further engagement.
 
 ## Country/region availability
 
@@ -27,38 +27,13 @@ Dynamic search ads are available in Australia, Austria, Belgium, Canada, Denmark
 
 You can download the page feed template  or create a .csv, .tsv, .xls, or .xlsx file that contains the following two columns:
 
-<table>
-  <tr>
-    <th scope="col">
-        Column
-      </th>
-    <th scope="col">
-        What it is
-      </th>
-    <th scope="col">
-        What you need to know
-      </th>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">Page URL</th>
-    <td>Contains the URLs of your website to include in the feed.</td>
-    <td>Enter one URL per row.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">Custom label (optional)</th>
-    <td>Labels that allow you to group the URLs within the feed.</td>
-    <td>Enter one or more labels per row, separated by a semicolon. 
-      A maximum of 10 custom labels can be added per feed item (row).</td>
-  </tr>
-  <tr>
-    <th scope="row" style="border-bottom:solid 1px #ccc">Ad title (optional)</th>
-    <td>Static headline that is shown instead of Microsoft's dynamically generated headline.</td>
-    <td>Enter an ad title (maximum 63 characters) for the page feed item. You can include one ad title per feed item.
-      </td>
-  </tr>
-</table>
+|Column|What it is|What you need to know|
+|---|---|---|
+|Page URL|Contains the URLs of your website to include in the feed.|Enter one URL per row.|
+|Custom label (optional)|Labels that allow you to group the URLs within the feed.|Enter one or more labels per row, separated by a semicolon.       A maximum of 10 custom labels can be added per feed item (row).|
+|Ad title (optional)|Static headline that is shown instead of Microsoft's dynamically generated headline.|Enter an ad title (maximum 63 characters) for the page feed item. You can include one ad title per feed item.|
 
-**Note**: You can have 100 feeds per account (this maximum number includes all feed types) and the maximum number of feed items (rows) per account is 5 million.
+**Note** : You can have 100 feeds per account (this maximum number includes all feed types) and the maximum number of feed items (rows) per account is 5 million.
 
 ## Upload a page feed file
 
@@ -76,9 +51,9 @@ Page feeds can be associated at the campaign level, which also applies to all th
 1. From the page menu, click **Settings**.
 1. In the table, select the dynamic search ad campaign you want to apply a page feed to.
 1. Under **Targeting source**, select one of the following options:
-  - **Use Bing's index of my website**. This is the default behavior of dynamic search ad campaigns on Bing.
-  - **Use URLs from my page feed only**. Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.
-  - **Use URLs from both Bing’s index of my website and my page feed**. Pages from both sources will be used but URLs within the feed file will be given priority.
+   - **Use Bing's index of my website** . This is the default behavior of dynamic search ad campaigns on Bing.
+   - **Use URLs from my page feed only** . Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.
+   - **Use URLs from both Bing’s index of my website and my page feed** . Pages from both sources will be used but URLs within the feed file will be given priority.
 
 1. Click **Save**.
 

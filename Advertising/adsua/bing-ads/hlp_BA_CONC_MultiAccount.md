@@ -98,9 +98,9 @@ You have until the day before a scheduled billing change takes place to cancel y
 1. [!INCLUDE [ClickAccounts](./includes/ClickAccounts.md)]
 1. [!INCLUDE [ClickRequests](./includes/ClickRequests.md)] There, you'll see a grid containing account link and unlink requests.
 1. Click **Received** to display active requests you've received, which is the table's default view. If someone wants to link to your account, you'll see a request that contains three options:
-  - **View**, which will display the details of the linking request
-  - **Approve**, which will grant account access to the requester
-  - **Reject**, which will deny account access to the requester
+   - **View**, which will display the details of the linking request
+   - **Approve**, which will grant account access to the requester
+   - **Reject**, which will deny account access to the requester
 
 1.   You can also display the full history of **Received** account link and unlink requests by switching the filter just above the table to **Show all requests**.
 1. Click **Sent** to see active requests you've sent, which is the table's default view. You can display the full history of **Sent** account link and unlink requests by switching the drop-down menu to **Show all requests**.

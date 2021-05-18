@@ -13,18 +13,18 @@ Let’s say a customer sees your ad, clicks on it, but ends up calling you, lead
 
 ## Why should I care about offline conversion tracking?
 
-**Better tracking**. You can track the impact of your campaigns for both online and offline channels.
+**Better tracking** . You can track the impact of your campaigns for both online and offline channels.
 
-**Easy importing**. All you need are the time, date, Microsoft Click ID, and conversion goal name to get started.
+**Easy importing** . All you need are the time, date, Microsoft Click ID, and conversion goal name to get started.
 
-**Better ROI**. You can optimize your campaigns based on the full online and offline impact of your search ads.
+**Better ROI** . You can optimize your campaigns based on the full online and offline impact of your search ads.
 
 ## How do I set up offline conversion tracking?
 Before you begin, make sure that:
 
-- **Code changes can be made for all of your web pages**. This allows you to capture the click ID in the URL that customers click from one of your ads.
-- **Click IDs can be stored** with the corresponding prospect’s information that is gathered on your website.
-- **Conversion windows are under 90 days**. If a conversion is uploaded more than 90 days after the last click, it will not be imported.
+- **Code changes can be made for all of your web pages** . This allows you to capture the click ID in the URL that customers click from one of your ads.
+- **Click IDs can be stored**  with the corresponding prospect’s information that is gathered on your website.
+- **Conversion windows are under 90 days** . If a conversion is uploaded more than 90 days after the last click, it will not be imported.
 
 ## Create a conversion goal
 
@@ -34,7 +34,7 @@ For every offline conversion you want to measure, you need to create a new offli
 1. Click **Create conversion goal** and select the **Offline conversions** type.
 1. Enter a name for your goal in the **Goal name** box. When naming your goal, use a descriptive name that makes sense to you (for example, "Check-out page"). Note: You cannot use the same name for two different conversion goals.
 1. Under **Sharing**, select if you want this goal to apply to all accounts or a specific account.
-1. If you want to add a monetary value for each conversion, under **Revenue value**, select one of the following checkboxes:           **Each time it happens, the conversion action has the same value**. Then, enter the amount and select the currency, if available. This is a static revenue value that doesn't change.             **The value of this conversion action may vary (for instance, by purchase price)**. Then, enter the default amount and select the default currency, if available, to be used when no value is received for a conversion.
+1. If you want to add a monetary value for each conversion, under **Revenue value**, select one of the following checkboxes:           **Each time it happens, the conversion action has the same value** . Then, enter the amount and select the currency, if available. This is a static revenue value that doesn't change.             **The value of this conversion action may vary (for instance, by purchase price)** . Then, enter the default amount and select the default currency, if available, to be used when no value is received for a conversion.
 1. You can also assign a **Count** to the conversion and enter a **Conversion window** to track up to 90 days in the past.
 1. Click **Save**.
 
@@ -46,51 +46,20 @@ You have multiple options for importing your offline conversions into Microsoft 
 
 **Prepare your data for import**
 1. Download the template as an [Excel](https://go.microsoft.com/fwlink?LinkId=852165) or [.csv](https://go.microsoft.com/fwlink?LinkId=852166) file.
-1. Enter the following information:           **Microsoft Click ID**. The MSCLKID that led to the conversion (see below for click ID information). The MSCLKID is a GUID (32 characters) that is unique for each ad click.             **Conversion Name**. The goal name you entered when you created the conversion goal.             **Conversion Time**. The date and time that the conversion occurred. The accepted time zone values can be viewed [here](https://go.microsoft.com/fwlink?LinkId=851028). See below for conversion time formatting and need-to-know details.             
-<table>
-  <tr>
-    <th scope="col">Time format</th>
-    <th scope="col">Example</th>
-  </tr>
-  <tr>
-    <td>MM/dd/yyyy hh:mm:ss tt</td>
-    <td>"06/01/2017 1:00:00 PM"</td>
-  </tr>
-  <tr>
-    <td>MM dd,yyyy hh:mm:ss tt</td>
-    <td>"Jun 01, 2017 1:00:00 PM"</td>
-  </tr>
-  <tr>
-    <td>MM/dd/yyyy HH:mm:ss</td>
-    <td>"06/01/2017 01:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss</td>
-    <td>"2017-06-01 13:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss</td>
-    <td>"2017-06-01T13:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss+z</td>
-    <td>"2017-06-01 13:00:00+0500"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss+z</td>
-    <td>"2017-06-01T13:00:00-0100"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss zzzz</td>
-    <td>"2017-06-01 13:00:00 EasternTimeUSCanada"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss zzzz</td>
-    <td>"2017-06-01T13:00:00 EasternTimeUSCanada"</td>
-  </tr>
-</table>
+1. Enter the following information:           **Microsoft Click ID** . The MSCLKID that led to the conversion (see below for click ID information). The MSCLKID is a GUID (32 characters) that is unique for each ad click.             **Conversion Name** . The goal name you entered when you created the conversion goal.             **Conversion Time** . The date and time that the conversion occurred. The accepted time zone values can be viewed [here](https://go.microsoft.com/fwlink?LinkId=851028). See below for conversion time formatting and need-to-know details.             
+|Time format|Example|
+|---|---|
+|MM/dd/yyyy hh:mm:ss tt|"06/01/2017 1:00:00 PM"|
+|MM dd,yyyy hh:mm:ss tt|"Jun 01, 2017 1:00:00 PM"|
+|MM/dd/yyyy HH:mm:ss|"06/01/2017 01:00:00"|
+|yyyy-MM-dd HH:mm:ss|"2017-06-01 13:00:00"|
+|yyyy-MM-ddTHH:mm:ss|"2017-06-01T13:00:00"|
+|yyyy-MM-dd HH:mm:ss+z|"2017-06-01 13:00:00+0500"|
+|yyyy-MM-ddTHH:mm:ss+z|"2017-06-01T13:00:00-0100"|
+|yyyy-MM-dd HH:mm:ss zzzz|"2017-06-01 13:00:00 EasternTimeUSCanada"|
+|yyyy-MM-ddTHH:mm:ss zzzz|"2017-06-01T13:00:00 EasternTimeUSCanada"|
 
-1.  **Conversion Value** (optional). 0 to 999999999999, with 3 decimal fields and no negative numbers. You must use a period for decimals (as in 12.34), not a comma (as in 12,34).             **Conversion Currency** (optional). The [currency](https://go.microsoft.com/fwlink?LinkId=834524) in which the conversion value is provided.             Note: If conversion value and conversion currency is not defined in the file, the value defined in the goal will be used.
+1.  **Conversion Value**  (optional). 0 to 999999999999, with 3 decimal fields and no negative numbers. You must use a period for decimals (as in 12.34), not a comma (as in 12,34).             **Conversion Currency**  (optional). The [currency](https://go.microsoft.com/fwlink?LinkId=834524) in which the conversion value is provided.             Note: If conversion value and conversion currency is not defined in the file, the value defined in the goal will be used.
 1. Save the file locally to import it into Microsoft Advertising once. If you’re scheduling recurring imports, save the file to an online location.
 
 **Import offline conversions once**
@@ -141,8 +110,8 @@ You may want to update or delete offline conversions in any of the following sce
 **How do conversion updates work?**
 There are two ways you can make changes to your offline conversions:
 
-- **Restate**: This lets you update the revenue value associated with the conversion. Only the **Conv. value** and **All Conv. value** columns will be affected.
-- **Retract**: This lets you delete the conversion from the conversion count, changing the conversion value to 0. This affects the **Conv.**, **Conv. value**, and **All Conv. value** columns.
+- **Restate** : This lets you update the revenue value associated with the conversion. Only the **Conv. value** and **All Conv. value** columns will be affected.
+- **Retract** : This lets you delete the conversion from the conversion count, changing the conversion value to 0. This affects the **Conv.**, **Conv. value**, and **All Conv. value** columns.
 
 **How do I update offline conversions?**
 To update or delete a conversion, you will need to upload a file in the right format and specify which conversions should be updated and how. You can use the following templates for the right format: [Excel](https://go.microsoft.com/fwlink?LinkId=852165) or [.csv](https://go.microsoft.com/fwlink?LinkId=852166).
@@ -153,54 +122,23 @@ To update or delete a conversion, you will need to upload a file in the right fo
 
 **Prepare your data to update offline conversions**
 1. Download the template as an [Excel](https://go.microsoft.com/fwlink?LinkId=852165) or [.csv](https://go.microsoft.com/fwlink?LinkId=852166) file.
-1. Enter the following information:           **Microsoft Click ID**. The MSCLKID that led to the conversion. The MSCLKID is a GUID (32 characters) that is unique for each ad click. This should be the same Click ID as the conversion that was imported previously.              **Conversion Name**. The offline conversion goal name for the conversions you'd like to update. It's important that you use the exact same name as you did when you uploaded the conversions that you are updating.              **Conversion Time**. The date and time that the conversion occurred. This should match the date and time you entered when you uploaded the conversions.			 **Adjustment Value** (required for Restate). 0 to 999999999999, with 3 decimal fields and no negative numbers. You must use a period for decimals (as in 12.34), not a comma (as in 12,34).			 **Adjustment Currency** (optional). The currency of the conversion adjustment. **Note**: If the conversion value and conversion currency is not defined in the file, the value defined in the goal will be used.			 **Adjustment Type**. This value tells Microsoft Advertising whether you’re updating the value of the conversion (Restate) or deleting it (Retract).			 **	Adjustment Time**. The date and time that the conversion value was adjusted. The time formats which are accepted are in the table below.             
-<table>
-  <tr>
-    <th scope="col">Time format</th>
-    <th scope="col">Example</th>
-  </tr>
-  <tr>
-    <td>MM/dd/yyyy hh:mm:ss tt</td>
-    <td>"06/01/2017 1:00:00 PM"</td>
-  </tr>
-  <tr>
-    <td>MM dd,yyyy hh:mm:ss tt</td>
-    <td>"Jun 01, 2017 1:00:00 PM"</td>
-  </tr>
-  <tr>
-    <td>MM/dd/yyyy HH:mm:ss</td>
-    <td>"06/01/2017 01:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss</td>
-    <td>"2017-06-01 13:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss</td>
-    <td>"2017-06-01T13:00:00"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss+z</td>
-    <td>"2017-06-01 13:00:00+0500"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss+z</td>
-    <td>"2017-06-01T13:00:00-0100"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-dd HH:mm:ss zzzz</td>
-    <td>"2017-06-01 13:00:00 EasternTimeUSCanada"</td>
-  </tr>
-  <tr>
-    <td>yyyy-MM-ddTHH:mm:ss zzzz</td>
-    <td>"2017-06-01T13:00:00 EasternTimeUSCanada"</td>
-  </tr>
-</table>
+1. Enter the following information:           **Microsoft Click ID** . The MSCLKID that led to the conversion. The MSCLKID is a GUID (32 characters) that is unique for each ad click. This should be the same Click ID as the conversion that was imported previously.              **Conversion Name** . The offline conversion goal name for the conversions you'd like to update. It's important that you use the exact same name as you did when you uploaded the conversions that you are updating.              **Conversion Time** . The date and time that the conversion occurred. This should match the date and time you entered when you uploaded the conversions.			 **Adjustment Value**  (required for Restate). 0 to 999999999999, with 3 decimal fields and no negative numbers. You must use a period for decimals (as in 12.34), not a comma (as in 12,34).			 **Adjustment Currency**  (optional). The currency of the conversion adjustment. **Note** : If the conversion value and conversion currency is not defined in the file, the value defined in the goal will be used.			 **Adjustment Type** . This value tells Microsoft Advertising whether you’re updating the value of the conversion (Restate) or deleting it (Retract).			 **	Adjustment Time** . The date and time that the conversion value was adjusted. The time formats which are accepted are in the table below.             
+|Time format|Example|
+|---|---|
+|MM/dd/yyyy hh:mm:ss tt|"06/01/2017 1:00:00 PM"|
+|MM dd,yyyy hh:mm:ss tt|"Jun 01, 2017 1:00:00 PM"|
+|MM/dd/yyyy HH:mm:ss|"06/01/2017 01:00:00"|
+|yyyy-MM-dd HH:mm:ss|"2017-06-01 13:00:00"|
+|yyyy-MM-ddTHH:mm:ss|"2017-06-01T13:00:00"|
+|yyyy-MM-dd HH:mm:ss+z|"2017-06-01 13:00:00+0500"|
+|yyyy-MM-ddTHH:mm:ss+z|"2017-06-01T13:00:00-0100"|
+|yyyy-MM-dd HH:mm:ss zzzz|"2017-06-01 13:00:00 EasternTimeUSCanada"|
+|yyyy-MM-ddTHH:mm:ss zzzz|"2017-06-01T13:00:00 EasternTimeUSCanada"|
 
 1. Save the file locally to import it into Microsoft Advertising once. If you’re scheduling recurring imports, save the file to an online location.
 
 **Import conversion adjustments**
-Once your file is ready, you can upload conversion adjustments in the same way as you uploaded conversions. You can also schedule your conversion adjustments to import based on the **Schedule recurring imports of your offline conversions** process described above.
+Once your file is ready, you can upload conversion adjustments in the same way as you uploaded conversions. You can also schedule your conversion adjustments to import based on the **Schedule recurring imports of your offline conversions**  process described above.
 
 ## Time zone formatting and need-to-know details
 - Set the time zone once in “Parameters” if all of your conversion times are in the same time zone.

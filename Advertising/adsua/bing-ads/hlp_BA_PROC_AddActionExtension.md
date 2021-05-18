@@ -21,32 +21,13 @@ This extension is clickable and will appear next to your ad’s description. You
 
 Due to character limit restrictions, not all action types are available per supported language. Check out the full list of action types [here](https://go.microsoft.com/fwlink?LinkId=2086654).
 
-<table>
-  <tr>
-    <th scope="col">Language</th>
-    <th scope="col">Action types not supported</th>
-  </tr>
-  <tr>
-    <td>Dutch</td>
-    <td>Post Job</td>
-  </tr>
-  <tr>
-    <td>French</td>
-    <td>Find Store, New Cars, Test Drive, Used Cars, View Cars, Visit Store</td>
-  </tr>
-  <tr>
-    <td>German</td>
-    <td>Free Play, Free Quote, Free Trial, Start Free, Used Cars</td>
-  </tr>
-  <tr>
-    <td>Italian</td>
-    <td>Free Quote</td>
-  </tr>
-  <tr>
-    <td>Norwegian</td>
-    <td>Free Trial</td>
-  </tr>
-</table>
+|Language|Action types not supported|
+|---|---|
+|Dutch|Post Job|
+|French|Find Store, New Cars, Test Drive, Used Cars, View Cars, Visit Store|
+|German|Free Play, Free Quote, Free Trial, Start Free, Used Cars|
+|Italian|Free Quote|
+|Norwegian|Free Trial|
 
 Action Extensions can be created or edited at the account, campaign, or ad group level. To select the level you want to make the changes in, select  **Account**, **Campaign**, or **Ad group** below the **Ad Extensions** tab.
 
@@ -57,4 +38,5 @@ Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page 
 - Add, edit, and delete ad extensions
 - Associate ad extensions to campaigns and ad groups
 
+ 
 

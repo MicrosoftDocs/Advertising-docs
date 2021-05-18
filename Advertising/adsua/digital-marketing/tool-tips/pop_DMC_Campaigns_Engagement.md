@@ -1,7 +1,7 @@
 ---
 title: Engagements
 description: Engagements
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -9,7 +9,7 @@ ms.author: eur
 
 # Engagements
 
-**What it is:** The number of times your audience engages with your ads during the selected date range, including Likes, Reactions, Comments, and Shares.
+**What it is:**  The number of times your audience engages with your ads during the selected date range, including Likes, Reactions, Comments, and Shares.
 
 **What you need to know:**
 - Only applicable when you are running social ads.

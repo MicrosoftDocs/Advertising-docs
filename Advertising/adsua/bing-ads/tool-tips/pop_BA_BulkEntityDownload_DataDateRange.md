@@ -9,8 +9,8 @@ ms.author: eur
 
 # Data date range
 
-**What it is**: Use this feature to return data only from a specific time period.
+**What it is** : Use this feature to return data only from a specific time period.
 
-**What you need to know**: This will only be meaningful if the data you filtered on is time-related (for example, ad performance data, but not ad name).
+**What you need to know** : This will only be meaningful if the data you filtered on is time-related (for example, ad performance data, but not ad name).
 
 

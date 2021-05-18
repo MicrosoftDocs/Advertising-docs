@@ -1,7 +1,7 @@
 ---
 title: LinkedIn profile targeting
 description: Learn how to target customers based on their LinkedIn profile information.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -14,9 +14,9 @@ ms.author: eur
 
 Microsoft Advertising is the only advertising platform (other than LinkedIn) that allows you to target potential customers based on their LinkedIn profile information. You can target customers based on their:
 
-- **Company**, such as Microsoft, Alibaba.com, or KLM Royal Dutch Air Lines.
-- **Industry**, such as finance, broadcast media, or law enforcement.
-- **Job function**, such as sales, accounting, or purchasing.
+- **Company** , such as Microsoft, Alibaba.com, or KLM Royal Dutch Air Lines.
+- **Industry** , such as finance, broadcast media, or law enforcement.
+- **Job function** , such as sales, accounting, or purchasing.
 
 LinkedIn profile targeting is available for Expanded Text Ad campaigns, dynamic search ad campaigns, and Microsoft Shopping Campaigns.
 

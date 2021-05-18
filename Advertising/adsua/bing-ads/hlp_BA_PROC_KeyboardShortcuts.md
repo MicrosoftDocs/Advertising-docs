@@ -20,109 +20,37 @@ The following tables contain available shortcuts by category: simple tasks, filt
 
 ## Simple tasks
 
-<table>
-  <tr>
-    <th scope="col">Keyboard shortcut</th>
-    <th scope="col">What it does</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>?</strong></th>
-    <td>Show or hide the shortcuts list</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Ctrl</strong> + <strong>C</strong></th>
-    <td>Copy</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Ctrl</strong> + <strong>C</strong></th>
-    <td>Paste</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>N</strong></th>
-    <td>Create a new item</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>W</strong></th>
-    <td>Show or hide the main menu</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>H</strong></th>
-    <td>Show or hide the help menu</td>
-  </tr>
-</table>
+|Keyboard shortcut|What it does|
+|---|---|
+|**?**|Show or hide the shortcuts list|
+|**Ctrl** + **C**|Copy|
+|**Ctrl** + **C**|Paste|
+|**Shift** + **N**|Create a new item|
+|**Shift** + **W**|Show or hide the main menu|
+|**Shift** + **H**|Show or hide the help menu|
 
 ## Filtering table data
 
-<table>
-  <tr>
-    <th scope="col">Keyboard shortcut</th>
-    <th scope="col">What it does</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>A</strong></th>
-    <td>See all campaigns</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>S</strong></th>
-    <td>See Search campaigns</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>E</strong></th>
-    <td>See Dynamic search ads</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>P</strong></th>
-    <td>See Shopping campaigns</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>D</strong></th>
-    <td>See Audience campaigns</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>Shift</strong> + <strong>T</strong></th>
-    <td>See Smart campaigns</td>
-  </tr>
-</table>
+|Keyboard shortcut|What it does|
+|---|---|
+|**Shift** + **A**|See all campaigns|
+|**Shift** + **S**|See Search campaigns|
+|**Shift** + **E**|See Dynamic search ads|
+|**Shift** + **P**|See Shopping campaigns|
+|**Shift** + **D**|See Audience campaigns|
+|**Shift** + **T**|See Smart campaigns|
 
 ## Navigating Microsoft Advertising
 
-<table>
-  <tr>
-    <th scope="col">Keyboard shortcut</th>
-    <th scope="col">What it does</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>O</strong></th>
-    <td>Go to Overview</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>Y</strong></th>
-    <td>Go to All recommendations</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>C</strong></th>
-    <td>Go to Campaigns</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>J</strong></th>
-    <td>Go to Ad groups</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>A</strong></th>
-    <td>Go to Ads</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>X</strong></th>
-    <td>Go to Extensions</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>K</strong></th>
-    <td>Go to Keywords</td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row"><strong>G</strong> + <strong>S</strong></th>
-    <td>Go to Settings</td>
-  </tr>
-</table>
+|Keyboard shortcut|What it does|
+|---|---|
+|**G** + **O**|Go to Overview|
+|**G** + **Y**|Go to All recommendations|
+|**G** + **C**|Go to Campaigns|
+|**G** + **J**|Go to Ad groups|
+|**G** + **A**|Go to Ads|
+|**G** + **X**|Go to Extensions|
+|**G** + **K**|Go to Keywords|
+|**G** + **S**|Go to Settings|
 
 

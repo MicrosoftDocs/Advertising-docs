@@ -9,14 +9,19 @@ ms.author: eur
 
 # Video Extensions: Express your brand identity
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Video Extensions are an interactive way to demonstrate products, services, and brand messages. They can showcase special deals, emotions, ambiance, culture, and action. Combined with other extensions, Video Extensions create a richer experience that stands out more than just images and words.
 
+ 
 ![Video Extension with search ad on desktop](../images/BA_CONC_AddVideoExtension_desktop.png)
 
+ 
 ![Video Extension with search ad on mobile](../images/BA_CONC_AddVideoExtension_DesktopPlayer.png)
 
+ 
 On desktop, when a user clicks on your thumbnail image, your video plays in a full-screen overlay above the **Display text** and **Action text**. Viewers can watch the video, and then click on the call-to-action button or the text in your ad. On mobile, the video plays in the frame with the **Display text**. The thumbnail image provides an opportunity to engage viewers and generate views. Video extensions operate best when they complement your ad with unique content rather than repeating what users can already read in the text.
 
+ 
 ![Video Extensions player on desktop](../images/BA_CONC_AddVideoExtension_mobile.png)
 
 **Ability to set up in:** All Bing markets
@@ -41,50 +46,16 @@ On desktop, when a user clicks on your thumbnail image, your video plays in a fu
 
 ## Learn the elements of Video Extensions
 
-<table>
-  <tr>
-    <th scope="col">Extension field</th>
-    <th scope="col">Field description</th>
-  </tr>
-  <tr>
-    <th scope="row">Name</th>
-    <td>Internal name for your organizing/labeling purposes</td>
-  </tr>
-  <tr>
-    <th scope="row">Video</th>
-    <td>You can express your brand identity and deliver a message to interested customers. An engaging video will lead to clicks on the Action button and visits to your website.</td>
-  </tr>
-  <tr>
-    <th scope="row">Thumbnail</th>
-    <td>The thumbnail appears in the ad copy and should be engaging to encourage clicks to view the video. See thumbnail requirements below.              
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Alt text</th>
-    <td>Not displayed yet, but coming soon: Alt text is the text that appears when someone hovers over your video with their cursor, whether or not the video was rendered. It is also used by screen readers to describe the video to people with disabilities and is limited to 40 characters.              
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Display text</th>
-    <td>Limited to 25 characters, this text will be shown below the video when it is played. The display text can be a video title, short video description, brand name, or short message for the customer.              
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Action text</th>
-    <td>Limited to 25 characters, this text will be displayed on the button below the video when it plays on a PC. The action text should encourage the user to perform an action that is available at the Action final URL.              
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Action final URL</th>
-    <td>The landing page URL of the Action button on PC — in other words, the URL of the page that displays after a customer clicks the Action button.              
-            </td>
-  </tr>
-  <tr>
-    <th scope="row">Action mobile URL</th>
-    <td>Not displayed yet, but coming soon: The landing page URL on mobile. In other words, the URL of the page that displays after a customer taps the <strong>Action text</strong> button.              
-            </td>
-  </tr>
-</table>
+|Extension field|Field description|
+|---|---|
+|Name|Internal name for your organizing/labeling purposes|
+|Video|You can express your brand identity and deliver a message to interested customers. An engaging video will lead to clicks on the Action button and visits to your website.|
+|Thumbnail|The thumbnail appears in the ad copy and should be engaging to encourage clicks to view the video. See thumbnail requirements below.|
+|Alt text|Not displayed yet, but coming soon: Alt text is the text that appears when someone hovers over your video with their cursor, whether or not the video was rendered. It is also used by screen readers to describe the video to people with disabilities and is limited to 40 characters.|
+|Display text|Limited to 25 characters, this text will be shown below the video when it is played. The display text can be a video title, short video description, brand name, or short message for the customer.|
+|Action text|Limited to 25 characters, this text will be displayed on the button below the video when it plays on a PC. The action text should encourage the user to perform an action that is available at the Action final URL.|
+|Action final URL|The landing page URL of the Action button on PC — in other words, the URL of the page that displays after a customer clicks the Action button.|
+|Action mobile URL|Not displayed yet, but coming soon: The landing page URL on mobile. In other words, the URL of the page that displays after a customer taps the **Action text** button.|
 
 ## Video requirements
 

@@ -29,11 +29,11 @@ Ad relevance can frequently cause problems for businesses that sell several diff
 
 Here's an example:
 
-**The setup:** You own a sporting goods store and have keywords for many of the products you sell, from swimsuits to golf clubs to snowboards. However, all of these keywords are in the same ad group and all ads in that ad group have similar ad text: 40% off sports equipment.
+**The setup:**  You own a sporting goods store and have keywords for many of the products you sell, from swimsuits to golf clubs to snowboards. However, all of these keywords are in the same ad group and all ads in that ad group have similar ad text: 40% off sports equipment.
 
-**The problem:**  Now let's say it's June and a customer is searching for "swimsuits". Her search triggers your ad but your ad says sports equipment. She is looking for a swimsuit or sports clothing. So she doesn’t click your ad.
+**The problem:**   Now let's say it's June and a customer is searching for "swimsuits". Her search triggers your ad but your ad says sports equipment. She is looking for a swimsuit or sports clothing. So she doesn’t click your ad.
 
-**The fix:** You want to show ad text that gets your customer's attention so you need to create individual ad groups for each type of equipment you sell and then specific keywords and ad text related to that equipment:
+**The fix:**  You want to show ad text that gets your customer's attention so you need to create individual ad groups for each type of equipment you sell and then specific keywords and ad text related to that equipment:
 
 - Create an ad groups called Swimsuits
 - Add related keywords like bathing suits and bikini

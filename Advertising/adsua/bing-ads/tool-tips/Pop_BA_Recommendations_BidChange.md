@@ -9,6 +9,6 @@ ms.author: eur
 
 # Bid change
 
-**What it is**: The amount your bids will increase when you apply this recommendation.
+**What it is** : The amount your bids will increase when you apply this recommendation.
 
 

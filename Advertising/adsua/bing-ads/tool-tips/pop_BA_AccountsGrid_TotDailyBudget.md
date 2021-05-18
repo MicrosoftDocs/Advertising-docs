@@ -9,9 +9,9 @@ ms.author: eur
 
 # Total daily budget
 
-**What it is: **    The total budget for all campaigns in this account using a daily-standard or shared-standard budget type.
+**What it is:**     The total budget for all campaigns in this account using a daily-standard or shared-standard budget type.
 
-**What you need to know: **
+**What you need to know:**
 
 - The budget amount applies to all enabled campaigns.
 - A dash in the table means you have not set a daily budget amount for any of your campaigns.

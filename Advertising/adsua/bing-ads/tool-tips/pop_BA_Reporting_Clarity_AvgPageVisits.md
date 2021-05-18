@@ -9,6 +9,6 @@ ms.author: eur
 
 # Avg. pages per visit
 
-**What it is:**    A statistic of Universal Event Tracking (UET) showing the average number of pages each customer goes to while on your site.
+**What it is:**     A statistic of Universal Event Tracking (UET) showing the average number of pages each customer goes to while on your site.
 
 

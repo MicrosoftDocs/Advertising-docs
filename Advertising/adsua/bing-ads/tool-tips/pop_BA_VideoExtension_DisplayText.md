@@ -9,8 +9,8 @@ ms.author: eur
 
 # Display text
 
-**What it is**:     The text you enter here will be shown below the video when it is played.
+**What it is** :     The text you enter here will be shown below the video when it is played.
 
-**Why it's important**:     The display text can be a video title, short video description, brand name, or short message for the customer.
+**Why it's important** :     The display text can be a video title, short video description, brand name, or short message for the customer.
 
 

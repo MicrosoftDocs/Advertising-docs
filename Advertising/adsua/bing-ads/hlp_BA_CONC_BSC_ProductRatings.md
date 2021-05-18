@@ -28,11 +28,11 @@ Display ratings from customers’ sites and trusted third parties on your produc
 
 ## Feed requirements
 - When submitting via FTP:
-  - **Product Review feeds** include all of your inventory for all of your stores. You submit the feed on a daily basis.
-  - **Product Review update feeds** are only used for new reviews that weren't provided in the most recent full feed upload or any subsequent incremental rating feeds.
+   - **Product Review feeds**  include all of your inventory for all of your stores. You submit the feed on a daily basis.
+   - **Product Review update feeds**  are only used for new reviews that weren't provided in the most recent full feed upload or any subsequent incremental rating feeds.
 
 - Feed files must be an existing Google-formatted .xml file.
-- Name of file must start with **ProductReviews** or **ProductReviewsupdate** (for example, ProductReviews.Contoso.xml).
+- Name of file must start with **ProductReviews**  or **ProductReviewsupdate**  (for example, ProductReviews.Contoso.xml).
 - The maximum feed file size is 1 GB.
 - If you're using ratings from BazaarVoice, you do not have to upload a separate feed for your product ratings. You must, however, still provide the accurate product identifiers (GTIN, Brand, and MPN) in your shopping feed.
 
@@ -56,4 +56,5 @@ Learn more about [FTP upload](./hlp_BA_CONC_BMCFTPRequirements.md).
 - Clicking on the review count will take customers to another page with more details about review sources. You are not charged for clicks on the review count.
 - We recommend that you upload your own product review data for unique products your site offers.
 
+ 
 

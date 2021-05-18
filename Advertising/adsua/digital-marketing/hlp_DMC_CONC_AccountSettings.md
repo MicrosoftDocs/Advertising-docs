@@ -1,7 +1,7 @@
 ---
 title: Account settings
 description: Find details on your Digital Marketing Center account settings.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -32,8 +32,8 @@ You can change your password by updating your Microsoft account's password. Chan
 1. In the upper-right corner of any Digital Marketing Center page, click the profile picture and click **Settings**.
 1. From the menu on the left, click **Social profiles**.
 1. Select the social profile you want to connect and enter your log-in details. Follow the steps to authorize the profile. 					 					**Things to remember:**					 
-  - To access Instagram through Digital Marketing Center, make sure that your Instagram Business account is linked to your Facebook page.
-  - You must be an admin for a Facebook page or Instagram Business account to be able to connect to Digital Marketing Center.
+   - To access Instagram through Digital Marketing Center, make sure that your Instagram Business account is linked to your Facebook page.
+   - You must be an admin for a Facebook page or Instagram Business account to be able to connect to Digital Marketing Center.
 
 1. Click **Save**.
 
@@ -42,7 +42,7 @@ You can change your password by updating your Microsoft account's password. Chan
 1. From the menu on the left, click **Social profiles**.
 1. Under **Connect profiles**, look for the profile you want to remove and click **Disconnect**.
 
-**This is important**: If you remove a Facebook page associated to a social campaign, that social campaign will be paused.
+**This is important** : If you remove a Facebook page associated to a social campaign, that social campaign will be paused.
 ## How do I add a Facebook page to my Instagram Business account?
 If you want to advertise on Instagram, you must associate your Instagram Business account to your Facebook page. [Learn more](https://go.microsoft.com/fwlink?LinkId=2110520)
 

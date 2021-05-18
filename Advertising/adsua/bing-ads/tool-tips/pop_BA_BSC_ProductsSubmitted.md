@@ -9,8 +9,8 @@ ms.author: eur
 
 # Products submitted
 
-**What it is:** The number of products that have been submitted.
+**What it is:**  The number of products that have been submitted.
 
-**What you need to know:** The count may also include products that have no been approved.
+**What you need to know:**  The count may also include products that have no been approved.
 
 

@@ -1,7 +1,7 @@
 ---
 title: About responsive search ads
 description: About responsive search ads
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -15,9 +15,9 @@ Analyzing ad performance to determine which ads perform best is also taken care 
 
 ## Best practices for responsive search ads
 
-- **Create responsive search ads with current expanded text ads** to help avoid impression and click loss when testing effectiveness. In other words, use expanded text ads as a baseline to see how well your responsive search ads are performing.
-- **Take advantage of the additional headline limits** and aim to provide at least 8-10 distinct headlines that don’t contain similar phrases.
-- **Take advantage of the additional character limits** and provide at least two distinct descriptions, with a clear call-to-action for customers.
+- **Create responsive search ads with current expanded text ads**  to help avoid impression and click loss when testing effectiveness. In other words, use expanded text ads as a baseline to see how well your responsive search ads are performing.
+- **Take advantage of the additional headline limits**  and aim to provide at least 8-10 distinct headlines that don’t contain similar phrases.
+- **Take advantage of the additional character limits**  and provide at least two distinct descriptions, with a clear call-to-action for customers.
 
 ## Create a responsive search ad
 1. Select the campaign from the tree view in the left panel you want to set up dynamic search ads in.

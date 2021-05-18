@@ -9,6 +9,6 @@ ms.author: eur
 
 # Campaign ID
 
-**What it is: **A unique number that Microsoft Advertising uses to identify the ad campaign.
+**What it is:** A unique number that Microsoft Advertising uses to identify the ad campaign.
 
 

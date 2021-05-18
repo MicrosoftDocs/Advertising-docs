@@ -9,6 +9,6 @@ ms.author: eur
 
 # Param2
 
-**What it is:**    The text that replaces {param2} in an ad when a keyword match occurs.
+**What it is:**     The text that replaces {param2} in an ad when a keyword match occurs.
 
 

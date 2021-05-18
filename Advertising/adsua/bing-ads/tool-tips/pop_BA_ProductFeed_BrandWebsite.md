@@ -9,6 +9,6 @@ ms.author: eur
 
 # Brand website
 
-**What it is:**  This is the brand's website's domain, the root part of the URL.
+**What it is:**   This is the brand's website's domain, the root part of the URL.
 
 

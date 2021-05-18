@@ -9,8 +9,8 @@ ms.author: eur
 
 # Bid type
 
-**What it is: **    The default **Keywords** bid type is what you use to get your ads on the Microsoft Search Network.
+**What it is:**     The default **Keywords** bid type is what you use to get your ads on the Microsoft Search Network.
 
-**Get more info: **    [Set your campaign budget and bid amounts](../hlp_BA_CONC_NewAd_SetCampaignBudgetAndBidAmounts.md)
+**Get more info:**     [Set your campaign budget and bid amounts](../hlp_BA_CONC_NewAd_SetCampaignBudgetAndBidAmounts.md)
 
 

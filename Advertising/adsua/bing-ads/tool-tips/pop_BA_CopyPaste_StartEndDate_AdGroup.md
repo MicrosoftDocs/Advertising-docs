@@ -9,6 +9,6 @@ ms.author: eur
 
 # Adjust start and end dates
 
-**What it is**: Check this box if you want to change the start or end date of the ad group or ad groups you're pasting.
+**What it is** : Check this box if you want to change the start or end date of the ad group or ad groups you're pasting.
 
 

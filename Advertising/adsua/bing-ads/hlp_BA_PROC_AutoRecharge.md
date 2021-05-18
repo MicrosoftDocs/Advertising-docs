@@ -15,8 +15,10 @@ With auto-recharge, you can help make sure that your prepay account has enough b
 
 If you sign up for auto-recharge, each time your account balance reaches 20 percent of the recharge amount, we will automatically charge your primary payment method and add funds to your account.
 
+[!INCLUDE [India_E_Mandate](./includes/India_E_Mandate.md)]
 ## Set up auto-recharge for a prepay account
 
+[!INCLUDE [EnableAutoRecharge_VR2](./includes/EnableAutoRecharge_VR2.md)]
 For a more in-depth look at other payment methods, see [The Payment Methods page](./hlp_BA_CONC_AvailablePaymentMethods.md).
 
 

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Formula
 
-**What it is**: How you want this column's information to be determined.
+**What it is** : How you want this column's information to be determined.
 
 

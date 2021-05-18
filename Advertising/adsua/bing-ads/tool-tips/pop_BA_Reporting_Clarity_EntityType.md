@@ -9,6 +9,6 @@ ms.author: eur
 
 # Entity type
 
-**What it is:**    The type of change made.
+**What it is:**     The type of change made.
 
 

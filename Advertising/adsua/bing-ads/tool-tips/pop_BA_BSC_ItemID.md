@@ -9,8 +9,8 @@ ms.author: eur
 
 # ID
 
-**What it is:** Your product ID as specified in your catalog.
+**What it is:**  Your product ID as specified in your catalog.
 
-**What you need to know:** This must be unique for each offer in your catalog.
+**What you need to know:**  This must be unique for each offer in your catalog.
 
 

@@ -1,7 +1,7 @@
 ---
 title: About language options in Microsoft Advertising Editor
 description: You can manage your Microsoft Advertising Editor&nbsp; account in one language and run ads in a different language.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -27,62 +27,13 @@ This setting:
 
 ## Available ad languages
 
-<table>
-  <tr>
-    <td>
-        Danish
-      </td>
-    <td></td>
-    <td>
-        Italian
-      </td>
-  </tr>
-  <tr>
-    <td>
-        Dutch
-      </td>
-    <td></td>
-    <td>
-        Norwegian
-      </td>
-  </tr>
-  <tr>
-    <td>
-        English
-      </td>
-    <td></td>
-    <td>
-        Portuguese
-      </td>
-  </tr>
-  <tr>
-    <td>
-        Finnish
-      </td>
-    <td></td>
-    <td>
-        Spanish
-      </td>
-  </tr>
-  <tr>
-    <td>
-        French
-      </td>
-    <td></td>
-    <td>
-        Swedish
-      </td>
-  </tr>
-  <tr>
-    <td>
-        German
-      </td>
-    <td></td>
-    <td>
-        Traditional Chinese
-      </td>
-  </tr>
-</table>
+|Danish||Italian|
+|---|---|---|
+|Dutch||Norwegian|
+|English||Portuguese|
+|Finnish||Spanish|
+|French||Swedish|
+|German||Traditional Chinese|
 
 Your ad language in combination with your location targeting determines who will see your ads. To learn more, see [How does location targeting and ad language affect who can see my ads?](./hlp_BAE_CONC_LocTargetAndLang.md)
 

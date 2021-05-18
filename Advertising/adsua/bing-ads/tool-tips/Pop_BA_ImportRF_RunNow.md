@@ -9,6 +9,6 @@ ms.author: eur
 
 # Run now
 
-**What it is: ** Select this to run your import once now ahead of the schedule and frequency you set.
+**What it is:**  Select this to run your import once now ahead of the schedule and frequency you set.
 
 

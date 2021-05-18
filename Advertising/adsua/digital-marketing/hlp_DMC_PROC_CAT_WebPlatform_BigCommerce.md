@@ -1,7 +1,7 @@
 ---
 title: Add tracking tag using BigCommerce
 description: If you built your website on BigCommerce, read this article to learn how to set up your Digital Marketing Center customer action tracking tag.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

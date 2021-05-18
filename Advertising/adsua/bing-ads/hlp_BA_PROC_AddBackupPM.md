@@ -11,6 +11,7 @@ ms.author: eur
 
 If you want to avoid gaps in your advertising campaign caused by unforeseen problems with your primary payment method (for example, your credit card expires or is lost or stolen), you should add a backup payment method. Backup payment methods are only used with postpay threshold account. Read more about [primary and backup payment methods](./hlp_BA_CONC_AvailablePaymentMethods.md).
 
+[!INCLUDE [Redesign](./includes/Redesign.md)]
 1. [!INCLUDE [ClickBilling](./includes/ClickBilling.md)]
 1. [!INCLUDE [SelectAccount_VR](./includes/SelectAccount_VR.md)]
 1. Click **Payment Methods** from the main menu.

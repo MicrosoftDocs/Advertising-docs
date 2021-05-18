@@ -9,6 +9,6 @@ ms.author: eur
 
 # Website ID
 
-**What it is:**   The ID Microsoft Advertising associates with your website.
+**What it is:**    The ID Microsoft Advertising associates with your website.
 
 

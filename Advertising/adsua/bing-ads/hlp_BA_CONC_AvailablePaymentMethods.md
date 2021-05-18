@@ -28,12 +28,13 @@ On the Payment Methods page, you have different options depending on whether you
 
 ## Postpay threshold accounts
 
-**Primary payment method.** If you have a postpay threshold account, you need to have a primary payment method: a credit or debit card. Your primary payment method will be used to pay your advertising charges when you reach your monthly billing date or your billing threshold, whichever comes first. Although you can add as many payment methods as you like, you can only have one primary payment method for each account. If you want to delete a primary payment method, you must first set a new primary payment method for any accounts that use the payment method you are trying to delete.
+**Primary payment method.**  If you have a postpay threshold account, you need to have a primary payment method: a credit or debit card. Your primary payment method will be used to pay your advertising charges when you reach your monthly billing date or your billing threshold, whichever comes first. Although you can add as many payment methods as you like, you can only have one primary payment method for each account. If you want to delete a primary payment method, you must first set a new primary payment method for any accounts that use the payment method you are trying to delete.
 
-**Backup payment method.** You can set a backup payment method, which will be used to pay for your charges if something happens to your primary payment method: Your credit card expires, it's stolen, or you reach your limit while you are away on vacation. In cases like these, a backup payment method prevents you from having gaps in your advertising campaign when you least expect them.
+**Backup payment method.**  You can set a backup payment method, which will be used to pay for your charges if something happens to your primary payment method: Your credit card expires, it's stolen, or you reach your limit while you are away on vacation. In cases like these, a backup payment method prevents you from having gaps in your advertising campaign when you least expect them.
 
 From the Payment Methods page, you can add and edit your payment methods and select primary and backup for your postpay threshold accounts.
 
+![the payment methods page](../images/BA_ScreenCap_PMTab.png)
 ## How do I set a primary or backup payment method?
 1. [!INCLUDE [ClickBilling_Tab1](./includes/ClickBilling_Tab1.md)]
 1. Select**Payment Methods** from the main menu.
@@ -49,6 +50,7 @@ If you opt for auto-recharge, it's also a good idea to set a backup payment meth
 
 If you don't have auto-recharge set up, you'll need to manually add funds to your prepay account.
 
+![the payment methods page](../images/BA_ScreenCap_PMPrepay.png)
 ## How do I add funds to a prepay account?
 [!INCLUDE [AddFunds_VR2](./includes/AddFunds_VR2.md)]
 ## How do I set up auto-recharge for my prepay account?
@@ -72,9 +74,9 @@ If you have multiple accounts, you might need to select **All accounts** from th
 ## Why is my payment method not available to be used with this account?
 There are a number of reasons that a payment method can't be used for a particular account:
 
-- **Account type.** Some payment methods, such as credit cards, can be used with both postpay threshold and prepay accounts.			  Other payment methods, such as wire transfers, require a prepay account. For information on which payment methods you can use with postpay threshold and prepay			  accounts, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
-- **Currency and country.** Some payment methods can only be used if your account is based in a specific country and uses a specific currency.			  For example, PayPal can only be used for accounts that have the currency set to Canadian dollar, euro, Mexican peso, Norwegian krone, UK pound, or US dollar. For information on which payment methods you can use for your currency and country, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
-- **Agency management.** If your account is managed by an agency and they are responsible for paying the bill, 			  then any payment methods that you have added cannot be used.
-- **Inactive accounts.** When an account is deleted and becomes inactive, no payment methods can be used.
+- **Account type.**  Some payment methods, such as credit cards, can be used with both postpay threshold and prepay accounts.			  Other payment methods, such as wire transfers, require a prepay account. For information on which payment methods you can use with postpay threshold and prepay			  accounts, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
+- **Currency and country.**  Some payment methods can only be used if your account is based in a specific country and uses a specific currency.			  For example, PayPal can only be used for accounts that have the currency set to Canadian dollar, euro, Mexican peso, Norwegian krone, UK pound, or US dollar. For information on which payment methods you can use for your currency and country, see [Choosing a payment method for Microsoft Advertising](./hlp_BA_CONC_PaymentMethodsV2.md)
+- **Agency management.**  If your account is managed by an agency and they are responsible for paying the bill, 			  then any payment methods that you have added cannot be used.
+- **Inactive accounts.**  When an account is deleted and becomes inactive, no payment methods can be used.
 
 

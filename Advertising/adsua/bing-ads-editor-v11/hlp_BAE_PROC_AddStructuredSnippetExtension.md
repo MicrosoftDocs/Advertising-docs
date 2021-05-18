@@ -1,7 +1,7 @@
 ---
 title: Add Structured Snippets to your ad
 description: Add extra snippets of text that highlights your store's products or offers.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -25,62 +25,23 @@ The maximum amount of Structured Snippets which can be associated to a single ca
 **Serves in**: All Bing markets, except China.
 
 ## What's the difference between Callout and Structured Snippet Extensions?
-<table>
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">
-              <strong>Callout Extension</strong>
-            </th>
-    <th scope="col">
-              <strong>Structured Snippet Extension</strong>
-            </th>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-              <strong>When to use</strong>
-            </th>
-    <td>Showcase what makes your products or services unique.</td>
-    <td>Provide more context on specific aspects of your products or services.</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-              <strong>Example</strong>
-            </th>
-    <td>"Free shipping • 24/7 Support" </td>
-    <td>"Brands: Windows, Xbox, Skype"</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-              <strong>Character limit</strong>
-            </th>
-    <td>25 characters per callout</td>
-    <td>25 characters per value</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-              <strong>Minimum number</strong>
-            </th>
-    <td>2 callouts</td>
-    <td>3 values</td>
-  </tr>
-  <tr>
-    <th scope="row" style="background:transparent">
-              <strong>Maximum number</strong>
-            </th>
-    <td>4 callouts</td>
-    <td>Based on value length and screen size</td>
-  </tr>
-</table>
+||**Callout Extension**|**Structured Snippet Extension**|
+|---|---|---|
+|**When to use**|Showcase what makes your products or services unique.|Provide more context on specific aspects of your products or services.|
+|**Example**|"Free shipping • 24/7 Support"|"Brands: Windows, Xbox, Skype"|
+|**Character limit**|25 characters per callout|25 characters per value|
+|**Minimum number**|2 callouts|3 values|
+|**Maximum number**|4 callouts|Based on value length and screen size|
 
 ## How do I create a shared Structured Snippet Extension?
 1. Click **Shared Library** in the left panel and make sure you're in the **Shared Structured Snippet Extensions** view.
 1. Click **Add Structured Snippet Extension** and in the **Editor** pane:
-  - Select **Language**.
-  - Select **Header**.
-  - Enter the appropriate **Values**.
-  - Select the **End** and **Start dates**.
-  - Edit **Ad schedule**.
-  - Select the **Time zone**.
+   - Select **Language**.
+   - Select **Header**.
+   - Enter the appropriate **Values**.
+   - Select the **End** and **Start dates**.
+   - Edit **Ad schedule**.
+   - Select the **Time zone**.
 
 ## How do I associate an existing Structured Snippet Extension to a campaign or ad group?
 1. Select the campaign or ad group from the tree view in the left panel.

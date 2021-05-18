@@ -9,6 +9,7 @@ ms.author: eur
 
 # Multimedia ads
 
+[!INCLUDE [ComingSoon](./includes/ComingSoon.md)]
 Multimedia ads capture a potential customer's attention with large visual imagery that showcases your brand and products to increase traffic and sales on your website. Multimedia Ads will be shown in distinct mainline and sidebar [ad positions](./hlp_BA_CONC_WhatIsAdPosition.md) and will not replace your text ad placements.
 
 You can create your own multimedia ads with headlines and imagery or you can [apply our recommendations](./hlp_BA_CONC_Recommendations.md).

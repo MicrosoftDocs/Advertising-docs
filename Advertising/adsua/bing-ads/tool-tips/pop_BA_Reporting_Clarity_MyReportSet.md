@@ -9,8 +9,8 @@ ms.author: eur
 
 # My report settings
 
-**What it is:**    This is where you set how you want to save the report, or schedule it to run on a regular basis.
+**What it is:**     This is where you set how you want to save the report, or schedule it to run on a regular basis.
 
-**Why it’s important:**    It allows you to run the same report in the future so you can compare the results.
+**Why it’s important:**     It allows you to run the same report in the future so you can compare the results.
 
 

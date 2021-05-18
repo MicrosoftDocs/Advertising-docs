@@ -8,33 +8,10 @@ If we do not receive your account number, **your payment will be returned**.
 
 **Bank transfer information:**
 
-<table>
-  <tr>
-    <th style="width:150;valign:top;border-bottom:solid 1px #ccc" scope="row">Bank name</th>
-    <td>Citibank N.A., Australia</td>
-  </tr>
-  <tr>
-    <th style="width:150;valign:top;border-bottom:solid 1px #ccc" scope="row">Bank address</th>
-    <td>2 Park Street 
-              Sydney, NSW
-            </td>
-  </tr>
-  <tr>
-    <th style="width:150;valign:top;border-bottom:solid 1px #ccc" scope="row">Bank transfers</th>
-    <td>
-              Account name: Microsoft Online, Inc. 
-              Account number: 233820008 
-              Swift code: CITIAU2X 
-              BSB number: 242-000 
-              
-            </td>
-  </tr>
-  <tr>
-    <th style="width:150;valign:top;border-bottom:solid 1px #ccc" scope="row">What to expect</th>
-    <td>
-                  It can take up to 5 days after the bank transfer is complete for the funds to appear in your Microsoft Advertising account.
-            </td>
-  </tr>
-</table>
+|Bank name|Citibank N.A., Australia|
+|---|---|
+|Bank address|2 Park Street               Sydney, NSW|
+|Bank transfers|Account name: Microsoft Online, Inc.               Account number: 233820008               Swift code: CITIAU2X               BSB number: 242-000               |
+|What to expect|It can take up to 5 days after the bank transfer is complete for the funds to appear in your Microsoft Advertising account.|
 
 

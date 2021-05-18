@@ -9,7 +9,7 @@ ms.author: eur
 
 # Video requirements
 
-**Upload a video with the following requirements: **
+**Upload a video with the following requirements:**
 - Video format: MP4
 - Video ratio: 9:16 to 16:9
 - Recommended resolution: Highest resolution video available within the file size and ratio limits

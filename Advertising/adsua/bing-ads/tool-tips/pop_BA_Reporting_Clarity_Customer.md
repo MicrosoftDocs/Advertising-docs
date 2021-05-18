@@ -9,6 +9,6 @@ ms.author: eur
 
 # Manager account ID
 
-**What it is: **A unique number used in Microsoft Advertising to identify this manager account.
+**What it is:** A unique number used in Microsoft Advertising to identify this manager account.
 
 

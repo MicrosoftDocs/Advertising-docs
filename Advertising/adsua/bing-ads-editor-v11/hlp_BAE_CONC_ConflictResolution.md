@@ -1,7 +1,7 @@
 ---
 title: About conflict resolution
 description: The conflict resolution feature in Microsoft Advertising Editor helps you quickly resolve inconsistencies that result from someone else uploading or making online changes to the same campaign that you are working on.
-ms.service: "bing-ads"
+ms.service: "Bing-Ads-Editor-v11"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
@@ -15,14 +15,14 @@ When you post or get data, if a conflict is detected between the data in Microso
 
 To set default conflict resolution settings...
 
-**For Windows**:
+**For Windows** :
 
 1. Click **Tools** from the menu bar.
 1. Select **Options**, then click **Defaults**.
 1. Under **User settings**, select what you want to do from the drop-down menu.
 1. Click **OK**.
 
-**For Mac**:
+**For Mac** :
 
 1. Click **Microsoft Advertising Editor** from the menu bar.
 1. Select **Preferences**, then click **Defaults**.

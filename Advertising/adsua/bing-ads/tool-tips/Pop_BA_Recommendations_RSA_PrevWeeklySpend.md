@@ -9,6 +9,6 @@ ms.author: eur
 
 # Previous weekly spend
 
-**What it is:** The amount of money you spent over the last 7 days with your current ad group.
+**What it is:**  The amount of money you spent over the last 7 days with your current ad group.
 
 

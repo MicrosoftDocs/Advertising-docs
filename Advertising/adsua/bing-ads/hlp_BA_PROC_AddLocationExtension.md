@@ -11,6 +11,7 @@ ms.author: eur
 
 When you enable a Location Extension, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call.
 
+     ![Location Extensions](../images/BA_CONC_Extension_Location_PC.png)      ![Location Extensions](../images/BA_CONC_Extension_Location_Mobile.png)  
 A particularly powerful feature of Location Extensions is that the address shown to the customer is typically the business location that is closest to them. If you have multiple business locations set up for your campaign, Microsoft Advertising will display the address and phone number for the location that is closest to the customer. The radius for the location display is about 50 miles. If you don't have a business location entered that is within 50 miles of the customer, no location will be shown in your ad.
 
 In addition to showing your address, Location Extensions also offer iPhone users an easy way to call for a ride to your business from your ad. The [Get a Ride feature](./hlp_BA_CONC_GetARideExtension.md) for Location Extensions is like an annotation, where it could be automatically included and requires no additional set-up. A customer can click the ride icon in your ad that launches the Uber app, and if they are logged in to their Uber account, the destination will be pre-populated with your address. If you want to opt out of Get a Ride, please contact your Account Manager or [contact support](https://go.microsoft.com/fwlink?LinkId=398371).
@@ -36,6 +37,7 @@ Location Extensions can be created or edited at the account or campaign level. T
 
 If you have multiple locations for business, Location Extensions will show the nearest business location within 50 miles (80 kilometers) or the value selected for radius targeting.
 
+ 
 ## Get started with Location Extensions
 
 Head over to the [About ad extensions](./hlp_BA_CONC_AboutAdExtensions.md) page for instructions to:

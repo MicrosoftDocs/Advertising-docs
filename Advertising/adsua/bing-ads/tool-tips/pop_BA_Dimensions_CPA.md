@@ -9,8 +9,8 @@ ms.author: eur
 
 # CPA (Cost per acquisition)
 
-**What it is: **  Total spend divided by conversions that are attributable to your ad.
+**What it is:**   Total spend divided by conversions that are attributable to your ad.
 
-**Why it’s important: **  CPA tells you how much each conversion is costing you. It is one indicator to suggest whether your overall campaign is profitable.
+**Why it’s important:**   CPA tells you how much each conversion is costing you. It is one indicator to suggest whether your overall campaign is profitable.
 
 

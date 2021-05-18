@@ -9,6 +9,6 @@ ms.author: eur
 
 # Third-party keyword
 
-**What it is:**    The keyword to track that you defined on a paid search provider other than Microsoft Advertising.
+**What it is:**     The keyword to track that you defined on a paid search provider other than Microsoft Advertising.
 
 

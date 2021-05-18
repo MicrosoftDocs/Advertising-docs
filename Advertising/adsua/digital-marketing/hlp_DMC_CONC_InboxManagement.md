@@ -1,7 +1,7 @@
 ---
 title: Inbox management
 description: Learn about the image and video requirements for Digital Marketing Center.
-ms.service: "bing-ads"
+ms.service: "Digital-Marketing"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -9,6 +9,6 @@ ms.author: eur
 
 # Business listing
 
-**What it is: **   Information about your business that is shown when people search online.
+**What it is:**    Information about your business that is shown when people search online.
 
 

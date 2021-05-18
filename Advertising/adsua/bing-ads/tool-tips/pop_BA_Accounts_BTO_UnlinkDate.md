@@ -9,6 +9,6 @@ ms.author: eur
 
 # Date
 
-**What it is: **The effective date of when you want to remove access from this account.
+**What it is:** The effective date of when you want to remove access from this account.
 
 

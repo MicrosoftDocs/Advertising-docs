@@ -9,6 +9,6 @@ ms.author: eur
 
 # Radius (miles)
 
-**What it is:**    Distance around the target location in miles.
+**What it is:**     Distance around the target location in miles.
 
 

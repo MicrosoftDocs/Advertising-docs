@@ -9,6 +9,6 @@ ms.author: eur
 
 # Title
 
-**What it is:** Your product name as specified in your catalog. For products such as books, DVDs, and games, this is usually the title of that item.
+**What it is:**  Your product name as specified in your catalog. For products such as books, DVDs, and games, this is usually the title of that item.
 
 

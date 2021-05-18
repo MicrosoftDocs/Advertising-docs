@@ -16,10 +16,10 @@ Now that your Local Inventory Ads are up and running, you’ll want to keep trac
 
 The following click type data is available for the reports listed below:
 
-- **Shopping ad**: A click on your ad, showing an online product.
-- ** Shopping ad – local**: A click on your ad, showing a local product.
-- **Shopping ad – multichannel local**: A click on the local section of your ad that has two links. One click to the local product and another click to the online product.
-- **Shopping ad – multichannel online**: A click on the in-store decoration will result in the multichannel local click reporting. Click on the main ad with the in-store decoration will result in the multichannel online click.
+- **Shopping ad** : A click on your ad, showing an online product.
+- ** Shopping ad – local** : A click on your ad, showing a local product.
+- **Shopping ad – multichannel local** : A click on the local section of your ad that has two links. One click to the local product and another click to the online product.
+- **Shopping ad – multichannel online** : A click on the in-store decoration will result in the multichannel local click reporting. Click on the main ad with the in-store decoration will result in the multichannel online click.
 
 ## Availability
 
@@ -35,36 +35,12 @@ When running product partition, product partition unit, or product dimension rep
 ## Using reports to track Local Inventory Ads
 From Microsoft Merchant Center, you can see the following reports:
 
-<table>
-  <tr>
-    <th scope="col">Report type</th>
-    <th scope="col">Description</th>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Store summary</th>
-    <td>
-        <strong>What it shows</strong>: Data for local feeds, online feeds, and all other feeds.
-      </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Published report</th>
-    <td>
-        <strong>What it shows</strong>: Data for the number of published offers.
-      </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Reject report</th>
-    <td>
-        <strong>What it shows</strong>: Data for the number of rejected offers.
-      </td>
-  </tr>
-  <tr>
-    <th style="font-weight:normal;background-color:transparent;border-bottom:solid 1px #ccc" scope="row">Matching report</th>
-    <td>
-        <strong>What it shows</strong>: Data for the number of offers matched to the online product feed.
-      </td>
-  </tr>
-</table>
+|Report type|Description|
+|---|---|
+|Store summary|**What it shows**: Data for local feeds, online feeds, and all other feeds.|
+|Published report|**What it shows**: Data for the number of published offers.|
+|Reject report|**What it shows**: Data for the number of rejected offers.|
+|Matching report|**What it shows**: Data for the number of offers matched to the online product feed.|
 
 From Microsoft Advertising reporting, you can view the following reports:
 
@@ -107,8 +83,8 @@ From Microsoft Advertising reporting, you can view the following reports:
 ## Add channel and channel exclusivity filters
 Use channel and channel exclusivity filters for your local inventory products.
 
-- **Channel**: Filter products for online or local availability.
-- **Channel exclusivity**: Filter products depending on online or local availability, or both.
+- **Channel** : Filter products for online or local availability.
+- **Channel exclusivity** : Filter products depending on online or local availability, or both.
 
 You can show products sold only in local stores but not online by setting the filters to “Channel”: “Local stores” and “Channel exclusivity”: “Single-channel”.
 
