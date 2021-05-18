@@ -1,7 +1,7 @@
 ---
 title: Ad text part 2 (optional)
 description: Ad text part 2 (optional)
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

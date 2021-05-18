@@ -1,7 +1,7 @@
 ---
 title: Copy ad groups
 description: In Microsoft Advertising Editor, when you want to create new ad groups that are similar to current ad groups, or create several ad groups at once, you can save time by copying one or more ad groups.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

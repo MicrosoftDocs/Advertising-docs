@@ -1,7 +1,7 @@
 ---
 title: Getting started on Digital Marketing Center
 description: Learn how to get started on using Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

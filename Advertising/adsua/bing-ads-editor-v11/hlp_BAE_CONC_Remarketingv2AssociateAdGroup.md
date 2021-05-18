@@ -1,7 +1,7 @@
 ---
 title: Associate an audience with an ad group or campaign
 description: Once you create a remarketing list in Microsoft Advertising, you can associate it with an ad group/campaign.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Add Price Extensions to your ad
 description: Add prices of your products or services on your ads for potential customers.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

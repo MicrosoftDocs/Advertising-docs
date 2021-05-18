@@ -1,7 +1,7 @@
 ---
 title: Protecting data when sharing computers or accounts
 description: Here are some safety tips to help protect your Microsoft Advertising Editor account as well as some suggestions about what you can do if your account has been compromised.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

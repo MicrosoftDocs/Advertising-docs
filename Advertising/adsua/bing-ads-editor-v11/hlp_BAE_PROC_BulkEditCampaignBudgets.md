@@ -1,7 +1,7 @@
 ---
 title: Edit campaign budgets
 description: Learn how to make changes to an existing campaign's budget in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

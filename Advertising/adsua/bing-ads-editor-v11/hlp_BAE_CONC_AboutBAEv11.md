@@ -1,7 +1,7 @@
 ---
 title: Welcome to the new Microsoft Advertising Editor!
 description: Microsoft Advertising Editor is now available with multi-account support, a visual redesign, and more.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

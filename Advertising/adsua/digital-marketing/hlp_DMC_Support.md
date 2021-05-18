@@ -1,7 +1,7 @@
 ---
 title: Contact us
 description: If you need personal assistance and can't find your answer in Help, contact us to find the answer you need for Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

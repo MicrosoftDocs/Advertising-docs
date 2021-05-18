@@ -1,7 +1,7 @@
 ---
 title: Facebook profile - Foot traffic
 description: Facebook profile - Foot traffic
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: About search and social ads
 description: Learn about different types of ads and ad formats in Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: View quality scores
 description: In Microsoft Advertising Editor, you can use your keyword quality scores to determine the best ways to optimize your keywords, ads, and landing pages, and to help improve your ROI. You can find your quality scores on the **Keywords** tab for each ad group.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

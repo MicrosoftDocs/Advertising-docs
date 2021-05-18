@@ -1,7 +1,7 @@
 ---
 title: Create a custom view
 description: In Microsoft Advertising Editor, you can use the advanced search feature to perform a customized search for information about your campaigns, ad groups, ads, or keywords, and then save the results.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Copy campaigns
 description: In Microsoft Advertising Editor, when you want to create new campaigns that are similar to current campaigns, or create several campaigns at once, you can save time by copying one or more campaigns.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Welcome to Microsoft Advertising Editor Help!
 description: With Microsoft Advertising Editor , you can work on your campaigns offline and make bulk changes more quickly. Need help? Who doesn’t from time to time. Our videos, real-world examples, and how-to content is here when you need it.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

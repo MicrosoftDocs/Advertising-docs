@@ -1,7 +1,7 @@
 ---
 title: Suggested page types
 description: Suggested page types
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

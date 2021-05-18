@@ -1,7 +1,7 @@
 ---
 title: Audience growth
 description: Audience growth
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Export campaigns from Microsoft Advertising Editor
 description: Export data from a campaign or ad group to a CSV file in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

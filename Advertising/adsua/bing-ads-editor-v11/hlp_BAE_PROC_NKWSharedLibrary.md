@@ -1,7 +1,7 @@
 ---
 title: Eliminate unwanted traffic across campaigns (Negative keyword lists)
 description: Apply entire lists of negative keywords to multiple campaigns in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

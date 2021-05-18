@@ -1,7 +1,7 @@
 ---
 title: Ad filters
 description: Ad filters
-ms.service: "PubCenter-v4"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Create property
 description: Create property
-ms.service: "PubCenter-v4"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

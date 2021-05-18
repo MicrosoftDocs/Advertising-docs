@@ -1,7 +1,7 @@
 ---
 title: Phone calls to my business
 description: Phone calls to my business
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

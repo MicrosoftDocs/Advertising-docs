@@ -1,7 +1,7 @@
 ---
 title: What is Microsoft Merchant Center?
 description: Microsoft Merchant Center allows you to create a catalog, which includes images and other information about your products, so that your products can display on Bing
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

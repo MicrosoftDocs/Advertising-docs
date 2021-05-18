@@ -1,7 +1,7 @@
 ---
 title: Create text ads
 description: Learn how to create one or more new text ads in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

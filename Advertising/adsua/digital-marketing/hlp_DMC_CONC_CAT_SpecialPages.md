@@ -1,7 +1,7 @@
 ---
 title: Special pages: Which pages are most important to your business?
 description: Tell us which pages are most important to your business, and we can give you specific data on customer actions on those pages.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

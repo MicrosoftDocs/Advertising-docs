@@ -1,7 +1,7 @@
 ---
 title: Edit all your ad extensions in a spreadsheet
 description: Save time and effort by using Microsoft Advertising Editor to export all of your ad extensions to a CSV file, edit them in Microsoft Excel, and save your changes.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

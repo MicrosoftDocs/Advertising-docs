@@ -1,7 +1,7 @@
 ---
 title: FAQ: Expanded Text Ads
 description: Expanded Text Ads give you additional content to make your ads more eye-catching and helpful.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

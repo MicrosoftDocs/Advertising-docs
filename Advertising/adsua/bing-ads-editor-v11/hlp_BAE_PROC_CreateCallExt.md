@@ -1,7 +1,7 @@
 ---
 title: Create Call Extensions
 description: Learn how to create a Call Extension with a call forwarding number in Microsoft Advertising Editor that makes it easy to track the performance of your ad.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

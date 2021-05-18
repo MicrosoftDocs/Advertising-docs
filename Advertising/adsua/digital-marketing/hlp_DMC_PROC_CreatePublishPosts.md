@@ -1,7 +1,7 @@
 ---
 title: Create, publish, and edit posts
 description: Create and publish your social media posts in one place.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

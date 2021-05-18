@@ -1,7 +1,7 @@
 ---
 title: Average number of pages visited
 description: Average number of pages visited
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

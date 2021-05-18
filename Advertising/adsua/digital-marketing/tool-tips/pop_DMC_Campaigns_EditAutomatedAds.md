@@ -1,7 +1,7 @@
 ---
 title: Editing automated text ads
 description: Editing automated text ads
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

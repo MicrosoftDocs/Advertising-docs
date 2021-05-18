@@ -1,7 +1,7 @@
 ---
 title: Create Sitelink Extensions
 description: Learn how to add Sitelink Extensions in Microsoft Advertising Editor, where are additional links you can add to your ad.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

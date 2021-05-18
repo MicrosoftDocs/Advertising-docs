@@ -1,7 +1,7 @@
 ---
 title: About device targeting
 description: Learn how to get your ads in front of your customers by targeting the type of device customers are using.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

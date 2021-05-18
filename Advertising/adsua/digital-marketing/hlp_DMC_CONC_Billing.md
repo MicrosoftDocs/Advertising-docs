@@ -1,7 +1,7 @@
 ---
 title: FAQ: Digital Marketing Center Billing
 description: If you have a question about billing for Digital Marketing Center, find your answer in this FAQ.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

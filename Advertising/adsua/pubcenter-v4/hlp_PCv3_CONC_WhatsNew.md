@@ -1,7 +1,7 @@
 ---
 title: pubCenter release notes
 description: Check out the new features and known issues in pubCenter!
-ms.service: "PubCenter-v4"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

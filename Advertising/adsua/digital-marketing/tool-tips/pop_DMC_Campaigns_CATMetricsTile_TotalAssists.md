@@ -1,7 +1,7 @@
 ---
 title: Total assists from this campaign
 description: Total assists from this campaign
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

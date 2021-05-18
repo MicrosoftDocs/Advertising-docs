@@ -1,7 +1,7 @@
 ---
 title: Total visits to special pages
 description: Total visits to special pages
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

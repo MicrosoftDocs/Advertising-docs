@@ -1,7 +1,7 @@
 ---
 title: Ad title part 1
 description: Ad title part 1
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

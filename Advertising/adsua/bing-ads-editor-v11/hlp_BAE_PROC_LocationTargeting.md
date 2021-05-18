@@ -1,7 +1,7 @@
 ---
 title: Target customers by location, day of the week, time of day, device, or by network distribution
 description: Add targeting at the campaign or ad group level with Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

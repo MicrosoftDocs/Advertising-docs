@@ -1,7 +1,7 @@
 ---
 title: Getting started with Microsoft Advertising Editor
 description: Learn the three basic steps that you will do in Microsoft Advertising Editor every time to sign in - download, update and then post campaign data.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

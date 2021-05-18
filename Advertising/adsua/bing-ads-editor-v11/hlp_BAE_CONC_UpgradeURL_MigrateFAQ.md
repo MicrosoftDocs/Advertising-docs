@@ -1,7 +1,7 @@
 ---
 title: What are Upgraded URLs and how do I upgrade?
 description: Upgraded URLs separate your tracking information from the landing page URL making it easy to update and manage URL tracking. Find out the benefits of Upgraded URLs and how you can upgrade.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

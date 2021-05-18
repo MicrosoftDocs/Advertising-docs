@@ -1,7 +1,7 @@
 ---
 title: Visits to my website
 description: Visits to my website
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

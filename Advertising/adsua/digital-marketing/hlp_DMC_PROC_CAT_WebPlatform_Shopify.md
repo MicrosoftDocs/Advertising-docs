@@ -1,7 +1,7 @@
 ---
 title: Add tracking tag using Shopify
 description: If you built your website on Shopify, read this article to learn how to set up your Digital Marketing Center customer action tracking tag.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

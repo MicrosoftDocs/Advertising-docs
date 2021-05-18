@@ -1,7 +1,7 @@
 ---
 title: Edit your website in Digital Marketing Center
 description: Edit the components for the website you built with Digital Marketing Center
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

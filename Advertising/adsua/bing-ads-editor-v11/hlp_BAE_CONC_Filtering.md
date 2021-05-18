@@ -1,7 +1,7 @@
 ---
 title: About advanced search and filtering
 description: With advanced search and filtering you can search an account for items that match the criteria that you specify.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

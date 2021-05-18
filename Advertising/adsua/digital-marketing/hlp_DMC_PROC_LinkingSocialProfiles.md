@@ -1,7 +1,7 @@
 ---
 title: Connecting social profiles
 description: Manage your Facebook page and Instagram Business account from Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

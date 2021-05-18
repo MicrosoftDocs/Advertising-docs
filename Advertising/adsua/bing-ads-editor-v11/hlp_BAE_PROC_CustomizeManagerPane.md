@@ -1,7 +1,7 @@
 ---
 title: Customize the data view
 description: Learn how to add, remove, resize, and rearrange columns in the data view in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

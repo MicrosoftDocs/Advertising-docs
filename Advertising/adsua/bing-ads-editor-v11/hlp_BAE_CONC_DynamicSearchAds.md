@@ -1,7 +1,7 @@
 ---
 title: Target searches automatically with dynamic search ads
 description: Learn how Microsoft Advertising can generate keywords and ads for you automatically.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

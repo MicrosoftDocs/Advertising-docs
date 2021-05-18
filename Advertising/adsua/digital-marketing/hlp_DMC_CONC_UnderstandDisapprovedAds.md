@@ -1,7 +1,7 @@
 ---
 title: Editorial reviews and disapproved ads
 description: Learn about editorial reviews and what to do if you have disapproved ads in Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

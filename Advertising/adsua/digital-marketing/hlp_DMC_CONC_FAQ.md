@@ -1,7 +1,7 @@
 ---
 title: FAQ: Digital Marketing Center
 description: Digital Marketing Center provides you with a one-stop shop to manage your social network presence and search and social marketing.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Learn about product filters for Microsoft Shopping Campaigns
 description: Learn more about product filters and how they're organized.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

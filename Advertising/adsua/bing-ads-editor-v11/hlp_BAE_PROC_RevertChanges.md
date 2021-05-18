@@ -1,7 +1,7 @@
 ---
 title: Revert, undo, and redo changes to items in Microsoft Advertising Editor
 description: You can easily revert changed items back to the original state they were downloaded as, or undo and redo your last action in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: About language options in Microsoft Advertising Editor
 description: You can manage your Microsoft Advertising Editor&nbsp; account in one language and run ads in a different language.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Import data using a file
 description: You can import your campaigns from other advertising programs using a file.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Set up customer action tracking
 description: We can tell you what potential customers do after they click your ad, including the pages they visit on your website, how long they spend there, and more!
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

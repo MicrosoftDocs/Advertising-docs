@@ -1,7 +1,7 @@
 ---
 title: Making bulk changes in Microsoft Advertising Editor
 description: Learn how to make bulk changes to an existing campaigns in Microsoft Advertising Editor.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

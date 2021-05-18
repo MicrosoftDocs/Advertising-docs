@@ -1,7 +1,7 @@
 ---
 title: Get started with Microsoft Advertising Editor
 description: A guided tour of Microsoft Advertising Editor , which is used to manage your campaigns offline. (English only)
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Ad format preference: Microsoft Audience Ads
 description: Learn about native ads, a way to place custom-designed ads in high-quality web properties.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

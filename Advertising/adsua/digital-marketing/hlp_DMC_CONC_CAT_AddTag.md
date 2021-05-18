@@ -1,7 +1,7 @@
 ---
 title: Add tracking tags to your website
 description: Learn how to add tracking tags to your website for customer action tracking in Digital Marketing Center.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

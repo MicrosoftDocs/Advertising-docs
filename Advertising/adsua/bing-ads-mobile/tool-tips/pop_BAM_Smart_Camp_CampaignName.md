@@ -1,7 +1,7 @@
 ---
 title: Campaign name
 description: Campaign name
-ms.service: "Bing-Ads-Mobile"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: About responsive search ads
 description: About responsive search ads
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

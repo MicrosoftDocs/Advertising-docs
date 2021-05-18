@@ -1,7 +1,7 @@
 ---
 title: Create and edit text ads (search ads)
 description: Learn how to create text ads to run on Google and Bing. When people search for words or phrases related to your products or services, text ads display on their search results pages.
-ms.service: "Digital-Marketing"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur

@@ -1,7 +1,7 @@
 ---
 title: Show your business address in your ad
 description: Learn how to show the address of your business location that's closest to the customer with Location Extensions.
-ms.service: "Bing-Ads-Editor-v11"
+ms.service: "bing-ads"
 ms.topic: "article"
 author: eric-urban
 ms.author: eur
