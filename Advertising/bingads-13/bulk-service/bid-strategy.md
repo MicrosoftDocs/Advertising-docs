@@ -12,7 +12,7 @@ dev_langs:
 Defines a bid strategy that can be uploaded and downloaded in a bulk file.  
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
 
 A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal.
 

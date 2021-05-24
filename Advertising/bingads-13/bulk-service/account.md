@@ -26,6 +26,8 @@ If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Ja
 
 For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
+- [Allow Image Auto Retrieve](#allowimageautoretrieve)
+- [Auto Apply Recommendations](#autoapplyrecommendations)
 - [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Include View Through Conversions](#includeviewthroughconversions)
@@ -34,6 +36,47 @@ For an *Account* record, the following attribute fields are available in the [Bu
 - [Profile Expansion Enabled](#profileexpansionenabled)
 - [Sync Time](#synctime)
 - [Tracking Template](#trackingtemplate)
+
+
+#### <a name="allowimageautoretrieve"></a>Allow Image Auto Retrieve
+Determines whether Microsoft Advertising is allowed to use images from your domain to enhance your ads on the Microsoft Audience Network.  
+
+> [!IMPORTANT]
+> By opting-in, you agree that any images or creative content retrieved from the Advertiser landing page is content "provided by" the Advertiser under the content usage license in the [Advertising Agreement](https://about.ads.microsoft.com/en-us/resources/policies/microsoft-advertising-agreement) (Section 2) and that the Advertiser agrees that Microsoft can use that content for auto-creating ads and extensions for them.
+
+If this field is set to *true*, then the image auto-retrieve feature is enabled. 
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
+#### <a name="autoapplyrecommendations"></a>Auto Apply Recommendations
+Determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.  
+
+We'll let you know when suggested ads are ready for you to review. You can find ad recommendations on the Recommendations page. If you don't take action, we'll automatically apply them after the review period:
+
+- Multimedia ads: 7 days
+- All others: 14 days
+
+You can change your auto-apply options at any time. If you don't choose to auto-apply ad recommendations, you'll still be able to apply recommendations manually.
+
+This field includes a list of recommendation types. 
+
+The list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads. 
+
+```
+MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;
+```
+
+The default key and value pairs are:
+- MultimediaAdsAutoApply=true;
+- ResponsiveSearchAdsAutoApply=false;
+
+If the value of a key is set to *true*, then the auto-apply feature is enabled for the recommendation type. 
+
+**Add:** Optional  
+**Update:** Optional. You can choose to set only the key and value pairs that you want to update. If no value is set for the update, this setting is not changed.  
+**Delete:** Read-only  
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
@@ -57,7 +100,7 @@ Determines whether you want to include view-through conversions for campaigns in
 
 View-through conversions are conversions that people make after they have seen your ad, even though they did not click the ad.
 
-If the value is *true*, then view-through conversions will be included. By default, if you are in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 616) this property is set *true*, meaning that the values in the "All" conversions columns of your performance reports will include view-through conversions. You can choose to disable it if you don't want to include view-through conversions. 
+If the value is *true*, then view-through conversions will be included. By default this property is set *true*, meaning that the values in the "All" conversions columns of your performance reports will include view-through conversions. You can choose to disable it if you don't want to include view-through conversions. 
 
 > [!NOTE]
 > View-through conversions require a [UETTag](../campaign-management-service/uettag.md), so this property is not applicable for the [AppInstallGoal](../campaign-management-service/appinstallgoal.md), [InStoreTransactionGoal](../campaign-management-service/instoretransactiongoal.md), and [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). 

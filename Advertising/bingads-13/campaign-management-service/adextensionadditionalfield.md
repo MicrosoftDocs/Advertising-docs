@@ -19,6 +19,7 @@ Defines a list of optional ad extension properties that you can request when cal
         <xs:enumeration value="DisplayText" />
         <xs:enumeration value="Layouts" />
         <xs:enumeration value="ActionTypesPhase3" />
+        <xs:enumeration value="ActionTypesPhase4" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -27,11 +28,12 @@ Defines a list of optional ad extension properties that you can request when cal
 
 ## <a name="values"></a>Values
 
-The [AdExtensionAdditionalField](adextensionadditionalfield.md) value set has the following values: [ActionTypesPhase3](#actiontypesphase3), [DisplayText](#displaytext), [Images](#images), [Layouts](#layouts).
+The [AdExtensionAdditionalField](adextensionadditionalfield.md) value set has the following values: [ActionTypesPhase3](#actiontypesphase3), [ActionTypesPhase4](#actiontypesphase4), [DisplayText](#displaytext), [Images](#images), [Layouts](#layouts).
 
 |Value|Description|
 |-----------|---------------|
-|<a name="actiontypesphase3"></a>ActionTypesPhase3|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>If the action type that is stored in Microsoft Advertising is either [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [RenewNow](actionadextensionactiontype.md#renewnow) or [Reorder](actionadextensionactiontype.md#reorder), you must include ActionTypesPhase3 in the request.|
+|<a name="actiontypesphase3"></a>ActionTypesPhase3|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>For example, if the action type that is stored in Microsoft Advertising is [RenewNow](actionadextensionactiontype.md#renewnow) the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [RenewNow](actionadextensionactiontype.md#renewnow), you must include ActionTypesPhase3 in the request.|
+|<a name="actiontypesphase4"></a>ActionTypesPhase4|Request that the latest [ActionAdExtensionActionType](actionadextensionactiontype.md) values be included within each returned [ActionAdExtension](actionadextension.md#actiontype).<br/><br/>For example, if the action type that is stored in Microsoft Advertising is [BuildNow](actionadextensionactiontype.md#buildnow) the service returns [Unknown](actionadextensionactiontype.md#unknown) by default. To discover the stored action type e.g., [BuildNow](actionadextensionactiontype.md#buildnow), you must include ActionTypesPhase4 in the request.|
 |<a name="displaytext"></a>DisplayText|Request that the [DisplayText](imageadextension.md#displaytext) element be included within each returned [ImageAdExtension](imageadextension.md) object.|
 |<a name="images"></a>Images|Request that the [Images](imageadextension.md#images) element be included within each returned [ImageAdExtension](imageadextension.md) object.|
 |<a name="layouts"></a>Layouts|Request that the [Layouts](imageadextension.md#layouts) element be included within each returned [ImageAdExtension](imageadextension.md) object.|

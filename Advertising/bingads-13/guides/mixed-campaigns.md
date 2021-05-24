@@ -85,7 +85,7 @@ Supported entities and settings are restricted by ad group type.
 
 - If the ad group type is "SearchDynamic", then you can only add dynamic search ads. 
 - If the ad group type is "SearchStandard", then you can add expanded text ads or responsive search ads. 
-- In a Search campaign you can only apply [Webpage](../campaign-management-service/webpage.md) criterion to a "SearchDynamic" ad group. 
+- You can only apply [Webpage](../campaign-management-service/webpage.md) criterion to a "SearchDynamic" ad group. 
 
 Other settings such as location targets and remarketing lists can be applied regardless of the ad group type. 
 

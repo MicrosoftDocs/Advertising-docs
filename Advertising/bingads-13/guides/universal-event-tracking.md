@@ -77,9 +77,6 @@ Microsoft Advertising supports several audience types.
 #### <a name="combinedlist"></a>Combined List
 A combined list is an audience created from a combination of multiple existing audiences. 
 
-> [!NOTE]
-> Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).   
-
 You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list.  
 
 You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. Each list can include up to 100 combination rules or sets of logical conditions, and each combination rule can contain up to 100 audience IDs.
@@ -124,14 +121,12 @@ Once the integration has been completed, your custom audiences will appear in th
 A customer list is a set of customer contact information that you have compiled to enable customer match. 
 
 > [!NOTE]
-> Customer lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 579).   	
-> 	
 > Customer lists are available via the [Bulk API](#audience-bulk), but not yet available via the [Campaign Management API](#audience-campaign). 
 
 > [!IMPORTANT]
-> Before you can upload customer list data via Bulk API, you must first create one customer list audience and accept the terms and conditions in the Microsoft Advertising UI. The initial customer list doesn't need to contain any customer data, but you must click I ACCEPT. 
+> Before you can upload customer list data via Bulk API, you must first create one customer list audience and accept the terms and conditions in the Microsoft Advertising UI. The initial customer list doesn't need to contain any customer data, but you must select I ACCEPT. 
 > 
-> By clicking "I accept" you (1) agree that you are able to lawfully disclose audience details, which is personal data, to Microsoft and (2) accept the Customer Match Terms, the Microsoft Advertising Agreement, and the Microsoft Advertising policies. Microsoft will use the data that you upload in accordance with the [Customer Match Terms](https://go.microsoft.com/fwlink/?linkid=2106709).  
+> By selecting "I accept" you (1) agree that you are able to lawfully disclose audience details, which is personal data, to Microsoft and (2) accept the Customer Match Terms, the Microsoft Advertising Agreement, and the Microsoft Advertising policies. Microsoft will use the data that you upload in accordance with the [Customer Match Terms](https://go.microsoft.com/fwlink/?linkid=2106709).  
 
 Each list can include multiple Email items. 
 - Include the [Customer List](../bulk-service/customer-list.md) record in the Bulk upload file and set its [Action Type](../bulk-service/customer-list.md#actiontype) field to "Add", "Remove", or "Replace". 

@@ -44,17 +44,33 @@ Defines the name of account level properties.
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="AllowImageAutoRetrieve">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="AutoApplyRecommendations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [AccountPropertyName](accountpropertyname.md) value set has the following values: [AdClickParallelTracking](#adclickparalleltracking), [FinalUrlSuffix](#finalurlsuffix), [IncludeViewThroughConversions](#includeviewthroughconversions), [MSCLKIDAutoTaggingEnabled](#msclkidautotaggingenabled), [None](#none), [ProfileExpansionEnabled](#profileexpansionenabled), [TrackingUrlTemplate](#trackingurltemplate).
+The [AccountPropertyName](accountpropertyname.md) value set has the following values: [AdClickParallelTracking](#adclickparalleltracking), [AllowImageAutoRetrieve](#allowimageautoretrieve), [AutoApplyRecommendations](#autoapplyrecommendations), [FinalUrlSuffix](#finalurlsuffix), [IncludeViewThroughConversions](#includeviewthroughconversions), [MSCLKIDAutoTaggingEnabled](#msclkidautotaggingenabled), [None](#none), [ProfileExpansionEnabled](#profileexpansionenabled), [TrackingUrlTemplate](#trackingurltemplate).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="adclickparalleltracking"></a>AdClickParallelTracking|Used to get or set the property that determines whether you want to send customers directly to your final URL while click measurement runs in the background.<br/><br/>For more information see [AdClickParallelTracking](accountproperty.md#adclickparalleltracking).|
+|<a name="allowimageautoretrieve"></a>AllowImageAutoRetrieve|Used to get or set the property that determines whether Microsoft Advertising is allowed to use images from your domain to enhance your ads on the Microsoft Audience Network.<br/><br/>For more information see [AllowImageAutoRetrieve](accountproperty.md#allowimageautoretrieve).|
+|<a name="autoapplyrecommendations"></a>AutoApplyRecommendations|Used to get or set the property that determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.<br/><br/>For more information see [AutoApplyRecommendations](accountproperty.md#autoapplyrecommendations).|
 |<a name="finalurlsuffix"></a>FinalUrlSuffix|Used to get or set the account's Final URL Suffix.<br/><br/>For more information see [FinalUrlSuffix](accountproperty.md#finalurlsuffix).|
 |<a name="includeviewthroughconversions"></a>IncludeViewThroughConversions|Used to get or set the property that determines whether you want to include view-through conversions for campaigns in the account.<br/><br/>For more information see [IncludeViewThroughConversions](accountproperty.md#includeviewthroughconversions).|
 |<a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled|Used to get or set the property that determines whether MSCLKID auto-tagging is enabled for the account.<br/><br/>For more information see [MSCLKIDAutoTaggingEnabled](accountproperty.md#msclkidautotaggingenabled).|

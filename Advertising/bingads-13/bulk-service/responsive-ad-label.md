@@ -11,9 +11,6 @@ dev_langs:
 # Responsive Ad Label Record - Bulk
 Defines an association record between an [Responsive Ad](responsive-ad.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the responsive ad or label, use the [Responsive Ad](responsive-ad.md) or [Label](label.md) record.
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 You can download all *Responsive Ad Label* records in the account by including the [DownloadEntity](downloadentity.md) value of *ResponsiveAdLabels* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to an responsive ad if valid [Id](#id) and [Parent Id](#parentid) values are provided. 

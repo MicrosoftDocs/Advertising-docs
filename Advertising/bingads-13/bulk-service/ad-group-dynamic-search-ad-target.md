@@ -11,9 +11,7 @@ dev_langs:
 # Ad Group Dynamic Search Ad Target Record - Bulk
 Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.  
 
-The Ad Group Dynamic Search Ad Target record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
-- Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+The Ad Group Dynamic Search Ad Target record can only be created within search campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). The campaign's [Experiment Id](campaign.md#experimentid) must be set and the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic".  
 
 You can download all *Ad Group Dynamic Search Ad Target* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -184,7 +182,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.  
 
-- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
+- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
 - The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 250 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 

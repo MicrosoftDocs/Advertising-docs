@@ -25,6 +25,7 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
       <xs:sequence>
         <xs:element minOccurs="0" name="BusinessName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CallToAction" nillable="true" type="tns:CallToAction" />
+        <xs:element minOccurs="0" name="CallToActionLanguage" nillable="true" type="tns:LanguageName" />
         <xs:element minOccurs="0" name="Descriptions" nillable="true" type="tns:ArrayOfAssetLink" />
         <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Headlines" nillable="true" type="tns:ArrayOfAssetLink" />
@@ -54,12 +55,13 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
 
 ## <a name="elements"></a>Elements
 
-The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadline](#longheadline), [LongHeadlineString](#longheadlinestring), [Text](#text), [Videos](#videos).
+The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [CallToActionLanguage](#calltoactionlanguage), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadline](#longheadline), [LongHeadlineString](#longheadlinestring), [Text](#text), [Videos](#videos).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="businessname"></a>BusinessName|The name of the business.<br/><br/>Depending on your audience ad's placement, your business's name may appear in your ad.<br/><br/>The length of the string is limited to 25 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="calltoaction"></a>CallToAction|A brief, punchy reason for customers to click your ad right now.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[CallToAction](calltoaction.md)|
+|<a name="calltoactionlanguage"></a>CallToActionLanguage|Reserved.|[LanguageName](languagename.md)|
 |<a name="descriptions"></a>Descriptions|Reserved for future use.|[AssetLink](assetlink.md) array|
 |<a name="headline"></a>Headline|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 30 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="headlines"></a>Headlines|Reserved for future use.|[AssetLink](assetlink.md) array|
