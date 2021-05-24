@@ -269,9 +269,9 @@ The bid strategy type for how you want to manage your bids.
 The possible bid strategy type values are EnhancedCpc, ManualCpc, MaxClicks, MaxConversions, TargetCpa, TargetImpressionShare, and TargetRoas. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 > [!IMPORTANT]
-> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
+> As of April 2021, the manual CPC bid strategy can only be used with audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
 > 
-> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> As of April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
   
 If you use the "MaxClicks" bid strategy type, then you can optionally include the [Bid Strategy MaxCpc](#bidstrategymaxcpc) field.
 
@@ -359,9 +359,7 @@ The type of the campaign.
 The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*. 
 
 > [!IMPORTANT]
-> Beginning the 1st week of May 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](#campaigntype) set to "DynamicSearchAds". At this point you can still edit and read dynamic search ads campaigns.  
-> 
-> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
 
 **Add:** Optional. If not specified, then default value of *Search* is used. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  
@@ -394,7 +392,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.  
 
-- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
+- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
 - The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 250 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 

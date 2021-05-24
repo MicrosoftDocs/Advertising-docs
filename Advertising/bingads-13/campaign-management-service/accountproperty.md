@@ -44,6 +44,48 @@ If the [Name](#name) element is set to *AdClickParallelTracking*, then the retur
 > [!IMPORTANT]
 > Parallel tracking is required for all accounts created after May 31st, 2020. Until January 2021 you can enable and disable the feature for accounts created prior to June 1st, 2020 i.e., set the property to *true* or *false*. By the middle of January 2021 all accounts will be enabled for parallel tracking, and the value can only be set to *true*. 
 
+#### <a name="allowimageautoretrieve"></a>AllowImageAutoRetrieve
+Determines whether Microsoft Advertising is allowed to use images from your domain to enhance your ads on the Microsoft Audience Network.  
+
+> [!IMPORTANT]
+> By opting-in, you agree that any images or creative content retrieved from the Advertiser landing page is content "provided by" the Advertiser under the content usage license in the [Advertising Agreement](https://about.ads.microsoft.com/en-us/resources/policies/microsoft-advertising-agreement) (Section 2) and that the Advertiser agrees that Microsoft can use that content for auto-creating ads and extensions for them.
+
+If the [Name](#name) element is set to *AllowImageAutoRetrieve*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then the image auto-retrieve feature is enabled. 
+
+#### <a name="autoapplyrecommendations"></a>AutoApplyRecommendations
+Determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.  
+
+We'll let you know when suggested ads are ready for you to review. You can find ad recommendations on the Recommendations page. If you don't take action, we'll automatically apply them after the review period:
+
+- Multimedia ads: 7 days
+- All others: 14 days
+
+You can change your auto-apply options at any time. If you don't choose to auto-apply ad recommendations, you'll still be able to apply recommendations manually.
+
+If the [Name](#name) element is set to *AutoApplyRecommendations*, then the [Value](#value) can include a list of recommendation types. 
+
+Within the [Value](#value) element, the list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads. 
+
+```xml
+<SetAccountPropertiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v13">
+  <AccountProperties xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AccountProperty>
+      <Name>AutoApplyRecommendations</Name>
+      <Value>MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;</Value>
+    </AccountProperty>
+  </AccountProperties>
+</SetAccountPropertiesRequest>
+```
+
+The default key and value pairs are:
+- MultimediaAdsAutoApply=true;
+- ResponsiveSearchAdsAutoApply=false;
+
+If the value of a key is set to *true*, then the auto-apply feature is enabled for the recommendation type. 
+
+You can choose to set only the key and value pairs that you want to update. If no value is set for the update, this setting is not changed.  
+
+
 #### <a name="finalurlsuffix"></a>FinalUrlSuffix
 If the [Name](#name) element is set to *FinalUrlSuffix*, then the [Value](#value) represents your account's Final URL Suffix. 
 

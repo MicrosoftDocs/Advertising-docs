@@ -58,22 +58,18 @@ Your bid strategy setting tells Microsoft Advertising how you want to manage you
 
 The following campaign-level bid strategy types are available depending on the campaign type. For more information see the [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1) help article.
 
-> [!IMPORTANT]
-> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
-> 
-> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
-
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
-|[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[EnhancedCpc](#enhancedcpc)|Search<br/>Shopping|
 |[ManualCpc](#manualcpc)|Audience|
-|[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search<br/>Shopping|
-|[MaxConversions](#maxconversions)|DynamicSearchAds<br/>Search|
+|[ManualCpc](#manualcpv)|Audience|
+|[MaxClicks](#maxclicks)|Search<br/>Shopping|
+|[MaxConversions](#maxconversions)|Search|
 |[MaxConversionValue](#maxconversionvalue)|Shopping ([smart shopping](smart-shopping-campaigns.md))|
-|[TargetCpa](#targetcpa)|DynamicSearchAds<br/>Search|
-|[TargetRoas](#targetroas)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[TargetCpa](#targetcpa)|Search|
+|[TargetRoas](#targetroas)|Search<br/>Shopping|
 
-When you use the Bing Ads API, the default value for Search and DynamicSearchAds campaigns is [EnhancedCpc](#enhancedcpc). The default value for most Shopping campaigns is [EnhancedCpc](#enhancedcpc); however, the only supported bid strategy type for [smart shopping campaigns](smart-shopping-campaigns.md) is MaxConversionValue. The only supported value for Audience campaigns is [ManualCpc](#manualcpc).
+When you use the Bing Ads API, the default bid strategy for Search campaigns is [EnhancedCpc](#enhancedcpc). The default bid strategy for most Shopping campaigns is [EnhancedCpc](#enhancedcpc); however, the only supported bid strategy for [smart shopping campaigns](smart-shopping-campaigns.md) is MaxConversionValue. The default bid strategy for Audience campaigns is [ManualCpc](#manualcpc).  
 
 > [!IMPORTANT] 
 > With some bid strategy types, your bid and ad rotation settings are ignored and conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) is required. For more information including supported locations, see [Let Microsoft Advertising manage your bids with bid strategies](https://help.ads.microsoft.com/#apex/3/en/56786/1). 
@@ -86,10 +82,11 @@ Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with
 ### <a name="manualcpc"></a>ManualCpc
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
-> [!IMPORTANT]
-> Starting in April 2021, you can only set the manual CPC bid strategy for audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC. 
-> 
-> Also starting in April 2021, you cannot set any bid strategies for ad groups or keywords. Bid strategies can only be set at the campaign level. If you attempt to set bid strategies for ad groups or keywords, the request will be ignored without error. Ad groups and keywords will inherit their campaign's bid strategy. 
+> [!NOTE] 
+> As of April 2021, the manual CPC bid strategy can only be used with audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC.  
+
+### <a name="manualcpv"></a>ManualCpv
+With the ManualCpv (manual cost per view) bid strategy, you set the highest amount that you'd like to pay per view or per click on a video ad, and Microsoft Advertising uses these bids every time.  
 
 ### <a name="maxclicks"></a>MaxClicks
 With the MaxClicks bid strategy, you don't need to set ad group or keyword bids. Microsoft Advertising automatically sets your bids in real time to get as many clicks as possible within your budget.

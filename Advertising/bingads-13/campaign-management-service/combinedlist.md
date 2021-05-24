@@ -9,9 +9,6 @@ description: A combined list is an audience created from a combination of multip
 # CombinedList Data Object - Campaign Management
 A combined list is an audience created from a combination of multiple existing audiences. 
 
-> [!NOTE]
-> Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).  
-
 You can combine custom audiences, customer lists, product audiences, similar audiences, and remarketing lists. You cannot include other combined lists or in-market audiences in a combined list. 
 
 You can create a maximum of 1,000 combined lists per ad account, and up to 5,000 per customer. Each list can include up to 100 combination rules or sets of logical conditions, and each [CombinationRule](combinationrule.md) can contain up to 100 audience IDs. 

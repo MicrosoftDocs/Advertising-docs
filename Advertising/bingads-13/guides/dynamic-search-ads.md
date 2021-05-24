@@ -26,19 +26,15 @@ Dynamic search ads are most appropriate for two types of advertisers:
 For more information see the [Target searches automatically with dynamic search ads](https://help.ads.microsoft.com/#apex/3/en/56794/0) help documentation.
 
 ## <a name="bulk"></a>Bulk API for Dynamic Search Ads  
-The following Bulk records are available for managing dynamic search ads campaigns.
+The following Bulk records are available for managing dynamic search ads.
 * [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md)
 * [Ad Group Negative Dynamic Search Ad Target](../bulk-service/ad-group-negative-dynamic-search-ad-target.md)
 * [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md)
 * [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md)  
 
-Dynamic search ads can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](../bulk-service/campaign.md#domainlanguage), [Page Feed Ids](../bulk-service/campaign.md#pagefeedids), [Source](../bulk-service/campaign.md#source), and [Website](../bulk-service/campaign.md#website) fields).    
-- Dynamic search ads campaigns where [Campaign Type](../bulk-service/campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [CampaignType](../bulk-service/campaign.md#campaigntype) is set to "Search", if the [ExperimentId](../bulk-service/campaign.md#experimentid) element is not set, and if the [AdGroupType](../bulk-service/ad-group.md#adgrouptype) is set to "SearchDynamic". 
+Dynamic search ads can only be created within search campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](../bulk-service/campaign.md#domainlanguage), [Page Feed Ids](../bulk-service/campaign.md#pagefeedids), [Source](../bulk-service/campaign.md#source), and [Website](../bulk-service/campaign.md#website) fields). The campaign [ExperimentId](../bulk-service/campaign.md#experimentid) can't be set. 
 
-To get started with dynamic search ads, first you'll need to define a [Campaign](../bulk-service/campaign.md) record with the *Campaign Type* field set to *DynamicSearchAds*. When you create the campaign, you'll also need to specify the *Domain Language* and *Website* fields. 
-
-Next, define an [Ad Group](../bulk-service/ad-group.md) within the dynamic search ads campaign. You can add one or more [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) records for the parent ad group that helps determine whether or not to serve dynamic search ads. 
+Next, reate an [Ad Group](../bulk-service/ad-group.md) and set the [AdGroupType](../bulk-service/ad-group.md#adgrouptype) to "SearchDynamic". You can add one or more [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) records for each ad group that helps determine whether or not to serve dynamic search ads. 
 
 If you want to exclude certain portions of your website, you can add negative targets at the campaign and/or ad group level using the respective [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md) and [Ad Group Negative Dynamic Search Ad Target](../bulk-service/ad-group-negative-dynamic-search-ad-target.md) records. The [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md) at the campaign level applies to all ad groups within the campaign; however, if you define ad group level [Ad Group Negative Dynamic Search Ad Target](../bulk-service/ad-group-negative-dynamic-search-ad-target.md), the campaign target is ignored for that ad group. 
 
@@ -49,13 +45,9 @@ Finally you can define a [Dynamic Search Ad](../bulk-service/dynamic-search-ad.m
 
 ## <a name="campaign"></a>Campaign Management API for Dynamic Search Ads  
 
-Dynamic search ads can only be created within campaigns that have a [DynamicSearchAdsSetting](../campaign-management-service/dynamicsearchadssetting.md).  
-- Dynamic search ads campaigns where [CampaignType](../campaign-management-service/campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the account is in the [mixed campaigns](../guides/mixed-campaigns.md) feature pilot, if the [CampaignType](../campaign-management-service/campaign.md#campaigntype) is set to "Search", if the [ExperimentId](../campaign-management-service/campaign.md#experimentid) element is not set, and if the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) is set to "SearchDynamic".   
+Dynamic search ads can only be created within campaigns that have a [DynamicSearchAdsSetting](../campaign-management-service/dynamicsearchadssetting.md) that specifies the target website domain and language. The [ExperimentId](../campaign-management-service/campaign.md#experimentid) element can't be set.  
 
-To get started with dynamic search ads, first you'll need to [add](../campaign-management-service/addcampaigns.md) a new [Campaign](../campaign-management-service/campaign.md) with its type set to *DynamicSearchAds*. When you create the campaign, you'll need to include a [DynamicSearchAdsSetting](../campaign-management-service/dynamicsearchadssetting.md) that specifies the target website domain and language. The new *DynamicSearchAds* value is added to the [CampaignType](../campaign-management-service/campaigntype.md) value set. 
-
-Next, [create](../campaign-management-service/addadgroups.md) a new [AdGroup](../campaign-management-service/adgroup.md) within the dynamic search ads campaign. You can add one or more [Webpage](../campaign-management-service/webpage.md) criterion to each ad group that helps determine whether or not to serve dynamic search ads, by calling the [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md) operation. 
+Next, [create](../campaign-management-service/addadgroups.md) an [AdGroup](../campaign-management-service/adgroup.md) and set the [AdGroupType](../campaign-management-service/adgroup.md#adgrouptype) to "SearchDynamic". You can add one or more [Webpage](../campaign-management-service/webpage.md) criterion to each ad group that helps determine whether or not to serve dynamic search ads, by calling the [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md) operation. 
 
 If you want to exclude certain portions of your website, you can add negative [Webpage](../campaign-management-service/webpage.md) criterion at the campaign and/or ad group level using the respective [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) and [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md) service operations. The negative [Webpage](../campaign-management-service/webpage.md) criterion at the campaign level applies to all ad groups within the campaign; however, if you define ad group level negative [Webpage](../campaign-management-service/webpage.md) criterion, the campaign criterion is ignored for that ad group. 
 

@@ -11,9 +11,6 @@ dev_langs:
 # Combined List Record - Bulk
 Defines a combined list that can be downloaded and uploaded in a bulk file. 
 
-> [!NOTE]
-> Combined lists are available for customers in the feature pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 618).  
-
 A combined list is an audience created from a combination of multiple existing audiences. 
 
 > [!TIP]

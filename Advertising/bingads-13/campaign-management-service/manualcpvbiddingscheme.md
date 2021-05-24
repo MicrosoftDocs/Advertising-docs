@@ -4,10 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the ManualCpvBiddingScheme Data Object.
+description: Defines an object that represents the manual CPV bid strategy type.
 ---
 # ManualCpvBiddingScheme Data Object - Campaign Management
-Defines the ManualCpvBiddingScheme Data Object.
+Defines an object that represents the manual CPV bid strategy type.
+
+With the ManualCpv (manual cost per view) bid strategy, you set the highest amount that you'd like to pay per view or per click on a video ad, and Microsoft Advertising uses these bids every time.  
 
 ## Syntax
 ```xml
