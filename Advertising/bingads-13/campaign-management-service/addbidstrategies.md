@@ -17,7 +17,7 @@ Adds bid strategies to an account's portfolio bid strategy library.
 A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal. To include a campaign in the portfolio bid strategy, set the campaign's [BidStrategyId](campaign.md#bidstrategyid) to the bid strategy [Id](bidstrategy.md#id).  
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
 
 > [!NOTE]
 > As an alternative, you can set individual campaign level bid strategies using the [AddCampaigns](addcampaigns.md) and [UpdateCampaigns](updatecampaigns.md) operations.  

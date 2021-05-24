@@ -18,6 +18,18 @@ See below for information about changes to Bing Ads API Version 13 by month.
 
 [!INCLUDE[request-header](./includes/mfa-required.md)]
 
+
+
+## <a name="may2021"></a>May 2021
+
+See below for Bing Ads API updates during this calendar month.  
+
+- [Dynamic search ads](#dynamic-search-ads-may2021)  
+
+### <a name="dynamic-search-ads-may2021"></a>Dynamic search ads
+
+You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.
+
 ## <a name="april2021"></a>April 2021
 
 See below for Bing Ads API updates during this calendar month.  

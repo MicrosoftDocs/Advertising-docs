@@ -15,7 +15,7 @@ dev_langs:
 Deletes bid strategies from an account's portfolio bid strategy library.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
 
 ## <a name="request"></a>Request Elements
 The *DeleteBidStrategiesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

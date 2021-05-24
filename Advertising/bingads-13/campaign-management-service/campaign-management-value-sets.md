@@ -67,6 +67,7 @@ The Campaign Management service defines the following value sets.
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|
 |[KeywordStatus](keywordstatus.md)|Defines the possible status values of a keyword.|
+|[LanguageName](languagename.md)|Defines the set of supported ad languages.|
 |[LogicalOperator](logicaloperator.md)|Defines the supported set of logical operators for combined list audiences.|
 |[MatchType](matchtype.md)|Defines the possible match types for a keyword or negative keyword.|
 |[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|Defines the possible values representing entities that are enabled for media such as images.|

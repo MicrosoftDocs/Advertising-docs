@@ -17,7 +17,7 @@ Gets bid strategies in an account's portfolio bid strategy library.
 A portfolio bid strategy is an automated bidding feature that manages bidding across multiple campaigns that are all working toward the same goal. To include a campaign in the portfolio bid strategy, set the campaign's [BidStrategyId](campaign.md#bidstrategyid) to the bid strategy [Id](bidstrategy.md#id).  
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry—it's coming soon!
+> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
 
 ## <a name="request"></a>Request Elements
 The *GetBidStrategiesByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

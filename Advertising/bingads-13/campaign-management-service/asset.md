@@ -12,6 +12,7 @@ Defines the base object of an asset with a unique Microsoft Advertising identifi
 Do not try to instantiate an *Asset*. You can create one or more of the following objects that derive from it.
 - [ImageAsset](imageasset.md)
 - [TextAsset](textasset.md)
+- [VideoAsset](videoasset.md)
 
 ## Syntax
 ```xml

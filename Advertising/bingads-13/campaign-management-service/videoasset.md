@@ -15,15 +15,8 @@ Defines the VideoAsset Data Object.
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Asset">
       <xs:sequence>
-        <xs:element minOccurs="0" name="DefaultThumbnailUrl" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="DownloadUrl" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="DurationInMilliseconds" nillable="true" type="xs:int" />
-        <xs:element minOccurs="0" name="Height" nillable="true" type="xs:int" />
-        <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="SubType" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="ThumbnailImage" nillable="true" type="tns:ImageAsset" />
-        <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Width" nillable="true" type="xs:int" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -32,19 +25,12 @@ Defines the VideoAsset Data Object.
 
 ## <a name="elements"></a>Elements
 
-The [VideoAsset](videoasset.md) object has the following elements: [DefaultThumbnailUrl](#defaultthumbnailurl), [DownloadUrl](#downloadurl), [DurationInMilliseconds](#durationinmilliseconds), [Height](#height), [Status](#status), [SubType](#subtype), [ThumbnailImage](#thumbnailimage), [Url](#url), [Width](#width).
+The [VideoAsset](videoasset.md) object has the following elements: [SubType](#subtype), [ThumbnailImage](#thumbnailimage).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="defaultthumbnailurl"></a>DefaultThumbnailUrl|Reserved.|**string**|
-|<a name="downloadurl"></a>DownloadUrl|Reserved.|**string**|
-|<a name="durationinmilliseconds"></a>DurationInMilliseconds|Reserved.|**int**|
-|<a name="height"></a>Height|Reserved.|**int**|
-|<a name="status"></a>Status|Reserved.|**string**|
 |<a name="subtype"></a>SubType|Reserved.|**string**|
 |<a name="thumbnailimage"></a>ThumbnailImage|Reserved.|[ImageAsset](imageasset.md)|
-|<a name="url"></a>Url|Reserved.|**string**|
-|<a name="width"></a>Width|Reserved.|**int**|
 
 The [VideoAsset](videoasset.md) object has [Inherited Elements](#inheritedelements).
 
@@ -55,9 +41,9 @@ The [VideoAsset](videoasset.md) object derives from the [Asset](asset.md) object
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|Reserved.|**long**|
-|<a name="name"></a>Name|Reserved.|**string**|
-|<a name="type"></a>Type|Reserved.|**string**|
+|<a name="id"></a>Id|The unique Microsoft Advertising identifier for the asset in a Microsoft Advertising account.<br/><br/>The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Microsoft Advertising account.<br/><br/>**Add:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.<br/>**Update:** Read-only. Even if the asset already exists and you specify an invalid identifier, this value will be ignored.|**long**|
+|<a name="name"></a>Name|Reserved for future use.|**string**|
+|<a name="type"></a>Type|The type of the asset. This value is *VideoAsset* when you retrieve a video asset. For more information about asset types, see the [Asset Data Object Remarks](asset.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

@@ -553,7 +553,10 @@
       displayName: BulkAccountSitelinkAdExtension
     - name: Account Structured Snippet Ad Extension
       href: ../bulk-service/account-structured-snippet-ad-extension.md
-      displayName: BulkAccountStructuredSnippetAdExtension
+      displayName: BulkAccountVideoAdExtension
+    - name: Account Video Ad Extension
+      href: ../bulk-service/account-video-ad-extension.md
+      displayName: BulkAccountVideoAdExtension
     - name: Action Ad Extension
       href: ../bulk-service/action-ad-extension.md
       displayName: BulkActionAdExtension
@@ -701,6 +704,9 @@
     - name: Ad Group Structured Snippet Ad Extension
       href: ../bulk-service/ad-group-structured-snippet-ad-extension.md
       displayName: BulkAdGroupStructuredSnippetAdExtension
+    - name: Ad Group Video Ad Extension
+      href: ../bulk-service/ad-group-video-ad-extension.md
+      displayName: BulkAdGroupVideoAdExtension
     - name: App Ad Extension
       href: ../bulk-service/app-ad-extension.md
       displayName: BulkAppAdExtension
@@ -860,6 +866,9 @@
     - name: Campaign Structured Snippet Ad Extension
       href: ../bulk-service/campaign-structured-snippet-ad-extension.md
       displayName: BulkCampaignStructuredSnippetAdExtension
+    - name: Campaign Video Ad Extension
+      href: ../bulk-service/campaign-video-ad-extension.md
+      displayName: BulkCampaignVideoAdExtension
     - name: Combined List
       href: ../bulk-service/combined-list.md
       displayName: BulkCombinedList
@@ -988,6 +997,12 @@
     - name: Text Ad Label
       href: ../bulk-service/text-ad-label.md
       displayName: BulkTextAdLabel
+    - name: Video
+      href: ../bulk-service/video.md
+      displayName: BulkVideo
+    - name: Video Ad Extension
+      href: ../bulk-service/video-ad-extension.md
+      displayName: BulkVideoAdExtension
 - name: Campaign Management API
   items: 
   - name: Overview
@@ -1766,6 +1781,8 @@
       href: ../campaign-management-service/keywordeditorialstatus.md
     - name: KeywordStatus
       href: ../campaign-management-service/keywordstatus.md
+    - name: LanguageName
+      href: ../campaign-management-service/languagename.md
     - name: LogicalOperator
       href: ../campaign-management-service/logicaloperator.md
     - name: MatchType

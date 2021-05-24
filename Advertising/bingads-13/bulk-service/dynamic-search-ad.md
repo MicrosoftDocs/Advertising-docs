@@ -16,14 +16,10 @@ With dynamic search ads, the headline and display URL are generated automaticall
 > [!NOTE]
 > This feature is currently available in the following countries: Australia (AU), Austria (AT), Belgium (BE), Canada (CA), Denmark (DK), Finland (FI), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Norway (NO), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US).  
 
-The Dynamic Search Ad record can only be created within campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields).    
-- Dynamic search ads campaigns where [Campaign Type](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the [Campaign Type](campaign.md#campaigntype) is set to "Search", if the [Experiment Id](campaign.md#experimentid) element is not set, and if the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic". 
+The Dynamic Search Ad record can only be created within search campaigns that have valid dynamic search ads settings (comprised of the [Domain Language](campaign.md#domainlanguage), [Page Feed Ids](campaign.md#pagefeedids), [Source](campaign.md#source), and [Website](campaign.md#website) fields). The campaign's [Experiment Id](campaign.md#experimentid) must be set and the [Ad Group Type](ad-group.md#adgrouptype) must be set to "SearchDynamic".  
 
 > [!IMPORTANT]
-> Beginning the 1st week of May 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](campaign.md#campaigntype) set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
-> 
-> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
 
 You can download all *Dynamic Search Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *DynamicSearchAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
@@ -155,7 +151,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Microsoft Advertising will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.  
 
-- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
+- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
 - The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 250 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 

@@ -125,8 +125,8 @@ The Campaign Management service defines the following data objects.
 |[LocationCriterion](locationcriterion.md)|Defines a criterion that can be used to show ads to users in a specific location.|
 |[LocationIntentCriterion](locationintentcriterion.md)|Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group.|
 |[ManualCpcBiddingScheme](manualcpcbiddingscheme.md)|Defines an object that represents the manual CPC bid strategy type.|
-|[ManualCpmBiddingScheme](manualcpmbiddingscheme.md)|Defines the ManualCpmBiddingScheme Data Object.|
-|[ManualCpvBiddingScheme](manualcpvbiddingscheme.md)|Defines the ManualCpvBiddingScheme Data Object.|
+|[ManualCpmBiddingScheme](manualcpmbiddingscheme.md)|Defines an object that represents the manual CPM bid strategy type.|
+|[ManualCpvBiddingScheme](manualcpvbiddingscheme.md)|Defines an object that represents the manual CPV bid strategy type.|
 |[MaxClicksBiddingScheme](maxclicksbiddingscheme.md)|Defines an object that represents the maximum clicks bid strategy type.|
 |[MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)|Defines an object that represents the maximum conversions bid strategy type.|
 |[MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md)|Defines an object that represents the maximum conversion value bid strategy type.|

@@ -43,6 +43,13 @@ Defines a list of optional import properties that you can request when calling [
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
+        <xs:enumeration value="SearchAndReplaceForCustomParameters">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -51,7 +58,7 @@ Defines a list of optional import properties that you can request when calling [
 
 ## <a name="values"></a>Values
 
-The [ImportAdditionalField](importadditionalfield.md) value set has the following values: [ActiveAdGroupsOnly](#activeadgroupsonly), [AutoDeviceBidOptimization](#autodevicebidoptimization), [None](#none), [NotificationEmail](#notificationemail).
+The [ImportAdditionalField](importadditionalfield.md) value set has the following values: [ActiveAdGroupsOnly](#activeadgroupsonly), [AutoDeviceBidOptimization](#autodevicebidoptimization), [None](#none), [NotificationEmail](#notificationemail), [SearchAndReplaceForCustomParameters](#searchandreplaceforcustomparameters).
 
 |Value|Description|
 |-----------|---------------|
@@ -59,6 +66,7 @@ The [ImportAdditionalField](importadditionalfield.md) value set has the followin
 |<a name="autodevicebidoptimization"></a>AutoDeviceBidOptimization|Request that the [AutoDeviceBidOptimization](googleimportoption.md#autodevicebidoptimization) element be included within each returned [GoogleImportOption](googleimportoption.md) object.|
 |<a name="none"></a>None|Reserved for internal use.|
 |<a name="notificationemail"></a>NotificationEmail|Request that the [NotificationEmail](googleimportjob.md#notificationemail) element be included within each returned [GoogleImportJob](googleimportjob.md) object.|
+|<a name="searchandreplaceforcustomparameters"></a>SearchAndReplaceForCustomParameters|Request that the [SearchAndReplaceForCustomParameters](googleimportoption.md#searchandreplaceforcustomparameters) element be included within each returned [GoogleImportOption](googleimportoption.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

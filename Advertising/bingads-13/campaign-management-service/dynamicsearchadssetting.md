@@ -9,14 +9,10 @@ description: Defines the Dynamic Search Ads setting for a campaign.
 # DynamicSearchAdsSetting Data Object - Campaign Management
 Defines the Dynamic Search Ads setting for a campaign.  
 
-A dynamic search ads setting can only be created within certain campaign types.  
-- Dynamic search ads campaigns where [CampaignType](campaign.md#campaigntype) is set to "DynamicSearchAds". 
-- Search campaigns if the [CampaignType](campaign.md#campaigntype) is set to "Search", and if the [ExperimentId](campaign.md#experimentid) element is not set.   
+A dynamic search ads setting can only be created within search campaigns. The campaign's [ExperimentId](campaign.md#experimentid) element can't be set and the [AdGroupType](adgroup.md#adgrouptype) must be set to "SearchDynamic".  
 
-> [!IMPORTANT]
-> Beginning the 1st week of May 2021, Bing Ads API clients will not be allowed to add new campaigns with the [campaign type](campaign.md#campaigntype) set to "DynamicSearchAds". You can still edit and read dynamic search ads campaigns.  
-> 
-> Shortly after the dynamic search ads campaign creation calls began to fail, the campaign type for all dynamic search ads campaigns will be updated from "DynamicSearchAds" to "Search." Both "SearchDynamic" and "SearchStandard" ad groups will be allowed for these campaigns as described in the [mixed campaigns](../guides/mixed-campaigns.md) guide. We anticipate that it could take a couple of weeks to convert dynamic search ads campaigns to search campaigns across all accounts.  
+> [!NOTE]
+> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
 
 ## Syntax
 ```xml

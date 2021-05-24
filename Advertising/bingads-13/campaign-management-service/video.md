@@ -9,6 +9,9 @@ description: Defines the Video Data Object.
 # Video Data Object - Campaign Management
 Defines the Video Data Object.
 
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
+
 ## Syntax
 ```xml
 <xs:complexType name="Video" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -23,13 +26,14 @@ Defines the Video Data Object.
     <xs:element minOccurs="0" name="SourceUrl" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ThumbnailUrl" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```
 
 ## <a name="elements"></a>Elements
 
-The [Video](video.md) object has the following elements: [AspectRatio](#aspectratio), [CreatedDateTimeInUTC](#createddatetimeinutc), [Description](#description), [DurationInMilliseconds](#durationinmilliseconds), [FailureCode](#failurecode), [Id](#id), [ModifiedDateTimeInUTC](#modifieddatetimeinutc), [SourceUrl](#sourceurl), [Status](#status), [ThumbnailUrl](#thumbnailurl).
+The [Video](video.md) object has the following elements: [AspectRatio](#aspectratio), [CreatedDateTimeInUTC](#createddatetimeinutc), [Description](#description), [DurationInMilliseconds](#durationinmilliseconds), [FailureCode](#failurecode), [Id](#id), [ModifiedDateTimeInUTC](#modifieddatetimeinutc), [SourceUrl](#sourceurl), [Status](#status), [ThumbnailUrl](#thumbnailurl), [Url](#url).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -43,6 +47,7 @@ The [Video](video.md) object has the following elements: [AspectRatio](#aspectra
 |<a name="sourceurl"></a>SourceUrl|Reserved.|**string**|
 |<a name="status"></a>Status|Reserved.|**string**|
 |<a name="thumbnailurl"></a>ThumbnailUrl|Reserved.|**string**|
+|<a name="url"></a>Url|Reserved.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  
