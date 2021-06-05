@@ -39,6 +39,13 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
         </xs:element>
         <xs:element minOccurs="0" name="LongHeadline" nillable="true" type="tns:AssetLink" />
         <xs:element minOccurs="0" name="LongHeadlineString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LongHeadlines" nillable="true" type="tns:ArrayOfAssetLink">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Videos" nillable="true" type="tns:ArrayOfAssetLink">
           <xs:annotation>
@@ -55,7 +62,7 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
 
 ## <a name="elements"></a>Elements
 
-The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [CallToActionLanguage](#calltoactionlanguage), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadline](#longheadline), [LongHeadlineString](#longheadlinestring), [Text](#text), [Videos](#videos).
+The [ResponsiveAd](responsivead.md) object has the following elements: [BusinessName](#businessname), [CallToAction](#calltoaction), [CallToActionLanguage](#calltoactionlanguage), [Descriptions](#descriptions), [Headline](#headline), [Headlines](#headlines), [Images](#images), [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadline](#longheadline), [LongHeadlines](#longheadlines), [LongHeadlineString](#longheadlinestring), [Text](#text), [Videos](#videos).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -68,6 +75,7 @@ The [ResponsiveAd](responsivead.md) object has the following elements: [Business
 |<a name="images"></a>Images|Image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.<br/><br/>Include one or more [AssetLink](assetlink.md) objects that each contain an [ImageAsset](imageasset.md) with [SubType](imageasset.md#subtype) and crop settings that match the desired aspect ratio. For more information see the [remarks](#remarks) below.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. If you include images during update, any previously set images will be replaced.|[AssetLink](assetlink.md) array|
 |<a name="impressiontrackingurls"></a>ImpressionTrackingUrls|The URLs for 1x1 impression tracking pixels. Each pixel will report Microsoft Audience Network impressions to your third-party ad reporting tool.<br/><br/>You can include up to 2 impression tracking URLs for each responsive ad.<br/><br/>Each URL must be accessible. The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.<br/><br/>For each Microsoft Audience Network impression, Microsoft will ping the URL to enable impression tracking in your third party ad reporting tool. Advanced-level user tracking such as conversion tracking or tracking based on cookies or IP addresses is not supported.<br/><br/>This element is not returned by default. To get this element, include the ImpressionTrackingUrls value in the ReturnAdditionalFields element when you call the [GetAdsByAdGroupId](getadsbyadgroupid.md#returnadditionalfields), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md#returnadditionalfields), and [GetAdsByIds](getadsbyids.md#returnadditionalfields) service operations.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed. To remove impression tracking URLs set this element to an empty string array.|**string** array|
 |<a name="longheadline"></a>LongHeadline|Reserved for future use.|[AssetLink](assetlink.md)|
+|<a name="longheadlines"></a>LongHeadlines|Reserved.|[AssetLink](assetlink.md) array|
 |<a name="longheadlinestring"></a>LongHeadlineString|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="text"></a>Text|Depending on your audience ad's placement, this text will appear below or adjacent to your ad's long or short headline.<br/><br/>You have more character space to work with in the ad text than in the headline. So once the imagery and headline have a potential customer's attention, the ad text needs to convince them to click it. What sets your product or service apart?<br/><br/>The text must contain at least one word.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>The text cannot contain the newline (\n) character.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 |<a name="videos"></a>Videos|Reserved.|[AssetLink](assetlink.md) array|

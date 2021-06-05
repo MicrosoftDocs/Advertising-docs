@@ -1652,6 +1652,10 @@
       href: ../campaign-management-service/uettag.md
     - name: UrlGoal
       href: ../campaign-management-service/urlgoal.md
+    - name: VerifiedTrackingSetting
+      href: ../campaign-management-service/verifiedtrackingsetting.md
+    - name: VerifiedTrackingSettingDetail
+      href: ../campaign-management-service/verifiedtrackingsettingdetail.md
     - name: Video
       href: ../campaign-management-service/video.md
     - name: VideoAdExtension
@@ -1713,6 +1717,8 @@
       href: ../campaign-management-service/assetlinkeditorialstatus.md
     - name: AssociationType
       href: ../campaign-management-service/associationtype.md
+    - name: AudienceAdditionalField
+      href: ../campaign-management-service/audienceadditionalfield.md
     - name: AudienceType
       href: ../campaign-management-service/audiencetype.md
     - name: BidOption
@@ -1795,6 +1801,8 @@
       href: ../campaign-management-service/minute.md
     - name: Network
       href: ../campaign-management-service/network.md
+    - name: NormalForm
+      href: ../campaign-management-service/normalform.md
     - name: NumberOperator
       href: ../campaign-management-service/numberoperator.md
     - name: PriceExtensionType

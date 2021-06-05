@@ -213,9 +213,24 @@ For example let's say that the following custom events are set as a logical expr
 Evaluation of the logical expression determines who will be added to the remarketing list.  
 
 ### <a name="PageVisitors"></a>PageVisitors Rule Template
-For the *PageVisitors* rule, you must include one or more rule item groups. With each rule item group, the rule item conditions for the same page are joined using the logical *AND* operator. Then, each result from the list of rule item groups are joined using the logical *OR* operator. In other words the user will be added to your remarketing list if all of the specified rule item conditions within any one of the rule item groups are met.
+For the *PageVisitors* rule, you must include one or more rule item groups. 
 
-For example let's say that the following rule item groups are set as a logical expression in the bulk file:
+> [!IMPORTANT]
+> We are introducing support for conjunctive normal form (CNF). Not everyone has this feature yet. Previously Microsoft Advertising only supported disjunctive normal form (DNF). The default normal form for a new page visitors rule remains DNF. However, you must ensure that your application can appropriately read and distinguish between CNF and DNF. Your application should no longer assume that the rule is disjunctive.  
+
+If the normal form is conjunctive (CNF), the rule item conditions for the same page are first joined using the logical *OR* operator. Then, each result from the list of rule item groups are joined using the logical *AND* operator. In other words the user will be added to your remarketing list if any of the specified rule item conditions within all of the rule item groups are met.
+
+- Rule 1 AND Rule 2
+- (Rule 1 OR Rule 2) AND Rule 3
+- (Rule 1 OR Rule 2) AND (Rule 3 OR Rule 4)
+
+If the normal form is disjunctive (DNF), the rule item conditions for the same page are first joined using the logical *AND* operator. Then, each result from the list of rule item groups are joined using the logical *OR* operator. In other words the user will be added to your remarketing list if all of the specified rule item conditions within any one of the rule item groups are met.
+
+- Rule 1 OR Rule 2
+- (Rule 1 AND Rule 2) OR Rule 3
+- (Rule 1 AND Rule 2) OR (Rule 3 AND Rule 4)
+
+For an example of DNF evaluation, let's say that the following rule item groups are set as a logical expression in the bulk file:
 
 *PageVisitors((Url Contains X) and (ReferrerUrl DoesNotContain Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))*
 

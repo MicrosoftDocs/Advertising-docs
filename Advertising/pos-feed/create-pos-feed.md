@@ -156,11 +156,11 @@ The following are the possible case-sensitive dynamic variable names that you ma
 |BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>PropertyPromotionAd&mdash;The ad originated from the first results page shown in a maps search.</li><li>unknown&mdash;The ad originated from an undetermined source.</li><li>verification&mdash;Bing uses this value when performing data quality tests on your site. You are not billed for these queries. Bing Analytics uses this parameter and its value for identifying Hotel Ads verification traffic.</li></ul>
 |CHECKINDAY|The two-digit day specified in the `Checkin` element of the [Transaction Message](../transaction-message/reference.md#transaction). For example, 20.
 |CHECKINDAY-OF-WEEK|The day of the week that the check-in takes place. Bing uses digits 0 through 6 to represent Monday through Sunday. For example, 1 is Tuesday.
-|CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction message. For example, 06.
-|CHECKINYEAR|The four-digit year specified in the `Checkin` element of the Transaction message. For example, 2017.
+|CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction message. Bing uses digits 00 through 11 to represent January through December. For example, 05 is June.
+|CHECKINYEAR|The four-digit year specified in the `Checkin` element of the Transaction message. For example, 2021.
 |CHECKOUTDAY|The two-digit day that the user checks out. Bing uses the `Nights` and `Checkin` elements of the TransactionMessage to calculate the day. For example, 23.
 |CHECKOUTMONTH|The two-digit month that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the month. For example, 07.
-|CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction message to calculate the year. For example, 2017.
+|CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction message to calculate the year. For example, 2021.
 |CLICK-TYPE|Indicates whether the user clicked on a hotel ad or a room bundle ad. The following are the possible values.<ul><li>hotel&mdash;The user clicked on a hotel ad.</li><li>room&mdash;The user clicked on a room bundle ad.</li></ul> **NOTE:** Bing does not support the room option.
 |CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the [Result](../transaction-message/reference.md#result-type) element of the Transaction message.
 |DATE-TYPE|Indicates whether the user specified check-in and check-out dates. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specific check-in and check-out dates.</li></ul>
@@ -191,9 +191,9 @@ The following shows an example URL that contains dynamic query parameters and en
   &amp;checkinYear=(CHECKINYEAR)&amp;nights=(LENGTH)</URL>
 ```
 
-Before Bing uses the URL in the ad, it substitutes values for the dynamic variable names. For example, if the user books a room for 6 nights starting on 6/7/2017 for hotel #42, Bing renders the URL as:
+Before Bing uses the URL in the ad, it substitutes values for the dynamic variable names. For example, if the user books a room for 6 nights starting on 6/7/2021 for hotel #42, Bing renders the URL as:
 
-`http://www.partnerdomain.com?hotelID=42&checkinDay=07&checkinMonth=06&checkinYear=2016&nights=6`
+`http://www.partnerdomain.com?hotelID=42&checkinDay=07&checkinMonth=05&checkinYear=2021&nights=6`
 
 Bing gets values for the dynamic parameters from your Transaction Message and Hotel Feed, as well as user-specific settings. For example, the value of the LENGTH variable comes from the `Nights` element in the Transaction Message, and the value of the PARTNER-HOTEL-ID variable comes from the `id` element in the Hotel Feed.
 
@@ -242,13 +242,13 @@ For example, the following URL sets the popup_datepicker query parameter to **tr
 If **true**, Bing renders the URL as:
 
 ```
-http://partner.com?hotelID=123&checkinDay=01&checkinMonth=07&checkinYear=2017&nights=1&popup_datepicker=true
+http://partner.com?hotelID=123&checkinDay=01&checkinMonth=05&checkinYear=2021&nights=1&popup_datepicker=true
 ```
 
 Otherwise, Bing renders the URL as:
 
 ```
-http://partner.com?hotelID=123&checkinDay=23&checkinMonth=07&checkinYear=2017&nights=2&popup_datepicker=false
+http://partner.com?hotelID=123&checkinDay=23&checkinMonth=05&checkinYear=2021&nights=2&popup_datepicker=false
 ```
 
 ## General rules
