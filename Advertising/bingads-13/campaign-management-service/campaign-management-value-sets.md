@@ -33,6 +33,7 @@ The Campaign Management service defines the following value sets.
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial issue is appealable.|
 |[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Defines the editorial review status values of a linked asset.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
+|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional audience properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
 |[BMCStoreAdditionalField](bmcstoreadditionalfield.md)|Defines a list of optional store properties that you can request when calling [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md).|
@@ -74,6 +75,7 @@ The Campaign Management service defines the following value sets.
 |[MigrationStatus](migrationstatus.md)|Defines the possible migration status values.|
 |[Minute](minute.md)|Defines the possible minute values for ad extension scheduling or day and time criterion.|
 |[Network](network.md)|Defines the possible search networks on which an ad can display.|
+|[NormalForm](normalform.md)|Defines the possible normal form types.|
 |[NumberOperator](numberoperator.md)|Defines the operators that can be applied to remarketing list rule item number values.|
 |[PriceExtensionType](priceextensiontype.md)|Defines the possible types of price ad extensions.|
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|

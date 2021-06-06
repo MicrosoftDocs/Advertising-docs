@@ -142,9 +142,6 @@ Because the search engine can vary its algorithms to expand queries to find broa
 
 To reduce the chance of irrelevant ads being served to users and the quality score of those ads being affected due to low CTR, you can add any irrelevant queries to your list of negative keywords. To determine the irrelevant queries, see the [Report Types](report-types.md).
 
-You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on "Hawaii hotels", your ad could be served for the search queries, "Hawaii beach hotels" and "Hawaii rentals." However, if you changed the keyword to "+Hawaii +hotel", the keyword would match only "Hawaii beach hotels."
-
-If you include the broad match modifier on a keyword that specifies a phrase or exact match-type bid, the plus sign will be treated as part of the keyword and not as a modifier.
 
 ### <a name="deliveredmatchtypes"></a>Bid and Delivered Match Types
 You should set the ad group *Search Bid* that will be used as the default bid for *Exact*, *Phrase*, and *Broad* match types. You can then override the default by setting individual keyword level match types. Generally, the more precise you require the match to be, the higher conversion rates tend to be while impressions tend to decrease. Finding the right balance between conversions and impressions can help maximize the return on investment (ROI) of your campaign. If you're not sure which match type to use, we suggest starting with broad match. You can then use keyword performance reports over time to see which keywords lead to ad clicks and optimize your keyword list.
