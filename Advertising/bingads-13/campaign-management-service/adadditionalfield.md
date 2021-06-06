@@ -17,6 +17,7 @@ Defines a list of optional ad properties that you can request when calling [GetA
       <xs:restriction base="xs:string">
         <xs:enumeration value="ImpressionTrackingUrls" />
         <xs:enumeration value="Videos" />
+        <xs:enumeration value="LongHeadlines" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -25,12 +26,13 @@ Defines a list of optional ad properties that you can request when calling [GetA
 
 ## <a name="values"></a>Values
 
-The [AdAdditionalField](adadditionalfield.md) value set has the following values: [ImpressionTrackingUrls](#impressiontrackingurls), [Videos](#videos).
+The [AdAdditionalField](adadditionalfield.md) value set has the following values: [ImpressionTrackingUrls](#impressiontrackingurls), [LongHeadlines](#longheadlines), [Videos](#videos).
 
 |Value|Description|
 |-----------|---------------|
 |<a name="impressiontrackingurls"></a>ImpressionTrackingUrls|Request that the [ImpressionTrackingUrls](responsivead.md#impressiontrackingurls) element be included within each returned [ResponsiveAd](responsivead.md) object.|
-|<a name="videos"></a>Videos|Reserved.|
+|<a name="longheadlines"></a>LongHeadlines|Request that the [LongHeadlines](responsivead.md#longheadlines) element be included within each returned [ResponsiveAd](responsivead.md) object.|
+|<a name="videos"></a>Videos|Request that the [Videos](responsivead.md#videos) element be included within each returned [ResponsiveAd](responsivead.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

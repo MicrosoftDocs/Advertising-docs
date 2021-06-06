@@ -18,7 +18,33 @@ See below for information about changes to Bing Ads API Version 13 by month.
 
 [!INCLUDE[request-header](./includes/mfa-required.md)]
 
+### <a name="page-visitors-normal-form"></a>Page visitors rule normal form expansion
 
+If you already use **page visitors rules** for remarketing lists, please read this article for required changes depending on your application.  
+
+Remarketing rules are conditions used to determine who to add to your remarketing list. You can create rules for custom events, page visitors, page visitors who did not visit another page, and page visitors who visited another page.  
+
+For the page visitors rule, previously Microsoft Advertising only supported disjunctive normal form (DNF). First, in each rule item group the rule item conditions for the same page are joined using the logical AND operator. Then, each result from the list of rule item groups are joined using the logical OR operator. In other words, the user will be added to your remarketing list if all of the specified rule item conditions are met within any of the rule item groups.
+
+- Rule 1 OR Rule 2
+- (Rule 1 AND Rule 2) OR Rule 3
+- (Rule 1 AND Rule 2) OR (Rule 3 AND Rule 4)
+
+For pilot customers we are introducing support for conjunctive normal form (CNF). First, in each rule item group the rule item conditions for the same page are joined using the logical OR operator. Then, each result from the list of rule item groups are joined using the logical AND operator. In other words, the user will be added to your remarketing list if any of the specified rule item conditions within all of the rule item groups are met.
+
+- Rule 1 AND Rule 2
+- (Rule 1 OR Rule 2) AND Rule 3
+- (Rule 1 OR Rule 2) AND (Rule 3 OR Rule 4)
+
+The addition is applicable only for the PageVisitorsRule and does not include CustomEventsRule, PageVisitorsWhoDidNotVisitAnotherPageRule, or PageVisitorsWhoVisitedAnotherPageRule.  
+
+> [!IMPORTANT]
+> The default normal form for a new page visitors rule remains DNF. However, you must ensure that your application can appropriately read and distinguish between CNF and DNF. Your application should no longer assume that the rule is disjunctive.  
+
+For more information about how to get and set the new normal form property, see the reference documentation.
+
+- Campaign Management API: The [NormalForm](../campaign-management-service/pagevisitorsrule.md#normalform) element of PageVisitorsRule can be set to Conjunctive or Disjunctive.
+- Bulk API: Continue using the [Remarketing Rule](../bulk-service/remarketing-list.md#remarketingrule) column in the bulk file. For upload, you can choose to format the string as CNF or DNF. For download, your application must read the string in the same column and distinguish between CNF and DNF.  
 
 ## <a name="may2021"></a>May 2021
 

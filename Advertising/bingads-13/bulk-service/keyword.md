@@ -327,8 +327,6 @@ The text can contain a maximum of 100 characters.
 
 You should specify the keyword in the locale of the Language value that you specified for the ad group to which the keyword belongs.
 
-If the *Match Type* is Broad, your application should handle broad match modifiers. Broad match modified keywords can be modified or prefixed with a plus sign (+), to require that specific terms in your keyword be present in the search query. In the download file, broad match modified terms are preceded by an extra space character. For example if the keyword text is "+Hawaii +hotel", the text included in the bulk download file is " +Hawaii +hotel". For bulk upload you may specify the keyword with or without the preceding space. For more information about broad match modifiers, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
-
 **Add:** Required  
 **Update:** Read-only    
 **Delete:** Read-only

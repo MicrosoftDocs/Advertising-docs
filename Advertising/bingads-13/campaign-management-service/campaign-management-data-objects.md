@@ -189,6 +189,8 @@ The Campaign Management service defines the following data objects.
 |[TextAsset](textasset.md)|A text asset with a unique Microsoft Advertising identifier that can be reused across multiple ads.|
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Microsoft Advertising to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
+|[VerifiedTrackingSetting](verifiedtrackingsetting.md)|Defines the VerifiedTrackingSetting Data Object.|
+|[VerifiedTrackingSettingDetail](verifiedtrackingsettingdetail.md)|Defines the VerifiedTrackingSettingDetail Data Object.|
 |[Video](video.md)|Defines the Video Data Object.|
 |[VideoAdExtension](videoadextension.md)|Defines the VideoAdExtension Data Object.|
 |[VideoAsset](videoasset.md)|Defines the VideoAsset Data Object.|
