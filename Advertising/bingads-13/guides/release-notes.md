@@ -69,7 +69,7 @@ For more information, see our API documentation about [conversion goal categorie
 
 See below for Bing Ads API updates during this calendar month.  
 
-- [Dynamic search ads](#assetperformancelabel-june2021)  
+- [Asset performance label for RSA](#assetperformancelabel-june2021)  
 
 ### <a name="assetperformancelabel-june2021"></a>Asset performance label for RSA
 
