@@ -20,7 +20,7 @@ See below for information about changes to Bing Ads API Version 13 by month.
 
 ### <a name="page-visitors-normal-form"></a>Page visitors rule normal form expansion
 
-If you already use **page visitors rules** for remarketing lists, please read this article for required changes depending on your application.  
+If you already use **page visitors rules** for remarketing lists, please read this section about required changes.  
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. You can create rules for custom events, page visitors, page visitors who did not visit another page, and page visitors who visited another page.  
 
@@ -46,6 +46,49 @@ For more information about how to get and set the new normal form property, see 
 - Campaign Management API: The [NormalForm](../campaign-management-service/pagevisitorsrule.md#normalform) element of PageVisitorsRule can be set to Conjunctive or Disjunctive.
 - Bulk API: Continue using the [Remarketing Rule](../bulk-service/remarketing-list.md#remarketingrule) column in the bulk file. For upload, you can choose to format the string as CNF or DNF. For download, your application must read the string in the same column and distinguish between CNF and DNF.  
 
+### <a name="conversion-goal-categories"></a>Required conversion goal categories
+
+If you already use conversion goals, please read this section about required changes.  
+
+You can categorize your conversion goals however makes sense for your business. Goal categories don't affect performance - they are here to help you segment your goals and their performance metrics.
+
+Previously Bing Ads API did not require conversion goal categories. Depending on the goal type the default category is set to Download, None, Other, or Purchase.  
+
+Now (as of June 2021) when you add or update the custom event, offline conversion, or URL goals you must set a goal category or the Campaign Management service will return an error. There are no changes to the default category of other goal types as shown in the table.
+
+|Goal type|Default before|Default after|
+|-----------|---------------|---------------|
+|EventGoal<br/>OfflineConversionGoal<br/>UrlGoal|None|No default; Service returns an error|
+|DurationGoal<br/>PagesViewedPerVisitGoal|Other|Other|
+|InStoreTransactionGoal|Purchase|Purchase|
+|AppInstallGoal|Download|Download|
+
+For more information, see our API documentation about [conversion goal categories](../campaign-management-service/conversiongoalcategory.md).  
+
+## <a name="june2021"></a>June 2021
+
+See below for Bing Ads API updates during this calendar month.  
+
+- [Dynamic search ads](#assetperformancelabel-june2021)  
+
+### <a name="assetperformancelabel-june2021"></a>Asset performance label for RSA
+
+The asset performance label is available as a read-only attribute when you get or download the responsive search ad.  
+
+This lets you know how well the headline and description assets you set up for your responsive search ads are performing.
+
+Possible values are described in the table below.  
+
+|Value|Description|
+|-----------|---------------|
+|Low|This asset's performance is low and we recommend you replace this asset to improve your ad performance.|
+|Good|This asset is performing well. We recommend you keep this asset and add more assets to improve your ad performance.|
+|Best|This asset's performance is among the best and we recommend that you add more similar assets.|
+|Unrated|We don't have any performance rating for this asset. This can be due to the asset being inactive, not having enough information to determine its performance, or if there aren't enough similar assets to compare against it.|
+|Learning|The asset's performance is being actively evaluated. Once the evaluation is complete, the asset rating will be Low, Good, Best, or Unrated.|
+
+For more details, see the [Responsive Search Ad](../bulk-service/responsive-search-ad.md) record (Bulk API) and [AssetLink](../campaign-management-service/assetlink.md#assetperformancelabel) (Campaign Management API).
+
 ## <a name="may2021"></a>May 2021
 
 See below for Bing Ads API updates during this calendar month.  
@@ -62,6 +105,7 @@ See below for Bing Ads API updates during this calendar month.
 
 - [Portfolio bid strategy](#portfolio-bid-strategy-april2021)  
 - [Target impression share](#target-impression-share-april2021)  
+- [Bing Ads API SDK Updates](#sdk-april2021)  
 
 ### <a name="portfolio-bid-strategy-april2021"></a>Portfolio bid strategy
 
@@ -86,6 +130,9 @@ Portfolio bid strategies are supported in the Campaign Management [BidStrategy](
 Target impression share is an automated bidding strategy that you can use to get the target impression share for the ad position where you want your ads to appear.  
 
 Target impression share is supported via the Campaign Management [BidStrategy](../campaign-management-service/bidstrategy.md), [Campaign](../campaign-management-service/campaign.md), and [TargetImpressionShareBiddingScheme](../campaign-management-service/targetimpressionsharebiddingscheme.md) objects and the Bulk [Bid Strategy](../bulk-service/bid-strategy.md) and [Campaign](../bulk-service/campaign.md) records.  
+
+### <a name="sdk-april2021"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.9), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.9), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.9), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.9) SDK version 13.0.9. 
 
 ## <a name="march2021"></a>March 2021
 

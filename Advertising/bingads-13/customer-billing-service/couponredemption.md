@@ -20,7 +20,7 @@ Defines the CouponRedemption Data Object.
     <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="RedemptionDate" type="xs:dateTime" />
     <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
-    <xs:element minOccurs="0" name="ActivationDate" type="xs:dateTime" />
+    <xs:element minOccurs="0" name="ActivationDate" nillable="true" type="xs:dateTime" />
   </xs:sequence>
 </xs:complexType>
 ```

@@ -62,10 +62,12 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Optional  
 
 ## <a name="parentid"></a>Parent Id
-The identifier of the parent customer list audience.
+The identifier of the parent customer list audience.  
 
-**Add:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.  
-**Delete:** Required. You must specify either the [Parent Id](#parentid) or [Audience](#audience) field.  
+You must specify either the [Parent Id](#parentid) or [Audience](#audience) field. 
+
+**Add:** Read-only and Required. You must either specify an existing customer list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Customer List](customer-list.md#id) record. This is required if you are adding new customer list items to a new customer list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Delete:** Required.  
 
 ## <a name="subtype"></a>Sub Type
 Determines whether the [Text](#text) field represents a hashed Email value. 
