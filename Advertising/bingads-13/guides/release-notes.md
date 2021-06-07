@@ -20,7 +20,7 @@ See below for information about changes to Bing Ads API Version 13 by month.
 
 ### <a name="page-visitors-normal-form"></a>Page visitors rule normal form expansion
 
-If you already use **page visitors rules** for remarketing lists, please read this article for required changes depending on your application.  
+If you already use **page visitors rules** for remarketing lists, please read this section about required changes.  
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. You can create rules for custom events, page visitors, page visitors who did not visit another page, and page visitors who visited another page.  
 
@@ -45,6 +45,25 @@ For more information about how to get and set the new normal form property, see 
 
 - Campaign Management API: The [NormalForm](../campaign-management-service/pagevisitorsrule.md#normalform) element of PageVisitorsRule can be set to Conjunctive or Disjunctive.
 - Bulk API: Continue using the [Remarketing Rule](../bulk-service/remarketing-list.md#remarketingrule) column in the bulk file. For upload, you can choose to format the string as CNF or DNF. For download, your application must read the string in the same column and distinguish between CNF and DNF.  
+
+### <a name="conversion-goal-categories"></a>Required conversion goal categories
+
+If you already use conversion goals, please read this section about required changes.  
+
+You can categorize your conversion goals however makes sense for your business. Goal categories don't affect performance - they are here to help you segment your goals and their performance metrics.
+
+Previously Bing Ads API did not require conversion goal categories. Depending on the goal type the default category is set to Download, None, Other, or Purchase.  
+
+Now (as of June 2021) when you add or update the custom event, offline conversion, or URL goals you must set a goal category or the Campaign Management service will return an error. There are no changes to the default category of other goal types as shown in the table.
+
+|Goal type|Default before|Default after|
+|-----------|---------------|---------------|
+|EventGoal<br/>OfflineConversionGoal<br/>UrlGoal|None|No default; Service returns an error|
+|DurationGoal<br/>PagesViewedPerVisitGoal|Other|Other|
+|InStoreTransactionGoal|Purchase|Purchase|
+|AppInstallGoal|Download|Download|
+
+For more information, see our API documentation about [conversion goal categories](../campaign-management-service/conversiongoalcategory.md).  
 
 ## <a name="june2021"></a>June 2021
 
