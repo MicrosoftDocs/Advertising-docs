@@ -27,7 +27,7 @@ Currently Microsoft Advertising does not support deletion of account assets. Eve
 
 You can download all *Responsive Search Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *ResponsiveSearchAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-The following Bulk CSV example would add a new responsive search ad if a valid [Parent Id](#parentid) value is provided. 
+The following Bulk CSV example would add a new responsive search ad if a valid [Parent Id](#parentid) value is provided.  
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Description,Path 1,Path 2,Domain,Headline
@@ -257,18 +257,33 @@ Here's an example Bulk download where you'll also get read-only attributes e.g.,
 	"id": 1,
 	"text": "Contoso",
 	"pinnedField": "Description1",
-	"editorialStatus": "Active"
+	"editorialStatus": "Active",
+	"assetPerformanceLabel": "Learning"
 },
 {
 	"id": 2,
 	"text": "Seamless Integration",
-	"editorialStatus": "Active"
+	"editorialStatus": "Active",
+	"assetPerformanceLabel": "Learning"
 }]
 ```
 
-**Add:** Required. The list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.  
-**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id) and [editorialStatus](#description-editorialstatus) will be ignored if you include them.   
+**Add:** Required. The list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id), [assetPerformanceLabel](#description-assetperformancelabel), and [editorialStatus](#description-editorialstatus) will be ignored if you include them.  
+**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 2-4 descriptions is required. Only the [pinnedField](#description-pinnedfield) and [text](#description-text) are honored. Even if the asset already exists in your account, the [id](#description-id), [assetPerformanceLabel](#description-assetperformancelabel), and [editorialStatus](#description-editorialstatus) will be ignored if you include them.  
 **Delete:** Read-only  
+
+### <a name="description-assetperformancelabel"></a>assetPerformanceLabel
+This lets you know how well the asset is performing.
+
+The `assetPerformanceLabel` attribute is read-only when you download the responsive search ad. Possible values are described in the table below.  
+
+|Value|Description|
+|-----------|---------------|
+|Low|This asset's performance is low and we recommend you replace this asset to improve your ad performance.|
+|Good|This asset is performing well. We recommend you keep this asset and add more assets to improve your ad performance.|
+|Best|This asset's performance is among the best and we recommend that you add more similar assets.|
+|Unrated|We don't have any performance rating for this asset. This can be due to the asset being inactive, not having enough information to determine its performance, or if there aren't enough similar assets to compare against it.|
+|Learning|The asset's performance is being actively evaluated. Once the evaluation is complete, the asset rating will be Low, Good, Best, or Unrated.|
 
 ### <a name="description-editorialstatus"></a>editorialStatus
 The `editorialStatus` attribute is read-only when you download the responsive search ad. Possible values are described in the table below.  
@@ -425,23 +440,39 @@ Here's an example Bulk download where you'll also get read-only attributes e.g.,
 	"id": 3,
 	"text": "Contoso",
 	"pinnedField": "Headline1",
-	"editorialStatus": "Active"
+	"editorialStatus": "Active",
+	"assetPerformanceLabel": "Learning"
 },
 {
 	"id": 4,
 	"text": "Quick & Easy Setup",
-	"editorialStatus": "Active"
+	"editorialStatus": "Active",
+	"assetPerformanceLabel": "Learning"
 },
 {
 	"id": 5,
 	"text": "Seamless Integration",
-	"editorialStatus": "Active"
+	"editorialStatus": "Active",
+	"assetPerformanceLabel": "Learning"
 }]
 ```
 
-**Add:** Required. The list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.  
-**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any headlines that were previously linked to this ad will be replaced. If you specify this field, a list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.   
+**Add:** Required. The list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id), [assetPerformanceLabel](#headline-assetperformancelabel), and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.  
+**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any headlines that were previously linked to this ad will be replaced. If you specify this field, a list of 3-15 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id), [assetPerformanceLabel](#headline-assetperformancelabel), and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.   
 **Delete:** Read-only  
+
+### <a name="headline-assetperformancelabel"></a>assetPerformanceLabel
+This lets you know how well the asset is performing.
+
+The `assetPerformanceLabel` attribute is read-only when you download the responsive search ad. Possible values are described in the table below.  
+
+|Value|Description|
+|-----------|---------------|
+|Low|This asset's performance is low and we recommend you replace this asset to improve your ad performance.|
+|Good|This asset is performing well. We recommend you keep this asset and add more assets to improve your ad performance.|
+|Best|This asset's performance is among the best and we recommend that you add more similar assets.|
+|Unrated|We don't have any performance rating for this asset. This can be due to the asset being inactive, not having enough information to determine its performance, or if there aren't enough similar assets to compare against it.|
+|Learning|The asset's performance is being actively evaluated. Once the evaluation is complete, the asset rating will be Low, Good, Best, or Unrated.|
 
 ### <a name="headline-editorialstatus"></a>editorialStatus
 The `editorialStatus` attribute is a read-only string when you download the responsive search ad. Possible values are described in the table below.  
