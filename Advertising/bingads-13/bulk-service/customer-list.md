@@ -115,7 +115,7 @@ The description can contain a maximum of 1,024 characters.
 ## <a name="id"></a>Id
 The system-generated identifier of the customer list.
 
-**Add:** Read-only  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the customer list can then be referenced in the *Parent Id* field of dependent record types such as [customer list item](customer-list-item.md#parentid). This is required if you are adding a new customer list and new customer list items in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

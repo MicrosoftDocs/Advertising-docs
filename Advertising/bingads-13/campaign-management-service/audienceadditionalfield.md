@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines a list of optional audience properties that you can request when calling GetAudiencesByIds.
 ---
 # AudienceAdditionalField Value Set - Campaign Management
 Defines a list of optional audience properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md#returnadditionalfields). The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding properties will be included in the audience by default.  

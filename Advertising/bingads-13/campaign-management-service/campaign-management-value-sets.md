@@ -33,7 +33,7 @@ The Campaign Management service defines the following value sets.
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial issue is appealable.|
 |[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Defines the editorial review status values of a linked asset.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
-|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional audience properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md).|
+|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional audience properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md#returnadditionalfields).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
 |[BMCStoreAdditionalField](bmcstoreadditionalfield.md)|Defines a list of optional store properties that you can request when calling [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md).|

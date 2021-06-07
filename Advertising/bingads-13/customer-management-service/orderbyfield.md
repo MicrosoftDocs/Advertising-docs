@@ -17,16 +17,20 @@ Defines the field order of entities returned using one of the search operations,
     <xs:enumeration value="Name" />
     <xs:enumeration value="Number" />
     <xs:enumeration value="LifeCycleStatus" />
+    <xs:enumeration value="CouponClassName" />
+    <xs:enumeration value="CouponStartDate" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [OrderByField](orderbyfield.md) value set has the following values: [Id](#id), [LifeCycleStatus](#lifecyclestatus), [Name](#name), [Number](#number).
+The [OrderByField](orderbyfield.md) value set has the following values: [CouponClassName](#couponclassname), [CouponStartDate](#couponstartdate), [Id](#id), [LifeCycleStatus](#lifecyclestatus), [Name](#name), [Number](#number).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="couponclassname"></a>CouponClassName|This value is not supported with the customer management service.|
+|<a name="couponstartdate"></a>CouponStartDate|This value is not supported with the customer management service.|
 |<a name="id"></a>Id|The order is determined by a predicate identifier.|
 |<a name="lifecyclestatus"></a>LifeCycleStatus|The order is determined by a predicate life cycle status.|
 |<a name="name"></a>Name|The order is determined by a predicate name.|

@@ -25,7 +25,7 @@ Defines the Coupon Data Object.
     <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="SendToEmail" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="SendToDate" type="xs:dateTime" />
+    <xs:element minOccurs="0" name="SendToDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="IsRedeemed" type="xs:boolean" />
     <xs:element minOccurs="0" name="RedemptionInfo" nillable="true" type="tns:CouponRedemption" />
   </xs:sequence>
