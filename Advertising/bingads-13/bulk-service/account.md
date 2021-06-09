@@ -38,11 +38,13 @@ For an *Account* record, the following attribute fields are available in the [Bu
 - [Tracking Template](#trackingtemplate)
 
 
-#### <a name="allowimageautoretrieve"></a>Allow Image Auto Retrieve
+## <a name="allowimageautoretrieve"></a>Allow Image Auto Retrieve
 Determines whether Microsoft Advertising is allowed to use images from your domain to enhance your ads on the Microsoft Audience Network.  
 
 > [!IMPORTANT]
 > By opting-in, you agree that any images or creative content retrieved from the Advertiser landing page is content "provided by" the Advertiser under the content usage license in the [Advertising Agreement](https://about.ads.microsoft.com/en-us/resources/policies/microsoft-advertising-agreement) (Section 2) and that the Advertiser agrees that Microsoft can use that content for auto-creating ads and extensions for them.
+
+[!INCLUDE[coming-soon](./includes/coming-soon.md)]
 
 If this field is set to *true*, then the image auto-retrieve feature is enabled. 
 
@@ -50,8 +52,10 @@ If this field is set to *true*, then the image auto-retrieve feature is enabled.
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
-#### <a name="autoapplyrecommendations"></a>Auto Apply Recommendations
+## <a name="autoapplyrecommendations"></a>Auto Apply Recommendations
 Determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.  
+
+[!INCLUDE[coming-soon](./includes/coming-soon.md)]
 
 We'll let you know when suggested ads are ready for you to review. You can find ad recommendations on the Recommendations page. If you don't take action, we'll automatically apply them after the review period:
 
