@@ -50,10 +50,14 @@ Determines whether Microsoft Advertising is allowed to use images from your doma
 > [!IMPORTANT]
 > By opting-in, you agree that any images or creative content retrieved from the Advertiser landing page is content "provided by" the Advertiser under the content usage license in the [Advertising Agreement](https://about.ads.microsoft.com/en-us/resources/policies/microsoft-advertising-agreement) (Section 2) and that the Advertiser agrees that Microsoft can use that content for auto-creating ads and extensions for them.
 
+[!INCLUDE[coming-soon](./includes/coming-soon.md)]
+
 If the [Name](#name) element is set to *AllowImageAutoRetrieve*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then the image auto-retrieve feature is enabled. 
 
 #### <a name="autoapplyrecommendations"></a>AutoApplyRecommendations
 Determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.  
+
+[!INCLUDE[coming-soon](./includes/coming-soon.md)]
 
 We'll let you know when suggested ads are ready for you to review. You can find ad recommendations on the Recommendations page. If you don't take action, we'll automatically apply them after the review period:
 

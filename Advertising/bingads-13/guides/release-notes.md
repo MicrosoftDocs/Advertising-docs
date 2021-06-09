@@ -14,11 +14,16 @@ See below for information about changes to Bing Ads API Version 13 by month.
 > [!IMPORTANT]
 > The following upcoming changes may require that you take action to avoid disruption of service or loss of functionality.  
 
-### <a name="mfa-required"></a>Multi-factor authentication will be required
+- [Multi-factor authentication will be required](#breaking-mfa-required)  
+- [Page visitors rule normal form expansion](#breaking-page-visitors-normal-form)  
+- [Required conversion goal categories](#breaking-conversion-goal-categories)  
+- [Reduced look back for bulk download](#breaking-bulk-download-sync-time)  
+
+### <a name="breaking-mfa-required"></a>Multi-factor authentication will be required
 
 [!INCLUDE[request-header](./includes/mfa-required.md)]
 
-### <a name="page-visitors-normal-form"></a>Page visitors rule normal form expansion
+### <a name="breaking-page-visitors-normal-form"></a>Page visitors rule normal form expansion
 
 If you already use **page visitors rules** for remarketing lists, please read this section about required changes.  
 
@@ -46,7 +51,7 @@ For more information about how to get and set the new normal form property, see 
 - Campaign Management API: The [NormalForm](../campaign-management-service/pagevisitorsrule.md#normalform) element of PageVisitorsRule can be set to Conjunctive or Disjunctive.
 - Bulk API: Continue using the [Remarketing Rule](../bulk-service/remarketing-list.md#remarketingrule) column in the bulk file. For upload, you can choose to format the string as CNF or DNF. For download, your application must read the string in the same column and distinguish between CNF and DNF.  
 
-### <a name="conversion-goal-categories"></a>Required conversion goal categories
+### <a name="breaking-conversion-goal-categories"></a>Required conversion goal categories
 
 If you already use conversion goals, please read this section about required changes.  
 
@@ -64,6 +69,15 @@ Now (as of June 2021) when you add or update the custom event, offline conversio
 |AppInstallGoal|Download|Download|
 
 For more information, see our API documentation about [conversion goal categories](../campaign-management-service/conversiongoalcategory.md).  
+
+### <a name="breaking-bulk-download-sync-time"></a>Reduced look back for bulk download
+
+When [downloading campaigns](bulk-download-upload.md) with the Bulk API you can request only to get settings that have been modified (added, updated, deleted) since a specific date and time.
+
+Previously if you set a date and time that is more than 90 days prior, an error will be returned.
+
+The maximum look back period will decrease from 90 days to 30 days on September 1st, 2021. Then, if you set a date and time that is more than 30 days prior, an error will be returned.
+
 
 ## <a name="june2021"></a>June 2021
 
