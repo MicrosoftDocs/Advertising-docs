@@ -64,17 +64,19 @@ We'll let you know when suggested ads are ready for you to review. You can find 
 
 You can change your auto-apply options at any time. If you don't choose to auto-apply ad recommendations, you'll still be able to apply recommendations manually.
 
-This field includes a list of recommendation types. 
+This field includes a list of recommendation types.  
 
-The list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads. 
+The list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads or expanded text ads.  
 
 ```
-MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;
+MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;ExpandedTextAdsAutoApply=false
 ```
 
 The default key and value pairs are:
+
 - MultimediaAdsAutoApply=true;
 - ResponsiveSearchAdsAutoApply=false;
+- ExpandedTextAdsAutoApply=false
 
 If the value of a key is set to *true*, then the auto-apply feature is enabled for the recommendation type. 
 
