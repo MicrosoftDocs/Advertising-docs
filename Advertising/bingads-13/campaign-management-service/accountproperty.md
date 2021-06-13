@@ -66,26 +66,28 @@ We'll let you know when suggested ads are ready for you to review. You can find 
 
 You can change your auto-apply options at any time. If you don't choose to auto-apply ad recommendations, you'll still be able to apply recommendations manually.
 
-If the [Name](#name) element is set to *AutoApplyRecommendations*, then the [Value](#value) can include a list of recommendation types. 
+If the [Name](#name) element is set to *AutoApplyRecommendations*, then the [Value](#value) can include a list of recommendation types.  
 
-Within the [Value](#value) element, the list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads. 
+Within the [Value](#value) element, the list of key and value pairs are delimited with a semicolon (;). In this example, auto-apply ad recommendations is enabled for multimedia ads but not for responsive search ads or expanded text ads.  
 
 ```xml
 <SetAccountPropertiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v13">
   <AccountProperties xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <AccountProperty>
       <Name>AutoApplyRecommendations</Name>
-      <Value>MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;</Value>
+      <Value>MultimediaAdsAutoApply=true;ResponsiveSearchAdsAutoApply=false;ExpandedTextAdsAutoApply=false</Value>
     </AccountProperty>
   </AccountProperties>
 </SetAccountPropertiesRequest>
 ```
 
 The default key and value pairs are:
+
 - MultimediaAdsAutoApply=true;
 - ResponsiveSearchAdsAutoApply=false;
+- ExpandedTextAdsAutoApply=false;
 
-If the value of a key is set to *true*, then the auto-apply feature is enabled for the recommendation type. 
+If the value of a key is set to *true*, then the auto-apply feature is enabled for the recommendation type.  
 
 You can choose to set only the key and value pairs that you want to update. If no value is set for the update, this setting is not changed.  
 

@@ -358,8 +358,8 @@ The type of the campaign.
 
 The campaign type determines whether the campaign is a Microsoft Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*. 
 
-> [!IMPORTANT]
-> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
+> [!NOTE]
+> You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
 
 **Add:** Optional. If not specified, then default value of *Search* is used. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  

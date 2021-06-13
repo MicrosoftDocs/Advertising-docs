@@ -17,7 +17,7 @@ With dynamic search ads, the headline and display URL are generated automaticall
 Dynamic search ads can only be created within search campaigns that have a [DynamicSearchAdsSetting](dynamicsearchadssetting.md).  The campaign's [ExperimentId](campaign.md#experimentid) element can't be set and the [AdGroupType](adgroup.md#adgrouptype) must be set to "SearchDynamic".  
 
 > [!NOTE]
-> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
+> You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
 
 ## Syntax
 ```xml
