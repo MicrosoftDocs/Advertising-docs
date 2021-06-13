@@ -10,7 +10,7 @@ description: Defines a campaign.
 Defines a campaign.  
 
 > [!NOTE]
-> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
+> You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
 
 > [!NOTE]
 > As of April 2021, the manual CPC bid strategy can only be used with audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC.  
