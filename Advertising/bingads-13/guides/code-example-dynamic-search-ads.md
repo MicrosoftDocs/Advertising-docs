@@ -15,7 +15,7 @@ dev_langs:
 This example uses the Campaign Management API to setup a Dynamic Search Ads (DSA) campaign.
 
 > [!NOTE]
-> You can no longer add new campaigns with the DynamicSearchAds campaign type. The campaign type is being updated from "DynamicSearchAds" to "Search" during May and June. You can still view and edit these campaigns before and after the campaign type update.  
+> You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 

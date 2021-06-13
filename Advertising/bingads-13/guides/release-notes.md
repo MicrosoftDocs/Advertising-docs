@@ -84,6 +84,7 @@ The maximum look back period will decrease from 90 days to 30 days on September 
 See below for Bing Ads API updates during this calendar month.  
 
 - [Asset performance label for RSA](#assetperformancelabel-june2021)  
+- [Dynamic search ads](#dynamic-search-ads-june2021)  
 
 ### <a name="assetperformancelabel-june2021"></a>Asset performance label for RSA
 
@@ -102,6 +103,10 @@ Possible values are described in the table below.
 |Learning|The asset's performance is being actively evaluated. Once the evaluation is complete, the asset rating will be Low, Good, Best, or Unrated.|
 
 For more details, see the [Responsive Search Ad](../bulk-service/responsive-search-ad.md) record (Bulk API) and [AssetLink](../campaign-management-service/assetlink.md#assetperformancelabel) (Campaign Management API).
+
+### <a name="dynamic-search-ads-june2021"></a>Dynamic search ads
+
+You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
 
 ## <a name="may2021"></a>May 2021
 
