@@ -24,11 +24,11 @@ BBD37VB98
 Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the following public application ID in sandbox. 
 
 ```string
-db41b09d-6e50-4f4a-90ac-5a99caefb52f
+4c0b021c-00c3-4508-838f-d3127e8167ff
 ```
 
 > [!NOTE]
-> The "Sandbox Tutorial App" client ID is limited to desktop or console applications, and cannot be used with any client secret in a web application. You can use this for testing authentication locally in sandbox, and then register your own production application for more advanced scenarios e.g., web applications with custom redirect URIs. 
+> The "Tutorial Sample App" client ID is limited to desktop or console applications, and cannot be used with any client secret in a web application. You can use this for testing authentication locally in sandbox, and then register your own production application for more advanced scenarios e.g., web applications with custom redirect URIs. 
 > 
 > Note the sandbox application registration site at [apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList) has been deprecated since May 2019 and functionality for registering and managing converged applications removed starting September 2019.
 
