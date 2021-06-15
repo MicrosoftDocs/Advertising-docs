@@ -71,6 +71,9 @@
   - name: Make your first API call
     href: ./authentication-oauth-quick-start.md
     displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Multi-factor authentication requirement
+    href: ./authentication-oauth-mfa.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage tfa mfa multi-factor
 - name: Sandbox
   href: ./sandbox.md
   displayName: test get started
