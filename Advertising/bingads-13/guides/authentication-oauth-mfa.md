@@ -43,7 +43,7 @@ Upon enforcement of MFA, we will only authenticate access tokens on behalf of a 
 
 ## SDK support 
 
-Support for the new  ```msads.manage scope ``` is available starting with version 13.0.10 of  Bing Ads SDKs (NET, Java, Python, and PHP).  
+Support for the new  ```msads.manage scope ``` is available starting with version 13.0.10 of  Bing Ads SDKs (.NET, Java, Python, and PHP).  
 
 The new  ```msads.manage ``` scope is used by default. For backwards compatibility, until the enforcement date you can use the ```ads.manage ``` or  ```bingads.manage ``` scopes with a short workaround.  
 
