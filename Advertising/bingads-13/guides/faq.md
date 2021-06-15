@@ -87,7 +87,7 @@ Yes. You must prompt users for consent via the new ``msads.manage`` scope and th
 
 ### Q. What is the user experience when prompted for consent via the Microsoft identity platform endpoint?
 
-When you prompt the user for consent using the common tenant within the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) the user sign in experience will vary depending on the underlying identity behind their credentials.  
+When you prompt the user for consent (using the common tenant) with the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) the user sign in experience will vary depending on the underlying identity behind their credentials.  
 
 - A person who only has an MSA identity will be directed to the MSA sign in page.  
 - A person who only has an Azure AD identity will be directed to their organizational sign in page.  

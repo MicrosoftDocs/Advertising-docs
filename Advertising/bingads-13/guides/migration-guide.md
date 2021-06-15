@@ -8,17 +8,17 @@ description: Get details about migrating to Bing Ads API version 13.
 ---
 # Migrate to Version 13
 > [!NOTE]
-> Bing Ads API version 12 sunset as of October 31, 2019. 
+> Bing Ads API version 12 sunset as of October 31, 2019.  
 
 The sections below describe Bing Ads API changes from version 12 to version 13.  
 
 ## <a name="authentication"></a>Authentication for All Services
-The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
+The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The Live Connect endpoint only allows authentication with personal accounts.  
 
-Although migrating from the [Live Connect](authentication-oauth-live-connect.md) endpoint to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) is independent of migration from version 12 to 13, we understand that many developers would like to upgrade during the same sprint.  
+Although migrating from the Live Connect endpoint to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) is independent of migration from version 12 to 13, we understand that many developers would like to upgrade during the same sprint.  
 
 > [!IMPORTANT]
-> The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users without friction or interruption of service. Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).  
+> The Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. Please upgrade to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) to ensure that your application can support all users without friction or interruption of service. Only the Microsoft identity platform endpoint (v2.0) allows you to obtain access tokens to authenticate both work and personal accounts via the Bing Ads API.  
 
 ## <a name="adinsight"></a>Ad Insight
 For comprehensive version 13 service reference documentation see [Ad Insight](../ad-insight-service/ad-insight-service-reference.md).  

@@ -6,7 +6,7 @@ author: eric-urban
 ms.author: eur
 description: Authenticate for Bing Ads API using the Microsoft identity platform endpoint for developers.
 ---
-# Authentication with the Microsoft identity platform endpoint for developers
+# Register an application
 
 [!INCLUDE[request-header](./includes/mfa-required.md)]
 
@@ -34,13 +34,11 @@ Before your application can authenticate Microsoft Advertising users, you must r
 
 1. For web applications, select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description**, select any option for **Expires** and choose **Add**. Copy the client secret value before leaving the page. You will use it as the `client_secret` when [requesting access tokens](#request-accesstoken). 
 
-
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Request user consent](../authentication-consent.md)
+> [Request user consent](../authentication-oauth-consent.md)
 
 
 ## See Also
-[Bing Ads API Web Service Addresses](web-service-addresses.md)
-
+[Get started](get-started.md)
