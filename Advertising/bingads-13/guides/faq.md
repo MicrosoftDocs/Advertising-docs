@@ -59,10 +59,7 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 
 ### Q. When will multi-factor authentication be required via Bing Ads API, Content API, and Hotel Ads API?  
 
-We've set the enforcement date to March 1st, 2022. 
-
-> [!IMPORTANT]
-> Upon enforcement of multi-factor authentication, any access token provisioned when the user didn’t pass through multi-factor authentication won’t be accepted. We recommend that you make the necessary changes as soon as possible.
+[!INCLUDE[request-header](./includes/mfa-required.md)]
 
 ### Q. Do I need to make any changes to comply with the multi-factor authentication requirement?
 
@@ -72,14 +69,7 @@ You must prompt users for consent via the new ``msads.manage`` scope and the Mic
 
 ### Q. Do I need to register a new application to use msads.manage?
 
-To guarantee that you are ready for multi-factor authentication we recommend that you register a new application and only get consent from a user via the ``msads.manage`` scope.  
-
-If a user has already granted consent to your application via another Microsoft Advertising scope (``bingads.manage`` or ``ads.manage``), they could revoke consent from your current application, but that would result in lost access at least until they grant consent again via the ``msads.manage`` scope.  
-
-Upon enforcement of multi-factor authentication (March 1st, 2022), we will check the access token you send in each request to ensure the user only granted consent via the new ``msads.manage`` scope. If we also find the ``bingads.manage`` or ``ads.manage`` scopes in the access token, the authentication will fail.
-
-> [!NOTE]
-> If you have an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67, then you must register a new application. Valid Microsoft identity platform application IDs are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. If you don't see an existing app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908), that's an indication that you should replace it with a new app.
+If you have an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67, then you must register a new application. Valid Microsoft identity platform application IDs are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. If you don't see an existing app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908), that's an indication that you should replace it with a new app.
 
 ### Q. Does a user need to grant consent when I upgrade to msads.manage?  
 
@@ -110,7 +100,7 @@ To programmatically manage a Microsoft Advertising account, you must provide con
 
 ### Q. When do the access and refresh tokens expire?  
 
-The access token typically expires after one hour, although you should always check the expiration time each time you request a new token. 
+The access token typically expires after one hour, although you should always check the expiration time each time you request a new token.  
 
 Refresh tokens are, and always will be, completely opaque to your application. They are long-lived e.g., 90 days for public clients, but the app should not be written to expect that a refresh token will last for any period of time. Refresh tokens can be invalidated at any moment, and the only way for an app to know if a refresh token is valid is to attempt to redeem it by making a token request. Even if you continuously refresh the token on the same device with the most recent refresh token, you should expect to start again and request user consent if for example, you signed the user out, the Microsoft Advertising user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. At any time without prior warning Microsoft may determine that user consent should again be granted. As a best practice you should always securely store the latest refresh token each time you request new access and refresh tokens. 
 

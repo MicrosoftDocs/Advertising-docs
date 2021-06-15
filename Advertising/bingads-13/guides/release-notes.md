@@ -9,7 +9,7 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month.  
 
-## <a name="breaking-changes"></a>Breaking changes (upcoming)
+## <a name="breaking-changes"></a>Breaking changes (recent and upcoming)
 
 > [!IMPORTANT]
 > The following upcoming changes may require that you take action to avoid disruption of service or loss of functionality.  
