@@ -17,13 +17,13 @@ How can you get an access token for a user? As an application developer you'll u
 Microsoft Advertising leverages the [Microsoft identity platform endpoint for developers](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) and the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) protocol to authenticate work or school accounts from Azure Active Directory (AAD) and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com.
 
 
-1. [Register](../authentication-oauth-register.md) your application
+1. [Register an application](authentication-oauth-register.md) 
 
-1. [Request user consent](../authentication-oauth-consent.md) for your application to manage their Microsoft Advertising accounts
+1. [Request user consent](authentication-oauth-consent.md) for your application to manage their Microsoft Advertising accounts
 
-1. [Get access and refresh tokens](../authentication-oauth-identity-endpoint.md)  
+1. [Get access and refresh tokens](authentication-oauth-identity-endpoint.md)  
 
-1. [Make your first API call](../authentication-oauth-quick-start.md)  
+1. [Make your first API call](authentication-oauth-quick-start.md)  
 
 > [!TIP]
 > For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).  
@@ -31,7 +31,7 @@ Microsoft Advertising leverages the [Microsoft identity platform endpoint for de
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Register an application](../authentication-oauth-register.md)
+> [Register an application](authentication-oauth-register.md)
 
 
 ## See Also

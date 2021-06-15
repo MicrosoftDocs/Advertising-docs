@@ -61,7 +61,7 @@ If the user granted your application permissions to manage their Microsoft Adver
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get access and refresh tokens](../authentication-oauth-identity-platform.md)
+> [Get access and refresh tokens](authentication-oauth-identity-platform.md)
 
 ## See Also
 [Get started](get-started.md)
