@@ -5,6 +5,11 @@ ms.topic: "article"
 author: eric-urban
 ms.author: eur
 description: Details about the multi-factor authentication requirement for Bing Ads API.
+dev_langs:
+  - csharp
+  - java
+  - php
+  - python
 ---
 # Multi-factor authentication requirement
 
