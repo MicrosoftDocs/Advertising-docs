@@ -35,7 +35,7 @@ Follow these steps to get a new sandbox customer. If you already have a sandbox 
 
 ## <a name="invite-user"></a>Invite More Users
 
-To [authenticate with OAuth](authentication-oauth-quick-start) in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
+To [authenticate with OAuth](authentication-oauth-quick-start.md) in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
 
 1. In Microsoft Advertising [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
 2. Click **Accounts & Billing**
