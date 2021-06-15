@@ -69,7 +69,9 @@ Microsoft Advertising sends an email invite to the user. If the invite doesn’t
 
 The [sandbox and production environments](web-service-addresses.md) use separate credentials.  
 
-To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.  
+For the sandbox environment, substitute ```https://login.microsoftonline.com/common``` with ```https://login.windows-ppe.net/consumers```.  
+
+This table includes additional sandbox endpoints.
 
 |Description|Production|Sandbox|
 |---|---|---|
@@ -89,9 +91,9 @@ Although in production you must use your own application ID (a.k.a. client ID), 
 4c0b021c-00c3-4508-838f-d3127e8167ff
 ```
 
+Now you can get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](authentication-oauth-quick-start.md) guide.
+
 > [!TIP]
-> To get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](authentication-oauth-quick-start.md) guide.
->
 > For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).  
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
