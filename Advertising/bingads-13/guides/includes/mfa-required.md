@@ -3,4 +3,4 @@
 > 
 > You must update your application to use the new ```msads.manage``` scope via the [Microsoft identity platform endpoint](../authentication-oauth-identity-platform.md). All application developers must take action to use the new scope. 
 > 
-> For more information see the [Multi-factor authentication requirement](authentication-oauth-mfa.md) guide.
+> For more information see the [Multi-factor authentication requirement](../authentication-oauth-mfa.md) guide.
