@@ -85,6 +85,7 @@ See below for Bing Ads API updates during this calendar month.
 
 - [Asset performance label for RSA](#assetperformancelabel-june2021)  
 - [Dynamic search ads](#dynamic-search-ads-june2021)  
+- [Bing Ads API SDK Updates](#sdk-june2021)  
 
 ### <a name="assetperformancelabel-june2021"></a>Asset performance label for RSA
 
@@ -107,6 +108,9 @@ For more details, see the [Responsive Search Ad](../bulk-service/responsive-sear
 ### <a name="dynamic-search-ads-june2021"></a>Dynamic search ads
 
 You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
+
+### <a name="sdk-june2021"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.10), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.10), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.10), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.10) SDK version 13.0.10.  
 
 ## <a name="may2021"></a>May 2021
 
