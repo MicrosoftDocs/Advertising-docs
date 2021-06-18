@@ -164,7 +164,11 @@ After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bi
 Microsoft Advertising will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 
 > [!NOTE]
-> Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 317.  
+> You must have at least one remarketing list that has active associations with at least 1,000 users for Microsoft Advertising to generate a similar audience.
+>
+> A similar audience needs to have at least 300 users on the search network or the Microsoft Audience Network before it can be associated with an active campaign or ad group.
+>
+> A similar audience takes up to 24 hours to build and targeting for it won't take effect until that point.
 
 ### <a name="audience-bulk"></a>Audience Bulk APIs
 With the Bulk service you can use the following record types to download and upload audiences:
@@ -225,10 +229,8 @@ The [CombinedList](../campaign-management-service/combinedlist.md), [CustomAudie
 
 > [!NOTE]
 > With custom audiences, only update of the Name and Description are supported. You can delete but cannot add a custom audience using the Bing Ads API. Having said that, you can add and delete custom audience associations and exclusions.
-> 
+>
 > You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions.
-> 
-> Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 317. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 
 To add, get, update, or delete the association between your audience and campaign, use the [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md) object with the respective [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md), [GetCampaignCriterionsByIds](../campaign-management-service/getcampaigncriterionsbyids.md), [UpdateCampaignCriterions](../campaign-management-service/updatecampaigncriterions.md), and [DeleteCampaignCriterions](../campaign-management-service/deletecampaigncriterions.md) operations. You can use the [NegativeCampaignCriterion](../campaign-management-service/negativecampaigncriterion.md) object with the same operations to set audience exclusions. 
 

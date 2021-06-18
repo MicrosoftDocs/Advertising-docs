@@ -27,7 +27,7 @@ The *GetAdGroupCriterionsByIdsRequest* object defines the [body](#request-body) 
 |<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterions to get.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. <br/><br/>If this element is null, all criterions for the specified *AdGroupId* will be retrieved.|**long** array|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterions to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* and *Audience* values are not allowed for this operation.|[AdGroupCriterionType](adgroupcriteriontype.md)|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|Reserved.|[CriterionAdditionalField](criterionadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned ad group criterion. The additional field values enable you to get the latest features using the current version of Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[CriterionAdditionalField](criterionadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

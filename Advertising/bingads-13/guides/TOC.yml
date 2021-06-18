@@ -1661,6 +1661,8 @@
       href: ../campaign-management-service/uettag.md
     - name: UrlGoal
       href: ../campaign-management-service/urlgoal.md
+    - name: VerifiedTrackingSetting
+      href: ../campaign-management-service/verifiedtrackingsetting.md
     - name: Video
       href: ../campaign-management-service/video.md
     - name: VideoAdExtension
