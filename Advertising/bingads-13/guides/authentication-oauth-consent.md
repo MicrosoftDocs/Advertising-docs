@@ -31,12 +31,20 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
 ```
 
-> [!TIP]
-> Click the link below to execute this request! After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
-> <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=openid%20offline_access%20https%3A%2F%2Fads.microsoft.com%2Fmsads.manage&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
-> 
+1. Click the link below to execute this request for user consent. 
 
-The following table includes parameters that Bing Ads API clients should include in the request. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation. 
+    <https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=openid%20offline_access%20https%3A%2F%2Fads.microsoft.com%2Fmsads.manage&state=12345>
+
+1. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
+1. Next you'll use the code to [Get access and refresh tokens](authentication-oauth-get-tokens)
+
+The Microsoft identity platform endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user has not consented to any of those permissions, it will ask the user to consent to the required permissions. Although this guide is primarily focused on managing Microsoft Advertising accounts via `scope=https://ads.microsoft.com/msads.manage`, more details about [permissions, consent, and multi-tenant apps are provided here](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
+
+Once the user authenticates and grants consent, the Microsoft identity platform endpoint will return a response to your app at the indicated `redirect_uri`, using the method specified in the `response_mode` parameter. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their Microsoft Advertising accounts: *http://localhost/myapp/?code=CodeGoesHere&state=12345*.
+
+If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *http://localhost/myapp/?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
+
+The following table includes parameters that Bing Ads API clients can include in the request. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation.
 
 |Parameter|Required/Optional|Description|
 |--------------|-------------|--------------|
@@ -51,17 +59,11 @@ The following table includes parameters that Bing Ads API clients should include
 |`state`|recommended|A value included in the request that will also be returned in the token response. It can be a string of any content that you wish. A randomly generated unique value is typically used for [preventing cross-site request forgery attacks](https://tools.ietf.org/html/rfc6749#section-10.12). The value can also encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.|
 |`tenant`|required|The `{tenant}` value in the path of the request can be used to control who can sign into the application. To ensure that your application supports both MSA personal accounts and Azure AD work or school accounts, we suggest that you use `common` as the tenant for Bing Ads API authentication.<br/><br/>In case your application requires another tenant, see [Microsoft identity platform endpoints](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints) for more information.|
 
-At this point, the user will be asked to enter their credentials and complete the authentication. The Microsoft identity platform endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user has not consented to any of those permissions, it will ask the user to consent to the required permissions. Although this guide is primarily focused on managing Microsoft Advertising accounts via `scope=https://ads.microsoft.com/msads.manage`, more details about [permissions, consent, and multi-tenant apps are provided here](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
-
-Once the user authenticates and grants consent, the Microsoft identity platform endpoint will return a response to your app at the indicated `redirect_uri`, using the method specified in the `response_mode` parameter. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their Microsoft Advertising accounts: *http://localhost/myapp/?code=CodeGoesHere&state=12345*.
-
-If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *http://localhost/myapp/?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
-
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get access and refresh tokens](authentication-oauth-identity-platform.md)
+> [Get access and refresh tokens](authentication-oauth-get-tokens.md)
 
 ## See Also
 [Get started](get-started.md)

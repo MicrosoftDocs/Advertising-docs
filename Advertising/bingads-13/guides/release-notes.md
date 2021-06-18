@@ -676,7 +676,7 @@ See below for Bing Ads API updates during this calendar month.
 - [Version 13 General Availability](#v13-april2019)  
 
 ### <a name="oauth-april2019"></a>New Production OAuth Endpoint
-The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The Live Connect endpoint only allows authentication with personal accounts. 
+The Microsoft identity platform endpoint for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The Live Connect endpoint only allows authentication with personal accounts. 
 
 > [!IMPORTANT]
 > Even if your users do not have work or school accounts, and even if you do not use the Bing Ads API SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users.  

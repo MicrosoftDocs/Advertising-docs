@@ -27,7 +27,7 @@ How can you get an access token for a user? As an application developer you'll u
 
 1. [Request user consent](authentication-oauth-consent.md) for your application to manage their Microsoft Advertising accounts
 
-1. [Get access and refresh tokens](authentication-oauth-identity-platform.md)  
+1. [Get access and refresh tokens](authentication-oauth-get-tokens.md)  
 
 1. [Make your first API call](authentication-oauth-quick-start.md)  
 

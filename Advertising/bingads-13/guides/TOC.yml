@@ -66,7 +66,7 @@
     href: ./authentication-oauth-consent.md
     displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
   - name: Get access and refresh tokens
-    href: ./authentication-oauth-identity-platform.md
+    href: ./authentication-oauth-get-tokens.md
     displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
   - name: Make your first API call
     href: ./authentication-oauth-quick-start.md

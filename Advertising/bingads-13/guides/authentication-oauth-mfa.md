@@ -18,7 +18,7 @@ We already require multi-factor authentication in Microsoft Advertising online. 
 > [!IMPORTANT]
 > Starting March 1st, 2022 we will require [multi-factor authentication](authentication-oauth-mfa.md) for all users who sign in through a third-party application that uses the Bing Ads API, Content API, and Hotel APIs.
 >
-> You must update your application to use the new ```msads.manage``` scope via the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). All application developers must take action to use the new scope.  
+> You must update your application to [get user consent](authentication-oauth-consent.md) using the new ```msads.manage``` scope. All application developers must take action to use the new scope.
 
 The new ```msads.manage``` scope **requires renewed consent from all users of your application**. You must prompt users for consent using the new ```msads.manage``` scope whether or not they have turned on multi-factor authentication. This ensures that they provide a second form of identification or proof when granting consent to your application.  
 
@@ -34,11 +34,11 @@ We also recommend that you inform and guide users of your application to [set up
 
 ## After enforcement
 
-Upon enforcement of MFA, we will only authenticate access tokens on behalf of a user who granted consent to your application via the ```msads.manage``` scope on the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md).
+Upon enforcement of MFA, we will only authenticate access tokens on behalf of a user who granted consent to your application via the ```msads.manage``` scope on the **Microsoft identity platform endpoint**.
 
-- Prior to MFA enforcement the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) supports the ```ads.manage``` scope. Access tokens that you acquire for users via the ads.manage scope will no longer be accepted.
+- Prior to MFA enforcement the **Microsoft identity platform endpoint** supports the ```ads.manage``` scope. Access tokens that you acquire for users via the ads.manage scope will no longer be accepted.
 
-- Prior to MFA enforcement the Live Connect endpoint supports the ```bingads.manage``` scope. The Live Connect endpoint is already deprecated and will no longer be supported. Access tokens that you acquire for users via the ```bingads.manage``` scope will no longer be accepted.
+- Prior to MFA enforcement the Live Connect endpoint supports the ```bingads.manage``` scope. The **Live Connect** endpoint is already deprecated and will no longer be supported. Access tokens that you acquire for users via the ```bingads.manage``` scope will no longer be accepted.
 
 
 ## SDK support 
@@ -51,32 +51,31 @@ The new  ```msads.manage ``` scope is used by default. For backwards compatibili
 var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
     Settings.Default["ClientId"].ToString(),
     apiEnvironment,
-    OAuthScope.ADS_MANAGE
+    OAuthScope.ADS_MANAGE // temporary workaround; remove or use MSADS_MANAGE instead
 );
 ```
 ```java
 OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
     ClientId, 
     ApiEnvironment,
-    OAuthScope.ADS_MANAGE
+    OAuthScope.ADS_MANAGE // temporary workaround; remove or use MSADS_MANAGE instead
 );
 ```
 ```php
 $authentication = (new OAuthDesktopMobileAuthCodeGrant())
     ->withClientId(ClientId)
     ->withEnvironment(ApiEnvironment)
-    ->withOAuthScope(OAuthScope::ADS_MANAGE
-); 
+    ->withOAuthScope(OAuthScope::ADS_MANAGE); // temporary workaround; remove or use MSADS_MANAGE instead
 ```
 ```python
 oauth_web_auth_code_grant = OAuthDesktopMobileAuthCodeGrant(
     client_id=CLIENT_ID,
     env=ENVIRONMENT,
-    oauth_scope="ads.manage"
+    oauth_scope="ads.manage" # temporary workaround; remove or use "msads.manage" instead
 )
 ```
 
 ## See Also
 
 [OAuth FAQ](faq.md#oauth)
-[Get access and refresh tokens](authentication-oauth-identity-platform.md)
+[Request user consent](authentication-oauth-consent.md)

@@ -65,7 +65,7 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 
 You must update your application to use the new ``msads.manage`` scope via the Microsoft identity platform endpoint. All application developers must take action to use the new scope. 
 
-You must prompt users for consent via the new ``msads.manage`` scope and the Microsoft identity platform endpoint.
+You must [prompt a user for consent](authentication-oauth-consent.md) via the new ``msads.manage`` scope and the Microsoft identity platform endpoint.
 
 ### Q. Do I need to register a new application to use msads.manage?
 
@@ -73,11 +73,11 @@ If you have an older application ID (aka Client ID) that is formatted as a hexad
 
 ### Q. Does a user need to grant consent when I upgrade to msads.manage?  
 
-Yes. You must prompt users for consent via the new ``msads.manage`` scope and the Microsoft identity platform endpoint.  
+Yes. You must [prompt a user for consent](authentication-oauth-consent.md) via the new ``msads.manage`` scope and the Microsoft identity platform endpoint.  
 
 ### Q. What is the user experience when prompted for consent via the Microsoft identity platform endpoint?
 
-When you prompt the user for consent (using the common tenant) with the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) the user sign in experience will vary depending on the underlying identity behind their credentials.  
+When you [prompt a user for consent](authentication-oauth-consent.md) (using the common tenant) with the Microsoft identity platform endpoint, the user sign in experience will vary depending on the underlying identity behind their credentials.  
 
 - A person who only has an MSA identity will be directed to the MSA sign in page.  
 - A person who only has an Azure AD identity will be directed to their organizational sign in page.  

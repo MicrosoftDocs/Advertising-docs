@@ -137,7 +137,12 @@
         },
         {
             "source_path": "Advertising/guides/authentication-oauth-live-connect.md",
-            "redirect_url": "authentication-oauth-identity-platform",
+            "redirect_url": "authentication-oauth",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "Advertising/guides/authentication-oauth-identity-platform.md",
+            "redirect_url": "authentication-oauth",
             "redirect_document_id": false
         },
         {
