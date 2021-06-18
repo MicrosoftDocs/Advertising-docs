@@ -22,7 +22,9 @@ Next, if you don't already have a Microsoft Advertising developer token for the 
 
 ## <a name="authentication"></a> Authenticating your credentials
 
-Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with the Live Connect endpoint](/advertising/guides/authentication-oauth-live-connect) and [Authentication with the Microsoft identity platform](/advertising/guides/authentication-oauth-identity-platform) (using the Microsoft identity platform is recommended). 
+[!INCLUDE[request-header](./includes/mfa-required.md)]
+
+Content API uses the same authentication schemes as Bing Ads API. For details about authenticating Microsoft account credentials with OAuth, see [Authentication with the Microsoft identity platform](/advertising/guides/authentication-oauth-identity-platform). 
 
 You *can* use the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](/advertising/guides/get-started-csharp) | [Java](/advertising/guides/get-started-java) | [Python](/advertising/guides/get-started-python). For a Content API example that uses the SDK for authentication, see [Managing products example](code-example-manage-products.md).
 
