@@ -36,7 +36,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
     <https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=openid%20offline_access%20https%3A%2F%2Fads.microsoft.com%2Fmsads.manage&state=12345>
 
 1. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
-1. Next you'll use the code to [Get access and refresh tokens](authentication-oauth-get-tokens)
+1. Next you'll use the code to [get access and refresh tokens](authentication-oauth-get-tokens.md).
 
 The Microsoft identity platform endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter. If the user has not consented to any of those permissions, it will ask the user to consent to the required permissions. Although this guide is primarily focused on managing Microsoft Advertising accounts via `scope=https://ads.microsoft.com/msads.manage`, more details about [permissions, consent, and multi-tenant apps are provided here](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
 
@@ -44,7 +44,7 @@ Once the user authenticates and grants consent, the Microsoft identity platform 
 
 If the user granted your application permissions to manage their Microsoft Advertising accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change. If the user denied your application permissions to manage their Microsoft Advertising accounts, the callback URI includes an error and error description field as follows: *http://localhost/myapp/?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
 
-The following table includes parameters that Bing Ads API clients can include in the request. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation.
+The following table includes parameters that Bing Ads API clients can include in the request. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation.
 
 |Parameter|Required/Optional|Description|
 |--------------|-------------|--------------|
