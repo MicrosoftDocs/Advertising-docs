@@ -77,4 +77,6 @@ oauth_web_auth_code_grant = OAuthDesktopMobileAuthCodeGrant(
 ```
 
 ## See Also
+
+[OAuth FAQ](faq.md#oauth)
 [Get access and refresh tokens](authentication-oauth-identity-platform.md)
