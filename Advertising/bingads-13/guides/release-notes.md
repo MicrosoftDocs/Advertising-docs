@@ -9,7 +9,7 @@ description: Get information about changes to Bing Ads API Version 13 by month.
 # Bing Ads API Release Notes
 See below for information about changes to Bing Ads API Version 13 by month.  
 
-## <a name="breaking-changes"></a>Breaking changes (upcoming)
+## <a name="breaking-changes"></a>Breaking changes (recent and upcoming)
 
 > [!IMPORTANT]
 > The following upcoming changes may require that you take action to avoid disruption of service or loss of functionality.  
@@ -85,6 +85,7 @@ See below for Bing Ads API updates during this calendar month.
 
 - [Asset performance label for RSA](#assetperformancelabel-june2021)  
 - [Dynamic search ads](#dynamic-search-ads-june2021)  
+- [Bing Ads API SDK Updates](#sdk-june2021)  
 
 ### <a name="assetperformancelabel-june2021"></a>Asset performance label for RSA
 
@@ -107,6 +108,9 @@ For more details, see the [Responsive Search Ad](../bulk-service/responsive-sear
 ### <a name="dynamic-search-ads-june2021"></a>Dynamic search ads
 
 You can no longer add, update, or retrieve campaigns that only support dynamic search ads. The campaign type of your existing campaigns has been updated from "DynamicSearchAds" to "Search". The ad groups are now considered "dynamic" ad groups, but there are no structural changes i.e., they contain the same auto targets and dynamic search ads as before.  
+
+### <a name="sdk-june2021"></a>Bing Ads API SDK Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.10), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.10), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.10), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.10) SDK version 13.0.10.  
 
 ## <a name="may2021"></a>May 2021
 
@@ -672,10 +676,10 @@ See below for Bing Ads API updates during this calendar month.
 - [Version 13 General Availability](#v13-april2019)  
 
 ### <a name="oauth-april2019"></a>New Production OAuth Endpoint
-The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
+The Microsoft identity platform endpoint for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The Live Connect endpoint only allows authentication with personal accounts. 
 
 > [!IMPORTANT]
-> Even if your users do not have work or school accounts, and even if you do not use the Bing Ads API SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users. For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq) and [Authentication with the Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). 
+> Even if your users do not have work or school accounts, and even if you do not use the Bing Ads API SDKs we encourage you to update the authorization URL during calendar year 2019, since the Live Connect endpoint is no longer the recommended approach for Microsoft Advertising users.  
 
 ### <a name="sdk-april2019"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated with support for version 13. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.13.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.13.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.13.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.13.1) SDK version 12.13.1. 

@@ -54,17 +54,26 @@
       displayName: python get started
 - name: Authentication with OAuth
   expanded: true
-  displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
+  displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
   items:
   - name: Overview
     href: ./authentication-oauth.md
-    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
-  - name: Live Connect
-    href: ./authentication-oauth-live-connect.md
-    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
-  - name: Microsoft identity platform for developers
-    href: ./authentication-oauth-identity-platform.md
-    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Register an application
+    href: ./authentication-oauth-register.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Request user consent
+    href: ./authentication-oauth-consent.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Get access and refresh tokens
+    href: ./authentication-oauth-get-tokens.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Make your first API call
+    href: ./authentication-oauth-quick-start.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage
+  - name: Multi-factor authentication requirement
+    href: ./authentication-oauth-mfa.md
+    displayName: authentication oauth access refresh token scope client_id client id client_secret client secret bingads.manage ads.manage msads.manage tfa mfa multi-factor
 - name: Sandbox
   href: ./sandbox.md
   displayName: test get started
@@ -1652,6 +1661,8 @@
       href: ../campaign-management-service/uettag.md
     - name: UrlGoal
       href: ../campaign-management-service/urlgoal.md
+    - name: VerifiedTrackingSetting
+      href: ../campaign-management-service/verifiedtrackingsetting.md
     - name: Video
       href: ../campaign-management-service/video.md
     - name: VideoAdExtension

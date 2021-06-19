@@ -74,7 +74,6 @@ For the [SearchCustomers](searchcustomers.md) service operation, the following a
 |CreatedDate|GreaterThanEquals<br/><br/>LessThanEquals|Use this field to search the date when the customer was created or signed up.<br/><br/>The date is stored in Coordinated Universal Time (UTC). Only the month, day, and year of the specified string are used for search. If you specify the hour, minutes, and seconds of a date they will be ignored.<br/><br/>For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|
 |CustomerId|Equals<br/><br/>In|Use this field to search the Id element of the [Customer](customer.md).|
 |CustomerName|Contains<br/><br/>Equals|Use this field to search the Name element of the [Customer](customer.md).|
-|CustomerNumber|Contains<br/><br/>Equals|Use this field to search the Number element of the [Customer](customer.md).|
 |MarketCountry|Equals|Use this field to search the MarketCountry element of the [Customer](customer.md).<br/><br/>The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
 |MarketLanguage|Equals|Use this field to search the MarketLanguage element of the [Customer](customer.md).<br/><br/>The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
 |UserName|Equals|Use this field to search the UserName element of the [User](user.md).|

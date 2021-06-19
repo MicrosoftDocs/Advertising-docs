@@ -11,7 +11,14 @@ dev_langs:
 # Similar Remarketing List Record - Bulk
 Defines an audience that is similar to one of your remarketing lists.
 
-Microsoft Advertising will automatically generate similar audiences for remarketing lists for pilot participants i.e., [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns feature identifier 317. 
+Microsoft Advertising will automatically generate similar audiences for remarketing lists. 
+
+> [!NOTE]
+> You must have at least one remarketing list that has active associations with at least 1,000 users for Microsoft Advertising to generate a similar audience.
+>
+> A similar audience needs to have at least 300 users on the search network or the Microsoft Audience Network before it can be associated with an active campaign or ad group.
+>
+> A similar audience takes up to 24 hours to build and targeting for it won't take effect until that point.
 
 You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 

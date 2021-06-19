@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the VideoAdExtension Data Object.
+description: Defines an ad extension with a video and call-to-action button.
 ---
 # VideoAdExtension Data Object - Campaign Management
-Defines the VideoAdExtension Data Object.
+Defines an ad extension with a video and call-to-action button.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
@@ -22,9 +22,9 @@ Defines the VideoAdExtension Data Object.
         <xs:element minOccurs="0" name="AlternativeText" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q61:ArrayOfstring" xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q62:ArrayOfstring" xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q62:ArrayOfstring" xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q63:ArrayOfstring" xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="ThumbnailId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="ThumbnailUrl" nillable="true" type="xs:string" />
