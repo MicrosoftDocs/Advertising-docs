@@ -205,7 +205,7 @@ To programmatically act on behalf of a Microsoft Advertising user, you must obta
 You'll also need a developer token that uniquely identifies your application. Obtaining a developer token for API access does not grant additional permissions to any Microsoft Advertising accounts. A developer token enables programmatic access to the accounts already provisioned for a user. For information, see [Get a Developer Token](get-started.md#get-developer-token). 
 
 > [!TIP]
-> To get an access token and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample. 
+> To get an access token and make your first service call using the Bing Ads API, see the [Quick Start](authentication-oauth-quick-start.md) guide.  
 
 The AuthenticationToken and DeveloperToken headers must be set in every request via the Bing Ads API. Here is an example call to the [GetUser](../customer-management-service/getuser.md) operation. 
 

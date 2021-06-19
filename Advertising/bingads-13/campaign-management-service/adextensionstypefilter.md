@@ -54,7 +54,7 @@ The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the follow
 |<a name="reviewadextension"></a>ReviewAdExtension|An ad extension that contains third-party reviews (exact or paraphrased) about your business, products, or services.<br/><br/>For more information, see [ReviewAdExtension](reviewadextension.md).|
 |<a name="sitelinkadextension"></a>SitelinkAdExtension|An ad extension that contains one site link.<br/><br/>For more information, see [SitelinkAdExtension](sitelinkadextension.md).|
 |<a name="structuredsnippetadextension"></a>StructuredSnippetAdExtension|An ad extension that contains a header and values that tell customers more about your business.<br/><br/>For more information, see [StructuredSnippetAdExtension](structuredsnippetadextension.md).|
-|<a name="videoadextension"></a>VideoAdExtension|Reserved.|
+|<a name="videoadextension"></a>VideoAdExtension|An ad extension with a video and call-to-action button. <br/><br/>For more information, see [VideoAdExtension](videoadextension.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

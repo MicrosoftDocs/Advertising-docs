@@ -40,13 +40,13 @@ The [CampaignAdditionalField](campaignadditionalfield.md) value set has the foll
 |<a name="adscheduleusesearchertimezone"></a>AdScheduleUseSearcherTimeZone|Request that the [AdScheduleUseSearcherTimeZone](campaign.md#adscheduleusesearchertimezone) element be included within each returned [Campaign](campaign.md) object.|
 |<a name="bidstrategyid"></a>BidStrategyId|Request that the [BidStrategyId](campaign.md#bidstrategyid) element be included within each returned [Campaign](campaign.md) object.|
 |<a name="cpvcpmbiddingscheme"></a>CpvCpmBiddingScheme|Request that the [ManualCpmBiddingScheme](manualcpmbiddingscheme.md) or [ManualCpvBiddingScheme](manualcpvbiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
-|<a name="dynamicdescriptionsetting"></a>DynamicDescriptionSetting|Reserved.|
+|<a name="dynamicdescriptionsetting"></a>DynamicDescriptionSetting||Request that the [DynamicDescriptionEnabled](dynamicsearchadssetting.md#dynamicdescriptionenabled) element be returned within the [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object.<br/><br/>A [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object can be returned within the [Settings](campaign.md#settings) element of a search [Campaign](campaign.md) object.|
 |<a name="dynamicfeedsetting"></a>DynamicFeedSetting|Request that the [DynamicFeedSetting](dynamicfeedsetting.md) object be returned within the [Settings](campaign.md#settings) element of each returned [Campaign](campaign.md) object.|
 |<a name="maxconversionvaluebiddingscheme"></a>MaxConversionValueBiddingScheme|Request that the [MaxConversionValueBiddingScheme](maxconversionvaluebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
 |<a name="multimediaadsbidadjustment"></a>MultimediaAdsBidAdjustment|Request that the MultimediaAdsBidAdjustment element be included within each returned [Campaign](campaign.md) object.|
 |<a name="targetimpressionsharebiddingscheme"></a>TargetImpressionShareBiddingScheme|Request that the [TargetImpressionShareBiddingScheme](targetimpressionsharebiddingscheme.md) object be returned within the [BiddingScheme](campaign.md#biddingscheme) element of each returned [Campaign](campaign.md) object.|
 |<a name="targetsetting"></a>TargetSetting|Request that the [TargetSetting](targetsetting.md) object be returned within the [Settings](campaign.md#settings) element of each returned [Campaign](campaign.md) object.|
-|<a name="verifiedtrackingsetting"></a>VerifiedTrackingSetting|Reserved.|
+|<a name="verifiedtrackingsetting"></a>VerifiedTrackingSetting|Request that the [VerifiedTrackingSetting](verifiedtrackingsetting.md) object be returned within the [Settings](campaign.md#settings) element of each returned [Campaign](campaign.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

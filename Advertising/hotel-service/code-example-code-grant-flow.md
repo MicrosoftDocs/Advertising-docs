@@ -11,6 +11,8 @@ dev_langs:
 
 # CodeGrantFlow code example
 
+[!INCLUDE[request-header](./includes/mfa-required.md)]
+
 The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Authentication with OAuth](/advertising/guides/authentication-oauth).
 
 > [!NOTE]
