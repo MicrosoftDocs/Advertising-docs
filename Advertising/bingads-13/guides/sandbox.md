@@ -7,45 +7,16 @@ ms.author: eur
 description: Microsoft Advertising provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
 # Microsoft Advertising Sandbox
+
 Microsoft Advertising provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads API Web Service Addresses](web-service-addresses.md).
 
 > [!NOTE]
-> Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. 
+> Sandbox may be down for maintenance, with or without prior notification.  
 
-## <a name="access"></a>Get Sandbox Access
-The sandbox and production environments use separate credentials. 
+## <a name="initial-sign-up"></a>Initial Customer Sign Up
 
-Although in production you must use your own developer token, all Microsoft Advertising customers can use the following universal developer token in sandbox. 
+The [sandbox and production environments](web-service-addresses.md) use separate credentials.  
 
-```string
-BBD37VB98
-```
-
-Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the following public application ID in sandbox. 
-
-```string
-db41b09d-6e50-4f4a-90ac-5a99caefb52f
-```
-
-> [!NOTE]
-> The "Sandbox Tutorial App" client ID is limited to desktop or console applications, and cannot be used with any client secret in a web application. You can use this for testing authentication locally in sandbox, and then register your own production application for more advanced scenarios e.g., web applications with custom redirect URIs. 
-> 
-> Note the sandbox application registration site at [apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList) has been deprecated since May 2019 and functionality for registering and managing converged applications removed starting September 2019.
-
-To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Live Connect](authentication-oauth-live-connect.md) for production; however, you will use different endpoints. Wherever you see endpoints mentioned in [Live Connect](authentication-oauth-live-connect.md), substitute them with the following sandbox endpoints. 
-
-> [!NOTE]
-> For Bing Ads API sandbox the [Live Connect](authentication-oauth-live-connect.md) endpoint is the only OAuth option. For production authentication the [Live Connect](authentication-oauth-live-connect.md) endpoint is no longer the recommended approach, so you should use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq).  
-
-|Description|Production|Sandbox|
-|---|---|---|
-|Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
-|Endpoint to change the Microsoft account password|[account.live.com/password/change](https://account.live.com/password/change)|[account.live-int.com/password/change](https://account.live-int.com/password/change)|
-|Endpoint for OAuth requests via [Live Connect](authentication-oauth-live-connect.md)|login.live.com|login.live-int.com|
-
-Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads API Web Service Addresses](web-service-addresses.md).
-
-### <a name="initial-sign-up"></a>Initial Customer Sign Up
 Follow these steps to get a new sandbox customer. If you already have a sandbox customer and want to add a new user e.g., with Microsoft account credentials, you can skip to the [user invitation](#invite-user) steps.
 
 1. Open a browser and navigate to [sandbox.bingads.microsoft.com](https://secure.sandbox.bingads.microsoft.com/)
@@ -62,8 +33,9 @@ Follow these steps to get a new sandbox customer. If you already have a sandbox 
 8. For **Import/Create Campaign**, click **Skip campaign creation**
 9. For **Go Live**, click **Skip payment information**
 
-### <a name="invite-user"></a>Invite More Users
-To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
+## <a name="invite-user"></a>Invite More Users
+
+To [authenticate with OAuth](authentication-oauth-quick-start.md) in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
 
 1. In Microsoft Advertising [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
 2. Click **Accounts & Billing**
@@ -90,12 +62,42 @@ Microsoft Advertising sends an email invite to the user. If the invite doesn’t
 6. Finish the work flow by specifying the rest of your user information
 7. Exit Microsoft Advertising after completing the MSA process.
 
-After Bing creates the account, you may use the outlook**-int**.com credentials in sandbox and during [app registration](authentication-oauth-live-connect.md#registerapplication).
-
 > [!NOTE]
-> The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
+> The MSA signup process returns you to the SI Microsoft Advertising user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new outlook**-int**.com email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
+
+## <a name="access"></a>Get API Access
+
+The [sandbox and production environments](web-service-addresses.md) use separate credentials.  
+
+For the sandbox environment, substitute ```https://login.microsoftonline.com/common``` with ```https://login.windows-ppe.net/consumers```.  
+
+This table includes additional sandbox endpoints.
+
+|Description|Production|Sandbox|
+|---|---|---|
+|Endpoint for OAuth requests|login.microsoftonline.com|login.windows-ppe.net|
+|Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
+|Endpoint to change the Microsoft account password|[account.live.com/password/change](https://account.live.com/password/change)|[account.live-int.com/password/change](https://account.live-int.com/password/change)|
+
+Although in production you must use your own developer token, all Microsoft Advertising customers can use the following universal developer token in sandbox.  
+
+```string
+BBD37VB98
+```
+
+Although in production you must use your own application ID (a.k.a. client ID), all Microsoft Advertising customers can use the following public application ID in sandbox. The "Tutorial Sample App" client ID is limited to desktop or console applications, and cannot be used with any client secret in a web application.  
+
+```string
+4c0b021c-00c3-4508-838f-d3127e8167ff
+```
+
+Now you can get access and refresh tokens for your Microsoft Advertising user and make your first service call using the Bing Ads API, see the [Quick Start](authentication-oauth-quick-start.md) guide.
+
+> [!TIP]
+> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).  
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
+
 Sandbox should not be used in the same capacity as production.
 
 - Make sure that when you deploy your application to the production environment, you use the production WSDLs and your production credentials. 

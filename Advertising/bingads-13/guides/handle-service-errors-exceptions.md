@@ -60,7 +60,7 @@ You cannot create an instance of a base class such as [Ad](../campaign-managemen
 ### Why am I getting an empty URL from the Reporting API call? 
 Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Microsoft Advertising web application for the same date range and filter criteria, please [contact support](#contact-support) with details.  
 
-## <a name="common-oauth-errors"></a>Common OAuth Errors
+## <a name="common-oauth-errors"></a>Common OAuth errors
 Here are some tips to handle common authorization errors that you may encounter. 
 
 ### <a name="aadsts-errors"></a>AADSTS errors
@@ -73,7 +73,7 @@ Some of the most common AADSTS errors e.g., AADSTS50011, AADSTS650052, and AADST
 
 ### <a name="aadsts50011"></a>AADSTS50011
 
-The AADSTS50011 error could be returned within a JSON string when requesting access tokens with the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) as follows. 
+The AADSTS50011 error could be returned within a JSON string when [requesting access tokens](authentication-oauth-get-tokens.md) with the Microsoft identity platform endpoint as follows.
 
 ```json
 {"error":"invalid_client","error_description":"AADSTS50011: The reply url specified in the request
@@ -87,7 +87,7 @@ An invalid redirect URI error could also be returned as text in the browser wind
 
 *invalid_request: The provided value for the input parameter 'redirect_uri' is not valid. The expected value is a URI which matches a redirect URI registered for this client application.*
 
-If you observe this error, either your redirect URI is not properly [registered](authentication-oauth-identity-platform.md#registerapplication), or your application is not using the registered redirect URI. 
+If you observe this error, either your redirect URI is not properly [registered](authentication-oauth-register.md), or your application is not using the registered redirect URI. 
 
 ### <a name="aadsts650052"></a>AADSTS650052
 
@@ -99,11 +99,11 @@ If you observe this error please ensure that you at least one of the users in yo
 
 The 700016 error code can be returned with message "Application with identifier '{appIdentifier}' was not found in the directory '{tenantName}'." 
 
-If you have an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67, then you must [register](authentication-oauth-identity-platform.md#registerapplication) a new application. Valid [Microsoft identity platform](authentication-oauth-identity-platform.md) application IDs are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. If you don't see an existing app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908), that's another indication that you should replace it with a new app.  
+If you have an older application ID (aka Client ID) that is formatted as a hexadecimal value e.g., 0000000012345A67, then you must [register](authentication-oauth-register.md) a new application. Valid application IDs for use with the Microsoft identity platform are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. If you don't see an existing app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908), that's another indication that you should replace it with a new app.  
 
 ### <a name="invalid-redirect-uri"></a>Invalid redirect URI
 
-An invalid redirect URI error could be returned within a JSON string when requesting access tokens with the [Live Connect endpoint](authentication-oauth-live-connect.md) as follows. 
+An invalid redirect URI error could be returned within a JSON string when requesting access tokens with the Live Connect endpoint as follows. 
 
 ```json
 {"error":"invalid_grant","error_description":"The provided value for the 'redirect_uri' is not
@@ -114,7 +114,7 @@ An invalid redirect URI error could also be returned as text in the browser wind
 
 *invalid_request: The provided value for the input parameter 'redirect_uri' is not valid. The expected value is a URI which matches a redirect URI registered for this client application.*
 
-If you observe this error, either your redirect URI is not properly [registered](authentication-oauth-identity-platform.md#registerapplication), or your application is not using the registered redirect URI. 
+If you observe this error, either your redirect URI is not properly [registered](authentication-oauth-register.md), or your application is not using the registered redirect URI. 
 
 ### <a name="invalid-grant"></a>Invalid grant
 
@@ -124,15 +124,15 @@ The invalid_grant error could be returned if the [redirect URI is invalid](#inva
 {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}
 ```
 
-At any time without prior warning Microsoft may determine that user consent should again be granted; however, some scenarios are within your control. Clients running apps on services that span regions and devices such as Microsoft Azure should [register](authentication-oauth-identity-platform.md#registerapplication) a web application with client secret. You can get a refresh token on one device and refresh it on another so long as you have the same client ID and client secret. If you register a public application without a client secret, then you cannot use a refresh token across devices. A confidential token is bound to the client secret. If you had used a public client application ID without client secret to get a refresh token in the US and then later try to refresh the token in the EU region you would observe the invalid_grant error. 
+At any time without prior warning Microsoft may determine that user consent should again be granted; however, some scenarios are within your control. Clients running apps on services that span regions and devices such as Microsoft Azure should [register](authentication-oauth-register.md) a web application with client secret. You can get a refresh token on one device and refresh it on another so long as you have the same client ID and client secret. If you register a public application without a client secret, then you cannot use a refresh token across devices. A confidential token is bound to the client secret. If you had used a public client application ID without client secret to get a refresh token in the US and then later try to refresh the token in the EU region you would observe the invalid_grant error. 
 
 ### <a name="application-not-found"></a>Application not found or unauthorized client
 
 If you observe an error such as "unauthorized_client: The client does not exist" or "Application with identifier 'foo' was not found in the directory 'bar'", ensure that the application still exists for the correct target environment i.e., production or sandbox. 
 
-An application not found error could be returned if you are calling the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) using a Live SDK application ID with the short hexadecimal format e.g., 0000000012345A67. In that case you must [register](authentication-oauth-identity-platform.md#registerapplication) a new application. Valid Microsoft identity platform application IDs are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. 
+An application not found error could be returned if you are calling the Microsoft identity platform endpoint using a Live SDK application ID with the short hexadecimal format e.g., 0000000012345A67. In that case you must [register](authentication-oauth-register.md) a new application. Valid Microsoft identity platform application IDs are formatted as a GUID with dashes e.g., ab01c23d-4e56-7f8a-90bc-1d23efabc45d. 
 
-If you registered the app in the Azure portal, in the Supported account types section ensure that you selected "Accounts in any organizational directory and personal Microsoft accounts". (Please see step 3 [here](authentication-oauth-identity-platform.md#registerapplication).) If you did not choose this option during initial setup, the Azure portal might require that you register a new application. 
+If you registered the app in the Azure portal, in the Supported account types section ensure that you selected **Accounts in any organizational directory and personal Microsoft accounts**. (Please see [Register an application](authentication-oauth-register.md)) If you did not choose this option during initial setup, the Azure portal might require that you register a new application. 
 
 ### <a name="application-not-multi-tenant"></a>Application not configured as a multi-tenant application
 
@@ -142,7 +142,7 @@ You might observe the following error if your registered application is limited 
 Application 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx' is not configured as a multi-tenant application. Usage of the /common endpoint is not supported for such applications created after '10/15/2018'. Use a tenant-specific endpoint or configure the application to be multi-tenant.
 ```
 
-If you registered the app in the Azure portal, in the Supported account types section ensure that you selected "Accounts in any organizational directory and personal Microsoft accounts". (Please see step 3 [here](authentication-oauth-identity-platform.md#registerapplication).) If you did not choose this option during initial setup, the Azure portal might require that you register a new application. 
+If you registered the app in the Azure portal, in the Supported account types section ensure that you selected **Accounts in any organizational directory and personal Microsoft accounts**. (Please see [Register an application](authentication-oauth-register.md)) If you did not choose this option during initial setup, the Azure portal might require that you register a new application.  
 
 ## <a name="contact-support"></a>Contact Support
 The [Microsoft Q&A](https://docs.microsoft.com/answers/topics/advertising-api.html) forum is available for the developer community to ask and answer questions about the Bing Ads APIs and Microsoft Advertising Scripts. Microsoft monitors the forums and replies to questions that the community has not yet answered. 
@@ -164,17 +164,17 @@ For help with calls to the Bing Ads API [services](web-service-addresses.md), pl
  - Indicate whether the same request had worked for you in the past i.e., historical performance. 
  - Indicate whether you can now reproduce the issue every time or intermittently. 
  - For issues related to the Bulk or Reporting service please include the trace for both the request and status poll operations. 
- - For an authentication issue related to error code 105 or 106, please also include the system identifier for the Microsoft Advertising user's login credentials. To get the user identifier for the current user, please see the [Quick Start](get-started.md#quick-start) guide. 
+ - For an authentication issue related to error code 105 or 106, please also include the system identifier for the Microsoft Advertising user's login credentials. To get the user identifier for the current user, please see the [Quick Start](authentication-oauth-quick-start.md) guide. 
 
-For help getting access and refresh tokens via the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform](authentication-oauth-identity-platform.md) endpoints, please step through this checklist and provide the results to the [support team](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). 
+For help getting access and refresh tokens for [Authentication with OAuth](authentication-oauth.md), please step through this checklist and provide the results to the [support team](https://about.ads.microsoft.com/en-us/microsoft-advertising-support). 
 
  - Who is the user attempting to authenticate e.g., what is the login email address?  
  - What is the account ID or account number the user is trying to access? 
  - What are the steps needed to reproduce the error? Include the full request, response, and timestamp, except for private credentials e.g., access token and client secret.  
  - Are you targeting the production or sandbox environment? Ensure that you are using the correct app registration and authorization endpoints for production vs sandbox. Likewise be sure to use the correct [web service addresses](web-service-addresses.md) for the same environment.  
- - Have you [registered](authentication-oauth-identity-platform.md#registerapplication) a native or web application? Clients running apps on services that span regions and devices such as Microsoft Azure should register a web application with client secret. 
+ - Have you [registered](authentication-oauth-register.md) a native or web application? Clients running apps on services that span regions and devices such as Microsoft Azure should register a web application with client secret. 
  - What is your registered application ID (client_id)? If you also have an application secret (client_secret) please confirm that you are setting it when you request access tokens from the authorization endpoint, but do not share it with anyone. 
- - Run an OAuth diagnostic health check. Can you successfully obtain an access token and complete the documented [Quick Start](get-started.md#quick-start) for production or sandbox? If not, where does authentication fail and what is the error? 
+ - Run an OAuth diagnostic health check. Can you successfully obtain an access token and complete the [Quick Start](authentication-oauth-quick-start.md) guide for production or sandbox? If not, where does authentication fail and what is the error? 
 
 ## <a name="faultoverview"></a>Fault Model Overview
 When a Bing Ads API service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Operation Error Codes](operation-error-codes.md).

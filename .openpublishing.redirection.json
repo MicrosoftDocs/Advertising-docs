@@ -136,6 +136,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "Advertising/guides/authentication-oauth-live-connect.md",
+            "redirect_url": "authentication-oauth",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "Advertising/guides/authentication-oauth-identity-platform.md",
+            "redirect_url": "authentication-oauth",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "Advertising/scripts/solutions/execute-in-parallel.md",
             "redirect_url": "get-disapproved-ads",
             "redirect_document_id": false

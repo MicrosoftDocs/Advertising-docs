@@ -12,6 +12,8 @@ dev_langs:
 
 # Authenticating Microsoft Account Credentials code example
 
+[!INCLUDE[request-header](./includes/mfa-required.md)]
+
 For information about using OAuth to authenticate your Microsoft Advertising users, see [Authentication with OAuth](/advertising/guides/authentication-oauth). If you're currently using the [Bing Ads SDK](/advertising/guides/client-libraries) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
 
 This example shows how to get an OAuth access token that you use to set the AuthenticationToken header. The example is broken out into two part. The first part shows a simple client that calls the [second part](#secondexample) which implements the code grant flow process. 
