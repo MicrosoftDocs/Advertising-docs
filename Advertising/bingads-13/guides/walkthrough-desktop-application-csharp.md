@@ -25,7 +25,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
 
 4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Install the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
-5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. If you are targeting the production environment, then you must replace *db41b09d-6e50-4f4a-90ac-5a99caefb52f* with the *Application Id* that was provisioned when you registered your production application and replace *BBD37VB98* with your production [developer token](get-started.md#get-developer-token). 
+5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. If you are targeting the production environment, then you must replace *4c0b021c-00c3-4508-838f-d3127e8167ff* with the *Application Id* that was provisioned when you registered your production application and replace *BBD37VB98* with your production [developer token](get-started.md#get-developer-token). 
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -49,7 +49,7 @@ You'll also need your production [developer token](get-started.md#get-developer-
                     <value>BBD37VB98</value>
                 </setting>
                 <setting name="ClientId" serializeAs="String">
-                    <value>db41b09d-6e50-4f4a-90ac-5a99caefb52f</value>
+                    <value>4c0b021c-00c3-4508-838f-d3127e8167ff</value>
                 </setting>
             </BingAdsConsoleApp.Properties.Settings>
         </userSettings>
