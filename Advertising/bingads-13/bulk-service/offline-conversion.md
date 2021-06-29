@@ -117,9 +117,6 @@ The currency code for the restated offline conversion.
 
 For more information, see [Currencies](../guides/currencies.md).
 
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
-
 **Add:** Not applicable  
 **Restate:** Required. If you do not specify an adjustment currency code with the restatement, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
 **Retract:** Not applicable  
@@ -132,9 +129,6 @@ The adjustment time cannot be earlier than the original offline [conversion date
 > [!IMPORTANT]
 > The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Microsoft Advertising web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
 
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
-
 **Add:** Not applicable  
 **Restate:** Required  
 **Retract:** Required  
@@ -146,18 +140,12 @@ If this value is "Restate", the offline conversion previously attributed to the 
 
 If this value is "Retract", the offline conversion previously attributed to the specified [Microsoft Click Id](#microsoftclickid) will be retracted or deleted.
 
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
-
 **Add:** Not applicable  
 **Restate:** Required. This field must be set to "Restate".  
 **Retract:** Required. This field must be set to "Retract".  
 
 ## <a name="adjustmentvalue"></a>Adjustment Value
 The adjusted offline conversion value.
-
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
 
 **Add:** Not applicable  
 **Restate:** Required     
