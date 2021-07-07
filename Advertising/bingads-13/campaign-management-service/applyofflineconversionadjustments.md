@@ -14,9 +14,6 @@ dev_langs:
 # ApplyOfflineConversionAdjustments Service Operation - Campaign Management
 Applies offline conversion adjustments.  
 
-> [!NOTE]
-> Support for offline conversion adjustments is coming soon. This preview documentation is subject to change. 
-
 This operation can be used to adjust the conversion time and value for offline conversions previously applied via the [ApplyOfflineConversions](applyofflineconversions.md) operation. 
 
 ## <a name="request"></a>Request Elements
