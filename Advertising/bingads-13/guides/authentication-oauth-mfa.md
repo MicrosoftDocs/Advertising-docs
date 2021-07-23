@@ -30,7 +30,7 @@ With each API request we will check the access token to ensure the user granted 
 
 We recommend that you make the necessary changes as soon as possible.  
 
-We also recommend that you inform and guide users of your application to [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) so that a second proof will be required when they grant permissions for any application. For the Microsoft Advertising requirement, it isn't enough for them to turn on MFA. Either way you must get user consent by prompting with the ```msads.manage ``` scope. 
+We also recommend that you inform and guide users of your application to [set up MFA](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) so that a second proof will be required when they grant permissions for any application. For the Microsoft Advertising requirement, it isn't enough for them to turn on MFA. Either way you must get user consent by prompting with the ```msads.manage ``` scope. 
 
 ## After enforcement
 
@@ -77,5 +77,5 @@ oauth_web_auth_code_grant = OAuthDesktopMobileAuthCodeGrant(
 
 ## See Also
 
-[OAuth FAQ](faq.yml#oauth-)
+[OAuth FAQ](faq.yml#oauth)
 [Request user consent](authentication-oauth-consent.md)
