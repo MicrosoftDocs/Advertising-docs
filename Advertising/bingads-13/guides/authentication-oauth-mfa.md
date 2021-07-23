@@ -77,5 +77,5 @@ oauth_web_auth_code_grant = OAuthDesktopMobileAuthCodeGrant(
 
 ## See Also
 
-[OAuth FAQ](faq.yml#oauth)
+[OAuth FAQ](faq.yml)
 [Request user consent](authentication-oauth-consent.md)
