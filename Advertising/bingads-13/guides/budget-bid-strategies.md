@@ -62,6 +62,7 @@ The following campaign-level bid strategy types are available depending on the c
 |-------------------------|--------------------------|
 |[EnhancedCpc](#enhancedcpc)|Search<br/>Shopping|
 |[ManualCpc](#manualcpc)|Audience|
+|[ManualCpm](#manualcpm)|Audience|
 |[ManualCpv](#manualcpv)|Audience|
 |[MaxClicks](#maxclicks)|Search<br/>Shopping|
 |[MaxConversions](#maxconversions)|Search|
@@ -83,7 +84,10 @@ Differing from the MaxClicks, MaxConversions, and TargetCpa bid strategies, with
 With the ManualCpc (manual cost per click) bid strategy, you set your ad group and keyword bids, and Microsoft Advertising uses these bids every time.  
 
 > [!NOTE] 
-> As of April 2021, the manual CPC bid strategy can only be used with audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC.  
+> As of April 2021, the manual CPC bid strategy can only be used with audience campaigns. If you attempt to set manual CPC for any other campaign type, the request will be ignored without error and the bid strategy will be set to enhanced CPC.
+
+### <a name="manualcpm"></a>ManualCpm
+With the ManualCpm (manual cost per 1,000 viewed impressions) bid strategy, you set the actual amount that you'd like to pay per 1,000 viewed ad impressions, and Microsoft Advertising uses these bids every time.
 
 ### <a name="manualcpv"></a>ManualCpv
 With the ManualCpv (manual cost per view) bid strategy, you set the highest amount that you'd like to pay per view or per click on a video ad, and Microsoft Advertising uses these bids every time.  
