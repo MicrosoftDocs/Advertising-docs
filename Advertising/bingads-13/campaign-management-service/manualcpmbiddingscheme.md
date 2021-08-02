@@ -9,6 +9,8 @@ description: Defines an object that represents the manual CPM bid strategy type.
 # ManualCpmBiddingScheme Data Object - Campaign Management
 Defines an object that represents the manual CPM bid strategy type.
 
+With the ManualCpm (manual cost per 1,000 viewed impressions) bid strategy, you set the actual amount that you'd like to pay per 1,000 viewed ad impressions, and Microsoft Advertising uses these bids every time.
+
 ## Syntax
 ```xml
 <xs:complexType name="ManualCpmBiddingScheme" xmlns:xs="http://www.w3.org/2001/XMLSchema">
