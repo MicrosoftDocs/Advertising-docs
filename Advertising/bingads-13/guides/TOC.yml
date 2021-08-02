@@ -2,7 +2,7 @@
   href: ./index.md
   displayName: faq
 - name: FAQ
-  href: ./faq.md
+  href: ./faq.yml
 - name: Get Started
   items:
   - name: Overview
