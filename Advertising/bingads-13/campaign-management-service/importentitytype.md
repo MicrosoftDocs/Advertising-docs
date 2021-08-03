@@ -15,17 +15,23 @@ Defines the supported import entity types.
   <xs:restriction base="xs:string">
     <xs:enumeration value="Unknown" />
     <xs:enumeration value="Campaign" />
+    <xs:enumeration value="AdGroup" />
+    <xs:enumeration value="Ad" />
+    <xs:enumeration value="Keyword" />
   </xs:restriction>
 </xs:simpleType>
 ```
 
 ## <a name="values"></a>Values
 
-The [ImportEntityType](importentitytype.md) value set has the following values: [Campaign](#campaign), [Unknown](#unknown).
+The [ImportEntityType](importentitytype.md) value set has the following values: [Ad](#ad), [AdGroup](#adgroup), [Campaign](#campaign), [Keyword](#keyword), [Unknown](#unknown).
 
 |Value|Description|
 |-----------|---------------|
+|<a name="ad"></a>Ad|Reserved.|
+|<a name="adgroup"></a>AdGroup|Reserved.|
 |<a name="campaign"></a>Campaign|The import entity is a campaign.|
+|<a name="keyword"></a>Keyword|Reserved.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|
 
 ## Requirements

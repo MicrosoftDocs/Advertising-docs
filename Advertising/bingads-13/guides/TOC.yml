@@ -1439,6 +1439,10 @@
       href: ../campaign-management-service/daytimecriterion.md
     - name: DeviceCriterion
       href: ../campaign-management-service/devicecriterion.md
+    - name: DisclaimerAdExtension
+      href: ../campaign-management-service/disclaimeradextension.md
+    - name: DisclaimerSetting
+      href: ../campaign-management-service/disclaimersetting.md
     - name: DurationGoal
       href: ../campaign-management-service/durationgoal.md
     - name: DynamicFeedSetting

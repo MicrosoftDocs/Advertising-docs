@@ -11,8 +11,6 @@ If you already are using Google Ads to advertise on Google, you can import these
 
 To import campaigns from Google Ads, [get a credential ID](#get-credentialid) to represent your Google Ads credentials, [choose the Google Ads account and campaigns](#choose-google-campaigns) that you want to import, [choose import options](#import-options) e.g., the entities that you want to import, and then [schedule the import](#import-schedule). 
 
-You can add and delete scheduled imports, but cannot edit or update via API. A scheduled import that you added via API can be edited in the Microsoft Advertising UI. 
-
 You can get all of your ad account's scheduled import results via API, whether an import was scheduled via API or the Microsoft Advertising UI. 
 
 > [!NOTE]
@@ -92,7 +90,7 @@ To run the import "now", you can leave the Google import job [Frequency](../camp
 
 You can schedule an import or run now via the [AddImportJobs](../campaign-management-service/addimportjobs.md) operation. Be sure to set the destination Microsoft Advertising ad account via the CustomerAccountId [header](../campaign-management-service/addimportjobs.md#request-header) element.  
 
-Updates such as pause and edit are only supported via the Microsoft Advertising UI. You can delete a scheduled import via [DeleteImportJobs](../campaign-management-service/deleteimportjobs.md), and then schedule a new import via [AddImportJobs](../campaign-management-service/addimportjobs.md) to effectively replace the deleted job. You can get previously scheduled imports via the [GetImportJobsByIds](../campaign-management-service/getimportjobsbyids.md) operation. 
+You can get previously scheduled imports via the [GetImportJobsByIds](../campaign-management-service/getimportjobsbyids.md) operation. 
 
 ## <a name="import-start"></a>Review the Import Results
 
