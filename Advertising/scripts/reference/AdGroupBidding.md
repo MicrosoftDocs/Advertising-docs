@@ -47,9 +47,9 @@ Gets the ad group's CPM bid amount.
 double|The ad group's maximum CPM bid amount.
 
 ## <a name="setcpm-double-cpm-"></a>setCpm(double cpm)
-Sets the ad group's CPM bid amount. 
+Sets the ad group's CPM bid amount.
 
-Specifies the bid amount to use per 1,000 viewed impressions. Microsoft Advertising uses these bids every time.
+Specifies the bid amount to use per 1,000 viewed impressions. A viewed impression is counted when more than 50% of the ad pixels are in a user’s view and the ad is viewed for at least one second.
 
 If the bid value is not valid, the call silently fails. To confirm whether the bid was updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 

@@ -44,7 +44,7 @@ Example usage:
 [build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object used to check whether the ad group was successfully added.
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy-string-biddingstrategy-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
-[withCpm(double cpm)](#withcpm-double-cpm-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPM bid.
+[withCpm(double cpm)](#withcpm-double-cpm-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's actual CPM bid.
 [withCpv(double cpv)](#withcpv-double-cpv-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPV bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
 [withEndDate(string endDate)](#withenddate-string-enddate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
@@ -95,12 +95,12 @@ cpc|double|The ad group's maximum CPC bid. The account's currency determines the
 ## <a name="withcpm-double-cpm-"></a>withCpm(double cpm)
 Sets the ad group's CPM bid. 
 
-Specifies the bid amount to use per 1,000 viewed impressions, and when the ad group's bid strategy is MANUAL_CPM.
+Specifies the bid amount to use per 1,000 viewed impressions, and when the ad group's bid strategy is MANUAL_CPM. A viewed impression is counted when more than 50% of the ad pixels are in a user’s view and the ad is viewed for at least one second.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpm|double|The ad group's maximum CPM bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
+cpm|double|The ad group's actual CPM bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -108,7 +108,7 @@ cpm|double|The ad group's maximum CPM bid. The account's currency determines the
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the CPM bid applied.
 
 ## <a name="withcpv-double-cpv-"></a>withCpv(double cpv)
-Sets the ad group's CPV bid. 
+Sets the ad group's CPV bid.
 
 Specifies the bid amount to use per view or per click on a video ad, and when the ad group's bid strategy is MANUAL_CPV.
 
