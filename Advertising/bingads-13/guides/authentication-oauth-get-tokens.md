@@ -72,7 +72,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the code parameter to the value of the authorization code retrieved in the previous step, and the grant type set to *authorization_code*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Register an application](authentication-oauth-register.md).
 
-The following table includes parameters that Bing Ads API clients can include in the request for an initial access token. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation. 
+The following table includes parameters that Bing Ads API clients can include in the request for an initial access token. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation. 
 
 |Parameter|Required/Optional|Description|
 |------------|-------------------|----------------|
@@ -82,14 +82,14 @@ The following table includes parameters that Bing Ads API clients can include in
 |`code_verifier`|recommended|The same code_verifier that was used to obtain the authorization_code. Required if PKCE was used in the authorization code grant request. For more information, see the [PKCE RFC](https://tools.ietf.org/html/rfc7636).|
 |`grant_type`|required|Must be `authorization_code` for the authorization code flow.|
 |`redirect_uri`|required|The same redirect_uri value that was used to acquire the authorization_code.|
-|`scope`|required|A space-separated list of scopes. The scopes requested in this leg must be equivalent to or a subset of the scopes included when you [requested user consent](authentication-oauth-consent.md). If the scopes specified in this request span multiple resource servers, then the Microsoft identity platform endpoint will return a token for the resource specified in the first scope. For a more detailed explanation of scopes, refer to [permissions, consent, and scopes](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).|
-|`tenant`|required|The `{tenant}` value in the path of the request can be used to control who can sign into the application. To ensure that your application supports both MSA personal accounts and Azure AD work or school accounts, we suggest that you use `common` as the tenant for Bing Ads API authentication.<br/><br/>In case your application requires another tenant, see [Microsoft identity platform endpoints](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints) for more information.|
+|`scope`|required|A space-separated list of scopes. The scopes requested in this leg must be equivalent to or a subset of the scopes included when you [requested user consent](authentication-oauth-consent.md). If the scopes specified in this request span multiple resource servers, then the Microsoft identity platform endpoint will return a token for the resource specified in the first scope. For a more detailed explanation of scopes, refer to [permissions, consent, and scopes](/azure/active-directory/develop/v2-permissions-and-consent).|
+|`tenant`|required|The `{tenant}` value in the path of the request can be used to control who can sign into the application. To ensure that your application supports both MSA personal accounts and Azure AD work or school accounts, we suggest that you use `common` as the tenant for Bing Ads API authentication.<br/><br/>In case your application requires another tenant, see [Microsoft identity platform endpoints](/azure/active-directory/develop/active-directory-v2-protocols#endpoints) for more information.|
 
 ## <a name="refresh-accesstoken"></a>Refresh token request details
 
 Access tokens are short lived, and you must refresh them after they expire to continue accessing resources. You can do so by submitting another `POST` request to the `/token` endpoint, this time providing the `refresh_token` instead of the `code`.  Refresh tokens are valid for all permissions that your client has already received consent.  
 
-Refresh tokens do not have specified lifetimes. Typically, the lifetimes of refresh tokens are relatively long. However, in some cases, refresh tokens expire, are revoked, or lack sufficient privileges for the desired action. Your application needs to expect and handle errors returned by the token issuance endpoint correctly. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
+Refresh tokens do not have specified lifetimes. Typically, the lifetimes of refresh tokens are relatively long. However, in some cases, refresh tokens expire, are revoked, or lack sufficient privileges for the desired action. Your application needs to expect and handle errors returned by the token issuance endpoint correctly. For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ```https
 // Line breaks for legibility only
@@ -107,7 +107,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the refresh token parameter to the value of the refresh token retrieved in the previous step, and the grant type set to *refresh_token*. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Register an application](authentication-oauth-register.md).
 
-The following table includes parameters that Bing Ads API clients can include in the request to refresh an access token. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation. 
+The following table includes parameters that Bing Ads API clients can include in the request to refresh an access token. For additional details about optional parameters see the Microsoft identity platform [OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) documentation. 
 
 |Parameter|Required/Optional|Description|
 |---------------|----------------|--------------------|
@@ -115,8 +115,8 @@ The following table includes parameters that Bing Ads API clients can include in
 |`client_secret`|required for web apps|The application secret that you created in the app registration portal for your app. It should not be used in a native  app, because client_secrets cannot be reliably stored on devices. It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.|
 |`grant_type`|required|Must be set to `refresh_token` for this leg of the authorization code flow.|
 |`refresh_token`|required|The refresh_token that you acquired when you [requested an access token](#request-accesstoken).|
-|`scope`|required|A space-separated list of scopes. The scopes requested in this leg must be equivalent to or a subset of the scopes included when you [requested user consent](authentication-oauth-consent.md). If the scopes specified in this request span multiple resource servers, then the Microsoft identity platform endpoint will return a token for the resource specified in the first scope. For a more detailed explanation of scopes, refer to [permissions, consent, and scopes](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).|
-|`tenant`|required|The `{tenant}` value in the path of the request can be used to control who can sign into the application. To ensure that your application supports both MSA personal accounts and Azure AD work or school accounts, we suggest that you use `common` as the tenant for Bing Ads API authentication.<br/><br/>In case your application requires another tenant, see [Microsoft identity platform endpoints](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints) for more information.
+|`scope`|required|A space-separated list of scopes. The scopes requested in this leg must be equivalent to or a subset of the scopes included when you [requested user consent](authentication-oauth-consent.md). If the scopes specified in this request span multiple resource servers, then the Microsoft identity platform endpoint will return a token for the resource specified in the first scope. For a more detailed explanation of scopes, refer to [permissions, consent, and scopes](/azure/active-directory/develop/v2-permissions-and-consent).|
+|`tenant`|required|The `{tenant}` value in the path of the request can be used to control who can sign into the application. To ensure that your application supports both MSA personal accounts and Azure AD work or school accounts, we suggest that you use `common` as the tenant for Bing Ads API authentication.<br/><br/>In case your application requires another tenant, see [Microsoft identity platform endpoints](/azure/active-directory/develop/active-directory-v2-protocols#endpoints) for more information.
 
 Although refresh tokens are not revoked when used to acquire new access tokens, you are expected to discard the old refresh token. The [OAuth 2.0 spec](https://tools.ietf.org/html/rfc6749#section-6) says: "The authorization server MAY issue a new refresh token, in which case the client MUST discard the old refresh token and replace it with the new refresh token. The authorization server MAY revoke the old refresh token after issuing a new refresh token to the client."  
 
@@ -134,7 +134,7 @@ Please keep in mind that public refresh tokens are only bound to the granted dev
 
 You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. 
 
-For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes). 
+For more details about OAuth errors, please see [Common OAuth Errors](handle-service-errors-exceptions.md#common-oauth-errors) and [Authentication and authorization error codes](/azure/active-directory/develop/reference-aadsts-error-codes). 
 
 ## Next steps
 
