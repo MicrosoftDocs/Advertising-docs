@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Updates the specified import jobs.
+description: Replaces the specified import jobs with new import jobs.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,11 @@ dev_langs:
   - python
 ---
 # UpdateImportJobs Service Operation - Campaign Management
-Updates the specified import jobs.
+Replaces the specified import jobs with new import jobs.
+
+The current import settings are looked up by the identifer of each [import job](#importjobs). The operation only updates the properties that you explicitly set. If the operation is successful, new import job IDs are returned.
+
+You can still use the IDs that were replaced (deleted) to [get results](getimportresults.md) for previous import jobs.
 
 ## <a name="request"></a>Request Elements
 The *UpdateImportJobsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -36,7 +40,7 @@ The *UpdateImportJobsResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="importjobids"></a>ImportJobIds|A list of unique system identifiers corresponding to the import jobs that were updated.<br/><br/>The list of identifiers corresponds directly to the list of import jobs in the request. Items of the list may be returned as null. For each list index where an import job was not updated, the corresponding element will be null.|**long** array|
+|<a name="importjobids"></a>ImportJobIds|A list of unique system identifiers corresponding to the replacement import jobs.<br/><br/>The list of replacement identifiers corresponds directly to the list of replaced import jobs in the request. Items of the list may be returned as null. For each list index where an import job was not updated, the corresponding element will be null.|**long** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements

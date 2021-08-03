@@ -78,6 +78,28 @@ Previously if you set a date and time that is more than 90 days prior, an error 
 
 The maximum look back period will decrease from 90 days to 30 days on September 1st, 2021. Then, if you set a date and time that is more than 30 days prior, an error will be returned.
 
+## <a name="july2021"></a>July 2021
+
+See below for Bing Ads API updates during this calendar month.  
+
+- [Multimedia ads](#multimedia-ads-july2021)  
+- [Unlimited and open-ended insertion order](#unlimited-io-july2021)  
+
+### <a name="multimedia-ads-july2021"></a>Asset performance label for RSA
+
+Multimedia ads are supported in the Campaign Management [ResponsiveAd](../campaign-management-service/responsivead.md) object.
+
+The [ResponsiveAd](../campaign-management-service/responsivead.md) object is used for [Multimedia ads](https://help.ads.microsoft.com/#apex/ads/en/60107/0) in the search network and [Audience ads](https://help.ads.microsoft.com/#apex/ads/en/56674/0) in the Microsoft Audience Network.
+
+Most supported properties are the same, but there are some of the key differentiators. For more information see responsive ad [remarks](../campaign-management-service/responsivead.md#remarks).
+
+### <a name="unlimited-io-july2021"></a>Unlimited and open-ended insertion order
+
+Unlimited and open-ended insertion orders are supported in the Customer Billing [InsertionOrder](../customer-billing-service/insertionorder.md) object.
+
+For an open-ended insertion order you can set the [EndDate](../customer-billing-service/insertionorder.md#enddate) element nil or empty.
+
+For an unlimited budget insertion order you can set the [SpendCapAmount](../customer-billing-service/insertionorder.md#spendcapamount) element nil or empty.
 
 ## <a name="june2021"></a>June 2021
 

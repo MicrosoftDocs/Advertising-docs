@@ -118,7 +118,16 @@ If you observe this error, either your redirect URI is not properly [registered]
 
 ### <a name="invalid-grant"></a>Invalid grant
 
-The invalid_grant error could be returned if the [redirect URI is invalid](#invalid-redirect-uri), the refresh token expired, the user changed their password, or the token was otherwise revoked.  
+An **invalid_grant** error could be returned if you attempt to refresh the token using a scope that the user does not consent to.  
+
+```json
+{
+    "error":"invalid_grant",
+    "error_description":"AADSTS70000: The request was denied because one or more scopes requested are unauthorized or expired. The user must first sign in and grant the client application access to the requested scope."
+}
+```
+
+An **invalid_grant** error could also be returned if the [redirect URI is invalid](#invalid-redirect-uri), the refresh token expired, the user changed their password, or the token was otherwise revoked.  
 
 ```json
 {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}

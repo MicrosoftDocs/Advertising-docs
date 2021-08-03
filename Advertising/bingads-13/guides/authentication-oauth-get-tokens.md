@@ -12,7 +12,7 @@ description: Get access and refresh tokens using the Microsoft identity platform
 
 Once a user has granted consent for you to manage their Microsoft Advertising account, you can redeem the authorization ``code`` for an access token.  
 
-1. [Request an access token](#request-accesstoken) by redeem the `code` returned after the user [granted consent](authentication-oauth-consent.md). Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
+1. [Request an access token](#request-accesstoken) by redeeming the `code` returned after the user [granted consent](authentication-oauth-consent.md). Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 1. When you received an access token, the value of *expires_in* represents the maximum time in seconds, until the access token will expire. Before the access token expires or before you will need API access again, you should [refresh the access token](#refresh-accesstoken).
 1. Once you've successfully acquired an `access_token`, you can [use](authentication-oauth-quick-start.md) the token in requests to Bing Ads APIs. See the [Make your first API call](authentication-oauth-quick-start.md) guide for an example.
 
