@@ -118,7 +118,7 @@ The [AdDynamicTextPerformanceReportColumn](addynamictextperformancereportcolumn.
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|
-|<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
+|<a name="language"></a>Language|The language of the publisher where the ad was shown.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="param1"></a>Param1|The first dynamic substitution parameter (Param1) of a keyword or biddable ad group criterion.|
 |<a name="param2"></a>Param2|The second dynamic substitution parameter (Param2) of a keyword or biddable ad group criterion.|
 |<a name="param3"></a>Param3|The third dynamic substitution parameter (Param3) of a keyword or biddable ad group criterion.|

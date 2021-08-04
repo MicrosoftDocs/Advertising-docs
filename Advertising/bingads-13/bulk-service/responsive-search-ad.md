@@ -20,8 +20,6 @@ The responsive ads shown to users appear identical to expanded text ads i.e., up
 
 When you create responsive search ads the [Description](#description) and [Headline](#headline) lists are stored as text assets that can be shared by any responsive search ad within the account. For example if "Seamless Integration" is a text asset, you will observe that it has the same asset identifier across all ads that link to "Seamless Integration" in the same Microsoft Advertising account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
-Currently Microsoft Advertising does not support deletion of account assets. Even after you delete all ads that use (are linked to) "Seamless Integration", the text asset will remain in your account with a unique system identifier. The next time you use the text asset e.g., "Seamless Integration" in an ad, it will retain the original Microsoft Advertising system identifier.  
-
 > [!NOTE]
 > Responsive search ads can only be created in Search campaigns where the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchStandard". If the [Ad Group Type](ad-group.md#adgrouptype) is set to "SearchDynamic", then the ad group does not support responsive search ads.  
 
