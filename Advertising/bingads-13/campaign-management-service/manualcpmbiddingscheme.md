@@ -9,6 +9,8 @@ description: Defines an object that represents the manual CPM bid strategy type.
 # ManualCpmBiddingScheme Data Object - Campaign Management
 Defines an object that represents the manual CPM bid strategy type.
 
+With the ManualCpm (manual cost per thousand impressions) bid strategy, you set the highest amount that you'd like to pay per 1,000 viewed impressions. A viewed impression is counted when more than 50% of the ad pixels are in a user’s view and the ad is viewed for at least one second.
+
 ## Syntax
 ```xml
 <xs:complexType name="ManualCpmBiddingScheme" xmlns:xs="http://www.w3.org/2001/XMLSchema">
