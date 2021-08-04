@@ -29,6 +29,7 @@ Defines the possible ad extension types.
         <xs:enumeration value="FilterLinkAdExtension" />
         <xs:enumeration value="FlyerAdExtension" />
         <xs:enumeration value="VideoAdExtension" />
+        <xs:enumeration value="DisclaimerAdExtension" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -37,7 +38,7 @@ Defines the possible ad extension types.
 
 ## <a name="values"></a>Values
 
-The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [FilterLinkAdExtension](#filterlinkadextension), [FlyerAdExtension](#flyeradextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension), [VideoAdExtension](#videoadextension).
+The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the following values: [ActionAdExtension](#actionadextension), [AppAdExtension](#appadextension), [CallAdExtension](#calladextension), [CalloutAdExtension](#calloutadextension), [DisclaimerAdExtension](#disclaimeradextension), [FilterLinkAdExtension](#filterlinkadextension), [FlyerAdExtension](#flyeradextension), [ImageAdExtension](#imageadextension), [LocationAdExtension](#locationadextension), [PriceAdExtension](#priceadextension), [PromotionAdExtension](#promotionadextension), [ReviewAdExtension](#reviewadextension), [SitelinkAdExtension](#sitelinkadextension), [StructuredSnippetAdExtension](#structuredsnippetadextension), [VideoAdExtension](#videoadextension).
 
 |Value|Description|
 |-----------|---------------|
@@ -45,6 +46,7 @@ The [AdExtensionsTypeFilter](adextensionstypefilter.md) value set has the follow
 |<a name="appadextension"></a>AppAdExtension|An ad extension that contains a link to install an application from a supported app store.<br/><br/>For more information, see [AppAdExtension](appadextension.md).|
 |<a name="calladextension"></a>CallAdExtension|An ad extension that contains a phone number and whether it's the only clickable item in an ad.<br/><br/>For more information, see [CallAdExtension](calladextension.md).|
 |<a name="calloutadextension"></a>CalloutAdExtension|An ad extension that contains additional text in the ad that can describe more about your business, products, or services.<br/><br/>For more information, see [CalloutAdExtension](calloutadextension.md).|
+|<a name="disclaimeradextension"></a>DisclaimerAdExtension|Reserved.|
 |<a name="filterlinkadextension"></a>FilterLinkAdExtension|An ad extension that pairs one header with between 3 and 10 clickable text values that tell customers more about your business.<br/><br/>For more information, see [FilterLinkAdExtension](filterlinkadextension.md).|
 |<a name="flyeradextension"></a>FlyerAdExtension|An ad extension that enables advertisers to distribute product or store catalogues (flyers) to potential customers.<br/><br/>For more information, see [FlyerAdExtension](flyeradextension.md).|
 |<a name="imageadextension"></a>ImageAdExtension|An ad extension that contains an image with alternative text.<br/><br/>For more information, see [ImageAdExtension](imageadextension.md).|

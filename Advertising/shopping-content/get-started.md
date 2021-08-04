@@ -53,7 +53,7 @@ For an overview of Microsoft Merchant Center (MMC), see [What is Microsoft Merch
 You must complete the following steps if you haven't already done so.
 
 1. [Verify and claim your Website's URL](https://help.ads.microsoft.com/#apex/3/en/50888/1)
-  To get the webmaster tools mentioned in Verify and claim your Website's URL, see [Bing Webmaster Tools](https://www.bing.com/toolbox/webmaster). Sign in with the same Microsoft account that you use for Microsoft Advertising. For more information about using the tool, see [Verify Ownership of Your Website](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6). 
+  To get the webmaster tools mentioned in Verify and claim your Website's URL, see [Bing Webmaster Tools](https://www.bing.com/toolbox/webmaster). Sign in with the same Microsoft account that you use for Microsoft Advertising. For more information about using the tool, see [Verify Ownership of Your Website](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b). 
 2. [Create a Microsoft Merchant Center store](https://help.ads.microsoft.com/#apex/3/en/51085/1)
 3. [Add a catalog](https://help.ads.microsoft.com/#apex/3/en/51105/1)
 

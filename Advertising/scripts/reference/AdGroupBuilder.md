@@ -44,6 +44,8 @@ Example usage:
 [build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object used to check whether the ad group was successfully added.
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy-string-biddingstrategy-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
+[withCpm(double cpm)](#withcpm-double-cpm-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPM bid.
+[withCpv(double cpv)](#withcpv-double-cpv-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPV bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
 [withEndDate(string endDate)](#withenddate-string-enddate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
 [withEndDate(Object endDate)](#withenddate-object-enddate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
@@ -68,7 +70,7 @@ Sets the ad group's bidding strategy.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-biddingStrategy|string|The bidding strategy to apply to the ad group. The following are the possible case-sensitive values.<ul><li>MANUAL_CPC</li></ul>For information about these strategies, see [Bid Strategy Types](/advertising/guides/budget-bid-strategies#bidstrategytypes).
+biddingStrategy|string|The bidding strategy to apply to the ad group. The following are the possible case-sensitive values.<ul><li>MANUAL_CPC</li><li>MANUAL_CPM</li><li>MANUAL_CPV</li></ul>For information about these strategies, see [Bid Strategy Types](/advertising/guides/budget-bid-strategies#bidstrategytypes).
 
 ### Returns
 |Type|Description|
@@ -80,7 +82,6 @@ Sets the ad group's CPC bid.
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC. This bid is used if a lower-level entity such as keyword does not override it.
 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
@@ -90,6 +91,36 @@ cpc|double|The ad group's maximum CPC bid. The account's currency determines the
 |Type|Description|
 |-|-
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the CPC bid applied.
+
+## <a name="withcpm-double-cpm-"></a>withCpm(double cpm)
+Sets the ad group's CPM bid. 
+
+Specifies the bid amount to use per 1,000 viewed impressions, and when the ad group's bid strategy is MANUAL_CPM.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+cpm|double|The ad group's maximum CPM bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
+
+### Returns
+|Type|Description|
+|-|-
+[AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the CPM bid applied.
+
+## <a name="withcpv-double-cpv-"></a>withCpv(double cpv)
+Sets the ad group's CPV bid. 
+
+Specifies the bid amount to use per view or per click on a video ad, and when the ad group's bid strategy is MANUAL_CPV.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+cpv|double|The ad group's maximum CPV bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/advertising/guides/currencies#bidandbudget).
+
+### Returns
+|Type|Description|
+|-|-
+[AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the CPV bid applied.
 
 ## <a name="withcustomparameters-object-customparameters-"></a>withCustomParameters(Object customParameters)
 Sets the ad group's custom parameters to use in final URLs or tracking templates. 

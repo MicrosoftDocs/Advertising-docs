@@ -189,10 +189,10 @@ The [GoogleImportOption](googleimportoption.md) object has the following element
 |<a name="raisecampaignbudgetstominimum"></a>RaiseCampaignBudgetsToMinimum|Due to differences in Microsoft Advertising and Google Ads minimum bid and budget requirements any budgets below our minimum amount will automatically be raised during import. This means that the amount of money you spend overall may increase for the imported campaigns. If you decide to opt out of increasing the minimum budget during import any campaigns that don't meet the minimum amount will not get imported.<br/><br/>This option is enabled by default, or effectively set to *true*. Set this element *false* to turn off this option.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Bids and budgets > Increase campaign budgets to the minimum for Microsoft Advertising*.|**boolean**|
 |<a name="raiseproductgroupbidstominimum"></a>RaiseProductGroupBidsToMinimum|By enabling this option Microsoft Advertising will increase all product group bids to the minimum bid amount. Your campaigns will still be imported if you don't enable this option but any products groups that have a bid below the Microsoft Advertising minimum will not serve.<br/><br/>This option is enabled by default, or effectively set to *true*. Set this element *false* to turn off this option.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Bids and Budgets > Increase product group bids to the minimum for Microsoft Advertising*.|**boolean**|
 |<a name="searchanddsamixedcampaignassearchcampaign"></a>SearchAndDsaMixedCampaignAsSearchCampaign|If you enable this option, the service will only fetch search ads from mixed campaigns and import them as search campaigns. Otherwise the service will only fetch dynamic search ads from mixed campaigns and import them as dynamic search campaigns. Mixed campaigns contain both dynamic search ads and other ad types (e.g. Expanded Text Ads).<br/><br/>Mixed campaigns are available wherever Dynamic search ads are supported i.e., Australia (AU), Austria (AT), Belgium (BE), Canada (CA), France (FR), Germany (DE), Ireland (IE), Italy (IT), Netherlands (NL), New Zealand (NZ), Spain (ES), Sweden (SE), Switzerland (CH), United Kingdom (UK), and United States (US). In those countries/regions this option is ignored and will no longer be visible in the Microsoft Advertising UI. Then whether this option is set to *true* or *false* both search and DSA ad groups will be imported.<br/><br/>This option is turned off by default, or effectively set to *false*. Set this element *true* to enable this option.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > What to import > Import search and DSA mixed campaigns as search campaigns*.|**boolean**|
-|<a name="searchandreplaceforcampaignnames"></a>SearchAndReplaceForCampaignNames|Set this option to find and replace a string within each campaign name during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Campaign options > Find and replace text in each campaign name*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
-|<a name="searchandreplaceforcustomparameters"></a>SearchAndReplaceForCustomParameters|Set this option to find and replace a string within each custom parameter during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Tracking templates > Find and replace text in each custom parameter*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
-|<a name="searchandreplacefortrackingtemplates"></a>SearchAndReplaceForTrackingTemplates|Set this option to find and replace a string within each tracking template during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Tracking templates > Find and replace text in each tracking template*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
-|<a name="searchandreplaceforurls"></a>SearchAndReplaceForUrls|Set this option to find and replace a string within each final URL, mobile URL, and destination URL during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Landing page URLs > Find and replace text in each final URL, mobile URL, and destination URL*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
+|<a name="searchandreplaceforcampaignnames"></a>SearchAndReplaceForCampaignNames|Set this option to find and replace a string within each campaign name during import.<br/><br/>When you update import options via [UpdateImportJobs](updateimportjobs.md) you can remove, update, or leave in place the prior search and replace settings. For details please see the [remarks](#remarks) below.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Campaign options > Find and replace text in each campaign name*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
+|<a name="searchandreplaceforcustomparameters"></a>SearchAndReplaceForCustomParameters|Set this option to find and replace a string within each custom parameter during import.<br/><br/>When you update import options via [UpdateImportJobs](updateimportjobs.md) you can remove, update, or leave in place the prior search and replace settings. For details please see the [remarks](#remarks) below.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Tracking templates > Find and replace text in each custom parameter*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
+|<a name="searchandreplacefortrackingtemplates"></a>SearchAndReplaceForTrackingTemplates|Set this option to find and replace a string within each tracking template during import.<br/><br/>When you update import options via [UpdateImportJobs](updateimportjobs.md) you can remove, update, or leave in place the prior search and replace settings. For details please see the [remarks](#remarks) below.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Tracking templates > Find and replace text in each tracking template*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
+|<a name="searchandreplaceforurls"></a>SearchAndReplaceForUrls|Set this option to find and replace a string within each final URL, mobile URL, and destination URL during import.<br/><br/>When you update import options via [UpdateImportJobs](updateimportjobs.md) you can remove, update, or leave in place the prior search and replace settings. For details please see the [remarks](#remarks) below.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Landing page URLs > Find and replace text in each final URL, mobile URL, and destination URL*.|[ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md)|
 |<a name="suffixforcampaignnames"></a>SuffixForCampaignNames|Set this option to insert a string at the end of each campaign name during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Campaign options > Insert at the end of each campaign name*.|**string**|
 |<a name="suffixfortrackingtemplates"></a>SuffixForTrackingTemplates|Set this option to insert a string at the end of each tracking template during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Tracking templates > Insert at the end of each tracking template*.|**string**|
 |<a name="suffixforurls"></a>SuffixForUrls|Set this option to insert a string at the end of each final URL, mobile URL, and destination URL during import.<br/><br/>This option is available in the Microsoft Advertising UI via *Import from Google Ads > Choose import options > Other options > Landing page URLs > Insert at the end of each final URL, mobile URL, and destination URL*.|**string**|
@@ -241,6 +241,41 @@ The [GoogleImportOption](googleimportoption.md) object derives from the [ImportO
 |-----------|---------------|-------------|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="type"></a>Type|The type of the import option.<br/><br/>This value is *GoogleImportOption* when you retrieve a Google import option.<br/><br/>For more information about import option types, see the [ImportOption Data Object Remarks](importoption.md#remarks).|**string**|
+
+## <a name="remarks"></a>Remarks
+When you update import options via [UpdateImportJobs](updateimportjobs.md) you can remove, update, or leave in place the prior search and replace settings. Remove and update fully replace any previous settings. 
+- **Remove:** Create an empty [ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md) object
+- **Update:** Create a [ImportSearchAndReplaceForStringProperty](importsearchandreplaceforstringproperty.md) and set properties that you want to use going forward
+- **Retain:** Set the element null
+
+```csharp
+// Remove
+SearchAndReplaceForCampaignNames = new ImportSearchAndReplaceForStringProperty{},
+// Update
+SearchAndReplaceForTrackingTemplates = new ImportSearchAndReplaceForStringProperty{
+    ReplaceString = "replace",
+    SearchString = "search"
+},
+// Retain prior settings
+SearchAndDsaMixedCampaignAsSearchCampaign = null
+```
+
+The code above generates the following SOAP request message.
+
+```xml
+<!--Retain prior settings-->
+<SearchAndDsaMixedCampaignAsSearchCampaign i:nil="true" />
+<!--Remove-->
+<SearchAndReplaceForCampaignNames>
+    <ReplaceString i:nil="true" />
+    <SearchString i:nil="true" />
+</SearchAndReplaceForCampaignNames>
+<!--Update-->
+<SearchAndReplaceForTrackingTemplates>
+    <ReplaceString>replace</ReplaceString>
+    <SearchString>search</SearchString>
+</SearchAndReplaceForTrackingTemplates>
+```
 
 ## Requirements
 Service: [CampaignManagementService.svc v13](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc)  

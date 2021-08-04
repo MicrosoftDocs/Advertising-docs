@@ -78,6 +78,8 @@ The Campaign Management service defines the following data objects.
 |[DayTime](daytime.md)|Defines a day of the week and time range for ad extension scheduling.|
 |[DayTimeCriterion](daytimecriterion.md)|Defines a criterion that can be used to show ads to users during a specific day and time range.|
 |[DeviceCriterion](devicecriterion.md)|Defines a criterion that can be used to show ads on specific devices.|
+|[DisclaimerAdExtension](disclaimeradextension.md)|Defines the DisclaimerAdExtension Data Object.|
+|[DisclaimerSetting](disclaimersetting.md)|Defines the DisclaimerSetting Data Object.|
 |[DurationGoal](durationgoal.md)|Defines a duration conversion goal.|
 |[DynamicFeedSetting](dynamicfeedsetting.md)|Defines the DynamicFeedSetting Data Object.|
 |[DynamicSearchAd](dynamicsearchad.md)|Defines a dynamic search ad.|
@@ -163,7 +165,7 @@ The Campaign Management service defines the following data objects.
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|
 |[RemarketingList](remarketinglist.md)|Defines a remarketing list.|
 |[RemarketingRule](remarketingrule.md)|Defines the base object of a remarketing rule.|
-|[ResponsiveAd](responsivead.md)|A responsive ad format for Audience ads in the Microsoft Audience Network.|
+|[ResponsiveAd](responsivead.md)|A responsive ad format for audience ads and multimedia ads.|
 |[ResponsiveSearchAd](responsivesearchad.md)|A responsive ad format for text ads in the Search network.|
 |[ReviewAdExtension](reviewadextension.md)|Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in an expanded text ad.|
 |[RuleItem](ruleitem.md)|Defines the base class of a remarketing list rule item.|

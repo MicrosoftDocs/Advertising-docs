@@ -2105,6 +2105,17 @@ Missing tag lpurl in tracking template.
 1137
 
 **Symbolic Error Code**
+CampaignHasDraftStore
+
+**Description**
+This campaign has a draft store. Complete store setup to run this campaign.
+
+***
+
+**Numeric Code**
+1137
+
+**Symbolic Error Code**
 Not applicable.
 
 **Description**

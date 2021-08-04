@@ -30,7 +30,7 @@ With each API request we will check the access token to ensure the user granted 
 
 We recommend that you make the necessary changes as soon as possible.  
 
-We also recommend that you inform and guide users of your application to [set up MFA](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) so that a second proof will be required when they grant permissions for any application. For the Microsoft Advertising requirement, it isn't enough for them to turn on MFA. Either way you must get user consent by prompting with the ```msads.manage ``` scope. 
+We also recommend that you inform and guide users of your application to [set up MFA](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time#who-decides-if-you-use-this-feature) so that a second proof will be required when they grant permissions for any application. For the Microsoft Advertising requirement, it isn't enough for them to turn on MFA. Either way you must get user consent by prompting with the ```msads.manage ``` scope. 
 
 ## After enforcement
 
@@ -39,7 +39,6 @@ Upon enforcement of MFA, we will only authenticate access tokens on behalf of a 
 - Prior to MFA enforcement the **Microsoft identity platform endpoint** supports the ```ads.manage``` scope. Access tokens that you acquire for users via the ads.manage scope will no longer be accepted.
 
 - Prior to MFA enforcement the Live Connect endpoint supports the ```bingads.manage``` scope. The **Live Connect** endpoint is already deprecated and will no longer be supported. Access tokens that you acquire for users via the ```bingads.manage``` scope will no longer be accepted.
-
 
 ## SDK support 
 
@@ -75,7 +74,57 @@ oauth_web_auth_code_grant = OAuthDesktopMobileAuthCodeGrant(
 )
 ```
 
+## Example scenarios
+
+Here are example scenarios that might apply to your business. 
+
+### Example: Get a new access token by refreshing with a different scope
+
+An access token represents permissions by a user to act on their behalf with limited permissions based on scopes. When you request consent to manage their accounts you set the scope parameter to either **ads.manage** and **msads.manage**. You are really asking for a user access token that has permissions for whatever is defined by the scope.
+
+> [!IMPORTANT]
+> Upon enforcement of multi-factor authentication, an access token will only be accepted if it was provisioned or refreshed via the **msads.manage** scope. You can continue refreshing the tokens via **ads.manage**, but the Bing Ads API will not accept them. 
+
+To confirm that an access token will be accepted upon enforcement of multi-factor authentication, you can check the response scope. If the scope includes **msads.manage** then it will be accepted.
+
+Let’s say for example, that currently a user consents for your application to manage their accounts via both **ads.manage** and **msads.manage** scopes. They may have granted consent via **ads.manage** last month and then granted consent via **msads.manage** this month.
+
+If you refresh the token with **ads.manage** the token refresh response will include the **ads.manage** scope. Upon enforcement of multi-factor authentication, "MyAccessToken-1" would not be accepted.
+
+```json
+{
+    "token_type":"Bearer",
+    "scope":"https://ads.microsoft.com/ads.manage",
+    "expires_in":3600,
+    "ext_expires_in":3600,
+    "access_token":"MyAccessToken-1",
+    "refresh_token":"MyRefreshToken-1"
+}
+```
+
+If you refresh the token with **msads.manage** the token refresh response will include both **ads.manage** and **msads.manage** scopes. Upon enforcement of multi-factor authentication, "MyAccessToken-2" would be accepted.
+
+```json
+{
+    "token_type":"Bearer",
+    "scope":"https://ads.microsoft.com/msads.manage https://ads.microsoft.com/ads.manage",
+    "expires_in":3600,
+    "ext_expires_in":3600,
+    "access_token":"MyAccessToken-2",
+    "refresh_token":"MyRefreshToken-2"
+}
+```
+
+An **invalid_grant** error will be returned if you attempt to refresh the token using any scope where the user does not currently provide consent.  
+
+```json
+{
+    "error":"invalid_grant",
+    "error_description":"AADSTS70000: The request was denied because one or more scopes requested are unauthorized or expired. The user must first sign in and grant the client application access to the requested scope."
+}
+```
+
 ## See Also
 
-[OAuth FAQ](faq.md#oauth)
+[OAuth FAQ](faq.yml)
 [Request user consent](authentication-oauth-consent.md)
