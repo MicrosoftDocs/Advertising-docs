@@ -125,7 +125,7 @@ The Campaign Management service defines the following service operations.
 |[UpdateCampaigns](updatecampaigns.md)|Updates specified campaigns in a specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
 |[UpdateConversionGoals](updateconversiongoals.md)|Updates conversion goals within the account's shared conversion goal library.|100 *ConversionGoals*|
 |[UpdateExperiments](updateexperiments.md)|Updates the specified experiments.|100 *Experiments*|
-|[UpdateImportJobs](updateimportjobs.md)|Updates the specified import jobs.|1 *ImportJobs*|
+|[UpdateImportJobs](updateimportjobs.md)|Replaces the specified import jobs with new import jobs.|1 *ImportJobs*|
 |[UpdateKeywords](updatekeywords.md)|Updates the keywords within a specified ad group.|1 *AdGroupId*<br/><br/>1,000 *Keywords*|
 |[UpdateLabels](updatelabels.md)|Updates the labels within the account.|100 *Labels*|
 |[UpdateSharedEntities](updatesharedentities.md)|Updates the negative keyword lists or website exclusion lists.|20 *SharedEntities*|

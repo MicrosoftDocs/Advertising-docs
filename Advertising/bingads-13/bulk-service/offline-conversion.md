@@ -12,7 +12,7 @@ dev_langs:
 Defines an offline conversion that can be uploaded in a bulk file.
 
 > [!NOTE]
-> Bulk download is not supported. You cannot get, update, or delete an offline conversion. 
+> Bulk download is not supported.  
 
 You can add, restate (update), or restract (delete) offline conversions. 
 - To upload an offline conversion, set the [Conversion Currency Code](#conversioncurrencycode), [Conversion Name](#conversionname), [Conversion Time](#conversiontime), [Conversion Value](#conversionvalue), and [Microsoft Click Id](#microsoftclickid) fields.  

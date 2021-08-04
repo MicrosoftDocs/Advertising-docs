@@ -37,6 +37,7 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v13
 [AppAdExtension](appadextension.md)  
 [BiddableAdGroupCriterion](biddableadgroupcriterion.md)  
 [Campaign](campaign.md)  
+[DisclaimerAdExtension](disclaimeradextension.md)  
 [FilterLinkAdExtension](filterlinkadextension.md)  
 [FlyerAdExtension](flyeradextension.md)  
 [ImageAdExtension](imageadextension.md)  
