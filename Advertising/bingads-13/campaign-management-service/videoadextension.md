@@ -9,9 +9,6 @@ description: Defines an ad extension with a video and call-to-action button.
 # VideoAdExtension Data Object - Campaign Management
 Defines an ad extension with a video and call-to-action button.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
-
 ## Syntax
 ```xml
 <xs:complexType name="VideoAdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">
