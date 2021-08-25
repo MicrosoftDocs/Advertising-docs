@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a list of optional account properties that you can request when calling GetAccount.
+description: Defines a list of optional account properties that you can request when calling GetAccount, FindAccountsOrCustomersInfo, and SearchAccounts.
 ---
 # AccountAdditionalField Value Set - Customer Management
 Defines a list of optional account properties that you can request when calling [GetAccount](getaccount.md), [FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md), and [SearchAccounts](searchaccounts.md). The additional field values enable you to get the latest features using the current version of Customer Management API, and in the next version the corresponding properties will be included in the account by default.  
