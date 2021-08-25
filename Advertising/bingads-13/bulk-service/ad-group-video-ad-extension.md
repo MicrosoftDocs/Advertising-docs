@@ -11,9 +11,6 @@ dev_langs:
 # Ad Group Video Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Video Ad Extension](video-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or video ad extension, use the [Ad Group](ad-group.md) or [Video Ad Extension](video-ad-extension.md) record.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry - it's coming soon!
-
 You can download all *Ad Group Video Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupVideoAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a video ad extension to an ad group if valid [Id](#id) and [Parent Id](#parentid) values are provided. 

@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: DisclaimerAdExtension.
+description: Defines the DisclaimerAdExtension Data Object.
 ---
 # DisclaimerAdExtension Data Object - Campaign Management
 Defines the DisclaimerAdExtension Data Object.
