@@ -122,9 +122,9 @@ In the [Images](#images) element include one or more [AssetLink](assetlink.md) o
 |Sub Type|Minimum dimensions in pixels|
 |--------|--------|--------|
 |Image191x100|703 width x 368 height<br/>Aspect radio 1.91:1|
-|Image4x1|512 width x 128 height<br/>Aspect radio 4:1|
-|Image1x1|128 width x 128 height<br/>Aspect radio 1:1|
-|Image1x2|128 width x 256 height<br/>Aspect radio 1:2|
+|Image4x1|608 width x 152 height<br/>Aspect radio 4:1|
+|Image1x1|470 width x 470 height<br/>Aspect radio 1:1|
+|Image1x2|470 width x 940 height<br/>Aspect radio 1:2|
 
 ### Audience ad images
 
