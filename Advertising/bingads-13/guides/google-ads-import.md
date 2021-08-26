@@ -22,10 +22,7 @@ The import credential ID links your Google Ads and Microsoft Advertising user cr
 
 1. Sign in to Microsoft Advertising and navigate to the ad account where you want to import Google Ads campaigns. You must sign in and get an import credential ID with the same user credentials that will be used later when you [schedule the import](#import-schedule) via the [AddImportJobs](../campaign-management-service/addimportjobs.md) operation.  
 
-1. Navigate to **Import** -> **Import credential ID**. 
-
-    > [!NOTE]
-    > You can only get an import credential ID in the redesigned Microsoft Advertising UI. If you don't see it, look for the "Try the new Microsoft Advertising" prompt when you sign in. To use the redesigned Microsoft Advertising you must also be in the UI pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 522). 
+1. From the search box in the top menu, search for **Import credential ID**. 
 
 1. Sign in with your Google account credentials. Be sure the Google user has access to the Google Ads account that you want to import from. 
 
