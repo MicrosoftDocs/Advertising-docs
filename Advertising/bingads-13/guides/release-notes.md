@@ -83,7 +83,7 @@ The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please se
 See below for Bing Ads API updates during this calendar month. 
 
 - [Report Format Version](#formatversion-reporting-august2020)  
-- [Bing Ads API SDK Updates](#sdk-august2020)  
+- [Bing Ads API SDK Updates](#sdk-august2020)
 
 ### <a name="formatversion-reporting-august2020"></a>Report Format Version
 The [FormatVersion](../reporting-service/reportrequest.md#formatversion) element is added to the [ReportRequest](../reporting-service/reportrequest.md) data object. 
