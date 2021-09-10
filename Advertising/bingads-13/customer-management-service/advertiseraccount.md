@@ -117,7 +117,7 @@ The following is the list of keys that are available for the [TaxInformation](#t
 ||Must be in the following format: PTXXXXXXXXX (where PT is followed by 9 digits).|Portugal.| 
 ||9 or 13 digits in length, of which the first 8 or 12 digits are the actual ID number, and the last digit is a checksum digit calculated according to ISO 7064, MOD 11-10.|Serbia.| 
 ||CHE + 9 numeric digits + TVA, MWST, or IVA (ex. CHE-123.456.788 TVA[20]). The last digit is a MOD11 checksum digit built with the weighting pattern: 5,4,3,2,7,6,5,4.|Switzerland.| 
-||Must be in the following format: 13 digits in length.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|Thailand.|  
+||Must be in the following format: 13 digits in length.<br/><br/> **Add:** Optional<br/>**Update:** Read-only|Thailand.|  
 
 ## Requirements
 Service: [CustomerManagementService.svc v13](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc)  
