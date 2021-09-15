@@ -76,7 +76,7 @@ When [downloading campaigns](bulk-download-upload.md) with the Bulk API you can 
 
 Previously if you set a date and time that is more than 90 days prior, an error will be returned.
 
-The maximum look back period will decrease from 90 days to 30 days on September 1st, 2021. Then, if you set a date and time that is more than 30 days prior, an error will be returned.
+The maximum look back period decreased from 90 days to 30 days on September 1st, 2021. Now, if you set a date and time that is more than 30 days prior, an error will be returned.
 
 ## <a name="august2021"></a>August 2021
 
