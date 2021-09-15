@@ -98,7 +98,7 @@ Business attributes are optional and you can choose one or more attributes that 
 
 If the [Name](#name) element is set to *BusinessAttributes*, then the [Value](#value) can include a list of attribute types.  
 
-Within the [Value](#value) element,  the list of business attributes are delimited with a semicolon (;). The possible values include: AlcoholFree, AllergyFriendly, BlackOwned, CarbonNegative, CarbonNeutral, CrueltyFree, EcoFriendly, FamilyFriendly, FamilyOwned, GlutenFree, Halal, HearingAssistance, Kosher, LocalBusiness, LGBTQIFriendly, LGBTQIOwned, MinorityOwned, MobilityAssistance, NoContactDelivery, Nonprofit, PetFriendly, SmallBusiness, SupportACure, SupportDiseaseResearch, Sustainable, Vegan, Vegetarian, VisualAssistance, TouchlessPickup, Unisex, WebAccessibility, and WheelchairAccessible.  
+Within the [Value](#value) element, the list of business attributes are delimited with a semicolon (;). The possible values include: AlcoholFree, AllergyFriendly, BlackOwned, CarbonNegative, CarbonNeutral, CrueltyFree, EcoFriendly, FamilyFriendly, FamilyOwned, GlutenFree, Halal, HearingAssistance, Kosher, LocalBusiness, LGBTQIFriendly, LGBTQIOwned, MinorityOwned, MobilityAssistance, NoContactDelivery, Nonprofit, PetFriendly, SmallBusiness, SupportACure, SupportDiseaseResearch, Sustainable, Vegan, Vegetarian, VisualAssistance, TouchlessPickup, Unisex, WebAccessibility, and WheelchairAccessible.  
 
 In this example, Alcohol-free, Family-owned, and Vegan are the selected business attributes. 
 
