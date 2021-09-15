@@ -28,10 +28,10 @@ The [ImportEntityType](importentitytype.md) value set has the following values: 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="ad"></a>Ad|Reserved.|
-|<a name="adgroup"></a>AdGroup|Reserved.|
+|<a name="ad"></a>Ad|The import entity is an ad.|
+|<a name="adgroup"></a>AdGroup|The import entity is an ad group.|
 |<a name="campaign"></a>Campaign|The import entity is a campaign.|
-|<a name="keyword"></a>Keyword|Reserved.|
+|<a name="keyword"></a>Keyword|The import entity is a keyword.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|
 
 ## Requirements

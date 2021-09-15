@@ -82,8 +82,13 @@ The maximum look back period will decrease from 90 days to 30 days on September 
 
 See below for Bing Ads API updates during this calendar month.  
 
+- [Google Ads import entity map](#entity-mappings-august2021)  
 - [Bing Ads API SDK Updates](#sdk-august2021)  
-- 
+
+### <a name="entity-mappings-august2021"></a>Google Ads import entity map
+
+Ad group, ad, and keyword ID mappings from Google Ads to Microsoft Advertising are now supported in the Campaign Management [GetImportEntityIdsMapping](../campaign-management-service/getimportentityidsmapping.md) service operation. Previously only the campaign ID mappings were available.  
+
 ### <a name="sdk-august2021"></a>Bing Ads API SDK Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Microsoft Advertising [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v13.0.11), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v13.0.11), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.13.0.11), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v13.0.11) SDK version 13.0.11.  
 
@@ -94,7 +99,7 @@ See below for Bing Ads API updates during this calendar month.
 - [Multimedia ads](#multimedia-ads-july2021)  
 - [Unlimited and open-ended insertion order](#unlimited-io-july2021)  
 
-### <a name="multimedia-ads-july2021"></a>Asset performance label for RSA
+### <a name="multimedia-ads-july2021"></a>Multimedia ads
 
 Multimedia ads are supported in the Campaign Management [ResponsiveAd](../campaign-management-service/responsivead.md) object.
 
