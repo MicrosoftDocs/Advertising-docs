@@ -50,7 +50,6 @@ If this field is set to *true*, then the image auto-retrieve feature is enabled.
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
-**Delete:** Read-only  
 
 ## <a name="autoapplyrecommendations"></a>Auto Apply Recommendations
 Determines whether Microsoft Advertising is allowed to automatically apply ad recommendations meant to help you boost ad performance.  
@@ -82,14 +81,29 @@ If the value of a key is set to *true*, then the auto-apply feature is enabled f
 
 **Add:** Optional  
 **Update:** Optional. You can choose to set only the key and value pairs that you want to update. If no value is set for the update, this setting is not changed.  
-**Delete:** Read-only  
+
+## <a name="businessattributes"></a>Business Attributes
+Allows you to highlight one or more key business values meant to help you boost ad performance. 
+
+If an attribute value is in this field, then it is selected; attributes not present are not selected. 
+
+The possible values include: AlcoholFree, AllergyFriendly, BlackOwned, CarbonNegative, CarbonNeutral, CrueltyFree, EcoFriendly, FamilyFriendly, FamilyOwned, GlutenFree, Halal, HearingAssistance, Kosher, LocalBusiness, LGBTQIFriendly, LGBTQIOwned, MinorityOwned, MobilityAssistance, NoContactDelivery, Nonprofit, PetFriendly, SmallBusiness, SupportACure, SupportDiseaseResearch, Sustainable, Vegan, Vegetarian, VisualAssistance, TouchlessPickup, Unisex, WebAccessibility, and WheelchairAccessible. 
+
+The list of business attributes are delimited with a semicolon (;). In this example, Alcohol-free, Family-owned, and Vegan are the selected business attributes.  
+
+```
+AlcoholFree;FamilyOwned;Vegan 
+```
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. 
+
 
 ## <a name="finalurlsuffix"></a>Final Url Suffix
 The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
-**Delete:** Read-only  
 
 ## <a name="id"></a>Id
 The system-generated identifier of the account.
@@ -98,8 +112,7 @@ The system-generated identifier of the account.
 > The Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) service request.
 
 **Add:** Read-only  
-**Update:** Read-only  
-**Delete:** Read-only  
+**Update:** Read-only   
 
 ## <a name="includeviewthroughconversions"></a>Include View Through Conversions
 Determines whether you want to include view-through conversions for campaigns in the account. 
@@ -113,7 +126,6 @@ If the value is *true*, then view-through conversions will be included. By defau
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
-**Delete:** Read-only  
 
 ## <a name="msclkidautotaggingenabled"></a>MSCLKID Auto Tagging Enabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
@@ -126,15 +138,13 @@ If the value is *True*, then the MSCLKID auto tagging feature is enabled. Otherw
 > Every time you add or update a new [DurationGoal](../campaign-management-service/durationgoal.md), [EventGoal](../campaign-management-service/eventgoal.md), [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](../campaign-management-service/urlgoal.md) via either the Microsoft Advertising web application or Campaign Management API, the *MSCLKID Auto Tagging Enabled* field is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.ads.microsoft.com/#apex/3/en/56852/2).
 
 **Add:** Optional  
-**Update:** Optional. If no value is set for the update, this setting is not changed.    
-**Delete:** Read-only  
+**Update:** Optional. If no value is set for the update, this setting is not changed. 
 
 ## <a name="parentid"></a>Parent Id
 The system-generated identifier of the customer that contains the account.
 
 **Add:** Read-only  
 **Update:** Read-only  
-**Delete:** Read-only  
 
 ## <a name="profileexpansionenabled"></a>Profile Expansion Enabled
 Determines whether to expand LinkedIn profile targeting across your account to reach additional customers similar to the ones you currently target. 
@@ -145,14 +155,12 @@ If the value is *true*, then the LinkedIn profile targeting expansion feature is
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
-**Delete:** Read-only  
 
 ## <a name="synctime"></a>Sync Time
 Where the Account row intersects with the Sync Time column, the field value is represented as **MM/DD/YYYY HH:MM**, or month, day, year, hour, and minute relative to the UTC time zone. Save this value and use it with the bulk service to only get the changes between the current and the next download.
 
 **Add:** Read-only  
 **Update:** Read-only  
-**Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your account.
@@ -169,7 +177,6 @@ The following validation rules apply to tracking templates. For more details abo
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
-**Delete:** Read-only  
 
 
 
