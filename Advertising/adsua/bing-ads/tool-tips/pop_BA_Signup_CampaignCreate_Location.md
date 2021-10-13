@@ -1,0 +1,22 @@
+---
+title: Location
+description: Location
+ms.service: "Bing-Ads"
+ms.topic: "article"
+author: eric-urban
+ms.author: eur
+---
+
+# Location
+
+**What it is** : Use location targeting to specify where you want your ads to appear. You can also specify excluded locations where you don’t want your ads to appear.
+
+**Why it's important** : Location targeting helps you get your ads in front of the right people, so that you aren't paying for clicks from people who can't buy your products or use your services. For example, if you sell your products only in Australia and New Zealand, you should target those two countries. However, if you own an auto repair shop in Auckland, you should target that city.
+
+**How does location targeting work?** &nbsp;Microsoft Advertising looks at your ad language, location targets, and the below “Who?” settings to determine where your ad should be delivered. For details, see  [How does location and language impact who can see my ads?](../hlp_BA_CONC_LocTargetAndLang.md)
+
+**Managing radius targets** : Many smaller locations have radius targets by default. To change or remove this radius, click on the location name after you have added it. Note that, for some locations, radius targeting is the only available option.
+
+**Get more info** : [How to target customers](../hlp_BA_PROC_TargetingAgeGender.md)
+
+
